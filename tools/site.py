@@ -12,7 +12,7 @@ CSS = r"""
 @font-face{font-family:'LO';src:url(/assets/fonts/Lora.ttf);font-weight:100 900;font-display:swap}
 @font-face{font-family:'LOI';src:url(/assets/fonts/Lora-Italic.ttf);font-weight:100 900;font-style:italic;font-display:swap}
 @font-face{font-family:'AR';src:url(/assets/fonts/Archivo.ttf);font-weight:100 900;font-display:swap}
-:root{--paper:#f5e9bc;--ink:#211c14;--red:#c8302f;--teal:#0e8a8a;--gold:#e8b100;--soft:#6b5f44;--rule:#c9b98a}
+:root{--paper:#f4e5b4;--ink:#211c14;--red:#bf2f2b;--teal:#137d78;--gold:#e0a800;--soft:#6b5f44;--rule:#c9b98a}
 *{box-sizing:border-box}
 html{background:#e9dca6;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);font-family:'LO',Georgia,serif;color:var(--ink);font-size:1.15rem;line-height:1.5}
@@ -89,6 +89,31 @@ a{color:inherit}
 .nav{display:flex;justify-content:space-between;font-family:'AR';font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-top:1rem}
 .nav a{text-decoration:none;font-weight:700}
 .nav a:hover{color:var(--red)}
+.strip5{display:flex;border-top:1px solid var(--rule);border-bottom:1px solid var(--ink);margin:.2rem 0 .7rem}
+.strip5 div{flex:1;text-align:center;padding:.45rem .1rem;border-right:1px solid var(--rule)}
+.strip5 div:last-child{border-right:0}
+.strip5 .d{font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.strip5 .i{font-size:1.2rem;line-height:1.3;color:var(--gold)}
+.strip5 .h{font-family:'PF';font-weight:700;font-size:1.15rem}
+.strip5 .w{font-family:'LOI';font-style:italic;font-size:.7rem;color:var(--soft)}
+.sky{display:flex;gap:1rem;align-items:center;margin-bottom:.6rem}
+.sky svg{width:5rem;height:5rem;flex:none}
+.stars{margin-top:.4rem}
+.star{display:flex;gap:.6rem;padding:.35rem 0;border-bottom:1px solid #d8c795}
+.star:last-child{border-bottom:0}
+.star .sg{font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);min-width:4.6rem;padding-top:.3rem}
+.star .who{font-family:'LOI';font-style:italic;color:var(--soft);font-size:.85em}
+.tbl{width:100%;border-collapse:collapse;font-size:.85em;margin:.5rem 0}
+.tbl th{font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);text-align:left;border-bottom:1px solid var(--ink);padding:.25rem .3rem}
+.tbl td{padding:.3rem .3rem;border-bottom:1px solid #e3d5a4}
+.tbl td.n{text-align:right;font-family:'AR'}
+.tbl tr.us td{font-weight:700;color:var(--red)}
+.cal{list-style:none;padding:0;margin:.4rem 0 0}
+.cal li{display:flex;gap:.7rem;padding:.25rem 0}
+.cal .dt{font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red);min-width:4.2rem;padding-top:.3rem}
+.ballot{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:.5rem 0;font-family:'AR';font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.ballot b{color:var(--red)}
+.ask{font-family:'LOI';font-style:italic;color:var(--teal);font-size:.95em;margin-top:.5rem}
 @media (max-width:480px){
  .kicker{font-size:.58rem;letter-spacing:.12em}
  .sec{letter-spacing:.18em;font-size:.85rem}
