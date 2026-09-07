@@ -1,0 +1,58 @@
+{
+ "people": [
+  {
+   "name": "Garret",
+   "sign": "Scorpio",
+   "birthday": null,
+   "role": "editor, signs as G."
+  },
+  {
+   "name": "Kaylani",
+   "sign": "Aries",
+   "birthday": null
+  },
+  {
+   "name": "Luka",
+   "sign": "Aries",
+   "birthday": null
+  },
+  {
+   "name": "Gregg",
+   "sign": "Cancer",
+   "birthday": "06-22"
+  },
+  {
+   "name": "Tommy",
+   "sign": "Cancer",
+   "birthday": "07-12",
+   "note": "unconfirmed"
+  },
+  {
+   "name": "Leah",
+   "sign": "Leo",
+   "birthday": "08-02"
+  },
+  {
+   "name": "Derek",
+   "sign": "Virgo",
+   "birthday": "09-01"
+  },
+  {
+   "name": "Joanne",
+   "sign": "Virgo",
+   "birthday": "09-04"
+  },
+  {
+   "name": "Ariel",
+   "sign": "Scorpio",
+   "birthday": null
+  },
+  {
+   "name": "Claire",
+   "sign": "Scorpio",
+   "birthday": null
+  }
+ ],
+ "events": [],
+ "migraine_log": []
+}
