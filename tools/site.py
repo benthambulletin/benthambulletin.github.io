@@ -51,6 +51,7 @@ a{color:inherit}
 .bigtemp sup{font-size:.36em;font-weight:500;vertical-align:top;position:relative;top:.15em}
 .wxtext{padding-top:.2rem;font-size:1.05em}
 .lede{display:block;font-family:'LOI';font-style:italic;font-size:1.1em;color:var(--soft);margin-bottom:.3rem}
+.press{font-family:'LO';font-size:1rem;line-height:1.5;color:var(--ink);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:.7rem .2rem;margin:.2rem 0 1rem}.press b{color:var(--red);font-family:'PF'}
 .note{border:2px solid var(--teal);color:var(--teal);font-family:'AR';font-weight:700;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;padding:.45rem .7rem;display:inline-block;margin-bottom:.8rem}
 .towns{display:flex;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);margin-bottom:.7rem}
 .town{flex:1;text-align:center;padding:.6rem .2rem;border-right:1px solid var(--rule)}
@@ -176,7 +177,8 @@ def build(edition):
     nav += '<a href="/archive/">Archive</a>'
     nav += f'<a href="/{newer["slug"]}/">{newer["date"]} &rarr;</a>' if newer else '<a href="/">Today</a>'
     nav += '</div>'
-    body = edition['body_html'].replace('__PLATE__', plate_rel) + nav
+    pv = hashlib.md5(open(edition['plate_path'],'rb').read()).hexdigest()[:8]
+    body = edition['body_html'].replace('__PLATE__', plate_rel+'?v='+pv) + nav
     title = f"The Bentham Bulletin · No. {edition['no']} · {d.strftime('%A, %B %-d, %Y')}"
     html = shell(title, body, plate_rel, edition['headline'])
     open(os.path.join(outdir,'index.html'),'w').write(html)
