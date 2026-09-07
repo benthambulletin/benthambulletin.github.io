@@ -134,14 +134,16 @@ a{color:inherit}
 .arch .c{font-family:'LOI';font-style:italic;color:var(--soft);font-size:.95rem}
 """
 
+import hashlib
 def shell(title, body, og_image=None, desc="A daily almanac for the family"):
+    CSSV = hashlib.md5(CSS.encode()).hexdigest()[:8]
     og = f'<meta property="og:image" content="https://benthambulletin.github.io{og_image}">' if og_image else ''
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title>
 <meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">{og}
 <meta property="og:type" content="article">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v={CSSV}">
 <link rel="icon" href="/assets/favicon.svg"></head><body><div class="page">
 {body}
 </div></body></html>"""
