@@ -23,9 +23,10 @@
   },
   {
    "name": "Tommy",
-   "sign": "Cancer",
-   "birthday": "07-12",
-   "note": "unconfirmed"
+   "sign": "Leo",
+   "birthday": "07-25",
+   "note": "unconfirmed",
+   "confirmed": true
   },
   {
    "name": "Leah",
