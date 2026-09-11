@@ -54,7 +54,13 @@
    "birthday": null
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-09-12",
+   "title": "Family get-together in Dunkirk",
+   "note": "surface in Family Today Fri and day-of"
+  }
+ ],
  "migraine_log": [
   {
    "who": "Garret",
