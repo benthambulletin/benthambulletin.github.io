@@ -3,18 +3,21 @@
   {
    "name": "Garret",
    "sign": "Scorpio",
-   "birthday": null,
-   "role": "editor, signs as G."
+   "birthday": "10-25",
+   "role": "editor, signs as G.",
+   "confirmed": true
   },
   {
    "name": "Kaylani",
    "sign": "Aries",
-   "birthday": null
+   "birthday": "04-14",
+   "confirmed": true
   },
   {
    "name": "Luka",
    "sign": "Aries",
-   "birthday": null
+   "birthday": "04-19",
+   "confirmed": true
   },
   {
    "name": "Gregg",
@@ -46,12 +49,14 @@
   {
    "name": "Ariel",
    "sign": "Scorpio",
-   "birthday": null
+   "birthday": "10-25",
+   "confirmed": true
   },
   {
    "name": "Claire",
    "sign": "Scorpio",
-   "birthday": null
+   "birthday": "10-23",
+   "confirmed": true
   }
  ],
  "events": [
