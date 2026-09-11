@@ -127,6 +127,15 @@ a{color:inherit}
  .card{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;border-top:1px solid var(--rule);padding-top:.3rem}
  .card .h{min-width:100%}
 }
+/* album */
+.alb{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin:.6rem 0}
+.alb a{display:block;position:relative;line-height:0}
+.alb img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--ink)}
+.albfig{margin:0 0 1.6rem}
+.albfig img{width:100%;border:1px solid var(--ink)}
+.albfig .c{font-family:'LOI';font-style:italic;color:var(--soft);font-size:1rem;margin-top:.35rem}
+.albfig .d{font-family:'AR';font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-top:.3rem}
+.albfig .d a{color:var(--red);text-decoration:none}
 /* archive */
 .arch{list-style:none;padding:0;margin:0}
 .arch li{display:flex;gap:.9rem;align-items:center;padding:.7rem 0;border-bottom:1px solid #e5dcc4}
@@ -176,7 +185,7 @@ def build(edition):
     older = issues[idx+1] if idx+1 < len(issues) else None
     nav = '<div class="nav">'
     nav += f'<a href="/{older["slug"]}/">&larr; {older["date"]}</a>' if older else '<span></span>'
-    nav += '<a href="/archive/">Archive</a>'
+    nav += '<a href="/album/">Album</a><a href="/archive/">Archive</a>'
     nav += f'<a href="/{newer["slug"]}/">{newer["date"]} &rarr;</a>' if newer else '<a href="/">Today</a>'
     nav += '</div>'
     pv = hashlib.md5(open(edition['plate_path'],'rb').read()).hexdigest()[:8]
@@ -202,6 +211,24 @@ def build(edition):
 <ul class="arch">{items}</ul>
 <div class="nav"><span></span><a href="/">Today's paper &rarr;</a></div>"""
     open(os.path.join(SITE,'archive','index.html'),'w').write(shell('The Bentham Bulletin · Archive', abody))
+    # album
+    os.makedirs(os.path.join(SITE,'album'), exist_ok=True)
+    thumbs = ''.join(f'<a href="#p{i["no"]}"><img src="{i["plate"]}" alt="{i["caption"]}"></a>' for i in issues)
+    figs = ''.join(
+        f'<figure class="albfig" id="p{i["no"]}"><img src="{i["plate"]}" alt="{i["caption"]}">'
+        f'<div class="c">{i["caption"]}</div>'
+        f'<div class="d"><a href="/{i["slug"]}/">No. {i["no"]} &middot; '
+        f'{datetime.date.fromisoformat(i["date"]).strftime("%B %-d, %Y")} &rarr;</a></div></figure>' for i in issues)
+    albbody = f"""<div class="kicker"><span>The Bentham Bulletin</span><span>{len(issues)} Plates</span></div>
+<div class="hr-thick"></div>
+<div class="the">The</div><h1 class="mast">Family Album</h1>
+<div class="tag">Every Plate I, newest first</div>
+<div class="dbl"><div class="a"></div><div class="b"></div></div>
+<div class="alb">{thumbs}</div>
+<div class="dbl"><div class="a"></div><div class="b"></div></div>
+{figs}
+<div class="nav"><a href="/archive/">&larr; Archive</a><span></span><a href="/">Today's paper &rarr;</a></div>"""
+    open(os.path.join(SITE,'album','index.html'),'w').write(shell('The Bentham Bulletin · The Family Album', albbody, issues[0]['plate']))
     open(os.path.join(SITE,'assets','favicon.svg'),'w').write(
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#f5e9bc"/>'
       '<text x="32" y="46" font-family="Georgia,serif" font-weight="700" font-size="40" text-anchor="middle" fill="#c8302f">B</text></svg>')
