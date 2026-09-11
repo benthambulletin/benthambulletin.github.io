@@ -127,6 +127,11 @@ a{color:inherit}
  .card{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;border-top:1px solid var(--rule);padding-top:.3rem}
  .card .h{min-width:100%}
 }
+.ribbon{display:flex;height:5px;margin:.5rem 0 .9rem;border:1px solid var(--rule)}
+.ribbon span{flex:1}
+.ribbon span:nth-child(1){background:#9b1c28}
+.ribbon span:nth-child(2){background:#fbf5e4}
+.ribbon span:nth-child(3){background:#1b3a6b}
 /* album */
 .alb{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin:.6rem 0}
 .alb a{display:block;position:relative;line-height:0}
@@ -174,13 +179,15 @@ def build(edition):
     os.makedirs(os.path.join(SITE, 'archive'), exist_ok=True)
     open(os.path.join(SITE,'assets','style.css'),'w').write(CSS)
     plate_rel = f'/{slug}/plate.jpg'
-    shutil.copy(edition['plate_path'], os.path.join(outdir,'plate.jpg'))
+    if edition.get('plate_path'): shutil.copy(edition['plate_path'], os.path.join(outdir,'plate.jpg'))
     # manifest
     mpath = os.path.join(SITE,'issues.json')
     issues = json.load(open(mpath)) if os.path.exists(mpath) else []
     issues = [i for i in issues if i['date'] != edition['date']]
-    issues.append({'date':edition['date'],'no':edition['no'],'slug':slug,'plate':plate_rel,
-                   'caption':edition['plate_caption'],'headline':edition['headline']})
+    entry = {'date':edition['date'],'no':edition['no'],'slug':slug,
+             'caption':edition['plate_caption'],'headline':edition['headline']}
+    if edition.get('plate_path'): entry['plate'] = plate_rel
+    issues.append(entry)
     issues.sort(key=lambda i:i['date'], reverse=True)
     json.dump(issues, open(mpath,'w'), indent=1)
     # prev/next nav
@@ -192,8 +199,11 @@ def build(edition):
     nav += '<a href="/album/">Album</a><a href="/archive/">Archive</a>'
     nav += f'<a href="/{newer["slug"]}/">{newer["date"]} &rarr;</a>' if newer else '<a href="/">Today</a>'
     nav += '</div>'
-    pv = hashlib.md5(open(edition['plate_path'],'rb').read()).hexdigest()[:8]
-    body = edition['body_html'].replace('__PLATE__', plate_rel+'?v='+pv) + nav
+    if edition.get('plate_path'):
+        pv = hashlib.md5(open(edition['plate_path'],'rb').read()).hexdigest()[:8]
+        body = edition['body_html'].replace('__PLATE__', plate_rel+'?v='+pv) + nav
+    else:
+        body = edition['body_html'] + nav
     title = f"The Bentham Bulletin · No. {edition['no']} · {d.strftime('%A, %B %-d, %Y')}"
     html = shell(title, body, plate_rel, edition['headline'])
     open(os.path.join(outdir,'index.html'),'w').write(html)
@@ -202,8 +212,10 @@ def build(edition):
     if newest['date'] == edition['date']:
         open(os.path.join(SITE,'index.html'),'w').write(html)
     # archive
+    def _thumb(i):
+        return f'<img src="{i["plate"]}" alt="">' if i.get('plate') else ''
     items = ''.join(
-        f'<li><a href="/{i["slug"]}/"><img src="{i["plate"]}" alt=""></a><div>'
+        f'<li><a href="/{i["slug"]}/">{_thumb(i)}</a><div>'
         f'<div class="no">Vol. I &middot; No. {i["no"]}</div>'
         f'<a href="/{i["slug"]}/"><div class="d">{datetime.date.fromisoformat(i["date"]).strftime("%A, %B %-d, %Y")}</div></a>'
         f'<div class="c">{i["caption"]}</div></div></li>' for i in issues)
@@ -217,13 +229,14 @@ def build(edition):
     open(os.path.join(SITE,'archive','index.html'),'w').write(shell('The Bentham Bulletin · Archive', abody))
     # album
     os.makedirs(os.path.join(SITE,'album'), exist_ok=True)
-    thumbs = ''.join(f'<a href="#p{i["no"]}"><img src="{i["plate"]}" alt="{i["caption"]}"></a>' for i in issues)
+    covers = [i for i in issues if i.get('plate')]
+    thumbs = ''.join(f'<a href="#p{i["no"]}"><img src="{i["plate"]}" alt="{i["caption"]}"></a>' for i in covers)
     figs = ''.join(
         f'<figure class="albfig" id="p{i["no"]}"><img src="{i["plate"]}" alt="{i["caption"]}">'
         f'<div class="c">{i["caption"]}</div>'
         f'<div class="d"><a href="/{i["slug"]}/">No. {i["no"]} &middot; '
-        f'{datetime.date.fromisoformat(i["date"]).strftime("%B %-d, %Y")} &rarr;</a></div></figure>' for i in issues)
-    albbody = f"""<div class="kicker"><span>The Bentham Bulletin</span><span>{len(issues)} Covers</span></div>
+        f'{datetime.date.fromisoformat(i["date"]).strftime("%B %-d, %Y")} &rarr;</a></div></figure>' for i in covers)
+    albbody = f"""<div class="kicker"><span>The Bentham Bulletin</span><span>{len(covers)} Covers</span></div>
 <div class="hr-thick"></div>
 <div class="the">The</div><h1 class="mast">Family Album</h1>
 <div class="tag">Every cover, newest first</div>
@@ -232,7 +245,7 @@ def build(edition):
 <div class="dbl"><div class="a"></div><div class="b"></div></div>
 {figs}
 <div class="nav"><a href="/archive/">&larr; Archive</a><span></span><a href="/">Today's paper &rarr;</a></div>"""
-    open(os.path.join(SITE,'album','index.html'),'w').write(shell('The Bentham Bulletin · The Family Album', albbody, issues[0]['plate']))
+    open(os.path.join(SITE,'album','index.html'),'w').write(shell('The Bentham Bulletin · The Family Album', albbody, covers[0]['plate']))
     open(os.path.join(SITE,'assets','favicon.svg'),'w').write(
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#f5e9bc"/>'
       '<text x="32" y="46" font-family="Georgia,serif" font-weight="700" font-size="40" text-anchor="middle" fill="#c8302f">B</text></svg>')

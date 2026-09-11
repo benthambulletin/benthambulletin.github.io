@@ -119,6 +119,11 @@ a{color:inherit}
  .card{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;border-top:1px solid var(--rule);padding-top:.3rem}
  .card .h{min-width:100%}
 }
+.ribbon{display:flex;height:5px;margin:.5rem 0 .9rem;border:1px solid var(--rule)}
+.ribbon span{flex:1}
+.ribbon span:nth-child(1){background:#9b1c28}
+.ribbon span:nth-child(2){background:#fbf5e4}
+.ribbon span:nth-child(3){background:#1b3a6b}
 /* album */
 .alb{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin:.6rem 0}
 .alb a{display:block;position:relative;line-height:0}
