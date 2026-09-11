@@ -219,10 +219,10 @@ def build(edition):
         f'<div class="c">{i["caption"]}</div>'
         f'<div class="d"><a href="/{i["slug"]}/">No. {i["no"]} &middot; '
         f'{datetime.date.fromisoformat(i["date"]).strftime("%B %-d, %Y")} &rarr;</a></div></figure>' for i in issues)
-    albbody = f"""<div class="kicker"><span>The Bentham Bulletin</span><span>{len(issues)} Plates</span></div>
+    albbody = f"""<div class="kicker"><span>The Bentham Bulletin</span><span>{len(issues)} Covers</span></div>
 <div class="hr-thick"></div>
 <div class="the">The</div><h1 class="mast">Family Album</h1>
-<div class="tag">Every Plate I, newest first</div>
+<div class="tag">Every cover, newest first</div>
 <div class="dbl"><div class="a"></div><div class="b"></div></div>
 <div class="alb">{thumbs}</div>
 <div class="dbl"><div class="a"></div><div class="b"></div></div>
