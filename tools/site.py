@@ -132,6 +132,10 @@ a{color:inherit}
 .ribbon span:nth-child(1){background:#9b1c28}
 .ribbon span:nth-child(2){background:#fbf5e4}
 .ribbon span:nth-child(3){background:#1b3a6b}
+.memorial{margin:.9rem 0 1.1rem;text-align:center}
+.memorial svg{width:100%;display:block;border:1px solid var(--ink)}
+.memorial .mcap{font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-top:.45rem}
+.memorial .msub{font-family:'LOI';font-style:italic;color:var(--soft);font-size:1rem;margin-top:.25rem}
 /* album */
 .alb{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin:.6rem 0}
 .alb a{display:block;position:relative;line-height:0}
