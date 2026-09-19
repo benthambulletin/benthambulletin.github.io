@@ -29,7 +29,11 @@ if ed:
     if prev and prev['date'] in s: fails.append(f'STALE DATE {prev["date"]} in body')
     # 5. recycled text from yesterday (long identical blocks)
     if prev:
-        def blocks(x): return set(b.strip() for b in re.findall(r'<p>(.*?)</p>',x,flags=re.S) if len(b)>120)
+        def blocks(x):
+            out=set()
+            for pat in (r'<p>(.*?)</p>', r'<div class="line"[^>]*>(.*?)</div>'):
+                out |= set(b.strip() for b in re.findall(pat,x,flags=re.S) if len(b)>120)
+            return out
         dupes=blocks(s)&blocks(prev['body_html'])
         for dpe in list(dupes)[:6]: warns.append('RECYCLED: '+re.sub('<[^>]+>','',dpe)[:70])
     # 6. duplicate headlines inside today's paper
