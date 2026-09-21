@@ -139,6 +139,8 @@ a{color:inherit}
 .memorial .msub{font-family:'LOI';font-style:italic;color:var(--soft);font-size:1rem;margin-top:.25rem}
 .board{margin:.9rem 0 1.1rem;text-align:center}
 .board svg{width:100%;display:block;border:1px solid var(--ink)}
+.alert{background:var(--red);color:#fff;font-family:'AR';font-weight:700;font-size:.8rem;letter-spacing:.04em;padding:.55rem .75rem;margin:0 0 1rem;line-height:1.4}
+.alert b{color:#fff}
 /* album */
 .alb{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin:.6rem 0}
 .alb a{display:block;position:relative;line-height:0}
