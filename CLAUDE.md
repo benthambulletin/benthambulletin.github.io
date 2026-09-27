@@ -63,6 +63,8 @@ The build starts from yesterday's edition, which makes **recycling the default a
 
 **What it cannot check, so read it yourself, every slice:** whether a section is true, whether it is new, whether two sections are telling the same story, and whether a sentence is sourced. Render at 390px and read all five slices before pushing — not skim, read. The gate passing means nothing is structurally broken. It does not mean the paper is good.
 
+**Independent fact-check before every push.** After qc.py is clear, spawn a fresh sub-agent (Agent tool) that has not seen the research. Give it the rendered edition text and the sourcing sheet (every claim with its URL). Its job: list every sentence that has no source, contradicts its source, uses stale data, or overstates it (e.g. "up for Hochul" when the lead narrowed). Fix everything it lists, then push. Also check: Marquee has three real items or says less, and any table labeled "High" uses observed highs, not forecasts (label forecasts "Fcst high").
+
 Two failures that have actually shipped: a CSS class name that collided with `.press` and blew the type to 37px, and a swapped plate the phone would not refresh. Two more were caught only by eye: an entire section deleted by a careless regex, and two invented Marquee items.
 
 **Never delete by regex.** Section removal means rebuilding the section list explicitly. A greedy match ate the Weather Glass and On This Day in one edit and the gate did not exist yet to catch it.
