@@ -14,6 +14,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - **Weather answer:** if Garret asks about rain or storms, answer in the reply as well as in the paper.
 - **No analytics / no view counter.** Decided.
 - **No AI-generated images of real people** (Josh Allen, family). Use supplied photos, credited.
+- **Barograph (from Sept 27):** read `data/pressure-summary.json` for the trace and trend; pull migraine marks from the Tally form obWNYP every morning; the Family Today ask box links to https://tally.so/r/obWNYP. Details in CLAUDE.md.
 
 ## Dated
 
