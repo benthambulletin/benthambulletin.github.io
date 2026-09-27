@@ -27,6 +27,12 @@ When a photo arrives in chat **before 6:59 a.m.**, crop it and save it to `spool
 
 Photos Garret supplies from other sources (e.g. ESPN) get credited in the caption. Never generate images of real people.
 
+## Lessons from the runs
+
+- **Sep 27:** the 6:59 run did not publish; the 7:20 check built No. 95 by hand. That paper then missed Friday night's North Tonawanda car-show crash (8 hurt) because local research only looked at Saturday. **Home Wire looks back 48 hours**, and North Tonawanda/Tonawanda/Niagara County get searched by name on WKBW, WGRZ and WIVB every morning.
+- **Never state a time or a number you did not look up.** Sep 27 the report to Garret said "published at 7:50" (it was 7:25) and the Ledger draft said "most were back by morning" with no source. Check `git log` for times; cut any clause without a source.
+- **Before pushing, check origin/main for today's edition.** Two runs (scheduled and the 7:20 check) can overlap; the second one stops.
+
 ## The freshness rule (this is the one that keeps breaking)
 
 The build starts from yesterday's edition, which makes **recycling the default and freshness the exception**. Every failure Garret has had to catch by hand — the Emmys running three days, North Tonawanda in the Home Wire three days, the Ledger repeating the section above it, a festival that had not started — is that one flaw. So:
