@@ -1,33 +1,21 @@
 {
- "generated_utc": "2026-09-28T01:32Z",
+ "generated_utc": "2026-09-28T04:35Z",
  "stations": {
   "KIAG": {
    "town": "North Tonawanda",
-   "latest_time_utc": "2026-09-28T00:53Z",
-   "latest_mb": 1015.0,
+   "latest_time_utc": "2026-09-28T03:53Z",
+   "latest_mb": 1014.9,
    "latest_inhg": 29.97,
    "altim_inhg": 29.97,
-   "temp_c": 16.1,
-   "d3h_mb": 1.2,
+   "temp_c": 13.9,
+   "d3h_mb": -0.1,
    "d6h_mb": 1.1,
-   "d12h_mb": -0.8,
-   "d24h_mb": -3.9,
-   "trend": "rising",
+   "d12h_mb": -0.3,
+   "d24h_mb": -3.0,
+   "trend": "falling, slowly",
    "week_min_mb": 1013.5,
    "week_max_mb": 1033.4,
    "hourly_7d": [
-    [
-     "2026-09-21T00:53Z",
-     1017.9
-    ],
-    [
-     "2026-09-21T01:53Z",
-     1018.6
-    ],
-    [
-     "2026-09-21T02:53Z",
-     1018.9
-    ],
     [
      "2026-09-21T03:53Z",
      1019.1
@@ -727,21 +715,37 @@
     [
      "2026-09-28T00:53Z",
      1015.0
+    ],
+    [
+     "2026-09-28T01:53Z",
+     1015.1
+    ],
+    [
+     "2026-09-28T02:53Z",
+     1015.0
+    ],
+    [
+     "2026-09-28T03:19Z",
+     1014.9
+    ],
+    [
+     "2026-09-28T03:53Z",
+     1014.9
     ]
    ]
   },
   "KDKK": {
    "town": "Dunkirk",
-   "latest_time_utc": "2026-09-28T00:53Z",
-   "latest_mb": 1014.9,
-   "latest_inhg": 29.97,
-   "altim_inhg": 29.97,
-   "temp_c": 15.6,
-   "d3h_mb": 0.9,
-   "d6h_mb": 0.7,
-   "d12h_mb": -0.8,
-   "d24h_mb": -3.9,
-   "trend": "rising",
+   "latest_time_utc": "2026-09-28T03:53Z",
+   "latest_mb": 1014.4,
+   "latest_inhg": 29.96,
+   "altim_inhg": 29.96,
+   "temp_c": 14.4,
+   "d3h_mb": -0.5,
+   "d6h_mb": 0.4,
+   "d12h_mb": -0.7,
+   "d24h_mb": -3.5,
+   "trend": "falling, slowly",
    "week_min_mb": 1013.8,
    "week_max_mb": 1032.5,
    "hourly_7d": [
@@ -1524,21 +1528,33 @@
     [
      "2026-09-28T00:53Z",
      1014.9
+    ],
+    [
+     "2026-09-28T01:53Z",
+     1014.7
+    ],
+    [
+     "2026-09-28T02:53Z",
+     1014.6
+    ],
+    [
+     "2026-09-28T03:53Z",
+     1014.4
     ]
    ]
   },
   "KROC": {
    "town": "Scottsville",
-   "latest_time_utc": "2026-09-28T00:54Z",
-   "latest_mb": 1015.3,
-   "latest_inhg": 29.98,
-   "altim_inhg": 29.97,
+   "latest_time_utc": "2026-09-28T03:54Z",
+   "latest_mb": 1014.7,
+   "latest_inhg": 29.96,
+   "altim_inhg": 29.96,
    "temp_c": 13.9,
-   "d3h_mb": 0.4,
-   "d6h_mb": 1.5,
-   "d12h_mb": 0.7,
-   "d24h_mb": -3.4,
-   "trend": "falling, slowly",
+   "d3h_mb": -0.6,
+   "d6h_mb": -0.2,
+   "d12h_mb": 0.3,
+   "d24h_mb": -2.8,
+   "trend": "falling",
    "week_min_mb": 1013.8,
    "week_max_mb": 1034.6,
    "hourly_7d": [
@@ -2149,6 +2165,18 @@
     [
      "2026-09-28T00:54Z",
      1015.3
+    ],
+    [
+     "2026-09-28T01:54Z",
+     1014.9
+    ],
+    [
+     "2026-09-28T02:54Z",
+     1014.9
+    ],
+    [
+     "2026-09-28T03:54Z",
+     1014.7
     ]
    ]
   }
