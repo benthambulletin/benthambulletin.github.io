@@ -106,8 +106,20 @@ All three are the same steps; they differ only in what has finished. The Sunday 
    and the Ticker carry the facts; the column is a voice, not a log.
 5. `python3 build.py`, commit (`Pool: Week N update` / `Pool: Week N final`), push, confirm live.
 6. UPDATE runs send nothing unless something failed. SCORE sends Garret one short message: winner
-   (and payout only if `buyIn` > 0), one line per player with record, entrant count, and the standings
-   link. While `buyIn` is 0 never mention money, pots, Venmo or collecting.
+   (and payout only if `buyIn` > 0), one line per player with record, entrant count, the standings
+   link, and the mugshot reminder (see The Mugshot). While `buyIn` is 0 never mention money, pots, Venmo or collecting.
+
+## The Mugshot
+The week's winner picks one loser, and that person's face runs on the board the following week in a
+framed box under the picks button. The winner sends Garret the photo; Garret sends it here in chat.
+When it arrives: crop it square around the face (PIL, `ImageOps.exif_transpose`, ~600px), save as
+`faces/w<N>.jpg` where N is the week it will show, and set `weeks{N}.face =
+{"photo": "/pool/faces/w<N>.jpg", "who": <loser>, "by": <winner>, "week": <week won>, "line": ""}`
+(`line` is optional — one dry sentence if Garret gives one). Rebuild and push. `face` is null or absent
+when there is none; the box does not render. The SCORE message to Garret ends with
+"<winner> picks the mugshot for next week — send me the photo." Never generate or alter a face;
+only crop what Garret sends. If the photo isn't in by the Tuesday new-week run, the week runs without
+one and the box stays empty; it can be added any day after.
 
 ## Run: ROLL CALL (Thursday evening)
 Fetch submissions, list who has submitted for the current week (normalized names) and the entry count
