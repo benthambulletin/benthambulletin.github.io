@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-29T10:48Z",
+ "generated_utc": "2026-09-29T11:46Z",
  "towns": {
   "North Tonawanda": {
    "issued": "2026-09-29T07:57:33+00:00",
@@ -87,7 +87,7 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-09-29T10:30:00+00:00",
+    "time": "2026-09-29T11:35:00+00:00",
     "text": "Cloudy",
     "temp_f": 61
    }
@@ -178,9 +178,9 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-09-29T10:30:00+00:00",
+    "time": "2026-09-29T11:35:00+00:00",
     "text": "Cloudy",
-    "temp_f": 61
+    "temp_f": 63
    }
   },
   "Scottsville": {
@@ -269,9 +269,9 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-09-29T10:30:00+00:00",
+    "time": "2026-09-29T11:35:00+00:00",
     "text": "Cloudy",
-    "temp_f": 57
+    "temp_f": 59
    }
   }
  },
