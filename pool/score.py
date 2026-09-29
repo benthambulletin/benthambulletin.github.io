@@ -196,6 +196,9 @@ def main():
     if house_p and sum(1 for g in games if g.get("winner")):
         for p in real:
             if p["correct"] < house_p["correct"]: award(p, "coin", f"behind Claude, {p['correct']}–{house_p['correct']}")
+    # dead: mathematically out of the week
+    for p in real:
+        if p["state"] == "out": award(p, "dead", "mathematically out")
     # porta potty: last place this week, once games have been decided
     if len(real) > 2 and sum(1 for g in games if g.get("winner")):
         worst = min(p["correct"] for p in real)
