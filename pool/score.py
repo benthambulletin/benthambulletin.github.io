@@ -179,7 +179,7 @@ def main():
         if n: b["n"] = n
         p["badges"].append(b)
     byname = {p["name"]: p for p in players}
-    # lone wolf, homer tax, traitor
+    # lone wolf, homer tax
     for i, g in enumerate(games):
         w = g.get("winner")
         if not w or w == "TIE": continue
@@ -191,33 +191,17 @@ def main():
                 for n in g["hits"] + g["misses"]:
                     if n not in real_names: continue
                     pk = byname[n]["sheet"].get(str(i))
-                    if pk == team and w != team: award(byname[n], "homer", f"rode the {team} down")
-                    if pk != team and w == team: award(byname[n], "traitor", f"picked against the {team}, who won")
+                    if pk == team and w != team: award(byname[n], "homer", f"took the {team}, who lost")
     # the coin: currently behind Claude
     if house_p and sum(1 for g in games if g.get("winner")):
         for p in real:
             if p["correct"] < house_p["correct"]: award(p, "coin", f"behind Claude, {p['correct']}–{house_p['correct']}")
-    # dead: out of it
-    for p in real:
-        if p["state"] == "out": award(p, "dead", "mathematically out")
-    # perfect window: swept a kickoff slot of 3+ games, all decided
-    from collections import defaultdict
-    slots = defaultdict(list)
-    for i, g in enumerate(games): slots[g["kickoff"]].append(i)
-    for ko, idxs in slots.items():
-        if len(idxs) < 3 or not all(games[i].get("winner") for i in idxs): continue
-        label = games[idxs[0]].get("when", "")
-        for p in real:
-            if all(p["sheet"].get(str(i)) == games[i]["winner"] for i in idxs):
-                award(p, "sweep", f"swept the {label} games")
-    # early bird / buzzer beater
-    if real:
-        first = min(real, key=lambda p: p["filedAt"])
-        award(first, "early", "first sheet in")
-        tnf = P(games[0]["kickoff"])
-        for p in real:
-            dt = (tnf - P(p["filedAt"])).total_seconds()
-            if 0 <= dt <= 3600: award(p, "buzzer", "filed inside the last hour")
+    # porta potty: last place this week, once games have been decided
+    if len(real) > 2 and sum(1 for g in games if g.get("winner")):
+        worst = min(p["correct"] for p in real)
+        if worst < max(p["correct"] for p in real):
+            for p in real:
+                if p["correct"] == worst: award(p, "cellar", "last place this week")
     wk["players"] = players
     wk["trash"] = trash
     wk["pot"] = season["buyIn"] * len(real)
@@ -239,12 +223,15 @@ def main():
                 for p in players: p.pop("_d", None)
             wk["weekWinners"] = [p["name"] for p in lead]
             wk["weekPayout"] = wk["pot"] / len(lead)
-            for p in lead: award(p, "backdoor" if wk["tbUsed"] else "crown", "won the week" + (" on the tiebreaker" if wk["tbUsed"] else ""))
-            last = real[-1]
-            if any(t["from"] == last["name"] for t in trash) and len(real) > 2: award(last, "bigmouth", "talked trash, finished last")
+            for p in lead: award(p, "crown", "won the week" + (" on the tiebreaker" if wk["tbUsed"] else ""))
         wk["status"] = "final"
     else:
         wk["status"] = "live" if decided else "pre"
+        if decided and real:
+            best = max(p["correct"] for p in real)
+            if best > 0:
+                for p in real:
+                    if p["correct"] == best: award(p, "crown", "leading the week")
 
     # ticker: one line whenever the decided count changes (or the week finalizes)
     wk.setdefault("updates", [])

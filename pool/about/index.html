@@ -36,8 +36,8 @@ p b{font-weight:600}
 .ki .bd{font-size:1.3rem;line-height:1.2;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
 .ki b{font-family:'AR';font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;display:block;color:var(--ink)}
 .ki span{color:var(--soft)}
-.sub{font-family:'AR';font-weight:700;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:1.1rem 0 .5rem;padding-bottom:.2rem;border-bottom:1px solid var(--rule)}
-.sub:first-child{margin-top:0}
+
+
 .cta{display:block;margin:1.4rem 0 0;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-family:'AR';font-weight:800;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;padding:.85rem;border-radius:3px}
 .colo{margin-top:2rem;text-align:center;font-family:'AR';font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);line-height:2}
 .colo a{color:var(--teal);text-decoration:none}
@@ -69,39 +69,19 @@ p b{font-weight:600}
   <p><b>Tap a name</b> to see their picks: green is right, struck through is wrong, plain is still playing.</p>
 
   <div class="sec" id="badges"><span class="o">❦</span>The Badges<span class="o">❦</span></div>
-  <p>Badges show up next to names on the board as the week plays out. A small number on a badge is how many times. Tap a name and it spells out what each one is for.</p>
-  <div class="sub">Won and lost this week</div>
+  <p>Six of them. They show up next to names on the board as the week plays out, and tapping a name spells out why. A small number on a badge is how many times.</p>
   <div class="key">
-    <div class="ki"><span class="bd">👑</span><div><b>The Crown</b><span>Won the week.</span></div></div>
-    <div class="ki"><span class="bd">🚪</span><div><b>Backdoor</b><span>Won the week on the tiebreaker.</span></div></div>
-    <div class="ki"><span class="bd">🧹</span><div><b>Clean Sweep</b><span>Got every game in a kickoff window right.</span></div></div>
-    <div class="ki"><span class="bd">🐺</span><div><b>Lone Wolf</b><span>Only one in the room to call a game.</span></div></div>
-    <div class="ki"><span class="bd">☠️</span><div><b>Dead</b><span>Mathematically out of the week.</span></div></div>
-    <div class="ki"><span class="bd">🪙</span><div><b>The Coin</b><span>Currently behind Claude, who picks by coin flip.</span></div></div>
-  </div>
-  <div class="sub">Loyalty</div>
-  <div class="key">
-    <div class="ki"><span class="bd">🦬</span><div><b>Homer Tax</b><span>Picked the Bills or Jets. They lost.</span></div></div>
-    <div class="ki"><span class="bd">🐍</span><div><b>Traitor</b><span>Picked against the Bills or Jets. They won.</span></div></div>
-  </div>
-  <div class="sub">Timing and mouth</div>
-  <div class="key">
-    <div class="ki"><span class="bd">🐦</span><div><b>Early Bird</b><span>First sheet in this week.</span></div></div>
-    <div class="ki"><span class="bd">🚨</span><div><b>Buzzer Beater</b><span>Filed inside the last hour before Thursday kickoff.</span></div></div>
-    <div class="ki"><span class="bd">📣</span><div><b>Big Mouth</b><span>Talked trash. Finished last.</span></div></div>
-    <div class="ki"><span class="bd">🔮</span><div><b>Prophet</b><span>Trash talk that came true. Commissioner's call.</span></div></div>
-  </div>
-  <div class="sub">Season long</div>
-  <div class="key">
-    <div class="ki"><span class="bd">🔥</span><div><b>On Fire</b><span>Three or more correct picks in a row, running across weeks.</span></div></div>
-    <div class="ki"><span class="bd">🛡️</span><div><b>Iron Man</b><span>Never missed a week.</span></div></div>
-    <div class="ki"><span class="bd">🥈</span><div><b>Bridesmaid</b><span>Most second-place finishes without a win.</span></div></div>
-    <div class="ki"><span class="bd">💩</span><div><b>Porta Potty</b><span>Most last-place finishes this season. Somebody has to live there.</span></div></div>
+    <div class="ki"><span class="bd">👑</span><div><b>The Crown</b><span>Leading the week. Whoever's wearing it Monday night wins.</span></div></div>
+    <div class="ki"><span class="bd">💩</span><div><b>Porta Potty</b><span>Last place. Somebody has to live there.</span></div></div>
+    <div class="ki"><span class="bd">🐺</span><div><b>Lone Wolf</b><span>You were the only one in the pool who picked a game right. Everyone else had the other team.</span></div></div>
+    <div class="ki"><span class="bd">🦬</span><div><b>Homer Tax</b><span>You picked the Bills or the Jets because you love them, and they lost. Loyalty costs.</span></div></div>
+    <div class="ki"><span class="bd">🪙</span><div><b>The Coin</b><span>You're losing to Claude, and Claude picks by coin flip.</span></div></div>
+    <div class="ki"><span class="bd">🔥</span><div><b>On Fire</b><span>Three or more correct picks in a row, carried over from week to week.</span></div></div>
   </div>
 
   <div class="sec t" id="claude"><span class="o">❦</span>Who Is Claude<span class="o">❦</span></div>
   <p>Claude is the house entry: an AI that runs the board, scores the games, and writes the column. It also plays, and its picks are a coin flip. Every week the coin is seeded from the week number, so nobody can tune it, and its picks are sealed like everyone else's.</p>
-  <p>Claude can't win the week and doesn't count toward anyone's clinched-or-out math. It's on the board for one reason: if you finish behind a coin flip, you get the 🪙 and everyone gets to know.</p>
+  <p>Claude can't win the week and doesn't count toward anyone's clinched-or-out math. It's on the board for one reason: if you're losing to a coin flip, you get the 🪙 and everyone gets to know.</p>
 
   <a class="cta" href="https://tally.so/r/RGOakJ">Make your picks</a>
 
