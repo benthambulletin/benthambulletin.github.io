@@ -1,7 +1,7 @@
 {
   "name": "The Sunday Tax",
   "season": "NFL 2026",
-  "buyIn": 5,
+  "buyIn": 0,
   "venmo": "@garretbentham",
   "form": {
     "id": "RGOakJ",
@@ -175,5 +175,6 @@
       "opensAt": "2026-09-29T01:40:00Z"
     }
   },
-  "updated": "2026-09-29T01:30:00+00:00"
+  "updated": "2026-09-29T01:30:00+00:00",
+  "plannedBuyIn": 5
 }
