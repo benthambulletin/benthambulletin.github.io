@@ -288,6 +288,20 @@
           "state": "alive"
         },
         {
+          "name": "Leah",
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 52,
+          "sheet": {},
+          "filedAt": "2026-09-29T22:01:35+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
+        },
+        {
           "name": "Melissa",
           "correct": 0,
           "missed": 0,
@@ -362,7 +376,7 @@
           "text": "Y'all suck"
         }
       ],
-      "column": "Eight sheets in by Tuesday evening. Garret filed first, before 8:30 in the morning, then Thom and Nate V around eleven, Ariel and Derek at noon, Tom and Melissa over lunch, and Kaylani and Luka as a tag team at 4:43. Yes, a Thom and a Tom — the board will keep them apart.\n\nThe trash talk is ahead of the football. Derek accused Kaylani of outsourcing her picks to a robot; she answered with a chicken dinner. Ariel says Derek goes 0 for 16.\n\nPicks stay sealed until each game kicks off. Thursday night is the first look.",
+      "column": "Nine sheets in by Tuesday evening. Garret filed first, before 8:30 in the morning, then Thom and Nate V around eleven, Ariel and Derek at noon, Tom and Melissa over lunch, Kaylani and Luka as a tag team at 4:43, and Leah just after six. Yes, a Thom and a Tom — the board keeps them apart.\n\nThe trash talk is ahead of the football. Derek says Kaylani outsourced her picks to a robot; she answered with a chicken dinner. Ariel says Derek goes 0 for 16.\n\nPicks stay sealed until kickoff. Thursday night is the first look.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 0,
@@ -374,6 +388,6 @@
       "outAtLastRun": []
     }
   },
-  "updated": "2026-09-29T21:09:28.444146+00:00",
+  "updated": "2026-09-29T22:09:36.359376+00:00",
   "plannedBuyIn": 5
 }
