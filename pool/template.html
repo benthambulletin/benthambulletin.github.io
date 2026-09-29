@@ -186,7 +186,14 @@ $("stamp").textContent=nxt;
   var t=Date.parse(D.updated), mins=isNaN(t)?null:Math.max(0,Math.round((Date.now()-t)/60000));
   var ago=mins==null?"":(mins<1?"just now":mins<60?mins+" min ago":mins<120?"1 hr ago":Math.round(mins/60)+" hrs ago");
   var cls=mins==null?"":(mins<=70?"":mins<=180?"stale":"old");
-  var nextTxt=D.status==="final"?"Final":"Next refresh at :07";
+  var nextTxt="Final";
+  if(D.status!=="final"){
+    var n=new Date(); n.setSeconds(0,0); n.setMinutes(7);
+    if(n<=new Date()) n.setHours(n.getHours()+1);
+    var hr=n.getHours();
+    if(hr<8||hr>23){ n.setHours(8); if(hr>23) n.setDate(n.getDate()+1); }
+    nextTxt="Next refresh "+n.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
+  }
   $("fresh").innerHTML='<span><span class="dot '+cls+'"></span>Updated <b>'+esc(fmtWhen(D.updated))+'</b>'+(ago?' · '+esc(ago):'')+'</span><span>'+nextTxt+'</span>';
 })();
 
