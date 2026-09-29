@@ -15,6 +15,7 @@ Rules (fixed, do not reinterpret):
 - Blank tiebreaker = worst possible guess.
 - Submissions dated before the week's opensAt are ignored (they were for an earlier slate).
 - Names: trimmed, case-insensitive, then mapped through season.aliases (lowercase key -> display name).
+- Picks are only written to season.json for games that have kicked off. Future picks never leave this script.
 """
 import json, sys
 from datetime import datetime, timezone
@@ -23,6 +24,7 @@ HERE = __import__("os").path.dirname(__import__("os").path.abspath(__file__))
 SEASON = f"{HERE}/data/season.json"
 
 def P(s): return datetime.fromisoformat(s.replace("Z", "+00:00"))
+def now(): return datetime.now(timezone.utc)
 
 def main():
     if len(sys.argv) < 2: sys.exit(__doc__)
@@ -35,19 +37,23 @@ def main():
     if len(games) != len(q["games"]):
         sys.exit(f"season.json has {len(games)} games but the form has {len(q['games'])} game questions")
     aliases = {k.lower(): v for k, v in season.get("aliases", {}).items()}
+    T = now()
+
+    # what the page showed before this run, for movement arrows and the ticker
+    prev_rank = {p["name"]: p.get("rank") for p in wk.get("players", [])}
+    prev_decided = wk.get("decidedAtLastRun", 0)   # winners get written before we run, so remember our own count
 
     # group submissions by normalized name, oldest first
     by = {}
-    for s in raw["data"]["submissions"] if "data" in raw else raw["submissions"]:
+    subs = raw["data"]["submissions"] if "data" in raw else raw["submissions"]
+    for s in subs:
         if not s.get("isCompleted", True): continue
         if wk.get("opensAt") and P(s["submittedAt"]) < P(wk["opensAt"]): continue  # earlier week's sheet
         resp = {r["questionId"]: r["answer"] for r in s["responses"]}
         rawname = str(resp.get(q["name"], "")).strip()
         if not rawname: continue
-        key = rawname.lower()
-        by.setdefault(key, []).append({"at": P(s["submittedAt"]), "r": resp, "raw": rawname})
+        by.setdefault(rawname.lower(), []).append({"at": P(s["submittedAt"]), "r": resp, "raw": rawname})
     for lst in by.values(): lst.sort(key=lambda x: x["at"])
-    # one display name per person: the alias if set, else how they spelled it most recently
     by = {aliases.get(k, lst[-1]["raw"]): lst for k, lst in by.items()}
 
     def pick_for(lst, qid, kickoff):
@@ -59,36 +65,84 @@ def main():
 
     mnf = games[-1]
     players, trash = [], []
-    for g in games: g["hits"], g["misses"] = [], []
+    for g in games:
+        g["hits"], g["misses"] = [], []
+        started = P(g["kickoff"]) <= T
+        g["status"] = "final" if g.get("winner") else ("live" if started else "sealed")
+        g["sides"] = {g["away"]: [], g["home"]: []} if started else None
+
     for name, lst in by.items():
-        correct = missed = 0
+        correct = missed = void = 0
+        remaining = 0
+        sheet = {}   # only games that have kicked off
         for i, g in enumerate(games):
-            pick, void = pick_for(lst, q["games"][i], g["kickoff"])
+            started = P(g["kickoff"]) <= T
+            pick, isvoid = pick_for(lst, q["games"][i], g["kickoff"])
             w = g.get("winner")
-            if void or not pick or not w or w == "TIE": continue
+            if started:
+                if isvoid or not pick:
+                    void += 1; sheet[i] = None
+                else:
+                    sheet[i] = pick
+                    if pick in g["sides"]: g["sides"][pick].append(name)
+            if not w:
+                # still to be decided; counts toward max unless void
+                if not (started and (isvoid or not pick)): remaining += 1
+                continue
+            if w == "TIE" or isvoid or not pick: continue
             if pick == w: correct += 1; g["hits"].append(name)
             else: missed += 1; g["misses"].append(name)
         tb, _ = pick_for(lst, q["tiebreak"], mnf["kickoff"])
         try: tb = int(tb) if tb not in (None, "") else None
         except Exception: tb = None
-        players.append({"name": name, "correct": correct, "missed": missed, "tb": tb})
+        players.append({"name": name, "correct": correct, "missed": missed, "void": void,
+                        "remaining": remaining, "max": correct + remaining, "tb": tb,
+                        "sheet": {str(k): v for k, v in sheet.items()},
+                        "filedAt": lst[-1]["at"].isoformat()})
         t = lst[-1]["r"].get(q["trash"])
         if t and str(t).strip(): trash.append({"from": name, "text": str(t).strip()})
 
-    wk["players"] = sorted(players, key=lambda p: (-p["correct"], p["missed"], p["name"]))
+    # ranks (ties share a rank), movement, alive/out/clinched
+    players.sort(key=lambda p: (-p["correct"], p["missed"], p["name"]))
+    rank = 0
+    for i, p in enumerate(players):
+        if i == 0 or (p["correct"], p["missed"]) != (players[i-1]["correct"], players[i-1]["missed"]): rank = i + 1
+        p["rank"] = rank
+        pr = prev_rank.get(p["name"])
+        p["delta"] = (pr - rank) if pr else 0
+    if players:
+        lead = players[0]["correct"]
+        best_other_max = lambda me: max([o["max"] for o in players if o is not me] or [0])
+        for p in players:
+            if p["correct"] > best_other_max(p): p["state"] = "clinched"
+            elif p["max"] < lead: p["state"] = "out"
+            else: p["state"] = "alive"
+
+    # what decides it: remaining games where the contenders split
+    decides = []
+    contenders = [p for p in players if p.get("state") != "out"]
+    for i, g in enumerate(games):
+        if g.get("winner") or not g["sides"]: continue   # sealed games say nothing
+        a = [n for n in g["sides"][g["away"]] if n in {c["name"] for c in contenders}]
+        h = [n for n in g["sides"][g["home"]] if n in {c["name"] for c in contenders}]
+        if a and h: decides.append({"game": i, "away": a, "home": h})
+    decides.sort(key=lambda d: -min(len(d["away"]), len(d["home"])))
+
+    wk["players"] = players
     wk["trash"] = trash
     wk["pot"] = season["buyIn"] * len(players)
+    wk["decides"] = decides[:4]
     wk["weekWinners"], wk["weekPayout"], wk["tbUsed"] = [], 0, False
 
-    scored = sum(1 for g in games if g.get("winner"))
+    decided = sum(1 for g in games if g.get("winner"))
     if final:
-        if scored < len(games): sys.exit(f"--final but only {scored}/{len(games)} games have a winner")
+        if decided < len(games): sys.exit(f"--final but only {decided}/{len(games)} games have a winner")
         if players:
             best = max(p["correct"] for p in players)
             lead = [p for p in players if p["correct"] == best]
             if len(lead) > 1 and wk.get("tiebreakTotal") is not None:
-                T = wk["tiebreakTotal"]
-                for p in lead: p["_d"] = abs(p["tb"] - T) if p["tb"] is not None else 10**9
+                Tt = wk["tiebreakTotal"]
+                for p in lead: p["_d"] = abs(p["tb"] - Tt) if p["tb"] is not None else 10**9
                 m = min(p["_d"] for p in lead)
                 near = [p for p in lead if p["_d"] == m]
                 if len(near) < len(lead): lead, wk["tbUsed"] = near, True
@@ -97,14 +151,39 @@ def main():
             wk["weekPayout"] = wk["pot"] / len(lead)
         wk["status"] = "final"
     else:
-        wk["status"] = "live" if scored else "pre"
+        wk["status"] = "live" if decided else "pre"
 
-    season["updated"] = datetime.now(timezone.utc).isoformat()
+    # ticker: one line whenever the decided count changes (or the week finalizes)
+    wk.setdefault("updates", [])
+    stamp = T.isoformat()
+    if players and (decided != prev_decided or final):
+        top = [p for p in players if p["correct"] == players[0]["correct"]]
+        rec = f"{top[0]['correct']}–{top[0]['missed']}"
+        if final:
+            w = wk['weekWinners']
+            note = f"Final: {' & '.join(w)} take{'s' if len(w)==1 else ''} Week {season['currentWeek']}" + (" on the tiebreaker." if wk["tbUsed"] else ".")
+        else:
+            if len(top) == 1: lead_txt = f"{top[0]['name']} leads at {rec}"
+            elif len(top) == 2: lead_txt = f"{top[0]['name']} and {top[1]['name']} tied at {rec}"
+            else: lead_txt = f"{len(top)} tied at {rec}"
+            note = f"{decided} of {len(games)} final. {lead_txt}."
+            already_out = set(wk.get("outAtLastRun", []))
+            new_out = [p["name"] for p in players if p["state"] == "out" and p["name"] not in already_out]
+            if new_out: note += f" Out of it: {', '.join(new_out)}."
+            clinched = [p["name"] for p in players if p["state"] == "clinched"]
+            if clinched: note += f" {clinched[0]} has clinched."
+        wk["updates"].append({"at": stamp, "note": note})
+        wk["updates"] = wk["updates"][-12:]
+
+    wk["decidedAtLastRun"] = decided
+    wk["outAtLastRun"] = [p["name"] for p in players if p.get("state") == "out"]
+    season["updated"] = stamp
     json.dump(season, open(SEASON, "w"), indent=2, ensure_ascii=False)
 
-    print(f"Week {season['currentWeek']} · {wk['status']} · {scored}/{len(games)} games decided · {len(players)} entries · pot ${wk['pot']}")
-    for p in wk["players"]: print(f"  {p['name']:<14}{p['correct']:>2}-{p['missed']:<3} tb={p['tb']}")
-    if final: print("WINNER:", " & ".join(wk["weekWinners"]), f"${wk['weekPayout']:g}", "(tiebreaker)" if wk["tbUsed"] else "")
+    print(f"Week {season['currentWeek']} · {wk['status']} · {decided}/{len(games)} decided · {len(players)} entries")
+    for p in players: print(f"  {p['rank']:>2} {p['name']:<14}{p['correct']:>2}-{p['missed']:<3} left={p['remaining']:<2} max={p['max']:<2} {p['state']:<8} tb={p['tb']}")
+    if decides: print("DECIDES:", *[f"{games[d['game']]['away']}@{games[d['game']]['home']}: {d['away']} vs {d['home']}" for d in decides], sep="\n  ")
+    if final: print("WINNER:", " & ".join(wk["weekWinners"]), f"${wk['weekPayout']:g}" if season["buyIn"] else "", "(tiebreaker)" if wk["tbUsed"] else "")
     if trash: print("TRASH:", *[f"{t['from']}: {t['text']}" for t in trash], sep="\n  ")
 
 if __name__ == "__main__": main()

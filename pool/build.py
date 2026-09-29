@@ -25,6 +25,7 @@ page = {
     "players": wk.get("players", []), "weekWinners": wk.get("weekWinners", []),
     "weekPayout": wk.get("weekPayout", 0), "season_table": list(tot.values()),
     "trash": wk.get("trash", []), "column": wk.get("column", ""),
+    "updates": wk.get("updates", []), "decides": wk.get("decides", []),
 }
 tpl = open(f"{HERE}/template.html").read()
 out = tpl.replace("/*DATA*/", json.dumps(page, ensure_ascii=False))
