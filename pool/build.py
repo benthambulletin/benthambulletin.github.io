@@ -56,7 +56,7 @@ page = {
     "weekPayout": wk.get("weekPayout", 0), "season_table": list(tot.values()),
     "trash": wk.get("trash", []), "column": wk.get("column", ""),
     "updates": wk.get("updates", []), "decides": wk.get("decides", []),
-    "stats": wk.get("stats"), "homer": homer, "house": season.get("house"),
+    "stats": wk.get("stats"), "face": wk.get("face"), "homer": homer, "house": season.get("house"),
     "seasonBadges": season_badges, "streak": streak, "awards": wk.get("awards", []),
 }
 tpl = open(f"{HERE}/template.html").read()

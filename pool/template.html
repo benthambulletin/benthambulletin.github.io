@@ -44,6 +44,13 @@ h1{margin:.6rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size
 .fresh .dot{display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:var(--teal);margin-right:.35rem;vertical-align:.02em}
 .fresh .dot.stale{background:var(--gold)}.fresh .dot.old{background:var(--red)}
 
+/* the mugshot */
+.mug{margin:1.2rem 0 0;border:3px double var(--ink);padding:.7rem .8rem .6rem;display:grid;grid-template-columns:6.2rem 1fr;gap:0 .9rem;align-items:center;background:var(--wash)}
+.mug img{width:6.2rem;height:6.2rem;object-fit:cover;border:1px solid var(--ink);display:block;transform:rotate(-2deg);box-shadow:2px 2px 0 var(--rule)}
+.mug .k{font-family:'AR';font-weight:800;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.mug .n{font-family:'PF';font-weight:800;font-size:1.5rem;line-height:1.1;margin:.1rem 0}
+.mug .d{font-size:.92rem;color:var(--soft);line-height:1.35}
+.mug .d b{color:var(--ink);font-weight:600}
 /* cta */
 .cta{display:block;margin:1rem 0 0;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-family:'AR';font-weight:800;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;padding:.85rem;border-radius:3px}
 .cta.quiet{background:transparent;color:var(--ink);border:1px solid var(--ink)}
@@ -172,6 +179,7 @@ details.g summary::-webkit-details-marker{display:none}
   <div class="tiles" id="tiles"></div>
   <div class="fresh" id="fresh"></div>
   <a class="cta" id="cta" href="#">Make your picks</a>
+  <div id="mug"></div>
 
   <div id="root"></div>
 
@@ -260,6 +268,12 @@ if(D.status==="final"){$("cta").textContent="Week "+(D.week+1)+" picks";}
 if(D.status==="live"){$("cta").classList.add("quiet");$("cta").textContent="Late sheet? Remaining games count";}
 
 var h="";
+
+/* the mugshot: the previous winner's pick of one loser's face */
+if(D.face&&D.face.photo){
+  var F=D.face;
+  $("mug").innerHTML='<div class="mug"><img src="'+esc(F.photo)+'" alt=""><div><div class="k">The Mugshot · Week '+D.week+'</div><div class="n">'+esc(F.who)+'</div><div class="d">Hung here by <b>'+esc(F.by)+'</b>, who won Week '+esc(F.week||(D.week-1))+'.'+(F.line?' '+esc(F.line):'')+'</div></div></div>';
+}
 
 /* board */
 h+='<a id="board"></a>'+orn("The Board");
