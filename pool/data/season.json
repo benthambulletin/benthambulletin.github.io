@@ -204,6 +204,18 @@
           "correct": 0,
           "missed": 0,
           "tb": 44
+        },
+        {
+          "name": "Nate V",
+          "correct": 0,
+          "missed": 0,
+          "tb": 38
+        },
+        {
+          "name": "Thom",
+          "correct": 0,
+          "missed": 0,
+          "tb": 45
         }
       ],
       "trash": [
@@ -212,7 +224,7 @@
           "text": "Y'all suck"
         }
       ],
-      "column": "One sheet in so far, and it's the commissioner's. Garret has Bills over the Patriots and 44 in New Orleans, and he filed on a Tuesday, which is either confidence or boredom. Kickoff is Thursday night, Steelers at Browns. Everybody else: the form is open, the clock is not your friend.",
+      "column": "Three sheets in. Garret filed first, then Thom and Nate V showed up Tuesday afternoon within two minutes of each other, which looks like a group text. Thom is alone on the Commanders in London; Nate is alone on the Broncos in Santa Clara and the Falcons on Monday night. Garret takes the Bills, Eagles and Panthers and nobody else does. Kickoff is Thursday night, Steelers at Browns — all three have the Steelers, so somebody’s wrong or nobody is.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 0,
@@ -220,6 +232,6 @@
       "tbUsed": false
     }
   },
-  "updated": "2026-09-29T13:09:44.931651+00:00",
+  "updated": "2026-09-29T15:09:29.491321+00:00",
   "plannedBuyIn": 5
 }
