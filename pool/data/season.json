@@ -299,6 +299,51 @@
           "state": "alive"
         },
         {
+          "name": "Kaylani & Luka",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 27,
+          "sheet": {},
+          "filedAt": "2026-09-29T20:43:21+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
+        },
+        {
+          "name": "Leah",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 52,
+          "sheet": {},
+          "filedAt": "2026-09-29T22:01:35+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
+        },
+        {
+          "name": "Melissa",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 36,
+          "sheet": {},
+          "filedAt": "2026-09-29T16:54:52+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
+        },
+        {
           "name": "Nate V",
           "house": false,
           "correct": 0,
@@ -327,9 +372,28 @@
           "rank": 1,
           "delta": 0,
           "state": "alive"
+        },
+        {
+          "name": "Tom",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 37,
+          "sheet": {},
+          "filedAt": "2026-09-29T16:19:52+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
         }
       ],
       "trash": [
+        {
+          "from": "Kaylani & Luka",
+          "text": "Winner winner chicken dinner"
+        },
         {
           "from": "Derek",
           "text": "Kaylani - I know she used AI to make all her picks."
@@ -390,7 +454,7 @@
       }
     }
   },
-  "updated": "2026-09-29T22:37:19.375871+00:00",
+  "updated": "2026-09-29T22:40:56.788468+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
