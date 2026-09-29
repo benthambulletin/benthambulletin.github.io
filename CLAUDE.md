@@ -33,6 +33,19 @@ Photos Garret supplies from other sources (e.g. ESPN) get credited in the captio
 - **Never state a time or a number you did not look up.** Sep 27 the report to Garret said "published at 7:50" (it was 7:25) and the Ledger draft said "most were back by morning" with no source. Check `git log` for times; cut any clause without a source.
 - **Before pushing, check origin/main for today's edition.** Two runs (scheduled and the 7:20 check) can overlap; the second one stops.
 
+## Morning inputs (read these first)
+
+- **`data/forecast.json`** — the official NWS point forecast and latest observation for all three towns, fetched by the Morning feed action at 6:31 a.m. Eastern. This is the primary weather source; check `issued` is from this morning. Only if it is missing or stale fall back to the web pages below.
+- **`data/news.json`** — the last 48 hours of headlines from national (NPR, PBS, BBC, CBS), local (WIVB, WKBW, Rochester First, WXXI, Dunkirk Observer, Niagara Gazette) and entertainment (Variety, Deadline, Billboard, Hollywood Reporter) feeds. Scan all of it before choosing stories, so the picture of the news is complete, then verify each chosen story at its source. `errors` lists feeds that failed.
+- **`data/pressure-summary.json`** — hourly barometer. Build the Barograph with `python3 tools/barograph.py` (prints the dial row and a 72-hour hourly trace); paste its output in place of the old five-point chart. Use its reading for the tiles and `data/pressure.json`.
+- **`data/spotlight.md`** — the Spotlight Docket (Sundays).
+
+## Section calls
+
+- **The National Wire:** the editor decides how many stories run (two to four) based on what is solid that morning. Four when there are four good ones; fewer rather than a shaky one.
+- **The Marquee:** always three real items. Use news.json's entertainment feeds; if the pop-culture news is slow, widen to TV, streaming, books, music charts and awards. Every item verified and dated within 48 hours.
+- **Sunday Spotlight:** take the next item from the Spotlight Docket; Garret's requests jump the line. The Week Ahead names next Sunday's topic.
+
 ## The freshness rule (this is the one that keeps breaking)
 
 The build starts from yesterday's edition, which makes **recycling the default and freshness the exception**. Every failure Garret has had to catch by hand — the Emmys running three days, North Tonawanda in the Home Wire three days, the Ledger repeating the section above it, a festival that had not started — is that one flaw. So:
@@ -115,7 +128,7 @@ Stations: **KIAG** Niagara Falls → North Tonawanda. **KDKK** Dunkirk. **KROC**
 10. **The Ballot** — through Nov 3, 2026. Daily countdown line; **full section Sundays** (NY-26 North Tonawanda, NY-23 Dunkirk, NY-25 Scottsville; governor; legislature; county/town) plus a national read; daily in the last two weeks; results special the morning after. The family leans left; write knowing the room, but no cheerleading and no endorsements.
 11. **The Gridiron** — through the Super Bowl. Bills and Jets are **even**; each gets its own paragraph every day. **Monday Morning Quarterback** sits on top on Mondays only: both games recapped with score and what decided them, one thing each team got right and one to fix, the AFC East table, a short line on the rest of the league, and a running scorecard against the AI Editor's picks.
 12. **The Chase** — NASCAR, every edition. 2026 playoff format: 16 drivers, one 10-race round, no eliminations, most points at Homestead (Nov 8) wins.
-13. **The Marquee** — three pop-culture headlines a day, no genre bias, real news over rumor.
+13. **The Marquee** — three pop-culture headlines a day, always three, no genre bias, real news over rumor.
 14. **On This Day** and **Question of the Day** (original riddle; answer in colophon).
 15. **Colophon** — QOTD answer, one sources line, "— G.", ornaments. Prev/next/album/archive nav under it.
 
