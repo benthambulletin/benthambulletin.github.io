@@ -35,6 +35,10 @@ h1{margin:.6rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size
 .tile .v{font-family:'PF';font-weight:800;font-size:clamp(1.4rem,6.5vw,2.3rem);line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tile .v.red{color:var(--red)}
 .tile .k{font-family:'AR';font-weight:700;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin-top:.2rem}
+.fresh{display:flex;justify-content:space-between;gap:.6rem;font-family:'AR';font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding:.45rem .1rem;border-bottom:1px solid var(--rule)}
+.fresh b{color:var(--ink);font-weight:700}
+.fresh .dot{display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:var(--teal);margin-right:.35rem;vertical-align:.02em}
+.fresh .dot.stale{background:var(--gold)}.fresh .dot.old{background:var(--red)}
 
 /* cta */
 .cta{display:block;margin:1rem 0 0;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-family:'AR';font-weight:800;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;padding:.85rem;border-radius:3px}
@@ -135,6 +139,7 @@ table{width:100%;border-collapse:collapse}
   <div class="dbl tight"><div class="a"></div><div class="b"></div></div>
 
   <div class="tiles" id="tiles"></div>
+  <div class="fresh" id="fresh"></div>
   <a class="cta" id="cta" href="#">Make your picks</a>
 
   <div id="root"></div>
@@ -165,8 +170,15 @@ $("kickR").textContent=D.season+" · Week "+D.week;
 $("tag").textContent=D.buyIn?"The Football Pool · Straight up, $"+D.buyIn+" a week, winner takes the pot":"The Football Pool · Straight up, free to play, bragging rights on the line";
 var stTxt={pre:"Picks are open",live:"Games under way",final:"Final"}[D.status]||"";
 $("dateline").innerHTML='Week '+D.week+' &middot; <span class="st '+esc(D.status)+'">'+esc(stTxt)+'</span>';
-var nxt=D.status==="final"?"Next slate Tuesday":(D.status==="pre"?"Updates hourly once games start":"Updates hourly during games · final after Monday night");
-$("stamp").textContent="Updated "+fmtWhen(D.updated)+" · "+nxt;
+var nxt=D.status==="final"?"Next slate Tuesday":(D.status==="pre"?"Refreshes hourly":"Refreshes hourly during games · final after Monday night");
+$("stamp").textContent=nxt;
+(function(){
+  var t=Date.parse(D.updated), mins=isNaN(t)?null:Math.max(0,Math.round((Date.now()-t)/60000));
+  var ago=mins==null?"":(mins<1?"just now":mins<60?mins+" min ago":mins<120?"1 hr ago":Math.round(mins/60)+" hrs ago");
+  var cls=mins==null?"":(mins<=70?"":mins<=180?"stale":"old");
+  var nextTxt=D.status==="final"?"Final":"Next refresh at :07";
+  $("fresh").innerHTML='<span><span class="dot '+cls+'"></span>Updated <b>'+esc(fmtWhen(D.updated))+'</b>'+(ago?' · '+esc(ago):'')+'</span><span>'+nextTxt+'</span>';
+})();
 
 var played=D.games.filter(function(g){return g.winner&&g.winner!=="TIE";}).length;
 var left=D.games.filter(function(g){return !g.winner;}).length;

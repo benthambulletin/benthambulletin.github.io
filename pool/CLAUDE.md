@@ -33,6 +33,9 @@ $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. N
   scores, players, trash, column, tiebreakTotal, weekWinners, weekPayout, status pre/live/final),
   `form.questions` (Tally question ids: name, tiebreak, trash, and the 16 game questions in slate order),
   `aliases` (lowercase name → display name, for people who type their name three ways).
+  **Kaylani & Luka are one entrant, always** — any of "Kaylani", "Luka", "Kaylani & Luka" etc. maps to
+  "Kaylani & Luka"; never split them. Add new aliases when a known person files under a new spelling;
+  never merge two different people.
 - `score.py submissions.json [--final]` — scores the current week from a saved Tally fetch. Enforces
   the rules; do not re-derive them by hand. It also computes per-player rank, movement since the last
   run, games left, max possible, alive/out/clinched, who is on each side of every game that has kicked
@@ -86,8 +89,11 @@ All three are the same steps; they differ only in what has finished. The Sunday 
    names. Read score.py's output (movement, out, clinched, DECIDES) and write from it. Never mention a
    pick, a lean, or a consensus for any game that has not kicked off (see Sealed picks). Trash talk from
    the form is printed automatically under the column, unedited — never soften, cut, or comment on it.
-   Under 120 words on Sunday, up to 180 for the final. On an hourly run where nothing new is final,
-   leave the column as it is.
+   Under 120 words on Sunday, up to 180 for the final.
+   **Cadence:** the column is rewritten only by (a) the first run of the week that finds any entrants,
+   (b) the Thursday-night run that scores TNF, (c) the three Sunday window runs, and (d) the final.
+   Every other hourly run leaves `column` exactly as it is, even when new sheets arrive — the Board
+   and the Ticker carry the facts; the column is a voice, not a log.
 5. `python3 build.py`, commit (`Pool: Week N update` / `Pool: Week N final`), push, confirm live.
 6. UPDATE runs send nothing unless something failed. SCORE sends Garret one short message: winner
    (and payout only if `buyIn` > 0), one line per player with record, entrant count, and the standings
