@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Sunday Tax</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--paper:#FFFFFF;--panel:#F2F2EF;--ink:#141414;--ink-2:#5C5C58;--ink-3:#9A9A94;--rule:#DCDCD7;--rule-2:#C2C2BC;
+--head:#0A0A0A;--head-ink:#FFFFFF;--head-2:#B5B5B0;--red:#D12E2E;--red-ink:#FFFFFF;
+--win:#1B7F4A;--win-bg:#E3F3EA;--loss:#B3261E;--loss-bg:#FBE6E3;--track:#E4E4DF}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#121212;--panel:#1B1B1B;--ink:#F2F2F0;--ink-2:#B3B3AE;--ink-3:#77776F;--rule:#2A2A28;--rule-2:#3B3B38;
+--head:#000000;--head-2:#8A8A84;--red:#FF4D4D;--red-ink:#0A0A0A;--win:#4CD48A;--win-bg:#122A1D;--loss:#FF7A6E;--loss-bg:#2E1613;--track:#2A2A28}}
+:root[data-theme="dark"]{--paper:#121212;--panel:#1B1B1B;--ink:#F2F2F0;--ink-2:#B3B3AE;--ink-3:#77776F;--rule:#2A2A28;--rule-2:#3B3B38;
+--head:#000000;--head-2:#8A8A84;--red:#FF4D4D;--red-ink:#0A0A0A;--win:#4CD48A;--win-bg:#122A1D;--loss:#FF7A6E;--loss-bg:#2E1613;--track:#2A2A28}
+*,*::before,*::after{box-sizing:inherit}
+html{-webkit-text-size-adjust:100%;background:var(--head)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Barlow,"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.45;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+.cond{font-family:"Barlow Condensed",Barlow,Arial Narrow,sans-serif}
+
+/* masthead */
+.mast{background:var(--head);color:var(--head-ink);padding:22px 0 16px;border-bottom:5px solid var(--red)}
+.mast .in{max-width:560px;margin:0 auto;padding:0 16px}
+.mast h1{margin:0;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:46px;line-height:.95;letter-spacing:.01em;text-transform:uppercase}
+.mast .line{margin-top:8px;font-size:13px;color:var(--head-2);display:flex;gap:10px;flex-wrap:wrap}
+.mast .line b{color:var(--head-ink);font-weight:600}
+.mast .line .st{padding:0 7px;border:1px solid var(--head-2);border-radius:4px;font-weight:600;color:var(--head-ink)}
+.mast .line .st.live{border-color:var(--red);color:#fff;background:var(--red)}
+.mast .line .st.final{border-color:#fff}
+
+.wrap{max-width:560px;margin:0 auto;padding:16px 16px 70px}
+.cta{display:block;text-align:center;background:var(--red);color:var(--red-ink);text-decoration:none;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:22px;letter-spacing:.03em;text-transform:uppercase;padding:13px;border-radius:6px}
+.cta:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+h2{margin:0;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:30px;line-height:1;letter-spacing:.01em;text-transform:uppercase}
+.sec{margin-top:30px}
+.sec .kick{font-size:13px;color:var(--ink-2);margin:5px 0 12px}
+
+/* pot */
+.pot{display:flex;align-items:flex-end;gap:14px;padding:6px 0 14px;border-bottom:3px solid var(--ink);margin-bottom:6px}
+.pot .amt{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:84px;line-height:.85;letter-spacing:-.02em;color:var(--red)}
+.pot .amt.final{color:var(--ink)}
+.pot .side{padding-bottom:6px;font-size:14px;color:var(--ink-2);line-height:1.35}
+.pot .side b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:22px;color:var(--ink);text-transform:uppercase;letter-spacing:.02em;line-height:1}
+
+/* leaderboard */
+.board{border-top:1px solid var(--rule)}
+.row{display:grid;grid-template-columns:34px 1fr auto;gap:0 10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--rule);position:relative}
+.row.lead::before{content:"";position:absolute;left:-16px;top:0;bottom:0;width:5px;background:var(--red)}
+.row .rk{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:26px;color:var(--ink-3);line-height:1}
+.row.lead .rk{color:var(--red)}
+.row .nm{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:22px;line-height:1;letter-spacing:.01em}
+.row .rec{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:22px;line-height:1;text-align:right;white-space:nowrap}
+.row .rec small{font-family:Barlow,sans-serif;font-weight:500;font-size:12px;color:var(--ink-3);margin-left:6px}
+.row .bar{grid-column:2/4;height:5px;background:var(--track);border-radius:3px;margin-top:7px;overflow:hidden;display:flex}
+.row .bar i{display:block;height:100%}
+.row .bar .w{background:var(--win)}.row .bar .l{background:var(--loss)}
+.row .meta{grid-column:2/4;font-size:12.5px;color:var(--ink-2);margin-top:5px}
+
+/* column */
+.col{border-top:3px solid var(--ink);padding-top:12px}
+.col .byline{font-size:12.5px;color:var(--ink-2);margin-bottom:10px}
+.col p{margin:0 0 12px;font-size:16.5px;line-height:1.55}
+.col p:first-of-type::first-letter{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:54px;line-height:.8;float:left;padding:6px 8px 0 0;color:var(--red)}
+.pq{margin:16px 0;padding:0 0 0 16px;border-left:4px solid var(--red)}
+.pq .q{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;line-height:1.15}
+.pq .who{font-size:12.5px;color:var(--ink-2);margin-top:5px;font-weight:600}
+
+/* season */
+table{width:100%;border-collapse:collapse;border-top:3px solid var(--ink)}
+th,td{padding:9px 6px;text-align:right;border-bottom:1px solid var(--rule);font-size:15px}
+th{font-size:12px;font-weight:600;color:var(--ink-2);text-transform:uppercase;letter-spacing:.04em}
+th:first-child,td:first-child{text-align:left;padding-left:0}th:last-child,td:last-child{padding-right:0}
+td.nm{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:20px}
+td.money{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:20px}
+.rk2{color:var(--ink-3);font-weight:600;display:inline-block;width:20px}
+
+/* games */
+.games{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media (max-width:380px){.games{grid-template-columns:1fr}}
+.g{background:var(--panel);border-radius:6px;padding:10px 11px;min-width:0}
+.g .m{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:18px;line-height:1.1}
+.g .m .w{color:var(--win)}.g .m .t{color:var(--ink-3);font-weight:600}
+.g .s{font-size:12.5px;color:var(--ink-2);margin-top:3px}
+.g .n{margin-top:6px;font-size:12px;line-height:1.5}
+.g .n .h{color:var(--win);font-weight:600}.g .n .x{color:var(--loss);font-weight:600}
+
+.empty{background:var(--panel);border-radius:6px;padding:20px 16px;text-align:center;color:var(--ink-2);font-size:14.5px}
+.empty b{display:block;color:var(--ink);font-family:"Barlow Condensed",sans-serif;font-size:20px;font-weight:700;margin-bottom:2px}
+.rules{font-size:13.5px;color:var(--ink-2);line-height:1.6;border-top:1px solid var(--rule);padding-top:12px}
+.rules b{color:var(--ink);font-weight:600}
+</style>
+</head>
+<body>
+<header class="mast"><div class="in">
+  <h1 id="poolName">The Sunday Tax</h1>
+  <div class="line" id="stamp"></div>
+</div></header>
+
+<div class="wrap">
+  <a class="cta" id="cta" href="#">Make your picks</a>
+  <div id="root"></div>
+  <p style="margin-top:36px;font-size:12.5px;color:var(--ink-3);text-align:center">Part of <a href="/" style="color:inherit">The Bentham Bulletin</a>. Scores and picks updated by Claude on a schedule.</p>
+</div>
+
+<script id="data" type="application/json">
+/*DATA*/
+</script>
+
+<script>
+(function(){
+"use strict";
+var D=JSON.parse(document.getElementById("data").textContent);
+var $=function(id){return document.getElementById(id);};
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function money(n){return "$"+(Math.round(n*100)/100).toString().replace(/\.00$/,"");}
+function fmtWhen(iso){try{return new Date(iso).toLocaleString(undefined,{weekday:"short",hour:"numeric",minute:"2-digit"});}catch(e){return "";}}
+
+$("poolName").textContent=D.name; document.title=D.name;
+$("cta").href=D.formUrl;
+var stTxt={pre:"Picks open",live:"Live",final:"Final"}[D.status]||"";
+$("stamp").innerHTML='<span><b>'+esc(D.season)+'</b></span><span><b>Week '+D.week+'</b></span>'+
+  '<span class="st '+esc(D.status)+'">'+esc(stTxt)+'</span><span>updated '+esc(fmtWhen(D.updated))+'</span>';
+if(D.status==="final") $("cta").textContent="Week "+(D.week+1)+" picks";
+
+var played=D.games.filter(function(g){return g.winner&&g.winner!=="TIE";}).length;
+var left=D.games.filter(function(g){return !g.winner;}).length;
+var entrants=D.players.length, pot=D.buyIn*entrants;
+var h="";
+
+/* pot */
+h+='<div class="sec">';
+if(D.status==="final"&&D.weekWinners.length){
+  var names=D.weekWinners.join(" & ");
+  h+='<div class="pot"><div class="amt final">'+money(D.weekPayout)+'</div><div class="side"><b>'+esc(names)+'</b>'+
+     (D.weekWinners.length>1?"split the week":"takes the week")+
+     (D.tbUsed&&D.tiebreakTotal!=null?" on the tiebreaker, "+D.tiebreakTotal+" points Monday night":"")+'.</div></div>';
+} else {
+  h+='<div class="pot"><div class="amt">'+money(pot)+'</div><div class="side"><b>On the line</b>'+entrants+(entrants===1?" entry":" entries")+(D.status==="pre"?" so far":"")+'. Best record takes all of it.</div></div>';
+}
+
+/* leaderboard */
+if(D.players.length){
+  var ps=D.players.slice().sort(function(a,b){return (b.correct-a.correct)||(a.missed-b.missed)||a.name.localeCompare(b.name);});
+  var top=ps[0].correct;
+  h+='<div class="board">';
+  ps.forEach(function(p,i){
+    var lead=D.status!=="pre"&&p.correct===top&&top>0;
+    var tot=p.correct+p.missed, w=tot?100*p.correct/(played||tot):0, l=tot?100*p.missed/(played||tot):0;
+    h+='<div class="row'+(lead?' lead':'')+'"><div class="rk">'+(i+1)+'</div><div class="nm">'+esc(p.name)+'</div>'+
+       '<div class="rec">'+p.correct+'–'+p.missed+(left?'<small>'+left+' left</small>':'')+'</div>'+
+       '<div class="bar"><i class="w" style="width:'+w.toFixed(1)+'%"></i><i class="l" style="width:'+l.toFixed(1)+'%"></i></div>'+
+       (p.tb!=null?'<div class="meta">Tiebreaker '+p.tb+'</div>':'')+'</div>';
+  });
+  h+='</div>';
+} else {
+  h+='<div class="empty"><b>Nobody in yet</b>The board fills in as picks come in.</div>';
+}
+h+='</div>';
+
+/* column */
+if(D.column||D.trash.length){
+  h+='<div class="sec"><h2>The Column</h2><div class="col"><div class="byline">From the commissioner\u2019s desk. Grudges printed as received.</div>';
+  if(D.column) D.column.split(/\n\n+/).forEach(function(p){h+='<p>'+esc(p)+'</p>';});
+  D.trash.forEach(function(t){h+='<div class="pq"><div class="q">\u201c'+esc(t.text)+'\u201d</div><div class="who">'+esc(t.from)+'</div></div>';});
+  h+='</div></div>';
+}
+
+/* season */
+h+='<div class="sec"><h2>Season</h2><div class="kick">Running totals. $'+D.buyIn+' a week, winner takes the pot.</div>';
+if(D.season_table.length){
+  var ss=D.season_table.slice().sort(function(a,b){return (b.won-a.won)||(b.correct-a.correct)||a.name.localeCompare(b.name);});
+  h+='<table><thead><tr><th>Player</th><th>W</th><th>L</th><th>Weeks</th><th>Won</th></tr></thead><tbody>';
+  ss.forEach(function(p,i){h+='<tr><td class="nm"><span class="rk2">'+(i+1)+'</span>'+esc(p.name)+'</td><td>'+p.correct+'</td><td>'+p.missed+'</td><td>'+(p.weeksWon||"\u2014")+'</td><td class="money">'+(p.won?money(p.won):"\u2014")+'</td></tr>';});
+  h+='</tbody></table>';
+} else {
+  h+='<div class="empty"><b>No weeks in the books</b>Season totals start after Week '+D.week+'.</div>';
+}
+h+='</div>';
+
+/* games */
+h+='<div class="sec"><h2>The Slate</h2><div class="kick">Who called what.</div><div class="games">';
+D.games.forEach(function(g){
+  var m;
+  if(g.winner==="TIE") m='<span class="t">'+esc(g.away)+' \u2013 '+esc(g.home)+' tie</span>';
+  else if(g.winner){
+    var aw=g.winner===g.away;
+    m='<span class="'+(aw?'w':'')+'">'+esc(g.away)+'</span> <span class="t">@</span> <span class="'+(aw?'':'w')+'">'+esc(g.home)+'</span>';
+  } else m=esc(g.away)+' <span class="t">@</span> '+esc(g.home);
+  h+='<div class="g"><div class="m">'+m+'</div><div class="s">'+esc(g.winner&&g.score?g.score:g.when)+'</div>';
+  if((g.hits&&g.hits.length)||(g.misses&&g.misses.length)){
+    h+='<div class="n">';
+    if(g.hits&&g.hits.length) h+='<span class="h">'+esc(g.hits.join(", "))+'</span>';
+    if(g.misses&&g.misses.length) h+=(g.hits&&g.hits.length?'<br>':'')+'<span class="x">'+esc(g.misses.join(", "))+'</span>';
+    h+='</div>';
+  }
+  h+='</div>';
+});
+h+='</div></div>';
+
+/* rules */
+h+='<div class="sec"><h2>House Rules</h2><div class="kick"></div><div class="rules">'+
+'<b>$'+D.buyIn+' a week.</b> Whole pot to the best record, nothing held back. Pick every game straight up. '+
+'Each game locks at its own kickoff. Submit after one starts and that game is void, the rest count. Your latest submission before each kickoff is the one that counts. '+
+'<b>Tiebreaker:</b> total combined points in the Monday night game, both teams added together. Still tied, the pot splits. '+
+'Skipping a week is free. A tied game counts for nobody.</div></div>';
+
+$("root").innerHTML=h;
+})();
+</script>
+</body>
+</html>

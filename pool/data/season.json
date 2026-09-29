@@ -1,0 +1,178 @@
+{
+  "name": "The Sunday Tax",
+  "season": "NFL 2026",
+  "buyIn": 5,
+  "venmo": "@garretbentham",
+  "form": {
+    "id": "RGOakJ",
+    "url": "https://tally.so/r/RGOakJ",
+    "questions": {
+      "name": "OBA57a",
+      "tiebreak": "4N2xKA",
+      "trash": "PBA58Q",
+      "games": [
+        "V1Z5zj",
+        "PBA5z1",
+        "EbPQxl",
+        "rrlAoo",
+        "4N2xKr",
+        "j9BQlQ",
+        "2x4NKe",
+        "xNdaJd",
+        "RBz5D4",
+        "oVAM2O",
+        "GBrdRL",
+        "OBA57Y",
+        "V1Z5zM",
+        "PBA5zB",
+        "EbPQxB",
+        "rrlAo2"
+      ]
+    }
+  },
+  "aliases": {},
+  "currentWeek": 4,
+  "weeks": {
+    "4": {
+      "status": "pre",
+      "games": [
+        {
+          "away": "Steelers",
+          "home": "Browns",
+          "kickoff": "2026-10-02T00:15:00Z",
+          "when": "Thu 8:15 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Colts",
+          "home": "Commanders",
+          "kickoff": "2026-10-04T13:30:00Z",
+          "when": "Sun 9:30 AM · London",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Titans",
+          "home": "Ravens",
+          "kickoff": "2026-10-04T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Patriots",
+          "home": "Bills",
+          "kickoff": "2026-10-04T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Jets",
+          "home": "Bears",
+          "kickoff": "2026-10-04T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Jaguars",
+          "home": "Bengals",
+          "kickoff": "2026-10-04T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Cowboys",
+          "home": "Texans",
+          "kickoff": "2026-10-04T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Cardinals",
+          "home": "Giants",
+          "kickoff": "2026-10-04T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Rams",
+          "home": "Eagles",
+          "kickoff": "2026-10-04T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Packers",
+          "home": "Buccaneers",
+          "kickoff": "2026-10-04T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Dolphins",
+          "home": "Vikings",
+          "kickoff": "2026-10-04T20:05:00Z",
+          "when": "Sun 4:05 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Chiefs",
+          "home": "Raiders",
+          "kickoff": "2026-10-04T20:25:00Z",
+          "when": "Sun 4:25 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Chargers",
+          "home": "Seahawks",
+          "kickoff": "2026-10-04T20:25:00Z",
+          "when": "Sun 4:25 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Broncos",
+          "home": "49ers",
+          "kickoff": "2026-10-04T20:25:00Z",
+          "when": "Sun 4:25 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Lions",
+          "home": "Panthers",
+          "kickoff": "2026-10-05T00:20:00Z",
+          "when": "Sun 8:20 PM",
+          "winner": null,
+          "score": null
+        },
+        {
+          "away": "Falcons",
+          "home": "Saints",
+          "kickoff": "2026-10-06T00:15:00Z",
+          "when": "Mon 8:15 PM",
+          "winner": null,
+          "score": null
+        }
+      ],
+      "tiebreakTotal": null,
+      "players": [],
+      "trash": [],
+      "column": "",
+      "weekWinners": [],
+      "weekPayout": 0,
+      "pot": 0
+    }
+  },
+  "updated": "2026-09-29T01:30:00+00:00"
+}
