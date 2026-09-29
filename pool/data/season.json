@@ -44,7 +44,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Colts",
@@ -54,7 +56,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Titans",
@@ -64,7 +68,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Patriots",
@@ -74,7 +80,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Jets",
@@ -84,7 +92,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Jaguars",
@@ -94,7 +104,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Cowboys",
@@ -104,7 +116,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Cardinals",
@@ -114,7 +128,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Rams",
@@ -124,7 +140,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Packers",
@@ -134,7 +152,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Dolphins",
@@ -144,7 +164,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Chiefs",
@@ -154,7 +176,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Chargers",
@@ -164,7 +188,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Broncos",
@@ -174,7 +200,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Lions",
@@ -184,7 +212,9 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Falcons",
@@ -194,44 +224,110 @@
           "winner": null,
           "score": null,
           "hits": [],
-          "misses": []
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         }
       ],
       "tiebreakTotal": null,
       "players": [
         {
+          "name": "Ariel",
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 50,
+          "sheet": {},
+          "filedAt": "2026-09-29T15:55:32+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
+        },
+        {
+          "name": "Derek",
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 38,
+          "sheet": {},
+          "filedAt": "2026-09-29T16:00:07+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
+        },
+        {
           "name": "Garret",
           "correct": 0,
           "missed": 0,
-          "tb": 44
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 44,
+          "sheet": {},
+          "filedAt": "2026-09-29T12:24:58+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
         },
         {
           "name": "Nate V",
           "correct": 0,
           "missed": 0,
-          "tb": 38
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 38,
+          "sheet": {},
+          "filedAt": "2026-09-29T15:07:02+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
         },
         {
           "name": "Thom",
           "correct": 0,
           "missed": 0,
-          "tb": 45
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 45,
+          "sheet": {},
+          "filedAt": "2026-09-29T15:05:20+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
         }
       ],
       "trash": [
+        {
+          "from": "Derek",
+          "text": "Kaylani - I know she used AI to make all her picks."
+        },
+        {
+          "from": "Ariel",
+          "text": "Derek won’t get any right"
+        },
         {
           "from": "Garret",
           "text": "Y'all suck"
         }
       ],
-      "column": "Three sheets in. Garret filed first, then Thom and Nate V showed up Tuesday morning within two minutes of each other, which looks like a group text. Thom is alone on the Commanders in London; Nate is alone on the Broncos in Santa Clara and the Falcons on Monday night. Garret is on his own with the Bengals, Texans, Eagles, Bucs and Panthers — five solo picks, which is either a plan or a cry for help. Kickoff is Thursday night, Steelers at Browns — all three have the Steelers, so somebody’s wrong or nobody is.",
+      "column": "Five sheets in. Ariel and Derek filed Tuesday afternoon, and Derek filed a callout of Kaylani, who has not filed anything. Ariel is alone on the Titans in Baltimore and the Jets in Chicago, which is a choice. Nate V is still the only one on the Broncos. All five have the Steelers Thursday night, the Bills, the Vikings, the Chiefs and the Seahawks, so the week gets decided by the splits: Colts–Commanders, Jaguars–Bengals, Cowboys–Texans and the Monday nighter, where it’s 3–2 Saints.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 0,
       "opensAt": "2026-09-29T01:40:00Z",
-      "tbUsed": false
+      "tbUsed": false,
+      "decides": [],
+      "updates": [],
+      "decidedAtLastRun": 0,
+      "outAtLastRun": []
     }
   },
-  "updated": "2026-09-29T15:09:29.491321+00:00",
+  "updated": "2026-09-29T16:09:43.359918+00:00",
   "plannedBuyIn": 5
 }
