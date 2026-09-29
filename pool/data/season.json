@@ -240,6 +240,7 @@
       "players": [
         {
           "name": "Ariel",
+          "house": false,
           "correct": 0,
           "missed": 0,
           "void": 0,
@@ -253,7 +254,23 @@
           "state": "alive"
         },
         {
+          "name": "Claude",
+          "house": true,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 41,
+          "sheet": {},
+          "filedAt": "2026-09-29T01:40:00+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "house"
+        },
+        {
           "name": "Derek",
+          "house": false,
           "correct": 0,
           "missed": 0,
           "void": 0,
@@ -268,6 +285,7 @@
         },
         {
           "name": "Garret",
+          "house": false,
           "correct": 0,
           "missed": 0,
           "void": 0,
@@ -281,49 +299,8 @@
           "state": "alive"
         },
         {
-          "name": "Kaylani & Luka",
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 16,
-          "max": 16,
-          "tb": 27,
-          "sheet": {},
-          "filedAt": "2026-09-29T20:43:21+00:00",
-          "rank": 1,
-          "delta": 0,
-          "state": "alive"
-        },
-        {
-          "name": "Leah",
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 16,
-          "max": 16,
-          "tb": 52,
-          "sheet": {},
-          "filedAt": "2026-09-29T22:01:35+00:00",
-          "rank": 1,
-          "delta": 0,
-          "state": "alive"
-        },
-        {
-          "name": "Melissa",
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 16,
-          "max": 16,
-          "tb": 36,
-          "sheet": {},
-          "filedAt": "2026-09-29T16:54:52+00:00",
-          "rank": 1,
-          "delta": 0,
-          "state": "alive"
-        },
-        {
           "name": "Nate V",
+          "house": false,
           "correct": 0,
           "missed": 0,
           "void": 0,
@@ -338,6 +315,7 @@
         },
         {
           "name": "Thom",
+          "house": false,
           "correct": 0,
           "missed": 0,
           "void": 0,
@@ -349,27 +327,9 @@
           "rank": 1,
           "delta": 0,
           "state": "alive"
-        },
-        {
-          "name": "Tom",
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 16,
-          "max": 16,
-          "tb": 37,
-          "sheet": {},
-          "filedAt": "2026-09-29T16:19:52+00:00",
-          "rank": 1,
-          "delta": 0,
-          "state": "alive"
         }
       ],
       "trash": [
-        {
-          "from": "Kaylani & Luka",
-          "text": "Winner winner chicken dinner"
-        },
         {
           "from": "Derek",
           "text": "Kaylani - I know she used AI to make all her picks."
@@ -381,6 +341,10 @@
         {
           "from": "Garret",
           "text": "Y'all suck"
+        },
+        {
+          "from": "Claude",
+          "text": "I flipped sixteen coins. If I beat you, think about that."
         }
       ],
       "column": "Nine sheets in by Tuesday evening. Garret filed first, before 8:30 in the morning, then Thom and Nate V around eleven, Ariel and Derek at noon, Tom and Melissa over lunch, Kaylani and Luka as a tag team at 4:43, and Leah just after six. Yes, a Thom and a Tom — the board keeps them apart.\n\nThe trash talk is ahead of the football. Derek says Kaylani outsourced her picks to a robot; she answered with a chicken dinner. Ariel says Derek goes 0 for 16.\n\nPicks stay sealed until kickoff. Thursday night is the first look.",
@@ -392,9 +356,45 @@
       "decides": [],
       "updates": [],
       "decidedAtLastRun": 0,
-      "outAtLastRun": []
+      "outAtLastRun": [],
+      "housePicks": {
+        "picks": {
+          "0": "Steelers",
+          "1": "Commanders",
+          "2": "Titans",
+          "3": "Bills",
+          "4": "Bears",
+          "5": "Bengals",
+          "6": "Cowboys",
+          "7": "Giants",
+          "8": "Rams",
+          "9": "Packers",
+          "10": "Dolphins",
+          "11": "Chiefs",
+          "12": "Seahawks",
+          "13": "Broncos",
+          "14": "Panthers",
+          "15": "Saints"
+        },
+        "tb": 41,
+        "trash": "I flipped sixteen coins. If I beat you, think about that."
+      },
+      "stats": {
+        "games": {},
+        "upsets": 0,
+        "decided": 0,
+        "best": null,
+        "worst": null,
+        "bills": null,
+        "jets": null
+      }
     }
   },
-  "updated": "2026-09-29T22:09:36.359376+00:00",
-  "plannedBuyIn": 5
+  "updated": "2026-09-29T22:37:19.375871+00:00",
+  "plannedBuyIn": 5,
+  "house": {
+    "name": "Claude",
+    "enabled": true,
+    "note": "House entry. Picks are drawn at random when the week opens, seeded from the week number, and sealed like everyone else's. Not eligible to win the week."
+  }
 }

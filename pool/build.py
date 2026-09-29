@@ -11,11 +11,23 @@ tot = {}
 for k, w in season["weeks"].items():
     if w.get("status") != "final": continue
     for p in w.get("players", []):
+        if p.get("house"): continue
         t = tot.setdefault(p["name"], {"name": p["name"], "correct": 0, "missed": 0, "weeksWon": 0, "won": 0})
         t["correct"] += p["correct"]; t["missed"] += p["missed"]
     for name in w.get("weekWinners", []):
         t = tot.setdefault(name, {"name": name, "correct": 0, "missed": 0, "weeksWon": 0, "won": 0})
         t["weeksWon"] += 1; t["won"] += w.get("weekPayout", 0)
+
+# homer split per person, over every game that is final in any week (Bills games / Jets games)
+homer = {}
+for k, w in season["weeks"].items():
+    for p in w.get("players", []):
+        hh = homer.setdefault(p["name"], {"bills": [0, 0], "jets": [0, 0]})
+        for i, g in enumerate(w["games"]):
+            wn = g.get("winner"); pk = (p.get("sheet") or {}).get(str(i))
+            if not wn or wn == "TIE" or not pk: continue
+            for team, key in (("Bills", "bills"), ("Jets", "jets")):
+                if team in (g["away"], g["home"]): hh[key][0 if pk == wn else 1] += 1
 
 page = {
     "name": season["name"], "season": season["season"], "formUrl": season["form"]["url"],
@@ -26,6 +38,7 @@ page = {
     "weekPayout": wk.get("weekPayout", 0), "season_table": list(tot.values()),
     "trash": wk.get("trash", []), "column": wk.get("column", ""),
     "updates": wk.get("updates", []), "decides": wk.get("decides", []),
+    "stats": wk.get("stats"), "homer": homer, "house": season.get("house"),
 }
 tpl = open(f"{HERE}/template.html").read()
 out = tpl.replace("/*DATA*/", json.dumps(page, ensure_ascii=False))

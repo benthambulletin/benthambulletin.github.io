@@ -65,6 +65,16 @@ h1{margin:.6rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size
 .brow.lead .nm,.brow.lead .rk{color:var(--red)}
 .brow .tag{display:inline-block;font-family:'AR';font-weight:700;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;padding:.05rem .4rem;border:1px solid;border-radius:2px;margin-left:.4rem;vertical-align:.15em}
 .tag.clinched{color:var(--teal);border-color:var(--teal)}.tag.out{color:var(--soft);border-color:var(--rule)}
+.tag.house{color:var(--gold);border-color:var(--gold)}
+.brow.house .nm,.brow.house .rec{color:var(--soft)}
+.num{display:grid;grid-template-columns:1fr 1fr;gap:.6rem .9rem}
+@media (max-width:380px){.num{grid-template-columns:1fr}}
+.num .it{border-top:2px solid var(--ink);padding-top:.35rem}
+.num .k{font-family:'AR';font-weight:700;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.num .v{font-family:'PF';font-weight:800;font-size:1.5rem;line-height:1.05;margin:.1rem 0}
+.num .d{font-size:.9rem;color:var(--soft);line-height:1.35}
+.num .d b{color:var(--ink);font-weight:600}
+.g .n .cnt{color:var(--soft);font-weight:600;margin-left:.3rem}
 .sheet{padding:.2rem 0 .7rem 2.2rem;font-family:'AR';font-size:.75rem;line-height:1.7;color:var(--soft)}
 .sheet .ok{color:var(--teal);font-weight:600}.sheet .no{color:var(--red);font-weight:600;text-decoration:line-through}
 .sheet .pend{color:var(--ink)}.sheet .sealed{font-style:italic}
@@ -182,14 +192,15 @@ $("stamp").textContent=nxt;
 
 var played=D.games.filter(function(g){return g.winner&&g.winner!=="TIE";}).length;
 var left=D.games.filter(function(g){return !g.winner;}).length;
-var entrants=D.players.length, pot=D.buyIn*entrants;
+var entrants=D.players.filter(function(p){return !p.house;}).length, pot=D.buyIn*entrants;
 var ps=D.players.slice().sort(function(a,b){return (b.correct-a.correct)||(a.missed-b.missed)||a.name.localeCompare(b.name);});
-var top=ps.length?ps[0].correct:0;
+var realPs=ps.filter(function(p){return !p.house;});
+var top=realPs.length?realPs[0].correct:0;
 
 /* tiles */
 var t3;
 if(D.status==="final"&&D.weekWinners.length) t3=D.weekWinners.length>1?{v:"Split "+D.weekWinners.length+" ways",k:"this week",red:true}:{v:esc(D.weekWinners[0]),k:"takes the week",red:true};
-else if(D.status==="live"&&ps.length&&top>0){var leaders=ps.filter(function(p){return p.correct===top;});
+else if(D.status==="live"&&realPs.length&&top>0){var leaders=realPs.filter(function(p){return p.correct===top;});
   t3=leaders.length>1?{v:leaders.length+"-way tie",k:"at "+top+" right",red:true}:{v:esc(leaders[0].name),k:"leading, "+top+" right",red:true};}
 else {var first=D.games[0];t3={v:esc((first.when||"").replace(/ · .*$/,"")),k:"first kickoff"};}
 $("tiles").innerHTML=
@@ -210,15 +221,15 @@ if(!ps.length){
   h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
 } else if(D.status==="pre"){
   h+='<div class="lede">Sheets in the drawer, sealed until kickoff.</div>';
-  h+='<p class="filed"><b>Filed:</b> '+ps.map(function(p){return esc(p.name);}).join(", ")+'.</p>';
+  h+='<p class="filed"><b>Filed:</b> '+ps.filter(function(p){return !p.house;}).map(function(p){return esc(p.name);}).join(", ")+(D.house?'. Plus <b>'+esc(D.house.name)+'</b>, the house entry: sixteen coin flips, sealed with the rest.':'.')+'</p>';
   h+='<p class="filed">Changed your mind? Submit the form again. Your latest sheet before each kickoff is the one that counts. Once games start, tap your name here to see your picks.</p>';
 } else {
   h+='<div class="bhead"><span>#</span><span>Player</span><span>Rec</span><span>Left</span><span>Max</span></div>';
   ps.forEach(function(p){
-    var lead=p.rank===1&&p.correct>0;
+    var lead=p.rank===1&&p.correct>0&&!p.house;
     var mv=p.delta>0?'<span class="mv up">▲'+p.delta+'</span>':(p.delta<0?'<span class="mv dn">▼'+(-p.delta)+'</span>':'');
-    var tag=p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':'');
-    h+='<details class="brow'+(lead?' lead':'')+'"><summary><span class="rk">'+p.rank+'</span>'+
+    var tag=p.house?'<span class="tag house">House</span>':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
+    h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+p.rank+'</span>'+
        '<span class="nm">'+esc(p.name)+mv+tag+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span>'+
        '<span class="lf"><b>'+p.remaining+'</b></span><span class="mx"><b>'+p.max+'</b></span></summary><div class="sheet">';
     var lines=[];
@@ -231,7 +242,10 @@ if(!ps.length){
       else lines.push('<span class="'+(pk===g.winner?'ok':'no')+'">'+esc(pk)+'</span>');
     });
     h+=lines.join(' · ')+(sealedN?' · <span class="sealed">'+sealedN+' sealed</span>':'');
+    var hm=D.homer&&D.homer[p.name];
+    if(hm&&(hm.bills[0]+hm.bills[1]+hm.jets[0]+hm.jets[1])>0) h+='<br>Season on Bills games '+hm.bills[0]+'–'+hm.bills[1]+' · Jets games '+hm.jets[0]+'–'+hm.jets[1];
     if(p.tb!=null&&D.games[D.games.length-1].status!=="sealed") h+='<br>Tiebreaker '+p.tb;
+    if(p.house&&D.house) h+='<br><span class="sealed">'+esc(D.house.note)+'</span>';
     h+='</div></details>';
   });
 }
@@ -244,6 +258,20 @@ if(D.status==="live"&&D.decides&&D.decides.length){
     h+='<div class="dec"><div class="m">'+esc(g.away)+' <span class="at">at</span> '+esc(g.home)+' <span class="at">· '+esc(g.status==="live"?"in progress":g.when)+'</span></div>'+
        '<div class="who"><b>'+esc(g.away)+':</b> '+esc(d.away.join(", "))+' &nbsp;·&nbsp; <b>'+esc(g.home)+':</b> '+esc(d.home.join(", "))+'</div></div>';
   });
+}
+
+/* by the numbers */
+if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
+  var S=D.stats, G=D.games;
+  h+=orn("By the Numbers",true)+'<div class="num">';
+  h+='<div class="it"><div class="k">Upset rate</div><div class="v">'+S.upsets+' of '+S.decided+'</div><div class="d">Games where the smaller side of the room was right.</div></div>';
+  if(S.best){var bg=G[S.best.game];h+='<div class="it"><div class="k">Best pick</div><div class="v">'+esc(bg.winner)+'</div><div class="d">'+esc(bg.away)+' at '+esc(bg.home)+'. Only <b>'+esc(S.best.who.join(", "))+'</b> had it.</div></div>';}
+  if(S.worst&&S.worst.n===0){var wg=G[S.worst.game];h+='<div class="it"><div class="k">Nobody had</div><div class="v">'+esc(wg.winner)+'</div><div class="d">'+esc(wg.away)+' at '+esc(wg.home)+'. The whole room, wrong.</div></div>';}
+  if(S.bills){h+='<div class="it"><div class="k">Bills game</div><div class="v">'+S.bills.right+'–'+S.bills.wrong+'</div><div class="d">The room on '+esc(G[S.bills.game].away)+' at '+esc(G[S.bills.game].home)+'.'+(S.bills.won?' Bills won.':' Bills lost.')+'</div></div>';}
+  if(S.jets){h+='<div class="it"><div class="k">Jets game</div><div class="v">'+S.jets.right+'–'+S.jets.wrong+'</div><div class="d">The room on '+esc(G[S.jets.game].away)+' at '+esc(G[S.jets.game].home)+'.'+(S.jets.won?' Jets won.':' Jets lost.')+'</div></div>';}
+  var hp=ps.filter(function(p){return p.house;})[0];
+  if(hp){var beat=realPs.filter(function(p){return p.correct<hp.correct;}).length;h+='<div class="it"><div class="k">'+esc(hp.name)+', the coin</div><div class="v">'+hp.correct+'–'+hp.missed+'</div><div class="d">'+(beat?'Ahead of <b>'+beat+'</b> of you.':'Behind everyone. For now.')+'</div></div>';}
+  h+='</div>';
 }
 
 /* ticker */
@@ -265,7 +293,7 @@ if(D.column||D.trash.length){
 /* slate */
 h+=orn("The Slate");
 var lastSlot="";
-D.games.forEach(function(g){
+D.games.forEach(function(g,i){
   var slot=(g.when||"").replace(/\s+\d{1,2}:\d{2}\s*[AP]M.*$/,"").replace(/^(Sun|Mon|Thu|Sat)\b/,function(m){return {Sun:"Sunday",Mon:"Monday",Thu:"Thursday",Sat:"Saturday"}[m];});
   var time=(g.when||"").replace(/^\w{3}\s+/,"");
   if(slot!==lastSlot){h+='<div class="slot">'+esc(slot)+'</div>';lastSlot=slot;}
@@ -278,6 +306,10 @@ D.games.forEach(function(g){
   else {m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s">'+esc(time)+'</span>';}
   h+='<div class="g"><div class="m">'+m+'</div>'+s;
   if(g.status==="sealed"&&D.status!=="pre"&&ps.length) h+='<div class="n"><span class="lab">Picks</span><span class="sealed">sealed until kickoff</span></div>';
+  var gs=D.stats&&D.stats.games&&D.stats.games[String(i)];
+  if(g.status==="final"&&gs){
+    h+='<div class="n"><span class="lab">Split</span><span class="side">'+esc(g.away)+'<span class="cnt">'+gs.away+'</span> · '+esc(g.home)+'<span class="cnt">'+gs.home+'</span>'+(gs.upset?' · <b style="color:var(--red)">upset</b>':'')+'</span></div>';
+  }
   if(g.status==="live"&&g.sides){
     var A=g.sides[g.away]||[],H=g.sides[g.home]||[];
     h+='<div class="n"><span class="lab">'+esc(g.away)+'</span><span class="side">'+(A.length?esc(A.join(", ")):"—")+'</span><br><span class="lab">'+esc(g.home)+'</span><span class="side">'+(H.length?esc(H.join(", ")):"—")+'</span></div>';
