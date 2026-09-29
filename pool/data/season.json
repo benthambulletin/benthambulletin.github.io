@@ -274,6 +274,20 @@
           "state": "alive"
         },
         {
+          "name": "Melissa",
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 36,
+          "sheet": {},
+          "filedAt": "2026-09-29T16:54:52+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
+        },
+        {
           "name": "Nate V",
           "correct": 0,
           "missed": 0,
@@ -300,6 +314,20 @@
           "rank": 1,
           "delta": 0,
           "state": "alive"
+        },
+        {
+          "name": "Tom",
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 37,
+          "sheet": {},
+          "filedAt": "2026-09-29T16:19:52+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive"
         }
       ],
       "trash": [
@@ -316,7 +344,7 @@
           "text": "Y'all suck"
         }
       ],
-      "column": "Five sheets in by Tuesday lunch, and the trash talk is already doing more work than the picks. Derek filed at noon and immediately accused Kaylani, who has not filed, of outsourcing hers to a robot. Ariel filed five minutes before him and predicted he’d go 0 for 16.\n\nPicks stay sealed until each game kicks off. Thursday night is the first look.",
+      "column": "Seven sheets in by Tuesday afternoon. Garret filed first, before 8:30 in the morning, then Thom and Nate V around eleven, Ariel and Derek at noon, and Tom and Melissa over lunch. Yes, a Thom and a Tom — the board will keep them apart even if nobody else can.\n\nThe trash talk is doing more work than the picks so far. Derek accused Kaylani, who has not filed, of outsourcing hers to a robot. Ariel predicted he’d go 0 for 16.\n\nPicks stay sealed until each game kicks off. Thursday night is the first look.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 0,
@@ -328,6 +356,6 @@
       "outAtLastRun": []
     }
   },
-  "updated": "2026-09-29T16:13:41.793659+00:00",
+  "updated": "2026-09-29T17:09:20.108933+00:00",
   "plannedBuyIn": 5
 }
