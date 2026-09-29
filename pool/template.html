@@ -219,7 +219,7 @@ if(!ps.length){
       else lines.push('<span class="'+(pk===g.winner?'ok':'no')+'">'+esc(pk)+'</span>');
     });
     h+=lines.join(' · ')+(sealedN?' · <span class="sealed">'+sealedN+' sealed</span>':'');
-    if(p.tb!=null) h+='<br>Tiebreaker '+p.tb;
+    if(p.tb!=null&&D.games[D.games.length-1].status!=="sealed") h+='<br>Tiebreaker '+p.tb;
     h+='</div></details>';
   });
 }
