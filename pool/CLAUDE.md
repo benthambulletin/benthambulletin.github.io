@@ -5,6 +5,8 @@ tiebreaker = closest to combined points in the Monday night game. Picks arrive o
 (form id `RGOakJ`, same link all season). Standings live at **https://benthambulletin.github.io/pool/**
 and are rebuilt from `pool/data/season.json` by `pool/build.py`. Commissioner: Garret. Venmo @garretbentham.
 
+**The pool page never links to the paper.** Coworkers and friends play; the Bulletin is family-only. No link, no mention of the Bulletin by name on the pool page.
+
 Everything here runs from a clone of this repo at `/home/claude/benthambulletin.github.io`
 (`git pull --rebase` first; `add_repo` owner `benthambulletin` repo `benthambulletin.github.io` with push
 access if the clone is missing). Work in `pool/`. Commit author `Claude <noreply@anthropic.com>`.
