@@ -121,12 +121,11 @@ game and the Jets game, and the house entry's line. The column should lean on th
 contrarian who hit, the room that whiffed, the homer who got taxed. Never before kickoff.
 
 ## Badges
-score.py awards the weekly badges (crown, backdoor, wolf, coin, homer, traitor, dead, sweep, early,
-buzzer, bigmouth) and build.py the season ones (cellar, bridesmaid, iron, streak). The key is on `about/`.
-Two are the commissioner's call and go in `weeks{N}.awards` as `{"name": ..., "badge": "prophet",
-"note": "said Derek goes 0-for-16; he went 3-13"}`: **prophet** (trash talk that came true) and, if a
-run wants to hand out **bigmouth** by judgment rather than by the last-place rule, the same way. Award
-prophet only on the FINAL run, only when the trash talk made a checkable claim that checked out.
+Six, no more: score.py awards **crown** (leading the week; the winner at final), **cellar** (Porta Potty,
+last place this week), **wolf** (only one right on a game), **homer** (took the Bills or Jets, they lost)
+and **coin** (behind Claude); build.py computes **streak** (On Fire, 3+ straight correct picks across
+weeks). Garret cut the rest because the board got busy. Do not add badges without him asking. The key
+is on `about/`.
 
 ## Rules (fixed)
 Latest submission before each game's kickoff counts for that game. Submitted after a game starts →

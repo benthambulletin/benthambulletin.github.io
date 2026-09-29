@@ -251,7 +251,8 @@
           "filedAt": "2026-09-29T15:55:32+00:00",
           "rank": 1,
           "delta": 0,
-          "state": "alive"
+          "state": "alive",
+          "badges": []
         },
         {
           "name": "Claude",
@@ -266,7 +267,8 @@
           "filedAt": "2026-09-29T01:40:00+00:00",
           "rank": 1,
           "delta": 0,
-          "state": "house"
+          "state": "house",
+          "badges": []
         },
         {
           "name": "Derek",
@@ -281,7 +283,8 @@
           "filedAt": "2026-09-29T16:00:07+00:00",
           "rank": 1,
           "delta": 0,
-          "state": "alive"
+          "state": "alive",
+          "badges": []
         },
         {
           "name": "Garret",
@@ -296,7 +299,8 @@
           "filedAt": "2026-09-29T12:24:58+00:00",
           "rank": 1,
           "delta": 0,
-          "state": "alive"
+          "state": "alive",
+          "badges": []
         },
         {
           "name": "Kaylani & Luka",
@@ -311,7 +315,8 @@
           "filedAt": "2026-09-29T20:43:21+00:00",
           "rank": 1,
           "delta": 0,
-          "state": "alive"
+          "state": "alive",
+          "badges": []
         },
         {
           "name": "Leah",
@@ -326,7 +331,8 @@
           "filedAt": "2026-09-29T22:01:35+00:00",
           "rank": 1,
           "delta": 0,
-          "state": "alive"
+          "state": "alive",
+          "badges": []
         },
         {
           "name": "Melissa",
@@ -341,7 +347,24 @@
           "filedAt": "2026-09-29T16:54:52+00:00",
           "rank": 1,
           "delta": 0,
-          "state": "alive"
+          "state": "alive",
+          "badges": []
+        },
+        {
+          "name": "Mike Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 47,
+          "sheet": {},
+          "filedAt": "2026-09-29T23:36:35+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
         },
         {
           "name": "Nate V",
@@ -356,7 +379,8 @@
           "filedAt": "2026-09-29T15:07:02+00:00",
           "rank": 1,
           "delta": 0,
-          "state": "alive"
+          "state": "alive",
+          "badges": []
         },
         {
           "name": "Thom",
@@ -371,7 +395,8 @@
           "filedAt": "2026-09-29T15:05:20+00:00",
           "rank": 1,
           "delta": 0,
-          "state": "alive"
+          "state": "alive",
+          "badges": []
         },
         {
           "name": "Tom",
@@ -386,10 +411,15 @@
           "filedAt": "2026-09-29T16:19:52+00:00",
           "rank": 1,
           "delta": 0,
-          "state": "alive"
+          "state": "alive",
+          "badges": []
         }
       ],
       "trash": [
+        {
+          "from": "Mike Sombloski",
+          "text": "Help, I fell"
+        },
         {
           "from": "Kaylani & Luka",
           "text": "Winner winner chicken dinner"
@@ -454,7 +484,7 @@
       }
     }
   },
-  "updated": "2026-09-29T22:40:56.788468+00:00",
+  "updated": "2026-09-29T23:46:29.496795+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
