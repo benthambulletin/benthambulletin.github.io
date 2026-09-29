@@ -1,6 +1,7 @@
 # The Sunday Tax — runbook for scheduled runs
 
-Garret's weekly NFL pick 'em. $5 a week, straight-up winners, best record takes the week's pot,
+Garret's weekly NFL pick 'em. **Free to play for now** (`buyIn` is 0 in season.json); the plan is $5 a week
+with the whole pot to the winner once enough people are in (`plannedBuyIn`). Straight-up winners, best record wins the week,
 tiebreaker = closest to combined points in the Monday night game. Picks arrive on a Tally form
 (form id `RGOakJ`, same link all season). Standings live at **https://benthambulletin.github.io/pool/**
 and are rebuilt from `pool/data/season.json` by `pool/build.py`. Commissioner: Garret. Venmo @garretbentham.
@@ -12,6 +13,12 @@ Everything here runs from a clone of this repo at `/home/claude/benthambulletin.
 access if the clone is missing). Work in `pool/`. Commit author `Claude <noreply@anthropic.com>`.
 Push = `git pull --rebase origin main && git push`. The Bulletin's own runs also push here; never touch
 anything outside `pool/`.
+
+## Money switch
+`data/season.json` → `buyIn`. 0 means free: the page hides pots and payouts and says so; score.py still
+reports `pot $0`. When Garret says to turn the money on, set `buyIn` to 5 (from that week forward — do not
+restate earlier weeks), update the Tally form's opening TEXT block and its last TEXT block ("The money") to say
+$5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. Never turn it on without him saying so.
 
 ## Files
 - `data/season.json` — the only state. `currentWeek`, `weeks{N}` (games with ISO kickoffs, winners,
@@ -64,10 +71,9 @@ Garret the one-line message below.
    Name names. Trash talk from the form is printed automatically under the column, unedited — never
    soften, cut, or comment on it. Keep the column under 120 words on Sunday, up to 180 for the final.
 5. `python3 build.py`, commit (`Pool: Week N update` / `Pool: Week N final`), push, confirm live.
-6. UPDATE runs send nothing unless something failed. SCORE sends Garret one short message: winner and
-   payout, one line per player with record, who paid in vs who still owes (Garret marks paid by
-   telling a chat; there is no paid tracking in the data — just list the entrants and the pot), and
-   the standings link.
+6. UPDATE runs send nothing unless something failed. SCORE sends Garret one short message: winner
+   (and payout only if `buyIn` > 0), one line per player with record, entrant count, and the standings
+   link. While `buyIn` is 0 never mention money, pots, Venmo or collecting.
 
 ## Run: ROLL CALL (Thursday evening)
 Fetch submissions, list who has submitted for the current week (normalized names) and the entry count

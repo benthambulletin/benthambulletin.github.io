@@ -19,7 +19,7 @@ for k, w in season["weeks"].items():
 
 page = {
     "name": season["name"], "season": season["season"], "formUrl": season["form"]["url"],
-    "buyIn": season["buyIn"], "week": int(n), "status": wk.get("status", "pre"),
+    "buyIn": season["buyIn"], "plannedBuyIn": season.get("plannedBuyIn", 5), "week": int(n), "status": wk.get("status", "pre"),
     "updated": season.get("updated", ""), "games": wk["games"],
     "tiebreakTotal": wk.get("tiebreakTotal"), "tbUsed": wk.get("tbUsed", False),
     "players": wk.get("players", []), "weekWinners": wk.get("weekWinners", []),
