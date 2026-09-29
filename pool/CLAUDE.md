@@ -44,6 +44,10 @@ $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. N
   leave the script. Run it every time, even when no new game is final: it refreshes entrants and sides.
 - `build.py` — renders `index.html` from `season.json`.
 - `template.html` — the page. Change design here, never in `index.html`.
+- `about/index.html` — the static "How it works" page (rules, full badge key, who Claude is). The badge
+  list there duplicates the `BADGE` table in `template.html`; change both. The money switch also
+  rewrites its "Free to play right now" paragraph. Everything explanatory lives there, not on the board.
+- `preview/index.html` — a simulated live Sunday for design feedback. Delete it once Garret is done.
 
 ## Run: NEW WEEK (Tuesday morning)
 Idempotence first: if `season.json` `currentWeek` already equals the coming week's number AND the
@@ -118,7 +122,7 @@ contrarian who hit, the room that whiffed, the homer who got taxed. Never before
 
 ## Badges
 score.py awards the weekly badges (crown, backdoor, wolf, coin, homer, traitor, dead, sweep, early,
-buzzer, bigmouth) and build.py the season ones (cellar, bridesmaid, iron, streak). The page has the key.
+buzzer, bigmouth) and build.py the season ones (cellar, bridesmaid, iron, streak). The key is on `about/`.
 Two are the commissioner's call and go in `weeks{N}.awards` as `{"name": ..., "badge": "prophet",
 "note": "said Derek goes 0-for-16; he went 3-13"}`: **prophet** (trash talk that came true) and, if a
 run wants to hand out **bigmouth** by judgment rather than by the last-place rule, the same way. Award
