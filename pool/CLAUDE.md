@@ -116,6 +116,14 @@ the minority, upset count, best pick (fewest right, who), nobody-had, the room's
 game and the Jets game, and the house entry's line. The column should lean on these: name the
 contrarian who hit, the room that whiffed, the homer who got taxed. Never before kickoff.
 
+## Badges
+score.py awards the weekly badges (crown, backdoor, wolf, coin, homer, traitor, dead, sweep, early,
+buzzer, bigmouth) and build.py the season ones (cellar, bridesmaid, iron, streak). The page has the key.
+Two are the commissioner's call and go in `weeks{N}.awards` as `{"name": ..., "badge": "prophet",
+"note": "said Derek goes 0-for-16; he went 3-13"}`: **prophet** (trash talk that came true) and, if a
+run wants to hand out **bigmouth** by judgment rather than by the last-place rule, the same way. Award
+prophet only on the FINAL run, only when the trash talk made a checkable claim that checked out.
+
 ## Rules (fixed)
 Latest submission before each game's kickoff counts for that game. Submitted after a game starts →
 that game void, rest count. Tied game → nobody. Winner = most correct; tie → closest to MNF combined
