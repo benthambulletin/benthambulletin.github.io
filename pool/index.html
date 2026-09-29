@@ -221,7 +221,7 @@ if(!ps.length){
   h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
 } else if(D.status==="pre"){
   h+='<div class="lede">Sheets in the drawer, sealed until kickoff.</div>';
-  h+='<p class="filed"><b>Filed:</b> '+ps.filter(function(p){return !p.house;}).map(function(p){return esc(p.name);}).join(", ")+(D.house?'. Plus <b>'+esc(D.house.name)+'</b>, the house entry: sixteen coin flips, sealed with the rest.':'.')+'</p>';
+  h+='<p class="filed"><b>Filed:</b> '+ps.map(function(p){return esc(p.name);}).join(", ")+'.</p>';
   h+='<p class="filed">Changed your mind? Submit the form again. Your latest sheet before each kickoff is the one that counts. Once games start, tap your name here to see your picks.</p>';
 } else {
   h+='<div class="bhead"><span>#</span><span>Player</span><span>Rec</span><span>Left</span><span>Max</span></div>';
@@ -245,7 +245,7 @@ if(!ps.length){
     var hm=D.homer&&D.homer[p.name];
     if(hm&&(hm.bills[0]+hm.bills[1]+hm.jets[0]+hm.jets[1])>0) h+='<br>Season on Bills games '+hm.bills[0]+'–'+hm.bills[1]+' · Jets games '+hm.jets[0]+'–'+hm.jets[1];
     if(p.tb!=null&&D.games[D.games.length-1].status!=="sealed") h+='<br>Tiebreaker '+p.tb;
-    if(p.house&&D.house) h+='<br><span class="sealed">'+esc(D.house.note)+'</span>';
+
     h+='</div></details>';
   });
 }
