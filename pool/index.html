@@ -26,7 +26,11 @@ h1{margin:.6rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size
 .orn{text-align:center;color:var(--gold);font-size:1rem;letter-spacing:.9em;margin:.5rem 0 .4rem}
 .dateline{text-align:center;font-family:'AR';font-weight:800;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase}
 .dateline .st{color:var(--red)}.dateline .st.final{color:var(--teal)}
-.stamp{text-align:center;font-family:'AR';font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-top:.25rem}
+.nav{display:flex;justify-content:center;flex-wrap:wrap;gap:.2rem 1.4rem;font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;padding:.5rem 0;border-bottom:1px solid var(--rule)}
+.nav a{text-decoration:none;color:var(--teal)}
+.nav a.about{color:var(--soft)}
+.more{margin:2rem 0 0;padding:.9rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);text-align:center;font-size:.95rem;color:var(--soft)}
+.more a{color:var(--teal);font-family:'AR';font-weight:700;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
 
 /* tiles */
 .tiles{display:flex;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
@@ -35,7 +39,7 @@ h1{margin:.6rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size
 .tile .v{font-family:'PF';font-weight:800;font-size:clamp(1.4rem,6.5vw,2.3rem);line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tile .v.red{color:var(--red)}
 .tile .k{font-family:'AR';font-weight:700;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin-top:.2rem}
-.fresh{display:flex;justify-content:space-between;gap:.6rem;font-family:'AR';font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding:.45rem .1rem;border-bottom:1px solid var(--rule)}
+.fresh{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.2rem .6rem;font-family:'AR';font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding:.45rem .1rem;border-bottom:1px solid var(--rule)}
 .fresh b{color:var(--ink);font-weight:700}
 .fresh .dot{display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:var(--teal);margin-right:.35rem;vertical-align:.02em}
 .fresh .dot.stale{background:var(--gold)}.fresh .dot.old{background:var(--red)}
@@ -49,19 +53,18 @@ h1{margin:.6rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size
 .sec{text-align:center;font-family:'AR';font-weight:800;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;margin:1.9rem 0 .9rem;padding-top:1.1rem;border-top:1px solid var(--rule);color:var(--red)}
 .sec.t{color:var(--teal)}
 .sec .o{color:var(--gold);margin:0 .7rem;letter-spacing:0}
+#root>.sec:first-of-type{margin-top:1.4rem;padding-top:0;border-top:0}
 .lede{font-family:'PFI';font-style:italic;text-align:center;color:var(--soft);margin:-.4rem 0 .9rem;font-size:1rem}
 
 /* board */
 .brow{border-bottom:1px solid var(--rule)}
-.brow summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1.6rem 1fr auto auto auto;gap:0 .6rem;align-items:baseline;padding:.55rem 0}
+.brow summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1.6rem 1fr auto;gap:0 .6rem;align-items:baseline;padding:.55rem 0}
 .brow summary::-webkit-details-marker{display:none}
 .brow .rk{font-family:'AR';font-weight:700;font-size:.75rem;color:var(--soft)}
 .brow .nm{font-family:'PF';font-weight:700;font-size:1.15rem;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .brow .nm .mv{font-family:'AR';font-size:.7rem;font-weight:700;margin-left:.35rem;vertical-align:.1em}
 .brow .nm .mv.up{color:var(--teal)}.brow .nm .mv.dn{color:var(--red)}
 .brow .rec{font-family:'PF';font-weight:800;font-size:1.15rem;text-align:right}
-.brow .lf,.brow .mx{font-family:'AR';font-size:.72rem;color:var(--soft);text-align:right;white-space:nowrap}
-.brow .lf b,.brow .mx b{color:var(--ink);font-weight:700;font-size:.9rem}
 .brow.lead .nm,.brow.lead .rk{color:var(--red)}
 .brow .tag{display:inline-block;font-family:'AR';font-weight:700;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;padding:.05rem .4rem;border:1px solid;border-radius:2px;margin-left:.4rem;vertical-align:.15em}
 .tag.clinched{color:var(--teal);border-color:var(--teal)}.tag.out{color:var(--soft);border-color:var(--rule)}
@@ -86,11 +89,6 @@ h1{margin:.6rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size
 @media (prefers-reduced-motion:reduce){.bd{animation:none!important}}
 .sheet .earned{margin:.1rem 0 .35rem;color:var(--ink)}
 .sheet .earned .bd{margin:0 .25rem 0 0}
-.turns{font-size:.95rem;color:var(--soft);margin:.7rem 0 0;line-height:1.5}
-.turns b{color:var(--ink);font-weight:600}
-.minikey{display:flex;flex-wrap:wrap;gap:.25rem .9rem;margin:.6rem 0 0;font-family:'AR';font-size:.68rem;color:var(--soft);line-height:1.6}
-.minikey .bd{animation:none;margin:0 .15rem 0 0;font-size:.9rem}
-.minikey b{color:var(--ink);font-weight:700}
 details.fold summary{list-style:none;cursor:pointer;font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding:.4rem 0}
 details.fold summary::-webkit-details-marker{display:none}
 details.fold summary::after{content:" +";}
@@ -98,12 +96,6 @@ details.fold[open] summary::after{content:" –";}
 .tt{margin:.4rem 0 0;padding:0;list-style:none}
 .tt li{padding:.35rem 0;border-top:1px dotted var(--rule);font-family:'PFI';font-style:italic;font-size:1.05rem;line-height:1.3}
 .tt li b{font-family:'AR';font-style:normal;font-weight:700;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-left:.4rem}
-.key{display:grid;grid-template-columns:1fr 1fr;gap:.45rem 1rem}
-@media (max-width:380px){.key{grid-template-columns:1fr}}
-.key .ki{display:grid;grid-template-columns:1.6rem 1fr;gap:0 .4rem;align-items:start;font-size:.9rem;line-height:1.35}
-.key .ki .bd{margin:0;font-size:1.1rem;animation:none}
-.key .ki b{font-family:'AR';font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;display:block}
-.key .ki span{color:var(--soft)}
 .brow.house .nm,.brow.house .rec{color:var(--soft)}
 .num{display:grid;grid-template-columns:1fr 1fr;gap:.6rem .9rem}
 @media (max-width:380px){.num{grid-template-columns:1fr}}
@@ -115,15 +107,8 @@ details.fold[open] summary::after{content:" –";}
 .sheet{padding:.2rem 0 .7rem 2.2rem;font-family:'AR';font-size:.75rem;line-height:1.7;color:var(--soft)}
 .sheet .ok{color:var(--teal);font-weight:600}.sheet .no{color:var(--red);font-weight:600;text-decoration:line-through}
 .sheet .pend{color:var(--ink)}.sheet .sealed{font-style:italic}
-.bhead{display:grid;grid-template-columns:1.6rem 1fr auto auto auto;gap:0 .6rem;font-family:'AR';font-weight:700;font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);padding:.3rem 0;border-bottom:2px solid var(--ink)}
+.bhead{display:grid;grid-template-columns:1.6rem 1fr auto;gap:0 .6rem;font-family:'AR';font-weight:700;font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);padding:.3rem 0;border-bottom:2px solid var(--ink)}
 .bhead span:nth-child(n+3){text-align:right}
-.tick{border-left:3px solid var(--teal);padding:.1rem 0 .1rem .8rem;margin:.5rem 0}
-.tick .at{font-family:'AR';font-weight:700;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
-.tick .n{font-size:1rem}
-.dec{padding:.5rem 0;border-bottom:1px dotted var(--rule)}
-.dec .m{font-family:'PF';font-weight:700;font-size:1.05rem}
-.dec .m .at{color:var(--soft);font-family:'LOI';font-style:italic;font-weight:400;font-size:.9rem}
-.dec .who{font-family:'AR';font-size:.72rem;line-height:1.6}.dec .who b{font-weight:700;color:var(--ink)}
 
 /* standings */
 table{width:100%;border-collapse:collapse}
@@ -170,8 +155,6 @@ details.g summary::-webkit-details-marker{display:none}
 .seas td.money{font-family:'PF';font-weight:800;font-size:1.15rem;color:var(--teal)}
 
 .empty{text-align:center;font-family:'PFI';font-style:italic;color:var(--soft);padding:.4rem 0 .2rem;font-size:1.05rem}
-.rules{font-size:.95rem;color:var(--soft);line-height:1.55}
-.rules b{color:var(--ink);font-weight:600}
 
 /* colophon */
 .colo{margin-top:2rem;text-align:center;font-family:'AR';font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);line-height:2}
@@ -186,8 +169,8 @@ details.g summary::-webkit-details-marker{display:none}
   <div class="tag" id="tag"></div>
   <div class="orn">❧ ❦ ❧</div>
   <div class="dateline" id="dateline"></div>
-  <div class="stamp" id="stamp"></div>
   <div class="dbl tight"><div class="a"></div><div class="b"></div></div>
+  <div class="nav"><a href="#board">Board</a><a href="#column">Column</a><a href="#slate">Slate</a><a class="about" href="/pool/about/">How it works</a></div>
 
   <div class="tiles" id="tiles"></div>
   <div class="fresh" id="fresh"></div>
@@ -252,19 +235,17 @@ $("kickR").textContent=D.season+" · Week "+D.week;
 $("tag").textContent=D.buyIn?"The Football Pool · Straight up, $"+D.buyIn+" a week, winner takes the pot":"The Football Pool · Straight up, free to play, bragging rights on the line";
 var stTxt={pre:"Picks are open",live:"Games under way",final:"Final"}[D.status]||"";
 $("dateline").innerHTML='Week '+D.week+' &middot; <span class="st '+esc(D.status)+'">'+esc(stTxt)+'</span>';
-var nxt=D.status==="final"?"Next slate Tuesday":(D.status==="pre"?"Refreshes hourly":"Refreshes hourly during games · final after Monday night");
-$("stamp").textContent=nxt;
 (function(){
   var t=Date.parse(D.updated), mins=isNaN(t)?null:Math.max(0,Math.round((Date.now()-t)/60000));
   var ago=mins==null?"":(mins<1?"just now":mins<60?mins+" min ago":mins<120?"1 hr ago":Math.round(mins/60)+" hrs ago");
   var cls=mins==null?"":(mins<=70?"":mins<=180?"stale":"old");
-  var nextTxt="Final";
+  var nextTxt="Next slate Tuesday";
   if(D.status!=="final"){
     var n=new Date(); n.setSeconds(0,0); n.setMinutes(7);
     if(n<=new Date()) n.setHours(n.getHours()+1);
     var hr=n.getHours();
     if(hr<8||hr>23){ n.setHours(8); if(hr>23) n.setDate(n.getDate()+1); }
-    nextTxt="Next refresh "+n.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
+    nextTxt="Next "+n.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
   }
   $("fresh").innerHTML='<span><span class="dot '+cls+'"></span>Updated <b>'+esc(fmtWhen(D.updated))+'</b>'+(ago?' · '+esc(ago):'')+'</span><span>'+nextTxt+'</span>';
 })();
@@ -277,24 +258,23 @@ var realPs=ps.filter(function(p){return !p.house;});
 var top=realPs.length?realPs[0].correct:0;
 
 /* tiles */
-var t3;
-if(D.status==="final"&&D.weekWinners.length) t3=D.weekWinners.length>1?{v:"Split "+D.weekWinners.length+" ways",k:"this week",red:true}:{v:esc(D.weekWinners[0]),k:"takes the week",red:true};
+var finals=D.games.filter(function(g){return g.winner;}).length;
+var t1;
+if(D.status==="final"&&D.weekWinners.length) t1=D.weekWinners.length>1?{v:"Split "+D.weekWinners.length+" ways",k:"this week"}:{v:esc(D.weekWinners[0]),k:"takes the week"};
 else if(D.status==="live"&&realPs.length&&top>0){var leaders=realPs.filter(function(p){return p.correct===top;});
-  t3=leaders.length>1?{v:leaders.length+"-way tie",k:"at "+top+" right",red:true}:{v:esc(leaders[0].name),k:"leading, "+top+" right",red:true};}
-else {var first=D.games[0];t3={v:esc((first.when||"").replace(/ · .*$/,"")),k:"first kickoff"};}
+  t1=leaders.length>1?{v:leaders.length+"-way tie",k:"at "+top+" right"}:{v:esc(leaders[0].name),k:"leading, "+top+" right"};}
+else {var fw=((D.games[0]||{}).when||"").replace(/ · .*$/,"").split(/\s+/);t1={v:esc(fw[0]||"—"),k:"kickoff "+esc(fw.slice(1).join(" ").toLowerCase())};}
 $("tiles").innerHTML=
- (D.buyIn
-   ? '<div class="tile"><div class="v red">'+money(D.status==="final"?D.weekPayout:pot)+'</div><div class="k">'+(D.status==="final"?"paid out":"in the pot")+'</div></div>'
-   : '<div class="tile"><div class="v red">Free</div><div class="k">to play, for now</div></div>')+
- '<div class="tile"><div class="v">'+entrants+'</div><div class="k">'+(entrants===1?"entry":"entries")+(D.status==="pre"?" so far":"")+'</div></div>'+
- '<div class="tile"><div class="v'+(t3.red?' red':'')+'">'+t3.v+'</div><div class="k">'+t3.k+'</div></div>';
+ '<div class="tile"><div class="v red">'+t1.v+'</div><div class="k">'+t1.k+'</div></div>'+
+ '<div class="tile"><div class="v">'+finals+' of '+D.games.length+'</div><div class="k">games final</div></div>'+
+ '<div class="tile"><div class="v">'+entrants+'</div><div class="k">'+(entrants===1?"entry":"entries")+(D.status==="pre"?" so far":"")+'</div></div>';
 if(D.status==="final"){$("cta").textContent="Week "+(D.week+1)+" picks";}
 if(D.status==="live"){$("cta").classList.add("quiet");$("cta").textContent="Late sheet? Remaining games count";}
 
 var h="";
 
 /* board */
-h+=orn("The Board");
+h+='<a id="board"></a>'+orn("The Board");
 var sealedN=D.games.filter(function(g){return g.status==="sealed";}).length;
 if(!ps.length){
   h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
@@ -303,14 +283,13 @@ if(!ps.length){
   h+='<p class="filed"><b>Filed:</b> '+ps.map(function(p){return esc(p.name);}).join(", ")+'.</p>';
   h+='<p class="filed">Changed your mind? Submit the form again. Your latest sheet before each kickoff is the one that counts. Once games start, tap your name here to see your picks.</p>';
 } else {
-  h+='<div class="bhead"><span>#</span><span>Player</span><span>Rec</span><span>Left</span><span>Max</span></div>';
+  h+='<div class="bhead"><span>#</span><span>Player</span><span>Record</span></div>';
   ps.forEach(function(p){
     var lead=p.rank===1&&p.correct>0&&!p.house;
     var mv=p.delta>0?'<span class="mv up">▲'+p.delta+'</span>':(p.delta<0?'<span class="mv dn">▼'+(-p.delta)+'</span>':'');
     var tag=p.house?'<span class="tag house">House</span>':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
     h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+p.rank+'</span>'+
-       '<span class="nm">'+esc(p.name)+mv+tag+badgeIcons(p)+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span>'+
-       '<span class="lf"><b>'+p.remaining+'</b></span><span class="mx"><b>'+p.max+'</b></span></summary><div class="sheet">';
+       '<span class="nm">'+esc(p.name)+mv+tag+badgeIcons(p)+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span></summary><div class="sheet">';
     var earned=badgesFor(p);
     if(earned.length){
       h+='<div class="earned">'+earned.map(function(b){return '<span class="bd '+esc(b.id)+'">'+BADGE[b.id].i+'</span>'+esc(BADGE[b.id].l)+(b.note?' — '+esc(b.note):'');}).join('<br>')+'</div>';
@@ -333,50 +312,16 @@ if(!ps.length){
   });
 }
 
-/* under the board: what the week turns on, and a key for the badges in play */
-if(D.status!=="pre"&&ps.length){
-  if(D.status==="live"&&D.decides&&D.decides.length){
-    h+='<p class="turns"><b>Turns on:</b> '+D.decides.map(function(d){var g=D.games[d.game];return esc(g.away)+'–'+esc(g.home)+' ('+d.away.length+' vs '+d.home.length+')';}).join(', ')+'. Who\'s where is in the slate.</p>';
-  }
-  var inPlay={}; ps.forEach(function(p){badgesFor(p).forEach(function(b){inPlay[b.id]=1;});});
-  var ids=Object.keys(BADGE).filter(function(k){return inPlay[k];});
-  if(ids.length){
-    h+='<div class="minikey">'+ids.map(function(k){return '<span><span class="bd">'+BADGE[k].i+'</span><b>'+esc(BADGE[k].l)+'</b> '+esc(BADGE[k].d.split(".")[0])+'.</span>';}).join('')+'</div>';
-  }
-}
-
-/* by the numbers */
-if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
-  var S=D.stats, G=D.games;
-  h+=orn("By the Numbers",true)+'<div class="num">';
-  h+='<div class="it"><div class="k">Upset rate</div><div class="v">'+S.upsets+' of '+S.decided+'</div><div class="d">Games where the smaller side of the room was right.</div></div>';
-  if(S.best){var bg=G[S.best.game];h+='<div class="it"><div class="k">Best pick</div><div class="v">'+esc(bg.winner)+'</div><div class="d">'+esc(bg.away)+' at '+esc(bg.home)+'. Only <b>'+esc(S.best.who.join(", "))+'</b> had it.</div></div>';}
-  if(S.worst&&S.worst.n===0){var wg=G[S.worst.game];h+='<div class="it"><div class="k">Nobody had</div><div class="v">'+esc(wg.winner)+'</div><div class="d">'+esc(wg.away)+' at '+esc(wg.home)+'. The whole room, wrong.</div></div>';}
-  if(S.bills){h+='<div class="it"><div class="k">Bills game</div><div class="v">'+S.bills.right+'–'+S.bills.wrong+'</div><div class="d">The room on '+esc(G[S.bills.game].away)+' at '+esc(G[S.bills.game].home)+'.'+(S.bills.won?' Bills won.':' Bills lost.')+'</div></div>';}
-  if(S.jets){h+='<div class="it"><div class="k">Jets game</div><div class="v">'+S.jets.right+'–'+S.jets.wrong+'</div><div class="d">The room on '+esc(G[S.jets.game].away)+' at '+esc(G[S.jets.game].home)+'.'+(S.jets.won?' Jets won.':' Jets lost.')+'</div></div>';}
-  var hp=ps.filter(function(p){return p.house;})[0];
-  if(hp){var beat=realPs.filter(function(p){return p.correct<hp.correct;}).length;h+='<div class="it"><div class="k">'+esc(hp.name)+', the coin</div><div class="v">'+hp.correct+'–'+hp.missed+'</div><div class="d">'+(beat?'Ahead of <b>'+beat+'</b> of you.':'Behind everyone. For now.')+'</div></div>';}
-  h+='</div>';
-}
-
-/* ticker */
-if(D.updates&&D.updates.length){
-  h+=orn("The Ticker");
-  D.updates.slice().reverse().slice(0,4).forEach(function(u){
-    h+='<div class="tick"><div class="at">'+esc(fmtWhen(u.at))+'</div><div class="n">'+esc(u.note)+'</div></div>';
-  });
-}
-
 /* column */
 if(D.column||D.trash.length){
-  h+=orn("The Column",true)+'<div class="byline">From the commissioner’s desk · grudges printed as received</div><div class="col">';
+  h+='<a id="column"></a>'+orn("The Column",true)+'<div class="byline">From the commissioner’s desk · grudges printed as received</div><div class="col">';
   if(D.column) D.column.split(/\n\n+/).forEach(function(p){h+='<p>'+esc(p)+'</p>';});
   if(D.trash.length){h+='<ul class="tt">'+D.trash.map(function(t){return '<li>“'+esc(t.text)+'”<b>'+esc(t.from)+'</b></li>';}).join('')+'</ul>';}
   h+='</div>';
 }
 
 /* slate */
-h+=orn("The Slate")+'<div class="byline">Room splits leave Claude out · tap a game for names</div>';
+h+='<a id="slate"></a>'+orn("The Slate")+'<div class="byline">Room splits leave Claude out · tap a game for names</div>';
 var lastSlot="";
 D.games.forEach(function(g,i){
   var slot=(g.when||"").replace(/\s+\d{1,2}:\d{2}\s*[AP]M.*$/,"").replace(/^(Sun|Mon|Thu|Sat)\b/,function(m){return {Sun:"Sunday",Mon:"Monday",Thu:"Thursday",Sat:"Saturday"}[m];});
@@ -405,6 +350,18 @@ D.games.forEach(function(g,i){
   }
 });
 
+/* by the numbers */
+if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
+  var S=D.stats, G=D.games;
+  h+=orn("By the Numbers",true)+'<div class="num">';
+  h+='<div class="it"><div class="k">Upset rate</div><div class="v">'+S.upsets+' of '+S.decided+'</div><div class="d">Games where the smaller side of the room was right.</div></div>';
+  if(S.best){var bg=G[S.best.game];h+='<div class="it"><div class="k">Best pick</div><div class="v">'+esc(bg.winner)+'</div><div class="d">'+esc(bg.away)+' at '+esc(bg.home)+'. Only <b>'+esc(S.best.who.join(", "))+'</b> had it.</div></div>';}
+  if(S.worst&&S.worst.n===0){var wg=G[S.worst.game];h+='<div class="it"><div class="k">Nobody had</div><div class="v">'+esc(wg.winner)+'</div><div class="d">'+esc(wg.away)+' at '+esc(wg.home)+'. The whole room, wrong.</div></div>';}
+  var hp=ps.filter(function(p){return p.house;})[0];
+  if(hp){var beat=realPs.filter(function(p){return p.correct<hp.correct;}).length;h+='<div class="it"><div class="k">'+esc(hp.name)+', the coin</div><div class="v">'+hp.correct+'–'+hp.missed+'</div><div class="d">'+(beat?'Ahead of <b>'+beat+'</b> of you.':'Behind everyone. For now.')+'</div></div>';}
+  h+='</div>';
+}
+
 /* season */
 if(D.season_table.length){
 h+=orn("The Season",true);
@@ -414,20 +371,8 @@ h+=orn("The Season",true);
   h+='</tbody></table>';
 }
 
-/* badge key */
-h+=orn("The Badges",true)+'<details class="fold"><summary>All sixteen, what they mean</summary><div class="key">';
-Object.keys(BADGE).forEach(function(k){h+='<div class="ki"><span class="bd">'+BADGE[k].i+'</span><div><b>'+esc(BADGE[k].l)+'</b><span>'+esc(BADGE[k].d)+'</span></div></div>';});
-h+='</div></details>';
-
-/* rules */
-h+=orn("House Rules")+'<details class="fold"><summary>The rules</summary><div class="rules">'+
-(D.buyIn
-  ? '<b>$'+D.buyIn+' a week</b>, Venmo @garretbentham before Sunday. Whole pot to the best record, nothing held back. '
-  : '<b>Free to play right now.</b> No buy-in, no pot. If enough people want it, it becomes $'+(D.plannedBuyIn||5)+' a week with the whole pot to the best record, and you\'ll hear about it here first. ')+
-'Pick every game straight up. '+
-'Each game locks at its own kickoff: submit after one starts and that game is void, the rest count. Your latest sheet before each kickoff is the one that counts. '+
-'<b>Tiebreaker</b> is the total combined points in the Monday night game, both teams added together. Still tied, the pot splits. '+
-'Skipping a week is free. A tied game counts for nobody. Trash talk runs as written.</div></details>';
+/* how it works */
+h+='<div class="more"><a href="/pool/about/">How it works</a><br>The rules, what the badges mean, and who Claude is.</div>';
 
 $("root").innerHTML=h;
 })();
