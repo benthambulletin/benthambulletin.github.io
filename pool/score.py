@@ -56,6 +56,17 @@ def main():
     for lst in by.values(): lst.sort(key=lambda x: x["at"])
     by = {aliases.get(k, lst[-1]["raw"]): lst for k, lst in by.items()}
 
+    # house entry (Claude): seeded random picks stored on the week; filed the moment the week opened
+    house = season.get("house") or {}
+    hp = wk.get("housePicks")
+    house_name = None
+    if house.get("enabled") and hp and hp.get("picks"):
+        house_name = house.get("name", "Claude")
+        resp = {q["games"][int(i)]: [t] for i, t in hp["picks"].items() if int(i) < len(q["games"])}
+        resp[q["tiebreak"]] = hp.get("tb")
+        if hp.get("trash"): resp[q["trash"]] = hp["trash"]
+        by[house_name] = [{"at": P(wk.get("opensAt", "2026-01-01T00:00:00Z")), "r": resp, "raw": house_name}]
+
     def pick_for(lst, qid, kickoff):
         valid = [x for x in lst if x["at"] < P(kickoff)]
         if not valid: return None, True
@@ -95,7 +106,7 @@ def main():
         tb, _ = pick_for(lst, q["tiebreak"], mnf["kickoff"])
         try: tb = int(tb) if tb not in (None, "") else None
         except Exception: tb = None
-        players.append({"name": name, "correct": correct, "missed": missed, "void": void,
+        players.append({"name": name, "house": name == house_name, "correct": correct, "missed": missed, "void": void,
                         "remaining": remaining, "max": correct + remaining, "tb": tb,
                         "sheet": {str(k): v for k, v in sheet.items()},
                         "filedAt": lst[-1]["at"].isoformat()})
@@ -110,17 +121,19 @@ def main():
         p["rank"] = rank
         pr = prev_rank.get(p["name"])
         p["delta"] = (pr - rank) if pr else 0
-    if players:
-        lead = players[0]["correct"]
-        best_other_max = lambda me: max([o["max"] for o in players if o is not me] or [0])
+    real = [p for p in players if not p.get("house")]
+    if real:
+        lead = real[0]["correct"]
+        best_other_max = lambda me: max([o["max"] for o in real if o is not me] or [0])
         for p in players:
-            if p["correct"] > best_other_max(p): p["state"] = "clinched"
+            if p.get("house"): p["state"] = "house"
+            elif p["correct"] > best_other_max(p): p["state"] = "clinched"
             elif p["max"] < lead: p["state"] = "out"
             else: p["state"] = "alive"
 
     # what decides it: remaining games where the contenders split
     decides = []
-    contenders = [p for p in players if p.get("state") != "out"]
+    contenders = [p for p in players if p.get("state") not in ("out", "house")]
     for i, g in enumerate(games):
         if g.get("winner") or not g["sides"]: continue   # sealed games say nothing
         a = [n for n in g["sides"][g["away"]] if n in {c["name"] for c in contenders}]
@@ -128,18 +141,42 @@ def main():
         if a and h: decides.append({"game": i, "away": a, "home": h})
     decides.sort(key=lambda d: -min(len(d["away"]), len(d["home"])))
 
+    # --- by the numbers (only over games that have kicked off; sealed games say nothing)
+    stats = {"games": {}, "upsets": 0, "decided": 0, "best": None, "worst": None, "bills": None, "jets": None}
+    for i, g in enumerate(games):
+        if not g["sides"]: continue
+        a, h = g["sides"][g["away"]], g["sides"][g["home"]]
+        ra = [n for n in a if n != house_name]; rh = [n for n in h if n != house_name]
+        maj, mino = (g["away"], g["home"]) if len(ra) >= len(rh) else (g["home"], g["away"])
+        gs = {"away": len(ra), "home": len(rh), "minority": mino, "minorityWho": (rh if mino == g["home"] else ra)}
+        w = g.get("winner")
+        if w and w != "TIE":
+            stats["decided"] += 1
+            gs["upset"] = (w == mino and len(ra) != len(rh))
+            if gs["upset"]: stats["upsets"] += 1
+            right = [n for n in g["hits"] if n != house_name]
+            gs["rightN"] = len(right)
+            cand = {"game": i, "n": len(right), "who": right}
+            if len(right) and (stats["best"] is None or len(right) < stats["best"]["n"]): stats["best"] = cand
+            if stats["worst"] is None or len(right) < stats["worst"]["n"]: stats["worst"] = cand
+            for team, key in (("Bills", "bills"), ("Jets", "jets")):
+                if team in (g["away"], g["home"]):
+                    stats[key] = {"game": i, "right": len(right), "wrong": len([n for n in g["misses"] if n != house_name]), "won": w == team}
+        stats["games"][str(i)] = gs
+    wk["stats"] = stats
+
     wk["players"] = players
     wk["trash"] = trash
-    wk["pot"] = season["buyIn"] * len(players)
+    wk["pot"] = season["buyIn"] * len(real)
     wk["decides"] = decides[:4]
     wk["weekWinners"], wk["weekPayout"], wk["tbUsed"] = [], 0, False
 
     decided = sum(1 for g in games if g.get("winner"))
     if final:
         if decided < len(games): sys.exit(f"--final but only {decided}/{len(games)} games have a winner")
-        if players:
-            best = max(p["correct"] for p in players)
-            lead = [p for p in players if p["correct"] == best]
+        if real:
+            best = max(p["correct"] for p in real)
+            lead = [p for p in real if p["correct"] == best]
             if len(lead) > 1 and wk.get("tiebreakTotal") is not None:
                 Tt = wk["tiebreakTotal"]
                 for p in lead: p["_d"] = abs(p["tb"] - Tt) if p["tb"] is not None else 10**9
@@ -156,8 +193,8 @@ def main():
     # ticker: one line whenever the decided count changes (or the week finalizes)
     wk.setdefault("updates", [])
     stamp = T.isoformat()
-    if players and (decided != prev_decided or final):
-        top = [p for p in players if p["correct"] == players[0]["correct"]]
+    if real and (decided != prev_decided or final):
+        top = [p for p in real if p["correct"] == real[0]["correct"]]
         rec = f"{top[0]['correct']}–{top[0]['missed']}"
         if final:
             w = wk['weekWinners']
@@ -168,9 +205,9 @@ def main():
             else: lead_txt = f"{len(top)} tied at {rec}"
             note = f"{decided} of {len(games)} final. {lead_txt}."
             already_out = set(wk.get("outAtLastRun", []))
-            new_out = [p["name"] for p in players if p["state"] == "out" and p["name"] not in already_out]
+            new_out = [p["name"] for p in real if p["state"] == "out" and p["name"] not in already_out]
             if new_out: note += f" Out of it: {', '.join(new_out)}."
-            clinched = [p["name"] for p in players if p["state"] == "clinched"]
+            clinched = [p["name"] for p in real if p["state"] == "clinched"]
             if clinched: note += f" {clinched[0]} has clinched."
         wk["updates"].append({"at": stamp, "note": note})
         wk["updates"] = wk["updates"][-12:]

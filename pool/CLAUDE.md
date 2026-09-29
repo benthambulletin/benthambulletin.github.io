@@ -60,6 +60,12 @@ Garret the one-line message below.
 3. Write `weeks{N}` in season.json (copy the shape of an existing week; players/trash empty,
    status `pre`, `opensAt` = now in UTC — score.py ignores submissions older than that, so last
    week's sheets never bleed into this week), set `currentWeek`, `updated`.
+   Then draw the house entry's picks, exactly like this and nothing cleverer:
+   `rng = random.Random(int(hashlib.sha256(b"sundaytax-2026-w<N>").hexdigest(),16))`, then for each
+   game in slate order `rng.choice([away, home])`, then `tb = rng.randint(37,52)`. Store as
+   `weeks{N}.housePicks = {"picks": {"0": team, ...}, "tb": tb, "trash": <one dry line in Claude's voice>}`.
+   The seed is public so anyone can verify the coin wasn't tuned. Claude is on the board, tagged House,
+   never wins the week, never counts toward clinch/out math, and its picks are sealed like everyone's.
 4. Update the Tally form IN PLACE (`load_form` RGOakJ first, then `update_text` on the block uuids
    the ledger shows): the form title `The Sunday Tax — Week N`; each game TITLE block's text
    `Away at Home — Day time` in slate order; each game's two MULTIPLE_CHOICE_OPTION texts (away first,
@@ -103,6 +109,12 @@ All three are the same steps; they differ only in what has finished. The Sunday 
 Fetch submissions, list who has submitted for the current week (normalized names) and the entry count
 and pot. Send Garret one message: names in, and "nag list" = last week's entrants who haven't submitted.
 No page rebuild.
+
+## By the Numbers
+score.py writes `weeks{N}.stats` from games that have kicked off: per-game split counts and who was in
+the minority, upset count, best pick (fewest right, who), nobody-had, the room's record on the Bills
+game and the Jets game, and the house entry's line. The column should lean on these: name the
+contrarian who hit, the room that whiffed, the homer who got taxed. Never before kickoff.
 
 ## Rules (fixed)
 Latest submission before each game's kickoff counts for that game. Submitted after a game starts →
