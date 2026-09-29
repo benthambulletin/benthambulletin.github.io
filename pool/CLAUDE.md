@@ -26,7 +26,11 @@ $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. N
   `form.questions` (Tally question ids: name, tiebreak, trash, and the 16 game questions in slate order),
   `aliases` (lowercase name → display name, for people who type their name three ways).
 - `score.py submissions.json [--final]` — scores the current week from a saved Tally fetch. Enforces
-  the rules; do not re-derive them by hand.
+  the rules; do not re-derive them by hand. It also computes per-player rank, movement since the last
+  run, games left, max possible, alive/out/clinched, who is on each side of every game that has kicked
+  off (`games[].sides`), the "what decides it" list, and appends a line to `weeks{N}.updates` (the
+  Ticker) whenever the number of decided games changes. Picks for games that have not kicked off never
+  leave the script. Run it every time, even when no new game is final: it refreshes entrants and sides.
 - `build.py` — renders `index.html` from `season.json`.
 - `template.html` — the page. Change design here, never in `index.html`.
 
@@ -57,7 +61,9 @@ Garret the one-line message below.
 6. Message Garret (SendUserMessage), one line: `Week N is up — https://tally.so/r/RGOakJ — first game
    Thu <time>.` Nothing else unless something failed; then say exactly what, in one line.
 
-## Run: UPDATE (Sunday afternoon and evening) and SCORE (Monday night, --final)
+## Run: REFRESH (hourly, 8 am–11 pm) and UPDATE (Sunday 4:47 / 7:47 / 11:47 pm) and SCORE (Tuesday 12:20 am, --final)
+All three are the same steps; they differ only in what has finished. The Sunday runs are timed to the
+1:00, 4:25 and Sunday-night windows so the board moves right after each block of games.
 1. `fetch_submissions` for RGOakJ with limit 200; save the entire result verbatim to
    `/home/claude/subs.json` with the Write tool.
 2. Scores: for every game in `weeks{N}` whose `winner` is null and whose kickoff has passed, find the
@@ -67,9 +73,12 @@ Garret the one-line message below.
    final and `tiebreakTotal` = both MNF teams' points added together.
 3. `python3 score.py /home/claude/subs.json` (add `--final` for Monday). Read its output.
 4. Write the column: set `weeks{N}.column` to 2–4 short paragraphs in the voice of a wise-ass
-   commissioner: who is leading, who is bleeding, the dumbest pick of the day, who is overdue.
-   Name names. Trash talk from the form is printed automatically under the column, unedited — never
-   soften, cut, or comment on it. Keep the column under 120 words on Sunday, up to 180 for the final.
+   commissioner: who is leading, who is bleeding, the dumbest pick of the day, who is overdue, and —
+   when `decides` is non-empty — which open game the week turns on and who is on each side. Name
+   names. Read score.py's output (movement, out, clinched, DECIDES) and write from it. Trash talk from
+   the form is printed automatically under the column, unedited — never soften, cut, or comment on it.
+   Under 120 words on Sunday, up to 180 for the final. On an hourly run where nothing new is final,
+   leave the column as it is.
 5. `python3 build.py`, commit (`Pool: Week N update` / `Pool: Week N final`), push, confirm live.
 6. UPDATE runs send nothing unless something failed. SCORE sends Garret one short message: winner
    (and payout only if `buyIn` > 0), one line per player with record, entrant count, and the standings
