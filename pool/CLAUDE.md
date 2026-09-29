@@ -32,8 +32,10 @@ Garret the one-line message below.
    questions (remove extras with Tally `remove_questions`; the ids left in `form.questions.games`
    must be in slate order and match count).
 2. Previous week must be `final` before moving on. If it is not, run the SCORE steps for it first.
+   A week with no entry in `weeks{}` was not played (Week 3 was never sent out); skip it.
 3. Write `weeks{N}` in season.json (copy the shape of an existing week; players/trash empty,
-   status `pre`), set `currentWeek`, `updated`.
+   status `pre`, `opensAt` = now in UTC — score.py ignores submissions older than that, so last
+   week's sheets never bleed into this week), set `currentWeek`, `updated`.
 4. Update the Tally form IN PLACE (`load_form` RGOakJ first, then `update_text` on the block uuids
    the ledger shows): the form title `The Sunday Tax — Week N`; each game TITLE block's text
    `Away at Home — Day time` in slate order; each game's two MULTIPLE_CHOICE_OPTION texts (away first,
