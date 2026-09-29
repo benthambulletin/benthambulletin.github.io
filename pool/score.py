@@ -13,6 +13,7 @@ Rules (fixed, do not reinterpret):
 - A tied game counts for nobody.
 - Week winner = most correct. Tie -> closest to the MNF combined total. Still tied -> split.
 - Blank tiebreaker = worst possible guess.
+- Submissions dated before the week's opensAt are ignored (they were for an earlier slate).
 - Names: trimmed, case-insensitive, then mapped through season.aliases (lowercase key -> display name).
 """
 import json, sys
@@ -39,6 +40,7 @@ def main():
     by = {}
     for s in raw["data"]["submissions"] if "data" in raw else raw["submissions"]:
         if not s.get("isCompleted", True): continue
+        if wk.get("opensAt") and P(s["submittedAt"]) < P(wk["opensAt"]): continue  # earlier week's sheet
         resp = {r["questionId"]: r["answer"] for r in s["responses"]}
         rawname = str(resp.get(q["name"], "")).strip()
         if not rawname: continue
