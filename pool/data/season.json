@@ -30,7 +30,14 @@
       ]
     }
   },
-  "aliases": {},
+  "aliases": {
+    "kaylani & luka": "Kaylani & Luka",
+    "kaylani and luka": "Kaylani & Luka",
+    "kaylani": "Kaylani & Luka",
+    "luka": "Kaylani & Luka",
+    "kaylani/luka": "Kaylani & Luka",
+    "luka & kaylani": "Kaylani & Luka"
+  },
   "currentWeek": 4,
   "weeks": {
     "4": {
