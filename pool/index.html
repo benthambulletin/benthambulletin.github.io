@@ -199,6 +199,7 @@ if(!ps.length){
 } else if(D.status==="pre"){
   h+='<div class="lede">Sheets in the drawer, sealed until kickoff.</div>';
   h+='<p class="filed"><b>Filed:</b> '+ps.map(function(p){return esc(p.name);}).join(", ")+'.</p>';
+  h+='<p class="filed">Changed your mind? Submit the form again. Your latest sheet before each kickoff is the one that counts. Once games start, tap your name here to see your picks.</p>';
 } else {
   h+='<div class="bhead"><span>#</span><span>Player</span><span>Rec</span><span>Left</span><span>Max</span></div>';
   ps.forEach(function(p){
