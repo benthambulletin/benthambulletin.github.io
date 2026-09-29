@@ -14,6 +14,14 @@ access if the clone is missing). Work in `pool/`. Commit author `Claude <noreply
 Push = `git pull --rebase origin main && git push`. The Bulletin's own runs also push here; never touch
 anything outside `pool/`.
 
+## Sealed picks (hard rule)
+Until a game has kicked off, nothing on the page, in the column, in the Ticker, or in any message to
+Garret may reveal or hint at anyone's pick for it: no "everyone likes X", no "Y is the only one on the
+road team", no consensus counts, no "the room is split", no tiebreaker numbers. score.py enforces this
+for the data; the column must obey it too. Before kickoff the column may talk about who has filed, when,
+and the trash talk. After kickoff a game's sides are public and fair game. Rule of thumb: if a late
+filer could learn anything about the slate from it, cut it.
+
 ## Money switch
 `data/season.json` → `buyIn`. 0 means free: the page hides pots and payouts and says so; score.py still
 reports `pot $0`. When Garret says to turn the money on, set `buyIn` to 5 (from that week forward — do not
@@ -75,7 +83,8 @@ All three are the same steps; they differ only in what has finished. The Sunday 
 4. Write the column: set `weeks{N}.column` to 2–4 short paragraphs in the voice of a wise-ass
    commissioner: who is leading, who is bleeding, the dumbest pick of the day, who is overdue, and —
    when `decides` is non-empty — which open game the week turns on and who is on each side. Name
-   names. Read score.py's output (movement, out, clinched, DECIDES) and write from it. Trash talk from
+   names. Read score.py's output (movement, out, clinched, DECIDES) and write from it. Never mention a
+   pick, a lean, or a consensus for any game that has not kicked off (see Sealed picks). Trash talk from
    the form is printed automatically under the column, unedited — never soften, cut, or comment on it.
    Under 120 words on Sunday, up to 180 for the final. On an hourly run where nothing new is final,
    leave the column as it is.
