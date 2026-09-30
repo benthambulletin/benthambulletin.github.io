@@ -413,6 +413,22 @@
           "delta": 0,
           "state": "alive",
           "badges": []
+        },
+        {
+          "name": "andrew clarke",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 50,
+          "sheet": {},
+          "filedAt": "2026-09-30T15:07:10+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
         }
       ],
       "trash": [
@@ -484,7 +500,7 @@
       }
     }
   },
-  "updated": "2026-09-30T14:42:32.183059+00:00",
+  "updated": "2026-09-30T15:10:29.101375+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
