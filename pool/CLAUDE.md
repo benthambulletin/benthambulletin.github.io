@@ -49,7 +49,9 @@ $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. N
   off (`games[].sides`), the "what decides it" list, and appends a line to `weeks{N}.updates` (the
   Ticker) whenever the number of decided games changes. Picks for games that have not kicked off never
   leave the script. Run it every time, even when no new game is final: it refreshes entrants and sides.
-- `build.py` — renders `index.html` from `season.json`.
+- `build.py` — renders `index.html` from `season.json`, and writes `data/page.json` (the same page data). The
+  page fetches `page.json` past the phone's cache on load, on return to the tab, and every ten minutes, and
+  re-renders if it is newer — so a cached `index.html` still shows the live board. Commit both.
 - `template.html` — the page. Change design here, never in `index.html`.
 - `about/index.html` — the static "How it works" page (rules, full badge key, who Claude is). The badge
   list there duplicates the `BADGE` table in `template.html`; change both. The money switch also
