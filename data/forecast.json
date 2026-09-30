@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-30T10:48Z",
+ "generated_utc": "2026-09-30T11:47Z",
  "towns": {
   "North Tonawanda": {
    "issued": "2026-09-30T07:57:55+00:00",
@@ -7,10 +7,10 @@
     {
      "name": "Today",
      "temp": 74,
-     "wind": "SW 3 to 10 mph",
+     "wind": "SW 5 to 10 mph",
      "pop": 1,
      "short": "Mostly Cloudy",
-     "detail": "Mostly cloudy, with a high near 74. Southwest wind 3 to 10 mph."
+     "detail": "Mostly cloudy, with a high near 74. Southwest wind 5 to 10 mph."
     },
     {
      "name": "Tonight",
@@ -87,9 +87,9 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-09-30T10:30:00+00:00",
-    "text": "Fog/Mist",
-    "temp_f": 50
+    "time": "2026-09-30T11:30:00+00:00",
+    "text": "Clear",
+    "temp_f": 52
    }
   },
   "Dunkirk": {
@@ -178,7 +178,7 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-09-30T10:30:00+00:00",
+    "time": "2026-09-30T11:30:00+00:00",
     "text": "Clear",
     "temp_f": 61
    }
@@ -191,8 +191,8 @@
      "temp": 76,
      "wind": "SW 7 mph",
      "pop": 1,
-     "short": "Patchy Fog then Mostly Cloudy",
-     "detail": "Patchy fog before 7am. Mostly cloudy, with a high near 76. Southwest wind around 7 mph."
+     "short": "Mostly Cloudy",
+     "detail": "Mostly cloudy, with a high near 76. Southwest wind around 7 mph."
     },
     {
      "name": "Tonight",
@@ -269,8 +269,8 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-09-30T09:54:00+00:00",
-    "text": "Mostly Cloudy",
+    "time": "2026-09-30T11:30:00+00:00",
+    "text": "Fog/Mist",
     "temp_f": 54
    }
   }
