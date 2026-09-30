@@ -315,7 +315,7 @@ if(!ps.length){
 }
 
 /* directions, under the board */
-if(D.status!=="pre"&&ps.length) h+='<div class="byline dir">Tap a name for picks · tap a game for names · splits leave Claude out</div>';
+h+='<div class="byline dir">'+(D.status==="pre"?'Picks are sealed until each game kicks off · then tap a name for picks, or a game for names':'Tap a name for picks · tap a game for names · splits leave Claude out')+'</div>';
 h+='<div class="nav"><a href="#column">Column</a><a href="#slate">Slate</a><a class="about" href="/pool/about/">How it works</a></div>';
 
 /* column */
