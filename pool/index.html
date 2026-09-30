@@ -26,7 +26,7 @@ h1{margin:.6rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size
 .orn{text-align:center;color:var(--gold);font-size:1rem;letter-spacing:.9em;margin:.5rem 0 .4rem}
 .dateline{text-align:center;font-family:'AR';font-weight:800;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase}
 .dateline .st{color:var(--red)}.dateline .st.final{color:var(--teal)}
-.nav{display:flex;justify-content:center;flex-wrap:wrap;gap:.2rem 1.4rem;font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;padding:.5rem 0;border-bottom:1px solid var(--rule)}
+.nav{display:flex;justify-content:center;flex-wrap:wrap;gap:.2rem 1.6rem;font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;padding:.8rem 0 .2rem}
 .nav a{text-decoration:none;color:var(--teal)}
 .nav a.about{color:var(--soft)}
 .more{margin:2rem 0 0;padding:.9rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);text-align:center;font-size:.95rem;color:var(--soft)}
@@ -174,7 +174,6 @@ details.g summary::-webkit-details-marker{display:none}
   <div class="orn">❧ ❦ ❧</div>
   <div class="dateline" id="dateline"></div>
   <div class="dbl tight"><div class="a"></div><div class="b"></div></div>
-  <div class="nav"><a href="#board">Board</a><a href="#column">Column</a><a href="#slate">Slate</a><a class="about" href="/pool/about/">How it works</a></div>
 
   <div class="tiles" id="tiles"></div>
   <div class="fresh" id="fresh"></div>
@@ -313,6 +312,9 @@ if(!ps.length){
     h+='</div></details>';
   });
 }
+
+/* directions, under the board */
+h+='<div class="nav"><a href="#column">Column</a><a href="#slate">Slate</a><a class="about" href="/pool/about/">How it works</a></div>';
 
 /* column */
 if(D.column||D.trash.length){
