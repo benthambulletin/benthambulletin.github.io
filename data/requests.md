@@ -30,3 +30,4 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - Sep 27, No. 95 — cannabis-seed Spotlight; Toby cover; Luka get-well line. Published by the 7:20 check (scheduled 6:59 run did not push).
 - Sep 28, No. 96 — Mars into Leo in the Stars; built by the 6:59 in-session run.
 - Sep 29, No. 97 — Port Bay cover (Garret, Sat Sep 26); first edition from the Morning feed and hourly Barograph.
+- Sep 30, No. 98 — Luka bedtime cover (Garret, Tue night).
