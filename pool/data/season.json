@@ -36,7 +36,8 @@
     "kaylani": "Kaylani & Luka",
     "luka": "Kaylani & Luka",
     "kaylani/luka": "Kaylani & Luka",
-    "luka & kaylani": "Kaylani & Luka"
+    "luka & kaylani": "Kaylani & Luka",
+    "andrew clarke": "Andrew Clarke"
   },
   "currentWeek": 4,
   "weeks": {
@@ -239,6 +240,22 @@
       "tiebreakTotal": null,
       "players": [
         {
+          "name": "Andrew Clarke",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 50,
+          "sheet": {},
+          "filedAt": "2026-09-30T15:07:10+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
           "name": "Ariel",
           "house": false,
           "correct": 0,
@@ -413,22 +430,6 @@
           "delta": 0,
           "state": "alive",
           "badges": []
-        },
-        {
-          "name": "andrew clarke",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 16,
-          "max": 16,
-          "tb": 50,
-          "sheet": {},
-          "filedAt": "2026-09-30T15:07:10+00:00",
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "badges": []
         }
       ],
       "trash": [
@@ -500,7 +501,7 @@
       }
     }
   },
-  "updated": "2026-09-30T22:09:19.955566+00:00",
+  "updated": "2026-09-30T22:32:17.428672+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
