@@ -110,7 +110,9 @@ All three are the same steps; they differ only in what has finished. The Sunday 
    (b) the Thursday-night run that scores TNF, (c) the three Sunday window runs, and (d) the final.
    Every other hourly run leaves `column` exactly as it is, even when new sheets arrive — the Board
    and the Ticker carry the facts; the column is a voice, not a log.
-5. `python3 build.py`, commit (`Pool: Week N update` / `Pool: Week N final`), push, confirm live.
+5. `python3 build.py`, commit (`Pool: Week N refresh` / `update` / `final`), push, confirm live. **Every run
+   pushes, even when nothing changed** — the page's "Updated" line only moves when a push lands, and that
+   line is how people know the board is alive. A commit an hour is fine.
 6. UPDATE runs send nothing unless something failed. SCORE sends Garret one short message: winner
    (and payout only if `buyIn` > 0), one line per player with record, entrant count, the standings
    link, and the mugshot reminder (see The Mugshot). While `buyIn` is 0 never mention money, pots, Venmo or collecting.
