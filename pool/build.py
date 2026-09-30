@@ -62,4 +62,5 @@ page = {
 tpl = open(f"{HERE}/template.html").read()
 out = tpl.replace("/*DATA*/", json.dumps(page, ensure_ascii=False))
 open(f"{HERE}/index.html", "w").write(out)
+json.dump(page, open(f"{HERE}/data/page.json", "w"), ensure_ascii=False)
 print(f"built pool/index.html · week {n} · {page['status']} · {len(page['players'])} players")

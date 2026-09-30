@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-cache">
 <title>The Sunday Tax</title>
 <style>
 @font-face{font-family:'PF';src:url(/assets/fonts/PlayfairDisplay.ttf);font-weight:100 900;font-display:swap}
@@ -197,6 +198,7 @@ details.g summary::-webkit-details-marker{display:none}
 (function(){
 "use strict";
 var D=JSON.parse(document.getElementById("data").textContent);
+function render(){
 var $=function(id){return document.getElementById(id);};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
 function money(n){return "$"+(Math.round(n*100)/100).toString().replace(/\.00$/,"");}
@@ -381,6 +383,19 @@ h+=orn("The Season",true);
 h+='<div class="more"><a href="/pool/about/">How it works</a><br>The rules, what the badges mean, and who Claude is.</div>';
 
 $("root").innerHTML=h;
+}
+render();
+
+/* phones cache this page hard; pull the live data past the cache and re-render if it is newer */
+function refresh(){
+  if(!window.fetch) return;
+  fetch("/pool/data/page.json?v="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(N){
+    if(N&&N.updated&&Date.parse(N.updated)>Date.parse(D.updated||0)){D=N;render();}
+  }).catch(function(){});
+}
+refresh();
+document.addEventListener("visibilitychange",function(){if(!document.hidden) refresh();});
+setInterval(refresh,10*60*1000);
 })();
 </script>
 </body>
