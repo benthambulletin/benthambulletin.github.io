@@ -14,6 +14,13 @@ access if the clone is missing). Work in `pool/`. Commit author `Claude <noreply
 Push = `git pull --rebase origin main && git push`. The Bulletin's own runs also push here; never touch
 anything outside `pool/`.
 
+## Design is locked (Sept 29)
+Garret signed off on the page: masthead, three tiles, updated line, picks button, the Mugshot box, the
+Board (rank · name · record, badges next to names, tap for picks), a one-line directions row and the
+Column · Slate · How it works links under it, the Column with trash talk, the Slate, By the Numbers, the
+How it works link, and the sign-off. Seven badges, no more. Do not add sections, columns, keys,
+tickers or badges to the board without him asking. Explanatory text goes on `about/`, never the board.
+
 ## Sealed picks (hard rule)
 Until a game has kicked off, nothing on the page, in the column, in the Ticker, or in any message to
 Garret may reveal or hint at anyone's pick for it: no "everyone likes X", no "Y is the only one on the
@@ -47,7 +54,6 @@ $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. N
 - `about/index.html` — the static "How it works" page (rules, full badge key, who Claude is). The badge
   list there duplicates the `BADGE` table in `template.html`; change both. The money switch also
   rewrites its "Free to play right now" paragraph. Everything explanatory lives there, not on the board.
-- `preview/index.html` — a simulated live Sunday for design feedback. Delete it once Garret is done.
 
 ## Run: NEW WEEK (Tuesday morning)
 Idempotence first: if `season.json` `currentWeek` already equals the coming week's number AND the
