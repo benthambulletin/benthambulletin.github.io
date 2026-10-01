@@ -288,6 +288,22 @@
           "badges": []
         },
         {
+          "name": "Dan",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 38,
+          "sheet": {},
+          "filedAt": "2026-10-01T02:26:10+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
           "name": "Derek",
           "house": false,
           "correct": 0,
@@ -501,7 +517,7 @@
       }
     }
   },
-  "updated": "2026-10-01T02:09:07.753648+00:00",
+  "updated": "2026-10-01T03:08:47.317098+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
