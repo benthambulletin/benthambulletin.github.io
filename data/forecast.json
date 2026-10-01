@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-10-01T10:48Z",
+ "generated_utc": "2026-10-01T11:47Z",
  "towns": {
   "North Tonawanda": {
    "issued": "2026-10-01T07:57:57+00:00",
@@ -8,7 +8,7 @@
      "name": "Today",
      "temp": 76,
      "wind": "SW 10 to 15 mph",
-     "pop": 73,
+     "pop": 72,
      "short": "Rain Showers Likely",
      "detail": "Rain showers likely. Cloudy, with a high near 76. Southwest wind 10 to 15 mph, with gusts as high as 26 mph. Chance of precipitation is 70%. New rainfall amounts less than a tenth of an inch possible."
     },
@@ -87,9 +87,9 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-01T10:35:00+00:00",
+    "time": "2026-10-01T11:25:00+00:00",
     "text": "Cloudy",
-    "temp_f": 63
+    "temp_f": 64
    }
   },
   "Dunkirk": {
@@ -99,9 +99,9 @@
      "name": "Today",
      "temp": 76,
      "wind": "SW 10 to 15 mph",
-     "pop": 64,
-     "short": "Rain Showers Likely then Mostly Cloudy",
-     "detail": "Rain showers likely before 11am. Mostly cloudy, with a high near 76. Southwest wind 10 to 15 mph. Chance of precipitation is 60%. New rainfall amounts less than a tenth of an inch possible."
+     "pop": 50,
+     "short": "Chance Rain Showers then Mostly Cloudy",
+     "detail": "A chance of rain showers before 11am. Mostly cloudy, with a high near 76. Southwest wind 10 to 15 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible."
     },
     {
      "name": "Tonight",
@@ -178,9 +178,9 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-01T10:35:00+00:00",
+    "time": "2026-10-01T11:30:00+00:00",
     "text": "Light Rain",
-    "temp_f": 66
+    "temp_f": 64
    }
   },
   "Scottsville": {
@@ -189,10 +189,10 @@
     {
      "name": "Today",
      "temp": 77,
-     "wind": "SW 8 to 13 mph",
+     "wind": "SW 9 to 13 mph",
      "pop": 74,
      "short": "Rain Showers Likely",
-     "detail": "Rain showers likely before 1pm. Cloudy, with a high near 77. Southwest wind 8 to 13 mph, with gusts as high as 23 mph. Chance of precipitation is 70%. New rainfall amounts less than a tenth of an inch possible."
+     "detail": "Rain showers likely before 1pm. Cloudy, with a high near 77. Southwest wind 9 to 13 mph, with gusts as high as 23 mph. Chance of precipitation is 70%. New rainfall amounts less than a tenth of an inch possible."
     },
     {
      "name": "Tonight",
@@ -269,7 +269,7 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-01T10:35:00+00:00",
+    "time": "2026-10-01T11:25:00+00:00",
     "text": "Cloudy",
     "temp_f": 63
    }
