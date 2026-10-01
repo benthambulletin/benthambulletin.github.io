@@ -416,6 +416,22 @@
           "badges": []
         },
         {
+          "name": "Peggy",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 31,
+          "sheet": {},
+          "filedAt": "2026-10-01T10:29:34+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
           "name": "Thom",
           "house": false,
           "correct": 0,
@@ -517,7 +533,7 @@
       }
     }
   },
-  "updated": "2026-10-01T03:08:47.317098+00:00",
+  "updated": "2026-10-01T12:10:02.027241+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
