@@ -320,6 +320,22 @@
           "badges": []
         },
         {
+          "name": "Devin",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 47,
+          "sheet": {},
+          "filedAt": "2026-10-01T12:49:19+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
           "name": "Garret",
           "house": false,
           "correct": 0,
@@ -466,6 +482,10 @@
       ],
       "trash": [
         {
+          "from": "Devin",
+          "text": "Garret- bc I heard he's a \"moron\" 🤪"
+        },
+        {
           "from": "Mike Sombloski",
           "text": "Help, I fell"
         },
@@ -533,7 +553,7 @@
       }
     }
   },
-  "updated": "2026-10-01T12:10:02.027241+00:00",
+  "updated": "2026-10-01T12:52:53.235707+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
