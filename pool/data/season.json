@@ -256,6 +256,22 @@
           "badges": []
         },
         {
+          "name": "Andy R",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 54,
+          "sheet": {},
+          "filedAt": "2026-10-01T13:10:03+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
           "name": "Ariel",
           "house": false,
           "correct": 0,
@@ -478,9 +494,29 @@
           "delta": 0,
           "state": "alive",
           "badges": []
+        },
+        {
+          "name": "Walczyk",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 47,
+          "sheet": {},
+          "filedAt": "2026-10-01T13:54:42+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
         }
       ],
       "trash": [
+        {
+          "from": "Walczyk",
+          "text": "New to the group so well be nice this week"
+        },
         {
           "from": "Devin",
           "text": "Garret- bc I heard he's a \"moron\" 🤪"
@@ -553,7 +589,7 @@
       }
     }
   },
-  "updated": "2026-10-01T13:10:31.885197+00:00",
+  "updated": "2026-10-01T15:10:14.273358+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
