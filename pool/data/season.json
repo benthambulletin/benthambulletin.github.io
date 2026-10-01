@@ -368,6 +368,22 @@
           "badges": []
         },
         {
+          "name": "Jeff G",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 56,
+          "sheet": {},
+          "filedAt": "2026-10-01T17:30:24+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
           "name": "Kaylani & Luka",
           "house": false,
           "correct": 0,
@@ -589,7 +605,7 @@
       }
     }
   },
-  "updated": "2026-10-01T17:09:41.467264+00:00",
+  "updated": "2026-10-01T18:09:38.305132+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
