@@ -47,6 +47,12 @@ def build(marks=()):
     lt, lv = pts[-1]
     d3, d12, d24 = s["d3h_mb"], s["d12h_mb"], s["d24h_mb"]
     score = min(100, round(abs(d24) * 6 + abs(d12) * 4 + abs(d3) * 6))
+    # house rule (CLAUDE.md): a 24-hour fall of 3 mb is MODERATE, 5 mb is HIGH,
+    # and a fast fall of 1.5 mb in three hours is HIGH regardless
+    if d24 <= -5 or d3 <= -1.5:
+        score = max(score, 60)
+    elif d24 <= -3:
+        score = max(score, 35)
     level = "High" if score >= 60 else "Moderate" if score >= 35 else "Low"
     arrow = "&#8593;" if d12 > 0.8 else "&#8595;" if d12 < -0.8 else "&#8212;"
     word = "rising" if d12 > 0.8 else "falling" if d12 < -0.8 else "steady"
