@@ -29,7 +29,7 @@ for k, w in season["weeks"].items():
             for team, key in (("Bills", "bills"), ("Jets", "jets")):
                 if team in (g["away"], g["home"]): hh[key][0 if pk == wn else 1] += 1
 
-# season badges: none right now (the six badges are all weekly, plus the streak below)
+# season badges: none right now (the badges are all weekly, plus the streak below)
 season_badges = {}
 
 # streak: consecutive correct picks across all weeks, in kickoff order, current week included
@@ -47,10 +47,16 @@ for w in allweeks:
             cur = cur + 1 if pk == wn else 0
         streak[p["name"]] = cur
 
+def _iso(u):
+    """whole seconds + Z, which every browser's Date.parse accepts (Safari balks at microseconds)"""
+    from datetime import datetime, timezone
+    try: return datetime.fromisoformat(u.replace("Z", "+00:00")).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    except Exception: return u
+
 page = {
     "name": season["name"], "season": season["season"], "formUrl": season["form"]["url"],
     "buyIn": season["buyIn"], "plannedBuyIn": season.get("plannedBuyIn", 5), "week": int(n), "status": wk.get("status", "pre"),
-    "updated": season.get("updated", ""), "games": wk["games"],
+    "updated": _iso(season.get("updated", "")), "games": wk["games"],
     "tiebreakTotal": wk.get("tiebreakTotal"), "tbUsed": wk.get("tbUsed", False),
     "players": wk.get("players", []), "weekWinners": wk.get("weekWinners", []),
     "weekPayout": wk.get("weekPayout", 0), "season_table": list(tot.values()),

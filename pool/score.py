@@ -54,7 +54,14 @@ def main():
         if not rawname: continue
         by.setdefault(rawname.lower(), []).append({"at": P(s["submittedAt"]), "r": resp, "raw": rawname})
     for lst in by.values(): lst.sort(key=lambda x: x["at"])
-    by = {aliases.get(k, lst[-1]["raw"]): lst for k, lst in by.items()}
+    merged = {}
+    hname = ((season.get("house") or {}).get("name") or "Claude")
+    for k, lst in by.items():
+        disp = aliases.get(k, lst[-1]["raw"])
+        if disp.lower() == hname.lower(): disp = disp + " (player)"   # the house name is reserved
+        merged.setdefault(disp, []).extend(lst)                         # two spellings, one person: merge, don't overwrite
+    for lst in merged.values(): lst.sort(key=lambda x: x["at"])
+    by = merged
 
     # house entry (Claude): seeded random picks stored on the week; filed the moment the week opened
     house = season.get("house") or {}

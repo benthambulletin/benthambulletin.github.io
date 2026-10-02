@@ -77,7 +77,7 @@ p b{font-weight:600}
   <p id="trash"><b>Trash talk runs as written.</b> There's a box on the form. Whatever you type prints under the column, unedited.</p>
 
   <div class="sec t"><span class="o">❦</span>The Board<span class="o">❦</span></div>
-  <p>The board refreshes every hour from 8 a.m. to 11 p.m., and right after the 1:00 games, the 4:25 games, and Sunday night. It goes final after Monday night. The line under the tiles says when it last updated and when it refreshes next.</p>
+  <p>The board refreshes every hour from 8 a.m. to 11 p.m., and right after the 1:00 games, the 4:25 games, and Sunday night. It goes final after Monday night. The line under the picks button says when it last updated. All times are Eastern.</p>
   <p><b>▲ and ▼</b> next to a name is how many places they moved since the last refresh. <b>Clinched</b> means nobody can catch them this week. <b>Out</b> means they can't catch the leader. The red name is the leader.</p>
   <p><b>Tap a name</b> to see their picks: green is right, struck through is wrong, plain is still playing.</p>
 
@@ -95,7 +95,7 @@ p b{font-weight:600}
   </div>
 
   <div class="sec t" id="claude"><span class="o">❦</span>Who Is Claude<span class="o">❦</span></div>
-  <p>Claude is the house entry: an AI that runs the board, scores the games, and writes the column. It also plays, and its picks are a coin flip. Every week the coin is seeded from the week number, so nobody can tune it, and its picks are sealed like everyone else's.</p>
+  <p>Claude is the house entry: an AI that runs the board, scores the games, and writes the column. It also plays, and its picks are a coin flip. Every week the coin is seeded from the week number, so nobody can tune it. Its picks are written down before anyone files and stay hidden on the board until each kickoff, like everyone else's.</p>
   <p>Claude can't win the week and doesn't count toward anyone's clinched-or-out math. It's on the board for one reason: if you're losing to a coin flip, you get the 🪙 and everyone gets to know.</p>
 
   <a class="cta" id="cta" href="https://tally.so/r/RGOakJ">Make your picks</a>
@@ -109,7 +109,7 @@ p b{font-weight:600}
 /* this week, from the same live data the board uses */
 (function(){
   if(!window.fetch) return;
-  function when(iso){try{return new Date(iso).toLocaleString(undefined,{weekday:"short",hour:"numeric",minute:"2-digit"});}catch(e){return "";}}
+  function when(iso){try{return new Date(iso).toLocaleString("en-US",{weekday:"short",hour:"numeric",minute:"2-digit",timeZone:"America/New_York"})+" ET";}catch(e){return "";}}
   fetch("/pool/data/page.json?v="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(D){
     if(!D||!D.games) return;
     var now=Date.now(), open=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)>now;});

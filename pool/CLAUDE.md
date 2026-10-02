@@ -14,24 +14,20 @@ access if the clone is missing). Work in `pool/`. Commit author `Claude <noreply
 Push = `git pull --rebase origin main && git push`. The Bulletin's own runs also push here; never touch
 anything outside `pool/`.
 
-## Design is locked (Sept 29)
-Garret signed off on the page: masthead, three tiles, updated line, picks button, the Mugshot box, the
-Board (rank · name · record, badges next to names, tap for picks), a one-line directions row and the
-Column · Slate · How it works links under it, the Column with trash talk, the Slate, By the Numbers, the
-How it works link, and the sign-off. Added Oct 2 at his request: the "what's next" line under the picks
-button (`#closes`, computed from kickoffs), the "Sheet received" box (`#ack`, shown only when the form
-redirects to `/pool/?filed=1`), and rule/badge links from the board into `about/` anchors. Also Oct 2: a sticky three-tab bar (Standings · Make picks · Rules) under
-the masthead on both the board and `about/`, identical on both, and bigger link text. Keep it.
-Layout v2 (Oct 2, at his request — "the layout isn't intuitive"): top of the board is now masthead →
-tabs → the Now block (week + status kicker, one plain-English headline sentence computed from kickoffs,
-the picks button, updated/next-update line) → three tiles (players · games final · still open to pick) →
-Mugshot → **Standings** (hint "Tap a name to see their picks", › on each row) → **This Week's Games**
-(hint "Tap a game…") → **The Column** + trash → By the Numbers → The Season. Section names are plain
-English; no ornament row, dateline or jump links. Keep this order. Seven badges, no more. Do not add sections, columns, keys,
-tickers or badges to the board without him asking. Explanatory text goes on `about/`, never the board.
+## Design (locked; last changed Oct 2 at Garret's request)
+Board, top to bottom: masthead → sticky tab bar (Standings · Make picks · Rules, identical on `about/`) →
+"Sheet received" box (`#ack`, only when the form redirects to `/pool/?filed=1`) → the Now block (week +
+status kicker, one plain-English headline sentence computed from kickoffs, the picks button, the
+Updated line) → three tiles (players · games final · still open to pick) → the Mugshot box →
+**Standings** (hint "Tap a name to see their picks", › on rows; the house shows no rank) → **This Week's
+Games** (time ET + network; tap a started game for who picked whom; the house is left out of name lists)
+→ **The Column** + trash talk → By the Numbers → The Season → How it works box → sign-off. All times on the
+board and `about/` are Eastern. Rule and badge words on the board link to `about/` anchors. Eight badges,
+no more. Do not add sections, columns, keys, tickers or badges without him asking. Explanatory text goes
+on `about/`, never the board.
 
 ## Sealed picks (hard rule)
-Until a game has kicked off, nothing on the page, in the column, in the Ticker, or in any message to
+Until a game has kicked off, nothing on the page, in the column, in `updates`, or in any message to
 Garret may reveal or hint at anyone's pick for it: no "everyone likes X", no "Y is the only one on the
 road team", no consensus counts, no "the room is split", no tiebreaker numbers. score.py enforces this
 for the data; the column must obey it too. Before kickoff the column may talk about who has filed, when,
@@ -70,7 +66,7 @@ $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. N
   the rules; do not re-derive them by hand. It also computes per-player rank, movement since the last
   run, games left, max possible, alive/out/clinched, who is on each side of every game that has kicked
   off (`games[].sides`), the "what decides it" list, and appends a line to `weeks{N}.updates` (the
-  Ticker) whenever the number of decided games changes. Picks for games that have not kicked off never
+  log, kept in the data but not shown on the page) whenever the number of decided games changes. Picks for games that have not kicked off never
   leave the script. Run it every time, even when no new game is final: it refreshes entrants and sides.
 - `build.py` — renders `index.html` from `season.json`, and writes `data/page.json` (the same page data). The
   page fetches `page.json` past the phone's cache on load, on return to the tab, and every ten minutes, and
@@ -112,7 +108,7 @@ Garret the one-line message below.
    Rewrite the **This week:** line in the intro block: last week's winner and record, and whose
    mugshot is up if there is one (e.g. `<b>This week:</b> Mike took Week 4 at 12–4. Leah's on the
    mugshot.`); if last week wasn't played, the first game and its kickoff. Never anything about picks.
-   Then `save_form` with status PUBLISHED. Question ids do not change when text changes; if you had to
+   Then `publish_form`. Question ids do not change when text changes; if you had to
    add or remove a game question, update `form.questions.games` to match, in order.
 5. `python3 build.py`, commit `Pool: Week N slate`, push. Confirm
    https://benthambulletin.github.io/pool/ shows Week N (cache-bust with `?N`).
@@ -141,7 +137,7 @@ All three are the same steps; they differ only in what has finished. The Sunday 
    (a2) the 8:07 a.m. refresh each day while no game has kicked off (who has filed, who hasn't, trash talk),
    (b) the Thursday-night run that scores TNF, (c) the three Sunday window runs, and (d) the final.
    Every other hourly run leaves `column` exactly as it is, even when new sheets arrive — the Board
-   and the Ticker carry the facts; the column is a voice, not a log.
+   carries the facts; the column is a voice, not a log.
 5. `python3 build.py`, commit (`Pool: Week N refresh` / `update` / `final`), push, confirm live. **Every run
    pushes, even when nothing changed** — the page's "Updated" line only moves when a push lands, and that
    line is how people know the board is alive. A commit an hour is fine.
@@ -151,7 +147,7 @@ All three are the same steps; they differ only in what has finished. The Sunday 
 
 ## The Mugshot
 The week's winner picks one loser, and that person's face runs on the board the following week in a
-framed box under the picks button. The winner sends Garret the photo; Garret sends it here in chat.
+framed box under the tiles. The winner sends Garret the photo; Garret sends it here in chat.
 When it arrives: crop it square around the face (PIL, `ImageOps.exif_transpose`, ~600px), save as
 `faces/w<N>.jpg` where N is the week it will show, and set `weeks{N}.face =
 {"photo": "/pool/faces/w<N>.jpg", "who": <loser>, "by": <winner>, "week": <week won>, "line": ""}`
@@ -163,7 +159,7 @@ one and the box stays empty; it can be added any day after.
 
 ## Run: ROLL CALL (Thursday evening)
 Fetch submissions, list who has submitted for the current week (normalized names) and the entry count
-and pot. Send Garret one message: names in, and "nag list" = last week's entrants who haven't submitted.
+(and the pot only if `buyIn` > 0). Send Garret one message: names in, and "nag list" = last week's entrants who haven't submitted.
 No page rebuild.
 
 ## By the Numbers

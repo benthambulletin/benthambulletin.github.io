@@ -231,9 +231,10 @@ details.g summary::-webkit-details-marker{display:none}
 var D=JSON.parse(document.getElementById("data").textContent);
 function render(){
 var $=function(id){return document.getElementById(id);};
+$("nowK").className="nk"; $("cta").className="cta"; $("mug").innerHTML="";
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
 function money(n){return "$"+(Math.round(n*100)/100).toString().replace(/\.00$/,"");}
-function fmtWhen(iso){try{return new Date(iso).toLocaleString(undefined,{weekday:"short",hour:"numeric",minute:"2-digit"});}catch(e){return "";}}
+function fmtWhen(iso){try{return new Date(iso).toLocaleString("en-US",{weekday:"short",hour:"numeric",minute:"2-digit",timeZone:"America/New_York"})+" ET";}catch(e){return "";}}
 function orn(t,teal){return '<div class="sec'+(teal?' t':'')+'"><span class="o">❦</span>'+t+'<span class="o">❦</span></div>';}
 
 var BADGE={
@@ -252,7 +253,7 @@ function badgesFor(p){
   (D.awards||[]).forEach(function(a){ if(a.name===p.name) out.push({id:a.badge,note:a.note||""}); });
   var st=D.streak&&D.streak[p.name];
   if(st&&st>=3) out.push({id:"streak",n:st,note:st+" straight"});
-  return out.filter(function(b){return BADGE[b.id];});
+  return out.filter(function(b){return BADGE[b.id]&&!(D.status==="final"&&b.id==="dead");});
 }
 function badgeIcons(p){
   return badgesFor(p).map(function(b){
@@ -269,15 +270,8 @@ $("nowK").textContent='Week '+D.week+' · '+stTxt; if(D.status==="final") $("now
   var t=Date.parse(D.updated), mins=isNaN(t)?null:Math.max(0,Math.round((Date.now()-t)/60000));
   var ago=mins==null?"":(mins<1?"just now":mins<60?mins+" min ago":mins<120?"1 hr ago":Math.round(mins/60)+" hrs ago");
   var cls=mins==null?"":(mins<=70?"":mins<=180?"stale":"old");
-  var nextTxt="Next slate Tuesday";
-  if(D.status!=="final"){
-    var n=new Date(); n.setSeconds(0,0); n.setMinutes(7);
-    if(n<=new Date()) n.setHours(n.getHours()+1);
-    var hr=n.getHours();
-    if(hr<8||hr>23){ n.setHours(8); if(hr>23) n.setDate(n.getDate()+1); }
-    nextTxt="Next "+n.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
-  }
-  $("fresh").innerHTML='<span><span class="dot '+cls+'"></span>Updated <b>'+esc(fmtWhen(D.updated))+'</b>'+(ago?' · '+esc(ago):'')+'</span><span>'+nextTxt.replace(/^Next /,"Next update ")+'</span>';
+  var nextTxt=D.status==="final"?"Week "+(D.week+1)+" slate Tuesday":"Updates hourly, 8 AM–11 PM ET";
+  $("fresh").innerHTML='<span><span class="dot '+cls+'"></span>Updated <b>'+esc(fmtWhen(D.updated))+'</b>'+(ago?' · '+esc(ago):'')+'</span><span>'+nextTxt+'</span>';
 })();
 
 var played=D.games.filter(function(g){return g.winner&&g.winner!=="TIE";}).length;
@@ -312,7 +306,7 @@ if(D.status==="live"){$("cta").textContent=openN?"Pick the games still open":"Al
     t=lead;
     if(inplay.length===1) t+=esc(inplay[0].away)+' at '+esc(inplay[0].home)+' is on now. ';
     else if(inplay.length>1) t+=inplay.length+' games on now. ';
-    t+=open.length?open.length+' still open to pick — next locks '+esc(fmtWhen(open[0].kickoff))+'.':'Every game has kicked off.';
+    t+=open.length?open.length+(open.length===1?' game still open':' still open to pick')+' — next locks '+esc(fmtWhen(open[0].kickoff))+'.':'Every game has kicked off.';
   }
   $("nowL").innerHTML=t;
 })();
@@ -340,15 +334,16 @@ if(!ps.length){
   h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
 } else if(D.status==="pre"){
   h+='<div class="hint">Everyone’s picks stay <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a>.</div>';
-  h+='<p class="filed"><b>Filed:</b> '+ps.map(function(p){return esc(p.name);}).join(", ")+'.</p>';
+  h+='<p class="filed"><b>Filed:</b> '+(realPs.length?realPs.map(function(p){return esc(p.name);}).join(", ")+'.':'nobody yet.')+'</p>';
   h+='<p class="filed">Changed your mind? Submit the form again. Your <a class="ruleref" href="/pool/about/#locks">latest sheet before each kickoff</a> is the one that counts. Once games start, tap your name here to see your picks.</p>';
 } else {
+  var dispRank=function(p){return 1+realPs.filter(function(q){return q.correct>p.correct||(q.correct===p.correct&&q.missed<p.missed);}).length;};
   h+='<div class="hint">Tap a name to see their picks</div><div class="bhead"><span>#</span><span>Player</span><span>Record</span></div>';
   ps.forEach(function(p){
-    var lead=p.rank===1&&p.correct>0&&!p.house;
+    var lead=!p.house&&p.correct>0&&dispRank(p)===1;
     var mv=p.delta>0?'<span class="mv up">▲'+p.delta+'</span>':(p.delta<0?'<span class="mv dn">▼'+(-p.delta)+'</span>':'');
-    var tag=p.house?'<span class="tag house">House</span>':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
-    h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+p.rank+'</span>'+
+    var tag=p.house?'<span class="tag house">House</span>':D.status==="final"?'':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
+    h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+(p.house?'–':dispRank(p))+'</span>'+
        '<span class="nm">'+esc(p.name)+mv+tag+badgeIcons(p)+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span></summary><div class="sheet">';
     var earned=badgesFor(p);
     if(earned.length){
@@ -372,11 +367,10 @@ if(!ps.length){
   });
 }
 
-/* directions, under the board */
 
 /* slate */
 h+='<a id="slate"></a>'+orn("This Week’s Games",true);
-if(D.games.some(function(g){return g.status!=="sealed"&&g.sides;})) h+='<div class="hint">Tap a game that has kicked off to see who picked whom</div>';
+h+='<div class="hint">All times Eastern'+(D.games.some(function(g){return g.status!=="sealed"&&g.sides;})?' · tap a game that has kicked off to see who picked whom':'')+'</div>';
 var lastSlot="";
 D.games.forEach(function(g,i){
   var slot=(g.when||"").replace(/\s+\d{1,2}:\d{2}\s*[AP]M.*$/,"").replace(/^(Sun|Mon|Thu|Sat)\b/,function(m){return {Sun:"Sunday",Mon:"Monday",Thu:"Thursday",Sat:"Saturday"}[m];});
@@ -391,11 +385,12 @@ D.games.forEach(function(g,i){
   else if(g.status==="live"){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s live">In progress'+(g.tv?' · '+esc(g.tv):'')+'</span>';}
   else {m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s">'+esc(time)+(g.tv?' · <b class="tv">'+esc(g.tv)+'</b>':'')+'</span>';}
   if(g.status!=="sealed"&&g.sides){
-    var A=g.sides[g.away]||[],H=g.sides[g.home]||[];
+    var notHouse=function(n){return !ps.some(function(p){return p.house&&p.name===n;});};
+    var A=(g.sides[g.away]||[]).filter(notHouse),H=(g.sides[g.home]||[]).filter(notHouse);
     var na=gs?gs.away:A.length, nh=gs?gs.home:H.length;
     sp='<span class="sp">'+esc(g.away)+' <b>'+na+'</b> · '+esc(g.home)+' <b>'+nh+'</b>'+(gs&&gs.upset&&na!==nh?' · <b style="color:var(--red)">upset</b>':'')+'</span>';
     if(g.winner&&g.winner!=="TIE"){
-      who='<div class="who">'+(g.hits.length?'<span class="lab">Right</span><span class="h">'+esc(g.hits.join(", "))+'</span><br>':'')+(g.misses.length?'<span class="lab">Wrong</span><span class="x">'+esc(g.misses.join(", "))+'</span>':'')+'</div>';
+      who='<div class="who">'+(g.hits.filter(notHouse).length?'<span class="lab">Right</span><span class="h">'+esc(g.hits.filter(notHouse).join(", "))+'</span><br>':'')+(g.misses.filter(notHouse).length?'<span class="lab">Wrong</span><span class="x">'+esc(g.misses.filter(notHouse).join(", "))+'</span>':'')+'</div>';
     } else {
       who='<div class="who"><span class="lab">'+esc(g.away)+'</span><span class="side">'+(A.length?esc(A.join(", ")):"—")+'</span><br><span class="lab">'+esc(g.home)+'</span><span class="side">'+(H.length?esc(H.join(", ")):"—")+'</span></div>';
     }
@@ -418,10 +413,10 @@ if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
   var S=D.stats, G=D.games;
   h+=orn("By the Numbers",true)+'<div class="num">';
   h+='<div class="it"><div class="k">Upset rate</div><div class="v">'+S.upsets+' of '+S.decided+'</div><div class="d">Games where the smaller side of the room was right.</div></div>';
-  if(S.best){var bg=G[S.best.game];h+='<div class="it"><div class="k">Best pick</div><div class="v">'+esc(bg.winner)+'</div><div class="d">'+esc(bg.away)+' at '+esc(bg.home)+'. Only <b>'+esc(S.best.who.join(", "))+'</b> had it.</div></div>';}
+  if(S.best&&S.best.who&&(S.best.who.length<=2||S.best.who.length*3<realPs.length)){var bg=G[S.best.game];h+='<div class="it"><div class="k">Best pick</div><div class="v">'+esc(bg.winner)+'</div><div class="d">'+esc(bg.away)+' at '+esc(bg.home)+'. Only <b>'+esc(S.best.who.join(", "))+'</b> had it.</div></div>';}
   if(S.worst&&S.worst.n===0){var wg=G[S.worst.game];h+='<div class="it"><div class="k">Nobody had</div><div class="v">'+esc(wg.winner)+'</div><div class="d">'+esc(wg.away)+' at '+esc(wg.home)+'. The whole room, wrong.</div></div>';}
   var hp=ps.filter(function(p){return p.house;})[0];
-  if(hp){var beat=realPs.filter(function(p){return p.correct<hp.correct;}).length;h+='<div class="it"><div class="k">'+esc(hp.name)+', the coin</div><div class="v">'+hp.correct+'–'+hp.missed+'</div><div class="d">'+(beat?'Ahead of <b>'+beat+'</b> of you.':'Behind everyone. For now.')+'</div></div>';}
+  if(hp){var beat=realPs.filter(function(p){return p.correct<hp.correct;}).length;h+='<div class="it"><div class="k">'+esc(hp.name)+', the coin</div><div class="v">'+hp.correct+'–'+hp.missed+'</div><div class="d">'+(beat?'Ahead of <b>'+beat+'</b> of you.':(realPs.every(function(p){return p.correct>hp.correct;})?'Behind everyone. For now.':'Ahead of nobody yet.'))+'</div></div>';}
   h+='</div>';
 }
 
@@ -429,7 +424,7 @@ if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
 if(D.season_table.length){
 h+=orn("The Season",true);
   var ss=D.season_table.slice().sort(function(a,b){return (b.won-a.won)||(b.correct-a.correct)||a.name.localeCompare(b.name);});
-  h+='<table class="stand seas"><thead><tr><th>Player</th><th>W</th><th>L</th><th>Weeks</th>'+(D.buyIn?'<th>Won</th>':'')+'</tr></thead><tbody>';
+  h+='<table class="stand seas"><thead><tr><th>Player</th><th>Right</th><th>Wrong</th><th>Weeks won</th>'+(D.buyIn?'<th>Won</th>':'')+'</tr></thead><tbody>';
   ss.forEach(function(p,i){h+='<tr><td class="nm"><span class="rk">'+(i+1)+'</span>'+esc(p.name)+'</td><td>'+p.correct+'</td><td>'+p.missed+'</td><td>'+(p.weeksWon||"—")+'</td>'+(D.buyIn?'<td class="money">'+(p.won?money(p.won):"—")+'</td>':'')+'</tr>';});
   h+='</tbody></table>';
 }
