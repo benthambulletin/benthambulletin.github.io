@@ -109,7 +109,7 @@ def main():
         players.append({"name": name, "house": name == house_name, "correct": correct, "missed": missed, "void": void,
                         "remaining": remaining, "max": correct + remaining, "tb": tb,
                         "sheet": {str(k): v for k, v in sheet.items()},
-                        "filedAt": lst[-1]["at"].isoformat()})
+                        "filedAt": lst[-1]["at"].isoformat(), "firstAt": lst[0]["at"].isoformat()})
         t = lst[-1]["r"].get(q["trash"])
         if t and str(t).strip(): trash.append({"from": name, "text": str(t).strip()})
 
@@ -199,6 +199,12 @@ def main():
     # dead: mathematically out of the week
     for p in real:
         if p["state"] == "out": award(p, "dead", "mathematically out")
+    # buzzer beater: first sheet inside the last hour before Thursday kickoff
+    if real:
+        tnf = P(games[0]["kickoff"])
+        for p in real:
+            dt = (tnf - P(p.get("firstAt") or p["filedAt"])).total_seconds()
+            if 0 <= dt <= 3600: award(p, "buzzer", "filed inside the last hour before Thursday kickoff")
     # porta potty: last place this week, once games have been decided
     if len(real) > 2 and sum(1 for g in games if g.get("winner")):
         worst = min(p["correct"] for p in real)
