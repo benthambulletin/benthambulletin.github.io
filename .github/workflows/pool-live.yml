@@ -1,0 +1,56 @@
+name: Pool live scores
+
+# The Sunday Tax (pool/): every 5 minutes during NFL game windows, read ESPN's public
+# scoreboard and publish pool live scores to the `pool-live` branch (live.json).
+# Kept off `main` so it never triggers a Pages build or touches the Bulletin.
+# The script itself exits early unless a game of the current pool week is in its window.
+on:
+  schedule:
+    - cron: "*/5 13-23 * * 0"   # Sunday 9 am - 7:59 pm ET
+    - cron: "*/5 0-4 * * 1"     # Sunday night games
+    - cron: "*/5 23 * * 1,4"    # Monday / Thursday night kickoffs
+    - cron: "*/5 0-4 * * 2,5"   # ... and the rest of those games
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Fetch even if no game is in its window"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pool-live
+  cancel-in-progress: false
+
+jobs:
+  scores:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Fetch scores and publish
+        run: |
+          set +e
+          python3 pool/tools/live.py ${{ inputs.force && '--force' || '' }} > /tmp/live.json
+          rc=$?
+          set -e
+          if [ $rc -eq 3 ]; then echo "no pool game in its window"; exit 0; fi
+          if [ $rc -ne 0 ]; then cat /tmp/live.json; exit $rc; fi
+          cat /tmp/live.json
+          git config user.name "Scoreboard"
+          git config user.email "noreply@anthropic.com"
+          if git fetch --depth=1 origin pool-live 2>/dev/null; then
+            git checkout -q -B pool-live FETCH_HEAD
+          else
+            git checkout -q --orphan pool-live
+            git rm -rfq .
+          fi
+          cp /tmp/live.json live.json
+          git add live.json
+          if git diff --cached --quiet; then echo "unchanged"; exit 0; fi
+          git commit -qm "Live: $(date -u +'%Y-%m-%d %H:%MZ')"
+          git push -q origin pool-live

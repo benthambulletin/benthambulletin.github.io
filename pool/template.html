@@ -300,7 +300,23 @@ function tick(){
   }
 }
 setInterval(tick,30000);
+/* live scores: a GitHub job publishes ESPN's scoreboard to the pool-live branch every ~5 minutes */
+var LIVE_URL="https://raw.githubusercontent.com/benthambulletin/benthambulletin.github.io/pool-live/live.json", LV=null;
+function applyLive(){
+  if(!LV||LV.week!==D.week||!LV.games) return;
+  Object.keys(LV.games).forEach(function(k){var g=D.games[+k], r=LV.games[k]; if(!g||g.winner) return;
+    if(r.state==="in"&&r.line){g.live=r.line; g.liveAt=LV.updated; g.status="live"; g.liveFinal=null;}
+    else if(r.state==="post"&&r.line){g.liveFinal=r.line; g.live=null;}});
+}
+function inWindow(){var n=Date.now();return D.games.some(function(g){var k=Date.parse(g.kickoff);return n>=k-20*60000&&n<=k+5*3600000;});}
+function pollLive(){
+  if(D.archive||!window.fetch||!inWindow()) return;
+  fetch(LIVE_URL+"?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(J){
+    if(J&&(!LV||J.updated!==LV.updated)){LV=J;render();}
+  }).catch(function(){});
+}
 function render(){
+applyLive();
 var $=function(id){return document.getElementById(id);};
 $("nowK").className="nk"; $("cta").className="cta"; $("mug").innerHTML="";
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
@@ -364,7 +380,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
 /* the hero: the one thing to know right now, then the next deadline with a live countdown */
 (function(){
   var now=Date.now(), open=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)>now;});
-  var inplay=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)<=now;});
+  var inplay=D.games.filter(function(g){return !g.winner&&!g.liveFinal&&Date.parse(g.kickoff)<=now;});
   var L=top>0?realPs.filter(function(p){return p.correct===top;}):[];
   var leadTxt=!L.length?'':(L.length===1?'<b>'+esc(L[0].name)+'</b> leads at <b>'+L[0].correct+'–'+L[0].missed+'</b>':'<b>'+L.length+' tied</b> at the top, <b>'+top+'</b> right');
   var left=D.games.filter(function(g){return !g.winner;}).length;
@@ -482,6 +498,7 @@ D.games.forEach(function(g,i){
   else if(g.winner){var aw=g.winner===g.away;
     m='<span class="'+(aw?'w':'')+'">'+esc(g.away)+'</span> <span class="at">at</span> <span class="'+(aw?'':'w')+'">'+esc(g.home)+'</span>';
     s='<span class="s fin">'+esc(g.score||"Final")+'</span>';}
+  else if(g.liveFinal){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s fin">'+esc(g.liveFinal)+'</span>';}
   else if(g.status==="live"){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s live">'+(g.live?esc(g.live):'Live')+'</span>';}
   else {m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s">'+esc(time)+(g.tv?' · <b class="tv">'+esc(g.tv)+'</b>':'')+'</span>';}
   if(g.status!=="sealed"&&g.sides){
@@ -560,6 +577,9 @@ if(!D.archive){
 refresh();
 document.addEventListener("visibilitychange",function(){if(!document.hidden) refresh();});
 setInterval(refresh,10*60*1000);
+pollLive();
+setInterval(pollLive,60*1000);
+document.addEventListener("visibilitychange",function(){if(!document.hidden) pollLive();});
 }
 })();
 </script>
