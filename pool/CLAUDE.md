@@ -18,7 +18,7 @@ anything outside `pool/`.
 Board, top to bottom: masthead → sticky tab bar (Standings · Make picks · Rules, identical on `about/`) →
 "Sheet received" box (`#ack`, only when the form redirects to `/pool/?filed=1`) → the Now block (week +
 status kicker, one plain-English headline sentence computed from kickoffs, the picks button, the
-Updated line) → three tiles (players · games final · still open to pick) → the Mugshot box →
+Updated line) [hero, Oct 2: kicker + one big line + subline, by state — countdown to first lock before kickoff; the live game and score while one is on; the leader between games; the champion when final; plus a Next lock bar with a live countdown] → three tiles (players · games final · still open to pick) → the Mugshot box →
 **Standings** (hint "Tap a name to see their picks", › on rows; the house shows no rank) → **This Week's
 Games** (time ET + network; tap a started game for who picked whom; the house is left out of name lists)
 → **The Column** + trash talk → By the Numbers → The Season → How it works box → sign-off. All times on the
