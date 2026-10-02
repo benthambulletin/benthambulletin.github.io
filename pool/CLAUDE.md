@@ -87,6 +87,9 @@ Garret the one-line message below.
 1. Coming week = the NFL week whose Thursday game is next. Fetch the slate from
    https://www.nfl.com/schedules/2026/by-week/week-N and cross-check one other schedule site.
    Kickoffs to UTC (ET = UTC-4 until Nov 1, then UTC-5). Note London/international games in `when`.
+   Also record each game's network in `games[].tv` (`CBS`, `FOX`, `NBC`, `ESPN/ABC`, `Prime Video`,
+   `NFL Network`, …) from NFL.com's weekly "How to watch" article, cross-checked against one other
+   listing. If a network isn't announced yet, leave `tv` out; never guess. The board shows it next to the time.
    Byes are fine: fewer than 16 games is fine, but then the form must have exactly that many game
    questions (remove extras with Tally `remove_questions`; the ids left in `form.questions.games`
    must be in slate order and match count).
@@ -103,7 +106,7 @@ Garret the one-line message below.
    never wins the week, never counts toward clinch/out math, and its picks are sealed like everyone's.
 4. Update the Tally form IN PLACE (`load_form` RGOakJ first, then `update_text` on the block uuids
    the ledger shows): the form title `The Sunday Tax — Week N`; each game TITLE block's text
-   `Away at Home — Day time` in slate order; each game's two MULTIPLE_CHOICE_OPTION texts (away first,
+   `Away at Home — Day time · NETWORK` in slate order (drop the ` · NETWORK` part when `tv` is unknown); each game's two MULTIPLE_CHOICE_OPTION texts (away first,
    then home); the tiebreaker TITLE `Total combined points in <MNF away> at <MNF home>`; the heading
    texts (Thursday / Sunday 1:00 PM / Sunday afternoon / Prime time) if the slate shape differs.
    Rewrite the **This week:** line in the intro block: last week's winner and record, and whose

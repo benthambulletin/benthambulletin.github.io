@@ -81,7 +81,8 @@
               "Dan",
               "Kaylani & Luka"
             ]
-          }
+          },
+          "tv": "Prime Video"
         },
         {
           "away": "Colts",
@@ -93,7 +94,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "NFL Network"
         },
         {
           "away": "Titans",
@@ -105,7 +107,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "CBS"
         },
         {
           "away": "Patriots",
@@ -117,7 +120,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "CBS"
         },
         {
           "away": "Jets",
@@ -129,7 +133,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "FOX"
         },
         {
           "away": "Jaguars",
@@ -141,7 +146,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "CBS"
         },
         {
           "away": "Cowboys",
@@ -153,7 +159,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "FOX"
         },
         {
           "away": "Cardinals",
@@ -165,7 +172,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "CBS"
         },
         {
           "away": "Rams",
@@ -177,7 +185,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "FOX"
         },
         {
           "away": "Packers",
@@ -189,7 +198,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "FOX"
         },
         {
           "away": "Dolphins",
@@ -201,7 +211,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "FOX"
         },
         {
           "away": "Chiefs",
@@ -213,7 +224,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "CBS"
         },
         {
           "away": "Chargers",
@@ -225,7 +237,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "CBS"
         },
         {
           "away": "Broncos",
@@ -237,7 +250,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "CBS"
         },
         {
           "away": "Lions",
@@ -249,7 +263,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "NBC"
         },
         {
           "away": "Falcons",
@@ -261,7 +276,8 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "tv": "ESPN/ABC"
         }
       ],
       "tiebreakTotal": null,
