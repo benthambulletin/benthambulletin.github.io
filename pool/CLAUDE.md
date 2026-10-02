@@ -18,7 +18,9 @@ anything outside `pool/`.
 Garret signed off on the page: masthead, three tiles, updated line, picks button, the Mugshot box, the
 Board (rank · name · record, badges next to names, tap for picks), a one-line directions row and the
 Column · Slate · How it works links under it, the Column with trash talk, the Slate, By the Numbers, the
-How it works link, and the sign-off. Seven badges, no more. Do not add sections, columns, keys,
+How it works link, and the sign-off. Added Oct 2 at his request: the "what's next" line under the picks
+button (`#closes`, computed from kickoffs), the "Sheet received" box (`#ack`, shown only when the form
+redirects to `/pool/?filed=1`), and rule/badge links from the board into `about/` anchors. Seven badges, no more. Do not add sections, columns, keys,
 tickers or badges to the board without him asking. Explanatory text goes on `about/`, never the board.
 
 ## Sealed picks (hard rule)
@@ -34,6 +36,15 @@ filer could learn anything about the slate from it, cut it.
 reports `pot $0`. When Garret says to turn the money on, set `buyIn` to 5 (from that week forward — do not
 restate earlier weeks), update the Tally form's opening TEXT block and its last TEXT block ("The money") to say
 $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. Never turn it on without him saying so.
+
+## The three pages are wired together (Oct 2)
+- Form → board: Tally redirect on completion is `https://benthambulletin.github.io/pool/?filed=1`. Keep it.
+- Form intro TEXT block (`eb81f875-cf82-485b-8818-80a58ac5ace2`) has three parts: the fixed rules line,
+  a **This week:** line, and the links `The board · How it works`. Keep the links and the fixed line.
+- Form colors/font match the board (cream `#fbf5e4`, ink, teal accent, red button, Lora). The form is on
+  Tally's free plan, so the advanced input/button styling is not live; do not add custom CSS.
+- `about/` anchors the board links to: `#locks #sealed #tiebreak #mugshot #trash` and `#b-<badge id>`.
+  Keep those ids if you edit the page. Its week strip reads `data/page.json` live; nothing to update.
 
 ## Files
 - `data/season.json` — the only state. `currentWeek`, `weeks{N}` (games with ISO kickoffs, winners,
@@ -83,6 +94,9 @@ Garret the one-line message below.
    `Away at Home — Day time` in slate order; each game's two MULTIPLE_CHOICE_OPTION texts (away first,
    then home); the tiebreaker TITLE `Total combined points in <MNF away> at <MNF home>`; the heading
    texts (Thursday / Sunday 1:00 PM / Sunday afternoon / Prime time) if the slate shape differs.
+   Rewrite the **This week:** line in the intro block: last week's winner and record, and whose
+   mugshot is up if there is one (e.g. `<b>This week:</b> Mike took Week 4 at 12–4. Leah's on the
+   mugshot.`); if last week wasn't played, the first game and its kickoff. Never anything about picks.
    Then `save_form` with status PUBLISHED. Question ids do not change when text changes; if you had to
    add or remove a game question, update `form.questions.games` to match, in order.
 5. `python3 build.py`, commit `Pool: Week N slate`, push. Confirm
