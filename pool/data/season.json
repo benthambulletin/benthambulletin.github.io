@@ -240,6 +240,22 @@
       "tiebreakTotal": null,
       "players": [
         {
+          "name": "Amanda Rodgers",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 58,
+          "sheet": {},
+          "filedAt": "2026-10-01T20:31:07+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
           "name": "Andrew Clarke",
           "house": false,
           "correct": 0,
@@ -384,6 +400,38 @@
           "badges": []
         },
         {
+          "name": "Josh",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 48,
+          "sheet": {},
+          "filedAt": "2026-10-02T00:05:37+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
+          "name": "Kara",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 39,
+          "sheet": {},
+          "filedAt": "2026-10-01T23:10:34+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
           "name": "Kaylani & Luka",
           "house": false,
           "correct": 0,
@@ -410,6 +458,22 @@
           "tb": 52,
           "sheet": {},
           "filedAt": "2026-09-29T22:01:35+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
+          "name": "Marky Mark",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": 43,
+          "sheet": {},
+          "filedAt": "2026-10-01T23:13:41+00:00",
           "rank": 1,
           "delta": 0,
           "state": "alive",
@@ -605,7 +669,7 @@
       }
     }
   },
-  "updated": "2026-10-01T19:09:19.568713+00:00",
+  "updated": "2026-10-02T00:09:30.023725+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
