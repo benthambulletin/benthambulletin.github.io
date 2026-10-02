@@ -22,7 +22,7 @@ Updated line) [hero, Oct 2: kicker + one big line + subline, by state — countd
 **Standings** (hint + dot key; › on rows; a row of dots under each name, one per game that has kicked off: teal right, red wrong, hollow live; tied ranks read T2; the house shows no rank) → **This Week's
 Games** (time ET + network; tap a started game for who picked whom; the house is left out of name lists)
 → **The Column** + trash talk → By the Numbers → The Season → How it works box → sign-off. All times on the
-board and `about/` are Eastern. Rule and badge words on the board link to `about/` anchors. Eight badges,
+board and `about/` are Eastern. **Color rule (Oct 2, Garret: "all different colors pull my eyes everywhere"):** text is ink or grey only; red is for the picks button, the live dot and wrong-pick dots; teal only for right-pick dots; no gold ornaments, no colored section heads or links. Don't add color back. Rule and badge words on the board link to `about/` anchors. Eight badges,
 no more. Do not add sections, columns, keys, tickers or badges without him asking. Explanatory text goes
 on `about/`, never the board.
 
