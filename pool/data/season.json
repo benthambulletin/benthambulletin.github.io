@@ -42,7 +42,7 @@
   "currentWeek": 4,
   "weeks": {
     "4": {
-      "status": "pre",
+      "status": "live",
       "games": [
         {
           "away": "Steelers",
@@ -812,7 +812,7 @@
       }
     }
   },
-  "updated": "2026-10-02T00:30:39.159821+00:00",
+  "updated": "2026-10-02T00:42:23.849480+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",

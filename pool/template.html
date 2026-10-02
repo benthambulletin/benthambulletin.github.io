@@ -280,6 +280,7 @@ var t1;
 if(D.status==="final"&&D.weekWinners.length) t1=D.weekWinners.length>1?{v:"Split "+D.weekWinners.length+" ways",k:"this week"}:{v:esc(D.weekWinners[0]),k:"takes the week"};
 else if(D.status==="live"&&realPs.length&&top>0){var leaders=realPs.filter(function(p){return p.correct===top;});
   t1=leaders.length>1?{v:leaders.length+"-way tie",k:"at "+top+" right"}:{v:esc(leaders[0].name),k:"leading, "+top+" right"};}
+else if(D.status==="live"){var lg=D.games.filter(function(g){return g.status==="live";})[0];t1=lg?{v:"Live",k:esc(lg.away)+" at "+esc(lg.home)}:{v:"0 right",k:"nobody on the board yet"};}
 else {var fw=((D.games[0]||{}).when||"").replace(/ · .*$/,"").split(/\s+/);t1={v:esc(fw[0]||"—"),k:"kickoff "+esc(fw.slice(1).join(" ").toLowerCase())};}
 $("tiles").innerHTML=
  '<div class="tile"><div class="v red">'+t1.v+'</div><div class="k">'+t1.k+'</div></div>'+

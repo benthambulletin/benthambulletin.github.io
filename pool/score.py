@@ -235,7 +235,7 @@ def main():
             for p in lead: award(p, "crown", "won the week" + (" on the tiebreaker" if wk["tbUsed"] else ""))
         wk["status"] = "final"
     else:
-        wk["status"] = "live" if decided else "pre"
+        wk["status"] = "live" if (decided or any(g.get("status") != "sealed" for g in wk["games"])) else "pre"
         if decided and real:
             best = max(p["correct"] for p in real)
             if best > 0:
