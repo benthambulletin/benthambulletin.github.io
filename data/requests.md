@@ -32,4 +32,4 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - Sep 29, No. 97 — Port Bay cover (Garret, Sat Sep 26); first edition from the Morning feed and hourly Barograph.
 - Sep 30, No. 98 — Luka bedtime cover (Garret, Tue night).
 - Oct 1, No. 99 — Luka bedtime cover, then swapped to Garret's backyard doe photo (Thu a.m.).
-- Oct 2, No. 100 — no photo by 6:59, ran plateless; Family Today ask box now points to the Tally form.
+- Oct 2, No. 100 — the hundredth edition; Luka bedtime cover added after publish (Garret, 7:25); Family Today ask box now points to the Tally form.
