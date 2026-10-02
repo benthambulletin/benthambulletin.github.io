@@ -49,6 +49,10 @@ html{scroll-padding-top:3.4rem}
 .brow[open] .rec::after{transform:rotate(90deg)}
 details.g summary .s::after{content:"›";display:inline-block;margin-left:.4rem;color:var(--teal);font-weight:800;transition:transform .15s}
 details.g[open] summary .s::after{transform:rotate(90deg)}
+.cal[hidden]{display:none}
+.cal{display:block;margin:.55rem 0 0;font-family:'AR';font-weight:700;font-size:.8rem;letter-spacing:.06em;color:var(--teal);text-decoration:none}
+.pastwk{margin:1rem 0 0;text-align:center;font-family:'AR';font-weight:700;font-size:.85rem;line-height:2}
+.pastwk a{color:var(--teal);text-decoration:none;margin:0 .5rem;white-space:nowrap}
 /* tiles */
 .tiles{display:flex;margin-top:1rem;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .tile{flex:1;text-align:center;padding:.6rem .2rem;border-right:1px solid var(--rule);min-width:0}
@@ -208,6 +212,7 @@ details.g summary::-webkit-details-marker{display:none}
     <div class="nk" id="nowK"></div>
     <div class="nl" id="nowL"></div>
     <a class="cta" id="cta" href="#">Make your picks</a>
+    <a class="cal" id="cal" href="/pool/week.ics" hidden>📅 Add the pick deadline to your calendar</a>
     <div class="fresh" id="fresh"></div>
   </div>
   <div class="tiles" id="tiles"></div>
@@ -291,6 +296,8 @@ $("tiles").innerHTML=
 if(D.status==="final"){$("cta").textContent="Week "+(D.week+1)+" picks";}
 if(D.status==="pre"){$("cta").textContent="Make or change your picks";}
 if(D.status==="live"){$("cta").textContent=openN?"Pick the games still open":"All games have kicked off";if(!openN)$("cta").classList.add("quiet");}
+$("cal").hidden=!(openN&&!D.archive);
+if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="/pool/";$("cta").classList.add("quiet");$("fresh").textContent="Week "+D.week+" is in the books.";}
 
 /* the headline: one plain sentence on where the week stands, computed from kickoffs */
 (function(){
@@ -300,7 +307,7 @@ if(D.status==="live"){$("cta").textContent=openN?"Pick the games still open":"Al
   if(realPs.length&&top>0){var L=realPs.filter(function(p){return p.correct===top;});
     lead=L.length===1?esc(L[0].name)+' leads at '+L[0].correct+'–'+L[0].missed+'. ':L.length+' tied at the top with '+top+' right. ';}
   var t;
-  if(D.status==="final") t=(D.weekWinners.length===1?esc(D.weekWinners[0])+' won Week '+D.week+'.':'Week '+D.week+' split '+D.weekWinners.length+' ways.')+' Week '+(D.week+1)+' picks open Tuesday.';
+  if(D.status==="final") t=(D.weekWinners.length===1?esc(D.weekWinners[0])+' won Week '+D.week+'.':'Week '+D.week+' split '+D.weekWinners.length+' ways.')+(D.archive?'':' Week '+(D.week+1)+' picks open Tuesday.');
   else if(open.length===D.games.length) t='Picks are open. First game locks '+esc(fmtWhen(open[0].kickoff))+'.';
   else {
     t=lead;
@@ -382,7 +389,7 @@ D.games.forEach(function(g,i){
   else if(g.winner){var aw=g.winner===g.away;
     m='<span class="'+(aw?'w':'')+'">'+esc(g.away)+'</span> <span class="at">at</span> <span class="'+(aw?'':'w')+'">'+esc(g.home)+'</span>';
     s='<span class="s fin">'+esc(g.score||"Final")+'</span>';}
-  else if(g.status==="live"){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s live">In progress'+(g.tv?' · '+esc(g.tv):'')+'</span>';}
+  else if(g.status==="live"){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s live">'+(g.live?esc(g.live):'In progress')+(g.tv?' · '+esc(g.tv):'')+'</span>'+(g.live&&g.liveAt?'<span class="sp">as of '+esc(fmtWhen(g.liveAt))+'</span>':'');}
   else {m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s">'+esc(time)+(g.tv?' · <b class="tv">'+esc(g.tv)+'</b>':'')+'</span>';}
   if(g.status!=="sealed"&&g.sides){
     var notHouse=function(n){return !ps.some(function(p){return p.house&&p.name===n;});};
@@ -429,6 +436,10 @@ h+=orn("The Season",true);
   h+='</tbody></table>';
 }
 
+/* past weeks */
+if(D.pastWeeks&&D.pastWeeks.length){
+  h+=orn("Past Weeks")+'<div class="pastwk">'+D.pastWeeks.map(function(w){return '<a href="/pool/weeks/'+w.week+'/">Week '+w.week+(w.winners&&w.winners.length?' · '+esc(w.winners.join(" & ")):'')+'</a>';}).join('<br>')+'</div>';
+}
 /* how it works */
 h+='<div class="more"><a href="/pool/about/">How it works</a><br>The rules, what the badges mean, and who Claude is.</div>';
 
@@ -443,9 +454,11 @@ function refresh(){
     if(N&&N.updated&&Date.parse(N.updated)>Date.parse(D.updated||0)){D=N;render();}
   }).catch(function(){});
 }
+if(!D.archive){
 refresh();
 document.addEventListener("visibilitychange",function(){if(!document.hidden) refresh();});
 setInterval(refresh,10*60*1000);
+}
 })();
 </script>
 </body>

@@ -54,6 +54,20 @@ $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. N
   game TITLE and heading before rewriting them. score.py already voids any pick sent after kickoff;
   hiding just stops people from making one.
 
+## Added Oct 2 (Garret asked for these)
+- **Receipt:** the form's redirect on completion is `https://benthambulletin.github.io/pool/sheet/?filed=1&g0={{q0}}…&g15={{q15}}&t={{tiebreak}}&n={{name}}`
+  using the question uuids (the `questionUuid` column of the Tally ledger, NOT the block uuids), name LAST.
+  `sheet/` shows a screenshot-ready receipt from those values in the player's own browser and strips them
+  from the address bar; nothing is stored or published. If a week has fewer games (byes), rebuild the URL
+  so g<i> matches slate order. Keep it.
+- **Past weeks:** build.py writes a frozen page for every final week except the current one at
+  `/pool/weeks/<N>/` and lists them under "Past Weeks" on the board. Archived pages never refetch page.json.
+- **Calendar:** build.py writes `/pool/week.ics` (the week's first kickoff and first Sunday kickoff still ahead,
+  each with a 1-hour reminder). The board links it under the picks button while games are open. Commit it.
+- **Live scores:** REFRESH/UPDATE runs set `games[i].live` (e.g. `Bills 17–14 · 3rd qtr`, leader first) and
+  `games[i].liveAt` (UTC ISO) for games in progress, from the sports data tool or ESPN's scoreboard; unset
+  them when a game goes final. Never guess a score; if none is reliable, leave `live` out.
+
 ## Files
 - `data/season.json` — the only state. `currentWeek`, `weeks{N}` (games with ISO kickoffs, winners,
   scores, players, trash, column, tiebreakTotal, weekWinners, weekPayout, status pre/live/final),

@@ -53,20 +53,57 @@ def _iso(u):
     try: return datetime.fromisoformat(u.replace("Z", "+00:00")).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     except Exception: return u
 
-page = {
-    "name": season["name"], "season": season["season"], "formUrl": season["form"]["url"],
-    "buyIn": season["buyIn"], "plannedBuyIn": season.get("plannedBuyIn", 5), "week": int(n), "status": wk.get("status", "pre"),
-    "updated": _iso(season.get("updated", "")), "games": wk["games"],
-    "tiebreakTotal": wk.get("tiebreakTotal"), "tbUsed": wk.get("tbUsed", False),
-    "players": wk.get("players", []), "weekWinners": wk.get("weekWinners", []),
-    "weekPayout": wk.get("weekPayout", 0), "season_table": list(tot.values()),
-    "trash": wk.get("trash", []), "column": wk.get("column", ""),
-    "updates": wk.get("updates", []), "decides": wk.get("decides", []),
-    "stats": wk.get("stats"), "face": wk.get("face"), "homer": homer, "house": season.get("house"),
-    "seasonBadges": season_badges, "streak": streak, "awards": wk.get("awards", []),
-}
+def make_page(k, w, archive=False):
+    return {
+        "name": season["name"], "season": season["season"], "formUrl": season["form"]["url"],
+        "buyIn": season["buyIn"], "plannedBuyIn": season.get("plannedBuyIn", 5), "week": int(k), "status": w.get("status", "pre"),
+        "updated": _iso(season.get("updated", "")), "games": w["games"],
+        "tiebreakTotal": w.get("tiebreakTotal"), "tbUsed": w.get("tbUsed", False),
+        "players": w.get("players", []), "weekWinners": w.get("weekWinners", []),
+        "weekPayout": w.get("weekPayout", 0), "season_table": list(tot.values()),
+        "trash": w.get("trash", []), "column": w.get("column", ""),
+        "updates": w.get("updates", []), "decides": w.get("decides", []),
+        "stats": w.get("stats"), "face": w.get("face"), "homer": homer, "house": season.get("house"),
+        "seasonBadges": season_badges, "streak": streak, "awards": w.get("awards", []),
+        "pastWeeks": past, "archive": archive,
+    }
+
 tpl = open(f"{HERE}/template.html").read()
-out = tpl.replace("/*DATA*/", json.dumps(page, ensure_ascii=False))
-open(f"{HERE}/index.html", "w").write(out)
+def render(page): return tpl.replace("/*DATA*/", json.dumps(page, ensure_ascii=False))
+
+# past weeks: every final week except the one on the board gets its own frozen page at /pool/weeks/<N>/
+past = sorted([int(k) for k, w in season["weeks"].items() if w.get("status") == "final" and k != n], reverse=True)
+past = [{"week": k, "winners": season["weeks"][str(k)].get("weekWinners", [])} for k in past]
+for pw in past:
+    k = str(pw["week"]); os.makedirs(f"{HERE}/weeks/{k}", exist_ok=True)
+    open(f"{HERE}/weeks/{k}/index.html", "w").write(render(make_page(k, season["weeks"][k], archive=True)))
+
+page = make_page(n, wk)
+open(f"{HERE}/index.html", "w").write(render(page))
 json.dump(page, open(f"{HERE}/data/page.json", "w"), ensure_ascii=False)
-print(f"built pool/index.html · week {n} · {page['status']} · {len(page['players'])} players")
+
+# calendar: this week's pick deadlines (first kickoff, first Sunday kickoff), each with a reminder an hour before
+from datetime import datetime, timezone
+def _dt(iso): return datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(timezone.utc)
+games = wk["games"]
+locks = []
+if games:
+    locks.append(games[0])
+    sun = sorted([g for g in games[1:] if not g["when"].startswith("Thu")], key=lambda g: g["kickoff"])
+    if sun: locks.append(sun[0])
+now_utc = datetime.now(timezone.utc)
+locks = [g for g in locks if _dt(g["kickoff"]) > now_utc]   # only deadlines still ahead
+stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//The Sunday Tax//Pool//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"]
+for i, g in enumerate(locks):
+    st = _dt(g["kickoff"])
+    title = f"Sunday Tax: {g['away']} at {g['home']} locks — get your picks in"
+    ics += ["BEGIN:VEVENT", f"UID:sundaytax-2026-w{n}-{g['away']}-{g['home']}@benthambulletin.github.io", f"DTSTAMP:{stamp}",
+            "DTSTART:" + st.strftime("%Y%m%dT%H%M%SZ"), "DURATION:PT15M",
+            f"SUMMARY:{title}", "URL:" + season["form"]["url"],
+            "DESCRIPTION:Each game locks at its own kickoff. Picks: " + season["form"]["url"] + "\\nStandings: https://benthambulletin.github.io/pool/",
+            "BEGIN:VALARM", "ACTION:DISPLAY", "DESCRIPTION:" + title, "TRIGGER:-PT1H", "END:VALARM", "END:VEVENT"]
+ics.append("END:VCALENDAR")
+open(f"{HERE}/week.ics", "w", newline="").write("\r\n".join(ics) + "\r\n")
+
+print(f"built pool/index.html · week {n} · {page['status']} · {len(page['players'])} players · {len(past)} past weeks · {len(locks)} calendar locks")
