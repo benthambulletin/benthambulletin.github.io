@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-10-02T10:47Z",
+ "generated_utc": "2026-10-02T11:47Z",
  "towns": {
   "North Tonawanda": {
    "issued": "2026-10-02T07:57:55+00:00",
@@ -8,9 +8,9 @@
      "name": "Today",
      "temp": 65,
      "wind": "NW 7 to 12 mph",
-     "pop": 97,
+     "pop": 93,
      "short": "Rain Showers then Cloudy",
-     "detail": "Rain showers before 11am. Cloudy, with a high near 65. Northwest wind 7 to 12 mph. Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible."
+     "detail": "Rain showers before 11am. Cloudy, with a high near 65. Northwest wind 7 to 12 mph. Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible."
     },
     {
      "name": "Tonight",
@@ -87,9 +87,9 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-02T10:30:00+00:00",
+    "time": "2026-10-02T11:35:00+00:00",
     "text": "Rain and Fog/Mist",
-    "temp_f": 61
+    "temp_f": 57
    }
   },
   "Dunkirk": {
@@ -178,9 +178,9 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-02T10:35:00+00:00",
-    "text": "Light Rain",
-    "temp_f": 63
+    "time": "2026-10-02T11:30:00+00:00",
+    "text": "Rain and Fog/Mist",
+    "temp_f": 61
    }
   },
   "Scottsville": {
@@ -269,9 +269,9 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-02T10:30:00+00:00",
-    "text": "Light Rain",
-    "temp_f": 64
+    "time": "2026-10-02T11:30:00+00:00",
+    "text": "Rain and Fog/Mist",
+    "temp_f": 63
    }
   }
  },
