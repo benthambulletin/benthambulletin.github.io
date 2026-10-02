@@ -217,6 +217,29 @@ details.g summary::-webkit-details-marker{display:none}
 /* colophon */
 .colo{margin-top:2rem;text-align:center;font-family:'AR';font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);line-height:2}
 .sig{font-family:'PFI';font-style:italic;font-size:1.2rem;color:var(--ink);letter-spacing:0;text-transform:none}
+/* calm pass (Oct 2): one accent, no competing colors */
+.tabs a,.tabs a.go{color:var(--soft)}
+.tabs a.on{color:var(--ink)}
+.now .nk,.now .nk.final{color:var(--soft)}
+.now .nn{background:none;border:0;border-top:1px solid var(--rule);border-radius:0;margin:.8rem 0 0;padding:.6rem 0 0;font-size:.82rem}
+.now .nn .cd,.now .nl .cd{color:var(--ink)}
+.now .fresh{font-size:.68rem;padding-top:.6rem;letter-spacing:.06em}
+.now .fresh .dot{display:none}
+.now .fresh{gap:0 .25rem}
+.now .nk .lv{color:var(--red)}
+.sec,.sec.t{color:var(--ink)}
+.sec .o{display:none}
+.hint{font-weight:600;color:var(--soft)}
+.brow.lead .nm,.brow.lead .rk{color:var(--ink)}
+.ruleref,.ruleref.sealed{color:inherit;text-decoration:underline dotted var(--rule);text-underline-offset:3px}
+.slot{color:var(--soft)}
+.g .m .w{color:var(--ink)}
+.g .s.live{color:var(--red)}
+.col p:first-of-type::first-letter{color:var(--ink)}
+.tag.house{color:var(--soft);border-color:var(--rule)}
+.mug .k{color:var(--soft)}
+.more a,.pastwk a,.cal{color:var(--ink)}
+details.g summary .s::after,.brow .rec::after{color:var(--soft)}
 </style>
 </head>
 <body>
@@ -235,7 +258,6 @@ details.g summary::-webkit-details-marker{display:none}
     <div class="ns" id="nowS"></div>
     <div class="nn" id="nowN" hidden></div>
     <a class="cta" id="cta" href="#">Make your picks</a>
-    <a class="cal" id="cal" href="/pool/week.ics" hidden>📅 Add the pick deadline to your calendar</a>
     <div class="fresh" id="fresh"></div>
   </div>
   <div id="mug"></div>
@@ -308,7 +330,7 @@ $("nowK").textContent='Week '+D.week; if(D.status==="final") $("nowK").classList
   var ago=mins==null?"":(mins<1?"just now":mins<60?mins+" min ago":mins<120?"1 hr ago":Math.round(mins/60)+" hrs ago");
   var cls=mins==null?"":(mins<=70?"":mins<=180?"stale":"old");
   var nextTxt=D.status==="final"?"Week "+(D.week+1)+" slate Tuesday":"Updates hourly, 8 AM–11 PM ET";
-  $("fresh").innerHTML='<span><span class="dot '+cls+'"></span>Updated <b>'+esc(fmtWhen(D.updated))+'</b>'+(ago?' · '+esc(ago):'')+'</span><span>'+nextTxt+'</span>';
+  $("fresh").innerHTML='<span>Updated '+esc(fmtWhen(D.updated).replace(/^\w+ /,""))+(D.status==="final"?' · '+nextTxt:'')+'</span>';
 })();
 
 var played=D.games.filter(function(g){return g.winner&&g.winner!=="TIE";}).length;
@@ -321,11 +343,11 @@ var top=realPs.length?realPs[0].correct:0;
 var finals=D.games.filter(function(g){return g.winner;}).length;
 var openN=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)>Date.now();}).length;
 /* the old tiles are now one quiet line under the button: the hero already says the rest */
-$("fresh").insertAdjacentHTML("afterbegin",'<span><b>'+entrants+'</b> '+(entrants===1?"player":"players")+' · <b>'+finals+' of '+D.games.length+'</b> final</span>');
+$("fresh").insertAdjacentHTML("afterbegin",'<span>'+entrants+' '+(entrants===1?"player":"players")+' · '+finals+' of '+D.games.length+' final ·&nbsp;</span>');
 if(D.status==="final"){$("cta").textContent="Week "+(D.week+1)+" picks";}
 if(D.status==="pre"){$("cta").textContent="Make or change your picks";}
 if(D.status==="live"){$("cta").textContent=openN?"Pick the games still open":"All games have kicked off";if(!openN)$("cta").classList.add("quiet");}
-$("cal").hidden=!(openN&&!D.archive);
+
 if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="/pool/";$("cta").classList.add("quiet");$("fresh").textContent="Week "+D.week+" is in the books.";}
 
 /* the hero: the one thing to know right now, then the next deadline with a live countdown */
@@ -345,11 +367,11 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     $("nowK").classList.add("final");
   } else if(inplay.length===1){
     var g=inplay[0], parts=(g.live||"").split(" · ");
-    k='On now'+(g.tv?' · '+esc(g.tv):'');
+    k='<span class="lv">●</span> On now'+(g.tv?' · '+esc(g.tv):'');
     v=g.live?'<span class="sc">'+esc(parts[0])+'</span>':esc(g.away)+' <span style="font-weight:400;font-style:italic">at</span> '+esc(g.home);
     sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+(g.liveAt?' · as of '+esc(fmtWhen(g.liveAt).replace(/^\w+ /,"")):'')+'<br>':'')+(leadTxt||'Standings move when it goes final');
   } else if(inplay.length>1){
-    k='On now';
+    k='<span class="lv">●</span> On now';
     v=inplay.length+' games live';
     sub=(leadTxt||'Standings move as games go final')+' · <b>'+left+'</b> still to decide';
   } else if(L.length){
@@ -361,7 +383,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     v='<span class="cd" data-until="'+esc(open[0].kickoff)+'"></span>';
     sub=esc(open[0].away)+' at '+esc(open[0].home)+' · '+esc(fmtWhen(open[0].kickoff))+' · <b>'+entrants+'</b> in so far';
   } else { k='Week '+D.week; v='All games kicked off'; sub=leadTxt; }
-  $("nowK").textContent=k; $("nowL").innerHTML=v; $("nowS").innerHTML=sub;
+  $("nowK").innerHTML=k; $("nowL").innerHTML=v; $("nowS").innerHTML=sub;
   /* next deadline, unless the hero already is the countdown */
   var nn=$("nowN");
   if(open.length&&!D.archive&&D.status!=="final"&&k!=="Picks lock in"){
@@ -497,7 +519,7 @@ if(D.pastWeeks&&D.pastWeeks.length){
   h+=orn("Past Weeks")+'<div class="pastwk">'+D.pastWeeks.map(function(w){return '<a href="/pool/weeks/'+w.week+'/">Week '+w.week+(w.winners&&w.winners.length?' · '+esc(w.winners.join(" & ")):'')+'</a>';}).join('<br>')+'</div>';
 }
 /* how it works */
-h+='<div class="more"><a href="/pool/about/">How it works</a><br>The rules, what the badges mean, and who Claude is.</div>';
+h+='<div class="more">'+(openN&&!D.archive?'<a class="cal" href="/pool/week.ics">Add the pick deadline to your calendar</a><br><br>':'')+'<a href="/pool/about/">How it works</a><br>The rules, what the badges mean, and who Claude is.</div>';
 
 $("root").innerHTML=h;
 }
