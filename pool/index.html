@@ -307,6 +307,15 @@ function applyLive(){
   Object.keys(LV.games).forEach(function(k){var g=D.games[+k], r=LV.games[k]; if(!g||g.winner) return;
     if(r.state==="in"&&r.line){g.live=r.line; g.liveAt=LV.updated; g.status="live"; g.liveFinal=null;}
     else if(r.state==="post"&&r.line){g.liveFinal=r.line; g.live=null;}});
+  /* count ESPN finals right away: records move the minute a game ends; the next Claude run confirms them */
+  D.players.forEach(function(p){ if(p._c===undefined){p._c=p.correct;p._m=p.missed;} p.correct=p._c; p.missed=p._m; });
+  Object.keys(LV.games).forEach(function(k){var i=+k, g=D.games[i], r=LV.games[k];
+    if(!g||(g.winner&&!g.prov)||r.state!=="post"||!r.winner) return;
+    g.winner=r.winner; g.score=r.score; g.prov=true; g.live=null; g.hits=[]; g.misses=[];
+    if(r.winner==="TIE") return;
+    D.players.forEach(function(p){var pk=p.sheet?p.sheet[String(i)]:null; if(!pk) return;
+      if(pk===r.winner){p.correct++; g.hits.push(p.name);} else {p.missed++; g.misses.push(p.name);} });
+  });
 }
 function inWindow(){var n=Date.now();return D.games.some(function(g){var k=Date.parse(g.kickoff);return n>=k-20*60000&&n<=k+5*3600000;});}
 function pollLive(){

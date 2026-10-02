@@ -68,6 +68,7 @@ $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. N
   `/pool/weeks/<N>/` and lists them under "Past Weeks" on the board. Archived pages never refetch page.json.
 - **Calendar:** build.py writes `/pool/week.ics` (the week's first kickoff and first Sunday kickoff still ahead,
   each with a 1-hour reminder). The board links it under the picks button while games are open. Commit it.
+- **Instant finals on the page:** when `live.json` says a game is final, the page counts it into everyone's record right away from the public sheets (marked provisional in memory only). The next Claude run writes the official winner into season.json; if ESPN and the official final ever disagree, the official one wins on the next refresh.
 - **Live scores:** REFRESH/UPDATE runs set `games[i].live` (e.g. `Bills 17–14 · 3rd qtr`, leader first) and
   `games[i].liveAt` (UTC ISO) for games in progress, from the sports data tool or ESPN's scoreboard; unset
   them when a game goes final. Never guess a score; if none is reliable, leave `live` out.
