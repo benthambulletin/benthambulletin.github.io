@@ -144,7 +144,7 @@ All three are the same steps; they differ only in what has finished. The Sunday 
    or `TIE`) and a `score` like `24–17`. In-progress games stay null. For SCORE, every game must be
    final and `tiebreakTotal` = both MNF teams' points added together.
 3. `python3 score.py /home/claude/subs.json` (add `--final` for Monday). Read its output.
-4. Write the column: set `weeks{N}.column` to 2–4 short paragraphs in the voice of a wise-ass
+4. Write the column: set `weeks{N}.column` in the voice of a wise-ass
    commissioner, 1–2 short paragraphs (the board shows two at most): who is leading, who is bleeding, the dumbest pick of the day, who is overdue, and —
    when `decides` is non-empty — which open game the week turns on and who is on each side. Name
    names. Read score.py's output (movement, out, clinched, DECIDES) and write from it. Never mention a
