@@ -266,6 +266,9 @@ def main():
 
     wk["decidedAtLastRun"] = decided
     wk["outAtLastRun"] = [p["name"] for p in players if p.get("state") == "out"]
+    # sealed: tiebreaker guesses never leave the script before Monday night kicks off
+    if P(mnf["kickoff"]) > T:
+        for p in players: p["tb"] = None
     season["updated"] = stamp
     json.dump(season, open(SEASON, "w"), indent=2, ensure_ascii=False)
 

@@ -290,7 +290,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 58,
+          "tb": null,
           "sheet": {
             "0": "Browns"
           },
@@ -309,7 +309,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 50,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -328,7 +328,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 54,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -347,7 +347,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 50,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -366,7 +366,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 41,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -385,7 +385,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 38,
+          "tb": null,
           "sheet": {
             "0": "Browns"
           },
@@ -404,7 +404,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 38,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -423,7 +423,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 47,
+          "tb": null,
           "sheet": {
             "0": "Browns"
           },
@@ -442,7 +442,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 44,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -461,7 +461,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 56,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -480,7 +480,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 48,
+          "tb": null,
           "sheet": {
             "0": "Browns"
           },
@@ -504,7 +504,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 39,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -523,7 +523,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 27,
+          "tb": null,
           "sheet": {
             "0": "Browns"
           },
@@ -542,7 +542,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 52,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -561,7 +561,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 43,
+          "tb": null,
           "sheet": {
             "0": "Browns"
           },
@@ -580,7 +580,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 36,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -599,7 +599,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 47,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -618,7 +618,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 38,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -637,7 +637,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 31,
+          "tb": null,
           "sheet": {
             "0": "Browns"
           },
@@ -656,7 +656,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 45,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -675,7 +675,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 37,
+          "tb": null,
           "sheet": {
             "0": "Steelers"
           },
@@ -694,7 +694,7 @@
           "void": 0,
           "remaining": 16,
           "max": 16,
-          "tb": 47,
+          "tb": null,
           "sheet": {
             "0": "Browns"
           },
@@ -828,7 +828,7 @@
       }
     }
   },
-  "updated": "2026-10-02T00:42:23.849480+00:00",
+  "updated": "2026-10-02T01:03:53.751800+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
