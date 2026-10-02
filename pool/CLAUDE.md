@@ -94,11 +94,9 @@ Garret the one-line message below.
 3. Write `weeks{N}` in season.json (copy the shape of an existing week; players/trash empty,
    status `pre`, `opensAt` = now in UTC — score.py ignores submissions older than that, so last
    week's sheets never bleed into this week), set `currentWeek`, `updated`.
-   Then draw the house entry's picks, exactly like this and nothing cleverer:
-   `rng = random.Random(int(hashlib.sha256(b"sundaytax-2026-w<N>").hexdigest(),16))`, then for each
-   game in slate order `rng.choice([away, home])`, then `tb = rng.randint(37,52)`. Store as
-   `weeks{N}.housePicks = {"picks": {"0": team, ...}, "tb": tb, "trash": <one dry line in Claude's voice>}`.
-   The seed is public so anyone can verify the coin wasn't tuned. Claude is on the board, tagged House,
+   The house entry's picks are NOT stored: score.py draws them at run time from the week's seed
+   (`sundaytax-2026-w<N>`), so they never sit in the public data. Store only
+   `weeks{N}.housePicks = {"trash": <one dry line in Claude's voice>}`. Claude is on the board, tagged House,
    never wins the week, never counts toward clinch/out math, and its picks are sealed like everyone's.
 4. Update the Tally form IN PLACE (`load_form` RGOakJ first, then `update_text` on the block uuids
    the ledger shows): the form title `The Sunday Tax — Week N`; each game TITLE block's text
@@ -172,7 +170,7 @@ contrarian who hit, the room that whiffed, the homer who got taxed. Never before
 Eight, no more: score.py awards **crown** (leading the week; the winner at final), **cellar** (Porta Potty,
 last place this week), **wolf** (only one right on a game), **homer** (took the Bills or Jets, they lost)
 **coin** (behind Claude) **dead** (mathematically out of the week) and **buzzer** (first sheet inside the last hour before Thursday kickoff); build.py computes **streak** (On Fire, 3+ straight correct picks across
-weeks). Garret cut the rest because the board got busy. Do not add badges without him asking. The key
+weeks). Crown, coin and porta potty wait until three games are final (Garret, Oct 2). Garret cut the rest because the board got busy. Do not add badges without him asking. The key
 is on `about/`.
 
 ## Rules (fixed)

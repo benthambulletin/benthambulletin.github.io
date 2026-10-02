@@ -780,25 +780,6 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "housePicks": {
-        "picks": {
-          "0": "Steelers",
-          "1": "Commanders",
-          "2": "Titans",
-          "3": "Bills",
-          "4": "Bears",
-          "5": "Bengals",
-          "6": "Cowboys",
-          "7": "Giants",
-          "8": "Rams",
-          "9": "Packers",
-          "10": "Dolphins",
-          "11": "Chiefs",
-          "12": "Seahawks",
-          "13": "Broncos",
-          "14": "Panthers",
-          "15": "Saints"
-        },
-        "tb": 41,
         "trash": "I think I met Derek in a porta potty"
       },
       "stats": {
@@ -828,7 +809,7 @@
       }
     }
   },
-  "updated": "2026-10-02T01:11:55.639086+00:00",
+  "updated": "2026-10-02T01:25:49.709670+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",

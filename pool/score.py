@@ -65,7 +65,14 @@ def main():
 
     # house entry (Claude): seeded random picks stored on the week; filed the moment the week opened
     house = season.get("house") or {}
-    hp = wk.get("housePicks")
+    hp = dict(wk.get("housePicks") or {})
+    if house.get("enabled") and not hp.get("picks"):
+        import hashlib, random
+        rng = random.Random(int(hashlib.sha256(f"sundaytax-2026-w{season['currentWeek']}".encode()).hexdigest(), 16))
+        hp["picks"] = {str(i): rng.choice([g["away"], g["home"]]) for i, g in enumerate(games)}
+        hp["tb"] = rng.randint(37, 52)
+    if "housePicks" in wk:   # keep only the trash line on disk; the picks stay sealed
+        wk["housePicks"] = {"trash": hp.get("trash", "")}
     house_name = None
     if house.get("enabled") and hp and hp.get("picks"):
         house_name = house.get("name", "Claude")
@@ -200,7 +207,9 @@ def main():
                     pk = byname[n]["sheet"].get(str(i))
                     if pk == team and w != team: award(byname[n], "homer", f"took the {team}, who lost")
     # the coin: currently behind Claude
-    if house_p and sum(1 for g in games if g.get("winner")):
+    MIN_DECIDED = 3   # crown, coin and porta potty wait for three final games (Garret, Oct 2)
+    n_decided = sum(1 for g in games if g.get("winner"))
+    if house_p and n_decided >= MIN_DECIDED:
         for p in real:
             if p["correct"] < house_p["correct"]: award(p, "coin", f"behind Claude, {p['correct']}–{house_p['correct']}")
     # dead: mathematically out of the week
@@ -213,7 +222,7 @@ def main():
             dt = (tnf - P(p.get("firstAt") or p["filedAt"])).total_seconds()
             if 0 <= dt <= 3600: award(p, "buzzer", "filed inside the last hour before Thursday kickoff")
     # porta potty: last place this week, once games have been decided
-    if len(real) > 2 and sum(1 for g in games if g.get("winner")):
+    if len(real) > 2 and n_decided >= MIN_DECIDED:
         worst = min(p["correct"] for p in real)
         if worst < max(p["correct"] for p in real):
             for p in real:
@@ -243,7 +252,7 @@ def main():
         wk["status"] = "final"
     else:
         wk["status"] = "live" if (decided or any(g.get("status") != "sealed" for g in wk["games"])) else "pre"
-        if decided and real:
+        if decided >= MIN_DECIDED and real:
             best = max(p["correct"] for p in real)
             if best > 0:
                 for p in real:
