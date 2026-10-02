@@ -132,7 +132,8 @@ All three are the same steps; they differ only in what has finished. The Sunday 
    the form is printed automatically under the column, unedited — never soften, cut, or comment on it.
    Under 120 words on Sunday, up to 180 for the final.
    **Cadence:** the column is rewritten only by (a) the first run of the week that finds any entrants,
-   (a2) the 8:07 a.m. refresh each day while no game has kicked off (who has filed, who hasn't, trash talk),
+   (a2) the 8:07 a.m. refresh EVERY day (before kickoff: who has filed, who hasn't, trash talk; after: standings,
+   who's bleeding, what's next — sealed rule still applies),
    (b) the Thursday-night run that scores TNF, (c) the three Sunday window runs, and (d) the final.
    Every other hourly run leaves `column` exactly as it is, even when new sheets arrive — the Board
    carries the facts; the column is a voice, not a log.
