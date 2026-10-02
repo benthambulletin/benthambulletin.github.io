@@ -478,7 +478,7 @@
           "filedAt": "2026-09-30T15:07:10+00:00",
           "firstAt": "2026-09-30T15:07:10+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -497,7 +497,7 @@
           "filedAt": "2026-10-01T13:10:03+00:00",
           "firstAt": "2026-10-01T13:10:03+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -516,7 +516,7 @@
           "filedAt": "2026-09-29T15:55:32+00:00",
           "firstAt": "2026-09-29T15:55:32+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -535,7 +535,7 @@
           "filedAt": "2026-09-29T01:40:00+00:00",
           "firstAt": "2026-09-29T01:40:00+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "house",
           "badges": []
         },
@@ -554,7 +554,7 @@
           "filedAt": "2026-09-29T16:00:07+00:00",
           "firstAt": "2026-09-29T16:00:07+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -573,7 +573,7 @@
           "filedAt": "2026-09-29T12:24:58+00:00",
           "firstAt": "2026-09-29T12:24:58+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -592,7 +592,7 @@
           "filedAt": "2026-10-01T17:30:24+00:00",
           "firstAt": "2026-10-01T17:30:24+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -611,7 +611,7 @@
           "filedAt": "2026-10-01T23:10:34+00:00",
           "firstAt": "2026-10-01T23:10:34+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -630,7 +630,7 @@
           "filedAt": "2026-09-29T22:01:35+00:00",
           "firstAt": "2026-09-29T22:01:35+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -649,7 +649,7 @@
           "filedAt": "2026-09-29T16:54:52+00:00",
           "firstAt": "2026-09-29T16:54:52+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -668,7 +668,7 @@
           "filedAt": "2026-09-29T23:36:35+00:00",
           "firstAt": "2026-09-29T23:36:35+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -687,7 +687,7 @@
           "filedAt": "2026-09-29T15:07:02+00:00",
           "firstAt": "2026-09-29T15:07:02+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -706,7 +706,7 @@
           "filedAt": "2026-09-29T15:05:20+00:00",
           "firstAt": "2026-09-29T15:05:20+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         },
@@ -725,7 +725,7 @@
           "filedAt": "2026-09-29T16:19:52+00:00",
           "firstAt": "2026-09-29T16:19:52+00:00",
           "rank": 9,
-          "delta": -8,
+          "delta": 0,
           "state": "alive",
           "badges": []
         }
@@ -764,7 +764,7 @@
           "text": "I think I met Derek in a porta potty"
         }
       ],
-      "column": "Browns 27, Steelers 24, settled by a field goal in the final seconds. Thirteen of you took Pittsburgh. The eight who didn't share the lead at 1–0: Amanda Rodgers, Dan, Devin, Josh, Kaylani & Luka, Marky Mark, Peggy and Walczyk.\n\nDerek is 0 for 1, right on Ariel's schedule, except Ariel took the Steelers too. Kaylani, accused of letting a robot pick, is 1–0. The actual robot is 0–1, and the commissioner is down there with it. Fifteen games left, starting Sunday morning in London.",
+      "column": "Friday, and eight of you are still dining out on a Browns field goal. Josh filed ten minutes before kickoff and is 1–0. Walczyk filed twice, flipped Pittsburgh to Cleveland on the second sheet, and is calling it instinct. Fine. It counts.\n\nThe other fourteen, the commissioner and the robot included, are 0–1 and have two days to stew. Fifteen games left. The next one locks Sunday at 9:30 a.m., Colts and Commanders in London, before most of you have found the coffee. Change your sheet before then or live with it.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 0,
@@ -837,7 +837,7 @@
       }
     }
   },
-  "updated": "2026-10-02T03:59:55.460125+00:00",
+  "updated": "2026-10-02T12:10:51.043927+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
