@@ -53,8 +53,35 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null
+          "status": "live",
+          "sides": {
+            "Steelers": [
+              "Kara",
+              "Jeff G",
+              "Andy R",
+              "Andrew Clarke",
+              "Mike Sombloski",
+              "Leah",
+              "Melissa",
+              "Tom",
+              "Derek",
+              "Ariel",
+              "Nate V",
+              "Thom",
+              "Garret",
+              "Claude"
+            ],
+            "Browns": [
+              "Josh",
+              "Marky Mark",
+              "Amanda Rodgers",
+              "Walczyk",
+              "Devin",
+              "Peggy",
+              "Dan",
+              "Kaylani & Luka"
+            ]
+          }
         },
         {
           "away": "Colts",
@@ -248,7 +275,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 58,
-          "sheet": {},
+          "sheet": {
+            "0": "Browns"
+          },
           "filedAt": "2026-10-01T20:31:07+00:00",
           "firstAt": "2026-10-01T20:31:07+00:00",
           "rank": 1,
@@ -265,7 +294,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 50,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-30T15:07:10+00:00",
           "firstAt": "2026-09-30T15:07:10+00:00",
           "rank": 1,
@@ -282,7 +313,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 54,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-10-01T13:10:03+00:00",
           "firstAt": "2026-10-01T13:10:03+00:00",
           "rank": 1,
@@ -299,7 +332,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 50,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-29T15:55:32+00:00",
           "firstAt": "2026-09-29T15:55:32+00:00",
           "rank": 1,
@@ -316,7 +351,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 41,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-29T01:40:00+00:00",
           "firstAt": "2026-09-29T01:40:00+00:00",
           "rank": 1,
@@ -333,7 +370,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 38,
-          "sheet": {},
+          "sheet": {
+            "0": "Browns"
+          },
           "filedAt": "2026-10-01T02:26:10+00:00",
           "firstAt": "2026-10-01T02:26:10+00:00",
           "rank": 1,
@@ -350,7 +389,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 38,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-29T16:00:07+00:00",
           "firstAt": "2026-09-29T16:00:07+00:00",
           "rank": 1,
@@ -367,7 +408,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 47,
-          "sheet": {},
+          "sheet": {
+            "0": "Browns"
+          },
           "filedAt": "2026-10-01T12:49:19+00:00",
           "firstAt": "2026-10-01T12:49:19+00:00",
           "rank": 1,
@@ -384,7 +427,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 44,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-29T12:24:58+00:00",
           "firstAt": "2026-09-29T12:24:58+00:00",
           "rank": 1,
@@ -401,7 +446,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 56,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-10-01T17:30:24+00:00",
           "firstAt": "2026-10-01T17:30:24+00:00",
           "rank": 1,
@@ -418,7 +465,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 48,
-          "sheet": {},
+          "sheet": {
+            "0": "Browns"
+          },
           "filedAt": "2026-10-02T00:05:37+00:00",
           "firstAt": "2026-10-02T00:05:37+00:00",
           "rank": 1,
@@ -440,7 +489,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 39,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-10-01T23:10:34+00:00",
           "firstAt": "2026-10-01T23:10:34+00:00",
           "rank": 1,
@@ -457,7 +508,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 27,
-          "sheet": {},
+          "sheet": {
+            "0": "Browns"
+          },
           "filedAt": "2026-09-29T20:43:21+00:00",
           "firstAt": "2026-09-29T20:43:21+00:00",
           "rank": 1,
@@ -474,7 +527,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 52,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-29T22:01:35+00:00",
           "firstAt": "2026-09-29T22:01:35+00:00",
           "rank": 1,
@@ -491,7 +546,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 43,
-          "sheet": {},
+          "sheet": {
+            "0": "Browns"
+          },
           "filedAt": "2026-10-01T23:13:41+00:00",
           "firstAt": "2026-10-01T23:13:41+00:00",
           "rank": 1,
@@ -508,7 +565,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 36,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-29T16:54:52+00:00",
           "firstAt": "2026-09-29T16:54:52+00:00",
           "rank": 1,
@@ -525,7 +584,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 47,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-29T23:36:35+00:00",
           "firstAt": "2026-09-29T23:36:35+00:00",
           "rank": 1,
@@ -542,7 +603,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 38,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-29T15:07:02+00:00",
           "firstAt": "2026-09-29T15:07:02+00:00",
           "rank": 1,
@@ -559,7 +622,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 31,
-          "sheet": {},
+          "sheet": {
+            "0": "Browns"
+          },
           "filedAt": "2026-10-01T10:29:34+00:00",
           "firstAt": "2026-10-01T10:29:34+00:00",
           "rank": 1,
@@ -576,7 +641,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 45,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-29T15:05:20+00:00",
           "firstAt": "2026-09-29T15:05:20+00:00",
           "rank": 1,
@@ -593,7 +660,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 37,
-          "sheet": {},
+          "sheet": {
+            "0": "Steelers"
+          },
           "filedAt": "2026-09-29T16:19:52+00:00",
           "firstAt": "2026-09-29T16:19:52+00:00",
           "rank": 1,
@@ -610,7 +679,9 @@
           "remaining": 16,
           "max": 16,
           "tb": 47,
-          "sheet": {},
+          "sheet": {
+            "0": "Browns"
+          },
           "filedAt": "2026-10-01T13:54:42+00:00",
           "firstAt": "2026-10-01T13:44:10+00:00",
           "rank": 1,
@@ -659,7 +730,36 @@
       "pot": 0,
       "opensAt": "2026-09-29T01:40:00Z",
       "tbUsed": false,
-      "decides": [],
+      "decides": [
+        {
+          "game": 0,
+          "away": [
+            "Kara",
+            "Jeff G",
+            "Andy R",
+            "Andrew Clarke",
+            "Mike Sombloski",
+            "Leah",
+            "Melissa",
+            "Tom",
+            "Derek",
+            "Ariel",
+            "Nate V",
+            "Thom",
+            "Garret"
+          ],
+          "home": [
+            "Josh",
+            "Marky Mark",
+            "Amanda Rodgers",
+            "Walczyk",
+            "Devin",
+            "Peggy",
+            "Dan",
+            "Kaylani & Luka"
+          ]
+        }
+      ],
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
@@ -686,7 +786,23 @@
         "trash": "I think I met Derek in a porta potty"
       },
       "stats": {
-        "games": {},
+        "games": {
+          "0": {
+            "away": 13,
+            "home": 8,
+            "minority": "Browns",
+            "minorityWho": [
+              "Josh",
+              "Marky Mark",
+              "Amanda Rodgers",
+              "Walczyk",
+              "Devin",
+              "Peggy",
+              "Dan",
+              "Kaylani & Luka"
+            ]
+          }
+        },
         "upsets": 0,
         "decided": 0,
         "best": null,
@@ -696,7 +812,7 @@
       }
     }
   },
-  "updated": "2026-10-02T00:13:40.484213+00:00",
+  "updated": "2026-10-02T00:30:39.159821+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
