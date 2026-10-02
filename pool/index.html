@@ -240,14 +240,26 @@ details.g summary::-webkit-details-marker{display:none}
 .mug .k{color:var(--soft)}
 .more a,.pastwk a,.cal{color:var(--ink)}
 details.g summary .s::after,.brow .rec::after{color:var(--soft)}
+/* expert pass (Oct 2) */
+.now .nn{border:0;margin:.5rem 0 0;padding:0;font-size:.78rem;background:none}
+.now .nn a{color:var(--soft);text-decoration:underline dotted var(--rule);text-underline-offset:3px}
+.now .cta{margin-top:1rem}
+.now .cta[hidden]{display:none}
+.fresh.bottom{justify-content:center;border:0;font-size:.62rem;padding:.2rem 0 0}
+.brow summary{grid-template-columns:2rem 1fr auto auto;align-items:center;padding:.42rem 0}
+.brow .nm{font-size:1.05rem}
+.brow .rec{font-size:1.05rem;grid-column:4}
+.brow .dots{grid-column:3;grid-row:1;max-width:8.6rem;margin:0 .2rem 0 0;gap:2px;justify-content:flex-end}
+.brow .dots i{width:7px;height:7px}
+.filed .nm2{white-space:nowrap}
+details.tmore summary{list-style:none;cursor:pointer;font-family:'AR';font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--soft);padding:.5rem 0}
+details.tmore summary::-webkit-details-marker{display:none}
 </style>
 </head>
 <body>
 <div class="page">
-  <div class="kicker"><span>The Family Football Pool</span><span id="kickR"></span></div>
   <div class="dbl"><div class="a"></div><div class="b"></div></div>
   <h1 id="poolName">The Sunday Tax</h1>
-  <div class="tag" id="tag"></div>
   <div class="dbl tight"><div class="a"></div><div class="b"></div></div>
   <nav class="tabs" aria-label="The Sunday Tax"><a class="on" aria-current="page" href="/pool/">Standings</a><a class="go" href="https://tally.so/r/RGOakJ">Make picks</a><a href="/pool/about/">Rules</a></nav>
 
@@ -256,14 +268,14 @@ details.g summary .s::after,.brow .rec::after{color:var(--soft)}
     <div class="nk" id="nowK"></div>
     <div class="nl" id="nowL"></div>
     <div class="ns" id="nowS"></div>
-    <div class="nn" id="nowN" hidden></div>
     <a class="cta" id="cta" href="#">Make your picks</a>
-    <div class="fresh" id="fresh"></div>
+    <div class="nn" id="nowN" hidden></div>
   </div>
   <div id="mug"></div>
 
   <div id="root"></div>
 
+  <div class="fresh bottom" id="fresh"></div>
   <div class="colo">
     <span class="sig">— G.</span><br>
     Scores and picks kept by Claude on a schedule
@@ -321,8 +333,6 @@ function badgeIcons(p){
 }
 document.title=D.name; $("poolName").textContent=D.name;
 $("cta").href=D.formUrl;
-$("kickR").textContent=D.season+" · Week "+D.week;
-$("tag").textContent=D.buyIn?"Straight up · $"+D.buyIn+" a week · winner takes the pot":"Straight up · free to play · bragging rights";
 var stTxt={pre:"Picks are open",live:"Games under way",final:"Final"}[D.status]||"";
 $("nowK").textContent='Week '+D.week; if(D.status==="final") $("nowK").classList.add("final");
 (function(){
@@ -345,8 +355,9 @@ var openN=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)>Dat
 /* the old tiles are now one quiet line under the button: the hero already says the rest */
 $("fresh").insertAdjacentHTML("afterbegin",'<span>'+entrants+' '+(entrants===1?"player":"players")+' · '+finals+' of '+D.games.length+' final ·&nbsp;</span>');
 if(D.status==="final"){$("cta").textContent="Week "+(D.week+1)+" picks";}
-if(D.status==="pre"){$("cta").textContent="Make or change your picks";}
-if(D.status==="live"){$("cta").textContent=openN?"Pick the games still open":"All games have kicked off";if(!openN)$("cta").classList.add("quiet");}
+if(D.status==="pre"){$("cta").textContent="Make your picks";}
+if(D.status==="live"){$("cta").textContent="Make your picks";}
+$("cta").hidden=(D.status!=="final"&&!openN&&!D.archive);
 
 if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="/pool/";$("cta").classList.add("quiet");$("fresh").textContent="Week "+D.week+" is in the books.";}
 
@@ -369,11 +380,11 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     var g=inplay[0], parts=(g.live||"").split(" · ");
     k='<span class="lv">●</span> On now'+(g.tv?' · '+esc(g.tv):'');
     v=g.live?'<span class="sc">'+esc(parts[0])+'</span>':esc(g.away)+' <span style="font-weight:400;font-style:italic">at</span> '+esc(g.home);
-    sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+(g.liveAt?' · as of '+esc(fmtWhen(g.liveAt).replace(/^\w+ /,"")):'')+'<br>':'')+(leadTxt||'Standings move when it goes final');
+    sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+(g.liveAt?' · as of '+esc(fmtWhen(g.liveAt).replace(/^\w+ /,"")):'')+'<br>':'')+(leadTxt||'');
   } else if(inplay.length>1){
     k='<span class="lv">●</span> On now';
     v=inplay.length+' games live';
-    sub=(leadTxt||'Standings move as games go final')+' · <b>'+left+'</b> still to decide';
+    sub=leadTxt?leadTxt+' · <b>'+left+'</b> to go':'<b>'+left+'</b> games to go';
   } else if(L.length){
     k='Leading Week '+D.week;
     v=L.length===1?esc(L[0].name):L.length+'-way tie';
@@ -386,9 +397,9 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
   $("nowK").innerHTML=k; $("nowL").innerHTML=v; $("nowS").innerHTML=sub;
   /* next deadline, unless the hero already is the countdown */
   var nn=$("nowN");
-  if(open.length&&!D.archive&&D.status!=="final"&&k!=="Picks lock in"){
+  if(open.length&&!D.archive&&D.status!=="final"){
     var g2=open[0];
-    nn.innerHTML='Next lock: <b>'+esc(g2.away)+' at '+esc(g2.home)+'</b> · '+esc(fmtWhen(g2.kickoff))+' · <span class="cd" data-until="'+esc(g2.kickoff)+'"></span> · <b>'+open.length+'</b> game'+(open.length===1?'':'s')+' still open';
+    nn.innerHTML=k==="Picks lock in"?'<a href="/pool/week.ics">Add the deadline to your calendar</a>':'Next lock '+esc(fmtWhen(g2.kickoff))+' · <span class="cd" data-until="'+esc(g2.kickoff)+'"></span> · <a href="/pool/week.ics">add to calendar</a>';
     nn.hidden=false;
   } else nn.hidden=true;
   tick();
@@ -410,25 +421,28 @@ if(D.face&&D.face.photo){
   $("mug").innerHTML='<div class="mug"><img src="'+esc(F.photo)+'" alt=""><div><div class="k"><a class="ruleref" style="color:inherit" href="/pool/about/#mugshot">The Mugshot</a> · Week '+D.week+'</div><div class="n">'+esc(F.who)+'</div><div class="d">Hung here by <b>'+esc(F.by)+'</b>, who won Week '+esc(F.week||(D.week-1))+'.'+(F.line?' '+esc(F.line):'')+'</div></div></div>';
 }
 
+var secs={};
+var decidedN=D.games.filter(function(g){return g.winner;}).length;
 /* board */
-h+='<a id="board"></a>'+orn("Standings");
+h+='<a id="board"></a>'+orn(decidedN||D.status==="final"?"Standings":"Who’s In");
 var sealedN=D.games.filter(function(g){return g.status==="sealed";}).length;
 if(!ps.length){
   h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
-} else if(D.status==="pre"){
-  h+='<div class="hint">Everyone’s picks stay <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a>.</div>';
-  h+='<p class="filed"><b>Filed:</b> '+(realPs.length?realPs.map(function(p){return esc(p.name);}).join(", ")+'.':'nobody yet.')+'</p>';
-  h+='<p class="filed">Changed your mind? Submit the form again. Your <a class="ruleref" href="/pool/about/#locks">latest sheet before each kickoff</a> is the one that counts. Once games start, tap your name here to see your picks.</p>';
+} else if(!decidedN&&D.status!=="final"){
+  h+='<div class="hint">'+realPs.length+' in · picks stay <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a></div>';
+  h+='<p class="filed" style="text-align:center">'+(realPs.length?realPs.map(function(p){return '<span class="nm2">'+esc(p.name)+'</span>';}).join(" · "):'Nobody yet.')+'</p>';
 } else {
   var dots=function(p){var o='';D.games.forEach(function(g,i){if(g.status==="sealed")return;var pk=p.sheet?p.sheet[String(i)]:null;
       o+='<i class="'+(!pk?'':!g.winner?'p':g.winner==="TIE"?'':(pk===g.winner?'ok':'no'))+'" title="'+esc(g.away)+' at '+esc(g.home)+'"></i>';});return o?'<span class="dots">'+o+'</span>':'';};
-  var dispRank=function(p){return 1+realPs.filter(function(q){return q.correct>p.correct||(q.correct===p.correct&&q.missed<p.missed);}).length;};
-  h+='<div class="hint">Tap a name for picks · <span style="color:var(--teal)">●</span> right <span style="color:var(--red)">●</span> wrong ○ live</div><div class="bhead"><span>#</span><span>Player</span><span>Record</span></div>';
+  var W=(D.status==="final"&&D.weekWinners)||[], isW=function(p){return W.indexOf(p.name)>=0;};
+  var beats=function(q,p){return q.correct>p.correct||(q.correct===p.correct&&(q.missed<p.missed||(q.missed===p.missed&&isW(q)&&!isW(p))));};
+  var dispRank=function(p){return 1+realPs.filter(function(q){return beats(q,p);}).length;};
+  h+='<div class="hint">Tap a name for their picks</div>';
   ps.forEach(function(p){
     var lead=!p.house&&p.correct>0&&dispRank(p)===1;
     var mv=p.delta>0?'<span class="mv up">▲'+p.delta+'</span>':(p.delta<0?'<span class="mv dn">▼'+(-p.delta)+'</span>':'');
     var tag=p.house?'<span class="tag house">House</span>':D.status==="final"?'':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
-    h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+(p.house?'–':(realPs.filter(function(q){return q.correct===p.correct&&q.missed===p.missed;}).length>1?'T':'')+dispRank(p))+'</span>'+
+    h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+(p.house?'–':(realPs.filter(function(q){return q!==p&&!beats(q,p)&&!beats(p,q);}).length?'T':'')+dispRank(p))+'</span>'+
        '<span class="nm">'+esc(p.name)+mv+tag+badgeIcons(p)+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span>'+dots(p)+'</summary><div class="sheet">';
     var earned=badgesFor(p);
     if(earned.length){
@@ -453,13 +467,14 @@ if(!ps.length){
 }
 
 
+secs.board=h; h="";
 /* slate */
 h+='<a id="slate"></a>'+orn("This Week’s Games",true);
-h+='<div class="hint">All times Eastern'+(D.games.some(function(g){return g.status!=="sealed"&&g.sides;})?' · tap a game that has kicked off to see who picked whom':'')+'</div>';
+h+='<div class="hint">All times Eastern'+(D.games.some(function(g){return g.status!=="sealed"&&g.sides;})?' · tap a started game for who picked whom':'')+'</div>';
 var lastSlot="";
 D.games.forEach(function(g,i){
   var slot=(g.when||"").replace(/\s+\d{1,2}:\d{2}\s*[AP]M.*$/,"").replace(/^(Sun|Mon|Thu|Sat)\b/,function(m){return {Sun:"Sunday",Mon:"Monday",Thu:"Thursday",Sat:"Saturday"}[m];});
-  var time=(g.when||"").replace(/^\w{3}\s+/,"");
+  var time=(g.when||"").replace(/^\w{3}\s+/,"").replace(/\s*·\s*/g," ");
   if(slot!==lastSlot){h+='<div class="slot">'+esc(slot)+'</div>';lastSlot=slot;}
   var gs=D.stats&&D.stats.games&&D.stats.games[String(i)];
   var m,s,sp="",who="";
@@ -467,13 +482,13 @@ D.games.forEach(function(g,i){
   else if(g.winner){var aw=g.winner===g.away;
     m='<span class="'+(aw?'w':'')+'">'+esc(g.away)+'</span> <span class="at">at</span> <span class="'+(aw?'':'w')+'">'+esc(g.home)+'</span>';
     s='<span class="s fin">'+esc(g.score||"Final")+'</span>';}
-  else if(g.status==="live"){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s live">'+(g.live?esc(g.live):'In progress')+(g.tv?' · '+esc(g.tv):'')+'</span>'+(g.live&&g.liveAt?'<span class="sp">as of '+esc(fmtWhen(g.liveAt))+'</span>':'');}
+  else if(g.status==="live"){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s live">'+(g.live?esc(g.live):'Live')+'</span>';}
   else {m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s">'+esc(time)+(g.tv?' · <b class="tv">'+esc(g.tv)+'</b>':'')+'</span>';}
   if(g.status!=="sealed"&&g.sides){
     var notHouse=function(n){return !ps.some(function(p){return p.house&&p.name===n;});};
     var A=(g.sides[g.away]||[]).filter(notHouse),H=(g.sides[g.home]||[]).filter(notHouse);
     var na=gs?gs.away:A.length, nh=gs?gs.home:H.length;
-    sp='<span class="sp">'+esc(g.away)+' <b>'+na+'</b> · '+esc(g.home)+' <b>'+nh+'</b>'+(gs&&gs.upset&&na!==nh?' · <b style="color:var(--red)">upset</b>':'')+'</span>';
+    sp='<span class="sp"><b>'+na+'</b> picked '+esc(g.away)+' · <b>'+nh+'</b> '+esc(g.home)+(gs&&gs.upset&&na!==nh?' · <b style="color:var(--red)">upset</b>':'')+'</span>';
     if(g.winner&&g.winner!=="TIE"){
       who='<div class="who">'+(g.hits.filter(notHouse).length?'<span class="lab">Right</span><span class="h">'+esc(g.hits.filter(notHouse).join(", "))+'</span><br>':'')+(g.misses.filter(notHouse).length?'<span class="lab">Wrong</span><span class="x">'+esc(g.misses.filter(notHouse).join(", "))+'</span>':'')+'</div>';
     } else {
@@ -485,13 +500,21 @@ D.games.forEach(function(g,i){
   }
 });
 
+secs.games=h; h="";
 /* column */
-if(D.column||D.trash.length){
-  h+='<a id="column"></a>'+orn("The Column")+'<div class="byline">From the commissioner’s desk · grudges printed as received</div><div class="col">';
-  if(D.column) D.column.split(/\n\n+/).forEach(function(p){h+='<p>'+esc(p)+'</p>';});
-  if(D.trash.length){h+='<ul class="tt">'+D.trash.map(function(t){return '<li>“'+esc(t.text)+'”<b>'+esc(t.from)+'</b></li>';}).join('')+'</ul>';}
+if(D.column){
+  h+='<a id="column"></a>'+orn("The Column")+'<div class="col">';
+  D.column.split(/\n\n+/).slice(0,2).forEach(function(p){h+='<p>'+esc(p)+'</p>';});
   h+='</div>';
 }
+secs.column=h; h="";
+/* trash talk: the three newest up front, the rest one tap away */
+if(D.trash.length){
+  var TT=D.trash.slice().reverse(), li=function(t){return '<li>“'+esc(t.text)+'”<b>'+esc(t.from)+'</b></li>';};
+  h+=orn("Trash Talk")+'<ul class="tt">'+TT.slice(0,3).map(li).join('')+'</ul>';
+  if(TT.length>3) h+='<details class="tmore"><summary>All '+TT.length+' ›</summary><ul class="tt">'+TT.slice(3).map(li).join('')+'</ul></details>';
+}
+secs.trash=h; h="";
 
 /* by the numbers */
 if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
@@ -519,9 +542,10 @@ if(D.pastWeeks&&D.pastWeeks.length){
   h+=orn("Past Weeks")+'<div class="pastwk">'+D.pastWeeks.map(function(w){return '<a href="/pool/weeks/'+w.week+'/">Week '+w.week+(w.winners&&w.winners.length?' · '+esc(w.winners.join(" & ")):'')+'</a>';}).join('<br>')+'</div>';
 }
 /* how it works */
-h+='<div class="more">'+(openN&&!D.archive?'<a class="cal" href="/pool/week.ics">Add the pick deadline to your calendar</a><br><br>':'')+'<a href="/pool/about/">How it works</a><br>The rules, what the badges mean, and who Claude is.</div>';
+h+='<div class="more"><a href="/pool/about/">How it works</a><br>The rules, what the badges mean, and who Claude is.</div>';
 
-$("root").innerHTML=h;
+var order=(decidedN||D.status==="final")?[secs.board,secs.trash,secs.games,secs.column]:[secs.games,secs.column,secs.trash,secs.board];
+$("root").innerHTML=order.join("")+h;
 }
 render();
 
