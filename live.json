@@ -1,0 +1,105 @@
+{
+ "updated": "2026-10-02T11:26:29Z",
+ "week": 4,
+ "games": {
+  "0": {
+   "state": "post",
+   "away": 24,
+   "home": 27,
+   "detail": "Final",
+   "winner": "Browns",
+   "score": "27–24",
+   "line": "Final · Browns 27–24"
+  },
+  "1": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 9:30 AM EDT"
+  },
+  "2": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 1:00 PM EDT"
+  },
+  "3": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 1:00 PM EDT"
+  },
+  "4": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 1:00 PM EDT"
+  },
+  "5": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 1:00 PM EDT"
+  },
+  "6": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 1:00 PM EDT"
+  },
+  "7": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 1:00 PM EDT"
+  },
+  "8": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 1:00 PM EDT"
+  },
+  "9": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 1:00 PM EDT"
+  },
+  "10": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 4:05 PM EDT"
+  },
+  "11": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 4:25 PM EDT"
+  },
+  "12": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 4:25 PM EDT"
+  },
+  "13": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 4:25 PM EDT"
+  },
+  "14": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/4 - 8:20 PM EDT"
+  },
+  "15": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/5 - 8:15 PM EDT"
+  }
+ }
+}
