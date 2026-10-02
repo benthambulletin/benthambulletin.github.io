@@ -143,9 +143,9 @@ game and the Jets game, and the house entry's line. The column should lean on th
 contrarian who hit, the room that whiffed, the homer who got taxed. Never before kickoff.
 
 ## Badges
-Seven, no more: score.py awards **crown** (leading the week; the winner at final), **cellar** (Porta Potty,
+Eight, no more: score.py awards **crown** (leading the week; the winner at final), **cellar** (Porta Potty,
 last place this week), **wolf** (only one right on a game), **homer** (took the Bills or Jets, they lost)
-**coin** (behind Claude) and **dead** (mathematically out of the week); build.py computes **streak** (On Fire, 3+ straight correct picks across
+**coin** (behind Claude) **dead** (mathematically out of the week) and **buzzer** (first sheet inside the last hour before Thursday kickoff); build.py computes **streak** (On Fire, 3+ straight correct picks across
 weeks). Garret cut the rest because the board got busy. Do not add badges without him asking. The key
 is on `about/`.
 
