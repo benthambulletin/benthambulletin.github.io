@@ -46,6 +46,11 @@ $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. N
   Tally's free plan, so the advanced input/button styling is not live; do not add custom CSS.
 - `about/` anchors the board links to: `#locks #sealed #tiebreak #mugshot #trash` and `#b-<badge id>`.
   Keep those ids if you edit the page. Its week strip reads `data/page.json` live; nothing to update.
+- **Games come off the form at kickoff.** Tally can't lock one question, so every REFRESH/UPDATE run
+  hides (`configure_blocks` visibility, isHidden true on the game's TITLE block) each game that has kicked
+  off, plus its slot heading once every game under it has, then `publish_form`. NEW WEEK un-hides every
+  game TITLE and heading before rewriting them. score.py already voids any pick sent after kickoff;
+  hiding just stops people from making one.
 
 ## Files
 - `data/season.json` — the only state. `currentWeek`, `weeks{N}` (games with ISO kickoffs, winners,
