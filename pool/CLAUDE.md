@@ -41,7 +41,7 @@ restate earlier weeks), update the Tally form's opening TEXT block and its last 
 $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. Never turn it on without him saying so.
 
 ## The three pages are wired together (Oct 2)
-- Form → board: Tally redirect on completion is `https://benthambulletin.github.io/pool/?filed=1`. Keep it.
+- Form → receipt: Tally redirect on completion goes to `/pool/sheet/` (see "Receipt" below), which links to the board. The board's `?filed=1` box is a fallback.
 - Form intro TEXT block (`eb81f875-cf82-485b-8818-80a58ac5ace2`) has three parts: the fixed rules line,
   a **This week:** line, and the links `The board · How it works`. Keep the links and the fixed line.
 - Form colors/font match the board (cream `#fbf5e4`, ink, teal accent, red button, Lora). The form is on
