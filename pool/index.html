@@ -55,6 +55,16 @@ h1{margin:.6rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size
 /* cta */
 .cta{display:block;margin:1rem 0 0;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-family:'AR';font-weight:800;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;padding:.85rem;border-radius:3px}
 .cta.quiet{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.closes{text-align:center;font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:.45rem 0 0}
+.closes b{color:var(--red)}
+.closes a{color:var(--teal);text-decoration:none}
+.ack{margin:1rem 0 0;border:3px double var(--teal);background:var(--wash);padding:.7rem .9rem;text-align:center}
+.ack .k{font-family:'AR';font-weight:800;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
+.ack .n{font-family:'PF';font-weight:800;font-size:1.35rem;line-height:1.15;margin:.15rem 0}
+.ack .d{font-size:.92rem;color:var(--soft);line-height:1.4}
+.ack .d a{color:var(--teal)}
+.ruleref{color:var(--teal);text-decoration:none}
+.sheet .earned a{color:inherit;text-decoration:underline dotted var(--rule)}
 .cta:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
 
 /* sections */
@@ -179,7 +189,9 @@ details.g summary::-webkit-details-marker{display:none}
 
   <div class="tiles" id="tiles"></div>
   <div class="fresh" id="fresh"></div>
+  <div id="ack"></div>
   <a class="cta" id="cta" href="#">Make your picks</a>
+  <div class="closes" id="closes"></div>
   <div id="mug"></div>
 
   <div id="root"></div>
@@ -270,12 +282,31 @@ $("tiles").innerHTML=
 if(D.status==="final"){$("cta").textContent="Week "+(D.week+1)+" picks";}
 if(D.status==="live"){$("cta").classList.add("quiet");$("cta").textContent="Late sheet? Remaining games count";}
 
+/* what's next, computed from kickoffs so it stays true between refreshes */
+(function(){
+  var now=Date.now(), open=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)>now;});
+  var t;
+  if(D.status==="final") t='Week '+(D.week+1)+' slate drops Tuesday';
+  else if(open.length===D.games.length&&open.length) t='First game locks <b>'+esc(fmtWhen(open[0].kickoff))+'</b> · <a href="/pool/about/#locks">each game locks at kickoff</a>';
+  else if(open.length) t='Week '+D.week+' is live · <b>'+open.length+' of '+D.games.length+'</b> still open · next locks '+esc(fmtWhen(open[0].kickoff));
+  else t='Week '+D.week+' is live · every game has kicked off';
+  $("closes").innerHTML=t;
+})();
+
+/* back from the form: Tally sends people here with ?filed */
+(function(){
+  var q=location.search;
+  if(!/[?&]filed\b/.test(q)) return;
+  $("ack").innerHTML='<div class="ack"><div class="k">Sheet received</div><div class="n">You’re in for Week '+D.week+'.</div><div class="d">Your picks stay sealed until each game kicks off. Changed your mind? <a href="'+esc(D.formUrl)+'">Submit again</a>; your latest sheet before each kickoff counts. The board picks up new sheets on the hour.</div></div>';
+  try{ history.replaceState(null,"",location.pathname+location.hash); }catch(e){}
+})();
+
 var h="";
 
 /* the mugshot: the previous winner's pick of one loser's face */
 if(D.face&&D.face.photo){
   var F=D.face;
-  $("mug").innerHTML='<div class="mug"><img src="'+esc(F.photo)+'" alt=""><div><div class="k">The Mugshot · Week '+D.week+'</div><div class="n">'+esc(F.who)+'</div><div class="d">Hung here by <b>'+esc(F.by)+'</b>, who won Week '+esc(F.week||(D.week-1))+'.'+(F.line?' '+esc(F.line):'')+'</div></div></div>';
+  $("mug").innerHTML='<div class="mug"><img src="'+esc(F.photo)+'" alt=""><div><div class="k"><a class="ruleref" style="color:inherit" href="/pool/about/#mugshot">The Mugshot</a> · Week '+D.week+'</div><div class="n">'+esc(F.who)+'</div><div class="d">Hung here by <b>'+esc(F.by)+'</b>, who won Week '+esc(F.week||(D.week-1))+'.'+(F.line?' '+esc(F.line):'')+'</div></div></div>';
 }
 
 /* board */
@@ -284,9 +315,9 @@ var sealedN=D.games.filter(function(g){return g.status==="sealed";}).length;
 if(!ps.length){
   h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
 } else if(D.status==="pre"){
-  h+='<div class="lede">Sheets in the drawer, sealed until kickoff.</div>';
+  h+='<div class="lede">Sheets in the drawer, <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a>.</div>';
   h+='<p class="filed"><b>Filed:</b> '+ps.map(function(p){return esc(p.name);}).join(", ")+'.</p>';
-  h+='<p class="filed">Changed your mind? Submit the form again. Your latest sheet before each kickoff is the one that counts. Once games start, tap your name here to see your picks.</p>';
+  h+='<p class="filed">Changed your mind? Submit the form again. Your <a class="ruleref" href="/pool/about/#locks">latest sheet before each kickoff</a> is the one that counts. Once games start, tap your name here to see your picks.</p>';
 } else {
   h+='<div class="bhead"><span>#</span><span>Player</span><span>Record</span></div>';
   ps.forEach(function(p){
@@ -297,7 +328,7 @@ if(!ps.length){
        '<span class="nm">'+esc(p.name)+mv+tag+badgeIcons(p)+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span></summary><div class="sheet">';
     var earned=badgesFor(p);
     if(earned.length){
-      h+='<div class="earned">'+earned.map(function(b){return '<span class="bd '+esc(b.id)+'">'+BADGE[b.id].i+'</span>'+esc(BADGE[b.id].l)+(b.note?' — '+esc(b.note):'');}).join('<br>')+'</div>';
+      h+='<div class="earned">'+earned.map(function(b){return '<span class="bd '+esc(b.id)+'">'+BADGE[b.id].i+'</span><a href="/pool/about/#b-'+esc(b.id)+'">'+esc(BADGE[b.id].l)+'</a>'+(b.note?' — '+esc(b.note):'');}).join('<br>')+'</div>';
     }
     var lines=[];
     D.games.forEach(function(g,i){
@@ -311,7 +342,7 @@ if(!ps.length){
     h+=lines.join(' · ')+(sealedN?' · <span class="sealed">'+sealedN+' sealed</span>':'');
     var hm=D.homer&&D.homer[p.name];
     if(hm&&(hm.bills[0]+hm.bills[1]+hm.jets[0]+hm.jets[1])>0) h+='<br>Season on Bills games '+hm.bills[0]+'–'+hm.bills[1]+' · Jets games '+hm.jets[0]+'–'+hm.jets[1];
-    if(p.tb!=null&&D.games[D.games.length-1].status!=="sealed") h+='<br>Tiebreaker '+p.tb;
+    if(p.tb!=null&&D.games[D.games.length-1].status!=="sealed") h+='<br><a class="ruleref" href="/pool/about/#tiebreak">Tiebreaker</a> '+p.tb;
 
     h+='</div></details>';
   });
@@ -355,7 +386,7 @@ D.games.forEach(function(g,i){
     }
     h+='<details class="g"><summary><div class="m">'+m+'</div>'+s+sp+'</summary>'+who+'</details>';
   } else {
-    h+='<div class="g"><div class="m">'+m+'</div>'+s+(D.status!=="pre"&&ps.length?'<span class="sp"><span class="sealed">sealed until kickoff</span></span>':'')+'</div>';
+    h+='<div class="g"><div class="m">'+m+'</div>'+s+(D.status!=="pre"&&ps.length?'<span class="sp"><a class="ruleref sealed" href="/pool/about/#sealed">sealed until kickoff</a></span>':'')+'</div>';
   }
 });
 
