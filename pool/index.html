@@ -35,7 +35,7 @@ a{color:inherit}
 .dbl .a{height:3px;background:var(--ink)}.dbl .b{height:1px;background:var(--ink);margin-top:3px}
 .dbl{margin:.5rem 0 .9rem}.dbl.tight{margin:.7rem 0 .6rem}
 h1{margin:.5rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size:clamp(2.2rem,10vw,3.4rem);line-height:.95;letter-spacing:-.01em}
-.tag{text-align:center;font-family:'PFI';font-style:italic;font-size:1.05rem;color:var(--soft);margin-top:.35rem}
+.tag{text-align:center;font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-top:.45rem}
 .orn{text-align:center;color:var(--gold);font-size:1rem;letter-spacing:.9em;margin:.5rem 0 .4rem}
 .dateline{text-align:center;font-family:'AR';font-weight:800;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase}
 .dateline .st{color:var(--red)}.dateline .st.final{color:var(--teal)}
@@ -238,7 +238,6 @@ details.g summary::-webkit-details-marker{display:none}
     <a class="cal" id="cal" href="/pool/week.ics" hidden>📅 Add the pick deadline to your calendar</a>
     <div class="fresh" id="fresh"></div>
   </div>
-  <div class="tiles" id="tiles"></div>
   <div id="mug"></div>
 
   <div id="root"></div>
@@ -301,7 +300,7 @@ function badgeIcons(p){
 document.title=D.name; $("poolName").textContent=D.name;
 $("cta").href=D.formUrl;
 $("kickR").textContent=D.season+" · Week "+D.week;
-$("tag").textContent=D.buyIn?"The Football Pool · Straight up, $"+D.buyIn+" a week, winner takes the pot":"The Football Pool · Straight up, free to play, bragging rights on the line";
+$("tag").textContent=D.buyIn?"Straight up · $"+D.buyIn+" a week · winner takes the pot":"Straight up · free to play · bragging rights";
 var stTxt={pre:"Picks are open",live:"Games under way",final:"Final"}[D.status]||"";
 $("nowK").textContent='Week '+D.week; if(D.status==="final") $("nowK").classList.add("final");
 (function(){
@@ -319,13 +318,10 @@ var ps=D.players.slice().sort(function(a,b){return (b.correct-a.correct)||(a.mis
 var realPs=ps.filter(function(p){return !p.house;});
 var top=realPs.length?realPs[0].correct:0;
 
-/* tiles: three plain numbers */
 var finals=D.games.filter(function(g){return g.winner;}).length;
 var openN=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)>Date.now();}).length;
-$("tiles").innerHTML=
- '<div class="tile"><div class="v">'+entrants+'</div><div class="k">'+(entrants===1?"player":"players")+'</div></div>'+
- '<div class="tile"><div class="v">'+finals+' of '+D.games.length+'</div><div class="k">games final</div></div>'+
- '<div class="tile"><div class="v'+(openN?' red':'')+'">'+openN+'</div><div class="k">still open to pick</div></div>';
+/* the old tiles are now one quiet line under the button: the hero already says the rest */
+$("fresh").insertAdjacentHTML("afterbegin",'<span><b>'+entrants+'</b> '+(entrants===1?"player":"players")+' · <b>'+finals+' of '+D.games.length+'</b> final</span>');
 if(D.status==="final"){$("cta").textContent="Week "+(D.week+1)+" picks";}
 if(D.status==="pre"){$("cta").textContent="Make or change your picks";}
 if(D.status==="live"){$("cta").textContent=openN?"Pick the games still open":"All games have kicked off";if(!openN)$("cta").classList.add("quiet");}
