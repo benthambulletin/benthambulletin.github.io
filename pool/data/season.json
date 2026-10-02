@@ -82,7 +82,9 @@
               "Kaylani & Luka"
             ]
           },
-          "tv": "Prime Video"
+          "tv": "Prime Video",
+          "live": "Halftime · Browns 21–10",
+          "liveAt": "2026-10-02T01:56:00Z"
         },
         {
           "away": "Colts",
@@ -809,7 +811,7 @@
       }
     }
   },
-  "updated": "2026-10-02T01:25:49.709670+00:00",
+  "updated": "2026-10-02T02:15:24.246488+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
