@@ -14,17 +14,21 @@ access if the clone is missing). Work in `pool/`. Commit author `Claude <noreply
 Push = `git pull --rebase origin main && git push`. The Bulletin's own runs also push here; never touch
 anything outside `pool/`.
 
-## Design (locked; last changed Oct 2 at Garret's request)
-Board, top to bottom: masthead → sticky tab bar (Standings · Make picks · Rules, identical on `about/`) →
-"Sheet received" box (`#ack`, only when the form redirects to `/pool/?filed=1`) → the Now block (week +
-status kicker, one plain-English headline sentence computed from kickoffs, the picks button, the
-Updated line) [hero, Oct 2: kicker + one big line + subline, by state — countdown to first lock before kickoff; the live game and score while one is on; the leader between games; the champion when final; plus a Next lock bar with a live countdown] → one quiet stats line (players · games final) above the Updated line; the three tiles and the long italic tagline were cut Oct 2 → the Mugshot box →
-**Standings** (hint + dot key; › on rows; a row of dots under each name, one per game that has kicked off: teal right, red wrong, hollow live; tied ranks read T2; the house shows no rank) → **This Week's
-Games** (time ET + network; tap a started game for who picked whom; the house is left out of name lists)
-→ **The Column** + trash talk → By the Numbers → The Season → How it works box → sign-off. All times on the
-board and `about/` are Eastern. **Color rule (Oct 2, Garret: "all different colors pull my eyes everywhere"):** text is ink or grey only; red is for the picks button, the live dot and wrong-pick dots; teal only for right-pick dots; no gold ornaments, no colored section heads or links. Don't add color back. Rule and badge words on the board link to `about/` anchors. Eight badges,
-no more. Do not add sections, columns, keys, tickers or badges without him asking. Explanatory text goes
-on `about/`, never the board.
+## Design (locked; rebuilt Oct 2 from an outside design review Garret asked for)
+Board, top to bottom: double rule + "The Sunday Tax" (no kicker row, no strap line) → tab bar (Standings ·
+Make picks · Rules, identical on `about/`) → the hero: grey kicker (red ● only when a game is live), one big
+line, one grey subline — countdown before kickoff; the live score while one game is on; "N games live";
+the leader between games; the champion when final → one red "Make your picks" button (hidden once nothing
+is left to pick) → one small line under it: next lock time · countdown · add to calendar. Then the sections,
+ordered by state: **before any game is final** — This Week's Games, The Column, Trash Talk, Who's In (names
+only); **once a game is final** — Standings (one line per player: rank · name · result dots · record; T2 for
+ties; the week's winner ranks 1 even on a tiebreak), Trash Talk (3 newest + "All N ›"), This Week's Games,
+The Column (2 paragraphs max shown). Then By the Numbers, The Season, Past Weeks, How it works, the stats/updated
+line, sign-off. Game rows show "13 picked Steelers · 8 Browns" — never something that reads like a score.
+All times Eastern. **Color rule:** text is ink or grey only; red is for the picks button, the live dot, live
+scores and wrong-pick dots; teal only for right-pick dots; no gold ornaments, no colored headings or links.
+Eight badges, no more. Do not add sections, columns, keys, tickers or badges without him asking.
+Explanatory text goes on `about/`, never the board.
 
 ## Sealed picks (hard rule)
 Until a game has kicked off, nothing on the page, in the column, in `updates`, or in any message to
@@ -141,7 +145,7 @@ All three are the same steps; they differ only in what has finished. The Sunday 
    final and `tiebreakTotal` = both MNF teams' points added together.
 3. `python3 score.py /home/claude/subs.json` (add `--final` for Monday). Read its output.
 4. Write the column: set `weeks{N}.column` to 2–4 short paragraphs in the voice of a wise-ass
-   commissioner: who is leading, who is bleeding, the dumbest pick of the day, who is overdue, and —
+   commissioner, 1–2 short paragraphs (the board shows two at most): who is leading, who is bleeding, the dumbest pick of the day, who is overdue, and —
    when `decides` is non-empty — which open game the week turns on and who is on each side. Name
    names. Read score.py's output (movement, out, clinched, DECIDES) and write from it. Never mention a
    pick, a lean, or a consensus for any game that has not kicked off (see Sealed picks). Trash talk from
