@@ -19,7 +19,7 @@ Board, top to bottom: masthead → sticky tab bar (Standings · Make picks · Ru
 "Sheet received" box (`#ack`, only when the form redirects to `/pool/?filed=1`) → the Now block (week +
 status kicker, one plain-English headline sentence computed from kickoffs, the picks button, the
 Updated line) [hero, Oct 2: kicker + one big line + subline, by state — countdown to first lock before kickoff; the live game and score while one is on; the leader between games; the champion when final; plus a Next lock bar with a live countdown] → three tiles (players · games final · still open to pick) → the Mugshot box →
-**Standings** (hint "Tap a name to see their picks", › on rows; the house shows no rank) → **This Week's
+**Standings** (hint + dot key; › on rows; a row of dots under each name, one per game that has kicked off: teal right, red wrong, hollow live; tied ranks read T2; the house shows no rank) → **This Week's
 Games** (time ET + network; tap a started game for who picked whom; the house is left out of name lists)
 → **The Column** + trash talk → By the Numbers → The Season → How it works box → sign-off. All times on the
 board and `about/` are Eastern. Rule and badge words on the board link to `about/` anchors. Eight badges,
@@ -67,6 +67,8 @@ $5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. N
 - **Live scores:** REFRESH/UPDATE runs set `games[i].live` (e.g. `Bills 17–14 · 3rd qtr`, leader first) and
   `games[i].liveAt` (UTC ISO) for games in progress, from the sports data tool or ESPN's scoreboard; unset
   them when a game goes final. Never guess a score; if none is reliable, leave `live` out.
+
+- **Link preview + home-screen icon:** `og.png` (1200×630) and `icon.png` (180×180) are static; the board, `about/` and `sheet/` carry the og/apple-touch-icon tags. Don't regenerate them weekly.
 
 ## Files
 - `data/season.json` — the only state. `currentWeek`, `weeks{N}` (games with ISO kickoffs, winners,

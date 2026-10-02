@@ -3,6 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="The Sunday Tax — a free NFL pick 'em. Pick every game straight up, talk your trash, lose your face.">
+<meta property="og:title" content="The Sunday Tax">
+<meta property="og:description" content="Pick every game. Talk your trash. Lose your face. Standings, live scores and the column.">
+<meta property="og:image" content="https://benthambulletin.github.io/pool/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://benthambulletin.github.io/pool/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="apple-touch-icon" href="/pool/icon.png">
+<link rel="icon" type="image/png" href="/pool/icon.png">
+<meta name="apple-mobile-web-app-title" content="Sunday Tax">
+<meta name="theme-color" content="#fbf5e4">
 <meta http-equiv="Cache-Control" content="no-cache">
 <title>The Sunday Tax</title>
 <style>
@@ -108,6 +120,9 @@ details.g[open] summary .s::after{transform:rotate(90deg)}
 .brow .nm{font-family:'PF';font-weight:700;font-size:1.15rem;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .brow .nm .mv{font-family:'AR';font-size:.7rem;font-weight:700;margin-left:.35rem;vertical-align:.1em}
 .brow .nm .mv.up{color:var(--teal)}.brow .nm .mv.dn{color:var(--red)}
+.brow .dots{grid-column:2/4;display:flex;flex-wrap:wrap;gap:3px;margin-top:.3rem}
+.brow .dots i{display:block;width:9px;height:9px;border-radius:50%;background:var(--rule)}
+.brow .dots i.ok{background:var(--teal)}.brow .dots i.no{background:var(--red)}.brow .dots i.p{background:transparent;box-shadow:inset 0 0 0 1.5px var(--soft)}
 .brow .rec{font-family:'PF';font-weight:800;font-size:1.15rem;text-align:right}
 .brow.lead .nm,.brow.lead .rk{color:var(--red)}
 .brow .tag{display:inline-block;font-family:'AR';font-weight:700;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;padding:.05rem .4rem;border:1px solid;border-radius:2px;margin-left:.4rem;vertical-align:.15em}
@@ -387,14 +402,16 @@ if(!ps.length){
   h+='<p class="filed"><b>Filed:</b> '+(realPs.length?realPs.map(function(p){return esc(p.name);}).join(", ")+'.':'nobody yet.')+'</p>';
   h+='<p class="filed">Changed your mind? Submit the form again. Your <a class="ruleref" href="/pool/about/#locks">latest sheet before each kickoff</a> is the one that counts. Once games start, tap your name here to see your picks.</p>';
 } else {
+  var dots=function(p){var o='';D.games.forEach(function(g,i){if(g.status==="sealed")return;var pk=p.sheet?p.sheet[String(i)]:null;
+      o+='<i class="'+(!pk?'':!g.winner?'p':g.winner==="TIE"?'':(pk===g.winner?'ok':'no'))+'" title="'+esc(g.away)+' at '+esc(g.home)+'"></i>';});return o?'<span class="dots">'+o+'</span>':'';};
   var dispRank=function(p){return 1+realPs.filter(function(q){return q.correct>p.correct||(q.correct===p.correct&&q.missed<p.missed);}).length;};
-  h+='<div class="hint">Tap a name to see their picks</div><div class="bhead"><span>#</span><span>Player</span><span>Record</span></div>';
+  h+='<div class="hint">Tap a name for picks · <span style="color:var(--teal)">●</span> right <span style="color:var(--red)">●</span> wrong ○ live</div><div class="bhead"><span>#</span><span>Player</span><span>Record</span></div>';
   ps.forEach(function(p){
     var lead=!p.house&&p.correct>0&&dispRank(p)===1;
     var mv=p.delta>0?'<span class="mv up">▲'+p.delta+'</span>':(p.delta<0?'<span class="mv dn">▼'+(-p.delta)+'</span>':'');
     var tag=p.house?'<span class="tag house">House</span>':D.status==="final"?'':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
-    h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+(p.house?'–':dispRank(p))+'</span>'+
-       '<span class="nm">'+esc(p.name)+mv+tag+badgeIcons(p)+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span></summary><div class="sheet">';
+    h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+(p.house?'–':(realPs.filter(function(q){return q.correct===p.correct&&q.missed===p.missed;}).length>1?'T':'')+dispRank(p))+'</span>'+
+       '<span class="nm">'+esc(p.name)+mv+tag+badgeIcons(p)+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span>'+dots(p)+'</summary><div class="sheet">';
     var earned=badgesFor(p);
     if(earned.length){
       h+='<div class="earned">'+earned.map(function(b){return '<span class="bd '+esc(b.id)+'">'+BADGE[b.id].i+'</span><a href="/pool/about/#b-'+esc(b.id)+'">'+esc(BADGE[b.id].l)+'</a>'+(b.note?' — '+esc(b.note):'');}).join('<br>')+'</div>';
