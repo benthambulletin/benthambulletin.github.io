@@ -21,7 +21,13 @@ Column · Slate · How it works links under it, the Column with trash talk, the 
 How it works link, and the sign-off. Added Oct 2 at his request: the "what's next" line under the picks
 button (`#closes`, computed from kickoffs), the "Sheet received" box (`#ack`, shown only when the form
 redirects to `/pool/?filed=1`), and rule/badge links from the board into `about/` anchors. Also Oct 2: a sticky three-tab bar (Standings · Make picks · Rules) under
-the masthead on both the board and `about/`, identical on both, and bigger link text. Keep it. Seven badges, no more. Do not add sections, columns, keys,
+the masthead on both the board and `about/`, identical on both, and bigger link text. Keep it.
+Layout v2 (Oct 2, at his request — "the layout isn't intuitive"): top of the board is now masthead →
+tabs → the Now block (week + status kicker, one plain-English headline sentence computed from kickoffs,
+the picks button, updated/next-update line) → three tiles (players · games final · still open to pick) →
+Mugshot → **Standings** (hint "Tap a name to see their picks", › on each row) → **This Week's Games**
+(hint "Tap a game…") → **The Column** + trash → By the Numbers → The Season. Section names are plain
+English; no ornament row, dateline or jump links. Keep this order. Seven badges, no more. Do not add sections, columns, keys,
 tickers or badges to the board without him asking. Explanatory text goes on `about/`, never the board.
 
 ## Sealed picks (hard rule)
