@@ -42,7 +42,13 @@ html{scroll-padding-top:3.4rem}
 .now{margin:1rem 0 0;text-align:center}
 .now .nk{font-family:'AR';font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
 .now .nk.final{color:var(--teal)}
-.now .nl{font-family:'PF';font-weight:700;font-size:1.35rem;line-height:1.25;margin:.3rem 0 0}
+.now .nl{font-family:'PF';font-weight:800;font-size:clamp(2rem,10vw,2.9rem);line-height:1.05;margin:.35rem 0 .2rem;letter-spacing:-.01em}
+.now .nl .sc{white-space:nowrap}
+.now .ns{font-family:'AR';font-weight:700;font-size:.85rem;letter-spacing:.04em;color:var(--soft);line-height:1.45}
+.now .ns b{color:var(--ink)}
+.now .nn{margin:.85rem 0 0;padding:.55rem .7rem;border:1px solid var(--rule);background:var(--wash);border-radius:3px;font-family:'AR';font-weight:700;font-size:.8rem;letter-spacing:.03em;color:var(--soft);line-height:1.5}
+.now .nn b{color:var(--ink)}
+.now .nn .cd{color:var(--red);white-space:nowrap}
 .now .fresh{justify-content:center;gap:.2rem 1rem;border-bottom:0;padding:.55rem 0 0;font-size:.7rem}
 .hint{text-align:center;font-family:'AR';font-weight:700;font-size:.78rem;letter-spacing:.06em;color:var(--soft);margin:-.3rem 0 .7rem}
 .brow .rec::after{content:"›";display:inline-block;margin-left:.45rem;color:var(--teal);font-family:'AR';font-weight:800;transition:transform .15s}
@@ -211,6 +217,8 @@ details.g summary::-webkit-details-marker{display:none}
   <div class="now">
     <div class="nk" id="nowK"></div>
     <div class="nl" id="nowL"></div>
+    <div class="ns" id="nowS"></div>
+    <div class="nn" id="nowN" hidden></div>
     <a class="cta" id="cta" href="#">Make your picks</a>
     <a class="cal" id="cal" href="/pool/week.ics" hidden>📅 Add the pick deadline to your calendar</a>
     <div class="fresh" id="fresh"></div>
@@ -234,6 +242,16 @@ details.g summary::-webkit-details-marker{display:none}
 (function(){
 "use strict";
 var D=JSON.parse(document.getElementById("data").textContent);
+function tick(){
+  var els=document.querySelectorAll(".cd[data-until]"), now=Date.now();
+  for(var i=0;i<els.length;i++){
+    var ms=Date.parse(els[i].getAttribute("data-until"))-now;
+    if(ms<=0){els[i].textContent="locked";continue;}
+    var m=Math.floor(ms/60000), d=Math.floor(m/1440), h=Math.floor(m%1440/60), mm=m%60;
+    els[i].textContent=(d?d+"d "+h+"h":h?h+"h "+mm+"m":mm+"m")+(els[i].closest&&els[i].closest(".nl")?"":" left");
+  }
+}
+setInterval(tick,30000);
 function render(){
 var $=function(id){return document.getElementById(id);};
 $("nowK").className="nk"; $("cta").className="cta"; $("mug").innerHTML="";
@@ -270,7 +288,7 @@ $("cta").href=D.formUrl;
 $("kickR").textContent=D.season+" · Week "+D.week;
 $("tag").textContent=D.buyIn?"The Football Pool · Straight up, $"+D.buyIn+" a week, winner takes the pot":"The Football Pool · Straight up, free to play, bragging rights on the line";
 var stTxt={pre:"Picks are open",live:"Games under way",final:"Final"}[D.status]||"";
-$("nowK").textContent='Week '+D.week+' · '+stTxt; if(D.status==="final") $("nowK").classList.add("final");
+$("nowK").textContent='Week '+D.week; if(D.status==="final") $("nowK").classList.add("final");
 (function(){
   var t=Date.parse(D.updated), mins=isNaN(t)?null:Math.max(0,Math.round((Date.now()-t)/60000));
   var ago=mins==null?"":(mins<1?"just now":mins<60?mins+" min ago":mins<120?"1 hr ago":Math.round(mins/60)+" hrs ago");
@@ -299,23 +317,48 @@ if(D.status==="live"){$("cta").textContent=openN?"Pick the games still open":"Al
 $("cal").hidden=!(openN&&!D.archive);
 if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="/pool/";$("cta").classList.add("quiet");$("fresh").textContent="Week "+D.week+" is in the books.";}
 
-/* the headline: one plain sentence on where the week stands, computed from kickoffs */
+/* the hero: the one thing to know right now, then the next deadline with a live countdown */
 (function(){
   var now=Date.now(), open=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)>now;});
   var inplay=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)<=now;});
-  var lead="";
-  if(realPs.length&&top>0){var L=realPs.filter(function(p){return p.correct===top;});
-    lead=L.length===1?esc(L[0].name)+' leads at '+L[0].correct+'–'+L[0].missed+'. ':L.length+' tied at the top with '+top+' right. ';}
-  var t;
-  if(D.status==="final") t=(D.weekWinners.length===1?esc(D.weekWinners[0])+' won Week '+D.week+'.':'Week '+D.week+' split '+D.weekWinners.length+' ways.')+(D.archive?'':' Week '+(D.week+1)+' picks open Tuesday.');
-  else if(open.length===D.games.length) t='Picks are open. First game locks '+esc(fmtWhen(open[0].kickoff))+'.';
-  else {
-    t=lead;
-    if(inplay.length===1) t+=esc(inplay[0].away)+' at '+esc(inplay[0].home)+' is on now. ';
-    else if(inplay.length>1) t+=inplay.length+' games on now. ';
-    t+=open.length?open.length+(open.length===1?' game still open':' still open to pick')+' — next locks '+esc(fmtWhen(open[0].kickoff))+'.':'Every game has kicked off.';
-  }
-  $("nowL").innerHTML=t;
+  var L=top>0?realPs.filter(function(p){return p.correct===top;}):[];
+  var leadTxt=!L.length?'':(L.length===1?'<b>'+esc(L[0].name)+'</b> leads at <b>'+L[0].correct+'–'+L[0].missed+'</b>':'<b>'+L.length+' tied</b> at the top, <b>'+top+'</b> right');
+  var left=D.games.filter(function(g){return !g.winner;}).length;
+  var k="", v="", sub="";
+  if(D.status==="final"){
+    var W=D.weekWinners||[];
+    k=W.length>1?'Week '+D.week+' · split':'Week '+D.week+' champion';
+    v=W.length?esc(W.join(" & ")):'Final';
+    var wp=realPs.filter(function(p){return W.indexOf(p.name)>=0;})[0];
+    sub=(wp?'<b>'+wp.correct+'–'+wp.missed+'</b>'+(D.tbUsed?' · won on the tiebreaker':''):'')+(D.archive?'':' · picks next week’s mugshot');
+    $("nowK").classList.add("final");
+  } else if(inplay.length===1){
+    var g=inplay[0], parts=(g.live||"").split(" · ");
+    k='On now'+(g.tv?' · '+esc(g.tv):'');
+    v=g.live?'<span class="sc">'+esc(parts[0])+'</span>':esc(g.away)+' <span style="font-weight:400;font-style:italic">at</span> '+esc(g.home);
+    sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+(g.liveAt?' · as of '+esc(fmtWhen(g.liveAt).replace(/^\w+ /,"")):'')+'<br>':'')+(leadTxt||'Standings move when it goes final');
+  } else if(inplay.length>1){
+    k='On now';
+    v=inplay.length+' games live';
+    sub=(leadTxt||'Standings move as games go final')+' · <b>'+left+'</b> still to decide';
+  } else if(L.length){
+    k='Leading Week '+D.week;
+    v=L.length===1?esc(L[0].name):L.length+'-way tie';
+    sub=(L.length===1?'<b>'+L[0].correct+'–'+L[0].missed+'</b>':'at <b>'+top+'</b> right')+' · <b>'+left+'</b> game'+(left===1?'':'s')+' to go';
+  } else if(open.length){
+    k='Picks lock in';
+    v='<span class="cd" data-until="'+esc(open[0].kickoff)+'"></span>';
+    sub=esc(open[0].away)+' at '+esc(open[0].home)+' · '+esc(fmtWhen(open[0].kickoff))+' · <b>'+entrants+'</b> in so far';
+  } else { k='Week '+D.week; v='All games kicked off'; sub=leadTxt; }
+  $("nowK").textContent=k; $("nowL").innerHTML=v; $("nowS").innerHTML=sub;
+  /* next deadline, unless the hero already is the countdown */
+  var nn=$("nowN");
+  if(open.length&&!D.archive&&D.status!=="final"&&k!=="Picks lock in"){
+    var g2=open[0];
+    nn.innerHTML='Next lock: <b>'+esc(g2.away)+' at '+esc(g2.home)+'</b> · '+esc(fmtWhen(g2.kickoff))+' · <span class="cd" data-until="'+esc(g2.kickoff)+'"></span> · <b>'+open.length+'</b> game'+(open.length===1?'':'s')+' still open';
+    nn.hidden=false;
+  } else nn.hidden=true;
+  tick();
 })();
 
 /* back from the form: Tally sends people here with ?filed */
