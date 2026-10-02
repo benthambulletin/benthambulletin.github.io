@@ -20,7 +20,8 @@ Board (rank · name · record, badges next to names, tap for picks), a one-line 
 Column · Slate · How it works links under it, the Column with trash talk, the Slate, By the Numbers, the
 How it works link, and the sign-off. Added Oct 2 at his request: the "what's next" line under the picks
 button (`#closes`, computed from kickoffs), the "Sheet received" box (`#ack`, shown only when the form
-redirects to `/pool/?filed=1`), and rule/badge links from the board into `about/` anchors. Seven badges, no more. Do not add sections, columns, keys,
+redirects to `/pool/?filed=1`), and rule/badge links from the board into `about/` anchors. Also Oct 2: a sticky three-tab bar (Standings · Make picks · Rules) under
+the masthead on both the board and `about/`, identical on both, and bigger link text. Keep it. Seven badges, no more. Do not add sections, columns, keys,
 tickers or badges to the board without him asking. Explanatory text goes on `about/`, never the board.
 
 ## Sealed picks (hard rule)
