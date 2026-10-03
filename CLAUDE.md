@@ -181,6 +181,10 @@ Locked structure: aged-paper page, thick-thin double rules, centered small-caps 
 
 **Palette evolves with the season, automatically — never ask.** From September drift toward early fall, fully autumnal by October, winter by December. Change shades, not structure. Say nothing unless asked.
 
+**October palette, set Oct 3 at Garret's request** (in `tools/site.py` :root and `tools/barograph.py`): paper `#fbf3e1`, surround `#eadcc2`, rules `#d8c7a6`, brick `#a8401f` (was cherry), spruce `#2b6a5c` (was turquoise), amber `#c97a1c` (was sunflower). Switch to a winter palette Dec 1.
+
+**October voice.** Let the season into the writing without forcing it: cooler mornings, the first frost watch, apple and pumpkin season, the trees turning, Halloween coming, football Sundays, shorter days. One seasonal touch in the Family Today lede or the Weather Glass lede most days, never in the news items. Warm, not cute.
+
 Spot illustrations and cartoons: shelved.
 
 ## Tone
