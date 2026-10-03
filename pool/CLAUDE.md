@@ -41,6 +41,7 @@ Agreed Oct 3. Venmo payment emails now go to benthamohio@gmail.com (Gmail connec
   Unmatched or odd amounts (not $5) go to Garret in one daily message; never guess.
 - Board: ✓ next to paid names, "This week's pot: $X · N paid". Unpaid sheets play but cannot win the week.
 - Tuesday final message adds "Pay <winner> $X."
+- Decisions confirmed Oct 3: deadline = first kickoff; page-1 choice "Paid $5" / "Playing free (can't win)"; rules state only paid players win and the pot goes to the highest-ranked PAID player; late or no-sheet payments refunded by Garret; his entry and cash marked by hand; board = grey check + one pot line. Full checklist: Projects doc claude/tuesday-paid-rollout.md.
 
 ## Sealed picks (hard rule)
 Until a game has kicked off, nothing on the page, in the column, in `updates`, or in any message to
