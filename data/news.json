@@ -1,8 +1,15 @@
 {
- "generated_utc": "2026-10-03T11:00Z",
+ "generated_utc": "2026-10-03T11:04Z",
  "window_hours": 48,
  "sections": {
   "national": [
+   {
+    "title": "Extended interview: Alice Cooper",
+    "link": "https://www.cbsnews.com/video/extended-interview-alice-cooper/",
+    "published": "2026-10-03T11:00Z",
+    "summary": "Alice Cooper sits down with Anthony Mason to talk about the evolution of the unforgettable character he created, which he details in his new memoir, \"Devil on My Shoulder.\"",
+    "source": "CBS News"
+   },
    {
     "title": "UK-Iranian dual national bailed after RAF Fairford incident arrest",
     "link": "https://www.bbc.co.uk/news/articles/c6d095ygggv1o?at_medium=RSS&at_campaign=rss",
@@ -239,13 +246,6 @@
     "link": "https://www.cbsnews.com/news/cornell-university-rape-allegations-chi-phi-fraternity-details/",
     "published": "2026-10-03T00:32Z",
     "summary": "A woman, identified only as Jane Doe, alleges she was gang-raped by seven fraternity members in 2024 and accuses Cornell University of failing to protect her.",
-    "source": "CBS News"
-   },
-   {
-    "title": "A valet became a key source of support for cancer patients at a N.Y. care center",
-    "link": "https://www.cbsnews.com/news/buffalo-hospital-valet-cancer-patients/",
-    "published": "2026-10-03T00:29Z",
-    "summary": "Jon Avery, who parks cars at the Roswell Cancer Center in Buffalo, New York, says his goal when interacting with patients is to \"have a meaningful encounter that's not hollow.\"",
     "source": "CBS News"
    },
    {
@@ -566,27 +566,6 @@
   ],
   "local": [
    {
-    "title": "Former Gaskill teacher opens Dragonfly Cafe",
-    "link": "https://www.niagara-gazette.com/news/local_news/former-gaskill-teacher-opens-dragonfly-cafe/article_c13c9619-c952-4b7e-9bd2-45b2583c70d1.html",
-    "published": "2026-10-03T09:45Z",
-    "summary": "Niagara Falls\u2019 LaSalle neighborhood has a new option for breakfast food.",
-    "source": "Niagara Gazette"
-   },
-   {
-    "title": "Tips on checking utility bills shared at NYSEG rate hike forum",
-    "link": "https://www.niagara-gazette.com/news/local_news/tips-on-checking-utility-bills-shared-at-nyseg-rate-hike-forum/article_b54b9516-6951-5b01-9f95-aec262beac25.html",
-    "published": "2026-10-03T09:30Z",
-    "summary": "Participants at this week's forum on utility bills received tips from fellow residents on typical errors and how to find them.",
-    "source": "Niagara Gazette"
-   },
-   {
-    "title": "Lewiston awards contract for library roof repair work",
-    "link": "https://www.niagara-gazette.com/news/local_news/lewiston-awards-contract-for-library-roof-repair-work/article_5a8e9d7e-80af-4a5f-bf02-82effb818109.html",
-    "published": "2026-10-03T09:00Z",
-    "summary": "The Town of Lewiston has approved plans for Mussachio Architects to design remediation for the Lewiston Public Library\u2019s roof.",
-    "source": "Niagara Gazette"
-   },
-   {
     "title": "Bown, Burlingame, Leary, Dietzen shine for F/D/F/PV/CV",
     "link": "https://www.observertoday.com/sports/local-sports/2026/10/bown-burlingame-leary-dietzen-shine-for-f-d-f-pv-cv/",
     "published": "2026-10-03T04:00Z",
@@ -811,20 +790,6 @@
     "source": "WXXI Rochester"
    },
    {
-    "title": "Matt Martin departs as property manager of the Bewley Building",
-    "link": "https://www.niagara-gazette.com/news/local_news/matt-martin-departs-as-property-manager-of-the-bewley-building/article_32670bdb-6a0e-56aa-9006-393f4b1697e6.html",
-    "published": "2026-10-02T20:00Z",
-    "summary": "Boards have been removed from the Bewley Building\u2019s windows and the property is now undergoing management changes as well.",
-    "source": "Niagara Gazette"
-   },
-   {
-    "title": "Restaino joins renewed push to relocate 99th Street family",
-    "link": "https://www.niagara-gazette.com/news/local_news/restaino-joins-renewed-push-to-relocate-99th-street-family/article_59a00f54-3142-450c-99cf-25a7de09c867.html",
-    "published": "2026-10-02T19:51Z",
-    "summary": "Niagara Falls Mayor Robert Restaino said Friday he supports a grassroots effort to relocate a family of five dealing with hazardous waste concerns in and around their home near the Love Canal containment site.",
-    "source": "Niagara Gazette"
-   },
-   {
     "title": "President Trump to make stop in Syracuse",
     "link": "https://www.rochesterfirst.com/new-york-state/president-trump-to-make-stop-in-syracuse/",
     "published": "2026-10-02T19:04Z",
@@ -888,13 +853,6 @@
     "source": "WIVB Buffalo"
    },
    {
-    "title": "Seneca Chief highlights Locktoberfest activities",
-    "link": "https://www.niagara-gazette.com/news/local_news/seneca-chief-highlights-locktoberfest-activities/article_7ed5c718-bfbb-532e-998d-8b611d3d6633.html",
-    "published": "2026-10-02T16:00Z",
-    "summary": "Saturday offers the last opportunity this year to tour the Seneca Chief canal boat at downtown\u2019s Locktoberfest, running from 10 a.m. to 5:30 p.m. on Canal Street.",
-    "source": "Niagara Gazette"
-   },
-   {
     "title": "New gaming compact between Seneca Nation, NYS may not include revenue sharing",
     "link": "https://www.wivb.com/news/local-news/new-gaming-compact-between-seneca-nation-nys-may-not-include-revenue-sharing/",
     "published": "2026-10-02T15:59Z",
@@ -930,25 +888,11 @@
     "source": "WKBW Buffalo"
    },
    {
-    "title": "Seneca president says new gaming compact offers no revenue sharing",
-    "link": "https://www.niagara-gazette.com/news/local_news/seneca-president-says-new-gaming-compact-offers-no-revenue-sharing/article_1b0d4557-1b0d-432e-9d6b-e7b5cce17d9a.html",
-    "published": "2026-10-02T14:49Z",
-    "summary": "Niagara Falls losing out on millions of Seneca gaming revenue could be a real possibility, according to the president of the Seneca Nation.",
-    "source": "Niagara Gazette"
-   },
-   {
     "title": "Wyoming County firefighters battle large Bethany barn fire",
     "link": "https://www.rochesterfirst.com/fire-department/wyoming-county-firefighters-battle-large-bethany-barn-fire/",
     "published": "2026-10-02T14:32Z",
     "summary": "BETHANY, N.Y. (WROC) \u2014 A fully involved barn fire in Bethany took hours to get under control, according to the Wyoming Hook & Ladder Co. Inc. At around 2:26 p.m. on October 1, Wyoming Hook & Ladder, a volunteer fire company, along with other companies, was called to assist the Bethany Fire Departmen",
     "source": "Rochester First"
-   },
-   {
-    "title": "Pine Street Horror Haunted House welcoming screamers in Lockport",
-    "link": "https://www.niagara-gazette.com/news/local_news/pine-street-horror-haunted-house-welcoming-screamers-in-lockport/article_5e5daeb4-5b21-5e09-b1d5-b577a4a13832.html",
-    "published": "2026-10-02T13:15Z",
-    "summary": "The dead will dance this weekend at a former dance studio opening as Pine Street Horror Haunted House.",
-    "source": "Niagara Gazette"
    },
    {
     "title": "Coming up: What you need to know about the Democratic Socialists of America; Local teens discuss their experiences in Ghana",
@@ -977,13 +921,6 @@
     "published": "2026-10-02T11:34Z",
     "summary": "ROCHESTER, N.Y. (WROC) \u2014 For our Monthly Checkup for October, we look at ways to foster healthier relationships. Sunrise anchor Brennan Somers spoke with Dr. Melissa Heatly from URochester Medicine. Here are the key points they addressed:",
     "source": "Rochester First"
-   },
-   {
-    "title": "Americans are using buy now, pay later more than ever. Here's what to know if you're one of them",
-    "link": "https://www.niagara-gazette.com/news/local_news/americans-are-using-buy-now-pay-later-more-than-ever-heres-what-to-know-if/article_2e177e80-8623-44dc-a5d3-def01f9710bf.html",
-    "published": "2026-10-02T11:15Z",
-    "summary": "NEW YORK \u2014 Americans spent more than $160 billion last year using buy now, pay later plans, according to research published by Federal Reserve economists.",
-    "source": "Niagara Gazette"
    },
    {
     "title": "Heating oil prices in New York State jump nearly 70% ahead of winter",
@@ -1021,34 +958,6 @@
     "source": "Rochester First"
    },
    {
-    "title": "Charity flag football game raises funds for Packard Court Community Center",
-    "link": "https://www.niagara-gazette.com/news/local_news/charity-flag-football-game-raises-funds-for-packard-court-community-center/article_c5308117-1cca-4b1f-876a-e6a54be53736.html",
-    "published": "2026-10-02T09:45Z",
-    "summary": "A three-year winning streak came to a sudden end this year as Niagara Falls firefighters stunned Falls police in their annual charity flag football game.",
-    "source": "Niagara Gazette"
-   },
-   {
-    "title": "Lewiston's 2027 tentative budget shows sizable tax rate decrease",
-    "link": "https://www.niagara-gazette.com/news/local_news/lewistons-2027-tentative-budget-shows-sizable-tax-rate-decrease/article_50a8fc07-e5be-47ae-9ac1-5e1762dbf47e.html",
-    "published": "2026-10-02T09:30Z",
-    "summary": "With the town\u2019s reassessment finishing earlier this year, Lewiston residents should see a noticeable change in their property tax payments next year.",
-    "source": "Niagara Gazette"
-   },
-   {
-    "title": "Sanborn photographer's work to be featured in Erie Canal calendar",
-    "link": "https://www.niagara-gazette.com/news/local_news/sanborn-photographers-work-to-be-featured-in-erie-canal-calendar/article_a6802de4-faed-44ba-971f-8eea253daafb.html",
-    "published": "2026-10-02T09:30Z",
-    "summary": "A Sanborn photographer\u2019s work will be among the photos featured in next year\u2019s Erie Canalway National Heritage Corridor calendar as a second-place winner in the 21st annual contest.",
-    "source": "Niagara Gazette"
-   },
-   {
-    "title": "Community Missions hosting Interfaith Community Prayer Service on Tuesday",
-    "link": "https://www.niagara-gazette.com/news/local_news/community-missions-hosting-interfaith-community-prayer-service-on-tuesday/article_43e849cb-0c77-4eaa-b84d-6e419ed82b37.html",
-    "published": "2026-10-02T09:30Z",
-    "summary": "For 16 years, Community Missions has brought together people of different faiths for a prayer service to drive home a couple of points to those living with mental illness.",
-    "source": "Niagara Gazette"
-   },
-   {
     "title": "Stone Rd. shooting in Greece confirmed fatal; police investigate",
     "link": "https://www.rochesterfirst.com/crime/police/greece-pd-block-off-section-pf-imperial-manor-apartments/",
     "published": "2026-10-02T09:11Z",
@@ -1077,13 +986,6 @@
     "source": "WXXI Rochester"
    },
    {
-    "title": "Goodyear will 'exit' chemical business in the Falls",
-    "link": "https://www.niagara-gazette.com/news/local_news/goodyear-will-exit-chemical-business-in-the-falls/article_5ac7eb6c-a74f-48fc-8891-a29bb93024da.html",
-    "published": "2026-10-02T00:00Z",
-    "summary": "Goodyear Tire and Rubber Company is preparing to shut down its 56th Street facility in Niagara Falls, ending operations at a plant that has been the subject of years of environmental concerns.",
-    "source": "Niagara Gazette"
-   },
-   {
     "title": "Buffalo-area pay growth leads major U.S. metros, ADP report finds",
     "link": "https://www.wkbw.com/news/local-news/buffalo-area-pay-growth-leads-major-u-s-metros-adp-report-finds",
     "published": "2026-10-01T22:44Z",
@@ -1105,13 +1007,6 @@
     "source": "WKBW Buffalo"
    },
    {
-    "title": "Goodyear closing its Niagara Falls plant",
-    "link": "https://www.niagara-gazette.com/news/local_news/goodyear-closing-its-niagara-falls-plant/article_35c44a66-5663-4d94-b0cb-8ec720501ebe.html",
-    "published": "2026-10-01T21:59Z",
-    "summary": "The Goodyear Tire and Rubber Company is preparing to shut down its 56th Street facility in the Falls.",
-    "source": "Niagara Gazette"
-   },
-   {
     "title": "Goodyear to close Niagara Falls plant",
     "link": "https://www.wkbw.com/news/local-news/goodyear-to-close-niagara-falls-plant",
     "published": "2026-10-01T21:56Z",
@@ -1123,6 +1018,48 @@
     "link": "https://www.wkbw.com/news/local-news/public-input-sought-on-the-future-of-canalside-as-waterfront-planning-moves-forward",
     "published": "2026-10-01T21:43Z",
     "summary": "Empire State Development held a public engagement event Thursday to gather input for a planning initiative focused on the next chapter of Canalside.",
+    "source": "WKBW Buffalo"
+   },
+   {
+    "title": "'It does wonders': Utilities target major cause of power outages ahead of winter",
+    "link": "https://www.wkbw.com/news/local-news/it-does-wonders-utilities-target-major-cause-of-power-outages-ahead-of-winter",
+    "published": "2026-10-01T21:42Z",
+    "summary": "NYSEG and National Grid are trimming trees near power lines to prevent outages in Western New York this winter.",
+    "source": "WKBW Buffalo"
+   },
+   {
+    "title": "Exhibit at RoCo showcases immigrant experiences",
+    "link": "https://www.wxxinews.org/arts-culture/2026-10-01/exhibit-at-roco-showcases-immigrant-experiences",
+    "published": "2026-10-01T20:14Z",
+    "summary": "\u201cSanctuary: Borders & Belonging in 2026,\u201d is an exhibition at the Rochester Contemporary Art Center featuring 11 different installations by artists from across the country and the Rochester area.",
+    "source": "WXXI Rochester"
+   },
+   {
+    "title": "Seneca Nation president: Buffalo mayor is lying about new gas station",
+    "link": "https://www.wivb.com/news/local-news/buffalo/seneca-nation-president-buffalo-mayor-is-lying-about-new-gas-station/",
+    "published": "2026-10-01T19:47Z",
+    "summary": "BUFFALO, N.Y. (WIVB) -- Seneca Nation President J.C. Seneca accused Buffalo Mayor Sean Ryan of \"lying\" as Seneca continued to defend on Thursday the nation's construction of a new One Stop gas station on Miami Street. Seneca's comments came at a press conference following a back-and-forth between th",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "Monroe County launches Parks 100 to celebrate the system's centennial",
+    "link": "https://www.wxxinews.org/local-news/2026-10-01/monroe-county-launches-parks-100-to-celebrate-the-systems-centennial",
+    "published": "2026-10-01T19:43Z",
+    "summary": "Photo walks and the Rochester Playground Library series are just some of what's planned.",
+    "source": "WXXI Rochester"
+   },
+   {
+    "title": "Possible measles exposures reported at UPMC Chautauqua Emergency Department",
+    "link": "https://www.wkbw.com/news/local-news/possible-measles-exposures-reported-at-upmc-chautauqua-emergency-department",
+    "published": "2026-10-01T19:31Z",
+    "summary": "Health officials have notified the public that people with confirmed measles cases visited the UPMC Chautauqua Emergency Department in late September.",
+    "source": "WKBW Buffalo"
+   },
+   {
+    "title": "Amherst proposed 2027 budget calls for tax hike",
+    "link": "https://www.wkbw.com/news/local-news/northtowns/amherst-proposed-2027-budget-calls-for-tax-hike",
+    "published": "2026-10-01T15:11Z",
+    "summary": "Town Supervisor Shawn Lavin has released a proposed $188-million municipal budget. This plan carries a tax levy increase of 6-point-9 percent.",
     "source": "WKBW Buffalo"
    }
   ],
@@ -1423,5 +1360,7 @@
    }
   ]
  },
- "errors": []
+ "errors": [
+  "Niagara Gazette: HTTP Error 429: Too Many Requests"
+ ]
 }
