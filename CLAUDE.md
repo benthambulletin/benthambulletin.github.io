@@ -181,9 +181,9 @@ Locked structure: aged-paper page, thick-thin double rules, centered small-caps 
 
 **Palette evolves with the season, automatically — never ask.** From September drift toward early fall, fully autumnal by October, winter by December. Change shades, not structure. Say nothing unless asked.
 
-**October palette, set Oct 3 at Garret's request** (in `tools/site.py` :root and `tools/barograph.py`): paper `#fbf3e1`, surround `#eadcc2`, rules `#d8c7a6`, brick `#a8401f` (was cherry), spruce `#2b6a5c` (was turquoise), amber `#c97a1c` (was sunflower). Switch to a winter palette Dec 1.
+**October palette, set Oct 3 at Garret's request, then pushed harder** (`tools/site.py` :root, `tools/barograph.py`): paper `#f8eedb`, surround `#e2cca8`, rules `#d3b88f`, rust `#9c3216`, forest `#2f5e3e`, pumpkin `#cf6f1a`, ink `#24170c`. Masthead and colophon ornaments are maple leaf, jack-o'-lantern, fallen leaf (`&#127809; &#127875; &#127810;`) through Oct 31; November goes to leaves only; winter palette and ornaments Dec 1.
 
-**October voice.** Let the season into the writing without forcing it: cooler mornings, the first frost watch, apple and pumpkin season, the trees turning, Halloween coming, football Sundays, shorter days. One seasonal touch in the Family Today lede or the Weather Glass lede most days, never in the news items. Warm, not cute.
+**October voice — lean in hard (Garret, Oct 3: "lean in harder").** The whole paper should feel like October in Western New York. Every edition: a seasonal opener in Family Today; a Weather Glass lede that sounds like the month (sweater weather, frost on the windshield, leaf-pile wind, porch-light dusk); the Almanac Sky notes the shrinking daylight and the October moons by name (Hunter's Moon Oct 26); Question of the Day riddles skew autumnal/Halloween; On This Day prefers fall and Halloween history when a good one exists; Halloween (Oct 31) stays on the Family Today calendar with a countdown in the lede the last week. Local seasonal events (apple fests, pumpkin patches, haunted houses, Oktoberfests) get first look for the Home Wire when they are real and dated. The news items themselves stay straight — no puns on hard news. Warm and a little spooky, never cute.
 
 Spot illustrations and cartoons: shelved.
 
