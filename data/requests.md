@@ -33,3 +33,4 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - Sep 30, No. 98 — Luka bedtime cover (Garret, Tue night).
 - Oct 1, No. 99 — Luka bedtime cover, then swapped to Garret's backyard doe photo (Thu a.m.).
 - Oct 2, No. 100 — the hundredth edition; Luka bedtime cover added after publish (Garret, 7:25); Family Today ask box now points to the Tally form.
+- Oct 3, No. 101 — Friday night football sunset cover (Garret, 7:03).
