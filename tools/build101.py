@@ -19,9 +19,9 @@ S('<div class="tiles">','<div class="dbl-tight">','''<div class="tiles">
 S('<div class="plate-wrap">','<h2 class="sec"><span class="o">&#9825;</span>Family Today','''<div class="plate-wrap"><div class="frame"><span class="tick tl"></span><span class="tick tr"></span><span class="tick bl"></span><span class="tick br"></span>
 <img src="__PLATE__" alt="Plate I"></div>
 <div class="plate-cap">Plate I &middot; The Family Album</div>
-<div class="plate-sub">Friday night lights under a sunset sky</div></div>
+<div class="plate-sub">Friday night football, Fredonia way. Photo by Claire</div></div>
 ''')
-S('<div class="fam">','<ul class="cal">','''<div class="fam"><b>Friday night lights have the cover</b>, the storm clouds breaking into a sunset over the field. <b>The good weekend is here:</b> sunny and 63 today, 68 tomorrow. Sunday is a full day on the couch if you want it: Bills and Patriots at 1:00, Jets at Chicago at 1:00, then Las Vegas at 5:30. Tomorrow's paper runs long.
+S('<div class="fam">','<ul class="cal">','''<div class="fam"><b>Claire has the cover</b>: Friday night football, the storm clouds breaking into a sunset over the field. <b>The good weekend is here:</b> sunny and 63 today, 68 tomorrow. Sunday is a full day on the couch if you want it: Bills and Patriots at 1:00, Jets at Chicago at 1:00, then Las Vegas at 5:30. Tomorrow's paper runs long.
 ''')
 S('<div class="wx">','<div class="towns">','''<div class="wx"><div class="bigtemp">63<sup>&deg;</sup></div><div class="wxtext">
 <span class="lede">Blue sky, cool night</span>
@@ -89,7 +89,7 @@ R('What has a neck but no head?','What has keys but can\'t open a single lock?')
 R('<b>Question of the Day:</b> A bottle.','<b>Question of the Day:</b> A piano.')
 R('headlines via NPR, CBS, WIVB, WKBW, WXXI, Rochester First, Variety, Deadline, Billboard &middot; injury reports via the Patriots and Jets',
   'headlines via CBS, BBC, WKBW, Rochester First, Dunkirk Observer, Deadline, Variety, Hollywood Reporter &middot; injury reports via the Patriots, Jets and Bears')
-d.update(date='2026-10-03',no=101,body_html=b,plate_path='/home/claude/plate101.jpg',plate_caption='Friday night lights under a sunset sky',headline="Friday night lights · Sunny weekend · Hiring slows · Heating oil to $6.27 · Flutie Flakes are back")
+d.update(date='2026-10-03',no=101,body_html=b,plate_path='/home/claude/plate101.jpg',plate_caption='Friday night football, Fredonia way. Photo by Claire',headline="Friday night lights · Sunny weekend · Hiring slows · Heating oil to $6.27 · Flutie Flakes are back")
 json.dump(d,open('site/data/edition-2026-10-03.json','w'),indent=1); json.dump(d,open('edition-2026-10-03.json','w'),indent=1)
 p=json.load(open('site/data/pressure.json'))
 if p[-1]['date']!='2026-10-03': p.append({"date":"2026-10-03","in":30.31,"mb":1026.3,"station":"KIAG","time":"05:53 EDT"})
