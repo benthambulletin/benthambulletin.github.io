@@ -69,7 +69,7 @@ S('<div class="wire"><div class="num">1</div><div><h3>Hochul','<div class="ballo
 ''')
 R('<b>32 days</b> to Election Day','<b>31 days</b> to Election Day')
 S('<div class="wire"><div class="num">1</div><div><h3>Rochester &middot; County Parks','<h2 class="sec"><span class="o">&#9733;</span>The Marquee','''<div class="wire"><div class="num">1</div><div><h3>Rochester &middot; The Auto Show Ends After 118 Years</h3><p>Organizers have discontinued the Rochester Auto Show, which dates to 1908.</p></div></div>
-<div class="wire"><div class="num">2</div><div><h3>Hilton &middot; Apple Fest This Weekend</h3><p>Tens of thousands are expected for vendors and food run by local nonprofits; the 2024 festival drew more than 70,000.</p></div></div>
+<div class="wire"><div class="num">2</div><div><h3>Hilton &middot; Apple Fest This Weekend</h3><p>In the village of Hilton, northwest of Rochester in Monroe County, around the Community Center: today 10 to 5, Sunday 10 to 4:30. Free parking and shuttles from Hilton High School, 400 East Ave. The 2024 festival drew more than 70,000.</p></div></div>
 <div class="wire"><div class="num">3</div><div><h3>Dunkirk &middot; Water Rates Hold Up the Budget</h3><p>Mayor Kate Wdowiasz says she can't offer her 2027 budget until the fight over proposed water rate increases is settled. Mayors usually present theirs in September.</p></div></div>
 ''')
 S('<div class="wire"><div class="num">1</div><div><h3>Eddie Murphy','<h2 class="sec"><span class="o">&#127944;</span>The Gridiron','''<div class="wire"><div class="num">1</div><div><h3>Flutie Flakes Are Back</h3><p>Nearly three decades after they first hit Buffalo shelves, Doug Flutie is bringing the cereal back to Western New York to support autism programs.</p></div></div>
