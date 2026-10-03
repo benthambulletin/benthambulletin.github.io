@@ -76,7 +76,7 @@ function draw(D){
   if(S.blank){ R.innerHTML='<div class="card" style="text-align:center"><div class="k" style="justify-content:center">The Sunday Tax'+(wk?' · Week '+wk:'')+'</div><h1>Sheet received.</h1><div class="foot" style="font-size:.85rem">Your picks are in and sealed until each kickoff. Changed your mind? Submit again — your latest sheet before a game starts is the one that counts.</div></div><div class="btns"><a class="b1" href="/pool/">See the standings</a><a class="b2" href="'+FORM+'">Change my picks</a></div>'; return; }
   h+='<div class="snap">📸 Screenshot this page — it’s your receipt.</div>';
   h+='<div class="card"><div class="k"><span>The Sunday Tax</span><span>'+(wk?'Week '+wk:'')+'</span></div>';
-  h+='<h1>'+(S.name?esc(S.name)+'’s sheet':'Your sheet')+'</h1><div class="when">Filed '+esc(et(new Date(S.at)))+'</div><table>';
+  h+='<h1>'+(S.name?esc(S.name)+'’s sheet':'Your sheet')+'</h1><div class="when">Viewed '+esc(et(new Date(S.at)))+'</div><table>';
   if(games.length){
     games.forEach(function(g,i){var pk=S.picks[String(i)];
       h+='<tr><td class="m">'+esc(g.away)+' at '+esc(g.home)+'</td>'+(pk?'<td class="p">'+esc(pk)+'</td>':'<td class="p x">already kicked off</td>')+'</tr>';});
