@@ -69,7 +69,7 @@ def make_page(k, w, archive=False):
     }
 
 tpl = open(f"{HERE}/template.html").read()
-def render(page): return tpl.replace("/*DATA*/", json.dumps(page, ensure_ascii=False))
+def render(page): return tpl.replace("/*DATA*/", json.dumps(page, ensure_ascii=False).replace("<", "\\u003c"))
 
 # past weeks: every final week except the one on the board gets its own frozen page at /pool/weeks/<N>/
 past = sorted([int(k) for k, w in season["weeks"].items() if w.get("status") == "final" and k != n], reverse=True)
