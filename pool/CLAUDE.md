@@ -30,6 +30,18 @@ scores and wrong-pick dots; teal only for right-pick dots; no gold ornaments, no
 Eight badges, no more. Do not add sections, columns, keys, tickers or badges without him asking.
 Explanatory text goes on `about/`, never the board.
 
+## Planned: paid weeks (NOT live — build only when Garret says go)
+Agreed Oct 3. Venmo payment emails now go to benthamohio@gmail.com (Gmail connector).
+- Form page 1: name, then "Pay $5 on Venmo — @garretbentham" button (deep link, amount and note prefilled),
+  the line "If your Venmo name doesn't match the name you entered, put your pool name in the Venmo note,"
+  and a required "I've paid" box. Page 2: the picks. Show @garretbentham on the board too.
+- Do NOT offer or advertise paying ahead or credits. Keep it one week, $5.
+- Hourly/Sunday runs search Gmail for venmo@venmo.com "paid you" only, match by note then by a Venmo-name
+  alias list, record each payment once by email id, judge on-time by the email's timestamp vs the deadline.
+  Unmatched or odd amounts (not $5) go to Garret in one daily message; never guess.
+- Board: ✓ next to paid names, "This week's pot: $X · N paid". Unpaid sheets play but cannot win the week.
+- Tuesday final message adds "Pay <winner> $X."
+
 ## Sealed picks (hard rule)
 Until a game has kicked off, nothing on the page, in the column, in `updates`, or in any message to
 Garret may reveal or hint at anyone's pick for it: no "everyone likes X", no "Y is the only one on the
