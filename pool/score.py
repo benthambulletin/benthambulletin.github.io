@@ -117,7 +117,7 @@ def main():
             if w == "TIE" or isvoid or not pick: continue
             if pick == w: correct += 1; g["hits"].append(name)
             else: missed += 1; g["misses"].append(name)
-        tb, _ = pick_for(lst, q["tiebreak"], mnf["kickoff"])
+        tb, _ = pick_for(lst, q["tiebreak"], wk.get("tbLockAt") or mnf["kickoff"])  # tbLockAt: Week 4 only, see CLAUDE.md
         try: tb = int(tb) if tb not in (None, "") else None
         except Exception: tb = None
         players.append({"name": name, "house": name == house_name, "correct": correct, "missed": missed, "void": void,
