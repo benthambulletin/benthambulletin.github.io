@@ -4,7 +4,7 @@ Garret's weekly NFL pick 'em. **Free to play for now** (`buyIn` is 0 in season.j
 with the whole pot to the winner once enough people are in (`plannedBuyIn`). Straight-up winners, best record wins the week,
 tiebreaker = closest to combined points in the Monday night game. Picks arrive on a Tally form
 (form id `RGOakJ`, same link all season). Standings live at **https://benthambulletin.github.io/pool/**
-and are rebuilt from `pool/data/season.json` by `pool/build.py`. Commissioner: Garret. Venmo @garretbentham.
+and are rebuilt from `pool/data/season.json` by `pool/build.py`. Commissioner: Garret. Venmo @Garret-Bentham.
 
 **The pool page never links to the paper.** Coworkers and friends play; the Bulletin is family-only. No link, no mention of the Bulletin by name on the pool page.
 
@@ -32,9 +32,9 @@ Explanatory text goes on `about/`, never the board.
 
 ## Planned: paid weeks (NOT live — build only when Garret says go)
 Agreed Oct 3. Venmo payment emails now go to benthamohio@gmail.com (Gmail connector).
-- Form page 1: name, then "Pay $5 on Venmo — @garretbentham" button (deep link, amount and note prefilled),
+- Form page 1: name, then "Pay $5 on Venmo — @Garret-Bentham" button (deep link, amount and note prefilled),
   the line "If your Venmo name doesn't match the name you entered, put your pool name in the Venmo note,"
-  and a required "I've paid" box. Page 2: the picks. Show @garretbentham on the board too.
+  and a required "I've paid" box. Page 2: the picks. Show @Garret-Bentham on the board too.
 - Do NOT offer or advertise paying ahead or credits. Keep it one week, $5.
 - Hourly/Sunday runs search Gmail for venmo@venmo.com "paid you" only, match by note then by a Venmo-name
   alias list, record each payment once by email id, judge on-time by the email's timestamp vs the deadline.
@@ -54,7 +54,7 @@ filer could learn anything about the slate from it, cut it.
 `data/season.json` → `buyIn`. 0 means free: the page hides pots and payouts and says so; score.py still
 reports `pot $0`. When Garret says to turn the money on, set `buyIn` to 5 (from that week forward — do not
 restate earlier weeks), update the Tally form's opening TEXT block and its last TEXT block ("The money") to say
-$5 a week, Venmo @garretbentham, and tell the Bulletin via `data/requests.md`. Never turn it on without him saying so.
+$5 a week, Venmo @Garret-Bentham, and tell the Bulletin via `data/requests.md`. Never turn it on without him saying so.
 
 ## The three pages are wired together (Oct 2)
 - Form → receipt: Tally redirect on completion goes to `/pool/sheet/` (see "Receipt" below), which links to the board. The board's `?filed=1` box is a fallback.
