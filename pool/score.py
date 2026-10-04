@@ -118,6 +118,9 @@ def main():
             if pick == w: correct += 1; g["hits"].append(name)
             else: missed += 1; g["misses"].append(name)
         tb, _ = pick_for(lst, q["tiebreak"], wk.get("tbLockAt") or mnf["kickoff"])  # tbLockAt: Week 4 only, see CLAUDE.md
+        if tb in (None, "") and wk.get("tbLockAt"):
+            # first sheet came in after the lock: their first tiebreaker stands, later changes don't
+            tb, _ = pick_for(lst[:1], q["tiebreak"], mnf["kickoff"])
         try: tb = int(tb) if tb not in (None, "") else None
         except Exception: tb = None
         players.append({"name": name, "house": name == house_name, "correct": correct, "missed": missed, "void": void,

@@ -57,7 +57,7 @@ its own site only if the pool grows well beyond its circle of friends and family
 ## Week 4 tiebreaker lock
 Week 4's tiebreaker numbers were visible in public git history Sep 29–Oct 2, so `weeks.4.tbLockAt` freezes each
 player's Week 4 tiebreaker at Thursday kickoff (nobody had changed theirs since). score.py uses `tbLockAt` when present,
-otherwise Monday's kickoff. Do not set it on other weeks.
+otherwise Monday's kickoff. Anyone whose first sheet came after the lock keeps the tiebreaker from that first sheet. Do not set it on other weeks.
 
 ## Sealed picks (hard rule)
 Until a game has kicked off, nothing on the page, in the column, in `updates`, or in any message to
