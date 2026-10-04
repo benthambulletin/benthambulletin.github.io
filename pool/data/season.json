@@ -464,6 +464,25 @@
           "badges": []
         },
         {
+          "name": "B-rad",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 1,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {
+            "0": null
+          },
+          "filedAt": "2026-10-04T04:42:41+00:00",
+          "firstAt": "2026-10-04T04:42:41+00:00",
+          "rank": 9,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
           "name": "Andrew Clarke",
           "house": false,
           "correct": 0,
@@ -477,8 +496,8 @@
           },
           "filedAt": "2026-09-30T15:07:10+00:00",
           "firstAt": "2026-09-30T15:07:10+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -496,8 +515,8 @@
           },
           "filedAt": "2026-10-01T13:10:03+00:00",
           "firstAt": "2026-10-01T13:10:03+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -515,8 +534,8 @@
           },
           "filedAt": "2026-09-29T15:55:32+00:00",
           "firstAt": "2026-09-29T15:55:32+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -534,8 +553,8 @@
           },
           "filedAt": "2026-09-29T01:40:00+00:00",
           "firstAt": "2026-09-29T01:40:00+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "house",
           "badges": []
         },
@@ -553,8 +572,8 @@
           },
           "filedAt": "2026-09-29T16:00:07+00:00",
           "firstAt": "2026-09-29T16:00:07+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -572,8 +591,8 @@
           },
           "filedAt": "2026-09-29T12:24:58+00:00",
           "firstAt": "2026-09-29T12:24:58+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -591,8 +610,8 @@
           },
           "filedAt": "2026-10-01T17:30:24+00:00",
           "firstAt": "2026-10-01T17:30:24+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -610,8 +629,8 @@
           },
           "filedAt": "2026-10-01T23:10:34+00:00",
           "firstAt": "2026-10-01T23:10:34+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -629,8 +648,8 @@
           },
           "filedAt": "2026-09-29T22:01:35+00:00",
           "firstAt": "2026-09-29T22:01:35+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -648,8 +667,8 @@
           },
           "filedAt": "2026-09-29T16:54:52+00:00",
           "firstAt": "2026-09-29T16:54:52+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -667,8 +686,8 @@
           },
           "filedAt": "2026-09-29T23:36:35+00:00",
           "firstAt": "2026-09-29T23:36:35+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -686,8 +705,8 @@
           },
           "filedAt": "2026-09-29T15:07:02+00:00",
           "firstAt": "2026-09-29T15:07:02+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -705,8 +724,8 @@
           },
           "filedAt": "2026-09-29T15:05:20+00:00",
           "firstAt": "2026-09-29T15:05:20+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -724,8 +743,8 @@
           },
           "filedAt": "2026-09-29T16:19:52+00:00",
           "firstAt": "2026-09-29T16:19:52+00:00",
-          "rank": 9,
-          "delta": 0,
+          "rank": 10,
+          "delta": -1,
           "state": "alive",
           "badges": []
         }
@@ -764,7 +783,7 @@
           "text": "I think I met Derek in a porta potty"
         }
       ],
-      "column": "Saturday, and nothing has moved since Thursday. Eight sit at 1–0: Amanda, Dan, Devin, Josh, Kaylani & Luka, Marky Mark, Peggy and Walczyk. The other fourteen backed Pittsburgh and are 0–1.\n\nAriel said Derek wouldn't get any right. So far she's correct, and the scoreboard says the same about her: 0–1. Garret wrote “Y'all suck” and then joined them, the robot right beside him. Fifteen games left. Colts–Commanders locks Sunday at 9:30 a.m. from London, then eight more lock at 1:00.",
+      "column": "Sunday morning. B-rad filed at 12:42 a.m., three days after Steelers–Browns kicked off, so he starts 0–0: the only man here who can't be wrong about Cleveland. Eight sit at 1–0: Amanda, Dan, Devin, Josh, Kaylani & Luka, Marky Mark, Peggy and Walczyk. Thirteen humans and the robot are 0–1.\n\nDevin called Garret a moron. Garret's rebuttal was “Y'all suck” and a Steelers pick. Colts–Commanders locks at 9:30 a.m. from London, eight more at 1:00. Last call.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 0,
@@ -838,7 +857,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-04T03:09:58.974489+00:00",
+  "updated": "2026-10-04T12:10:16.516182+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
