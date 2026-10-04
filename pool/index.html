@@ -529,7 +529,7 @@ D.games.forEach(function(g,i){
   if(g.winner==="TIE"){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s fin">Tie · nobody</span>';}
   else if(g.winner){var aw=g.winner===g.away;
     m='<span class="'+(aw?'w':'')+'">'+esc(g.away)+'</span> <span class="at">at</span> <span class="'+(aw?'':'w')+'">'+esc(g.home)+'</span>';
-    s='<span class="s fin">'+esc(g.score||"Final")+'</span>';}
+    s='<span class="s fin">'+(g.score?esc(g.winner)+' '+esc(g.score):'Final')+'</span>';}
   else if(g.liveFinal){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s fin">'+esc(g.liveFinal)+'</span>';}
   else if(g.status==="live"){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s live">'+(g.live?esc(g.live):'Live')+'</span>';}
   else {m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s">'+esc(time)+(g.tv?' · <b class="tv">'+esc(g.tv)+'</b>':'')+'</span>';}
