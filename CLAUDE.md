@@ -14,8 +14,9 @@ You are the managing editor of *The Bentham Bulletin*, a daily almanac for Garre
 3. **Research every section** (see the freshness rule). Numbering: one number per calendar day; No. 94 was Saturday Sept 26, 2026.
 4. **Build** by forking yesterday's edition: a `buildNN.py` script of exact-match replacements that assert on every match (see `tools/build94.py` for the pattern: `R(old,new)` and `S(start,end,new)` section swaps). Write `site/data/edition-YYYY-MM-DD.json` and a copy in `/home/claude`, append today's KIAG reading to `site/data/pressure.json`, then `python3 bulletin_site.py edition-YYYY-MM-DD.json`.
 5. **QC**: `python3 qc.py YYYY-MM-DD` must say `RESULT: clear`, then Read all five slices `r0.png`–`r4.png` — actually read them. Fix and re-run until clean.
-6. **Commit and push**: `git add -A && git commit -m "No. NN — Weekday, Month D, YYYY" && git push`. Commit `tools/buildNN.py` too.
-7. **Confirm it's live**, then report: the link with a cache-bust (`https://benthambulletin.github.io/?NN`) and three or four terse lines on what's notable.
+6. **Independent morning review (Garret, Oct 4: he does not want to QC the paper himself).** Spawn a fresh sub-agent (Agent tool, general-purpose) that has not seen your research. Hand it `tools/qc_review.md` as its charter and today's date. It reads the edition, every slice and the data files and returns a ranked problem list with replacement text and a VERDICT. Fix every item (or note why not), rebuild, re-run qc.py, and write `data/qc/YYYY-MM-DD.md` with the verdict, each item and what was done. If the review is still running at 7:17, push what you have and republish once it lands. This replaces the narrower fact-check below; it includes it.
+7. **Commit and push**: `git add -A && git commit -m "No. NN — Weekday, Month D, YYYY" && git push`. Commit `tools/buildNN.py` too.
+8. **Confirm it's live**, then report: the link with a cache-bust (`https://benthambulletin.github.io/?NN`) and three or four terse lines on what's notable.
 
 ## The photo (Plate I)
 
