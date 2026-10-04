@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-04T14:58:23Z",
+ "updated": "2026-10-04T15:00:25Z",
  "week": 4,
  "games": {
   "1": {
    "state": "in",
-   "away": 7,
+   "away": 10,
    "home": 6,
-   "detail": "0:03 - 2nd",
-   "line": "Colts 7–6 · 0:03 - 2nd"
+   "detail": "Halftime",
+   "line": "Colts 10–6 · Halftime"
   },
   "2": {
    "state": "pre",
