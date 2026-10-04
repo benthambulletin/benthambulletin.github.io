@@ -261,6 +261,8 @@ details.g summary .s::after,.brow .rec::after{color:var(--soft)}
 .filed .nm2{white-space:nowrap}
 details.tmore summary{list-style:none;cursor:pointer;font-family:'AR';font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--soft);padding:.5rem 0}
 details.tmore summary::-webkit-details-marker{display:none}
+details.smore>summary{text-align:center}
+details.smore[open]>summary{display:none}
 </style>
 </head>
 <body>
@@ -308,6 +310,7 @@ function tick(){
 }
 setInterval(tick,30000);
 /* live scores: a GitHub job publishes ESPN's scoreboard to the pool-live branch every ~5 minutes */
+document.addEventListener('toggle',function(e){if(e.target&&e.target.id==='smore')window.SMORE=e.target.open;},true);
 var LIVE_URL="https://raw.githubusercontent.com/benthambulletin/benthambulletin.github.io/pool-live/live.json", LV=null;
 function applyLive(){
   if(!LV||LV.week!==D.week||!LV.games) return;
@@ -475,7 +478,9 @@ if(!ps.length){
   var beats=function(q,p){return q.correct>p.correct||(q.correct===p.correct&&(q.missed<p.missed||(q.missed===p.missed&&isW(q)&&!isW(p))));};
   var dispRank=function(p){return 1+realPs.filter(function(q){return beats(q,p);}).length;};
   h+='<div class="hint">Tap a name for their picks</div>';
-  ps.forEach(function(p){
+  var TOPN=5;
+  ps.forEach(function(p,pi){
+    if(pi===TOPN&&ps.length>TOPN+1) h+='<details class="tmore smore" id="smore"'+(window.SMORE?' open':'')+'><summary>All '+ps.length+' ›</summary>';
     var lead=!p.house&&p.correct>0&&dispRank(p)===1;
     var mv=p.delta>0?'<span class="mv up">▲'+p.delta+'</span>':(p.delta<0?'<span class="mv dn">▼'+(-p.delta)+'</span>':'');
     var tag=p.house?'<span class="tag house">House</span>':D.status==="final"?'':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
@@ -501,6 +506,7 @@ if(!ps.length){
 
     h+='</div></details>';
   });
+  if(ps.length>TOPN+1) h+='</details>';
 }
 
 
