@@ -215,8 +215,8 @@
             ]
           },
           "tv": "CBS",
-          "live": "Ravens 21–7 · 2nd qtr",
-          "liveAt": "2026-10-04T18:21:05Z"
+          "live": "Ravens 24–7 · 3rd qtr",
+          "liveAt": "2026-10-04T19:25:48Z"
         },
         {
           "away": "Patriots",
@@ -259,8 +259,8 @@
             ]
           },
           "tv": "CBS",
-          "live": "Tied 14–14 · 2nd qtr",
-          "liveAt": "2026-10-04T18:21:05Z"
+          "live": "Bills 17–14 · 3rd qtr",
+          "liveAt": "2026-10-04T19:25:48Z"
         },
         {
           "away": "Jets",
@@ -303,8 +303,8 @@
             ]
           },
           "tv": "FOX",
-          "live": "Bears 10–3 · 2nd qtr",
-          "liveAt": "2026-10-04T18:21:05Z"
+          "live": "Bears 13–3 · 3rd qtr",
+          "liveAt": "2026-10-04T19:25:48Z"
         },
         {
           "away": "Jaguars",
@@ -347,8 +347,8 @@
             ]
           },
           "tv": "CBS",
-          "live": "Jaguars 13–3 · 2nd qtr",
-          "liveAt": "2026-10-04T18:21:05Z"
+          "live": "Jaguars 13–3 · 3rd qtr",
+          "liveAt": "2026-10-04T19:25:48Z"
         },
         {
           "away": "Cowboys",
@@ -391,8 +391,8 @@
             ]
           },
           "tv": "FOX",
-          "live": "Texans 13–6 · 2nd qtr",
-          "liveAt": "2026-10-04T18:21:05Z"
+          "live": "Texans 16–13 · 3rd qtr",
+          "liveAt": "2026-10-04T19:25:48Z"
         },
         {
           "away": "Cardinals",
@@ -435,8 +435,8 @@
             ]
           },
           "tv": "CBS",
-          "live": "Giants 19–14 · 2nd qtr",
-          "liveAt": "2026-10-04T18:21:05Z"
+          "live": "Giants 19–17 · 3rd qtr",
+          "liveAt": "2026-10-04T19:25:48Z"
         },
         {
           "away": "Rams",
@@ -479,8 +479,8 @@
             ]
           },
           "tv": "FOX",
-          "live": "Eagles 13–10 · 2nd qtr",
-          "liveAt": "2026-10-04T18:21:05Z"
+          "live": "Eagles 20–10 · 3rd qtr",
+          "liveAt": "2026-10-04T19:25:48Z"
         },
         {
           "away": "Packers",
@@ -523,8 +523,8 @@
             ]
           },
           "tv": "FOX",
-          "live": "Tied 7–7 · 2nd qtr",
-          "liveAt": "2026-10-04T18:21:05Z"
+          "live": "Packers 17–7 · 3rd qtr",
+          "liveAt": "2026-10-04T19:25:48Z"
         },
         {
           "away": "Dolphins",
@@ -1145,6 +1145,34 @@
           "badges": []
         },
         {
+          "name": "Mrs. Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 10,
+          "remaining": 6,
+          "max": 6,
+          "tb": null,
+          "sheet": {
+            "0": null,
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null
+          },
+          "filedAt": "2026-10-04T18:50:13+00:00",
+          "firstAt": "2026-10-04T18:50:13+00:00",
+          "rank": 19,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
           "name": "B-rad",
           "house": false,
           "correct": 0,
@@ -1167,8 +1195,8 @@
           },
           "filedAt": "2026-10-04T04:42:41+00:00",
           "firstAt": "2026-10-04T04:42:41+00:00",
-          "rank": 20,
-          "delta": 0,
+          "rank": 21,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -1195,8 +1223,8 @@
           },
           "filedAt": "2026-09-29T15:55:32+00:00",
           "firstAt": "2026-09-29T15:55:32+00:00",
-          "rank": 21,
-          "delta": 0,
+          "rank": 22,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -1223,8 +1251,8 @@
           },
           "filedAt": "2026-09-29T01:40:00+00:00",
           "firstAt": "2026-09-29T01:40:00+00:00",
-          "rank": 21,
-          "delta": 0,
+          "rank": 22,
+          "delta": -1,
           "state": "house",
           "badges": []
         },
@@ -1251,8 +1279,8 @@
           },
           "filedAt": "2026-09-29T22:01:35+00:00",
           "firstAt": "2026-09-29T22:01:35+00:00",
-          "rank": 21,
-          "delta": 0,
+          "rank": 22,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -1279,8 +1307,8 @@
           },
           "filedAt": "2026-09-29T15:05:20+00:00",
           "firstAt": "2026-09-29T15:05:20+00:00",
-          "rank": 21,
-          "delta": 0,
+          "rank": 22,
+          "delta": -1,
           "state": "alive",
           "badges": []
         }
@@ -1646,7 +1674,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-04T18:21:05.171006+00:00",
+  "updated": "2026-10-04T19:25:48.964753+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
