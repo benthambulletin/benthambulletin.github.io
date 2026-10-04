@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T18:19:09Z",
+ "updated": "2026-10-04T18:21:11Z",
  "week": 4,
  "games": {
   "1": {
@@ -15,22 +15,22 @@
    "state": "in",
    "away": 7,
    "home": 21,
-   "detail": "1:29 - 2nd",
-   "line": "Ravens 21–7 · 1:29 - 2nd"
+   "detail": "1:11 - 2nd",
+   "line": "Ravens 21–7 · 1:11 - 2nd"
   },
   "3": {
    "state": "in",
    "away": 14,
    "home": 14,
-   "detail": "0:45 - 2nd",
-   "line": "Tied 14–14 · 0:45 - 2nd"
+   "detail": "0:29 - 2nd",
+   "line": "Tied 14–14 · 0:29 - 2nd"
   },
   "4": {
    "state": "in",
    "away": 3,
    "home": 10,
-   "detail": "0:53 - 2nd",
-   "line": "Bears 10–3 · 0:53 - 2nd"
+   "detail": "0:43 - 2nd",
+   "line": "Bears 10–3 · 0:43 - 2nd"
   },
   "5": {
    "state": "in",
@@ -43,15 +43,15 @@
    "state": "in",
    "away": 6,
    "home": 13,
-   "detail": "2:00 - 2nd",
-   "line": "Texans 13–6 · 2:00 - 2nd"
+   "detail": "1:24 - 2nd",
+   "line": "Texans 13–6 · 1:24 - 2nd"
   },
   "7": {
    "state": "in",
    "away": 14,
    "home": 19,
-   "detail": "2:24 - 2nd",
-   "line": "Giants 19–14 · 2:24 - 2nd"
+   "detail": "2:00 - 2nd",
+   "line": "Giants 19–14 · 2:00 - 2nd"
   },
   "8": {
    "state": "in",
@@ -64,8 +64,8 @@
    "state": "in",
    "away": 7,
    "home": 7,
-   "detail": "0:34 - 2nd",
-   "line": "Tied 7–7 · 0:34 - 2nd"
+   "detail": "0:02 - 2nd",
+   "line": "Tied 7–7 · 0:02 - 2nd"
   },
   "10": {
    "state": "pre",
