@@ -160,8 +160,37 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Titans": [
+              "B-rad",
+              "Marky Mark",
+              "Kara",
+              "Andrew Clarke",
+              "Melissa",
+              "Ariel",
+              "Claude"
+            ],
+            "Ravens": [
+              "Brandon Goes Commando",
+              "Josh",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Walczyk",
+              "Andy R",
+              "Devin",
+              "Peggy",
+              "Dan",
+              "Mike Sombloski",
+              "Leah",
+              "Kaylani & Luka",
+              "Tom",
+              "Derek",
+              "Nate V",
+              "Thom",
+              "Garret"
+            ]
+          },
           "tv": "CBS"
         },
         {
@@ -173,8 +202,37 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Patriots": [
+              "Andy R"
+            ],
+            "Bills": [
+              "Brandon Goes Commando",
+              "B-rad",
+              "Josh",
+              "Marky Mark",
+              "Kara",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Walczyk",
+              "Devin",
+              "Peggy",
+              "Dan",
+              "Andrew Clarke",
+              "Mike Sombloski",
+              "Leah",
+              "Kaylani & Luka",
+              "Melissa",
+              "Tom",
+              "Derek",
+              "Ariel",
+              "Nate V",
+              "Thom",
+              "Garret",
+              "Claude"
+            ]
+          },
           "tv": "CBS"
         },
         {
@@ -186,8 +244,37 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Jets": [
+              "Josh",
+              "Jeff G",
+              "Dan",
+              "Kaylani & Luka",
+              "Ariel"
+            ],
+            "Bears": [
+              "Brandon Goes Commando",
+              "B-rad",
+              "Marky Mark",
+              "Kara",
+              "Amanda Rodgers",
+              "Walczyk",
+              "Andy R",
+              "Devin",
+              "Peggy",
+              "Andrew Clarke",
+              "Mike Sombloski",
+              "Leah",
+              "Melissa",
+              "Tom",
+              "Derek",
+              "Nate V",
+              "Thom",
+              "Garret",
+              "Claude"
+            ]
+          },
           "tv": "FOX"
         },
         {
@@ -199,8 +286,37 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Jaguars": [
+              "Brandon Goes Commando",
+              "Josh",
+              "Marky Mark",
+              "Kara",
+              "Peggy",
+              "Dan",
+              "Andrew Clarke",
+              "Mike Sombloski",
+              "Leah",
+              "Melissa",
+              "Ariel",
+              "Nate V",
+              "Thom"
+            ],
+            "Bengals": [
+              "B-rad",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Walczyk",
+              "Andy R",
+              "Devin",
+              "Kaylani & Luka",
+              "Tom",
+              "Derek",
+              "Garret",
+              "Claude"
+            ]
+          },
           "tv": "CBS"
         },
         {
@@ -212,8 +328,37 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Cowboys": [
+              "Josh",
+              "Marky Mark",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Walczyk",
+              "Devin",
+              "Mike Sombloski",
+              "Melissa",
+              "Derek",
+              "Nate V",
+              "Thom",
+              "Claude"
+            ],
+            "Texans": [
+              "Brandon Goes Commando",
+              "B-rad",
+              "Kara",
+              "Andy R",
+              "Peggy",
+              "Dan",
+              "Andrew Clarke",
+              "Leah",
+              "Kaylani & Luka",
+              "Tom",
+              "Ariel",
+              "Garret"
+            ]
+          },
           "tv": "FOX"
         },
         {
@@ -225,8 +370,37 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Cardinals": [
+              "Brandon Goes Commando",
+              "B-rad",
+              "Marky Mark",
+              "Kara",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Walczyk",
+              "Devin",
+              "Peggy",
+              "Dan",
+              "Andrew Clarke",
+              "Leah",
+              "Melissa",
+              "Tom",
+              "Derek",
+              "Ariel"
+            ],
+            "Giants": [
+              "Josh",
+              "Andy R",
+              "Mike Sombloski",
+              "Kaylani & Luka",
+              "Nate V",
+              "Thom",
+              "Garret",
+              "Claude"
+            ]
+          },
           "tv": "CBS"
         },
         {
@@ -238,8 +412,37 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Rams": [
+              "B-rad",
+              "Marky Mark",
+              "Jeff G",
+              "Walczyk",
+              "Devin",
+              "Peggy",
+              "Dan",
+              "Andrew Clarke",
+              "Mike Sombloski",
+              "Tom",
+              "Nate V",
+              "Thom",
+              "Claude"
+            ],
+            "Eagles": [
+              "Brandon Goes Commando",
+              "Josh",
+              "Kara",
+              "Amanda Rodgers",
+              "Andy R",
+              "Leah",
+              "Kaylani & Luka",
+              "Melissa",
+              "Derek",
+              "Ariel",
+              "Garret"
+            ]
+          },
           "tv": "FOX"
         },
         {
@@ -251,8 +454,37 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Packers": [
+              "Brandon Goes Commando",
+              "B-rad",
+              "Josh",
+              "Kara",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Andy R",
+              "Devin",
+              "Peggy",
+              "Dan",
+              "Andrew Clarke",
+              "Mike Sombloski",
+              "Melissa",
+              "Tom",
+              "Derek",
+              "Nate V",
+              "Thom",
+              "Claude"
+            ],
+            "Buccaneers": [
+              "Marky Mark",
+              "Walczyk",
+              "Leah",
+              "Kaylani & Luka",
+              "Ariel",
+              "Garret"
+            ]
+          },
           "tv": "FOX"
         },
         {
@@ -347,7 +579,15 @@
           "tb": null,
           "sheet": {
             "0": "Browns",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Bengals",
+            "6": "Cowboys",
+            "7": "Cardinals",
+            "8": "Eagles",
+            "9": "Packers"
           },
           "filedAt": "2026-10-01T20:31:07+00:00",
           "firstAt": "2026-10-01T20:31:07+00:00",
@@ -367,7 +607,15 @@
           "tb": null,
           "sheet": {
             "0": "Browns",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Jets",
+            "5": "Jaguars",
+            "6": "Texans",
+            "7": "Cardinals",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-10-01T02:26:10+00:00",
           "firstAt": "2026-10-01T02:26:10+00:00",
@@ -387,7 +635,15 @@
           "tb": null,
           "sheet": {
             "0": "Browns",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Bengals",
+            "6": "Cowboys",
+            "7": "Cardinals",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-10-01T12:49:19+00:00",
           "firstAt": "2026-10-01T12:49:19+00:00",
@@ -407,7 +663,15 @@
           "tb": null,
           "sheet": {
             "0": "Browns",
-            "1": "Commanders"
+            "1": "Commanders",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Jets",
+            "5": "Jaguars",
+            "6": "Cowboys",
+            "7": "Giants",
+            "8": "Eagles",
+            "9": "Packers"
           },
           "filedAt": "2026-10-02T00:05:37+00:00",
           "firstAt": "2026-10-02T00:05:37+00:00",
@@ -432,7 +696,15 @@
           "tb": null,
           "sheet": {
             "0": "Browns",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Jets",
+            "5": "Bengals",
+            "6": "Texans",
+            "7": "Giants",
+            "8": "Eagles",
+            "9": "Buccaneers"
           },
           "filedAt": "2026-09-29T20:43:21+00:00",
           "firstAt": "2026-09-29T20:43:21+00:00",
@@ -452,7 +724,15 @@
           "tb": null,
           "sheet": {
             "0": "Browns",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Titans",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Cowboys",
+            "7": "Cardinals",
+            "8": "Rams",
+            "9": "Buccaneers"
           },
           "filedAt": "2026-10-01T23:13:41+00:00",
           "firstAt": "2026-10-01T23:13:41+00:00",
@@ -472,7 +752,15 @@
           "tb": null,
           "sheet": {
             "0": "Browns",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Texans",
+            "7": "Cardinals",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-10-01T10:29:34+00:00",
           "firstAt": "2026-10-01T10:29:34+00:00",
@@ -492,7 +780,15 @@
           "tb": null,
           "sheet": {
             "0": "Browns",
-            "1": "Commanders"
+            "1": "Commanders",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Bengals",
+            "6": "Cowboys",
+            "7": "Cardinals",
+            "8": "Rams",
+            "9": "Buccaneers"
           },
           "filedAt": "2026-10-01T13:54:42+00:00",
           "firstAt": "2026-10-01T13:44:10+00:00",
@@ -512,10 +808,46 @@
           "tb": null,
           "sheet": {
             "0": null,
-            "1": "Commanders"
+            "1": "Commanders",
+            "2": "Titans",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Bengals",
+            "6": "Texans",
+            "7": "Cardinals",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-10-04T04:42:41+00:00",
           "firstAt": "2026-10-04T04:42:41+00:00",
+          "rank": 9,
+          "delta": 0,
+          "state": "alive",
+          "badges": []
+        },
+        {
+          "name": "Brandon Goes Commando",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 2,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {
+            "0": null,
+            "1": null,
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Texans",
+            "7": "Cardinals",
+            "8": "Eagles",
+            "9": "Packers"
+          },
+          "filedAt": "2026-10-04T16:37:06+00:00",
+          "firstAt": "2026-10-04T16:37:06+00:00",
           "rank": 9,
           "delta": 0,
           "state": "alive",
@@ -532,12 +864,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Titans",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Texans",
+            "7": "Cardinals",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-09-30T15:07:10+00:00",
           "firstAt": "2026-09-30T15:07:10+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -552,12 +892,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Patriots",
+            "4": "Bears",
+            "5": "Bengals",
+            "6": "Texans",
+            "7": "Giants",
+            "8": "Eagles",
+            "9": "Packers"
           },
           "filedAt": "2026-10-01T13:10:03+00:00",
           "firstAt": "2026-10-01T13:10:03+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -572,12 +920,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Commanders"
+            "1": "Commanders",
+            "2": "Titans",
+            "3": "Bills",
+            "4": "Jets",
+            "5": "Jaguars",
+            "6": "Texans",
+            "7": "Cardinals",
+            "8": "Eagles",
+            "9": "Buccaneers"
           },
           "filedAt": "2026-09-29T15:55:32+00:00",
           "firstAt": "2026-09-29T15:55:32+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -592,12 +948,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Commanders"
+            "1": "Commanders",
+            "2": "Titans",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Bengals",
+            "6": "Cowboys",
+            "7": "Giants",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-09-29T01:40:00+00:00",
           "firstAt": "2026-09-29T01:40:00+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "house",
           "badges": []
         },
@@ -612,12 +976,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Bengals",
+            "6": "Cowboys",
+            "7": "Cardinals",
+            "8": "Eagles",
+            "9": "Packers"
           },
           "filedAt": "2026-09-29T16:00:07+00:00",
           "firstAt": "2026-09-29T16:00:07+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -632,12 +1004,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Bengals",
+            "6": "Texans",
+            "7": "Giants",
+            "8": "Eagles",
+            "9": "Buccaneers"
           },
           "filedAt": "2026-09-29T12:24:58+00:00",
           "firstAt": "2026-09-29T12:24:58+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -652,12 +1032,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Jets",
+            "5": "Bengals",
+            "6": "Cowboys",
+            "7": "Cardinals",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-10-01T17:30:24+00:00",
           "firstAt": "2026-10-01T17:30:24+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -672,12 +1060,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Titans",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Texans",
+            "7": "Cardinals",
+            "8": "Eagles",
+            "9": "Packers"
           },
           "filedAt": "2026-10-01T23:10:34+00:00",
           "firstAt": "2026-10-01T23:10:34+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -692,12 +1088,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Commanders"
+            "1": "Commanders",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Texans",
+            "7": "Cardinals",
+            "8": "Eagles",
+            "9": "Buccaneers"
           },
           "filedAt": "2026-09-29T22:01:35+00:00",
           "firstAt": "2026-09-29T22:01:35+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -712,12 +1116,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Titans",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Cowboys",
+            "7": "Cardinals",
+            "8": "Eagles",
+            "9": "Packers"
           },
           "filedAt": "2026-09-29T16:54:52+00:00",
           "firstAt": "2026-09-29T16:54:52+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -732,12 +1144,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Cowboys",
+            "7": "Giants",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-09-29T23:36:35+00:00",
           "firstAt": "2026-09-29T23:36:35+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -752,12 +1172,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Cowboys",
+            "7": "Giants",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-09-29T15:07:02+00:00",
           "firstAt": "2026-09-29T15:07:02+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -772,12 +1200,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Commanders"
+            "1": "Commanders",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Cowboys",
+            "7": "Giants",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-09-29T15:05:20+00:00",
           "firstAt": "2026-09-29T15:05:20+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         },
@@ -792,12 +1228,20 @@
           "tb": null,
           "sheet": {
             "0": "Steelers",
-            "1": "Colts"
+            "1": "Colts",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Bengals",
+            "6": "Texans",
+            "7": "Cardinals",
+            "8": "Rams",
+            "9": "Packers"
           },
           "filedAt": "2026-09-29T16:19:52+00:00",
           "firstAt": "2026-09-29T16:19:52+00:00",
-          "rank": 10,
-          "delta": 0,
+          "rank": 11,
+          "delta": -1,
           "state": "alive",
           "badges": []
         }
@@ -844,32 +1288,123 @@
       "tbUsed": false,
       "decides": [
         {
-          "game": 1,
+          "game": 6,
           "away": [
+            "Josh",
             "Marky Mark",
-            "Kara",
             "Amanda Rodgers",
             "Jeff G",
+            "Walczyk",
+            "Devin",
+            "Mike Sombloski",
+            "Melissa",
+            "Derek",
+            "Nate V",
+            "Thom"
+          ],
+          "home": [
+            "Brandon Goes Commando",
+            "B-rad",
+            "Kara",
             "Andy R",
+            "Peggy",
+            "Dan",
+            "Andrew Clarke",
+            "Leah",
+            "Kaylani & Luka",
+            "Tom",
+            "Ariel",
+            "Garret"
+          ]
+        },
+        {
+          "game": 8,
+          "away": [
+            "B-rad",
+            "Marky Mark",
+            "Jeff G",
+            "Walczyk",
             "Devin",
             "Peggy",
             "Dan",
             "Andrew Clarke",
             "Mike Sombloski",
+            "Tom",
+            "Nate V",
+            "Thom"
+          ],
+          "home": [
+            "Brandon Goes Commando",
+            "Josh",
+            "Kara",
+            "Amanda Rodgers",
+            "Andy R",
+            "Leah",
             "Kaylani & Luka",
             "Melissa",
-            "Tom",
             "Derek",
-            "Nate V",
+            "Ariel",
             "Garret"
+          ]
+        },
+        {
+          "game": 5,
+          "away": [
+            "Brandon Goes Commando",
+            "Josh",
+            "Marky Mark",
+            "Kara",
+            "Peggy",
+            "Dan",
+            "Andrew Clarke",
+            "Mike Sombloski",
+            "Leah",
+            "Melissa",
+            "Ariel",
+            "Nate V",
+            "Thom"
           ],
           "home": [
             "B-rad",
-            "Josh",
+            "Amanda Rodgers",
+            "Jeff G",
             "Walczyk",
+            "Andy R",
+            "Devin",
+            "Kaylani & Luka",
+            "Tom",
+            "Derek",
+            "Garret"
+          ]
+        },
+        {
+          "game": 7,
+          "away": [
+            "Brandon Goes Commando",
+            "B-rad",
+            "Marky Mark",
+            "Kara",
+            "Amanda Rodgers",
+            "Jeff G",
+            "Walczyk",
+            "Devin",
+            "Peggy",
+            "Dan",
+            "Andrew Clarke",
             "Leah",
-            "Ariel",
-            "Thom"
+            "Melissa",
+            "Tom",
+            "Derek",
+            "Ariel"
+          ],
+          "home": [
+            "Josh",
+            "Andy R",
+            "Mike Sombloski",
+            "Kaylani & Luka",
+            "Nate V",
+            "Thom",
+            "Garret"
           ]
         }
       ],
@@ -915,6 +1450,119 @@
               "Ariel",
               "Thom"
             ]
+          },
+          "2": {
+            "away": 6,
+            "home": 17,
+            "minority": "Titans",
+            "minorityWho": [
+              "B-rad",
+              "Marky Mark",
+              "Kara",
+              "Andrew Clarke",
+              "Melissa",
+              "Ariel"
+            ]
+          },
+          "3": {
+            "away": 1,
+            "home": 22,
+            "minority": "Patriots",
+            "minorityWho": [
+              "Andy R"
+            ]
+          },
+          "4": {
+            "away": 5,
+            "home": 18,
+            "minority": "Jets",
+            "minorityWho": [
+              "Josh",
+              "Jeff G",
+              "Dan",
+              "Kaylani & Luka",
+              "Ariel"
+            ]
+          },
+          "5": {
+            "away": 13,
+            "home": 10,
+            "minority": "Bengals",
+            "minorityWho": [
+              "B-rad",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Walczyk",
+              "Andy R",
+              "Devin",
+              "Kaylani & Luka",
+              "Tom",
+              "Derek",
+              "Garret"
+            ]
+          },
+          "6": {
+            "away": 11,
+            "home": 12,
+            "minority": "Cowboys",
+            "minorityWho": [
+              "Josh",
+              "Marky Mark",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Walczyk",
+              "Devin",
+              "Mike Sombloski",
+              "Melissa",
+              "Derek",
+              "Nate V",
+              "Thom"
+            ]
+          },
+          "7": {
+            "away": 16,
+            "home": 7,
+            "minority": "Giants",
+            "minorityWho": [
+              "Josh",
+              "Andy R",
+              "Mike Sombloski",
+              "Kaylani & Luka",
+              "Nate V",
+              "Thom",
+              "Garret"
+            ]
+          },
+          "8": {
+            "away": 12,
+            "home": 11,
+            "minority": "Eagles",
+            "minorityWho": [
+              "Brandon Goes Commando",
+              "Josh",
+              "Kara",
+              "Amanda Rodgers",
+              "Andy R",
+              "Leah",
+              "Kaylani & Luka",
+              "Melissa",
+              "Derek",
+              "Ariel",
+              "Garret"
+            ]
+          },
+          "9": {
+            "away": 17,
+            "home": 6,
+            "minority": "Buccaneers",
+            "minorityWho": [
+              "Marky Mark",
+              "Walczyk",
+              "Leah",
+              "Kaylani & Luka",
+              "Ariel",
+              "Garret"
+            ]
           }
         },
         "upsets": 1,
@@ -953,7 +1601,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-04T16:21:40.973988+00:00",
+  "updated": "2026-10-04T17:05:28.799855+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
