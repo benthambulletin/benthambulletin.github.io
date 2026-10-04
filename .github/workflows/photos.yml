@@ -1,0 +1,32 @@
+name: Family photos
+
+# Pulls photos sent through the family form into data/inbox/. Run by the build when the queue has items.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pressure-log
+  cancel-in-progress: false
+
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download queued photos
+        run: python3 tools/fetch_photos.py
+      - name: Commit
+        run: |
+          git config user.name "Family photos"
+          git config user.email "noreply@anthropic.com"
+          git add data/inbox
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "Family photos: $(date -u +'%Y-%m-%d %H:%MZ')"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 15
+          done
+          exit 1
