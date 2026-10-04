@@ -1,10 +1,11 @@
 name: Morning feed
 
 # Official forecasts and a headline scan, ready before the 6:59 a.m. build.
-# 10:31 UTC = 6:31 EDT; 11:31 UTC = 6:31 EST (after Nov 1). Also runnable by hand.
+# Runs early with a backup, because GitHub schedules often start late: 10:05 and 10:35 UTC
+# (6:05/6:35 EDT; 5:05/5:35 EST after Nov 1, still well before the build). Also runnable by hand.
 on:
   schedule:
-    - cron: "31 10,11 * * *"
+    - cron: "5,35 10 * * *"
   workflow_dispatch:
 
 permissions:

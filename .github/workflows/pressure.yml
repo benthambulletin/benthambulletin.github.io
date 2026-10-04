@@ -4,7 +4,8 @@ name: Barograph log
 # edition build. Also runnable by hand from the Actions tab.
 on:
   schedule:
-    - cron: "23 1,4,7,10,13,16,19,22 * * *"
+    - cron: "23 1,4,7,13,16,19,22 * * *"
+    - cron: "5,35 10 * * *"   # extra pre-build runs so the 6:59 paper has a fresh reading
   workflow_dispatch:
 
 permissions:
