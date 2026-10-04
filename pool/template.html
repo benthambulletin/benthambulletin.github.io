@@ -399,7 +399,10 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
 /* the hero: the one thing to know right now, then the next deadline with a live countdown */
 (function(){
   var now=Date.now(), open=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)>now;});
-  var inplay=D.games.filter(function(g){return !g.winner&&!g.liveFinal&&Date.parse(g.kickoff)<=now;});
+  /* live = ESPN says in progress; without the live feed, only games kicked off in the last 3h45m */
+  var inplay=D.games.filter(function(g,i){if(g.winner||g.liveFinal||Date.parse(g.kickoff)>now) return false;
+    if(LV&&LV.games&&LV.week===D.week){var r=LV.games[String(i)]; return !!r&&r.state==="in";}
+    return now-Date.parse(g.kickoff)<225*60000;});
   var L=top>0?realPs.filter(function(p){return p.correct===top;}):[];
   var leadTxt=!L.length?'':(L.length===1?'<b>'+esc(L[0].name)+'</b> leads at <b>'+L[0].correct+'–'+L[0].missed+'</b>':'<b>'+L.length+' tied</b> at the top, <b>'+top+'</b> right');
   var left=D.games.filter(function(g){return !g.winner;}).length;
