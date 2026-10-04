@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T18:33:20Z",
+ "updated": "2026-10-04T18:35:22Z",
  "week": 4,
  "games": {
   "1": {
@@ -14,9 +14,9 @@
   "2": {
    "state": "in",
    "away": 7,
-   "home": 21,
-   "detail": "0:05 - 2nd",
-   "line": "Ravens 21–7 · 0:05 - 2nd"
+   "home": 24,
+   "detail": "Halftime",
+   "line": "Ravens 24–7 · Halftime"
   },
   "3": {
    "state": "in",
@@ -57,8 +57,8 @@
    "state": "in",
    "away": 10,
    "home": 20,
-   "detail": "0:03 - 2nd",
-   "line": "Eagles 20–10 · 0:03 - 2nd"
+   "detail": "Halftime",
+   "line": "Eagles 20–10 · Halftime"
   },
   "9": {
    "state": "in",
