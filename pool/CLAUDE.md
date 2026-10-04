@@ -81,6 +81,7 @@ $5 a week, Venmo @Garret-Bentham, and tell the Bulletin via `data/requests.md`. 
   Tally's free plan, so the advanced input/button styling is not live; do not add custom CSS.
 - `about/` anchors the board links to: `#locks #sealed #tiebreak #mugshot #trash` and `#b-<badge id>`.
   Keep those ids if you edit the page. Its week strip reads `data/page.json` live; nothing to update.
+- **Kickoff locks (added Oct 4).** Separate scheduled runs fire 2–8 minutes after each kickoff slot (Sun 9:32, 1:02, 4:08, 4:27, 8:22; Mon & Thu 8:17 ET) to hide the game on the form and rebuild so its sides show. They stop at once if nothing kicked off in the last 30 minutes. The hourly :07 refresh alone left the London game open and sealed for ~40 minutes on Oct 4.
 - **Games come off the form at kickoff.** Tally can't lock one question, so every REFRESH/UPDATE run
   hides (`configure_blocks` visibility, isHidden true on the game's TITLE block) each game that has kicked
   off, plus its slot heading once every game under it has, then `publish_form`. NEW WEEK un-hides every
