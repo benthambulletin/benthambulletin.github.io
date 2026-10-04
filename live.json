@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T18:02:56Z",
+ "updated": "2026-10-04T18:04:57Z",
  "week": 4,
  "games": {
   "1": {
@@ -14,23 +14,23 @@
   "2": {
    "state": "in",
    "away": 7,
-   "home": 14,
-   "detail": "4:15 - 2nd",
-   "line": "Ravens 14–7 · 4:15 - 2nd"
+   "home": 21,
+   "detail": "3:32 - 2nd",
+   "line": "Ravens 21–7 · 3:32 - 2nd"
   },
   "3": {
    "state": "in",
    "away": 14,
    "home": 7,
-   "detail": "2:41 - 2nd",
-   "line": "Patriots 14–7 · 2:41 - 2nd"
+   "detail": "2:00 - 2nd",
+   "line": "Patriots 14–7 · 2:00 - 2nd"
   },
   "4": {
    "state": "in",
    "away": 3,
    "home": 7,
-   "detail": "6:25 - 2nd",
-   "line": "Bears 7–3 · 6:25 - 2nd"
+   "detail": "5:01 - 2nd",
+   "line": "Bears 7–3 · 5:01 - 2nd"
   },
   "5": {
    "state": "in",
@@ -43,29 +43,29 @@
    "state": "in",
    "away": 6,
    "home": 10,
-   "detail": "7:27 - 2nd",
-   "line": "Texans 10–6 · 7:27 - 2nd"
+   "detail": "7:10 - 2nd",
+   "line": "Texans 10–6 · 7:10 - 2nd"
   },
   "7": {
    "state": "in",
    "away": 14,
    "home": 6,
-   "detail": "8:27 - 2nd",
-   "line": "Cardinals 14–6 · 8:27 - 2nd"
+   "detail": "6:50 - 2nd",
+   "line": "Cardinals 14–6 · 6:50 - 2nd"
   },
   "8": {
    "state": "in",
    "away": 3,
    "home": 6,
-   "detail": "6:48 - 2nd",
-   "line": "Eagles 6–3 · 6:48 - 2nd"
+   "detail": "6:26 - 2nd",
+   "line": "Eagles 6–3 · 6:26 - 2nd"
   },
   "9": {
    "state": "in",
    "away": 7,
    "home": 7,
-   "detail": "5:13 - 2nd",
-   "line": "Tied 7–7 · 5:13 - 2nd"
+   "detail": "4:09 - 2nd",
+   "line": "Tied 7–7 · 4:09 - 2nd"
   },
   "10": {
    "state": "pre",
