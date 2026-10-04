@@ -419,7 +419,12 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
   } else if(inplay.length>1){
     k='<span class="lv">●</span> On now';
     v=inplay.length+' games live';
-    sub=leadTxt?leadTxt+' · <b>'+left+'</b> to go':'<b>'+left+'</b> games to go';
+    /* the home teams' scores, if they're playing */
+    var fam=inplay.filter(function(g){return g.live&&/Bills|Jets/.test(g.away+g.home);}).map(function(g){
+      var pr=g.live.split(" · "), q=(pr[1]||"").split(" - ").pop();
+      var t=/Bills/.test(g.away+g.home)?'Bills':'Jets', sc=/^Tied/.test(pr[0])?t+' tied '+pr[0].replace(/^Tied\s*/,''):pr[0];
+      return '<b>'+esc(sc)+'</b>'+(q?' '+esc(q):'');});
+    sub=(fam.length?fam.join(' · ')+'<br>':'')+(leadTxt?leadTxt+' · <b>'+left+'</b> to go':'<b>'+left+'</b> games to go');
   } else if(L.length){
     k='Leading Week '+D.week;
     v=L.length===1?esc(L[0].name):L.length+'-way tie';
