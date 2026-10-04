@@ -1,25 +1,21 @@
 {
- "generated_utc": "2026-10-04T21:25Z",
+ "generated_utc": "2026-10-04T22:33Z",
  "stations": {
   "KIAG": {
    "town": "North Tonawanda",
-   "latest_time_utc": "2026-10-04T20:53Z",
+   "latest_time_utc": "2026-10-04T21:53Z",
    "latest_mb": 1016.8,
    "latest_inhg": 30.03,
-   "altim_inhg": 30.02,
-   "temp_c": 19.4,
-   "d3h_mb": -1.5,
-   "d6h_mb": -3.9,
-   "d12h_mb": -5.2,
-   "d24h_mb": -9.6,
-   "trend": "falling fast",
+   "altim_inhg": 30.01,
+   "temp_c": 18.3,
+   "d3h_mb": -1.1,
+   "d6h_mb": -2.1,
+   "d12h_mb": -5.3,
+   "d24h_mb": -9.5,
+   "trend": "falling",
    "week_min_mb": 1009.2,
    "week_max_mb": 1028.7,
    "hourly_7d": [
-    [
-     "2026-09-27T20:53Z",
-     1013.6
-    ],
     [
      "2026-09-27T21:53Z",
      1013.8
@@ -1075,28 +1071,28 @@
     [
      "2026-10-04T20:53Z",
      1016.8
+    ],
+    [
+     "2026-10-04T21:53Z",
+     1016.8
     ]
    ]
   },
   "KDKK": {
    "town": "Dunkirk",
-   "latest_time_utc": "2026-10-04T20:53Z",
-   "latest_mb": 1017.5,
+   "latest_time_utc": "2026-10-04T21:53Z",
+   "latest_mb": 1017.7,
    "latest_inhg": 30.05,
    "altim_inhg": 30.05,
-   "temp_c": 18.9,
-   "d3h_mb": -1.5,
-   "d6h_mb": -3.3,
-   "d12h_mb": -3.8,
+   "temp_c": 17.8,
+   "d3h_mb": -0.9,
+   "d6h_mb": -2.6,
+   "d12h_mb": -3.7,
    "d24h_mb": -7.5,
-   "trend": "falling fast",
+   "trend": "falling",
    "week_min_mb": 1009.5,
    "week_max_mb": 1028.1,
    "hourly_7d": [
-    [
-     "2026-09-27T20:53Z",
-     1013.8
-    ],
     [
      "2026-09-27T21:53Z",
      1014.0
@@ -2020,28 +2016,28 @@
     [
      "2026-10-04T20:53Z",
      1017.5
+    ],
+    [
+     "2026-10-04T21:53Z",
+     1017.7
     ]
    ]
   },
   "KROC": {
    "town": "Scottsville",
-   "latest_time_utc": "2026-10-04T20:54Z",
-   "latest_mb": 1016.9,
+   "latest_time_utc": "2026-10-04T21:54Z",
+   "latest_mb": 1017.0,
    "latest_inhg": 30.03,
    "altim_inhg": 30.02,
-   "temp_c": 21.1,
+   "temp_c": 20.0,
    "d3h_mb": -0.7,
-   "d6h_mb": -5.2,
-   "d12h_mb": -6.9,
+   "d6h_mb": -4.1,
+   "d12h_mb": -6.6,
    "d24h_mb": -10.3,
    "trend": "falling",
    "week_min_mb": 1009.4,
    "week_max_mb": 1029.2,
    "hourly_7d": [
-    [
-     "2026-09-27T20:54Z",
-     1014.1
-    ],
     [
      "2026-09-27T21:54Z",
      1014.9
@@ -2845,6 +2841,10 @@
     [
      "2026-10-04T20:54Z",
      1016.9
+    ],
+    [
+     "2026-10-04T21:54Z",
+     1017.0
     ]
    ]
   }
