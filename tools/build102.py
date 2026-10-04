@@ -70,7 +70,7 @@ S('<div class="stars">','<div style="font-family:\'LOI\'','''<div class="stars">
 <div class="star"><div class="sg">Scorpio</div><div><b>Venus holds your sign while Mercury moves up beside her</b>. Charm and argument in the same hand. Lead with the charm. <span class="who">Ariel, Claire, Garret</span></div></div>
 </div>
 ''')
-S('<div class="baro-top">','<h2 class="sec"><span class="o">&#10038;</span>The Ledger',baro+'''<div class="line"><span class="lbl t">A big one-day drop</span> 30.17 this morning and falling, down 5 millibars since yesterday morning as a cold front approaches. A fall that size in one day is the kind that has been linked to pressure headaches, even though the reading itself is still on the high side. Watch for it to level off and climb back once the front passes tonight.</div>
+S('<div class="baro-top">','<h2 class="sec"><span class="o">&#10038;</span>The Ledger',baro+'''<div class="line"><span class="lbl t">Big-swing day</span> 30.17 and falling, down 5 millibars since yesterday morning as a front approaches.</div>
 ''')
 S('<div class="ledger">','<h2 class="sec"><span class="o">&#10038;</span>The National Wire','''<div class="ledger"><div class="num"><div class="cap">Orchard Park tax levies, 2027</div><div class="big">+8%</div></div>
 <div class="txt">The Bills' hometown proposes collecting about $1.6 million more next year. What that means for each homeowner isn't clear yet.</div></div>
@@ -107,7 +107,6 @@ S('<div class="touch-head">Tomorrow at Las Vegas</div>','<div class="cards">',''
 # Sunday back-of-book before On This Day
 back=H('&#127810;','The Week Ahead')+'''<div class="line"><b>Weather.</b> Sunny and about 60 Monday and Tuesday, with frost possible around Scottsville Monday night. Back to the upper 60s Wednesday with a chance of showers.</div>
 <div class="line"><b>Games.</b> Jets host Cleveland Sunday at 1:00; Bills at the Rams Monday night, Oct 12, 8:15 on ABC.</div>
-<div class="line"><b>The Barograph at thirty days.</b> A month of hourly readings, and what they do and don't show. Tuesday.</div>
 <div class="line"><b>The Ballot.</b> The president in Syracuse Friday.</div>
 <div class="line"><b>The Turning.</b> New foliage report Wednesday.</div>
 <div class="line"><b>Next Sunday's Spotlight.</b> How lake-effect snow works, before the first band sets up.</div>

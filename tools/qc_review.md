@@ -23,7 +23,7 @@ Return a numbered list of problems. Each one gets the exact sentence, what is wr
 - Sunday Spotlight: each item has what happened, what it means for a normal person and for this family, and what is next. Terms explained in the same sentence. Modest effects called modest. Ends with "Coming down the road."
 - Sunday Ballot covers the governor, NY-26, NY-23 and NY-25 by name, with candidates, the latest numbers and what they mean. Weekday ballot line is present.
 - Wire, Home Wire and Marquee items are two real sentences, not one thin one. Marquee has three. Home Wire follows the order: Scottsville first, else Rochester; Dunkirk for Chautauqua; North Tonawanda when real.
-- Barograph prose says the number, the change in plain words, and what it means for a headache. No jargon.
+- Barograph is two lines at most: the reading with the change in plain words, and whether it's a big-swing day. Once the migraine log has entries, a line with days since each person's last logged migraine and the month's count. No jargon, no paragraph, no repeating the log invitation in other sections.
 
 **House rules**
 - Plain English everywhere. No "the glass", no "hundredths".
