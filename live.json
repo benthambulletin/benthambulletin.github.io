@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T20:12:46Z",
+ "updated": "2026-10-04T20:14:47Z",
  "week": 4,
  "games": {
   "1": {
@@ -21,11 +21,13 @@
    "line": "Final · Ravens 24–18"
   },
   "3": {
-   "state": "in",
+   "state": "post",
    "away": 29,
    "home": 26,
-   "detail": "0:39 - 4th",
-   "line": "Patriots 29–26 · 0:39 - 4th"
+   "detail": "Final",
+   "winner": "Patriots",
+   "score": "29–26",
+   "line": "Final · Patriots 29–26"
   },
   "4": {
    "state": "post",
@@ -40,15 +42,17 @@
    "state": "in",
    "away": 22,
    "home": 17,
-   "detail": "1:05 - 4th",
-   "line": "Jaguars 22–17 · 1:05 - 4th"
+   "detail": "0:50 - 4th",
+   "line": "Jaguars 22–17 · 0:50 - 4th"
   },
   "6": {
-   "state": "in",
+   "state": "post",
    "away": 34,
    "home": 30,
-   "detail": "0:16 - 4th",
-   "line": "Cowboys 34–30 · 0:16 - 4th"
+   "detail": "Final",
+   "winner": "Cowboys",
+   "score": "34–30",
+   "line": "Final · Cowboys 34–30"
   },
   "7": {
    "state": "post",
@@ -63,8 +67,8 @@
    "state": "in",
    "away": 24,
    "home": 20,
-   "detail": "1:10 - 4th",
-   "line": "Rams 24–20 · 1:10 - 4th"
+   "detail": "0:42 - 4th",
+   "line": "Rams 24–20 · 0:42 - 4th"
   },
   "9": {
    "state": "post",
@@ -79,8 +83,8 @@
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "12:20 - 1st",
-   "line": "Tied 0–0 · 12:20 - 1st"
+   "detail": "10:51 - 1st",
+   "line": "Tied 0–0 · 10:51 - 1st"
   },
   "11": {
    "state": "pre",
