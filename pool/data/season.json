@@ -760,8 +760,8 @@
             ]
           },
           "tv": "FOX",
-          "live": "Vikings 6–0 · 2nd qtr",
-          "liveAt": "2026-10-04T21:13:29Z"
+          "live": "Vikings 12–3 · 3rd qtr",
+          "liveAt": "2026-10-04T22:10:07Z"
         },
         {
           "away": "Chiefs",
@@ -805,8 +805,8 @@
             ]
           },
           "tv": "CBS",
-          "live": "Tied 7–7 · 2nd qtr",
-          "liveAt": "2026-10-04T21:13:29Z"
+          "live": "Raiders 13–10 · 3rd qtr",
+          "liveAt": "2026-10-04T22:10:07Z"
         },
         {
           "away": "Chargers",
@@ -850,8 +850,8 @@
             ]
           },
           "tv": "CBS",
-          "live": "Seahawks 7–3 · 1st qtr",
-          "liveAt": "2026-10-04T21:13:29Z"
+          "live": "Halftime · Seahawks 20–6",
+          "liveAt": "2026-10-04T22:10:07Z"
         },
         {
           "away": "Broncos",
@@ -895,8 +895,8 @@
             ]
           },
           "tv": "CBS",
-          "live": "Broncos 3–0 · 2nd qtr",
-          "liveAt": "2026-10-04T21:13:29Z"
+          "live": "Halftime · Tied 3–3",
+          "liveAt": "2026-10-04T22:10:07Z"
         },
         {
           "away": "Lions",
@@ -2329,7 +2329,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-04T21:15:14.636148+00:00",
+  "updated": "2026-10-04T22:10:07.793302+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
