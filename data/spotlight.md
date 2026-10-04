@@ -2,7 +2,7 @@
 
 Upcoming Sunday Spotlight topics, in order. Garret approves, strikes or reorders. The Sunday build takes the top unchecked item dated for that Sunday (or the next one down if it isn't timely), researches it fresh that week, and marks it done with the edition number. Garret's own requests always jump the line.
 
-- [ ] **Sun Oct 4 — The month in migraine.** Brief is in data/requests.md (from the monthly migraine run).
+- [x] **Sun Oct 4 — The month in migraine.** (No. 102) Brief is in data/requests.md (from the monthly migraine run).
 - [ ] **Sun Oct 11 — How lake-effect snow actually works.** Why Buffalo gets buried and Rochester doesn't, what a band is, how forecasters call it, before the first one arrives.
 - [ ] **Sun Oct 18 — What's on your ballot besides the governor.** One week before early voting: every race and any ballot proposals for North Tonawanda, Dunkirk and Scottsville voters, in plain terms. No endorsements.
 - [ ] **Sun Oct 25 — Spotting an AI scam.** Look-alike shopping sites, voice-clone calls, fake texts: what they look like now and the three checks that catch them. (Birthday edition; keep it short.)
