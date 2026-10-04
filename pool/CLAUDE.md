@@ -238,3 +238,11 @@ Latest submission before each game's kickoff counts for that game. Submitted aft
 that game void, rest count. Tied game → nobody. Winner = most correct; tie → closest to MNF combined
 total; still tied → split. Blank tiebreaker = worst guess. Skipping a week is free. All trash talk is
 published exactly as written.
+
+## Board check (added Oct 4)
+`python3 pool/tools/check_board.py` renders the built board at phone width twice — with the live
+feed and with it blocked — and compares it with ESPN: the "games live" count, finals that must not read
+as live, script errors. The hourly refresh and Sunday window runs run it after every push on game days
+and alert Garret only if it finds something they can't fix. Any change to `template.html` must pass it
+before pushing. It exists because "10 games live" (Oct 4) shipped: every check up to then read code,
+none looked at the board the way a phone sees it.
