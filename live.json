@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T20:02:39Z",
+ "updated": "2026-10-04T20:04:40Z",
  "week": 4,
  "games": {
   "1": {
@@ -13,17 +13,17 @@
   },
   "2": {
    "state": "in",
-   "away": 10,
+   "away": 18,
    "home": 24,
-   "detail": "1:51 - 4th",
-   "line": "Ravens 24–10 · 1:51 - 4th"
+   "detail": "1:12 - 4th",
+   "line": "Ravens 24–18 · 1:12 - 4th"
   },
   "3": {
    "state": "in",
-   "away": 21,
+   "away": 29,
    "home": 26,
    "detail": "1:50 - 4th",
-   "line": "Bills 26–21 · 1:50 - 4th"
+   "line": "Patriots 29–26 · 1:50 - 4th"
   },
   "4": {
    "state": "post",
@@ -45,8 +45,8 @@
    "state": "in",
    "away": 27,
    "home": 30,
-   "detail": "1:02 - 4th",
-   "line": "Texans 30–27 · 1:02 - 4th"
+   "detail": "0:52 - 4th",
+   "line": "Texans 30–27 · 0:52 - 4th"
   },
   "7": {
    "state": "in",
@@ -59,8 +59,8 @@
    "state": "in",
    "away": 17,
    "home": 20,
-   "detail": "2:47 - 4th",
-   "line": "Eagles 20–17 · 2:47 - 4th"
+   "detail": "2:00 - 4th",
+   "line": "Eagles 20–17 · 2:00 - 4th"
   },
   "9": {
    "state": "post",
