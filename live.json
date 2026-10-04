@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T18:06:59Z",
+ "updated": "2026-10-04T18:09:01Z",
  "week": 4,
  "games": {
   "1": {
@@ -15,15 +15,15 @@
    "state": "in",
    "away": 7,
    "home": 21,
-   "detail": "3:32 - 2nd",
-   "line": "Ravens 21–7 · 3:32 - 2nd"
+   "detail": "2:58 - 2nd",
+   "line": "Ravens 21–7 · 2:58 - 2nd"
   },
   "3": {
    "state": "in",
    "away": 14,
    "home": 7,
-   "detail": "2:00 - 2nd",
-   "line": "Patriots 14–7 · 2:00 - 2nd"
+   "detail": "1:51 - 2nd",
+   "line": "Patriots 14–7 · 1:51 - 2nd"
   },
   "4": {
    "state": "in",
@@ -36,15 +36,15 @@
    "state": "in",
    "away": 6,
    "home": 3,
-   "detail": "3:26 - 2nd",
-   "line": "Jaguars 6–3 · 3:26 - 2nd"
+   "detail": "2:00 - 2nd",
+   "line": "Jaguars 6–3 · 2:00 - 2nd"
   },
   "6": {
    "state": "in",
    "away": 6,
    "home": 10,
-   "detail": "6:33 - 2nd",
-   "line": "Texans 10–6 · 6:33 - 2nd"
+   "detail": "5:10 - 2nd",
+   "line": "Texans 10–6 · 5:10 - 2nd"
   },
   "7": {
    "state": "in",
@@ -64,8 +64,8 @@
    "state": "in",
    "away": 7,
    "home": 7,
-   "detail": "3:26 - 2nd",
-   "line": "Tied 7–7 · 3:26 - 2nd"
+   "detail": "3:22 - 2nd",
+   "line": "Tied 7–7 · 3:22 - 2nd"
   },
   "10": {
    "state": "pre",
