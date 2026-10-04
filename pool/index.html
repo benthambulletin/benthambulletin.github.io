@@ -91,6 +91,12 @@ details.g[open] summary .s::after{transform:rotate(90deg)}
 .mug .n{font-family:'PF';font-weight:800;font-size:1.5rem;line-height:1.1;margin:.1rem 0}
 .mug .d{font-size:.92rem;color:var(--soft);line-height:1.35}
 .mug .d b{color:var(--ink);font-weight:600}
+.mug.dark{background:#17130d;border-color:#17130d;color:#efe6cf;box-shadow:inset 0 0 0 1px #3a3122}
+.mug.dark .sil{width:6.2rem;height:6.2rem;display:block;border:1px solid #3a3122;transform:rotate(-2deg)}
+.mug.dark .k,.mug.dark .k a{color:#d8473f}
+.mug.dark .n{color:#efe6cf;letter-spacing:.02em}
+.mug.dark .d{color:#b3a787}
+.mug.dark .d b{color:#efe6cf}
 /* cta */
 .cta{display:block;margin:1rem 0 0;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-family:'AR';font-weight:800;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;padding:.85rem;border-radius:3px}
 .cta.quiet{background:transparent;color:var(--ink);border:1px solid var(--ink)}
@@ -441,6 +447,11 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
 
 var h="";
 
+/* empty frame until a face is hung */
+if(!(D.face&&D.face.photo)&&!D.archive){
+  var sil='<svg class="sil" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#221c13"/>'+[20,40,60,80].map(function(y){return '<line x1="0" x2="100" y1="'+y+'" y2="'+y+'" stroke="#3a3122" stroke-width="1"/><text x="3" y="'+(y-2)+'" font-size="6" fill="#4d4230" font-family="monospace">'+(7-y/20)+'\'</text>';}).join('')+'<circle cx="50" cy="40" r="15" fill="#0c0a06"/><path d="M18 100 C20 72 34 62 50 62 C66 62 80 72 82 100 Z" fill="#0c0a06"/><text x="50" y="47" text-anchor="middle" font-size="18" font-family="Georgia,serif" fill="#3a3122">?</text></svg>';
+  $("mug").innerHTML='<div class="mug dark">'+sil+'<div><div class="k"><a class="ruleref" href="/pool/about/#mugshot">The Mugshot</a> · Week '+(D.week+1)+'</div><div class="n">Wanted: one loser.</div><div class="d">The Week '+D.week+' winner hangs a face here Tuesday. <b>Could be yours.</b></div></div></div>';
+}
 /* the mugshot: the previous winner's pick of one loser's face */
 if(D.face&&D.face.photo){
   var F=D.face;

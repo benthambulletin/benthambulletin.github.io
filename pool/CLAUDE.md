@@ -195,6 +195,8 @@ All three are the same steps; they differ only in what has finished. The Sunday 
    link, and the mugshot reminder (see The Mugshot). While `buyIn` is 0 never mention money, pots, Venmo or collecting.
 
 ## The Mugshot
+
+Until a face is hung, the slot shows a dark "Wanted: one loser." placeholder (silhouette on a lineup chart). Garret asked for it Oct 4 — it is part of the locked design, not a fake preview. It hides on archive pages and as soon as `face.photo` is set.
 The week's winner picks one loser, and that person's face runs on the board the following week in a
 framed box under the tiles. The winner sends Garret the photo; Garret sends it here in chat.
 When it arrives: crop it square around the face (PIL, `ImageOps.exif_transpose`, ~600px), save as
