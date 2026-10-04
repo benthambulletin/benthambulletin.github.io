@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T22:08:08Z",
+ "updated": "2026-10-04T22:10:09Z",
  "week": 4,
  "games": {
   "1": {
@@ -87,15 +87,15 @@
    "state": "in",
    "away": 3,
    "home": 12,
-   "detail": "6:35 - 3rd",
-   "line": "Vikings 12–3 · 6:35 - 3rd"
+   "detail": "6:30 - 3rd",
+   "line": "Vikings 12–3 · 6:30 - 3rd"
   },
   "11": {
    "state": "in",
    "away": 10,
    "home": 13,
-   "detail": "11:32 - 3rd",
-   "line": "Raiders 13–10 · 11:32 - 3rd"
+   "detail": "10:25 - 3rd",
+   "line": "Raiders 13–10 · 10:25 - 3rd"
   },
   "12": {
    "state": "in",
@@ -108,8 +108,8 @@
    "state": "in",
    "away": 3,
    "home": 3,
-   "detail": "Halftime",
-   "line": "Tied 3–3 · Halftime"
+   "detail": "14:14 - 3rd",
+   "line": "Tied 3–3 · 14:14 - 3rd"
   },
   "14": {
    "state": "pre",
