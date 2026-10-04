@@ -1,11 +1,10 @@
-name: Morning feed
+name: Foliage report
 
-# Official forecasts and a headline scan, ready before the 6:59 a.m. build.
-# Runs early with a backup, because GitHub schedules often start late: 10:05 and 10:35 UTC
-# (6:05/6:35 EDT; 5:05/5:35 EST after Nov 1, still well before the build). Also runnable by hand.
+# I LOVE NY publishes Wednesday afternoons. Grab it Wednesday evening and Thursday morning.
 on:
   schedule:
-    - cron: "5,35 10 * * *"
+    - cron: "5 23 * * 3"
+    - cron: "5 10 * * 4"
   workflow_dispatch:
 
 permissions:
@@ -16,22 +15,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  feed:
+  foliage:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Fetch forecasts and headlines
-        run: python3 tools/morning_feed.py
+      - name: Install browser
+        run: pip install playwright && python -m playwright install --with-deps chromium
+      - name: Render the report
+        run: python3 tools/foliage.py
       - name: Commit if anything changed
         run: |
-          git config user.name "Morning feed"
+          git config user.name "Foliage report"
           git config user.email "noreply@anthropic.com"
-          git add data/forecast.json data/news.json
+          git add data/foliage.json
           if git diff --cached --quiet; then echo "no change"; exit 0; fi
-          git commit -m "Morning feed: $(date -u +'%Y-%m-%d %H:%MZ')"
+          git commit -m "Foliage report: $(date -u +'%Y-%m-%d %H:%MZ')"
           for i in 1 2 3; do
             git pull --rebase origin main && git push && exit 0
             sleep 15
