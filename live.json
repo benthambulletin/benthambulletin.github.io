@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T18:04:57Z",
+ "updated": "2026-10-04T18:06:59Z",
  "week": 4,
  "games": {
   "1": {
@@ -28,44 +28,44 @@
   "4": {
    "state": "in",
    "away": 3,
-   "home": 7,
-   "detail": "5:01 - 2nd",
-   "line": "Bears 7–3 · 5:01 - 2nd"
+   "home": 10,
+   "detail": "2:29 - 2nd",
+   "line": "Bears 10–3 · 2:29 - 2nd"
   },
   "5": {
    "state": "in",
    "away": 6,
    "home": 3,
-   "detail": "4:16 - 2nd",
-   "line": "Jaguars 6–3 · 4:16 - 2nd"
+   "detail": "3:26 - 2nd",
+   "line": "Jaguars 6–3 · 3:26 - 2nd"
   },
   "6": {
    "state": "in",
    "away": 6,
    "home": 10,
-   "detail": "7:10 - 2nd",
-   "line": "Texans 10–6 · 7:10 - 2nd"
+   "detail": "6:33 - 2nd",
+   "line": "Texans 10–6 · 6:33 - 2nd"
   },
   "7": {
    "state": "in",
    "away": 14,
    "home": 6,
-   "detail": "6:50 - 2nd",
-   "line": "Cardinals 14–6 · 6:50 - 2nd"
+   "detail": "6:12 - 2nd",
+   "line": "Cardinals 14–6 · 6:12 - 2nd"
   },
   "8": {
    "state": "in",
    "away": 3,
-   "home": 6,
-   "detail": "6:26 - 2nd",
-   "line": "Eagles 6–3 · 6:26 - 2nd"
+   "home": 13,
+   "detail": "5:44 - 2nd",
+   "line": "Eagles 13–3 · 5:44 - 2nd"
   },
   "9": {
    "state": "in",
    "away": 7,
    "home": 7,
-   "detail": "4:09 - 2nd",
-   "line": "Tied 7–7 · 4:09 - 2nd"
+   "detail": "3:26 - 2nd",
+   "line": "Tied 7–7 · 3:26 - 2nd"
   },
   "10": {
    "state": "pre",
