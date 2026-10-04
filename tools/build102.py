@@ -54,7 +54,7 @@ S('<div class="strip5">','<h2 class="sec"><span class="o">&#127810;</span>The Tu
 </div>
 <div class="line"><span class="lbl r">Frost chance</span> Scottsville drops to 37 Monday night with patchy frost by Tuesday morning. North Tonawanda bottoms out at 40, Dunkirk at 42. Bring in the tender plants. <span class="lbl t">Outdoor window</span> Today through Tuesday.</div>
 ''')
-S('<div class="line"><b>The high country goes first.</b>','<h2 class="sec"><span class="o">&#9790;</span>The Almanac Sky','''<div class="line"><b>Still early here.</b> The new state report Wednesday will have the first county numbers worth printing.</div>
+S('<div class="line"><b>The high country goes first.</b>','<h2 class="sec"><span class="o">&#9790;</span>The Almanac Sky','''<div class="line"><b>Chautauqua: 20 percent.</b> The state's spotter at Chautauqua Institution reports yellows and oranges coming in. Our trees usually peak the last week of October; new county numbers Wednesday.</div>
 ''')
 S('<div class="sky">','<div class="stars">','''<div class="sky"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="46" fill="#211c14"/><path d="M50 4 A46 46 0 0 0 50 96 A21 46 0 0 1 50 4Z" fill="#f4e5b4"/><circle cx="50" cy="50" r="46" fill="none" stroke="#211c14" stroke-width="2"/></svg><div>
 <b>Thirty-eight percent</b> and waning, in Cancer, rising at 1:21 a.m.<br>
