@@ -134,6 +134,14 @@ Stations: **KIAG** Niagara Falls → North Tonawanda. **KDKK** Dunkirk. **KROC**
 14. **On This Day** and **Question of the Day** (original riddle; answer in colophon).
 15. **Colophon** — QOTD answer, one sources line, "— G.", ornaments. Prev/next/album/archive nav under it.
 
+**The family form — "Send it to the Bulletin" (https://tally.so/r/rjxDpl, set up Oct 4).** Anyone in the family can send a photo, something to share, a Sunday answer, a correction or a calendar date. **Every morning** call Tally `fetch_submissions` for form **rjxDpl**, skip ids already in `data/inbox/seen.json`, and add the new ids there in the same commit. Entries run **automatically** (Garret's call): only hold back anything unkind, private, or that names someone who might not want it printed, and tell Garret in one line at the 7:20 check. Placement:
+- **Photo** → next cover. Garret's own photo in chat beats a form photo that morning; the form photo runs the next day. To get the file: write `[{"id": "<submission id>", "url": "<file url>"}]` to `data/inbox/photo-queue.json`, push, dispatch `photos.yml` (`gh api -X POST repos/benthambulletin/benthambulletin.github.io/actions/workflows/photos.yml/dispatches -f ref=main`), wait ~1 minute, pull; the photo is at `data/inbox/<id>.<ext>`. Crop as usual; credit the sender in the caption ("Photo by Claire").
+- **Something to share** → the From the Group Chat box under Family Today, under the sender's name. Lightly tidied, never rewritten into something they didn't say.
+- **Sunday answer** → the next Sunday Question, under names.
+- **Calendar date** → the Family Today calendar (and the Week Ahead when it falls that week).
+- **Correction** → fixed in that day's paper (and today's live edition if it applies); no correction notice in print.
+The Family Today box carries both links: the migraine log and "Send something to the paper: tally.so/r/rjxDpl".
+
 **From the Group Chat** — occasional, not standing. When someone sends a photo, a line, a correction or a story worth printing, it runs under their name in a small bordered box. No contest, no prompting beyond the migraine ask; just print what comes in.
 
 Conditional: **Smoke Watch** if wildfire smoke returns — retire and reactivate explicitly.

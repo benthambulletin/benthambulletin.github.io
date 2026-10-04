@@ -34,6 +34,7 @@ Return a numbered list of problems. Each one gets the exact sentence, what is wr
 - No symptoms, medication or severity from the migraine form; never name a family member's medication.
 - Sources line in the colophon matches what was used.
 - Today's dated items in `requests.md` ran.
+- New family-form entries (Tally rjxDpl, ids not in `data/inbox/seen.json`) were placed where CLAUDE.md says, under the sender's name, and nothing unkind or private ran. The Family Today box links both forms.
 
 **Look**
 - Read every slice. Cover photo present if one was sent, caption reads right, nothing cut off, no stacked rules, no blank or doubled section, nothing overlapping.
