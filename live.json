@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T18:43:28Z",
+ "updated": "2026-10-04T18:45:30Z",
  "week": 4,
  "games": {
   "1": {
@@ -22,29 +22,29 @@
    "state": "in",
    "away": 14,
    "home": 17,
-   "detail": "15:00 - 3rd",
-   "line": "Bills 17–14 · 15:00 - 3rd"
+   "detail": "13:08 - 3rd",
+   "line": "Bills 17–14 · 13:08 - 3rd"
   },
   "4": {
    "state": "in",
    "away": 3,
    "home": 13,
-   "detail": "14:19 - 3rd",
-   "line": "Bears 13–3 · 14:19 - 3rd"
+   "detail": "12:16 - 3rd",
+   "line": "Bears 13–3 · 12:16 - 3rd"
   },
   "5": {
    "state": "in",
    "away": 13,
    "home": 3,
-   "detail": "14:55 - 3rd",
-   "line": "Jaguars 13–3 · 14:55 - 3rd"
+   "detail": "13:03 - 3rd",
+   "line": "Jaguars 13–3 · 13:03 - 3rd"
   },
   "6": {
    "state": "in",
-   "away": 6,
+   "away": 12,
    "home": 16,
-   "detail": "14:52 - 3rd",
-   "line": "Texans 16–6 · 14:52 - 3rd"
+   "detail": "13:40 - 3rd",
+   "line": "Texans 16–12 · 13:40 - 3rd"
   },
   "7": {
    "state": "in",
@@ -62,10 +62,10 @@
   },
   "9": {
    "state": "in",
-   "away": 10,
+   "away": 17,
    "home": 7,
-   "detail": "10:39 - 3rd",
-   "line": "Packers 10–7 · 10:39 - 3rd"
+   "detail": "10:32 - 3rd",
+   "line": "Packers 17–7 · 10:32 - 3rd"
   },
   "10": {
    "state": "pre",
