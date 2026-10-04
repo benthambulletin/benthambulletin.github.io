@@ -117,8 +117,36 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Colts": [
+              "Marky Mark",
+              "Kara",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Andy R",
+              "Devin",
+              "Peggy",
+              "Dan",
+              "Andrew Clarke",
+              "Mike Sombloski",
+              "Kaylani & Luka",
+              "Melissa",
+              "Tom",
+              "Derek",
+              "Nate V",
+              "Garret"
+            ],
+            "Commanders": [
+              "B-rad",
+              "Josh",
+              "Walczyk",
+              "Leah",
+              "Ariel",
+              "Thom",
+              "Claude"
+            ]
+          },
           "tv": "NFL Network"
         },
         {
@@ -316,7 +344,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Browns"
+            "0": "Browns",
+            "1": "Colts"
           },
           "filedAt": "2026-10-01T20:31:07+00:00",
           "firstAt": "2026-10-01T20:31:07+00:00",
@@ -335,7 +364,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Browns"
+            "0": "Browns",
+            "1": "Colts"
           },
           "filedAt": "2026-10-01T02:26:10+00:00",
           "firstAt": "2026-10-01T02:26:10+00:00",
@@ -354,7 +384,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Browns"
+            "0": "Browns",
+            "1": "Colts"
           },
           "filedAt": "2026-10-01T12:49:19+00:00",
           "firstAt": "2026-10-01T12:49:19+00:00",
@@ -373,7 +404,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Browns"
+            "0": "Browns",
+            "1": "Commanders"
           },
           "filedAt": "2026-10-02T00:05:37+00:00",
           "firstAt": "2026-10-02T00:05:37+00:00",
@@ -397,7 +429,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Browns"
+            "0": "Browns",
+            "1": "Colts"
           },
           "filedAt": "2026-09-29T20:43:21+00:00",
           "firstAt": "2026-09-29T20:43:21+00:00",
@@ -416,7 +449,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Browns"
+            "0": "Browns",
+            "1": "Colts"
           },
           "filedAt": "2026-10-01T23:13:41+00:00",
           "firstAt": "2026-10-01T23:13:41+00:00",
@@ -435,7 +469,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Browns"
+            "0": "Browns",
+            "1": "Colts"
           },
           "filedAt": "2026-10-01T10:29:34+00:00",
           "firstAt": "2026-10-01T10:29:34+00:00",
@@ -454,7 +489,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Browns"
+            "0": "Browns",
+            "1": "Commanders"
           },
           "filedAt": "2026-10-01T13:54:42+00:00",
           "firstAt": "2026-10-01T13:44:10+00:00",
@@ -473,7 +509,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": null
+            "0": null,
+            "1": "Commanders"
           },
           "filedAt": "2026-10-04T04:42:41+00:00",
           "firstAt": "2026-10-04T04:42:41+00:00",
@@ -492,7 +529,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Colts"
           },
           "filedAt": "2026-09-30T15:07:10+00:00",
           "firstAt": "2026-09-30T15:07:10+00:00",
@@ -511,7 +549,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Colts"
           },
           "filedAt": "2026-10-01T13:10:03+00:00",
           "firstAt": "2026-10-01T13:10:03+00:00",
@@ -530,7 +569,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Commanders"
           },
           "filedAt": "2026-09-29T15:55:32+00:00",
           "firstAt": "2026-09-29T15:55:32+00:00",
@@ -549,7 +589,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Commanders"
           },
           "filedAt": "2026-09-29T01:40:00+00:00",
           "firstAt": "2026-09-29T01:40:00+00:00",
@@ -568,7 +609,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Colts"
           },
           "filedAt": "2026-09-29T16:00:07+00:00",
           "firstAt": "2026-09-29T16:00:07+00:00",
@@ -587,7 +629,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Colts"
           },
           "filedAt": "2026-09-29T12:24:58+00:00",
           "firstAt": "2026-09-29T12:24:58+00:00",
@@ -606,7 +649,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Colts"
           },
           "filedAt": "2026-10-01T17:30:24+00:00",
           "firstAt": "2026-10-01T17:30:24+00:00",
@@ -625,7 +669,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Colts"
           },
           "filedAt": "2026-10-01T23:10:34+00:00",
           "firstAt": "2026-10-01T23:10:34+00:00",
@@ -644,7 +689,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Commanders"
           },
           "filedAt": "2026-09-29T22:01:35+00:00",
           "firstAt": "2026-09-29T22:01:35+00:00",
@@ -663,7 +709,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Colts"
           },
           "filedAt": "2026-09-29T16:54:52+00:00",
           "firstAt": "2026-09-29T16:54:52+00:00",
@@ -682,7 +729,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Colts"
           },
           "filedAt": "2026-09-29T23:36:35+00:00",
           "firstAt": "2026-09-29T23:36:35+00:00",
@@ -701,7 +749,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Colts"
           },
           "filedAt": "2026-09-29T15:07:02+00:00",
           "firstAt": "2026-09-29T15:07:02+00:00",
@@ -720,7 +769,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Commanders"
           },
           "filedAt": "2026-09-29T15:05:20+00:00",
           "firstAt": "2026-09-29T15:05:20+00:00",
@@ -739,7 +789,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Steelers"
+            "0": "Steelers",
+            "1": "Colts"
           },
           "filedAt": "2026-09-29T16:19:52+00:00",
           "firstAt": "2026-09-29T16:19:52+00:00",
@@ -789,7 +840,37 @@
       "pot": 0,
       "opensAt": "2026-09-29T01:40:00Z",
       "tbUsed": false,
-      "decides": [],
+      "decides": [
+        {
+          "game": 1,
+          "away": [
+            "Marky Mark",
+            "Kara",
+            "Amanda Rodgers",
+            "Jeff G",
+            "Andy R",
+            "Devin",
+            "Peggy",
+            "Dan",
+            "Andrew Clarke",
+            "Mike Sombloski",
+            "Kaylani & Luka",
+            "Melissa",
+            "Tom",
+            "Derek",
+            "Nate V",
+            "Garret"
+          ],
+          "home": [
+            "B-rad",
+            "Josh",
+            "Walczyk",
+            "Leah",
+            "Ariel",
+            "Thom"
+          ]
+        }
+      ],
       "updates": [
         {
           "at": "2026-10-02T03:59:55.460125+00:00",
@@ -819,6 +900,19 @@
             ],
             "upset": true,
             "rightN": 8
+          },
+          "1": {
+            "away": 16,
+            "home": 6,
+            "minority": "Commanders",
+            "minorityWho": [
+              "B-rad",
+              "Josh",
+              "Walczyk",
+              "Leah",
+              "Ariel",
+              "Thom"
+            ]
           }
         },
         "upsets": 1,
@@ -857,7 +951,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-04T13:10:52.634549+00:00",
+  "updated": "2026-10-04T13:38:02.975402+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
