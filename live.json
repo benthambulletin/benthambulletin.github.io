@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T23:00:44Z",
+ "updated": "2026-10-04T23:02:46Z",
  "week": 4,
  "games": {
   "1": {
@@ -84,32 +84,34 @@
    "line": "Final · Packers 17–14"
   },
   "10": {
-   "state": "in",
+   "state": "post",
    "away": 10,
    "home": 15,
-   "detail": "2:00 - 4th",
-   "line": "Vikings 15–10 · 2:00 - 4th"
+   "detail": "Final",
+   "winner": "Vikings",
+   "score": "15–10",
+   "line": "Final · Vikings 15–10"
   },
   "11": {
    "state": "in",
    "away": 17,
    "home": 16,
-   "detail": "8:24 - 4th",
-   "line": "Chiefs 17–16 · 8:24 - 4th"
+   "detail": "6:28 - 4th",
+   "line": "Chiefs 17–16 · 6:28 - 4th"
   },
   "12": {
    "state": "in",
    "away": 13,
    "home": 30,
-   "detail": "14:11 - 4th",
-   "line": "Seahawks 30–13 · 14:11 - 4th"
+   "detail": "12:55 - 4th",
+   "line": "Seahawks 30–13 · 12:55 - 4th"
   },
   "13": {
    "state": "in",
    "away": 6,
    "home": 10,
-   "detail": "10:38 - 4th",
-   "line": "49ers 10–6 · 10:38 - 4th"
+   "detail": "8:53 - 4th",
+   "line": "49ers 10–6 · 8:53 - 4th"
   },
   "14": {
    "state": "pre",
