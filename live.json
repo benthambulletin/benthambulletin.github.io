@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T20:14:47Z",
+ "updated": "2026-10-04T20:16:49Z",
  "week": 4,
  "games": {
   "1": {
@@ -39,11 +39,13 @@
    "line": "Final · Bears 23–12"
   },
   "5": {
-   "state": "in",
+   "state": "post",
    "away": 22,
    "home": 17,
-   "detail": "0:50 - 4th",
-   "line": "Jaguars 22–17 · 0:50 - 4th"
+   "detail": "Final",
+   "winner": "Jaguars",
+   "score": "22–17",
+   "line": "Final · Jaguars 22–17"
   },
   "6": {
    "state": "post",
@@ -64,11 +66,13 @@
    "line": "Final · Giants 36–24"
   },
   "8": {
-   "state": "in",
+   "state": "post",
    "away": 24,
    "home": 20,
-   "detail": "0:42 - 4th",
-   "line": "Rams 24–20 · 0:42 - 4th"
+   "detail": "Final",
+   "winner": "Rams",
+   "score": "24–20",
+   "line": "Final · Rams 24–20"
   },
   "9": {
    "state": "post",
@@ -83,8 +87,8 @@
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "10:51 - 1st",
-   "line": "Tied 0–0 · 10:51 - 1st"
+   "detail": "9:48 - 1st",
+   "line": "Tied 0–0 · 9:48 - 1st"
   },
   "11": {
    "state": "pre",
