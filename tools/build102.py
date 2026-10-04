@@ -18,6 +18,7 @@ S('<div class="tiles">','<div class="dbl-tight">','''<div class="tiles">
 </div>
 ''')
 S('<div class="plate-sub">','</div></div>',f'<div class="plate-sub">{CAP}')
+R('<div class="ask">Had a migraine? Log it at <a href="https://tally.so/r/obWNYP">tally.so/r/obWNYP</a> &mdash; who, the day, roughly when &mdash; and the paper will mark it on the Barograph. Enough entries and we will see what the pressure does before one hits.</div>','<div class="ask"><b>Send something to the paper:</b> a photo, a story, your Sunday answer or a date for the calendar, at <a href="https://tally.so/r/rjxDpl">tally.so/r/rjxDpl</a>. It runs the next morning under your name.<br><b>Had a migraine?</b> Log it at <a href="https://tally.so/r/obWNYP">tally.so/r/obWNYP</a>.</div>')
 S('<div class="fam">','<ul class="cal">','''<div class="fam"><b>Luka has the cover</b>, checked over at the doctor's and now on antibiotics. Dad's report: he is ready for a Jets and Bills win. Game-day Sunday in October, the good kind: 68 and mostly sunny, Bills and Patriots at 1:00, Jets at Chicago at 1:00, Las Vegas at 5:30. Then frost is possible around Scottsville Monday night.
 ''')
 # Sunday Spotlight after Family Today
@@ -120,7 +121,7 @@ back=H('&#127810;','The Week Ahead')+'''<div class="line"><b>Weather.</b> Sunny 
 <tr><td>Sat 3</td><td class="n">30.31</td><td class="n">63</td><td>sunny</td></tr>
 <tr><td>Sun 4</td><td class="n">30.17</td><td class="n">68</td><td>mostly sunny</td></tr></table>
 <div class="line">Steady early in the week, a slide into Friday's rain, then a 14-millibar jump by Saturday morning, the biggest swing of the week, and a 5-millibar slide back today. The warmest forecast was Thursday's. No migraines logged.</div>
-'''+H('&#10023;','The Sunday Question')+'''<div class="qotd"><b>What is the best Halloween costume you ever wore? Worst counts too.</b><br>Send it to the group chat this week. Answers run here next Sunday under your names.<br><span style="color:var(--soft)">Last week's question, the fall tradition you would miss most, is still open.</span></div>
+'''+H('&#10023;','The Sunday Question')+'''<div class="qotd"><b>What is the best Halloween costume you ever wore? Worst counts too.</b><br>Send it at tally.so/r/rjxDpl or to the group chat this week. Answers run here next Sunday under your names.<br><span style="color:var(--soft)">Last week's question, the fall tradition you would miss most, is still open.</span></div>
 '''
 R(H('&#9790;','On This Day'), back+H('&#9790;','On This Day'))
 S('<div class="otd">','<h2 class="sec">','''<div class="otd"><b>October 4, 1957</b> &mdash; The Soviet Union launched Sputnik, the first man-made satellite. Americans went out on fall nights hoping to spot it; the bright dot most saw was its rocket stage, and radio fans listened for its beep.</div>
