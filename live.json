@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T19:36:21Z",
+ "updated": "2026-10-04T19:38:22Z",
  "week": 4,
  "games": {
   "1": {
@@ -15,57 +15,57 @@
    "state": "in",
    "away": 10,
    "home": 24,
-   "detail": "11:25 - 4th",
-   "line": "Ravens 24–10 · 11:25 - 4th"
+   "detail": "10:24 - 4th",
+   "line": "Ravens 24–10 · 10:24 - 4th"
   },
   "3": {
    "state": "in",
    "away": 21,
    "home": 17,
-   "detail": "12:59 - 4th",
-   "line": "Patriots 21–17 · 12:59 - 4th"
+   "detail": "11:53 - 4th",
+   "line": "Patriots 21–17 · 11:53 - 4th"
   },
   "4": {
    "state": "in",
    "away": 12,
    "home": 23,
-   "detail": "9:02 - 4th",
-   "line": "Bears 23–12 · 9:02 - 4th"
+   "detail": "7:37 - 4th",
+   "line": "Bears 23–12 · 7:37 - 4th"
   },
   "5": {
    "state": "in",
    "away": 16,
    "home": 10,
-   "detail": "9:50 - 4th",
-   "line": "Jaguars 16–10 · 9:50 - 4th"
+   "detail": "8:26 - 4th",
+   "line": "Jaguars 16–10 · 8:26 - 4th"
   },
   "6": {
    "state": "in",
    "away": 27,
    "home": 23,
-   "detail": "10:53 - 4th",
-   "line": "Cowboys 27–23 · 10:53 - 4th"
+   "detail": "9:31 - 4th",
+   "line": "Cowboys 27–23 · 9:31 - 4th"
   },
   "7": {
    "state": "in",
    "away": 24,
    "home": 27,
-   "detail": "10:27 - 4th",
-   "line": "Giants 27–24 · 10:27 - 4th"
+   "detail": "9:33 - 4th",
+   "line": "Giants 27–24 · 9:33 - 4th"
   },
   "8": {
    "state": "in",
    "away": 10,
    "home": 20,
-   "detail": "12:21 - 4th",
-   "line": "Eagles 20–10 · 12:21 - 4th"
+   "detail": "10:20 - 4th",
+   "line": "Eagles 20–10 · 10:20 - 4th"
   },
   "9": {
    "state": "in",
    "away": 17,
    "home": 14,
-   "detail": "4:59 - 4th",
-   "line": "Packers 17–14 · 4:59 - 4th"
+   "detail": "4:46 - 4th",
+   "line": "Packers 17–14 · 4:46 - 4th"
   },
   "10": {
    "state": "pre",
