@@ -2,6 +2,9 @@ name: Pool live scores
 
 # The Sunday Tax (pool/): every 5 minutes during NFL game windows, read ESPN's public
 # scoreboard and publish pool live scores to the `pool-live` branch (live.json).
+# Each run loops every 2 minutes until no pool game is in its window (cap ~5h40m).
+# The kickoff-lock scheduled tasks dispatch it at every kickoff; the crons are only a backup
+# (GitHub's schedule did not fire at all on Oct 4).
 # Kept off `main` so it never triggers a Pages build or touches the Bulletin.
 # The script itself exits early unless a game of the current pool week is in its window.
 on:
@@ -27,30 +30,44 @@ concurrency:
 jobs:
   scores:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-      - name: Fetch scores and publish
+      - name: Fetch scores and publish (loops every 2 minutes while any game is in its window)
         run: |
-          set +e
-          python3 pool/tools/live.py ${{ inputs.force && '--force' || '' }} > /tmp/live.json
-          rc=$?
-          set -e
-          if [ $rc -eq 3 ]; then echo "no pool game in its window"; exit 0; fi
-          if [ $rc -ne 0 ]; then cat /tmp/live.json; exit $rc; fi
-          cat /tmp/live.json
           git config user.name "Scoreboard"
           git config user.email "noreply@anthropic.com"
-          if git fetch --depth=1 origin pool-live 2>/dev/null; then
-            git checkout -q -B pool-live FETCH_HEAD
-          else
-            git checkout -q --orphan pool-live
-            git rm -rfq .
-          fi
-          cp /tmp/live.json live.json
-          git add live.json
-          if git diff --cached --quiet; then echo "unchanged"; exit 0; fi
-          git commit -qm "Live: $(date -u +'%Y-%m-%d %H:%MZ')"
-          git push -q origin pool-live
+          cp pool/tools/live.py /tmp/live.py
+          mkdir -p /tmp/data && cp pool/data/season.json /tmp/data/season.json
+          mkdir -p /tmp/tools && cp pool/tools/live.py /tmp/tools/live.py
+          start=$(date +%s)
+          first=1
+          while :; do
+            set +e
+            if [ $first -eq 1 ] && [ "${{ inputs.force }}" = "true" ]; then
+              python3 /tmp/tools/live.py --force > /tmp/live.json
+            else
+              python3 /tmp/tools/live.py > /tmp/live.json
+            fi
+            rc=$?
+            set -e
+            first=0
+            if [ $rc -eq 3 ]; then echo "no pool game in its window; done"; exit 0; fi
+            if [ $rc -ne 0 ]; then cat /tmp/live.json; echo "fetch failed; retrying"; sleep 60; continue; fi
+            if git fetch -q --depth=1 origin pool-live 2>/dev/null; then
+              git checkout -q -f -B pool-live FETCH_HEAD
+            else
+              git checkout -q -f --orphan pool-live
+              git rm -rfq . || true
+            fi
+            cp /tmp/live.json live.json
+            git add live.json
+            if git diff --cached --quiet; then echo "unchanged $(date -u +%H:%M)"; else
+              git commit -qm "Live: $(date -u +'%Y-%m-%d %H:%MZ')"
+              git push -q origin pool-live || echo "push failed; next loop"
+            fi
+            [ $(( $(date +%s) - start )) -gt 20400 ] && { echo "time cap"; exit 0; }
+            sleep 120
+          done
