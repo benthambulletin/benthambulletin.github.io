@@ -13,7 +13,7 @@ R('No. 101','No. 102')
 R('Saturday &middot; October 3 &middot; 2026','Sunday &middot; October 4 &middot; 2026')
 S('<div class="tiles">','<div class="dbl-tight">','''<div class="tiles">
   <div class="tile"><div class="v">68&deg;</div><div class="k">Mild, front tonight</div></div>
-  <div class="tile"><div class="v">30.23&#8243; &#9660;</div><div class="k">Falling again</div></div>
+  <div class="tile"><div class="v">30.17&#8243; &#9660;</div><div class="k">Falling ahead of a front</div></div>
   <div class="tile urg"><div class="v">30</div><div class="k">Days to Election Day</div></div>
 </div>
 ''')
@@ -36,13 +36,13 @@ spot=H('&#127809;','The Sunday Spotlight')+'''<div class="touch-head">The Month 
 '''
 R(H('&#9788;','The Weather Glass'), spot+H('&#9788;','The Weather Glass'))
 S('<div class="wx">','<div class="towns">','''<div class="wx"><div class="bigtemp">68<sup>&deg;</sup></div><div class="wxtext">
-<span class="lede">One last mild one before the frost</span>
+<span class="lede">Mild and golden today, frost on the windshield by Tuesday</span>
 Low <b>48&deg;</b> tonight &middot; south breeze ahead of a cold front<br>A stray shower possible tonight, 24%</div></div>
 ''')
 S('<div class="towns">','<div class="strip5">','''<div class="towns">
-  <div class="town"><div class="n">North Tonawanda</div><div class="t">44<sup>&deg;</sup></div><div class="d">Overnight &middot; high 68&deg;</div></div>
-  <div class="town"><div class="n">Dunkirk</div><div class="t">53<sup>&deg;</sup></div><div class="d">Overnight &middot; high 68&deg;</div></div>
-  <div class="town"><div class="n">Scottsville</div><div class="t">42<sup>&deg;</sup></div><div class="d">Overnight &middot; high 70&deg;</div></div>
+  <div class="town"><div class="n">North Tonawanda</div><div class="t">43<sup>&deg;</sup></div><div class="d">Clear &middot; high 68&deg;</div></div>
+  <div class="town"><div class="n">Dunkirk</div><div class="t">55<sup>&deg;</sup></div><div class="d">Clear &middot; high 68&deg;</div></div>
+  <div class="town"><div class="n">Scottsville</div><div class="t">43<sup>&deg;</sup></div><div class="d">Partly cloudy &middot; high 70&deg;</div></div>
 </div>
 ''')
 S('<div class="strip5">','<h2 class="sec"><span class="o">&#127810;</span>The Turning','''<div class="strip5">
@@ -70,7 +70,7 @@ S('<div class="stars">','<div style="font-family:\'LOI\'','''<div class="stars">
 <div class="star"><div class="sg">Scorpio</div><div><b>Venus holds your sign while Mercury moves up beside her</b>. Charm and argument in the same hand. Lead with the charm. <span class="who">Ariel, Claire, Garret</span></div></div>
 </div>
 ''')
-S('<div class="baro-top">','<h2 class="sec"><span class="o">&#10038;</span>The Ledger',baro+'''<div class="line"><span class="lbl t">Falling fast again</span> 30.23 at 3 this morning, down 2 millibars in three hours as the next front approaches, a day after the big climb. A drop that quick puts the dial at high even though the pressure is still on the high side overall. No migraines logged this week.</div>
+S('<div class="baro-top">','<h2 class="sec"><span class="o">&#10038;</span>The Ledger',baro+'''<div class="line"><span class="lbl t">Coming down off the peak</span> 30.17 this morning, down 5 millibars since yesterday morning as a cold front approaches. That is a big enough one-day drop to put the dial at high, even though the reading itself is still on the high side. Watch for it to turn back up behind the front.</div>
 ''')
 S('<div class="ledger">','<h2 class="sec"><span class="o">&#10038;</span>The National Wire','''<div class="ledger"><div class="num"><div class="cap">The hemp THC business</div><div class="big">$28B</div></div>
 <div class="txt">That is the size of the market for hemp-based THC drinks and other products, now fighting for its life after Congress voted to close the loophole it grew up in.</div></div>
@@ -79,11 +79,13 @@ S('<div class="wire"><div class="num">1</div><div><h3>Hiring','<div class="ballo
 <div class="wire"><div class="num">2</div><div><h3>Debris From a Missing Medical Jet</h3><p>Searchers found wreckage of a medical jet with six aboard that disappeared near Nantucket early Saturday, flying from Bermuda to Boston.</p></div></div>
 <div class="wire"><div class="num">3</div><div><h3>Trump Pushes Year-Round Daylight Time</h3><p>The president urged supporters to call Arkansas Sen. Tom Cotton to back a bill that would stop the twice-a-year clock change.</p></div></div>
 ''')
-S('<div class="ballot">','<h2 class="sec"><span class="o">&#9962;</span>The Home Wire',H('&#9745;','The Ballot')+'''<div class="touch-head">A Quiet Week in the Polls</div>
-<div class="line">Thirty days. No new statewide poll came out this week. The last two, both from mid-September, have Governor Hochul ahead of Bruce Blakeman by 9 points (Siena, 50 to 41) and by 19 (Quinnipiac, 58 to 39) among likely voters.</div>
-<div class="line"><b>Coming this week.</b> President Trump is expected in Syracuse on Friday to campaign for Blakeman, according to Politico and local reports.</div>
-<div class="line"><b>The national read.</b> Control of the Senate runs through a handful of states. Trump rallied outside Dayton on Saturday for Jon Husted in a tight Ohio race against Sherrod Brown.</div>
-<div class="line">The three House seats this family votes in, NY-26, NY-23 and NY-25, are not expected to be close.</div>
+S('<div class="ballot">','<h2 class="sec"><span class="o">&#9962;</span>The Home Wire',H('&#9745;','The Ballot')+'''<div class="touch-head">Thirty Days Out</div>
+<div class="line"><b>Governor.</b> No new statewide poll this week. The last two, both from mid-September, have Kathy Hochul ahead of Bruce Blakeman among likely voters by 9 points (Siena, 50 to 41) and by 19 (Quinnipiac, 58 to 39). Siena has it much closer than Quinnipiac does. Siena's pollster says independents are the real battleground, and its poll found that Trump's endorsement of Blakeman hurts him with them more than it helps. <b>This week:</b> President Trump is expected in Syracuse on Friday to campaign for Blakeman, according to Politico and local reports.</div>
+<div class="line"><b>NY-26, North Tonawanda.</b> Democrat Tim Kennedy, in his first full term, is a heavy favorite; the Cook Political Report rates the seat solidly Democratic. Republican Dennis Hannon has been running against him since April on safety, costs and protecting kids online.</div>
+<div class="line"><b>NY-23, Dunkirk.</b> Republican Nick Langworthy against Aaron Gies. Both campaigns released their own polls last week. Langworthy's has him up 54 to 33. Gies's found only 44 percent say Langworthy deserves another term, against 39 percent who want someone new. Campaign polls are built to make a point, so read them for the direction, not the size. The district leans Republican.</div>
+<div class="line"><b>NY-25, Scottsville.</b> Democrat Joe Morelle, in Congress since 2018, has never had a close race, and Cook rates it solidly Democratic.</div>
+<div class="line"><b>The national read.</b> Trump rallied outside Dayton Saturday for Jon Husted in a tight Ohio Senate race against Sherrod Brown, one of the handful of states that will decide the Senate. In California, voters will decide a one-time tax on billionaires.</div>
+<div class="line"><b>What to do now.</b> Check your registration before the Oct 24 deadline. Next Sunday's paper has the state legislature races, and Oct 18 is everything else on your ballot.</div>
 <div class="line" style="color:var(--soft)">Early voting Oct 24&ndash;Nov 1 &middot; register by Oct 24 &middot; Election Day Nov 3.</div>
 ''')
 S('<div class="wire"><div class="num">1</div><div><h3>Rochester &middot; The Auto Show','<h2 class="sec"><span class="o">&#9733;</span>The Marquee','''<div class="wire"><div class="num">1</div><div><h3>Buffalo &middot; Sabres Rally to Win the Home Opener</h3><p>Down two goals, they came back to beat Chicago 4&ndash;3 Saturday night on Jiri Kulich's goal with 6:40 left.</p></div></div>
@@ -116,8 +118,8 @@ back=H('&#127810;','The Week Ahead')+'''<div class="line"><b>Weather.</b> Sunny 
 <tr><td>Thu 1</td><td class="n">29.96</td><td class="n">76</td><td>showers, rain at night</td></tr>
 <tr><td>Fri 2</td><td class="n">29.88</td><td class="n">65</td><td>rain, then clouds</td></tr>
 <tr><td>Sat 3</td><td class="n">30.31</td><td class="n">63</td><td>sunny</td></tr>
-<tr><td>Sun 4</td><td class="n">30.23</td><td class="n">68</td><td>mostly sunny</td></tr></table>
-<div class="line">Steady early in the week, a slide into Friday's rain, then a 14-millibar jump by Saturday morning, the biggest swing of the week. The warmest forecast was Thursday's. No migraines logged.</div>
+<tr><td>Sun 4</td><td class="n">30.17</td><td class="n">68</td><td>mostly sunny</td></tr></table>
+<div class="line">Steady early in the week, a slide into Friday's rain, then a 14-millibar jump by Saturday morning, the biggest swing of the week, and a 5-millibar slide back today. The warmest forecast was Thursday's. No migraines logged.</div>
 '''+H('&#10023;','The Sunday Question')+'''<div class="qotd"><b>What is the best Halloween costume you ever wore? Worst counts too.</b><br>Send it to the group chat this week. Answers run here next Sunday under your names.<br><span style="color:var(--soft)">Last week's question, the fall tradition you would miss most, is still open.</span></div>
 '''
 R(H('&#9790;','On This Day'), back+H('&#9790;','On This Day'))
@@ -130,6 +132,7 @@ R('headlines via CBS, BBC, WKBW, Rochester First, Dunkirk Observer, Deadline, Va
 d.update(date='2026-10-04',no=102,body_html=b,plate_path='/home/claude/plate102.jpg',plate_caption=CAP,headline="Luka is ready · The month in migraine · Game day · Frost possible Monday night")
 json.dump(d,open('site/data/edition-2026-10-04.json','w'),indent=1); json.dump(d,open('edition-2026-10-04.json','w'),indent=1)
 p=json.load(open('site/data/pressure.json'))
-if p[-1]['date']!='2026-10-04': p.append({"date":"2026-10-04","in":30.23,"mb":1023.6,"station":"KIAG","time":"02:53 EDT"})
+p=[x for x in p if x['date']!='2026-10-04']
+if True: p.append({"date":"2026-10-04","in":30.17,"mb":1021.7,"station":"KIAG","time":"06:53 EDT"})
 json.dump(p,open('site/data/pressure.json','w'),indent=1)
 print('ok')
