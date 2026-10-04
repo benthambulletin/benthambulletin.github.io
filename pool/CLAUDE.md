@@ -159,6 +159,12 @@ Garret the one-line message below.
    mugshot.`); if last week wasn't played, the first game and its kickoff. Never anything about picks.
    Then `publish_form`. Question ids do not change when text changes; if you had to
    add or remove a game question, update `form.questions.games` to match, in order.
+4b. **Odd kickoffs.** The standing kickoff-lock runs cover Thu 8:15, Sun 9:30 / 1:00 / 4:05 / 4:25 / 8:20 and
+   Mon 8:15 ET. For every game this week whose kickoff is NOT one of those (Saturday games, Thanksgiving,
+   Christmas, Black Friday, a Monday doubleheader, a flexed time), create a one-off scheduled task with
+   create_trigger, run_once_at = kickoff + 2 minutes (UTC), using the same prompt as the
+   "Sunday Tax — kickoff lock" tasks (list_triggers to copy it). Name it "Sunday Tax — kickoff lock
+   (Week N, <Away> at <Home>)". If you can't create it, say so in the step-6 message.
 5. `python3 build.py`, commit `Pool: Week N slate`, push. Confirm
    https://benthambulletin.github.io/pool/ shows Week N (cache-bust with `?N`).
 6. Message Garret (SendUserMessage), one line: `Week N is up — https://tally.so/r/RGOakJ — first game
