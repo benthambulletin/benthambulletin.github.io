@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T23:35:09Z",
+ "updated": "2026-10-04T23:37:10Z",
  "week": 4,
  "games": {
   "1": {
@@ -96,22 +96,24 @@
    "state": "in",
    "away": 30,
    "home": 27,
-   "detail": "1:16 - 4th",
-   "line": "Chiefs 30–27 · 1:16 - 4th"
+   "detail": "1:11 - 4th",
+   "line": "Chiefs 30–27 · 1:11 - 4th"
   },
   "12": {
    "state": "in",
    "away": 23,
    "home": 30,
-   "detail": "2:09 - 4th",
-   "line": "Seahawks 30–23 · 2:09 - 4th"
+   "detail": "1:56 - 4th",
+   "line": "Seahawks 30–23 · 1:56 - 4th"
   },
   "13": {
-   "state": "in",
+   "state": "post",
    "away": 14,
    "home": 24,
-   "detail": "1:14 - 4th",
-   "line": "49ers 24–14 · 1:14 - 4th"
+   "detail": "Final",
+   "winner": "49ers",
+   "score": "24–14",
+   "line": "Final · 49ers 24–14"
   },
   "14": {
    "state": "pre",
