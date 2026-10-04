@@ -1,13 +1,15 @@
 {
- "updated": "2026-10-04T16:39:46Z",
+ "updated": "2026-10-04T16:41:48Z",
  "week": 4,
  "games": {
   "1": {
-   "state": "in",
+   "state": "post",
    "away": 30,
    "home": 13,
-   "detail": "1:46 - 4th",
-   "line": "Colts 30–13 · 1:46 - 4th"
+   "detail": "Final",
+   "winner": "Colts",
+   "score": "30–13",
+   "line": "Final · Colts 30–13"
   },
   "2": {
    "state": "pre",
