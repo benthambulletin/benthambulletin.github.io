@@ -147,7 +147,9 @@
               "Claude"
             ]
           },
-          "tv": "NFL Network"
+          "tv": "NFL Network",
+          "live": "Halftime · Colts 10–6",
+          "liveAt": "2026-10-04T15:14:37Z"
         },
         {
           "away": "Titans",
@@ -951,7 +953,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-04T14:15:26.199272+00:00",
+  "updated": "2026-10-04T15:15:11.879867+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
