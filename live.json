@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T05:32:03Z",
+ "updated": "2026-10-04T13:51:28Z",
  "week": 4,
  "games": {
   "0": {
@@ -12,10 +12,11 @@
    "line": "Final · Browns 27–24"
   },
   "1": {
-   "state": "pre",
+   "state": "in",
    "away": 0,
-   "home": 0,
-   "detail": "10/4 - 9:30 AM EDT"
+   "home": 6,
+   "detail": "6:21 - 1st",
+   "line": "Commanders 6–0 · 6:21 - 1st"
   },
   "2": {
    "state": "pre",
