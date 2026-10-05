@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05T01:50:57Z",
+ "updated": "2026-10-05T01:52:59Z",
  "week": 4,
  "games": {
   "1": {
@@ -121,10 +121,10 @@
   },
   "14": {
    "state": "in",
-   "away": 13,
+   "away": 16,
    "home": 16,
-   "detail": "0:10 - 2nd",
-   "line": "Panthers 16–13 · 0:10 - 2nd"
+   "detail": "End of 2nd",
+   "line": "Tied 16–16 · End of 2nd"
   }
  }
 }
