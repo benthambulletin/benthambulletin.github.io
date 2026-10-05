@@ -35,7 +35,7 @@ def build(marks=()):
     d = start.astimezone(EDT).replace(hour=0, minute=0) + timedelta(days=1)
     while d.astimezone(timezone.utc) < end:
         xx = x(d.astimezone(timezone.utc))
-        days.append(f'<line x1="{xx:.0f}" y1="{Y0}" x2="{xx:.0f}" y2="{Y1}" stroke="#e6dcc2" stroke-dasharray="3 4"/><text x="{xx+4:.0f}" y="172">{d.strftime("%a")}</text>')
+        days.append(f'<line x1="{xx:.0f}" y1="{Y0}" x2="{xx:.0f}" y2="{Y1}" stroke="#e6dcc2" stroke-dasharray="3 4"/>' + (f'<text x="{xx+4:.0f}" y="172">{d.strftime("%a")}</text>' if xx < X1 - 110 else ''))
         d += timedelta(days=1)
     mk = []
     for m in marks:
