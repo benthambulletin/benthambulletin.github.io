@@ -416,7 +416,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     $("nowK").classList.add("final");
   } else if(inplay.length===1){
     var g=inplay[0], parts=(g.live||"").split(" · ");
-    k='<span class="lv">●</span> On now'+(g.tv?' · '+esc(g.tv):'');
+    k='<span class="lv">●</span> On now · '+esc(g.away)+' at '+esc(g.home)+(g.tv?' · '+esc(g.tv):'');
     v=g.live?'<span class="sc">'+esc(parts[0])+'</span>':esc(g.away)+' <span style="font-weight:400;font-style:italic">at</span> '+esc(g.home);
     sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+(g.liveAt?' · as of '+esc(fmtWhen(g.liveAt).replace(/^\w+ /,"")):'')+'<br>':'')+(leadTxt||'');
   } else if(inplay.length>1){
