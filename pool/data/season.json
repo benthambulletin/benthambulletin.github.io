@@ -1039,9 +1039,7 @@
               "Claude"
             ]
           },
-          "tv": "NBC",
-          "live": "Panthers 7–3 · 2nd qtr",
-          "liveAt": "2026-10-05T01:11:12Z"
+          "tv": "NBC"
         },
         {
           "away": "Falcons",
@@ -2449,7 +2447,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-05T01:11:12.198717+00:00",
+  "updated": "2026-10-05T02:16:02.335046+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
