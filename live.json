@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05T01:52:59Z",
+ "updated": "2026-10-05T01:55:00Z",
  "week": 4,
  "games": {
   "1": {
@@ -123,8 +123,8 @@
    "state": "in",
    "away": 16,
    "home": 16,
-   "detail": "End of 2nd",
-   "line": "Tied 16–16 · End of 2nd"
+   "detail": "Halftime",
+   "line": "Tied 16–16 · Halftime"
   }
  }
 }
