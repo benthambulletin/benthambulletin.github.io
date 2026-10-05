@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-10-05T10:22Z",
+ "generated_utc": "2026-10-05T10:50Z",
  "towns": {
   "North Tonawanda": {
    "issued": "2026-10-05T07:57:40+00:00",
@@ -87,9 +87,9 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-05T10:00:00+00:00",
-    "text": "Clear",
-    "temp_f": 46
+    "time": "2026-10-05T10:35:00+00:00",
+    "text": "Mostly Clear",
+    "temp_f": 48
    }
   },
   "Dunkirk": {
@@ -178,8 +178,8 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-05T10:00:00+00:00",
-    "text": "Partly Cloudy",
+    "time": "2026-10-05T10:40:00+00:00",
+    "text": "Clear",
     "temp_f": 57
    }
   },
@@ -269,9 +269,9 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-05T10:00:00+00:00",
+    "time": "2026-10-05T10:35:00+00:00",
     "text": "Clear",
-    "temp_f": 52
+    "temp_f": 50
    }
   }
  },
