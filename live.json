@@ -1,7 +1,16 @@
 {
- "updated": "2026-10-05T05:19:39Z",
+ "updated": "2026-10-05T21:43:37Z",
  "week": 4,
  "games": {
+  "0": {
+   "state": "post",
+   "away": 24,
+   "home": 27,
+   "detail": "Final",
+   "winner": "Browns",
+   "score": "27–24",
+   "line": "Final · Browns 27–24"
+  },
   "1": {
    "state": "post",
    "away": 30,
@@ -127,6 +136,12 @@
    "winner": "Panthers",
    "score": "32–26",
    "line": "Final · Panthers 32–26"
+  },
+  "15": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/5 - 8:15 PM EDT"
   }
  }
 }
