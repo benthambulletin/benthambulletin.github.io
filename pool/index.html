@@ -419,6 +419,24 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     k='<span class="lv">●</span> On now · '+esc(g.away)+' at '+esc(g.home)+(g.tv?' · '+esc(g.tv):'');
     v=g.live?'<span class="sc">'+esc(parts[0])+'</span>':esc(g.away)+' <span style="font-weight:400;font-style:italic">at</span> '+esc(g.home);
     sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+(g.liveAt?' · as of '+esc(fmtWhen(g.liveAt).replace(/^\w+ /,"")):'')+'<br>':'')+(leadTxt||'');
+    /* the tiebreaker game, last one left: who wins if it ended now, and the tiebreaker race */
+    var gi=D.games.indexOf(g), lr=LV&&LV.games&&LV.games[String(gi)];
+    if(gi===D.games.length-1&&lr&&lr.state==="in"&&!D.games.some(function(x){return x!==g&&!x.winner&&!x.liveFinal;})){
+      var tot=(+lr.away||0)+(+lr.home||0), ahead=lr.away>lr.home?g.away:(lr.home>lr.away?g.home:null);
+      var best=Math.max.apply(null,realPs.map(function(p){return p.correct;}));
+      var alive=realPs.filter(function(p){var pk=p.sheet&&p.sheet[String(gi)];return p.correct+(pk?1:0)>=best;});
+      var proj=function(p){var pk=p.sheet&&p.sheet[String(gi)];return p.correct+(ahead&&pk===ahead?1:0);};
+      var pb=Math.max.apply(null,alive.map(proj)), front=alive.filter(function(p){return proj(p)===pb;});
+      var dist=function(p){return p.tb==null?1e9:Math.abs(p.tb-tot);};
+      var line='';
+      if(front.length){
+        var md=Math.min.apply(null,front.map(dist)), win=front.filter(function(p){return dist(p)===md;});
+        line='If it ended now: <b>'+win.map(function(p){return esc(p.name);}).join(' &amp; ')+'</b>'+(front.length>1&&md<1e9?' on the tiebreaker':'');
+      }
+      var race=front.filter(function(p){return p.tb!=null;}).sort(function(a,b){return dist(a)-dist(b);}).slice(0,4);
+      if(race.length>1) line+='<br><a class="ruleref" href="/pool/about/#tiebreak">Tiebreaker</a> · total <b>'+tot+'</b> · '+race.map(function(p){var d=p.tb-tot;return esc(p.name)+' '+p.tb+' ('+(d>0?d+' to go':d===0?'dead on':(-d)+' past')+')';}).join(' · ');
+      if(line) sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+'<br>':'')+line;
+    }
   } else if(inplay.length>1){
     k='<span class="lv">●</span> On now';
     v=inplay.length+' games live';
