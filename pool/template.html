@@ -446,6 +446,14 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
       var t=/Bills/.test(g.away+g.home)?'Bills':'Jets', sc=/^Tied/.test(pr[0])?t+' tied '+pr[0].replace(/^Tied\s*/,''):pr[0];
       return '<b>'+esc(sc)+'</b>'+(q?' '+esc(q):'');});
     sub=(fam.length?fam.join(' · ')+'<br>':'')+(leadTxt?leadTxt+' · <b>'+left+'</b> to go':'<b>'+left+'</b> games to go');
+  } else if(L.length&&left===1&&open.length===1&&Date.parse(open[0].kickoff)-now<=45*60000){
+    /* 45 minutes before the last game: who's still alive (no picks, they're sealed) */
+    var o=open[0], al=realPs.filter(function(p){return p.state!=="out";});
+    var byRec={}; al.forEach(function(p){(byRec[p.correct]=byRec[p.correct]||[]).push(p.name);});
+    k='One game left · '+esc(o.away)+' at '+esc(o.home);
+    v=al.length===1?esc(al[0].name):al.length+' still alive';
+    sub=(al.length>1?Object.keys(byRec).sort(function(a,b){return b-a;}).map(function(c){return byRec[c].map(esc).join(' · ')+' — <b>'+c+'</b> right';}).join('<br>')+'<br>':'')+
+        'Kickoff · <span class="cd" data-until="'+esc(o.kickoff)+'"></span>';
   } else if(L.length){
     k='Leading Week '+D.week;
     v=L.length===1?esc(L[0].name):L.length+'-way tie';
