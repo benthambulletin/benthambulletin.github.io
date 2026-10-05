@@ -16,8 +16,12 @@ S('<div class="tiles">','<div class="dbl-tight">','''<div class="tiles">
   <div class="tile urg"><div class="v">29</div><div class="k">Days to Election Day</div></div>
 </div>
 ''')
-S('<div class="plate-wrap">','<h2 class="sec"><span class="o">&#9825;</span>Family Today','')
-S('<div class="fam">','<ul class="cal">','''<div class="fam"><b>A cold, clear start to the week.</b> Sunny and 60 with a stiff west wind, then frost is possible in the low spots around Scottsville before dawn Tuesday. A rough Sunday for both teams; the full story is in Monday Morning Quarterback below. The Bills get a shot at the Rams next Monday night.
+S('<div class="plate-wrap">','<h2 class="sec"><span class="o">&#9825;</span>Family Today','''<div class="plate-wrap"><div class="frame"><span class="tick tl"></span><span class="tick tr"></span><span class="tick bl"></span><span class="tick br"></span>
+<img src="__PLATE__" alt="Plate I"></div>
+<div class="plate-cap">Plate I &middot; The Family Album</div>
+<div class="plate-sub">Luka and Dad on the couch, the leaves turning outside the window</div></div>
+''')
+S('<div class="fam">','<ul class="cal">','''<div class="fam"><b>Luka and Dad have the cover</b>, with the trees outside going gold. <b>A cold, clear start to the week:</b> sunny and 60 with a stiff west wind, then frost is possible in the low spots around Scottsville before dawn Tuesday. A rough Sunday for both teams; the full story is in Monday Morning Quarterback below. The Bills get a shot at the Rams next Monday night.
 ''')
 S('<ul class="cal">','<div class="ask">','''<ul class="cal">
 <li><span class="dt">Oct 11</span><span>Browns at Jets &mdash; 1:00</span></li>
@@ -107,7 +111,7 @@ S('<div class="otd">','<h2 class="sec">','''<div class="otd"><b>October 5, 1962<
 R('What has keys but can\'t open a single lock?','I have a bark but no bite, and every October I drop everything. What am I?')
 R('<b>Question of the Day:</b> A piano.','<b>Question of the Day:</b> A tree.')
 S('headlines via','</div>','headlines via BBC, NPR, CBS, WKBW, WIVB, Rochester First, Dunkirk Observer, New York Focus, Billboard, Deadline, Variety &middot; scores via the NFL feed and Bleacher Report &middot; wire from the national desks')
-d.update(date='2026-10-05',no=103,body_html=b,plate_path=None,plate_caption=None,headline="Bills fall to New England · Frost possible Tuesday · Briscoe wins Vegas · A Nobel for the brain")
+d.update(date='2026-10-05',no=103,body_html=b,plate_path='/home/claude/plate103.jpg',plate_caption='Luka and Dad on the couch, the leaves turning outside the window',headline="Luka and Dad · Bills fall to New England · Frost possible Tuesday · Briscoe wins Vegas · A Nobel for the brain")
 json.dump(d,open('site/data/edition-2026-10-05.json','w'),indent=1); json.dump(d,open('edition-2026-10-05.json','w'),indent=1)
 p=json.load(open('site/data/pressure.json'))
 p=[x for x in p if x['date']!='2026-10-05']; p.append({"date":"2026-10-05","in":30.04,"mb":1017.3,"station":"KIAG","time":"05:53 EDT"})
