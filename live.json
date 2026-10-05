@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05T00:23:43Z",
+ "updated": "2026-10-05T00:25:45Z",
  "week": 4,
  "games": {
   "1": {
@@ -120,10 +120,11 @@
    "line": "Final · 49ers 24–14"
   },
   "14": {
-   "state": "pre",
+   "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "10/4 - 8:20 PM EDT"
+   "detail": "15:00 - 1st",
+   "line": "Tied 0–0 · 15:00 - 1st"
   }
  }
 }
