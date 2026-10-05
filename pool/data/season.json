@@ -397,7 +397,8 @@
             "Leah",
             "Melissa",
             "Ariel",
-            "Nate V"
+            "Nate V",
+            "Thom"
           ],
           "misses": [
             "Walczyk",
@@ -409,7 +410,6 @@
             "Kaylani & Luka",
             "Tom",
             "Derek",
-            "Thom",
             "Garret",
             "Claude"
           ],
@@ -427,7 +427,8 @@
               "Leah",
               "Melissa",
               "Ariel",
-              "Nate V"
+              "Nate V",
+              "Thom"
             ],
             "Bengals": [
               "Walczyk",
@@ -439,7 +440,6 @@
               "Kaylani & Luka",
               "Tom",
               "Derek",
-              "Thom",
               "Garret",
               "Claude"
             ]
@@ -1212,6 +1212,48 @@
           ]
         },
         {
+          "name": "Thom",
+          "house": false,
+          "correct": 11,
+          "missed": 4,
+          "void": 0,
+          "remaining": 1,
+          "max": 12,
+          "tb": null,
+          "sheet": {
+            "0": "Steelers",
+            "1": "Commanders",
+            "2": "Ravens",
+            "3": "Bills",
+            "4": "Bears",
+            "5": "Jaguars",
+            "6": "Cowboys",
+            "7": "Giants",
+            "8": "Rams",
+            "9": "Packers",
+            "10": "Vikings",
+            "11": "Chiefs",
+            "12": "Seahawks",
+            "13": "49ers",
+            "14": "Lions"
+          },
+          "filedAt": "2026-09-29T15:05:20+00:00",
+          "firstAt": "2026-09-29T15:05:20+00:00",
+          "rank": 1,
+          "delta": 3,
+          "state": "alive",
+          "badges": [
+            {
+              "id": "homer",
+              "note": "took the Bills, who lost"
+            },
+            {
+              "id": "crown",
+              "note": "leading the week"
+            }
+          ]
+        },
+        {
           "name": "Andy R",
           "house": false,
           "correct": 10,
@@ -1239,8 +1281,8 @@
           },
           "filedAt": "2026-10-01T13:10:03+00:00",
           "firstAt": "2026-10-01T13:10:03+00:00",
-          "rank": 4,
-          "delta": 1,
+          "rank": 5,
+          "delta": -1,
           "state": "alive",
           "badges": [
             {
@@ -1277,8 +1319,8 @@
           },
           "filedAt": "2026-10-02T00:05:37+00:00",
           "firstAt": "2026-10-02T00:05:37+00:00",
-          "rank": 4,
-          "delta": 1,
+          "rank": 5,
+          "delta": -1,
           "state": "alive",
           "badges": [
             {
@@ -1320,8 +1362,8 @@
           },
           "filedAt": "2026-09-29T23:36:35+00:00",
           "firstAt": "2026-09-29T23:36:35+00:00",
-          "rank": 4,
-          "delta": 1,
+          "rank": 5,
+          "delta": -1,
           "state": "alive",
           "badges": [
             {
@@ -1358,46 +1400,8 @@
           },
           "filedAt": "2026-10-01T10:29:34+00:00",
           "firstAt": "2026-10-01T10:29:34+00:00",
-          "rank": 4,
-          "delta": 1,
-          "state": "alive",
-          "badges": [
-            {
-              "id": "homer",
-              "note": "took the Bills, who lost"
-            }
-          ]
-        },
-        {
-          "name": "Thom",
-          "house": false,
-          "correct": 10,
-          "missed": 5,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": null,
-          "sheet": {
-            "0": "Steelers",
-            "1": "Commanders",
-            "2": "Ravens",
-            "3": "Bills",
-            "4": "Bears",
-            "5": "Bengals",
-            "6": "Cowboys",
-            "7": "Giants",
-            "8": "Rams",
-            "9": "Packers",
-            "10": "Vikings",
-            "11": "Chiefs",
-            "12": "Seahawks",
-            "13": "49ers",
-            "14": "Lions"
-          },
-          "filedAt": "2026-09-29T15:05:20+00:00",
-          "firstAt": "2026-09-29T15:05:20+00:00",
-          "rank": 4,
-          "delta": -3,
+          "rank": 5,
+          "delta": -1,
           "state": "alive",
           "badges": [
             {
@@ -2302,8 +2306,8 @@
             "rightN": 18
           },
           "5": {
-            "away": 12,
-            "home": 11,
+            "away": 13,
+            "home": 10,
             "minority": "Bengals",
             "minorityWho": [
               "Walczyk",
@@ -2315,11 +2319,10 @@
               "Kaylani & Luka",
               "Tom",
               "Derek",
-              "Thom",
               "Garret"
             ],
             "upset": false,
-            "rightN": 12
+            "rightN": 13
           },
           "6": {
             "away": 11,
@@ -2493,7 +2496,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-05T15:11:05.935949+00:00",
+  "updated": "2026-10-05T16:10:55.159903+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
