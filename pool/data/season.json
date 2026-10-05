@@ -1007,8 +1007,38 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Lions": [
+              "Walczyk",
+              "Brandon Goes Commando",
+              "B-rad",
+              "Josh",
+              "Marky Mark",
+              "Kara",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Andy R",
+              "Devin",
+              "Peggy",
+              "Andrew Clarke",
+              "Mike Sombloski",
+              "Tom",
+              "Derek",
+              "Nate V",
+              "Thom"
+            ],
+            "Panthers": [
+              "Mrs. Sombloski",
+              "Dan",
+              "Leah",
+              "Kaylani & Luka",
+              "Melissa",
+              "Ariel",
+              "Garret",
+              "Claude"
+            ]
+          },
           "tv": "NBC"
         },
         {
@@ -1050,7 +1080,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-10-01T12:49:19+00:00",
           "firstAt": "2026-10-01T12:49:19+00:00",
@@ -1091,7 +1122,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "Broncos"
+            "13": "Broncos",
+            "14": "Lions"
           },
           "filedAt": "2026-09-29T15:07:02+00:00",
           "firstAt": "2026-09-29T15:07:02+00:00",
@@ -1132,7 +1164,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-09-29T15:05:20+00:00",
           "firstAt": "2026-09-29T15:05:20+00:00",
@@ -1173,7 +1206,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-10-01T13:10:03+00:00",
           "firstAt": "2026-10-01T13:10:03+00:00",
@@ -1210,7 +1244,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Panthers"
           },
           "filedAt": "2026-10-01T02:26:10+00:00",
           "firstAt": "2026-10-01T02:26:10+00:00",
@@ -1248,7 +1283,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-10-02T00:05:37+00:00",
           "firstAt": "2026-10-02T00:05:37+00:00",
@@ -1290,7 +1326,8 @@
             "10": "Vikings",
             "11": "Raiders",
             "12": "Seahawks",
-            "13": "Broncos"
+            "13": "Broncos",
+            "14": "Lions"
           },
           "filedAt": "2026-09-29T23:36:35+00:00",
           "firstAt": "2026-09-29T23:36:35+00:00",
@@ -1327,7 +1364,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "Broncos"
+            "13": "Broncos",
+            "14": "Lions"
           },
           "filedAt": "2026-10-01T10:29:34+00:00",
           "firstAt": "2026-10-01T10:29:34+00:00",
@@ -1364,7 +1402,8 @@
             "10": "Vikings",
             "11": "Raiders",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-10-01T20:31:07+00:00",
           "firstAt": "2026-10-01T20:31:07+00:00",
@@ -1401,7 +1440,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-09-29T16:00:07+00:00",
           "firstAt": "2026-09-29T16:00:07+00:00",
@@ -1438,7 +1478,8 @@
             "10": "Vikings",
             "11": "Raiders",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-10-01T23:13:41+00:00",
           "firstAt": "2026-10-01T23:13:41+00:00",
@@ -1475,7 +1516,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-09-29T16:19:52+00:00",
           "firstAt": "2026-09-29T16:19:52+00:00",
@@ -1512,7 +1554,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-10-04T22:50:50+00:00",
           "firstAt": "2026-10-01T13:44:10+00:00",
@@ -1549,7 +1592,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-10-04T16:37:06+00:00",
           "firstAt": "2026-10-04T16:37:06+00:00",
@@ -1590,7 +1634,8 @@
             "10": "Vikings",
             "11": "Raiders",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-09-30T15:07:10+00:00",
           "firstAt": "2026-09-30T15:07:10+00:00",
@@ -1631,7 +1676,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Panthers"
           },
           "filedAt": "2026-09-29T12:24:58+00:00",
           "firstAt": "2026-09-29T12:24:58+00:00",
@@ -1672,7 +1718,8 @@
             "10": "Dolphins",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "Broncos"
+            "13": "Broncos",
+            "14": "Panthers"
           },
           "filedAt": "2026-09-29T01:40:00+00:00",
           "firstAt": "2026-09-29T01:40:00+00:00",
@@ -1704,7 +1751,8 @@
             "10": "Dolphins",
             "11": "Chiefs",
             "12": "Chargers",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-10-01T17:30:24+00:00",
           "firstAt": "2026-10-01T17:30:24+00:00",
@@ -1746,7 +1794,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Chargers",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Lions"
           },
           "filedAt": "2026-10-01T23:10:34+00:00",
           "firstAt": "2026-10-01T23:10:34+00:00",
@@ -1787,7 +1836,8 @@
             "10": "Vikings",
             "11": "Raiders",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Panthers"
           },
           "filedAt": "2026-09-29T20:43:21+00:00",
           "firstAt": "2026-09-29T20:43:21+00:00",
@@ -1829,7 +1879,8 @@
             "10": "Vikings",
             "11": "Raiders",
             "12": "Seahawks",
-            "13": "Broncos"
+            "13": "Broncos",
+            "14": "Panthers"
           },
           "filedAt": "2026-09-29T16:54:52+00:00",
           "firstAt": "2026-09-29T16:54:52+00:00",
@@ -1870,7 +1921,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "Broncos"
+            "13": "Broncos",
+            "14": "Lions"
           },
           "filedAt": "2026-10-04T04:42:41+00:00",
           "firstAt": "2026-10-04T04:42:41+00:00",
@@ -1915,7 +1967,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Chargers",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Panthers"
           },
           "filedAt": "2026-09-29T22:01:35+00:00",
           "firstAt": "2026-09-29T22:01:35+00:00",
@@ -1960,7 +2013,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "49ers"
+            "13": "49ers",
+            "14": "Panthers"
           },
           "filedAt": "2026-09-29T15:55:32+00:00",
           "firstAt": "2026-09-29T15:55:32+00:00",
@@ -2006,7 +2060,8 @@
             "10": "Vikings",
             "11": "Chiefs",
             "12": "Seahawks",
-            "13": "Broncos"
+            "13": "Broncos",
+            "14": "Panthers"
           },
           "filedAt": "2026-10-04T18:50:13+00:00",
           "firstAt": "2026-10-04T18:50:13+00:00",
@@ -2065,7 +2120,28 @@
       "pot": 0,
       "opensAt": "2026-09-29T01:40:00Z",
       "tbUsed": false,
-      "decides": [],
+      "decides": [
+        {
+          "game": 14,
+          "away": [
+            "Walczyk",
+            "Josh",
+            "Marky Mark",
+            "Amanda Rodgers",
+            "Andy R",
+            "Devin",
+            "Peggy",
+            "Mike Sombloski",
+            "Tom",
+            "Derek",
+            "Nate V",
+            "Thom"
+          ],
+          "home": [
+            "Dan"
+          ]
+        }
+      ],
       "updates": [
         {
           "at": "2026-10-02T03:59:55.460125+00:00",
@@ -2323,6 +2399,20 @@
             ],
             "upset": false,
             "rightN": 18
+          },
+          "14": {
+            "away": 17,
+            "home": 7,
+            "minority": "Panthers",
+            "minorityWho": [
+              "Mrs. Sombloski",
+              "Dan",
+              "Leah",
+              "Kaylani & Luka",
+              "Melissa",
+              "Ariel",
+              "Garret"
+            ]
           }
         },
         "upsets": 4,
@@ -2357,7 +2447,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-05T00:10:27.838749+00:00",
+  "updated": "2026-10-05T00:24:28.040568+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
