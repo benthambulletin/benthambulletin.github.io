@@ -1077,8 +1077,38 @@
           "score": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Falcons": [
+              "B-rad",
+              "Devin",
+              "Peggy",
+              "Leah",
+              "Melissa",
+              "Derek",
+              "Nate V"
+            ],
+            "Saints": [
+              "Walczyk",
+              "Mrs. Sombloski",
+              "Brandon Goes Commando",
+              "Josh",
+              "Marky Mark",
+              "Kara",
+              "Amanda Rodgers",
+              "Jeff G",
+              "Andy R",
+              "Dan",
+              "Andrew Clarke",
+              "Mike Sombloski",
+              "Kaylani & Luka",
+              "Tom",
+              "Ariel",
+              "Thom",
+              "Garret",
+              "Claude"
+            ]
+          },
           "tv": "ESPN/ABC"
         }
       ],
@@ -1092,7 +1122,7 @@
           "void": 0,
           "remaining": 1,
           "max": 12,
-          "tb": null,
+          "tb": 38,
           "sheet": {
             "0": "Browns",
             "1": "Colts",
@@ -1108,7 +1138,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Panthers"
+            "14": "Panthers",
+            "15": "Saints"
           },
           "filedAt": "2026-10-01T02:26:10+00:00",
           "firstAt": "2026-10-01T02:26:10+00:00",
@@ -1135,7 +1166,7 @@
           "void": 0,
           "remaining": 1,
           "max": 12,
-          "tb": null,
+          "tb": 47,
           "sheet": {
             "0": "Browns",
             "1": "Colts",
@@ -1151,7 +1182,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Falcons"
           },
           "filedAt": "2026-10-01T12:49:19+00:00",
           "firstAt": "2026-10-01T12:49:19+00:00",
@@ -1177,7 +1209,7 @@
           "void": 0,
           "remaining": 1,
           "max": 12,
-          "tb": null,
+          "tb": 38,
           "sheet": {
             "0": "Steelers",
             "1": "Colts",
@@ -1193,7 +1225,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "Broncos",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Falcons"
           },
           "filedAt": "2026-09-29T15:07:02+00:00",
           "firstAt": "2026-09-29T15:07:02+00:00",
@@ -1219,7 +1252,7 @@
           "void": 0,
           "remaining": 1,
           "max": 12,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Steelers",
             "1": "Commanders",
@@ -1235,7 +1268,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-09-29T15:05:20+00:00",
           "firstAt": "2026-09-29T15:05:20+00:00",
@@ -1261,7 +1295,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 54,
           "sheet": {
             "0": "Steelers",
             "1": "Colts",
@@ -1277,7 +1311,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-10-01T13:10:03+00:00",
           "firstAt": "2026-10-01T13:10:03+00:00",
@@ -1299,7 +1334,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 48,
           "sheet": {
             "0": "Browns",
             "1": "Commanders",
@@ -1315,7 +1350,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-10-02T00:05:37+00:00",
           "firstAt": "2026-10-02T00:05:37+00:00",
@@ -1342,7 +1378,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 47,
           "sheet": {
             "0": "Steelers",
             "1": "Colts",
@@ -1358,7 +1394,8 @@
             "11": "Raiders",
             "12": "Seahawks",
             "13": "Broncos",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-09-29T23:36:35+00:00",
           "firstAt": "2026-09-29T23:36:35+00:00",
@@ -1380,7 +1417,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 31,
           "sheet": {
             "0": "Browns",
             "1": "Colts",
@@ -1396,7 +1433,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "Broncos",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Falcons"
           },
           "filedAt": "2026-10-01T10:29:34+00:00",
           "firstAt": "2026-10-01T10:29:34+00:00",
@@ -1418,7 +1456,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 58,
           "sheet": {
             "0": "Browns",
             "1": "Colts",
@@ -1434,7 +1472,8 @@
             "11": "Raiders",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-10-01T20:31:07+00:00",
           "firstAt": "2026-10-01T20:31:07+00:00",
@@ -1460,7 +1499,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 38,
           "sheet": {
             "0": "Steelers",
             "1": "Colts",
@@ -1476,7 +1515,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Falcons"
           },
           "filedAt": "2026-09-29T16:00:07+00:00",
           "firstAt": "2026-09-29T16:00:07+00:00",
@@ -1502,7 +1542,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 44,
           "sheet": {
             "0": "Steelers",
             "1": "Colts",
@@ -1518,7 +1558,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Panthers"
+            "14": "Panthers",
+            "15": "Saints"
           },
           "filedAt": "2026-09-29T12:24:58+00:00",
           "firstAt": "2026-09-29T12:24:58+00:00",
@@ -1544,7 +1585,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 43,
           "sheet": {
             "0": "Browns",
             "1": "Colts",
@@ -1560,7 +1601,8 @@
             "11": "Raiders",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-10-01T23:13:41+00:00",
           "firstAt": "2026-10-01T23:13:41+00:00",
@@ -1586,7 +1628,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 37,
           "sheet": {
             "0": "Steelers",
             "1": "Colts",
@@ -1602,7 +1644,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-09-29T16:19:52+00:00",
           "firstAt": "2026-09-29T16:19:52+00:00",
@@ -1628,7 +1671,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 47,
           "sheet": {
             "0": "Browns",
             "1": "Commanders",
@@ -1644,7 +1687,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-10-04T22:50:50+00:00",
           "firstAt": "2026-10-01T13:44:10+00:00",
@@ -1670,7 +1714,7 @@
           "void": 2,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 31,
           "sheet": {
             "0": null,
             "1": null,
@@ -1686,7 +1730,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-10-04T16:37:06+00:00",
           "firstAt": "2026-10-04T16:37:06+00:00",
@@ -1712,7 +1757,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 50,
           "sheet": {
             "0": "Steelers",
             "1": "Colts",
@@ -1728,7 +1773,8 @@
             "11": "Raiders",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-09-30T15:07:10+00:00",
           "firstAt": "2026-09-30T15:07:10+00:00",
@@ -1754,7 +1800,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 41,
           "sheet": {
             "0": "Steelers",
             "1": "Commanders",
@@ -1770,7 +1816,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "Broncos",
-            "14": "Panthers"
+            "14": "Panthers",
+            "15": "Saints"
           },
           "filedAt": "2026-09-29T01:40:00+00:00",
           "firstAt": "2026-09-29T01:40:00+00:00",
@@ -1787,7 +1834,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 27,
           "sheet": {
             "0": "Browns",
             "1": "Colts",
@@ -1803,7 +1850,8 @@
             "11": "Raiders",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Panthers"
+            "14": "Panthers",
+            "15": "Saints"
           },
           "filedAt": "2026-09-29T20:43:21+00:00",
           "firstAt": "2026-09-29T20:43:21+00:00",
@@ -1830,7 +1878,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 36,
           "sheet": {
             "0": "Steelers",
             "1": "Colts",
@@ -1846,7 +1894,8 @@
             "11": "Raiders",
             "12": "Seahawks",
             "13": "Broncos",
-            "14": "Panthers"
+            "14": "Panthers",
+            "15": "Falcons"
           },
           "filedAt": "2026-09-29T16:54:52+00:00",
           "firstAt": "2026-09-29T16:54:52+00:00",
@@ -1872,7 +1921,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 56,
           "sheet": {
             "0": "Steelers",
             "1": "Colts",
@@ -1888,7 +1937,8 @@
             "11": "Chiefs",
             "12": "Chargers",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-10-01T17:30:24+00:00",
           "firstAt": "2026-10-01T17:30:24+00:00",
@@ -1919,7 +1969,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 39,
           "sheet": {
             "0": "Steelers",
             "1": "Colts",
@@ -1935,7 +1985,8 @@
             "11": "Chiefs",
             "12": "Chargers",
             "13": "49ers",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Saints"
           },
           "filedAt": "2026-10-01T23:10:34+00:00",
           "firstAt": "2026-10-01T23:10:34+00:00",
@@ -1965,7 +2016,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 52,
           "sheet": {
             "0": "Steelers",
             "1": "Commanders",
@@ -1981,7 +2032,8 @@
             "11": "Chiefs",
             "12": "Chargers",
             "13": "49ers",
-            "14": "Panthers"
+            "14": "Panthers",
+            "15": "Falcons"
           },
           "filedAt": "2026-09-29T22:01:35+00:00",
           "firstAt": "2026-09-29T22:01:35+00:00",
@@ -2011,7 +2063,7 @@
           "void": 1,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 48,
           "sheet": {
             "0": null,
             "1": "Commanders",
@@ -2027,7 +2079,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "Broncos",
-            "14": "Lions"
+            "14": "Lions",
+            "15": "Falcons"
           },
           "filedAt": "2026-10-05T18:17:10+00:00",
           "firstAt": "2026-10-04T04:42:41+00:00",
@@ -2057,7 +2110,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 50,
           "sheet": {
             "0": "Steelers",
             "1": "Commanders",
@@ -2073,7 +2126,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "49ers",
-            "14": "Panthers"
+            "14": "Panthers",
+            "15": "Saints"
           },
           "filedAt": "2026-09-29T15:55:32+00:00",
           "firstAt": "2026-09-29T15:55:32+00:00",
@@ -2104,7 +2158,7 @@
           "void": 10,
           "remaining": 1,
           "max": 5,
-          "tb": null,
+          "tb": 67,
           "sheet": {
             "0": null,
             "1": null,
@@ -2120,7 +2174,8 @@
             "11": "Chiefs",
             "12": "Seahawks",
             "13": "Broncos",
-            "14": "Panthers"
+            "14": "Panthers",
+            "15": "Saints"
           },
           "filedAt": "2026-10-04T18:50:13+00:00",
           "firstAt": "2026-10-04T18:50:13+00:00",
@@ -2179,7 +2234,23 @@
       "pot": 0,
       "opensAt": "2026-09-29T01:40:00Z",
       "tbUsed": false,
-      "decides": [],
+      "decides": [
+        {
+          "game": 15,
+          "away": [
+            "Devin",
+            "Peggy",
+            "Nate V"
+          ],
+          "home": [
+            "Josh",
+            "Andy R",
+            "Dan",
+            "Mike Sombloski",
+            "Thom"
+          ]
+        }
+      ],
       "updates": [
         {
           "at": "2026-10-02T03:59:55.460125+00:00",
@@ -2462,6 +2533,20 @@
             ],
             "upset": true,
             "rightN": 7
+          },
+          "15": {
+            "away": 7,
+            "home": 17,
+            "minority": "Falcons",
+            "minorityWho": [
+              "B-rad",
+              "Devin",
+              "Peggy",
+              "Leah",
+              "Melissa",
+              "Derek",
+              "Nate V"
+            ]
           }
         },
         "upsets": 5,
@@ -2496,7 +2581,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-05T23:10:06.232094+00:00",
+  "updated": "2026-10-06T00:21:03.770591+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
