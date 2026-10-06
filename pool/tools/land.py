@@ -15,7 +15,16 @@ for attempt in range(1, 4):
         sh("git", "add", "pool")
         if sh("git", "diff", "--cached", "--quiet", check=False).returncode:
             sh("git", "commit", "-q", "-m", msg + "\n\nCo-Authored-By: Claude <noreply@anthropic.com>")
-        sh("git", "pull", "-q", "--rebase", "origin", "main")
+        # every build stamps page.json/index.html and score.py stamps season.json, so two runs always touch the
+        # same lines; on a clash keep this run's side (-X theirs = the commit being replayed), then rebuild from the
+        # merged data so the generated files match it
+        sh("git", "pull", "-q", "--rebase", "-X", "theirs", "origin", "main")
+        sh("python3", "pool/build.py")
+        sh("git", "add", "pool")
+        if sh("git", "diff", "--cached", "--quiet", check=False).returncode:
+            ahead = sh("git", "rev-list", "--count", "origin/main..HEAD").stdout.strip() != "0"
+            if ahead: sh("git", "commit", "-q", "--amend", "--no-edit")      # fold into this run's own commit
+            else: sh("git", "commit", "-q", "-m", msg + "\n\nCo-Authored-By: Claude <noreply@anthropic.com>")
         sh("git", "push", "-q", "origin", "HEAD:main")
         sha = sh("git", "rev-parse", "--short", "HEAD").stdout.strip()
         remote = sh("git", "ls-remote", "origin", "refs/heads/main").stdout.split()[0][:len(sha)]
