@@ -17,7 +17,7 @@ Rules (fixed, do not reinterpret):
 - Names: trimmed, case-insensitive, then mapped through season.aliases (lowercase key -> display name).
 - Picks are only written to season.json for games that have kicked off. Future picks never leave this script.
 - Paid weeks (wk.buyIn > 0): only players with a recorded $buyIn payment (ok or manual) can win the week, the crown,
-  or the pot; everyone still plays and is ranked by record. Pot = buyIn x paid players with a sheet.
+  or the pot; everyone still plays and is ranked by record. Pot = buyIn x paid players (during the week, filed or not; at --final, paid sheets only — no sheet means refund).
   --venmo venmo.json = [{id, at, payer, amount, note, dkim}] written by the run from Gmail; payer and note never
   reach season.json (only id, at, amt, who, status). Matching is deterministic: note first, then payer.
 """
@@ -245,7 +245,7 @@ def main():
         else:
             for p in real: p["state"] = "alive"
     else:
-        eligible = real
+        eligible = real; paid = set()
         for p in players: p.pop("paid", None)
 
     # what decides it: remaining games where the contenders split
@@ -332,8 +332,11 @@ def main():
                 if p["correct"] == worst: award(p, "cellar", "last place this week")
     wk["players"] = players
     wk["trash"] = trash
-    wk["pot"] = buy * len(eligible) if buy else 0
-    wk["paidN"] = len(eligible) if buy else 0
+    # during the week the pot counts everyone who has paid, filed or not (people pay first, then file);
+    # at --final it is paid sheets only — a payment with no sheet is refunded
+    npaid = len(eligible) if final else len(paid)
+    wk["pot"] = buy * npaid if buy else 0
+    wk["paidN"] = npaid if buy else 0
     wk["decides"] = decides[:4]
     wk["weekWinners"], wk["weekPayout"], wk["tbUsed"] = [], 0, False
 
