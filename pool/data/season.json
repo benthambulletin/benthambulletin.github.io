@@ -2887,6 +2887,24 @@
           "badges": []
         },
         {
+          "name": "Ryan Holovics",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-06T15:14:19+00:00",
+          "firstAt": "2026-10-06T15:14:19+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Thom",
           "house": false,
           "correct": 0,
@@ -2926,8 +2944,8 @@
       "column": "Week 5 is open, it costs five bucks now, and the only sheet on file belongs to the house, which can't win. Twenty-four of you played last week. Zero of you have shown up. Devin, the reigning champ, is apparently still taking a victory lap off a 12–4 tiebreaker. Nate V, you lost that tiebreaker by nine points; redemption is one form away. Mike Sombloski, the man who went 1–4 down the stretch, has until Thursday 8:15 to prove it was a fluke. Bucs at Dallas locks first. Clock's running.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 20,
-      "paidN": 4,
+      "pot": 25,
+      "paidN": 5,
       "buyIn": 5,
       "payBy": "2026-10-09T00:15:00Z",
       "payments": [
@@ -2944,6 +2962,14 @@
           "at": "2026-10-06T12:44:27Z",
           "amt": "5.00",
           "who": "Devin",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a111c88ba3d2e4d",
+          "at": "2026-10-06T15:15:16Z",
+          "amt": "5.00",
+          "who": "Ryan Holovics",
           "status": "ok",
           "told": null
         }
@@ -2981,7 +3007,7 @@
       }
     }
   },
-  "updated": "2026-10-06T14:35:01.379387+00:00",
+  "updated": "2026-10-06T15:52:21.100569+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
