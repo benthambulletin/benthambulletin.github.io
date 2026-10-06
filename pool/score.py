@@ -99,7 +99,8 @@ def record_payments(season, wk, items, known):
             continue
         if who and row["status"] != "odd":
             if amt is None or abs(amt - buy) > 0.001: row["status"] = "odd"
-            elif any((x["who"] or "").lower() == who.lower() and x["status"] in ("ok", "manual") for x in pays): row["status"] = "dup"
+            elif any((x["who"] or "").lower() == who.lower() and x["status"] in ("ok", "manual") for x in pays) \
+                 or who.lower() in {n.lower() for n in season.get("autoPaid", [])}: row["status"] = "dup"   # already covered
             elif payby and at and at > payby: row["status"] = "late"
             else: row["status"] = "ok"
         if row["status"] == "unmatched" and retold.get(row["id"]): row["told"] = retold[row["id"]]

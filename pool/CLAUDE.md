@@ -47,16 +47,18 @@ https://benthambulletin.github.io/pool/ (rules at `/pool/about/`, receipt at `/p
   Otherwise send nothing, except the messages a Run section below asks for.
 
 ## Shared steps (the Run sections refer to these)
-**S1 Submissions.** `fetch_submissions` RGOakJ, limit 200; save the whole result verbatim to `/home/claude/subs.json`
-with the Write tool (never inside the repo).
+**S1 Submissions.** `fetch_submissions` RGOakJ with `filter: {startDate: <the week's opensAt>, status: "completed"}`,
+`limit: 500`; if `hasMore` is true, fetch the next pages too and merge every page's `submissions` into one list. Save
+`{"data": {"submissions": [...all of them...]}}` to `/home/claude/subs.json` with the Write tool (never in the repo).
 
 **S2 Scores.** For every current-week game that has kicked off with `winner` null, get its state (sports data tool
 first; else ESPN/NFL.com scoreboard). FINAL → `winner` (nickname exactly as in the slate, or `TIE`) and `score` like
 `24–17`, remove `live`/`liveAt`. IN PROGRESS → `live` (leader first: "Bills 17–14 · 3rd qtr", "Tied 7–7 · 2nd qtr",
 "Halftime · Bills 10–7") and `liveAt` (UTC ISO). Not reliable → leave `live` out. Never guess a score.
 
-**S3 Payments** (the week's `buyIn` > 0). Gmail `search_threads`:
-`from:venmo@venmo.com subject:"paid you" after:<opensAt date minus one day, YYYY/MM/DD>`.
+**S3 Payments** (the week's `buyIn` > 0). Gmail `search_threads` with `pageSize: 50` (follow `pageToken` until there
+are no more pages): `from:venmo@venmo.com subject:"paid you" after:<opensAt date minus one day, YYYY/MM/DD>`.
+Each payment is normally its own thread; if a thread shows more than one message, `get_thread` it so none is missed.
 Payer and amount come from each subject ("<Payer> paid you $X"); `get_message` with messageFormat **PLAIN_TEXT**
 for the note. **Never fetch RAW** (too big; it stalled the unattended runs on Oct 6). `dkim` = true for every hit
 not in spam (venmo.com rejects spoofed mail). Write `/home/claude/venmo.json` (never in the repo):
@@ -77,8 +79,11 @@ whiffed, homer who got taxed). Sealed rule applies. Trash talk prints automatica
 or comment on it. Never say who has or hasn't paid; in paid weeks only paid sheets can win.
 
 ## Run: REFRESH (hourly at :07, 8 am–11 pm) — task "hourly refresh"
-Stop if the week is `final`. S1, S2, S3, S4, S5. **Column:** write it (S6) only (a) if it's empty and someone has
-filed, (b) on the **8:07 a.m.** run every day (under 100 words; before kickoff: who filed, who from last week hasn't,
+Stop if the week is `final` — except on Tuesday after 8 a.m. ET: if the next week still isn't set up, alert Garret once
+("Week N+1 isn't up — the new-week run didn't land") and stop. S1, S2, S3, S4, S5. **Column:** write it (S6) only
+(a) if it's empty and someone has filed, or before the first kickoff when the number of real sheets has changed
+since it was written (store that count in `weeks.N.columnN`), (b) on the **8:07 a.m.** run (= the first run that starts
+in the 8 a.m. ET hour; session clocks are UTC) every day (under 100 words; before kickoff: who filed, who from last week hasn't,
 trash talk; after: standings, who got the decided games right/wrong, who's bleeding, what's next), or (c) on **Monday
 night** while the last game is on or just final (every run, under 120 words: score and quarter, who wins if it ended
 now — record, then tiebreaker, paid sheets only — who's still in the hunt and what each needs, then once final the
@@ -146,7 +151,10 @@ game, just send the message.
    mugshot is up; never picks or payments; keep the links). **Page 2:** un-hide every game TITLE and slot heading,
    then rewrite each game title "Away at Home — Day time · NETWORK", its two options (away first), and the
    tiebreaker title "Total combined points in <Mon away> at <Mon home>". Byes: the form must have exactly as many
-   game questions as games (remove extras with `remove_questions`, keep `form.questions.games` in slate order).
+   game questions as games. Fewer games: remove extras with `remove_questions`. More games than questions: add a
+   game question (`create_blocks`: TITLE + two MULTIPLE_CHOICE_OPTION, on page 2 after the last game) — then submit
+   nothing; read its short question id from `fetch_submissions` → `questions` (labels match titles) — and put it into
+   `form.questions.games` in slate order. Either way, rebuild the redirect (g0..gN, t, n LAST) and read it back.
    The redirect on completion uses question uuids (g0..gN, then t, then n LAST); it survives text edits — rebuild
    and read it back only if a game question was added or removed. Keep `form.questions.paid`. `publish_form` once.
 5. Odd kickoffs (not Thu 8:15, Sun 9:30/1:00/4:05/4:25/8:20, Mon 8:15): create a one-off kickoff-lock task at
@@ -163,6 +171,10 @@ https://benthambulletin.github.io/pool/"
   automatically the moment they file** (Garret pays for both). `season.covers`: **Tom pays $10 for Tom and Thom** —
   a $10 payment from Tom books $5 to each. Cash: add a `manual` row only when Garret says so in chat.
   The form's "Paid / Playing free" answer is only the player's claim; it never makes anyone paid.
+  If an auto-paid person also Venmos $5, score.py marks it `dup` (refund).
+- **Teaching a payer name:** when Garret says "$X from <Venmo name> is <pool name>", set
+  `venmoNames[score.vhash(<Venmo name>)] = <pool name>` (the hash only, never the Venmo name) and land; the
+  unmatched row is re-matched on the next run.
 - Matching (score.py): note first, then payer (hashed alias, exact name, unique first name); unmatched rows are
   retried every run. Statuses: ok, late (after payBy → refund), dup (refund one), odd (wrong amount), unmatched,
   early (before the week opened), nosheet (paid, never filed → refund, set at final).
@@ -176,8 +188,8 @@ Top to bottom: double rule + "The Sunday Tax" → tabs (Standings · Make picks 
 line, one grey subline: countdown before kickoff; the score while one game is on; "N games live" with the Bills/Jets
 scores; the leader between games; 45 min before the last game "N still alive"; Monday night "If it ended now" + what
 each result means; the champion when final) → red "Make your picks" button (hidden when nothing's left to pick) →
-next lock line + calendar link → **pot line "This week's pot: $X · N paid · Venmo @Garret-Bentham"** (Venmo link
-until the deadline) → **"Week N champ · Name · record (tiebreaker) · won $X"** line (during the week, not on the
+next lock line + calendar link → **pot line "This week's pot: $X · N paid · Venmo @Garret-Bentham"** (the Venmo
+part shows until the Thursday deadline, then the line is just pot and paid count) → **"Week N champ · Name · record (tiebreaker) · won $X"** line (during the week, not on the
 final board) → the Mugshot box. Then, before any game is final: This Week's Games, Column, Trash Talk, Who's In
 (names with ✓, Claude listed last as House, key "✓ = paid"); once a game is final: Standings (top 5 + "All N ›";
 winner ranks 1 at the final; leader highlight only for paid sheets; key "✓ = paid"), Trash Talk, This Week's Games,
