@@ -2873,7 +2873,14 @@
         "jets": null
       },
       "decidedAtLastRun": 0,
-      "outAtLastRun": []
+      "outAtLastRun": [],
+      "face": {
+        "photo": "/pool/faces/w5.jpg",
+        "who": "Garret",
+        "by": "Devin",
+        "week": 4,
+        "line": ""
+      }
     }
   },
   "updated": "2026-10-06T12:34:23.662057+00:00",
