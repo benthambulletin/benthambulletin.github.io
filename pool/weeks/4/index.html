@@ -542,7 +542,7 @@ var sealedN=D.games.filter(function(g){return g.status==="sealed";}).length;
 if(!ps.length){
   h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
 } else if(!decidedN&&D.status!=="final"){
-  h+='<div class="hint">'+realPs.length+' in · picks stay <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a></div>';
+  h+='<div class="hint">'+realPs.length+' in'+(D.buyIn>0?' · <span class="pd" style="margin:0">✓</span> = paid':'')+' · picks stay <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a></div>';
   var hseP=ps.filter(function(p){return p.house;})[0];   /* the house sheet is filed when the week opens; list it last */
   h+='<p class="filed" style="text-align:center">'+(realPs.length?realPs.map(function(p){return '<span class="nm2">'+esc(p.name)+PD(p)+'</span>';}).join(" · "):'Nobody yet.')+(hseP?'<br><span class="nm2">'+esc(hseP.name)+'</span> <span class="tag house">House</span>':'')+'</p>';
 } else {
@@ -552,7 +552,7 @@ if(!ps.length){
   var beats=function(q,p){if(isW(q)!==isW(p)) return isW(q);   /* the week's winner ranks first on the final board */
     return q.correct>p.correct||(q.correct===p.correct&&(q.missed<p.missed||(q.missed===p.missed&&isW(q)&&!isW(p))));};
   var dispRank=function(p){return 1+realPs.filter(function(q){return beats(q,p);}).length;};
-  h+='<div class="hint">Tap a name for their picks</div>';
+  h+='<div class="hint">Tap a name for their picks'+(D.buyIn>0?' · <span class="pd" style="margin:0">✓</span> = paid':'')+'</div>';
   var TOPN=5;
   ps.forEach(function(p,pi){
     if(pi===TOPN&&ps.length>TOPN+1) h+='<details class="tmore smore" id="smore"'+(window.SMORE?' open':'')+'><summary>All '+ps.length+' ›</summary>';
