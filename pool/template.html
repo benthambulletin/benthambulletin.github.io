@@ -434,7 +434,18 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
         line='If it ended now: <b>'+win.map(function(p){return esc(p.name);}).join(' &amp; ')+'</b>'+(front.length>1&&md<1e9?' on the tiebreaker':'');
       }
       var race=front.filter(function(p){return p.tb!=null;}).sort(function(a,b){return dist(a)-dist(b);}).slice(0,4);
-      if(race.length>1) line+='<br><a class="ruleref" href="/pool/about/#tiebreak">Tiebreaker</a> · total <b>'+tot+'</b> · '+race.map(function(p){var d=p.tb-tot;return esc(p.name)+' '+p.tb+' ('+(d>0?d+' to go':d===0?'dead on':(-d)+' past')+')';}).join(' · ');
+      if(line) line+=' · total <b>'+tot+'</b>';
+      /* what each result means: who's left if each team wins, and the total each one needs */
+      var scen=[g.away,g.home].map(function(T){
+        var pr=function(p){var pk=p.sheet&&p.sheet[String(gi)];return p.correct+(pk===T?1:0);};
+        var mx=Math.max.apply(null,alive.map(pr)), who=alive.filter(function(p){return pr(p)===mx&&p.tb!=null;}).sort(function(a,b){return a.tb-b.tb;});
+        if(!who.length) return '';
+        if(who.length===1) return '<b>'+esc(T)+' win:</b> '+esc(who[0].name);
+        return '<b>'+esc(T)+' win:</b> '+who.map(function(p,i){
+          var lo=i>0?Math.floor((who[i-1].tb+p.tb)/2)+1:null, hi=i<who.length-1?Math.ceil((p.tb+who[i+1].tb)/2)-1:null;
+          return esc(p.name)+' ('+p.tb+(lo==null?', ≤'+hi:hi==null?', '+lo+'+':', '+lo+'–'+hi)+')';}).join(' vs ');
+      }).filter(Boolean);
+      if(scen.length) line+='<br>'+scen.join('<br>');
       if(line) sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+'<br>':'')+line;
     }
   } else if(inplay.length>1){
