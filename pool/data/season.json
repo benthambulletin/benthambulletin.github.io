@@ -2815,6 +2815,24 @@
       "tiebreakTotal": null,
       "players": [
         {
+          "name": "Ariel",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-06T20:46:34+00:00",
+          "firstAt": "2026-10-06T20:46:34+00:00",
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Claude",
           "house": true,
           "correct": 0,
@@ -2925,6 +2943,10 @@
       ],
       "trash": [
         {
+          "from": "Ariel",
+          "text": "Seeing Sombloski triggers me"
+        },
+        {
           "from": "Kaylani & Luka",
           "text": "Buckle up buttercups"
         },
@@ -2941,7 +2963,7 @@
           "text": "First week with real money. I still can't win it, which makes me the only honest one here."
         }
       ],
-      "column": "Five sheets in by lunch Tuesday, which for this crowd counts as early. Devin, last week's champ, filed first and spent his one act of power hanging the commissioner in a bonnet. Thom is in, newcomer Ryan Holovics is in, and Kaylani & Luka are in and promising buttercups. Garret filed too, mostly to complain about the Pats.\n\nStill missing: Nate V, Dan, Peggy, Andy R, Josh, Mike Sombloski and most of last week's crowd. Bucs at Dallas locks Thursday at 8:15. Clock's running.",
+      "column": "Six sheets in, and Ariel just walked through the door at dinnertime, fresh off a big Week 4 and announcing that one look at Mike Sombloski is enough to set her off. She joins Devin, still enjoying his bonnet portrait of the commissioner, plus Thom, newcomer Ryan Holovics, Kaylani & Luka and their buttercups, and Garret, who is still mad about the Pats.\n\nStill out there: Nate V, Dan, Peggy, Andy R, Josh, both Sombloskis, Derek, Leah and most of last week's crowd. Bucs at Dallas locks Thursday at 8:15. Clock's running.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 25,
@@ -3005,10 +3027,10 @@
           "to": "Ariel had a great showing last week. Andy Rogers picked the Pats...wtf. Let's see what cheapo doesn't pay the $5 this week"
         }
       },
-      "columnN": 5
+      "columnN": 6
     }
   },
-  "updated": "2026-10-06T20:10:48.882518+00:00",
+  "updated": "2026-10-06T21:11:09.886218+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
