@@ -268,6 +268,13 @@ details.tmore summary{list-style:none;cursor:pointer;font-family:'AR';font-weigh
 details.tmore summary::-webkit-details-marker{display:none}
 details.smore>summary{text-align:center}
 details.smore[open]>summary{display:none}
+details.gmore>summary{text-align:center}
+details.gmore[open]>summary{display:none}
+.whoin{list-style:none;margin:0 auto;padding:0;max-width:22rem}
+.whoin li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.4rem 0;border-bottom:1px dotted var(--rule);font-size:1.02rem}
+.whoin .pst{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.whoin .pst.ok{color:var(--ink)}
+.colhd{font-family:'PF';font-weight:800;font-size:1.35rem;line-height:1.2;text-align:center;margin:0 0 .8rem}
 </style>
 </head>
 <body>
@@ -275,7 +282,7 @@ details.smore[open]>summary{display:none}
   <div class="dbl"><div class="a"></div><div class="b"></div></div>
   <h1 id="poolName">The Sunday Tax</h1>
   <div class="dbl tight"><div class="a"></div><div class="b"></div></div>
-  <nav class="tabs" aria-label="The Sunday Tax"><a class="on" aria-current="page" href="/pool/">Standings</a><a class="go" href="https://tally.so/r/RGOakJ">Make picks</a><a href="/pool/about/">Rules</a></nav>
+  <nav class="tabs" aria-label="The Sunday Tax"><a class="on" aria-current="page" href="/pool/">The Board</a><a class="go" href="https://tally.so/r/RGOakJ">Make picks</a><a href="/pool/about/">Rules</a></nav>
 
   <div id="ack"></div>
   <div class="now">
@@ -283,8 +290,8 @@ details.smore[open]>summary{display:none}
     <div class="nl" id="nowL"></div>
     <div class="ns" id="nowS"></div>
     <a class="cta" id="cta" href="#">Make your picks</a>
-    <div class="nn" id="nowN" hidden></div>
     <div class="nn" id="potN" hidden></div>
+    <div class="nn" id="nowN" hidden></div>
   </div>
   <div class="lastw" id="lastW" hidden></div>
   <div id="mug"></div>
@@ -317,7 +324,7 @@ function tick(){
 }
 setInterval(tick,30000);
 /* live scores: a GitHub job publishes ESPN's scoreboard to the pool-live branch every ~5 minutes */
-document.addEventListener('toggle',function(e){if(e.target&&e.target.id==='smore')window.SMORE=e.target.open;},true);
+document.addEventListener('toggle',function(e){if(e.target&&e.target.id==='smore')window.SMORE=e.target.open;if(e.target&&e.target.id==='gmore')window.GMORE=e.target.open;},true);
 var LIVE_URL="https://raw.githubusercontent.com/benthambulletin/benthambulletin.github.io/pool-live/live.json", LV=null;
 function applyLive(){
   if(!LV||LV.week!==D.week||!LV.games) return;
@@ -403,6 +410,7 @@ if(D.status==="pre"){$("cta").textContent="Make your picks";}
 if(D.status==="live"){$("cta").textContent="Make your picks";}
 $("cta").hidden=(D.status!=="final"&&!openN&&!D.archive);
 
+$("fresh").style.display=D.archive?"":"none";
 if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="/pool/";$("cta").classList.add("quiet");$("fresh").textContent="Week "+D.week+" is in the books.";}
 
 /* the hero: the one thing to know right now, then the next deadline with a live countdown */
@@ -416,7 +424,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
   var L=etop>0?EP.filter(function(p){return p.correct===etop;}):[];
   var leadTxt=!L.length?'':(L.length===1?'<b>'+esc(L[0].name)+'</b> leads at <b>'+L[0].correct+'–'+L[0].missed+'</b>':'<b>'+L.length+(D.buyIn>0?' paid':'')+' tied</b> at the top, <b>'+etop+'</b> right');
   var left=D.games.filter(function(g){return !g.winner;}).length;
-  var k="", v="", sub="";
+  var k="", v="", sub="", isCd=false;
   if(D.status==="final"){
     var W=D.weekWinners||[];
     k=W.length>1?'Week '+D.week+' · split':'Week '+D.week+' champion';
@@ -482,22 +490,24 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     v=L.length===1?esc(L[0].name):L.length+'-way tie'+(D.buyIn>0?' (paid)':'');
     sub=(L.length===1?'<b>'+L[0].correct+'–'+L[0].missed+'</b>':'at <b>'+etop+'</b> right')+' · <b>'+left+'</b> game'+(left===1?'':'s')+' to go';
   } else if(open.length){
-    k='Picks lock in';
+    var payDue=D.buyIn>0&&D.payBy&&Date.parse(D.payBy)>now; isCd=true;
+    k=payDue?'Payment due · first kickoff':'First kickoff';
     v='<span class="cd" data-until="'+esc(open[0].kickoff)+'"></span>';
-    sub=esc(open[0].away)+' at '+esc(open[0].home)+' · '+esc(fmtWhen(open[0].kickoff))+' · <b>'+entrants+'</b> in so far';
+    sub=esc(open[0].away)+' at '+esc(open[0].home)+' · '+esc(fmtWhen(open[0].kickoff))+(D.buyIn>0?'':' · <b>'+entrants+'</b> in so far');
   } else { k='Week '+D.week; v='All games kicked off'; sub=leadTxt; }
   $("nowK").innerHTML=k; $("nowL").innerHTML=v; $("nowS").innerHTML=sub;
   /* next deadline, unless the hero already is the countdown */
   var nn=$("nowN");
   if(open.length&&!D.archive&&D.status!=="final"){
     var g2=open[0];
-    nn.innerHTML=k==="Picks lock in"?'<a href="/pool/week.ics">Add the deadline to your calendar</a>':'Next lock '+esc(fmtWhen(g2.kickoff))+' · <span class="cd" data-until="'+esc(g2.kickoff)+'"></span> · <a href="/pool/week.ics">add to calendar</a>';
+    nn.innerHTML=(isCd?'':'Next lock '+esc(fmtWhen(g2.kickoff))+' · <span class="cd" data-until="'+esc(g2.kickoff)+'"></span><br>')+
+      'Each game locks at its own kickoff. <a href="'+esc(D.formUrl)+'">Resubmit</a> to change games that haven’t started. · <a href="/pool/week.ics">Add to calendar</a>';
     nn.hidden=false;
   } else nn.hidden=true;
   var pn=$("potN");
   if(D.buyIn>0&&!D.archive){
     var payOpen=D.payBy&&Date.parse(D.payBy)>now;
-    pn.innerHTML='This week’s pot: <b>'+money(pot)+'</b> · '+(D.paidN||0)+' paid'+(payOpen&&D.venmoUrl?' · <a href="'+esc(D.venmoUrl)+'">Venmo '+esc(D.venmo||'')+'</a>':'');
+    pn.innerHTML='<b>'+entrants+'</b> in · <b>'+(D.paidN||0)+'</b> paid · <b>'+money(pot)+'</b> pot'+(payOpen&&D.venmoUrl?' · <a href="'+esc(D.venmoUrl)+'">Venmo '+esc(D.venmo||'')+'</a>':'');
     pn.hidden=false;
   } else pn.hidden=true;
   tick();
@@ -538,13 +548,17 @@ var secs={};
 var decidedN=D.games.filter(function(g){return g.winner;}).length;
 /* board */
 h+='<a id="board"></a>'+orn(decidedN||D.status==="final"?"Standings":"Who’s In");
+if(!D.archive){var ut=Date.parse(D.updated), um=isNaN(ut)?0:Math.round((Date.now()-ut)/60000);
+  h+='<div class="hint">Updated '+esc(fmtWhen(D.updated).replace(/^\w+ /,""))+(um>90?' ('+(um<120?'1 hr':Math.round(um/60)+' hrs')+' ago)':'')+' · refreshes hourly 8 AM–11 PM'+(D.status==="final"?'':' · live scores every 2 min during games')+'</div>';}
 var sealedN=D.games.filter(function(g){return g.status==="sealed";}).length;
 if(!ps.length){
   h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
 } else if(!decidedN&&D.status!=="final"){
-  h+='<div class="hint">'+realPs.length+' in'+(D.buyIn>0?' · <span class="pd" style="margin:0">✓</span> = paid':'')+' · picks stay <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a></div>';
+  h+='<div class="hint">Picks received from everyone below · <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a></div>';
   var hseP=ps.filter(function(p){return p.house;})[0];   /* the house sheet is filed when the week opens; list it last */
-  h+='<p class="filed" style="text-align:center">'+(realPs.length?realPs.map(function(p){return '<span class="nm2">'+esc(p.name)+PD(p)+'</span>';}).join(" · "):'Nobody yet.')+(hseP?'<br><span class="nm2">'+esc(hseP.name)+'</span> <span class="tag house">House</span>':'')+'</p>';
+  var payOpenW=D.payBy&&Date.parse(D.payBy)>Date.now();
+  var pst=function(p){if(!(D.buyIn>0)) return ''; return p.paid?'<span class="pst ok">Paid</span>':'<span class="pst">'+(payOpenW?'Payment pending':'Playing free')+'</span>';};
+  h+='<ul class="whoin">'+(realPs.length?realPs.map(function(p){return '<li><span>'+esc(p.name)+'</span>'+pst(p)+'</li>';}).join(""):'<li>Nobody yet.</li>')+(hseP?'<li><span>'+esc(hseP.name)+'</span><span class="tag house">House</span></li>':'')+'</ul>';
 } else {
   var dots=function(p){var o='';D.games.forEach(function(g,i){if(g.status==="sealed")return;var pk=p.sheet?p.sheet[String(i)]:null;
       o+='<i class="'+(!pk?'':!g.winner?'p':g.winner==="TIE"?'':(pk===g.winner?'ok':'no'))+'" title="'+esc(g.away)+' at '+esc(g.home)+'"></i>';});return o?'<span class="dots">'+o+'</span>':'';};
@@ -552,10 +566,10 @@ if(!ps.length){
   var beats=function(q,p){if(isW(q)!==isW(p)) return isW(q);   /* the week's winner ranks first on the final board */
     return q.correct>p.correct||(q.correct===p.correct&&(q.missed<p.missed||(q.missed===p.missed&&isW(q)&&!isW(p))));};
   var dispRank=function(p){return 1+realPs.filter(function(q){return beats(q,p);}).length;};
-  h+='<div class="hint">Tap a name for their picks'+(D.buyIn>0?' · <span class="pd" style="margin:0">✓</span> = paid':'')+'</div>';
+  h+='<div class="hint">Tap a name for their picks'+(D.buyIn>0?' · <span class="pd" style="margin:0">✓</span> = paid · only paid sheets can win':'')+'</div>';
   var TOPN=5;
   ps.forEach(function(p,pi){
-    if(pi===TOPN&&ps.length>TOPN+1) h+='<details class="tmore smore" id="smore"'+(window.SMORE?' open':'')+'><summary>All '+ps.length+' ›</summary>';
+    if(pi===TOPN&&ps.length>TOPN+1) h+='<details class="tmore smore" id="smore"'+(window.SMORE?' open':'')+'><summary>Show all '+realPs.length+' players'+(ps.length>realPs.length?' + the house':'')+' ›</summary>';
     var lead=!p.house&&p.correct>0&&dispRank(p)===1&&(!(D.buyIn>0)||p.paid);
     var mv=p.delta>0?'<span class="mv up">▲'+p.delta+'</span>':(p.delta<0?'<span class="mv dn">▼'+(-p.delta)+'</span>':'');
     var tag=p.house?'<span class="tag house">House</span>':D.status==="final"?'':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
@@ -589,6 +603,7 @@ secs.board=h; h="";
 /* slate */
 h+='<a id="slate"></a>'+orn("This Week’s Games",true);
 h+='<div class="hint">All times Eastern'+(D.games.some(function(g){return g.status!=="sealed"&&g.sides;})?' · tap a started game for who picked whom':'')+'</div>';
+h+='<details class="tmore gmore" id="gmore"'+(window.GMORE?' open':'')+'><summary>See all '+D.games.length+' games ›</summary>';
 var lastSlot="";
 D.games.forEach(function(g,i){
   var slot=(g.when||"").replace(/\s+\d{1,2}:\d{2}\s*[AP]M.*$/,"").replace(/^(Sun|Mon|Thu|Sat)\b/,function(m){return {Sun:"Sunday",Mon:"Monday",Thu:"Thursday",Sat:"Saturday"}[m];});
@@ -618,11 +633,11 @@ D.games.forEach(function(g,i){
     h+='<div class="g"><div class="m">'+m+'</div>'+s+'</div>';
   }
 });
-
+h+='</details>';
 secs.games=h; h="";
 /* column */
 if(D.column){
-  h+='<a id="column"></a>'+orn("The Column")+'<div class="col">';
+  h+='<a id="column"></a>'+orn("The Column")+'<div class="col">'+(D.columnHead?'<div class="colhd">'+esc(D.columnHead)+'</div>':'');
   D.column.split(/\n\n+/).slice(0,2).forEach(function(p){h+='<p>'+esc(p)+'</p>';});
   h+='</div>';
 }
@@ -631,7 +646,7 @@ secs.column=h; h="";
 if(D.trash.length){
   var TT=D.trash.slice().reverse(), li=function(t){return '<li>“'+esc(t.text)+'”<b>'+esc(t.from)+'</b></li>';};
   h+=orn("Trash Talk")+'<ul class="tt">'+TT.slice(0,3).map(li).join('')+'</ul>';
-  if(TT.length>3) h+='<details class="tmore"><summary>All '+TT.length+' ›</summary><ul class="tt">'+TT.slice(3).map(li).join('')+'</ul></details>';
+  if(TT.length>3) h+='<details class="tmore"><summary>Show all '+TT.length+' ›</summary><ul class="tt">'+TT.slice(3).map(li).join('')+'</ul></details>';
 }
 secs.trash=h; h="";
 
@@ -649,10 +664,12 @@ if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
 
 /* season */
 if(D.season_table.length){
-h+=orn("The Season",true);
-  var ss=D.season_table.slice().sort(function(a,b){return (b.won-a.won)||(b.correct-a.correct)||a.name.localeCompare(b.name);});
-  h+='<table class="stand seas"><thead><tr><th>Player</th><th>Right</th><th>Wrong</th><th>Weeks won</th>'+(D.anyPaid?'<th>Won</th>':'')+'</tr></thead><tbody>';
-  ss.forEach(function(p,i){h+='<tr><td class="nm"><span class="rk">'+(i+1)+'</span>'+esc(p.name)+'</td><td>'+p.correct+'</td><td>'+p.missed+'</td><td>'+(p.weeksWon||"—")+'</td>'+(D.anyPaid?'<td class="money">'+(p.won?money(p.won):"—")+'</td>':'')+'</tr>';});
+h+=orn("The Season",true)+(D.seasonFrom>1?'<div class="hint">Since Week '+D.seasonFrom+', when the board started keeping score</div>':'');
+  var scmp=function(a,b){return (b.won-a.won)||(b.weeksWon-a.weeksWon)||(b.correct-a.correct)||(a.missed-b.missed);};
+  var ss=D.season_table.slice().sort(function(a,b){return scmp(a,b)||a.name.localeCompare(b.name);});
+  var srk=function(p){return 1+ss.filter(function(q){return scmp(q,p)<0;}).length;}, stied=function(p){return ss.some(function(q){return q!==p&&scmp(q,p)===0;});};
+  h+='<table class="stand seas"><thead><tr><th>Player</th><th>Right</th><th>Wrong</th><th>Weeks won</th>'+(D.anyPaid?'<th>Winnings</th>':'')+'</tr></thead><tbody>';
+  ss.forEach(function(p,i){h+='<tr><td class="nm"><span class="rk">'+(stied(p)?'T':'')+srk(p)+'</span>'+esc(p.name)+'</td><td>'+p.correct+'</td><td>'+p.missed+'</td><td>'+(p.weeksWon||"—")+'</td>'+(D.anyPaid?'<td class="money">'+(p.won?money(p.won):"—")+'</td>':'')+'</tr>';});
   h+='</tbody></table>';
 }
 
@@ -663,7 +680,7 @@ if(D.pastWeeks&&D.pastWeeks.length){
 /* how it works */
 h+='<div class="more"><a href="/pool/about/">How it works</a><br>The rules, what the badges mean, and who Claude is.</div>';
 
-var order=(decidedN||D.status==="final")?[secs.board,secs.trash,secs.games,secs.column]:[secs.games,secs.column,secs.trash,secs.board];
+var order=[secs.board,secs.column,secs.trash,secs.games];
 $("root").innerHTML=order.join("")+h;
 }
 render();

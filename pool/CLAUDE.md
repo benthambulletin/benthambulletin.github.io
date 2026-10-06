@@ -73,8 +73,10 @@ has passed and whose TITLE block isn't hidden, `configure_blocks` visibility isH
 (Thursday / Sunday early / Sunday afternoon / Prime time) once every game under it is hidden; `publish_form` if you
 hid anything. Never hide an unplayed game. Never touch page 1, the tiebreaker, trash talk or form settings.
 
-**S6 Column** (only when the Run section says to). `weeks.N.column`, wise-ass commissioner's voice, names names,
-two short paragraphs max. Build it from score.py's output and `weeks.N.stats` (contrarian who hit, room that
+**S6 Column** (only when the Run section says to). `weeks.N.column` plus `weeks.N.columnHead` (a headline, eight words max,
+no picks), wise-ass commissioner's voice, names names, two short paragraphs max. Lead with the best story (a
+tiebreaker, a collapse, a lone dissenter, the mugshot); the roll of who's in lives in Who's In, so at most one short
+line on who hasn't filed. Build it from score.py's output and `weeks.N.stats` (contrarian who hit, room that
 whiffed, homer who got taxed). Sealed rule applies. Trash talk prints automatically under it — never edit, soften
 or comment on it. Never say who has or hasn't paid; in paid weeks only paid sheets can win.
 
@@ -83,8 +85,8 @@ Stop if the week is `final` — except on Tuesday after 8 a.m. ET: if the next w
 ("Week N+1 isn't up — the new-week run didn't land") and stop. S1, S2, S3, S4, S5. **Column:** write it (S6) only
 (a) if it's empty and someone has filed, or before the first kickoff when the number of real sheets has changed
 since it was written (store that count in `weeks.N.columnN`), (b) on the **8:07 a.m.** run (= the first run that starts
-in the 8 a.m. ET hour; session clocks are UTC) every day (under 100 words; before kickoff: who filed, who from last week hasn't,
-trash talk; after: standings, who got the decided games right/wrong, who's bleeding, what's next), or (c) on **Monday
+in the 8 a.m. ET hour; session clocks are UTC) every day (under 100 words; before kickoff: the best story among who filed and
+the trash talk, one line at most on who hasn't; after: standings, who got the decided games right/wrong, who's bleeding, what's next), or (c) on **Monday
 night** while the last game is on or just final (every run, under 120 words: score and quarter, who wins if it ended
 now — record, then tiebreaker, paid sheets only — who's still in the hunt and what each needs, then once final the
 winner and how). Otherwise leave the column alone.
@@ -184,16 +186,20 @@ https://benthambulletin.github.io/pool/"
   Garret; only paid players can win and the pot goes to the highest-ranked paid player.
 
 ## The board (design locked Oct 2; additions only when Garret asked)
-Top to bottom: double rule + "The Sunday Tax" → tabs (Standings · Make picks · Rules) → hero (grey kicker, one big
-line, one grey subline: countdown before kickoff; the score while one game is on; "N games live" with the Bills/Jets
+Top to bottom (reworked Oct 6 from an outside review Garret sent): double rule + "The Sunday Tax" → tabs (The Board · Make picks · Rules) → hero (grey kicker, one big
+line, one grey subline: before kickoff the kicker reads "Payment due · first kickoff" (paid weeks, until payBy) or "First kickoff", over a countdown; the score while one game is on; "N games live" with the Bills/Jets
 scores; the leader between games; 45 min before the last game "N still alive"; Monday night "If it ended now" + what
 each result means; the champion when final) → red "Make your picks" button (hidden when nothing's left to pick) →
-next lock line + calendar link → **pot line "This week's pot: $X · N paid · Venmo @Garret-Bentham"** (the Venmo
-part shows until the Thursday deadline, then the line is just pot and paid count) → **"Week N champ · Name · record (tiebreaker) · won $X"** line (during the week, not on the
-final board) → the Mugshot box. Then, before any game is final: This Week's Games, Column, Trash Talk, Who's In
-(names with ✓, Claude listed last as House, key "✓ = paid"); once a game is final: Standings (top 5 + "All N ›";
-winner ranks 1 at the final; leader highlight only for paid sheets; key "✓ = paid"), Trash Talk, This Week's Games,
-Column. Then By the Numbers, The Season, Past Weeks, How it works, updated line, sign-off "— G.".
+**status line "N in · N paid · $X pot · Venmo @Garret-Bentham"** (Venmo part until the Thursday deadline) → lock line
+"Each game locks at its own kickoff. Resubmit to change games that haven't started. · Add to calendar" (plus the next
+lock countdown once games have started) → **"Week N champ · Name · record (tiebreaker) · won $X"** line (during the week, not on the
+final board) → the Mugshot box. Then always: the board (before any game is final "Who's In" — one row per sheet with "Paid", "Payment pending"
+(before payBy) or "Playing free", Claude last as House; once a game is final "Standings" — top 5 + "Show all N
+players ›", winner ranks 1 at the final, leader highlight only for paid sheets, key "✓ = paid · only paid sheets can
+win"), with the "Updated <time> · refreshes hourly 8 AM–11 PM · live scores every 2 min during games" line under
+its heading → The Column (headline + text) → Trash Talk → This Week's Games, collapsed behind "See all N games ›".
+Then By the Numbers, The Season ("Since Week 4" note, tied ranks shown as T, money column "Winnings"), Past Weeks,
+How it works, sign-off "— G." (the bottom updated line shows only on frozen past-week pages).
 Finals read "Bears 23–12" (winner named). Game rows never read like a score. All times Eastern.
 **Color:** ink/grey text; red only for the picks button, live dot, live scores, wrong-pick dots; teal only for
 right-pick dots. **Eight badges, no more:** crown, cellar (Porta Potty), wolf, homer, coin, dead, buzzer, streak;
