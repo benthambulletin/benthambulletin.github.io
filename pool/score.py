@@ -41,7 +41,12 @@ def vhash(name):
 def record_payments(season, wk, items, known):
     """Add new Venmo payments to wk['payments']. known = {lowercase name or alias -> display name}."""
     pays = wk.setdefault("payments", [])
+    # an unmatched payment gets matched again every run (the payer may have filed or been aliased since)
+    retold = {x["id"]: x.get("told") for x in pays if x["status"] == "unmatched"}
+    pays[:] = [x for x in pays if x["status"] != "unmatched"]
     seen = {x["id"] for x in pays}
+    for ow in season["weeks"].values():   # a payment already booked to another week stays there
+        if ow is not wk: seen |= {x["id"] for x in ow.get("payments", [])}
     buy = wk.get("buyIn", 0)
     vnames = season.get("venmoNames", {})
     opens = P(wk["opensAt"]) if wk.get("opensAt") else None
@@ -76,15 +81,18 @@ def record_payments(season, wk, items, known):
             h = vhash(payer) if payer else None
             if h and h in vnames: who = vnames[h]
             elif payer.lower() in known: who = known[payer.lower()]
-            elif payer and payer.split()[0].lower() in known and len(firsts.get(payer.split()[0].lower(), ())) == 1:
-                who = known[payer.split()[0].lower()]
+            elif payer:
+                f1 = re.sub(r"[^a-z0-9&']+", "", payer.split()[0].lower())
+                if len(firsts.get(f1, ())) == 1: who = next(iter(firsts[f1]))
         row["who"] = who
         if who and row["status"] != "odd":
             if amt is None or abs(amt - buy) > 0.001: row["status"] = "odd"
-            elif any(x["who"] == who and x["status"] in ("ok", "manual") for x in pays): row["status"] = "dup"
+            elif any((x["who"] or "").lower() == who.lower() and x["status"] in ("ok", "manual") for x in pays): row["status"] = "dup"
             elif payby and at and at > payby: row["status"] = "late"
             else: row["status"] = "ok"
+        if row["status"] == "unmatched" and retold.get(row["id"]): row["told"] = retold[row["id"]]
         pays.append(row)
+    pays.sort(key=lambda x: x.get("at") or "")
     return pays
 
 def main():
@@ -224,8 +232,9 @@ def main():
         for k, v in aliases.items(): known[k] = v
         for p in real: known[p["name"].lower()] = p["name"]
         if venmo is not None: record_payments(season, wk, venmo, known)
-        paid = {x["who"] for x in wk.get("payments", []) if x["status"] in ("ok", "manual")}
-        for p in players: p["paid"] = (not p.get("house")) and p["name"] in paid
+        canon = lambda nm: aliases.get(str(nm or "").strip().lower(), str(nm or "").strip()).lower()
+        paid = {canon(x["who"]) for x in wk.get("payments", []) if x["status"] in ("ok", "manual")}
+        for p in players: p["paid"] = (not p.get("house")) and canon(p["name"]) in paid
         eligible = [p for p in real if p["paid"]]
         if eligible:
             elead = max(p["correct"] for p in eligible)
@@ -332,9 +341,10 @@ def main():
     if final:
         if decided < len(games): sys.exit(f"--final but only {decided}/{len(games)} games have a winner")
         if buy and wk.get("payments") is not None:
-            sheets = {p["name"] for p in real}
+            canon = lambda nm: aliases.get(str(nm or "").strip().lower(), str(nm or "").strip()).lower()
+            sheets = {canon(p["name"]) for p in real}
             for x in wk["payments"]:
-                if x["status"] == "ok" and x["who"] not in sheets: x["status"] = "nosheet"
+                if x["status"] == "ok" and canon(x["who"]) not in sheets: x["status"] = "nosheet"
         if eligible:
             best = max(p["correct"] for p in eligible)
             lead = [p for p in eligible if p["correct"] == best]
@@ -350,6 +360,16 @@ def main():
             wk["weekWinners"] = [p["name"] for p in lead]
             wk["weekPayout"] = int(wk["pot"] * 100 / len(lead)) / 100
             for p in lead: award(p, "crown", "won the week" + (" on the tiebreaker" if wk["tbUsed"] else ""))
+            # the week's winner ranks first on the final board; everyone else keeps record order behind them
+            W = set(wk["weekWinners"])
+            players.sort(key=lambda p: (p["name"] not in W, -p["correct"], p["missed"], p["name"]))
+            rank = 0
+            for i, p in enumerate(players):
+                key = (p["name"] in W, p["correct"], p["missed"])
+                prev = (players[i-1]["name"] in W, players[i-1]["correct"], players[i-1]["missed"]) if i else None
+                if p["name"] in W: rank = 1
+                elif key != prev: rank = i + 1
+                p["rank"] = rank
         wk["status"] = "final"
     else:
         wk["status"] = "live" if (decided or any(g.get("status") != "sealed" for g in wk["games"])) else "pre"
@@ -401,6 +421,10 @@ def main():
         print(f"PAY: pot ${wk['pot']:g} · {wk['paidN']} paid · " + ", ".join(f"{k} {v}" for k, v in sorted(c.items())))
         need = [x for x in pays if x["status"] in ("odd", "unmatched", "dup", "late", "early", "nosheet") and not x.get("told")]
         for x in need: print(f"  NEEDS GARRET: {x['status']} id={x['id']} who={x['who']} amt={x['amt']}")
+        if final:
+            for x in pays:
+                if x["status"] in ("late", "nosheet", "dup"): print(f"  REFUND: {x['status']} who={x['who']} amt={x['amt']} id={x['id']}")
+                elif x["status"] in ("unmatched", "odd", "early"): print(f"  UNRESOLVED: {x['status']} who={x['who']} amt={x['amt']} id={x['id']}")
     if trash: print("TRASH:", *[f"{t['from']}: {t['text']}" for t in trash], sep="\n  ")
 
 if __name__ == "__main__": main()

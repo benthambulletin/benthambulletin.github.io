@@ -76,7 +76,12 @@ def render(page): return tpl.replace("/*DATA*/", json.dumps(page, ensure_ascii=F
 
 # past weeks: every final week except the one on the board gets its own frozen page at /pool/weeks/<N>/
 past = sorted([int(k) for k, w in season["weeks"].items() if w.get("status") == "final" and k != n], reverse=True)
-past = [{"week": k, "winners": season["weeks"][str(k)].get("weekWinners", [])} for k in past]
+def _champ(k):
+    w = season["weeks"][str(k)]; W = w.get("weekWinners", [])
+    wp = next((p for p in w.get("players", []) if p["name"] in W), None)
+    return {"week": k, "winners": W, "record": f"{wp['correct']}–{wp['missed']}" if wp else None,
+            "tbUsed": w.get("tbUsed", False), "payout": w.get("weekPayout", 0) if w.get("buyIn", 0) else 0}
+past = [_champ(k) for k in past]
 for pw in past:
     k = str(pw["week"]); os.makedirs(f"{HERE}/weeks/{k}", exist_ok=True)
     open(f"{HERE}/weeks/{k}/index.html", "w").write(render(make_page(k, season["weeks"][k], archive=True)))
