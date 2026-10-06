@@ -1109,7 +1109,9 @@
               "Claude"
             ]
           },
-          "tv": "ESPN/ABC"
+          "tv": "ESPN/ABC",
+          "live": "Falcons 14–0 · End of 1st",
+          "liveAt": "2026-10-06T01:10:27Z"
         }
       ],
       "tiebreakTotal": null,
@@ -2228,7 +2230,7 @@
           "text": "I think I met Derek in a porta potty"
         }
       ],
-      "column": "The sheets are open and the week is a four-man knife fight. Dan and Thom rode the Saints; Devin and Nate V took the Falcons. Whichever side wins, it's two guys and a number. Saints: Dan at 38, Thom at 45, so 41 or fewer goes to Dan. Falcons: Nate V at 38, Devin at 47, and Nate holds it through 42.\n\nThe room went 18–7 for New Orleans, so if Atlanta pulls it off, most of you get to watch Nate and Devin argue over a field goal. Andy R, Josh, Mike Sombloski and Peggy need a tie. Mrs. Sombloski guessed 67 points. Optimism is a lifestyle.",
+      "column": "Falcons 14–0 after one quarter in New Orleans, and the Saints crowd is getting quiet. If it ended now, Nate V wins the week at 12–4: he and Devin both ride Atlanta, and Nate's 38 sits closer to 14 than Devin's 47. Devin needs this one to turn into a shootout — 43 or more combined and the week is his.\n\nSaints side: Dan and Thom need a comeback. Win it with 41 or fewer and it's Dan; 42 or more and it's Thom. Peggy picked Atlanta too, but she's a game short. Andy R, Josh and Mike Sombloski are along for the ride. Three quarters to go.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 0,
@@ -2581,7 +2583,7 @@
       "tbLockAt": "2026-10-02T00:15:00Z"
     }
   },
-  "updated": "2026-10-06T00:21:03.770591+00:00",
+  "updated": "2026-10-06T01:10:27.354047+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
