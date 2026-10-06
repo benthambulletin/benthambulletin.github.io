@@ -2839,14 +2839,23 @@
           "text": "First week with real money. I still can't win it, which makes me the only honest one here."
         }
       ],
-      "column": "",
+      "column": "Week 5 is open, it costs five bucks now, and the only sheet on file belongs to the house, which can't win. Twenty-four of you played last week. Zero of you have shown up. Devin, the reigning champ, is apparently still taking a victory lap off a 12–4 tiebreaker. Nate V, you lost that tiebreaker by nine points; redemption is one form away. Mike Sombloski, the man who went 1–4 down the stretch, has until Thursday 8:15 to prove it was a fluke. Bucs at Dallas locks first. Clock's running.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 0,
       "paidN": 0,
       "buyIn": 5,
       "payBy": "2026-10-09T00:15:00Z",
-      "payments": [],
+      "payments": [
+        {
+          "id": "1a111177fe9f83d0",
+          "at": "2026-10-06T12:01:54Z",
+          "amt": "5.00",
+          "who": "Ariel",
+          "status": "ok",
+          "told": null
+        }
+      ],
       "opensAt": "2026-10-06T11:44:52Z",
       "tbUsed": false,
       "decides": [],
@@ -2867,7 +2876,7 @@
       "outAtLastRun": []
     }
   },
-  "updated": "2026-10-06T11:45:38.913420+00:00",
+  "updated": "2026-10-06T12:28:17.945859+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
