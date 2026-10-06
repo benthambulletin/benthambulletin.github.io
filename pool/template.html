@@ -683,7 +683,7 @@ h+=orn("The Season",true)+(D.seasonFrom>1?'<div class="hint">Since Week '+D.seas
 
 /* past weeks */
 if(D.pastWeeks&&D.pastWeeks.length){
-  h+=orn("Past Weeks")+'<div class="pastwk">'+D.pastWeeks.map(function(w){return '<a href="/pool/weeks/'+w.week+'/">Week '+w.week+(w.winners&&w.winners.length?' · '+esc(w.winners.join(" & ")):'')+'</a>';}).join('<br>')+'</div>';
+  h+=orn("Past Weeks")+'<div class="hint">Every finished week, with its final board</div><div class="pastwk">'+D.pastWeeks.slice().reverse().map(function(w){return '<a href="/pool/weeks/'+w.week+'/">Week '+w.week+(w.winners&&w.winners.length?': '+esc(w.winners.join(" & "))+' won'+(w.record?', '+esc(w.record):'')+(w.tbUsed?' on the tiebreaker':''):'')+' · see the board ›</a>';}).join('<br>')+'</div>';
 }
 /* how it works */
 h+='<div class="more"><a href="/pool/about/">How it works</a><br>The rules, what the badges mean, and who Claude is.</div>';
