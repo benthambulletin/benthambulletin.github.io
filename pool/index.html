@@ -315,7 +315,7 @@ var LIVE_URL="https://raw.githubusercontent.com/benthambulletin/benthambulletin.
 function applyLive(){
   if(!LV||LV.week!==D.week||!LV.games) return;
   Object.keys(LV.games).forEach(function(k){var g=D.games[+k], r=LV.games[k]; if(!g||g.winner) return;
-    if(r.state==="in"&&r.line){g.live=r.line; g.liveAt=LV.updated; g.status="live"; g.liveFinal=null;}
+    if(r.state==="in"&&r.line){g.live=r.line; g.liveAt=LV.updated; if(g.status!=="sealed") g.status="live"; g.liveFinal=null;}  /* a sealed game stays sealed until the build reveals its sides */
     else if(r.state==="post"&&r.line){g.liveFinal=r.line; g.live=null;}});
   /* count ESPN finals right away: records move the minute a game ends; the next Claude run confirms them */
   D.players.forEach(function(p){ if(p._c===undefined){p._c=p.correct;p._m=p.missed;} p.correct=p._c; p.missed=p._m; });
@@ -560,7 +560,7 @@ D.games.forEach(function(g,i){
     m='<span class="'+(aw?'w':'')+'">'+esc(g.away)+'</span> <span class="at">at</span> <span class="'+(aw?'':'w')+'">'+esc(g.home)+'</span>';
     s='<span class="s fin">'+(g.score?esc(g.winner)+' '+esc(g.score):'Final')+'</span>';}
   else if(g.liveFinal){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s fin">'+esc(g.liveFinal)+'</span>';}
-  else if(g.status==="live"){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s live">'+(g.live?esc(g.live):'Live')+'</span>';}
+  else if(g.status==="live"||(g.status==="sealed"&&g.live)){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s live">'+(g.live?esc(g.live):'Live')+'</span>';}
   else {m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s">'+esc(time)+(g.tv?' · <b class="tv">'+esc(g.tv)+'</b>':'')+'</span>';}
   if(g.status!=="sealed"&&g.sides){
     var notHouse=function(n){return !ps.some(function(p){return p.house&&p.name===n;});};
