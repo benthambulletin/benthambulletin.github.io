@@ -37,3 +37,4 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - Oct 2, No. 100 — the hundredth edition; Luka bedtime cover added after publish (Garret, 7:25); Family Today ask box now points to the Tally form.
 - Oct 3, No. 101 — Friday night football sunset cover (Garret, 7:03).
 - Oct 4, No. 102 — Luka doctor cover from spool (Garret, Sat 3 p.m.); month-in-migraine Spotlight run; October voice and palette in force.
+- Oct 6, No. 104 — Luka stairs cover from spool; first Sunday Tax box (Week 5, Devin won Week 4).
