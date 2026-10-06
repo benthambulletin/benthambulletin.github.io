@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="The Sunday Tax — a free NFL pick 'em. Pick every game straight up, talk your trash, lose your face.">
+<meta name="description" content="The Sunday Tax — a weekly NFL pick 'em. Pick every game straight up, talk your trash, lose your face.">
 <meta property="og:title" content="The Sunday Tax">
 <meta property="og:description" content="Pick every game. Talk your trash. Lose your face. Standings, live scores and the column.">
 <meta property="og:image" content="https://benthambulletin.github.io/pool/og.png">
@@ -25,21 +25,24 @@
 *{box-sizing:border-box}
 html{background:#ece4d1}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:'LO',Georgia,serif;-webkit-text-size-adjust:100%;font-variant-numeric:tabular-nums}
-.page{max-width:30rem;margin:0 auto;padding:.9rem 1rem 2rem}
-.snap{text-align:center;font-family:'AR';font-weight:800;font-size:.9rem;letter-spacing:.06em;color:var(--red);padding:.55rem .6rem;border:2px dashed var(--red);border-radius:4px;margin-bottom:.8rem}
-.card{border:3px double var(--ink);background:#fffaf0;padding:.8rem .9rem .7rem}
+.page{max-width:30rem;margin:0 auto;padding:.6rem .85rem 1rem}
+.snap{text-align:center;font-family:'AR';font-weight:800;font-size:.78rem;letter-spacing:.05em;color:var(--red);padding:.3rem .5rem;border:2px dashed var(--red);border-radius:4px;margin-bottom:.55rem}
+.card{border:3px double var(--ink);background:#fffaf0;padding:.6rem .8rem .55rem}
 .k{font-family:'AR';font-weight:800;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);display:flex;justify-content:space-between}
-h1{font-family:'PF';font-weight:800;font-size:1.65rem;line-height:1.1;margin:.25rem 0 .1rem}
-.when{font-family:'AR';font-size:.72rem;color:var(--soft);letter-spacing:.04em;margin-bottom:.5rem}
+h1{font-family:'PF';font-weight:800;font-size:1.4rem;line-height:1.1;margin:0}
+.hd{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;margin:.15rem 0 .35rem}
+.when{font-family:'AR';font-size:.66rem;color:var(--soft);letter-spacing:.03em;white-space:nowrap}
 table{width:100%;border-collapse:collapse}
-td{padding:.28rem 0;border-top:1px dotted var(--rule);font-size:.88rem;line-height:1.2;vertical-align:baseline}
+td{padding:.14rem 0;border-top:1px dotted var(--rule);font-size:.76rem;line-height:1.2;vertical-align:baseline}
 td.m{color:var(--soft)}
-td.p{text-align:right;font-family:'PF';font-weight:800;font-size:1rem;color:var(--red);white-space:nowrap;padding-left:.6rem}
-td.p.x{font-family:'LOI';font-style:italic;font-weight:400;font-size:.8rem;color:var(--soft)}
+td.p{text-align:right;font-family:'PF';font-weight:800;font-size:.88rem;color:var(--red);white-space:nowrap;padding-left:.6rem}
+td.p.x{font-family:'LOI';font-style:italic;font-weight:400;font-size:.72rem;color:var(--soft)}
 tr.tb td{border-top:2px solid var(--ink)}
-.foot{font-family:'AR';font-size:.68rem;color:var(--soft);margin-top:.55rem;line-height:1.5;text-align:center}
-.btns{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:1rem}
-.btns a{display:block;text-align:center;text-decoration:none;font-family:'AR';font-weight:800;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:.8rem .4rem;border-radius:3px}
+.foot{font-family:'AR';font-size:.62rem;color:var(--soft);margin-top:.4rem;line-height:1.4;text-align:center}
+.pay{font-family:'AR';font-size:.72rem;color:var(--ink);margin:.55rem 0 0;line-height:1.4;text-align:center}
+.pay a{color:var(--ink);font-weight:800}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:.6rem}
+.btns a{display:block;text-align:center;text-decoration:none;font-family:'AR';font-weight:800;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:.85rem .4rem;border-radius:3px;min-height:44px}
 .b1{background:var(--red);color:#fff}.b2{border:1px solid var(--ink);color:var(--ink)}
 .empty{text-align:center;font-family:'LOI';font-style:italic;color:var(--soft);padding:1.5rem 0}
 </style>
@@ -74,19 +77,21 @@ function draw(D){
   if(!S){ R.innerHTML='<div class="empty">No sheet here. Submit the picks form and you’ll land back on this page with your receipt.</div><div class="btns"><a class="b1" href="'+FORM+'">Make picks</a><a class="b2" href="/pool/">Standings</a></div>'; return; }
   var games=(D&&D.games)||[], wk=D&&D.week;
   if(S.blank){ R.innerHTML='<div class="card" style="text-align:center"><div class="k" style="justify-content:center">The Sunday Tax'+(wk?' · Week '+wk:'')+'</div><h1>Sheet received.</h1><div class="foot" style="font-size:.85rem">Your picks are in and sealed until each kickoff. Changed your mind? Submit again — your latest sheet before a game starts is the one that counts.</div></div><div class="btns"><a class="b1" href="/pool/">See the standings</a><a class="b2" href="'+FORM+'">Change my picks</a></div>'; return; }
-  h+='<div class="snap">📸 Screenshot this page — it’s your receipt.</div>';
+  h+='<div class="snap">📸 Screenshot this — it’s your receipt.</div>';
   h+='<div class="card"><div class="k"><span>The Sunday Tax</span><span>'+(wk?'Week '+wk:'')+'</span></div>';
-  h+='<h1>'+(S.name?esc(S.name)+'’s sheet':'Your sheet')+'</h1><div class="when">Viewed '+esc(et(new Date(S.at)))+'</div><table>';
+  h+='<div class="hd"><h1>'+(S.name?esc(S.name)+'’s sheet':'Your sheet')+'</h1><div class="when">'+esc(et(new Date(S.at)))+'</div></div><table>';
   if(games.length){
     games.forEach(function(g,i){var pk=S.picks[String(i)];
       h+='<tr><td class="m">'+esc(g.away)+' at '+esc(g.home)+'</td>'+(pk?'<td class="p">'+esc(pk)+'</td>':'<td class="p x">already kicked off</td>')+'</tr>';});
     var mnf=games[games.length-1];
-    if(S.tb) h+='<tr class="tb"><td class="m">Tiebreaker · '+esc(mnf.away)+' at '+esc(mnf.home)+' total</td><td class="p">'+esc(S.tb)+'</td></tr>';
+    if(S.tb) h+='<tr class="tb"><td class="m">Tiebreaker · total points, '+esc(mnf.away)+' at '+esc(mnf.home)+'</td><td class="p">'+esc(S.tb)+'</td></tr>';
   } else {
     Object.keys(S.picks).sort(function(a,b){return a-b;}).forEach(function(i){if(S.picks[i]) h+='<tr><td class="m">Game '+(+i+1)+'</td><td class="p">'+esc(S.picks[i])+'</td></tr>';});
     if(S.tb) h+='<tr class="tb"><td class="m">Tiebreaker</td><td class="p">'+esc(S.tb)+'</td></tr>';
   }
-  h+='</table><div class="foot">Sealed until each kickoff. Your latest sheet before a game starts is the one that counts.</div></div>';
+  h+='</table><div class="foot">Sealed until kickoff. Your latest sheet before each game counts.</div></div>';
+  if(D&&D.buyIn>0&&D.venmoUrl){var pb=D.payBy?new Date(D.payBy):null;
+    if(!pb||pb>new Date()) h+='<p class="pay">Haven’t paid? <a href="'+esc(D.venmoUrl)+'">Venmo '+esc(D.venmo||'')+' $'+esc(D.buyIn)+'</a>'+(pb?' before '+esc(pb.toLocaleString("en-US",{weekday:"short",hour:"numeric",minute:"2-digit",timeZone:"America/New_York"}))+' ET':'')+' — unpaid sheets can’t win.</p>';}
   h+='<div class="btns"><a class="b1" href="/pool/">See the standings</a><a class="b2" href="'+FORM+'">Change my picks</a></div>';
   R.innerHTML=h;
 }
