@@ -284,7 +284,7 @@ is on `about/`.
 Latest submission before each game's kickoff counts for that game. Submitted after a game starts →
 that game void, rest count. Tied game → nobody. Winner = most correct; tie → closest to MNF combined
 total; still tied → split. Blank tiebreaker = worst guess. Skipping a week is free. All trash talk is
-published exactly as written.
+published exactly as written. Only exception: the author asks for a fix — then set `weeks.N.trashFix = {name: {"from": exact text, "to": fixed}}` (score.py swaps it only while that exact text stands).
 
 ## Board check (added Oct 4)
 `python3 pool/tools/check_board.py` renders the built board at phone width twice — with the live

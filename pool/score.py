@@ -212,7 +212,11 @@ def main():
                         "sheet": {str(k): v for k, v in sheet.items()},
                         "filedAt": lst[-1]["at"].isoformat(), "firstAt": lst[0]["at"].isoformat()})
         t = lst[-1]["r"].get(q["trash"])
-        if t and str(t).strip(): trash.append({"from": name, "text": clean_text(t)})
+        if t and str(t).strip():
+            tt = clean_text(t)
+            fx = (wk.get("trashFix") or {}).get(name)   # the author asked for a typo fix; only while that exact text stands
+            if fx and fx.get("from") == tt: tt = fx["to"]
+            trash.append({"from": name, "text": tt})
 
     # ranks (ties share a rank), movement, alive/out/clinched
     players.sort(key=lambda p: (-p["correct"], p["missed"], p["name"]))
