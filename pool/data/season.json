@@ -2912,7 +2912,7 @@
         },
         {
           "from": "Garret",
-          "text": "Ariel had a great showing last week. Andy Rogers kicker the Pats...wtf. Let's see what cheapo doesn't pay the $5 this week"
+          "text": "Ariel had a great showing last week. Andy Rogers picked the Pats...wtf. Let's see what cheapo doesn't pay the $5 this week"
         },
         {
           "from": "Devin",
@@ -2972,10 +2972,16 @@
         "by": "Devin",
         "week": 4,
         "line": ""
+      },
+      "trashFix": {
+        "Garret": {
+          "from": "Ariel had a great showing last week. Andy Rogers kicker the Pats...wtf. Let's see what cheapo doesn't pay the $5 this week",
+          "to": "Ariel had a great showing last week. Andy Rogers picked the Pats...wtf. Let's see what cheapo doesn't pay the $5 this week"
+        }
       }
     }
   },
-  "updated": "2026-10-06T13:15:25.371318+00:00",
+  "updated": "2026-10-06T13:25:59.645387+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
