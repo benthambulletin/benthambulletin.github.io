@@ -2883,7 +2883,7 @@
       }
     }
   },
-  "updated": "2026-10-06T12:34:23.662057+00:00",
+  "updated": "2026-10-06T12:53:57.012450+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -2891,5 +2891,8 @@
     "note": "House entry. Picks are drawn at random when the week opens, seeded from the week number, and sealed like everyone else's. Not eligible to win the week."
   },
   "venmoNames": {},
-  "venmoUrl": "https://venmo.com/Garret-Bentham?txn=pay&amount=5&note=Sunday%20Tax"
+  "venmoUrl": "https://venmo.com/Garret-Bentham?txn=pay&amount=5&note=Sunday%20Tax",
+  "autoPaid": [
+    "Garret"
+  ]
 }

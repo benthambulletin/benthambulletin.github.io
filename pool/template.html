@@ -543,7 +543,8 @@ if(!ps.length){
   h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
 } else if(!decidedN&&D.status!=="final"){
   h+='<div class="hint">'+realPs.length+' in · picks stay <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a></div>';
-  h+='<p class="filed" style="text-align:center">'+(realPs.length?realPs.map(function(p){return '<span class="nm2">'+esc(p.name)+PD(p)+'</span>';}).join(" · "):'Nobody yet.')+'</p>';
+  var hseP=ps.filter(function(p){return p.house;})[0];   /* the house sheet is filed when the week opens; list it last */
+  h+='<p class="filed" style="text-align:center">'+(realPs.length?realPs.map(function(p){return '<span class="nm2">'+esc(p.name)+PD(p)+'</span>';}).join(" · "):'Nobody yet.')+(hseP?'<br><span class="nm2">'+esc(hseP.name)+'</span> <span class="tag house">House</span>':'')+'</p>';
 } else {
   var dots=function(p){var o='';D.games.forEach(function(g,i){if(g.status==="sealed")return;var pk=p.sheet?p.sheet[String(i)]:null;
       o+='<i class="'+(!pk?'':!g.winner?'p':g.winner==="TIE"?'':(pk===g.winner?'ok':'no'))+'" title="'+esc(g.away)+' at '+esc(g.home)+'"></i>';});return o?'<span class="dots">'+o+'</span>':'';};
