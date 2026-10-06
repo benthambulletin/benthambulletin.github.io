@@ -56,7 +56,10 @@ def _iso(u):
 def make_page(k, w, archive=False):
     return {
         "name": season["name"], "season": season["season"], "formUrl": season["form"]["url"],
-        "buyIn": season["buyIn"], "plannedBuyIn": season.get("plannedBuyIn", 5), "week": int(k), "status": w.get("status", "pre"),
+        "buyIn": w.get("buyIn", 0), "plannedBuyIn": season.get("plannedBuyIn", 5),
+        "pot": w.get("pot", 0), "paidN": w.get("paidN", 0), "payBy": w.get("payBy"),
+        "venmo": season.get("venmo"), "venmoUrl": season.get("venmoUrl"),
+        "anyPaid": any(x.get("buyIn", 0) for x in season["weeks"].values()), "week": int(k), "status": w.get("status", "pre"),
         "updated": _iso(season.get("updated", "")), "games": w["games"],
         "tiebreakTotal": w.get("tiebreakTotal"), "tbUsed": w.get("tbUsed", False),
         "players": w.get("players", []), "weekWinners": w.get("weekWinners", []),
@@ -79,6 +82,11 @@ for pw in past:
     open(f"{HERE}/weeks/{k}/index.html", "w").write(render(make_page(k, season["weeks"][k], archive=True)))
 
 page = make_page(n, wk)
+# guard: no tiebreaker number may be published while the Monday game is still sealed
+from datetime import datetime as _D, timezone as _tz
+if wk["games"] and _D.fromisoformat(wk["games"][-1]["kickoff"].replace("Z", "+00:00")) > _D.now(_tz.utc):
+    leak = [p["name"] for p in page["players"] if p.get("tb") is not None]
+    if leak: raise SystemExit(f"REFUSING TO BUILD: tiebreaker numbers present before Monday kickoff for {leak}")
 open(f"{HERE}/index.html", "w").write(render(page))
 json.dump(page, open(f"{HERE}/data/page.json", "w"), ensure_ascii=False)
 

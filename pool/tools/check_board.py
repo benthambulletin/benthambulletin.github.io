@@ -18,6 +18,8 @@ try:
     L = json.load(urllib.request.urlopen(LIVE + "?t=%d" % datetime.now().timestamp(), timeout=20))
 except Exception as e:
     L = None; print("WARN live.json unreachable:", e)
+if L and L.get("week") != D["week"]:
+    print(f"live.json is for week {L.get('week')}, board is week {D['week']}: checking without it (the page ignores it too)"); L = None
 lpath = "/tmp/_live_check.json"
 if L: json.dump(L, open(lpath, "w"))
 
