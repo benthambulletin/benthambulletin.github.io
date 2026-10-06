@@ -274,6 +274,9 @@ details.gmore[open]>summary{display:none}
 .whoin li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.4rem 0;border-bottom:1px dotted var(--rule);font-size:1.02rem}
 .whoin .pst{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
 .whoin .pst.ok{color:var(--ink)}
+.whoin.two{display:grid;grid-template-columns:1fr 1fr;column-gap:1.2rem;max-width:none}
+.whoin.two li{font-size:.95rem;min-width:0}
+.whoin.two li>span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .colhd{font-family:'PF';font-weight:800;font-size:1.35rem;line-height:1.2;text-align:center;margin:0 0 .8rem}
 </style>
 </head>
@@ -324,6 +327,7 @@ function tick(){
 }
 setInterval(tick,30000);
 /* live scores: a GitHub job publishes ESPN's scoreboard to the pool-live branch every ~5 minutes */
+document.addEventListener('click',function(e){if(e.target&&e.target.id==='seasAll'){e.preventDefault();window.SEAS=true;render();}});
 document.addEventListener('toggle',function(e){if(e.target&&e.target.id==='smore')window.SMORE=e.target.open;if(e.target&&e.target.id==='gmore')window.GMORE=e.target.open;},true);
 var LIVE_URL="https://raw.githubusercontent.com/benthambulletin/benthambulletin.github.io/pool-live/live.json", LV=null;
 function applyLive(){
@@ -557,8 +561,9 @@ if(!ps.length){
   h+='<div class="hint">Picks received from everyone below · <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a></div>';
   var hseP=ps.filter(function(p){return p.house;})[0];   /* the house sheet is filed when the week opens; list it last */
   var payOpenW=D.payBy&&Date.parse(D.payBy)>Date.now();
-  var pst=function(p){if(!(D.buyIn>0)) return ''; return p.paid?'<span class="pst ok">Paid</span>':'<span class="pst">'+(payOpenW?'Payment pending':'Playing free')+'</span>';};
-  h+='<ul class="whoin">'+(realPs.length?realPs.map(function(p){return '<li><span>'+esc(p.name)+'</span>'+pst(p)+'</li>';}).join(""):'<li>Nobody yet.</li>')+(hseP?'<li><span>'+esc(hseP.name)+'</span><span class="tag house">House</span></li>':'')+'</ul>';
+  var two=realPs.length>10;
+  var pst=function(p){if(!(D.buyIn>0)) return ''; return p.paid?'<span class="pst ok">Paid</span>':'<span class="pst">'+(payOpenW?(two?'Pending':'Payment pending'):(two?'Free':'Playing free'))+'</span>';};
+  h+='<ul class="whoin'+(two?' two':'')+'">'+(realPs.length?realPs.map(function(p){return '<li><span>'+esc(p.name)+'</span>'+pst(p)+'</li>';}).join(""):'<li>Nobody yet.</li>')+(hseP?'<li><span>'+esc(hseP.name)+'</span><span class="tag house">House</span></li>':'')+'</ul>';
 } else {
   var dots=function(p){var o='';D.games.forEach(function(g,i){if(g.status==="sealed")return;var pk=p.sheet?p.sheet[String(i)]:null;
       o+='<i class="'+(!pk?'':!g.winner?'p':g.winner==="TIE"?'':(pk===g.winner?'ok':'no'))+'" title="'+esc(g.away)+' at '+esc(g.home)+'"></i>';});return o?'<span class="dots">'+o+'</span>':'';};
@@ -603,7 +608,8 @@ secs.board=h; h="";
 /* slate */
 h+='<a id="slate"></a>'+orn("This Week’s Games",true);
 h+='<div class="hint">All times Eastern'+(D.games.some(function(g){return g.status!=="sealed"&&g.sides;})?' · tap a started game for who picked whom':'')+'</div>';
-h+='<details class="tmore gmore" id="gmore"'+(window.GMORE?' open':'')+'><summary>See all '+D.games.length+' games ›</summary>';
+var gOpen=window.GMORE===undefined?(!D.archive&&inWindow()):window.GMORE;   /* open on its own while games are on */
+h+='<details class="tmore gmore" id="gmore"'+(gOpen?' open':'')+'><summary>See all '+D.games.length+' games ›</summary>';
 var lastSlot="";
 D.games.forEach(function(g,i){
   var slot=(g.when||"").replace(/\s+\d{1,2}:\d{2}\s*[AP]M.*$/,"").replace(/^(Sun|Mon|Thu|Sat)\b/,function(m){return {Sun:"Sunday",Mon:"Monday",Thu:"Thursday",Sat:"Saturday"}[m];});
@@ -669,8 +675,10 @@ h+=orn("The Season",true)+(D.seasonFrom>1?'<div class="hint">Since Week '+D.seas
   var ss=D.season_table.slice().sort(function(a,b){return scmp(a,b)||a.name.localeCompare(b.name);});
   var srk=function(p){return 1+ss.filter(function(q){return scmp(q,p)<0;}).length;}, stied=function(p){return ss.some(function(q){return q!==p&&scmp(q,p)===0;});};
   h+='<table class="stand seas"><thead><tr><th>Player</th><th>Right</th><th>Wrong</th><th>Weeks won</th>'+(D.anyPaid?'<th>Winnings</th>':'')+'</tr></thead><tbody>';
-  ss.forEach(function(p,i){h+='<tr><td class="nm"><span class="rk">'+(stied(p)?'T':'')+srk(p)+'</span>'+esc(p.name)+'</td><td>'+p.correct+'</td><td>'+p.missed+'</td><td>'+(p.weeksWon||"—")+'</td>'+(D.anyPaid?'<td class="money">'+(p.won?money(p.won):"—")+'</td>':'')+'</tr>';});
+  var SN=10, sOpen=!!window.SEAS;
+  ss.forEach(function(p,i){if(i>=SN&&!sOpen&&ss.length>SN+1) return; h+='<tr><td class="nm"><span class="rk">'+(stied(p)?'T':'')+srk(p)+'</span>'+esc(p.name)+'</td><td>'+p.correct+'</td><td>'+p.missed+'</td><td>'+(p.weeksWon||"—")+'</td>'+(D.anyPaid?'<td class="money">'+(p.won?money(p.won):"—")+'</td>':'')+'</tr>';});
   h+='</tbody></table>';
+  if(ss.length>SN+1&&!sOpen) h+='<div class="tmore" style="text-align:center"><a href="#" id="seasAll" style="font-family:\'AR\';font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--soft);text-decoration:none">Show all '+ss.length+' players ›</a></div>';
 }
 
 /* past weeks */
