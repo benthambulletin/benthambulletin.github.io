@@ -212,6 +212,7 @@ generate or alter a face. Also update the form's This week line ("<Name>'s on th
 Your latest sheet before each game's kickoff counts for that game; a sheet after kickoff voids that game only.
 Tied game counts for nobody. Blank tiebreaker = worst guess. Skipping a week is free. Kaylani & Luka are one entrant
 (every spelling maps to "Kaylani & Luka" via `aliases`); add aliases for new spellings, never merge two people.
+**People:** Devin is a woman (she/her). Use names, not guessed pronouns, for anyone else unless Garret says.
 Claude is the house entry: random sealed picks, tagged House, never wins, never counts in clinch/out math.
 Trash talk is published exactly as written; the only edit is one the author asks for, via
 `weeks.N.trashFix = {name: {"from": exact text, "to": fixed}}`.
