@@ -74,7 +74,7 @@ if(q){
 
 function draw(D){
   var R=document.getElementById("root"), h="";
-  if(!S){ R.innerHTML='<div class="empty">No sheet here. Submit the picks form and you’ll land back on this page with your receipt.</div><div class="btns"><a class="b1" href="'+FORM+'">Make picks</a><a class="b2" href="/pool/">Standings</a></div>'; return; }
+  if(!S){ R.innerHTML='<div class="empty">No sheet here. Submit the picks form and you’ll land back on this page with your receipt.</div><div class="btns"><a class="b1" href="'+FORM+'">Make picks</a><a class="b2" href="/pool/">The Board</a></div>'; return; }
   var games=(D&&D.games)||[], wk=D&&D.week;
   if(S.blank){ R.innerHTML='<div class="card" style="text-align:center"><div class="k" style="justify-content:center">The Sunday Tax'+(wk?' · Week '+wk:'')+'</div><h1>Sheet received.</h1><div class="foot" style="font-size:.85rem">Your picks are in and sealed until each kickoff. Changed your mind? Submit again — your latest sheet before a game starts is the one that counts.</div></div><div class="btns"><a class="b1" href="/pool/">See the standings</a><a class="b2" href="'+FORM+'">Change my picks</a></div>'; return; }
   h+='<div class="snap">📸 Screenshot this — it’s your receipt.</div>';
