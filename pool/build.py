@@ -57,6 +57,8 @@ def _iso(u):
 # mugshot went up without season.updated moving, and phones kept the old page)
 from datetime import datetime as _dt, timezone as _tz
 _BUILT = _dt.now(_tz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+import hashlib as _hl
+_TPLV = _hl.md5(open(f"{HERE}/template.html", "rb").read()).hexdigest()[:10]   # the page reloads itself when this changes
 def make_page(k, w, archive=False):
     return {
         "name": season["name"], "season": season["season"], "formUrl": season["form"]["url"],
@@ -72,7 +74,7 @@ def make_page(k, w, archive=False):
         "updates": w.get("updates", []), "decides": w.get("decides", []),
         "stats": w.get("stats"), "face": w.get("face"), "homer": homer, "house": season.get("house"),
         "seasonBadges": season_badges, "streak": streak, "awards": w.get("awards", []),
-        "pastWeeks": past, "archive": archive,
+        "pastWeeks": past, "archive": archive, "tpl": _TPLV,
     }
 
 tpl = open(f"{HERE}/template.html").read()
