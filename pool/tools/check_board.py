@@ -57,6 +57,16 @@ for mode in ([True, False] if L else [False]):
                 if (gm["away"] + " at " + gm["home"]) in o["body"] and g["winner"] + " " + (g.get("score") or "") not in o["body"]:
                     problems.append(f"{tag}: {gm['away']} at {gm['home']} is final on ESPN ({g['winner']} {g.get('score')}) but the board doesn't show it")
 
+# a sealed game must never show "no pick" (the board read a game as open before its sides were revealed)
+for g in D["games"]:
+    if g.get("status")=="sealed":
+        for mode in ([True, False] if L else [False]):
+            pass
+_o = look(True) if L else None
+if _o:
+    for g in D["games"]:
+        if g.get("status")=="sealed" and (g["away"]+"@"+g["home"]+" no pick") in _o["body"].replace("\n"," "):
+            problems.append(f"with live feed: {g['away']} at {g['home']} is sealed but sheets show 'no pick'")
 print("BOARD CHECK:", "clear" if not problems else "PROBLEMS")
 for p in problems: print(" -", p)
 sys.exit(1 if problems else 0)
