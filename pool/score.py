@@ -74,7 +74,10 @@ def record_payments(season, wk, items, known):
             hits = set().union(*[firsts[w] for w in note.split() if w in firsts and len(firsts[w]) == 1]) if note.strip() else set()
         who = None
         if len(hits) == 1: who = next(iter(hits))
-        elif len(hits) > 1: row["status"] = "odd"
+        elif len(hits) > 1:
+            grp = next((k for k, v in season.get("covers", {}).items() if {h.lower() for h in hits} <= {n.lower() for n in v}), None)
+            if grp: who = grp            # "Tom & Thom" in the note = the group Tom pays for
+            else: row["status"] = "odd"
         # 2) the payer: confirmed Venmo names (hashed), then exact name, then a unique first name
         if who is None and row["status"] != "odd":
             payer = str(it.get("payer") or "").strip()
@@ -85,6 +88,15 @@ def record_payments(season, wk, items, known):
                 f1 = re.sub(r"[^a-z0-9&']+", "", payer.split()[0].lower())
                 if len(firsts.get(f1, ())) == 1: who = next(iter(firsts[f1]))
         row["who"] = who
+        # season.covers: one person pays for a group ({"Tom": ["Tom", "Thom"]}); the full amount books one $buyIn row per name
+        group = next((v for k, v in season.get("covers", {}).items() if who and k.lower() == who.lower()), None)
+        if group and amt is not None and len(group) > 1 and abs(amt - buy * len(group)) < 0.001 and row["status"] != "odd":
+            late = bool(payby and at and at > payby)
+            for j, nm in enumerate(group):
+                r2 = dict(row, id=row["id"] if j == 0 else f"{row['id']}~{j}", who=nm, amt=f"{buy:.2f}")
+                r2["status"] = "late" if late else ("dup" if any((x["who"] or "").lower() == nm.lower() and x["status"] in ("ok", "manual") for x in pays) else "ok")
+                pays.append(r2)
+            continue
         if who and row["status"] != "odd":
             if amt is None or abs(amt - buy) > 0.001: row["status"] = "odd"
             elif any((x["who"] or "").lower() == who.lower() and x["status"] in ("ok", "manual") for x in pays): row["status"] = "dup"
