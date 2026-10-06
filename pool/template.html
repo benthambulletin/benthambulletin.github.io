@@ -87,6 +87,9 @@ details.g[open] summary .s::after{transform:rotate(90deg)}
 .fresh .dot.stale{background:var(--gold)}.fresh .dot.old{background:var(--red)}
 
 /* the mugshot */
+.lastw{margin:1.2rem 0 0;text-align:center;font-family:'AR';font-weight:700;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
+.lastw b{color:var(--ink);font-family:'PF';font-weight:800;font-size:1.05rem;letter-spacing:.01em;text-transform:none}
+.lastw:not([hidden])+#mug .mug{margin-top:.45rem}
 .mug{margin:1.2rem 0 0;border:3px double var(--ink);padding:.7rem .8rem .6rem;display:grid;grid-template-columns:6.2rem 1fr;gap:0 .9rem;align-items:center;background:var(--wash)}
 .mug img{width:6.2rem;height:6.2rem;object-fit:cover;border:1px solid var(--ink);display:block;transform:rotate(-2deg);box-shadow:2px 2px 0 var(--rule)}
 .mug .k{font-family:'AR';font-weight:800;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
@@ -283,6 +286,7 @@ details.smore[open]>summary{display:none}
     <div class="nn" id="nowN" hidden></div>
     <div class="nn" id="potN" hidden></div>
   </div>
+  <div class="lastw" id="lastW" hidden></div>
   <div id="mug"></div>
 
   <div id="root"></div>
@@ -342,7 +346,7 @@ applyLive();
 var $=function(id){return document.getElementById(id);};
 $("nowK").className="nk"; $("cta").className="cta"; $("mug").innerHTML="";
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
-function money(n){return "$"+(Math.round(n*100)/100).toString().replace(/\.00$/,"");}
+function money(n){n=Math.round((+n||0)*100)/100; return "$"+(n%1?n.toFixed(2):String(n));}
 function fmtWhen(iso){try{return new Date(iso).toLocaleString("en-US",{weekday:"short",hour:"numeric",minute:"2-digit",timeZone:"America/New_York"})+" ET";}catch(e){return "";}}
 function orn(t,teal){return '<div class="sec'+(teal?' t':'')+'"><span class="o">❦</span>'+t+'<span class="o">❦</span></div>';}
 
@@ -385,7 +389,8 @@ var played=D.games.filter(function(g){return g.winner&&g.winner!=="TIE";}).lengt
 var left=D.games.filter(function(g){return !g.winner;}).length;
 var entrants=D.players.filter(function(p){return !p.house;}).length, pot=D.pot||0;
 function PD(p){return D.buyIn>0&&p.paid?'<span class="pd" title="Paid">✓</span>':'';}
-var ps=D.players.slice().sort(function(a,b){return (b.correct-a.correct)||(a.missed-b.missed)||a.name.localeCompare(b.name);});
+var WW=(D.status==="final"&&D.weekWinners)||[];
+var ps=D.players.slice().sort(function(a,b){return ((WW.indexOf(b.name)>=0)-(WW.indexOf(a.name)>=0))||(b.correct-a.correct)||(a.missed-b.missed)||a.name.localeCompare(b.name);});
 var realPs=ps.filter(function(p){return !p.house;});
 var top=realPs.length?realPs[0].correct:0;
 
@@ -409,7 +414,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     return now-Date.parse(g.kickoff)<225*60000;});
   var EP=D.buyIn>0?realPs.filter(function(p){return p.paid;}):realPs, etop=EP.length?Math.max.apply(null,EP.map(function(p){return p.correct;})):0;
   var L=etop>0?EP.filter(function(p){return p.correct===etop;}):[];
-  var leadTxt=!L.length?'':(L.length===1?'<b>'+esc(L[0].name)+'</b> leads at <b>'+L[0].correct+'–'+L[0].missed+'</b>':'<b>'+L.length+' tied</b> at the top, <b>'+etop+'</b> right');
+  var leadTxt=!L.length?'':(L.length===1?'<b>'+esc(L[0].name)+'</b> leads at <b>'+L[0].correct+'–'+L[0].missed+'</b>':'<b>'+L.length+(D.buyIn>0?' paid':'')+' tied</b> at the top, <b>'+etop+'</b> right');
   var left=D.games.filter(function(g){return !g.winner;}).length;
   var k="", v="", sub="";
   if(D.status==="final"){
@@ -428,8 +433,8 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     var gi=D.games.indexOf(g), lr=LV&&LV.games&&LV.games[String(gi)];
     if(gi===D.games.length-1&&lr&&lr.state==="in"&&!D.games.some(function(x){return x!==g&&!x.winner&&!x.liveFinal;})){
       var tot=(+lr.away||0)+(+lr.home||0), ahead=lr.away>lr.home?g.away:(lr.home>lr.away?g.home:null);
-      var best=Math.max.apply(null,realPs.map(function(p){return p.correct;}));
-      var alive=realPs.filter(function(p){var pk=p.sheet&&p.sheet[String(gi)];return p.correct+(pk?1:0)>=best;});
+      var best=EP.length?Math.max.apply(null,EP.map(function(p){return p.correct;})):0;   /* only sheets that can win the week */
+      var alive=EP.filter(function(p){var pk=p.sheet&&p.sheet[String(gi)];return p.correct+(pk?1:0)>=best;});
       var proj=function(p){var pk=p.sheet&&p.sheet[String(gi)];return p.correct+(ahead&&pk===ahead?1:0);};
       var pb=Math.max.apply(null,alive.map(proj)), front=alive.filter(function(p){return proj(p)===pb;});
       var dist=function(p){return p.tb==null?1e9:Math.abs(p.tb-tot);};
@@ -445,10 +450,12 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
         var pr=function(p){var pk=p.sheet&&p.sheet[String(gi)];return p.correct+(pk===T?1:0);};
         var mx=Math.max.apply(null,alive.map(pr)), who=alive.filter(function(p){return pr(p)===mx&&p.tb!=null;}).sort(function(a,b){return a.tb-b.tb;});
         if(!who.length) return '';
-        if(who.length===1) return '<b>'+esc(T)+' win:</b> '+esc(who[0].name);
-        return '<b>'+esc(T)+' win:</b> '+who.map(function(p,i){
-          var lo=i>0?Math.floor((who[i-1].tb+p.tb)/2)+1:null, hi=i<who.length-1?Math.ceil((p.tb+who[i+1].tb)/2)-1:null;
-          return esc(p.name)+' ('+p.tb+(lo==null?', ≤'+hi:hi==null?', '+lo+'+':', '+lo+'–'+hi)+')';}).join(' vs ');
+        /* same guess = same fate: group by tiebreaker number */
+        var grp=[]; who.forEach(function(p){var l=grp[grp.length-1]; if(l&&l.tb===p.tb) l.names.push(p.name); else grp.push({tb:p.tb,names:[p.name]});});
+        if(grp.length===1) return '<b>'+esc(T)+' win:</b> '+grp[0].names.map(esc).join(' &amp; ');
+        return '<b>'+esc(T)+' win:</b> '+grp.map(function(p,i){
+          var lo=i>0?Math.floor((grp[i-1].tb+p.tb)/2)+1:null, hi=i<grp.length-1?Math.ceil((p.tb+grp[i+1].tb)/2)-1:null;
+          return p.names.map(esc).join(' &amp; ')+' ('+p.tb+(lo==null?', ≤'+hi:hi==null?', '+lo+'+':', '+lo+'–'+hi)+')';}).join(' vs ');
       }).filter(Boolean);
       if(scen.length) line+='<br>'+scen.join('<br>');
       if(line) sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+'<br>':'')+line;
@@ -464,7 +471,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     sub=(fam.length?fam.join(' · ')+'<br>':'')+(leadTxt?leadTxt+' · <b>'+left+'</b> to go':'<b>'+left+'</b> games to go');
   } else if(L.length&&left===1&&open.length===1&&Date.parse(open[0].kickoff)-now<=45*60000){
     /* 45 minutes before the last game: who's still alive (no picks, they're sealed) */
-    var o=open[0], al=realPs.filter(function(p){return p.state!=="out";});
+    var o=open[0], al=EP.filter(function(p){return p.state!=="out";});
     var byRec={}; al.forEach(function(p){(byRec[p.correct]=byRec[p.correct]||[]).push(p.name);});
     k='One game left · '+esc(o.away)+' at '+esc(o.home);
     v=al.length===1?esc(al[0].name):al.length+' still alive';
@@ -472,7 +479,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
         'Kickoff · <span class="cd" data-until="'+esc(o.kickoff)+'"></span>';
   } else if(L.length){
     k='Leading Week '+D.week;
-    v=L.length===1?esc(L[0].name):L.length+'-way tie';
+    v=L.length===1?esc(L[0].name):L.length+'-way tie'+(D.buyIn>0?' (paid)':'');
     sub=(L.length===1?'<b>'+L[0].correct+'–'+L[0].missed+'</b>':'at <b>'+etop+'</b> right')+' · <b>'+left+'</b> game'+(left===1?'':'s')+' to go';
   } else if(open.length){
     k='Picks lock in';
@@ -510,9 +517,17 @@ var h="";
 if(!(D.face&&D.face.photo)&&!D.archive){
   var sil='<svg class="sil" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#221c13"/>'+[20,40,60,80].map(function(y){return '<line x1="0" x2="100" y1="'+y+'" y2="'+y+'" stroke="#3a3122" stroke-width="1"/><text x="3" y="'+(y-2)+'" font-size="6" fill="#4d4230" font-family="monospace">'+(7-y/20)+'\'</text>';}).join('')+'<circle cx="50" cy="40" r="15" fill="#0c0a06"/><path d="M18 100 C20 72 34 62 50 62 C66 62 80 72 82 100 Z" fill="#0c0a06"/><text x="50" y="47" text-anchor="middle" font-size="18" font-family="Georgia,serif" fill="#3a3122">?</text></svg>';
   var pw=(D.pastWeeks||[]).filter(function(w){return w.week===D.week-1&&w.winners&&w.winners.length;})[0];   /* last week's winner still owes us a face */
-  var mk=pw?D.week:D.week+1, md=pw?esc(pw.winners.join(" & "))+' won Week '+pw.week+' and picks who hangs here. <b>Could be yours.</b>':'The Week '+D.week+' winner hangs a face here Tuesday. <b>Could be yours.</b>';
+  var mk=pw?D.week:D.week+1, md=pw?'The champ picks who hangs here. <b>Could be yours.</b>':'The Week '+D.week+' winner hangs a face here Tuesday. <b>Could be yours.</b>';
   $("mug").innerHTML='<div class="mug dark">'+sil+'<div><div class="k"><a class="ruleref" href="/pool/about/#mugshot">The Mugshot</a> · Week '+mk+'</div><div class="n">Wanted: one loser.</div><div class="d">'+md+'</div></div></div>';
 }
+/* last week's champion, right above the mugshot they get to pick */
+(function(){
+  var pw=(D.pastWeeks||[]).filter(function(w){return w.week===D.week-1&&w.winners&&w.winners.length;})[0];
+  if(!pw||D.status==="final"||D.archive) return;
+  var el=$("lastW");
+  el.innerHTML='Week '+pw.week+' champ · <b>'+esc(pw.winners.join(" & "))+'</b>'+(pw.record?' · '+esc(pw.record):'')+(pw.tbUsed?' (tiebreaker)':'')+(pw.payout>0?' · won '+money(pw.payout)+(pw.winners.length>1?' each':''):'');
+  el.hidden=false;
+})();
 /* the mugshot: the previous winner's pick of one loser's face */
 if(D.face&&D.face.photo){
   var F=D.face;
@@ -533,13 +548,14 @@ if(!ps.length){
   var dots=function(p){var o='';D.games.forEach(function(g,i){if(g.status==="sealed")return;var pk=p.sheet?p.sheet[String(i)]:null;
       o+='<i class="'+(!pk?'':!g.winner?'p':g.winner==="TIE"?'':(pk===g.winner?'ok':'no'))+'" title="'+esc(g.away)+' at '+esc(g.home)+'"></i>';});return o?'<span class="dots">'+o+'</span>':'';};
   var W=(D.status==="final"&&D.weekWinners)||[], isW=function(p){return W.indexOf(p.name)>=0;};
-  var beats=function(q,p){return q.correct>p.correct||(q.correct===p.correct&&(q.missed<p.missed||(q.missed===p.missed&&isW(q)&&!isW(p))));};
+  var beats=function(q,p){if(isW(q)!==isW(p)) return isW(q);   /* the week's winner ranks first on the final board */
+    return q.correct>p.correct||(q.correct===p.correct&&(q.missed<p.missed||(q.missed===p.missed&&isW(q)&&!isW(p))));};
   var dispRank=function(p){return 1+realPs.filter(function(q){return beats(q,p);}).length;};
   h+='<div class="hint">Tap a name for their picks</div>';
   var TOPN=5;
   ps.forEach(function(p,pi){
     if(pi===TOPN&&ps.length>TOPN+1) h+='<details class="tmore smore" id="smore"'+(window.SMORE?' open':'')+'><summary>All '+ps.length+' ›</summary>';
-    var lead=!p.house&&p.correct>0&&dispRank(p)===1;
+    var lead=!p.house&&p.correct>0&&dispRank(p)===1&&(!(D.buyIn>0)||p.paid);
     var mv=p.delta>0?'<span class="mv up">▲'+p.delta+'</span>':(p.delta<0?'<span class="mv dn">▼'+(-p.delta)+'</span>':'');
     var tag=p.house?'<span class="tag house">House</span>':D.status==="final"?'':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
     h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+(p.house?'–':(realPs.filter(function(q){return q!==p&&!beats(q,p)&&!beats(p,q);}).length?'T':'')+dispRank(p))+'</span>'+

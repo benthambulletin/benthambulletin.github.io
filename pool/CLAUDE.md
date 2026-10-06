@@ -1,7 +1,7 @@
 # The Sunday Tax — runbook for scheduled runs
 
-Garret's weekly NFL pick 'em. **Free to play for now** (`buyIn` is 0 in season.json); the plan is $5 a week
-with the whole pot to the winner once enough people are in (`plannedBuyIn`). Straight-up winners, best record wins the week,
+Garret's weekly NFL pick 'em. **$5 a week on Venmo from Week 5 (Oct 6)**; the whole pot goes to the best record among
+PAID sheets (unpaid sheets play and rank but can't win). Straight-up winners, best record wins the week,
 tiebreaker = closest to combined points in the Monday night game. Picks arrive on a Tally form
 (form id `RGOakJ`, same link all season). Standings live at **https://benthambulletin.github.io/pool/**
 and are rebuilt from `pool/data/season.json` by `pool/build.py`. Commissioner: Garret. Venmo @Garret-Bentham.
@@ -43,7 +43,7 @@ Never `git checkout` / `git restore` data/season.json to undo a run — it throw
 Agreed Oct 3. Venmo payment emails go to Garret's Gmail (Gmail connector). Accept a payment only if its Authentication-Results show dkim=pass for venmo.com; never reply, forward or move money automatically.
 - Form page 1: name, then "Pay $5 on Venmo — @Garret-Bentham" button (deep link, amount and note prefilled),
   the line "If your Venmo name doesn't match the name you entered, put your pool name in the Venmo note,"
-  and a required "I've paid" box. Page 2: the picks. Show @Garret-Bentham on the board too.
+  and the required "This week" choice (Paid $5 on Venmo / Playing free this week (can't win)). Page 2: the picks. Show @Garret-Bentham on the board too.
 - Do NOT offer or advertise paying ahead or credits. Keep it one week, $5.
 - Hourly/Sunday runs search Gmail for venmo@venmo.com "paid you" only, match by note then by a Venmo-name
   alias list, record each payment once by email id, judge on-time by the email's timestamp vs the deadline.
@@ -54,7 +54,7 @@ Agreed Oct 3. Venmo payment emails go to Garret's Gmail (Gmail connector). Accep
 - **Garret approved the look Oct 5** (mockup artifact https://claude.ai/artifact/6aoiyoVrVR4HQnAM3K1ZFq): page 1 = title, intro ("$5 a week on Venmo, the whole pot to the best paid record"), This week line, links, name, boxed bold "Pay $5 on Venmo — @Garret-Bentham" link + the pay-before/Venmo-note line, required "This week" choice (Paid $5 on Venmo / Playing free this week (can't win)), the line "Only paid players can win money. The pot goes to the highest-ranked paid player.", Next button. Page 2 = picks as now, tiebreaker, trash, rewritten "The money". Receipt (`sheet/`) must fit ONE phone screenshot (~740px at 390 wide): one-line banner, name + time on one line, compact rows (12/14px), short sealed line, the "Haven't paid? Venmo @Garret-Bentham $5 before Thu <time> — unpaid sheets can't win." line, two 44px buttons.
 
 ## The week, in order (all ET; checked Oct 5)
-- **Tue ~7:30** Week setup: the NEW WEEK task (paid-weeks steps). Form + board for the new week.
+- **Tue 3:52 am** Week setup: the NEW WEEK task (paid-weeks steps). Form + board for the new week.
 - **Every day 8:07–11:07 pm, hourly at :07** REFRESH: submissions, scores, form hides. Rewrites the column at 8:07 a.m. daily and every run while Monday night's last game is on. Board check after each push on game days.
 - **Thu 6:07 pm** roll call → Garret. **Thu 8:17** kickoff lock (form, sides, column, starts live scores). **Thu 11:32** Thursday final.
 - **Sun 9:32 / 1:02 / 4:08 / 4:27 / 8:22** kickoff locks. **Sun 4:47 / 7:47 / 11:47** window updates (column).
@@ -89,10 +89,9 @@ and the trash talk. After kickoff a game's sides are public and fair game. Rule 
 filer could learn anything about the slate from it, cut it.
 
 ## Money switch
-`data/season.json` → `buyIn`. 0 means free: the page hides pots and payouts and says so; score.py still
-reports `pot $0`. When Garret says to turn the money on, set `buyIn` to 5 (from that week forward — do not
-restate earlier weeks), update the Tally form's opening TEXT block and its last TEXT block ("The money") to say
-$5 a week, Venmo @Garret-Bentham, and tell the Bulletin via `data/requests.md`. Never turn it on without him saying so.
+Money is ON from Week 5: each week's `weeks.N.buyIn` is 5 (see "Paid weeks" above). Weeks 1–4 stay free in the record.
+Only Garret turns it off or changes the amount; if he does, set the coming week's `buyIn`, and rewrite the form intro,
+page 1 pay box and "The money" text to match.
 
 ## The three pages are wired together (Oct 2)
 - Form → receipt: Tally redirect on completion goes to `/pool/sheet/` (see "Receipt" below), which links to the board. The board's `?filed=1` box is a fallback.
@@ -145,8 +144,7 @@ $5 a week, Venmo @Garret-Bentham, and tell the Bulletin via `data/requests.md`. 
   re-renders if it is newer — so a cached `index.html` still shows the live board. Commit both.
 - `template.html` — the page. Change design here, never in `index.html`.
 - `about/index.html` — the static "How it works" page (rules, full badge key, who Claude is). The badge
-  list there duplicates the `BADGE` table in `template.html`; change both. The money switch also
-  rewrites its "Free to play right now" paragraph. Everything explanatory lives there, not on the board.
+  list there duplicates the `BADGE` table in `template.html`; change both. Its `#money` paragraph holds the $5 rules. Everything explanatory lives there, not on the board.
 
 ## Run: NEW WEEK (Tuesday morning)
 Idempotence first: if `season.json` `currentWeek` already equals the coming week's number AND the
@@ -227,6 +225,8 @@ All three are the same steps; they differ only in what has finished. The Sunday 
    link, and the mugshot reminder (see The Mugshot). While `buyIn` is 0 never mention money, pots, Venmo or collecting.
 
 ## The Mugshot
+
+Above the mugshot box, during the week (not on the final board or archives), one line names last week's champion: "Week N champ · Name · 12–4 (tiebreaker) · won $X" (Garret, Oct 6). build.py puts record/tbUsed/payout in `pastWeeks`.
 
 Until a face is hung, the slot shows a dark "Wanted: one loser." placeholder (silhouette on a lineup chart). Garret asked for it Oct 4 — it is part of the locked design, not a fake preview. It hides on archive pages and as soon as `face.photo` is set.
 The week's winner picks one loser, and that person's face runs on the board the following week in a
