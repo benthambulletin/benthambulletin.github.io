@@ -672,6 +672,8 @@ render();
 function refresh(){
   if(!window.fetch) return;
   fetch("/pool/data/page.json?v="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(N){
+    /* the page's own code changed (a design fix): a cached copy can't show it, so load the new one once */
+    if(N&&N.tpl&&D.tpl&&N.tpl!==D.tpl&&location.search.indexOf("v="+N.tpl)<0){location.replace(location.pathname+"?v="+N.tpl+location.hash);return;}
     if(N&&N.updated&&Date.parse(N.updated)>Date.parse(D.updated||0)){D=N;render();}
   }).catch(function(){});
 }
