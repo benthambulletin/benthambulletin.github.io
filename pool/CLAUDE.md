@@ -242,7 +242,8 @@ one and the box stays empty; it can be added any day after.
 
 ## Run: PAYMENTS (paid weeks: every run that calls score.py, when the week's `buyIn` > 0)
 1. Gmail (read-only): `search_threads` with `from:venmo@venmo.com subject:"paid you" after:<YYYY/MM/DD = the week's opensAt date minus one day>`.
-   For each message, `get_message`. `dkim` = true only if its Authentication-Results header shows `dkim=pass` with `header.d=venmo.com`
+   For each message, `get_message` with messageFormat RAW (PLAIN_TEXT has no headers); the result is big, so it lands in a file —
+   base64url-decode `raw`, parse it with Python's `email` module, and read the `Authentication-Results` header. `dkim` = true only if its Authentication-Results header shows `dkim=pass` with `header.d=venmo.com`
    (or `header.i=@venmo.com`); anything else is false.
 2. Write `/home/claude/venmo.json` (NEVER inside the repo): a list of
    `{"id": <message id>, "at": <email date, UTC ISO>, "payer": <name before " paid you">, "amount": "5.00", "note": <payment note text>, "dkim": true|false}`.
