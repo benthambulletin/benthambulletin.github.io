@@ -53,6 +53,10 @@ def _iso(u):
     try: return datetime.fromisoformat(u.replace("Z", "+00:00")).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     except Exception: return u
 
+# every build stamps the board, so a phone holding an older copy always picks up a hand edit (Oct 6: the
+# mugshot went up without season.updated moving, and phones kept the old page)
+from datetime import datetime as _dt, timezone as _tz
+_BUILT = _dt.now(_tz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 def make_page(k, w, archive=False):
     return {
         "name": season["name"], "season": season["season"], "formUrl": season["form"]["url"],
@@ -60,7 +64,7 @@ def make_page(k, w, archive=False):
         "pot": w.get("pot", 0), "paidN": w.get("paidN", 0), "payBy": w.get("payBy"),
         "venmo": season.get("venmo"), "venmoUrl": season.get("venmoUrl"),
         "anyPaid": any(x.get("buyIn", 0) for x in season["weeks"].values()), "week": int(k), "status": w.get("status", "pre"),
-        "updated": _iso(season.get("updated", "")), "games": w["games"],
+        "updated": _iso(season.get("updated", "")) if archive else _BUILT, "games": w["games"],
         "tiebreakTotal": w.get("tiebreakTotal"), "tbUsed": w.get("tbUsed", False),
         "players": w.get("players", []), "weekWinners": w.get("weekWinners", []),
         "weekPayout": w.get("weekPayout", 0), "season_table": list(tot.values()),
