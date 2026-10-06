@@ -228,9 +228,9 @@ Trash talk is published exactly as written; the only edit is one the author asks
   link ("Past weeks: boards and winners" or similar). Garret wants to talk it through first: the NEW WEEK run that
   makes the sixth past week adds one line to its message — "Six weeks in the books — time to talk about the past-weeks
   page?" — and changes nothing.
-- **Playoff props, no money.** Once the playoffs start, Garret wants prop picks for bragging rights only. Design not
-  set. The NEW WEEK run that sets up the first playoff week adds one line to its message — "Playoffs are here — want to
-  set up the props?" — and builds nothing until he answers.
+- **Super Bowl props, no money.** Garret wants prop picks for bragging rights only, probably just for the Super Bowl.
+  Design not set. The NEW WEEK run that sets up the Super Bowl week adds one line to its message — "Super Bowl week —
+  want to set up the props?" — and builds nothing until he answers.
 
 ## Files and tools
 - `data/season.json` — all state. `data/page.json` + `index.html` are built from it; commit them (land.py does).
