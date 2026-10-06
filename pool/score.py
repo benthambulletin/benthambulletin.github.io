@@ -234,6 +234,9 @@ def main():
         if venmo is not None: record_payments(season, wk, venmo, known)
         canon = lambda nm: aliases.get(str(nm or "").strip().lower(), str(nm or "").strip()).lower()
         paid = {canon(x["who"]) for x in wk.get("payments", []) if x["status"] in ("ok", "manual")}
+        # season.autoPaid: the commissioner's own sheet (his Venmo is the pot) counts as paid the moment he files
+        for nm in season.get("autoPaid", []):
+            if any(canon(p["name"]) == canon(nm) for p in real): paid.add(canon(nm))
         for p in players: p["paid"] = (not p.get("house")) and canon(p["name"]) in paid
         eligible = [p for p in real if p["paid"]]
         if eligible:
