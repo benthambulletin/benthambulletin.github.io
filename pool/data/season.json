@@ -2929,6 +2929,25 @@
           "badges": []
         },
         {
+          "name": "Josh",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-07T14:42:49+00:00",
+          "firstAt": "2026-10-07T14:42:49+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Kaylani & Luka",
           "house": false,
           "correct": 0,
@@ -3026,6 +3045,10 @@
       ],
       "trash": [
         {
+          "from": "Josh",
+          "text": "Nancy Kelly wants you to know your attic light is on"
+        },
+        {
           "from": "Derek",
           "text": "Let’s all root for Ariel to not come in last!!  You can do it!!"
         },
@@ -3050,11 +3073,11 @@
           "text": "First week with real money. I still can't win it, which makes me the only honest one here."
         }
       ],
-      "column": "Ten sheets now. Nate V strolled in Wednesday morning, filed without a word of trash talk, and left. Either supreme confidence or he hasn't read the room yet. Kaylani & Luka still filed twice to make sure “Buckle up buttercups” landed. Derek keeps rooting for Ariel to escape last place; Ariel keeps naming Sombloski as a trigger. Devin is still on the bonnet.\n\nAnyone else from last week: Bucs at Dallas, Thursday 8:15. Picks lock game by game from there.",
+      "column": "Eleven sheets. Josh filed Wednesday morning and delivered the week's strangest dispatch: Nancy Kelly wants you to know your attic light is on. Nobody knows whose attic. Check yours. Nate V, meanwhile, remains a man of no words.\n\nDerek is still rooting for Ariel to dodge last place, and Ariel is still triggered by Sombloski. Plenty of last week's crew haven't filed yet. Bucs at Dallas, Thursday 8:15.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 40,
-      "paidN": 8,
+      "pot": 45,
+      "paidN": 9,
       "buyIn": 5,
       "payBy": "2026-10-09T00:15:00Z",
       "payments": [
@@ -3105,6 +3128,14 @@
           "who": "Nate V",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a116cc250420be9",
+          "at": "2026-10-07T14:37:19Z",
+          "amt": "5.00",
+          "who": "Josh",
+          "status": "ok",
+          "told": null
         }
       ],
       "opensAt": "2026-10-06T11:44:52Z",
@@ -3138,11 +3169,11 @@
           "to": "Ariel had a great showing last week. Andy Rogers picked the Pats...wtf. Let's see what cheapo doesn't pay the $5 this week"
         }
       },
-      "columnN": 10,
-      "columnHead": "Nate V Walks In Wednesday"
+      "columnN": 11,
+      "columnHead": "Josh Brings a Message From Nancy Kelly"
     }
   },
-  "updated": "2026-10-07T14:20:18.180247+00:00",
+  "updated": "2026-10-07T15:18:41.944757+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
