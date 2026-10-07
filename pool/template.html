@@ -562,7 +562,7 @@ if(!ps.length){
   var hseP=ps.filter(function(p){return p.house;})[0];   /* the house sheet is filed when the week opens; list it last */
   var payOpenW=D.payBy&&Date.parse(D.payBy)>Date.now();
   var two=realPs.length>10;
-  var pst=function(p){if(!(D.buyIn>0)) return ''; return p.paid?'<span class="pst ok">Paid</span>':'<span class="pst">'+(payOpenW?(two?'Pending':'Payment pending'):(two?'Free':'Playing free'))+'</span>';};
+  var pst=function(p){if(!(D.buyIn>0)) return ''; return p.paid?'<span class="pst ok">Paid</span>':'<span class="pst">'+((payOpenW&&!p.free)?(two?'Pending':'Payment pending'):(two?'Free':'Playing free'))+'</span>';};
   h+='<ul class="whoin'+(two?' two':'')+'">'+(realPs.length?realPs.map(function(p){return '<li><span>'+esc(p.name)+'</span>'+pst(p)+'</li>';}).join(""):'<li>Nobody yet.</li>')+(hseP?'<li><span>'+esc(hseP.name)+'</span><span class="tag house">House</span></li>':'')+'</ul>';
 } else {
   var dots=function(p){var o='';D.games.forEach(function(g,i){if(g.status==="sealed")return;var pk=p.sheet?p.sheet[String(i)]:null;

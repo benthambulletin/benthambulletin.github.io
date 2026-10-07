@@ -211,7 +211,9 @@ def main():
         players.append({"name": name, "house": name == house_name, "correct": correct, "missed": missed, "void": void,
                         "remaining": remaining, "max": correct + remaining, "tb": tb,
                         "sheet": {str(k): v for k, v in sheet.items()},
-                        "filedAt": lst[-1]["at"].isoformat(), "firstAt": lst[0]["at"].isoformat()})
+                        "filedAt": lst[-1]["at"].isoformat(), "firstAt": lst[0]["at"].isoformat(),
+                        # the form's "Playing free" answer on their latest sheet (a claim only; never makes anyone paid)
+                        "free": bool(q.get("paid")) and "free" in str(lst[-1]["r"].get(q["paid"]) or "").lower()})
         t = lst[-1]["r"].get(q["trash"])
         if t and str(t).strip():
             tt = clean_text(t)
