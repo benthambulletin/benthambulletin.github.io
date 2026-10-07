@@ -2948,6 +2948,25 @@
           "badges": []
         },
         {
+          "name": "Melissa",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-07T01:21:34+00:00",
+          "firstAt": "2026-10-07T01:21:34+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Ryan Holovics",
           "house": false,
           "correct": 0,
@@ -3015,8 +3034,8 @@
       "column": "Devin won Week 4 and spent her prize on humiliation: Garret, in a bonnet, hanging over his own board. He filed anyway, still sore about Andy Rogers and the Pats. Devin's review of the look: beautiful. Ariel came in at dinnertime vowing that one glimpse of Mike Sombloski sets her off.\n\nDerek closed out Tuesday as sheet number eight and spent his trash talk cheering for Ariel to dodge last place, which is the nicest insult this pool has seen. Andy, Thom, Ryan Holovics and Kaylani & Luka are in too. Most of last week's 24 are still on the porch. Bucs at Dallas, Thursday 8:15.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 30,
-      "paidN": 6,
+      "pot": 35,
+      "paidN": 7,
       "buyIn": 5,
       "payBy": "2026-10-09T00:15:00Z",
       "payments": [
@@ -3049,6 +3068,14 @@
           "at": "2026-10-07T00:38:10Z",
           "amt": "5.00",
           "who": "Derek",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a113f4fdaab1e5d",
+          "at": "2026-10-07T01:23:04Z",
+          "amt": "5.00",
+          "who": "Melissa",
           "status": "ok",
           "told": null
         }
@@ -3088,7 +3115,7 @@
       "columnHead": "Eight Sheets In, One Bonnet Up"
     }
   },
-  "updated": "2026-10-07T01:09:17.195740+00:00",
+  "updated": "2026-10-07T01:23:56.355329+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
