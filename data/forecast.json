@@ -1,16 +1,16 @@
 {
- "generated_utc": "2026-10-07T10:21Z",
+ "generated_utc": "2026-10-07T17:31Z",
  "towns": {
   "North Tonawanda": {
-   "issued": "2026-10-07T07:57:44+00:00",
+   "issued": "2026-10-07T13:57:21+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 68,
-     "wind": "SW 12 to 20 mph",
+     "wind": "SW 20 mph",
      "pop": 13,
      "short": "Mostly Sunny",
-     "detail": "Mostly sunny, with a high near 68. Southwest wind 12 to 20 mph, with gusts as high as 35 mph. New rainfall amounts less than a tenth of an inch possible."
+     "detail": "Mostly sunny, with a high near 68. Southwest wind around 20 mph, with gusts as high as 35 mph. New rainfall amounts less than a tenth of an inch possible."
     },
     {
      "name": "Tonight",
@@ -87,21 +87,21 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-07T10:00:00+00:00",
-    "text": "Clear",
-    "temp_f": 52
+    "time": "2026-10-07T14:50:00+00:00",
+    "text": "Partly Cloudy",
+    "temp_f": 63
    }
   },
   "Dunkirk": {
-   "issued": "2026-10-07T07:57:44+00:00",
+   "issued": "2026-10-07T13:57:21+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 68,
-     "wind": "SW 13 to 17 mph",
+     "wind": "SW 17 mph",
      "pop": 17,
-     "short": "Mostly Sunny then Slight Chance Rain Showers",
-     "detail": "A slight chance of rain showers after 5pm. Mostly sunny, with a high near 68. Southwest wind 13 to 17 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
+     "short": "Slight Chance Rain Showers",
+     "detail": "A slight chance of rain showers after 5pm. Partly sunny, with a high near 68. Southwest wind around 17 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
     },
     {
      "name": "Tonight",
@@ -178,21 +178,21 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-07T10:00:00+00:00",
-    "text": "Clear",
-    "temp_f": 54
+    "time": "2026-10-07T14:50:00+00:00",
+    "text": "Mostly Cloudy",
+    "temp_f": 63
    }
   },
   "Scottsville": {
-   "issued": "2026-10-07T07:57:44+00:00",
+   "issued": "2026-10-07T13:57:21+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 70,
-     "wind": "SW 10 to 16 mph",
+     "wind": "SW 16 mph",
      "pop": 10,
      "short": "Mostly Sunny",
-     "detail": "Mostly sunny, with a high near 70. Southwest wind 10 to 16 mph. New rainfall amounts less than a tenth of an inch possible."
+     "detail": "Mostly sunny, with a high near 70. Southwest wind around 16 mph. New rainfall amounts less than a tenth of an inch possible."
     },
     {
      "name": "Tonight",
@@ -269,9 +269,9 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-07T10:00:00+00:00",
-    "text": "Cloudy",
-    "temp_f": 48
+    "time": "2026-10-07T14:50:00+00:00",
+    "text": "Mostly Cloudy",
+    "temp_f": 61
    }
   }
  },
