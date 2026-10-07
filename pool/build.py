@@ -70,7 +70,7 @@ def make_page(k, w, archive=False):
         "tiebreakTotal": w.get("tiebreakTotal"), "tbUsed": w.get("tbUsed", False),
         "players": w.get("players", []), "weekWinners": w.get("weekWinners", []),
         "weekPayout": w.get("weekPayout", 0), "season_table": list(tot.values()),
-        "trash": w.get("trash", []), "column": w.get("column", ""), "columnHead": w.get("columnHead", ""),
+        "trash": w.get("trash", []), "column": w.get("column", ""), "columnHead": w.get("columnHead", ""), "displayNames": season.get("displayNames", {}),
         "seasonFrom": min([int(x) for x, ww in season["weeks"].items() if ww.get("status") == "final"] or [0]),
         "updates": w.get("updates", []), "decides": w.get("decides", []),
         "stats": w.get("stats"), "face": w.get("face"), "homer": homer, "house": season.get("house"),

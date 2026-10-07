@@ -274,6 +274,8 @@ details.gmore[open]>summary{display:none}
 .whoin li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.4rem 0;border-bottom:1px dotted var(--rule);font-size:1.02rem}
 .whoin .pst{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
 .whoin .pst.ok{color:var(--ink)}
+.lng{font-size:.7em;line-height:1.2;white-space:normal;display:inline-block;vertical-align:baseline}
+.stand td.nm:has(.lng),.whoin.two li>span:first-child:has(.lng){white-space:normal}
 .whoin.two{display:grid;grid-template-columns:1fr 1fr;column-gap:1.2rem;max-width:none}
 .whoin.two li{font-size:.95rem;min-width:0}
 .whoin.two li>span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -359,6 +361,7 @@ $("nowK").className="nk"; $("cta").className="cta"; $("mug").innerHTML="";
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
 function money(n){n=Math.round((+n||0)*100)/100; return "$"+(n%1?n.toFixed(2):String(n));}
 function fmtWhen(iso){try{return new Date(iso).toLocaleString("en-US",{weekday:"short",hour:"numeric",minute:"2-digit",timeZone:"America/New_York"})+" ET";}catch(e){return "";}}
+function DN(n){var d=(D.displayNames||{})[n]; return d?'<span class="lng">'+esc(d)+'</span>':esc(n);}   /* a player's chosen long name, set by Garret */
 function orn(t,teal){return '<div class="sec'+(teal?' t':'')+'"><span class="o">❦</span>'+t+'<span class="o">❦</span></div>';}
 
 var BADGE={
@@ -563,7 +566,7 @@ if(!ps.length){
   var payOpenW=D.payBy&&Date.parse(D.payBy)>Date.now();
   var two=realPs.length>10;
   var pst=function(p){if(!(D.buyIn>0)) return ''; return p.paid?'<span class="pst ok">Paid</span>':'<span class="pst">'+((payOpenW&&!p.free)?(two?'Pending':'Payment pending'):(two?'Free':'Playing free'))+'</span>';};
-  h+='<ul class="whoin'+(two?' two':'')+'">'+(realPs.length?realPs.map(function(p){return '<li><span>'+esc(p.name)+'</span>'+pst(p)+'</li>';}).join(""):'<li>Nobody yet.</li>')+(hseP?'<li><span>'+esc(hseP.name)+'</span><span class="tag house">House</span></li>':'')+'</ul>';
+  h+='<ul class="whoin'+(two?' two':'')+'">'+(realPs.length?realPs.map(function(p){return '<li><span>'+DN(p.name)+'</span>'+pst(p)+'</li>';}).join(""):'<li>Nobody yet.</li>')+(hseP?'<li><span>'+esc(hseP.name)+'</span><span class="tag house">House</span></li>':'')+'</ul>';
 } else {
   var dots=function(p){var o='';D.games.forEach(function(g,i){if(g.status==="sealed")return;var pk=p.sheet?p.sheet[String(i)]:null;
       o+='<i class="'+(!pk?'':!g.winner?'p':g.winner==="TIE"?'':(pk===g.winner?'ok':'no'))+'" title="'+esc(g.away)+' at '+esc(g.home)+'"></i>';});return o?'<span class="dots">'+o+'</span>':'';};
@@ -579,7 +582,7 @@ if(!ps.length){
     var mv=p.delta>0?'<span class="mv up">▲'+p.delta+'</span>':(p.delta<0?'<span class="mv dn">▼'+(-p.delta)+'</span>':'');
     var tag=p.house?'<span class="tag house">House</span>':D.status==="final"?'':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
     h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+(p.house?'–':(realPs.filter(function(q){return q!==p&&!beats(q,p)&&!beats(p,q);}).length?'T':'')+dispRank(p))+'</span>'+
-       '<span class="nm">'+esc(p.name)+PD(p)+mv+tag+badgeIcons(p)+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span>'+dots(p)+'</summary><div class="sheet">';
+       '<span class="nm">'+DN(p.name)+PD(p)+mv+tag+badgeIcons(p)+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span>'+dots(p)+'</summary><div class="sheet">';
     var earned=badgesFor(p);
     if(earned.length){
       h+='<div class="earned">'+earned.map(function(b){return '<span class="bd '+esc(b.id)+'">'+BADGE[b.id].i+'</span><a href="/pool/about/#b-'+esc(b.id)+'">'+esc(BADGE[b.id].l)+'</a>'+(b.note?' — '+esc(b.note):'');}).join('<br>')+'</div>';
@@ -650,7 +653,7 @@ if(D.column){
 secs.column=h; h="";
 /* trash talk: the three newest up front, the rest one tap away */
 if(D.trash.length){
-  var TT=D.trash.slice().reverse(), li=function(t){return '<li>“'+esc(t.text)+'”<b>'+esc(t.from)+'</b></li>';};
+  var TT=D.trash.slice().reverse(), li=function(t){return '<li>“'+esc(t.text)+'”<b>'+DN(t.from)+'</b></li>';};
   h+=orn("Trash Talk")+'<ul class="tt">'+TT.slice(0,3).map(li).join('')+'</ul>';
   if(TT.length>3) h+='<details class="tmore"><summary>Show all '+TT.length+' ›</summary><ul class="tt">'+TT.slice(3).map(li).join('')+'</ul></details>';
 }
@@ -676,7 +679,7 @@ h+=orn("The Season",true)+(D.seasonFrom>1?'<div class="hint">Since Week '+D.seas
   var srk=function(p){return 1+ss.filter(function(q){return scmp(q,p)<0;}).length;}, stied=function(p){return ss.some(function(q){return q!==p&&scmp(q,p)===0;});};
   h+='<table class="stand seas"><thead><tr><th>Player</th><th>Right</th><th>Wrong</th><th>Weeks won</th>'+(D.anyPaid?'<th>Winnings</th>':'')+'</tr></thead><tbody>';
   var SN=10, sOpen=!!window.SEAS;
-  ss.forEach(function(p,i){if(i>=SN&&!sOpen&&ss.length>SN+1) return; h+='<tr><td class="nm"><span class="rk">'+(stied(p)?'T':'')+srk(p)+'</span>'+esc(p.name)+'</td><td>'+p.correct+'</td><td>'+p.missed+'</td><td>'+(p.weeksWon||"—")+'</td>'+(D.anyPaid?'<td class="money">'+(p.won?money(p.won):"—")+'</td>':'')+'</tr>';});
+  ss.forEach(function(p,i){if(i>=SN&&!sOpen&&ss.length>SN+1) return; h+='<tr><td class="nm"><span class="rk">'+(stied(p)?'T':'')+srk(p)+'</span>'+DN(p.name)+'</td><td>'+p.correct+'</td><td>'+p.missed+'</td><td>'+(p.weeksWon||"—")+'</td>'+(D.anyPaid?'<td class="money">'+(p.won?money(p.won):"—")+'</td>':'')+'</tr>';});
   h+='</tbody></table>';
   if(ss.length>SN+1&&!sOpen) h+='<div class="tmore" style="text-align:center"><a href="#" id="seasAll" style="font-family:\'AR\';font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--soft);text-decoration:none">Show all '+ss.length+' players ›</a></div>';
 }
