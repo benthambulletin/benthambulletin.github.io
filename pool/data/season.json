@@ -2874,6 +2874,25 @@
           "badges": []
         },
         {
+          "name": "Dan",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-07T23:13:48+00:00",
+          "firstAt": "2026-10-07T23:11:42+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Derek",
           "house": false,
           "correct": 0,
@@ -3120,8 +3139,8 @@
       "column": "Thirteen sheets. Both Sombloskis filed Wednesday at dinnertime: Mrs. Sombloski without a word, and Mike as \"Michael James Sombloski IV, Esq.,\" crying \"Help, prithee! I am fall'n\" — still on the floor from his Week 4 collapse, now in Shakespeare. Ariel, who says seeing Sombloski triggers her, has two of them to look at now.\n\nJosh's bulletin stands: Nancy Kelly wants you to know your attic light is on. Derek is rooting for Ariel to stay off the bottom. Bucs at Dallas, Thursday 8:15.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 55,
-      "paidN": 11,
+      "pot": 60,
+      "paidN": 12,
       "buyIn": 5,
       "payBy": "2026-10-09T00:15:00Z",
       "payments": [
@@ -3196,6 +3215,14 @@
           "who": "Mike Sombloski",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a118a0f0e143a8f",
+          "at": "2026-10-07T23:09:22Z",
+          "amt": "5.00",
+          "who": "Dan",
+          "status": "ok",
+          "told": null
         }
       ],
       "opensAt": "2026-10-06T11:44:52Z",
@@ -3233,7 +3260,7 @@
       "columnHead": "The Sombloskis Arrive, One of Them in Latin"
     }
   },
-  "updated": "2026-10-07T23:10:46.950266+00:00",
+  "updated": "2026-10-07T23:54:46.387185+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -3241,7 +3268,8 @@
     "note": "House entry. Picks are drawn at random when the week opens, seeded from the week number, and sealed like everyone else's. Not eligible to win the week."
   },
   "venmoNames": {
-    "0505361f68f1a9b9": "Mrs. Sombloski"
+    "0505361f68f1a9b9": "Mrs. Sombloski",
+    "3249d25000f285f1": "Dan"
   },
   "venmoUrl": "https://venmo.com/Garret-Bentham?txn=pay&amount=5&note=Sunday%20Tax",
   "autoPaid": [
