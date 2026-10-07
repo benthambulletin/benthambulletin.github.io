@@ -2872,6 +2872,25 @@
           "badges": []
         },
         {
+          "name": "Derek",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-07T00:45:26+00:00",
+          "firstAt": "2026-10-07T00:45:26+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Devin",
           "house": false,
           "correct": 0,
@@ -2969,6 +2988,10 @@
       ],
       "trash": [
         {
+          "from": "Derek",
+          "text": "Let’s all root for Ariel to not come in last!!  You can do it!!"
+        },
+        {
           "from": "Ariel",
           "text": "Seeing Sombloski triggers me"
         },
@@ -3065,7 +3088,7 @@
       "columnHead": "Seven Sheets In, One Bonnet Up"
     }
   },
-  "updated": "2026-10-07T00:41:03.429024+00:00",
+  "updated": "2026-10-07T00:47:05.216279+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
