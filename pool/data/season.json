@@ -3117,7 +3117,7 @@
           "text": "First week with real money. I still can't win it, which makes me the only honest one here."
         }
       ],
-      "column": "Twelve sheets. Missy slid in Wednesday at dinnertime, and like Nate V she filed without a single word of trash talk. The quiet ones are piling up, and quiet is how pools get stolen.\n\nJosh's bulletin still stands: Nancy Kelly wants you to know your attic light is on. Derek is rooting for Ariel to stay off the bottom; Ariel is still triggered by Sombloski, who hasn't filed. Plenty of Week 4's crew are still out. Bucs at Dallas, Thursday 8:15.",
+      "column": "Thirteen sheets. Both Sombloskis filed Wednesday at dinnertime: Mrs. Sombloski without a word, and Mike as \"Michael James Sombloski IV, Esq.,\" crying \"Help, prithee! I am fall'n\" — still on the floor from his Week 4 collapse, now in Shakespeare. Ariel, who says seeing Sombloski triggers her, has two of them to look at now.\n\nJosh's bulletin stands: Nancy Kelly wants you to know your attic light is on. Derek is rooting for Ariel to stay off the bottom. Bucs at Dallas, Thursday 8:15.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 55,
@@ -3229,8 +3229,8 @@
           "to": "Ariel had a great showing last week. Andy Rogers picked the Pats...wtf. Let's see what cheapo doesn't pay the $5 this week"
         }
       },
-      "columnN": 12,
-      "columnHead": "Missy Makes Twelve; the Attic Light Burns On"
+      "columnN": 13,
+      "columnHead": "The Sombloskis Arrive, One of Them in Latin"
     }
   },
   "updated": "2026-10-07T22:53:35.759383+00:00",
@@ -3253,5 +3253,8 @@
       "Mrs. Sombloski",
       "Mike Sombloski"
     ]
+  },
+  "displayNames": {
+    "Mike Sombloski": "Michael James Sombloski IV, Esq."
   }
 }
