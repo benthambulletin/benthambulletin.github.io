@@ -37,7 +37,8 @@
     "luka": "Kaylani & Luka",
     "kaylani/luka": "Kaylani & Luka",
     "luka & kaylani": "Kaylani & Luka",
-    "andrew clarke": "Andrew Clarke"
+    "andrew clarke": "Andrew Clarke",
+    "missy": "Mrs. Sombloski"
   },
   "currentWeek": 5,
   "weeks": {
@@ -2986,7 +2987,7 @@
           "badges": []
         },
         {
-          "name": "Missy",
+          "name": "Mrs. Sombloski",
           "house": false,
           "correct": 0,
           "missed": 0,
@@ -3001,7 +3002,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -3095,8 +3096,8 @@
       "column": "Twelve sheets. Missy slid in Wednesday at dinnertime, and like Nate V she filed without a single word of trash talk. The quiet ones are piling up, and quiet is how pools get stolen.\n\nJosh's bulletin still stands: Nancy Kelly wants you to know your attic light is on. Derek is rooting for Ariel to stay off the bottom; Ariel is still triggered by Sombloski, who hasn't filed. Plenty of Week 4's crew are still out. Bucs at Dallas, Thursday 8:15.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 45,
-      "paidN": 9,
+      "pot": 55,
+      "paidN": 11,
       "buyIn": 5,
       "payBy": "2026-10-09T00:15:00Z",
       "payments": [
@@ -3159,9 +3160,17 @@
         {
           "id": "1a118684575080b0",
           "at": "2026-10-07T22:07:27Z",
-          "amt": "10.00",
-          "who": "Melissa",
-          "status": "odd",
+          "amt": "5.00",
+          "who": "Mrs. Sombloski",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a118684575080b0~1",
+          "at": "2026-10-07T22:07:27Z",
+          "amt": "5.00",
+          "who": "Mike Sombloski",
+          "status": "ok",
           "told": null
         }
       ],
@@ -3200,14 +3209,16 @@
       "columnHead": "Missy Makes Twelve; the Attic Light Burns On"
     }
   },
-  "updated": "2026-10-07T22:12:29.531273+00:00",
+  "updated": "2026-10-07T22:13:31.914908+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
     "enabled": true,
     "note": "House entry. Picks are drawn at random when the week opens, seeded from the week number, and sealed like everyone else's. Not eligible to win the week."
   },
-  "venmoNames": {},
+  "venmoNames": {
+    "0505361f68f1a9b9": "Mrs. Sombloski"
+  },
   "venmoUrl": "https://venmo.com/Garret-Bentham?txn=pay&amount=5&note=Sunday%20Tax",
   "autoPaid": [
     "Garret",
@@ -3217,6 +3228,10 @@
     "Tom": [
       "Tom",
       "Thom"
+    ],
+    "Mrs. Sombloski": [
+      "Mrs. Sombloski",
+      "Mike Sombloski"
     ]
   }
 }

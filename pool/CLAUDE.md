@@ -173,7 +173,7 @@ https://benthambulletin.github.io/pool/"
   else). Top level: `venmo`, `venmoUrl`, `venmoNames` (hashed payer names → pool names).
 - Paid = a Venmo row with status `ok`, a `manual` row, or `season.autoPaid`: **Garret and Kaylani & Luka are paid
   automatically the moment they file** (Garret pays for both). `season.covers`: **Tom pays $10 for Tom and Thom** —
-  a $10 payment from Tom books $5 to each. Cash: add a `manual` row only when Garret says so in chat.
+  a $10 payment from Tom books $5 to each. Same for **Mrs. Sombloski, who pays $10 for herself and Mike Sombloski** (she files as "Missy"; alias set Oct 7). Cash: add a `manual` row only when Garret says so in chat.
   The form's "Paid / Playing free" answer is only the player's claim; it never makes anyone paid.
   If an auto-paid person also Venmos $5, score.py marks it `dup` (refund).
 - **Teaching a payer name:** when Garret says "$X from <Venmo name> is <pool name>", set
