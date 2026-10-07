@@ -2992,8 +2992,8 @@
       "column": "Devin won Week 4 and spent her prize on humiliation: Garret, in a bonnet, hanging over his own board. He filed anyway, still sore about Andy Rogers and the Pats. Devin's review of the look: beautiful. Ariel came in at dinnertime vowing that one glimpse of Mike Sombloski sets her off.\n\nAndy slipped in Tuesday night as sheet number seven, joining Thom, Ryan Holovics and Kaylani & Luka, buttercups and all. Most of last week's 24 are still on the porch. Bucs at Dallas, Thursday 8:15.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 25,
-      "paidN": 5,
+      "pot": 30,
+      "paidN": 6,
       "buyIn": 5,
       "payBy": "2026-10-09T00:15:00Z",
       "payments": [
@@ -3018,6 +3018,14 @@
           "at": "2026-10-06T15:15:16Z",
           "amt": "5.00",
           "who": "Ryan Holovics",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a113cbe18238358",
+          "at": "2026-10-07T00:38:10Z",
+          "amt": "5.00",
+          "who": "Derek",
           "status": "ok",
           "told": null
         }
@@ -3057,7 +3065,7 @@
       "columnHead": "Seven Sheets In, One Bonnet Up"
     }
   },
-  "updated": "2026-10-07T00:40:02.135340+00:00",
+  "updated": "2026-10-07T00:41:03.429024+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
