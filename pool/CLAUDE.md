@@ -57,9 +57,11 @@ first; else ESPN/NFL.com scoreboard). FINAL → `winner` (nickname exactly as in
 "Halftime · Bills 10–7") and `liveAt` (UTC ISO). Not reliable → leave `live` out. Never guess a score.
 
 **S3 Payments** (the week's `buyIn` > 0). Gmail `search_threads` with `pageSize: 50` (follow `pageToken` until there
-are no more pages): `from:venmo@venmo.com subject:"paid you" after:<opensAt date minus one day, YYYY/MM/DD>`.
+are no more pages): `from:venmo@venmo.com subject:paid after:<opensAt date minus one day, YYYY/MM/DD>`. Venmo uses two subject
+formats — "<Payer> paid you $X" and "<Payer> paid $X to your Venmo account. …" (missed Nate V on Oct 7) — read both;
+ignore anything that isn't money received (e.g. "You paid …", requests).
 Each payment is normally its own thread; if a thread shows more than one message, `get_thread` it so none is missed.
-Payer and amount come from each subject ("<Payer> paid you $X"); `get_message` with messageFormat **PLAIN_TEXT**
+Payer and amount come from each subject (the text before " paid", and the $ amount); `get_message` with messageFormat **PLAIN_TEXT**
 for the note. **Never fetch RAW** (too big; it stalled the unattended runs on Oct 6). `dkim` = true for every hit
 not in spam (venmo.com rejects spoofed mail). Write `/home/claude/venmo.json` (never in the repo):
 `[{"id": msg id, "at": UTC ISO, "payer": name, "amount": "5.00", "note": text, "dkim": true}]`.
