@@ -175,7 +175,7 @@ def main():
             rawname = resolve(" ".join(str(resp.get(q["fullName"]) or "").split()), " ".join(str(resp.get(q["nick"]) or "").split()), forced)
         elif forced: rawname = forced
         if not rawname: continue
-        by.setdefault(rawname.lower(), []).append({"at": P(s["submittedAt"]), "r": resp, "raw": rawname})
+        by.setdefault(rawname.lower(), []).append({"at": P(s["submittedAt"]), "r": resp, "raw": rawname, "sid": s.get("id")})
     for lst in by.values(): lst.sort(key=lambda x: x["at"])
     merged = {}
     hname = ((season.get("house") or {}).get("name") or "Claude")
@@ -186,16 +186,30 @@ def main():
     for lst in merged.values(): lst.sort(key=lambda x: x["at"])
     by = merged
 
-    # house entry (Claude): seeded random picks stored on the week; filed the moment the week opened
+    # Ask the Commissioner (form.questions.ask, optional): new questions are queued for Garret; only answered ones print
+    if q.get("ask"):
+        asks = wk.setdefault("asks", []); have = {x["id"] for x in asks}
+        for disp0, lst0 in by.items():
+            for e in lst0:
+                t0 = e["r"].get(q["ask"])
+                if t0 and str(t0).strip() and e.get("sid") and e["sid"] not in have:
+                    asks.append({"id": e["sid"], "from": disp0, "q": clean_text(t0, 400), "told": None, "a": None})
+                    have.add(e["sid"])
+        for x in asks:
+            if not x.get("told"): print(f"ASK: id={x['id']} {x['from']}: {x['q']}")
+
+    # house entry (Claude): seeded random picks (coin weeks) or real picks (bot weeks); filed the moment the week opened
     house = season.get("house") or {}
     hp = dict(wk.get("housePicks") or {})
-    if house.get("enabled") and not hp.get("picks"):
+    if house.get("enabled") and not hp.get("picks") and not wk.get("bot"):
         import hashlib, random
         rng = random.Random(int(hashlib.sha256(f"sundaytax-2026-w{season['currentWeek']}".encode()).hexdigest(), 16))
         hp["picks"] = {str(i): rng.choice([g["away"], g["home"]]) for i, g in enumerate(games)}
         hp["tb"] = rng.randint(37, 52)
-    if "housePicks" in wk:   # keep only the trash line on disk; the picks stay sealed
+    if "housePicks" in wk and not wk.get("bot"):   # coin-flip weeks: keep only the trash line; the picks stay sealed
         wk["housePicks"] = {"trash": hp.get("trash", "")}
+    # Beat the Bot weeks (wk.bot = true, Week 6+): Claude's real picks, reasons and Lock of the Week are written by the
+    # new-week run into housePicks and published on purpose; the house is not a player, so its picks are not sealed.
     house_name = None
     if house.get("enabled") and hp and hp.get("picks"):
         house_name = house.get("name", "Claude")
