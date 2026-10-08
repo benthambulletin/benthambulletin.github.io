@@ -40,7 +40,9 @@
     "andrew clarke": "Andrew Clarke",
     "missy": "Mrs. Sombloski",
     "michael james sombloski iv, esq.": "Mike Sombloski",
-    "andy": "Andrew Clarke"
+    "andy": "Andrew Clarke",
+    "arod": "Amanda Rodgers",
+    "a-rod": "Amanda Rodgers"
   },
   "currentWeek": 5,
   "weeks": {
@@ -2818,6 +2820,25 @@
       "tiebreakTotal": null,
       "players": [
         {
+          "name": "Amanda Rodgers",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-08T17:27:54+00:00",
+          "firstAt": "2026-10-08T17:27:54+00:00",
+          "free": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Andrew Clarke",
           "house": false,
           "correct": 0,
@@ -2853,25 +2874,6 @@
           "delta": 0,
           "state": "alive",
           "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Arod",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 15,
-          "max": 15,
-          "tb": null,
-          "sheet": {},
-          "filedAt": "2026-10-08T17:27:54+00:00",
-          "firstAt": "2026-10-08T17:27:54+00:00",
-          "free": true,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": false,
           "badges": []
         },
         {
@@ -3334,7 +3336,7 @@
       "columnHead": "Seventeen Sheets and an Arod"
     }
   },
-  "updated": "2026-10-08T19:10:04.283159+00:00",
+  "updated": "2026-10-08T19:37:22.003080+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
