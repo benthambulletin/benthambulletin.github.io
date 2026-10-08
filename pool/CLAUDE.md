@@ -164,7 +164,17 @@ game, just send the message.
 5. Odd kickoffs (not Thu 8:15, Sun 9:30/1:00/4:05/4:25/8:20, Mon 8:15): create a one-off kickoff-lock task at
    kickoff + 2 minutes per game (copy the kickoff-lock prompt from list_triggers), named "Sunday Tax — kickoff lock
    (Week N, <Away> at <Home>)".
-6. Land as "Pool: Week N slate". Board check.
+6. **Week 6 only (Garret, Oct 8) — names on the form.** Before publishing: on page 1, retitle the name question
+   (`form.questions.name`, OBA57a) to "First and last name", required. Right after it add an INPUT_TEXT question
+   "Board name" (required) with the help text "This is how you'll show up on the board. Nicknames welcome."
+   Read its short id from `fetch_submissions` → `questions` and set `form.questions.fullName` = the name question's
+   id and `form.questions.nick` = the new id. Rebuild the redirect so `n` carries the **Board name** (still last), and
+   read it back. Set `weeks.6.namesForm = true`. Then delete this step from this file.
+7. Land as "Pool: Week N slate". Board check.
+**Names (from Week 6):** score.py keys each player by full name (stored only as a hash in `season.people`) and shows
+their Board name via `displayNames`. It prints `LINKED NEW:`/`LINKED CHECK:` the first time a full name is seen —
+send Garret every LINKED line privately in that run's message (or the next 8:07 digest) so he can correct a wrong link;
+CHECK means it was a guess (shared nickname or a name collision). Full names never go on the board or in the column.
 **Message:** "Week N is up — https://tally.so/r/RGOakJ — first game Thu <time> ET, pay by then. Standings:
 https://benthambulletin.github.io/pool/"
 

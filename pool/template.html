@@ -361,7 +361,7 @@ $("nowK").className="nk"; $("cta").className="cta"; $("mug").innerHTML="";
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
 function money(n){n=Math.round((+n||0)*100)/100; return "$"+(n%1?n.toFixed(2):String(n));}
 function fmtWhen(iso){try{return new Date(iso).toLocaleString("en-US",{weekday:"short",hour:"numeric",minute:"2-digit",timeZone:"America/New_York"})+" ET";}catch(e){return "";}}
-function DN(n){var d=(D.displayNames||{})[n]; return d?'<span class="lng">'+esc(d)+'</span>':esc(n);}   /* a player's chosen long name, set by Garret */
+function DN(n){var d=(D.displayNames||{})[n]; return d?(d.length>18?'<span class="lng">'+esc(d)+'</span>':esc(d)):esc(n);}   /* the board name a player chose; long ones in smaller type */   /* a player's chosen long name, set by Garret */
 function orn(t,teal){return '<div class="sec'+(teal?' t':'')+'"><span class="o">❦</span>'+t+'<span class="o">❦</span></div>';}
 
 var BADGE={

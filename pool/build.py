@@ -70,13 +70,22 @@ def make_page(k, w, archive=False):
         "tiebreakTotal": w.get("tiebreakTotal"), "tbUsed": w.get("tbUsed", False),
         "players": w.get("players", []), "weekWinners": w.get("weekWinners", []),
         "weekPayout": w.get("weekPayout", 0), "season_table": list(tot.values()),
-        "trash": w.get("trash", []), "column": w.get("column", ""), "columnHead": w.get("columnHead", ""), "displayNames": season.get("displayNames", {}),
+        "trash": w.get("trash", []), "column": w.get("column", ""), "columnHead": w.get("columnHead", ""), "displayNames": _dn(season),
         "seasonFrom": min([int(x) for x, ww in season["weeks"].items() if ww.get("status") == "final"] or [0]),
         "updates": w.get("updates", []), "decides": w.get("decides", []),
         "stats": w.get("stats"), "face": w.get("face"), "homer": homer, "house": season.get("house"),
         "seasonBadges": season_badges, "streak": streak, "awards": w.get("awards", []),
         "pastWeeks": past, "archive": archive, "tpl": _TPLV,
     }
+
+def _dn(season):
+    """Board names players chose; if two people chose the same one, both show their record names instead."""
+    dn = dict(season.get("displayNames", {})); seen = {}
+    for k, v in dn.items(): seen.setdefault(v.lower(), []).append(k)
+    for v, ks in seen.items():
+        if len(ks) > 1:
+            for k in ks: dn.pop(k, None)
+    return dn
 
 tpl = open(f"{HERE}/template.html").read()
 def render(page): return tpl.replace("/*DATA*/", json.dumps(page, ensure_ascii=False).replace("<", "\\u003c"))
