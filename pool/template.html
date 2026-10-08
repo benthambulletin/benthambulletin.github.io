@@ -274,6 +274,16 @@ details.gmore[open]>summary{display:none}
 .whoin li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.4rem 0;border-bottom:1px dotted var(--rule);font-size:1.02rem}
 .whoin .pst{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
 .whoin .pst.ok{color:var(--ink)}
+.tt li .rpl{display:block;font-family:'AR';font-style:normal;font-size:.8rem;color:var(--soft);margin:.25rem 0 0 1rem;line-height:1.35}
+.tt li .rpl i{font-style:normal;font-weight:700;color:var(--ink)}
+.btb{font-size:.95rem;line-height:1.45}
+.btb .lk{border:1px solid var(--rule);padding:.6rem .75rem;margin:0 0 .7rem;background:var(--wash)}
+.btb .lk b{font-family:'PF';font-size:1.1rem}
+.btb ul{list-style:none;margin:0;padding:0}
+.btb li{padding:.3rem 0;border-top:1px dotted var(--rule)}
+.btb .why{color:var(--soft);font-size:.85rem}
+.btb .tl{margin:.7rem 0 0;font-family:'AR';font-size:.8rem;color:var(--soft);text-align:center}
+.aqa p{margin:0 0 .3rem}.aqa .q{font-style:italic}.aqa .a{margin-bottom:.9rem}
 .lng{font-size:.7em;line-height:1.2;white-space:normal;display:inline-block;vertical-align:baseline}
 .stand td.nm:has(.lng),.whoin.two li>span:first-child:has(.lng){white-space:normal}
 .whoin.two{display:grid;grid-template-columns:1fr 1fr;column-gap:1.2rem;max-width:none}
@@ -375,6 +385,7 @@ var BADGE={
   buzzer:{i:"🚨",l:"Buzzer Beater",d:"Filed inside the last hour before Thursday kickoff."},
   streak:{i:"🔥",l:"On Fire",d:"Three or more correct picks in a row. The number is the streak."}
 };
+if(D.bot){BADGE.coin={i:"🤖",l:"Beaten by the Bot",d:"Behind Claude's picks this week."};}
 function badgesFor(p){
   var out=(p.badges||[]).slice();
   ((D.seasonBadges&&D.seasonBadges[p.name])||[]).forEach(function(b){out.push(b);});
@@ -654,9 +665,24 @@ if(D.column){
 secs.column=h; h="";
 /* trash talk: the three newest up front, the rest one tap away */
 if(D.trash.length){
-  var TT=D.trash.slice().reverse(), li=function(t){return '<li>“'+esc(t.text)+'”<b>'+DN(t.from)+'</b></li>';};
+  var TT=D.trash.slice().reverse(), li=function(t){var r=(D.replies||{})[t.from]; return '<li>“'+esc(t.text)+'”<b>'+DN(t.from)+'</b>'+(r?'<span class="rpl"><i>Claude:</i> '+esc(r)+'</span>':'')+'</li>';};
   h+=orn("Trash Talk")+'<ul class="tt">'+TT.slice(0,3).map(li).join('')+'</ul>';
   if(TT.length>3) h+='<details class="tmore"><summary>Show all '+TT.length+' ›</summary><ul class="tt">'+TT.slice(3).map(li).join('')+'</ul></details>';
+}
+/* Beat the Bot: Claude's picks out in the open (bot weeks) */
+if(D.bot&&D.bot.picks&&Object.keys(D.bot.picks).length){
+  var B=D.bot, gi=function(i){return D.games[+i];};
+  h+=orn("Beat the Bot",true)+'<div class="hint">Claude’s picks, in the open. Finish ahead of it and it goes on your tally.</div><div class="btb">';
+  if(B.lock!=null&&gi(B.lock)){var lg=gi(B.lock); h+='<div class="lk">🔒 Lock of the Week: <b>'+esc(B.picks[String(B.lock)]||'')+'</b> ('+esc(lg.away)+' at '+esc(lg.home)+')'+(lg.winner?(lg.winner===B.picks[String(B.lock)]?' · <b style="color:var(--teal)">cashed</b>':' · <b style="color:var(--red)">busted</b>'):'')+(B.lockWhy?'<br><span class="why">'+esc(B.lockWhy)+'</span>':'')+'</div>';}
+  h+='<details class="tmore"><summary>See all of Claude’s picks ›</summary><ul>'+Object.keys(B.picks).sort(function(a,b){return a-b;}).map(function(i){var g=gi(i);if(!g)return '';var pk=B.picks[i],ok=g.winner?(g.winner===pk?' ✓':' ✗'):'';
+    return '<li><b>'+esc(pk)+'</b>'+ok+' <span class="why">over '+esc(pk===g.home?g.away:g.home)+((B.why||{})[i]?' — '+esc(B.why[i]):'')+'</span></li>';}).join('')+'</ul></details>';
+  var tl=Object.keys(D.botTally||{}).sort(function(a,b){return D.botTally[b]-D.botTally[a]||a.localeCompare(b);});
+  if(tl.length) h+='<div class="tl">Beat the Bot, season: '+tl.slice(0,8).map(function(n){return DN(n)+' '+D.botTally[n];}).join(' · ')+'</div>';
+  h+='</div>';
+}
+/* Ask the Commissioner: answered questions only, answers are Garret's */
+if(D.qa&&D.qa.length){
+  h+=orn("Ask the Commissioner")+'<div class="aqa">'+D.qa.map(function(x){return '<p class="q">“'+esc(x.q)+'” — '+DN(x.from)+'</p><p class="a"><b>G.:</b> '+esc(x.a)+'</p>';}).join('')+'</div>';
 }
 secs.trash=h; h="";
 
@@ -668,7 +694,7 @@ if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
   if(S.best&&S.best.who&&(S.best.who.length<=2||S.best.who.length*3<realPs.length)){var bg=G[S.best.game];h+='<div class="it"><div class="k">Best pick</div><div class="v">'+esc(bg.winner)+'</div><div class="d">'+esc(bg.away)+' at '+esc(bg.home)+'. Only <b>'+esc(S.best.who.join(", "))+'</b> had it.</div></div>';}
   if(S.worst&&S.worst.n===0){var wg=G[S.worst.game];h+='<div class="it"><div class="k">Nobody had</div><div class="v">'+esc(wg.winner)+'</div><div class="d">'+esc(wg.away)+' at '+esc(wg.home)+'. The whole room, wrong.</div></div>';}
   var hp=ps.filter(function(p){return p.house;})[0];
-  if(hp){var beat=realPs.filter(function(p){return p.correct<hp.correct;}).length;h+='<div class="it"><div class="k">'+esc(hp.name)+', the coin</div><div class="v">'+hp.correct+'–'+hp.missed+'</div><div class="d">'+(beat?'Ahead of <b>'+beat+'</b> of you.':(realPs.every(function(p){return p.correct>hp.correct;})?'Behind everyone. For now.':'Ahead of nobody yet.'))+'</div></div>';}
+  if(hp){var beat=realPs.filter(function(p){return p.correct<hp.correct;}).length;h+='<div class="it"><div class="k">'+esc(hp.name)+(D.bot?', the bot':', the coin')+'</div><div class="v">'+hp.correct+'–'+hp.missed+'</div><div class="d">'+(beat?'Ahead of <b>'+beat+'</b> of you.':(realPs.every(function(p){return p.correct>hp.correct;})?'Behind everyone. For now.':'Ahead of nobody yet.'))+'</div></div>';}
   h+='</div>';
 }
 

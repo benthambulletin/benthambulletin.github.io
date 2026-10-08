@@ -70,7 +70,7 @@ def make_page(k, w, archive=False):
         "tiebreakTotal": w.get("tiebreakTotal"), "tbUsed": w.get("tbUsed", False),
         "players": w.get("players", []), "weekWinners": w.get("weekWinners", []),
         "weekPayout": w.get("weekPayout", 0), "season_table": list(tot.values()),
-        "trash": w.get("trash", []), "column": w.get("column", ""), "columnHead": w.get("columnHead", ""), "displayNames": _dn(season),
+        "trash": w.get("trash", []), "replies": w.get("replies", {}), "bot": _bot(w), "botTally": bot_tally, "qa": [x for x in w.get("asks", []) if x.get("a")], "column": w.get("column", ""), "columnHead": w.get("columnHead", ""), "displayNames": _dn(season),
         "seasonFrom": min([int(x) for x, ww in season["weeks"].items() if ww.get("status") == "final"] or [0]),
         "updates": w.get("updates", []), "decides": w.get("decides", []),
         "stats": w.get("stats"), "face": w.get("face"), "homer": homer, "house": season.get("house"),
@@ -91,6 +91,19 @@ tpl = open(f"{HERE}/template.html").read()
 def render(page): return tpl.replace("/*DATA*/", json.dumps(page, ensure_ascii=False).replace("<", "\\u003c"))
 
 # past weeks: every final week except the one on the board gets its own frozen page at /pool/weeks/<N>/
+def _bot(w):
+    """Beat the Bot weeks: Claude's public picks with reasons and the Lock of the Week."""
+    if not w.get("bot"): return None
+    hp = w.get("housePicks") or {}
+    return {"picks": hp.get("picks", {}), "why": hp.get("why", {}), "lock": hp.get("lock"), "lockWhy": hp.get("lockWhy", "")}
+# Beat the Bot tally: weeks each player finished with a better record than Claude (final bot weeks only)
+bot_tally = {}
+for k, w in season["weeks"].items():
+    if w.get("status") != "final" or not w.get("bot"): continue
+    hs = [p for p in w.get("players", []) if p.get("house")]
+    if not hs: continue
+    for p in w.get("players", []):
+        if not p.get("house") and p["correct"] > hs[0]["correct"]: bot_tally[p["name"]] = bot_tally.get(p["name"], 0) + 1
 past = sorted([int(k) for k, w in season["weeks"].items() if w.get("status") == "final" and k != n], reverse=True)
 def _champ(k):
     w = season["weeks"][str(k)]; W = w.get("weekWinners", [])
