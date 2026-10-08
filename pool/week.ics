@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:sundaytax-2026-w5-Buccaneers-Cowboys@benthambulletin.github.io
-DTSTAMP:20261008T001201Z
+DTSTAMP:20261008T011045Z
 DTSTART:20261009T001500Z
 DURATION:PT15M
 SUMMARY:Sunday Tax: Buccaneers at Cowboys locks — get your picks in
@@ -19,7 +19,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:sundaytax-2026-w5-Eagles-Jaguars@benthambulletin.github.io
-DTSTAMP:20261008T001201Z
+DTSTAMP:20261008T011045Z
 DTSTART:20261011T133000Z
 DURATION:PT15M
 SUMMARY:Sunday Tax: Eagles at Jaguars locks — get your picks in
