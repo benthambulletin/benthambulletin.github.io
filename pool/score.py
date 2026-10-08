@@ -136,6 +136,8 @@ def main():
         if wk.get("opensAt") and P(s["submittedAt"]) < P(wk["opensAt"]): continue  # earlier week's sheet
         resp = {r["questionId"]: r["answer"] for r in s["responses"]}
         rawname = str(resp.get(q["name"], "")).strip()
+        # season.subNames: Garret's call on one specific sheet whose name is ambiguous (two "Andy"s) — {submission id: pool name}
+        rawname = (season.get("subNames") or {}).get(s.get("id"), rawname)
         if not rawname: continue
         by.setdefault(rawname.lower(), []).append({"at": P(s["submittedAt"]), "r": resp, "raw": rawname})
     for lst in by.values(): lst.sort(key=lambda x: x["at"])
