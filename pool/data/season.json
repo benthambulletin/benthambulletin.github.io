@@ -3242,8 +3242,8 @@
       "column": "Nineteen sheets with four hours to go. Leah slid in at 3:42, and Andy R filed with a line aimed straight at the commissioner: Garret doesn't know ball, hence the bonnet and the pacifier. Devin, the reigning champ, still says the bonnet looks beautiful. Mike Sombloski remains on the floor in Elizabethan, and Derek is still rooting for Ariel to dodge last place.\n\nPeggy, Kara, Jeff G and B-rad played Week 4 and haven't shown. Bucs at Dallas locks at 8:15 tonight; the rest of your sheet can change until each game starts.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 85,
-      "paidN": 17,
+      "pot": 90,
+      "paidN": 18,
       "buyIn": 5,
       "payBy": "2026-10-09T00:15:00Z",
       "payments": [
@@ -3366,6 +3366,14 @@
           "who": "Andy R",
           "status": "manual",
           "told": null
+        },
+        {
+          "id": "1a11da0527dab4ac",
+          "at": "2026-10-08T22:26:48Z",
+          "amt": "5.00",
+          "who": "Peggy",
+          "status": "ok",
+          "told": null
         }
       ],
       "opensAt": "2026-10-06T11:44:52Z",
@@ -3403,7 +3411,7 @@
       "columnHead": "Nineteen In, and Andy R Brings Heat"
     }
   },
-  "updated": "2026-10-08T22:10:37.956958+00:00",
+  "updated": "2026-10-08T23:08:08.747015+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -3413,7 +3421,8 @@
   "venmoNames": {
     "0505361f68f1a9b9": "Mrs. Sombloski",
     "3249d25000f285f1": "Dan",
-    "fadf5625bf4f1f2b": "Walczyk"
+    "fadf5625bf4f1f2b": "Walczyk",
+    "983486e246202252": "Peggy"
   },
   "venmoUrl": "https://venmo.com/Garret-Bentham?txn=pay&amount=5&note=Sunday%20Tax",
   "autoPaid": [
