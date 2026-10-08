@@ -3125,6 +3125,30 @@
           "badges": []
         },
         {
+          "name": "Peggy",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-08T23:38:45+00:00",
+          "firstAt": "2026-10-08T23:38:45+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
+        },
+        {
           "name": "Ryan Holovics",
           "house": false,
           "correct": 0,
@@ -3419,7 +3443,7 @@
       "columnHead": "Nineteen In, and Andy R Brings Heat"
     }
   },
-  "updated": "2026-10-08T23:11:52.793367+00:00",
+  "updated": "2026-10-08T23:42:31.429594+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
