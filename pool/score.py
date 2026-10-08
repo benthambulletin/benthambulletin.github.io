@@ -128,6 +128,39 @@ def main():
     prev_rank = {p["name"]: p.get("rank") for p in wk.get("players", [])}
     prev_decided = wk.get("decidedAtLastRun", 0)   # winners get written before we run, so remember our own count
 
+    # Week 6+ form: "First and last name" (form.questions.fullName) + "Board name" (form.questions.nick).
+    # The full name is the identity (stored only as a hash in season.people -> pool name); the board name is what shows.
+    people = season.setdefault("people", {})
+    known_names = {p["name"].lower(): p["name"] for w0 in season["weeks"].values() for p in w0.get("players", [])}
+    linked = []
+    def short(full):   # "Andy Rogers" -> {"andy r", "andy r."}: last week's "First L" names
+        w = full.lower().split()
+        return {f"{w[0]} {w[-1][0]}", f"{w[0]} {w[-1][0]}."} if len(w) > 1 else set()
+    def resolve(full, nick, forced=None):
+        fk = vhash(full) if full else None
+        if forced:                                   # Garret named this sheet's owner (season.subNames)
+            canon = forced
+            if fk: people[fk] = canon
+        elif fk and fk in people: canon = people[fk]
+        else:
+            kind = "NEW"
+            canon = aliases.get(full.lower()) or known_names.get(full.lower()) \
+                    or next((known_names[k] for k in short(full) if k in known_names), None) \
+                    or known_names.get(nick.lower())
+            if not canon and aliases.get(nick.lower()):  # a shared nickname ("Andy") is a guess: Garret confirms
+                canon = aliases[nick.lower()]; kind = "CHECK"
+            canon = canon or nick or full
+            if fk:
+                if canon in people.values():        # that pool name already belongs to someone else
+                    last = (full.split()[-1][:1].upper() + ".") if len(full.split()) > 1 else "2"
+                    canon = f"{nick or full.split()[0]} {last}"; kind = "CHECK"
+                linked.append((kind, full, nick, canon))
+                people[fk] = canon
+        dn = season.setdefault("displayNames", {})
+        if nick and nick != canon: dn[canon] = nick       # the board shows the name they chose; records stay under canon
+        elif nick == canon: dn.pop(canon, None)
+        return canon
+
     # group submissions by normalized name, oldest first
     by = {}
     subs = raw["data"]["submissions"] if "data" in raw else raw["submissions"]
@@ -137,7 +170,10 @@ def main():
         resp = {r["questionId"]: r["answer"] for r in s["responses"]}
         rawname = str(resp.get(q["name"], "")).strip()
         # season.subNames: Garret's call on one specific sheet whose name is ambiguous (two "Andy"s) — {submission id: pool name}
-        rawname = (season.get("subNames") or {}).get(s.get("id"), rawname)
+        forced = (season.get("subNames") or {}).get(s.get("id"))
+        if q.get("fullName") and q.get("nick") and (resp.get(q["fullName"]) or resp.get(q["nick"])):
+            rawname = resolve(" ".join(str(resp.get(q["fullName"]) or "").split()), " ".join(str(resp.get(q["nick"]) or "").split()), forced)
+        elif forced: rawname = forced
         if not rawname: continue
         by.setdefault(rawname.lower(), []).append({"at": P(s["submittedAt"]), "r": resp, "raw": rawname})
     for lst in by.values(): lst.sort(key=lambda x: x["at"])
@@ -453,5 +489,7 @@ def main():
                 if x["status"] in ("late", "nosheet", "dup"): print(f"  REFUND: {x['status']} who={x['who']} amt={x['amt']} id={x['id']}")
                 elif x["status"] in ("unmatched", "odd", "early"): print(f"  UNRESOLVED: {x['status']} who={x['who']} amt={x['amt']} id={x['id']}")
     if trash: print("TRASH:", *[f"{t['from']}: {t['text']}" for t in trash], sep="\n  ")
+    for kind, full, nick, canon in linked:   # tell Garret privately (full names never go on the board)
+        print(f"LINKED {kind}: {full} (board name '{nick}') -> {canon}")
 
 if __name__ == "__main__": main()
