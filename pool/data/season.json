@@ -39,7 +39,8 @@
     "luka & kaylani": "Kaylani & Luka",
     "andrew clarke": "Andrew Clarke",
     "missy": "Mrs. Sombloski",
-    "michael james sombloski iv, esq.": "Mike Sombloski"
+    "michael james sombloski iv, esq.": "Mike Sombloski",
+    "andy": "Andrew Clarke"
   },
   "currentWeek": 5,
   "weeks": {
@@ -2817,7 +2818,7 @@
       "tiebreakTotal": null,
       "players": [
         {
-          "name": "Andy",
+          "name": "Andrew Clarke",
           "house": false,
           "correct": 0,
           "missed": 0,
@@ -3287,7 +3288,7 @@
       "columnHead": "Devin Wins, Garret Wears the Bonnet"
     }
   },
-  "updated": "2026-10-08T12:30:05.113170+00:00",
+  "updated": "2026-10-08T12:48:59.695952+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
