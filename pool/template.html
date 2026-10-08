@@ -323,11 +323,12 @@ function tick(){
   for(var i=0;i<els.length;i++){
     var ms=Date.parse(els[i].getAttribute("data-until"))-now;
     if(ms<=0){els[i].textContent="locked";continue;}
-    var m=Math.floor(ms/60000), d=Math.floor(m/1440), h=Math.floor(m%1440/60), mm=m%60;
-    els[i].textContent=(d?d+"d "+h+"h":h?h+"h "+mm+"m":mm+"m")+(els[i].closest&&els[i].closest(".nl")?"":" left");
+    var m=Math.floor(ms/60000), d=Math.floor(m/1440), h=Math.floor(m%1440/60), mm=m%60, ss=Math.floor(ms%60000/1000);
+    /* inside the last hour it's a real clock: minutes and seconds, ticking */
+    els[i].textContent=(d?d+"d "+h+"h":h?h+"h "+mm+"m":mm+":"+(ss<10?"0":"")+ss)+(els[i].closest&&els[i].closest(".nl")?"":" left");
   }
 }
-setInterval(tick,30000);
+setInterval(tick,1000);
 /* live scores: a GitHub job publishes ESPN's scoreboard to the pool-live branch every ~5 minutes */
 document.addEventListener('click',function(e){if(e.target&&e.target.id==='seasAll'){e.preventDefault();window.SEAS=true;render();}});
 document.addEventListener('toggle',function(e){if(e.target&&e.target.id==='smore')window.SMORE=e.target.open;if(e.target&&e.target.id==='gmore')window.GMORE=e.target.open;},true);
