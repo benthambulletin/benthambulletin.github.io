@@ -2856,6 +2856,25 @@
           "badges": []
         },
         {
+          "name": "Arod",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-08T17:27:54+00:00",
+          "firstAt": "2026-10-08T17:27:54+00:00",
+          "free": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Claude",
           "house": true,
           "correct": 0,
@@ -3175,7 +3194,7 @@
           "text": "First week with real money. I still can't win it, which makes me the only honest one here."
         }
       ],
-      "column": "Walczyk filed Thursday morning, which makes sixteen sheets with the Bucs and Cowboys eight hours out. Devin, the reigning champ, still has Garret hanging in a bonnet on the Mugshot and reviewed the look on her sheet: “Nice Bonnet, G. You look beautiful.” Mike Sombloski filed in Elizabethan, apparently from the floor, and Josh used his line to pass along a message about your attic light.\n\nPeggy, Leah, Kara, Jeff G and B-rad played Week 4 and haven't shown. Bucs at Dallas, 8:15 tonight — that game locks at kickoff; the rest of your sheet can change until each game starts.",
+      "column": "Arod filed at lunch Thursday, number seventeen, with the Bucs and Cowboys six hours out. Devin, the reigning champ, is still reviewing Garret's bonnet on the Mugshot (“You look beautiful”), Mike Sombloski filed in Elizabethan from somewhere on the floor, and Derek spent his line rooting for Ariel to avoid last place. Ariel used hers on Sombloski.\n\nPeggy, Leah, Kara, Jeff G and B-rad played Week 4 and haven't shown. Bucs at Dallas locks at 8:15 tonight; the rest of your sheet can change until each game starts.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 70,
@@ -3311,11 +3330,11 @@
           "to": "Ariel had a great showing last week. Andy Rogers picked the Pats...wtf. Let's see what cheapo doesn't pay the $5 this week"
         }
       },
-      "columnN": 16,
-      "columnHead": "Sixteen Sheets In, Bonnet Still On"
+      "columnN": 17,
+      "columnHead": "Seventeen Sheets and an Arod"
     }
   },
-  "updated": "2026-10-08T17:11:01.235899+00:00",
+  "updated": "2026-10-08T18:10:16.188006+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
