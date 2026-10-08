@@ -227,7 +227,7 @@ All ten, with signs and birthdays — the roster is complete. Keep `data/family.
 
 **Late October is birthday season.** Claire on the 23rd, then Garret and Ariel *sharing* the 25th. Don't run two separate banners that morning — build one joint edition for the two of them. Three birthdays inside three days is worth treating as a single stretch: Claire's edition on the 23rd, the joint one on the 25th.
 
-No anniversaries supplied yet.
+**Anniversaries:** Ariel and Tom, October 8 (married 2023). Day-of: red banner in Family Today and the calendar; put it on the calendar a week out.
 
 Calendar as of Sept 10: **Sat Sept 12 — family get-together in Dunkirk** (time and guest list not yet supplied). Sun Sept 13 — Bills at Houston, Jets at Tennessee, both 1:00. Sat Sept 26 — Harvest Moon. Tue Nov 3 — Election Day.
 
