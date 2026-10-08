@@ -3242,8 +3242,8 @@
       "column": "Nineteen sheets with four hours to go. Leah slid in at 3:42, and Andy R filed with a line aimed straight at the commissioner: Garret doesn't know ball, hence the bonnet and the pacifier. Devin, the reigning champ, still says the bonnet looks beautiful. Mike Sombloski remains on the floor in Elizabethan, and Derek is still rooting for Ariel to dodge last place.\n\nPeggy, Kara, Jeff G and B-rad played Week 4 and haven't shown. Bucs at Dallas locks at 8:15 tonight; the rest of your sheet can change until each game starts.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 90,
-      "paidN": 18,
+      "pot": 95,
+      "paidN": 19,
       "buyIn": 5,
       "payBy": "2026-10-09T00:15:00Z",
       "payments": [
@@ -3371,8 +3371,8 @@
           "id": "1a11d9a43660ccdd",
           "at": "2026-10-08T22:20:11Z",
           "amt": "5.00",
-          "who": "Leah",
-          "status": "dup",
+          "who": "B-rad",
+          "status": "ok",
           "told": null
         },
         {
@@ -3419,7 +3419,7 @@
       "columnHead": "Nineteen In, and Andy R Brings Heat"
     }
   },
-  "updated": "2026-10-08T23:11:21.936679+00:00",
+  "updated": "2026-10-08T23:11:52.793367+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
