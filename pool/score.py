@@ -309,7 +309,12 @@ def main():
         for nm in season.get("autoPaid", []):
             if any(canon(p["name"]) == canon(nm) for p in real): paid.add(canon(nm))
         for p in players: p["paid"] = (not p.get("house")) and canon(p["name"]) in paid
-        eligible = [p for p in real if p["paid"]]
+        # wk.botPaid (Garret pays Claude's $5, from Week 6): the house is a paid entry and can win; its winnings roll over
+        if wk.get("botPaid"):
+            for p in players:
+                if p.get("house"): p["paid"] = True
+            paid.add("__house__")
+        eligible = [p for p in real if p["paid"]] + ([p for p in players if p.get("house")] if wk.get("botPaid") else [])
         if eligible:
             elead = max(p["correct"] for p in eligible)
             for p in real:
@@ -409,7 +414,7 @@ def main():
     # during the week the pot counts everyone who has paid, filed or not (people pay first, then file);
     # at --final it is paid sheets only — a payment with no sheet is refunded
     npaid = len(eligible) if final else len(paid)
-    wk["pot"] = buy * npaid if buy else 0
+    wk["pot"] = (buy * npaid + float(wk.get("rollIn", 0) or 0)) if buy else 0   # rollIn: Claude's winnings from last week
     wk["paidN"] = npaid if buy else 0
     wk["decides"] = decides[:4]
     wk["weekWinners"], wk["weekPayout"], wk["tbUsed"] = [], 0, False
@@ -436,6 +441,9 @@ def main():
                 for p in players: p.pop("_d", None)
             wk["weekWinners"] = [p["name"] for p in lead]
             wk["weekPayout"] = int(wk["pot"] * 100 / len(lead)) / 100
+            # Claude's share never gets paid out: it rolls into next week's pot (NEW WEEK copies it to rollIn)
+            wk["rollOut"] = wk["weekPayout"] if any(p.get("house") for p in lead) else 0
+            if wk["rollOut"]: print(f"ROLLOVER: Claude won ${wk['rollOut']:g} — it rolls into next week's pot")
             for p in lead: award(p, "crown", "won the week" + (" on the tiebreaker" if wk["tbUsed"] else ""))
             # the week's winner ranks first on the final board; everyone else keeps record order behind them
             W = set(wk["weekWinners"])

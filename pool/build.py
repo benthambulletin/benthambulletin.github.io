@@ -63,7 +63,7 @@ def make_page(k, w, archive=False):
     return {
         "name": season["name"], "season": season["season"], "formUrl": season["form"]["url"],
         "buyIn": w.get("buyIn", 0), "plannedBuyIn": season.get("plannedBuyIn", 5),
-        "pot": w.get("pot", 0), "paidN": w.get("paidN", 0), "payBy": w.get("payBy"),
+        "pot": w.get("pot", 0), "rollIn": w.get("rollIn", 0), "rollOut": w.get("rollOut", 0), "paidN": w.get("paidN", 0), "payBy": w.get("payBy"),
         "venmo": season.get("venmo"), "venmoUrl": season.get("venmoUrl"),
         "anyPaid": any(x.get("buyIn", 0) for x in season["weeks"].values()), "week": int(k), "status": w.get("status", "pre"),
         "updated": _iso(season.get("updated", "")) if archive else _BUILT, "games": w["games"],
