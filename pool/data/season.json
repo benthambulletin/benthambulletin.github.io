@@ -2992,7 +2992,7 @@
           "firstAt": "2026-10-06T23:11:38+00:00",
           "free": true,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -3013,7 +3013,7 @@
           "firstAt": "2026-10-08T19:17:39+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3034,7 +3034,7 @@
           "firstAt": "2026-10-08T17:27:54+00:00",
           "free": true,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3055,7 +3055,7 @@
           "firstAt": "2026-10-08T23:51:31+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -3081,7 +3081,7 @@
           "firstAt": "2026-10-06T11:44:52+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "house",
           "paid": false,
           "badges": []
@@ -3102,7 +3102,7 @@
           "firstAt": "2026-10-07T00:45:26+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3123,7 +3123,7 @@
           "firstAt": "2026-10-06T12:47:50+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3144,7 +3144,7 @@
           "firstAt": "2026-10-06T12:52:53+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3165,7 +3165,7 @@
           "firstAt": "2026-10-07T14:42:49+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3186,7 +3186,7 @@
           "firstAt": "2026-10-06T13:04:05+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3207,7 +3207,7 @@
           "firstAt": "2026-10-07T22:28:55+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3228,7 +3228,7 @@
           "firstAt": "2026-10-07T12:38:11+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3249,7 +3249,7 @@
           "firstAt": "2026-10-08T23:38:45+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -3275,7 +3275,7 @@
           "firstAt": "2026-10-06T15:14:19+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3296,7 +3296,7 @@
           "firstAt": "2026-10-06T12:48:14+00:00",
           "free": true,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -3317,7 +3317,7 @@
           "firstAt": "2026-10-08T02:32:10+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3338,7 +3338,7 @@
           "firstAt": "2026-10-08T15:21:17+00:00",
           "free": false,
           "rank": 6,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3382,7 +3382,7 @@
           "text": "First week with real money. I still can't win it, which makes me the only honest one here."
         }
       ],
-      "column": "Tampa 24, Dallas 16, and the herd got what herds get. Leah, Dan, Melissa, Mrs. Sombloski and Ariel sit 1–0 on top; everybody else is 0–1, Claude included, so the robot is officially exactly as dumb as you.\n\nAriel went 6–10 last week and is now leading a pool. Enjoy it; it may not survive Sunday brunch. Mike Sombloski picked against his own household and lost, which he will hear about until Thanksgiving. And the commissioner, bonnet still on, starts in a 17-way tie for sixth. Fourteen to go.",
+      "column": "Derek spent his trash talk begging the room to root for Ariel not to finish last. One game in, Ariel is tied for first and Derek is stuck in the 17-way pileup at 0–1. Pray for yourself, Derek.\n\nAndy R says the commissioner doesn't know ball, then took Dallas right alongside him; the bonnet and the pacifier have company. Leah, Dan, Melissa and Mrs. Sombloski share the top with Ariel. Fourteen games left, the first at 9:30 Sunday morning in London, before most of you have found the coffee.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 95.0,
@@ -3599,11 +3599,11 @@
         }
       },
       "columnN": 21,
-      "columnHead": "Five Wolves Ate Seventeen Sheep for Dinner",
+      "columnHead": "Derek Prayed for Ariel. Ariel Didn't Need It.",
       "thuDone": true
     }
   },
-  "updated": "2026-10-09T03:35:20.599656+00:00",
+  "updated": "2026-10-09T12:33:38.107514+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
