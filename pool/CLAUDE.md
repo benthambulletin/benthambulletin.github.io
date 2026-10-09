@@ -146,7 +146,8 @@ Land as "Pool: Week N final". Board check.
 and amount; nobody paid → "No paid sheets — nobody to pay."); "Refunds: ..." from EVERY `REFUND:` line (or "Refunds:
 none"); "Still to sort: $amt from <Venmo payer> (<status>)" for each `UNRESOLVED:` line; one line per player with
 record (✓ after paid names); entrant count; https://benthambulletin.github.io/pool/; "<winner> picks the mugshot for
-next week — send me the photo."
+next week — send me the photo." If score.py printed `ROLLOVER:`, say "Claude won $X — it rolls into Week N+1" instead
+of "Pay Claude", and if Claude won the week the mugshot pick goes to the best human finisher.
 
 ## Run: NEW WEEK (Tue 3:52 am) — task "new week"
 Idempotent: if `currentWeek` already equals the coming week and the form's first game title names that Thursday
@@ -181,20 +182,29 @@ game, just send the message.
    read it back. Set `weeks.6.namesForm = true`.
    **Also Week 6 (Garret, Oct 8) — Claude stops being a coin.** (a) Set `weeks.N.bot = true` and make Claude's real
    picks: for every game read the current line, injuries and form (two sources), pick the straight-up winner, and write
-   `housePicks = {"trash": <one dry line>, "picks": {"<i>": team}, "tb": <Monday total guess>, "why": {"<i>": <one
-   line, 12 words max>}, "lock": <i of the game Claude is surest of>, "lockWhy": <one line>}`. These are published on
-   purpose (Beat the Bot). (b) On page 2 after the trash-talk question add an optional TEXTAREA "Ask the Commissioner
+   `housePicks = {"trash": <one dry line>, "picks": {"<i>": team}, "why": {"<i>": <one line, 12 words max>}, "lock":
+   <i of the game Claude is surest of>, "lockWhy": <one line>}` — **no `tb`** (see Claude's tiebreaker below). These are
+   published on purpose (Beat the Bot). Also set `weeks.N.botPaid = true` and `weeks.N.rollIn` = the previous week's
+   `rollOut` (0 if none). (b) On page 2 after the trash-talk question add an optional TEXTAREA "Ask the Commissioner
    (optional) — Garret answers the best ones on the board"; set `form.questions.ask` to its short id (read it from
    `fetch_submissions` → `questions`). (c) In `about/index.html` replace the two Claude paragraphs and the 🪙 badge
    entry: Claude now makes real picks, shown on the board as Beat the Bot with a Lock of the Week; the badge is
-   🤖 "Beaten by the Bot — you're behind Claude's picks"; Claude still can't win. Then delete this step from this file.
+   🤖 "Beaten by the Bot — you're behind Claude's picks". Garret pays Claude's $5, so Claude is a paid entry and can
+   win; anything Claude wins rolls into the next week's pot. Claude's tiebreaker is the Monday game's closing
+   over/under, set at kickoff. Then delete this step from this file.
 7. Land as "Pool: Week N slate". Board check.
 **Names (from Week 6):** score.py keys each player by full name (stored only as a hash in `season.people`) and shows
 their Board name via `displayNames`. It prints `LINKED NEW:`/`LINKED CHECK:` the first time a full name is seen —
 send Garret every LINKED line privately in that run's message (or the next 8:07 digest) so he can correct a wrong link;
 CHECK means it was a guess (shared nickname or a name collision). Full names never go on the board or in the column.
 **Bot weeks (from Week 6, `weeks.N.bot`):** every new week makes Claude's real picks as in step 6(a) — research, never
-random — and keeps the house's picks public. The Monday-night column and the SCORE column say how the Lock of the Week
+random — keeps the house's picks public, and sets `botPaid = true` and `rollIn` = last week's `rollOut`.
+**Claude pays in (Garret, Oct 8):** Garret covers Claude's $5 each week (no Venmo row; `botPaid` does it). Claude ranks
+and can win like any paid sheet. Whatever Claude wins (`rollOut`, printed as `ROLLOVER:`) is never paid out — it rolls
+into next week's pot (`rollIn`), and keeps rolling if Claude wins again. A tie with a human splits: the human is paid
+their share, Claude's share rolls. **Claude's tiebreaker** is the Monday game's closing over/under: the Monday 8:17
+kickoff-lock run sets `housePicks.tb` to it (rounded to a whole number; two sources) — never earlier, so nobody can aim
+at it, and never chosen by Claude after seeing anyone's number. The Monday-night column and the SCORE column say how the Lock of the Week
 did; the SCORE message adds "Beat the Bot: <names who finished with a better record than Claude, or nobody>".
 **Message:** "Week N is up — https://tally.so/r/RGOakJ — first game Thu <time> ET, pay by then. Standings:
 https://benthambulletin.github.io/pool/"
@@ -252,7 +262,8 @@ Your latest sheet before each game's kickoff counts for that game; a sheet after
 Tied game counts for nobody. Blank tiebreaker = worst guess. Skipping a week is free. Kaylani & Luka are one entrant
 (every spelling maps to "Kaylani & Luka" via `aliases`); add aliases for new spellings, never merge two people.
 **People:** Devin is a woman (she/her). Amanda Rodgers goes by **Arod** on the board (renamed in all weeks Oct 8). **Two Andys both file as plain "Andy":** Andrew Clarke (the `andy` alias) and Andy R. A new sheet named just "Andy" is ambiguous — ask Garret which, then map that one sheet with `season.subNames[<submission id>] = "Andy R"` (Week 5: Andy R paid by PayPal). Use names, not guessed pronouns, for anyone else unless Garret says.
-Claude is the house entry: random sealed picks, tagged House, never wins, never counts in clinch/out math.
+Claude is the house entry, tagged House: through Week 5 random sealed picks that couldn't win; from Week 6 real public
+picks, paid in by Garret, eligible to win, winnings roll over (see Bot weeks).
 Trash talk is published exactly as written; the only edit is one the author asks for, via
 `weeks.N.trashFix = {name: {"from": exact text, "to": fixed}}`.
 
