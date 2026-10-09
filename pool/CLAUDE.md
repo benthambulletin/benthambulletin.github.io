@@ -114,6 +114,8 @@ Stop if the week is `final` or no current-week game kicked off in the last 30 mi
 S5. S2 only for games that are FINAL. **Column:** Thursday and Monday 8:17 only (S6, under 120 words): Thursday —
 who took which side of the Thursday game and the trash talk; Monday — who's still alive and on which side, what each
 result means using the now-public tiebreakers. Sunday locks leave the column alone.
+**Monday 8:17 in bot weeks, before S4:** set `housePicks.tb` = the Monday game's closing over/under, rounded to a whole
+number (two sources) — Claude's tiebreaker (see Claude pays in).
 Land as "Pool: Week N kickoff lock". Board check.
 
 ## Run: THURSDAY FINAL (Thu 11:32 pm) — task "Thursday night final"
