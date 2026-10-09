@@ -1,15 +1,12 @@
 {
- "updated": "2026-10-06T05:13:24Z",
- "week": 4,
+ "updated": "2026-10-09T00:11:47Z",
+ "week": 5,
  "games": {
-  "15": {
-   "state": "post",
-   "away": 45,
-   "home": 24,
-   "detail": "Final",
-   "winner": "Falcons",
-   "score": "45–24",
-   "line": "Final · Falcons 45–24"
+  "0": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/8 - 8:15 PM EDT"
   }
  }
 }
