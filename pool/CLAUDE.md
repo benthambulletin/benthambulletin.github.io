@@ -36,6 +36,10 @@ https://benthambulletin.github.io/pool/ (rules at `/pool/about/`, receipt at `/p
 - **Start:** `add_repo` (owner `benthambulletin`, repo `benthambulletin.github.io`, push access); clone shallow to
   `/home/claude/benthambulletin.github.io` if missing, else `git pull --rebase`. Read this file and `pool/data/season.json`.
   Call the current week N = `currentWeek`.
+- **Catch-up check (every run, right after Start — added Oct 8 after the Thursday 8:17 lock ran but never published):**
+  if any current-week game has kicked off but still shows `status: "sealed"` in season.json, a lock was missed — do
+  S1, S4 and S5 now and land as "Pool: Week N catch-up lock" before this run's own work. If live scores aren't
+  running during a game window, dispatch `pool-live.yml`.
 - **Finish:** publish with `python3 pool/tools/land.py "Pool: Week N <run name>"` from the repo root. It rebuilds,
   commits, rebases, pushes, retries three times and checks origin. Its last line is `LANDED <sha>` or `FAILED <why>`.
   Never hand-roll the git steps. Do not end a run until you have seen one of those lines.
