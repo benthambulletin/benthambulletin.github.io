@@ -453,7 +453,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     return now-Date.parse(g.kickoff)<225*60000;});
   var EP=D.buyIn>0?realPs.filter(function(p){return p.paid;}):realPs, etop=EP.length?Math.max.apply(null,EP.map(function(p){return p.correct;})):0;
   var L=etop>0?EP.filter(function(p){return p.correct===etop;}):[];
-  var leadTxt=!L.length?'':(L.length===1?'<b>'+esc(L[0].name)+'</b> leads at <b>'+L[0].correct+'–'+L[0].missed+'</b>':'<b>'+L.length+(D.buyIn>0?' paid':'')+' tied</b> at the top, <b>'+etop+'</b> right');
+  var leadTxt=!L.length?'':(L.length===1?'<b>'+esc(L[0].name)+'</b> leads at <b>'+L[0].correct+'–'+L[0].missed+'</b>':'<b>'+L.length+' tied</b> at the top, <b>'+etop+'</b> right');
   var left=D.games.filter(function(g){return !g.winner;}).length;
   var k="", v="", sub="", isCd=false;
   if(D.status==="final"){
@@ -518,7 +518,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
         'Kickoff · <span class="cd" data-until="'+esc(o.kickoff)+'"></span>';
   } else if(L.length){
     k='Leading Week '+D.week;
-    v=L.length===1?esc(L[0].name):L.length+'-way tie'+(D.buyIn>0?' (paid)':'');
+    v=L.length===1?esc(L[0].name):L.length+'-way tie';
     sub=(L.length===1?'<b>'+L[0].correct+'–'+L[0].missed+'</b>':'at <b>'+etop+'</b> right')+' · <b>'+left+'</b> game'+(left===1?'':'s')+' to go';
   } else if(open.length){
     var payDue=D.buyIn>0&&D.payBy&&Date.parse(D.payBy)>now; isCd=true;
@@ -598,7 +598,7 @@ if(!ps.length){
   var beats=function(q,p){if(isW(q)!==isW(p)) return isW(q);   /* the week's winner ranks first on the final board */
     return q.correct>p.correct||(q.correct===p.correct&&(q.missed<p.missed||(q.missed===p.missed&&isW(q)&&!isW(p))));};
   var dispRank=function(p){return 1+realPs.filter(function(q){return beats(q,p);}).length;};
-  h+='<div class="hint">Tap a name for their picks'+(D.buyIn>0?' · <span class="pd" style="margin:0">✓</span> = paid · only paid sheets can win':'')+'</div>';
+  h+='<div class="hint">Tap a name for their picks'+(D.buyIn>0?' · <span class="pd" style="margin:0">✓</span> = paid':'')+'</div>';
   var TOPN=5;
   ps.forEach(function(p,pi){
     if(pi===TOPN&&ps.length>TOPN+1) h+='<details class="tmore smore" id="smore"'+(window.SMORE?' open':'')+'><summary>Show all '+realPs.length+' players'+(ps.length>realPs.length?' + the house':'')+' ›</summary>';

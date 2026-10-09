@@ -248,8 +248,7 @@ each result means; the champion when final) → red "Make your picks" button (hi
 lock countdown once games have started) → **"Week N champ · Name · record (tiebreaker) · won $X"** line (during the week, not on the
 final board) → the Mugshot box. Then always: the board (before any game is final "Who's In" — one row per sheet with "Paid", "Payment pending"
 (before payBy, unless their latest sheet chose "Playing free") or "Playing free", Claude last as House; two across with short labels once more than 10 have filed; once a game is final "Standings" — top 5 + "Show all N
-players ›", winner ranks 1 at the final, leader highlight only for paid sheets, key "✓ = paid · only paid sheets can
-win"), with the "Updated <time> · refreshes hourly 8 AM–11 PM · live scores every 2 min during games" line under
+players ›", winner ranks 1 at the final, leader highlight only for paid sheets, key "✓ = paid"; the hero never says "paid" — Garret, Oct 9), with the "Updated <time> · refreshes hourly 8 AM–11 PM · live scores every 2 min during games" line under
 its heading → The Column (headline + text) → Trash Talk → This Week's Games, collapsed behind "See all N games ›" except while games are on (it opens itself).
 Then By the Numbers, The Season (top 10 + "Show all N players ›", "Since Week 4" note; columns rank (T for ties) · Player · Record "12–4" · Win % · Wks won · Winnings (only once someone has won money), empty cells blank — tightened Oct 8 at Garret's ask), Past Weeks,
 How it works, sign-off "— G." (the bottom updated line shows only on frozen past-week pages).
