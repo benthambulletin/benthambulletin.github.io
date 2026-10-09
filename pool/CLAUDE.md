@@ -243,7 +243,7 @@ final board) → the Mugshot box. Then always: the board (before any game is fin
 players ›", winner ranks 1 at the final, leader highlight only for paid sheets, key "✓ = paid · only paid sheets can
 win"), with the "Updated <time> · refreshes hourly 8 AM–11 PM · live scores every 2 min during games" line under
 its heading → The Column (headline + text) → Trash Talk → This Week's Games, collapsed behind "See all N games ›" except while games are on (it opens itself).
-Then By the Numbers, The Season (top 10 + "Show all N players ›", "Since Week 4" note, tied ranks shown as T, money column "Winnings"), Past Weeks,
+Then By the Numbers, The Season (top 10 + "Show all N players ›", "Since Week 4" note; columns rank (T for ties) · Player · Record "12–4" · Wks won · Winnings, empty cells blank — tightened Oct 8 at Garret's ask), Past Weeks,
 How it works, sign-off "— G." (the bottom updated line shows only on frozen past-week pages).
 Finals read "Bears 23–12" (winner named). Game rows never read like a score. All times Eastern.
 **Color:** ink/grey text; red only for the picks button, live dot, live scores, wrong-pick dots; teal only for
