@@ -526,7 +526,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
   var pn=$("potN");
   if(D.buyIn>0&&!D.archive){
     var payOpen=D.payBy&&Date.parse(D.payBy)>now;
-    pn.innerHTML='<b>'+entrants+'</b> in · <b>'+(D.paidN||0)+'</b> paid · <b>'+money(pot)+'</b> pot'+(payOpen&&D.venmoUrl?' · <a href="'+esc(D.venmoUrl)+'">Venmo '+esc(D.venmo||'')+'</a>':'');
+    pn.innerHTML='<b>'+entrants+'</b> in · <b>'+(D.paidN||0)+'</b> paid · <b>'+money(pot)+'</b> pot'+(D.rollIn>0?' (incl. '+money(D.rollIn)+' rolled over from Claude)':'')+(payOpen&&D.venmoUrl?' · <a href="'+esc(D.venmoUrl)+'">Venmo '+esc(D.venmo||'')+'</a>':'');
     pn.hidden=false;
   } else pn.hidden=true;
   tick();
