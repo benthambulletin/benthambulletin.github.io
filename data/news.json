@@ -1,35 +1,413 @@
 {
- "generated_utc": "2026-10-09T11:01Z",
+ "generated_utc": "2026-10-09T16:57Z",
  "window_hours": 48,
  "sections": {
   "national": [
    {
-    "title": "8 hospitalized after turbulence forces flight to divert to MIA, officials say",
-    "link": "https://www.cbsnews.com/news/severe-turbulence-miami-international-airport-flight-october-9-2026/",
-    "published": "2026-10-09T11:00Z",
-    "summary": "The Avianca flight was headed from Colombia to New York City when the turbulence forced it to divert to MIA, officials say.",
+    "title": "Mike Ditka, former Chicago Bears head coach, dies at 86",
+    "link": "https://www.cbsnews.com/news/mike-ditka-former-head-coach-chicago-bears-obit/",
+    "published": "2026-10-09T16:52Z",
+    "summary": "Raised in a blue-collar Pennsylvania town, Mike Ditka earned a scholarship to Pitt and became \"Da Coach\" in Chicago. His family called him \"the heart of our family\" in announcing his death at 86.",
     "source": "CBS News"
    },
    {
-    "title": "Extended interview: Miranda Lambert",
-    "link": "https://www.cbsnews.com/video/extended-interview-miranda-lambert/",
-    "published": "2026-10-09T11:00Z",
-    "summary": "Miranda Lambert sits down with Anthony Mason to talk about songwriting, her latest album, \"Crisco,\" which captures the pieces of country music and disco that she loves, and co-writing Ella Langley's record-breaking hit \"Choosin' Texas.\"",
+    "title": "WATCH LIVE: Trump rallies with New York's GOP gubernatorial candidate Bruce Blakeman",
+    "link": "https://www.pbs.org/newshour/politics/watch-live-trump-rallies-with-new-yorks-gop-gubernatorial-candidate-bruce-blakeman",
+    "published": "2026-10-09T16:50Z",
+    "summary": "At a political moment where Republicans are hoping to capture centrists wary of an ascendent progressive left, Blakeman has instead embraced the president and his aggressive conservative tactics.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Expert says Pentagon's planned firing squad execution raises humanitarian law concerns",
+    "link": "https://www.cbsnews.com/video/expert-says-pentagons-planned-firing-squad-execution-raises-humanitarian-law-concerns/",
+    "published": "2026-10-09T16:48Z",
+    "summary": "Questions are emerging about the Pentagon's decision to execute the Fort Hood shooter by firing squad. CBS News' Charlie D'Agata reports.",
     "source": "CBS News"
    },
    {
-    "title": "Hurricane Isaias strengthening, heading for northern Gulf Coast. See its path.",
+    "title": "OpenAI defends firing AI safety researchers over \"breach of trust\"",
+    "link": "https://www.cbsnews.com/news/openai-defends-firing-safety-researchers/",
+    "published": "2026-10-09T16:47Z",
+    "summary": "OpenAI responded to researchers' claims that their dismissal will make safety workers fearful to raise concerns.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Obama raises more than $13 million for Democrats",
+    "link": "https://www.cbsnews.com/news/obama-13-million-democrats-urges-voters-turn-hope-into-action-november/",
+    "published": "2026-10-09T16:47Z",
+    "summary": "Former President Barack Obama, who ran on \"hope and change,\" is resurrecting his signature campaign slogan in a new series of digital ads for the Democratic National Committee that were viewed exclusively by CBS News.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Did Russia play by the rules in reporting lab worker's death?",
+    "link": "https://www.npr.org/2026/10/09/g-s1-147295/russia-lab-death-pneumonia-plague",
+    "published": "2026-10-09T16:43Z",
+    "summary": "A global treaty signed by 197 countries \u2014 including Russia \u2014 requires reporting any death that could be a sign of an outbreak to come.",
+    "source": "NPR News"
+   },
+   {
+    "title": "Iran's Houthi allies step up deadly attacks on Saudi Arabia",
+    "link": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis/",
+    "published": "2026-10-09T16:35Z",
+    "summary": "Saudi Arabia says missile strikes by Iran's Houthi allies killed three people at Riyadh's airport as fighting escalates in the Middle East conflict's new epicenter.",
+    "source": "CBS News"
+   },
+   {
+    "title": "FBI arrests suspected member of ShinyHunters in connection with jobs site hack",
+    "link": "https://www.cbsnews.com/news/fbi-shinyhunters-arrest-jobs-website-hack/",
+    "published": "2026-10-09T16:35Z",
+    "summary": "The FBI this week arrested another individual suspected of being connected to ShinyHunters, the cybercriminal group that hacked the bureau's job website, FBI Director Kash Patel said.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Trump promised to lower prices for Americans. Here's what the data shows.",
+    "link": "https://www.cbsnews.com/news/trump-promised-lower-prices-cost-living-inflation/",
+    "published": "2026-10-09T16:34Z",
+    "summary": "Just weeks before the midterm elections, 90% of Americans say prices in the U.S. are the main factor shaping their view of the economy. These charts show why.",
+    "source": "CBS News"
+   },
+   {
+    "title": "H.R. McMaster on Trump's Iran war ahead of the midterms, Murphy's claims about U.S. base access",
+    "link": "https://www.cbsnews.com/video/hr-mcmaster-on-trumps-iran-war-ahead-of-the-midterms-murphys-claims-about-us-base-access/",
+    "published": "2026-10-09T16:34Z",
+    "summary": "Retired Lt. Gen. H.R. McMaster joined CBS News with his take on the state of the Iran war ahead of the midterms. This comes after Sen. Chris Murphy slammed the Trump administration for apparently blocking his access to a U.S. base in the Middle East.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Man named Hitler Mussolini elected mayor in Peru",
+    "link": "https://www.bbc.co.uk/news/articles/cmdxwn9dr42yo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T16:32Z",
+    "summary": "The left-wing candidate won a narrow victory in a remote district in the Peruvian Andes, exit polls show.",
+    "source": "BBC World"
+   },
+   {
+    "title": "Maps and charts show record number of measles cases in U.S. this year",
+    "link": "https://www.cbsnews.com/news/measles-outbreak-us-map-2026/",
+    "published": "2026-10-09T16:32Z",
+    "summary": "CBS News has been tracking a record number of measles cases and outbreaks around the country in 2026. The majority of cases are among those who haven't been vaccinated.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Firing squad execution to be livestreamed, Pentagon says",
+    "link": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T16:29Z",
+    "summary": "Pete Hegseth says the execution will be public, but a legal expert says the \"unprecedented\" decision is on \"uncertain legal terrain\".",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "Firing squad execution to be livestreamed, Pentagon says",
+    "link": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T16:29Z",
+    "summary": "Pete Hegseth says the execution will be public, but a legal expert says the \"unprecedented\" decision is on \"uncertain legal terrain\".",
+    "source": "BBC World"
+   },
+   {
+    "title": "What we know about the Kimberly Guilfoyle allegations",
+    "link": "https://www.cbsnews.com/video/what-we-know-about-the-kimberly-guilfoyle-allegations/",
+    "published": "2026-10-09T16:25Z",
+    "summary": "Eric Deters, a top Trump donor, is speaking out after alleging that Kimberly Guilfoyle asked for money in exchange for access to the administration. CBS News' Weijia Jiang reports.",
+    "source": "CBS News"
+   },
+   {
+    "title": "U.S. measles cases top 4,000, far surpassing 2025 total, CDC says",
+    "link": "https://www.cbsnews.com/news/us-measles-cases-cdc-record/",
+    "published": "2026-10-09T16:24Z",
+    "summary": "The record number of measles cases in the U.S. so far this year has topped 4,000, the Centers for Disease Control and Prevention reported Friday.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Watch: 'I am Jane Doe' protests across US call for end to sexual violence",
+    "link": "https://www.bbc.co.uk/news/videos/cmy83pp3904vo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T16:19Z",
+    "summary": "Protests against sexual violence took place across more than 40 US states on 8 October.",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "Watch: 'I am Jane Doe' protests across US call for end to sexual violence",
+    "link": "https://www.bbc.co.uk/news/videos/cmy83pp3904vo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T16:19Z",
+    "summary": "Protests against sexual violence took place across more than 40 US states on 8 October.",
+    "source": "BBC World"
+   },
+   {
+    "title": "NYPD body camera footage shows aftermath of ICE agent shooting in Marble Hill",
+    "link": "https://www.cbsnews.com/news/marble-hill-ice-shooting/",
+    "published": "2026-10-09T16:18Z",
+    "summary": "Oscar Belgal, 28, was shot once in the neck by an ICE agent who fired shots at his car Thursday afternoon, according to authorities. The child was in the back seat, and was not struck.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Navi Pillay, former UN human rights chief, wins Nobel Peace Prize",
+    "link": "https://www.bbc.co.uk/news/articles/cm9wz5kng0x1o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T16:15Z",
+    "summary": "Pillay is recognised for her \"efforts to promote peace and international law\", the Norwegian Nobel Committee says.",
+    "source": "BBC World"
+   },
+   {
+    "title": "Breaking down the intense midterm debates in Michigan and Georgia",
+    "link": "https://www.cbsnews.com/video/breaking-down-the-intense-midterm-debates-in-michigan-and-georgia/",
+    "published": "2026-10-09T16:13Z",
+    "summary": "Senate candidates in Georgia and Michigan debated before the midterm elections. CBS News' Fin G\u00f3mez has more on the tense exchanges.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Trump's memorial arch faces a new lawsuit from Arlington County, Virginia",
+    "link": "https://www.pbs.org/newshour/nation/trumps-memorial-arch-faces-a-new-lawsuit-from-arlington-county-virginia",
+    "published": "2026-10-09T16:12Z",
+    "summary": "The Arlington County Board in Virginia filed a lawsuit Thursday opposing the construction of the Triumphal Arch, becoming the first governmental body to take legal action against President Donald Trump's planned monument.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "US imposes sanctions on International Criminal Court",
+    "link": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T16:06Z",
+    "summary": "The US says the measures are aimed at restricting the tribunal's resources and ability to operate.",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "US imposes sanctions on International Criminal Court",
+    "link": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T16:06Z",
+    "summary": "The US says the measures are aimed at restricting the tribunal's resources and ability to operate.",
+    "source": "BBC World"
+   },
+   {
+    "title": "How the oil industry is preparing for Hurricane Isaias",
+    "link": "https://www.npr.org/2026/10/09/nx-s1-5995417/hurricane-isaias-oil-refineries-diesel-gasoline-prices",
+    "published": "2026-10-09T16:03Z",
+    "summary": "Hurricane Isaias is this season's first Atlantic hurricane, and is on a path to hit the northern Gulf Coast. How is the oil industry preparing?",
+    "source": "NPR News"
+   },
+   {
+    "title": "U.S. sanctions ICC, vowing to dismantle it \"brick by brick\" without changes",
+    "link": "https://www.cbsnews.com/news/us-sanctions-international-criminal-court-rubio/",
+    "published": "2026-10-09T16:02Z",
+    "summary": "The U.S. imposed fresh sanctions targeting the International Criminal Court, taking action against the court itself after previously penalizing more than a dozen of its judges and prosecutors.",
+    "source": "CBS News"
+   },
+   {
+    "title": "The plague never went away. Cases are reported in parts of Africa and the U.S. nearly every year",
+    "link": "https://www.pbs.org/newshour/health/the-plague-never-went-away-cases-are-reported-in-parts-of-africa-and-the-u-s-nearly-every-year",
+    "published": "2026-10-09T15:54Z",
+    "summary": "The plague, the rare bacterial infection infamously known for killing tens of millions in 14th-century Europe, never went away. It is now easily treated with antibiotics.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Pentagon's plan to livestream execution sparks backlash",
+    "link": "https://www.cbsnews.com/news/fort-hood-shooter-execution-livestream-reaction-pentagon/",
+    "published": "2026-10-09T15:53Z",
+    "summary": "\"Public executions are what oppressive dictatorships like Iran and Afghanistan do,\" said GOP Sen. Thom Tillis.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Hurricane Isaias is hours away from striking U.S. Here's what to know.",
+    "link": "https://www.cbsnews.com/video/hurricane-isaias-is-hours-away-from-striking-us-heres-what-to-know/",
+    "published": "2026-10-09T15:48Z",
+    "summary": "Hurricane Isaias is now a Category 3 storm and is hours away from slamming the U.S. CBS News' Rob Marciano has the latest on the weather, and Jeffrey Lindsay, a director at the University of Florida Fire and Emergency Service, joins with more on preparations.",
+    "source": "CBS News"
+   },
+   {
+    "title": "ICE official says officers shot a man in New York because they believed they were in danger",
+    "link": "https://www.pbs.org/newshour/politics/ice-official-says-officers-shot-a-man-in-new-york-because-they-believed-they-were-in-danger",
+    "published": "2026-10-09T15:47Z",
+    "summary": "Officers used their vehicles to block the man as he attempted to drive away, but he accelerated toward them, Marcos Charles said during a news conference with U.S. Homeland Security Secretary Markwayne Mullin in Washington.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Trump creates committee to investigate Fed's Lisa Cook",
+    "link": "https://www.cbsnews.com/news/trump-lisa-cook-committee-fed-governor/",
+    "published": "2026-10-09T15:39Z",
+    "summary": "President Trump established a committee to look into allegations that Fed Governor Lisa Cook made false statements on mortgage documents, the latest step in his renewed effort to fire her.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Teen girl died after a hit-and-run that may have been caused by a sheriff's deputy",
+    "link": "https://www.cbsnews.com/video/teen-girl-died-after-a-hit-and-run-that-may-have-been-caused-by-a-sheriffs-deputy/",
+    "published": "2026-10-09T15:39Z",
+    "summary": "A Missouri family is demanding answers after a sheriff's deputy apparently ran over a teen girl. The family claims the story they were first told didn't include mention of a deputy being involved. CBS News' Ian Lee reports.",
+    "source": "CBS News"
+   },
+   {
+    "title": "DeSantis cancels execution of man convicted in 1976 Miami-Dade murder",
+    "link": "https://www.cbsnews.com/news/florida-gov-desantis-cancels-execution-william-lee-thompson/",
+    "published": "2026-10-09T15:37Z",
+    "summary": "Hours before DeSantis' action, the Florida Supreme Court denied William Lee Thompson's motion for a stay.",
+    "source": "CBS News"
+   },
+   {
+    "title": "El Ni\u00f1o's storm-killer winds and climate's warming waters in fight over future of Hurricane Isaias",
+    "link": "https://www.pbs.org/newshour/nation/el-ninos-storm-killer-winds-and-climates-warming-waters-in-fight-over-future-of-hurricane-isaias",
+    "published": "2026-10-09T15:35Z",
+    "summary": "A supersized El Ni\u00f1o's decapitating winds and the Gulf of Mexico's toasty, storm-fueling waters are battling over the future strength of Hurricane Isaias. And the storm's tilt and eye show who's winning.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Americans are paying 62% more for water than a decade ago, study finds",
+    "link": "https://www.cbsnews.com/news/us-water-bills-rising-study-finds/",
+    "published": "2026-10-09T15:35Z",
+    "summary": "Americans paid an average of $531 per year for household water in 2025, although people in some states pay far more, according to a new study.",
+    "source": "CBS News"
+   },
+   {
+    "title": "\"Star Wars\" lightsaber used in \"I am your father\" duel could sell for $1 million",
+    "link": "https://www.cbsnews.com/news/star-wars-empire-strikes-back-lightsaber-duel-auction/",
+    "published": "2026-10-09T15:34Z",
+    "summary": "More than two dozen lightsaber props are up for auction, including ones wielded by Ewan McGregor's Obi-Wan Kenobi and Hayden Christensen's Anakin Skywalker in \"Revenge of the Sith.\"",
+    "source": "CBS News"
+   },
+   {
+    "title": "NFL urges Supreme Court to decide who should regulate prediction markets",
+    "link": "https://www.cbsnews.com/news/nfl-supreme-court-prediction-market-case/",
+    "published": "2026-10-09T15:29Z",
+    "summary": "In a legal brief, the NFL expressed support for prior court rulings favoring state authority to oversee prediction markets.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Ethiopia warns Eritrea it will defend itself after troops cross border",
+    "link": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T15:24Z",
+    "summary": "Truckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes.",
+    "source": "BBC World"
+   },
+   {
+    "title": "Mobile mayor on Hurricane Isaias threatening Alabama",
+    "link": "https://www.cbsnews.com/video/mobile-mayor-on-hurricane-isaias-threatening-alabama/",
+    "published": "2026-10-09T15:21Z",
+    "summary": "Mobile Mayor Spiro Cheriogotis is preparing for Hurricane Isaias, which could slam Alabama on Friday. Cheriogotis joins CBS News with more on storm readiness, and CBS News' Rob Marciano has more on the forecast.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Hurricane Isaias becomes Category 3 storm as it threatens northern Gulf Coast",
     "link": "https://www.cbsnews.com/news/hurricane-isaias-first-storm-2026-atlantic-season-record/",
-    "published": "2026-10-09T10:49Z",
+    "published": "2026-10-09T15:17Z",
     "summary": "Hurricane Isaias, the first Atlantic hurricane of 2026, has been getting stronger as it takes aim at the Gulf Coast from Mississippi to the Florida Panhandle.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Watch: Mullin claims New York puts criminals over citizens after ICE shooting in The Bronx",
+    "link": "https://www.cbsnews.com/video/watch-mullin-claims-new-york-puts-criminals-over-citizens/",
+    "published": "2026-10-09T15:16Z",
+    "summary": "Homeland Security Secretary Markwayne Mullin is slamming New York politicians for allegedly protecting criminals. This comes after an ICE agent shot a man in New York City. CBS News' Camilo Montoya-Galvez has more.",
     "source": "CBS News"
    },
    {
     "title": "Nobel Peace Prize awarded to former ICC judge Navanethem \"Navi\" Pillay",
     "link": "https://www.cbsnews.com/news/nobel-peace-prize-2026-navanethem-navi-pillay-south-africa/",
-    "published": "2026-10-09T10:10Z",
-    "summary": "Nobel Peace Prize 2026 was awarded to Navanethem \"Navi\" Pillay, a former judge on the International Criminal Court, which was sanctioned by the Trump administration last year.",
+    "published": "2026-10-09T15:06Z",
+    "summary": "Nobel Peace Prize 2026 was awarded to Navanethem \"Navi\" Pillay, a former judge on the International Criminal Court, drawing a quick, angry rebuke from Israel.",
     "source": "CBS News"
+   },
+   {
+    "title": "In combative first Michigan Senate debate, Rogers and El-Sayed trade attacks",
+    "link": "https://www.pbs.org/newshour/politics/in-combative-first-michigan-senate-debate-rogers-and-el-sayed-trade-attacks",
+    "published": "2026-10-09T14:59Z",
+    "summary": "The first debate in Michigan's closely watched U.S. Senate race turned combative Thursday as Republican Mike Rogers and Democrat Abdul El-Sayed repeatedly traded personal attacks, talked over each other and even continued arguing during a commercial break.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Anthropic has a message for Claude users: Don't be cruel",
+    "link": "https://www.cbsnews.com/news/anthropic-bans-abusive-behavior-claude/",
+    "published": "2026-10-09T14:59Z",
+    "summary": "Anthropic said the ban will only apply in \"extreme cases where users repeatedly act cruelly toward our models, with no discernible purpose.\"",
+    "source": "CBS News"
+   },
+   {
+    "title": "California high-speed rail consultants billed taxpayers for late-night rides",
+    "link": "https://www.cbsnews.com/news/california-high-speed-rail-consultant-rides-ceo-home/",
+    "published": "2026-10-09T14:46Z",
+    "summary": "CBS California Investigates obtained receipts behind the watchdog's findings of wasteful spending, revealing previously undisclosed connections to the high-speed rail CEO.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Two Renoir paintings stolen from French museum are recovered",
+    "link": "https://www.bbc.co.uk/news/articles/cwkg50v1vn07o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T14:25Z",
+    "summary": "The two works were seized last month when thieves cut through a fence and smashed a window at the Renoir Museum on the French Riviera.",
+    "source": "BBC World"
+   },
+   {
+    "title": "ICE officer shoots a man while making an arrest in New York, officials say",
+    "link": "https://www.pbs.org/newshour/politics/ice-officer-shoots-a-man-while-making-an-arrest-in-new-york-officials-say",
+    "published": "2026-10-09T14:23Z",
+    "summary": "A federal immigration officer shot a Dominican man in the neck as he drove in a car with a 5-year-old boy Thursday afternoon, officials said. The Department of Homeland Security said it was seeking to arrest the man in a \"targeted enforcement operation,\" but protesters and local officials decried it",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Hurricane Isaias strengthens as it heads towards land",
+    "link": "https://www.bbc.co.uk/news/videos/cw073kg2dgr9o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T14:23Z",
+    "summary": "Isaias will bring damaging winds, torrential rain and a storm surge with landfall expected late Friday.",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
+    "link": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T13:50Z",
+    "summary": "The missile attacks come amid an escalation in fighting between the Iran-backed group and Saudi Arabia, which backs Yemen's government.",
+    "source": "BBC World"
+   },
+   {
+    "title": "Your child may be automatically enrolled in a Trump Account. Here's what to know",
+    "link": "https://www.pbs.org/newshour/nation/your-child-may-be-automatically-enrolled-in-a-trump-account-heres-what-to-know",
+    "published": "2026-10-09T13:44Z",
+    "summary": "Your child may be enrolled in a \"Trump Account\" whether you realize it or not. Rolled out earlier this year, the Trump Accounts program allows parents to claim special investment accounts for children who are 18 years old or younger.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Anthropic bans users from being 'cruel' to its AI systems",
+    "link": "https://www.bbc.co.uk/news/articles/c6j9k1l72wkgo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T12:34Z",
+    "summary": "The firm said users can no longer engage in \"sustained and needless\" abusive behaviour towards the tech.",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "ICE agent shoots man in New York City",
+    "link": "https://www.bbc.co.uk/news/articles/c59vzk9yypn3o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T12:18Z",
+    "summary": "The mayor of New York expressed outrage at the shooting which the Department of Homeland Security said happened during the arrest of a \"criminal illegal alien\".",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "ICE agent shoots man in New York City",
+    "link": "https://www.bbc.co.uk/news/articles/c59vzk9yypn3o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T12:18Z",
+    "summary": "The mayor of New York expressed outrage at the shooting which the Department of Homeland Security said happened during the arrest of a \"criminal illegal alien\".",
+    "source": "BBC World"
+   },
+   {
+    "title": "Doctor accused of 1994 Rwanda genocide offences to face trial in UK",
+    "link": "https://www.bbc.co.uk/news/articles/cmwy47lzd1vyo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T11:44Z",
+    "summary": "Dr Vincent Brown was allegedly a \"leader\" or \"supervisor\" of violent acts carried out by others in the early days of the genocide.",
+    "source": "BBC World"
+   },
+   {
+    "title": "Trump says U.S. won't attack Iran before midterms. And, ICE agent shoots man in NYC",
+    "link": "https://www.npr.org/2026/10/09/g-s1-147455/up-first-newsletter-hurricane-isaias-ukraine-russia-trump-iran-ice-shooting",
+    "published": "2026-10-09T11:37Z",
+    "summary": "Trump announced that the U.S. will not attack Iran ahead of the midterms. And, a 28-year-old man is receiving treatment at the hospital after an ICE agent shot him in the neck.",
+    "source": "NPR News"
+   },
+   {
+    "title": "France promises 3,000 extra teachers in first step to calm student protests",
+    "link": "https://www.bbc.co.uk/news/articles/c6vg98lw017po?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T11:35Z",
+    "summary": "Education minister Edouard Geffray makes the offer after another day of sometimes violent demonstrations by high-school students.",
+    "source": "BBC World"
+   },
+   {
+    "title": "Why American investors love European defense startups",
+    "link": "https://www.npr.org/sections/planet-money/2026/10/09/nx-s1-5995606/why-american-investors-love-european-defense-startups",
+    "published": "2026-10-09T11:00Z",
+    "summary": "As European defense spending takes off, just about half of the funding in Europe's defense tech industry is coming from American investors this year. One reason why: European investment firms have restrictions on how they can invest.",
+    "source": "NPR News"
+   },
+   {
+    "title": "Crazy Rich Asians to return as TV show with original film's stars",
+    "link": "https://www.bbc.co.uk/news/articles/cm5yne8k6zw8o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T10:54Z",
+    "summary": "It will pick up after the hit 2018 film, starring Constance Wu, Henry Golding, Michelle Yeoh and Ronny Chieng.",
+    "source": "BBC World"
    },
    {
     "title": "Man shot by ICE agent in New York City's Marble Hill, authorities say",
@@ -39,21 +417,7 @@
     "source": "CBS News"
    },
    {
-    "title": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
-    "link": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T10:07Z",
-    "summary": "The missile attacks come amid an escalation in fighting between the Iran-backed group and Saudi Arabia, which backs Yemen's government.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Obama raises more than $13 million for Democrats",
-    "link": "https://www.cbsnews.com/news/obama-13-million-democrats-urges-voters-turn-hope-into-action-november/",
-    "published": "2026-10-09T10:03Z",
-    "summary": "Former President Barack Obama, who ran on \"hope and change,\" is resurrecting his signature campaign slogan in a new series of digital ads for the Democratic National Committee that were viewed exclusively by CBS News.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Watch: Fleeing Kyiv for the countryside ahead of winter",
+    "title": "Fleeing Kyiv for the countryside ahead of winter",
     "link": "https://www.bbc.co.uk/news/videos/cqe8rn83088zo?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-09T10:00Z",
     "summary": "A Kyiv resident told the BBC she has moved away from \"everything that can be a Russian target\" as Ukraine braces for another cold winter under intense attacks.",
@@ -74,6 +438,13 @@
     "source": "BBC World"
    },
    {
+    "title": "Why is it so hard to put out Indonesian fires shrouding the region in toxic smog?",
+    "link": "https://www.bbc.co.uk/news/videos/c862y63x657no?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-09T09:37Z",
+    "summary": "We explain why Indonesia\u2019s peatland fires are so difficult to battle and produce so much haze.",
+    "source": "BBC World"
+   },
+   {
     "title": "Fired OpenAI researchers say they were let go for 'prioritising safety'",
     "link": "https://www.bbc.co.uk/news/articles/cvlydn8d3lkjo?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-09T09:30Z",
@@ -81,32 +452,11 @@
     "source": "BBC World"
    },
    {
-    "title": "Firing squad execution to be livestreamed, Pentagon says",
-    "link": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T09:29Z",
-    "summary": "Pete Hegseth says the execution will be public, but a legal expert says the \"unprecedented\" decision is on \"uncertain legal terrain\".",
-    "source": "BBC US & Canada"
-   },
-   {
-    "title": "Firing squad execution to be livestreamed, Pentagon says",
-    "link": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T09:29Z",
-    "summary": "Pete Hegseth says the execution will be public, but a legal expert says the \"unprecedented\" decision is on \"uncertain legal terrain\".",
-    "source": "BBC World"
-   },
-   {
-    "title": "Thieves steal 30,000 wine bottles worth \u20ac5m in Italy, reports say",
+    "title": "Thieves steal 30,000 bottles of wine worth \u20ac5m in Italy, reports say",
     "link": "https://www.bbc.co.uk/news/articles/cme3xl8ln2vko?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-09T09:09Z",
     "summary": "The heist at the Florence-based winery is believed to be one of the largest thefts of its kind in Italy.",
     "source": "BBC World"
-   },
-   {
-    "title": "In Central African Republic, deported immigrants find themselves in limbo",
-    "link": "https://www.npr.org/2026/10/09/nx-s1-5993805/third-country-deportations-cuba",
-    "published": "2026-10-09T09:00Z",
-    "summary": "The Trump administration says it has deported more than 25,000 people to countries to which they have no ties. NPR spoke to three men who say it feels like they've lost control over their own lives.",
-    "source": "NPR News"
    },
    {
     "title": "Republican congressman tries to outrun a potential blue wave in New York toss-up seat",
@@ -120,13 +470,6 @@
     "link": "https://www.npr.org/2026/10/09/nx-s1-5986352/memory-family-burger-king-grandfather",
     "published": "2026-10-09T09:00Z",
     "summary": "Why one teen can't let go of the time he ate fries with his great-grandpa.",
-    "source": "NPR News"
-   },
-   {
-    "title": "A student hated reading for years. Her podcast explores finding the right diagnosis",
-    "link": "https://www.npr.org/2026/10/09/nx-s1-5977043/dyslexia-teenager-diagnosis-reading",
-    "published": "2026-10-09T09:00Z",
-    "summary": "Middle schooler Cora Walsh of Long Island, N.Y., has won the 2026 NPR Student Podcast Challenge with a story about her journey with dyslexia.",
     "source": "NPR News"
    },
    {
@@ -155,7 +498,7 @@
     "link": "https://www.npr.org/2026/10/09/nx-s1-5993805/third-country-deportations-cuba",
     "published": "2026-10-09T09:00Z",
     "summary": "The Trump administration says it has deported more than 25,000 people to countries to which they have no ties. NPR spoke to three men who say it feels like they've lost control over their own lives.",
-    "source": "NPR National"
+    "source": "NPR News"
    },
    {
     "title": "Why we remember: One student's journey into memory",
@@ -165,17 +508,24 @@
     "source": "NPR National"
    },
    {
-    "title": "A student hated reading for years. Her podcast explores finding the right diagnosis",
-    "link": "https://www.npr.org/2026/10/09/nx-s1-5977043/dyslexia-teenager-diagnosis-reading",
-    "published": "2026-10-09T09:00Z",
-    "summary": "Middle schooler Cora Walsh of Long Island, N.Y., has won the 2026 NPR Student Podcast Challenge with a story about her journey with dyslexia.",
-    "source": "NPR National"
-   },
-   {
     "title": "Fill in the blank in the quiz: A plague research employee in Russia died from ____",
     "link": "https://www.npr.org/2026/10/09/g-s1-147111/trump-bts-paramount-tv-el-nino-news-quiz",
     "published": "2026-10-09T09:00Z",
     "summary": "Plus: Nobels! Protests! Ambiguous quotes! A mysterious death in Russia!",
+    "source": "NPR National"
+   },
+   {
+    "title": "In Central African Republic, deported immigrants find themselves in limbo",
+    "link": "https://www.npr.org/2026/10/09/nx-s1-5993805/third-country-deportations-cuba",
+    "published": "2026-10-09T09:00Z",
+    "summary": "The Trump administration says it has deported more than 25,000 people to countries to which they have no ties. NPR spoke to three men who say it feels like they've lost control over their own lives.",
+    "source": "NPR National"
+   },
+   {
+    "title": "A student hated reading for years. Her podcast explores finding the right diagnosis",
+    "link": "https://www.npr.org/2026/10/09/nx-s1-5977043/dyslexia-teenager-diagnosis-reading",
+    "published": "2026-10-09T09:00Z",
+    "summary": "Middle schooler Cora Walsh of Long Island, N.Y., has won the 2026 NPR Student Podcast Challenge with a story about her journey with dyslexia.",
     "source": "NPR National"
    },
    {
@@ -191,20 +541,6 @@
     "published": "2026-10-09T09:00Z",
     "summary": "If you're using the U.S. Postal Service to return a ballot close to Election Day, officials recommend getting it postmarked at a post office to avoid getting caught up in mail processing changes.",
     "source": "NPR Politics"
-   },
-   {
-    "title": "AI leaders lobby Trump health officials in government-run chat room",
-    "link": "https://www.cbsnews.com/news/ai-tech-leaders-trump-health-officials-slack/",
-    "published": "2026-10-09T09:00Z",
-    "summary": "A Slack workspace has served as a war room for AI industry insiders and Trump administration officials to launch a rapid campaign aimed at persuading Americans to manage their healthcare and medical records on apps.",
-    "source": "CBS News"
-   },
-   {
-    "title": "NEWSBRIEF: HURRICANE ISAIAS, UKRAINE WAR LATEST, POLITICS OF IRAN WAR",
-    "link": "https://www.npr.org/2026/10/09/nx-s1-5988274/newsbrief-hurricane-isaias-ukraine-war-latest-politics-of-iran-war",
-    "published": "2026-10-09T08:28Z",
-    "summary": "Gulf Coast Preps for Isaias, Ukraine expects Russian winter offensive, and Trump's Iran War in focus as Midterms approach.",
-    "source": "NPR News"
    },
    {
     "title": "Cars torched and shops looted as anti-migrant violence erupts in South Africa",
@@ -225,352 +561,177 @@
     "link": "https://www.npr.org/2026/10/09/nx-s1-5989180/25-years-later-an-afghan-couple-looks-back-at-the-invasion",
     "published": "2026-10-09T08:24Z",
     "summary": "Twenty-five years ago this week, the U.S. invaded Afghanistan. For StoryCorps, one Afghan couple offers an account of their experience after the invasion and eventual U.S. withdrawal.",
-    "source": "NPR News"
-   },
-   {
-    "title": "25 years later an Afghan couple looks back at the invasion",
-    "link": "https://www.npr.org/2026/10/09/nx-s1-5989180/25-years-later-an-afghan-couple-looks-back-at-the-invasion",
-    "published": "2026-10-09T08:24Z",
-    "summary": "Twenty-five years ago this week, the U.S. invaded Afghanistan. For StoryCorps, one Afghan couple offers an account of their experience after the invasion and eventual U.S. withdrawal.",
     "source": "NPR Politics"
-   },
-   {
-    "title": "South African human rights lawyer Navi Pillay wins the Nobel Peace Prize",
-    "link": "https://www.npr.org/2026/10/08/nx-s1-5994952/nobel-peace-prize",
-    "published": "2026-10-09T08:23Z",
-    "summary": "South African human rights lawyer Navi Pillay wins the 2026 Nobel Peace Prize for advancing human rights and international law.",
-    "source": "NPR News"
-   },
-   {
-    "title": "Trump's War in Iran in spotlight ahead of midterms",
-    "link": "https://www.npr.org/2026/10/09/nx-s1-5995532/trumps-war-in-iran-in-spotlight-ahead-of-midterms",
-    "published": "2026-10-09T08:23Z",
-    "summary": "After President Trump slapped down reports that he is considered renewed strikes against Iran ahead of the midterms, the politics of the war he started are in the spotlight.",
-    "source": "NPR Politics"
-   },
-   {
-    "title": "Obama throws support behind Pennsylvania Gov. Josh Shapiro's reelection bid",
-    "link": "https://www.cbsnews.com/news/obama-endorses-pennsylvania-governor-josh-shapiro/",
-    "published": "2026-10-09T08:00Z",
-    "summary": "Former President Barack Obama is throwing his support behind Pennsylvania Democratic Gov. Josh Shapiro's reelection campaign, as Obama steps up his involvement in key races ahead of the midterms.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Hurricane Isaias forecast to strengthen to category three before landfall in US",
-    "link": "https://www.bbc.co.uk/weather/articles/cw146l6pnvx0o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T07:34Z",
-    "summary": "El Ni\u00f1o has led to a quiet season so far but the first Atlantic hurricane of the year is set to make landfall later on Friday into Saturday across the US Gulf Coast.",
-    "source": "BBC US & Canada"
-   },
-   {
-    "title": "Meet India's feisty Gen Z protester who is taking on Modi",
-    "link": "https://www.bbc.co.uk/news/articles/c5n49xln3lz0o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T07:19Z",
-    "summary": "Neha Bora has emerged as one of the most recognisable faces from India's recent Gen Z-led protests.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Why Elon Musk is taking on India's richest man over Starlink",
-    "link": "https://www.bbc.co.uk/news/articles/cvglw9ryjrylo?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T06:42Z",
-    "summary": "Musk has taken pot-shots at Reliance owner Mukesh Ambani as Starlink struggles to launch in India.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Christa Pike is walking with help and eating after failed execution attempt",
-    "link": "https://www.npr.org/2026/10/09/nx-s1-5996402/christa-pike-updates",
-    "published": "2026-10-09T05:52Z",
-    "summary": "Pike has begun walking and eating again at a hospital a week after surviving Tennessee's attempt to execute her with lethal drugs, her attorneys said Thursday.",
-    "source": "NPR National"
-   },
-   {
-    "title": "Pentagon says the firing squad execution of Fort Hood shooter will be livestreamed",
-    "link": "https://www.npr.org/2026/10/09/g-s1-147419/fort-hood-shooter-execution",
-    "published": "2026-10-09T05:35Z",
-    "summary": "The Pentagon says the firing squad execution of Fort Hood shooter Nidal Malik Hasan will be livestreamed after Defense Secretary Pete Hegseth said the execution would be \"public.",
-    "source": "NPR National"
-   },
-   {
-    "title": "Trump promises not to resume Iran strikes before midterm elections",
-    "link": "https://www.cbsnews.com/live-updates/iran-war-nuclear-donald-trump-vance-rubio-strait-of-hormuz/",
-    "published": "2026-10-09T05:21Z",
-    "summary": "Crude oil prices had shot up on Thursday after reports President Trump was considering more strikes. They immediately dropped again after his new announcement.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Russian strikes and approaching winter force some in Kyiv to pack bags and flee",
-    "link": "https://www.bbc.co.uk/news/articles/c6zjx7jexz1do?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T04:53Z",
-    "summary": "A renewed Russian campaign of strikes on power and energy infrastructure has made some contemplate leaving Ukraine's capital.",
-    "source": "BBC World"
-   },
-   {
-    "title": "ICE agent shoots man in New York City",
-    "link": "https://www.bbc.co.uk/news/articles/c59vzk9yypn3o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T04:26Z",
-    "summary": "The mayor of New York expressed outrage at the shooting which the Department of Homeland Security said happened during the arrest of a \"criminal illegal alien\".",
-    "source": "BBC US & Canada"
-   },
-   {
-    "title": "ICE agent shoots man in New York City",
-    "link": "https://www.bbc.co.uk/news/articles/c59vzk9yypn3o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T04:26Z",
-    "summary": "The mayor of New York expressed outrage at the shooting which the Department of Homeland Security said happened during the arrest of a \"criminal illegal alien\".",
-    "source": "BBC World"
-   },
-   {
-    "title": "Mamdani, NYC officials give update on ICE shooting",
-    "link": "https://www.cbsnews.com/video/mamdani-nyc-officials-give-update-ice-shooting/",
-    "published": "2026-10-09T04:01Z",
-    "summary": "An Immigration and Customs Enforcement agent shot and hospitalized a man in New York City on Thursday. New York City Mayor Zohran Mamdani and NYPD Commissioner Jessica Tisch gave an update on the situation, saying the victim's 5-year-old son was in the car during the incident.",
-    "source": "CBS News"
-   },
-   {
-    "title": "LAUSD data shows student fights and threats higher than 4 years ago",
-    "link": "https://www.cbsnews.com/losangeles/news/student-fights-threats-in-schools-higher-than-4-years-ago-lausd-data-shows/",
-    "published": "2026-10-09T03:38Z",
-    "summary": "Student fights and threats are still significantly up compared to four years ago, according to LAUSD data.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Adidas sues Australian label White Fox over four stripes design",
-    "link": "https://www.bbc.co.uk/news/articles/c9e8ld448km8o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T03:36Z",
-    "summary": "The German sportswear brand wants the Sydney-based label to stop selling the clothes and pay damages.",
-    "source": "BBC World"
-   },
-   {
-    "title": "El-Sayed and Rogers toss insults in Michigan Senate debate",
-    "link": "https://www.cbsnews.com/news/el-sayed-rogers-michigan-senate-debate-iran-israel-insults/",
-    "published": "2026-10-09T03:17Z",
-    "summary": "In Thursday's Michigan Senate debate, Democrat Abdul El-Sayed and Republican Mike Rogers sparred over the Iran war and cost-of-living issues \u2014 and flung insults across the stage in nearly every exchange.",
-    "source": "CBS News"
-   },
-   {
-    "title": "How affordability crisis impacts Americans' everyday lives \u2013 and how some are dealing with it",
-    "link": "https://www.cbsnews.com/video/how-affordability-crisis-impacts-americans-everyday-lives-how-dealing/",
-    "published": "2026-10-09T02:12Z",
-    "summary": "Trade wars, tariffs and the Iran conflict are hiking up costs for the everyday American. \"CBS Evening News\" takes a look at how it's impacting farmers, business owners and others around the country.",
-    "source": "CBS News"
-   },
-   {
-    "title": "LAPD dog shootings raise questions about police tactics, best practice",
-    "link": "https://www.cbsnews.com/losangeles/news/lapd-dog-shootings-question-tactics-policies/",
-    "published": "2026-10-09T02:11Z",
-    "summary": "CBS California Investigates looked at the LAPD's Use of Force reports over the past 10 years and found the LAPD had 19 cases in which officers shot at dogs in 2016. So far in 2026, there have been four incidents, resulting in three deaths.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Christa Pike has 'profound' health turnaround after botched execution, lawyers say",
-    "link": "https://www.bbc.co.uk/news/articles/c6dxw90kdp5yo?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T02:09Z",
-    "summary": "Pike's lawyers say her recovery is \"remarkable\" as they give an update on her condition after she survived an execution attempt by lethal injection.",
-    "source": "BBC US & Canada"
-   },
-   {
-    "title": "Christa Pike has 'profound' health turnaround after botched execution, lawyers say",
-    "link": "https://www.bbc.co.uk/news/articles/c6dxw90kdp5yo?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-09T02:09Z",
-    "summary": "Pike's lawyers say her recovery is \"remarkable\" as they give an update on her condition after she survived an execution attempt by lethal injection.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Guilfoyle associate says when she asked him for $100K, it was \"quid pro quo\"",
-    "link": "https://www.cbsnews.com/news/kimberly-guilfoyle-greece-ambassador-eric-deters-texts-100000/",
-    "published": "2026-10-09T01:42Z",
-    "summary": "White House officials were told that text messages between Kimberly Guilfoyle and Eric Deters were real, sources told CBS News.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Christa Pike's attorneys say she is walking with help and eating after failed execution attempt",
-    "link": "https://www.pbs.org/newshour/nation/christa-pikes-attorneys-say-she-is-walking-with-help-and-eating-after-failed-execution-attempt",
-    "published": "2026-10-09T00:35Z",
-    "summary": "Christa Pike has begun walking and eating again at a hospital a week after surviving Tennessee's attempt to execute her with lethal drugs, her attorneys said Thursday.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Pentagon will live stream Fort Hood shooter's execution, official says",
-    "link": "https://www.cbsnews.com/video/hegseth-pentagon-live-stream-fort-hood-shooter-execution/",
-    "published": "2026-10-09T00:34Z",
-    "summary": "Defense Secretary Pete Hegseth on Thursday said Fort Hood shooter Nidal Hasan's execution by firing squad will be public. CBS News national security correspondent Charlie D'Agata reports. Then, legal contributor Jessica Levinson joins with analysis.",
-    "source": "CBS News"
-   },
-   {
-    "title": "NFL urges Supreme Court to decide who should regulate prediction markets",
-    "link": "https://www.cbsnews.com/news/nfl-supreme-court-prediction-market-case/",
-    "published": "2026-10-09T00:30Z",
-    "summary": "In a legal brief, the NFL expressed support for prior court rulings favoring state authority to oversee prediction markets.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Experts say campus data undercounts sexual assaults",
-    "link": "https://www.cbsnews.com/news/us-college-campus-sexual-assault-data/",
-    "published": "2026-10-09T00:27Z",
-    "summary": "Sexual assaults are reported thousands of times a year on the biggest university campuses in the U.S., data shows. Experts say the data undercounts the number of incidents.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Judge presses Justice Department on justifications for White House media ban",
-    "link": "https://www.cbsnews.com/news/cnn-ms-now-politico-trump-white-house-ban-hearing/",
-    "published": "2026-10-09T00:23Z",
-    "summary": "Lawyers for CNN, MS NOW and Politico were back in court as the legal battle continues over President Trump's decision to ban their reporters from the White House.",
-    "source": "CBS News"
-   },
-   {
-    "title": "NFL urges Supreme Court to decide who should regulate prediction markets",
-    "link": "https://www.cbsnews.com/video/nfl-urges-supreme-court-decide-who-should-regulate-prediction-markets/",
-    "published": "2026-10-09T00:18Z",
-    "summary": "The National Football League is now urging the Supreme Court to decide whether states should have the power to regulate prediction markets. Front Office Sports deals reporter Ben Horney joins CBS News to discuss.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Can GLP-1 drugs help people stop throwing away their money?",
-    "link": "https://www.cbsnews.com/news/glp-1-drugs-wharton-study-impulsive-spending/",
-    "published": "2026-10-09T00:17Z",
-    "summary": "Researchers will explore whether weight-loss drugs can deter risky or impulsive financial decisions. \"It might be very good financially for the average person,\" one neuroscientist said.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Teacher challenges students with $100 to get perfect chemistry exam score",
-    "link": "https://www.cbsnews.com/video/teacher-challenges-students-100-perfect-chemistry-exam-score/",
-    "published": "2026-10-09T00:16Z",
-    "summary": "A Long Island high school chemistry teacher promised a $100 prize to any student who could get a perfect score on the state's notoriously brutal chemistry exam. For the first time, one of his students succeeded. Tony Dokoupil has the story.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Doctor explains how GLP-1 drugs could help reduce gambling, shopping addiction",
-    "link": "https://www.cbsnews.com/video/doctor-explains-how-glp-1-drugs-could-help-reduce-gambling-shopping-addiction/",
-    "published": "2026-10-09T00:15Z",
-    "summary": "Dr. Carolina Haass-Koffler, associate professor of psychiatry at Brown University, joins \"The Daily Report\" to explain how GLP-1 drugs could be used to treat addictions beyond excessive eating.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Federal agents involved in shooting that wounded person in New York, police say",
-    "link": "https://www.pbs.org/newshour/nation/federal-agents-involved-in-shooting-that-wounded-person-in-new-york-police-say",
-    "published": "2026-10-09T00:07Z",
-    "summary": "An FBI spokesperson said an evidence response team was responding to the scene \"to support our partners at the Department of Homeland Security,\" but offered no other details.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "The long-deployed USS Lincoln returns home to San Diego Bay",
-    "link": "https://www.npr.org/2026/10/08/nx-s1-5995911/the-long-deployed-uss-lincoln-returns-home-to-san-diego-bay",
-    "published": "2026-10-09T00:05Z",
-    "summary": "The USS Abraham Lincoln aircraft carrier has returned home after a record-setting uninterrupted time at sea supporting the Iran war. The extended deployment drew attention following reports of crew stress and supply shortages.",
-    "source": "NPR National"
-   },
-   {
-    "title": "Fort Hood shooter's execution will be livestreamed, Pentagon says",
-    "link": "https://www.cbsnews.com/news/hegseth-fort-hood-shooter-execution-public-nidal-hasan/",
-    "published": "2026-10-08T23:56Z",
-    "summary": "Defense Secretary Pete Hegseth says the public will be able to watch the firing-squad execution of Nidal Hasan, the ex-Army major who was convicted of killing 13 people at Fort Hood in 2009.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Long-deployed USS Abraham Lincoln returns home to San Diego Bay",
-    "link": "https://www.pbs.org/newshour/nation/long-deployed-uss-abraham-lincoln-returns-home-to-san-diego-bay",
-    "published": "2026-10-08T23:54Z",
-    "summary": "The reunion followed an emotional rollercoaster for families who described crying and losing sleep after hearing reports of supply shortages and deteriorating mental health among the crew during the deployment that spent a record 265 days of uninterrupted time at sea.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Army calls for safety fixes after finding systemic failures behind DC midair collision",
-    "link": "https://www.pbs.org/newshour/nation/army-calls-for-safety-fixes-after-finding-systemic-failures-behind-dc-midair-collision",
-    "published": "2026-10-08T23:46Z",
-    "summary": "The Army report \u2014 completed in May and released publicly Thursday after months of pressure from the victims' families \u2014 identified failures involving air traffic control, helicopter routes, training and safety practices.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "USS Lincoln docks in San Diego, returning home for first time in 321 days",
-    "link": "https://www.cbsnews.com/news/uss-lincoln-san-diego-returns/",
-    "published": "2026-10-08T23:44Z",
-    "summary": "The USS Abraham Lincoln and its more than 4,500 sailors returned home to San Diego on Thursday for the first time in 321 days.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Russian strike on Ukrainian public buses leaves dozens dead as blackouts worsen in Kyiv",
-    "link": "https://www.pbs.org/newshour/world/russian-strike-on-ukrainian-public-buses-leaves-dozens-dead-as-blackouts-worsen-in-kyiv",
-    "published": "2026-10-08T23:28Z",
-    "summary": "The morning attack occurred next to a bus stop in the war-torn city of Kramatorsk in Ukraine's Donetsk region, prompting public transport to be suspended in the area.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Mark Zuckerberg has an image problem - so why is Meta's business booming?",
-    "link": "https://www.bbc.co.uk/news/articles/cq8rzjv8g7ejo?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-08T23:14Z",
-    "summary": "A new film paints the Meta founder as a villain. But the tech firm seems immune to bad publicity, writes our North America tech correspondent.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Suspect linked to Monaco bomb attack on millionaire speaks to BBC",
-    "link": "https://www.bbc.co.uk/news/articles/ckgel9044vqeo?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-08T23:11Z",
-    "summary": "Vitalii Zhykovych gives his own account of the attempted assassination of Ukrainian-born businessman Vadym Yermolayev.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Trump says U.S. won't attack Iran before midterms",
-    "link": "https://www.cbsnews.com/video/trump-says-us-wont-attack-iran-before-midterms/",
-    "published": "2026-10-08T23:03Z",
-    "summary": "President Trump is saying the U.S. won't attack Iran again before the midterms as candidates face off in Georgia, Maine and Michigan in Thursday night debates. CBS News' political director Fin G\u00f3mez has more.",
-    "source": "CBS News"
-   },
-   {
-    "title": "How Moscow's secrecy about a suspected plague case follows a Soviet-era pattern",
-    "link": "https://www.pbs.org/newshour/world/how-moscows-secrecy-about-a-suspected-plague-case-follows-a-soviet-era-pattern",
-    "published": "2026-10-08T22:56Z",
-    "summary": "The suspicious death last week of a worker at a research lab in Siberia that has fueled global concerns about suspected pneumonic plague is just the latest example of how leaders in Moscow manage the official narrative that often covers up the truth for years.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Gulf Coast prepares for landfall as Hurricane Isaias gains power",
-    "link": "https://www.pbs.org/newshour/show/gulf-coast-prepares-for-landfall-as-hurricane-isaias-gains-power",
-    "published": "2026-10-08T22:55Z",
-    "summary": "Millions along the Gulf Coast are on high alert as Hurricane Isaias gains power and moves closer to land. Isaias is now a Category 2 storm, the first hurricane in the Atlantic basin this year. Forecasters are warning of heavy rain, damaging winds, flooding, storm surge and the possibility of tornado",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Can $1 billion power the GOP to victory in the midterms? Some campaigns fear it's too late",
-    "link": "https://www.pbs.org/newshour/politics/can-1-billion-power-the-gop-to-victory-in-the-midterms-some-campaigns-fear-its-too-late",
-    "published": "2026-10-08T22:51Z",
-    "summary": "Republicans are entering the final month of the midterm campaign increasingly anxious that the $1 billion at their disposal may not be enough to fend off sweeping losses as the party reckons with President Donald Trump's unpopularity, persistent cost concerns and the fallout from the war in Iran.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "News Wrap: Judge extends White House access for news outlets",
-    "link": "https://www.pbs.org/newshour/show/news-wrap-judge-extends-white-house-access-for-news-outlets",
-    "published": "2026-10-08T22:45Z",
-    "summary": "In our news wrap Thursday, a federal judge extended White House access for three news outlets until a final ruling on President Trump's press ban is reached, the Trump administration is suspending Microsoft from a green card program, accusing the tech giant of abusing the system and Ukraine says a R",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Botched execution reignites debate surrounding death penalty",
-    "link": "https://www.pbs.org/newshour/show/botched-execution-reignites-debate-surrounding-death-penalty",
-    "published": "2026-10-08T22:40Z",
-    "summary": "Christa Pike, the Tennessee woman who survived a botched execution, has reportedly taken a few steps in her hospital room six days after she received two lethal injections. Justice correspondent Ali Rogin discussed questions surrounding the state of capital punishment with Austin Sarat, author of \"L",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Netanyahu's handling of Oct. 7 emerges as key issue in Israeli election",
-    "link": "https://www.pbs.org/newshour/show/netanyahus-handling-of-oct-7-emerges-as-key-issue-in-israeli-election",
-    "published": "2026-10-08T22:35Z",
-    "summary": "Israel is barreling toward elections in less than three weeks, which could extend Benjamin Netanyahu's already-record tenure as its leader. The Trump administration has worked in near lockstep with Netanyahu since the president's return to office. Amna Nawaz discussed what Israeli voters are conside",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Democrats are betting on pastors and ministers in the midterms",
-    "link": "https://www.pbs.org/newshour/show/democrats-are-betting-on-pastors-and-ministers-in-the-midterms",
-    "published": "2026-10-08T22:30Z",
-    "summary": "Fusing faith and politics is almost a no-brainer for many Republicans hoping to hold public office. But this election cycle, 12 pastors, seminarians and former clergy ran as Democrats, with about half securing nominations. Lisa Desjardins discussed more with NPR religion correspondent Jason Derose, ",
-    "source": "PBS NewsHour"
    }
   ],
   "local": [
    {
-    "title": "Man shot by ICE agent in front of 5-year-old son, taken into custody: Mamdani",
-    "link": "https://www.rochesterfirst.com/new-york-state/man-shot-by-ice-agent-in-front-of-5-year-old-son-taken-into-custody-mamdani/",
-    "published": "2026-10-09T09:27Z",
-    "summary": "NEW YORK (PIX11) -- A man who was shot in front of his 5-year-old son by a U.S. Immigration and Customs Enforcement agent has been taken into federal custody, New York City Mayor Zohran Mamdani said. The man had been shot just hours before being taken into custody. The shooting unfolded Thursday aft",
+    "title": "Are colleges doing enough to support students' mental health? Join our live audience.",
+    "link": "https://www.wxxinews.org/2026-10-09/are-colleges-doing-enough-to-support-students-mental-health-join-our-live-audience",
+    "published": "2026-10-09T16:22Z",
+    "summary": "\"Connections\" goes on the road to The Little Theatre for a conversation about mental health on college and university campuses. We'd like you to join us.",
+    "source": "WXXI Rochester"
+   },
+   {
+    "title": "Buffalo man sentenced to 25 years to life in prison following deadly shooting",
+    "link": "https://www.wkbw.com/news/local-news/buffalo-man-sentenced-to-27-years-to-life-in-prison-following-deadly-shooting",
+    "published": "2026-10-09T16:12Z",
+    "summary": "A Buffalo man has been sentenced to 25 years to life in prison following a shooting in Buffalo's William-Emslie neighborhood.",
+    "source": "WKBW Buffalo"
+   },
+   {
+    "title": "Police urge residents to report suspicious moving trucks",
+    "link": "https://www.rochesterfirst.com/crime/police/police-urge-residents-to-report-suspicious-moving-trucks/",
+    "published": "2026-10-09T16:12Z",
+    "summary": "NEWARK, N.Y. (WROC) \u2014 The Newark Police Department says the Finger Lakes region has seen a surge in commercial burglaries. Police say the preferred method involves using a U-Haul truck or other commercial-type truck. The burglaries typically happen at night, with suspects driving through neighborhoo",
     "source": "Rochester First"
+   },
+   {
+    "title": "Two new African penguins arrive at Seneca Park Zoo",
+    "link": "https://www.rochesterfirst.com/news/animals/two-new-african-penguins-arrive-at-seneca-park-zoo/",
+    "published": "2026-10-09T16:06Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Seneca Park Zoo has welcomed two new female African penguins, Bay and Coriander, to its colony. The pair joins 26 other African penguins at the zoo after arriving from Maryland in August. Bay and Coriander, both born in 2019, spent two weeks in quarantine before being paired",
+    "source": "Rochester First"
+   },
+   {
+    "title": "Global materials company expands Buffalo research site",
+    "link": "https://www.wivb.com/news/local-news/global-materials-company-expands-buffalo-research-site/",
+    "published": "2026-10-09T16:04Z",
+    "summary": "BUFFALO, N.Y. (WIVB) -- Global company Solstice Advanced Materials U.S., Inc. is expanding operations in Buffalo, New York Gov. Kathy Hochul announced Friday, part of a multimillion-dollar expansion project that's creating new jobs. The $49 million project will make the company's research and develo",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "Mike Ditka, legendary former Chicago Bears head coach, dies at 86",
+    "link": "https://www.wivb.com/news/national/mike-ditka-legendary-former-chicago-bears-head-coach-dies-at-86-reports/",
+    "published": "2026-10-09T15:37Z",
+    "summary": "Legendary former Chicago Bears Head Coach Mike Ditka, who coached the Bears to a dominant victory in Super Bowl XX, has died at 86, according to reports.",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "Hilton coach named Bills Coach of the Week after record-setting win",
+    "link": "https://www.rochesterfirst.com/sports/local-sports/hilton-coach-named-bills-coach-of-the-week-after-record-setting-win/",
+    "published": "2026-10-09T15:04Z",
+    "summary": "HILTON, N.Y. (WROC) \u2014 Hilton head football coach Rich Lipani has been named the Buffalo Bills and Visa Week Five High School Tackle Football Coach of the Week for the Rochester region. Lipani earned the honor after leading the Cadets to a 56-19 victory over Webster Schroeder on Oct. 2. The win marke",
+    "source": "Rochester First"
+   },
+   {
+    "title": "Amazon hiring up to 1,000 employees at new Niagara fulfillment center",
+    "link": "https://www.wivb.com/news/local-news/niagara-county/amazon-hiring-hundreds-of-employees-at-new-niagara-fulfillment-center/",
+    "published": "2026-10-09T14:55Z",
+    "summary": "BUFFALO, N.Y. (WIVB) -- Amazon is bringing more jobs to Western New York, now hiring staff at its new Niagara fulfillment center for roles starting at $21 to $23 an hour. The company is hiring up to 1,000 employees at its 3.1 million square-foot center on Lockport Road in Niagara Falls for full- and",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "Amazon hiring up to 1,000 employees for new fulfillment center in Niagara Falls",
+    "link": "https://www.wkbw.com/news/local-news/amazon-hiring-up-to-1-000-employees-for-new-fulfillment-center-in-niagara-falls",
+    "published": "2026-10-09T14:54Z",
+    "summary": "Amazon is hiring up to 1,000 employees for its new fulfillment center in Niagara Falls. The 3.1-million-square-foot facility at 8995 Lockport Road is set to be fully operational in the coming months.",
+    "source": "WKBW Buffalo"
+   },
+   {
+    "title": "Memorial Art Gallery hosts Educator Open House",
+    "link": "https://www.rochesterfirst.com/news/local-news/memorial-art-gallery-hosts-educator-open-house/",
+    "published": "2026-10-09T14:54Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2013 The Memorial Art Gallery in Rochester hosted an Educator Open House on Wednesday evening. Teachers from around the greater Rochester area joined for a celebration of the start of the school year while being able to check out the museum's newest exhibition, enjoy themed cockt",
+    "source": "Rochester First"
+   },
+   {
+    "title": "He connects the Latino community through the airwaves",
+    "link": "https://www.wxxinews.org/local-news/2026-10-09/he-connects-the-latino-community-through-the-airwaves",
+    "published": "2026-10-09T14:40Z",
+    "summary": "WXXI's Hispanic Heritage Month Series features Latino radio DJ and personality Johnny Mambo.",
+    "source": "WXXI Rochester"
+   },
+   {
+    "title": "Actor John de Lancie offers a cautionary tale with the RPO",
+    "link": "https://www.wxxinews.org/arts-culture/2026-10-09/actor-john-de-lancie-offers-a-cautionary-tale-with-the-rpo",
+    "published": "2026-10-09T14:37Z",
+    "summary": "\"Q\" is in town. 'Star Trek' fans can see actor John de Lancie with the RPO.",
+    "source": "WXXI Rochester"
+   },
+   {
+    "title": "City offices will be closed for Indigenous Peoples\u2019 Day",
+    "link": "https://www.wxxinews.org/local-news/2026-10-09/city-offices-will-be-closed-for-indigenous-peoples-day",
+    "published": "2026-10-09T14:34Z",
+    "summary": "",
+    "source": "WXXI Rochester"
+   },
+   {
+    "title": "Neon baseball experience coming next year to ESL Ballpark",
+    "link": "https://www.rochesterfirst.com/around-town/neon-baseball-experience-coming-next-year-to-esl-ballpark/",
+    "published": "2026-10-09T14:30Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2014 A glow-in-the-dark game of baseball is coming next year to ESL Ballpark! Cosmic Baseball is a blacklight and immersive baseball experience that blends the sport with neon colors. The Cosmic Chili Peppers and their rivals, the Glow Mojis, will be playing against each other in",
+    "source": "Rochester First"
+   },
+   {
+    "title": "Halloween activities happening across WNY",
+    "link": "https://www.wivb.com/lifestyle/halloween/halloween-activities-happening-across-wny/",
+    "published": "2026-10-09T14:21Z",
+    "summary": "BUFFALO, N.Y. (WIVB) -- Spooky season is in full swing, and there are plenty of festive events happening across Western New York, from hayrides to haunted mansion tours and everything in between. Pumpkin farms Akron Acres: Visitors can pick pumpkins at Akron Acres and find seasonal treats inside the",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "Buffalo man sentenced to 25 years to life for fatal shooting",
+    "link": "https://www.wivb.com/news/crime/buffalo-man-sentenced-to-25-years-after-fatal-shooting/",
+    "published": "2026-10-09T13:46Z",
+    "summary": "BUFFALO, N.Y. (WIVB) -- A man was sentenced to 25 years to life in prison for a fatal shooting last year on William Street in Buffalo, according to the Erie County District Attorney's Office. Officials said 32-year-old Mikel L. Lowe, of Buffalo, shot 36-year-old Deval Watkins with an illegal handgun",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "Nickelback coming to KeyBank Center in March",
+    "link": "https://www.wivb.com/community/things-to-do-buffalo-ny/nickelback-coming-to-keybank-center-in-march/",
+    "published": "2026-10-09T13:15Z",
+    "summary": "BUFFALO, N.Y. (WIVB) -- Canadian rock band Nickelback will be taking the stage at KeyBank Center on March 24, 2027, the venue announced Friday. The band will be bringing their \"Everything Under the Sun\" tour to the downtown arena with English rock band Don Broco opening. The tour name corresponds wi",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "Coming up: How new tech and treatments are helping breast cancer patients survive and thrive",
+    "link": "https://www.wxxinews.org/show/connections/2026-10-09/coming-up-how-new-tech-and-treatments-are-helping-breast-cancer-patients-survive-and-thrive",
+    "published": "2026-10-09T12:57Z",
+    "summary": "During \"Connections with Evan Dawson\" on Oct. 9, 2026, can AI improve outcomes for breast cancer patients? We talk with clinicians. We also hear from advocates and a survivor who shares her story.",
+    "source": "WXXI Rochester"
+   },
+   {
+    "title": "Newark police officer injured during attempted burglary arrest",
+    "link": "https://www.rochesterfirst.com/crime/newark-police-officer-injured-during-attempted-burglary-arrest/",
+    "published": "2026-10-09T12:32Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2014 A man has been charged after allegedly injuring a Newark police officer during a burglary arrest Thursday afternoon. The Newark Police Department was alerted of an attempted burglary at the vacant IEC building on Norton Street. Witnesses told police that two men arrived at t",
+    "source": "Rochester First"
+   },
+   {
+    "title": "4 games to watch: Canisius star RB Elijah Kimble chases WNY record in Week 6 of high school football season",
+    "link": "https://www.wivb.com/sports/high-school-sports/4-games-to-watch-canisius-star-rb-elijah-kimble-chases-wny-record-in-week-6-of-high-school-football-season/",
+    "published": "2026-10-09T12:20Z",
+    "summary": "BUFFALO, N.Y. (WIVB) \u2014 Elijah Kimble, the Canisius star running back and four-star prospect committed to play college football for Syracuse University, can become Western New York\u2019s all-time leading rusher this weekend. Along with big divisional matchups, these are some of the games WIVB News 4 will",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "'A grocery store on steroids': A look inside Charlotte's first Wegmans",
+    "link": "https://www.rochesterfirst.com/news/business/local-business/a-grocery-store-on-steroids-a-look-inside-charlottes-first-wegmans/",
+    "published": "2026-10-09T12:14Z",
+    "summary": "The new Wegmans supermarket in Charlotte's Ballantyne area is scheduled to open its doors at 9 a.m. next Wednesday.",
+    "source": "Rochester First"
+   },
+   {
+    "title": "Daily News: Cornell students demand policy change, Wells College sale goes to court, Star Trek actor to perform with RPO",
+    "link": "https://www.wxxinews.org/podcast/rochester-local-news/2026-10-09/daily-news-cornell-students-demand-policy-change-wells-college-sale-goes-to-court-star-trek-actor-to-perform-with-rpo",
+    "published": "2026-10-09T11:10Z",
+    "summary": "In today's top stories:Cornell student government and advocacy groups push harder for the university to change its policies when dealing with sexual assaultThe former Wells College campus still sits vacant as a new lawsuit attempts to drop the sale price.Trekkies get ready for launch as one of Star ",
+    "source": "WXXI Rochester"
+   },
+   {
+    "title": "Sunrise Smart Start: Stop Sexual Violence, Trump in Syracuse",
+    "link": "https://www.rochesterfirst.com/sunrise-smart-start/sunrise-smart-start-stop-sexual-violence-trump-in-syracuse/",
+    "published": "2026-10-09T11:08Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Stay up to date on the latest headlines in today's Sunrise Smart Start for Friday, October 9, 2026. Weather forecast: Isaias brings rain Sunday Enjoy the sunshine today as temperatures climb into the middle 60s. Deep high pressure should keep us dry through tonight.",
+    "source": "Rochester First"
+   },
+   {
+    "title": "'In Conversation' with Daytime Emmy-nominated actor and author Ameer Baraka",
+    "link": "https://www.niagara-gazette.com/news/local_news/in-conversation-with-daytime-emmy-nominated-actor-and-author-ameer-baraka/article_418ba20e-7a1c-4a87-9ed6-ab1d0f174b6e.html",
+    "published": "2026-10-09T09:30Z",
+    "summary": "Ameer Baraka is a Daytime Emmy-nominated actor, author, dyslexia advocate, and youth mentor whose journey from Louisiana State Penitentiary to national prominence is a powerful story of redemption and resilience. Diagnosed with dyslexia in his mid-twenties while incarcerated, Ameer taught\u2026",
+    "source": "Niagara Gazette"
    },
    {
     "title": "Weather forecast: Isaias brings rain Sunday",
@@ -578,6 +739,13 @@
     "published": "2026-10-09T09:24Z",
     "summary": "ROCHESTER, NY (WROC) - Enjoy the sunshine today as temperatures climb into the middle 60s. Deep high pressure should keep us dry through tonight. Clouds increase Saturday. While the sunshine still fights through the cloud deck, you will notice the remnants of Isaias having some influence here. Highs",
     "source": "Rochester First"
+   },
+   {
+    "title": "State launches a $1.6M initiative to strengthen rural suicide prevention",
+    "link": "https://www.niagara-gazette.com/news/local_news/state-launches-a-1-6m-initiative-to-strengthen-rural-suicide-prevention/article_02ce59bb-733d-454c-b3c6-b792d34c33b9.html",
+    "published": "2026-10-09T09:15Z",
+    "summary": "The New York State Office of Mental Health has launched a four-year $1.6 million initiative aimed at addressing high suicide rates in rural areas of the state.",
+    "source": "Niagara Gazette"
    },
    {
     "title": "18-year-old shot on Rugby Avenue; No suspects in custody",
@@ -664,13 +832,6 @@
     "source": "Dunkirk Observer"
    },
    {
-    "title": "Final 43North competition winners announced",
-    "link": "https://www.wivb.com/news/local-news/final-43north-competition-winners-announced/",
-    "published": "2026-10-09T02:24Z",
-    "summary": "BUFFALO, N.Y. (WIVB) -- More than 3,000 people gathered at Shea's Performing Arts Center on Thursday for the 43North competition finals, where five startup businesses were awarded a combined $5 million. The 2026 winners include Airbuild INC., JECA Energy Bars, Leansite, Playground, and Valene Health",
-    "source": "WIVB Buffalo"
-   },
-   {
     "title": "Primetime 585 Spotlight Team: Kendall girls soccer",
     "link": "https://www.rochesterfirst.com/primetime585/primetime-585-spotlight-team-kendall-girls-soccer/",
     "published": "2026-10-09T01:33Z",
@@ -685,11 +846,11 @@
     "source": "Rochester First"
    },
    {
-    "title": "Tonawanda man faces new charge after injuring eight in crash",
-    "link": "https://www.wivb.com/news/crime/tonawanda-man-faces-new-charge-after-injuring-eight-in-crash/",
-    "published": "2026-10-09T00:05Z",
-    "summary": "BUFFALO, N.Y. (WIVB) -- A Tonawanda man was arraigned on a new charge Thursday after injuring eight people in a crash at a car show in September, the city of North Tonawanda Police Department said. Following investigation, Charles Brancato, 73, has been charged with second degree vehicular assault a",
-    "source": "WIVB Buffalo"
+    "title": "Love Canal landfill work draws attention",
+    "link": "https://www.niagara-gazette.com/news/local_news/love-canal-landfill-work-draws-attention/article_ad1a8290-1d6b-4130-9b64-ab504f1ce154.html",
+    "published": "2026-10-08T23:00Z",
+    "summary": "Amid heightened concerns about the presence of chemical and industrial waste at a home on 99th Street in the Love Canal neighborhood, private environmental service workers using a vacuum truck and other equipment were spotted working inside the fence at\u2026",
+    "source": "Niagara Gazette"
    },
    {
     "title": "High-tech simulator prepares Livingston County deputies for real-world emergencies",
@@ -711,13 +872,6 @@
     "published": "2026-10-08T22:38Z",
     "summary": "The Erie County clerk race is intensifying after Republican County Clerk Mickey Kearns was called out for using county resources to promote a gun show where a vendor was selling Nazi paraphernalia.",
     "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Erie County Commissioner of Health on safe infant sleep practices",
-    "link": "https://www.wivb.com/news/local-news/erie-county-commissioner-of-health-on-safe-infant-sleep-practices/",
-    "published": "2026-10-08T22:15Z",
-    "summary": "BUFFALO, N.Y. (WIVB) -- According to the Erie County Health Department, seven infants, all six months old or younger, have died in the area over the span of just two months. With unsafe sleeping environments cited as a contributing cause, Erie County Commissioner of Health Dr. Gale Burstein is remin",
-    "source": "WIVB Buffalo"
    },
    {
     "title": "What's In Store? iSmash expands with new immersive digital gaming rooms",
@@ -783,13 +937,6 @@
     "source": "Rochester First"
    },
    {
-    "title": "3 injured in dump truck crash on I-990",
-    "link": "https://www.wivb.com/news/crime/three-injured-in-dump-truck-crash-on-i-990/",
-    "published": "2026-10-08T20:35Z",
-    "summary": "BUFFALO, N.Y. (WIVB) -- Three drivers were injured Thursday morning in a crash involving a dump truck on the I-990 Expressway in Amherst, the Amherst Police Department said. Just after 7:15 a.m., a car driven by a 29-year-old woman from Buffalo went off the road and hit a guard rail before swerving ",
-    "source": "WIVB Buffalo"
-   },
-   {
     "title": "Irondequoit unveils upgraded Bristol play area",
     "link": "https://www.rochesterfirst.com/irondequoit/irondequoit-unveils-upgraded-bristol-play-area/",
     "published": "2026-10-08T20:27Z",
@@ -811,24 +958,17 @@
     "source": "Rochester First"
    },
    {
-    "title": "Person arrested in connection to The Cereal Spot and Mr. Greek break-ins, 5 more",
-    "link": "https://www.wivb.com/news/crime/person-arrested-in-connection-to-the-cereal-spot-and-mr-greek-break-ins-5-more/",
-    "published": "2026-10-08T19:56Z",
-    "summary": "BUFFALO, N.Y. (WIVB) \u2014 A 38-year-old man was arrested in connection to break-ins at two Elmwood Avenue restaurants, along with five more dating back to June, Buffalo police said Thursday. Buffalo resident Salvatore Pierre is accused of breaking into Mr. Greek, located at 1122 Elmwood Ave., around 6 ",
-    "source": "WIVB Buffalo"
+    "title": "Niagara Falls City Council holds refuse and recycling fee steady for 2027",
+    "link": "https://www.niagara-gazette.com/news/local_news/niagara-falls-city-council-holds-refuse-and-recycling-fee-steady-for-2027/article_5f32c8e2-3d2a-4ac2-8158-d5cc4ab32982.html",
+    "published": "2026-10-08T20:00Z",
+    "summary": "Despite warnings from the acting city controller, the Niagara Falls City Council voted Wednesday night unanimously not to increase the city\u2019s 2027 fiscal year refuse and recycling user fee.",
+    "source": "Niagara Gazette"
    },
    {
     "title": "Hazmat suits, vacuum truck, and blue drums: What's going on at Love Canal?",
     "link": "https://www.wivb.com/news/investigates/hazmat-suits-vacuum-truck-and-blue-drums-whats-going-on-at-love-canal/",
     "published": "2026-10-08T19:55Z",
     "summary": "Work at Love Canal in Niagara Falls sparked curiosity among some residents. The DEC said the work is part of routine maintenance.",
-    "source": "WIVB Buffalo"
-   },
-   {
-    "title": "Erie County lawmakers approve small business bill, pass resolution",
-    "link": "https://www.wivb.com/news/local-news/erie-county-lawmakers-approve-small-business-bill-pass-resolution/",
-    "published": "2026-10-08T19:33Z",
-    "summary": "BUFFALO, N.Y. (WIVB) -- Erie County lawmakers on Thursday voted to approve the Small Business Utilization Act and passed a resolution that calls for reimbursement from New York State. County Legislature supports resolution calling for state reimbursement The Erie County Legislature unanimously passe",
     "source": "WIVB Buffalo"
    },
    {
@@ -839,18 +979,18 @@
     "source": "Rochester First"
    },
    {
+    "title": "Georgia man sent to prison for four WNY scams",
+    "link": "https://www.niagara-gazette.com/news/crime/georgia-man-sent-to-prison-for-four-wny-scams/article_bc776d99-639b-4490-afdb-77f0ede874e2.html",
+    "published": "2026-10-08T19:15Z",
+    "summary": "A Georgia man who was convicted of defrauding several people out of more than $350,000 will serve more than two years in prison.",
+    "source": "Niagara Gazette"
+   },
+   {
     "title": "Community coming together to help Depew family after fire",
     "link": "https://www.wkbw.com/news/local-news/community-coming-together-to-help-depew-family-after-fire",
     "published": "2026-10-08T19:06Z",
     "summary": "The Western New York community is coming together to help a Depew family who lost everything in a tragic fire earlier this week.",
     "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Cement mixer truck rolls over on I-190, driver hurt",
-    "link": "https://www.wivb.com/news/local-news/buffalo/cement-mixer-truck-rolls-over-on-i-190-driver-hurt/",
-    "published": "2026-10-08T18:49Z",
-    "summary": "BUFFALO, N.Y. (WIVB) \u2014 A cement mixer truck rolled over on I-190 on Thursday afternoon, according to New York State Police. Police responded around 12:30 p.m. Thursday to the northbound lane between exits 8 and 9, where the truck had overturned and hit the median barrier. The driver was transported ",
-    "source": "WIVB Buffalo"
    },
    {
     "title": "Buffalo driver sentenced to 5 years probation after deadly crash",
@@ -865,6 +1005,13 @@
     "published": "2026-10-08T17:45Z",
     "summary": "BUFFALO, N.Y. (WIVB) -- The City of Buffalo filed a lawsuit Thursday challenging a decision by the U.S. Department of the Interior that put the property at 5 Miami Street into restricted-fee status. The complaint asks the court to review the department's 2023 decision under the Administrative Proced",
     "source": "WIVB Buffalo"
+   },
+   {
+    "title": "NT Assistant Fire Chief Kyle Stevener recognized by state senate",
+    "link": "https://www.niagara-gazette.com/news/local_news/nt-assistant-fire-chief-kyle-stevener-recognized-by-state-senate/article_b5bf2f83-c2b3-44a6-aea6-0b79732b9cb6.html",
+    "published": "2026-10-08T17:00Z",
+    "summary": "State Senate Minority Leader Rob Ortt recently presented the state Senate Liberty Medal to North Tonawanda Assistant Fire Chief Kyle Stevener for his heroic, life-saving actions.",
+    "source": "Niagara Gazette"
    },
    {
     "title": "Motorcyclist killed in crash on Rt. 104 in Webster",
@@ -916,81 +1063,53 @@
     "source": "Rochester First"
    },
    {
-    "title": "Clarks opening new store at The Mall at Greece Ridge",
-    "link": "https://www.rochesterfirst.com/news/business/local-business/clarks-opening-new-store-at-the-mall-at-greece-ridge/",
-    "published": "2026-10-08T14:27Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Footwear store Clarks will be opening a new location at the Mall at Greece Ridge. The new store will be located in a 2,340-square-foot space inside the mall across from Pandora and next to Dubai Jewelry. The store will offer a wide range of men's and women's footwear. The ne",
-    "source": "Rochester First"
+    "title": "Pockets of peak fall colors this weekend",
+    "link": "https://www.niagara-gazette.com/news/local_news/pockets-of-peak-fall-colors-this-weekend/article_a16a454f-feac-440d-a208-d42a1b2c8f18.html",
+    "published": "2026-10-08T14:00Z",
+    "summary": "The transition to stunning fall colors quickened over the past week and is expected to bring pockets of peak foliage to six of New York state\u2019s 11 vacation regions this weekend, according to the fourth 2026 I Love NY Fall\u2026",
+    "source": "Niagara Gazette"
    },
    {
-    "title": "Four suspects ages 18-19 face weapon charges after Messina St. traffic stop",
-    "link": "https://www.rochesterfirst.com/crime/four-suspects-ages-18-19-face-weapon-charges-after-messina-st-traffic-stop/",
-    "published": "2026-10-08T14:25Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Four people between the ages of 18 and 19 are facing weapon charges following a traffic stop on Wednesday. Around 4:30 p.m., Rochester police officers said they stopped a Subaru near Messina Street and, as it turned around to stop, they saw the four occupants get out. During",
-    "source": "Rochester First"
+    "title": "DEC announces start of hunting seasons",
+    "link": "https://www.niagara-gazette.com/news/local_news/dec-announces-start-of-hunting-seasons/article_24e8e2d5-0d02-5e04-a4ea-06c25b8b7489.html",
+    "published": "2026-10-08T13:30Z",
+    "summary": "New York State Department of Environmental Conservation announced the beginning of hunting season in a media release Wednesday, Oct. 7.",
+    "source": "Niagara Gazette"
    },
    {
-    "title": "RG&E project will close part of I-490 overnight",
-    "link": "https://www.rochesterfirst.com/news/local-news/rge-project-will-close-part-of-i-490-overnight/",
-    "published": "2026-10-08T14:03Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 A RG&E project will close part of I-490 overnight starting Thursday. According to RG&E, they will be working on their Rochester Transmission Project Enhancement from 9 p.m. to 5 a.m. Drivers are warned that 490 will be closed in Gates between Exits 6 and 7. During this time,",
-    "source": "Rochester First"
+    "title": "A focus on charging habits this Fire Prevention Week",
+    "link": "https://www.niagara-gazette.com/news/local_news/a-focus-on-charging-habits-this-fire-prevention-week/article_914b1262-aede-46e2-b35a-882e9b8e8465.html",
+    "published": "2026-10-08T12:30Z",
+    "summary": "With Fire Prevention Week underway, the Firefighters Association of the State of New York (FASNY) is reminding New Yorkers that everyday charging habits can play an important role in preventing lithium-ion battery fires. This year\u2019s Fire Prevention Week theme, \u201cSafe\u2026",
+    "source": "Niagara Gazette"
    },
    {
-    "title": "Measles spreads across the state; ICE detention facility set to expand; ImageOut returns",
-    "link": "https://www.wxxinews.org/show/connections/2026-10-08/coming-up-measles-spreads-across-the-state-ice-detention-facility-set-to-expand-imageout-returns",
-    "published": "2026-10-08T12:48Z",
-    "summary": "During \"Connections with Evan Dawson\" on Oct. 8, 2026, what you need to know about the spread of measles in NYS, an update on a local ICE detention center, and a preview of the ImageOut film festival.",
-    "source": "WXXI Rochester"
+    "title": "Niagara Region fire companies score close to $1M in grants",
+    "link": "https://www.niagara-gazette.com/news/local_news/niagara-region-fire-companies-score-close-to-1m-in-grants/article_2f72f0ca-05b4-43b9-8e4a-04fccb5f04cf.html",
+    "published": "2026-10-08T09:45Z",
+    "summary": "Four Niagara Region fire departments will reap the benefits of close to $1 million in federal grants from the U.S. Department of Homeland Security\u2019s Federal Emergency Management Agency (FEMA)\u2019s Assistance to Firefighters Grant (AFG) and Staffing for Adequate Fire and\u2026",
+    "source": "Niagara Gazette"
    },
    {
-    "title": "Class-action grievance filed over RCSD security pay issue",
-    "link": "https://www.rochesterfirst.com/news/education/class-action-grievance-filed-over-rcsd-security-pay-issue/",
-    "published": "2026-10-08T12:01Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 A local union filed a class-action grievance alleging school security officers are still waiting for payments for games they worked for the Rochester City School District. At the end of September, BENTE Local 2419, the union representing support staff at local schools, says ",
-    "source": "Rochester First"
+    "title": "Stand Up Lockport to hold No Kings voter pep rally Oct. 17",
+    "link": "https://www.niagara-gazette.com/news/local_news/stand-up-lockport-to-hold-no-kings-voter-pep-rally-oct-17/article_474e12cd-80f6-526e-bf83-2ee17085392b.html",
+    "published": "2026-10-08T09:45Z",
+    "summary": "With elections approaching, Stand Up Lockport will hold a No Kings Vote Early pep rally from 11 a.m. to 1 p.m. on Oct. 17 in front of 5735 S. Transit Road.",
+    "source": "Niagara Gazette"
    },
    {
-    "title": "Sunrise Smart Start: Canadian imports ban, Lilac Fest dates",
-    "link": "https://www.rochesterfirst.com/sunrise-smart-start/sunrise-smart-start-canadian-imports-ban-lilac-fest-dates/",
-    "published": "2026-10-08T11:20Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Stay up to date on the latest headlines in today's Sunrise Smart Start for Thursday, October 8, 2026. Weather forecast: Tracking Isaias into the weekend for WNY Clouds are clearing and we have a mostly sunny day. Temperatures are in the 50s and low 60s through this afternoon",
-    "source": "Rochester First"
+    "title": "Hochul's campaign war chest dwarfs Blakeman's",
+    "link": "https://www.niagara-gazette.com/news/election/hochuls-campaign-war-chest-dwarfs-blakemans/article_1cef7457-c5b7-5f13-845a-7671cc277fe1.html",
+    "published": "2026-10-08T09:30Z",
+    "summary": "In the fundraising game for the race to be New York\u2019s next governor, there\u2019s one clear leader; Gov. Kathy Hochul ended the last fundraising period with more than $19 million in cash available to her, while her Republican opponent Bruce\u2026",
+    "source": "Niagara Gazette"
    },
    {
-    "title": "Daily News: Stop Sexual Assault rally in Rochester, local flu season breakdown, Venus Williams visits to uplift local women",
-    "link": "https://www.wxxinews.org/podcast/rochester-local-news/2026-10-08/daily-news-stop-sexual-assault-rally-in-rochester-local-flu-season-breakdown-venus-williams-visits-to-uplift-local-women",
-    "published": "2026-10-08T11:12Z",
-    "summary": "In today's top headlines:Local organizations and lawmakers plan a rally against sexual assault amid the ongoing issues exposed by the reopened case at Cornell.A Rochester Regional Health doctor weighs in on this year's flu season.International tennis champion and businesswoman Venus Williams joined ",
-    "source": "WXXI Rochester"
-   },
-   {
-    "title": "Couple shares turbulent immigration from Cuba to Rochester",
-    "link": "https://www.rochesterfirst.com/hidden-history/hispanic-heritage-month/couple-shares-turbulent-immigration-from-cuba-to-rochester/",
-    "published": "2026-10-08T10:49Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Madelyn Martinez had to make an agonizing decision. She left Cuba as a political refugee, securing a visa for herself and her immediate family through her mother. Her husband remained behind, trapped by circumstances beyond their control. This was in the early 1990s; the Cub",
-    "source": "Rochester First"
-   },
-   {
-    "title": "Weather forecast: Tracking Isaias into the weekend for WNY",
-    "link": "https://www.rochesterfirst.com/weather/weather-forecasts/weather-forecast-tracking-isaias-into-the-weekend-for-wny/",
-    "published": "2026-10-08T09:37Z",
-    "summary": "ROCHESTER, NY (WROC) - Clouds are clearing and we have a mostly sunny day. Temperatures are in the 50s and low 60s through this afternoon. Localized downpours will make for solid rainbow pictures! Friday starts in the 40s and will finish in the middle 60s. Temperatures go up a bit Saturday. We'll ju",
-    "source": "Rochester First"
-   },
-   {
-    "title": "Rochester Lilac Festival 2027: Dates announced!",
-    "link": "https://www.rochesterfirst.com/lilac-festival/rochester-lilac-festival-2027-dates-announced/",
-    "published": "2026-10-08T09:23Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 The dates for next year's Rochester Lilac Festival have been announced! This upcoming festival will be in its 129th year and serves as the unofficial start of the city's festival season. Thousands of visitors come to experience the lilacs, cultural experiences, and offerings",
-    "source": "Rochester First"
-   },
-   {
-    "title": "Hochul has yet to act on more than half the bills the Legislature approved. It's not uncommon",
-    "link": "https://www.wxxinews.org/new-york-public-news-network/2026-10-08/hochul-has-yet-to-act-on-more-than-half-the-bills-the-legislature-approved-its-not-uncommon",
-    "published": "2026-10-08T09:05Z",
-    "summary": "It's a cumbersome process. There also are political considerations. This being an election year adds to the intrigue.",
-    "source": "WXXI Rochester"
+    "title": "The Messy Kitchen opens on Buffalo Avenue",
+    "link": "https://www.niagara-gazette.com/news/local_news/the-messy-kitchen-opens-on-buffalo-avenue/article_cdbb55a4-5d73-4e15-8810-9e88e3e195bd.html",
+    "published": "2026-10-08T09:30Z",
+    "summary": "If you frequent Foley\u2019s Tavern in the LaSalle neighborhood, cook Theresa Messing has made some changes to its kitchen space.",
+    "source": "Niagara Gazette"
    },
    {
     "title": "BPS superintendent defends proposed school closures as PS 33 families push back",
@@ -1005,390 +1124,304 @@
     "published": "2026-10-08T02:25Z",
     "summary": "The Elma Public Library is teaching residents practical homesteading skills through a new fall class series.",
     "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Army Corps of Engineers assist in $7.3 million improvements to West Breakwater in Barcelona Harbor",
-    "link": "https://www.wkbw.com/chautauqua-county/army-corps-of-engineers-assist-in-7-3-million-improvements-to-west-breakwater-in-barcelona-harbor",
-    "published": "2026-10-07T23:54Z",
-    "summary": "For years, waves along the West Breakwater have brought large amounts of sediment, but the Army Corps of Engineers are working on a $7.3 million project to improve conditions at Barcelona Harbor.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Two red panda cubs now visible to public at Buffalo Zoo",
-    "link": "https://www.wkbw.com/news/local-news/two-red-panda-cubs-now-visible-to-public-at-buffalo-zoo",
-    "published": "2026-10-07T21:38Z",
-    "summary": "The Buffalo Zoo has announced two red panda cubs are now visible to public. The cubs are the 14th and 15th red panda cubs to be born at the zoo.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Lackawanna company to pay $1.5M resolving PPP funds allegation",
-    "link": "https://www.wkbw.com/news/local-news/lackawanna-company-to-pay-1-5m-resolving-ppp-funds-allegation",
-    "published": "2026-10-07T21:36Z",
-    "summary": "A company in Lackawanna has agreed to pay $1.5 million to settle allegations claiming it improperly obtained a Paycheck Protection Program (PPP) loan from the U.S. Small Business Administration (SBA).",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Reeds Jewelers moving to new flagship location in Snyder after 25 years on Maple Road",
-    "link": "https://www.wkbw.com/news/local-news/northtowns/reeds-jewelers-moving-to-new-flagship-location-in-snyder-after-25-years-on-maple-road",
-    "published": "2026-10-07T21:34Z",
-    "summary": "Fourth-generation family business says the new store will offer more space, parking and amenities while allowing the company to continue growing in Western New York.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "\u2018Revive the business\u2019: Candlelight Curated awarded $1 million state grant",
-    "link": "https://www.wkbw.com/niagara-county/revive-the-business-candlelight-curated-awarded-1-million-state-grant",
-    "published": "2026-10-07T21:06Z",
-    "summary": "12 weeks into production at Candlelight Curated in Lockport, the state has awarded the company $1 million in grant money as it aims to rebuild from the now-closed Candlelight Cabinetry.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Buffalo teacher fights back against plan to close Riverside High School",
-    "link": "https://www.wkbw.com/news/local-news/buffalo/buffalo-teacher-fights-back-against-plan-to-close-riverside-high-school",
-    "published": "2026-10-07T20:45Z",
-    "summary": "The Buffalo Public School District wants to close Riverside High School, one of eight schools targeted under its proposed closing plan. A 25-year veteran teacher at the school is fighting back.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "\u2018Just One Before I Die\u2019 docuseries puts Bills Mafia in the national spotlight",
-    "link": "https://www.wkbw.com/news/local-news/just-one-before-i-die-docuseries-puts-bills-mafia-in-the-national-spotlight",
-    "published": "2026-10-07T20:23Z",
-    "summary": "There\u2019s only one Bills Mafia, and a new five-part docuseries will showcase the passion, loyalty, hope, and heartbreak of Buffalo Bills fans for the world to see.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Venus Williams headlines YWCA's Empowering Women luncheon",
-    "link": "https://www.wxxinews.org/local-news/2026-10-07/venus-williams-headlined-ywca-empowering-women-luncheon",
-    "published": "2026-10-07T20:17Z",
-    "summary": "The YWCA of Rochester and Monroe County hosted its 20th annual Empowering Women luncheon on Wednesday.",
-    "source": "WXXI Rochester"
-   },
-   {
-    "title": "Rochester organizations rally to stop sexual violence",
-    "link": "https://www.wxxinews.org/local-news/2026-10-07/rochester-organizations-rally-to-stop-sexual-violence",
-    "published": "2026-10-07T18:51Z",
-    "summary": "Rally organizers include the Greater Rochester Chapter of the National Organization for Women and Planned Parenthood of Central and Western New York.",
-    "source": "WXXI Rochester"
-   },
-   {
-    "title": "Buffalo man found guilty of killing his infant son",
-    "link": "https://www.wkbw.com/news/local-news/buffalo-man-found-guilty-of-killing-his-infant-son",
-    "published": "2026-10-07T17:10Z",
-    "summary": "A jury has found 28-year-old Elijha Q. Rogers of Buffalo guilty of one count of second-degree murder, according to the Erie County District Attorney's Office.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Flu season is here, get ready",
-    "link": "https://www.wxxinews.org/local-news/2026-10-07/flu-season-is-here-get-ready",
-    "published": "2026-10-07T16:55Z",
-    "summary": "Health officials say vaccination remains the best prevention against influenza.",
-    "source": "WXXI Rochester"
-   },
-   {
-    "title": "City of Buffalo announces lawsuit to halt construction of proposed Seneca Nation truck stop",
-    "link": "https://www.wkbw.com/news/local-news/city-of-buffalo-announces-lawsuit-to-halt-construction-of-proposed-seneca-nation-truck-stop",
-    "published": "2026-10-07T15:27Z",
-    "summary": "Mayor Sean Ryan announced on Wednesday that the City of Buffalo has filed a lawsuit to stop construction of the proposed 28-bay truck stop and fuel depot at 5 Miami Street in Buffalo's Old First Ward.",
-    "source": "WKBW Buffalo"
    }
   ],
   "entertainment": [
    {
-    "title": "Gromit Speaks: Martin Freeman to Voice Beloved but Mute Dog in Audiobook Edition of Autobiography",
-    "link": "https://variety.com/2026/film/global/martin-freeman-to-voice-gromit-autobiography-audiobook-1236906386/",
-    "published": "2026-10-09T11:00Z",
-    "summary": "He\u2019s been one half of one of the most cherished on-screen duos in history, yet has famously never spoken a word. That is, up until now. Gromit, the whip-smart and eye-rolling four-legged friend to cheese-loving inventor Wallace across numerous stop-motion classics from Aardman Animation and \u201cWallace",
-    "source": "Variety"
-   },
-   {
-    "title": "\u2018Digger\u2019 Delights \u2018Homeland\u2019 Star Mandy Patinkin: \u201cOne Of The Greatest Films I Have Ever Seen\u201d",
-    "link": "https://deadline.com/2026/10/digger-delights-mandy-patinkin-one-greatest-films-1237150824/",
-    "published": "2026-10-09T10:55Z",
-    "summary": "Mandy Patinkin really digs Digger. In an effusive video message, posted soon after watching Digger in a theater, the Homeland star implored his followers to ignore the haters and watch Tom Cruise\u2019s ecological disaster movie. Patinkin described Alejandro G. I\u00f1\u00e1rritu-directed Digger as an \u201cinstant cla",
-    "source": "Deadline"
-   },
-   {
-    "title": "TIFF Lightbox Sets Animation Season Guest Curated By Masaaki Yuasa",
-    "link": "https://deadline.com/2026/10/tiff-lightbox-masaaki-yuasa-animation-season-1237150833/",
-    "published": "2026-10-09T10:50Z",
-    "summary": "Katsuhiro \u00d4tomo\u2019s Akira and Lee Unkrich\u2019s Toy Story 3 are among the animated titles that will screen at the TIFF Lightbox as part of Drawn Universes: Visions in Animation, the animation season guest-curated by veteran Japanese filmmaker Masaaki Yuasa. Drawn Universes: Visions in Animation will run f",
-    "source": "Deadline"
-   },
-   {
-    "title": "Skydance\u2019s Gerhard Zeiler, Warner Bros. Int\u2019l President, to Depart With Eyes on Politics",
-    "link": "https://www.hollywoodreporter.com/business/business-news/skydance-gerhard-zeiler-exit-eyes-political-role-1236726118/",
-    "published": "2026-10-09T10:49Z",
-    "summary": "\"It is surprisingly difficult to find the right words to say goodbye,\" the Austrian writes in an internal memo obtained by The Hollywood Reporter. \"At the end of next week, I will leave the company.\"",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "Margherita Ferrari on Working With Paolo Sorrentino on Directorial Debut \u2018F\u00f6a \u2014 Once Upon a Future\u2019: \u2018He Helped Me Pursue and Protect My Vision\u2019",
-    "link": "https://variety.com/2026/film/festivals/margherita-ferrari-paolo-sorrentino-produced-once-upon-a-future-1236906354/",
-    "published": "2026-10-09T10:48Z",
-    "summary": "Debuting Italian director Margherita Ferrari is at the Busan International Film Festival with \u201cF\u00f6a \u2013 Once Upon a Future,\u201d an innovative coming-of-age drama that also marks Paolo Sorrentino\u2019s debut as a producer. Set in Genoa during the tragic days in July 2001 when the G8 summit led to deathly clash",
-    "source": "Variety"
-   },
-   {
-    "title": "\u2018Celeste\u2019 Creator Diego San Jos\u00e9, Director Elena Trap\u00e9 on Turning a Tax Inspector Into \u2018Dirty Harry\u2019",
-    "link": "https://variety.com/2026/tv/markets-festivals/celeste-season-2-diego-san-jose-elena-trape-1236905298/",
-    "published": "2026-10-09T09:49Z",
-    "summary": "After turning Spain\u2019s tax agency into the unlikely engine of a noir-tinged comedy, \u201cCeleste\u201d creator Diego San Jos\u00e9 and director Elena Trap\u00e9 are taking aim at something far more sacred in Spain: soccer. The six-part second season of the Movistar Plus original brings Carmen Machi (\u201cLa Mes\u00edas\u201d) back a",
-    "source": "Variety"
-   },
-   {
-    "title": "Sofia Coppola Plans Return to Narrative Film, But Has Her Late Mother\u2019s \u2018Making Marie Antoinette\u2019 to See Off First",
-    "link": "https://www.hollywoodreporter.com/movies/movie-news/sofia-coppola-making-marie-antoinette-eleanor-london-film-1236726091/",
-    "published": "2026-10-09T09:46Z",
-    "summary": "The filmmaker spoke tenderly about seeing herself \"through her mother's eyes\" in the documentary, though recalled about lead star Kirsten Dunst: \"At the time, people didn't like her performance.\"",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "Sitges-Bound Cypriot Horror \u2018Motherwitch\u2019 Sells To North America",
-    "link": "https://deadline.com/2026/10/sitges-cypriot-horror-motherwitch-north-america-1237150808/",
-    "published": "2026-10-09T09:15Z",
-    "summary": "EXCLUSIVE: L.A.-based Dark Star Pictures has acquired North American rights for Cyprus-set horror Motherwitch ahead of its screening in the Sitges International Fantastic Film Festival of Catalonia next week. The acquisition was brokered by Arnaud Chevalier under the banner of his Paris-based sales ",
-    "source": "Deadline"
-   },
-   {
-    "title": "UTA and Gold House Set Partnership to Build Asia-Hollywood Bridge (EXCLUSIVE)",
-    "link": "https://variety.com/2026/film/markets-festivals/uta-gold-house-partner-asia-hollywood-1236906321/",
-    "published": "2026-10-09T09:00Z",
-    "summary": "UTA and Gold House are joining forces at the Busan International Film Festival and in Seoul this month, marking the Asian Pacific advocacy organization\u2019s first official foray into Korea as the two look to connect Asian creatives and investors with Hollywood. The partnership kicks off with the UTA x ",
-    "source": "Variety"
-   },
-   {
-    "title": "Pet Shop Boys Salute Computer Pioneer Alan Turing on \u2018A Man From The Future\u2019: Stream It Now",
-    "link": "https://www.billboard.com/music/pop/pet-shop-boys-alan-turing-on-a-man-from-the-future-stream-1236357860/",
-    "published": "2026-10-09T09:00Z",
-    "summary": "More than a decade later, the project has been updated, reworked and rearranged with new electronic elements, new text and fresh orchestrations.",
+    "title": "Top Dawg Wins Court Ruling Rejecting Doxxing Claims by Sexual Assault Accusers",
+    "link": "https://www.billboard.com/pro/top-dawg-wins-ruling-rejecting-doxxing-claim/",
+    "published": "2026-10-09T16:43Z",
+    "summary": "Two women claimed the label broke the law by revealing their names, but an appeals court says they \"simply had no right to remain anonymous while suing in court.\u201d",
     "source": "Billboard"
    },
    {
-    "title": "Icelandic Drama \u2018Elma\u2019 Set For Siminn Bow As Glassriver Debuts \u2018NCU\u2019 At MIPCOM",
-    "link": "https://deadline.com/2026/10/iceland-drama-elma-siminn-ncu-mipcom-1237150792/",
-    "published": "2026-10-09T08:32Z",
-    "summary": "EXCLUSIVE: Icelandic crime thriller series Elma, will launch domestically on S\u00edminn\u2019s streaming service on October 15, as its producer brings new title NCU to MIPCOM. Elma, adapted from global bestselling author Eva Bj\u00f6rg \u00c6gisd\u00f3ttir\u2019s book series, is set in the small port town of Akranes in Iceland.",
+    "title": "Philadelphia Film Festival To Honor Tim Blake Nelson For Artistic Achievement In Directing",
+    "link": "https://deadline.com/2026/10/philadelphia-film-festival-tim-blake-nelson-directing-award-1237150720/",
+    "published": "2026-10-09T16:41Z",
+    "summary": "Tim Blake Nelson will accompany his TIFF-premiering prison drama The Life And Deaths Of Wilson Shedd to the Philadelphia Film Festival later this month to be honored with the Artistic Achievement in Directing Award. PFF\u2019s 35th edition is set for Oct. 15-25 presented by nonprofit Philadelphia Film So",
     "source": "Deadline"
    },
    {
-    "title": "Disney\u2019s Jon Wax Says Buzzy K-Drama \u2018The Remarried Empress\u2019 Has Substance to Match Its Spectacle",
-    "link": "https://www.hollywoodreporter.com/movies/movie-news/disney-the-remarried-empress-has-substance-spectacle-1236726072/",
-    "published": "2026-10-09T08:29Z",
-    "summary": "Speaking at an MPA and Disney+ event during the Busan International Film Festival, the executive surveyed Disney\u2019s Asian originals slate and discussed the trends shaping the region\u2019s streaming business, from Korean co-productions to opportunities in anime.",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "Skydance UK Network 5\u2019s Profit Drops By Two-Thirds Amid Streaming Investment & Ad Woes",
-    "link": "https://deadline.com/2026/10/skydance-5-profit-drops-streaming-investment-1237146522/",
-    "published": "2026-10-09T08:21Z",
-    "summary": "5, the UK television network that sits within David Ellison\u2019s newly minted Skydance empire, posted a 64% decline in profit last year. The British broadcaster\u2019s pre-tax profit stood at \u00a311.93 million ($15.8M) in 2025, down nearly two-thirds from \u00a333.6M the previous year, according to earnings publish",
-    "source": "Deadline"
-   },
-   {
-    "title": "Diane Warren To Write Original Song For \u2018Armani: The King Of Fashion\u2019",
-    "link": "https://deadline.com/2026/10/diane-warren-write-original-song-armani-the-king-of-fashion-1237150784/",
-    "published": "2026-10-09T08:05Z",
-    "summary": "EXCLUSIVE: Perennial Oscar nominee Diane Warren is set to write an original song for Armani: The King of Fashion, the upcoming biopic of the fashion icon directed by Bille August. The attachment of Warren reunites her with Italian producer Andrea Iervolino after their collaboration on Tell It Like A",
-    "source": "Deadline"
-   },
-   {
-    "title": "A Rare David Bowie Self-Portrait \u2014 Featuring His Handprints \u2014 Is Going on Auction at Sotheby\u2019s",
-    "link": "https://variety.com/2026/music/global/david-bowie-self-portrait-handprints-auction-sothebys-1236905394/",
-    "published": "2026-10-09T08:00Z",
-    "summary": "A rare David Bowie self-portrait is going on auction at Sotheby\u2019s, featuring the musician and artist\u2019s own handprints. The 1996 work is part of eight self-portraits Bowie created during a prolific period of painting, all of which were snapped up immediately. Done on paper, the painting emphasizes Bo",
+    "title": "\u2018Pretty Little Liars\u2019 Star Keegan Allen Says He Was Beaten and Robbed at Gunpoint, Posts Video After Alleged Attack",
+    "link": "https://variety.com/2026/tv/news/pretty-little-liars-star-keegan-allen-robbed-1236906670/",
+    "published": "2026-10-09T16:33Z",
+    "summary": "\u201cPretty Little Liars\u201d actor Keegan Allen posted a video on social media saying he was attacked and robbed of his watch Thursday in a West Hollywood incident that was caught on camera. Allen posted a graphic video via his Instagram page. Covered in blood, he wrote, \u201cWest Hollywood is not safe anymore",
     "source": "Variety"
    },
    {
-    "title": "Bavaria Media Intl. Unveils Mipcom Slate Including German TV Hits \u2018Mordach,\u2019 \u2018Home-Made Christmas\u2019 and \u2018Throughout the Years\u2019 (EXCLUSIVE)",
-    "link": "https://variety.com/2026/tv/global/bavaria-mipcom-slate-1236905980/",
-    "published": "2026-10-09T08:00Z",
-    "summary": "Bavaria Media Intl., the distribution arm of Bavaria Film Group, has unveiled a slate of scripted shows ahead of TV market Mipcom, including German TV hits \u201cMordach,\u201d \u201cHome-Made Christmas,\u201d \u201cFanny\u2019s Extraordinary World\u201d and \u201cThroughout the Years.\u201d The crime lineup features \u201cCold Case Diaries,\u201d \u201cDark",
+    "title": "Darth Vader\u2019s \u2018Empire Strikes Back\u2019 Lightsaber Heads to Auction, Expected to Top $1 Million",
+    "link": "https://www.hollywoodreporter.com/movies/movie-news/darth-vader-empire-strikes-back-lightsaber-auction-1236726269/",
+    "published": "2026-10-09T16:33Z",
+    "summary": "Will Vader's lightsaber beat the auction record set by Luke Skywalker's lightsaber? While 'Revenge of the Sith' lightsabers are bargain priced.",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "VIFF Winner Marie Clements Unpacks Musical Doc \u2018Reclaim My Skin,\u2019 Made During a \u2018Renaissance Time for Indigenous Filmmakers\u2019",
+    "link": "https://variety.com/2026/film/global/viff-marie-clements-reclaim-my-skin-indigenous-filmmakers-1236905903/",
+    "published": "2026-10-09T16:30Z",
+    "summary": "M\u00e9tis/Dene filmmaker Marie Clements brings her new three-part musical documentary series \u201cReclaim My Skin\u201d to the Vancouver International Film Festival on Oct. 10, exploring how colonization has stripped Indigenous women and Two-Spirit people of their power and how they are reclaiming their voices t",
     "source": "Variety"
    },
    {
-    "title": "Reelz To Follow The CW\u2019s \u2018Police 24/7\u2019; Sky Remains On The Case For Season 3",
-    "link": "https://deadline.com/2026/10/reelz-buys-police-247-sky-season-3-1237150749/",
-    "published": "2026-10-09T08:00Z",
-    "summary": "EXCLUSIVE: Following strong ratings on The CW, Police 24/7 is opening new outposts. Reelz has struck a second-window deal for Seasons 1 and 2 of the blue-lights show in which law-enforcement agencies across the United States are followed across multiple jurisdictions and stories \u2014 from routine traff",
+    "title": "Jinko Gotoh Succeeding Marge Dean As President Of WIA",
+    "link": "https://deadline.com/2026/10/jinko-gotoh-named-president-wia-1237150925/",
+    "published": "2026-10-09T16:30Z",
+    "summary": "EXCLUSIVE: WIA, the global nonprofit championing women, non-binary, and underrepresented talent across animation, VFX, and gaming, has named Oscar-nominated producer Jinko Gotoh as its new President. Gotoh succeeds Marge Dean, Head of Skybound Animation Studio, who concludes a 13-year run as Preside",
     "source": "Deadline"
    },
    {
-    "title": "\u2018Queer Edward II\u2019 Gives an Inside Look at Derek Jarman\u2019s Film and Timely Historical Snapshot of a Queer Rights Backlash",
-    "link": "https://www.hollywoodreporter.com/movies/movie-news/queer-edward-ii-film-derek-jarman-queer-rights-backlash-lff-1236725662/",
-    "published": "2026-10-09T08:00Z",
-    "summary": "Theo Rollason discusses his feature directorial debut, exec produced by Tilda Swinton and Sandy Powell, now screening at the London Film Fest, and how \u201canti-trans rhetoric and attacks on queer rights [are] again intensifying.\u201d",
-    "source": "Hollywood Reporter"
+    "title": "\u2018Lioness\u2019 Actor Dave Annable Signs With Range Media Partners",
+    "link": "https://deadline.com/2026/10/lioness-dave-annable-range-media-partners-1237151030/",
+    "published": "2026-10-09T16:30Z",
+    "summary": "EXCLUSIVE: Range has signed actor Dave Annable for representation. Annable stars in Taylor Sheridan\u2019s Paramount+ series Lioness playing the husband of station chief Zoe Salda\u00f1a. The show, which also stars Nicole Kidman and Morgan Freeman, just wrapped its third season which premiered in August with ",
+    "source": "Deadline"
    },
    {
-    "title": "As National Tour Gets Underway, Olivia Dean\u2019s \u2018The Art Of Loving\u2019 Returns to No. 1 on ARIA Chart",
-    "link": "https://www.billboard.com/music/chart-beat/olivia-dean-the-art-of-loving-returns-no-1-aria-chart-1236357851/",
-    "published": "2026-10-09T07:53Z",
-    "summary": "The British singer returns to No. 1 just days after the start of her six-date trans-Tasman tour.",
+    "title": "Live Nation Makes Majority Investment in Bizarro Chile to \u2018Enhance Everything We Have Built\u2019",
+    "link": "https://www.billboard.com/pro/live-nation-bizarro-chile-partner-expand-latin-music-deal/",
+    "published": "2026-10-09T16:30Z",
+    "summary": "Bizarro founder Alfredo Alonso says the partnership will open the door to more artists, larger stages and new experiences for Chilean audiences.",
     "source": "Billboard"
    },
    {
-    "title": "SkyShowtime\u2019s \u2018The Homicide Unit,\u2019 From Warner Bros., and Iceland\u2019s \u2018Fjord\u2019 Boarded by Reinvent Yellow Sales (EXCLUSIVE)",
-    "link": "https://variety.com/2026/tv/global/the-homicide-unit-fjord-reinvent-yellow-sales-mipcom-1236905990/",
-    "published": "2026-10-09T07:30Z",
-    "summary": "SkyShowtime\u2019s \u201cThe Homicide Unit\u201d produced by Warner Bros. International Television Production (WBITVP) Sweden, and Iceland\u2019s \u201cFjord\u201d have been added to Reinvent Yellow Sales\u2019 Mipcom slate.The two crime shows feature top female investigators played by internationally acclaimed Nordic theps, Swedish ",
+    "title": "\u2018Avatar: Seven Havens\u2019 Renewed for Two More Seasons, \u2018Avatar Kuruk: Wave of Chaos\u2019 Series Announced at NYCC",
+    "link": "https://www.hollywoodreporter.com/tv/tv-news/avatar-seven-havens-renewed-kuruk-wave-of-chaos-series-1236726315/",
+    "published": "2026-10-09T16:30Z",
+    "summary": "The latest installments in the Paramount+ original animated series universe were announced alongside a new podcast and an expansion of the \u2018Avatar Legends: The Fighting Game.'",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "FCC Chairman Declines To Say Whether Broadcast Outlets Should Be Allowed To Air Live Execution, But It\u2019s Doubtful Networks Would Show It Anyway",
+    "link": "https://deadline.com/2026/10/fcc-live-execution-pentagon-pete-hegseth-1237150944/",
+    "published": "2026-10-09T16:24Z",
+    "summary": "The Pentagon announcement that it plans to livestream the execution of the Fort Hood shooter in December has generated an outcry from public officials and religious figures, including the president of the U.S. Conference of Catholic Bishops. None of the networks have yet to comment publicly on wheth",
+    "source": "Deadline"
+   },
+   {
+    "title": "Mike Ditka Dies: NFL Icon & Analyst Who Inspired Classic \u2018SNL\u2019 Skit Was 86",
+    "link": "https://deadline.com/2026/10/mike-ditka-dead-nfl-bears-1237150996/",
+    "published": "2026-10-09T16:23Z",
+    "summary": "Mike Ditka, the fiery NFL legend and analyst who exuded toughness, was a part-time actor and inspired the classic recurring Saturday Night Live about \u201cDa Bears,\u201d died today. He was 86. His family announced the news in a statement Friday, but did not provide a cause or place of death. \u201cIt is with pro",
+    "source": "Deadline"
+   },
+   {
+    "title": "BTS\u2019 j-hope and Japanese Artist Nigo Team With Major Shoe Brand to Remix a Classic Style",
+    "link": "https://www.billboard.com/culture/lifestyle/bts-j-hope-nigo-nike-air-force-1-remix-1236357936/",
+    "published": "2026-10-09T16:21Z",
+    "summary": "The collab is described as \"classic 1990s Tokyo nostalgia meets modern global stardom.\"",
+    "source": "Billboard"
+   },
+   {
+    "title": "Channing Dungey Re-Upping Contract As She Takes On Expanded Skydance Role With Title Still TBD",
+    "link": "https://deadline.com/2026/10/channing-dungey-contract-renewal-skydance-title-1237150495/",
+    "published": "2026-10-09T16:20Z",
+    "summary": "During her decades-long career of top network and studio executive, Channing Dungey has used working titles on numerous shows; now the term applies to her. Three days after she assumed a new position at the new Skydance company when Paramount\u2019s $110B acquisition of Warner Bros. Discovery closed on T",
+    "source": "Deadline"
+   },
+   {
+    "title": "Box Office: \u2018Other Mommy\u2019 Makes $3.6 Million in Previews",
+    "link": "https://variety.com/2026/film/box-office/box-office-other-mommy-previews-social-reckoning-1236904647/",
+    "published": "2026-10-09T16:18Z",
+    "summary": "After \u201cObsession\u201d and \u201cBackrooms\u201d made 2026 a huge year for horror, Jessica Chastain\u2019s \u201cOther Mommy\u201d is looking to continue the trend at the box office this weekend. The Universal movie, produced by Blumhouse-Atomic Monster, has made $3.6 million in previews from 2,850 domestic screens. It\u2019s expecte",
     "source": "Variety"
    },
    {
-    "title": "John Rhys-Davies, Diego Boneta Fantasy \u2018Starbright\u2019 Boarded by Cappu Films Ahead of Busan Market (EXCLUSIVE)",
-    "link": "https://variety.com/2026/film/markets-festivals/john-rhys-davies-fantasy-starbright-cappu-busan-1236906361/",
-    "published": "2026-10-09T07:26Z",
-    "summary": "International sales on \u201cStarbright,\u201d Francesco Lucente\u2019s English-language fantasy adventure starring John Rhys-Davies, Diego Boneta and Alexandra Dowling, have gone to Cappu Films, which sealed the deal on the eve of the Busan International Film Festival\u2019s Asian Contents & Film Market. Dowling plays",
+    "title": "Variety\u2019s 10 Screenwriters to Watch for 2026 Include Scribes Behind \u2018Being Heumann,\u2019 \u2018Clarissa\u2019 and \u2018A Different World\u2019",
+    "link": "https://variety.com/lists/screenwriters-to-watch-for-2026-being-heumann-east-of-eden/",
+    "published": "2026-10-09T16:15Z",
+    "summary": "The best movies and TV shows rest on one solid foundation: the script, and Variety has selected 10 of the up-and-coming scribes to celebrate in our Screenwriter to Watch class of 2026. The writers will be honored at a panel taking place at the Santa Fe Intl. Film Festival.",
     "source": "Variety"
    },
    {
-    "title": "How \u2018Dying to Survive\u2019 Director Wen Muye Turned a Cook\u2019s War Into $342 Million China Smash \u2018Once Upon a Time in the Middle East\u2019: \u2018I Never Think About Social Issues in Advance\u2019",
-    "link": "https://variety.com/2026/film/news/once-upon-time-middle-east-director-wen-muye-1236906350/",
-    "published": "2026-10-09T07:16Z",
-    "summary": "Xu Fu went to the Middle East for the money. The Shenyang cook, played by Shen Teng in \u201cOnce Upon a Time in the Middle East,\u201d takes the head-chef job at the Dragon Restaurant because the pay could help clear his family\u2019s debts. When war breaks out, he is shaken from his sleep and runs [\u2026]",
+    "title": "\u2018Avatar: Seven Havens\u2019 Renewed for Seasons 3 and 4 at Paramount+",
+    "link": "https://variety.com/2026/tv/news/avatar-seven-havens-renewed-season-3-4-paramount-1236906480/",
+    "published": "2026-10-09T16:15Z",
+    "summary": "\u201cAvatar: Seven Havens\u201d has been renewed for two more seasons at Paramount+, bringing the show to Seasons 3 and 4 (or Books 3 and 4 in ATLA parlance). The announcement was made onstage at the show\u2019s New York Comic-Con panel on Friday, which also coincided with the launch day for the new series. The f",
     "source": "Variety"
    },
    {
-    "title": "Why BBC Studios Hired a Channels & Streaming Iberia Team: Execs Outline Growth Opportunities",
-    "link": "https://www.hollywoodreporter.com/business/business-news/wbbc-studios-channels-streaming-iberia-team-growth-interview-1236725704/",
-    "published": "2026-10-09T07:15Z",
-    "summary": "\u201cSpain has become one of BBC Studios' most developed digital markets in EMEA,\u201d says country manager David Urgell P\u00e9rez.",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "\u2018Avatar: Seven Havens\u2019 Takes the Franchise in an Intriguing, Postapocalyptic New Direction: TV Review",
-    "link": "https://variety.com/2026/tv/reviews/avatar-seven-havens-review-1236906002/",
-    "published": "2026-10-09T07:00Z",
-    "summary": "This summer, the Avatar franchise reintroduced itself by revisiting its most iconic character: Aang, the namesake of \u201cAvatar: The Last Airbender\u201d and the original protagonist of a story now in its third decade. For its next act, the Avatar Studios imprint \u2014 overseen by original series creators Micha",
+    "title": "\u2018Avatar Kuruk: Wave of Chaos\u2019 Ordered to Series at Paramount+",
+    "link": "https://variety.com/2026/tv/news/avatar-kuruk-wave-of-chaos-ordered-to-series-paramount-plus-1236906517/",
+    "published": "2026-10-09T16:15Z",
+    "summary": "A new show in the \u201cAvatar: The Last Airbender\u201d universe is on the way \u2014 covering an Avatar from generations past. Paramount+ has ordered \u201cAvatar Kuruk: Wave of Chaos,\u201d an animated series focused on the Water Tribe Avatar three generations before Avatar Aang. The announcement was made onstage during ",
     "source": "Variety"
    },
    {
-    "title": "\u2018Avatar: Seven Havens\u2019 Review: Paramount+\u2019s Promising Addition to a Beloved Fantasy Franchise",
-    "link": "https://www.hollywoodreporter.com/tv/tv-reviews/avatar-seven-havens-review-paramount-1236723958/",
-    "published": "2026-10-09T07:00Z",
-    "summary": "Co-creators Michael Dante DiMartino and Bryan Konietzko return with a new fantasy series set after the events of 'The Last Airbender' and 'The Legend of Korra.'",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "Journey Drummer Deen Castronovo Suffers On-Stage \u2018Medical Emergency\u2019",
-    "link": "https://www.billboard.com/music/rock/journey-drummer-deen-castronovo-medical-emergency-1236357831/",
-    "published": "2026-10-09T06:23Z",
-    "summary": "Journey are making their final go-round with a lineup featuring Castronovo, Neal Schon, Jonathan Cain, and singer Arnel Pineda.",
-    "source": "Billboard"
-   },
-   {
-    "title": "Troye Sivan\u2019s \u2018She\u2019s the Best\u2019 Album: All 12 Tracks Ranked",
-    "link": "https://www.billboard.com/lists/troye-sivan-shes-the-best-album-best-songs-ranked/",
-    "published": "2026-10-09T06:08Z",
-    "summary": "Sivan's fourth studio album is an intimate letter that brings together dance, music, queerness and sex.",
-    "source": "Billboard"
-   },
-   {
-    "title": "Troye Sivan, Remi Wolf, Slayyyter & Pitbull: New Music Friday Guide",
-    "link": "https://www.billboard.com/music/music-news/troye-sivan-slayyyter-remi-wolf-new-music-friday-guide-1236353582/",
-    "published": "2026-10-09T05:54Z",
-    "summary": "Check out the must-hear releases of the week.",
-    "source": "Billboard"
-   },
-   {
-    "title": "Daughter Of Dead BBC & \u2018Paddington\u2019 Star Accuses Royal Mail Of Resurrecting Her Father\u2019s Voice Using AI: \u201cIt\u2019s Outrageous\u201d",
-    "link": "https://deadline.com/2026/10/paul-vaughan-bbc-paddington-ai-royal-mail-1237149879/",
-    "published": "2026-10-09T05:36Z",
-    "summary": "EXCLUSIVE: Lucy Wynne can\u2019t just watch TV. She\u2019s usually scribbling, talking, or scrolling with half an eye on the big screen. On the day she heard her dead Dad\u2019s voice reverberate around her living room, Wynne froze. It was November 2025, 11 years after her father had passed. She had been reminded ",
+    "title": "\u2018Avatar: Seven Havens\u2019 Renewed For 2 More Seasons At Paramount+, New Animated Series \u2018Avatar Kuruk: Wave of Chaos\u2019 Ordered",
+    "link": "https://deadline.com/2026/10/avatar-seven-havens-renewed-seasons-3-4-paramount-1237150744/",
+    "published": "2026-10-09T16:15Z",
+    "summary": "Avatar: Seven Havens has been renewed for two more seasons at Paramount+. The news was revealed during Friday\u2019s New York Comic-Con panel to coincide with the release of Book 1, confirming that the story of Avatar Pavi and her twin sister Nisha will continue through Books 3 and 4. Avatar: The Last Ai",
     "source": "Deadline"
    },
    {
-    "title": "Oasis Documentary \u2018Don\u2019t Look Back in Anger\u2019 Hits Streaming: Where to Watch Online",
-    "link": "https://www.hollywoodreporter.com/movies/movie-news/stream-oasis-dont-look-back-in-anger-2026-documentary-free-1236725621/",
-    "published": "2026-10-09T05:30Z",
-    "summary": "Initially released in theaters and Imax following its Venice premiere, the critically-acclaimed film provides unprecedented access to the English rock band's 2025 reunion tour.",
+    "title": "Don Toliver on Hitting No. 1: \u201cI Swear, I Planned the Whole S***\u201d",
+    "link": "https://www.hollywoodreporter.com/music/music-features/don-toliver-octane-album-1236723438/",
+    "published": "2026-10-09T16:15Z",
+    "summary": "The up-and-coming hip-hop artist saw an open lane, stepped on the gas, and turned \u2018Octane\u2019 into his biggest hit yet.",
     "source": "Hollywood Reporter"
    },
    {
-    "title": "Sheryl Crow Is Here to \u2018Pick You Up\u2019: Stream It Now",
-    "link": "https://www.billboard.com/music/pop/sheryl-crow-pick-you-up-stream-it-now-1236357789/",
-    "published": "2026-10-09T05:23Z",
-    "summary": "The Rock And Roll Hall of Fame inductee returns with her 13th studio album.",
+    "title": "Disney Heist Doc \u2018Stolen Kingdom\u2019 Heads To Mipcom",
+    "link": "https://deadline.com/2026/10/stolen-kingdom-documentary-mipcom-1237151049/",
+    "published": "2026-10-09T16:11Z",
+    "summary": "EXCLUSIVE: Stolen Kingdom, Joshua Bailey\u2019s documentary about the lucrative black market for stolen props at Walt Disney World, is heading to Mipcom after BayView Entertainment acquired the international rights. The company behind Skinamarink will shop the film to international broadcasters and strea",
+    "source": "Deadline"
+   },
+   {
+    "title": "\u2018Other Mommy\u2019 Scares Up $3.6 Million In Previews, Soft Start For \u2018The Social Reckoning\u2019 \u2014 Box Office",
+    "link": "https://deadline.com/2026/10/box-office-other-mommy-social-reckoning-1237151001/",
+    "published": "2026-10-09T16:09Z",
+    "summary": "Universal Pictures release Other Mommy saw a strong $3.6M from previews beginning at 2pm yesterday from 2,850 theaters. Opens today on 3,365 screens. The Social Reckoning is reckoning with $650k. Other Mommy, the Jessica Chastain-toplined horror by Rob Savage from producer James Wan and Blumhouse At",
+    "source": "Deadline"
+   },
+   {
+    "title": "Netflix\u2019s \u2018Little House On The Prairie\u2019 Season 2 Casts Peter Ingalls, Mrs. Nelson & More As Production Wraps",
+    "link": "https://deadline.com/2026/10/little-house-on-the-prairie-netflix-season-2-adds-cast-1237150729/",
+    "published": "2026-10-09T16:00Z",
+    "summary": "The second season of Netflix\u2019s Little House on the Prairie reimagining has rounded out its ensemble cast with a wrap on production. Ten names have boarded Season 2: David Wronko, Erik Athaval (American Hostage), Elyse Levesque (Ready or Not, Orphan Black), Graham Harvey (The Night Agent), Jacinta Fo",
+    "source": "Deadline"
+   },
+   {
+    "title": "Ovrkast. Breaks Down Each Track From \u2018STRIKING\u2019",
+    "link": "https://www.billboard.com/lists/ovrkast-striking-track-by-track-breakdown/",
+    "published": "2026-10-09T16:00Z",
+    "summary": "The Bay Area rapper and producer just dropped off his sophomore album. Check out what he had to say about each song.",
     "source": "Billboard"
    },
    {
-    "title": "Jessica Lange, Sarah Paulson and the \u2018Coven\u2019 on What Brought Them Back to \u2018American Horror Story\u2019 \u2014 and If This Is the End",
-    "link": "https://www.hollywoodreporter.com/tv/tv-features/ahs-13-coven-jessica-lange-sarah-paulson-interview-1236725748/",
-    "published": "2026-10-09T05:01Z",
-    "summary": "Billie Lourd, Gabourey Sidibe and Leslie Grossman also spoke with The Hollywood Reporter about the all-star 13th season of the hit FX horror anthology, and how Ryan Murphy lured them all back after years away, for some.",
+    "title": "Harvey Mason jr. on 2,300 New Grammy Voting Members, the Asian Pop Category Uproar & More: \u2018We Want To Bring More People Into the Tent\u2019",
+    "link": "https://www.billboard.com/music/awards/harvey-mason-jr-interview-grammy-voting-asian-pop-2027-1236357043/",
+    "published": "2026-10-09T16:00Z",
+    "summary": "First-round Grammy voting, which determines the nominations for 2027, opens Monday and runs through Oct. 22.",
+    "source": "Billboard"
+   },
+   {
+    "title": "Girl Ultra & Chromeo\u2019s Dave 1 Want to Wave Their \u2018Flag of PDA\u2019 and Bring Sexy Back to the Club Via New LP \u2018RRRomeo\u2019",
+    "link": "https://www.billboard.com/music/latin/girl-ultra-chromeo-dave-1-rrromeo-album-interview-1236357317/",
+    "published": "2026-10-09T16:00Z",
+    "summary": "The Mexico City artist turns her teenage nightlife memories and dark desire into a record built for letting go.",
+    "source": "Billboard"
+   },
+   {
+    "title": "\u2018Trust Me, I\u2019m a Doctor\u2019 Review: Kal Penn Plays Anna Nicole Smith\u2019s Physician in a Moldy and Misguided Bio-Dramedy",
+    "link": "https://www.hollywoodreporter.com/movies/movie-reviews/trust-me-im-a-doctor-review-kal-penn-anna-nicole-smith-1236724944/",
+    "published": "2026-10-09T16:00Z",
+    "summary": "Abbie Cornish co-stars as the famous model and reality TV star in this film about the man charged with various crimes after her death from a drug overdose.",
     "source": "Hollywood Reporter"
    },
    {
-    "title": "Greta Van Fleet Checks In With \u2018Palace For The People\u2019: Stream It Now",
-    "link": "https://www.billboard.com/music/rock/greta-van-fleet-palace-for-the-people-stream-it-now-1236357750/",
-    "published": "2026-10-09T04:31Z",
-    "summary": "\"Palace\" is the followup to 2023\u2019s \"Starcatcher,\" which peaked at No. 8 on the Billboard 200 chart and landed a Grammy nomination.",
-    "source": "Billboard"
-   },
-   {
-    "title": "\u2018Crystal Lake\u2019 Will Offer More Brutal Kills Than Films, Go Deep on Jason\u2019s Background",
-    "link": "https://www.hollywoodreporter.com/tv/tv-news/crystal-lake-friday-the-13th-series-jason-1236726004/",
-    "published": "2026-10-09T03:38Z",
-    "summary": "The 'Friday the 13th' origin series will feature \u201cshot-for-shot\u201d recreations of film scenes \u2014 but no hockey mask \u2014 while also showcasing Pamela Voorhees rage via star Linda Cardellini.",
+    "title": "James Bond Comic Book Series in the Works from Grant Morrison, IDW (Exclusive)",
+    "link": "https://www.hollywoodreporter.com/movies/movie-news/james-bond-comic-book-series-grant-morrison-1236726010/",
+    "published": "2026-10-09T16:00Z",
+    "summary": "It will feature new gadgets and a new ultimate villain ripped straight from the headlines.",
     "source": "Hollywood Reporter"
    },
    {
-    "title": "Hugh Hefner\u2019s Widow Asks Jessica Biel \u201cPlease Reconsider\u201d Starring In \u2018Playmates\u2019",
-    "link": "https://deadline.com/2026/10/hugh-hefner-widow-jessica-biel-please-reconsider-playmates-1237150727/",
-    "published": "2026-10-09T03:23Z",
-    "summary": "Nearly a decade after his death, Hugh Hefner\u2019s widow is expressing her disapproval of a coming-of-age story inspired by her late husband. Crystal Hefner, who was married to the Playboy founder from 2012 until his death at age 91 in 2017, shared a screenshot of an Instagram DM she sent to Jessica Bie",
-    "source": "Deadline"
-   },
-   {
-    "title": "Powderfinger Will Reunite For 2027 Tour",
-    "link": "https://www.billboard.com/music/rock/powderfinger-reunite-2027-tour-1236357739/",
-    "published": "2026-10-09T03:18Z",
-    "summary": "The Australian rock juggernauts will hit the road for a run of concerts, their first in almost two decades.",
+    "title": "Cardi B Makes a Splash on \u2018GTA VI: The Album\u2019 Soundtrack With Cocky \u2018Don\u2019t Chart\u2019: Listen",
+    "link": "https://www.billboard.com/music/rb-hip-hop/cardi-b-gta-6-album-song-dont-chart-1236357921/",
+    "published": "2026-10-09T15:59Z",
+    "summary": "From The Bronx to Vice City.",
     "source": "Billboard"
    },
    {
-    "title": "Alfonso Cuar\u00f3n Reflects on Making \u2018Harry Potter\u2019: \u201cTwo of the Most Beautiful Years of My Life\u201d",
-    "link": "https://www.hollywoodreporter.com/movies/movie-news/alfonso-cuaron-harry-potter-children-of-men-busan-1236725983/",
-    "published": "2026-10-09T02:46Z",
-    "summary": "At a Busan Film Festival master class with \u2018Train to Busan\u2019 director Yeon Sang-ho, the Oscar-winning filmmaker reflected on the lessons of \u2018Children of Men\u2019 and learning to put life before cinema.",
+    "title": "\u2018Star Wars: Galactic Racer\u2019 Debuts on Amazon Luna Day and Date With Wide Release (Gaming News Roundup)",
+    "link": "https://variety.com/2026/gaming/news/gaming-news-roundup-october-5-1236899234/",
+    "published": "2026-10-09T15:53Z",
+    "summary": "\u201cStar Wars: Galactic Racer\u201d launched on Amazon\u2019s gaming service Luna day and date alongside the game\u2019s worldwide release across platforms including PlayStation 5, Xbox Series S and X and PC. Developed by Fuse Games, the studio behind the \u201cBurnout\u201d and \u201cNeed for Speed\u201d franchises, \u201cStar Wars: Galacti",
+    "source": "Variety"
+   },
+   {
+    "title": "Mike Ditka, Legendary Chicago Bears Coach and Football Analyst, Dies at 86",
+    "link": "https://variety.com/2026/tv/news/mike-ditka-dead-dies-chicago-bears-coach-1236906648/",
+    "published": "2026-10-09T15:50Z",
+    "summary": "Mike Ditka, the iconic football player, Chicago Bears coach and football analyst, died at 86 years old, his family announced. ESPN was the first to report the news. No cause of death was revealed. Ditka\u2019s larger-than-life personality made him a celebrity in the \u201980s as he coached the 1985 Bears to t",
+    "source": "Variety"
+   },
+   {
+    "title": "The Netflix Ax Is Coming as Stock Languishes",
+    "link": "https://www.hollywoodreporter.com/business/business-news/netflix-ax-stock-languishes-1236726192/",
+    "published": "2026-10-09T15:44Z",
+    "summary": "In the last several weeks, reports have suggested cuts in the 5 percent range, or more, at the company.",
     "source": "Hollywood Reporter"
    },
    {
-    "title": "\u2018Freddy vs. Jason\u2019s Monica Keena Recalls Killing Freddy Krueger Was \u201cReally Cathartic\u201d After \u2018Nightmare on Elm Street\u2019 \u201cTraumatized Me\u201d",
-    "link": "https://deadline.com/2026/10/freddy-vs-jason-monica-keena-killing-freddy-krueger-cathartic-1237150721/",
-    "published": "2026-10-09T02:11Z",
-    "summary": "After 23 years, Monica Keena is reliving her \u201cfinal girl\u201d moment in the ultimate horror crossover. The Freddy vs. Jason actress recalled why it was \u201creally cathartic\u201d killing off Robert Englund\u2019s Freddy Krueger in the 2003 Ronny Yu-helmed slasher after his performance in A Nightmare On Elm Street (1",
-    "source": "Deadline"
-   },
-   {
-    "title": "Rosal\u00eda Shuts Down Kenan Thompson\u2019s Idea for a Pop-Classical Album in Hilarious \u2018SNL\u2019 Promo: \u2018That\u2019s LUX\u2019",
-    "link": "https://www.billboard.com/culture/tv-film/rosalia-kenan-thompson-a-pop-classical-album-snl-promo-1236357704/",
-    "published": "2026-10-09T01:33Z",
-    "summary": "The singer is returning to Saturday Night Live as musical guest alongside host Shane Gillis.",
+    "title": "Lorde Quotes Taylor Swift Lyric While Reflecting on Final \u2018Virgin\u2019 Shows: \u2018It Was You & Me All the Way Through\u2019",
+    "link": "https://www.billboard.com/music/music-news/lorde-quotes-taylor-swift-lyric-last-virgin-shows-1236357929/",
+    "published": "2026-10-09T15:35Z",
+    "summary": "The singer has just two more festival dates on her calendar before the album chapter comes to a close.",
     "source": "Billboard"
    },
    {
-    "title": "Charlie Cox Shouts Out \u201cSave \u2018Daredevil'\u201d Campaign At NYCC After Disney+ Cancels \u2018Born Again\u2019",
-    "link": "https://deadline.com/2026/10/charlie-cox-save-daredevil-campaign-1237150712/",
-    "published": "2026-10-09T01:31Z",
-    "summary": "Following last month\u2019s cancellation of Daredevil: Born Again, Charlie Cox is fueling hope that some blind justice will prevail. While teasing the third and final season of the Disney+ series with his co-stars at New York Comic Con, the actor shouted out fans behind the \u201cSave Daredevil\u201d campaign as t",
+    "title": "Focus Features & Blumhouse-Atomic Monster Snap Up Micro-Budget Horror Film \u2018Play House\u2019 From Nicolas Curcio",
+    "link": "https://deadline.com/2026/10/play-house-sells-focus-features-blumhouse-atomic-monster-1237151007/",
+    "published": "2026-10-09T15:31Z",
+    "summary": "EXCLUSIVE: Focus Features and Blumhouse-Atomic Monster have snapped up Play House, a micro-budget horror film from Nicolas Curcio, in a competitive situation, sources tell Deadline. We\u2019re told this was a seven-figure deal for worldwide rights, excluding Latin America and India. This is a major coup ",
     "source": "Deadline"
    },
    {
-    "title": "Universal Studios Hollywood Is Already Making Holiday Plans With The Grinch, Minions & Warm Butterbeer",
-    "link": "https://deadline.com/2026/10/universal-studios-hollywood-2026-holiday-events-1237150654/",
-    "published": "2026-10-09T00:48Z",
-    "summary": "Halloween Horror Nights are still scaring visitors to Universal Studios Hollywood, but the park is already making holiday plans. Its annual holiday celebration will feature the return of \u201cGrinchmas\u201d and \u201cChristmas in The Wizarding World of Harry Potter,\u201d along with the debut of \u201cIllumination\u2019s Merry",
+    "title": "Rachel Stockman Succeeds Dan Abrams as CEO of Law&Crime and Court TV",
+    "link": "https://www.hollywoodreporter.com/business/business-news/rachel-stockman-law-and-crime-court-tv-ceo-1236726206/",
+    "published": "2026-10-09T15:31Z",
+    "summary": "Abrams will stay on as chairman.",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "The Most Powerful Women in International TV",
+    "link": "https://www.hollywoodreporter.com/tv/tv-features/most-powerful-women-international-tv-1236723482/",
+    "published": "2026-10-09T15:30Z",
+    "summary": "From Lagos to London, Rio to Rome, the executives who decide what the world watches open up about how they're steering a business upended by consolidation, AI and vertical video.",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "Mike Ditka, No-Nonsense Chicago Bears Legend and TV Analyst, Dies at 86",
+    "link": "https://www.hollywoodreporter.com/tv/tv-news/mike-ditka-dead-chicago-bears-1236726228/",
+    "published": "2026-10-09T15:28Z",
+    "summary": "\u2018Iron Mike\u2019 won NFL titles as a player and coach, worked for NBC, CBS and ESPN and inspired a recurring \u2018SNL\u2019 sketch.",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "Danny Boyle Says \u201828 Years Later: Part III\u2019 Is Currently On The \u201cBack Burner\u201d",
+    "link": "https://deadline.com/2026/10/danny-boyle-28-years-later-part-iii-back-burner-1237150975/",
+    "published": "2026-10-09T15:20Z",
+    "summary": "\u201cIt\u2019s on the back burner at the moment,\u201d Danny Boyle concluded this afternoon during a Q&A at the London Film Festival when asked about the current status of 28 Years Later: Part III. The veteran British filmmaker continued to say he \u201chopes\u201d the film will be made if financing can be locked in. Boyle",
     "source": "Deadline"
    },
    {
-    "title": "Noah Kahan Reacts to First Kids\u2019 Choice Award Nomination: \u2018Holy Sh\u2013 I Finally Did It\u2019",
-    "link": "https://www.billboard.com/music/awards/noah-kahan-reacts-nickelodeon-kids-choice-award-nomination-1236357684/",
-    "published": "2026-10-09T00:35Z",
-    "summary": "The \"Stick Season\" singer is already imagining the Nickelodeon slime dripping into his eyes and nostrils.",
+    "title": "Bill Owens and Wendy McMahon on Why They Left CBS News: \u2018The Match Was Fixed\u2019",
+    "link": "https://variety.com/2026/tv/news/bill-owens-wendy-mcmahon-why-they-left-60-minutes-cbs-news-1236904699/",
+    "published": "2026-10-09T15:10Z",
+    "summary": "It was a CBS News reunion of sorts in Miami as former \u201c60 Minutes\u201d boss Bill Owens and Wendy McMahon, the news division\u2019s former president and CEO, detailed their 2025 resignations and spoke out against the current regime at the inaugural Jupiter Festival. \u201cIt was like the match was fixed, and I fel",
+    "source": "Variety"
+   },
+   {
+    "title": "Ignacio \u2018Nacho\u2019 Meyer Exits Univision",
+    "link": "https://www.billboard.com/pro/ignacio-nacho-meyer-steps-down-from-televisa-univision/",
+    "published": "2026-10-09T15:08Z",
+    "summary": "Meyer will continue to design and helm strategic projects for the media giant.",
+    "source": "Billboard"
+   },
+   {
+    "title": "Classic Moments With Dolly Parton, Remembered by the Actors Portraying Her in the Broadway Musical, \u2018A True Original\u2019: \u2018I\u2019m Jezebel, and God Loves Me Anyway!\u2019",
+    "link": "https://variety.com/2026/legit/news/dolly-parton-remembered-actors-broadway-musical-1236906569/",
+    "published": "2026-10-09T15:05Z",
+    "summary": "For actors, portraying a real-life person is a huge challenge. But portraying a real-life singer-songwriter-actress-icon like Dolly Parton when she\u2019s standing right in front of you is a whole other realm. That was the experience and the challenge for the actors and co-creators of \u201cDolly: A True Orig",
+    "source": "Variety"
+   },
+   {
+    "title": "$1.1 Billion for Five Warner Bros. Execs: Who Cashed Out From Paramount Sale",
+    "link": "https://www.hollywoodreporter.com/business/business-news/wbd-exes-1-billion-skydance-sale-1236726172/",
+    "published": "2026-10-09T15:03Z",
+    "summary": "David Zaslav's $606 million haul accounted for most of the gains, but his four top deputies also sold their shares in the deal, with payouts averaging over $100 million.",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "5 Surprising Collabs on Pitbull\u2019s \u2018Pitcoin\u2019 Album: Editor\u2019s Picks",
+    "link": "https://www.billboard.com/lists/pitbull-pitcoin-album-best-collaborations-editors-picks/",
+    "published": "2026-10-09T15:00Z",
+    "summary": "Mr. Worldwide reeled in longtime collaborators and new artists on his new album. See the best collabs below.",
     "source": "Billboard"
    }
   ]
  },
- "errors": [
-  "Niagara Gazette: HTTP Error 429: Too Many Requests"
- ]
+ "errors": []
 }
