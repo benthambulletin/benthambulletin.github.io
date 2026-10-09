@@ -1,13 +1,15 @@
 {
- "updated": "2026-10-09T03:17:59Z",
+ "updated": "2026-10-09T03:20:00Z",
  "week": 5,
  "games": {
   "0": {
-   "state": "in",
+   "state": "post",
    "away": 24,
    "home": 16,
-   "detail": "1:04 - 4th",
-   "line": "Buccaneers 24–16 · 1:04 - 4th"
+   "detail": "Final",
+   "winner": "Buccaneers",
+   "score": "24–16",
+   "line": "Final · Buccaneers 24–16"
   }
  }
 }
