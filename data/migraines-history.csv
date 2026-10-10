@@ -1,0 +1,41 @@
+date,time_local,person,source,pain,duration_h,woke_from_sleep,location,notes
+2025-04-11,07:00,Garret,MigraineBuddy,4,12.4,,Home,premonitory irritability/anxiety/muscle stiffness; app: pressure variation HIGH
+2025-04-14,14:52,Garret,MigraineBuddy,6,2.0,n,Work,aura only; app: pressure variation HIGH
+2025-05-03,09:15,Garret,MigraineBuddy,4,2.5,n,Out,
+2025-05-16,02:30,Garret,MigraineBuddy,6,6.0,y,Bed,
+2025-06-03,12:04,Garret,MigraineBuddy,4,2.8,n,Work,aura; app: pressure variation MODERATE
+2025-06-04,12:15,Garret,MigraineBuddy,4,1.75,n,Work,aura only
+2025-06-10,00:26,Garret,MigraineBuddy,5,7.0,y,Home,no medication
+2025-06-10,09:13,Garret,MigraineBuddy,5,8.2,n,Work,
+2025-06-11,15:45,Garret,MigraineBuddy,4,6.25,n,Work,
+2025-06-26,16:35,Garret,MigraineBuddy,4,6.2,n,In transit,
+2025-07-06,16:00,Garret,MigraineBuddy,4,7.9,n,Home,
+2025-08-14,02:56,Garret,MigraineBuddy,2,6.0,y,Home,
+2025-08-16,12:30,Garret,MigraineBuddy,,2.3,n,,no details logged
+2025-08-17,06:00,Garret,MigraineBuddy,3,4.4,,Home,premonitory neck pain
+2025-08-20,11:47,Garret,MigraineBuddy,5,4.1,n,Work,
+2025-08-21,08:33,Garret,MigraineBuddy,4,7.2,n,Work,
+2025-08-29,04:19,Garret,MigraineBuddy,6,4.0,y,Bed,
+2025-09-08,11:59,Garret,MigraineBuddy,6,4.0,n,Work,
+2025-09-18,19:16,Garret,MigraineBuddy,4,1.0,n,Home,
+2025-09-20,10:15,Garret,MigraineBuddy,4,1.5,n,Home,
+2025-09-20,11:46,Garret,MigraineBuddy,5,2.0,n,Out,
+2025-09-21,13:30,Garret,MigraineBuddy,6,1.0,n,Home,premonitory light sensitivity
+2025-09-21,17:08,Garret,MigraineBuddy,4,1.0,n,Home,
+2025-10-03,03:14,Garret,MigraineBuddy,5,12.0,y,Bed,no medication
+2025-10-21,14:10,Garret,MigraineBuddy,4,5.0,n,Home,
+2025-10-23,11:45,Garret,MigraineBuddy,4,1.5,n,Work,
+2025-10-28,08:30,Garret,MigraineBuddy,5,5.65,n,Home,
+2025-11-08,16:41,Garret,MigraineBuddy,6,1.0,n,Home,premonitory neck pain/no appetite
+2025-11-18,15:15,Garret,MigraineBuddy,4,1.0,n,Home,
+2025-11-18,18:05,Garret,MigraineBuddy,5,2.0,n,Home,premonitory neck pain
+2025-11-23,03:44,Garret,MigraineBuddy,5,4.0,y,Bed,
+2025-12-04,16:30,Garret,MigraineBuddy,4,3.2,n,Work,
+2025-12-05,12:55,Garret,MigraineBuddy,4,6.4,n,Islip NY,away from home — Long Island
+2025-12-06,15:20,Garret,MigraineBuddy,4,1.0,n,Home,
+2025-12-23,14:31,Garret,MigraineBuddy,5,24.0,n,Home,
+2025-12-31,07:20,Garret,MigraineBuddy,6,7.1,,Home,Ubrelvy helpful
+2026-01-02,18:21,Garret,MigraineBuddy,5,,n,Out,
+2026-09-07,03:00,Garret,chat,,,y,Bed,approx time; recurrence that morning
+2026-09-10,03:00,Garret,chat,,,y,Bed,approx time; mild; no meds
+2026-09-12,11:15,Garret,chat,,,n,Home,
