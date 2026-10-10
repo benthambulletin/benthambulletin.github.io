@@ -1,0 +1,60 @@
+name: Garmin pull
+
+# Every morning at 6:15 a.m. Eastern (10:15 UTC in EDT, 11:15 EST — both
+# listed so one lands before the 6:59 build year-round), plus a late-morning
+# catch-up for nights Garmin syncs late. Runnable by hand from Actions.
+on:
+  schedule:
+    - cron: "15 10 * * *"
+    - cron: "15 11 * * *"
+    - cron: "40 14 * * *"
+  workflow_dispatch:
+    inputs:
+      days_back:
+        description: "How many days to pull (default 7; use 400 once for a full backfill)"
+        required: false
+        default: "7"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: garmin-pull
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Restore Garmin session tokens
+        uses: actions/cache@v4
+        with:
+          path: .garmin-tokens
+          key: garmin-tokens-${{ github.run_id }}
+          restore-keys: garmin-tokens-
+      - name: Install client
+        run: pip install --quiet garminconnect
+      - name: Pull sleep, Body Battery, stress, resting HR
+        env:
+          GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+          GARMIN_DAYS_BACK: ${{ github.event.inputs.days_back || '7' }}
+        run: python3 tools/garmin_pull.py
+      - name: Commit if anything changed
+        run: |
+          git config user.name "Garmin"
+          git config user.email "noreply@anthropic.com"
+          git add data/garmin-daily.csv data/garmin-summary.json
+          if git diff --cached --quiet; then
+            echo "no new readings"; exit 0
+          fi
+          git commit -m "Garmin: $(date -u +'%Y-%m-%d %H:%MZ')"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 15
+          done
+          exit 1
