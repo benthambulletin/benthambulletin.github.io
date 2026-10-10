@@ -3525,6 +3525,14 @@
           "who": "Peggy",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1278c1993391a6",
+          "at": "2026-10-10T20:40:54Z",
+          "amt": "50.00",
+          "who": "Josh",
+          "status": "odd",
+          "told": null
         }
       ],
       "opensAt": "2026-10-06T11:44:52Z",
@@ -3603,7 +3611,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-10T21:10:13.313078+00:00",
+  "updated": "2026-10-10T22:10:23.609832+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
