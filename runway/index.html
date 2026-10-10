@@ -38,6 +38,13 @@ h2{font-family:var(--display);font-weight:600;font-size:19px;margin:0 0 10px;tex
 .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;font-weight:600;font-size:14px;white-space:nowrap}
 .pill::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
 .pill.good{background:var(--good-bg);color:var(--good)} .pill.watch{background:var(--watch-bg);color:var(--watch)} .pill.bad{background:var(--bad-bg);color:var(--bad)} .pill.na{background:var(--line);color:var(--ink-2)}
+.risk{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.risk .big{font-family:var(--mono);font-size:44px;font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
+.risk .big small{font-size:18px;color:var(--ink-2)}
+.risk.good .big{color:var(--good)} .risk.watch .big{color:var(--watch)} .risk.bad .big{color:var(--bad)}
+.risk .meter{display:flex;gap:3px;margin-top:8px} .risk .meter i{flex:1;height:8px;border-radius:2px;background:var(--line)}
+.risk.good .meter i.on{background:var(--good)} .risk.watch .meter i.on{background:var(--watch)} .risk.bad .meter i.on{background:var(--bad)}
+.risk .txt{font-size:14px;line-height:1.4} .risk .txt b{font-size:16px}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 @media (max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}}
 .tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
@@ -98,6 +105,11 @@ td.n{text-align:right;font-family:var(--mono)}
 
   <div id="error" class="err" hidden></div>
 
+  <div class="risk" id="risk">
+    <div><div class="eyebrow">Risk score</div><div class="big"><span id="r-score">–</span><small>/10</small></div><div class="meter" id="r-meter"></div></div>
+    <div class="txt" id="r-txt">Reading the watch…</div>
+  </div>
+
   <div class="tiles" id="tiles">
     <div class="tile" id="tile-sleep"><div class="eyebrow">Last night</div><div class="v" id="t-sleep">–</div><div class="s" id="t-sleep-s">sleep</div><span class="chip" id="c-sleep">–</span><div class="scale" id="sc-sleep"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
     <div class="tile" id="tile-bb"><div class="eyebrow">Body Battery</div><div class="v" id="t-bb">–</div><div class="s" id="t-bb-s">at wake</div><span class="chip" id="c-bb">–</span><div class="scale" id="sc-bb"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
@@ -153,6 +165,7 @@ td.n{text-align:right;font-family:var(--mono)}
       <li><b>The night before:</b> 25 minutes less sleep, 25 minutes earlier waking. Bedtime unchanged.</li>
       <li><b>Attacks cluster:</b> median gap 3.9 days; 45% land within three days of the last one.</li>
       <li><b>Pressure:</b> no signal, either direction.</li>
+      <li><b>The risk score:</b> on 241 watch days, mornings scoring 0–1 were followed by an attack 17% of the time; 6+ about half the time, but on only five days. It separates, not sharply.</li>
     </ul>
     <p class="note" style="margin:12px 0 0">Based on 40 logged attacks (Apr 2025–Oct 2026) and your Garmin history. Small numbers; the runway rule is a hypothesis the evening check-in is now testing.</p>
   </section>
@@ -212,6 +225,17 @@ td.n{text-align:right;font-family:var(--mono)}
   // runway
   const s1=stress!=null&&stress>=40, s2=bb!=null&&bb<70, s3=sleep!=null&&usual!=null&&sleep<usual-0.5;
   $("s1v").textContent=stress??"–"; $("s2v").textContent=bb??"–"; $("s3v").textContent=sleep?hoursShort(sleep):"–"; if(usual)$("s3r").textContent=`flag under ${hoursShort(usual-0.5)}`;
+  // risk score 0-10: calibrated on 241 watch days / 30 attacks (Oct 10, 2026)
+  let sc=0;const parts=[];
+  if(gBB){sc+={bad:3,watch:1,good:0}[gBB];if(gBB!=="good")parts.push("Body Battery");}
+  if(gSt){sc+={bad:3,watch:1,good:0}[gSt];if(gSt!=="good")parts.push("yesterday's stress");}
+  if(gD){sc+={bad:2,watch:1,good:0}[gD];if(gD==="bad")parts.push("the cluster window");}
+  if(gSleep){sc+={bad:2,watch:1,good:0}[gSleep];if(gSleep!=="good")parts.push("a short night");}
+  const band=sc<=1?["good","about 1 in 6","15–19%"]:sc<=3?["watch","about 1 in 4","~25%"]:sc<=5?["watch","about 1 in 3","25–33%"]:["bad","about 1 in 2","~50%, on few days"];
+  const rk=$("risk");rk.className="risk "+band[0];$("r-score").textContent=sc;
+  $("r-meter").innerHTML=Array.from({length:10},(_,i)=>`<i class="${i<sc?"on":""}"></i>`).join("");
+  const anyData=gBB||gSt||gD||gSleep;
+  $("r-txt").innerHTML=anyData?`<b>${band[1]}</b> chance of an attack today or tomorrow (${band[2]} of days like this in your history; your everyday rate is 22%).${parts.length?" Driven by "+parts.join(", ")+".":" Nothing lit."}`:"No watch data yet for last night.";
   [["s1",gSt],["s2",gBB],["s3",gSleep]].forEach(([id,g])=>{const e=$(id);e.classList.remove("good","watch","bad");if(g)e.classList.add(g);});
   const lit=[s1,s2,s3].filter(Boolean).length;
   const st=$("status"); st.className="pill";
