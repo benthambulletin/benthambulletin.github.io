@@ -267,6 +267,12 @@ def main():
             print(f"backfill: {n} rows from IEM")
         except Exception as e:  # noqa: BLE001
             print(f"backfill failed: {e}", file=sys.stderr)
+    import os
+    bf = os.environ.get("BACKFILL_FROM", "").strip()
+    if bf:
+        start = datetime.strptime(bf, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        n = backfill_iem(rows, start, now)
+        print(f"manual backfill from {bf}: {n} rows from IEM")
     added = fetch_awc(rows, hours=12 if not was_empty else 150)
     print(f"awc: {added} new rows, {len(rows)} total")
     write_log(rows)

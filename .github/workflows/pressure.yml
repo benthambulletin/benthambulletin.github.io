@@ -7,6 +7,11 @@ on:
     - cron: "23 1,4,7,13,16,19,22 * * *"
     - cron: "5,35 10 * * *"   # extra pre-build runs so the 6:59 paper has a fresh reading
   workflow_dispatch:
+    inputs:
+      backfill_from:
+        description: "One-off: backfill hourly readings from this date (YYYY-MM-DD) via the IEM archive"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -25,6 +30,8 @@ jobs:
           python-version: "3.12"
       - name: Fetch and merge observations
         run: python3 tools/pressure_log.py
+        env:
+          BACKFILL_FROM: ${{ github.event.inputs.backfill_from }}
       - name: Commit if anything changed
         run: |
           git config user.name "Barograph"
