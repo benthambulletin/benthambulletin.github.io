@@ -1,29 +1,21 @@
 {
- "generated_utc": "2026-10-10T13:50Z",
+ "generated_utc": "2026-10-10T15:46Z",
  "stations": {
   "KIAG": {
    "town": "North Tonawanda",
-   "latest_time_utc": "2026-10-10T12:53Z",
-   "latest_mb": 1030.0,
-   "latest_inhg": 30.42,
+   "latest_time_utc": "2026-10-10T14:53Z",
+   "latest_mb": 1029.9,
+   "latest_inhg": 30.41,
    "altim_inhg": 30.4,
-   "temp_c": 8.9,
-   "d3h_mb": 1.8,
-   "d6h_mb": 2.1,
-   "d12h_mb": 5.2,
-   "d24h_mb": 8.1,
-   "trend": "rising fast",
+   "temp_c": 13.9,
+   "d3h_mb": 0.6,
+   "d6h_mb": 2.2,
+   "d12h_mb": 4.2,
+   "d24h_mb": 7.8,
+   "trend": "rising",
    "week_min_mb": 1004.4,
-   "week_max_mb": 1030.0,
+   "week_max_mb": 1030.2,
    "hourly_7d": [
-    [
-     "2026-10-03T12:53Z",
-     1028.1
-    ],
-    [
-     "2026-10-03T13:53Z",
-     1028.4
-    ],
     [
      "2026-10-03T14:53Z",
      1028.6
@@ -731,32 +723,32 @@
     [
      "2026-10-10T12:53Z",
      1030.0
+    ],
+    [
+     "2026-10-10T13:53Z",
+     1030.2
+    ],
+    [
+     "2026-10-10T14:53Z",
+     1029.9
     ]
    ]
   },
   "KDKK": {
    "town": "Dunkirk",
-   "latest_time_utc": "2026-10-10T12:53Z",
-   "latest_mb": 1028.9,
+   "latest_time_utc": "2026-10-10T14:53Z",
+   "latest_mb": 1028.7,
    "latest_inhg": 30.38,
    "altim_inhg": 30.38,
-   "temp_c": 9.4,
-   "d3h_mb": 1.6,
-   "d6h_mb": 1.6,
-   "d12h_mb": 3.9,
-   "d24h_mb": 6.6,
-   "trend": "rising fast",
+   "temp_c": 17.2,
+   "d3h_mb": 0.3,
+   "d6h_mb": 1.8,
+   "d12h_mb": 3.2,
+   "d24h_mb": 5.7,
+   "trend": "rising, slowly",
    "week_min_mb": 1005.9,
    "week_max_mb": 1028.9,
    "hourly_7d": [
-    [
-     "2026-10-03T12:53Z",
-     1027.5
-    ],
-    [
-     "2026-10-03T13:53Z",
-     1027.9
-    ],
     [
      "2026-10-03T14:53Z",
      1028.1
@@ -1432,32 +1424,32 @@
     [
      "2026-10-10T12:53Z",
      1028.9
+    ],
+    [
+     "2026-10-10T13:53Z",
+     1028.8
+    ],
+    [
+     "2026-10-10T14:53Z",
+     1028.7
     ]
    ]
   },
   "KROC": {
    "town": "Scottsville",
-   "latest_time_utc": "2026-10-10T12:54Z",
-   "latest_mb": 1031.4,
-   "latest_inhg": 30.46,
-   "altim_inhg": 30.44,
-   "temp_c": 7.2,
-   "d3h_mb": 2.3,
-   "d6h_mb": 3.0,
-   "d12h_mb": 6.6,
-   "d24h_mb": 9.6,
-   "trend": "rising fast",
+   "latest_time_utc": "2026-10-10T14:54Z",
+   "latest_mb": 1031.7,
+   "latest_inhg": 30.47,
+   "altim_inhg": 30.45,
+   "temp_c": 12.2,
+   "d3h_mb": 1.0,
+   "d6h_mb": 2.9,
+   "d12h_mb": 5.7,
+   "d24h_mb": 9.3,
+   "trend": "rising",
    "week_min_mb": 1005.0,
-   "week_max_mb": 1031.4,
+   "week_max_mb": 1032.2,
    "hourly_7d": [
-    [
-     "2026-10-03T12:54Z",
-     1028.1
-    ],
-    [
-     "2026-10-03T13:54Z",
-     1028.8
-    ],
     [
      "2026-10-03T14:54Z",
      1029.1
@@ -2145,6 +2137,14 @@
     [
      "2026-10-10T12:54Z",
      1031.4
+    ],
+    [
+     "2026-10-10T13:54Z",
+     1032.2
+    ],
+    [
+     "2026-10-10T14:54Z",
+     1031.7
     ]
    ]
   }
