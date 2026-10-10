@@ -180,6 +180,7 @@ def summarize(rows, now):
             deltas[f"d{h}h_mb"] = None if past is None else round(v_last - past, 1)
         week = [(t, v) for t, v in series if t >= t_last - timedelta(days=7)]
         last_r = rows[(st, t_last.strftime("%Y-%m-%dT%H:%MZ"))]
+        out.setdefault("_obs", {})[st] = series
         out["stations"][st] = {
             "town": TOWN[st],
             "latest_time_utc": t_last.strftime("%Y-%m-%dT%H:%MZ"),
@@ -196,6 +197,66 @@ def summarize(rows, now):
     return out
 
 
+OPEN_METEO = ("https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}"
+              "&hourly=pressure_msl&forecast_days=3&timezone=UTC")
+FORECAST_POINTS = {"KIAG": (43.0387, -78.8642), "KDKK": (42.4932, -79.3350), "KROC": (43.0245, -77.7467)}
+SWING_ALERT_MB = 5.0
+
+
+def forecast(out, now):
+    """Next 48 hours of modeled sea-level pressure per town, plus the biggest
+    24-hour move coming and when. Either direction counts: the family log so far
+    shows attacks on rises as often as falls, so the paper flags the size of the
+    swing, not just drops."""
+    out["forecast"] = {}
+    for st, (lat, lon) in FORECAST_POINTS.items():
+        try:
+            d = json.loads(get(OPEN_METEO.format(lat=lat, lon=lon)))
+        except Exception as e:  # noqa: BLE001
+            print(f"forecast {st} failed: {e}", file=sys.stderr)
+            continue
+        times = d["hourly"]["time"]
+        vals = d["hourly"]["pressure_msl"]
+        pts = []
+        for t, v in zip(times, vals):
+            if v is None:
+                continue
+            tt = datetime.strptime(t, "%Y-%m-%dT%H:%M").replace(tzinfo=timezone.utc)
+            if now - timedelta(hours=1) <= tt <= now + timedelta(hours=48):
+                pts.append((tt, float(v)))
+        if len(pts) < 25:
+            continue
+        # biggest 24h change ending at any forecast hour, and biggest 3h move
+        best24 = (0.0, None, None)
+        best3 = (0.0, None, None)
+        idx = {t: v for t, v in pts}
+        for t, v in pts:
+            p24 = idx.get(t - timedelta(hours=24))
+            if p24 is None:
+                # fall back on the observed log for the start of the window
+                p24 = nearest(out.get("_obs", {}).get(st, []), t - timedelta(hours=24))
+            if p24 is not None and abs(v - p24) > abs(best24[0]):
+                best24 = (round(v - p24, 1), (t - timedelta(hours=24)), t)
+            p3 = idx.get(t - timedelta(hours=3))
+            if p3 is not None and abs(v - p3) > abs(best3[0]):
+                best3 = (round(v - p3, 1), (t - timedelta(hours=3)), t)
+        fmt_t = lambda x: x.strftime("%Y-%m-%dT%H:%MZ") if x else None  # noqa: E731
+        out["forecast"][st] = {
+            "town": TOWN[st],
+            "source": "Open-Meteo pressure_msl, hourly",
+            "next48h": [[fmt_t(t), v] for t, v in pts],
+            "max_24h_change_mb": best24[0],
+            "max_24h_window": [fmt_t(best24[1]), fmt_t(best24[2])],
+            "max_3h_change_mb": best3[0],
+            "max_3h_window": [fmt_t(best3[1]), fmt_t(best3[2])],
+            "swing_alert": abs(best24[0]) >= SWING_ALERT_MB or abs(best3[0]) >= 1.5,
+            "end48h_mb": pts[-1][1],
+            "change_to_end48h_mb": round(pts[-1][1] - pts[0][1], 1),
+        }
+    out.pop("_obs", None)
+    return out
+
+
 def main():
     now = datetime.now(timezone.utc)
     rows = read_log()
@@ -209,7 +270,7 @@ def main():
     added = fetch_awc(rows, hours=12 if not was_empty else 150)
     print(f"awc: {added} new rows, {len(rows)} total")
     write_log(rows)
-    SUMMARY.write_text(json.dumps(summarize(rows, now), indent=1) + "\n")
+    SUMMARY.write_text(json.dumps(forecast(summarize(rows, now), now), indent=1) + "\n")
     print(f"wrote {LOG.name} and {SUMMARY.name}")
 
 
