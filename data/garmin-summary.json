@@ -1,0 +1,24 @@
+{
+ "generated_utc": "2026-10-10T18:11Z",
+ "night_ending": "2026-10-10",
+ "last_night": {
+  "sleep_h": "9.45",
+  "bedtime": "10:06 PM",
+  "wake": "7:34 AM",
+  "sleep_score": "",
+  "deep_h": "0.88",
+  "rem_h": "2.00",
+  "awake_h": "0.02",
+  "bb_high": "78",
+  "bb_low": "24",
+  "stress": "27",
+  "rhr": "48",
+  "hrv": "",
+  "resp": "12.0"
+ },
+ "usual_sleep_h_60d": 9.02,
+ "yesterday_stress": "34",
+ "flag_next_day": false,
+ "flag_reasons": [],
+ "rule": "Body Battery under 70 at wake, or a night 30+ min short of usual, flags the next day (Oct 10, 2026 analysis)."
+}
