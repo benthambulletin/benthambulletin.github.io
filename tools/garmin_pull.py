@@ -5,13 +5,11 @@ Runs from .github/workflows/garmin.yml every morning. Signs in to Garmin
 Connect with GARMIN_EMAIL / GARMIN_PASSWORD (repository secrets), pulls the
 last several days of sleep, Body Battery, stress, resting heart rate and
 (when the device provides it) HRV, and merges them into
-data/garmin-daily.csv. Also writes data/garmin-summary.json with last
-night's numbers and the flag the paper uses.
+data/garmin-daily.csv. Also writes data/garmin-summary.json (last night's
+numbers and the experimental 0-10 score) and appends to data/runway-log.json.
 
-The watch-based risk rule (from the Oct 10, 2026 analysis of 40 attacks):
-a Body Battery high under 70 at wake, or a night more than ~30 minutes
-shorter than the person's usual, flags the NEXT day. The paper prints the
-numbers and the flag, nothing clinical.
+None of this goes in the paper (Garret, Oct 10). It feeds /runway/, his
+private dashboard, and the "headache" check only.
 """
 import csv
 import json
