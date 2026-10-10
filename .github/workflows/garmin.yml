@@ -1,13 +1,14 @@
 name: Garmin pull
 
-# Every morning at 6:15 a.m. Eastern (10:15 UTC in EDT, 11:15 EST — both
-# listed so one lands before the 6:59 build year-round), plus a late-morning
-# catch-up for nights Garmin syncs late. Runnable by hand from Actions.
+# Garret is up around 7:30 and the watch syncs when he opens the app, so
+# pull at 8:15 and 9:15 a.m. Eastern (12:15/13:15 UTC covers EDT and EST)
+# with a 2 p.m. catch-up for late syncs. The paper does not use this data;
+# the dashboard and Claude do. Runnable by hand from Actions.
 on:
   schedule:
-    - cron: "15 10 * * *"
-    - cron: "15 11 * * *"
-    - cron: "40 14 * * *"
+    - cron: "15 12 * * *"
+    - cron: "15 13 * * *"
+    - cron: "0 18 * * *"
   workflow_dispatch:
     inputs:
       days_back:
