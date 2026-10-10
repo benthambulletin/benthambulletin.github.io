@@ -107,30 +107,105 @@ def pull(client, day):
     return out
 
 
+def _median(xs):
+    xs = sorted(xs)
+    return xs[len(xs) // 2] if xs else None
+
+
+def _hm_to_h(txt):
+    try:
+        t = datetime.strptime(txt, "%I:%M %p")
+        return t.hour + t.minute / 60
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def score_day(rows, day):
+    """Experimental risk score for the day after `day`'s morning reading.
+    Inputs (Oct 10, 2026 audit, logging-window data): wake earlier than usual,
+    Body Battery high this morning, resting HR above usual, yesterday's stress,
+    a short night. No 'days since last attack' term — it points the wrong way.
+    Max 10. Returns (score, flags, detail) or (None, [], detail) if last night
+    is missing."""
+    ds = day.isoformat()
+    r = rows.get(ds) or {}
+    hist = [rows[d] for d in sorted(rows) if d < ds][-60:]
+    usual_wake = _median([_hm_to_h(x["wake"]) for x in hist if x.get("wake") and _hm_to_h(x["wake"])])
+    usual_sleep = _median([float(x["sleep_h"]) for x in hist if x.get("sleep_h")])
+    usual_rhr = _median([float(x["rhr"]) for x in hist if x.get("rhr")])
+    y = rows.get((day - timedelta(days=1)).isoformat()) or {}
+    wake = _hm_to_h(r["wake"]) if r.get("wake") else None
+    sleep_h = float(r["sleep_h"]) if r.get("sleep_h") else None
+    bb = int(r["bb_high"]) if r.get("bb_high") else None
+    rhr = float(r["rhr"]) if r.get("rhr") else None
+    stress = float(y["stress"]) if y.get("stress") else None
+    detail = {
+        "wake": r.get("wake", ""), "usual_wake_h": round(usual_wake, 2) if usual_wake else None,
+        "wake_dev_min": round((wake - usual_wake) * 60) if (wake and usual_wake) else None,
+        "sleep_h": sleep_h, "usual_sleep_h": round(usual_sleep, 2) if usual_sleep else None,
+        "bb_high": bb, "rhr": rhr, "usual_rhr": usual_rhr, "stress_yday": stress,
+    }
+    if sleep_h is None and bb is None:
+        return None, [], detail
+    sc, flags = 0, []
+    if detail["wake_dev_min"] is not None:
+        if detail["wake_dev_min"] <= -25:
+            sc += 3; flags.append("woke early")
+        elif detail["wake_dev_min"] <= -15:
+            sc += 1; flags.append("woke a bit early")
+    if bb is not None:
+        if bb < BB_FLAG:
+            sc += 3; flags.append("Body Battery low")
+        elif bb < 80:
+            sc += 1; flags.append("Body Battery so-so")
+    if stress is not None:
+        if stress >= 40:
+            sc += 2; flags.append("stressful yesterday")
+        elif stress >= 35:
+            sc += 1; flags.append("stress elevated yesterday")
+    if rhr is not None and usual_rhr is not None and rhr >= usual_rhr + 2:
+        sc += 1; flags.append("resting HR up")
+    if sleep_h is not None and usual_sleep is not None and sleep_h < usual_sleep - SLEEP_SHORT_H:
+        sc += 1; flags.append("short night")
+    return min(sc, 10), flags, detail
+
+
 def summarize(rows, today):
-    """Last night's numbers plus the flag for the paper."""
-    recent = [rows[d] for d in sorted(rows) if d <= today.isoformat()][-60:]
-    hours = [float(r["sleep_h"]) for r in recent if r.get("sleep_h")]
-    med = sorted(hours)[len(hours) // 2] if hours else None
+    """Last night's numbers plus the experimental score, for the dashboard only."""
     last = rows.get(today.isoformat()) or {}
-    sleep_h = float(last["sleep_h"]) if last.get("sleep_h") else None
-    bb = int(last["bb_high"]) if last.get("bb_high") else None
-    reasons = []
-    if bb is not None and bb < BB_FLAG:
-        reasons.append(f"Body Battery {bb} at wake (under {BB_FLAG})")
-    if sleep_h is not None and med is not None and sleep_h < med - SLEEP_SHORT_H:
-        reasons.append(f"{sleep_h:.1f} h sleep against a usual {med:.1f}")
-    yday = rows.get((today - timedelta(days=1)).isoformat()) or {}
+    sc, flags, detail = score_day(rows, today)
     return {
         "generated_utc": datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ"),
         "night_ending": today.isoformat(),
         "last_night": {k: last.get(k, "") for k in FIELDS if k != "date"},
-        "usual_sleep_h_60d": round(med, 2) if med else None,
-        "yesterday_stress": yday.get("stress", ""),
-        "flag_next_day": bool(reasons),
-        "flag_reasons": reasons,
-        "rule": "Body Battery under 70 at wake, or a night 30+ min short of usual, flags the next day (Oct 10, 2026 analysis).",
+        "score": sc, "flags": flags, "detail": detail,
+        "experimental": True,
+        "rule": "Experimental 0-10 score: early waking, low Body Battery, yesterday's stress, resting HR, short night. Judged by the scoreboard, not assumed.",
     }
+
+
+def log_scores(rows, today):
+    """Append today's score to data/runway-log.json (one entry per date) so the
+    dashboard can keep an honest hit/miss record."""
+    path = ROOT / "data" / "runway-log.json"
+    log = {}
+    if path.exists():
+        try:
+            for e in json.loads(path.read_text()):
+                log[e["date"]] = e
+        except Exception:  # noqa: BLE001
+            pass
+    for i in range(3):  # today and two catch-up days, in case a pull was late
+        d = today - timedelta(days=i)
+        sc, flags, detail = score_day(rows, d)
+        if sc is None:
+            continue
+        if d.isoformat() in log and log[d.isoformat()].get("score") is not None and i > 0:
+            continue
+        log[d.isoformat()] = {"date": d.isoformat(), "score": sc, "flags": flags,
+                              "wake_dev_min": detail["wake_dev_min"], "bb_high": detail["bb_high"],
+                              "stress_yday": detail["stress_yday"]}
+    path.write_text(json.dumps([log[k] for k in sorted(log)], indent=1) + "\n")
 
 
 def main():
@@ -165,6 +240,7 @@ def main():
             pulled += 1
     write_csv(rows)
     SUMMARY.write_text(json.dumps(summarize(rows, today), indent=1) + "\n")
+    log_scores(rows, today)
     print(f"pulled {pulled} days; {len(rows)} rows in {CSV.name}")
 
 
