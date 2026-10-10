@@ -54,6 +54,7 @@ h2{font-family:var(--display);font-weight:600;font-size:19px;margin:0 0 10px;tex
 .board div{background:var(--bg);border-radius:8px;padding:10px 12px;min-width:0}
 .board .n{font-family:var(--mono);font-size:22px;font-variant-numeric:tabular-nums}
 .board .l{font-size:12px;color:var(--ink-2)}
+@media (max-width:520px){.risk{grid-template-columns:1fr}.risk>div:first-child{display:flex;align-items:center;gap:14px;flex-wrap:wrap}}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 @media (max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}}
 .tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
@@ -118,6 +119,12 @@ td.n{text-align:right;font-family:var(--mono)}
     <div class="tile" id="tile-stress"><div class="eyebrow">Stress yesterday</div><div class="v" id="t-stress">–</div><div class="s">green under 35 · red 40+</div><span class="chip" id="c-stress">–</span><div class="scale" id="sc-stress"><i class="g"></i><i class="y"></i><i class="r"></i></div></div>
     <div class="tile" id="tile-sleep"><div class="eyebrow">Last night</div><div class="v" id="t-sleep">–</div><div class="s" id="t-sleep-s">sleep</div><span class="chip" id="c-sleep">–</span><div class="scale" id="sc-sleep"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
   </div>
+
+  <section class="panel" id="plan" hidden>
+    <h2>What to do about it</h2>
+    <ul class="facts" id="plan-list"></ul>
+    <p class="note" style="margin:10px 0 0">Each move matches a lit tile. These are the levers with the best evidence behind them — sleep timing, early treatment, steady fuel — not cures. Nothing here changes a prescription.</p>
+  </section>
 
   <section class="panel">
     <h2>Flags this morning</h2>
@@ -240,10 +247,26 @@ td.n{text-align:right;font-family:var(--mono)}
     else{st.classList.add("good");st.textContent="Clear";}
     $("today").innerHTML=sc==null?`<b>Today:</b> sync the watch first.`:sc>=5?`<b>Today:</b> Ubrelvy in the bag, light afternoon if you can, early night. Log it if it comes.`:sc>=3?`<b>Today:</b> keep the Ubrelvy close and notice the premed feeling. Evening check-in tonight.`:`<b>Today:</b> nothing to do. Evening check-in tonight.`;
 
+    // plan: one concrete move per yellow/red tile
+    const plan=[];
+    const rhrUp=flags.includes("resting HR up"); const rhr=ln&&ln.rhr?ln.rhr:null;
+    if(gW==="bad") plan.push(`<b>Woke ${Math.abs(dev)} min early.</b> This is your strongest tell, and it often <i>is</i> the attack starting (the prodrome phase). Treat today as a likely-attack day: Ubrelvy on you, take it at the first real sign rather than waiting it out — gepants work best early. No nap longer than 20 minutes, and hold tonight's 10:30 bedtime so the clock doesn't slide.`);
+    else if(gW==="watch") plan.push(`<b>Woke ${Math.abs(dev)} min early.</b> Borderline. Check yourself at lunch for yawning, neck stiffness, thirst or cravings — the premed feeling you already recognize. If two show up, that's your cue to have the Ubrelvy within reach.`);
+    if(gBB==="bad") plan.push(`<b>Body Battery ${bb}.</b> You're starting the day drained, and drained mornings ran ahead of your attacks. Lighten the load where you can: skip the hard workout (walk instead), eat a real breakfast and lunch on time, water bottle on the desk, and nothing extra tonight. Bed at the usual hour, not earlier — long lie-ins shift the clock too.`);
+    else if(gBB==="watch") plan.push(`<b>Body Battery ${bb}.</b> A little under your green line. Regular meals and water today; don't skip lunch for a meeting. Easy workout, not a hard one.`);
+    if(gSt==="bad") plan.push(`<b>Stress ${stress} yesterday.</b> Stress itself is a weak trigger; the <i>let-down</i> after it is the better-documented one, which puts the risk on today and tomorrow. Build one 10-minute break into the afternoon (walk, outside, no screen), keep caffeine at your normal amount and time — no extra, no skipping — and close the laptop at a fixed hour tonight.`);
+    else if(gSt==="watch") plan.push(`<b>Stress ${stress} yesterday.</b> Slightly up. Same caffeine as always, one real break, and notice how your neck feels by mid-afternoon.`);
+    if(gS==="bad") plan.push(`<b>Slept ${hoursShort(sleep)}, ${Math.round((usual-sleep)*60)} min under your usual.</b> Sleep loss is the one environmental factor that holds up across studies. Don't try to repay it with a nap or an early bedtime — both move the clock. Go to bed at the usual time and let tonight run its normal nine hours. Caffeine before noon only.`);
+    else if(gS==="watch") plan.push(`<b>Slept ${hoursShort(sleep)}.</b> A bit short. Normal bedtime tonight, no catch-up nap.`);
+    if(rhrUp) plan.push(`<b>Resting HR ${rhr}, up from your usual ${det.usual_rhr}.</b> Two things raise it: a brewing attack or a brewing cold. Either way, hydrate, ease off training, and if it's still up tomorrow treat it as a flag day.`);
+    if(sc!=null&&sc>=5) plan.push(`<b>Several flags together.</b> Tell Kaylani it's a watch day so a light evening isn't a surprise. If an attack comes, treat early, then log it (the form is below) — a logged attack on a flagged morning is what proves or sinks this score.`);
+    if(sc!=null&&sc>=3) plan.push(`<b>Tonight:</b> do the Evening check-in and mark anything you felt. That's the running test of whether the morning warning is real.`);
+    $("plan").hidden=!plan.length; $("plan-list").innerHTML=plan.map(p=>`<li>${p}</li>`).join("");
+
     // flags panel
     const names=["woke early","woke a bit early","Body Battery low","Body Battery so-so","stressful yesterday","stress elevated yesterday","resting HR up","short night"];
     $("flags").innerHTML=sc==null?`<span class="muted">No reading yet.</span>`:names.map(n=>`<span class="flag ${flags.includes(n)?(/bit|so-so|elevated/.test(n)?"mid":"on"):""}">${n}</span>`).join("");
-    const rhr=ln&&ln.rhr?ln.rhr:null; $("ctx").textContent=`resting HR ${rhr??"–"}${det.usual_rhr?` (usual ${det.usual_rhr})`:""} · ${since!=null?since+" days since your last logged attack":"no attack logged yet"}.`;
+    $("ctx").textContent=`resting HR ${rhr??"–"}${det.usual_rhr?` (usual ${det.usual_rhr})`:""} · ${since!=null?since+" days since your last logged attack":"no attack logged yet"}.`;
 
     // chart
     const days=[];for(let i=13;i>=0;i--)days.push(iso(new Date(today-i*86400000)));
