@@ -2639,6 +2639,7 @@
             "Ariel"
           ],
           "misses": [
+            "Thom",
             "B-rad",
             "Peggy",
             "Andy R",
@@ -2653,7 +2654,6 @@
             "Ryan Holovics",
             "Kaylani & Luka",
             "Garret",
-            "Thom",
             "Devin",
             "Claude"
           ],
@@ -2666,6 +2666,7 @@
               "Ariel"
             ],
             "Cowboys": [
+              "Thom",
               "B-rad",
               "Peggy",
               "Andy R",
@@ -2680,7 +2681,6 @@
               "Ryan Holovics",
               "Kaylani & Luka",
               "Garret",
-              "Thom",
               "Devin",
               "Claude"
             ]
@@ -3292,7 +3292,7 @@
           "sheet": {
             "0": "Cowboys"
           },
-          "filedAt": "2026-10-06T12:48:14+00:00",
+          "filedAt": "2026-10-10T17:26:49+00:00",
           "firstAt": "2026-10-06T12:48:14+00:00",
           "free": true,
           "rank": 6,
@@ -3603,7 +3603,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-10T17:10:39.498573+00:00",
+  "updated": "2026-10-10T18:10:17.125060+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
