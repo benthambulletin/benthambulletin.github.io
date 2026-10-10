@@ -43,12 +43,19 @@ h2{font-family:var(--display);font-weight:600;font-size:19px;margin:0 0 10px;tex
 .tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
 .tile .v{font-family:var(--mono);font-size:26px;font-weight:500;line-height:1.1;font-variant-numeric:tabular-nums;margin-top:4px}
 .tile .s{font-size:12px;color:var(--ink-2);margin-top:4px}
-.tile.watch .v{color:var(--watch)} .tile.bad .v{color:var(--bad)}
+.tile.good{background:var(--good-bg);border-color:var(--good)} .tile.watch{background:var(--watch-bg);border-color:var(--watch)} .tile.bad{background:var(--bad-bg);border-color:var(--bad)}
+.tile.good .v{color:var(--good)} .tile.watch .v{color:var(--watch)} .tile.bad .v{color:var(--bad)}
+.chip{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:999px;margin-top:6px;background:var(--line);color:var(--ink-2)}
+.tile.good .chip{background:var(--good);color:#fff} .tile.watch .chip{background:var(--watch);color:#fff} .tile.bad .chip{background:var(--bad);color:#fff}
+.scale{display:flex;gap:2px;margin-top:8px;height:5px;border-radius:3px;overflow:hidden} .scale i{flex:1;background:var(--line)} .scale i.g{background:var(--good)} .scale i.y{background:var(--watch)} .scale i.r{background:var(--bad)} .scale i.dim{opacity:.3}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
 .runway{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:stretch}
 @media (max-width:520px){.runway{grid-template-columns:1fr}.runway .arrow{transform:rotate(90deg);justify-self:center}}
 .step{border-radius:10px;padding:12px;border:1px solid var(--line);min-width:0}
-.step.on{border-color:var(--watch);background:var(--watch-bg)}
+.step.good{border-color:var(--good);background:var(--good-bg)} .step.good .v{color:var(--good)}
+.step.watch{border-color:var(--watch);background:var(--watch-bg)} .step.watch .v{color:var(--watch)}
+.step.bad{border-color:var(--bad);background:var(--bad-bg)} .step.bad .v{color:var(--bad)}
+.key{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-2);margin-top:10px} .key i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
 .step .k{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
 .step .v{font-family:var(--mono);font-size:22px;font-weight:500;margin:4px 0 2px;font-variant-numeric:tabular-nums}
 .step .r{font-size:12px;color:var(--ink-2)}
@@ -92,10 +99,10 @@ td.n{text-align:right;font-family:var(--mono)}
   <div id="error" class="err" hidden></div>
 
   <div class="tiles" id="tiles">
-    <div class="tile"><div class="eyebrow">Last night</div><div class="v" id="t-sleep">–</div><div class="s" id="t-sleep-s">sleep</div></div>
-    <div class="tile"><div class="eyebrow">Body Battery</div><div class="v" id="t-bb">–</div><div class="s" id="t-bb-s">at wake</div></div>
-    <div class="tile"><div class="eyebrow">Stress yesterday</div><div class="v" id="t-stress">–</div><div class="s" id="t-stress-s">Garmin daily avg</div></div>
-    <div class="tile"><div class="eyebrow">Since last attack</div><div class="v" id="t-days">–</div><div class="s" id="t-days-s">days</div></div>
+    <div class="tile" id="tile-sleep"><div class="eyebrow">Last night</div><div class="v" id="t-sleep">–</div><div class="s" id="t-sleep-s">sleep</div><span class="chip" id="c-sleep">–</span><div class="scale" id="sc-sleep"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="tile" id="tile-bb"><div class="eyebrow">Body Battery</div><div class="v" id="t-bb">–</div><div class="s" id="t-bb-s">at wake</div><span class="chip" id="c-bb">–</span><div class="scale" id="sc-bb"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="tile" id="tile-stress"><div class="eyebrow">Stress yesterday</div><div class="v" id="t-stress">–</div><div class="s" id="t-stress-s">Garmin daily avg</div><span class="chip" id="c-stress">–</span><div class="scale" id="sc-stress"><i class="g"></i><i class="y"></i><i class="r"></i></div></div>
+    <div class="tile" id="tile-days"><div class="eyebrow">Since last attack</div><div class="v" id="t-days">–</div><div class="s" id="t-days-s">days</div><span class="chip" id="c-days">–</span><div class="scale" id="sc-days"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
   </div>
 
   <section class="panel">
@@ -107,13 +114,14 @@ td.n{text-align:right;font-family:var(--mono)}
       <div class="arrow">→</div>
       <div class="step" id="s3"><div class="k">Last night · sleep</div><div class="v" id="s3v">–</div><div class="r" id="s3r">flag 30 min short of usual</div></div>
     </div>
+    <div class="key"><span><i style="background:var(--good)"></i>good</span><span><i style="background:var(--watch)"></i>borderline</span><span><i style="background:var(--bad)"></i>flagged</span></div>
     <div class="verdict" id="verdict">In your own history, a stressful day is followed by a run-down morning, then a slightly short night, then the attack. Each step lit raises tomorrow's odds.</div>
   </section>
 
   <section class="panel">
     <h2>Last 14 nights</h2>
     <div id="chart"></div>
-    <div class="legend"><span><i style="background:var(--accent)"></i>Body Battery at wake</span><span><i style="background:var(--watch)"></i>stress</span><span><i style="background:var(--ink-2)"></i>sleep hours</span><span><i style="background:var(--attack)"></i>migraine</span></div>
+    <div class="legend"><span><i style="background:var(--accent)"></i>Body Battery at wake (dot: green 80+, yellow 70s, red under 70)</span><span><i style="background:var(--watch)"></i>stress (red dot at 40+)</span><span><i style="background:var(--ink-2)"></i>sleep hours</span><span><i style="background:var(--attack)"></i>migraine</span></div>
   </section>
 
   <div class="actions">
@@ -181,6 +189,15 @@ td.n{text-align:right;font-family:var(--mono)}
   const y=byDate[iso(new Date(today-86400000))]||{};
   const sleep=ln&&ln.sleep_h?+ln.sleep_h:null, bb=ln&&ln.bb_high?+ln.bb_high:null, stress=y.stress?+y.stress:null;
 
+  // grading: green / yellow / red with the threshold written on the tile
+  function grade(id,chipId,scId,state,label,activeIdx){const el=$(id);el.classList.remove("good","watch","bad");if(state)el.classList.add(state);$(chipId).textContent=label;
+    const bars=$(scId).querySelectorAll("i");bars.forEach((b,i)=>b.classList.toggle("dim",activeIdx!=null&&i!==activeIdx));}
+  const gSleep=sleep==null||usual==null?null:(sleep<usual-0.5?"bad":sleep<usual-0.25?"watch":"good");
+  grade("tile-sleep","c-sleep","sc-sleep",gSleep,gSleep==="bad"?"short night":gSleep==="watch"?"a bit short":gSleep?"normal":"no data",gSleep?{bad:0,watch:1,good:2}[gSleep]:null);
+  const gBB=bb==null?null:(bb<70?"bad":bb<80?"watch":"good");
+  grade("tile-bb","c-bb","sc-bb",gBB,gBB==="bad"?"run down":gBB==="watch"?"so-so":gBB?"recharged":"no data",gBB?{bad:0,watch:1,good:2}[gBB]:null);
+  const gSt=stress==null?null:(stress>=40?"bad":stress>=35?"watch":"good");
+  grade("tile-stress","c-stress","sc-stress",gSt,gSt==="bad"?"high":gSt==="watch"?"elevated":gSt?"calm":"no data",gSt?{good:0,watch:1,bad:2}[gSt]:null);
   // tiles
   $("t-sleep").textContent=sleep?hoursShort(sleep):"–"; $("t-sleep-s").textContent=sleep&&usual?`usual ${hoursShort(usual)} · ${ln.bedtime||""}–${ln.wake||""}`:(stale?"no watch data yet":"sleep");
   $("t-bb").textContent=bb??"–"; $("t-bb-s").textContent=bb!=null?(bb<70?"under 70 · run down":"recharged"):"at wake";
@@ -189,11 +206,13 @@ td.n{text-align:right;font-family:var(--mono)}
   attacks=attacks.filter(a=>a.date).sort((a,b)=>a.date<b.date?1:-1);
   const mine=attacks.filter(a=>/garret/i.test(a.who||""));
   const last=mine[0]; const since=last?dayDiff(today,new Date(last.date+"T00:00:00")):null;
-  $("t-days").textContent=since??"–"; $("t-days-s").textContent=last?`last: ${nice(new Date(last.date+"T00:00:00"))}`:"days";
+  $("t-days").textContent=since??"–"; $("t-days-s").textContent=last?`last: ${nice(new Date(last.date+"T00:00:00"))} · red 0–3, yellow 4–6`:"days";
+  const gD=since==null?null:(since<=3?"bad":since<=6?"watch":"good");
+  grade("tile-days","c-days","sc-days",gD,gD==="bad"?"cluster window":gD==="watch"?"easing":gD?"in the clear":"no data",gD?{bad:0,watch:1,good:2}[gD]:null);
   // runway
   const s1=stress!=null&&stress>=40, s2=bb!=null&&bb<70, s3=sleep!=null&&usual!=null&&sleep<usual-0.5;
   $("s1v").textContent=stress??"–"; $("s2v").textContent=bb??"–"; $("s3v").textContent=sleep?hoursShort(sleep):"–"; if(usual)$("s3r").textContent=`flag under ${hoursShort(usual-0.5)}`;
-  [["s1",s1],["s2",s2],["s3",s3]].forEach(([id,on])=>$(id).classList.toggle("on",on));
+  [["s1",gSt],["s2",gBB],["s3",gSleep]].forEach(([id,g])=>{const e=$(id);e.classList.remove("good","watch","bad");if(g)e.classList.add(g);});
   const lit=[s1,s2,s3].filter(Boolean).length;
   const st=$("status"); st.className="pill";
   if(stale&&sleep==null){st.classList.add("na");st.textContent="No watch data for last night";}
@@ -214,6 +233,8 @@ td.n{text-align:right;font-family:var(--mono)}
   const path=(key,scale,color,width)=>{let p="",on=false;days.forEach((d,i)=>{const r=byDate[d];const v=r&&r[key]?+r[key]:null;if(v==null){on=false;return;}const yy=T+ph-scale(v)*ph;p+=(on?"L":"M")+x(i).toFixed(1)+" "+yy.toFixed(1)+" ";on=true;});s+=`<path d="${p}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linejoin="round" stroke-linecap="round"/>`;};
   path("stress",v=>v/100,"var(--watch)",1.5);
   path("bb_high",v=>v/100,"var(--accent)",2.5);
+  days.forEach((d,i)=>{const r=byDate[d];if(r&&r.bb_high){const v=+r.bb_high,yy=T+ph-(v/100)*ph;s+=`<circle cx="${x(i)}" cy="${yy}" r="5" fill="${v<70?"var(--bad)":v<80?"var(--watch)":"var(--good)"}" stroke="var(--panel)" stroke-width="1.5"/>`;}
+    if(r&&r.stress&&+r.stress>=40){const yy=T+ph-(+r.stress/100)*ph;s+=`<circle cx="${x(i)}" cy="${yy}" r="4" fill="var(--bad)"/>`;}});
   days.forEach((d,i)=>{const r=byDate[d];if(r&&r.sleep_h){const yy=T+ph-(Math.min(+r.sleep_h,12)/12)*ph;s+=`<circle cx="${x(i)}" cy="${yy}" r="3" fill="var(--ink-2)"/>`;}
     if(adays.has(d))s+=`<text x="${x(i)}" y="${T+10}" font-size="11" text-anchor="middle" fill="var(--attack)" font-weight="700">●</text>`;
     const dd=new Date(d+"T00:00:00");if(i%2===1)s+=`<text x="${x(i)}" y="${H-8}" font-size="10" text-anchor="middle" fill="var(--ink-2)" font-family="var(--mono)">${dd.getMonth()+1}/${dd.getDate()}</text>`;});
