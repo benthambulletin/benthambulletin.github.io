@@ -6,6 +6,7 @@ name: Garmin pull
 # the dashboard and Claude do. Runnable by hand from Actions.
 on:
   schedule:
+    - cron: "45 11 * * *"
     - cron: "15 12 * * *"
     - cron: "15 13 * * *"
     - cron: "0 18 * * *"
@@ -49,7 +50,7 @@ jobs:
         run: |
           git config user.name "Garmin"
           git config user.email "noreply@anthropic.com"
-          git add data/garmin-daily.csv data/garmin-summary.json
+          git add data/garmin-daily.csv data/garmin-summary.json data/runway-log.json
           if git diff --cached --quiet; then
             echo "no new readings"; exit 0
           fi

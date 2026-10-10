@@ -13,10 +13,10 @@
 <title>Migraine Runway</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
-/* Layout: one column, summary first — status pill, four tiles, the 48-hour runway, a 14-day strip, then the log and the barometer as context. Built for a phone at 7 a.m. */
+/* Layout: one column, phone-first. Status and a one-line instruction, the experimental score with its scoreboard, four graded tiles, the flags, a 14-night strip, the log, the barometer as context, the audited findings last. */
 :root{
   --bg:#f2f3ef; --panel:#ffffff; --ink:#1b2024; --ink-2:#5a6269; --line:#d9dcd6;
-  --accent:#2b5f7a;            /* slate blue: the one brand color */
+  --accent:#2b5f7a;
   --good:#2f7a4f; --watch:#b8740f; --bad:#b4342b; --attack:#b4342b;
   --good-bg:#e4f1e8; --watch-bg:#fbeed4; --bad-bg:#f8e1de;
   --display:"Source Serif 4",Georgia,serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
@@ -30,25 +30,34 @@
   --accent:#7fb3cf; --good:#6ec28e; --watch:#e3a53a; --bad:#e8716a; --attack:#e8716a;
   --good-bg:#1d3326; --watch-bg:#3a2d12; --bad-bg:#3d1f1c; color-scheme:dark}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45;margin:0}
-.wrap{max-width:720px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:grid;gap:18px}
+.wrap{max-width:720px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:grid;gap:16px}
 h1{font-family:var(--display);font-weight:600;font-size:30px;margin:0;line-height:1.1;text-wrap:balance}
 h2{font-family:var(--display);font-weight:600;font-size:19px;margin:0 0 10px;text-wrap:balance}
 .eyebrow{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
 .head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.updated{font-size:12px;color:var(--ink-2);display:flex;gap:10px;align-items:center}
+.updated button{font:inherit;color:var(--accent);background:none;border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}
 .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;font-weight:600;font-size:14px;white-space:nowrap}
 .pill::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
 .pill.good{background:var(--good-bg);color:var(--good)} .pill.watch{background:var(--watch-bg);color:var(--watch)} .pill.bad{background:var(--bad-bg);color:var(--bad)} .pill.na{background:var(--line);color:var(--ink-2)}
+.today{font-size:16px;line-height:1.4;padding:12px 14px;border-radius:10px;background:var(--panel);border:1px solid var(--line)}
+.today b{font-family:var(--display);font-size:17px}
 .risk{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 .risk .big{font-family:var(--mono);font-size:44px;font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
 .risk .big small{font-size:18px;color:var(--ink-2)}
-.risk.good .big{color:var(--good)} .risk.watch .big{color:var(--watch)} .risk.bad .big{color:var(--bad)}
+.risk.good .big{color:var(--good)} .risk.watch .big{color:var(--watch)} .risk.bad .big{color:var(--bad)} .risk.na .big{color:var(--ink-2)}
 .risk .meter{display:flex;gap:3px;margin-top:8px} .risk .meter i{flex:1;height:8px;border-radius:2px;background:var(--line)}
 .risk.good .meter i.on{background:var(--good)} .risk.watch .meter i.on{background:var(--watch)} .risk.bad .meter i.on{background:var(--bad)}
-.risk .txt{font-size:14px;line-height:1.4} .risk .txt b{font-size:16px}
+.risk .txt{font-size:14px;line-height:1.4;min-width:0}
+.tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:var(--line);color:var(--ink-2);vertical-align:middle;margin-left:6px}
+.board{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.board div{background:var(--bg);border-radius:8px;padding:10px 12px;min-width:0}
+.board .n{font-family:var(--mono);font-size:22px;font-variant-numeric:tabular-nums}
+.board .l{font-size:12px;color:var(--ink-2)}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 @media (max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}}
 .tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
-.tile .v{font-family:var(--mono);font-size:26px;font-weight:500;line-height:1.1;font-variant-numeric:tabular-nums;margin-top:4px}
+.tile .v{font-family:var(--mono);font-size:24px;font-weight:500;line-height:1.1;font-variant-numeric:tabular-nums;margin-top:4px}
 .tile .s{font-size:12px;color:var(--ink-2);margin-top:4px}
 .tile.good{background:var(--good-bg);border-color:var(--good)} .tile.watch{background:var(--watch-bg);border-color:var(--watch)} .tile.bad{background:var(--bad-bg);border-color:var(--bad)}
 .tile.good .v{color:var(--good)} .tile.watch .v{color:var(--watch)} .tile.bad .v{color:var(--bad)}
@@ -56,19 +65,10 @@ h2{font-family:var(--display);font-weight:600;font-size:19px;margin:0 0 10px;tex
 .tile.good .chip{background:var(--good);color:#fff} .tile.watch .chip{background:var(--watch);color:#fff} .tile.bad .chip{background:var(--bad);color:#fff}
 .scale{display:flex;gap:2px;margin-top:8px;height:5px;border-radius:3px;overflow:hidden} .scale i{flex:1;background:var(--line)} .scale i.g{background:var(--good)} .scale i.y{background:var(--watch)} .scale i.r{background:var(--bad)} .scale i.dim{opacity:.3}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
-.runway{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:stretch}
-@media (max-width:520px){.runway{grid-template-columns:1fr}.runway .arrow{transform:rotate(90deg);justify-self:center}}
-.step{border-radius:10px;padding:12px;border:1px solid var(--line);min-width:0}
-.step.good{border-color:var(--good);background:var(--good-bg)} .step.good .v{color:var(--good)}
-.step.watch{border-color:var(--watch);background:var(--watch-bg)} .step.watch .v{color:var(--watch)}
-.step.bad{border-color:var(--bad);background:var(--bad-bg)} .step.bad .v{color:var(--bad)}
-.key{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-2);margin-top:10px} .key i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
-.step .k{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
-.step .v{font-family:var(--mono);font-size:22px;font-weight:500;margin:4px 0 2px;font-variant-numeric:tabular-nums}
-.step .r{font-size:12px;color:var(--ink-2)}
-.arrow{align-self:center;color:var(--ink-2);font-size:20px}
-.verdict{margin-top:12px;font-size:14px;color:var(--ink-2)}
-.verdict b{color:var(--ink)}
+.flags{display:flex;flex-wrap:wrap;gap:8px}
+.flag{padding:6px 10px;border-radius:8px;font-size:13px;border:1px solid var(--line);background:var(--bg)}
+.flag.on{background:var(--bad-bg);border-color:var(--bad);color:var(--bad);font-weight:600}
+.flag.mid{background:var(--watch-bg);border-color:var(--watch);color:var(--watch);font-weight:600}
 svg{display:block;width:100%;height:auto;max-width:100%}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-2);margin-top:8px}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
@@ -79,7 +79,7 @@ td.n{text-align:right;font-family:var(--mono)}
 .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .btn{display:block;text-align:center;padding:14px 12px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 .btn.alt{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--watch);outline-offset:2px}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--watch);outline-offset:2px}
 .muted{color:var(--ink-2);font-size:13px}
 .note{font-size:13px;color:var(--ink-2);line-height:1.5}
 .note b{color:var(--ink)}
@@ -88,7 +88,6 @@ td.n{text-align:right;font-family:var(--mono)}
 .facts li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .stamp{font-family:var(--mono);font-size:11px;color:var(--ink-2)}
 .err{background:var(--bad-bg);color:var(--bad);padding:10px 12px;border-radius:8px;font-size:13px}
-@media (prefers-reduced-motion:no-preference){.pill{transition:background .2s}}
 </style>
 
 <style>html,body{min-height:100%}body{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
@@ -102,38 +101,34 @@ td.n{text-align:right;font-family:var(--mono)}
     </div>
     <span class="pill na" id="status">Reading the watch…</span>
   </div>
+  <div class="updated"><span id="updated">–</span><button type="button" id="refresh">Refresh</button></div>
 
   <div id="error" class="err" hidden></div>
 
-  <div class="risk" id="risk">
-    <div><div class="eyebrow">Risk score</div><div class="big"><span id="r-score">–</span><small>/10</small></div><div class="meter" id="r-meter"></div></div>
+  <div class="today" id="today">–</div>
+
+  <div class="risk na" id="risk">
+    <div><div class="eyebrow">Score <span class="tag">experimental</span></div><div class="big"><span id="r-score">–</span><small>/10</small></div><div class="meter" id="r-meter"></div></div>
     <div class="txt" id="r-txt">Reading the watch…</div>
   </div>
 
   <div class="tiles" id="tiles">
+    <div class="tile" id="tile-wake"><div class="eyebrow">Woke</div><div class="v" id="t-wake">–</div><div class="s" id="t-wake-s">vs usual</div><span class="chip" id="c-wake">–</span><div class="scale" id="sc-wake"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="tile" id="tile-bb"><div class="eyebrow">Body Battery</div><div class="v" id="t-bb">–</div><div class="s">green 80+ · yellow 70s · red under 70</div><span class="chip" id="c-bb">–</span><div class="scale" id="sc-bb"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="tile" id="tile-stress"><div class="eyebrow">Stress yesterday</div><div class="v" id="t-stress">–</div><div class="s">green under 35 · red 40+</div><span class="chip" id="c-stress">–</span><div class="scale" id="sc-stress"><i class="g"></i><i class="y"></i><i class="r"></i></div></div>
     <div class="tile" id="tile-sleep"><div class="eyebrow">Last night</div><div class="v" id="t-sleep">–</div><div class="s" id="t-sleep-s">sleep</div><span class="chip" id="c-sleep">–</span><div class="scale" id="sc-sleep"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
-    <div class="tile" id="tile-bb"><div class="eyebrow">Body Battery</div><div class="v" id="t-bb">–</div><div class="s" id="t-bb-s">at wake</div><span class="chip" id="c-bb">–</span><div class="scale" id="sc-bb"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
-    <div class="tile" id="tile-stress"><div class="eyebrow">Stress yesterday</div><div class="v" id="t-stress">–</div><div class="s" id="t-stress-s">Garmin daily avg</div><span class="chip" id="c-stress">–</span><div class="scale" id="sc-stress"><i class="g"></i><i class="y"></i><i class="r"></i></div></div>
-    <div class="tile" id="tile-days"><div class="eyebrow">Since last attack</div><div class="v" id="t-days">–</div><div class="s" id="t-days-s">days</div><span class="chip" id="c-days">–</span><div class="scale" id="sc-days"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
   </div>
 
   <section class="panel">
-    <h2>The 48-hour runway</h2>
-    <div class="runway">
-      <div class="step" id="s1"><div class="k">Two days out · stress</div><div class="v" id="s1v">–</div><div class="r">flag at 40 or higher</div></div>
-      <div class="arrow">→</div>
-      <div class="step" id="s2"><div class="k">This morning · Body Battery</div><div class="v" id="s2v">–</div><div class="r">flag under 70</div></div>
-      <div class="arrow">→</div>
-      <div class="step" id="s3"><div class="k">Last night · sleep</div><div class="v" id="s3v">–</div><div class="r" id="s3r">flag 30 min short of usual</div></div>
-    </div>
-    <div class="key"><span><i style="background:var(--good)"></i>good</span><span><i style="background:var(--watch)"></i>borderline</span><span><i style="background:var(--bad)"></i>flagged</span></div>
-    <div class="verdict" id="verdict">In your own history, a stressful day is followed by a run-down morning, then a slightly short night, then the attack. Each step lit raises tomorrow's odds.</div>
+    <h2>Flags this morning</h2>
+    <div class="flags" id="flags"><span class="muted">–</span></div>
+    <p class="note" style="margin:10px 0 0" id="flagnote">Resting heart rate and "since last attack" are shown for context: <span id="ctx">–</span></p>
   </section>
 
   <section class="panel">
     <h2>Last 14 nights</h2>
     <div id="chart"></div>
-    <div class="legend"><span><i style="background:var(--accent)"></i>Body Battery at wake (dot: green 80+, yellow 70s, red under 70)</span><span><i style="background:var(--watch)"></i>stress (red dot at 40+)</span><span><i style="background:var(--ink-2)"></i>sleep hours</span><span><i style="background:var(--attack)"></i>migraine</span></div>
+    <div class="legend"><span><i style="background:var(--accent)"></i>Body Battery at wake (green 80+, yellow 70s, red under 70)</span><span><i style="background:var(--watch)"></i>stress (red dot 40+)</span><span><i style="background:var(--ink-2)"></i>woke early (▼ = 25+ min)</span><span><i style="background:var(--attack)"></i>your migraine</span><span><i style="background:var(--line)"></i>no watch</span></div>
   </section>
 
   <div class="actions">
@@ -154,130 +149,137 @@ td.n{text-align:right;font-family:var(--mono)}
       <div class="tile"><div class="eyebrow">24 h change</div><div class="v" id="p-d24">–</div><div class="s" id="p-trend">–</div></div>
       <div class="tile"><div class="eyebrow">Next 48 h</div><div class="v" id="p-fc">–</div><div class="s" id="p-fc-s">biggest swing</div></div>
     </div>
-    <p class="note" style="margin:12px 0 0"><b>Tracked, not a predictor.</b> Forty of your attacks against hourly readings since April 2025: the pressure change at onset matched any random hour (p ≈ 0.7), rises and falls alike.</p>
+    <p class="note" style="margin:12px 0 0"><b>Tracked, not a predictor.</b> Forty of your attacks against hourly readings since April 2025: the pressure change at onset matched any random hour, rises and falls alike. Confirmed by an independent re-check Oct 10.</p>
   </section>
 
   <section class="panel">
-    <h2>What your data says</h2>
+    <h2>What your data says <span class="tag">audited Oct 10, 2026</span></h2>
     <ul class="facts">
-      <li><b>Stress two days out:</b> average 37 before an attack vs 32 normally; a third of those days scored 40+ (8% usually).</li>
-      <li><b>Body Battery the morning before:</b> 66 vs 80. Half of pre-attack mornings were under 70; 17% of ordinary mornings are.</li>
-      <li><b>The night before:</b> 25 minutes less sleep, 25 minutes earlier waking. Bedtime unchanged.</li>
-      <li><b>Attacks cluster:</b> median gap 3.9 days; 45% land within three days of the last one.</li>
+      <li><b>Waking early</b> is the sturdiest signal: on attack mornings you wake about 24 minutes before your usual time, and a third of attack mornings are 25+ minutes early (9% of normal mornings). Bedtime doesn't change.</li>
+      <li><b>Body Battery</b> the morning before an attack: 64 vs 76 on ordinary mornings (months you were logging). A morning under 70 is a flag, not a verdict.</li>
+      <li><b>Resting heart rate</b> runs 1.5–2 bpm above your usual for the three days before.</li>
+      <li><b>Stress two days out</b>: 37 vs 33. Small, but a third of those days scored 40+.</li>
+      <li><b>Attacks cluster</b> a little, but a recent attack does <em>not</em> raise tomorrow's odds. Days-since is context, not risk.</li>
       <li><b>Pressure:</b> no signal, either direction.</li>
-      <li><b>The risk score:</b> on 241 watch days, mornings scoring 0–1 were followed by an attack 17% of the time; 6+ about half the time, but on only five days. It separates, not sharply.</li>
     </ul>
-    <p class="note" style="margin:12px 0 0">Based on 40 logged attacks (Apr 2025–Oct 2026) and your Garmin history. Small numbers; the runway rule is a hypothesis the evening check-in is now testing.</p>
+    <p class="note" style="margin:12px 0 0">From 28 logged attacks with watch data (Jun 2025–Jan 2026, Sep–Oct 2026). Unlogged months are excluded from every comparison. The score built from these is a hypothesis; the scoreboard above is the test.</p>
   </section>
 
   <div class="stamp" id="stamp"></div>
 </div>
 
 <script>
-(async function(){
+(function(){
   const BASE="../data/";
   const $=id=>document.getElementById(id);
   const fmt1=x=>x==null?"–":(Math.round(x*10)/10).toFixed(1);
-  async function getJSON(p){const r=await fetch(BASE+p,{cache:"no-store"});if(!r.ok)throw new Error(p+" "+r.status);return r.json();}
-  async function getCSV(p){const r=await fetch(BASE+p,{cache:"no-store"});if(!r.ok)throw new Error(p+" "+r.status);const t=await r.text();const [h,...rows]=t.trim().split(/\r?\n/);const keys=h.split(",");return rows.map(l=>{const v=l.split(",");const o={};keys.forEach((k,i)=>o[k]=v[i]??"");return o;});}
-  function hoursShort(x){const h=Math.floor(x),m=Math.round((x-h)*60);return `${h}h ${String(m).padStart(2,"0")}m`;}
-  const today=new Date(); today.setHours(0,0,0,0);
-  const iso=d=>d.toISOString().slice(0,10);
+  async function getJSON(p){const r=await fetch(BASE+p+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(p+" "+r.status);return r.json();}
+  async function getCSV(p){const r=await fetch(BASE+p+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(p+" "+r.status);const t=await r.text();const [h,...rows]=t.trim().split(/\r?\n/);const keys=h.split(",");return rows.map(l=>{const v=l.split(",");const o={};keys.forEach((k,i)=>o[k]=v[i]??"");return o;});}
+  const hoursShort=x=>{const h=Math.floor(x),m=Math.round((x-h)*60);return `${h}h ${String(m).padStart(2,"0")}m`;};
+  const hToClock=h=>{const hh=Math.floor(h),mm=Math.round((h-hh)*60);const ap=hh>=12?"PM":"AM";return `${((hh+11)%12)+1}:${String(mm).padStart(2,"0")} ${ap}`;};
+  const iso=d=>{const z=new Date(d.getTime()-d.getTimezoneOffset()*60000);return z.toISOString().slice(0,10);};
   const dayDiff=(a,b)=>Math.round((a-b)/86400000);
   const nice=d=>d.toLocaleDateString(undefined,{weekday:"short",month:"short",day:"numeric"});
-  $("dateline").textContent=nice(today);
+  const D=s=>new Date(s+"T00:00:00");
+  let lastLoad=0;
 
-  let g=null,daily=[],attacks=[],press=null;const errs=[];
-  try{g=await getJSON("garmin-summary.json");}catch(e){errs.push("watch summary");}
-  try{daily=await getCSV("garmin-daily.csv");}catch(e){errs.push("watch history");}
-  try{const m=await getJSON("migraines.json");attacks=(Array.isArray(m)?m:m.entries||[]).map(e=>({who:e.who,date:e.date,time:e.time||"",woke:e.woke}));}
-  catch(e){try{const h=await getCSV("migraines-history.csv");attacks=h.map(e=>({who:e.person,date:e.date,time:e.time_local,woke:e.woke_from_sleep==="y"}));}catch(e2){errs.push("attack log");}}
-  try{press=await getJSON("pressure-summary.json");}catch(e){errs.push("barometer");}
-  if(errs.length){$("error").hidden=false;$("error").textContent="Couldn't load: "+errs.join(", ")+". Showing what came through.";}
+  async function load(){
+    const today=new Date(); today.setHours(0,0,0,0); const T=iso(today);
+    $("dateline").textContent=nice(today);
+    let g=null,daily=[],attacks=[],press=null,rlog=[];const errs=[];
+    try{g=await getJSON("garmin-summary.json");}catch(e){errs.push("watch summary");}
+    try{daily=await getCSV("garmin-daily.csv");}catch(e){errs.push("watch history");}
+    try{const m=await getJSON("migraines.json");attacks=(Array.isArray(m)?m:m.entries||[]).map(e=>({who:e.who,date:e.date,time:e.time||"",woke:e.woke}));}
+    catch(e){try{const h=await getCSV("migraines-history.csv");attacks=h.map(e=>({who:e.person,date:e.date,time:e.time_local,woke:e.woke_from_sleep==="y"}));}catch(e2){errs.push("attack log");}}
+    try{press=await getJSON("pressure-summary.json");}catch(e){errs.push("barometer");}
+    try{rlog=await getJSON("runway-log.json");}catch(e){}
+    $("error").hidden=!errs.length; if(errs.length)$("error").textContent="Couldn't load: "+errs.join(", ")+". Showing what came through.";
+    lastLoad=Date.now(); $("updated").textContent="Updated "+new Date().toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"})+(g?" · watch data to "+g.night_ending:"");
 
-  const byDate={};daily.forEach(r=>byDate[r.date]=r);
-  const ln=g&&g.night_ending===iso(today)?g.last_night:(byDate[iso(today)]||null);
-  const stale=!(g&&g.night_ending===iso(today));
-  const usual=g&&g.usual_sleep_h_60d?g.usual_sleep_h_60d:(()=>{const h=daily.slice(-60).map(r=>+r.sleep_h).filter(Boolean).sort((a,b)=>a-b);return h.length?h[Math.floor(h.length/2)]:null;})();
-  const y=byDate[iso(new Date(today-86400000))]||{};
-  const sleep=ln&&ln.sleep_h?+ln.sleep_h:null, bb=ln&&ln.bb_high?+ln.bb_high:null, stress=y.stress?+y.stress:null;
+    const byDate={};daily.forEach(r=>byDate[r.date]=r);
+    const fresh=!!(g&&g.night_ending===T&&(g.last_night.sleep_h||g.last_night.bb_high));
+    const ln=fresh?g.last_night:null; const det=fresh?(g.detail||{}):{};
+    attacks=attacks.filter(a=>a.date).sort((a,b)=>a.date<b.date?1:-1);
+    const mine=attacks.filter(a=>/garret/i.test(a.who||""));
+    const mineDates=new Set(mine.map(a=>a.date));
+    const last=mine[0]; const since=last?dayDiff(today,D(last.date)):null;
 
-  // grading: green / yellow / red with the threshold written on the tile
-  function grade(id,chipId,scId,state,label,activeIdx){const el=$(id);el.classList.remove("good","watch","bad");if(state)el.classList.add(state);$(chipId).textContent=label;
-    const bars=$(scId).querySelectorAll("i");bars.forEach((b,i)=>b.classList.toggle("dim",activeIdx!=null&&i!==activeIdx));}
-  const gSleep=sleep==null||usual==null?null:(sleep<usual-0.5?"bad":sleep<usual-0.25?"watch":"good");
-  grade("tile-sleep","c-sleep","sc-sleep",gSleep,gSleep==="bad"?"short night":gSleep==="watch"?"a bit short":gSleep?"normal":"no data",gSleep?{bad:0,watch:1,good:2}[gSleep]:null);
-  const gBB=bb==null?null:(bb<70?"bad":bb<80?"watch":"good");
-  grade("tile-bb","c-bb","sc-bb",gBB,gBB==="bad"?"run down":gBB==="watch"?"so-so":gBB?"recharged":"no data",gBB?{bad:0,watch:1,good:2}[gBB]:null);
-  const gSt=stress==null?null:(stress>=40?"bad":stress>=35?"watch":"good");
-  grade("tile-stress","c-stress","sc-stress",gSt,gSt==="bad"?"high":gSt==="watch"?"elevated":gSt?"calm":"no data",gSt?{good:0,watch:1,bad:2}[gSt]:null);
-  // tiles
-  $("t-sleep").textContent=sleep?hoursShort(sleep):"–"; $("t-sleep-s").textContent=sleep&&usual?`usual ${hoursShort(usual)} · ${ln.bedtime||""}–${ln.wake||""}`:(stale?"no watch data yet":"sleep");
-  $("t-bb").textContent=bb??"–"; $("t-bb-s").textContent=bb!=null?(bb<70?"under 70 · run down":"recharged"):"at wake";
-  $("t-stress").textContent=stress??"–"; $("t-stress-s").textContent=stress!=null?(stress>=40?"high day":"ordinary"):"Garmin daily avg";
-  // attacks
-  attacks=attacks.filter(a=>a.date).sort((a,b)=>a.date<b.date?1:-1);
-  const mine=attacks.filter(a=>/garret/i.test(a.who||""));
-  const last=mine[0]; const since=last?dayDiff(today,new Date(last.date+"T00:00:00")):null;
-  $("t-days").textContent=since??"–"; $("t-days-s").textContent=last?`last: ${nice(new Date(last.date+"T00:00:00"))} · red 0–3, yellow 4–6`:"days";
-  const gD=since==null?null:(since<=3?"bad":since<=6?"watch":"good");
-  grade("tile-days","c-days","sc-days",gD,gD==="bad"?"cluster window":gD==="watch"?"easing":gD?"in the clear":"no data",gD?{bad:0,watch:1,good:2}[gD]:null);
-  // runway
-  const s1=stress!=null&&stress>=40, s2=bb!=null&&bb<70, s3=sleep!=null&&usual!=null&&sleep<usual-0.5;
-  $("s1v").textContent=stress??"–"; $("s2v").textContent=bb??"–"; $("s3v").textContent=sleep?hoursShort(sleep):"–"; if(usual)$("s3r").textContent=`flag under ${hoursShort(usual-0.5)}`;
-  // risk score 0-10: calibrated on 241 watch days / 30 attacks (Oct 10, 2026)
-  let sc=0;const parts=[];
-  if(gBB){sc+={bad:3,watch:1,good:0}[gBB];if(gBB!=="good")parts.push("Body Battery");}
-  if(gSt){sc+={bad:3,watch:1,good:0}[gSt];if(gSt!=="good")parts.push("yesterday's stress");}
-  if(gD){sc+={bad:2,watch:1,good:0}[gD];if(gD==="bad")parts.push("the cluster window");}
-  if(gSleep){sc+={bad:2,watch:1,good:0}[gSleep];if(gSleep!=="good")parts.push("a short night");}
-  const band=sc<=1?["good","about 1 in 6","15–19%"]:sc<=3?["watch","about 1 in 4","~25%"]:sc<=5?["watch","about 1 in 3","25–33%"]:["bad","about 1 in 2","~50%, on few days"];
-  const rk=$("risk");rk.className="risk "+band[0];$("r-score").textContent=sc;
-  $("r-meter").innerHTML=Array.from({length:10},(_,i)=>`<i class="${i<sc?"on":""}"></i>`).join("");
-  const anyData=gBB||gSt||gD||gSleep;
-  $("r-txt").innerHTML=anyData?`<b>${band[1]}</b> chance of an attack today or tomorrow (${band[2]} of days like this in your history; your everyday rate is 22%).${parts.length?" Driven by "+parts.join(", ")+".":" Nothing lit."}`:"No watch data yet for last night.";
-  [["s1",gSt],["s2",gBB],["s3",gSleep]].forEach(([id,g])=>{const e=$(id);e.classList.remove("good","watch","bad");if(g)e.classList.add(g);});
-  const lit=[s1,s2,s3].filter(Boolean).length;
-  const st=$("status"); st.className="pill";
-  if(stale&&sleep==null){st.classList.add("na");st.textContent="No watch data for last night";}
-  else if(lit>=2){st.classList.add("bad");st.textContent="Watch tomorrow";}
-  else if(lit===1){st.classList.add("watch");st.textContent="One flag · keep an eye out";}
-  else{st.classList.add("good");st.textContent="Clear";}
-  if(since!=null&&since<=3&&lit===0){st.className="pill watch";st.textContent="Clear, but inside the 3-day cluster window";}
-  $("verdict").innerHTML=(lit?`<b>${lit} of 3 steps lit.</b> `:`<b>Nothing lit.</b> `)+"In your own history, a stressful day is followed by a run-down morning, then a slightly short night, then the attack."+(since!=null&&since<=3?" You're also within three days of the last one, where 45% of attacks land.":"");
+    // grades
+    const grade=(id,chip,sc,state,label,idx)=>{const el=$(id);el.classList.remove("good","watch","bad");if(state)el.classList.add(state);$(chip).textContent=label;$(sc).querySelectorAll("i").forEach((b,i)=>b.classList.toggle("dim",idx!=null&&i!==idx));};
+    const dev=det.wake_dev_min; const gW=dev==null?null:(dev<=-25?"bad":dev<=-15?"watch":"good");
+    $("t-wake").textContent=ln&&ln.wake?ln.wake:"–"; $("t-wake-s").textContent=det.usual_wake_h?`usual ${hToClock(det.usual_wake_h)}${dev!=null?` · ${dev<0?Math.abs(dev)+" min early":dev+" min late"}`:""}`:"vs usual";
+    grade("tile-wake","c-wake","sc-wake",gW,gW==="bad"?"early":gW==="watch"?"a bit early":gW?"on time":"no data",gW?{bad:0,watch:1,good:2}[gW]:null);
+    const bb=ln&&ln.bb_high?+ln.bb_high:null; const gBB=bb==null?null:(bb<70?"bad":bb<80?"watch":"good");
+    $("t-bb").textContent=bb??"–"; grade("tile-bb","c-bb","sc-bb",gBB,gBB==="bad"?"run down":gBB==="watch"?"so-so":gBB?"recharged":"no data",gBB?{bad:0,watch:1,good:2}[gBB]:null);
+    const y=byDate[iso(new Date(today-86400000))]||{}; const stress=y.stress?+y.stress:null; const gSt=stress==null?null:(stress>=40?"bad":stress>=35?"watch":"good");
+    $("t-stress").textContent=stress??"–"; grade("tile-stress","c-stress","sc-stress",gSt,gSt==="bad"?"high":gSt==="watch"?"elevated":gSt?"calm":"no data",gSt?{good:0,watch:1,bad:2}[gSt]:null);
+    const sleep=ln&&ln.sleep_h?+ln.sleep_h:null; const usual=det.usual_sleep_h; const gS=sleep==null||!usual?null:(sleep<usual-0.5?"bad":sleep<usual-0.25?"watch":"good");
+    $("t-sleep").textContent=sleep?hoursShort(sleep):"–"; $("t-sleep-s").textContent=sleep&&usual?`usual ${hoursShort(usual)} · ${ln.bedtime}–${ln.wake}`:(fresh?"sleep":"watch not synced yet");
+    grade("tile-sleep","c-sleep","sc-sleep",gS,gS==="bad"?"short":gS==="watch"?"a bit short":gS?"normal":"no data",gS?{bad:0,watch:1,good:2}[gS]:null);
 
-  // 14-night chart
-  const days=[];for(let i=13;i>=0;i--){const d=new Date(today-i*86400000);days.push(iso(d));}
-  const W=680,H=190,L=34,R=12,T=14,B=30,pw=W-L-R,ph=H-T-B,x=i=>L+i*(pw/13);
-  const adays=new Set(attacks.map(a=>a.date));
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Fourteen nights of Body Battery, stress and sleep with migraine days marked">`;
-  [0,25,50,75,100].forEach(v=>{const yy=T+ph-(v/100)*ph;s+=`<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="var(--line)" stroke-width="1"/><text x="${L-6}" y="${yy+4}" font-size="10" text-anchor="end" fill="var(--ink-2)" font-family="var(--mono)">${v}</text>`;});
-  const y70=T+ph-0.7*ph; s+=`<line x1="${L}" x2="${W-R}" y1="${y70}" y2="${y70}" stroke="var(--watch)" stroke-dasharray="3 3"/>`;
-  days.forEach((d,i)=>{if(adays.has(d))s+=`<rect x="${x(i)-pw/26}" y="${T}" width="${pw/13}" height="${ph}" fill="var(--attack)" opacity=".13"/>`;});
-  const path=(key,scale,color,width)=>{let p="",on=false;days.forEach((d,i)=>{const r=byDate[d];const v=r&&r[key]?+r[key]:null;if(v==null){on=false;return;}const yy=T+ph-scale(v)*ph;p+=(on?"L":"M")+x(i).toFixed(1)+" "+yy.toFixed(1)+" ";on=true;});s+=`<path d="${p}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linejoin="round" stroke-linecap="round"/>`;};
-  path("stress",v=>v/100,"var(--watch)",1.5);
-  path("bb_high",v=>v/100,"var(--accent)",2.5);
-  days.forEach((d,i)=>{const r=byDate[d];if(r&&r.bb_high){const v=+r.bb_high,yy=T+ph-(v/100)*ph;s+=`<circle cx="${x(i)}" cy="${yy}" r="5" fill="${v<70?"var(--bad)":v<80?"var(--watch)":"var(--good)"}" stroke="var(--panel)" stroke-width="1.5"/>`;}
-    if(r&&r.stress&&+r.stress>=40){const yy=T+ph-(+r.stress/100)*ph;s+=`<circle cx="${x(i)}" cy="${yy}" r="4" fill="var(--bad)"/>`;}});
-  days.forEach((d,i)=>{const r=byDate[d];if(r&&r.sleep_h){const yy=T+ph-(Math.min(+r.sleep_h,12)/12)*ph;s+=`<circle cx="${x(i)}" cy="${yy}" r="3" fill="var(--ink-2)"/>`;}
-    if(adays.has(d))s+=`<text x="${x(i)}" y="${T+10}" font-size="11" text-anchor="middle" fill="var(--attack)" font-weight="700">●</text>`;
-    const dd=new Date(d+"T00:00:00");if(i%2===1)s+=`<text x="${x(i)}" y="${H-8}" font-size="10" text-anchor="middle" fill="var(--ink-2)" font-family="var(--mono)">${dd.getMonth()+1}/${dd.getDate()}</text>`;});
-  s+=`<text x="${W-R}" y="${T+ph-(12/12)*ph+10}" font-size="9" text-anchor="end" fill="var(--ink-2)">sleep: 12 h at top</text></svg>`;
-  $("chart").innerHTML=s;
+    // score (computed by the morning job; experimental)
+    const sc=fresh&&g.score!=null?g.score:null; const flags=fresh?(g.flags||[]):[];
+    const rk=$("risk"); rk.className="risk "+(sc==null?"na":sc<=2?"good":sc<=4?"watch":"bad");
+    $("r-score").textContent=sc??"–"; $("r-meter").innerHTML=Array.from({length:10},(_,i)=>`<i class="${sc!=null&&i<sc?"on":""}"></i>`).join("");
+    // scoreboard from runway-log joined with my attacks
+    const hit=e=>{const d=D(e.date);return mineDates.has(e.date)||mineDates.has(iso(new Date(d.getTime()+86400000)));};
+    const live=rlog.filter(e=>!e.backtest&&e.date<T), back=rlog.filter(e=>e.backtest);
+    const sb=(arr)=>{const f=arr.filter(e=>e.score>=3);const fh=f.filter(hit).length;const u=arr.filter(e=>e.score<3);const uh=u.filter(hit).length;return {f:f.length,fh,u:u.length,uh};};
+    const L=sb(live),B=sb(back);
+    let txt;
+    if(sc==null) txt=`<b>Watch not synced yet.</b> Open Garmin Connect, then tap Refresh.`;
+    else txt=`<b>${sc<=2?"Low":sc<=4?"Some flags":"Several flags"}</b> for today and tomorrow${flags.length?": "+flags.join(", "):". Nothing lit"}.`;
+    txt+=`<div class="board"><div><div class="n">${L.f?`${L.fh}/${L.f}`:"0/0"}</div><div class="l">flagged mornings (3+) followed by an attack · live since Oct 10</div></div><div><div class="n">${L.u?`${L.uh}/${L.u}`:"0/0"}</div><div class="l">attacks on unflagged mornings · live</div></div></div><div class="note" style="margin-top:8px">Backtest on the months you logged: flagged mornings were followed by an attack ${B.f?Math.round(100*B.fh/B.f):0}% of the time (${B.fh}/${B.f}), unflagged ${B.u?Math.round(100*B.uh/B.u):0}% (${B.uh}/${B.u}). Modest. The live counts are the real test.</div>`;
+    $("r-txt").innerHTML=txt;
 
-  // log table
-  const tb=$("logtable").querySelector("tbody");
-  const monthStart=iso(new Date(today.getFullYear(),today.getMonth(),1));
-  const thisMonth=attacks.filter(a=>a.date>=monthStart).length;
-  const gaps=[];const md=[...new Set(mine.map(a=>a.date))].sort();for(let i=1;i<md.length;i++){const g2=dayDiff(new Date(md[i]+"T00:00:00"),new Date(md[i-1]+"T00:00:00"));if(g2<200)gaps.push(g2);}
-  gaps.sort((a,b)=>a-b);const medGap=gaps.length?gaps[Math.floor(gaps.length/2)]:null;
-  $("logsum").textContent=`${thisMonth} logged this month across the family · your median gap ${medGap??"–"} days`;
-  attacks.slice(0,8).forEach((a,i,arr)=>{const nxt=arr[i+1];const gap=nxt?dayDiff(new Date(a.date+"T00:00:00"),new Date(nxt.date+"T00:00:00")):"";const tr=document.createElement("tr");tr.innerHTML=`<td>${a.who||"–"}</td><td>${nice(new Date(a.date+"T00:00:00"))}</td><td>${a.time||"–"}${a.woke===true||a.woke==="y"?" · woke":""}</td><td class="n">${gap!==""?gap+" d":""}</td>`;tb.appendChild(tr);});
+    // status + today line
+    const st=$("status"); st.className="pill";
+    if(sc==null){st.classList.add("na");st.textContent="No watch data yet";}
+    else if(sc>=5){st.classList.add("bad");st.textContent="Several flags";}
+    else if(sc>=3){st.classList.add("watch");st.textContent="Some flags";}
+    else{st.classList.add("good");st.textContent="Clear";}
+    $("today").innerHTML=sc==null?`<b>Today:</b> sync the watch first.`:sc>=5?`<b>Today:</b> Ubrelvy in the bag, light afternoon if you can, early night. Log it if it comes.`:sc>=3?`<b>Today:</b> keep the Ubrelvy close and notice the premed feeling. Evening check-in tonight.`:`<b>Today:</b> nothing to do. Evening check-in tonight.`;
 
-  // barometer
-  if(press&&press.stations&&press.stations.KIAG){const k=press.stations.KIAG;$("p-now").textContent=fmt1(k.latest_mb);$("p-d24").textContent=(k.d24h_mb>0?"+":"")+fmt1(k.d24h_mb);$("p-trend").textContent=k.trend||"";
-    const f=press.forecast&&press.forecast.KIAG;if(f){$("p-fc").textContent=(f.max_24h_change_mb>0?"+":"")+fmt1(f.max_24h_change_mb);$("p-fc-s").textContent=f.swing_alert?"big swing coming":"biggest swing";}}
-  $("stamp").textContent=`watch ${g?g.generated_utc:"–"} · barometer ${press?press.generated_utc:"–"} · data: benthambulletin.github.io`;
+    // flags panel
+    const names=["woke early","woke a bit early","Body Battery low","Body Battery so-so","stressful yesterday","stress elevated yesterday","resting HR up","short night"];
+    $("flags").innerHTML=sc==null?`<span class="muted">No reading yet.</span>`:names.map(n=>`<span class="flag ${flags.includes(n)?(/bit|so-so|elevated/.test(n)?"mid":"on"):""}">${n}</span>`).join("");
+    const rhr=ln&&ln.rhr?ln.rhr:null; $("ctx").textContent=`resting HR ${rhr??"–"}${det.usual_rhr?` (usual ${det.usual_rhr})`:""} · ${since!=null?since+" days since your last logged attack":"no attack logged yet"}.`;
+
+    // chart
+    const days=[];for(let i=13;i>=0;i--)days.push(iso(new Date(today-i*86400000)));
+    const W=680,H=200,Lm=34,R=12,Tm=16,Bm=30,pw=W-Lm-R,ph=H-Tm-Bm,x=i=>Lm+i*(pw/13);
+    let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Fourteen nights of Body Battery, stress and early waking with migraine days marked">`;
+    days.forEach((d,i)=>{const r=byDate[d];if(!r||(!r.bb_high&&!r.sleep_h))s+=`<rect x="${x(i)-pw/26}" y="${Tm}" width="${pw/13}" height="${ph}" fill="var(--line)" opacity=".5"/>`;if(mineDates.has(d))s+=`<rect x="${x(i)-pw/26}" y="${Tm}" width="${pw/13}" height="${ph}" fill="var(--attack)" opacity=".14"/>`;});
+    [0,25,50,75,100].forEach(v=>{const yy=Tm+ph-(v/100)*ph;s+=`<line x1="${Lm}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="var(--line)"/><text x="${Lm-6}" y="${yy+4}" font-size="10" text-anchor="end" fill="var(--ink-2)" font-family="var(--mono)">${v}</text>`;});
+    const y70=Tm+ph-0.7*ph; s+=`<line x1="${Lm}" x2="${W-R}" y1="${y70}" y2="${y70}" stroke="var(--watch)" stroke-dasharray="3 3"/>`;
+    const path=(key,color,w)=>{let p="",on=false;days.forEach((d,i)=>{const r=byDate[d];const v=r&&r[key]?+r[key]:null;if(v==null){on=false;return;}const yy=Tm+ph-(v/100)*ph;p+=(on?"L":"M")+x(i).toFixed(1)+" "+yy.toFixed(1)+" ";on=true;});s+=`<path d="${p}" fill="none" stroke="${color}" stroke-width="${w}" stroke-linejoin="round" stroke-linecap="round"/>`;};
+    path("stress","var(--watch)",1.5); path("bb_high","var(--accent)",2.5);
+    const rl={};rlog.forEach(e=>rl[e.date]=e);
+    days.forEach((d,i)=>{const r=byDate[d];
+      if(r&&r.bb_high){const v=+r.bb_high,yy=Tm+ph-(v/100)*ph;s+=`<circle cx="${x(i)}" cy="${yy}" r="5" fill="${v<70?"var(--bad)":v<80?"var(--watch)":"var(--good)"}" stroke="var(--panel)" stroke-width="1.5"/>`;}
+      if(r&&r.stress&&+r.stress>=40){const yy=Tm+ph-(+r.stress/100)*ph;s+=`<circle cx="${x(i)}" cy="${yy}" r="4" fill="var(--bad)"/>`;}
+      const e=rl[d];if(e&&e.wake_dev_min!=null&&e.wake_dev_min<=-25)s+=`<text x="${x(i)}" y="${Tm+ph-4}" font-size="12" text-anchor="middle" fill="var(--ink-2)">▼</text>`;
+      if(mineDates.has(d))s+=`<text x="${x(i)}" y="${Tm+11}" font-size="12" text-anchor="middle" fill="var(--attack)" font-weight="700">●</text>`;
+      const dd=D(d);if(i%2===1)s+=`<text x="${x(i)}" y="${H-8}" font-size="10" text-anchor="middle" fill="var(--ink-2)" font-family="var(--mono)">${dd.getMonth()+1}/${dd.getDate()}</text>`;});
+    s+=`</svg>`; $("chart").innerHTML=s;
+
+    // log table (gaps within the same person)
+    const tb=$("logtable").querySelector("tbody"); tb.innerHTML="";
+    const monthStart=iso(new Date(today.getFullYear(),today.getMonth(),1));
+    const thisMonth=attacks.filter(a=>a.date>=monthStart).length;
+    const md=[...new Set(mine.map(a=>a.date))].sort(); const gaps=[];for(let i=1;i<md.length;i++){const gg=dayDiff(D(md[i]),D(md[i-1]));if(gg<120)gaps.push(gg);}
+    gaps.sort((a,b)=>a-b); const medGap=gaps.length?gaps[Math.floor(gaps.length/2)]:null;
+    $("logsum").textContent=`${thisMonth} logged this month across the family · your median gap ${medGap??"–"} days (months you logged)`;
+    attacks.slice(0,8).forEach(a=>{const prev=attacks.find(b=>b.who===a.who&&b.date<a.date);const gap=prev?dayDiff(D(a.date),D(prev.date)):"";const tr=document.createElement("tr");tr.innerHTML=`<td>${a.who||"–"}</td><td>${nice(D(a.date))}</td><td>${a.time||"–"}${a.woke===true||a.woke==="y"?" · woke":""}</td><td class="n">${gap!==""?gap+" d":""}</td>`;tb.appendChild(tr);});
+
+    // barometer
+    if(press&&press.stations&&press.stations.KIAG){const k=press.stations.KIAG;$("p-now").textContent=fmt1(k.latest_mb);$("p-d24").textContent=(k.d24h_mb>0?"+":"")+fmt1(k.d24h_mb);$("p-trend").textContent=k.trend||"";
+      const f=press.forecast&&press.forecast.KIAG;if(f){$("p-fc").textContent=(f.max_24h_change_mb>0?"+":"")+fmt1(f.max_24h_change_mb);$("p-fc-s").textContent=f.swing_alert?"big swing coming":"biggest swing";}}
+    $("stamp").textContent=`watch ${g?g.generated_utc:"–"} · barometer ${press?press.generated_utc:"–"} · data: benthambulletin.github.io`;
+  }
+  $("refresh").addEventListener("click",load);
+  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&Date.now()-lastLoad>10*60*1000)load();});
+  load();
 })();
 </script>
 
