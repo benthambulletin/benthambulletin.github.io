@@ -173,6 +173,8 @@ Originally set for ~Oct 6. Postponed by Garret until the family log has **8 to 1
 
 **Garret's standing instruction (Oct 10): let the science lead.** The weight of the evidence is: a person's own recent attack history predicts best; prodrome (the hypothalamic phase 12–48 h before pain — yawning, neck stiffness, thirst, cravings, mood, broken sleep) is the real early warning and most "triggers" are prodrome misread; sleep loss and schedule shifts are the one environmental factor that holds up; barometric pressure is real for a subset and weak on average, with the published support for "falling" pressure resting on small studies that never tested rises. So the paper reports the barometer as one input, never the explanation; counts days since each person's last episode (attacks cluster); and when prodrome or sleep data exists in the log, leads with that. Never write "the pressure caused" — write what the glass did and what the log shows, side by side.
 
+**`/runway/` is Garret's private dashboard (Migraine Runway), not part of the paper.** It reads the data files and renders his watch numbers, the 48-hour runway and the log. Never link it from the Bulletin, never edit it during an edition run, and never remove the `noindex`.
+
 ## Winter items, in order
 
 - **First-frost watch** — starts in October. NWS Buffalo frost/freeze headlines plus the overnight low against the 32° line for all three towns. Average first frost in North Tonawanda is mid-October.
