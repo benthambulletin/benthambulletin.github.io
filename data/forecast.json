@@ -1,16 +1,16 @@
 {
- "generated_utc": "2026-10-10T11:37Z",
+ "generated_utc": "2026-10-10T15:50Z",
  "towns": {
   "North Tonawanda": {
-   "issued": "2026-10-10T07:57:34+00:00",
+   "issued": "2026-10-10T13:58:01+00:00",
    "periods": [
     {
      "name": "Today",
      "temp": 71,
-     "wind": "E 6 mph",
+     "wind": "SE 6 mph",
      "pop": 0,
-     "short": "Mostly Sunny",
-     "detail": "Mostly sunny, with a high near 71. East wind around 6 mph."
+     "short": "Partly Sunny",
+     "detail": "Partly sunny, with a high near 71. Southeast wind around 6 mph."
     },
     {
      "name": "Tonight",
@@ -87,13 +87,13 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-10T11:20:00+00:00",
+    "time": "2026-10-10T15:35:00+00:00",
     "text": "Clear",
-    "temp_f": 41
+    "temp_f": 61
    }
   },
   "Dunkirk": {
-   "issued": "2026-10-10T07:57:34+00:00",
+   "issued": "2026-10-10T13:58:01+00:00",
    "periods": [
     {
      "name": "Today",
@@ -178,21 +178,21 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-10T11:20:00+00:00",
+    "time": "2026-10-10T15:35:00+00:00",
     "text": "Clear",
-    "temp_f": 43
+    "temp_f": 66
    }
   },
   "Scottsville": {
-   "issued": "2026-10-10T07:57:34+00:00",
+   "issued": "2026-10-10T13:58:01+00:00",
    "periods": [
     {
      "name": "Today",
      "temp": 68,
-     "wind": "SE 2 to 8 mph",
+     "wind": "SE 8 mph",
      "pop": 0,
-     "short": "Mostly Sunny",
-     "detail": "Mostly sunny, with a high near 68. Southeast wind 2 to 8 mph."
+     "short": "Partly Sunny",
+     "detail": "Partly sunny, with a high near 68. Southeast wind around 8 mph."
     },
     {
      "name": "Tonight",
@@ -269,9 +269,9 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-10T11:20:00+00:00",
+    "time": "2026-10-10T15:35:00+00:00",
     "text": "Clear",
-    "temp_f": 39
+    "temp_f": 57
    }
   }
  },
