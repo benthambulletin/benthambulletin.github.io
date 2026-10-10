@@ -256,5 +256,12 @@
   "mb": 1020.5,
   "station": "KIAG",
   "time": "06:53 EDT"
+ },
+ {
+  "date": "2026-10-10",
+  "in": 30.39,
+  "mb": 1029.0,
+  "station": "KIAG",
+  "time": "06:53 EDT"
  }
 ]
