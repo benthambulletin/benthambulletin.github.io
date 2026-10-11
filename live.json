@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T21:29:12Z",
+ "updated": "2026-10-11T21:31:14Z",
  "week": 5,
  "games": {
   "1": {
@@ -87,22 +87,22 @@
    "state": "in",
    "away": 10,
    "home": 3,
-   "detail": "0:20 - 2nd",
-   "line": "Broncos 10–3 · 0:20 - 2nd"
+   "detail": "Halftime",
+   "line": "Broncos 10–3 · Halftime"
   },
   "11": {
    "state": "in",
    "away": 14,
    "home": 7,
-   "detail": "9:30 - 2nd",
-   "line": "Lions 14–7 · 9:30 - 2nd"
+   "detail": "9:25 - 2nd",
+   "line": "Lions 14–7 · 9:25 - 2nd"
   },
   "12": {
    "state": "in",
    "away": 14,
    "home": 10,
-   "detail": "8:17 - 2nd",
-   "line": "49ers 14–10 · 8:17 - 2nd"
+   "detail": "8:09 - 2nd",
+   "line": "49ers 14–10 · 8:09 - 2nd"
   },
   "13": {
    "state": "pre",
