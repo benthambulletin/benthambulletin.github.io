@@ -2639,6 +2639,7 @@
             "Ariel"
           ],
           "misses": [
+            "Andrew Clarke",
             "Thom",
             "B-rad",
             "Peggy",
@@ -2650,7 +2651,6 @@
             "Josh",
             "Nate V",
             "Derek",
-            "Andrew Clarke",
             "Ryan Holovics",
             "Kaylani & Luka",
             "Garret",
@@ -2666,6 +2666,7 @@
               "Ariel"
             ],
             "Cowboys": [
+              "Andrew Clarke",
               "Thom",
               "B-rad",
               "Peggy",
@@ -2677,7 +2678,6 @@
               "Josh",
               "Nate V",
               "Derek",
-              "Andrew Clarke",
               "Ryan Holovics",
               "Kaylani & Luka",
               "Garret",
@@ -2988,9 +2988,9 @@
           "sheet": {
             "0": "Cowboys"
           },
-          "filedAt": "2026-10-06T23:11:38+00:00",
+          "filedAt": "2026-10-11T12:03:18+00:00",
           "firstAt": "2026-10-06T23:11:38+00:00",
-          "free": true,
+          "free": false,
           "rank": 6,
           "delta": 0,
           "state": "alive",
@@ -3382,7 +3382,7 @@
           "text": "First week with real money. I still can't win it, which makes me the only honest one here."
         }
       ],
-      "column": "Ariel filed \"Seeing Sombloski triggers me,\" and the football gods answered by seating her next to one. Ariel and Mrs. Sombloski are both 1–0, tied at the top with Leah, Dan and Melissa. Mike Sombloski took Dallas and filed \"Help, prithee! I am fall'n.\" Prophecy, Mike.\n\nSixteen of you trusted the Cowboys, the commissioner included, and the bonnet still fits. Two days to stew. Fourteen games left, starting 9:30 Sunday morning in London. Set an alarm.",
+      "column": "Seventeen of you took Dallas on Thursday. Tampa won 24–16, and the commissioner went down with the ship, bonnet and all. Five sheets sit 1–0: Ariel, Dan, Leah, Melissa and Mrs. Sombloski. So Ariel is sharing the penthouse with a Sombloski, the exact thing she said triggers her. Mike filed \"Help, prithee! I am fall'n\" and then picked the Cowboys. That's method acting.\n\nFourteen games left, London kicks it off at 9:30, and everybody else is one game back. Nobody's bleeding yet. Give it till four.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 95.0,
@@ -3607,11 +3607,11 @@
         }
       },
       "columnN": 21,
-      "columnHead": "Ariel and a Sombloski Share the Penthouse",
+      "columnHead": "Seventeen Cowboys Fans and One Long Sunday",
       "thuDone": true
     }
   },
-  "updated": "2026-10-11T03:09:38.962906+00:00",
+  "updated": "2026-10-11T12:11:10.044832+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
