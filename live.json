@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T18:53:26Z",
+ "updated": "2026-10-11T18:55:27Z",
  "week": 5,
  "games": {
   "1": {
@@ -22,8 +22,8 @@
    "state": "in",
    "away": 7,
    "home": 20,
-   "detail": "8:36 - 3rd",
-   "line": "Packers 20–7 · 8:36 - 3rd"
+   "detail": "8:01 - 3rd",
+   "line": "Packers 20–7 · 8:01 - 3rd"
   },
   "4": {
    "state": "in",
@@ -36,15 +36,15 @@
    "state": "in",
    "away": 7,
    "home": 28,
-   "detail": "11:45 - 3rd",
-   "line": "Patriots 28–7 · 11:45 - 3rd"
+   "detail": "11:26 - 3rd",
+   "line": "Patriots 28–7 · 11:26 - 3rd"
   },
   "6": {
    "state": "in",
    "away": 13,
    "home": 7,
-   "detail": "4:30 - 3rd",
-   "line": "Vikings 13–7 · 4:30 - 3rd"
+   "detail": "3:01 - 3rd",
+   "line": "Vikings 13–7 · 3:01 - 3rd"
   },
   "7": {
    "state": "in",
@@ -55,17 +55,17 @@
   },
   "8": {
    "state": "in",
-   "away": 3,
+   "away": 6,
    "home": 12,
-   "detail": "11:42 - 3rd",
-   "line": "Commanders 12–3 · 11:42 - 3rd"
+   "detail": "10:54 - 3rd",
+   "line": "Commanders 12–6 · 10:54 - 3rd"
   },
   "9": {
    "state": "in",
    "away": 16,
    "home": 17,
-   "detail": "10:23 - 3rd",
-   "line": "Steelers 17–16 · 10:23 - 3rd"
+   "detail": "9:45 - 3rd",
+   "line": "Steelers 17–16 · 9:45 - 3rd"
   },
   "10": {
    "state": "pre",
