@@ -202,6 +202,7 @@ game, just send the message.
    🤖 "Beaten by the Bot — you're behind Claude's picks". Garret pays Claude's $5, so Claude is a paid entry and can
    win; anything Claude wins rolls into the next week's pot. Claude's tiebreaker is the Monday game's closing
    over/under, set at kickoff. Then delete this step from this file.
+6b. If `pool/data/notice.json` exists, delete it (a ruling lasts its own week only — Garret, Oct 11).
 7. Land as "Pool: Week N slate". Board check.
 **Names (from Week 6):** score.py keys each player by full name (stored only as a hash in `season.people`) and shows
 their Board name via `displayNames`. It prints `LINKED NEW:`/`LINKED CHECK:` the first time a full name is seen —
