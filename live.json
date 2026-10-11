@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T19:33:53Z",
+ "updated": "2026-10-11T19:35:55Z",
  "week": 5,
  "games": {
   "1": {
@@ -22,15 +22,15 @@
    "state": "in",
    "away": 7,
    "home": 31,
-   "detail": "12:00 - 4th",
-   "line": "Packers 31–7 · 12:00 - 4th"
+   "detail": "9:50 - 4th",
+   "line": "Packers 31–7 · 9:50 - 4th"
   },
   "4": {
    "state": "in",
    "away": 28,
    "home": 10,
-   "detail": "10:21 - 4th",
-   "line": "Bengals 28–10 · 10:21 - 4th"
+   "detail": "9:06 - 4th",
+   "line": "Bengals 28–10 · 9:06 - 4th"
   },
   "5": {
    "state": "in",
@@ -57,15 +57,15 @@
    "state": "in",
    "away": 13,
    "home": 19,
-   "detail": "13:00 - 4th",
-   "line": "Commanders 19–13 · 13:00 - 4th"
+   "detail": "12:43 - 4th",
+   "line": "Commanders 19–13 · 12:43 - 4th"
   },
   "9": {
    "state": "in",
    "away": 22,
    "home": 24,
-   "detail": "9:31 - 4th",
-   "line": "Steelers 24–22 · 9:31 - 4th"
+   "detail": "7:56 - 4th",
+   "line": "Steelers 24–22 · 7:56 - 4th"
   },
   "10": {
    "state": "pre",
