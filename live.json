@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T21:59:33Z",
+ "updated": "2026-10-11T22:01:34Z",
  "week": 5,
  "games": {
   "1": {
@@ -94,15 +94,15 @@
    "state": "in",
    "away": 24,
    "home": 7,
-   "detail": "0:03 - 2nd",
-   "line": "Lions 24–7 · 0:03 - 2nd"
+   "detail": "Halftime",
+   "line": "Lions 24–7 · Halftime"
   },
   "12": {
    "state": "in",
    "away": 21,
    "home": 13,
-   "detail": "0:13 - 2nd",
-   "line": "49ers 21–13 · 0:13 - 2nd"
+   "detail": "Halftime",
+   "line": "49ers 21–13 · Halftime"
   },
   "13": {
    "state": "pre",
