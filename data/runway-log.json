@@ -4792,5 +4792,16 @@
   "bb_high": 78,
   "stress_yday": 34.0,
   "backtest": false
+ },
+ {
+  "date": "2026-10-11",
+  "score": 2,
+  "flags": [
+   "Body Battery so-so",
+   "stress elevated yesterday"
+  ],
+  "wake_dev_min": -7,
+  "bb_high": 74,
+  "stress_yday": 35.0
  }
 ]
