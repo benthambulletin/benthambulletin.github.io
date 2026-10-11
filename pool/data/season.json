@@ -2724,7 +2724,9 @@
               "Garret",
               "Devin"
             ]
-          }
+          },
+          "live": "Jaguars 7–0 · 1st qtr",
+          "liveAt": "2026-10-11T14:09:18Z"
         },
         {
           "away": "Browns",
@@ -3700,7 +3702,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-11T13:40:22.024407+00:00",
+  "updated": "2026-10-11T14:12:48.583464+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
