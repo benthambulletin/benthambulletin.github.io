@@ -2639,11 +2639,10 @@
             "Ariel"
           ],
           "misses": [
-            "Andrew Clarke",
+            "Andy R",
             "Thom",
             "B-rad",
             "Peggy",
-            "Andy R",
             "Arod",
             "Walczyk",
             "Tom",
@@ -2651,6 +2650,7 @@
             "Josh",
             "Nate V",
             "Derek",
+            "Andrew Clarke",
             "Ryan Holovics",
             "Kaylani & Luka",
             "Garret",
@@ -2666,11 +2666,10 @@
               "Ariel"
             ],
             "Cowboys": [
-              "Andrew Clarke",
+              "Andy R",
               "Thom",
               "B-rad",
               "Peggy",
-              "Andy R",
               "Arod",
               "Walczyk",
               "Tom",
@@ -2678,6 +2677,7 @@
               "Josh",
               "Nate V",
               "Derek",
+              "Andrew Clarke",
               "Ryan Holovics",
               "Kaylani & Luka",
               "Garret",
@@ -2706,11 +2706,10 @@
               "Claude"
             ],
             "Jaguars": [
-              "Andrew Clarke",
+              "Andy R",
               "Thom",
               "Peggy",
               "Leah",
-              "Andy R",
               "Arod",
               "Walczyk",
               "Tom",
@@ -2719,6 +2718,7 @@
               "Josh",
               "Nate V",
               "Derek",
+              "Andrew Clarke",
               "Ryan Holovics",
               "Kaylani & Luka",
               "Garret",
@@ -3021,9 +3021,9 @@
             "0": "Cowboys",
             "1": "Jaguars"
           },
-          "filedAt": "2026-10-11T12:03:18+00:00",
+          "filedAt": "2026-10-06T23:11:38+00:00",
           "firstAt": "2026-10-06T23:11:38+00:00",
-          "free": false,
+          "free": true,
           "rank": 6,
           "delta": 0,
           "state": "alive",
@@ -3043,7 +3043,7 @@
             "0": "Cowboys",
             "1": "Jaguars"
           },
-          "filedAt": "2026-10-08T19:17:39+00:00",
+          "filedAt": "2026-10-11T12:03:18+00:00",
           "firstAt": "2026-10-08T19:17:39+00:00",
           "free": false,
           "rank": 6,
@@ -3596,11 +3596,10 @@
             "Ariel"
           ],
           "home": [
-            "Andrew Clarke",
+            "Andy R",
             "Thom",
             "Peggy",
             "Leah",
-            "Andy R",
             "Arod",
             "Walczyk",
             "Tom",
@@ -3609,6 +3608,7 @@
             "Josh",
             "Nate V",
             "Derek",
+            "Andrew Clarke",
             "Ryan Holovics",
             "Kaylani & Luka",
             "Garret",
@@ -3700,7 +3700,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-11T13:35:00.098168+00:00",
+  "updated": "2026-10-11T13:40:22.024407+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -3728,7 +3728,8 @@
     "Mike Sombloski": "Michael James Sombloski IV, Esq."
   },
   "subNames": {
-    "EqrypLL": "Andy R"
+    "EqrypLL": "Andy R",
+    "rDRK1Rl": "Andy R"
   },
   "people": {}
 }

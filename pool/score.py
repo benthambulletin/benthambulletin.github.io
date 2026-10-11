@@ -266,7 +266,7 @@ def main():
                         "filedAt": lst[-1]["at"].isoformat(), "firstAt": lst[0]["at"].isoformat(),
                         # the form's "Playing free" answer on their latest sheet (a claim only; never makes anyone paid)
                         "free": bool(q.get("paid")) and "free" in str(lst[-1]["r"].get(q["paid"]) or "").lower()})
-        t = lst[-1]["r"].get(q["trash"])
+        t = next((x["r"].get(q["trash"]) for x in reversed(lst) if (x["r"].get(q["trash"]) or "").strip()), None)   # a resubmit without trash keeps the earlier line
         if t and str(t).strip():
             tt = clean_text(t)
             fx = (wk.get("trashFix") or {}).get(name)   # the author asked for a typo fix; only while that exact text stands
