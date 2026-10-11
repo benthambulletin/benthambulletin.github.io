@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T23:28:32Z",
+ "updated": "2026-10-11T23:30:34Z",
  "week": 5,
  "games": {
   "1": {
@@ -93,18 +93,20 @@
    "line": "Final · Broncos 23–17"
   },
   "11": {
-   "state": "in",
+   "state": "post",
    "away": 45,
    "home": 21,
-   "detail": "0:21 - 4th",
-   "line": "Lions 45–21 · 0:21 - 4th"
+   "detail": "Final",
+   "winner": "Lions",
+   "score": "45–21",
+   "line": "Final · Lions 45–21"
   },
   "12": {
    "state": "in",
    "away": 29,
    "home": 29,
-   "detail": "3:22 - 4th",
-   "line": "Tied 29–29 · 3:22 - 4th"
+   "detail": "2:00 - 4th",
+   "line": "Tied 29–29 · 2:00 - 4th"
   },
   "13": {
    "state": "pre",
