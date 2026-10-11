@@ -1,16 +1,16 @@
 {
- "generated_utc": "2026-10-11T11:00Z",
+ "generated_utc": "2026-10-11T16:15Z",
  "towns": {
   "North Tonawanda": {
-   "issued": "2026-10-11T07:57:48+00:00",
+   "issued": "2026-10-11T13:58:01+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 63,
      "wind": "E 6 mph",
      "pop": 74,
      "short": "Light Rain Likely",
-     "detail": "Rain likely after 8am. Cloudy, with a high near 63. East wind around 6 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible."
+     "detail": "Rain likely. Cloudy, with a high near 63. East wind around 6 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible."
     },
     {
      "name": "Tonight",
@@ -87,21 +87,21 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-11T10:35:00+00:00",
-    "text": "Mostly Clear",
-    "temp_f": 55
+    "time": "2026-10-11T15:55:00+00:00",
+    "text": "Light Rain",
+    "temp_f": 61
    }
   },
   "Dunkirk": {
-   "issued": "2026-10-11T07:57:48+00:00",
+   "issued": "2026-10-11T13:58:01+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 65,
-     "wind": "SE 7 to 12 mph",
+     "wind": "E 9 mph",
      "pop": 82,
      "short": "Rain",
-     "detail": "Rain. Cloudy, with a high near 65. Southeast wind 7 to 12 mph, with gusts as high as 22 mph. Chance of precipitation is 80%. New rainfall amounts between a half and three quarters of an inch possible."
+     "detail": "Rain. Cloudy, with a high near 65. East wind around 9 mph. Chance of precipitation is 80%. New rainfall amounts between a half and three quarters of an inch possible."
     },
     {
      "name": "Tonight",
@@ -178,21 +178,21 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-11T10:35:00+00:00",
-    "text": "Mostly Cloudy",
-    "temp_f": 61
+    "time": "2026-10-11T15:55:00+00:00",
+    "text": "Clear",
+    "temp_f": 63
    }
   },
   "Scottsville": {
-   "issued": "2026-10-11T07:57:48+00:00",
+   "issued": "2026-10-11T13:58:01+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 62,
      "wind": "SE 9 mph",
      "pop": 83,
      "short": "Rain",
-     "detail": "Rain after 8am. Cloudy, with a high near 62. Southeast wind around 9 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible."
+     "detail": "Rain. Cloudy, with a high near 62. Southeast wind around 9 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible."
     },
     {
      "name": "Tonight",
@@ -269,9 +269,9 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-11T10:35:00+00:00",
-    "text": "",
-    "temp_f": 57
+    "time": "2026-10-11T15:55:00+00:00",
+    "text": "Cloudy",
+    "temp_f": 61
    }
   }
  },
