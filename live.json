@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T19:31:52Z",
+ "updated": "2026-10-11T19:33:53Z",
  "week": 5,
  "games": {
   "1": {
@@ -15,29 +15,29 @@
    "state": "in",
    "away": 6,
    "home": 10,
-   "detail": "11:31 - 4th",
-   "line": "Jets 10–6 · 11:31 - 4th"
+   "detail": "10:38 - 4th",
+   "line": "Jets 10–6 · 10:38 - 4th"
   },
   "3": {
    "state": "in",
    "away": 7,
    "home": 31,
-   "detail": "12:49 - 4th",
-   "line": "Packers 31–7 · 12:49 - 4th"
+   "detail": "12:00 - 4th",
+   "line": "Packers 31–7 · 12:00 - 4th"
   },
   "4": {
    "state": "in",
    "away": 28,
    "home": 10,
-   "detail": "12:58 - 4th",
-   "line": "Bengals 28–10 · 12:58 - 4th"
+   "detail": "10:21 - 4th",
+   "line": "Bengals 28–10 · 10:21 - 4th"
   },
   "5": {
    "state": "in",
    "away": 10,
-   "home": 35,
-   "detail": "14:26 - 4th",
-   "line": "Patriots 35–10 · 14:26 - 4th"
+   "home": 38,
+   "detail": "14:12 - 4th",
+   "line": "Patriots 38–10 · 14:12 - 4th"
   },
   "6": {
    "state": "in",
@@ -50,22 +50,22 @@
    "state": "in",
    "away": 26,
    "home": 3,
-   "detail": "10:05 - 4th",
-   "line": "Texans 26–3 · 10:05 - 4th"
+   "detail": "8:53 - 4th",
+   "line": "Texans 26–3 · 8:53 - 4th"
   },
   "8": {
    "state": "in",
    "away": 13,
    "home": 19,
-   "detail": "14:20 - 4th",
-   "line": "Commanders 19–13 · 14:20 - 4th"
+   "detail": "13:00 - 4th",
+   "line": "Commanders 19–13 · 13:00 - 4th"
   },
   "9": {
    "state": "in",
    "away": 22,
    "home": 24,
-   "detail": "11:38 - 4th",
-   "line": "Steelers 24–22 · 11:38 - 4th"
+   "detail": "9:31 - 4th",
+   "line": "Steelers 24–22 · 9:31 - 4th"
   },
   "10": {
    "state": "pre",
