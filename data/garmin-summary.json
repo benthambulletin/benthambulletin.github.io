@@ -1,35 +1,36 @@
 {
- "generated_utc": "2026-10-10T18:46Z",
- "night_ending": "2026-10-10",
+ "generated_utc": "2026-10-11T12:10Z",
+ "night_ending": "2026-10-11",
  "last_night": {
-  "sleep_h": "9.45",
-  "bedtime": "10:06 PM",
-  "wake": "7:34 AM",
+  "sleep_h": "8.68",
+  "bedtime": "10:44 PM",
+  "wake": "7:27 AM",
   "sleep_score": "",
-  "deep_h": "0.88",
-  "rem_h": "2.00",
-  "awake_h": "0.02",
-  "bb_high": "78",
-  "bb_low": "24",
-  "stress": "27",
-  "rhr": "48",
+  "deep_h": "0.87",
+  "rem_h": "2.05",
+  "awake_h": "0.03",
+  "bb_high": "74",
+  "bb_low": "14",
+  "stress": "16",
+  "rhr": "49",
   "hrv": "",
   "resp": "12.0"
  },
- "score": 1,
+ "score": 2,
  "flags": [
-  "Body Battery so-so"
+  "Body Battery so-so",
+  "stress elevated yesterday"
  ],
  "detail": {
-  "wake": "7:34 AM",
+  "wake": "7:27 AM",
   "usual_wake_h": 7.57,
-  "wake_dev_min": 0,
-  "sleep_h": 9.45,
+  "wake_dev_min": -7,
+  "sleep_h": 8.68,
   "usual_sleep_h": 9.02,
-  "bb_high": 78,
-  "rhr": 48.0,
+  "bb_high": 74,
+  "rhr": 49.0,
   "usual_rhr": 48.0,
-  "stress_yday": 34.0
+  "stress_yday": 35.0
  },
  "experimental": true,
  "rule": "Experimental 0-10 score: early waking, low Body Battery, yesterday's stress, resting HR, short night. Judged by the scoreboard, not assumed."
