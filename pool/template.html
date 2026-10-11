@@ -302,6 +302,8 @@ details.gmore[open]>summary{display:none}
 .whoin.two li{font-size:.95rem;min-width:0}
 .whoin.two li>span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .colhd{font-family:'PF';font-weight:800;font-size:1.35rem;line-height:1.2;text-align:center;margin:0 0 .8rem}
+.rnote{margin:.9rem 0 0;padding:.7rem .85rem;border:1px solid var(--ink);border-left-width:4px;background:var(--wash);font-size:.92rem;line-height:1.5}
+.rnote b{font-family:'AR';font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:.2rem}
 </style>
 </head>
 <body>
@@ -320,6 +322,7 @@ details.gmore[open]>summary{display:none}
     <div class="nn" id="potN" hidden></div>
     <div class="nn" id="nowN" hidden></div>
   </div>
+  <div class="rnote" id="rNote" hidden></div>
   <div class="lastw" id="lastW" hidden></div>
   <div id="mug"></div>
 
@@ -541,6 +544,7 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
       'Each game locks at its own kickoff. <a href="'+esc(D.formUrl)+'">Resubmit</a> to change games that haven’t started. · <a href="/pool/week.ics">Add to calendar</a>';
     nn.hidden=false;
   } else nn.hidden=true;
+  var rn=$("rNote"); if(D.notice&&!D.archive){rn.innerHTML='<b>Commissioner\u2019s ruling</b>'+esc(D.notice);rn.hidden=false;} else rn.hidden=true;
   var pn=$("potN");
   if(D.buyIn>0&&!D.archive){
     var payOpen=D.payBy&&Date.parse(D.payBy)>now;
