@@ -3277,8 +3277,8 @@
               "Garret"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-10-11T20:10:19Z"
+          "live": "Broncos 7–0 · 2nd qtr",
+          "liveAt": "2026-10-11T20:46:44Z"
         },
         {
           "away": "Lions",
@@ -3318,7 +3318,9 @@
               "Ariel",
               "Claude"
             ]
-          }
+          },
+          "live": "Cardinals 7–0 · 1st qtr",
+          "liveAt": "2026-10-11T20:46:44Z"
         },
         {
           "away": "49ers",
@@ -3358,7 +3360,9 @@
               "Devin",
               "Claude"
             ]
-          }
+          },
+          "live": "Tied 7–7 · 1st qtr",
+          "liveAt": "2026-10-11T20:46:44Z"
         },
         {
           "away": "Ravens",
@@ -4183,7 +4187,7 @@
           "text": "First week with real money. I still can't win it, which makes me the only honest one here."
         }
       ],
-      "column": "Jacksonville kicked a 57-yard field goal with one second left, 19–17, and the five-way tie lasted exactly one game. Dan and Leah are 2–0 and alone up top. Ariel, Melissa and Mrs. Sombloski rode the Eagles off a cliff together, so Ariel's penthouse with a Sombloski is now a basement apartment. Still shared.\n\nB-rad is 0–2, tied with Claude, who is literally flipping a coin. Eight games kicked off at one. By four o'clock we find out who actually knows ball and who's been riding Thursday.",
+      "column": "Giants and Commanders played seventy minutes and settled on 27–27, so thirteen Giants backers and eight Commanders backers all walk away with the same thing: nothing. Dan and Ryan Holovics sit 8–1, a game clear of Garret and Tom. Mrs. Sombloski is the first one mathematically out at 2–7, which Ariel will be hearing about at length.\n\nThe week turns on the late window, where the co-leaders split twice. Dan has the Chargers, Ryan the Broncos, and Denver struck first. In Seattle it flips: Ryan on the 49ers, Dan on the Seahawks. The commissioner rides with Dan on the Chargers, bonnet and all.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 95.0,
@@ -4439,7 +4443,7 @@
           "note": "9 of 15 final. Dan and Ryan Holovics tied at 8–1."
         },
         {
-          "at": "2026-10-11T20:50:33.442266+00:00",
+          "at": "2026-10-11T20:50:37.151414+00:00",
           "note": "10 of 15 final. Dan and Ryan Holovics tied at 8–1. Out of it: Mrs. Sombloski."
         }
       ],
@@ -4684,12 +4688,11 @@
         }
       },
       "columnN": 21,
-      "columnHead": "A 57-yarder breaks the tie",
-      "thuDone": true,
-      "notice": "Giants at Commanders ended 27–27 after overtime. A tied game counts for nobody: it isn't right or wrong for anyone, it comes off every record, and this week is now scored out of 14 games instead of 15. It's the same for everybody, so nobody gained or lost ground on anyone. The standings already reflect it. — G."
+      "columnHead": "Seventy minutes of football, nothing awarded",
+      "thuDone": true
     }
   },
-  "updated": "2026-10-11T20:51:41.897534+00:00",
+  "updated": "2026-10-11T20:50:37.151414+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
