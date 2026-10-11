@@ -3140,9 +3140,9 @@
           "kickoff": "2026-10-11T17:00:00Z",
           "when": "Sun 1:00 PM",
           "tv": "FOX",
-          "winner": null,
-          "score": null,
-          "status": "live",
+          "winner": "TIE",
+          "score": "27–27",
+          "status": "final",
           "hits": [],
           "misses": [],
           "sides": {
@@ -3172,9 +3172,7 @@
               "Devin",
               "Claude"
             ]
-          },
-          "live": "Tied 27–27 · 4th qtr",
-          "liveAt": "2026-10-11T20:10:19Z"
+          }
         },
         {
           "away": "Colts",
@@ -3397,8 +3395,8 @@
           "correct": 8,
           "missed": 1,
           "void": 0,
-          "remaining": 6,
-          "max": 14,
+          "remaining": 5,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Buccaneers",
@@ -3435,8 +3433,8 @@
           "correct": 8,
           "missed": 1,
           "void": 0,
-          "remaining": 6,
-          "max": 14,
+          "remaining": 5,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3473,8 +3471,8 @@
           "correct": 7,
           "missed": 2,
           "void": 0,
-          "remaining": 6,
-          "max": 13,
+          "remaining": 5,
+          "max": 12,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3506,8 +3504,8 @@
           "correct": 7,
           "missed": 2,
           "void": 0,
-          "remaining": 6,
-          "max": 13,
+          "remaining": 5,
+          "max": 12,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3539,8 +3537,8 @@
           "correct": 6,
           "missed": 3,
           "void": 0,
-          "remaining": 6,
-          "max": 12,
+          "remaining": 5,
+          "max": 11,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3561,7 +3559,7 @@
           "firstAt": "2026-10-08T19:17:39+00:00",
           "free": false,
           "rank": 5,
-          "delta": 5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3572,8 +3570,8 @@
           "correct": 6,
           "missed": 3,
           "void": 0,
-          "remaining": 6,
-          "max": 12,
+          "remaining": 5,
+          "max": 11,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3594,7 +3592,7 @@
           "firstAt": "2026-10-08T17:27:54+00:00",
           "free": true,
           "rank": 5,
-          "delta": 5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3605,8 +3603,8 @@
           "correct": 6,
           "missed": 3,
           "void": 0,
-          "remaining": 6,
-          "max": 12,
+          "remaining": 5,
+          "max": 11,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3627,7 +3625,7 @@
           "firstAt": "2026-10-07T00:45:26+00:00",
           "free": false,
           "rank": 5,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3638,8 +3636,8 @@
           "correct": 6,
           "missed": 3,
           "void": 0,
-          "remaining": 6,
-          "max": 12,
+          "remaining": 5,
+          "max": 11,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3660,7 +3658,7 @@
           "firstAt": "2026-10-06T12:47:50+00:00",
           "free": false,
           "rank": 5,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3671,8 +3669,8 @@
           "correct": 6,
           "missed": 3,
           "void": 0,
-          "remaining": 6,
-          "max": 12,
+          "remaining": 5,
+          "max": 11,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3693,7 +3691,7 @@
           "firstAt": "2026-10-07T14:42:49+00:00",
           "free": false,
           "rank": 5,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3704,8 +3702,8 @@
           "correct": 6,
           "missed": 3,
           "void": 0,
-          "remaining": 6,
-          "max": 12,
+          "remaining": 5,
+          "max": 11,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3726,7 +3724,7 @@
           "firstAt": "2026-10-06T13:04:05+00:00",
           "free": false,
           "rank": 5,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3737,8 +3735,8 @@
           "correct": 6,
           "missed": 3,
           "void": 0,
-          "remaining": 6,
-          "max": 12,
+          "remaining": 5,
+          "max": 11,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3759,7 +3757,7 @@
           "firstAt": "2026-10-07T22:28:55+00:00",
           "free": false,
           "rank": 5,
-          "delta": 5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3770,8 +3768,8 @@
           "correct": 6,
           "missed": 3,
           "void": 0,
-          "remaining": 6,
-          "max": 12,
+          "remaining": 5,
+          "max": 11,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3792,7 +3790,7 @@
           "firstAt": "2026-10-07T12:38:11+00:00",
           "free": false,
           "rank": 5,
-          "delta": 5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3803,8 +3801,8 @@
           "correct": 5,
           "missed": 4,
           "void": 0,
-          "remaining": 6,
-          "max": 11,
+          "remaining": 5,
+          "max": 10,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3825,7 +3823,7 @@
           "firstAt": "2026-10-06T23:11:38+00:00",
           "free": true,
           "rank": 13,
-          "delta": -3,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -3836,8 +3834,8 @@
           "correct": 5,
           "missed": 4,
           "void": 0,
-          "remaining": 6,
-          "max": 11,
+          "remaining": 5,
+          "max": 10,
           "tb": null,
           "sheet": {
             "0": "Buccaneers",
@@ -3858,7 +3856,7 @@
           "firstAt": "2026-10-06T20:46:34+00:00",
           "free": false,
           "rank": 13,
-          "delta": -3,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3869,8 +3867,8 @@
           "correct": 5,
           "missed": 4,
           "void": 0,
-          "remaining": 6,
-          "max": 11,
+          "remaining": 5,
+          "max": 10,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3891,7 +3889,7 @@
           "firstAt": "2026-10-08T23:51:31+00:00",
           "free": false,
           "rank": 13,
-          "delta": -10,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -3907,8 +3905,8 @@
           "correct": 4,
           "missed": 5,
           "void": 0,
-          "remaining": 6,
-          "max": 10,
+          "remaining": 5,
+          "max": 9,
           "tb": null,
           "sheet": {
             "0": "Buccaneers",
@@ -3929,7 +3927,7 @@
           "firstAt": "2026-10-08T19:42:16+00:00",
           "free": false,
           "rank": 16,
-          "delta": 1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3940,8 +3938,8 @@
           "correct": 4,
           "missed": 5,
           "void": 0,
-          "remaining": 6,
-          "max": 10,
+          "remaining": 5,
+          "max": 9,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -3962,7 +3960,7 @@
           "firstAt": "2026-10-08T23:38:45+00:00",
           "free": false,
           "rank": 16,
-          "delta": 1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -3978,8 +3976,8 @@
           "correct": 4,
           "missed": 5,
           "void": 0,
-          "remaining": 6,
-          "max": 10,
+          "remaining": 5,
+          "max": 9,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -4000,7 +3998,7 @@
           "firstAt": "2026-10-06T12:48:14+00:00",
           "free": true,
           "rank": 16,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -4011,8 +4009,8 @@
           "correct": 3,
           "missed": 6,
           "void": 0,
-          "remaining": 6,
-          "max": 9,
+          "remaining": 5,
+          "max": 8,
           "tb": null,
           "sheet": {
             "0": "Buccaneers",
@@ -4044,8 +4042,8 @@
           "correct": 3,
           "missed": 6,
           "void": 0,
-          "remaining": 6,
-          "max": 9,
+          "remaining": 5,
+          "max": 8,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -4077,8 +4075,8 @@
           "correct": 2,
           "missed": 7,
           "void": 0,
-          "remaining": 6,
-          "max": 8,
+          "remaining": 5,
+          "max": 7,
           "tb": null,
           "sheet": {
             "0": "Cowboys",
@@ -4099,7 +4097,7 @@
           "firstAt": "2026-10-06T11:44:52+00:00",
           "free": false,
           "rank": 21,
-          "delta": -2,
+          "delta": 0,
           "state": "house",
           "paid": false,
           "badges": []
@@ -4110,8 +4108,8 @@
           "correct": 2,
           "missed": 7,
           "void": 0,
-          "remaining": 6,
-          "max": 8,
+          "remaining": 5,
+          "max": 7,
           "tb": null,
           "sheet": {
             "0": "Buccaneers",
@@ -4132,10 +4130,14 @@
           "firstAt": "2026-10-07T22:09:03+00:00",
           "free": false,
           "rank": 21,
-          "delta": 1,
-          "state": "alive",
+          "delta": 0,
+          "state": "out",
           "paid": true,
           "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            },
             {
               "id": "cellar",
               "note": "last place this week"
@@ -4338,34 +4340,6 @@
       "tbUsed": false,
       "decides": [
         {
-          "game": 8,
-          "away": [
-            "Andy R",
-            "Thom",
-            "Walczyk",
-            "Dan",
-            "Mike Sombloski",
-            "Mrs. Sombloski",
-            "Nate V",
-            "Melissa",
-            "Derek",
-            "Ariel",
-            "Ryan Holovics",
-            "Kaylani & Luka",
-            "Garret"
-          ],
-          "home": [
-            "B-rad",
-            "Peggy",
-            "Leah",
-            "Arod",
-            "Tom",
-            "Josh",
-            "Andrew Clarke",
-            "Devin"
-          ]
-        },
-        {
           "game": 10,
           "away": [
             "Andy R",
@@ -4374,7 +4348,6 @@
             "Arod",
             "Tom",
             "Mike Sombloski",
-            "Mrs. Sombloski",
             "Nate V",
             "Melissa",
             "Derek",
@@ -4411,7 +4384,6 @@
             "Tom",
             "Dan",
             "Mike Sombloski",
-            "Mrs. Sombloski",
             "Josh",
             "Nate V",
             "Andrew Clarke",
@@ -4432,7 +4404,6 @@
             "Tom",
             "Dan",
             "Mike Sombloski",
-            "Mrs. Sombloski",
             "Josh",
             "Nate V",
             "Derek",
@@ -4466,6 +4437,10 @@
         {
           "at": "2026-10-11T20:31:17.849835+00:00",
           "note": "9 of 15 final. Dan and Ryan Holovics tied at 8–1."
+        },
+        {
+          "at": "2026-10-11T20:50:33.442266+00:00",
+          "note": "10 of 15 final. Dan and Ryan Holovics tied at 8–1. Out of it: Mrs. Sombloski."
         }
       ],
       "housePicks": {
@@ -4691,8 +4666,10 @@
           "won": true
         }
       },
-      "decidedAtLastRun": 9,
-      "outAtLastRun": [],
+      "decidedAtLastRun": 10,
+      "outAtLastRun": [
+        "Mrs. Sombloski"
+      ],
       "face": {
         "photo": "/pool/faces/w5.jpg",
         "who": "Garret",
@@ -4708,10 +4685,11 @@
       },
       "columnN": 21,
       "columnHead": "A 57-yarder breaks the tie",
-      "thuDone": true
+      "thuDone": true,
+      "notice": "Giants at Commanders ended 27–27 after overtime. A tied game counts for nobody: it isn't right or wrong for anyone, it comes off every record, and this week is now scored out of 14 games instead of 15. It's the same for everybody, so nobody gained or lost ground on anyone. The standings already reflect it. — G."
     }
   },
-  "updated": "2026-10-11T20:31:17.849835+00:00",
+  "updated": "2026-10-11T20:51:41.897534+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
