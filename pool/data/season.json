@@ -3277,8 +3277,8 @@
               "Garret"
             ]
           },
-          "live": "Broncos 7–3 · 2nd qtr",
-          "liveAt": "2026-10-11T21:06:57Z"
+          "live": "Tied 10–10 · 3rd qtr",
+          "liveAt": "2026-10-11T22:09:39Z"
         },
         {
           "away": "Lions",
@@ -3319,8 +3319,8 @@
               "Claude"
             ]
           },
-          "live": "Cardinals 7–0 · 2nd qtr",
-          "liveAt": "2026-10-11T21:06:57Z"
+          "live": "Halftime · Lions 24–7",
+          "liveAt": "2026-10-11T22:09:39Z"
         },
         {
           "away": "49ers",
@@ -3361,8 +3361,8 @@
               "Claude"
             ]
           },
-          "live": "Tied 7–7 · 2nd qtr",
-          "liveAt": "2026-10-11T21:06:57Z"
+          "live": "Halftime · 49ers 21–13",
+          "liveAt": "2026-10-11T22:09:39Z"
         },
         {
           "away": "Ravens",
@@ -4692,7 +4692,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-11T21:12:03.590408+00:00",
+  "updated": "2026-10-11T22:11:43.983633+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
