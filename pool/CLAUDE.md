@@ -270,7 +270,7 @@ generate or alter a face. Also update the form's This week line ("<Name>'s on th
 Your latest sheet before each game's kickoff counts for that game; a sheet after kickoff voids that game only.
 Tied game counts for nobody. Blank tiebreaker = worst guess. Skipping a week is free. Kaylani & Luka are one entrant
 (every spelling maps to "Kaylani & Luka" via `aliases`); add aliases for new spellings, never merge two people.
-**People:** Devin is a woman (she/her). Amanda Rodgers goes by **Arod** on the board (renamed in all weeks Oct 8). **Two Andys both file as plain "Andy":** Andrew Clarke (the `andy` alias) and Andy R. A new sheet named just "Andy" is ambiguous — ask Garret which, then map that one sheet with `season.subNames[<submission id>] = "Andy R"` (Week 5: Andy R paid by PayPal). Use names, not guessed pronouns, for anyone else unless Garret says.
+**People:** Devin is a woman (she/her). Amanda Rodgers goes by **Arod** on the board (renamed in all weeks Oct 8). **Two Andys both file as plain "Andy":** Andrew Clarke (the `andy` alias) and Andy R. A new sheet named just "Andy" is ambiguous — ask Garret which, then map that one sheet with `season.subNames[<submission id>] = "Andy R"` (Week 5: Andy R paid by PayPal). Week 5: Andy R refiled Sunday morning as "Andy" (rDRK1Rl, also his). Use names, not guessed pronouns, for anyone else unless Garret says.
 Claude is the house entry, tagged House: through Week 5 random sealed picks that couldn't win; from Week 6 real public
 picks, paid in by Garret, eligible to win, winnings roll over (see Bot weeks).
 Trash talk is published exactly as written; the only edit is one the author asks for, via
