@@ -1,15 +1,84 @@
 {
- "updated": "2026-10-09T05:13:19Z",
+ "updated": "2026-10-11T13:10:29Z",
  "week": 5,
  "games": {
-  "0": {
-   "state": "post",
-   "away": 24,
-   "home": 16,
-   "detail": "Final",
-   "winner": "Buccaneers",
-   "score": "24–16",
-   "line": "Final · Buccaneers 24–16"
+  "1": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 9:30 AM EDT"
+  },
+  "2": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 1:00 PM EDT"
+  },
+  "3": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 1:00 PM EDT"
+  },
+  "4": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 1:00 PM EDT"
+  },
+  "5": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 1:00 PM EDT"
+  },
+  "6": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 1:00 PM EDT"
+  },
+  "7": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 1:00 PM EDT"
+  },
+  "8": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 1:00 PM EDT"
+  },
+  "9": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 1:00 PM EDT"
+  },
+  "10": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 4:05 PM EDT"
+  },
+  "11": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 4:25 PM EDT"
+  },
+  "12": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 4:25 PM EDT"
+  },
+  "13": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/11 - 8:20 PM EDT"
   }
  }
 }
