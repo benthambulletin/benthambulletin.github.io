@@ -516,6 +516,12 @@ if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="
     v=al.length===1?esc(al[0].name):al.length+' still alive';
     sub=(al.length>1?Object.keys(byRec).sort(function(a,b){return b-a;}).map(function(c){return byRec[c].map(esc).join(' · ')+' — <b>'+c+'</b> right';}).join('<br>')+'<br>':'')+
         'Kickoff · <span class="cd" data-until="'+esc(o.kickoff)+'"></span>';
+  } else if(L.length&&open.length&&Date.parse(open[0].kickoff)-now<=60*60000){
+    /* last hour before the next lock: the countdown takes the big line (Garret, Oct 11) */
+    var nk=open[0].kickoff, batch=open.filter(function(g){return g.kickoff===nk;}); isCd=true;
+    k='Next lock · '+(batch.length===1?esc(batch[0].away)+' at '+esc(batch[0].home):batch.length+' games kick off');
+    v='<span class="cd" data-until="'+esc(nk)+'"></span>';
+    sub=(L.length===1?'Leader: '+esc(L[0].name)+' · <b>'+L[0].correct+'–'+L[0].missed+'</b>':L.length+'-way tie at <b>'+etop+'</b> right')+' · <b>'+left+'</b> game'+(left===1?'':'s')+' to go';
   } else if(L.length){
     k='Leading Week '+D.week;
     v=L.length===1?esc(L[0].name):L.length+'-way tie';
