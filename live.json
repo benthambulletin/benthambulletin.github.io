@@ -1,41 +1,41 @@
 {
- "updated": "2026-10-11T17:05:46Z",
+ "updated": "2026-10-11T17:07:47Z",
  "week": 5,
  "games": {
   "1": {
    "state": "in",
    "away": 14,
    "home": 16,
-   "detail": "1:04 - 4th",
-   "line": "Jaguars 16–14 · 1:04 - 4th"
+   "detail": "0:25 - 4th",
+   "line": "Jaguars 16–14 · 0:25 - 4th"
   },
   "2": {
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "13:20 - 1st",
-   "line": "Tied 0–0 · 13:20 - 1st"
+   "detail": "12:38 - 1st",
+   "line": "Tied 0–0 · 12:38 - 1st"
   },
   "3": {
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "14:25 - 1st",
-   "line": "Tied 0–0 · 14:25 - 1st"
+   "detail": "12:10 - 1st",
+   "line": "Tied 0–0 · 12:10 - 1st"
   },
   "4": {
    "state": "in",
-   "away": 0,
+   "away": 7,
    "home": 0,
-   "detail": "14:12 - 1st",
-   "line": "Tied 0–0 · 14:12 - 1st"
+   "detail": "14:03 - 1st",
+   "line": "Bengals 7–0 · 14:03 - 1st"
   },
   "5": {
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "14:06 - 1st",
-   "line": "Tied 0–0 · 14:06 - 1st"
+   "detail": "13:23 - 1st",
+   "line": "Tied 0–0 · 13:23 - 1st"
   },
   "6": {
    "state": "in",
@@ -48,22 +48,22 @@
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "13:38 - 1st",
-   "line": "Tied 0–0 · 13:38 - 1st"
+   "detail": "11:28 - 1st",
+   "line": "Tied 0–0 · 11:28 - 1st"
   },
   "8": {
    "state": "in",
    "away": 0,
-   "home": 0,
-   "detail": "13:07 - 1st",
-   "line": "Tied 0–0 · 13:07 - 1st"
+   "home": 6,
+   "detail": "13:00 - 1st",
+   "line": "Commanders 6–0 · 13:00 - 1st"
   },
   "9": {
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "13:45 - 1st",
-   "line": "Tied 0–0 · 13:45 - 1st"
+   "detail": "12:21 - 1st",
+   "line": "Tied 0–0 · 12:21 - 1st"
   },
   "10": {
    "state": "pre",
