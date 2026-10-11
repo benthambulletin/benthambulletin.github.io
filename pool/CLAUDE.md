@@ -241,7 +241,7 @@ https://benthambulletin.github.io/pool/"
 ## The board (design locked Oct 2; additions only when Garret asked)
 Top to bottom (reworked Oct 6 from an outside review Garret sent): double rule + "The Sunday Tax" → tabs (The Board · Make picks · Rules) → hero (grey kicker, one big
 line, one grey subline: before kickoff the kicker reads "Payment due · first kickoff" (paid weeks, until payBy) or "First kickoff", over a countdown; the score while one game is on; "N games live" with the Bills/Jets
-scores; the leader between games; 45 min before the last game "N still alive"; Monday night "If it ended now" + what
+scores; the leader between games, except in the last hour before any lock, when the kicker reads "Next lock · Away at Home" (or "N games kick off") over a big mm:ss countdown with the leader in the subline (Garret, Oct 11); 45 min before the last game "N still alive"; Monday night "If it ended now" + what
 each result means; the champion when final) → red "Make your picks" button (hidden when nothing's left to pick) →
 **status line "N in · N paid · $X pot · Venmo @Garret-Bentham"** (Venmo part until the Thursday deadline) → lock line
 "Each game locks at its own kickoff. Resubmit to change games that haven't started. · Add to calendar" (plus the next
