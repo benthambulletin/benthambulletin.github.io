@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T18:37:02Z",
+ "updated": "2026-10-11T18:39:04Z",
  "week": 5,
  "games": {
   "1": {
@@ -22,8 +22,8 @@
    "state": "in",
    "away": 7,
    "home": 14,
-   "detail": "14:55 - 3rd",
-   "line": "Packers 14–7 · 14:55 - 3rd"
+   "detail": "13:33 - 3rd",
+   "line": "Packers 14–7 · 13:33 - 3rd"
   },
   "4": {
    "state": "in",
@@ -41,17 +41,17 @@
   },
   "6": {
    "state": "in",
-   "away": 6,
+   "away": 13,
    "home": 7,
-   "detail": "12:54 - 3rd",
-   "line": "Saints 7–6 · 12:54 - 3rd"
+   "detail": "12:06 - 3rd",
+   "line": "Vikings 13–7 · 12:06 - 3rd"
   },
   "7": {
    "state": "in",
    "away": 12,
    "home": 3,
-   "detail": "Halftime",
-   "line": "Texans 12–3 · Halftime"
+   "detail": "15:00 - 3rd",
+   "line": "Texans 12–3 · 15:00 - 3rd"
   },
   "8": {
    "state": "in",
