@@ -2789,8 +2789,8 @@
               "Garret"
             ]
           },
-          "live": "Jets 7–6 · 2nd qtr",
-          "liveAt": "2026-10-11T18:08:38Z"
+          "live": "Jets 7–6 · 3rd qtr",
+          "liveAt": "2026-10-11T19:07:35Z"
         },
         {
           "away": "Bears",
@@ -2831,8 +2831,8 @@
               "Garret"
             ]
           },
-          "live": "Packers 14–7 · 2nd qtr",
-          "liveAt": "2026-10-11T18:08:38Z"
+          "live": "Packers 20–7 · 3rd qtr",
+          "liveAt": "2026-10-11T19:07:35Z"
         },
         {
           "away": "Bengals",
@@ -2873,8 +2873,8 @@
               "Claude"
             ]
           },
-          "live": "Bengals 14–7 · 2nd qtr",
-          "liveAt": "2026-10-11T18:08:38Z"
+          "live": "Bengals 21–7 · 3rd qtr",
+          "liveAt": "2026-10-11T19:07:35Z"
         },
         {
           "away": "Raiders",
@@ -2915,8 +2915,8 @@
               "Claude"
             ]
           },
-          "live": "Patriots 14–7 · 2nd qtr",
-          "liveAt": "2026-10-11T18:08:38Z"
+          "live": "Patriots 28–7 · 3rd qtr",
+          "liveAt": "2026-10-11T19:07:35Z"
         },
         {
           "away": "Vikings",
@@ -2957,8 +2957,8 @@
               "Claude"
             ]
           },
-          "live": "Saints 7–3 · 2nd qtr",
-          "liveAt": "2026-10-11T18:08:38Z"
+          "live": "Tied 13–13 · 4th qtr",
+          "liveAt": "2026-10-11T19:07:35Z"
         },
         {
           "away": "Texans",
@@ -2999,8 +2999,8 @@
               "Claude"
             ]
           },
-          "live": "Texans 9–3 · 2nd qtr",
-          "liveAt": "2026-10-11T18:08:38Z"
+          "live": "Texans 19–3 · 3rd qtr",
+          "liveAt": "2026-10-11T19:07:35Z"
         },
         {
           "away": "Giants",
@@ -3041,8 +3041,8 @@
               "Claude"
             ]
           },
-          "live": "Commanders 9–3 · 2nd qtr",
-          "liveAt": "2026-10-11T18:08:38Z"
+          "live": "Commanders 19–6 · 3rd qtr",
+          "liveAt": "2026-10-11T19:07:35Z"
         },
         {
           "away": "Colts",
@@ -3083,8 +3083,8 @@
               "Claude"
             ]
           },
-          "live": "Steelers 14–13 · 2nd qtr",
-          "liveAt": "2026-10-11T18:08:38Z"
+          "live": "Steelers 24–16 · 3rd qtr",
+          "liveAt": "2026-10-11T19:07:35Z"
         },
         {
           "away": "Broncos",
@@ -4330,7 +4330,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-11T18:10:11.880794+00:00",
+  "updated": "2026-10-11T19:10:50.677831+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
