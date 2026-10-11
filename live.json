@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T21:11:00Z",
+ "updated": "2026-10-11T21:13:01Z",
  "week": 5,
  "games": {
   "1": {
@@ -87,8 +87,8 @@
    "state": "in",
    "away": 7,
    "home": 3,
-   "detail": "2:55 - 2nd",
-   "line": "Broncos 7–3 · 2:55 - 2nd"
+   "detail": "2:10 - 2nd",
+   "line": "Broncos 7–3 · 2:10 - 2nd"
   },
   "11": {
    "state": "in",
@@ -100,9 +100,9 @@
   "12": {
    "state": "in",
    "away": 7,
-   "home": 7,
-   "detail": "13:37 - 2nd",
-   "line": "Tied 7–7 · 13:37 - 2nd"
+   "home": 10,
+   "detail": "13:27 - 2nd",
+   "line": "Seahawks 10–7 · 13:27 - 2nd"
   },
   "13": {
    "state": "pre",
