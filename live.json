@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T23:42:43Z",
+ "updated": "2026-10-11T23:44:44Z",
  "week": 5,
  "games": {
   "1": {
@@ -102,11 +102,13 @@
    "line": "Final · Lions 45–21"
   },
   "12": {
-   "state": "in",
+   "state": "post",
    "away": 32,
    "home": 29,
-   "detail": "0:20 - 4th",
-   "line": "49ers 32–29 · 0:20 - 4th"
+   "detail": "Final",
+   "winner": "49ers",
+   "score": "32–29",
+   "line": "Final · 49ers 32–29"
   },
   "13": {
    "state": "pre",
