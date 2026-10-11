@@ -2725,8 +2725,8 @@
               "Devin"
             ]
           },
-          "live": "Eagles 14–10 · 3rd qtr",
-          "liveAt": "2026-10-11T16:10:59Z"
+          "live": "Jaguars 16–14 · 4th qtr",
+          "liveAt": "2026-10-11T17:09:49Z"
         },
         {
           "away": "Browns",
@@ -2766,7 +2766,9 @@
               "Ryan Holovics",
               "Garret"
             ]
-          }
+          },
+          "live": "Tied 0–0 · 1st qtr",
+          "liveAt": "2026-10-11T17:09:49Z"
         },
         {
           "away": "Bears",
@@ -2806,7 +2808,9 @@
               "Ryan Holovics",
               "Garret"
             ]
-          }
+          },
+          "live": "Tied 0–0 · 1st qtr",
+          "liveAt": "2026-10-11T17:09:49Z"
         },
         {
           "away": "Bengals",
@@ -2846,7 +2850,9 @@
               "B-rad",
               "Claude"
             ]
-          }
+          },
+          "live": "Bengals 7–0 · 1st qtr",
+          "liveAt": "2026-10-11T17:09:49Z"
         },
         {
           "away": "Raiders",
@@ -2886,7 +2892,9 @@
               "Devin",
               "Claude"
             ]
-          }
+          },
+          "live": "Tied 0–0 · 1st qtr",
+          "liveAt": "2026-10-11T17:09:49Z"
         },
         {
           "away": "Vikings",
@@ -2926,7 +2934,9 @@
               "Ariel",
               "Claude"
             ]
-          }
+          },
+          "live": "Tied 0–0 · 1st qtr",
+          "liveAt": "2026-10-11T17:09:49Z"
         },
         {
           "away": "Texans",
@@ -2966,7 +2976,9 @@
               "Mrs. Sombloski",
               "Claude"
             ]
-          }
+          },
+          "live": "Titans 3–0 · 1st qtr",
+          "liveAt": "2026-10-11T17:09:49Z"
         },
         {
           "away": "Giants",
@@ -3006,7 +3018,9 @@
               "Devin",
               "Claude"
             ]
-          }
+          },
+          "live": "Commanders 6–0 · 1st qtr",
+          "liveAt": "2026-10-11T17:09:49Z"
         },
         {
           "away": "Colts",
@@ -3046,7 +3060,9 @@
               "Devin",
               "Claude"
             ]
-          }
+          },
+          "live": "Tied 0–0 · 1st qtr",
+          "liveAt": "2026-10-11T17:09:49Z"
         },
         {
           "away": "Broncos",
@@ -4286,7 +4302,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-11T17:04:59.571319+00:00",
+  "updated": "2026-10-11T17:11:22.401904+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
