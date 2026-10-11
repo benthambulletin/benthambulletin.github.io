@@ -2694,10 +2694,37 @@
           "tv": "NFL Network",
           "winner": null,
           "score": null,
-          "status": "sealed",
+          "status": "live",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Eagles": [
+              "B-rad",
+              "Mrs. Sombloski",
+              "Melissa",
+              "Ariel",
+              "Claude"
+            ],
+            "Jaguars": [
+              "Andrew Clarke",
+              "Thom",
+              "Peggy",
+              "Leah",
+              "Andy R",
+              "Arod",
+              "Walczyk",
+              "Tom",
+              "Dan",
+              "Mike Sombloski",
+              "Josh",
+              "Nate V",
+              "Derek",
+              "Ryan Holovics",
+              "Kaylani & Luka",
+              "Garret",
+              "Devin"
+            ]
+          }
         },
         {
           "away": "Browns",
@@ -2881,7 +2908,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Buccaneers"
+            "0": "Buccaneers",
+            "1": "Eagles"
           },
           "filedAt": "2026-10-06T20:46:34+00:00",
           "firstAt": "2026-10-06T20:46:34+00:00",
@@ -2902,7 +2930,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Buccaneers"
+            "0": "Buccaneers",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-07T23:13:48+00:00",
           "firstAt": "2026-10-07T23:11:42+00:00",
@@ -2923,7 +2952,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Buccaneers"
+            "0": "Buccaneers",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-08T19:42:16+00:00",
           "firstAt": "2026-10-08T19:42:16+00:00",
@@ -2944,7 +2974,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Buccaneers"
+            "0": "Buccaneers",
+            "1": "Eagles"
           },
           "filedAt": "2026-10-07T01:21:34+00:00",
           "firstAt": "2026-10-07T01:21:34+00:00",
@@ -2965,7 +2996,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Buccaneers"
+            "0": "Buccaneers",
+            "1": "Eagles"
           },
           "filedAt": "2026-10-07T22:09:03+00:00",
           "firstAt": "2026-10-07T22:09:03+00:00",
@@ -2986,7 +3018,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-11T12:03:18+00:00",
           "firstAt": "2026-10-06T23:11:38+00:00",
@@ -3007,7 +3040,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-08T19:17:39+00:00",
           "firstAt": "2026-10-08T19:17:39+00:00",
@@ -3028,7 +3062,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-08T17:27:54+00:00",
           "firstAt": "2026-10-08T17:27:54+00:00",
@@ -3049,7 +3084,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Eagles"
           },
           "filedAt": "2026-10-08T23:51:31+00:00",
           "firstAt": "2026-10-08T23:51:31+00:00",
@@ -3075,7 +3111,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Eagles"
           },
           "filedAt": "2026-10-06T11:44:52+00:00",
           "firstAt": "2026-10-06T11:44:52+00:00",
@@ -3096,7 +3133,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-07T00:45:26+00:00",
           "firstAt": "2026-10-07T00:45:26+00:00",
@@ -3117,7 +3155,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-06T12:47:50+00:00",
           "firstAt": "2026-10-06T12:47:50+00:00",
@@ -3138,7 +3177,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-06T12:52:53+00:00",
           "firstAt": "2026-10-06T12:52:53+00:00",
@@ -3159,7 +3199,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-07T14:42:49+00:00",
           "firstAt": "2026-10-07T14:42:49+00:00",
@@ -3180,7 +3221,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-06T13:12:22+00:00",
           "firstAt": "2026-10-06T13:04:05+00:00",
@@ -3201,7 +3243,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-07T22:28:55+00:00",
           "firstAt": "2026-10-07T22:28:55+00:00",
@@ -3222,7 +3265,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-07T12:38:11+00:00",
           "firstAt": "2026-10-07T12:38:11+00:00",
@@ -3243,7 +3287,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-08T23:38:45+00:00",
           "firstAt": "2026-10-08T23:38:45+00:00",
@@ -3269,7 +3314,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-06T15:14:19+00:00",
           "firstAt": "2026-10-06T15:14:19+00:00",
@@ -3290,7 +3336,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-10T17:26:49+00:00",
           "firstAt": "2026-10-06T12:48:14+00:00",
@@ -3311,7 +3358,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-08T02:32:10+00:00",
           "firstAt": "2026-10-08T02:32:10+00:00",
@@ -3332,7 +3380,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Cowboys"
+            "0": "Cowboys",
+            "1": "Jaguars"
           },
           "filedAt": "2026-10-08T15:21:17+00:00",
           "firstAt": "2026-10-08T15:21:17+00:00",
@@ -3537,7 +3586,36 @@
       ],
       "opensAt": "2026-10-06T11:44:52Z",
       "tbUsed": false,
-      "decides": [],
+      "decides": [
+        {
+          "game": 1,
+          "away": [
+            "B-rad",
+            "Mrs. Sombloski",
+            "Melissa",
+            "Ariel"
+          ],
+          "home": [
+            "Andrew Clarke",
+            "Thom",
+            "Peggy",
+            "Leah",
+            "Andy R",
+            "Arod",
+            "Walczyk",
+            "Tom",
+            "Dan",
+            "Mike Sombloski",
+            "Josh",
+            "Nate V",
+            "Derek",
+            "Ryan Holovics",
+            "Kaylani & Luka",
+            "Garret",
+            "Devin"
+          ]
+        }
+      ],
       "updates": [
         {
           "at": "2026-10-09T03:35:20.599656+00:00",
@@ -3562,6 +3640,17 @@
             ],
             "upset": true,
             "rightN": 5
+          },
+          "1": {
+            "away": 4,
+            "home": 17,
+            "minority": "Eagles",
+            "minorityWho": [
+              "B-rad",
+              "Mrs. Sombloski",
+              "Melissa",
+              "Ariel"
+            ]
           }
         },
         "upsets": 1,
@@ -3611,7 +3700,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-11T13:12:19.893275+00:00",
+  "updated": "2026-10-11T13:35:00.098168+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
