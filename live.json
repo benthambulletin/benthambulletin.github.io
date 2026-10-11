@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T18:43:07Z",
+ "updated": "2026-10-11T18:45:09Z",
  "week": 5,
  "games": {
   "1": {
@@ -15,8 +15,8 @@
    "state": "in",
    "away": 6,
    "home": 7,
-   "detail": "15:00 - 3rd",
-   "line": "Jets 7–6 · 15:00 - 3rd"
+   "detail": "13:48 - 3rd",
+   "line": "Jets 7–6 · 13:48 - 3rd"
   },
   "3": {
    "state": "in",
@@ -36,22 +36,22 @@
    "state": "in",
    "away": 7,
    "home": 21,
-   "detail": "Halftime",
-   "line": "Patriots 21–7 · Halftime"
+   "detail": "14:30 - 3rd",
+   "line": "Patriots 21–7 · 14:30 - 3rd"
   },
   "6": {
    "state": "in",
    "away": 13,
    "home": 7,
-   "detail": "11:28 - 3rd",
-   "line": "Vikings 13–7 · 11:28 - 3rd"
+   "detail": "9:31 - 3rd",
+   "line": "Vikings 13–7 · 9:31 - 3rd"
   },
   "7": {
    "state": "in",
    "away": 12,
    "home": 3,
-   "detail": "12:53 - 3rd",
-   "line": "Texans 12–3 · 12:53 - 3rd"
+   "detail": "11:33 - 3rd",
+   "line": "Texans 12–3 · 11:33 - 3rd"
   },
   "8": {
    "state": "in",
@@ -64,8 +64,8 @@
    "state": "in",
    "away": 13,
    "home": 17,
-   "detail": "Halftime",
-   "line": "Steelers 17–13 · Halftime"
+   "detail": "14:50 - 3rd",
+   "line": "Steelers 17–13 · 14:50 - 3rd"
   },
   "10": {
    "state": "pre",
