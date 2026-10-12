@@ -3468,7 +3468,9 @@
               "Dan",
               "Claude"
             ]
-          }
+          },
+          "live": "Falcons 7–3 · 2nd qtr",
+          "liveAt": "2026-10-12T01:10:00Z"
         },
         {
           "away": "Bills",
@@ -4832,7 +4834,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-12T00:24:46.135350+00:00",
+  "updated": "2026-10-12T01:10:17.893099+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
