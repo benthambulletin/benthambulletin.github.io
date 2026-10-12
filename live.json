@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T01:46:34Z",
+ "updated": "2026-10-12T01:48:36Z",
  "week": 5,
  "games": {
   "1": {
@@ -112,10 +112,10 @@
   },
   "13": {
    "state": "in",
-   "away": 6,
+   "away": 9,
    "home": 14,
-   "detail": "0:06 - 2nd",
-   "line": "Falcons 14–6 · 0:06 - 2nd"
+   "detail": "Halftime",
+   "line": "Falcons 14–9 · Halftime"
   }
  }
 }
