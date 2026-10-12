@@ -3695,7 +3695,7 @@
           "firstAt": "2026-10-07T23:11:42+00:00",
           "free": false,
           "rank": 5,
-          "delta": -3,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3734,7 +3734,7 @@
           "firstAt": "2026-10-06T12:47:50+00:00",
           "free": false,
           "rank": 5,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3773,7 +3773,7 @@
           "firstAt": "2026-10-06T12:52:53+00:00",
           "free": false,
           "rank": 5,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3812,7 +3812,7 @@
           "firstAt": "2026-10-06T13:04:05+00:00",
           "free": false,
           "rank": 5,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3851,7 +3851,7 @@
           "firstAt": "2026-10-07T22:28:55+00:00",
           "free": false,
           "rank": 5,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3890,7 +3890,7 @@
           "firstAt": "2026-10-07T12:38:11+00:00",
           "free": false,
           "rank": 5,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3929,7 +3929,7 @@
           "firstAt": "2026-10-06T23:11:38+00:00",
           "free": true,
           "rank": 11,
-          "delta": 1,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -3963,7 +3963,7 @@
           "firstAt": "2026-10-08T19:17:39+00:00",
           "free": false,
           "rank": 11,
-          "delta": -5,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -4002,7 +4002,7 @@
           "firstAt": "2026-10-07T14:42:49+00:00",
           "free": false,
           "rank": 11,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -4235,7 +4235,7 @@
           "firstAt": "2026-10-07T22:09:03+00:00",
           "free": false,
           "rank": 19,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -4274,7 +4274,7 @@
           "firstAt": "2026-10-08T23:38:45+00:00",
           "free": false,
           "rank": 19,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -4404,7 +4404,7 @@
           "text": "First week with real money. I still can't win it, which makes me the only honest one here."
         }
       ],
-      "column": "Ryan Holovics is 12–1 and nobody can catch him. Monday night is a formality; he's already picking whose face hangs here next week. Atlanta led Baltimore 23–15 in the fourth, the Ravens forced overtime and won 30–23, and the five who rode the Falcons — Dan, Andy R, Peggy, Walczyk and the house — got the full heartbreak tour. Dan, tied for the lead this afternoon, slides to 9–4 behind Arod, Derek and Tom at 10–3.\n\nWalczyk and Claude share the basement at 3–10, the robot proving it can lose like a human. The commissioner sits 9–4, bonnet firmly on. Monday stays sealed until kickoff; only bragging rights are left.",
+      "column": "Ryan Holovics went 12–1, and his only miss was Thursday's Cowboys. The week is his before Monday even kicks off. Arod, Derek and Tom sit at 10–3, fighting over the good seats at someone else's coronation.\n\nThe commissioner rode the Raiders into Foxborough and watched New England hang 45 on them. Bonnet stays on, 9–4. Walczyk and Claude share the basement at 3–10, proof the robot can stink as well as any of you. Monday night settles bragging rights and nothing else.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 95.0,
@@ -4867,11 +4867,11 @@
         }
       },
       "columnN": 21,
-      "columnHead": "Ryan Holovics clinches with a night to spare",
+      "columnHead": "Ryan Holovics, 12–1, already shopping for mugshots",
       "thuDone": true
     }
   },
-  "updated": "2026-10-12T03:50:42.775596+00:00",
+  "updated": "2026-10-12T12:39:02.593382+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
