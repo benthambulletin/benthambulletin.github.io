@@ -309,11 +309,8 @@ def main():
         for nm in season.get("autoPaid", []):
             if any(canon(p["name"]) == canon(nm) for p in real): paid.add(canon(nm))
         for p in players: p["paid"] = (not p.get("house")) and canon(p["name"]) in paid
-        # wk.botPaid (Garret pays Claude's $5, from Week 6): the house is a paid entry and can win; its winnings roll over
-        if wk.get("botPaid"):
-            for p in players:
-                if p.get("house"): p["paid"] = True
-            paid.add("__house__")
+        # wk.botPaid (from Week 6; Garret, Oct 12): Claude can win without paying in — nobody pays its $5, it adds
+        # nothing to the pot, and anything it wins rolls into next week's pot
         eligible = [p for p in real if p["paid"]] + ([p for p in players if p.get("house")] if wk.get("botPaid") else [])
         if eligible:
             elead = max(p["correct"] for p in eligible)
@@ -413,7 +410,7 @@ def main():
     wk["trash"] = trash
     # during the week the pot counts everyone who has paid, filed or not (people pay first, then file);
     # at --final it is paid sheets only — a payment with no sheet is refunded
-    npaid = len(eligible) if final else len(paid)
+    npaid = len([p for p in eligible if not p.get("house")]) if final else len(paid)
     wk["pot"] = (buy * npaid + float(wk.get("rollIn", 0) or 0)) if buy else 0   # rollIn: Claude's winnings from last week
     wk["paidN"] = npaid if buy else 0
     wk["decides"] = decides[:4]
