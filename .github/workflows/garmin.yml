@@ -1,15 +1,14 @@
 name: Garmin pull
 
-# Garret is up around 7:30 and the watch syncs when he opens the app, so
-# pull at 8:15 and 9:15 a.m. Eastern (12:15/13:15 UTC covers EDT and EST)
-# with a 2 p.m. catch-up for late syncs. The paper does not use this data;
+# Garret is up around 7:30 and the watch syncs when he opens the app.
+# GitHub runs cron late — on Oct 11 the 7:45/8:15/9:15 a.m. slots fired at
+# 12:46, 1:40 and 2:03 p.m. — so this fires every half hour from 7 a.m. to
+# 4 p.m. Eastern on odd minutes (less contention); each run is a minute and
+# commits only when something changed. The paper does not use this data;
 # the dashboard and Claude do. Runnable by hand from Actions.
 on:
   schedule:
-    - cron: "45 11 * * *"
-    - cron: "15 12 * * *"
-    - cron: "15 13 * * *"
-    - cron: "0 18 * * *"
+    - cron: "7,37 11-20 * * *"
   workflow_dispatch:
     inputs:
       days_back:
