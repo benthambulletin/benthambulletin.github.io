@@ -3525,7 +3525,7 @@
           "firstAt": "2026-10-08T17:27:54+00:00",
           "free": true,
           "rank": 2,
-          "delta": 3,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3558,7 +3558,7 @@
           "firstAt": "2026-10-07T23:11:42+00:00",
           "free": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3591,7 +3591,7 @@
           "firstAt": "2026-10-07T00:45:26+00:00",
           "free": false,
           "rank": 2,
-          "delta": 3,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3624,7 +3624,7 @@
           "firstAt": "2026-10-08T02:32:10+00:00",
           "free": false,
           "rank": 2,
-          "delta": 1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -3657,7 +3657,7 @@
           "firstAt": "2026-10-08T19:17:39+00:00",
           "free": false,
           "rank": 6,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3695,7 +3695,7 @@
           "firstAt": "2026-10-06T12:47:50+00:00",
           "free": false,
           "rank": 6,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3733,7 +3733,7 @@
           "firstAt": "2026-10-06T12:52:53+00:00",
           "free": false,
           "rank": 6,
-          "delta": -3,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3771,7 +3771,7 @@
           "firstAt": "2026-10-06T13:04:05+00:00",
           "free": false,
           "rank": 6,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3809,7 +3809,7 @@
           "firstAt": "2026-10-07T22:28:55+00:00",
           "free": false,
           "rank": 6,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3847,7 +3847,7 @@
           "firstAt": "2026-10-07T12:38:11+00:00",
           "free": false,
           "rank": 6,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3885,7 +3885,7 @@
           "firstAt": "2026-10-06T23:11:38+00:00",
           "free": true,
           "rank": 12,
-          "delta": 1,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -3918,7 +3918,7 @@
           "firstAt": "2026-10-07T14:42:49+00:00",
           "free": false,
           "rank": 12,
-          "delta": -7,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3956,7 +3956,7 @@
           "firstAt": "2026-10-06T20:46:34+00:00",
           "free": false,
           "rank": 14,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -3994,7 +3994,7 @@
           "firstAt": "2026-10-08T23:51:31+00:00",
           "free": false,
           "rank": 14,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -4036,7 +4036,7 @@
           "firstAt": "2026-10-08T19:42:16+00:00",
           "free": false,
           "rank": 14,
-          "delta": 2,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -4074,7 +4074,7 @@
           "firstAt": "2026-10-06T12:48:14+00:00",
           "free": true,
           "rank": 14,
-          "delta": 2,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -4107,7 +4107,7 @@
           "firstAt": "2026-10-07T01:21:34+00:00",
           "free": false,
           "rank": 18,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -4145,7 +4145,7 @@
           "firstAt": "2026-10-08T23:38:45+00:00",
           "free": false,
           "rank": 18,
-          "delta": -2,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -4187,7 +4187,7 @@
           "firstAt": "2026-10-07T22:09:03+00:00",
           "free": false,
           "rank": 20,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -4258,7 +4258,7 @@
           "firstAt": "2026-10-08T15:21:17+00:00",
           "free": false,
           "rank": 21,
-          "delta": -2,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -4757,7 +4757,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-11T23:51:15.659013+00:00",
+  "updated": "2026-10-12T00:11:52.486716+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
