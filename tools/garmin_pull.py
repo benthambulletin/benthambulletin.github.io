@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CSV = ROOT / "data" / "garmin-daily.csv"
 SUMMARY = ROOT / "data" / "garmin-summary.json"
 FIELDS = ["date", "sleep_h", "bedtime", "wake", "sleep_score", "deep_h", "rem_h",
-          "awake_h", "bb_high", "bb_low", "stress", "rhr", "hrv", "resp", "steps", "step_goal"]
+          "awake_h", "bb_high", "bb_low", "stress", "rhr", "hrv", "resp", "steps", "step_goal", "active_kcal", "intensity_min"]
 DAYS_BACK = int(os.environ.get("GARMIN_DAYS_BACK", "7"))
 BB_FLAG = 70
 SLEEP_SHORT_H = 0.5  # shorter than the 60-day median by this much flags
@@ -102,6 +102,11 @@ def pull(client, day):
             out["steps"] = str(int(st["totalSteps"]))
         if st.get("dailyStepGoal") is not None:
             out["step_goal"] = str(int(st["dailyStepGoal"]))
+        if st.get("activeKilocalories") is not None:
+            out["active_kcal"] = str(int(st["activeKilocalories"]))
+        mod, vig = st.get("moderateIntensityMinutes"), st.get("vigorousIntensityMinutes")
+        if mod is not None or vig is not None:
+            out["intensity_min"] = str(int(mod or 0) + 2 * int(vig or 0))  # Garmin's own weighting
     except Exception as e:  # noqa: BLE001
         print(f"{ds} steps: {e}", file=sys.stderr)
     try:
