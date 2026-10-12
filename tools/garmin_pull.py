@@ -16,6 +16,7 @@ import json
 import os
 import sys
 from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -234,7 +235,9 @@ def main():
         pass
 
     rows = read_csv()
-    today = date.today()
+    today = datetime.now(ZoneInfo("America/New_York")).date()  # Garret's day, not UTC
+    for d in [d for d in rows if d > today.isoformat()]:
+        del rows[d]  # rows written by an evening run under tomorrow's UTC date
     pulled = 0
     for i in range(DAYS_BACK):
         day = today - timedelta(days=i)
