@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CSV = ROOT / "data" / "garmin-daily.csv"
 SUMMARY = ROOT / "data" / "garmin-summary.json"
 FIELDS = ["date", "sleep_h", "bedtime", "wake", "sleep_score", "deep_h", "rem_h",
-          "awake_h", "bb_high", "bb_low", "stress", "rhr", "hrv", "resp"]
+          "awake_h", "bb_high", "bb_low", "stress", "rhr", "hrv", "resp", "steps", "step_goal"]
 DAYS_BACK = int(os.environ.get("GARMIN_DAYS_BACK", "7"))
 BB_FLAG = 70
 SLEEP_SHORT_H = 0.5  # shorter than the 60-day median by this much flags
@@ -95,6 +95,14 @@ def pull(client, day):
             out["rhr"] = str(int(m[0]["value"]))
     except Exception as e:  # noqa: BLE001
         print(f"{ds} rhr: {e}", file=sys.stderr)
+    try:
+        st = client.get_stats(ds) or {}
+        if st.get("totalSteps") is not None:
+            out["steps"] = str(int(st["totalSteps"]))
+        if st.get("dailyStepGoal") is not None:
+            out["step_goal"] = str(int(st["dailyStepGoal"]))
+    except Exception as e:  # noqa: BLE001
+        print(f"{ds} steps: {e}", file=sys.stderr)
     try:
         h = client.get_hrv_data(ds) or {}
         v = (h.get("hrvSummary") or {}).get("lastNightAvg")
