@@ -4803,5 +4803,16 @@
   "wake_dev_min": -7,
   "bb_high": 74,
   "stress_yday": 35.0
+ },
+ {
+  "date": "2026-10-12",
+  "score": 2,
+  "flags": [
+   "stress elevated yesterday",
+   "short night"
+  ],
+  "wake_dev_min": -1,
+  "bb_high": 87,
+  "stress_yday": 37.0
  }
 ]
