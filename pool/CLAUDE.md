@@ -203,6 +203,7 @@ game, just send the message.
    win; anything Claude wins rolls into the next week's pot. Claude's tiebreaker is the Monday game's closing
    over/under, set at kickoff. Then delete this step from this file.
 6a. **Week 6 only (Garret, Oct 12):** add the payment row `{"id": "manual-w6-ryan-holovics", "amt": "5.00", "who": "Ryan Holovics", "status": "manual"}` to `weeks.6.payments` — Ryan asked Garret to keep $5 of his Week 5 winnings as his Week 6 dues, so he is paid the moment he files (if his Board name differs, point `who` at the name he files under). Then delete this step.
+6c. **Week 6 mugshot (Garret, Oct 12):** Ryan Holovics (Week 5 winner, pending Monday night) picked **Leah**. The form's This week line says "Leah's on the mugshot." Set `weeks.6.face` only once Garret sends her photo (see The Mugshot); until then the placeholder stays. If Ryan does not win Week 5 after all, skip this and ask Garret. Then delete this step.
 6b. If `pool/data/notice.json` exists, delete it (a ruling lasts its own week only — Garret, Oct 11).
 7. Land as "Pool: Week N slate". Board check.
 **Names (from Week 6):** score.py keys each player by full name (stored only as a hash in `season.people`) and shows
