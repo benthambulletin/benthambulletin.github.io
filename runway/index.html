@@ -13,7 +13,7 @@
 <title>Migraine Runway</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
-/* Layout: one column, phone-first. Status and a one-line instruction, the experimental score with its scoreboard, four graded tiles, the flags, a 14-night strip, the log, the barometer as context, the audited findings last. */
+/* Layout: one column, phone-first. Status and a one-line instruction, the experimental score with its scoreboard, four graded tiles, the flags, a 14-night strip, the log, the audited findings last. */
 :root{
   --bg:#f2f3ef; --panel:#ffffff; --ink:#1b2024; --ink-2:#5a6269; --line:#d9dcd6;
   --accent:#2b5f7a;
@@ -160,15 +160,6 @@ td.n{text-align:right;font-family:var(--mono)}
     <table id="logtable"><thead><tr><th>Who</th><th>When</th><th>Started</th><th class="n">Gap</th></tr></thead><tbody></tbody></table>
   </section>
 
-  <section class="panel">
-    <h2>Barometer</h2>
-    <div class="tiles" style="grid-template-columns:repeat(3,1fr)">
-      <div class="tile"><div class="eyebrow">Now · KIAG</div><div class="v" id="p-now">–</div><div class="s">mb, sea level</div></div>
-      <div class="tile"><div class="eyebrow">24 h change</div><div class="v" id="p-d24">–</div><div class="s" id="p-trend">–</div></div>
-      <div class="tile"><div class="eyebrow">Next 48 h</div><div class="v" id="p-fc">–</div><div class="s" id="p-fc-s">biggest swing</div></div>
-    </div>
-    <p class="note" style="margin:12px 0 0"><b>Tracked, not a predictor.</b> Forty of your attacks against hourly readings since April 2025: the pressure change at onset matched any random hour, rises and falls alike. Confirmed by an independent re-check Oct 10.</p>
-  </section>
 
   <section class="panel">
     <h2>What your data says <span class="tag">audited Oct 10, 2026</span></h2>
@@ -178,7 +169,7 @@ td.n{text-align:right;font-family:var(--mono)}
       <li><b>Resting heart rate</b> runs 1.5–2 bpm above your usual for the three days before.</li>
       <li><b>Stress two days out</b>: 37 vs 33. Small, but a third of those days scored 40+.</li>
       <li><b>Attacks cluster</b> a little, but a recent attack does <em>not</em> raise tomorrow's odds. Days-since is context, not risk.</li>
-      <li><b>Pressure:</b> no signal, either direction.</li>
+      <li><b>Pressure:</b> no signal, either direction. Still logged for the family; off this page.</li>
     </ul>
     <p class="note" style="margin:12px 0 0">From 28 logged attacks with watch data (Jun 2025–Jan 2026, Sep–Oct 2026). Unlogged months are excluded from every comparison. The score built from these is a hypothesis; the scoreboard above is the test.</p>
   </section>
@@ -209,7 +200,6 @@ td.n{text-align:right;font-family:var(--mono)}
     try{daily=await getCSV("garmin-daily.csv");}catch(e){errs.push("watch history");}
     try{const m=await getJSON("migraines.json");attacks=(Array.isArray(m)?m:m.entries||[]).map(e=>({who:e.who,date:e.date,time:e.time||"",woke:e.woke}));}
     catch(e){try{const h=await getCSV("migraines-history.csv");attacks=h.map(e=>({who:e.person,date:e.date,time:e.time_local,woke:e.woke_from_sleep==="y"}));}catch(e2){errs.push("attack log");}}
-    try{press=await getJSON("pressure-summary.json");}catch(e){errs.push("barometer");}
     try{rlog=await getJSON("runway-log.json");}catch(e){}
     $("error").hidden=!errs.length; if(errs.length)$("error").textContent="Couldn't load: "+errs.join(", ")+". Showing what came through.";
     lastLoad=Date.now(); $("updated").textContent="Updated "+new Date().toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"})+(g?" · watch data to "+g.night_ending:"");
@@ -340,10 +330,7 @@ td.n{text-align:right;font-family:var(--mono)}
     $("logsum").textContent=`${thisMonth} logged this month across the family · your median gap ${medGap??"–"} days (months you logged)`;
     attacks.slice(0,8).forEach(a=>{const prev=attacks.find(b=>b.who===a.who&&b.date<a.date);const gap=prev?dayDiff(D(a.date),D(prev.date)):"";const tr=document.createElement("tr");tr.innerHTML=`<td>${a.who||"–"}</td><td>${nice(D(a.date))}</td><td>${a.time||"–"}${a.woke===true||a.woke==="y"?" · woke":""}</td><td class="n">${gap!==""?gap+" d":""}</td>`;tb.appendChild(tr);});
 
-    // barometer
-    if(press&&press.stations&&press.stations.KIAG){const k=press.stations.KIAG;$("p-now").textContent=fmt1(k.latest_mb);$("p-d24").textContent=(k.d24h_mb>0?"+":"")+fmt1(k.d24h_mb);$("p-trend").textContent=k.trend||"";
-      const f=press.forecast&&press.forecast.KIAG;if(f){$("p-fc").textContent=(f.max_24h_change_mb>0?"+":"")+fmt1(f.max_24h_change_mb);$("p-fc-s").textContent=f.swing_alert?"big swing coming":"biggest swing";}}
-    $("stamp").textContent=`watch ${g?g.generated_utc:"–"} · barometer ${press?press.generated_utc:"–"} · data: benthambulletin.github.io`;
+    $("stamp").textContent=`watch ${g?g.generated_utc:"–"} · data: benthambulletin.github.io`;
   }
   $("refresh").addEventListener("click",load);
   document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&Date.now()-lastLoad>10*60*1000)load();});
