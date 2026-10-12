@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T03:46:23Z",
+ "updated": "2026-10-12T03:48:25Z",
  "week": 5,
  "games": {
   "1": {
@@ -111,11 +111,13 @@
    "line": "Final · 49ers 32–29"
   },
   "13": {
-   "state": "in",
+   "state": "post",
    "away": 30,
    "home": 23,
-   "detail": "2:50 - OT",
-   "line": "Ravens 30–23 · 2:50 - OT"
+   "detail": "Final/OT",
+   "winner": "Ravens",
+   "score": "30–23",
+   "line": "Final · Ravens 30–23 (OT)"
   }
  }
 }
