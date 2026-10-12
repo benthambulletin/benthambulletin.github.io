@@ -123,7 +123,7 @@ S5. S2 only for games that are FINAL. **Column:** Thursday and Monday 8:17 only 
 who took which side of the Thursday game and the trash talk; Monday — who's still alive and on which side, what each
 result means using the now-public tiebreakers. Sunday locks leave the column alone.
 **Monday 8:17 in bot weeks, before S4:** set `housePicks.tb` = the Monday game's closing over/under, rounded to a whole
-number (two sources) — Claude's tiebreaker (see Claude pays in).
+number (two sources) — Claude's tiebreaker (see Claude can win, free).
 Land as "Pool: Week N kickoff lock". Board check.
 
 ## Run: THURSDAY FINAL (Thu 11:32 pm) — task "Thursday night final"
@@ -199,9 +199,9 @@ game, just send the message.
    (optional) — Garret answers the best ones on the board"; set `form.questions.ask` to its short id (read it from
    `fetch_submissions` → `questions`). (c) In `about/index.html` replace the two Claude paragraphs and the 🪙 badge
    entry: Claude now makes real picks, shown on the board as Beat the Bot with a Lock of the Week; the badge is
-   🤖 "Beaten by the Bot — you're behind Claude's picks". Garret pays Claude's $5, so Claude is a paid entry and can
-   win; anything Claude wins rolls into the next week's pot. Claude's tiebreaker is the Monday game's closing
-   over/under, set at kickoff. Then delete this step from this file.
+   🤖 "Beaten by the Bot — you're behind Claude's picks". Claude doesn't pay in but can win; if it does, that week's
+   pot rolls into the next week's pot. Claude's tiebreaker is the Monday game's closing
+   over/under, set at kickoff. Also change "Claude never pays and never wins." in the money paragraph to "Claude doesn't pay in, but it can win — if it does, the pot rolls into next week." Then delete this step from this file.
 6a. **Week 6 only (Garret, Oct 12):** add the payment row `{"id": "manual-w6-ryan-holovics", "amt": "5.00", "who": "Ryan Holovics", "status": "manual"}` to `weeks.6.payments` — Ryan asked Garret to keep $5 of his Week 5 winnings as his Week 6 dues, so he is paid the moment he files (if his Board name differs, point `who` at the name he files under). Then delete this step.
 6c. **Week 6 mugshot (Garret, Oct 12):** Ryan Holovics (Week 5 winner, pending Monday night) picked **Leah**. The form's This week line says "Leah's on the mugshot." Set `weeks.6.face` only once Garret sends her photo (see The Mugshot); until then the placeholder stays. If Ryan does not win Week 5 after all, skip this and ask Garret. Then delete this step.
 6b. If `pool/data/notice.json` exists, delete it (a ruling lasts its own week only — Garret, Oct 11).
@@ -212,8 +212,8 @@ send Garret every LINKED line privately in that run's message (or the next 8:07 
 CHECK means it was a guess (shared nickname or a name collision). Full names never go on the board or in the column.
 **Bot weeks (from Week 6, `weeks.N.bot`):** every new week makes Claude's real picks as in step 6(a) — research, never
 random — keeps the house's picks public, and sets `botPaid = true` and `rollIn` = last week's `rollOut`.
-**Claude pays in (Garret, Oct 8):** Garret covers Claude's $5 each week (no Venmo row; `botPaid` does it). Claude ranks
-and can win like any paid sheet. Whatever Claude wins (`rollOut`, printed as `ROLLOVER:`) is never paid out — it rolls
+**Claude can win, free (Garret, Oct 12 — replaces "Garret pays Claude's $5"):** nobody pays for Claude and it adds nothing
+to the pot (`botPaid` now just means "eligible"; score.py leaves it out of paidN and the pot). Claude ranks and can win like a paid sheet, with no ✓. Whatever Claude wins (`rollOut`, printed as `ROLLOVER:`) is never paid out — it rolls
 into next week's pot (`rollIn`), and keeps rolling if Claude wins again. A tie with a human splits: the human is paid
 their share, Claude's share rolls. **Claude's tiebreaker** is the Monday game's closing over/under: the Monday 8:17
 kickoff-lock run sets `housePicks.tb` to it (rounded to a whole number; two sources) — never earlier, so nobody can aim
@@ -275,7 +275,7 @@ Tied game counts for nobody. Blank tiebreaker = worst guess. Skipping a week is 
 (every spelling maps to "Kaylani & Luka" via `aliases`); add aliases for new spellings, never merge two people.
 **People:** Devin is a woman (she/her). Amanda Rodgers goes by **Arod** on the board (renamed in all weeks Oct 8). **Two Andys both file as plain "Andy":** Andrew Clarke (the `andy` alias) and Andy R. A new sheet named just "Andy" is ambiguous — ask Garret which, then map that one sheet with `season.subNames[<submission id>] = "Andy R"` (Week 5: Andy R paid by PayPal). Week 5: Andy R refiled Sunday morning as "Andy" (rDRK1Rl, also his). Use names, not guessed pronouns, for anyone else unless Garret says.
 Claude is the house entry, tagged House: through Week 5 random sealed picks that couldn't win; from Week 6 real public
-picks, paid in by Garret, eligible to win, winnings roll over (see Bot weeks).
+picks, free but eligible to win, winnings roll over (see Bot weeks).
 Trash talk is published exactly as written; the only edit is one the author asks for, via
 `weeks.N.trashFix = {name: {"from": exact text, "to": fixed}}`.
 
