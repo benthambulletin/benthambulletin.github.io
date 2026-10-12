@@ -694,7 +694,7 @@ if(D.trash.length){
 /* Beat the Bot: Claude's picks out in the open (bot weeks) */
 if(D.bot&&D.bot.picks&&Object.keys(D.bot.picks).length){
   var B=D.bot, gi=function(i){return D.games[+i];};
-  h+=orn("Beat the Bot",true)+'<div class="hint">Claude’s picks, in the open. Finish ahead of it and it goes on your tally.</div><div class="btb">';
+  h+=orn("Beat the Bot",true)+'<div class="hint">Claude’s picks, in the open. Finish ahead of it and it goes on your tally. If Claude wins the week, the pot rolls over.</div><div class="btb">';
   if(B.lock!=null&&gi(B.lock)){var lg=gi(B.lock); h+='<div class="lk">🔒 Lock of the Week: <b>'+esc(B.picks[String(B.lock)]||'')+'</b> ('+esc(lg.away)+' at '+esc(lg.home)+')'+(lg.winner?(lg.winner===B.picks[String(B.lock)]?' · <b style="color:var(--teal)">cashed</b>':' · <b style="color:var(--red)">busted</b>'):'')+(B.lockWhy?'<br><span class="why">'+esc(B.lockWhy)+'</span>':'')+'</div>';}
   h+='<details class="tmore"><summary>See all of Claude’s picks ›</summary><ul>'+Object.keys(B.picks).sort(function(a,b){return a-b;}).map(function(i){var g=gi(i);if(!g)return '';var pk=B.picks[i],ok=g.winner?(g.winner===pk?' ✓':' ✗'):'';
     return '<li><b>'+esc(pk)+'</b>'+ok+' <span class="why">over '+esc(pk===g.home?g.away:g.home)+((B.why||{})[i]?' — '+esc(B.why[i]):'')+'</span></li>';}).join('')+'</ul></details>';
