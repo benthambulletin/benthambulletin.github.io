@@ -138,6 +138,17 @@ td.n{text-align:right;font-family:var(--mono)}
     <div class="legend"><span><i style="background:var(--accent)"></i>Body Battery at wake (green 80+, yellow 70s, red under 70)</span><span><i style="background:var(--watch)"></i>stress (red dot 40+)</span><span><i style="background:var(--ink-2)"></i>woke early (▼ = 25+ min)</span><span><i style="background:var(--attack)"></i>your migraine</span><span><i style="background:var(--line)"></i>no watch</span></div>
   </section>
 
+  <section class="panel" id="steps" hidden>
+    <h2>Steps <span class="tag">target 8,000</span></h2>
+    <div class="tiles" style="grid-template-columns:repeat(3,1fr)">
+      <div class="tile" id="tile-st-today"><div class="eyebrow">Today</div><div class="v" id="st-today">–</div><div class="s" id="st-today-s">by this morning's sync</div></div>
+      <div class="tile" id="tile-st-ytd"><div class="eyebrow">Hit · YTD</div><div class="v" id="st-ytd">–</div><div class="s" id="st-ytd-s">of days with the watch on</div></div>
+      <div class="tile" id="tile-st-30"><div class="eyebrow">Hit · 30 d</div><div class="v" id="st-30">–</div><div class="s" id="st-30-s">hit rate</div></div>
+    </div>
+    <div id="st-chart" style="margin-top:12px"></div>
+    <p class="note" style="margin:10px 0 0" id="st-note">–</p>
+  </section>
+
   <div class="actions">
     <a class="btn" href="https://tally.so/r/obWNYP" target="_blank" rel="noopener">Log a migraine</a>
     <a class="btn alt" href="https://tally.so/r/Zj4dpo" target="_blank" rel="noopener">Evening check-in</a>
@@ -285,6 +296,40 @@ td.n{text-align:right;font-family:var(--mono)}
       if(mineDates.has(d))s+=`<text x="${x(i)}" y="${Tm+11}" font-size="12" text-anchor="middle" fill="var(--attack)" font-weight="700">●</text>`;
       const dd=D(d);if(i%2===1)s+=`<text x="${x(i)}" y="${H-8}" font-size="10" text-anchor="middle" fill="var(--ink-2)" font-family="var(--mono)">${dd.getMonth()+1}/${dd.getDate()}</text>`;});
     s+=`</svg>`; $("chart").innerHTML=s;
+
+    // steps: target 8,000; YTD and 30-day hit rates count finished days only
+    const TARGET=8000;
+    const stepRows=daily.filter(r=>r.steps!==""&&r.steps!=null&&!isNaN(+r.steps)&&r.date<T);
+    const yStart=iso(new Date(today.getFullYear(),0,1));
+    const ytd=stepRows.filter(r=>r.date>=yStart), hitN=a=>a.filter(r=>+r.steps>=TARGET).length;
+    const d30=iso(new Date(today-30*86400000)); const last30=stepRows.filter(r=>r.date>=d30);
+    const todayRow=byDate[T]; const stToday=todayRow&&todayRow.steps!==""?+todayRow.steps:null;
+    $("steps").hidden=!(stepRows.length||stToday!=null);
+    if(!$("steps").hidden){
+      const pct=(a)=>a.length?Math.round(100*hitN(a)/a.length):null;
+      const gradeT=(id,p)=>{const el=$(id);el.classList.remove("good","watch","bad");if(p!=null)el.classList.add(p>=70?"good":p>=50?"watch":"bad");};
+      $("st-today").textContent=stToday!=null?stToday.toLocaleString():"–"; $("tile-st-today").classList.remove("good","watch","bad"); if(stToday!=null)$("tile-st-today").classList.add(stToday>=TARGET?"good":stToday>=TARGET*0.6?"watch":"bad");
+      const py=pct(ytd),p30=pct(last30);
+      $("st-ytd").textContent=py!=null?py+"%":"–"; $("st-ytd-s").textContent=ytd.length?`${hitN(ytd)} of ${ytd.length} days with the watch on`:"no days yet"; gradeT("tile-st-ytd",py);
+      $("st-30").textContent=p30!=null?p30+"%":"–"; $("st-30-s").textContent=last30.length?`${hitN(last30)} of ${last30.length} days`:"no days yet"; gradeT("tile-st-30",p30);
+      // 30-day bars
+      const sd=[];for(let i=29;i>=0;i--)sd.push(iso(new Date(today-i*86400000)));
+      const SW=680,SH=120,sL=40,sR=12,sT=10,sB=24,spw=SW-sL-sR,sph=SH-sT-sB,bw=spw/30;
+      const mx=15000;
+      let sv=`<svg viewBox="0 0 ${SW} ${SH}" role="img" aria-label="Thirty days of steps against the 8,000 target">`;
+      [0,5000,10000,15000].forEach(v=>{const yy=sT+sph-(v/mx)*sph;sv+=`<line x1="${sL}" x2="${SW-sR}" y1="${yy}" y2="${yy}" stroke="var(--line)"/><text x="${sL-6}" y="${yy+4}" font-size="10" text-anchor="end" fill="var(--ink-2)" font-family="var(--mono)">${v/1000}k</text>`;});
+      const yt=sT+sph-(TARGET/mx)*sph; sv+=`<line x1="${sL}" x2="${SW-sR}" y1="${yt}" y2="${yt}" stroke="var(--good)" stroke-dasharray="4 3" stroke-width="1.5"/>`;
+      sd.forEach((d,i)=>{const r=byDate[d];const v=r&&r.steps!==""&&r.steps!=null?+r.steps:null;const xx=sL+i*bw+2;
+        if(v==null){sv+=`<rect x="${xx}" y="${sT}" width="${bw-4}" height="${sph}" fill="var(--line)" opacity=".4"/>`;return;}
+        const hh=Math.max(2,(Math.min(v,mx)/mx)*sph);const col=d===T?"var(--ink-2)":v>=TARGET?"var(--good)":v>=TARGET*0.6?"var(--watch)":"var(--bad)";
+        sv+=`<rect x="${xx}" y="${sT+sph-hh}" width="${bw-4}" height="${hh}" rx="2" fill="${col}" opacity="${d===T?.5:1}"/>`;
+        if(mineDates.has(d))sv+=`<text x="${xx+(bw-4)/2}" y="${SH-10}" font-size="11" text-anchor="middle" fill="var(--attack)" font-weight="700">●</text>`;
+        const dd=D(d);if(i%5===4)sv+=`<text x="${xx+(bw-4)/2}" y="${SH-1}" font-size="9" text-anchor="middle" fill="var(--ink-2)" font-family="var(--mono)">${dd.getMonth()+1}/${dd.getDate()}</text>`;});
+      sv+=`</svg>`; $("st-chart").innerHTML=sv;
+      const med=a=>{const v=a.map(r=>+r.steps).sort((x,y)=>x-y);return v.length?v[Math.floor(v.length/2)]:null;};
+      const alt=[7000,10000].map(t=>`${(t/1000)}k: ${ytd.length?Math.round(100*ytd.filter(r=>+r.steps>=t).length/ytd.length):0}%`).join(" · ");
+      $("st-note").innerHTML=`<b>Why 8,000:</b> the big step-count studies (JAMA 2021, Lancet Public Health 2022) find the health benefit flattening around 8,000 a day for people under 60; past 10,000 adds little. Regular aerobic movement also has decent evidence for fewer migraine days. Your YTD median is <b>${med(ytd)?med(ytd).toLocaleString():"–"}</b>. For comparison, at ${alt}. Grey bars are days without the watch; ● marks a logged attack. Today's bar is partial until tomorrow's sync.`;
+    }
 
     // log table (gaps within the same person)
     const tb=$("logtable").querySelector("tbody"); tb.innerHTML="";
