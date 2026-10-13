@@ -147,7 +147,7 @@ td.n{text-align:right;font-family:var(--mono)}
   <section class="panel" id="steps" hidden>
     <h2>Steps <span class="tag">target 8,000</span></h2>
     <div class="tiles" style="grid-template-columns:repeat(3,1fr)">
-      <div class="tile" id="tile-st-today"><div class="eyebrow">Today</div><div class="v" id="st-today">–</div><div class="s" id="st-today-s">by this morning's sync</div></div>
+      <div class="tile" id="tile-st-today"><div class="eyebrow">Yesterday</div><div class="v" id="st-today">–</div><div class="s" id="st-today-s">full day</div></div>
       <div class="tile" id="tile-st-ytd"><div class="eyebrow">Hit · YTD</div><div class="v" id="st-ytd">–</div><div class="s" id="st-ytd-s">of days with the watch on</div></div>
       <div class="tile" id="tile-st-30"><div class="eyebrow">Hit · 30 d</div><div class="v" id="st-30">–</div><div class="s" id="st-30-s">hit rate</div></div>
     </div>
@@ -298,7 +298,7 @@ td.n{text-align:right;font-family:var(--mono)}
     const yStart=iso(new Date(today.getFullYear(),0,1));
     const ytd=stepRows.filter(r=>r.date>=yStart), hitN=a=>a.filter(r=>+r.steps>=TARGET).length;
     const d30=iso(new Date(today-30*86400000)); const last30=stepRows.filter(r=>r.date>=d30);
-    const todayRow=byDate[T]; const stToday=todayRow&&todayRow.steps!==""?+todayRow.steps:null;
+    const yRow=byDate[iso(new Date(today-86400000))]; const stToday=yRow&&yRow.steps!==""&&yRow.steps!=null?+yRow.steps:null;
     $("steps").hidden=!(stepRows.length||stToday!=null);
     if(!$("steps").hidden){
       const pct=(a)=>a.length?Math.round(100*hitN(a)/a.length):null;
@@ -323,7 +323,7 @@ td.n{text-align:right;font-family:var(--mono)}
       sv+=`</svg>`; $("st-chart").innerHTML=sv;
       const med=a=>{const v=a.map(r=>+r.steps).sort((x,y)=>x-y);return v.length?v[Math.floor(v.length/2)]:null;};
       const alt=[7000,10000].map(t=>`${(t/1000)}k: ${ytd.length?Math.round(100*ytd.filter(r=>+r.steps>=t).length/ytd.length):0}%`).join(" · ");
-      $("st-note").innerHTML=`<b>Why 8,000:</b> the big step-count studies (JAMA 2021, Lancet Public Health 2022) find the health benefit flattening around 8,000 a day for people under 60; past 10,000 adds little. Regular aerobic movement also has decent evidence for fewer migraine days. Your YTD median is <b>${med(ytd)?med(ytd).toLocaleString():"–"}</b>. For comparison, at ${alt}. Grey bars are days without the watch; ● marks a logged attack. Today's bar is partial until tomorrow's sync.`;
+      $("st-note").innerHTML=`<b>Why 8,000:</b> the big step-count studies (JAMA 2021, Lancet Public Health 2022) find the health benefit flattening around 8,000 a day for people under 60; past 10,000 adds little. Regular aerobic movement also has decent evidence for fewer migraine days. Your YTD median is <b>${med(ytd)?med(ytd).toLocaleString():"–"}</b>. For comparison, at ${alt}. Grey bars are days without the watch; ● marks a logged attack. The right-hand bar is today so far.`;
     }
 
     // log table (gaps within the same person)
