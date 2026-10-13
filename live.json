@@ -1,13 +1,15 @@
 {
- "updated": "2026-10-13T03:47:15Z",
+ "updated": "2026-10-13T03:49:17Z",
  "week": 5,
  "games": {
   "14": {
-   "state": "in",
-   "away": 34,
+   "state": "post",
+   "away": 37,
    "home": 34,
-   "detail": "2:00 - OT",
-   "line": "Tied 34–34 · 2:00 - OT"
+   "detail": "Final/OT",
+   "winner": "Bills",
+   "score": "37–34",
+   "line": "Final · Bills 37–34 (OT)"
   }
  }
 }
