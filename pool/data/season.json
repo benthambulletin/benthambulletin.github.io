@@ -3502,10 +3502,37 @@
           "tv": "ESPN/ABC",
           "winner": null,
           "score": null,
-          "status": "sealed",
+          "status": "live",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Bills": [
+              "B-rad",
+              "Peggy",
+              "Leah",
+              "Walczyk",
+              "Tom",
+              "Dan",
+              "Mike Sombloski",
+              "Mrs. Sombloski",
+              "Josh",
+              "Nate V",
+              "Melissa",
+              "Ariel",
+              "Kaylani & Luka",
+              "Garret",
+              "Devin",
+              "Claude"
+            ],
+            "Rams": [
+              "Andy R",
+              "Thom",
+              "Arod",
+              "Derek",
+              "Andrew Clarke",
+              "Ryan Holovics"
+            ]
+          }
         }
       ],
       "tiebreakTotal": null,
@@ -3518,7 +3545,7 @@
           "void": 0,
           "remaining": 1,
           "max": 13,
-          "tb": null,
+          "tb": 63,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3533,7 +3560,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "49ers",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Rams"
           },
           "filedAt": "2026-10-06T15:14:19+00:00",
           "firstAt": "2026-10-06T15:14:19+00:00",
@@ -3557,7 +3585,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 49,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3572,7 +3600,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "49ers",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Rams"
           },
           "filedAt": "2026-10-08T17:27:54+00:00",
           "firstAt": "2026-10-08T17:27:54+00:00",
@@ -3596,7 +3625,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 54,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3611,7 +3640,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "49ers",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Rams"
           },
           "filedAt": "2026-10-07T00:45:26+00:00",
           "firstAt": "2026-10-07T00:45:26+00:00",
@@ -3635,7 +3665,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 57,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3650,7 +3680,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-08T02:32:10+00:00",
           "firstAt": "2026-10-08T02:32:10+00:00",
@@ -3674,7 +3705,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 43,
           "sheet": {
             "0": "Buccaneers",
             "1": "Jaguars",
@@ -3689,7 +3720,8 @@
             "10": "Chargers",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Falcons"
+            "13": "Falcons",
+            "14": "Bills"
           },
           "filedAt": "2026-10-07T23:13:48+00:00",
           "firstAt": "2026-10-07T23:11:42+00:00",
@@ -3713,7 +3745,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 55,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3728,7 +3760,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-06T12:47:50+00:00",
           "firstAt": "2026-10-06T12:47:50+00:00",
@@ -3752,7 +3785,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 67,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3767,7 +3800,8 @@
             "10": "Chargers",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-06T12:52:53+00:00",
           "firstAt": "2026-10-06T12:52:53+00:00",
@@ -3791,7 +3825,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 52,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3806,7 +3840,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-06T13:12:22+00:00",
           "firstAt": "2026-10-06T13:04:05+00:00",
@@ -3830,7 +3865,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 51,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3845,7 +3880,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-07T22:28:55+00:00",
           "firstAt": "2026-10-07T22:28:55+00:00",
@@ -3869,7 +3905,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 69,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3884,7 +3920,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-07T12:38:11+00:00",
           "firstAt": "2026-10-07T12:38:11+00:00",
@@ -3908,7 +3945,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 68,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3923,7 +3960,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Rams"
           },
           "filedAt": "2026-10-06T23:11:38+00:00",
           "firstAt": "2026-10-06T23:11:38+00:00",
@@ -3942,7 +3980,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 68,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3957,7 +3995,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Falcons"
+            "13": "Falcons",
+            "14": "Rams"
           },
           "filedAt": "2026-10-11T12:03:18+00:00",
           "firstAt": "2026-10-08T19:17:39+00:00",
@@ -3981,7 +4020,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 66,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -3996,7 +4035,8 @@
             "10": "Chargers",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-07T14:42:49+00:00",
           "firstAt": "2026-10-07T14:42:49+00:00",
@@ -4020,7 +4060,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 40,
           "sheet": {
             "0": "Buccaneers",
             "1": "Eagles",
@@ -4035,7 +4075,8 @@
             "10": "Broncos",
             "11": "Cardinals",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-06T20:46:34+00:00",
           "firstAt": "2026-10-06T20:46:34+00:00",
@@ -4059,7 +4100,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 48,
           "sheet": {
             "0": "Cowboys",
             "1": "Eagles",
@@ -4074,7 +4115,8 @@
             "10": "Broncos",
             "11": "Cardinals",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-08T23:51:31+00:00",
           "firstAt": "2026-10-08T23:51:31+00:00",
@@ -4102,7 +4144,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 39,
           "sheet": {
             "0": "Buccaneers",
             "1": "Jaguars",
@@ -4117,7 +4159,8 @@
             "10": "Chargers",
             "11": "Lions",
             "12": "49ers",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-08T19:42:16+00:00",
           "firstAt": "2026-10-08T19:42:16+00:00",
@@ -4141,7 +4184,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -4156,7 +4199,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Rams"
           },
           "filedAt": "2026-10-10T17:26:49+00:00",
           "firstAt": "2026-10-06T12:48:14+00:00",
@@ -4175,7 +4219,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 37,
           "sheet": {
             "0": "Buccaneers",
             "1": "Eagles",
@@ -4190,7 +4234,8 @@
             "10": "Broncos",
             "11": "Cardinals",
             "12": "49ers",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-07T01:21:34+00:00",
           "firstAt": "2026-10-07T01:21:34+00:00",
@@ -4214,7 +4259,7 @@
           "void": 0,
           "remaining": 1,
           "max": 6,
-          "tb": null,
+          "tb": 67,
           "sheet": {
             "0": "Buccaneers",
             "1": "Eagles",
@@ -4229,7 +4274,8 @@
             "10": "Broncos",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Ravens"
+            "13": "Ravens",
+            "14": "Bills"
           },
           "filedAt": "2026-10-07T22:09:03+00:00",
           "firstAt": "2026-10-07T22:09:03+00:00",
@@ -4253,7 +4299,7 @@
           "void": 0,
           "remaining": 1,
           "max": 6,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -4268,7 +4314,8 @@
             "10": "Chargers",
             "11": "Lions",
             "12": "Seahawks",
-            "13": "Falcons"
+            "13": "Falcons",
+            "14": "Bills"
           },
           "filedAt": "2026-10-08T23:38:45+00:00",
           "firstAt": "2026-10-08T23:38:45+00:00",
@@ -4296,7 +4343,7 @@
           "void": 0,
           "remaining": 1,
           "max": 4,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Cowboys",
             "1": "Eagles",
@@ -4311,7 +4358,8 @@
             "10": "Broncos",
             "11": "Cardinals",
             "12": "Seahawks",
-            "13": "Falcons"
+            "13": "Falcons",
+            "14": "Bills"
           },
           "filedAt": "2026-10-06T11:44:52+00:00",
           "firstAt": "2026-10-06T11:44:52+00:00",
@@ -4330,7 +4378,7 @@
           "void": 0,
           "remaining": 1,
           "max": 4,
-          "tb": null,
+          "tb": 56,
           "sheet": {
             "0": "Cowboys",
             "1": "Jaguars",
@@ -4345,7 +4393,8 @@
             "10": "Chargers",
             "11": "Cardinals",
             "12": "Seahawks",
-            "13": "Falcons"
+            "13": "Falcons",
+            "14": "Bills"
           },
           "filedAt": "2026-10-08T15:21:17+00:00",
           "firstAt": "2026-10-08T15:21:17+00:00",
@@ -4404,7 +4453,7 @@
           "text": "First week with real money. I still can't win it, which makes me the only honest one here."
         }
       ],
-      "column": "Ryan Holovics went 12–1, and his only miss was Thursday's Cowboys. The week is his before Monday even kicks off. Arod, Derek and Tom sit at 10–3, fighting over the good seats at someone else's coronation.\n\nThe commissioner rode the Raiders into Foxborough and watched New England hang 45 on them. Bonnet stays on, 9–4. Walczyk and Claude share the basement at 3–10, proof the robot can stink as well as any of you. Monday night settles bragging rights and nothing else.",
+      "column": "Ryan Holovics has the money locked and still took the Rams, because a man at 12–1 can afford a little sightseeing. Rams win and he finishes 13–1, with Arod and Derek tagging along to 11–3. Bills win and Tom, the only 10–3 who stayed home, takes second alone.\n\nSixteen of you rode Buffalo, the commissioner included, which is how you end up 9–4 in a bonnet. Six went Rams. The tiebreakers are public now and settle nothing, but Nate V said 69 and Melissa said 37, so one of them is about to look like a genius and the other like the commissioner.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 95.0,
@@ -4798,6 +4847,19 @@
             ],
             "upset": false,
             "rightN": 17
+          },
+          "14": {
+            "away": 15,
+            "home": 6,
+            "minority": "Rams",
+            "minorityWho": [
+              "Andy R",
+              "Thom",
+              "Arod",
+              "Derek",
+              "Andrew Clarke",
+              "Ryan Holovics"
+            ]
           }
         },
         "upsets": 4,
@@ -4867,11 +4929,11 @@
         }
       },
       "columnN": 21,
-      "columnHead": "Ryan Holovics, 12–1, already shopping for mugshots",
+      "columnHead": "Ryan rides the Rams to a victory lap",
       "thuDone": true
     }
   },
-  "updated": "2026-10-13T00:13:27.575720+00:00",
+  "updated": "2026-10-13T00:19:44.608441+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
