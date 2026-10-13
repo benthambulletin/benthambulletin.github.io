@@ -691,12 +691,14 @@ if(D.trash.length){
   if(TT.length>3) h+='<details class="tmore"><summary>Show all '+TT.length+' ›</summary><ul class="tt">'+TT.slice(3).map(li).join('')+'</ul></details>';
 }
 /* Beat the Bot: Claude's picks out in the open (bot weeks) */
-if(D.bot&&D.bot.picks&&Object.keys(D.bot.picks).length){
+if(D.bot&&D.bot.picks&&(Object.keys(D.bot.picks).length||D.bot.sealedN)){
   var B=D.bot, gi=function(i){return D.games[+i];};
-  h+=orn("Beat the Bot",true)+'<div class="hint">Beat Claude’s record this week and you get a point on the Beat the Bot scoreboard. If Claude wins the week, the pot rolls over.</div><div class="btb">';
+  h+=orn("Beat the Bot",true)+'<div class="hint">Claude makes real picks and can win. Beat its record this week and you get a point on the Beat the Bot scoreboard. If Claude wins the week, the pot rolls over.</div><div class="btb">';
   if(B.lock!=null&&gi(B.lock)){var lg=gi(B.lock); var lp=B.picks[String(B.lock)]||''; h+='<div class="lk">🔒 Lock of the Week: <b>'+esc(lp)+'</b> over '+esc(lp===lg.home?lg.away:lg.home)+(lg.winner?(lg.winner===B.picks[String(B.lock)]?' · <b style="color:var(--teal)">cashed</b>':' · <b style="color:var(--red)">busted</b>'):'')+(B.lockWhy?'<br><span class="why">'+esc(B.lockWhy)+'</span>':'')+'<br><span class="why lkx">Claude’s surest pick of the week. No extra points, just bragging rights.</span>'+'</div>';}
-  h+='<details class="tmore bmore"><summary>See all of Claude’s picks ›</summary><ul>'+Object.keys(B.picks).sort(function(a,b){return a-b;}).map(function(i){var g=gi(i);if(!g)return '';var pk=B.picks[i],ok=g.winner?(g.winner===pk?' ✓':' ✗'):'';
+  var opened=Object.keys(B.picks).filter(function(i){return String(i)!==String(B.lock);});
+  if(opened.length) h+='<details class="tmore bmore"><summary>Claude’s picks so far ›</summary><ul>'+opened.sort(function(a,b){return a-b;}).map(function(i){var g=gi(i);if(!g)return '';var pk=B.picks[i],ok=g.winner?(g.winner===pk?' ✓':' ✗'):'';
     return '<li><b>'+esc(pk)+'</b>'+ok+' <span class="why">over '+esc(pk===g.home?g.away:g.home)+((B.why||{})[i]?' — '+esc(B.why[i]):'')+'</span></li>';}).join('')+'</ul></details>';
+  if(B.sealedN>0) h+='<div class="tl">Claude’s other picks are sealed until each kickoff, same as yours.</div>';
   var tl=Object.keys(D.botTally||{}).sort(function(a,b){return D.botTally[b]-D.botTally[a]||a.localeCompare(b);});
   if(tl.length) h+='<div class="tl">Beat the Bot, season: '+tl.slice(0,8).map(function(n){return DN(n)+' '+D.botTally[n];}).join(' · ')+'</div>';
   h+='</div>';

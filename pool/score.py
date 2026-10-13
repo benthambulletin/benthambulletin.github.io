@@ -209,7 +209,7 @@ def main():
     if "housePicks" in wk and not wk.get("bot"):   # coin-flip weeks: keep only the trash line; the picks stay sealed
         wk["housePicks"] = {"trash": hp.get("trash", "")}
     # Beat the Bot weeks (wk.bot = true, Week 6+): Claude's real picks, reasons and Lock of the Week are written by the
-    # new-week run into housePicks and published on purpose; the house is not a player, so its picks are not sealed.
+    # new-week run into housePicks and build.py seals them on the page until each kickoff (Lock of the Week excepted, Oct 13).
     house_name = None
     if house.get("enabled") and hp and hp.get("picks"):
         house_name = house.get("name", "Claude")

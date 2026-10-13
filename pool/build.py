@@ -105,7 +105,16 @@ def _bot(w):
     """Beat the Bot weeks: Claude's public picks with reasons and the Lock of the Week."""
     if not w.get("bot"): return None
     hp = w.get("housePicks") or {}
-    return {"picks": hp.get("picks", {}), "why": hp.get("why", {}), "lock": hp.get("lock"), "lockWhy": hp.get("lockWhy", "")}
+    # sealed like everyone's (Garret, Oct 13): a pick goes on the page only once its game kicks off;
+    # the Lock of the Week is the one pick shown from the start
+    from datetime import datetime as _D2, timezone as _tz2
+    now = _D2.now(_tz2.utc); g = w.get("games", []); lock = hp.get("lock")
+    def _open(i):
+        try: return str(i) == str(lock) or _D2.fromisoformat(g[int(i)]["kickoff"].replace("Z", "+00:00")) <= now
+        except Exception: return False
+    picks = {i: t for i, t in (hp.get("picks") or {}).items() if _open(i)}
+    why = {i: t for i, t in (hp.get("why") or {}).items() if i in picks}
+    return {"picks": picks, "why": why, "lock": lock, "lockWhy": hp.get("lockWhy", ""), "sealedN": len(hp.get("picks") or {}) - len(picks)}
 # Beat the Bot tally: weeks each player finished with a better record than Claude (final bot weeks only)
 bot_tally = {}
 for k, w in season["weeks"].items():
