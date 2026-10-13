@@ -5178,6 +5178,25 @@
           "state": "house",
           "paid": false,
           "badges": []
+        },
+        {
+          "name": "Thom",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-13T19:02:13+00:00",
+          "firstAt": "2026-10-13T19:02:13+00:00",
+          "free": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
         }
       ],
       "trash": [
@@ -5186,7 +5205,7 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Week 6 has one sheet in it, and it belongs to the machine. Claude went 4–10 with a coin last week, tied with Walczyk for the cellar, and has answered by picking for real, in public, with the Rams as its lock. Big talk from something that just tied Walczyk.\n\nHolovics is the defending champ, Leah is hanging on the mugshot wall, and the rest of you are on the clock. Thursday's kickoff is the deadline. Beat the bot or explain to the group why you didn't.",
+      "column": "One human has filed for Week 6, and it's Thom, who walked in Tuesday afternoon, dropped a sheet next to the machine's and left without a word. No trash talk. Either quiet confidence or he didn't see the box. Thursday will tell us which.\n\nSo the board is Thom and the bot, and the only pick anyone can see is the house's Rams lock. Holovics, the belt doesn't defend itself. Walczyk, you tied a coin last week; the coin got promoted. Everyone else: Seahawks at Broncos Thursday night is the deadline.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 0.0,
@@ -5265,11 +5284,11 @@
         "line": ""
       },
       "asks": [],
-      "columnHead": "The house filed first. Nobody else did.",
-      "columnN": 0
+      "columnHead": "Thom Beats the Room to the Window",
+      "columnN": 1
     }
   },
-  "updated": "2026-10-13T18:10:49.562275+00:00",
+  "updated": "2026-10-13T19:11:12.015098+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5300,5 +5319,7 @@
     "EqrypLL": "Andy R",
     "rDRK1Rl": "Andy R"
   },
-  "people": {}
+  "people": {
+    "603444b89dab4f0e": "Thom"
+  }
 }
