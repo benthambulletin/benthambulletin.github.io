@@ -293,7 +293,7 @@ details.gmore[open]>summary{display:none}
 .btb .lk b{font-family:'PF';font-size:1.1rem}
 .btb ul{list-style:none;margin:0;padding:0}
 .btb li{padding:.3rem 0;border-top:1px dotted var(--rule)}
-.btb .why{color:var(--soft);font-size:.85rem}
+.btb .why{color:var(--soft);font-size:.85rem}.btb .lkx{display:block;margin-top:.35rem;font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.03em}
 .btb .tl{margin:.7rem 0 0;font-family:'AR';font-size:.8rem;color:var(--soft);text-align:center}
 .aqa p{margin:0 0 .3rem}.aqa .q{font-style:italic}.aqa .a{margin-bottom:.9rem}
 .lng{font-size:.7em;line-height:1.2;white-space:normal;display:inline-block;vertical-align:baseline}
@@ -694,7 +694,7 @@ if(D.trash.length){
 if(D.bot&&D.bot.picks&&Object.keys(D.bot.picks).length){
   var B=D.bot, gi=function(i){return D.games[+i];};
   h+=orn("Beat the Bot",true)+'<div class="hint">Claude’s picks, in the open. Finish ahead of it and it goes on your tally. If Claude wins the week, the pot rolls over.</div><div class="btb">';
-  if(B.lock!=null&&gi(B.lock)){var lg=gi(B.lock); var lp=B.picks[String(B.lock)]||''; h+='<div class="lk">🔒 Lock of the Week: <b>'+esc(lp)+'</b> over '+esc(lp===lg.home?lg.away:lg.home)+(lg.winner?(lg.winner===B.picks[String(B.lock)]?' · <b style="color:var(--teal)">cashed</b>':' · <b style="color:var(--red)">busted</b>'):'')+(B.lockWhy?'<br><span class="why">'+esc(B.lockWhy)+'</span>':'')+'</div>';}
+  if(B.lock!=null&&gi(B.lock)){var lg=gi(B.lock); var lp=B.picks[String(B.lock)]||''; h+='<div class="lk">🔒 Lock of the Week: <b>'+esc(lp)+'</b> over '+esc(lp===lg.home?lg.away:lg.home)+(lg.winner?(lg.winner===B.picks[String(B.lock)]?' · <b style="color:var(--teal)">cashed</b>':' · <b style="color:var(--red)">busted</b>'):'')+(B.lockWhy?'<br><span class="why">'+esc(B.lockWhy)+'</span>':'')+'<br><span class="why lkx">Claude’s surest pick of the week. No extra points, just bragging rights.</span>'+'</div>';}
   h+='<details class="tmore bmore"><summary>See all of Claude’s picks ›</summary><ul>'+Object.keys(B.picks).sort(function(a,b){return a-b;}).map(function(i){var g=gi(i);if(!g)return '';var pk=B.picks[i],ok=g.winner?(g.winner===pk?' ✓':' ✗'):'';
     return '<li><b>'+esc(pk)+'</b>'+ok+' <span class="why">over '+esc(pk===g.home?g.away:g.home)+((B.why||{})[i]?' — '+esc(B.why[i]):'')+'</span></li>';}).join('')+'</ul></details>';
   var tl=Object.keys(D.botTally||{}).sort(function(a,b){return D.botTally[b]-D.botTally[a]||a.localeCompare(b);});
