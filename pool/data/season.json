@@ -20,14 +20,16 @@
         "2x4NKe",
         "xNdaJd",
         "RBz5D4",
-        "oVAM2O",
         "GBrdRL",
         "OBA57Y",
         "V1Z5zM",
         "EbPQxB",
         "rrlAo2"
       ],
-      "paid": "vxRvBA"
+      "paid": "vxRvBA",
+      "fullName": "OBA57a",
+      "nick": "JVz8Gd",
+      "ask": "gQGWgd"
     }
   },
   "aliases": {
@@ -45,7 +47,7 @@
     "a-rod": "Arod",
     "amanda rodgers": "Arod"
   },
-  "currentWeek": 5,
+  "currentWeek": 6,
   "weeks": {
     "4": {
       "status": "final",
@@ -4969,9 +4971,303 @@
       "columnHead": "Holovics cashes in, Walczyk ties a coin",
       "thuDone": true,
       "rollOut": 0
+    },
+    "6": {
+      "status": "pre",
+      "games": [
+        {
+          "away": "Seahawks",
+          "home": "Broncos",
+          "kickoff": "2026-10-16T00:15:00Z",
+          "when": "Thu 8:15 PM",
+          "tv": "Prime Video",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Texans",
+          "home": "Jaguars",
+          "kickoff": "2026-10-18T13:30:00Z",
+          "when": "Sun 9:30 AM · London",
+          "tv": "NFL Network",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Panthers",
+          "home": "Eagles",
+          "kickoff": "2026-10-18T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Ravens",
+          "home": "Browns",
+          "kickoff": "2026-10-18T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Bears",
+          "home": "Falcons",
+          "kickoff": "2026-10-18T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Saints",
+          "home": "Giants",
+          "kickoff": "2026-10-18T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Jets",
+          "home": "Patriots",
+          "kickoff": "2026-10-18T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Steelers",
+          "home": "Buccaneers",
+          "kickoff": "2026-10-18T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Titans",
+          "home": "Colts",
+          "kickoff": "2026-10-18T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Cardinals",
+          "home": "Rams",
+          "kickoff": "2026-10-18T20:05:00Z",
+          "when": "Sun 4:05 PM",
+          "tv": "FOX",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Bills",
+          "home": "Raiders",
+          "kickoff": "2026-10-18T20:25:00Z",
+          "when": "Sun 4:25 PM",
+          "tv": "CBS",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Chargers",
+          "home": "Chiefs",
+          "kickoff": "2026-10-18T20:25:00Z",
+          "when": "Sun 4:25 PM",
+          "tv": "CBS",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Cowboys",
+          "home": "Packers",
+          "kickoff": "2026-10-19T00:20:00Z",
+          "when": "Sun 8:20 PM",
+          "tv": "NBC",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        },
+        {
+          "away": "Commanders",
+          "home": "49ers",
+          "kickoff": "2026-10-20T00:15:00Z",
+          "when": "Mon 8:15 PM",
+          "tv": "ESPN/ABC",
+          "winner": null,
+          "score": null,
+          "status": "sealed",
+          "hits": [],
+          "misses": [],
+          "sides": null
+        }
+      ],
+      "tiebreakTotal": null,
+      "players": [
+        {
+          "name": "Claude",
+          "house": true,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-13T08:08:01+00:00",
+          "firstAt": "2026-10-13T08:08:01+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "house",
+          "paid": false,
+          "badges": []
+        }
+      ],
+      "trash": [
+        {
+          "from": "Claude",
+          "text": "No more coin. I read the injury reports now, which is more than most of you can say."
+        }
+      ],
+      "column": "",
+      "weekWinners": [],
+      "weekPayout": 0,
+      "pot": 5.0,
+      "paidN": 1,
+      "buyIn": 5,
+      "payBy": "2026-10-16T00:15:00Z",
+      "payments": [
+        {
+          "id": "manual-w6-ryan-holovics",
+          "amt": "5.00",
+          "who": "Ryan Holovics",
+          "status": "manual"
+        }
+      ],
+      "opensAt": "2026-10-13T08:08:01Z",
+      "tbUsed": false,
+      "decides": [],
+      "updates": [],
+      "housePicks": {
+        "trash": "No more coin. I read the injury reports now, which is more than most of you can say.",
+        "picks": {
+          "0": "Seahawks",
+          "1": "Jaguars",
+          "2": "Eagles",
+          "3": "Ravens",
+          "4": "Bears",
+          "5": "Saints",
+          "6": "Patriots",
+          "7": "Steelers",
+          "8": "Colts",
+          "9": "Rams",
+          "10": "Bills",
+          "11": "Chiefs",
+          "12": "Packers",
+          "13": "49ers"
+        },
+        "why": {
+          "0": "Seattle's a field-goal favorite; Denver's altitude only buys so much.",
+          "1": "Home team in London, and Houston's top back is hurt.",
+          "2": "Coin flip on the number; Barkley may be back.",
+          "3": "Lamar's ankle is trending toward a return. Browns can't score.",
+          "4": "Penix's ribs are a problem; the market drifted to Chicago.",
+          "5": "Giants lost Dart for the season. Fading the backup.",
+          "6": "Patriots by a touchdown-plus. Sorry, Jets fans.",
+          "7": "Mayfield's thumb is the swing; Steelers lay three.",
+          "8": "Colts by a touchdown at home.",
+          "9": "Rams by nearly two touchdowns. Biggest line of the week.",
+          "10": "Bills by six in Vegas. Buffalo hangs on.",
+          "11": "Chiefs by over a touchdown; Chargers' receivers are banged up.",
+          "12": "Line flipped to Green Bay; Lambeau at night.",
+          "13": "Unbeaten Niners at home, laying more than a touchdown."
+        },
+        "lock": "9",
+        "lockWhy": "Rams by 12.5 at home. If I miss this one, hang my mugshot."
+      },
+      "stats": {
+        "games": {},
+        "upsets": 0,
+        "decided": 0,
+        "best": null,
+        "worst": null,
+        "bills": null,
+        "jets": null
+      },
+      "decidedAtLastRun": 0,
+      "outAtLastRun": [],
+      "bot": true,
+      "botPaid": true,
+      "rollIn": 0,
+      "namesForm": true,
+      "face": {
+        "photo": "/pool/faces/w6.jpg",
+        "who": "Leah",
+        "by": "Ryan Holovics",
+        "week": 5,
+        "line": ""
+      },
+      "asks": []
     }
   },
-  "updated": "2026-10-13T04:28:51.712462+00:00",
+  "updated": "2026-10-13T08:08:22.708700+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
