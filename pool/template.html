@@ -73,7 +73,7 @@ details.g[open] summary .s::after{transform:rotate(90deg)}
 .cal[hidden]{display:none}
 .cal{display:block;margin:.55rem 0 0;font-family:'AR';font-weight:700;font-size:.8rem;letter-spacing:.06em;color:var(--teal);text-decoration:none}
 .pastwk{margin:1rem 0 0;text-align:center;font-family:'AR';font-weight:700;font-size:.85rem;line-height:2}
-.pastwk a{color:var(--teal);text-decoration:none;margin:0 .5rem;white-space:nowrap}
+.pastwk a{color:var(--teal);text-decoration:none;display:block;line-height:1.5;padding:.25rem 0}
 /* tiles */
 .tiles{display:flex;margin-top:1rem;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .tile{flex:1;text-align:center;padding:.6rem .2rem;border-right:1px solid var(--rule);min-width:0}
@@ -226,10 +226,10 @@ details.g summary::-webkit-details-marker{display:none}
 .seas th{white-space:nowrap;letter-spacing:.05em;font-size:.55rem;padding-left:.1rem;padding-right:.1rem}
 .seas th.sr,.seas td.sr{width:2rem;text-align:left;padding-left:0}
 .seas td.sr{font-family:'AR';font-weight:700;font-size:.72rem;color:var(--soft)}
-.seas td.snm{font-family:'PF';font-weight:700;font-size:.98rem;text-align:left;white-space:normal;line-height:1.2;overflow-wrap:anywhere}
+.seas td.snm{font-family:'PF';font-weight:700;font-size:.98rem;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}
 .seas th.snm{text-align:left}
 .seas td{padding:.32rem .2rem;font-size:.98rem;font-variant-numeric:tabular-nums;vertical-align:baseline}
-.seas th.sr,.seas td.sr{width:1.9rem}.seas th.rc,.seas td.rc{width:3.3rem}.seas th.sw,.seas td.sw{width:3.4rem}.seas th.money,.seas td.money{width:3.9rem}
+.seas th.sr,.seas td.sr{width:1.9rem}.seas th.rc,.seas td.rc{width:3.3rem}.seas th.sw,.seas td.sw{width:2.3rem}.seas th.money,.seas td.money{width:3.1rem;text-align:right}
 .seas td.rc{font-family:'PF';font-weight:700}
 .seas th.pct,.seas td.pct{width:3.2rem}.seas td.pct{color:var(--soft)}
 .seas td.sw,.seas td.money{color:var(--soft)}
@@ -280,7 +280,7 @@ details.tmore summary{list-style:none;cursor:pointer;font-family:'AR';font-weigh
 details.tmore summary::-webkit-details-marker{display:none}
 details.smore>summary{text-align:center}
 details.smore[open]>summary{display:none}
-details.gmore>summary{text-align:center}
+details.gmore>summary,details.bmore>summary{text-align:center}
 details.gmore[open]>summary{display:none}
 .whoin{list-style:none;margin:0 auto;padding:0;max-width:22rem}
 .whoin li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.4rem 0;border-bottom:1px dotted var(--rule);font-size:1.02rem}
@@ -590,12 +590,11 @@ var decidedN=D.games.filter(function(g){return g.winner;}).length;
 /* board */
 h+='<a id="board"></a>'+orn(decidedN||D.status==="final"?"Standings":"Who’s In");
 if(!D.archive){var ut=Date.parse(D.updated), um=isNaN(ut)?0:Math.round((Date.now()-ut)/60000);
-  h+='<div class="hint">Updated '+esc(fmtWhen(D.updated).replace(/^\w+ /,""))+(um>90?' ('+(um<120?'1 hr':Math.round(um/60)+' hrs')+' ago)':'')+' · refreshes hourly 8 AM–11 PM'+(D.status==="final"?'':' · live scores every 2 min during games')+'</div>';}
+  h+='<div class="hint">Updated '+esc(fmtWhen(D.updated).replace(/^\w+ /,""))+(um>90?' ('+(um<120?'1 hr':Math.round(um/60)+' hrs')+' ago)':'')+(decidedN||D.status==="final"?' · live scores during games':' · <a class="ruleref" href="/pool/about/#sealed">picks sealed until kickoff</a>')+'</div>';}
 var sealedN=D.games.filter(function(g){return g.status==="sealed";}).length;
 if(!ps.length){
   h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
 } else if(!decidedN&&D.status!=="final"){
-  h+='<div class="hint">Picks received from everyone below · <a class="ruleref" href="/pool/about/#sealed">sealed until kickoff</a></div>';
   var hseP=ps.filter(function(p){return p.house;})[0];   /* the house sheet is filed when the week opens; list it last */
   var payOpenW=D.payBy&&Date.parse(D.payBy)>Date.now();
   var two=realPs.length>10;
@@ -695,8 +694,8 @@ if(D.trash.length){
 if(D.bot&&D.bot.picks&&Object.keys(D.bot.picks).length){
   var B=D.bot, gi=function(i){return D.games[+i];};
   h+=orn("Beat the Bot",true)+'<div class="hint">Claude’s picks, in the open. Finish ahead of it and it goes on your tally. If Claude wins the week, the pot rolls over.</div><div class="btb">';
-  if(B.lock!=null&&gi(B.lock)){var lg=gi(B.lock); h+='<div class="lk">🔒 Lock of the Week: <b>'+esc(B.picks[String(B.lock)]||'')+'</b> ('+esc(lg.away)+' at '+esc(lg.home)+')'+(lg.winner?(lg.winner===B.picks[String(B.lock)]?' · <b style="color:var(--teal)">cashed</b>':' · <b style="color:var(--red)">busted</b>'):'')+(B.lockWhy?'<br><span class="why">'+esc(B.lockWhy)+'</span>':'')+'</div>';}
-  h+='<details class="tmore"><summary>See all of Claude’s picks ›</summary><ul>'+Object.keys(B.picks).sort(function(a,b){return a-b;}).map(function(i){var g=gi(i);if(!g)return '';var pk=B.picks[i],ok=g.winner?(g.winner===pk?' ✓':' ✗'):'';
+  if(B.lock!=null&&gi(B.lock)){var lg=gi(B.lock); var lp=B.picks[String(B.lock)]||''; h+='<div class="lk">🔒 Lock of the Week: <b>'+esc(lp)+'</b> over '+esc(lp===lg.home?lg.away:lg.home)+(lg.winner?(lg.winner===B.picks[String(B.lock)]?' · <b style="color:var(--teal)">cashed</b>':' · <b style="color:var(--red)">busted</b>'):'')+(B.lockWhy?'<br><span class="why">'+esc(B.lockWhy)+'</span>':'')+'</div>';}
+  h+='<details class="tmore bmore"><summary>See all of Claude’s picks ›</summary><ul>'+Object.keys(B.picks).sort(function(a,b){return a-b;}).map(function(i){var g=gi(i);if(!g)return '';var pk=B.picks[i],ok=g.winner?(g.winner===pk?' ✓':' ✗'):'';
     return '<li><b>'+esc(pk)+'</b>'+ok+' <span class="why">over '+esc(pk===g.home?g.away:g.home)+((B.why||{})[i]?' — '+esc(B.why[i]):'')+'</span></li>';}).join('')+'</ul></details>';
   var tl=Object.keys(D.botTally||{}).sort(function(a,b){return D.botTally[b]-D.botTally[a]||a.localeCompare(b);});
   if(tl.length) h+='<div class="tl">Beat the Bot, season: '+tl.slice(0,8).map(function(n){return DN(n)+' '+D.botTally[n];}).join(' · ')+'</div>';
@@ -726,17 +725,17 @@ h+=orn("The Season",true)+(D.seasonFrom>1?'<div class="hint">Since Week '+D.seas
   var scmp=function(a,b){return (b.won-a.won)||(b.weeksWon-a.weeksWon)||(b.correct-a.correct)||(a.missed-b.missed);};
   var ss=D.season_table.slice().sort(function(a,b){return scmp(a,b)||a.name.localeCompare(b.name);});
   var srk=function(p){return 1+ss.filter(function(q){return scmp(q,p)<0;}).length;}, stied=function(p){return ss.some(function(q){return q!==p&&scmp(q,p)===0;});};
-  h+='<table class="stand seas"><thead><tr><th class="sr"></th><th class="snm">Player</th><th class="rc">Record</th><th class="pct">Win %</th><th class="sw">Wks won</th>'+(anyWon?'<th class="money">Winnings</th>':'')+'</tr></thead><tbody>';
-  var SN=10, sOpen=!!window.SEAS, anyWon=ss.some(function(p){return p.won>0;});   /* Winnings appears once someone has won money */
+  var SN=10, sOpen=!!window.SEAS, anyWon=ss.some(function(p){return p.won>0;});
+  h+='<table class="stand seas"><thead><tr><th class="sr"></th><th class="snm">Player</th><th class="rc">Record</th><th class="pct">Win %</th><th class="sw">Wks</th>'+(anyWon?'<th class="money">Won</th>':'')+'</tr></thead><tbody>';   /* Winnings appears once someone has won money */
   var pct=function(p){var n=p.correct+p.missed; return n?Math.round(100*p.correct/n)+'%':'';};
-  ss.forEach(function(p,i){if(i>=SN&&!sOpen&&ss.length>SN+1) return; h+='<tr><td class="sr">'+(stied(p)?'T':'')+srk(p)+'</td><td class="snm">'+DN(p.name)+'</td><td class="rc">'+p.correct+'–'+p.missed+'</td><td class="pct">'+pct(p)+'</td><td class="sw">'+(p.weeksWon?'<b>'+p.weeksWon+'</b>':'')+'</td>'+(anyWon?'<td class="money">'+(p.won?'<b>'+money(p.won)+'</b>':'')+'</td>':'')+'</tr>';});
+  ss.forEach(function(p,i){if(i>=SN&&!sOpen&&ss.length>SN+1) return; h+='<tr><td class="sr">'+(stied(p)?'T':'')+srk(p)+'</td><td class="snm">'+esc(p.name)+'</td><td class="rc">'+p.correct+'–'+p.missed+'</td><td class="pct">'+pct(p)+'</td><td class="sw">'+(p.weeksWon?'<b>'+p.weeksWon+'</b>':'')+'</td>'+(anyWon?'<td class="money">'+(p.won?'<b>'+money(p.won)+'</b>':'')+'</td>':'')+'</tr>';});
   h+='</tbody></table>';
   if(ss.length>SN+1&&!sOpen) h+='<div class="tmore" style="text-align:center"><a href="#" id="seasAll" style="font-family:\'AR\';font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--soft);text-decoration:none">Show all '+ss.length+' players ›</a></div>';
 }
 
 /* past weeks */
 if(D.pastWeeks&&D.pastWeeks.length){
-  h+=orn("Past Weeks")+'<div class="hint">Every finished week, with its final board</div><div class="pastwk">'+D.pastWeeks.slice().reverse().map(function(w){return '<a href="/pool/weeks/'+w.week+'/">Week '+w.week+(w.winners&&w.winners.length?': '+esc(w.winners.join(" & "))+' won'+(w.record?', '+esc(w.record):'')+(w.tbUsed?' on the tiebreaker':''):'')+' · see the board ›</a>';}).join('<br>')+'</div>';
+  h+=orn("Past Weeks")+'<div class="hint">Every finished week, with its final board</div><div class="pastwk">'+D.pastWeeks.slice().reverse().map(function(w){return '<a href="/pool/weeks/'+w.week+'/">Week '+w.week+(w.winners&&w.winners.length?' · '+esc(w.winners.join(" & "))+(w.record?', '+esc(w.record):'')+(w.tbUsed?' (tiebreaker)':''):'')+' ›</a>';}).join('')+'</div>';
 }
 /* how it works */
 h+='<div class="more"><a href="/pool/about/">How it works</a><br>The rules, what the badges mean, and who Claude is.</div>';
