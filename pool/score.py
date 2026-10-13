@@ -408,9 +408,8 @@ def main():
                 if p["correct"] == worst: award(p, "cellar", "last place this week")
     wk["players"] = players
     wk["trash"] = trash
-    # during the week the pot counts everyone who has paid, filed or not (people pay first, then file);
-    # at --final it is paid sheets only — a payment with no sheet is refunded
-    npaid = len([p for p in eligible if not p.get("house")]) if final else len(paid)
+    # the pot counts paid sheets only, all week; a payment with no sheet shows up once its player files
+    npaid = len([p for p in players if p.get("paid") and not p.get("house")])   # filed AND paid (Oct 13: "0 in · 1 paid" read like a bug)
     wk["pot"] = (buy * npaid + float(wk.get("rollIn", 0) or 0)) if buy else 0   # rollIn: Claude's winnings from last week
     wk["paidN"] = npaid if buy else 0
     wk["decides"] = decides[:4]

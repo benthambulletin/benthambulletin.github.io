@@ -217,8 +217,8 @@ https://benthambulletin.github.io/pool/"
 - Matching (score.py): note first, then payer (hashed alias, exact name, unique first name); unmatched rows are
   retried every run. Statuses: ok, late (after payBy → refund), dup (refund one), odd (wrong amount), unmatched,
   early (before the week opened), nosheet (paid, never filed → refund, set at final).
-- Pot: during the week = $5 × everyone who has paid, filed or not; at the final = $5 × paid sheets (no-sheet payments
-  are refunded). Payout = pot ÷ winners, rounded down to the cent.
+- Pot and "N paid" = $5 × paid sheets, all week (Oct 13: a prepaid player who hasn't filed yet doesn't count until
+  they file; at the final, no-sheet payments are refunded). Payout = pot ÷ winners, rounded down to the cent.
 - Decisions (Oct 3–6): deadline = Thursday kickoff; no paying ahead or credits; late/no-sheet money refunded by
   Garret; only paid players can win and the pot goes to the highest-ranked paid player.
 
@@ -233,12 +233,11 @@ lock countdown once games have started) → **"Week N champ · Name · record (t
 final board) → **Commissioner's ruling box** (`data/notice.json` = {week, text} — kept out of season.json so runs can't drop it, as the 4:47 run did on Oct 11; only when Garret asks for a ruling to be posted — first used Oct 11 for the Giants–Commanders 27–27 tie; runs never write or clear it) → the Mugshot box. Then always: the board (before any game is final "Who's In" — one row per sheet with "Paid", "Payment pending"
 (before payBy, unless their latest sheet chose "Playing free") or "Playing free", Claude last as House; two across with short labels once more than 10 have filed; once a game is final "Standings" — top 5 + "Show all N
 players ›", winner ranks 1 at the final, leader highlight only for paid sheets, key "✓ = paid"; the hero never says "paid" — Garret, Oct 9), with one line under its heading: "Updated <time> · picks sealed until kickoff" before any game is final, "Updated <time> · live scores during games" after (tidied Oct 13) → The Column (headline + text) → Trash Talk → This Week's Games, collapsed behind "See all N games ›" except while games are on (it opens itself).
-Then By the Numbers, The Season (top 10 + "Show all N players ›", "Since Week 4" note; columns rank (T for ties) · Player (pool name, one line, never the long display name) · Record "12–4" · Win % · Wks · Won (only once someone has won money), empty cells blank — tightened Oct 8 and Oct 13 at Garret's ask), Past Weeks,
-How it works, sign-off "— G." (the bottom updated line shows only on frozen past-week pages).
+Then By the Numbers, The Season (top 10 + "Show all N players ›", "Since Week 4" note; columns rank (T for ties) · Player (pool name, one line, never the long display name) · Record "12–4" · Win % · Weeks won · Won (only once someone has won money), empty cells blank — tightened Oct 8 and Oct 13 at Garret's ask), Past Weeks, sign-off "— G." (the bottom updated line shows only on frozen past-week pages).
 Finals read "Bears 23–12" (winner named). Game rows never read like a score. All times Eastern.
 **Color:** ink/grey text; red only for the picks button, live dot, live scores, wrong-pick dots; teal only for
 right-pick dots. **Eight badges, no more:** crown, cellar (Porta Potty), wolf, homer, coin, dead, buzzer, streak;
-crown/coin/porta potty wait for three finals. Explanations live on `about/`, not the board.
+crown/coin/porta potty wait for three finals. Full explanations live on `about/`; tapping a player's row shows each badge's one-line meaning.
 Phones: the page refetches `data/page.json` on load, on return and every 10 minutes; every build stamps a new time;
 when `template.html` changes the page reloads itself once (`tpl` hash). The receipt (`sheet/`) fits one screenshot.
 

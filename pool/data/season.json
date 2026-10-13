@@ -5189,8 +5189,8 @@
       "column": "Week 6 has one sheet in it, and it belongs to the machine. Claude went 4–10 with a coin last week, tied with Walczyk for the cellar, and has answered by picking for real, in public, with the Rams as its lock. Big talk from something that just tied Walczyk.\n\nHolovics is the defending champ, Leah is hanging on the mugshot wall, and the rest of you are on the clock. Thursday's kickoff is the deadline. Beat the bot or explain to the group why you didn't.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 5.0,
-      "paidN": 1,
+      "pot": 0.0,
+      "paidN": 0,
       "buyIn": 5,
       "payBy": "2026-10-16T00:15:00Z",
       "payments": [
@@ -5269,7 +5269,7 @@
       "columnN": 0
     }
   },
-  "updated": "2026-10-13T12:29:18.958312+00:00",
+  "updated": "2026-10-13T12:38:18.694685+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
