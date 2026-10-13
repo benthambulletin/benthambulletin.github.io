@@ -5180,6 +5180,25 @@
      "badges": []
     },
     {
+     "name": "Brandon Goes Commando",
+     "house": false,
+     "correct": 0,
+     "missed": 0,
+     "void": 0,
+     "remaining": 14,
+     "max": 14,
+     "tb": null,
+     "sheet": {},
+     "filedAt": "2026-10-13T19:36:10+00:00",
+     "firstAt": "2026-10-13T19:36:10+00:00",
+     "free": true,
+     "rank": 1,
+     "delta": 0,
+     "state": "alive",
+     "paid": false,
+     "badges": []
+    },
+    {
      "name": "Claude",
      "house": true,
      "correct": 0,
@@ -5199,6 +5218,25 @@
      "badges": []
     },
     {
+     "name": "Dan",
+     "house": false,
+     "correct": 0,
+     "missed": 0,
+     "void": 0,
+     "remaining": 14,
+     "max": 14,
+     "tb": null,
+     "sheet": {},
+     "filedAt": "2026-10-13T19:34:40+00:00",
+     "firstAt": "2026-10-13T19:34:40+00:00",
+     "free": false,
+     "rank": 1,
+     "delta": 0,
+     "state": "alive",
+     "paid": true,
+     "badges": []
+    },
+    {
      "name": "Devin",
      "house": false,
      "correct": 0,
@@ -5215,6 +5253,25 @@
      "delta": 0,
      "state": "alive",
      "paid": true,
+     "badges": []
+    },
+    {
+     "name": "Josh",
+     "house": false,
+     "correct": 0,
+     "missed": 0,
+     "void": 0,
+     "remaining": 14,
+     "max": 14,
+     "tb": null,
+     "sheet": {},
+     "filedAt": "2026-10-13T19:45:11+00:00",
+     "firstAt": "2026-10-13T19:45:11+00:00",
+     "free": false,
+     "rank": 1,
+     "delta": 0,
+     "state": "alive",
+     "paid": false,
      "badges": []
     },
     {
@@ -5239,6 +5296,10 @@
    ],
    "trash": [
     {
+     "from": "Josh",
+     "text": "Garage, outhouse, same thing."
+    },
+    {
      "from": "Ariel",
      "text": "Sombloski sucks"
     },
@@ -5247,11 +5308,11 @@
      "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
     }
    ],
-   "column": "Three sheets in, and Ariel didn't even wait for the Sombloskis to file before swinging. \"Sombloski sucks,\" she wrote, two words, no evidence, sent into an empty room. Bold for a woman who spent last Sunday in the same basement as them.\n\nDevin, the Week 4 champ, filed quietly, which is how she does it. Thom is in again, playing for free and for love. And Claude has stopped flipping coins and started reading injury reports. Ryan is still counting his $95 and hasn't filed. Kickoff is Thursday.",
+   "column": "Six sheets by Tuesday afternoon, and the room is already armed. Ariel fired first: \"Sombloski sucks,\" two words into an empty room, with neither Sombloski on the board to hear it. Josh followed with \"Garage, outhouse, same thing,\" which is either a scouting report or a home inspection. Nobody's sure who it's for. That's the beauty of it.\n\nDevin, the Week 4 champ, filed without a word, which is how champs do it. Dan, Thom and Brandon Goes Commando are in, the last one proving a board name can be a threat. Claude has quit flipping coins and started reading injury reports. Ryan is still counting his $95 and hasn't filed. Kickoff is Thursday.",
    "weekWinners": [],
    "weekPayout": 0,
-   "pot": 10.0,
-   "paidN": 2,
+   "pot": 15.0,
+   "paidN": 3,
    "buyIn": 5,
    "payBy": "2026-10-16T00:15:00Z",
    "payments": [
@@ -5350,11 +5411,11 @@
     "line": ""
    },
    "asks": [],
-   "columnHead": "Ariel opens Week 6 at war",
-   "columnN": 3
+   "columnHead": "Six sheets in, and the shots are flying",
+   "columnN": 6
   }
  },
- "updated": "2026-10-13T19:34:01.904577+00:00",
+ "updated": "2026-10-13T20:09:41.191330+00:00",
  "plannedBuyIn": 5,
  "house": {
   "name": "Claude",
@@ -5388,6 +5449,9 @@
  "people": {
   "603444b89dab4f0e": "Thom",
   "55cb62a4b94eaf5d": "Devin",
-  "244680c38192bd9a": "Ariel"
+  "244680c38192bd9a": "Ariel",
+  "f6d392e022360d85": "Josh",
+  "85bd4e8a78cab886": "Brandon Goes Commando",
+  "fc31a1b9aa1a31b5": "Dan"
  }
 }
