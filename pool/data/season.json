@@ -5256,6 +5256,25 @@
           "badges": []
         },
         {
+          "name": "Garret",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-14T01:00:26+00:00",
+          "firstAt": "2026-10-14T01:00:26+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Josh",
           "house": false,
           "correct": 0,
@@ -5296,6 +5315,10 @@
       ],
       "trash": [
         {
+          "from": "Garret",
+          "text": "Walczyk should retire"
+        },
+        {
           "from": "Josh",
           "text": "Garage, outhouse, same thing."
         },
@@ -5308,11 +5331,11 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Six sheets by Tuesday afternoon, and the room is already armed. Ariel fired first: \"Sombloski sucks,\" two words into an empty room, with neither Sombloski on the board to hear it. Josh followed with \"Garage, outhouse, same thing,\" which is either a scouting report or a home inspection. Nobody's sure who it's for. That's the beauty of it.\n\nDevin, the Week 4 champ, filed without a word, which is how champs do it. Dan, Thom and Brandon Goes Commando are in, the last one proving a board name can be a threat. Claude has quit flipping coins and started reading injury reports. Ryan is still counting his $95 and hasn't filed. Kickoff is Thursday.",
+      "column": "Seven sheets in, and the commissioner finally showed up Tuesday night with a grudge: \"Walczyk should retire.\" Bold talk from a man who spent Week 5 in a nine-way pileup at 10–4, bonnet still on. Walczyk went 4–10 and tied a coin, so the commissioner isn't wrong, just unoriginal. Ariel's \"Sombloski sucks\" is still hanging there with no Sombloski on the board to answer it, and Josh's garage-outhouse line remains the week's best home inspection.\n\nDevin, Dan, Thom and Brandon Goes Commando round out the room. Claude is reading injury reports now, which is more homework than half of you did. Leah is on the mugshot, courtesy of Ryan, who is still out spending his $95 and hasn't filed. Kickoff is Thursday.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 15.0,
-      "paidN": 3,
+      "pot": 20.0,
+      "paidN": 4,
       "buyIn": 5,
       "payBy": "2026-10-16T00:15:00Z",
       "payments": [
@@ -5411,11 +5434,11 @@
         "line": ""
       },
       "asks": [],
-      "columnHead": "Six sheets in, and the shots are flying",
-      "columnN": 6
+      "columnHead": "The commissioner files, and picks a fight",
+      "columnN": 7
     }
   },
-  "updated": "2026-10-14T00:11:28.002680+00:00",
+  "updated": "2026-10-14T01:09:06.794958+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5452,6 +5475,7 @@
     "244680c38192bd9a": "Ariel",
     "f6d392e022360d85": "Josh",
     "85bd4e8a78cab886": "Brandon Goes Commando",
-    "fc31a1b9aa1a31b5": "Dan"
+    "fc31a1b9aa1a31b5": "Dan",
+    "ee76ee83ec51e034": "Garret"
   }
 }
