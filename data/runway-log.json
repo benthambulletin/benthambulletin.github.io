@@ -4826,5 +4826,16 @@
   "wake_dev_min": 1,
   "bb_high": 73,
   "stress_yday": 46.0
+ },
+ {
+  "date": "2026-10-14",
+  "score": 4,
+  "flags": [
+   "Body Battery low",
+   "resting HR up"
+  ],
+  "wake_dev_min": null,
+  "bb_high": 28,
+  "stress_yday": 29.0
  }
 ]
