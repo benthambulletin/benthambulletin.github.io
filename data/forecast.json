@@ -1,24 +1,24 @@
 {
- "generated_utc": "2026-10-14T11:00Z",
+ "generated_utc": "2026-10-14T15:01Z",
  "towns": {
   "North Tonawanda": {
-   "issued": "2026-10-14T10:11:15+00:00",
+   "issued": "2026-10-14T13:57:56+00:00",
    "periods": [
     {
      "name": "Today",
      "temp": 64,
-     "wind": "NW 8 to 12 mph",
-     "pop": 19,
-     "short": "Slight Chance Rain Showers then Mostly Cloudy",
-     "detail": "A slight chance of rain showers between 8am and 9am. Mostly cloudy, with a high near 64. Northwest wind 8 to 12 mph. Chance of precipitation is 20%."
+     "wind": "NW 10 mph",
+     "pop": 10,
+     "short": "Mostly Cloudy",
+     "detail": "Mostly cloudy, with a high near 64. Northwest wind around 10 mph."
     },
     {
      "name": "Tonight",
      "temp": 45,
-     "wind": "N 8 mph",
+     "wind": "N 9 mph",
      "pop": 0,
      "short": "Mostly Cloudy",
-     "detail": "Mostly cloudy, with a low around 45. North wind around 8 mph."
+     "detail": "Mostly cloudy, with a low around 45. North wind around 9 mph."
     },
     {
      "name": "Thursday",
@@ -87,29 +87,29 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-14T10:45:00+00:00",
-    "text": "Cloudy",
-    "temp_f": 59
+    "time": "2026-10-14T14:40:00+00:00",
+    "text": "Mostly Cloudy",
+    "temp_f": 61
    }
   },
   "Dunkirk": {
-   "issued": "2026-10-14T10:11:15+00:00",
+   "issued": "2026-10-14T13:57:56+00:00",
    "periods": [
     {
      "name": "Today",
      "temp": 63,
-     "wind": "W 12 mph",
-     "pop": 24,
-     "short": "Slight Chance Rain Showers then Mostly Cloudy",
-     "detail": "A slight chance of rain showers before 10am. Mostly cloudy, with a high near 63. West wind around 12 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
+     "wind": "W 13 mph",
+     "pop": 12,
+     "short": "Mostly Cloudy",
+     "detail": "Mostly cloudy, with a high near 63. West wind around 13 mph."
     },
     {
      "name": "Tonight",
      "temp": 43,
-     "wind": "N 12 mph",
+     "wind": "NE 10 to 14 mph",
      "pop": 1,
      "short": "Mostly Cloudy",
-     "detail": "Mostly cloudy, with a low around 43. North wind around 12 mph."
+     "detail": "Mostly cloudy, with a low around 43. Northeast wind 10 to 14 mph."
     },
     {
      "name": "Thursday",
@@ -178,29 +178,29 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-14T10:45:00+00:00",
+    "time": "2026-10-14T14:40:00+00:00",
     "text": "Cloudy",
-    "temp_f": 63
+    "temp_f": 61
    }
   },
   "Scottsville": {
-   "issued": "2026-10-14T10:11:15+00:00",
+   "issued": "2026-10-14T13:57:56+00:00",
    "periods": [
     {
      "name": "Today",
      "temp": 64,
-     "wind": "NW 7 to 12 mph",
-     "pop": 20,
-     "short": "Slight Chance Rain Showers then Cloudy",
-     "detail": "A slight chance of rain showers between 8am and 11am. Cloudy, with a high near 64. Northwest wind 7 to 12 mph. Chance of precipitation is 20%."
+     "wind": "NW 7 to 13 mph",
+     "pop": 29,
+     "short": "Chance Rain Showers",
+     "detail": "A chance of rain showers before 2pm. Cloudy, with a high near 64. Northwest wind 7 to 13 mph. Chance of precipitation is 30%."
     },
     {
      "name": "Tonight",
      "temp": 43,
-     "wind": "N 6 to 10 mph",
+     "wind": "N 7 to 10 mph",
      "pop": 1,
      "short": "Mostly Cloudy",
-     "detail": "Mostly cloudy, with a low around 43. North wind 6 to 10 mph."
+     "detail": "Mostly cloudy, with a low around 43. North wind 7 to 10 mph."
     },
     {
      "name": "Thursday",
@@ -269,9 +269,9 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-14T10:40:00+00:00",
+    "time": "2026-10-14T14:35:00+00:00",
     "text": "Cloudy",
-    "temp_f": 63
+    "temp_f": 59
    }
   }
  },
