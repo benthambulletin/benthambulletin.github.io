@@ -157,7 +157,7 @@ def score_day(rows, day):
         "sleep_h": sleep_h, "usual_sleep_h": round(usual_sleep, 2) if usual_sleep else None,
         "bb_high": bb, "rhr": rhr, "usual_rhr": usual_rhr, "stress_yday": stress,
     }
-    if sleep_h is None and bb is None:
+    if sleep_h is None:  # no sleep record = watch not synced yet; a partial Body Battery would mis-score
         return None, [], detail
     sc, flags = 0, []
     if detail["wake_dev_min"] is not None:
