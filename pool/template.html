@@ -295,7 +295,7 @@ details.gmore[open]>summary{display:none}
 .btb li{padding:.3rem 0;border-top:1px dotted var(--rule)}
 .btb .why{color:var(--soft);font-size:.85rem}.btb .lkx{display:block;margin-top:.35rem;font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.03em}
 .btb .tl{margin:.7rem 0 0;font-family:'AR';font-size:.8rem;color:var(--soft);text-align:center}
-.aqa p{margin:0 0 .3rem}.aqa .q{font-style:italic}.aqa .a{margin-bottom:.9rem}
+.aqa{border:1px solid var(--rule);background:var(--wash);padding:.7rem .85rem}.aqa .aqe{color:var(--soft);font-style:italic}.aqa .aqh{font-family:'AR';font-weight:700;font-size:.75rem;color:var(--soft);margin:.4rem 0 0}.aqa p{margin:0 0 .3rem}.aqa .q{font-style:italic}.aqa .a{margin-bottom:.9rem}
 .lng{font-size:.7em;line-height:1.2;white-space:normal;display:inline-block;vertical-align:baseline}
 .stand td.nm:has(.lng),.whoin.two li>span:first-child:has(.lng){white-space:normal}
 .whoin.two{display:grid;grid-template-columns:1fr 1fr;column-gap:1.2rem;max-width:none}
@@ -704,8 +704,9 @@ if(D.bot&&D.bot.picks&&(Object.keys(D.bot.picks).length||D.bot.sealedN)){
   h+='</div>';
 }
 /* Ask the Commissioner: answered questions only, answers are Garret's */
-if(D.qa&&D.qa.length){
-  h+=orn("Ask the Commissioner")+'<div class="aqa">'+D.qa.map(function(x){return '<p class="q">“'+esc(x.q)+'” — '+DN(x.from)+'</p><p class="a"><b>G.:</b> '+esc(x.a)+'</p>';}).join('')+'</div>';
+if(D.bot&&!D.archive||D.qa&&D.qa.length){
+  h+=orn("Ask the Commissioner")+'<div class="aqa">'+((D.qa||[]).length?D.qa.map(function(x){return '<p class="q">“'+esc(x.q)+'” — '+DN(x.from)+'</p><p class="a"><b>G.:</b> '+esc(x.a)+'</p>';}).join(''):'<p class="aqe">No questions answered yet this week.</p>')+
+    '<p class="aqh">Got a question, a complaint or an appeal? Put it in the last box on your <a href="'+esc(D.formUrl)+'">pick sheet</a>. The commissioner answers the best ones here.</p></div>';
 }
 secs.trash=h; h="";
 

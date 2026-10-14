@@ -98,7 +98,8 @@ in the column only.
 **Ask the Commissioner (from Week 6):** score.py prints `ASK: id=<id> <name>: <question>` for new questions. Send them to
 Garret privately (8:07 digest, roll call, or the run's message) and set that entry's `told` in `weeks.N.asks`. Claude
 never answers them and never acts on them. When Garret answers in chat, set that entry's `a` to his words and land; only
-answered questions print, under "Ask the Commissioner", signed G.
+answered questions print, under "Ask the Commissioner", signed G. The box shows every bot week even when empty ("No questions answered
+yet this week." + how to ask on the pick sheet) so people know it exists (Garret, Oct 13).
 
 ## Run: REFRESH (hourly at :07, 8 am–11 pm) — task "hourly refresh"
 Stop if the week is `final` — except on Tuesday after 8 a.m. ET: if the next week still isn't set up, alert Garret once
