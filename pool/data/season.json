@@ -45,7 +45,9 @@
     "andy": "Andrew Clarke",
     "arod": "Arod",
     "a-rod": "Arod",
-    "amanda rodgers": "Arod"
+    "amanda rodgers": "Arod",
+    "mrs sombloski": "Mrs. Sombloski",
+    "missy verhague": "Mrs. Sombloski"
   },
   "currentWeek": 6,
   "weeks": {
@@ -5313,7 +5315,7 @@
           "badges": []
         },
         {
-          "name": "Mrs Sombloski",
+          "name": "Mrs. Sombloski",
           "house": false,
           "correct": 0,
           "missed": 0,
@@ -5507,7 +5509,7 @@
       "columnN": 10
     }
   },
-  "updated": "2026-10-14T19:10:18.718763+00:00",
+  "updated": "2026-10-14T19:47:20.428096+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5538,7 +5540,8 @@
   },
   "subNames": {
     "EqrypLL": "Andy R",
-    "rDRK1Rl": "Andy R"
+    "rDRK1Rl": "Andy R",
+    "ArNM4q0": "Mrs. Sombloski"
   },
   "people": {
     "603444b89dab4f0e": "Thom",
@@ -5550,6 +5553,6 @@
     "ee76ee83ec51e034": "Garret",
     "46cb2ef869c5b1f0": "Andy R",
     "785dc95465b581b1": "Nate V",
-    "dc64c42b0487ccee": "Mrs Sombloski"
+    "dc64c42b0487ccee": "Mrs. Sombloski"
   }
 }
