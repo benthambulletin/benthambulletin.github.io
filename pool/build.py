@@ -141,6 +141,7 @@ if wk["games"] and _D.fromisoformat(wk["games"][-1]["kickoff"].replace("Z", "+00
     leak = [p["name"] for p in page["players"] if p.get("tb") is not None]
     if leak: raise SystemExit(f"REFUSING TO BUILD: tiebreaker numbers present before Monday kickoff for {leak}")
 open(f"{HERE}/index.html", "w").write(render(page))
+os.makedirs(f"{HERE}/season", exist_ok=True); open(f"{HERE}/season/index.html", "w").write(render(page))   # Season tab (Oct 13): same page, season mode by path
 json.dump(page, open(f"{HERE}/data/page.json", "w"), ensure_ascii=False)
 
 # calendar: this week's pick deadlines (first kickoff, first Sunday kickoff), each with a reminder an hour before

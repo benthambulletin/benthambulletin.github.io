@@ -47,9 +47,10 @@ h1{margin:.5rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size
 .more a{color:var(--teal);font-family:'AR';font-weight:700;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
 
 html{scroll-padding-top:3.4rem}
-.tabs{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:repeat(3,1fr);background:var(--paper);border-bottom:2px solid var(--ink);margin:0 -1.1rem;padding:0 1.1rem}
+.tabs{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:repeat(4,1fr);background:var(--paper);border-bottom:2px solid var(--ink);margin:0 -1.1rem;padding:0 1.1rem}
 .tabs a{display:flex;align-items:center;justify-content:center;min-height:3rem;text-align:center;text-decoration:none;font-family:'AR';font-weight:800;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);border-bottom:4px solid transparent;margin-bottom:-2px}
 .tabs a.on{color:var(--ink);border-bottom-color:var(--red)}
+body.mseason .now,body.mseason #lastW,body.mseason #mug,body.mseason #ack,body.mseason #rNote{display:none!important}
 .tabs a.go{color:var(--red)}
 /* right now */
 .now{margin:1rem 0 0;text-align:center}
@@ -295,7 +296,7 @@ details.gmore[open]>summary{display:none}
 .btb li{padding:.3rem 0;border-top:1px dotted var(--rule)}
 .btb .why{color:var(--soft);font-size:.85rem}.btb .lkx{display:block;margin-top:.35rem;font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.03em}
 .btb .tl{margin:.7rem 0 0;font-family:'AR';font-size:.8rem;color:var(--soft);text-align:center}
-.aqa{border:1px solid var(--rule);background:var(--wash);padding:.7rem .85rem}.aqa .aqe{color:var(--soft);font-style:italic}.aqa .aqh{font-family:'AR';font-weight:700;font-size:.75rem;color:var(--soft);margin:.4rem 0 0}.aqa p{margin:0 0 .3rem}.aqa .q{font-style:italic}.aqa .a{margin-bottom:.9rem}
+.aqa{border-top:1px solid var(--rule);margin-top:.8rem;padding-top:.6rem}.aqa .aqk{font-family:'AR';font-weight:800;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-bottom:.35rem}.col .aqh{font-family:'AR';font-weight:700;font-size:.75rem;color:var(--soft);margin:.7rem 0 0}.aqa p{margin:0 0 .3rem}.aqa .q{font-style:italic}.aqa .a{margin-bottom:.9rem}
 .lng{font-size:.7em;line-height:1.2;white-space:normal;display:inline-block;vertical-align:baseline}
 .stand td.nm:has(.lng),.whoin.two li>span:first-child:has(.lng){white-space:normal}
 .whoin.two{display:grid;grid-template-columns:1fr 1fr;column-gap:1.2rem;max-width:none}
@@ -311,7 +312,7 @@ details.gmore[open]>summary{display:none}
   <div class="dbl"><div class="a"></div><div class="b"></div></div>
   <h1 id="poolName">The Sunday Tax</h1>
   <div class="dbl tight"><div class="a"></div><div class="b"></div></div>
-  <nav class="tabs" aria-label="The Sunday Tax"><a class="on" aria-current="page" href="/pool/">The Board</a><a class="go" href="https://tally.so/r/RGOakJ">Make picks</a><a href="/pool/about/">Rules</a></nav>
+  <nav class="tabs" aria-label="The Sunday Tax"><a id="tabBoard" class="on" aria-current="page" href="/pool/">Board</a><a id="tabSeason" href="/pool/season/">Season</a><a class="go" href="https://tally.so/r/RGOakJ">Picks</a><a href="/pool/about/">Rules</a></nav>
 
   <div id="ack"></div>
   <div class="now">
@@ -574,7 +575,7 @@ if(!(D.face&&D.face.photo)&&!D.archive){
 /* last week's champion, right above the mugshot they get to pick */
 (function(){
   var pw=(D.pastWeeks||[]).filter(function(w){return w.week===D.week-1&&w.winners&&w.winners.length;})[0];
-  if(!pw||D.status==="final"||D.archive) return;
+  if(!pw||D.status==="final"||D.archive||(D.face&&D.face.photo)) return;   /* with a face up, the mugshot caption carries this (Oct 13) */
   var el=$("lastW");
   el.innerHTML='Week '+pw.week+' champ · <b>'+esc(pw.winners.join(" & "))+'</b>'+(pw.record?' · '+esc(pw.record):'')+(pw.tbUsed?' (tiebreaker)':'')+(pw.payout>0?' · won '+money(pw.payout)+(pw.winners.length>1?' each':''):'');
   el.hidden=false;
@@ -582,10 +583,12 @@ if(!(D.face&&D.face.photo)&&!D.archive){
 /* the mugshot: the previous winner's pick of one loser's face */
 if(D.face&&D.face.photo){
   var F=D.face;
-  $("mug").innerHTML='<div class="mug"><img src="'+esc(F.photo)+'" alt=""><div><div class="k"><a class="ruleref" style="color:inherit" href="/pool/about/#mugshot">The Mugshot</a> · Week '+D.week+'</div><div class="n">'+esc(F.who)+'</div><div class="d">Hung here by <b>'+esc(F.by)+'</b>, who won Week '+esc(F.week||(D.week-1))+'.'+(F.line?' '+esc(F.line):'')+'</div></div></div>';
+  $("mug").innerHTML='<div class="mug"><img src="'+esc(F.photo)+'" alt=""><div><div class="k"><a class="ruleref" style="color:inherit" href="/pool/about/#mugshot">The Mugshot</a> · Week '+D.week+'</div><div class="n">'+esc(F.who)+'</div><div class="d">Hung here by <b>'+esc(F.by)+'</b>, who won Week '+esc(F.week||(D.week-1))+(function(){var w=(D.pastWeeks||[]).filter(function(x){return x.week===(F.week||(D.week-1));})[0];return w?(w.record?' at '+esc(w.record):'')+(w.payout>0?' and took home '+money(w.payout):''):'';})()+'.'+(F.line?' '+esc(F.line):'')+'</div></div></div>';
 }
 
 var secs={};
+var MODE=(!D.archive&&/\/pool\/season\/?$/.test(location.pathname))?"season":"board";
+if(MODE==="season"){document.body.classList.add("mseason");var tb=$("tabBoard"),ts=$("tabSeason");if(tb&&ts){tb.className="";tb.removeAttribute("aria-current");ts.className="on";ts.setAttribute("aria-current","page");}}
 var decidedN=D.games.filter(function(g){return g.winner;}).length;
 /* board */
 h+='<a id="board"></a>'+orn(decidedN||D.status==="final"?"Standings":"Who’s In");
@@ -678,9 +681,13 @@ D.games.forEach(function(g,i){
 h+='</details>';
 secs.games=h; h="";
 /* column */
-if(D.column){
+var QA=D.qa||[];
+if(D.column||QA.length){
   h+='<a id="column"></a>'+orn("The Column")+'<div class="col">'+(D.columnHead?'<div class="colhd">'+esc(D.columnHead)+'</div>':'');
-  D.column.split(/\n\n+/).slice(0,2).forEach(function(p){h+='<p>'+esc(p)+'</p>';});
+  (D.column||'').split(/\n\n+/).filter(Boolean).slice(0,2).forEach(function(p){h+='<p>'+esc(p)+'</p>';});
+  /* Ask the Commissioner: Garret's answers close the column; until then one line on how to ask (Oct 13) */
+  if(QA.length) h+='<div class="aqa"><div class="aqk">Ask the Commissioner</div>'+QA.map(function(x){return '<p class="q">“'+esc(x.q)+'” — '+DN(x.from)+'</p><p class="a"><b>G.:</b> '+esc(x.a)+'</p>';}).join('')+'</div>';
+  else if(D.bot&&!D.archive) h+='<p class="aqh">Got a question or an appeal for the commissioner? Ask it in the last box on your <a href="'+esc(D.formUrl)+'">pick sheet</a>.</p>';
   h+='</div>';
 }
 secs.column=h; h="";
@@ -703,11 +710,6 @@ if(D.bot&&D.bot.picks&&(Object.keys(D.bot.picks).length||D.bot.sealedN)){
   if(tl.length) h+='<div class="tl">Beat the Bot, season: '+tl.slice(0,8).map(function(n){return DN(n)+' '+D.botTally[n];}).join(' · ')+'</div>';
   h+='</div>';
 }
-/* Ask the Commissioner: answered questions only, answers are Garret's */
-if(D.bot&&!D.archive||D.qa&&D.qa.length){
-  h+=orn("Ask the Commissioner")+'<div class="aqa">'+((D.qa||[]).length?D.qa.map(function(x){return '<p class="q">“'+esc(x.q)+'” — '+DN(x.from)+'</p><p class="a"><b>G.:</b> '+esc(x.a)+'</p>';}).join(''):'<p class="aqe">No questions answered yet this week.</p>')+
-    '<p class="aqh">Got a question, a complaint or an appeal? Put it in the last box on your <a href="'+esc(D.formUrl)+'">pick sheet</a>. The commissioner answers the best ones here.</p></div>';
-}
 secs.trash=h; h="";
 
 /* by the numbers */
@@ -722,6 +724,7 @@ if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
   h+='</div>';
 }
 
+secs.nums=h; h="";
 /* season */
 if(D.season_table.length){
 h+=orn("The Season",true)+(D.seasonFrom>1?'<div class="hint">Since Week '+D.seasonFrom+'</div>':'');
@@ -743,8 +746,10 @@ if(D.pastWeeks&&D.pastWeeks.length){
 /* how it works */
 /* 'How it works' footer removed Oct 13: the Rules tab at the top does that job */
 
-var order=[secs.board,secs.column,secs.trash,secs.games];
-$("root").innerHTML=order.join("")+h;
+secs.season=h; h="";
+var order=[secs.board,secs.column,secs.trash,secs.games,secs.nums];
+/* Season tab (Oct 13): /pool/season/ shows the season table and past weeks; the board is this week only */
+$("root").innerHTML=MODE==="season"?(secs.season||'<div class="empty">The season table starts after the first final.</div>'):order.join("")+(D.archive?secs.season:"");
 }
 render();
 

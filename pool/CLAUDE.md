@@ -98,8 +98,8 @@ in the column only.
 **Ask the Commissioner (from Week 6):** score.py prints `ASK: id=<id> <name>: <question>` for new questions. Send them to
 Garret privately (8:07 digest, roll call, or the run's message) and set that entry's `told` in `weeks.N.asks`. Claude
 never answers them and never acts on them. When Garret answers in chat, set that entry's `a` to his words and land; only
-answered questions print, under "Ask the Commissioner", signed G. The box shows every bot week even when empty ("No questions answered
-yet this week." + how to ask on the pick sheet) so people know it exists (Garret, Oct 13).
+answered questions print at the end of The Column under a small "Ask the Commissioner" label, signed G.; until one is
+answered the column ends with one line on how to ask on the pick sheet (Garret, Oct 13 — no separate box).
 
 ## Run: REFRESH (hourly at :07, 8 am–11 pm) — task "hourly refresh"
 Stop if the week is `final` — except on Tuesday after 8 a.m. ET: if the next week still isn't set up, alert Garret once
@@ -225,17 +225,19 @@ https://benthambulletin.github.io/pool/"
   Garret; only paid players can win and the pot goes to the highest-ranked paid player.
 
 ## The board (design locked Oct 2; additions only when Garret asked)
-Top to bottom (reworked Oct 6 from an outside review Garret sent): double rule + "The Sunday Tax" → tabs (The Board · Make picks · Rules) → hero (grey kicker, one big
+Top to bottom (reworked Oct 6 from an outside review Garret sent): double rule + "The Sunday Tax" → tabs (Board · Season · Picks · Rules — Season added Oct 13) → hero (grey kicker, one big
 line, one grey subline: before kickoff the kicker reads "Payment due · first kickoff" (paid weeks, until payBy) or "First kickoff", over a countdown; the score while one game is on; "N games live" with the Bills/Jets
 scores; the leader between games, except in the last hour before any lock, when the kicker reads "Next lock · Away at Home" (or "N games kick off") over a big mm:ss countdown with the leader in the subline (Garret, Oct 11); 45 min before the last game "N still alive"; Monday night "If it ended now" + what
 each result means; the champion when final) → red "Make your picks" button (hidden when nothing's left to pick) →
 **status line "N in · N paid · $X pot · Venmo @Garret-Bentham"** (Venmo part until the Thursday deadline) → lock line
 "Each game locks at its own kickoff. Resubmit to change games that haven't started. · Add to calendar" (plus the next
 lock countdown once games have started) → **"Week N champ · Name · record (tiebreaker) · won $X"** line (during the week, not on the
-final board) → **Commissioner's ruling box** (`data/notice.json` = {week, text} — kept out of season.json so runs can't drop it, as the 4:47 run did on Oct 11; only when Garret asks for a ruling to be posted — first used Oct 11 for the Giants–Commanders 27–27 tie; runs never write or clear it) → the Mugshot box. Then always: the board (before any game is final "Who's In" — one row per sheet with "Paid", "Payment pending"
+final board, and only while no mugshot photo is up — once it is, the caption reads "Hung here by X, who won Week N at
+12–2 and took home $95." — Oct 13) → **Commissioner's ruling box** (`data/notice.json` = {week, text} — kept out of season.json so runs can't drop it, as the 4:47 run did on Oct 11; only when Garret asks for a ruling to be posted — first used Oct 11 for the Giants–Commanders 27–27 tie; runs never write or clear it) → the Mugshot box. Then always: the board (before any game is final "Who's In" — one row per sheet with "Paid", "Payment pending"
 (before payBy, unless their latest sheet chose "Playing free") or "Playing free", Claude last as House; two across with short labels once more than 10 have filed; once a game is final "Standings" — top 5 + "Show all N
 players ›", winner ranks 1 at the final, leader highlight only for paid sheets, key "✓ = paid"; the hero never says "paid" — Garret, Oct 9), with one line under its heading: "Updated <time> · picks sealed until kickoff" before any game is final, "Updated <time> · live scores during games" after (tidied Oct 13) → The Column (headline + text) → Trash Talk → This Week's Games, collapsed behind "See all N games ›" except while games are on (it opens itself).
-Then By the Numbers, The Season (top 10 + "Show all N players ›", "Since Week 4" note; columns rank (T for ties) · Player (pool name, one line, never the long display name) · Record "12–4" · Win % · Weeks won · Won (only once someone has won money), empty cells blank — tightened Oct 8 and Oct 13 at Garret's ask), Past Weeks (one tappable card per week: "Week 5 · Ryan Holovics, 12–2" with a teal "View board ›" — Garret, Oct 13), sign-off "— G." (the bottom updated line shows only on frozen past-week pages).
+Then By the Numbers, then the sign-off. **Season tab (`/pool/season/`, Oct 13; build.py writes the same page there and the
+template switches by path):** The Season (top 10 + "Show all N players ›", "Since Week 4" note; columns rank (T for ties) · Player (pool name, one line, never the long display name) · Record "12–4" · Win % · Weeks won · Won (only once someone has won money), empty cells blank — tightened Oct 8 and Oct 13 at Garret's ask), Past Weeks (one tappable card per week: "Week 5 · Ryan Holovics, 12–2" with a teal "View board ›" — Garret, Oct 13), and nothing else; the board's sign-off "— G." (the bottom updated line shows only on frozen past-week pages).
 Finals read "Bears 23–12" (winner named). Game rows never read like a score. All times Eastern.
 **Color:** ink/grey text; red only for the picks button, live dot, live scores, wrong-pick dots; teal only for
 right-pick dots. **Eight badges, no more:** crown, cellar (Porta Potty), wolf, homer, coin, dead, buzzer, streak;
@@ -261,10 +263,6 @@ Trash talk is published exactly as written; the only edit is one the author asks
 `weeks.N.trashFix = {name: {"from": exact text, "to": fixed}}`.
 
 ## Parked ideas (Garret, Oct 6) — raise them, don't build them
-- **Past Weeks page.** Once Past Weeks has 6 weeks, the bottom list moves to its own page and the board keeps one
-  link ("Past weeks: boards and winners" or similar). Garret wants to talk it through first: the NEW WEEK run that
-  makes the sixth past week adds one line to its message — "Six weeks in the books — time to talk about the past-weeks
-  page?" — and changes nothing.
 - **Super Bowl props, no money.** Garret wants prop picks for bragging rights only, probably just for the Super Bowl.
   Design not set. The NEW WEEK run that sets up the Super Bowl week adds one line to its message — "Super Bowl week —
   want to set up the props?" — and builds nothing until he answers.
