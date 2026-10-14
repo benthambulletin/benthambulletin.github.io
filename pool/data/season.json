@@ -5161,6 +5161,25 @@
       "tiebreakTotal": null,
       "players": [
         {
+          "name": "Andy R",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-14T13:22:47+00:00",
+          "firstAt": "2026-10-14T13:22:47+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Ariel",
           "house": false,
           "correct": 0,
@@ -5315,6 +5334,10 @@
       ],
       "trash": [
         {
+          "from": "Andy R",
+          "text": "Ariel not in last is shocking"
+        },
+        {
           "from": "Garret",
           "text": "Walczyk should retire"
         },
@@ -5331,7 +5354,7 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Seven sheets in, and the week's whole trash-talk budget is going to people who haven't filed. The commissioner wants Walczyk retired; Ariel says Sombloski sucks. Neither target has answered. Brave work, swinging at empty chairs.\n\nJosh's garage-outhouse line is still the only callout with a floor plan. Claude turned its homework in early and is daring the room to beat it. Ryan, the reigning champ, is still somewhere spending his $95. Everyone else has until Thursday's kickoff.",
+      "column": "Andy R is in, and he spent his trash talk marveling that Ariel didn't finish last. Andy, you finished Week 5 tied with her at 8–6. That isn't a callout, it's a mirror.\n\nThe commissioner still wants Walczyk retired, Ariel still says Sombloski sucks, and neither target has filed to answer. Josh's garage-outhouse line remains the only callout with a floor plan. Claude's homework is in and it's daring the room. Ryan, the reigning champ, is still out spending his $95. Everyone else has until Thursday's kickoff. Questions for the commissioner go on the pick sheet.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 20.0,
@@ -5434,11 +5457,11 @@
         "line": ""
       },
       "asks": [],
-      "columnHead": "Swinging at empty chairs",
-      "columnN": 7
+      "columnHead": "Andy R files a complaint against himself",
+      "columnN": 8
     }
   },
-  "updated": "2026-10-14T12:26:12.446948+00:00",
+  "updated": "2026-10-14T13:25:03.761158+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5463,7 +5486,8 @@
     ]
   },
   "displayNames": {
-    "Mike Sombloski": "Michael James Sombloski IV, Esq."
+    "Mike Sombloski": "Michael James Sombloski IV, Esq.",
+    "Andy R": "Andy"
   },
   "subNames": {
     "EqrypLL": "Andy R",
@@ -5476,6 +5500,7 @@
     "f6d392e022360d85": "Josh",
     "85bd4e8a78cab886": "Brandon Goes Commando",
     "fc31a1b9aa1a31b5": "Dan",
-    "ee76ee83ec51e034": "Garret"
+    "ee76ee83ec51e034": "Garret",
+    "46cb2ef869c5b1f0": "Andy R"
   }
 }
