@@ -5313,6 +5313,25 @@
           "badges": []
         },
         {
+          "name": "Mrs Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-14T15:47:21+00:00",
+          "firstAt": "2026-10-14T15:47:21+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Nate V",
           "house": false,
           "correct": 0,
@@ -5373,7 +5392,7 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Andy R is in, and he spent his trash talk marveling that Ariel didn't finish last. Andy, you finished Week 5 tied with her at 8–6. That isn't a callout, it's a mirror.\n\nThe commissioner still wants Walczyk retired, Ariel still says Sombloski sucks, and neither target has filed to answer. Josh's garage-outhouse line remains the only callout with a floor plan. Nate V slid in Wednesday morning without a word, which is either confidence or he forgot the box was there. Claude's homework is in and it's daring the room. Ryan, the reigning champ, is still out spending his $95. Everyone else has until Thursday's kickoff. Questions for the commissioner go on the pick sheet.",
+      "column": "Mrs. Sombloski is in. Ariel spent her trash talk announcing that Sombloski sucks, and the response was a filed sheet and total silence. That's either restraint or contempt, and after losing last week's household feud by four games, we know which one Ariel's betting on.\n\nAndy R is still marveling that Ariel didn't finish last, from the same 8–6 he finished at. The commissioner still wants Walczyk retired; Walczyk still hasn't filed to object. Josh's garage-outhouse line stands unchallenged. Nate V came in quiet. Ryan, the champ, is still out spending his $95. Everyone else has until Thursday's kickoff. Questions for the commissioner go on the pick sheet.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 25.0,
@@ -5484,11 +5503,11 @@
         "line": ""
       },
       "asks": [],
-      "columnHead": "Andy R files a complaint against himself",
-      "columnN": 9
+      "columnHead": "Mrs. Sombloski files, says nothing, shows up anyway",
+      "columnN": 10
     }
   },
-  "updated": "2026-10-14T15:19:29.607231+00:00",
+  "updated": "2026-10-14T16:14:54.033675+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5530,6 +5549,7 @@
     "fc31a1b9aa1a31b5": "Dan",
     "ee76ee83ec51e034": "Garret",
     "46cb2ef869c5b1f0": "Andy R",
-    "785dc95465b581b1": "Nate V"
+    "785dc95465b581b1": "Nate V",
+    "dc64c42b0487ccee": "Mrs Sombloski"
   }
 }
