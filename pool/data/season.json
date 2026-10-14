@@ -5258,6 +5258,25 @@
           "badges": []
         },
         {
+          "name": "Derek",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-14T20:29:54+00:00",
+          "firstAt": "2026-10-14T20:29:54+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Devin",
           "house": false,
           "correct": 0,
@@ -5374,6 +5393,10 @@
       ],
       "trash": [
         {
+          "from": "Derek",
+          "text": "This is my week"
+        },
+        {
           "from": "Andy R",
           "text": "Ariel not in last is shocking"
         },
@@ -5394,11 +5417,11 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Mrs. Sombloski is in. Ariel spent her trash talk announcing that Sombloski sucks, and the response was a filed sheet and total silence. That's either restraint or contempt, and after losing last week's household feud by four games, we know which one Ariel's betting on.\n\nAndy R is still marveling that Ariel didn't finish last, from the same 8–6 he finished at. The commissioner still wants Walczyk retired; Walczyk still hasn't filed to object. Josh's garage-outhouse line stands unchallenged. Nate V came in quiet. Ryan, the champ, is still out spending his $95. Everyone else has until Thursday's kickoff. Questions for the commissioner go on the pick sheet.",
+      "column": "Derek filed Wednesday afternoon with a guarantee: \"This is my week.\" Every week is somebody's week until Thursday at 8:15, Derek. We'll hang the quote by the board and check on it Tuesday.\n\nMeanwhile Ariel's \"Sombloski sucks\" still has no reply beyond a filed sheet and silence from Mrs. Sombloski, Andy R is still stunned Ariel didn't finish last, and the commissioner still wants Walczyk retired. Walczyk still hasn't filed to object. Josh's garage-outhouse line stands. Eleven sheets in; everyone else has until Thursday's kickoff. Questions for the commissioner go on the pick sheet.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 25.0,
-      "paidN": 5,
+      "pot": 30.0,
+      "paidN": 6,
       "buyIn": 5,
       "payBy": "2026-10-16T00:15:00Z",
       "payments": [
@@ -5437,6 +5460,14 @@
           "at": "2026-10-14T14:31:00Z",
           "amt": "5.00",
           "who": "Nate V",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a13c181ceb87b10",
+          "at": "2026-10-14T20:26:15Z",
+          "amt": "5.00",
+          "who": "Derek",
           "status": "ok",
           "told": null
         }
@@ -5505,11 +5536,11 @@
         "line": ""
       },
       "asks": [],
-      "columnHead": "Mrs. Sombloski files, says nothing, shows up anyway",
-      "columnN": 10
+      "columnHead": "Derek declares it his week. Bold.",
+      "columnN": 11
     }
   },
-  "updated": "2026-10-14T20:10:09.843579+00:00",
+  "updated": "2026-10-14T21:10:24.638500+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5553,6 +5584,7 @@
     "ee76ee83ec51e034": "Garret",
     "46cb2ef869c5b1f0": "Andy R",
     "785dc95465b581b1": "Nate V",
-    "dc64c42b0487ccee": "Mrs. Sombloski"
+    "dc64c42b0487ccee": "Mrs. Sombloski",
+    "e3dbf7976562e873": "Derek"
   }
 }
