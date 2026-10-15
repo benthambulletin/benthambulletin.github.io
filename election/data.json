@@ -777,5 +777,39 @@
    "term": "The bars",
    "text": "In the Senate section the bar runs from the middle: blue to the left for a Democratic lead, red to the right for a Republican one, longer for a bigger lead. In the governor section the two bars run toward each other and the gap is undecided voters."
   }
- ]
+ ],
+ "outlook": {
+  "title": "What could still change this",
+  "as_of": "2026-10-15",
+  "lede": "The October surprise already happened, in February: the Iran war. It is the main reason the president's net approval sits near −21 instead of the −10 range he held at New Year's, and nothing in the next three weeks is likely to swing the national mood that far again. So the question is not whether a shock changes the House — at D+8.6 that would take a very large one — but whether anything tips the four to six Senate seats sitting inside the margin of error.",
+  "items": [
+   {
+    "what": "The war itself",
+    "why": "A ceasefire, a major casualty event or an escalation is the one thing that could move national numbers several points in either direction. Everything else is small by comparison."
+   },
+   {
+    "what": "Prices at the pump",
+    "why": "Gas is the number voters feel directly. A spike in the last two weeks hurts the party in power; a drop helps a little."
+   },
+   {
+    "what": "A candidate moment",
+    "why": "Texas and Maine are within two points, so one bad week for a candidate — a scandal, a debate stumble — can decide a seat."
+   },
+   {
+    "what": "The early vote",
+    "why": "Early voting starts Oct 24. The first week's turnout in the toss-up states is the first real signal; prediction markets react to it before the polls do."
+   }
+  ],
+  "noise": "What usually matters less than it looks: a late rally blitz (it fires up both bases) and any single surprising poll. Ignore it unless an average moves.",
+  "urls": [
+   {
+    "label": "Trump approval trend",
+    "url": "https://www.realclearpolling.com/polls/approval/donald-trump/approval-rating"
+   },
+   {
+    "label": "Generic ballot",
+    "url": "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls"
+   }
+  ]
+ }
 }

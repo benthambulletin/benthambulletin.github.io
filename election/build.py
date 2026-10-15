@@ -195,6 +195,12 @@ def results_main():
 is_results = D.get("mode") == "results"
 main = results_main() if is_results else polls_main
 numbers = main if is_results else f"<h2>The numbers</h2>{tiles}"
+outlook = ""
+if D.get("outlook"):
+    o = D["outlook"]
+    outlook = (f'<h2>{e(o["title"])}</h2><p class="intro" style="font-size:1rem;color:var(--ink)">{e(o["lede"])}</p>'
+               '<ul class="changed">' + "".join(f'<li><b>{e(i["what"])}</b>: {e(i["why"])}</li>' for i in o["items"]) + '</ul>'
+               f'<p class="intro">{e(o["noise"])} <span class="mut">Editor\'s read, {fdate(o["as_of"])}; this is judgment, not polling.</span></p>')
 glossary = ""
 if D.get("glossary"):
     glossary = ('<h2>What the words mean</h2><details class="town state-h" open><summary><span class="tn">Plain-English guide to the numbers above</span></summary><dl>'
@@ -362,6 +368,7 @@ page = f'''<!DOCTYPE html>
 {numbers}
 {glossary}
 {changed}
+{outlook}
 {"" if is_results else main}
 
 <h2>Your ballot</h2>
