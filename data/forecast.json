@@ -1,277 +1,277 @@
 {
- "generated_utc": "2026-10-14T15:01Z",
+ "generated_utc": "2026-10-15T11:00Z",
  "towns": {
   "North Tonawanda": {
-   "issued": "2026-10-14T13:57:56+00:00",
+   "issued": "2026-10-15T10:15:04+00:00",
    "periods": [
     {
      "name": "Today",
-     "temp": 64,
-     "wind": "NW 10 mph",
-     "pop": 10,
+     "temp": 61,
+     "wind": "E 10 mph",
+     "pop": 0,
      "short": "Mostly Cloudy",
-     "detail": "Mostly cloudy, with a high near 64. Northwest wind around 10 mph."
+     "detail": "Mostly cloudy, with a high near 61. East wind around 10 mph."
     },
     {
      "name": "Tonight",
-     "temp": 45,
-     "wind": "N 9 mph",
-     "pop": 0,
-     "short": "Mostly Cloudy",
-     "detail": "Mostly cloudy, with a low around 45. North wind around 9 mph."
-    },
-    {
-     "name": "Thursday",
-     "temp": 60,
-     "wind": "NE 9 mph",
-     "pop": 0,
-     "short": "Partly Sunny",
-     "detail": "Partly sunny, with a high near 60. Northeast wind around 9 mph."
-    },
-    {
-     "name": "Thursday Night",
-     "temp": 48,
-     "wind": "SE 5 to 10 mph",
-     "pop": 99,
-     "short": "Rain Showers",
-     "detail": "Rain showers between 8pm and 5am, then showers and thunderstorms. Cloudy, with a low around 48. Southeast wind 5 to 10 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
+     "temp": 52,
+     "wind": "SE 6 to 14 mph",
+     "pop": 100,
+     "short": "Chance Rain Showers then Periods Of Rain",
+     "detail": "A chance of rain showers between 11pm and 1am, then rain likely between 1am and 2am, then periods of rain and a slight chance of thunderstorms. Cloudy. Low around 52, with temperatures rising to around 63 overnight. Southeast wind 6 to 14 mph, with gusts as high as 28 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
     },
     {
      "name": "Friday",
-     "temp": 59,
-     "wind": "W 6 to 20 mph",
-     "pop": 99,
-     "short": "Showers And Thunderstorms",
-     "detail": "Showers and thunderstorms. Cloudy, with a high near 59. West wind 6 to 20 mph. Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible."
+     "temp": 67,
+     "wind": "W 15 to 23 mph",
+     "pop": 93,
+     "short": "Periods Of Rain",
+     "detail": "Periods of rain and a slight chance of thunderstorms before 2pm, then a chance of rain showers. Cloudy. High near 67, with temperatures falling to around 58 in the afternoon. West wind 15 to 23 mph, with gusts as high as 39 mph. Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible."
     },
     {
      "name": "Friday Night",
-     "temp": 35,
-     "wind": "NW 20 mph",
-     "pop": 76,
-     "short": "Rain Showers",
-     "detail": "Rain showers. Mostly cloudy, with a low around 35. Northwest wind around 20 mph. Chance of precipitation is 80%. New rainfall amounts less than a tenth of an inch possible."
+     "temp": 38,
+     "wind": "NW 16 mph",
+     "pop": 47,
+     "short": "Chance Rain Showers",
+     "detail": "A chance of rain showers before 2am. Cloudy, with a low around 38. Northwest wind around 16 mph, with gusts as high as 29 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible."
     },
     {
      "name": "Saturday",
-     "temp": 49,
-     "wind": "NW 13 to 16 mph",
-     "pop": 24,
-     "short": "Slight Chance Rain Showers then Mostly Sunny",
-     "detail": "A slight chance of rain showers before 8am. Mostly sunny, with a high near 49. Northwest wind 13 to 16 mph, with gusts as high as 26 mph."
+     "temp": 48,
+     "wind": "NW 9 to 14 mph",
+     "pop": 14,
+     "short": "Mostly Sunny",
+     "detail": "Mostly sunny, with a high near 48. Northwest wind 9 to 14 mph."
     },
     {
      "name": "Saturday Night",
      "temp": 36,
-     "wind": "W 6 to 13 mph",
+     "wind": "W 7 mph",
      "pop": 0,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 36. West wind 6 to 13 mph."
+     "short": "Clear",
+     "detail": "Clear, with a low around 36. West wind around 7 mph."
     },
     {
      "name": "Sunday",
      "temp": 60,
-     "wind": "SW 8 to 17 mph",
+     "wind": "SW 6 to 16 mph",
      "pop": 0,
      "short": "Sunny",
-     "detail": "Sunny, with a high near 60."
+     "detail": "Sunny, with a high near 60. Southwest wind 6 to 16 mph, with gusts as high as 28 mph."
     },
     {
      "name": "Sunday Night",
-     "temp": 44,
-     "wind": "SW 12 to 15 mph",
-     "pop": 0,
+     "temp": 43,
+     "wind": "SW 9 to 13 mph",
+     "pop": 3,
      "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 44."
+     "detail": "Mostly clear, with a low around 43. Southwest wind 9 to 13 mph."
+    },
+    {
+     "name": "Monday",
+     "temp": 63,
+     "wind": "SW 12 mph",
+     "pop": 3,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 63."
+    },
+    {
+     "name": "Monday Night",
+     "temp": 42,
+     "wind": "SW 2 to 9 mph",
+     "pop": 3,
+     "short": "Partly Cloudy",
+     "detail": "Partly cloudy, with a low around 42."
     }
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-14T14:40:00+00:00",
-    "text": "Mostly Cloudy",
-    "temp_f": 61
+    "time": "2026-10-15T10:40:00+00:00",
+    "text": "Cloudy",
+    "temp_f": 52
    }
   },
   "Dunkirk": {
-   "issued": "2026-10-14T13:57:56+00:00",
+   "issued": "2026-10-15T10:15:04+00:00",
    "periods": [
     {
      "name": "Today",
-     "temp": 63,
-     "wind": "W 13 mph",
-     "pop": 12,
-     "short": "Mostly Cloudy",
-     "detail": "Mostly cloudy, with a high near 63. West wind around 13 mph."
+     "temp": 65,
+     "wind": "E 7 to 12 mph",
+     "pop": 0,
+     "short": "Partly Sunny",
+     "detail": "Partly sunny, with a high near 65. East wind 7 to 12 mph."
     },
     {
      "name": "Tonight",
-     "temp": 43,
-     "wind": "NE 10 to 14 mph",
-     "pop": 1,
-     "short": "Mostly Cloudy",
-     "detail": "Mostly cloudy, with a low around 43. Northeast wind 10 to 14 mph."
-    },
-    {
-     "name": "Thursday",
-     "temp": 65,
-     "wind": "E 12 mph",
-     "pop": 7,
-     "short": "Partly Sunny",
-     "detail": "Partly sunny, with a high near 65. East wind around 12 mph."
-    },
-    {
-     "name": "Thursday Night",
-     "temp": 49,
-     "wind": "SE 5 to 9 mph",
-     "pop": 98,
-     "short": "Showers And Thunderstorms",
-     "detail": "Rain showers between 8pm and 11pm, then showers and thunderstorms. Mostly cloudy, with a low around 49. Southeast wind 5 to 9 mph. Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible."
+     "temp": 56,
+     "wind": "SE 5 to 25 mph",
+     "pop": 95,
+     "short": "Chance Rain Showers then Periods Of Rain",
+     "detail": "A chance of rain showers between 9pm and 1am, then rain likely between 1am and 2am, then periods of rain and a chance of thunderstorms. Cloudy. Low around 56, with temperatures rising to around 66 overnight. Southeast wind 5 to 25 mph, with gusts as high as 40 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
     },
     {
      "name": "Friday",
-     "temp": 62,
-     "wind": "W 10 to 23 mph",
-     "pop": 99,
-     "short": "Showers And Thunderstorms",
-     "detail": "Showers and thunderstorms. Cloudy, with a high near 62. West wind 10 to 23 mph. Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible."
+     "temp": 68,
+     "wind": "W 21 to 25 mph",
+     "pop": 95,
+     "short": "Periods Of Rain",
+     "detail": "Periods of rain and a chance of thunderstorms. Cloudy. High near 68, with temperatures falling to around 60 in the afternoon. West wind 21 to 25 mph, with gusts as high as 39 mph. Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible."
     },
     {
      "name": "Friday Night",
-     "temp": 37,
-     "wind": "NW 20 to 24 mph",
-     "pop": 89,
-     "short": "Rain Showers",
-     "detail": "Rain showers. Mostly cloudy, with a low around 37. Northwest wind 20 to 24 mph. Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch possible."
+     "temp": 40,
+     "wind": "NW 18 mph",
+     "pop": 70,
+     "short": "Light Rain Likely",
+     "detail": "Rain likely before 2am, then a chance of rain showers. Mostly cloudy, with a low around 40. Northwest wind around 18 mph, with gusts as high as 29 mph. Chance of precipitation is 70%. New rainfall amounts less than a tenth of an inch possible."
     },
     {
      "name": "Saturday",
-     "temp": 52,
-     "wind": "NW 15 to 18 mph",
-     "pop": 34,
+     "temp": 50,
+     "wind": "NW 10 to 18 mph",
+     "pop": 27,
      "short": "Chance Rain Showers then Mostly Sunny",
-     "detail": "A chance of rain showers before 8am. Mostly sunny, with a high near 52. Northwest wind 15 to 18 mph. Chance of precipitation is 30%."
+     "detail": "A chance of rain showers before 8am. Mostly sunny, with a high near 50. Northwest wind 10 to 18 mph. Chance of precipitation is 30%."
     },
     {
      "name": "Saturday Night",
-     "temp": 40,
-     "wind": "W 12 to 16 mph",
+     "temp": 38,
+     "wind": "W 9 mph",
      "pop": 0,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 40. West wind 12 to 16 mph."
+     "short": "Clear",
+     "detail": "Clear, with a low around 38. West wind around 9 mph."
     },
     {
      "name": "Sunday",
      "temp": 60,
-     "wind": "SW 13 to 16 mph",
+     "wind": "SW 9 to 14 mph",
      "pop": 0,
      "short": "Sunny",
-     "detail": "Sunny, with a high near 60."
+     "detail": "Sunny, with a high near 60. Southwest wind 9 to 14 mph."
     },
     {
      "name": "Sunday Night",
-     "temp": 44,
-     "wind": "SW 14 mph",
-     "pop": 0,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 44."
+     "temp": 43,
+     "wind": "SW 12 mph",
+     "pop": 4,
+     "short": "Clear",
+     "detail": "Clear, with a low around 43. Southwest wind around 12 mph."
+    },
+    {
+     "name": "Monday",
+     "temp": 62,
+     "wind": "SW 12 mph",
+     "pop": 4,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 62."
+    },
+    {
+     "name": "Monday Night",
+     "temp": 46,
+     "wind": "SW 5 to 8 mph",
+     "pop": 3,
+     "short": "Partly Cloudy",
+     "detail": "Partly cloudy, with a low around 46."
     }
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-14T14:40:00+00:00",
+    "time": "2026-10-15T10:45:00+00:00",
     "text": "Cloudy",
-    "temp_f": 61
+    "temp_f": 52
    }
   },
   "Scottsville": {
-   "issued": "2026-10-14T13:57:56+00:00",
+   "issued": "2026-10-15T10:15:04+00:00",
    "periods": [
     {
      "name": "Today",
-     "temp": 64,
-     "wind": "NW 7 to 13 mph",
-     "pop": 29,
-     "short": "Chance Rain Showers",
-     "detail": "A chance of rain showers before 2pm. Cloudy, with a high near 64. Northwest wind 7 to 13 mph. Chance of precipitation is 30%."
+     "temp": 59,
+     "wind": "E 8 mph",
+     "pop": 0,
+     "short": "Mostly Cloudy",
+     "detail": "Mostly cloudy, with a high near 59. East wind around 8 mph."
     },
     {
      "name": "Tonight",
-     "temp": 43,
-     "wind": "N 7 to 10 mph",
-     "pop": 1,
-     "short": "Mostly Cloudy",
-     "detail": "Mostly cloudy, with a low around 43. North wind 7 to 10 mph."
-    },
-    {
-     "name": "Thursday",
-     "temp": 59,
-     "wind": "NE 6 to 9 mph",
-     "pop": 0,
-     "short": "Partly Sunny",
-     "detail": "Partly sunny, with a high near 59. Northeast wind 6 to 9 mph."
-    },
-    {
-     "name": "Thursday Night",
-     "temp": 46,
-     "wind": "SE 5 to 9 mph",
-     "pop": 98,
-     "short": "Rain Showers",
-     "detail": "Rain showers between 8pm and 5am, then showers and thunderstorms. Mostly cloudy, with a low around 46. Southeast wind 5 to 9 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
+     "temp": 50,
+     "wind": "SE 7 to 18 mph",
+     "pop": 99,
+     "short": "Chance Rain Showers then Periods Of Rain",
+     "detail": "A chance of rain showers between 11pm and 1am, then rain likely between 1am and 2am, then periods of rain and a slight chance of thunderstorms. Mostly cloudy. Low around 50, with temperatures rising to around 60 overnight. Southeast wind 7 to 18 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
     },
     {
      "name": "Friday",
-     "temp": 61,
-     "wind": "SW 8 to 20 mph",
-     "pop": 98,
-     "short": "Showers And Thunderstorms",
-     "detail": "Showers and thunderstorms. Cloudy, with a high near 61. Southwest wind 8 to 20 mph. Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible."
+     "temp": 70,
+     "wind": "SW 16 to 21 mph",
+     "pop": 99,
+     "short": "Periods Of Rain",
+     "detail": "Periods of rain and a slight chance of thunderstorms. Cloudy. High near 70, with temperatures falling to around 59 in the afternoon. Southwest wind 16 to 21 mph, with gusts as high as 35 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
     },
     {
      "name": "Friday Night",
-     "temp": 32,
-     "wind": "NW 16 to 21 mph",
-     "pop": 86,
-     "short": "Rain Showers",
-     "detail": "Rain showers. Mostly cloudy, with a low around 32. Northwest wind 16 to 21 mph. Chance of precipitation is 90%. New rainfall amounts less than a tenth of an inch possible."
+     "temp": 36,
+     "wind": "NW 14 to 18 mph",
+     "pop": 55,
+     "short": "Light Rain Likely then Chance Rain Showers",
+     "detail": "Rain likely before 8pm, then a chance of rain showers. Cloudy, with a low around 36. Northwest wind 14 to 18 mph. Chance of precipitation is 60%. New rainfall amounts less than a tenth of an inch possible."
     },
     {
      "name": "Saturday",
      "temp": 47,
-     "wind": "NW 16 to 20 mph",
-     "pop": 37,
+     "wind": "NW 12 to 16 mph",
+     "pop": 39,
      "short": "Chance Rain Showers",
-     "detail": "A chance of rain showers before 2pm. Mostly sunny, with a high near 47. Northwest wind 16 to 20 mph, with gusts as high as 30 mph. Chance of precipitation is 40%."
+     "detail": "A chance of rain showers before 2pm. Mostly sunny, with a high near 47. Northwest wind 12 to 16 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible."
     },
     {
      "name": "Saturday Night",
      "temp": 31,
-     "wind": "W 6 to 16 mph",
-     "pop": 1,
+     "wind": "W 5 to 9 mph",
+     "pop": 0,
      "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 31. West wind 6 to 16 mph."
+     "detail": "Mostly clear, with a low around 31. West wind 5 to 9 mph."
     },
     {
      "name": "Sunday",
-     "temp": 61,
-     "wind": "SW 8 to 14 mph",
+     "temp": 62,
+     "wind": "SW 6 to 13 mph",
      "pop": 0,
      "short": "Sunny",
-     "detail": "Sunny, with a high near 61."
+     "detail": "Sunny, with a high near 62. Southwest wind 6 to 13 mph."
     },
     {
      "name": "Sunday Night",
-     "temp": 38,
-     "wind": "SW 9 mph",
-     "pop": 0,
+     "temp": 36,
+     "wind": "SW 8 mph",
+     "pop": 4,
      "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 38."
+     "detail": "Mostly clear, with a low around 36. Southwest wind around 8 mph."
+    },
+    {
+     "name": "Monday",
+     "temp": 64,
+     "wind": "SW 6 to 9 mph",
+     "pop": 4,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 64."
+    },
+    {
+     "name": "Monday Night",
+     "temp": 39,
+     "wind": "SW 6 mph",
+     "pop": 4,
+     "short": "Partly Cloudy",
+     "detail": "Partly cloudy, with a low around 39."
     }
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-14T14:35:00+00:00",
+    "time": "2026-10-15T10:45:00+00:00",
     "text": "Cloudy",
-    "temp_f": 59
+    "temp_f": 50
    }
   }
  },
