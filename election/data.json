@@ -1,6 +1,6 @@
 {
- "as_of": "2026-10-14",
- "updated_at": "2026-10-14T21:50:00-04:00",
+ "as_of": "2026-10-15",
+ "updated_at": "2026-10-15T07:24:00-04:00",
  "election_day": "2026-11-03",
  "early_voting": {
   "start": "2026-10-24",
@@ -17,27 +17,27 @@
   {
    "order": 1,
    "headline": "Democrats are favored to take the House",
-   "detail": "Generic ballot D+8.8 (Silver Bulletin, Oct 13). Cook projects a Democratic gain of 9–19 seats."
+   "detail": "Generic ballot D+8.6 (Silver Bulletin, Oct 14); RealClearPolling D+7.9. Cook projects a Democratic gain of 9–19 seats with 21 toss-ups."
   },
   {
    "order": 2,
    "headline": "The Senate is a coin flip tilting Democratic",
-   "detail": "Dems need net +4. Six GOP-held seats are toss-ups: Maine, Ohio, Texas, Iowa, Kansas, Alaska. Markets put a Democratic Senate at 62–64%."
+   "detail": "Dems need net +4. Six GOP-held seats are toss-ups: Maine, Ohio, Texas, Iowa, Kansas, Alaska. Polling averages have the Democrat ahead in five and Kansas tied. Markets put a Democratic Senate at 62–64%."
   },
   {
    "order": 3,
    "headline": "Trump is deeply underwater",
-   "detail": "Net approval −21 (RealClearPolling) to −22 (Silver Bulletin); Pew has approval at 30%, the lowest of his second term."
+   "detail": "Net approval −21 (RealClearPolling) to −22 (Silver Bulletin); Pew has approval at 30%, comparable to the low point of his first term."
   },
   {
    "order": 4,
    "headline": "Hochul is comfortably ahead in New York",
-   "detail": "Up 11–12 on Blakeman (Marist, Emerson), though Blakeman leads Upstate."
+   "detail": "Up 11–12 on Blakeman (Marist, Emerson) and 9 in Siena's last poll. One small text-message poll this week had it at 3; treat it as an outlier until a major pollster agrees."
   },
   {
    "order": 5,
-   "headline": "Buffalo and Long Island House seats are safe; NY-17 isn't",
-   "detail": "NY-26 (Kennedy) Solid D; NY-01 (LaLota) Lean R, no poll. Lawler vs Conley in the Hudson Valley is the state's only toss-up: Conley 48–46."
+   "headline": "Buffalo and Long Island House seats are settled; NY-17 isn't",
+   "detail": "Cook: NY-26 (Kennedy) Solid D, NY-01 (LaLota) Solid R, NY-04 (Gillen) Likely D. Lawler vs Conley in the Hudson Valley is the state's only toss-up: Conley 48–46 in the one independent poll."
   },
   {
    "order": 6,
@@ -46,38 +46,39 @@
   }
  ],
  "what_changed": [
-  "Texas: two new polls keep Talarico ahead of Paxton (Marist 47–45, UT 50–47); the RCP average is +2.6. Still the hardest of the Democrats' pickups, but it has not slipped.",
-  "Maine: Suffolk (Oct 8–11) has Jackson 49–47 over Collins, the third straight poll with Jackson ahead by 2–4. Maine stays the likeliest flip; Collins beat her 2020 polls by 12, so treat a 2-point lead as even.",
-  "Iowa: YouGov (Oct 14) Turek 47–46, after Emerson and CNN had Hinson up 2. A true coin flip, and the plus-four math needs it or Kansas.",
-  "Kansas: InsiderAdvantage (Oct 11) Hamilton 48–47 and YouGov (Oct 6) 48–45 both have the Democrat narrowly ahead; NYT/Siena had Marshall by 1. Cook's Oct 6 move to Toss Up stands.",
-  "Alaska and Michigan: InsiderAdvantage (Oct 11) has Peltola 50–48 and El-Sayed 48–46. Holds in North Carolina (Cooper +14) and Georgia (Ossoff +8) look safe. If those hold, Democrats need four of Maine, Ohio, Texas, Iowa, Kansas, Alaska."
+  "Iowa: Marist (Oct 8–11) has Turek 48–45, the second straight poll with the Democrat ahead after YouGov's 47–46; RealClearPolling's average is now Turek +0.9. The four pickups still run through Maine, Ohio and Texas plus one of Iowa, Kansas and Alaska — and Iowa just got a little easier.",
+  "Kansas: RealClearPolling's average lands on an exact tie, 45.8–45.8. The polls showing Hamilton ahead (InsiderAdvantage +1, YouGov +3) are offset by NYT/Siena (Marshall +1) and a September co/efficient poll (Marshall +5). Still a toss-up either way.",
+  "Ohio: the average is Brown +3.1, but a Republican-leaning co/efficient poll (Oct 5–6) has Husted up 1, the first poll with Husted ahead since June. CNN's Brown +6 remains the latest nonpartisan read.",
+  "Minnesota: KSTP/SurveyUSA (Oct 15) has Flanagan 45–42 over Tafoya for the open Democratic seat; RealClearPolling counts it a toss-up, Cook Likely D. It is a hold Democrats cannot afford to lose on the way to 51.",
+  "New York: a Pollfinity text-message poll (Oct 8–12, 499 RV) has Hochul 47–44, far below Marist's 11 and Emerson's 12. The firm is self-funded by a 2024 Libertarian presidential candidate and the sample is small; the averages barely moved. Cook also moved NY-04 (Gillen) from Lean D to Likely D on Oct 9.",
+  "Generic ballot: Silver Bulletin slipped from D+8.8 to D+8.6; RealClearPolling from D+8.1 to D+7.9. Trump's approval is unchanged at −21.3 (RCP)."
  ],
  "generic_ballot": [
   {
    "tracker": "Silver Bulletin (all polls)",
    "dem": null,
    "rep": null,
-   "margin": 8.8,
+   "margin": 8.6,
    "window": "Rolling average",
-   "as_of": "2026-10-13",
+   "as_of": "2026-10-14",
    "url": "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls"
   },
   {
    "tracker": "Silver Bulletin (likely-voter adjusted)",
    "dem": null,
    "rep": null,
-   "margin": 9.5,
-   "window": "Rolling average",
-   "as_of": "2026-10-13",
+   "margin": 9.3,
+   "window": "Rolling average (Oct 12 note)",
+   "as_of": "2026-10-12",
    "url": "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls"
   },
   {
    "tracker": "RealClearPolling average",
-   "dem": 50.1,
-   "rep": 42.0,
-   "margin": 8.1,
-   "window": "Sep 21 – Oct 12",
-   "as_of": "2026-10-12",
+   "dem": 50.2,
+   "rep": 42.3,
+   "margin": 7.9,
+   "window": "Sep 24 – Oct 13",
+   "as_of": "2026-10-13",
    "url": "https://www.realclearpolling.com/polls/state-of-the-union/generic-congressional-vote"
   }
  ],
@@ -96,7 +97,7 @@
    "approve": null,
    "disapprove": null,
    "net": -22.4,
-   "as_of": "2026-10-13",
+   "as_of": "2026-10-14",
    "note": "Net only; detail paywalled",
    "url": "https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin"
   },
@@ -195,7 +196,7 @@
    "margin": 1.3,
    "pollster": "RealClearPolling average",
    "dates": "Sep 15 – Oct 11",
-   "note": "Latest: Suffolk (Oct 8–11) Jackson 49–47; Washington Post 50–46. Collins outran her polls by ~12 pts in 2020.",
+   "note": "Latest: Suffolk (Oct 8–11) Jackson 49–47; Rasmussen (Oct 5–8, Republican-leaning) 49–47; Washington Post 50–46; Marist 51–47. Collins outran her polls by ~12 pts in 2020.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/collins-vs-jackson"
   },
   {
@@ -205,13 +206,13 @@
    "democrat": "Sherrod Brown",
    "republican": "Jon Husted (inc.)",
    "cook_rating": "Toss Up",
-   "dem_pct": 49,
-   "rep_pct": 43,
-   "margin": 6,
-   "pollster": "CNN",
-   "dates": "Oct 8",
-   "note": "NYT/Siena (late Sep) had Brown 49–46.",
-   "url": "https://www.cnn.com/2026/10/05/politics/10-senate-seats-most-likely-to-flip-2026"
+   "dem_pct": 47.4,
+   "rep_pct": 44.3,
+   "margin": 3.1,
+   "pollster": "RealClearPolling average",
+   "dates": "Sep 18 – Oct 6",
+   "note": "Latest: CNN (Sep 29–Oct 5) Brown 49–43; co/efficient (Oct 5–6, Republican-leaning) Husted 46–45; NYT/Siena 49–46.",
+   "url": "https://www.realclearpolling.com/polls/senate/special-election/2026/ohio/husted-vs-brown"
   },
   {
    "state": "Texas",
@@ -225,8 +226,8 @@
    "margin": 2.6,
    "pollster": "RealClearPolling average",
    "dates": "Sep 18 – Oct 11",
-   "note": "Marist (Oct 14) Talarico 47–45; UT (Sep 25–Oct 5) 50–47; NYT/Siena Oct 3: 51–45. Tilting D but inside the margin.",
-   "url": "https://www.realclearpolling.com/polls/senate/general/2026/paxton-vs-talarico"
+   "note": "Latest: Marist (Oct 8–11) Talarico 47–45; ReconMR/Siena 48–44; Quantus (Republican-leaning) tied 47–47; YouGov 50–44; NYT/Siena 51–45. Tilting D but inside the margin.",
+   "url": "https://www.realclearpolling.com/polls/senate/general/2026/texas/talarico-vs-paxton"
   },
   {
    "state": "Iowa",
@@ -235,13 +236,13 @@
    "democrat": "Josh Turek",
    "republican": "Ashley Hinson",
    "cook_rating": "Toss Up",
-   "dem_pct": 47,
-   "rep_pct": 46,
-   "margin": 1,
-   "pollster": "YouGov",
-   "dates": "Oct 14",
-   "note": "Emerson Oct 5–6: Hinson 47–45; CNN Oct 8: Hinson 45–43. Polls split; a coin flip.",
-   "url": "https://www.realclearpolling.com/latest-polls/senate"
+   "dem_pct": 46.7,
+   "rep_pct": 45.8,
+   "margin": 0.9,
+   "pollster": "RealClearPolling average",
+   "dates": "Sep 22 – Oct 12",
+   "note": "Latest: Marist (Oct 8–11) Turek 48–45; YouGov (Oct 6–12) 47–46; Emerson (Oct 5–6) Hinson 47–45; CNN Hinson 45–43; NYT/Siena Hinson 48–47. A coin flip.",
+   "url": "https://www.realclearpolling.com/polls/senate/general/2026/iowa/turek-vs-hinson"
   },
   {
    "state": "Kansas",
@@ -250,13 +251,13 @@
    "democrat": "Adam Hamilton",
    "republican": "Roger Marshall (inc.)",
    "cook_rating": "Toss Up",
-   "dem_pct": 48,
-   "rep_pct": 47,
-   "margin": 1,
-   "pollster": "InsiderAdvantage",
-   "dates": "Oct 11",
-   "note": "YouGov Oct 6: Hamilton 48–45; NYT/Siena Oct 7: Marshall 47–46. Cook moved to Toss Up on Oct 6. Trump won KS by 16 in 2024.",
-   "url": "https://www.realclearpolling.com/latest-polls/senate"
+   "dem_pct": 45.8,
+   "rep_pct": 45.8,
+   "margin": 0.0,
+   "pollster": "RealClearPolling average",
+   "dates": "Sep 8 – Oct 10",
+   "note": "Latest: InsiderAdvantage (Oct 9–10, Republican-leaning) Hamilton 48–47; YouGov 48–45; NYT/Siena Marshall 47–46. Cook moved to Toss Up on Oct 6. Trump won KS by 16 in 2024.",
+   "url": "https://www.realclearpolling.com/polls/senate/general/2026/kansas/hamilton-vs-marshall"
   },
   {
    "state": "Alaska",
@@ -265,13 +266,13 @@
    "democrat": "Mary Peltola",
    "republican": "Dan Sullivan (inc.)",
    "cook_rating": "Toss Up",
-   "dem_pct": 50,
-   "rep_pct": 48,
-   "margin": 2,
-   "pollster": "InsiderAdvantage",
-   "dates": "Oct 11",
-   "note": "NYT/Siena Oct 3: Peltola 50–43. Sabato's Crystal Ball moved to Leans D on Oct 6.",
-   "url": "https://www.realclearpolling.com/latest-polls/senate"
+   "dem_pct": 48.8,
+   "rep_pct": 47.4,
+   "margin": 1.4,
+   "pollster": "RealClearPolling average",
+   "dates": "Sep 14 – Oct 10",
+   "note": "Latest: InsiderAdvantage (Oct 9–10, Republican-leaning) Peltola 50–48; Alaska Survey Research 51–49; NYT/Siena 50–43. Ranked-choice race; Sabato's Crystal Ball moved to Leans D on Oct 6.",
+   "url": "https://www.realclearpolling.com/polls/senate/general/2026/alaska/peltola-vs-sullivan"
   },
   {
    "state": "Michigan",
@@ -280,13 +281,13 @@
    "democrat": "Abdul El-Sayed",
    "republican": "Mike Rogers",
    "cook_rating": "Toss Up",
-   "dem_pct": 48,
-   "rep_pct": 46,
-   "margin": 2,
-   "pollster": "InsiderAdvantage",
-   "dates": "Oct 11",
-   "note": "Fox Oct 2: El-Sayed 50–49. Inside Elections: Tilt D. The only Democratic-held toss-up.",
-   "url": "https://www.realclearpolling.com/latest-polls/senate"
+   "dem_pct": 48.4,
+   "rep_pct": 45.7,
+   "margin": 2.7,
+   "pollster": "RealClearPolling average",
+   "dates": "Sep 24 – Oct 10",
+   "note": "Latest: InsiderAdvantage (Oct 9–10, Republican-leaning) El-Sayed 48–46; Quantus 48–47; YouGov 49–48; Fox 50–49. The only Democratic-held toss-up; no poll has had Rogers ahead since early September.",
+   "url": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed"
   },
   {
    "state": "North Carolina",
@@ -295,13 +296,13 @@
    "democrat": "Roy Cooper",
    "republican": "Michael Whatley",
    "cook_rating": "Likely D",
-   "dem_pct": 54,
-   "rep_pct": 40,
-   "margin": 14,
-   "pollster": "WRAL/SurveyUSA",
-   "dates": "Oct 13",
-   "note": "Cook moved from Lean D to Likely D on Oct 6.",
-   "url": "https://www.realclearpolling.com/latest-polls"
+   "dem_pct": 50.3,
+   "rep_pct": 40.8,
+   "margin": 9.5,
+   "pollster": "RealClearPolling average",
+   "dates": "Sep 6 – Oct 10",
+   "note": "Latest: WRAL/SurveyUSA (Oct 1–7) Cooper 54–40; Trafalgar (Republican-leaning) 49–41. Cook moved from Lean D to Likely D on Oct 6.",
+   "url": "https://www.realclearpolling.com/polls/senate/general/2026/north-carolina/cooper-vs-whatley"
   },
   {
    "state": "Georgia",
@@ -310,13 +311,13 @@
    "democrat": "Jon Ossoff (inc.)",
    "republican": "Mike Collins",
    "cook_rating": "Likely D",
-   "dem_pct": 51,
-   "rep_pct": 43,
-   "margin": 8,
-   "pollster": "Trafalgar Group",
-   "dates": "Oct 10",
-   "note": "Top GOP pickup target has drifted toward Democrats.",
-   "url": "https://www.realclearpolling.com/latest-polls/senate"
+   "dem_pct": 51.3,
+   "rep_pct": 43.2,
+   "margin": 8.1,
+   "pollster": "RealClearPolling average",
+   "dates": "Sep 14 – Oct 9",
+   "note": "Latest: Trafalgar (Oct 7–9, Republican-leaning) Ossoff 51–43; YouGov 52–42. Top GOP pickup target has drifted toward Democrats.",
+   "url": "https://www.realclearpolling.com/polls/senate/general/2026/georgia/ossoff-vs-collins"
   }
  ],
  "control": [
@@ -324,21 +325,21 @@
    "measure": "Democratic-leaning seats (RCP map)",
    "value": 46,
    "note": "Includes two independents who caucus with Democrats",
-   "as_of": "2026-10-12",
+   "as_of": "2026-10-15",
    "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
   {
    "measure": "Republican-leaning seats (RCP map)",
    "value": 46,
    "note": null,
-   "as_of": "2026-10-12",
+   "as_of": "2026-10-15",
    "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
   {
    "measure": "Toss-up seats (RCP map)",
    "value": 8,
    "note": "AK, IA, KS, ME, MI, MN, OH, TX",
-   "as_of": "2026-10-12",
+   "as_of": "2026-10-15",
    "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
   {
@@ -351,9 +352,9 @@
   {
    "measure": "Net seats Democrats need for 51",
    "value": 4,
-   "note": "Currently 47 D / 53 R",
-   "as_of": "2026-10-14",
-   "url": "https://www.gamingtoday.com/prediction-markets/politics/2026-midterm-elections-predictions/"
+   "note": "Currently 47 D (incl. two independents) / 53 R",
+   "as_of": "2026-10-15",
+   "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
   {
    "measure": "Polymarket odds of Democratic Senate (%)",
@@ -372,23 +373,23 @@
   {
    "measure": "Cook House toss-ups",
    "value": 21,
-   "note": "Cook moved 18 House races toward Democrats on Oct 9",
+   "note": "Cook moved 18 House races toward Democrats on Oct 9; 185 Solid D, 16 Likely D, 12 Lean D, 21 Toss Up, 9 Lean R, 18 Likely R, 174 Solid R",
    "as_of": "2026-10-09",
-   "url": "https://electiontracker.live/"
+   "url": "https://www.cookpolitical.com/ratings/house-race-ratings"
   },
   {
    "measure": "Cook projected Democratic House gain (low)",
    "value": 9,
    "note": "Seats",
    "as_of": "2026-10-09",
-   "url": "https://electiontracker.live/"
+   "url": "https://www.cookpolitical.com/analysis/house/house-overview/eighteen-more-house-race-ratings-move-democrats-favor"
   },
   {
    "measure": "Cook projected Democratic House gain (high)",
    "value": 19,
    "note": "Seats",
    "as_of": "2026-10-09",
-   "url": "https://electiontracker.live/"
+   "url": "https://www.cookpolitical.com/analysis/house/house-overview/eighteen-more-house-race-ratings-move-democrats-favor"
   }
  ],
  "ny_governor": [
@@ -413,6 +414,26 @@
    "url": "https://maristpoll.marist.edu/polls/midterm-elections-in-new-york-october-2026/"
   },
   {
+   "poll": "Siena",
+   "dates": "Sep 11–17",
+   "sample": "1,144 LV",
+   "hochul": 50,
+   "blakeman": 41,
+   "margin": 9,
+   "note": "Blakeman leads Upstate 47–44; Hochul 61–27 in NYC; suburbs 48–46. Hochul job approval 48/47.",
+   "url": "https://sri.siena.edu/wp-content/uploads/2026/09/SNY-September-2026-Poll-Release-9-23-26.pdf"
+  },
+  {
+   "poll": "Pollfinity Research",
+   "dates": "Oct 8–12",
+   "sample": "499 RV",
+   "hochul": 47,
+   "blakeman": 44,
+   "margin": 3,
+   "note": "Text-message-to-web poll, ±4.8. The firm is self-funded by a 2024 Libertarian presidential candidate; an outlier against every major poll.",
+   "url": "https://pollfinity.com/polls/ny-governor-2026-oct"
+  },
+  {
    "poll": "Pollsmax average (29 polls)",
    "dates": "through Oct 12",
    "sample": "—",
@@ -429,7 +450,7 @@
    "hochul": 51.9,
    "blakeman": 41.2,
    "margin": 10.7,
-   "note": "Aggregate",
+   "note": "Aggregate; not refreshed Oct 15",
    "url": "https://poliagg.com/race/us-governor-2026-ny/"
   }
  ],
@@ -440,8 +461,8 @@
    "incumbent": "Mike Lawler",
    "party": "R",
    "challenger": "Cait Conley (D)",
-   "rating": "Toss-up",
-   "rating_source": "Cook / consensus",
+   "rating": "Toss Up",
+   "rating_source": "Cook (Oct 9)",
    "dem_pct": 48,
    "rep_pct": 46,
    "margin": 2,
@@ -456,15 +477,15 @@
    "incumbent": "Nick LaLota",
    "party": "R",
    "challenger": "Chris Gallant (D)",
-   "rating": "Lean R",
-   "rating_source": "Decision Desk HQ (Jul 14)",
+   "rating": "Solid R",
+   "rating_source": "Cook (Oct 9)",
    "dem_pct": 38,
    "rep_pct": 41,
    "margin": -3,
    "pollster": "PPP (D)",
    "dates": "Dec 10–11, 2025",
-   "note": "Only poll is a Democratic one from December. Trump +10 and LaLota +10 in 2024. Gallant: Army National Guard pilot, former air traffic controller.",
-   "url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_New_York"
+   "note": "Cook rates it Solid R. The only public poll is a Democratic one (PPP) from December. Trump +10 and LaLota +10 in 2024. Gallant: Army National Guard pilot, former air traffic controller.",
+   "url": "https://www.cookpolitical.com/ratings/house-race-ratings"
   },
   {
    "district": "NY-04",
@@ -472,15 +493,15 @@
    "incumbent": "Laura Gillen",
    "party": "D",
    "challenger": "Jeanine Driscoll (R)",
-   "rating": "Likely R",
-   "rating_source": "PollingSource",
+   "rating": "Likely D",
+   "rating_source": "Cook (moved from Lean D, Oct 9)",
    "dem_pct": null,
    "rep_pct": null,
    "margin": null,
    "pollster": null,
    "dates": null,
-   "note": "Gillen flipped the seat in 2024; PollingSource rates it Likely R with no public poll. Other raters not yet checked.",
-   "url": "https://pollingsource.com/house/state/ny"
+   "note": "Gillen flipped the seat in 2024 (PVI D+2). Cook moved it from Lean D to Likely D on Oct 9 as part of its 18-race shift toward Democrats. No public poll.",
+   "url": "https://www.cookpolitical.com/ratings/house-race-ratings"
   },
   {
    "district": "NY-26",
@@ -489,14 +510,14 @@
    "party": "D",
    "challenger": "Dennis Hannon (R)",
    "rating": "Solid D",
-   "rating_source": "Cook",
+   "rating_source": "Cook (Oct 9)",
    "dem_pct": null,
    "rep_pct": null,
    "margin": null,
    "pollster": null,
    "dates": null,
    "note": "Kennedy won 65.2% in 2024; district PVI D+11.",
-   "url": "https://www.cookpolitical.com/house/race/483701"
+   "url": "https://www.cookpolitical.com/ratings/house-race-ratings"
   }
  ],
  "key_dates": [
@@ -523,6 +544,13 @@
   {
    "date": "2026-10-14",
    "generic_ballot": 8.8,
+   "trump_net": -21.3,
+   "dem_senate_odds": 64,
+   "hochul_margin": 12
+  },
+  {
+   "date": "2026-10-15",
+   "generic_ballot": 8.6,
    "trump_net": -21.3,
    "dem_senate_odds": 64,
    "hochul_margin": 12
@@ -586,7 +614,7 @@
     {
      "office": "Town Justice",
      "race": "On the ballot (term ends 12/31/26); candidates not yet certified. No propositions.",
-     "url": "https://www.elections.erie.gov/OfficeDetail.aspx?OffID=333"
+     "url": "https://www.elections.erie.gov/pdfs/08.31.26%20Offices%20to%20be%20Elected.pdf"
     }
    ],
    "early_voting": {
@@ -671,7 +699,7 @@
     {
      "office": "Village & town",
      "race": "Trustee Mulholland (D) and Councilmember Bashaw (D) unopposed. No propositions.",
-     "url": "https://chautauquacountyny.gov/sites/default/files/inline-files/2026%20OFFICES%20UP%20FOR%20ELECTION%2007.22.2026.pdf"
+     "url": "https://chautauquacountyny.gov/sites/default/files/inline-files/2026%20OFFICES%20UP%20FOR%20ELECTION%2008.19.2026.pdf"
     }
    ],
    "early_voting": {
@@ -735,7 +763,11 @@
   },
   {
    "term": "Why +4",
-   "text": "The Senate is 53 Republicans to 47 Democrats (counting two independents who vote with Democrats). Democrats need a net gain of four seats for 51. With Georgia and Michigan to defend, that means winning four of the six Republican-held toss-ups."
+   "text": "The Senate is 53 Republicans to 47 Democrats (counting two independents who vote with Democrats). Democrats need a net gain of four seats for 51. With Georgia, Michigan and Minnesota to defend, that means winning four of the six Republican-held toss-ups — Maine, Ohio, Texas, Iowa, Kansas, Alaska."
+  },
+  {
+   "term": "Average vs. one poll",
+   "text": "The headline number for each Senate race is RealClearPolling's average of recent polls, which is steadier than any single survey. The note under it lists the latest individual polls. \"Republican-leaning\" or \"Democratic-leaning\" after a pollster means the firm works for that party or has a record of tilting that way — weigh those lighter."
   },
   {
    "term": "Margin of error",
