@@ -74,20 +74,66 @@ house_rows = "".join(f'''<tr><td><b>{e(r["district"])}</b><br><span class="mut">
 <td><span class="{r["party"].lower()}">{e(r["incumbent"])} ({e(r["party"])})</span><br><span class="mut">vs {e(r["challenger"])}</span></td>
 <td>{e(r["rating"])}<br><span class="mut">{("Latest: " + e(r["pollster"]) + " " + num(r["dem_pct"]) + "–" + num(r["rep_pct"])) if r["pollster"] else e(r["note"] or "")}</span></td></tr>''' for r in D["ny_house"])
 
-ballot_boxes = "".join(
-    f'<div class="box"><div class="bt">{e(t["town"])}<span class="mut"> · {e(t["county"])} County</span></div><dl>' +
-    "".join(f'<dt>{e(i["office"])}</dt><dd>{e(i["race"])}</dd>' for i in t["items"]) + "</dl></div>"
-    for t in D["your_ballot"])
-statewide = "".join(f'<dt>{e(i["office"])}</dt><dd>{e(i["race"])}</dd>' for i in D["statewide"])
+def town_block(t, open_):
+    rows = "".join(f'<tr><th>{e(i["office"])}</th><td>{e(i["race"])}</td></tr>' for i in t["items"])
+    return (f'<details class="town"{" open" if open_ else ""}><summary><b>{e(t["town"])}</b><span class="mut"> · {e(t["county"])} County</span></summary>'
+            f'<table class="tight">{rows}</table></details>')
+ballot_boxes = "".join(town_block(t, k == 0) for k, t in enumerate(D["your_ballot"]))
+statewide = "".join(f'<tr><th>{e(i["office"])}</th><td>{e(i["race"])}</td></tr>' for i in D["statewide"])
 
-dates_rows = "".join(f'<tr><td>{e(r["event"])}</td><td>{fdate(r["date"], "%a, %b %-d")}</td><td class="mut">{e(r["note"] or "")}</td></tr>' for r in D["key_dates"])
+# Early-voting banner: on from the first day of early voting through Election Day
+ev = D["early_voting"]
+ev_start = datetime.date.fromisoformat(ev["start"]); ev_end = datetime.date.fromisoformat(ev["end"])
+banner = ""
+if ev_start <= today <= eday:
+    if today <= ev_end:
+        head = f"Early voting is open through {fdate(ev['end'], '%A, %b %-d')}"
+        sites = "".join(f'<tr><th>{e(t["town"])}</th><td>{e(t["early_voting"]["site"])}<br><span class="mut">{e(ev["hours"].get(t["county"], ""))}</span></td></tr>' for t in D["your_ballot"])
+        banner = f'<div class="banner"><div class="bh">{e(head)}</div><table class="tight">{sites}</table></div>'
+    else:
+        when = "today" if today == eday else fdate(D["election_day"], "%A")
+        banner = (f'<div class="banner"><div class="bh">Election Day is {when} · polls open 6 a.m. – 9 p.m.</div>'
+                  f'<p class="mut" style="margin:.2rem 0 0">Early voting has closed. Vote at your assigned polling place: '
+                  f'<a href="https://voterlookup.elections.ny.gov/">look it up at voterlookup.elections.ny.gov</a>.</p></div>')
 
-trend = ""
-if len(D.get("history", [])) > 1:
-    pts = D["history"]
-    trend = '<h2>Trend</h2><table class="plain"><tr><th>Date</th><th class="n">Generic ballot</th><th class="n">Trump net</th><th class="n">D Senate odds</th><th class="n">Hochul margin</th></tr>' + "".join(
-        f'<tr><td>{fdate(p["date"])}</td><td class="n">D +{num(p["generic_ballot"])}</td><td class="n">{net(p["trump_net"])}</td><td class="n">{num(p["dem_senate_odds"],0)}%</td><td class="n">+{num(p["hochul_margin"])}</td></tr>'
-        for p in pts[-14:]) + "</table>"
+# ---------- main body: polls until election night, results after ----------
+polls_main = f"""{tiles}
+
+<h2>Senate battleground</h2>
+<div class="legend"><i style="background:var(--blue)"></i>Democrat ahead &nbsp; <i style="background:var(--red)"></i>Republican ahead &nbsp; · latest public poll or average</div>
+<table>{senate_rows}</table>
+<ul class="notes">{senate_notes}</ul>
+
+<h2>New York governor</h2>
+<table><tr><th>Poll</th><th class="n">Hochul</th><th class="n">Blakeman</th><th class="n">Margin</th></tr>{gov_rows}</table>
+<p class="mut">Blakeman leads Upstate and among independents; Hochul's margin comes from New York City.</p>
+
+<h2>House seats we watch</h2>
+<table>{house_rows}</table>"""
+
+R = D.get("results") or {}
+def results_main():
+    sen, hou = R.get("senate", {}), R.get("house", {})
+    tiles_r = f"""<div class="tiles results">
+ <div class="tile"><div class="lbl">Senate · seats called</div><div class="big"><span class="d">{sen.get("dem","—")}</span> – <span class="r">{sen.get("rep","—")}</span></div><div class="sub">51 for a majority · {e(sen.get("called_note",""))}</div></div>
+ <div class="tile"><div class="lbl">House · seats called</div><div class="big"><span class="d">{hou.get("dem","—")}</span> – <span class="r">{hou.get("rep","—")}</span></div><div class="sub">218 for a majority</div></div>
+</div>"""
+    def race_row(r):
+        status = r.get("status", "")
+        lead = f'{e(r.get("leader",""))} {num(r.get("pct_lead")) + "%" if r.get("pct_lead") is not None else ""}'.strip()
+        return (f'<tr><td><b>{e(r["race"])}</b><br><span class="mut">{e(r.get("candidates",""))}</span></td>'
+                f'<td>{lead}<br><span class="mut">{e(r.get("reporting",""))}</span></td>'
+                f'<td class="n"><span class="called">{e(status)}</span></td></tr>')
+    rows = "".join(race_row(r) for r in R.get("races", []))
+    local = "".join(race_row(r) for r in R.get("local", []))
+    return tiles_r + f"""
+<h2>Races we watched</h2>
+<table>{rows}</table>
+<h2>Your towns</h2>
+<table>{local}</table>
+<p class="mut">{e(R.get("source_note",""))}</p>"""
+
+main = results_main() if D.get("mode") == "results" else polls_main
 
 page = f'''<!DOCTYPE html>
 <html lang="en">
@@ -147,7 +193,12 @@ td.n,th.n{{text-align:right;white-space:nowrap}}
 .changed{{padding-left:1.1rem;margin:0}}.changed li{{margin:.25rem 0}}
 .legend{{font-size:.78rem;color:var(--soft);margin:.3rem 0 .2rem}}
 .legend i{{display:inline-block;width:.7rem;height:.7rem;vertical-align:middle;margin-right:.3rem}}
-.boxes{{display:grid;grid-template-columns:1fr;gap:.6rem}}
+.town{{border:1px solid var(--rule);background:var(--wash);margin:0 0 .4rem;padding:0 .7rem}}
+.town summary{{cursor:pointer;padding:.5rem 0;font-family:'PF';font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:baseline}}
+.town summary::-webkit-details-marker{{display:none}}.town summary::after{{content:"+";font-family:'AR';color:var(--soft);font-size:1rem}}.town[open] summary::after{{content:"–"}}
+.tight{{font-size:.84rem;margin:0 0 .5rem}}.tight th{{width:7.2rem;font-size:.56rem;padding:.3rem .4rem .3rem 0;position:static;background:none;white-space:normal;vertical-align:top}}.tight td{{padding:.3rem 0}}
+.banner{{border:2px solid var(--red);background:var(--wash);padding:.6rem .75rem;margin:.9rem 0 0}}.banner .bh{{font-family:'PF';font-weight:800;font-size:1.1rem;color:var(--red);margin-bottom:.3rem}}
+.results .big{{font-size:1.9rem;white-space:nowrap}}.called{{font-family:'AR';font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:.05rem .4rem;border:1px solid var(--rule)}}
 .box{{background:var(--wash);border:1px solid var(--rule);padding:.6rem .75rem;margin-bottom:.6rem}}
 .box .bt{{font-family:'PF';font-weight:700;font-size:1.05rem;margin-bottom:.2rem}}
 .box dl{{margin:0;font-size:.86rem}}.box dt{{font-family:'AR';font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-top:.4rem}}.box dd{{margin:0;line-height:1.35}}
@@ -163,27 +214,16 @@ td.n,th.n{{text-align:right;white-space:nowrap}}
 <div class="tag">2026 Midterm Tracker · Refreshed every morning through Nov 3</div>
 <div class="orn">✦ ✦ ✦</div>
 
+{banner}
 <h2>The bottom line</h2>
 <ol class="bottom">{bottom}</ol>
 {changed}
-{tiles}
-
-<h2>Senate battleground</h2>
-<div class="legend"><i style="background:var(--blue)"></i>Democrat ahead &nbsp; <i style="background:var(--red)"></i>Republican ahead &nbsp; · latest public poll or average</div>
-<table>{senate_rows}</table>
-<ul class="notes">{senate_notes}</ul>
-
-<h2>New York governor</h2>
-<table><tr><th>Poll</th><th class="n">Hochul</th><th class="n">Blakeman</th><th class="n">Margin</th></tr>{gov_rows}</table>
-<p class="mut">Blakeman leads Upstate and among independents; Hochul's margin comes from New York City.</p>
-
-<h2>House seats we watch</h2>
-<table>{house_rows}</table>
+{main}
 
 <h2>Your ballot</h2>
-<p class="mut" style="margin:.2rem 0 .6rem">Beyond the statewide races, what each town votes on Nov 3. Nobody polls these; this box changes only when the ballot does.</p>
-<div class="box"><div class="bt">Every New York ballot</div><dl>{statewide}</dl></div>
-<div class="boxes">{ballot_boxes}</div>
+<p class="mut" style="margin:.2rem 0 .5rem">Tap a town. Beyond the statewide races, what it votes on Nov 3 — nobody polls these.</p>
+<details class="town" open><summary><b>Every New York ballot</b></summary><table class="tight">{statewide}</table></details>
+{ballot_boxes}
 
 <h2>Key dates</h2>
 <table>{dates_rows}</table>

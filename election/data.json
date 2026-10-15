@@ -4,7 +4,14 @@
  "election_day": "2026-11-03",
  "early_voting": {
   "start": "2026-10-24",
-  "end": "2026-11-01"
+  "end": "2026-11-01",
+  "hours": {
+   "Niagara": "Sat–Sun 9–5; Mon–Tue noon–8; Wed–Fri 9–5",
+   "Erie": "Sat–Sun 9–5; Mon–Fri noon–9",
+   "Monroe": "Sat–Sun & Mon/Wed/Fri 9–5; Tue & Thu noon–8",
+   "Chautauqua": "Sat–Sun 9–5; Mon–Tue noon–8; Wed–Fri 10–6"
+  },
+  "url": "https://www.wgrz.com/article/news/politics/elections/election-day-voter-guide-2026/71-44509f20-7e0f-4c57-b2c2-e5cf71e1d41c"
  },
  "bottom_line": [
   {
@@ -508,174 +515,186 @@
    "county": "Niagara",
    "items": [
     {
-     "office": "US House, NY-26",
-     "race": "Tim Kennedy (D, inc.) vs Dennis Hannon (R/C)",
+     "office": "NY-26",
+     "race": "Kennedy (D, inc.) vs Hannon (R)",
      "url": "https://theballotbrief.com/zip/14120"
     },
     {
-     "office": "State Senate 62",
-     "race": "Rob Ortt (R/C, inc.) vs Thomas Arida (D/WFP) — both from NT",
+     "office": "SD-62",
+     "race": "Ortt (R, inc.) vs Arida (D)",
      "url": "https://theballotbrief.com/zip/14120"
     },
     {
-     "office": "Assembly 140 or 145 (by ward)",
-     "race": "140: Bill Conrad (D, inc.) vs Mohammed Faisal (R) · 145 (open): Becky Wydysh (R/C) vs Nate McMurray (D)",
+     "office": "AD-140 / 145",
+     "race": "Conrad (D, inc.) vs Faisal (R) · open: Wydysh (R) vs McMurray (D)",
      "url": "https://theballotbrief.com/state/new-york/niagara-county"
     },
     {
-     "office": "County Legislature (all 15 seats, first 4-year terms)",
-     "race": "NT districts 7–9: Gooch (R) vs Mooradian (D); Andres (R) vs Kennedy (D); Bradt (R) vs Osborn (D)",
+     "office": "County Leg. 7–9",
+     "race": "Gooch (R) v Mooradian · Andres (R) v Kennedy · Bradt (R) v Osborn",
      "url": "https://theballotbrief.com/state/new-york/niagara-county"
     },
     {
-     "office": "Proposition: $18M community center bond",
-     "race": "Yes/No on bonds for a community center at the Norman Keller Building; est. $0.84 per $1,000 assessed before grants",
+     "office": "Prop: $18M bond",
+     "race": "Community center at the Keller Building; ≈$0.84 per $1,000 assessed before grants",
      "url": "https://www.wkbw.com/niagara-county/an-investment-north-tonawanda-to-vote-on-18m-community-center-project"
-    },
-    {
-     "office": "Early voting",
-     "race": "Wheatfield Community Center (2790 Church Rd) or Wendelville Fire Co. (7340 Campbell Blvd), Oct 24–Nov 1",
-     "url": "https://elections.niagaracounty.gov/wp-content/uploads/2026/09/20260901101419-2026-general-election-early-voting-schedule.pdf"
     }
-   ]
+   ],
+   "early_voting": {
+    "site": "Wheatfield Community Center (2790 Church Rd) or Wendelville Fire Co. (7340 Campbell Blvd), Oct 24–Nov 1",
+    "url": "https://elections.niagaracounty.gov/wp-content/uploads/2026/09/20260901101419-2026-general-election-early-voting-schedule.pdf"
+   }
   },
   {
    "town": "Orchard Park",
    "county": "Erie",
    "items": [
     {
-     "office": "US House, NY-23",
-     "race": "Nick Langworthy (R, inc.) vs Aaron Gies (D/WFP)",
+     "office": "NY-23",
+     "race": "Langworthy (R, inc.) vs Gies (D)",
      "url": "https://theballotbrief.com/zip/14127"
     },
     {
-     "office": "State Senate 60",
-     "race": "Patrick Gallivan (R/C, inc.); Democrat Jacqueline Balikowski listed by Wikipedia/BallotReady but not on the Sept 4 state certification — unconfirmed",
+     "office": "SD-60",
+     "race": "Gallivan (R, inc.); Dem challenger Balikowski unconfirmed",
      "url": "https://theballotbrief.com/state/new-york/erie-county"
     },
     {
-     "office": "Assembly 142 or 147 (by area)",
-     "race": "142: Pat Burke (D, inc.) vs Gary Dickson (R/C) · 147: David DiPietro (R/C, inc.), unopposed",
+     "office": "AD-142 / 147",
+     "race": "Burke (D, inc.) vs Dickson (R) · DiPietro (R, inc.) unopposed",
      "url": "https://theballotbrief.com/state/new-york/erie-county"
     },
     {
      "office": "Town Justice",
-     "race": "Seat on the ballot (term ends 12/31/26); candidates unconfirmed. No propositions found.",
+     "race": "On the ballot; candidates unconfirmed. No propositions.",
      "url": "https://www.elections.erie.gov/OfficeDetail.aspx?OffID=333"
-    },
-    {
-     "office": "Early voting",
-     "race": "Orchard Park Community Activity Center, 4600 California Rd, Oct 24–Nov 1 (weekdays noon–9)",
-     "url": "https://www.elections.erie.gov/pdfs/EARLYVOTING2026GEN.pdf"
     }
-   ]
+   ],
+   "early_voting": {
+    "site": "Orchard Park Community Activity Center, 4600 California Rd, Oct 24–Nov 1 (weekdays noon–9)",
+    "url": "https://www.elections.erie.gov/pdfs/EARLYVOTING2026GEN.pdf"
+   }
   },
   {
    "town": "Scottsville (Wheatland)",
    "county": "Monroe",
    "items": [
     {
-     "office": "US House, NY-25",
-     "race": "Joe Morelle (D, inc.) vs Virginia McIntyre (R/C)",
+     "office": "NY-25",
+     "race": "Morelle (D, inc.) vs McIntyre (R)",
      "url": "https://theballotbrief.com/zip/14546"
     },
     {
-     "office": "State Senate 54",
-     "race": "Pamela Helming (R/C, inc.) vs Michael Mills (D)",
+     "office": "SD-54",
+     "race": "Helming (R, inc.) vs Mills (D)",
      "url": "https://theballotbrief.com/state/new-york/monroe-county"
     },
     {
-     "office": "Assembly 139",
-     "race": "Stephen Hawley (R/C, inc.) vs Sarah Wolcott (D)",
+     "office": "AD-139",
+     "race": "Hawley (R, inc.) vs Wolcott (D)",
      "url": "https://theballotbrief.com/state/new-york/monroe-county"
     },
     {
      "office": "County & town",
-     "race": "DA Brian Green (D) unopposed; Wheatland Supervisor Jim Kirch (R/C) unopposed. No county legislature seats or propositions this year.",
+     "race": "DA Green (D) and Supervisor Kirch (R) unopposed. No propositions.",
      "url": "https://www.wxxinews.org/local-news/2026-10-14/monroe-county-election-guide-how-and-where-to-vote-and-who-the-candidates-are"
-    },
-    {
-     "office": "Early voting",
-     "race": "Nearest: Henrietta Library (625 Calkins Rd) or Gates Presbyterian (1049 Wegman Rd); any of 15 county sites, Oct 24–Nov 1",
-     "url": "https://www.monroecounty.gov/elections"
     }
-   ]
+   ],
+   "early_voting": {
+    "site": "Nearest: Henrietta Library (625 Calkins Rd) or Gates Presbyterian (1049 Wegman Rd); any of 15 county sites, Oct 24–Nov 1",
+    "url": "https://www.monroecounty.gov/elections"
+   }
   },
   {
    "town": "Dunkirk",
    "county": "Chautauqua",
    "items": [
     {
-     "office": "US House, NY-23",
-     "race": "Nick Langworthy (R, inc.) vs Aaron Gies (D/WFP)",
+     "office": "NY-23",
+     "race": "Langworthy (R, inc.) vs Gies (D)",
      "url": "https://theballotbrief.com/zip/14048"
     },
     {
-     "office": "State Senate 57",
-     "race": "George Borrello (R/C, inc.) vs Victoria Guite-Williams (D/WFP)",
+     "office": "SD-57",
+     "race": "Borrello (R, inc.) vs Guite-Williams (D)",
      "url": "https://theballotbrief.com/zip/14048"
     },
     {
-     "office": "Assembly 150",
-     "race": "Andrew Molitor (R/C, inc.) vs Thomas Carle (D/WFP)",
+     "office": "AD-150",
+     "race": "Molitor (R, inc.) vs Carle (D)",
      "url": "https://theballotbrief.com/zip/14048"
     },
     {
-     "office": "County (all 19 legislature seats)",
-     "race": "LD-1: Marcus Buchanan (D, inc.) vs Colby Garza (R/C) · LD-2: Robert Bankoski (D) unopposed · Family Court: Michael Sullivan (R/C, inc.) vs Alexandria Moss (D/WFP, of Dunkirk) · Sheriff Quattrone (R/C) unopposed. No city offices or propositions.",
+     "office": "County",
+     "race": "Leg. LD-1 Buchanan (D, inc.) vs Garza (R); LD-2 Bankoski (D) unopp. · Family Court: Sullivan (R, inc.) vs Moss (D) · Sheriff Quattrone (R) unopp. No propositions.",
      "url": "https://theballotbrief.com/state/new-york/chautauqua-county"
-    },
-    {
-     "office": "Early voting",
-     "race": "County Fairgrounds 4-H Building, 1089 Central Ave, Oct 24–Nov 1",
-     "url": "https://chautauquacountyny.gov/board-of-elections/Early-Voting-Information"
     }
-   ]
+   ],
+   "early_voting": {
+    "site": "County Fairgrounds 4-H Building, 1089 Central Ave, Oct 24–Nov 1",
+    "url": "https://chautauquacountyny.gov/board-of-elections/Early-Voting-Information"
+   }
   },
   {
    "town": "Fredonia (Pomfret)",
    "county": "Chautauqua",
    "items": [
     {
-     "office": "US House, NY-23 · State Senate 57 · Assembly 150",
-     "race": "Same three races as Dunkirk: Langworthy vs Gies; Borrello vs Guite-Williams; Molitor vs Carle",
+     "office": "NY-23 · SD-57 · AD-150",
+     "race": "Same as Dunkirk: Langworthy v Gies · Borrello v Guite-Williams · Molitor v Carle",
      "url": "https://theballotbrief.com/zip/14063"
     },
     {
-     "office": "County Legislature LD-3 or LD-4",
-     "race": "LD-3: Bob Scudder (R/C, inc.) vs Michael Lee (D/WFP) · LD-4: Sandra Lewis (D) unopposed",
+     "office": "County Leg. LD-3 / 4",
+     "race": "Scudder (R, inc.) vs Lee (D) · Lewis (D) unopposed",
      "url": "https://theballotbrief.com/state/new-york/chautauqua-county"
     },
     {
      "office": "Village & town",
-     "race": "Village Trustee: Tim Mulholland Jr. (D) unopposed · Pomfret Council vacancy: Evadawn Bashaw (D/WFP) unopposed. No propositions.",
+     "race": "Trustee Mulholland (D) and Councilmember Bashaw (D) unopposed. No propositions.",
      "url": "https://chautauquacountyny.gov/sites/default/files/inline-files/2026%20OFFICES%20UP%20FOR%20ELECTION%2007.22.2026.pdf"
-    },
-    {
-     "office": "Early voting",
-     "race": "County Fairgrounds 4-H Building, 1089 Central Ave, Dunkirk, Oct 24–Nov 1; Election Day at Harvest Chapel, 39 Matteson St",
-     "url": "https://chautauquacountyny.gov/board-of-elections/Early-Voting-Information"
     }
-   ]
+   ],
+   "early_voting": {
+    "site": "County Fairgrounds 4-H Building, 1089 Central Ave, Dunkirk, Oct 24–Nov 1; Election Day at Harvest Chapel, 39 Matteson St",
+    "url": "https://chautauquacountyny.gov/board-of-elections/Early-Voting-Information"
+   }
   }
  ],
  "statewide": [
   {
    "office": "Governor",
-   "race": "Kathy Hochul (D, inc.) vs Bruce Blakeman (R)"
+   "race": "Hochul (D, inc.) vs Blakeman (R)"
   },
   {
    "office": "Attorney General",
-   "race": "Letitia James (D, inc.) vs Saritha Komatireddy (R)"
+   "race": "James (D, inc.) vs Komatireddy (R)"
   },
   {
    "office": "Comptroller",
-   "race": "Tom DiNapoli (D, inc.) vs Joseph Hernandez (R)"
+   "race": "DiNapoli (D, inc.) vs Hernandez (R)"
   },
   {
-   "office": "Supreme Court, 8th District (vote for 4 — Erie, Niagara, Chautauqua)",
+   "office": "Supreme Court, 8th Dist. (vote for 4; Erie, Niagara, Chautauqua)",
    "race": "Bucki, Joynt, Amodeo, Richardson, Tripi, Hickey, Vario"
   }
  ],
- "statewide_url": "https://theballotbrief.com/zip/14120"
+ "statewide_url": "https://theballotbrief.com/zip/14120",
+ "mode": "polls",
+ "results": {
+  "senate": {
+   "dem": 0,
+   "rep": 0,
+   "called_note": "",
+   "url": ""
+  },
+  "house": {
+   "dem": 0,
+   "rep": 0,
+   "url": ""
+  },
+  "races": [],
+  "local": [],
+  "source_note": ""
+ }
 }
