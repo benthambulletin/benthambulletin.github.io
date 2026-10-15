@@ -5202,6 +5202,25 @@
           "badges": []
         },
         {
+          "name": "Arod",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-15T17:13:53+00:00",
+          "firstAt": "2026-10-15T17:13:53+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "B-rad",
           "house": false,
           "correct": 0,
@@ -5370,6 +5389,25 @@
           "delta": 0,
           "state": "alive",
           "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Leah",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-15T17:17:16+00:00",
+          "firstAt": "2026-10-15T17:17:16+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
           "badges": []
         },
         {
@@ -5582,7 +5620,7 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Wendy walked in at 11:50 this morning and filed again two minutes later, which is either thoroughness or nerves. Welcome. Nobody in this room can tell the difference either. Ryan Holovics is still asking permission to play after last week's beating, Walczyk is still telling Claude where to go, and Derek says this is his week, which Derek says every week.\n\nNineteen in. Arod and Leah haven't filed; tonight's 8:15 kickoff closes the door. Questions for the commissioner go on the pick sheet.",
+      "column": "Arod and Leah slid in four minutes apart after lunch, so the roll is complete: everybody who could be shamed into filing has filed. Wendy filed twice in two minutes on her first try, which is either thoroughness or nerves. Ryan Holovics is still asking permission to play after last week's beating, Walczyk is still telling Claude where to go, and Derek says this is his week, which Derek says every week.\n\nTwenty-one in. Tonight's 8:15 kickoff in Denver opens the week.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 70.0,
@@ -5683,6 +5721,14 @@
           "who": "Wendy",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a140925374abbec",
+          "at": "2026-10-15T17:18:12Z",
+          "amt": "10.00",
+          "who": "Leah",
+          "status": "odd",
+          "told": null
         }
       ],
       "opensAt": "2026-10-13T08:08:01Z",
@@ -5764,11 +5810,11 @@
           "a": "I'm wondering if that was an insinuation that men don't do laundry? Didn't you finish last last week?"
         }
       ],
-      "columnHead": "New blood files twice in two minutes",
-      "columnN": 19
+      "columnHead": "Full house, and Ryan still wants permission",
+      "columnN": 21
     }
   },
-  "updated": "2026-10-15T17:12:23.783538+00:00",
+  "updated": "2026-10-15T17:19:50.396202+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5825,7 +5871,9 @@
     "f521bba06403a40f": "B-rad",
     "786a36c5a7042b16": "Kaylani & Luka",
     "30a0fca14f7ccbd8": "Ryan Holovics",
-    "1947a0b7cf319a8d": "Wendy"
+    "1947a0b7cf319a8d": "Wendy",
+    "e71e3ea71c487c10": "Arod",
+    "b13704921511cab0": "Leah"
   },
   "keepNames": [
     "Kaylani & Luka"
