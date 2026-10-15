@@ -18,6 +18,7 @@ def num(x, nd=1):
 def margin(m):
     if m is None: return "no poll"
     m = float(m)
+    if m == 0: return "Tie"
     return f"D +{num(m)}" if m >= 0 else f"R +{num(-m)}"
 
 def net(n):
@@ -48,7 +49,7 @@ def chip(rating):
 
 def lead(m):
     if m is None: return '<span class="lead nx">No poll</span>'
-    return f'<span class="lead {"d" if float(m) >= 0 else "r"}">{margin(m)}</span>'
+    return f'<span class="lead {"nx" if float(m) == 0 else ("d" if float(m) > 0 else "r")}">{margin(m)}</span>'
 
 def lede(text):
     """Bold the short lead-in before a colon ("Texas: ...") — presentation only."""
@@ -71,7 +72,7 @@ eday_short = fdate(D["election_day"]); eday_long = fdate(D["election_day"], "%A,
 tiles = f"""
 <div class="tiles">
  <div class="tile"><div class="lbl">Generic ballot</div><div class="big d">D +{num(sb["margin"])}</div><div class="sub">Silver Bulletin, {fdate(sb["as_of"])}. RealClearPolling D +{num(rcp["margin"])}.</div></div>
- <div class="tile"><div class="lbl">Trump net approval</div><div class="big">{net(avg["net"])}</div><div class="sub">{num(avg["approve"])}% approve, {num(avg["disapprove"])}% disapprove. RealClearPolling, Sep 24 – Oct 13.</div></div>
+ <div class="tile"><div class="lbl">Trump net approval</div><div class="big">{net(avg["net"])}</div><div class="sub">{num(avg["approve"])}% approve, {num(avg["disapprove"])}% disapprove. RealClearPolling, {e((avg.get("note") or "").replace("Polls ", "", 1))}.</div></div>
  <div class="tile"><div class="lbl">Odds of a Democratic Senate</div><div class="big">{num(ctrl["Polymarket odds of Democratic Senate (%)"],0)}%</div><div class="sub">Polymarket. Democrats need net +{num(ctrl["Net seats Democrats need for 51"],0)}; Cook has {num(ctrl["Toss-up seats (Cook)"],0)} toss-ups.</div></div>
  <div class="tile"><div class="lbl">Days to Election Day</div><div class="big">{days}</div><div class="sub">{eday_long}. Early voting {fdate(D["early_voting"]["start"])} – {fdate(D["early_voting"]["end"])}.</div></div>
 </div>"""
@@ -372,7 +373,7 @@ page = f'''<!DOCTYPE html>
 <ol class="dates">{dates_rows}</ol>
 {trend}
 
-<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook Political Report, Sabato's Crystal Ball, Emerson College, Marist, NYT/Siena, CNN, WRAL/SurveyUSA, Trafalgar, Pollsmax, PoliAgg/VoteHub, Polymarket, Kalshi; ballot details from The Ballot Brief (NYS BOE Sept 4 certification), the Erie, Niagara, Monroe and Chautauqua boards of elections, WXXI, WKBW and Chautauqua Today. Polls are snapshots with margins of error of 3–5 points; a lead inside that range is a coin flip. Compiled each morning; <a href="/election/data.json">the underlying numbers</a> carry a source link per row.</div>
+<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook Political Report, Sabato's Crystal Ball, Emerson College, Marist, Siena, Pollfinity, NYT/Siena, CNN, WRAL/SurveyUSA, Trafalgar, Pollsmax, PoliAgg/VoteHub, Polymarket, Kalshi; ballot details from The Ballot Brief (NYS BOE Sept 4 certification), the Erie, Niagara, Monroe and Chautauqua boards of elections, WXXI, WKBW and Chautauqua Today. Polls are snapshots with margins of error of 3–5 points; a lead inside that range is a coin flip. Compiled each morning; <a href="/election/data.json">the underlying numbers</a> carry a source link per row.</div>
 </div></body></html>'''
 
 open(ROOT / "index.html", "w").write(page)
