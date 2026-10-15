@@ -66,12 +66,12 @@ if D.get("what_changed"):
     changed = '<h2>What changed since yesterday</h2><ul class="changed">' + "".join(
         f"<li>{lede(c)}</li>" for c in D["what_changed"]) + "</ul>"
 
-sb = gb["Silver Bulletin (all polls)"]; rcp = gb["RealClearPolling average"]; avg = ap["Average of trackers"]
+sb = gb["Silver Bulletin (all polls)"]; rcp = gb["RealClearPolling average"]; avg = ap["RealClearPolling average"]
 eday_short = fdate(D["election_day"]); eday_long = fdate(D["election_day"], "%A, %b %-d")
 tiles = f"""
 <div class="tiles">
  <div class="tile"><div class="lbl">Generic ballot</div><div class="big d">D +{num(sb["margin"])}</div><div class="sub">Silver Bulletin, {fdate(sb["as_of"])}. RealClearPolling D +{num(rcp["margin"])}.</div></div>
- <div class="tile"><div class="lbl">Trump net approval</div><div class="big">{net(avg["net"])}</div><div class="sub">{num(avg["approve"])}% approve, {num(avg["disapprove"])}% disapprove. Average of trackers.</div></div>
+ <div class="tile"><div class="lbl">Trump net approval</div><div class="big">{net(avg["net"])}</div><div class="sub">{num(avg["approve"])}% approve, {num(avg["disapprove"])}% disapprove. RealClearPolling, Sep 24 – Oct 13.</div></div>
  <div class="tile"><div class="lbl">Odds of a Democratic Senate</div><div class="big">{num(ctrl["Polymarket odds of Democratic Senate (%)"],0)}%</div><div class="sub">Polymarket. Democrats need net +{num(ctrl["Net seats Democrats need for 51"],0)}; Cook has {num(ctrl["Toss-up seats (Cook)"],0)} toss-ups.</div></div>
  <div class="tile"><div class="lbl">Days to Election Day</div><div class="big">{days}</div><div class="sub">{eday_long}. Early voting {fdate(D["early_voting"]["start"])} – {fdate(D["early_voting"]["end"])}.</div></div>
 </div>"""
