@@ -97,3 +97,17 @@ p=json.load(open('site/data/pressure.json')); p=[x for x in p if x['date']!='202
 p.append({'date':'2026-10-15','in':30.27,'mb':1025.2,'station':'KIAG','time':'06:53 EDT'}); json.dump(p,open('site/data/pressure.json','w'),indent=1)
 m=json.load(open('site/data/migraines.json')); m['updated']='2026-10-15'; json.dump(m,open('site/data/migraines.json','w'),indent=1)
 print('built')
+# --- review fixes ---
+d=json.load(open('edition-2026-10-15.json')); b=d['body_html']
+R('<h2 class="sec"><span class="o">&#9790;</span>The Almanac Sky','<h2 class="sec"><span class="o">&#127810;</span>The Turning<span class="o">&#127810;</span></h2>\n<div class="line"><b>Numbers pending.</b> This week\'s county color numbers aren\'t in yet; they run here when they land. North Tonawanda usually peaks in the last week of October.</div>\n<h2 class="sec"><span class="o">&#9790;</span>The Almanac Sky')
+R('Critics called it a peak-season episode.','The Hollywood Reporter called it a peak-season episode.')
+R('Today, then Sunday and Monday, sunny and in the 60s.','Today, dry and mostly cloudy until the rain arrives late; then Sunday and Monday, sunny and in the low 60s.')
+R('30.27 and near the top, up about a third of an inch since yesterday morning.','30.27 and high, up nearly four-tenths of an inch since yesterday morning.')
+R('Rain starts between 11 p.m. and 1 a.m., a quarter to half an inch overnight.','Showers may start as early as 11 p.m.; steady rain sets in after 1 a.m., a quarter to half an inch overnight.')
+R('Every other sheet locks at its own kickoff.','Every other game locks at its own kickoff.')
+R("September's consumer price report showed a 3.7 percent increase, higher than expected.","September's consumer price report showed prices up 3.7 percent from a year earlier, higher than expected.")
+R('Voters answer the $18 million borrowing question on the Nov. 3 ballot.','Voters answer the question of borrowing up to $18 million on the Nov. 3 ballot.')
+d['body_html']=b
+json.dump(d,open('edition-2026-10-15.json','w'),ensure_ascii=False,indent=1)
+json.dump(d,open('site/data/edition-2026-10-15.json','w'),ensure_ascii=False,indent=1)
+print('fixed')
