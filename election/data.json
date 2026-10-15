@@ -715,5 +715,35 @@
   "races": [],
   "local": [],
   "source_note": ""
- }
+ },
+ "glossary": [
+  {
+   "term": "Generic ballot",
+   "text": "A poll question that names no candidates: \"Would you vote for the Democrat or the Republican for Congress in your district?\" Averaged nationally, it is the best single read on which way the House is leaning. D +9 means Democrats lead by about 9 points. For scale, 2018's blue wave was about D +8 and Democrats gained 41 seats; 2022 was roughly R +3 and Republicans barely took the House."
+  },
+  {
+   "term": "Net approval",
+   "text": "The share of adults who approve of the president minus the share who disapprove. Negative means more people disapprove. Presidents with net approval this low usually lose seats in a midterm."
+  },
+  {
+   "term": "Toss Up, Lean, Likely, Solid",
+   "text": "Race ratings from the Cook Political Report, a nonpartisan handicapper. Toss Up means either side could win; Lean is a slight edge; Likely a clear one; Solid is not in doubt. Ratings move when polls or candidates change."
+  },
+  {
+   "term": "Odds of a Democratic Senate",
+   "text": "Prediction markets (Polymarket, Kalshi) let people bet real money on outcomes; the price is the crowd's probability. 64% means the market thinks Democrats win the Senate about two times in three. It is a forecast, not a poll."
+  },
+  {
+   "term": "Why +4",
+   "text": "The Senate is 53 Republicans to 47 Democrats (counting two independents who vote with Democrats). Democrats need a net gain of four seats for 51. With Georgia and Michigan to defend, that means winning four of the six Republican-held toss-ups."
+  },
+  {
+   "term": "Margin of error",
+   "text": "Every poll is a sample. A typical one is accurate to about 3–5 points either way, so a 2-point lead is a coin flip and even a 6-point lead can flip. Averages of several polls are steadier than any one poll."
+  },
+  {
+   "term": "The bars",
+   "text": "In the Senate section the bar runs from the middle: blue to the left for a Democratic lead, red to the right for a Republican one, longer for a bigger lead. In the governor section the two bars run toward each other and the gap is undecided voters."
+  }
+ ]
 }

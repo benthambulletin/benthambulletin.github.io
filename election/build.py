@@ -194,6 +194,10 @@ def results_main():
 is_results = D.get("mode") == "results"
 main = results_main() if is_results else polls_main
 numbers = main if is_results else f"<h2>The numbers</h2>{tiles}"
+glossary = ""
+if D.get("glossary"):
+    glossary = ('<h2>What the words mean</h2><details class="town state-h" open><summary><span class="tn">Plain-English guide to the numbers above</span></summary><dl>'
+                + "".join(f'<dt>{e(g["term"])}</dt><dd>{e(g["text"])}</dd>' for g in D["glossary"]) + "</dl></details>")
 
 CSS = """
 @font-face{font-family:'Archivo';src:url(/assets/fonts/Archivo.ttf) format('truetype');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
@@ -285,6 +289,7 @@ h3{margin:0;font-weight:700;font-size:1.05rem;line-height:1.25}
 .town summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:.5rem;padding:.8rem 2.6rem .8rem .9rem;min-height:3rem;position:relative}
 .town summary::-webkit-details-marker{display:none}
 .town summary::after{content:"";position:absolute;right:1rem;top:50%;width:.55rem;height:.55rem;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-70%) rotate(45deg);transition:transform .15s}
+.town dd+dt{margin-top:.65rem}
 .town[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
 .town[open] summary{border-bottom:1px solid var(--rule)}
 .tn{font-weight:700;font-size:1.05rem}
@@ -354,6 +359,7 @@ page = f'''<!DOCTYPE html>
 <h2>The bottom line</h2>
 <ol class="bottom">{bottom}</ol>
 {numbers}
+{glossary}
 {changed}
 {"" if is_results else main}
 
