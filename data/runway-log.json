@@ -4839,7 +4839,7 @@
   "date": "2026-10-15",
   "score": 0,
   "flags": [],
-  "wake_dev_min": 11,
+  "wake_dev_min": 9,
   "bb_high": 91,
   "stress_yday": 29.0
  }
