@@ -158,7 +158,8 @@ def main():
                 people[fk] = canon
         dn = season.setdefault("displayNames", {})
         _n = lambda x: re.sub(r"[^a-z0-9]", "", (x or "").lower())
-        if nick and _n(nick) != _n(canon): dn[canon] = nick   # the board shows the name they chose; records stay under canon
+        if canon in season.get("keepNames", []): dn.pop(canon, None)   # e.g. Kaylani & Luka stays one name on the board
+        elif nick and _n(nick) != _n(canon): dn[canon] = nick   # the board shows the name they chose; records stay under canon
         elif nick: dn.pop(canon, None)                      # same name give or take punctuation ("Mrs Sombloski"): keep the pool name
         return canon
 
