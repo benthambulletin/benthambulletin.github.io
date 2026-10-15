@@ -1,6 +1,6 @@
 {
  "as_of": "2026-10-14",
- "updated_at": "2026-10-14T20:45:00-04:00",
+ "updated_at": "2026-10-14T22:10:00-04:00",
  "election_day": "2026-11-03",
  "early_voting": {
   "start": "2026-10-24",
@@ -34,11 +34,17 @@
   },
   {
    "order": 6,
-   "headline": "North Tonawanda: Ortt vs Arida and an $18M bond",
-   "detail": "State Senate 62 and the North Tonawanda community center bond are the two local items to watch. Early voting Oct 24–Nov 1."
+   "headline": "Your ballot: five towns, one box at the bottom",
+   "detail": "North Tonawanda, Orchard Park, Scottsville, Dunkirk and Fredonia — Congress, state legislature, county seats and the one proposition (NT's $18M community center). Early voting Oct 24–Nov 1."
   }
  ],
- "what_changed": [],
+ "what_changed": [
+  "Texas: two new polls Oct 14 keep Talarico ahead of Paxton (Marist 47–45, UT 50–47). Still the hardest of the Democrats' five pickups, but it has not slipped.",
+  "Maine: Suffolk (Oct 8–11) has Jackson 49–47 over Collins, the third straight poll with Jackson ahead by 2–4. Maine stays the likeliest flip; Collins beat her 2020 polls by 12, so treat a 2-point lead as even.",
+  "Iowa: YouGov (Oct 14) Turek 47–46, after Emerson and CNN had Hinson up 2. A true coin flip, and the plus-four math needs it or Kansas.",
+  "Kansas: no new poll since NYT/Siena's 47–46 Marshall; Cook's Oct 6 move to Toss Up stands. Sabato still lists five toss-ups, all Republican-held: Kansas, Iowa, Maine, Ohio, Texas.",
+  "Holds: North Carolina (Cooper +14) and Georgia (Ossoff +8) look safe; no new Michigan poll. If those hold, Democrats need four of Maine, Ohio, Texas, Iowa, Kansas, Alaska."
+ ],
  "generic_ballot": [
   {
    "tracker": "Silver Bulletin (all polls)",
@@ -163,7 +169,7 @@
    "margin": 1.3,
    "pollster": "RealClearPolling average",
    "dates": "Sep 15 – Oct 11",
-   "note": "Latest: Suffolk (Oct 8–11) Jackson 49–47. Collins outran her polls by ~12 pts in 2020.",
+   "note": "Latest: Suffolk (Oct 8–11) Jackson 49–47; Washington Post 50–46. Collins outran her polls by ~12 pts in 2020.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/collins-vs-jackson"
   },
   {
@@ -193,7 +199,7 @@
    "margin": 2.8,
    "pollster": "RealClearPolling average",
    "dates": "through Oct 8",
-   "note": "Oct 14: Marist Talarico 47–45; UT 50–47. NYT/Siena Oct 3: 51–45.",
+   "note": "Oct 14: Marist Talarico 47–45; UT 50–47. NYT/Siena Oct 3: 51–45. Tilting D but inside the margin.",
    "url": "https://www.realclearpolling.com/latest-polls/senate"
   },
   {
@@ -208,7 +214,7 @@
    "margin": -2,
    "pollster": "Emerson",
    "dates": "Oct 5–6",
-   "note": "CNN Oct 8: Hinson 45–43. YouGov Oct 14: Turek 47–46. Race has tightened toward Hinson.",
+   "note": "CNN Oct 8: Hinson 45–43. YouGov Oct 14: Turek 47–46. Polls split; a coin flip.",
    "url": "https://electiontracker.live/"
   },
   {
@@ -467,63 +473,6 @@
    "url": "https://www.cookpolitical.com/house/race/483701"
   }
  ],
- "local": [
-  {
-   "contest": "State Senate – 62nd District",
-   "area": "Niagara County incl. North Tonawanda",
-   "candidates": "Rob Ortt (R/Con",
-   "what_to_know": " inc.) vs Thomas Arida (D/WFP)",
-   "url": "Ortt is the Senate minority leader; both candidates are North Tonawanda residents.",
-   "null": [
-    "https://www.beenews.com/ken_ton_bee/news/2026-general-election-ballot-includes-federal-state-and-local-races/article_78968f85-34f5-49a1-be83-adac718d92e6.html"
-   ]
-  },
-  {
-   "contest": "North Tonawanda Proposition – Community Center bond",
-   "area": "City of North Tonawanda",
-   "candidates": "Yes / No",
-   "what_to_know": "Authorizes up to $18 million in serial bonds to acquire and build a community center.",
-   "url": "https://www.beenews.com/ken_ton_bee/news/2026-general-election-ballot-includes-federal-state-and-local-races/article_78968f85-34f5-49a1-be83-adac718d92e6.html"
-  },
-  {
-   "contest": "State Assembly – 144th District",
-   "area": "Lockport-area Niagara County",
-   "candidates": "Paul Bologna (R",
-   "what_to_know": " inc.) vs Donna Sholk (D)",
-   "url": "Freshman Republican facing a Democratic challenger.",
-   "null": [
-    "https://www.yahoo.com/news/articles/niagara-democratic-committee-backs-12-045900420.html"
-   ]
-  },
-  {
-   "contest": "State Assembly – 145th District (open)",
-   "area": "Niagara Falls / Grand Island / part of NT",
-   "candidates": "Rebecca Wydysh (R)",
-   "what_to_know": "Angelo Morinello retiring; Wydysh formally announced in January.",
-   "url": "https://en.wikipedia.org/wiki/New_York%27s_145th_State_Assembly_district"
-  },
-  {
-   "contest": "Niagara County Legislature",
-   "area": "All 15 districts",
-   "candidates": "Democrats contesting 12 of 15 seats",
-   "what_to_know": "Winners get the new four-year term starting Jan 2027.",
-   "url": "https://www.yahoo.com/news/articles/niagara-democratic-committee-backs-12-045900420.html"
-  },
-  {
-   "contest": "NY Supreme Court – 8th Judicial District",
-   "area": "Western New York",
-   "candidates": "Multiple candidates",
-   "what_to_know": "Crowded race on every WNY ballot.",
-   "url": "https://www.wgrz.com/article/news/politics/elections/election-day-voter-guide-2026/71-44509f20-7e0f-4c57-b2c2-e5cf71e1d41c"
-  },
-  {
-   "contest": "Statewide offices",
-   "area": "New York",
-   "candidates": "Governor · Attorney General · Comptroller",
-   "what_to_know": "All three statewide offices are on the ballot.",
-   "url": "https://www.beenews.com/ken_ton_bee/news/2026-general-election-ballot-includes-federal-state-and-local-races/article_78968f85-34f5-49a1-be83-adac718d92e6.html"
-  }
- ],
  "key_dates": [
   {
    "event": "Early voting opens",
@@ -552,5 +501,181 @@
    "dem_senate_odds": 64,
    "hochul_margin": 12
   }
- ]
+ ],
+ "your_ballot": [
+  {
+   "town": "North Tonawanda",
+   "county": "Niagara",
+   "items": [
+    {
+     "office": "US House, NY-26",
+     "race": "Tim Kennedy (D, inc.) vs Dennis Hannon (R/C)",
+     "url": "https://theballotbrief.com/zip/14120"
+    },
+    {
+     "office": "State Senate 62",
+     "race": "Rob Ortt (R/C, inc.) vs Thomas Arida (D/WFP) — both from NT",
+     "url": "https://theballotbrief.com/zip/14120"
+    },
+    {
+     "office": "Assembly 140 or 145 (by ward)",
+     "race": "140: Bill Conrad (D, inc.) vs Mohammed Faisal (R) · 145 (open): Becky Wydysh (R/C) vs Nate McMurray (D)",
+     "url": "https://theballotbrief.com/state/new-york/niagara-county"
+    },
+    {
+     "office": "County Legislature (all 15 seats, first 4-year terms)",
+     "race": "NT districts 7–9: Gooch (R) vs Mooradian (D); Andres (R) vs Kennedy (D); Bradt (R) vs Osborn (D)",
+     "url": "https://theballotbrief.com/state/new-york/niagara-county"
+    },
+    {
+     "office": "Proposition: $18M community center bond",
+     "race": "Yes/No on bonds for a community center at the Norman Keller Building; est. $0.84 per $1,000 assessed before grants",
+     "url": "https://www.wkbw.com/niagara-county/an-investment-north-tonawanda-to-vote-on-18m-community-center-project"
+    },
+    {
+     "office": "Early voting",
+     "race": "Wheatfield Community Center (2790 Church Rd) or Wendelville Fire Co. (7340 Campbell Blvd), Oct 24–Nov 1",
+     "url": "https://elections.niagaracounty.gov/wp-content/uploads/2026/09/20260901101419-2026-general-election-early-voting-schedule.pdf"
+    }
+   ]
+  },
+  {
+   "town": "Orchard Park",
+   "county": "Erie",
+   "items": [
+    {
+     "office": "US House, NY-23",
+     "race": "Nick Langworthy (R, inc.) vs Aaron Gies (D/WFP)",
+     "url": "https://theballotbrief.com/zip/14127"
+    },
+    {
+     "office": "State Senate 60",
+     "race": "Patrick Gallivan (R/C, inc.); Democrat Jacqueline Balikowski listed by Wikipedia/BallotReady but not on the Sept 4 state certification — unconfirmed",
+     "url": "https://theballotbrief.com/state/new-york/erie-county"
+    },
+    {
+     "office": "Assembly 142 or 147 (by area)",
+     "race": "142: Pat Burke (D, inc.) vs Gary Dickson (R/C) · 147: David DiPietro (R/C, inc.), unopposed",
+     "url": "https://theballotbrief.com/state/new-york/erie-county"
+    },
+    {
+     "office": "Town Justice",
+     "race": "Seat on the ballot (term ends 12/31/26); candidates unconfirmed. No propositions found.",
+     "url": "https://www.elections.erie.gov/OfficeDetail.aspx?OffID=333"
+    },
+    {
+     "office": "Early voting",
+     "race": "Orchard Park Community Activity Center, 4600 California Rd, Oct 24–Nov 1 (weekdays noon–9)",
+     "url": "https://www.elections.erie.gov/pdfs/EARLYVOTING2026GEN.pdf"
+    }
+   ]
+  },
+  {
+   "town": "Scottsville (Wheatland)",
+   "county": "Monroe",
+   "items": [
+    {
+     "office": "US House, NY-25",
+     "race": "Joe Morelle (D, inc.) vs Virginia McIntyre (R/C)",
+     "url": "https://theballotbrief.com/zip/14546"
+    },
+    {
+     "office": "State Senate 54",
+     "race": "Pamela Helming (R/C, inc.) vs Michael Mills (D)",
+     "url": "https://theballotbrief.com/state/new-york/monroe-county"
+    },
+    {
+     "office": "Assembly 139",
+     "race": "Stephen Hawley (R/C, inc.) vs Sarah Wolcott (D)",
+     "url": "https://theballotbrief.com/state/new-york/monroe-county"
+    },
+    {
+     "office": "County & town",
+     "race": "DA Brian Green (D) unopposed; Wheatland Supervisor Jim Kirch (R/C) unopposed. No county legislature seats or propositions this year.",
+     "url": "https://www.wxxinews.org/local-news/2026-10-14/monroe-county-election-guide-how-and-where-to-vote-and-who-the-candidates-are"
+    },
+    {
+     "office": "Early voting",
+     "race": "Nearest: Henrietta Library (625 Calkins Rd) or Gates Presbyterian (1049 Wegman Rd); any of 15 county sites, Oct 24–Nov 1",
+     "url": "https://www.monroecounty.gov/elections"
+    }
+   ]
+  },
+  {
+   "town": "Dunkirk",
+   "county": "Chautauqua",
+   "items": [
+    {
+     "office": "US House, NY-23",
+     "race": "Nick Langworthy (R, inc.) vs Aaron Gies (D/WFP)",
+     "url": "https://theballotbrief.com/zip/14048"
+    },
+    {
+     "office": "State Senate 57",
+     "race": "George Borrello (R/C, inc.) vs Victoria Guite-Williams (D/WFP)",
+     "url": "https://theballotbrief.com/zip/14048"
+    },
+    {
+     "office": "Assembly 150",
+     "race": "Andrew Molitor (R/C, inc.) vs Thomas Carle (D/WFP)",
+     "url": "https://theballotbrief.com/zip/14048"
+    },
+    {
+     "office": "County (all 19 legislature seats)",
+     "race": "LD-1: Marcus Buchanan (D, inc.) vs Colby Garza (R/C) · LD-2: Robert Bankoski (D) unopposed · Family Court: Michael Sullivan (R/C, inc.) vs Alexandria Moss (D/WFP, of Dunkirk) · Sheriff Quattrone (R/C) unopposed. No city offices or propositions.",
+     "url": "https://theballotbrief.com/state/new-york/chautauqua-county"
+    },
+    {
+     "office": "Early voting",
+     "race": "County Fairgrounds 4-H Building, 1089 Central Ave, Oct 24–Nov 1",
+     "url": "https://chautauquacountyny.gov/board-of-elections/Early-Voting-Information"
+    }
+   ]
+  },
+  {
+   "town": "Fredonia (Pomfret)",
+   "county": "Chautauqua",
+   "items": [
+    {
+     "office": "US House, NY-23 · State Senate 57 · Assembly 150",
+     "race": "Same three races as Dunkirk: Langworthy vs Gies; Borrello vs Guite-Williams; Molitor vs Carle",
+     "url": "https://theballotbrief.com/zip/14063"
+    },
+    {
+     "office": "County Legislature LD-3 or LD-4",
+     "race": "LD-3: Bob Scudder (R/C, inc.) vs Michael Lee (D/WFP) · LD-4: Sandra Lewis (D) unopposed",
+     "url": "https://theballotbrief.com/state/new-york/chautauqua-county"
+    },
+    {
+     "office": "Village & town",
+     "race": "Village Trustee: Tim Mulholland Jr. (D) unopposed · Pomfret Council vacancy: Evadawn Bashaw (D/WFP) unopposed. No propositions.",
+     "url": "https://chautauquacountyny.gov/sites/default/files/inline-files/2026%20OFFICES%20UP%20FOR%20ELECTION%2007.22.2026.pdf"
+    },
+    {
+     "office": "Early voting",
+     "race": "County Fairgrounds 4-H Building, 1089 Central Ave, Dunkirk, Oct 24–Nov 1; Election Day at Harvest Chapel, 39 Matteson St",
+     "url": "https://chautauquacountyny.gov/board-of-elections/Early-Voting-Information"
+    }
+   ]
+  }
+ ],
+ "statewide": [
+  {
+   "office": "Governor",
+   "race": "Kathy Hochul (D, inc.) vs Bruce Blakeman (R)"
+  },
+  {
+   "office": "Attorney General",
+   "race": "Letitia James (D, inc.) vs Saritha Komatireddy (R)"
+  },
+  {
+   "office": "Comptroller",
+   "race": "Tom DiNapoli (D, inc.) vs Joseph Hernandez (R)"
+  },
+  {
+   "office": "Supreme Court, 8th District (vote for 4 — Erie, Niagara, Chautauqua)",
+   "race": "Bucki, Joynt, Amodeo, Richardson, Tripi, Hickey, Vario"
+  }
+ ],
+ "statewide_url": "https://theballotbrief.com/zip/14120"
 }

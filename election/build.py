@@ -74,7 +74,11 @@ house_rows = "".join(f'''<tr><td><b>{e(r["district"])}</b><br><span class="mut">
 <td><span class="{r["party"].lower()}">{e(r["incumbent"])} ({e(r["party"])})</span><br><span class="mut">vs {e(r["challenger"])}</span></td>
 <td>{e(r["rating"])}<br><span class="mut">{("Latest: " + e(r["pollster"]) + " " + num(r["dem_pct"]) + "–" + num(r["rep_pct"])) if r["pollster"] else e(r["note"] or "")}</span></td></tr>''' for r in D["ny_house"])
 
-local_rows = "".join(f'<tr><td><b>{e(r["contest"])}</b><br><span class="mut">{e(r["area"])}</span></td><td>{e(r["candidates"])}<br><span class="mut">{e(r["what_to_know"])}</span></td></tr>' for r in D["local"])
+ballot_boxes = "".join(
+    f'<div class="box"><div class="bt">{e(t["town"])}<span class="mut"> · {e(t["county"])} County</span></div><dl>' +
+    "".join(f'<dt>{e(i["office"])}</dt><dd>{e(i["race"])}</dd>' for i in t["items"]) + "</dl></div>"
+    for t in D["your_ballot"])
+statewide = "".join(f'<dt>{e(i["office"])}</dt><dd>{e(i["race"])}</dd>' for i in D["statewide"])
 
 dates_rows = "".join(f'<tr><td>{e(r["event"])}</td><td>{fdate(r["date"], "%a, %b %-d")}</td><td class="mut">{e(r["note"] or "")}</td></tr>' for r in D["key_dates"])
 
@@ -143,6 +147,10 @@ td.n,th.n{{text-align:right;white-space:nowrap}}
 .changed{{padding-left:1.1rem;margin:0}}.changed li{{margin:.25rem 0}}
 .legend{{font-size:.78rem;color:var(--soft);margin:.3rem 0 .2rem}}
 .legend i{{display:inline-block;width:.7rem;height:.7rem;vertical-align:middle;margin-right:.3rem}}
+.boxes{{display:grid;grid-template-columns:1fr;gap:.6rem}}
+.box{{background:var(--wash);border:1px solid var(--rule);padding:.6rem .75rem;margin-bottom:.6rem}}
+.box .bt{{font-family:'PF';font-weight:700;font-size:1.05rem;margin-bottom:.2rem}}
+.box dl{{margin:0;font-size:.86rem}}.box dt{{font-family:'AR';font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-top:.4rem}}.box dd{{margin:0;line-height:1.35}}
 .foot{{font-size:.8rem;color:var(--soft);margin-top:1.8rem;line-height:1.4}}
 .foot a{{text-decoration:underline}}
 @media(max-width:380px){{.tiles{{grid-template-columns:1fr 1fr}}.tile .big{{font-size:1.7rem}}}}
@@ -172,14 +180,16 @@ td.n,th.n{{text-align:right;white-space:nowrap}}
 <h2>House seats we watch</h2>
 <table>{house_rows}</table>
 
-<h2>Niagara County &amp; North Tonawanda</h2>
-<table>{local_rows}</table>
+<h2>Your ballot</h2>
+<p class="mut" style="margin:.2rem 0 .6rem">Beyond the statewide races, what each town votes on Nov 3. Nobody polls these; this box changes only when the ballot does.</p>
+<div class="box"><div class="bt">Every New York ballot</div><dl>{statewide}</dl></div>
+<div class="boxes">{ballot_boxes}</div>
 
 <h2>Key dates</h2>
 <table>{dates_rows}</table>
 {trend}
 
-<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook Political Report, Sabato's Crystal Ball, Emerson College, Marist, NYT/Siena, CNN, WRAL/SurveyUSA, Trafalgar, Pollsmax, PoliAgg/VoteHub, Polymarket, Kalshi; local coverage from the Ken-Ton Bee, WGRZ and the Niagara Gazette. Polls are snapshots with margins of error of 3–5 points; a lead inside that range is a coin flip. Compiled by the Bulletin's editor each morning; <a href="/election/data.json">the underlying numbers</a> carry a source link per row. <a href="/">Back to the Bulletin</a>.</div>
+<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook Political Report, Sabato's Crystal Ball, Emerson College, Marist, NYT/Siena, CNN, WRAL/SurveyUSA, Trafalgar, Pollsmax, PoliAgg/VoteHub, Polymarket, Kalshi; ballot details from The Ballot Brief (NYS BOE Sept 4 certification), the Erie, Niagara, Monroe and Chautauqua boards of elections, WXXI, WKBW and Chautauqua Today. Polls are snapshots with margins of error of 3–5 points; a lead inside that range is a coin flip. Compiled by the Bulletin's editor each morning; <a href="/election/data.json">the underlying numbers</a> carry a source link per row. <a href="/">Back to the Bulletin</a>.</div>
 </div></body></html>'''
 
 open(ROOT / "index.html", "w").write(page)
