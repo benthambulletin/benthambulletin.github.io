@@ -96,6 +96,15 @@ if ev_start <= today <= eday:
                   f'<p class="mut" style="margin:.2rem 0 0">Early voting has closed. Vote at your assigned polling place: '
                   f'<a href="https://voterlookup.elections.ny.gov/">look it up at voterlookup.elections.ny.gov</a>.</p></div>')
 
+dates_rows = "".join(f'<tr><td>{e(r["event"])}</td><td>{fdate(r["date"], "%a, %b %-d")}</td><td class="mut">{e(r["note"] or "")}</td></tr>' for r in D["key_dates"])
+
+trend = ""
+if len(D.get("history", [])) > 1:
+    pts = D["history"]
+    trend = '<h2>Trend</h2><table class="plain"><tr><th>Date</th><th class="n">Generic ballot</th><th class="n">Trump net</th><th class="n">D Senate odds</th><th class="n">Hochul margin</th></tr>' + "".join(
+        f'<tr><td>{fdate(p["date"])}</td><td class="n">D +{num(p["generic_ballot"])}</td><td class="n">{net(p["trump_net"])}</td><td class="n">{num(p["dem_senate_odds"],0)}%</td><td class="n">+{num(p["hochul_margin"])}</td></tr>'
+        for p in pts[-14:]) + "</table>"
+
 # ---------- main body: polls until election night, results after ----------
 polls_main = f"""{tiles}
 
