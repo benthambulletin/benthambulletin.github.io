@@ -5391,6 +5391,25 @@
           "badges": []
         },
         {
+          "name": "Sigma Mikey Skibidi Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-15T00:53:34+00:00",
+          "firstAt": "2026-10-15T00:50:16+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Thom",
           "house": false,
           "correct": 0,
@@ -5411,6 +5430,10 @@
         }
       ],
       "trash": [
+        {
+          "from": "Sigma Mikey Skibidi Sombloski",
+          "text": "Chat I fell 💀 not very sigma of me ngl. This is so ohio frfr. Me on the floor rn: 6 7"
+        },
         {
           "from": "Derek",
           "text": "This is my week"
@@ -5436,7 +5459,7 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Melissa slipped a sheet in Wednesday night without a word of trash talk, which is either confidence or a witness-protection strategy. Either way she's now the quiet one in a room where Derek has already announced \"This is my week.\" Bold call from a man who hasn't seen a single snap. We'll frame it Tuesday, one way or the other.\n\nAriel's \"Sombloski sucks\" still sits there unanswered, Andy R is still in shock that Ariel didn't finish last, and the commissioner is still trying to retire a man who hasn't filed. Twelve sheets in; the rest have until Thursday's 8:15 kickoff. Questions for the commissioner go on the pick sheet.",
+      "column": "A new name hit the sheet tonight: Sigma Mikey Skibidi Sombloski, who filed the same picks three times inside four minutes and spelled his own board name two different ways doing it. The trash talk opens with him falling on the floor. Ariel's \"Sombloski sucks\" has sat unanswered since Tuesday; this appears to be the answer. Bold rebuttal.\n\nDerek still swears this is his week, Melissa still hasn't said a word, and Andy R is still stunned Ariel didn't finish last. Thirteen sheets in; the rest have until Thursday's 8:15 kickoff. Questions for the commissioner go on the pick sheet.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 40.0,
@@ -5578,12 +5601,34 @@
         "week": 5,
         "line": ""
       },
-      "asks": [],
-      "columnHead": "Derek guarantees it. Melissa shows up quiet.",
-      "columnN": 12
+      "asks": [
+        {
+          "id": "Nqvj20Q",
+          "from": "Sigma Mikey Skibidi Sombloski",
+          "q": "Why is it: it is what it is?",
+          "told": "2026-10-15T01:15:00Z",
+          "a": null
+        },
+        {
+          "id": "RW1Nql4",
+          "from": "Sigma Mikey Skibidi Sombloski",
+          "q": "Why is it: it is what it is?",
+          "told": "2026-10-15T01:15:00Z",
+          "a": null
+        },
+        {
+          "id": "vXVZ8ZQ",
+          "from": "Sigma Mikey Skibidi Sombloski",
+          "q": "Why is it: it is what it is?",
+          "told": "2026-10-15T01:15:00Z",
+          "a": null
+        }
+      ],
+      "columnHead": "Sigma Mikey files three times. Ariel waits.",
+      "columnN": 13
     }
   },
-  "updated": "2026-10-15T00:10:10.237156+00:00",
+  "updated": "2026-10-15T01:09:31.600636+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5610,7 +5655,8 @@
   },
   "displayNames": {
     "Mike Sombloski": "Michael James Sombloski IV, Esq.",
-    "Andy R": "Andy"
+    "Andy R": "Andy",
+    "Sigma Mikey Skibidi Sombloski": "Sigma Mikey Skubidi Sombloski"
   },
   "subNames": {
     "EqrypLL": "Andy R",
@@ -5629,6 +5675,7 @@
     "785dc95465b581b1": "Nate V",
     "dc64c42b0487ccee": "Mrs. Sombloski",
     "e3dbf7976562e873": "Derek",
-    "78fb70a2f1854862": "Melissa"
+    "78fb70a2f1854862": "Melissa",
+    "2d9db386c9f8be42": "Sigma Mikey Skibidi Sombloski"
   }
 }
