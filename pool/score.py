@@ -165,7 +165,7 @@ def main():
     # group submissions by normalized name, oldest first
     by = {}
     subs = raw["data"]["submissions"] if "data" in raw else raw["submissions"]
-    for s in subs:
+    for s in sorted(subs, key=lambda s: s.get("submittedAt", "")):   # oldest first: the newest sheet sets the board name
         if not s.get("isCompleted", True): continue
         if wk.get("opensAt") and P(s["submittedAt"]) < P(wk["opensAt"]): continue  # earlier week's sheet
         resp = {r["questionId"]: r["answer"] for r in s["responses"]}
@@ -193,7 +193,8 @@ def main():
         for disp0, lst0 in by.items():
             for e in lst0:
                 t0 = e["r"].get(q["ask"])
-                if t0 and str(t0).strip() and e.get("sid") and e["sid"] not in have:
+                if t0 and str(t0).strip() and e.get("sid") and e["sid"] not in have \
+                        and not any(x["from"] == disp0 and x["q"] == clean_text(t0, 400) for x in asks):   # resubmits repeat the question
                     asks.append({"id": e["sid"], "from": disp0, "q": clean_text(t0, 400), "told": None, "a": None})
                     have.add(e["sid"])
         for x in asks:

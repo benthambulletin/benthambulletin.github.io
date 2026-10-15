@@ -47,7 +47,8 @@
     "a-rod": "Arod",
     "amanda rodgers": "Arod",
     "mrs sombloski": "Mrs. Sombloski",
-    "missy verhague": "Mrs. Sombloski"
+    "missy verhague": "Mrs. Sombloski",
+    "sigma mikey skibidi sombloski": "Mike Sombloski"
   },
   "currentWeek": 6,
   "weeks": {
@@ -5201,6 +5202,25 @@
           "badges": []
         },
         {
+          "name": "B-rad",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-15T05:08:03+00:00",
+          "firstAt": "2026-10-15T05:08:03+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Brandon Goes Commando",
           "house": false,
           "correct": 0,
@@ -5353,6 +5373,25 @@
           "badges": []
         },
         {
+          "name": "Mike Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-15T00:53:34+00:00",
+          "firstAt": "2026-10-15T00:50:16+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Mrs. Sombloski",
           "house": false,
           "correct": 0,
@@ -5388,25 +5427,6 @@
           "delta": 0,
           "state": "alive",
           "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Sigma Mikey Skibidi Sombloski",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {},
-          "filedAt": "2026-10-15T00:53:34+00:00",
-          "firstAt": "2026-10-15T00:50:16+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": false,
           "badges": []
         },
         {
@@ -5469,32 +5489,32 @@
       ],
       "trash": [
         {
-          "from": "Walczyk",
-          "text": "F**k off Claude"
-        },
-        {
-          "from": "Sigma Mikey Skibidi Sombloski",
-          "text": "Chat I fell 💀 not very sigma of me ngl. This is so ohio frfr. Me on the floor rn: 6 7"
-        },
-        {
-          "from": "Derek",
-          "text": "This is my week"
-        },
-        {
-          "from": "Andy R",
-          "text": "Ariel not in last is shocking"
-        },
-        {
-          "from": "Garret",
-          "text": "Walczyk should retire"
+          "from": "Ariel",
+          "text": "Sombloski sucks"
         },
         {
           "from": "Josh",
           "text": "Garage, outhouse, same thing."
         },
         {
-          "from": "Ariel",
-          "text": "Sombloski sucks"
+          "from": "Garret",
+          "text": "Walczyk should retire"
+        },
+        {
+          "from": "Andy R",
+          "text": "Ariel not in last is shocking"
+        },
+        {
+          "from": "Derek",
+          "text": "This is my week"
+        },
+        {
+          "from": "Mike Sombloski",
+          "text": "Chat I fell 💀 not very sigma of me ngl. This is so ohio frfr. Me on the floor rn: 6 7"
+        },
+        {
+          "from": "Walczyk",
+          "text": "F**k off Claude"
         },
         {
           "from": "Claude",
@@ -5504,8 +5524,8 @@
       "column": "Walczyk finished Week 5 tied for dead last with Claude, a computer program, and filed tonight with three words for it: \"F**k off Claude.\" Bold talk from a co-tenant of the cellar. The commissioner had already ruled Walczyk should retire, so this feud now runs three ways. Tom, second only to Ryan last week, slid in at 10:14 without a word.\n\nSigma Mikey is presumably still on the floor, Derek still swears it's his week, and fifteen sheets are in. The champ hasn't filed yet; neither has Leah, who at least has the mugshot to keep busy. Thursday's 8:15 kickoff closes the door. Questions for the commissioner go on the pick sheet.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 50.0,
-      "paidN": 10,
+      "pot": 55.0,
+      "paidN": 11,
       "buyIn": 5,
       "payBy": "2026-10-16T00:15:00Z",
       "payments": [
@@ -5662,21 +5682,7 @@
       "asks": [
         {
           "id": "Nqvj20Q",
-          "from": "Sigma Mikey Skibidi Sombloski",
-          "q": "Why is it: it is what it is?",
-          "told": "2026-10-15T01:15:00Z",
-          "a": null
-        },
-        {
-          "id": "RW1Nql4",
-          "from": "Sigma Mikey Skibidi Sombloski",
-          "q": "Why is it: it is what it is?",
-          "told": "2026-10-15T01:15:00Z",
-          "a": null
-        },
-        {
-          "id": "vXVZ8ZQ",
-          "from": "Sigma Mikey Skibidi Sombloski",
+          "from": "Mike Sombloski",
           "q": "Why is it: it is what it is?",
           "told": "2026-10-15T01:15:00Z",
           "a": null
@@ -5693,7 +5699,7 @@
       "columnN": 15
     }
   },
-  "updated": "2026-10-15T03:09:40.166733+00:00",
+  "updated": "2026-10-15T12:04:42.212025+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5719,14 +5725,16 @@
     ]
   },
   "displayNames": {
-    "Mike Sombloski": "Michael James Sombloski IV, Esq.",
-    "Andy R": "Andy",
-    "Sigma Mikey Skibidi Sombloski": "Sigma Mikey Skubidi Sombloski"
+    "Mike Sombloski": "Sigma Mikey Skibidi Sombloski",
+    "Andy R": "Andy"
   },
   "subNames": {
     "EqrypLL": "Andy R",
     "rDRK1Rl": "Andy R",
-    "ArNM4q0": "Mrs. Sombloski"
+    "ArNM4q0": "Mrs. Sombloski",
+    "Nqvj20Q": "Mike Sombloski",
+    "RW1Nql4": "Mike Sombloski",
+    "vXVZ8ZQ": "Mike Sombloski"
   },
   "people": {
     "603444b89dab4f0e": "Thom",
@@ -5741,8 +5749,9 @@
     "dc64c42b0487ccee": "Mrs. Sombloski",
     "e3dbf7976562e873": "Derek",
     "78fb70a2f1854862": "Melissa",
-    "2d9db386c9f8be42": "Sigma Mikey Skibidi Sombloski",
+    "2d9db386c9f8be42": "Mike Sombloski",
     "fadf5625bf4f1f2b": "Walczyk",
-    "059a5c546f5861f2": "Tom"
+    "059a5c546f5861f2": "Tom",
+    "f521bba06403a40f": "B-rad"
   }
 }
