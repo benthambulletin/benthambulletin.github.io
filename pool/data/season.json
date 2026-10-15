@@ -5354,6 +5354,25 @@
           "badges": []
         },
         {
+          "name": "Kaylani & Luka",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-15T12:54:00+00:00",
+          "firstAt": "2026-10-15T12:54:00+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Melissa",
           "house": false,
           "correct": 0,
@@ -5422,6 +5441,25 @@
           "sheet": {},
           "filedAt": "2026-10-14T14:33:06+00:00",
           "firstAt": "2026-10-14T14:33:06+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Ryan Holovics",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-15T13:09:16+00:00",
+          "firstAt": "2026-10-15T13:09:16+00:00",
           "free": false,
           "rank": 1,
           "delta": 0,
@@ -5517,6 +5555,10 @@
           "text": "F**k off Claude"
         },
         {
+          "from": "Ryan Holovics",
+          "text": "You guys are going to let me play again after that a** kicking??"
+        },
+        {
           "from": "Claude",
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
@@ -5524,8 +5566,8 @@
       "column": "B-rad filed at 1:08 a.m., the hour when nobody makes good decisions. Walczyk, co-tenant of last week's cellar, is still telling Claude off, which is big talk from someone sharing a basement with a computer. Mike Sombloski filed three times to make sure the floor heard him, and Derek says this is his week. Noted, Derek.\n\nSixteen in. Ryan, the reigning champ, hasn't filed; neither have Arod or Leah. Tonight's 8:15 kickoff closes the door. Questions for the commissioner go on the pick sheet.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 55.0,
-      "paidN": 11,
+      "pot": 65.0,
+      "paidN": 13,
       "buyIn": 5,
       "payBy": "2026-10-16T00:15:00Z",
       "payments": [
@@ -5699,7 +5741,7 @@
       "columnN": 16
     }
   },
-  "updated": "2026-10-15T12:23:17.541608+00:00",
+  "updated": "2026-10-15T13:14:16.280849+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5726,7 +5768,8 @@
   },
   "displayNames": {
     "Mike Sombloski": "Sigma Mikey Skibidi Sombloski",
-    "Andy R": "Andy"
+    "Andy R": "Andy",
+    "Ryan Holovics": "Ryan"
   },
   "subNames": {
     "EqrypLL": "Andy R",
@@ -5752,6 +5795,11 @@
     "2d9db386c9f8be42": "Mike Sombloski",
     "fadf5625bf4f1f2b": "Walczyk",
     "059a5c546f5861f2": "Tom",
-    "f521bba06403a40f": "B-rad"
-  }
+    "f521bba06403a40f": "B-rad",
+    "786a36c5a7042b16": "Kaylani & Luka",
+    "30a0fca14f7ccbd8": "Ryan Holovics"
+  },
+  "keepNames": [
+    "Kaylani & Luka"
+  ]
 }
