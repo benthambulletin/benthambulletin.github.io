@@ -76,6 +76,7 @@ house_rows = "".join(f'''<tr><td><b>{e(r["district"])}</b><br><span class="mut">
 
 def town_block(t, open_):
     rows = "".join(f'<tr><th>{e(i["office"])}</th><td>{e(i["race"])}</td></tr>' for i in t["items"])
+    rows += f'<tr><th>Early voting</th><td>{e(t["early_voting"]["site"])}</td></tr>'
     return (f'<details class="town"{" open" if open_ else ""}><summary><b>{e(t["town"])}</b><span class="mut"> · {e(t["county"])} County</span></summary>'
             f'<table class="tight">{rows}</table></details>')
 ballot_boxes = "".join(town_block(t, k == 0) for k, t in enumerate(D["your_ballot"]))
@@ -85,7 +86,11 @@ statewide = "".join(f'<tr><th>{e(i["office"])}</th><td>{e(i["race"])}</td></tr>'
 ev = D["early_voting"]
 ev_start = datetime.date.fromisoformat(ev["start"]); ev_end = datetime.date.fromisoformat(ev["end"])
 banner = ""
-if ev_start <= today <= eday:
+if today < ev_start:
+    n = (ev_start - today).days
+    banner = (f'<p class="mut" style="text-align:center;margin:.6rem 0 0">Early voting starts {"tomorrow" if n == 1 else f"in {n} days"} '
+              f'({fdate(ev["start"], "%a, %b %-d")} – {fdate(ev["end"], "%a, %b %-d")}); sites for each town are in the Your ballot box below.</p>')
+elif ev_start <= today <= eday:
     if today <= ev_end:
         head = f"Early voting is open through {fdate(ev['end'], '%A, %b %-d')}"
         sites = "".join(f'<tr><th>{e(t["town"])}</th><td>{e(t["early_voting"]["site"])}<br><span class="mut">{e(ev["hours"].get(t["county"], ""))}</span></td></tr>' for t in D["your_ballot"])
