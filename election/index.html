@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#1b1f2a">
 <meta name="description" content="2026 midterm tracker — national polling, the Senate, and New York's races, refreshed every morning.">
 <meta property="og:title" content="The Ballot — 2026 Midterm Tracker">
 <meta property="og:description" content="Democrats lead the generic ballot by 8.9; 7 Senate toss-ups; Hochul up 12 in New York. Updated Oct 14.">
@@ -11,133 +12,269 @@
 <meta property="og:type" content="website">
 <meta http-equiv="Cache-Control" content="no-cache">
 <link rel="icon" href="/assets/favicon.svg">
+<link rel="preload" href="/assets/fonts/Archivo.ttf" as="font" type="font/ttf" crossorigin>
 <title>The Ballot — 2026 Midterm Tracker</title>
 <style>
-@font-face{font-family:'PF';src:url(/assets/fonts/PlayfairDisplay.ttf);font-weight:100 900;font-display:swap}
-@font-face{font-family:'LO';src:url(/assets/fonts/Lora.ttf);font-weight:100 900;font-display:swap}
-@font-face{font-family:'AR';src:url(/assets/fonts/Archivo.ttf);font-weight:100 900;font-display:swap}
-:root{--paper:#fbf5e4;--ink:#1c170f;--red:#c8302f;--blue:#2e5fa3;--gold:#e8b100;--soft:#5f5238;--rule:#d6cbaf;--wash:#f3ead2}
+@font-face{font-family:'Archivo';src:url(/assets/fonts/Archivo.ttf) format('truetype');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+@font-face{font-family:'Lora';src:url(/assets/fonts/Lora.ttf) format('truetype');font-weight:400 700;font-display:swap}
+@font-face{font-family:'Lora';src:url(/assets/fonts/Lora-Italic.ttf) format('truetype');font-weight:400 700;font-style:italic;font-display:swap}
+:root{color-scheme:light;--paper:#f7f7f2;--surround:#e6e7e0;--ink:#1b1f2a;--soft:#555b66;--rule:#d3d5cc;--tint:#edeee7;
+--blue:#2559a6;--blue-t:#dfe7f4;--red:#bf3a2f;--red-t:#f6e1de;--purple:#674694;--purple-t:#ebe5f4;
+--sans:'Archivo',system-ui,sans-serif;--serif:'Lora',Georgia,serif}
 *{box-sizing:border-box}
-html{background:#ece4d1}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:'LO',Georgia,serif;font-size:1.05rem;line-height:1.45;font-weight:480;-webkit-text-size-adjust:100%;font-variant-numeric:tabular-nums}
-.page{max-width:44rem;margin:0 auto;padding:1.1rem 1.1rem 2.4rem}
-a{color:inherit}
-.kicker{display:flex;justify-content:space-between;gap:1rem;font-family:'AR';font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-bottom:.4rem}
-.dbl .a{height:3px;background:var(--ink)}.dbl .b{height:1px;background:var(--ink);margin-top:3px}.dbl{margin:.5rem 0 .9rem}
-h1{margin:.5rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size:clamp(2rem,9vw,3.2rem);line-height:.95;letter-spacing:-.01em}
-.tag{text-align:center;font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-top:.45rem}
-.orn{text-align:center;color:var(--gold);font-size:1rem;letter-spacing:.9em;margin:.5rem 0 .4rem}
-h2{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:1.6rem 0 .5rem;padding-bottom:.25rem;border-bottom:1px solid var(--ink)}
-.bottom{list-style:none;margin:0;padding:0;counter-reset:n}
-.bottom li{position:relative;padding:.45rem 0 .45rem 2.1rem;border-bottom:1px solid var(--rule);counter-increment:n}
-.bottom li::before{content:counter(n);position:absolute;left:0;top:.5rem;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--ink);color:var(--paper);font-family:'AR';font-weight:700;font-size:.8rem;display:flex;align-items:center;justify-content:center}
-.bottom b{display:block;font-family:'PF';font-weight:700;font-size:1.08rem;line-height:1.2}
-.bottom span{display:block;color:var(--soft);font-size:.92rem;margin-top:.1rem}
-.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin-top:.9rem}
-.tile{background:var(--wash);border:1px solid var(--rule);padding:.6rem .7rem;min-width:0}
-.tile .lbl{font-family:'AR';font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:600}
-.tile .big{font-family:'PF';font-weight:800;font-size:2rem;line-height:1.05;margin:.15rem 0}
-.tile .sub{font-size:.78rem;color:var(--soft);line-height:1.3}
-table{width:100%;border-collapse:collapse;font-size:.92rem}
-td,th{padding:.45rem .3rem;border-bottom:1px solid var(--rule);vertical-align:top;text-align:left}
-th{font-family:'AR';font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:600}
-td.n,th.n{text-align:right;white-space:nowrap}
-.mut{color:var(--soft);font-size:.8rem}
-.d{color:var(--blue)}.r{color:var(--red)}
-.barcell{min-width:9rem}
-.bar{display:flex;width:100%;height:.7rem;margin:.2rem 0 .15rem}
-.bar .half{flex:1;position:relative;border-left:1px solid var(--rule)}
-.bar .half:first-child{border-left:0;border-right:1px solid var(--ink)}
-.bar i{position:absolute;top:0;bottom:0;display:block}
-.bar i.d{left:0;background:var(--blue)}.bar i.r{right:0;background:var(--red)}
-.nopoll{color:var(--soft);font-size:.8rem;font-style:italic}
-.notes{font-size:.88rem;color:var(--soft);padding-left:1.1rem;margin:.5rem 0 0}
-.notes li{margin:.2rem 0}
-.changed{padding-left:1.1rem;margin:0}.changed li{margin:.25rem 0}
-.legend{font-size:.78rem;color:var(--soft);margin:.3rem 0 .2rem}
-.legend i{display:inline-block;width:.7rem;height:.7rem;vertical-align:middle;margin-right:.3rem}
-.town{border:1px solid var(--rule);background:var(--wash);margin:0 0 .4rem;padding:0 .7rem}
-.town summary{cursor:pointer;padding:.5rem 0;font-family:'PF';font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:baseline}
-.town summary::-webkit-details-marker{display:none}.town summary::after{content:"+";font-family:'AR';color:var(--soft);font-size:1rem}.town[open] summary::after{content:"–"}
-.tight{font-size:.84rem;margin:0 0 .5rem}.tight th{width:7.2rem;font-size:.56rem;padding:.3rem .4rem .3rem 0;position:static;background:none;white-space:normal;vertical-align:top}.tight td{padding:.3rem 0}
-.banner{border:2px solid var(--red);background:var(--wash);padding:.6rem .75rem;margin:.9rem 0 0}.banner .bh{font-family:'PF';font-weight:800;font-size:1.1rem;color:var(--red);margin-bottom:.3rem}
-.results .big{font-size:1.9rem;white-space:nowrap}.called{font-family:'AR';font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:.05rem .4rem;border:1px solid var(--rule)}
-.box{background:var(--wash);border:1px solid var(--rule);padding:.6rem .75rem;margin-bottom:.6rem}
-.box .bt{font-family:'PF';font-weight:700;font-size:1.05rem;margin-bottom:.2rem}
-.box dl{margin:0;font-size:.86rem}.box dt{font-family:'AR';font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-top:.4rem}.box dd{margin:0;line-height:1.35}
-.foot{font-size:.8rem;color:var(--soft);margin-top:1.8rem;line-height:1.4}
-.foot a{text-decoration:underline}
-@media(max-width:380px){.tiles{grid-template-columns:1fr 1fr}.tile .big{font-size:1.7rem}}
+html{background:var(--surround);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@supports (font:-apple-system-body){html{font:-apple-system-body}}
+body{margin:0;background:var(--surround);color:var(--ink);font-family:var(--serif);font-size:1rem;line-height:1.55;font-variant-numeric:lining-nums tabular-nums}
+.page{max-width:42rem;margin:0 auto;background:var(--paper);min-height:100vh;padding:0 1rem 2.5rem;position:relative}
+a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:.15em}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--purple);outline-offset:2px}
+p{margin:0}
+h1,h2,h3,.lbl,.chip,.lead,.status,dt,summary,.tile .big,.dt,.count b,.ov{font-family:var(--sans)}
+
+/* masthead: optical-scan timing marks across the top, like the edge of a ballot */
+.marks{height:.6rem;margin:0 -1rem;background:repeating-linear-gradient(90deg,var(--ink) 0 1.1rem,transparent 1.1rem 1.9rem)}
+header{padding:1.5rem 0 1.1rem;border-bottom:2px solid var(--ink)}
+.upd{font-family:var(--sans);font-size:.8rem;font-weight:500;color:var(--soft);display:flex;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
+h1{font-size:clamp(2.9rem,15vw,4.6rem);font-weight:850;font-stretch:118%;letter-spacing:-.035em;line-height:.9;margin:.45rem 0 .55rem}
+.dek{font-size:1.02rem;color:var(--ink);max-width:34em}
+.count{margin:1rem 0 0;padding:.75rem .9rem;background:var(--tint);border-left:4px solid var(--purple);font-size:.95rem}
+.count b{font-weight:700}
+
+/* section heads: inverted bars, like the office headers on a ballot */
+h2{margin:2.2rem -1rem .9rem;padding:.55rem 1rem .5rem;background:var(--ink);color:var(--paper);font-size:1.05rem;font-weight:700;font-stretch:105%;letter-spacing:.005em;line-height:1.25}
+h3{margin:0;font-weight:700;font-size:1.05rem;line-height:1.25}
+.intro{font-size:.9rem;color:var(--soft);margin:-.2rem 0 .8rem}
+
+/* bottom line: filled ballot ovals, ranked */
+.bottom{list-style:none;margin:0;padding:0}
+.bottom li{display:grid;grid-template-columns:2.3rem 1fr;gap:.2rem .6rem;padding:.8rem 0;border-bottom:1px solid var(--rule)}
+.bottom li:last-child{border-bottom:0}
+.ov{width:2.05rem;height:1.3rem;border-radius:50%;background:var(--ink);color:var(--paper);font-size:.78rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:.12rem}
+.bottom h3{font-size:1.15rem;font-weight:750;font-stretch:96%;letter-spacing:-.005em}
+.bottom p{color:var(--soft);font-size:.95rem;margin-top:.2rem}
+
+/* numbers */
+.tiles{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+.tile{padding:.75rem .75rem .85rem;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);min-width:0}
+.lbl{font-size:.78rem;font-weight:600;color:var(--soft);line-height:1.25}
+.tile .big{font-size:2.3rem;font-weight:800;font-stretch:80%;line-height:1;margin:.3rem 0 .35rem;letter-spacing:-.01em;white-space:nowrap}
+.tile .sub{font-size:.8rem;color:var(--soft);line-height:1.4}
+@media(min-width:44rem){.tiles:not(.results){grid-template-columns:repeat(4,1fr)}}
+
+.changed{margin:0;padding:0;list-style:none}
+.changed li{padding:.6rem 0 .6rem 1.1rem;border-bottom:1px solid var(--rule);position:relative}
+.changed li:last-child{border-bottom:0}
+.changed li::before{content:"";position:absolute;left:0;top:1.2rem;width:.5rem;height:.32rem;border-radius:50%;background:var(--ink)}
+.changed b{font-family:var(--sans);font-weight:700}
+
+/* race rows */
+.races{list-style:none;margin:0;padding:0}
+.race,.poll{padding:.9rem 0 1rem;border-bottom:1px solid var(--rule)}
+.races li:last-child{border-bottom:0}
+.rh{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap}
+.rh h3{font-size:1.2rem;font-weight:750;margin-right:auto}
+.poll .rh h3{font-size:1rem;font-weight:650}
+.chip{font-size:.75rem;font-weight:650;padding:.12rem .5rem;border-radius:1rem;white-space:nowrap;background:var(--tint);color:var(--ink)}
+.chip.tu{background:var(--purple-t);color:var(--purple)}.chip.d{background:var(--blue-t);color:var(--blue)}.chip.r{background:var(--red-t);color:var(--red)}
+.lead{font-size:1.05rem;font-weight:800;font-stretch:85%;white-space:nowrap;min-width:3.6rem;text-align:right}
+.lead.d{color:var(--blue)}.lead.r{color:var(--red)}.lead.nx{color:var(--soft);font-weight:500;font-size:.85rem}
+.dv{position:relative;height:.65rem;margin:.55rem 0 .45rem;background:linear-gradient(90deg,transparent calc(50% - 1px),var(--ink) calc(50% - 1px),var(--ink) calc(50% + 1px),transparent calc(50% + 1px)),var(--tint)}
+.dv i{position:absolute;top:0;bottom:0}
+.dv i.d{right:50%;background:var(--blue)}.dv i.r{left:50%;background:var(--red)}
+.dv.none{background:repeating-linear-gradient(135deg,var(--tint) 0 6px,transparent 6px 10px);height:1.05rem;display:flex;align-items:center;justify-content:center}
+.dv.none span{font-family:var(--sans);font-size:.72rem;font-weight:600;color:var(--soft);background:var(--paper);padding:0 .4rem;line-height:1.2}
+.split{display:flex;justify-content:space-between;height:.65rem;margin:.55rem 0 .4rem;background:var(--tint)}
+.split i.d{background:var(--blue)}.split i.r{background:var(--red)}
+.who{font-family:var(--sans);font-size:.95rem;font-weight:550;margin-top:.15rem}
+.vs{color:var(--soft);font-weight:400;padding:0 .1rem}
+.p::before{content:"";display:inline-block;width:.55rem;height:.55rem;border-radius:2px;margin-right:.3rem;vertical-align:.05em}
+.p.d::before{background:var(--blue)}.p.r::before{background:var(--red)}
+.poll .who{display:flex;justify-content:space-between}
+.meta{font-size:.82rem;color:var(--soft);margin-top:.2rem;line-height:1.45}
+.note{font-size:.88rem;margin-top:.35rem;line-height:1.5}
+.res .who{font-size:1.15rem;margin-top:.3rem}
+.status{font-size:.75rem;font-weight:650;padding:.12rem .55rem;border-radius:1rem;border:1.5px solid var(--purple);color:var(--purple);white-space:nowrap}
+.status.called{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.tiles.results .big{font-size:clamp(1.8rem,10vw,2.6rem)}
+.dash{color:var(--soft);font-weight:400;padding:0 .2rem}
+.sub-h{margin:1.6rem 0 .1rem;font-size:1.1rem;padding-bottom:.35rem;border-bottom:2px solid var(--ink)}
+
+/* your ballot */
+.town{border:1px solid var(--rule);background:#fff;margin:0 0 .5rem;border-radius:.3rem}
+.town summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:.5rem;padding:.8rem 2.6rem .8rem .9rem;min-height:3rem;position:relative}
+.town summary::-webkit-details-marker{display:none}
+.town summary::after{content:"";position:absolute;right:1rem;top:50%;width:.55rem;height:.55rem;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-70%) rotate(45deg);transition:transform .15s}
+.town[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.town[open] summary{border-bottom:1px solid var(--rule)}
+.tn{font-weight:700;font-size:1.05rem}
+.cty{font-size:.82rem;color:var(--soft);font-weight:500}
+.town dl{margin:0;padding:.2rem .9rem .5rem}
+.row{display:grid;grid-template-columns:minmax(5.5rem,30%) 1fr;gap:.75rem;padding:.5rem 0;border-bottom:1px solid var(--tint)}
+.row:last-child{border-bottom:0}
+dt{font-size:.8rem;font-weight:650;color:var(--soft);line-height:1.35;padding-top:.12rem;overflow-wrap:anywhere}
+dd{margin:0;font-size:.92rem;line-height:1.45}
+.row.ev dt{color:var(--purple)}
+.state-h .tn{font-stretch:105%}
+
+/* banner */
+.banner{margin:1rem -1rem 0;padding:1.1rem 1rem 1rem;background:var(--purple);color:#fff}
+.banner .bh{margin:0;padding:0;background:none;color:#fff;font-size:1.45rem;font-weight:800;font-stretch:95%;line-height:1.15}
+.banner .bs{margin-top:.4rem;font-size:.95rem}
+.banner a{color:#fff}
+.banner dl{margin:.8rem 0 0;background:var(--paper);color:var(--ink);border-radius:.3rem;padding:.2rem .85rem}
+.hrs{display:block;font-size:.82rem;color:var(--soft);margin-top:.15rem}
+
+/* key dates: a real sequence */
+.dates{list-style:none;margin:0;padding:0}
+.dates li{display:grid;grid-template-columns:4.6rem 1fr;gap:.8rem;padding:.65rem 0;border-bottom:1px solid var(--rule)}
+.dates li:last-child{border-bottom:0}
+.dt{font-size:.8rem;color:var(--soft);line-height:1.2}.dt b{display:block;font-size:1.05rem;color:var(--ink);font-weight:750}
+.ev small{display:block;font-size:.85rem;color:var(--soft)}
+.dates li.past{opacity:.55}.dates li.now .dt b{color:var(--purple)}
+
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.trend{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:.85rem}
+.trend th,.trend td{padding:.45rem .5rem;border-bottom:1px solid var(--rule);text-align:right;white-space:nowrap}
+.trend th{font-weight:600;color:var(--soft);font-size:.75rem;white-space:normal;vertical-align:bottom}
+.trend th:first-child,.trend td:first-child{text-align:left;padding-left:0}
+
+.foot{font-size:.8rem;color:var(--soft);margin-top:2.4rem;padding-top:1rem;border-top:2px solid var(--ink);line-height:1.55}
+@media(min-width:44rem){.page{padding:0 2rem 3rem}.marks{margin:0 -2rem}h2,.banner{margin-left:-2rem;margin-right:-2rem;padding-left:2rem;padding-right:2rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body><div class="page">
-<div class="kicker"><span>2026 Midterms</span><span>Updated Wednesday, October 14, 2026</span></div>
-<div class="dbl"><div class="a"></div><div class="b"></div></div>
+<div class="marks" aria-hidden="true"></div>
+<header>
+<p class="upd"><span>2026 midterms</span><span>Updated Wednesday, October 14</span></p>
 <h1>The Ballot</h1>
-<div class="tag">2026 Midterm Tracker · Refreshed every morning through Nov 3</div>
-<div class="orn">✦ ✦ ✦</div>
+<p class="dek">National polling, the Senate map and New York's races, explained plainly and refreshed every morning through Nov 3.</p>
+</header>
+<p class="count"><b>20 days to Election Day</b>, Tuesday, Nov 3. Early voting starts in 10 days (Sat, Oct 24 – Sun, Nov 1); sites for each town are in the Your ballot box below.</p>
 
-<p class="mut" style="text-align:center;margin:.6rem 0 0">Early voting starts in 10 days (Sat, Oct 24 – Sun, Nov 1); sites for each town are in the Your ballot box below.</p>
 <h2>The bottom line</h2>
-<ol class="bottom"><li><b>Democrats are favored to take the House</b><span>Generic ballot D+8.9 (Silver Bulletin, Oct 9). Cook projects a Democratic gain of 9–19 seats.</span></li><li><b>The Senate is a coin flip tilting Democratic</b><span>Dems need net +4. Five GOP-held seats are toss-ups: Maine, Ohio, Texas, Iowa, Kansas. Markets: ~63% Democratic Senate.</span></li><li><b>Trump is deeply underwater</b><span>Net approval −25 across trackers; Pew has approval at 30%, the lowest of either term.</span></li><li><b>Hochul is comfortably ahead in New York</b><span>Up 11–12 on Blakeman (Marist, Emerson), though Blakeman leads Upstate.</span></li><li><b>Buffalo and Long Island House seats are safe; NY-17 isn&#x27;t</b><span>NY-26 (Kennedy) Solid D; NY-01 (LaLota) Lean R, no poll. Lawler vs Conley in the Hudson Valley is the state&#x27;s only toss-up: Conley 48–46.</span></li><li><b>Your ballot: five towns, one box at the bottom</b><span>North Tonawanda, Orchard Park, Scottsville, Dunkirk and Fredonia — Congress, state legislature, county seats and the one proposition (NT&#x27;s $18M community center). Early voting Oct 24–Nov 1.</span></li></ol>
-<h2>What changed since yesterday</h2><ul class="changed"><li>Texas: two new polls Oct 14 keep Talarico ahead of Paxton (Marist 47–45, UT 50–47). Still the hardest of the Democrats&#x27; five pickups, but it has not slipped.</li><li>Maine: Suffolk (Oct 8–11) has Jackson 49–47 over Collins, the third straight poll with Jackson ahead by 2–4. Maine stays the likeliest flip; Collins beat her 2020 polls by 12, so treat a 2-point lead as even.</li><li>Iowa: YouGov (Oct 14) Turek 47–46, after Emerson and CNN had Hinson up 2. A true coin flip, and the plus-four math needs it or Kansas.</li><li>Kansas: no new poll since NYT/Siena&#x27;s 47–46 Marshall; Cook&#x27;s Oct 6 move to Toss Up stands. Sabato still lists five toss-ups, all Republican-held: Kansas, Iowa, Maine, Ohio, Texas.</li><li>Holds: North Carolina (Cooper +14) and Georgia (Ossoff +8) look safe; no new Michigan poll. If those hold, Democrats need four of Maine, Ohio, Texas, Iowa, Kansas, Alaska.</li></ul>
-
+<ol class="bottom"><li><span class="ov" aria-hidden="true">1</span><div><h3>Democrats are favored to take the House</h3><p>Generic ballot D+8.9 (Silver Bulletin, Oct 9). Cook projects a Democratic gain of 9–19 seats.</p></div></li><li><span class="ov" aria-hidden="true">2</span><div><h3>The Senate is a coin flip tilting Democratic</h3><p>Dems need net +4. Five GOP-held seats are toss-ups: Maine, Ohio, Texas, Iowa, Kansas. Markets: ~63% Democratic Senate.</p></div></li><li><span class="ov" aria-hidden="true">3</span><div><h3>Trump is deeply underwater</h3><p>Net approval −25 across trackers; Pew has approval at 30%, the lowest of either term.</p></div></li><li><span class="ov" aria-hidden="true">4</span><div><h3>Hochul is comfortably ahead in New York</h3><p>Up 11–12 on Blakeman (Marist, Emerson), though Blakeman leads Upstate.</p></div></li><li><span class="ov" aria-hidden="true">5</span><div><h3>Buffalo and Long Island House seats are safe; NY-17 isn&#x27;t</h3><p>NY-26 (Kennedy) Solid D; NY-01 (LaLota) Lean R, no poll. Lawler vs Conley in the Hudson Valley is the state&#x27;s only toss-up: Conley 48–46.</p></div></li><li><span class="ov" aria-hidden="true">6</span><div><h3>Your ballot: five towns, one box at the bottom</h3><p>North Tonawanda, Orchard Park, Scottsville, Dunkirk and Fredonia — Congress, state legislature, county seats and the one proposition (NT&#x27;s $18M community center). Early voting Oct 24–Nov 1.</p></div></li></ol>
+<h2>The numbers</h2>
 <div class="tiles">
- <div class="tile"><div class="lbl">Generic ballot</div><div class="big">D +8.9</div><div class="sub">Silver Bulletin, Oct 9 · RCP D +8.3</div></div>
- <div class="tile"><div class="lbl">Trump net approval</div><div class="big">−24.8</div><div class="sub">36.3% approve · 61.2% disapprove</div></div>
- <div class="tile"><div class="lbl">Odds of a Democratic Senate</div><div class="big">64%</div><div class="sub">Polymarket · 7 Cook toss-ups · Dems need net +4</div></div>
- <div class="tile"><div class="lbl">Days to Election Day</div><div class="big">20</div><div class="sub">Nov 3 · early voting Oct 24–Nov 1</div></div>
+ <div class="tile"><div class="lbl">Generic ballot</div><div class="big d">D +8.9</div><div class="sub">Silver Bulletin, Oct 9. RealClearPolling D +8.3.</div></div>
+ <div class="tile"><div class="lbl">Trump net approval</div><div class="big">−24.8</div><div class="sub">36.3% approve, 61.2% disapprove. Average of trackers.</div></div>
+ <div class="tile"><div class="lbl">Odds of a Democratic Senate</div><div class="big">64%</div><div class="sub">Polymarket. Democrats need net +4; Cook has 7 toss-ups.</div></div>
+ <div class="tile"><div class="lbl">Days to Election Day</div><div class="big">20</div><div class="sub">Tuesday, Nov 3. Early voting Oct 24 – Nov 1.</div></div>
 </div>
+<h2>What changed since yesterday</h2><ul class="changed"><li><b>Texas</b>: two new polls Oct 14 keep Talarico ahead of Paxton (Marist 47–45, UT 50–47). Still the hardest of the Democrats&#x27; five pickups, but it has not slipped.</li><li><b>Maine</b>: Suffolk (Oct 8–11) has Jackson 49–47 over Collins, the third straight poll with Jackson ahead by 2–4. Maine stays the likeliest flip; Collins beat her 2020 polls by 12, so treat a 2-point lead as even.</li><li><b>Iowa</b>: YouGov (Oct 14) Turek 47–46, after Emerson and CNN had Hinson up 2. A true coin flip, and the plus-four math needs it or Kansas.</li><li><b>Kansas</b>: no new poll since NYT/Siena&#x27;s 47–46 Marshall; Cook&#x27;s Oct 6 move to Toss Up stands. Sabato still lists five toss-ups, all Republican-held: Kansas, Iowa, Maine, Ohio, Texas.</li><li><b>Holds</b>: North Carolina (Cooper +14) and Georgia (Ossoff +8) look safe; no new Michigan poll. If those hold, Democrats need four of Maine, Ohio, Texas, Iowa, Kansas, Alaska.</li></ul>
 
 <h2>Senate battleground</h2>
-<div class="legend"><i style="background:var(--blue)"></i>Democrat ahead &nbsp; <i style="background:var(--red)"></i>Republican ahead &nbsp; · latest public poll or average</div>
-<table><tr><td><b>North Carolina</b><br><span class="mut">Likely D · held R</span></td>
-<td>Roy Cooper<br><span class="mut">vs Michael Whatley</span></td>
-<td class="barcell"><span class="bar"><span class="half"></span><span class="half"><i class=d style=width:46.666666666666664%></i></span></span><br><span class="mut">D +14 · WRAL/SurveyUSA, Oct 13</span></td></tr><tr><td><b>Georgia</b><br><span class="mut">Likely D · held D</span></td>
-<td>Jon Ossoff (inc.)<br><span class="mut">vs Mike Collins</span></td>
-<td class="barcell"><span class="bar"><span class="half"></span><span class="half"><i class=d style=width:26.666666666666668%></i></span></span><br><span class="mut">D +8 · Trafalgar Group, Oct 10</span></td></tr><tr><td><b>Ohio</b><br><span class="mut">Toss Up · held R</span></td>
-<td>Sherrod Brown<br><span class="mut">vs Jon Husted (inc.)</span></td>
-<td class="barcell"><span class="bar"><span class="half"></span><span class="half"><i class=d style=width:20.0%></i></span></span><br><span class="mut">D +6 · CNN, Oct 8</span></td></tr><tr><td><b>Texas</b><br><span class="mut">Toss Up · held R</span></td>
-<td>James Talarico<br><span class="mut">vs Ken Paxton</span></td>
-<td class="barcell"><span class="bar"><span class="half"></span><span class="half"><i class=d style=width:9.333333333333332%></i></span></span><br><span class="mut">D +2.8 · RealClearPolling average, through Oct 8</span></td></tr><tr><td><b>Maine</b><br><span class="mut">Toss Up · held R</span></td>
-<td>Troy Jackson<br><span class="mut">vs Susan Collins (inc.)</span></td>
-<td class="barcell"><span class="bar"><span class="half"></span><span class="half"><i class=d style=width:4.333333333333334%></i></span></span><br><span class="mut">D +1.3 · RealClearPolling average, Sep 15 – Oct 11</span></td></tr><tr><td><b>Kansas</b><br><span class="mut">Toss Up · held R</span></td>
-<td>Adam Hamilton<br><span class="mut">vs Roger Marshall (inc.)</span></td>
-<td class="barcell"><span class="bar"><span class="half"><i class=r style=width:3.3333333333333335%></i></span><span class="half"></span></span><br><span class="mut">R +1 · NYT/Siena, Oct 7</span></td></tr><tr><td><b>Iowa</b><br><span class="mut">Toss Up · held R</span></td>
-<td>Josh Turek<br><span class="mut">vs Ashley Hinson</span></td>
-<td class="barcell"><span class="bar"><span class="half"><i class=r style=width:6.666666666666667%></i></span><span class="half"></span></span><br><span class="mut">R +2 · Emerson, Oct 5–6</span></td></tr><tr><td><b>Alaska</b><br><span class="mut">Toss Up · held R</span></td>
-<td>Mary Peltola<br><span class="mut">vs Dan Sullivan (inc.)</span></td>
-<td class="barcell"><span class="nopoll">no public poll</span><br><span class="mut">no poll</span></td></tr><tr><td><b>Michigan</b><br><span class="mut">Toss Up · held D</span></td>
-<td>Abdul El-Sayed<br><span class="mut">vs Mike Rogers</span></td>
-<td class="barcell"><span class="nopoll">no public poll</span><br><span class="mut">no poll</span></td></tr></table>
-<ul class="notes"><li><b>Maine:</b> Latest: Suffolk (Oct 8–11) Jackson 49–47; Washington Post 50–46. Collins outran her polls by ~12 pts in 2020.</li><li><b>Ohio:</b> NYT/Siena (late Sep) had Brown 49–46.</li><li><b>Texas:</b> Oct 14: Marist Talarico 47–45; UT 50–47. NYT/Siena Oct 3: 51–45. Tilting D but inside the margin.</li><li><b>Iowa:</b> CNN Oct 8: Hinson 45–43. YouGov Oct 14: Turek 47–46. Polls split; a coin flip.</li><li><b>Kansas:</b> Cook moved to Toss Up on Oct 6. Trump won KS by 16 in 2024.</li><li><b>Alaska:</b> Sabato&#x27;s Crystal Ball moved to Leans D on Oct 6; no recent public poll surfaced.</li><li><b>Michigan:</b> Inside Elections: Tilt D (Oct 1). Only Democratic-held toss-up.</li><li><b>North Carolina:</b> Cook moved from Lean D to Likely D on Oct 6.</li><li><b>Georgia:</b> Top GOP pickup target has drifted toward Democrats.</li></ul>
+<p class="intro">Latest public poll or polling average. Bars run from even in the middle: <span class="p d">Democrat ahead</span> to the left, <span class="p r">Republican ahead</span> to the right. <span class="chip tu">Toss Up</span> ratings are Cook's.</p>
+<ul class="races"><li class="race">
+ <div class="rh"><h3>North Carolina</h3><span class="chip d">Likely D</span><span class="lead d">D +14</span></div>
+ <div class="dv" aria-hidden="true"><i class="d" style="width:46.7%"></i></div>
+ <p class="who"><span class="p d">Roy Cooper</span> <span class="vs">vs</span> <span class="p r">Michael Whatley</span></p>
+ <p class="meta">Open (Tillis retiring), Republican seat. Poll: WRAL/SurveyUSA, Oct 13.</p>
+ <p class="note">Cook moved from Lean D to Likely D on Oct 6.</p>
+</li><li class="race">
+ <div class="rh"><h3>Georgia</h3><span class="chip d">Likely D</span><span class="lead d">D +8</span></div>
+ <div class="dv" aria-hidden="true"><i class="d" style="width:26.7%"></i></div>
+ <p class="who"><span class="p d">Jon Ossoff (inc.)</span> <span class="vs">vs</span> <span class="p r">Mike Collins</span></p>
+ <p class="meta">Ossoff seat, Democratic seat. Poll: Trafalgar Group, Oct 10.</p>
+ <p class="note">Top GOP pickup target has drifted toward Democrats.</p>
+</li><li class="race">
+ <div class="rh"><h3>Ohio</h3><span class="chip tu">Toss Up</span><span class="lead d">D +6</span></div>
+ <div class="dv" aria-hidden="true"><i class="d" style="width:20.0%"></i></div>
+ <p class="who"><span class="p d">Sherrod Brown</span> <span class="vs">vs</span> <span class="p r">Jon Husted (inc.)</span></p>
+ <p class="meta">Husted seat (special), Republican seat. Poll: CNN, Oct 8.</p>
+ <p class="note">NYT/Siena (late Sep) had Brown 49–46.</p>
+</li><li class="race">
+ <div class="rh"><h3>Texas</h3><span class="chip tu">Toss Up</span><span class="lead d">D +2.8</span></div>
+ <div class="dv" aria-hidden="true"><i class="d" style="width:9.3%"></i></div>
+ <p class="who"><span class="p d">James Talarico</span> <span class="vs">vs</span> <span class="p r">Ken Paxton</span></p>
+ <p class="meta">Open (Cornyn retiring), Republican seat. Poll: RealClearPolling average, through Oct 8.</p>
+ <p class="note">Oct 14: Marist Talarico 47–45; UT 50–47. NYT/Siena Oct 3: 51–45. Tilting D but inside the margin.</p>
+</li><li class="race">
+ <div class="rh"><h3>Maine</h3><span class="chip tu">Toss Up</span><span class="lead d">D +1.3</span></div>
+ <div class="dv" aria-hidden="true"><i class="d" style="width:4.3%"></i></div>
+ <p class="who"><span class="p d">Troy Jackson</span> <span class="vs">vs</span> <span class="p r">Susan Collins (inc.)</span></p>
+ <p class="meta">Collins seat, Republican seat. Poll: RealClearPolling average, Sep 15 – Oct 11.</p>
+ <p class="note">Latest: Suffolk (Oct 8–11) Jackson 49–47; Washington Post 50–46. Collins outran her polls by ~12 pts in 2020.</p>
+</li><li class="race">
+ <div class="rh"><h3>Kansas</h3><span class="chip tu">Toss Up</span><span class="lead r">R +1</span></div>
+ <div class="dv" aria-hidden="true"><i class="r" style="width:3.3%"></i></div>
+ <p class="who"><span class="p d">Adam Hamilton</span> <span class="vs">vs</span> <span class="p r">Roger Marshall (inc.)</span></p>
+ <p class="meta">Marshall seat, Republican seat. Poll: NYT/Siena, Oct 7.</p>
+ <p class="note">Cook moved to Toss Up on Oct 6. Trump won KS by 16 in 2024.</p>
+</li><li class="race">
+ <div class="rh"><h3>Iowa</h3><span class="chip tu">Toss Up</span><span class="lead r">R +2</span></div>
+ <div class="dv" aria-hidden="true"><i class="r" style="width:6.7%"></i></div>
+ <p class="who"><span class="p d">Josh Turek</span> <span class="vs">vs</span> <span class="p r">Ashley Hinson</span></p>
+ <p class="meta">Open (Ernst retiring), Republican seat. Poll: Emerson, Oct 5–6.</p>
+ <p class="note">CNN Oct 8: Hinson 45–43. YouGov Oct 14: Turek 47–46. Polls split; a coin flip.</p>
+</li><li class="race">
+ <div class="rh"><h3>Alaska</h3><span class="chip tu">Toss Up</span><span class="lead nx">No poll</span></div>
+ <div class="dv none"><span>No public poll</span></div>
+ <p class="who"><span class="p d">Mary Peltola</span> <span class="vs">vs</span> <span class="p r">Dan Sullivan (inc.)</span></p>
+ <p class="meta">Sullivan seat, Republican seat.</p>
+ <p class="note">Sabato&#x27;s Crystal Ball moved to Leans D on Oct 6; no recent public poll surfaced.</p>
+</li><li class="race">
+ <div class="rh"><h3>Michigan</h3><span class="chip tu">Toss Up</span><span class="lead nx">No poll</span></div>
+ <div class="dv none"><span>No public poll</span></div>
+ <p class="who"><span class="p d">Abdul El-Sayed</span> <span class="vs">vs</span> <span class="p r">Mike Rogers</span></p>
+ <p class="meta">Open (Peters retiring), Democratic seat.</p>
+ <p class="note">Inside Elections: Tilt D (Oct 1). Only Democratic-held toss-up.</p>
+</li></ul>
 
 <h2>New York governor</h2>
-<table><tr><th>Poll</th><th class="n">Hochul</th><th class="n">Blakeman</th><th class="n">Margin</th></tr><tr><td>Emerson College / PIX11<br><span class="mut">Oct 3–5 · 900 LV</span></td>
-<td class="n d">52%</td><td class="n r">40%</td><td class="n"><b>Hochul +12</b></td></tr><tr><td>Marist<br><span class="mut">Oct 1–4 · 1,361 RV</span></td>
-<td class="n d">53%</td><td class="n r">42%</td><td class="n"><b>Hochul +11</b></td></tr><tr><td>Pollsmax average (28 polls)<br><span class="mut">through Oct 5</span></td>
-<td class="n d">50.8%</td><td class="n r">38.9%</td><td class="n"><b>Hochul +11.9</b></td></tr><tr><td>VoteHub average (5 polls)<br><span class="mut">through Oct 5</span></td>
-<td class="n d">51.5%</td><td class="n r">38.5%</td><td class="n"><b>Hochul +13</b></td></tr></table>
-<p class="mut">Blakeman leads Upstate and among independents; Hochul's margin comes from New York City.</p>
+<p class="intro">Each bar is the full electorate: <span class="p d">Hochul</span> from the left, <span class="p r">Blakeman</span> from the right, undecided in the gap.</p>
+<ul class="races"><li class="poll">
+ <div class="rh"><h3>Emerson College / PIX11</h3><span class="lead d">Hochul +12</span></div>
+ <div class="split" aria-hidden="true"><i class="d" style="width:52.0%"></i><i class="r" style="width:40.0%"></i></div>
+ <p class="who"><span class="p d">Hochul 52%</span> <span class="p r">Blakeman 40%</span></p>
+ <p class="meta">Oct 3–5, 900 LV</p><p class="note">Independents break for Blakeman 55–34; Hochul job approval 40/46</p>
+</li><li class="poll">
+ <div class="rh"><h3>Marist</h3><span class="lead d">Hochul +11</span></div>
+ <div class="split" aria-hidden="true"><i class="d" style="width:53.0%"></i><i class="r" style="width:42.0%"></i></div>
+ <p class="who"><span class="p d">Hochul 53%</span> <span class="p r">Blakeman 42%</span></p>
+ <p class="meta">Oct 1–4, 1,361 RV</p><p class="note">Blakeman leads Upstate 51%; Hochul 69% in NYC; 29-pt gender gap</p>
+</li><li class="poll">
+ <div class="rh"><h3>Pollsmax average (28 polls)</h3><span class="lead d">Hochul +11.9</span></div>
+ <div class="split" aria-hidden="true"><i class="d" style="width:50.8%"></i><i class="r" style="width:38.9%"></i></div>
+ <p class="who"><span class="p d">Hochul 50.8%</span> <span class="p r">Blakeman 38.9%</span></p>
+ <p class="meta">through Oct 5</p>
+</li><li class="poll">
+ <div class="rh"><h3>VoteHub average (5 polls)</h3><span class="lead d">Hochul +13</span></div>
+ <div class="split" aria-hidden="true"><i class="d" style="width:51.5%"></i><i class="r" style="width:38.5%"></i></div>
+ <p class="who"><span class="p d">Hochul 51.5%</span> <span class="p r">Blakeman 38.5%</span></p>
+ <p class="meta">through Oct 5</p>
+</li></ul>
 
 <h2>House seats we watch</h2>
-<table><tr><td><b>NY-17</b><br><span class="mut">Hudson Valley</span></td>
-<td><span class="r">Mike Lawler (R)</span><br><span class="mut">vs Cait Conley (D)</span></td>
-<td>Toss-up<br><span class="mut">Latest: Emerson / PIX11 48–46</span></td></tr><tr><td><b>NY-01</b><br><span class="mut">Eastern Suffolk (Rocky Point)</span></td>
-<td><span class="r">Nick LaLota (R)</span><br><span class="mut">vs Chris Gallant (D)</span></td>
-<td>Lean R<br><span class="mut">No public poll yet. Trump +10 and LaLota +10 in 2024. Gallant: Army Guard pilot, former air traffic controller.</span></td></tr><tr><td><b>NY-04</b><br><span class="mut">Southwest Nassau</span></td>
-<td><span class="d">Laura Gillen (D)</span><br><span class="mut">vs Jeanine Driscoll (R)</span></td>
-<td>Lean D<br><span class="mut">Gillen flipped the seat in 2024; no public poll surfaced.</span></td></tr><tr><td><b>NY-26</b><br><span class="mut">Buffalo – Niagara Falls – North Tonawanda</span></td>
-<td><span class="d">Tim Kennedy (D)</span><br><span class="mut">vs Dennis Hannon (R)</span></td>
-<td>Solid D<br><span class="mut">Kennedy won 65.2% in 2024; district PVI D+11.</span></td></tr></table>
+<ul class="races"><li class="race">
+ <div class="rh"><h3>NY-17</h3><span class="chip tu">Toss-up</span><span class="lead d">D +2</span></div>
+ <p class="who"><span class="p r">Mike Lawler (R, inc.)</span> <span class="vs">vs</span> <span class="p d">Cait Conley (D)</span></p>
+ <p class="meta">Hudson Valley. Rating: Cook / consensus. Latest poll: Emerson / PIX11, Sep 27–29, 48–46.</p>
+ <p class="note">Lawler internal (McLaughlin, Sep 28–30) had Lawler 50–47. Most competitive seat in the state.</p>
+</li><li class="race">
+ <div class="rh"><h3>NY-01</h3><span class="chip r">Lean R</span></div>
+ <p class="who"><span class="p r">Nick LaLota (R, inc.)</span> <span class="vs">vs</span> <span class="p d">Chris Gallant (D)</span></p>
+ <p class="meta">Eastern Suffolk (Rocky Point). Rating: Decision Desk HQ.</p>
+ <p class="note">No public poll yet. Trump +10 and LaLota +10 in 2024. Gallant: Army Guard pilot, former air traffic controller.</p>
+</li><li class="race">
+ <div class="rh"><h3>NY-04</h3><span class="chip d">Lean D</span></div>
+ <p class="who"><span class="p d">Laura Gillen (D, inc.)</span> <span class="vs">vs</span> <span class="p r">Jeanine Driscoll (R)</span></p>
+ <p class="meta">Southwest Nassau. Rating: PollingSource.</p>
+ <p class="note">Gillen flipped the seat in 2024; no public poll surfaced.</p>
+</li><li class="race">
+ <div class="rh"><h3>NY-26</h3><span class="chip d">Solid D</span></div>
+ <p class="who"><span class="p d">Tim Kennedy (D, inc.)</span> <span class="vs">vs</span> <span class="p r">Dennis Hannon (R)</span></p>
+ <p class="meta">Buffalo – Niagara Falls – North Tonawanda. Rating: Cook.</p>
+ <p class="note">Kennedy won 65.2% in 2024; district PVI D+11.</p>
+</li></ul>
 
 <h2>Your ballot</h2>
-<p class="mut" style="margin:.2rem 0 .5rem">Tap a town. Beyond the statewide races, what it votes on Nov 3 — nobody polls these.</p>
-<details class="town" open><summary><b>Every New York ballot</b></summary><table class="tight"><tr><th>Governor</th><td>Hochul (D, inc.) vs Blakeman (R)</td></tr><tr><th>Attorney General</th><td>James (D, inc.) vs Komatireddy (R)</td></tr><tr><th>Comptroller</th><td>DiNapoli (D, inc.) vs Hernandez (R)</td></tr><tr><th>Supreme Court, 8th Dist. (vote for 4; Erie, Niagara, Chautauqua)</th><td>Bucki, Joynt, Amodeo, Richardson, Tripi, Hickey, Vario</td></tr></table></details>
-<details class="town" open><summary><b>North Tonawanda</b><span class="mut"> · Niagara County</span></summary><table class="tight"><tr><th>NY-26</th><td>Kennedy (D, inc.) vs Hannon (R)</td></tr><tr><th>SD-62</th><td>Ortt (R, inc.) vs Arida (D)</td></tr><tr><th>AD-140 / 145</th><td>Conrad (D, inc.) vs Faisal (R) · open: Wydysh (R) vs McMurray (D)</td></tr><tr><th>County Leg. 7–9</th><td>Gooch (R) v Mooradian · Andres (R) v Kennedy · Bradt (R) v Osborn</td></tr><tr><th>Prop: $18M bond</th><td>Community center at the Keller Building; ≈$0.84 per $1,000 assessed before grants</td></tr><tr><th>Early voting</th><td>Wheatfield Community Center (2790 Church Rd) or Wendelville Fire Co. (7340 Campbell Blvd), Oct 24–Nov 1</td></tr></table></details><details class="town"><summary><b>Orchard Park</b><span class="mut"> · Erie County</span></summary><table class="tight"><tr><th>NY-23</th><td>Langworthy (R, inc.) vs Gies (D)</td></tr><tr><th>SD-60</th><td>Gallivan (R, inc.); Dem challenger Balikowski unconfirmed</td></tr><tr><th>AD-142 / 147</th><td>Burke (D, inc.) vs Dickson (R) · DiPietro (R, inc.) unopposed</td></tr><tr><th>Town Justice</th><td>On the ballot; candidates unconfirmed. No propositions.</td></tr><tr><th>Early voting</th><td>Orchard Park Community Activity Center, 4600 California Rd, Oct 24–Nov 1 (weekdays noon–9)</td></tr></table></details><details class="town"><summary><b>Scottsville (Wheatland)</b><span class="mut"> · Monroe County</span></summary><table class="tight"><tr><th>NY-25</th><td>Morelle (D, inc.) vs McIntyre (R)</td></tr><tr><th>SD-54</th><td>Helming (R, inc.) vs Mills (D)</td></tr><tr><th>AD-139</th><td>Hawley (R, inc.) vs Wolcott (D)</td></tr><tr><th>County &amp; town</th><td>DA Green (D) and Supervisor Kirch (R) unopposed. No propositions.</td></tr><tr><th>Early voting</th><td>Nearest: Henrietta Library (625 Calkins Rd) or Gates Presbyterian (1049 Wegman Rd); any of 15 county sites, Oct 24–Nov 1</td></tr></table></details><details class="town"><summary><b>Dunkirk</b><span class="mut"> · Chautauqua County</span></summary><table class="tight"><tr><th>NY-23</th><td>Langworthy (R, inc.) vs Gies (D)</td></tr><tr><th>SD-57</th><td>Borrello (R, inc.) vs Guite-Williams (D)</td></tr><tr><th>AD-150</th><td>Molitor (R, inc.) vs Carle (D)</td></tr><tr><th>County</th><td>Leg. LD-1 Buchanan (D, inc.) vs Garza (R); LD-2 Bankoski (D) unopp. · Family Court: Sullivan (R, inc.) vs Moss (D) · Sheriff Quattrone (R) unopp. No propositions.</td></tr><tr><th>Early voting</th><td>County Fairgrounds 4-H Building, 1089 Central Ave, Oct 24–Nov 1</td></tr></table></details><details class="town"><summary><b>Fredonia (Pomfret)</b><span class="mut"> · Chautauqua County</span></summary><table class="tight"><tr><th>NY-23 · SD-57 · AD-150</th><td>Same as Dunkirk: Langworthy v Gies · Borrello v Guite-Williams · Molitor v Carle</td></tr><tr><th>County Leg. LD-3 / 4</th><td>Scudder (R, inc.) vs Lee (D) · Lewis (D) unopposed</td></tr><tr><th>Village &amp; town</th><td>Trustee Mulholland (D) and Councilmember Bashaw (D) unopposed. No propositions.</td></tr><tr><th>Early voting</th><td>County Fairgrounds 4-H Building, 1089 Central Ave, Dunkirk, Oct 24–Nov 1; Election Day at Harvest Chapel, 39 Matteson St</td></tr></table></details>
+<p class="intro">Tap a town. Beyond the statewide races, what it votes on Nov 3 — nobody polls these.</p>
+<details class="town state-h" open><summary><span class="tn">Every New York ballot</span></summary><dl><div class="row"><dt>Governor</dt><dd>Hochul (D, inc.) vs Blakeman (R)</dd></div><div class="row"><dt>Attorney General</dt><dd>James (D, inc.) vs Komatireddy (R)</dd></div><div class="row"><dt>Comptroller</dt><dd>DiNapoli (D, inc.) vs Hernandez (R)</dd></div><div class="row"><dt>Supreme Court, 8th Dist. (vote for 4; Erie, Niagara, Chautauqua)</dt><dd>Bucki, Joynt, Amodeo, Richardson, Tripi, Hickey, Vario</dd></div></dl></details>
+<details class="town" open><summary><span class="tn">North Tonawanda</span><span class="cty">Niagara County</span></summary><dl><div class="row"><dt>NY-26</dt><dd>Kennedy (D, inc.) vs Hannon (R)</dd></div><div class="row"><dt>SD-62</dt><dd>Ortt (R, inc.) vs Arida (D)</dd></div><div class="row"><dt>AD-140 / 145</dt><dd>Conrad (D, inc.) vs Faisal (R) · open: Wydysh (R) vs McMurray (D)</dd></div><div class="row"><dt>County Leg. 7–9</dt><dd>Gooch (R) v Mooradian · Andres (R) v Kennedy · Bradt (R) v Osborn</dd></div><div class="row"><dt>Prop: $18M bond</dt><dd>Community center at the Keller Building; ≈$0.84 per $1,000 assessed before grants</dd></div><div class="row ev"><dt>Early voting</dt><dd>Wheatfield Community Center (2790 Church Rd) or Wendelville Fire Co. (7340 Campbell Blvd), Oct 24–Nov 1</dd></div></dl></details><details class="town"><summary><span class="tn">Orchard Park</span><span class="cty">Erie County</span></summary><dl><div class="row"><dt>NY-23</dt><dd>Langworthy (R, inc.) vs Gies (D)</dd></div><div class="row"><dt>SD-60</dt><dd>Gallivan (R, inc.); Dem challenger Balikowski unconfirmed</dd></div><div class="row"><dt>AD-142 / 147</dt><dd>Burke (D, inc.) vs Dickson (R) · DiPietro (R, inc.) unopposed</dd></div><div class="row"><dt>Town Justice</dt><dd>On the ballot; candidates unconfirmed. No propositions.</dd></div><div class="row ev"><dt>Early voting</dt><dd>Orchard Park Community Activity Center, 4600 California Rd, Oct 24–Nov 1 (weekdays noon–9)</dd></div></dl></details><details class="town"><summary><span class="tn">Scottsville (Wheatland)</span><span class="cty">Monroe County</span></summary><dl><div class="row"><dt>NY-25</dt><dd>Morelle (D, inc.) vs McIntyre (R)</dd></div><div class="row"><dt>SD-54</dt><dd>Helming (R, inc.) vs Mills (D)</dd></div><div class="row"><dt>AD-139</dt><dd>Hawley (R, inc.) vs Wolcott (D)</dd></div><div class="row"><dt>County &amp; town</dt><dd>DA Green (D) and Supervisor Kirch (R) unopposed. No propositions.</dd></div><div class="row ev"><dt>Early voting</dt><dd>Nearest: Henrietta Library (625 Calkins Rd) or Gates Presbyterian (1049 Wegman Rd); any of 15 county sites, Oct 24–Nov 1</dd></div></dl></details><details class="town"><summary><span class="tn">Dunkirk</span><span class="cty">Chautauqua County</span></summary><dl><div class="row"><dt>NY-23</dt><dd>Langworthy (R, inc.) vs Gies (D)</dd></div><div class="row"><dt>SD-57</dt><dd>Borrello (R, inc.) vs Guite-Williams (D)</dd></div><div class="row"><dt>AD-150</dt><dd>Molitor (R, inc.) vs Carle (D)</dd></div><div class="row"><dt>County</dt><dd>Leg. LD-1 Buchanan (D, inc.) vs Garza (R); LD-2 Bankoski (D) unopp. · Family Court: Sullivan (R, inc.) vs Moss (D) · Sheriff Quattrone (R) unopp. No propositions.</dd></div><div class="row ev"><dt>Early voting</dt><dd>County Fairgrounds 4-H Building, 1089 Central Ave, Oct 24–Nov 1</dd></div></dl></details><details class="town"><summary><span class="tn">Fredonia (Pomfret)</span><span class="cty">Chautauqua County</span></summary><dl><div class="row"><dt>NY-23 · SD-57 · AD-150</dt><dd>Same as Dunkirk: Langworthy v Gies · Borrello v Guite-Williams · Molitor v Carle</dd></div><div class="row"><dt>County Leg. LD-3 / 4</dt><dd>Scudder (R, inc.) vs Lee (D) · Lewis (D) unopposed</dd></div><div class="row"><dt>Village &amp; town</dt><dd>Trustee Mulholland (D) and Councilmember Bashaw (D) unopposed. No propositions.</dd></div><div class="row ev"><dt>Early voting</dt><dd>County Fairgrounds 4-H Building, 1089 Central Ave, Dunkirk, Oct 24–Nov 1; Election Day at Harvest Chapel, 39 Matteson St</dd></div></dl></details>
 
 <h2>Key dates</h2>
-<table><tr><td>Early voting opens</td><td>Sat, Oct 24</td><td class="mut">Runs through Nov 1</td></tr><tr><td>Early voting closes</td><td>Sun, Nov 1</td><td class="mut"></td></tr><tr><td>Election Day</td><td>Tue, Nov 3</td><td class="mut">Polls open 6 a.m. – 9 p.m.</td></tr></table>
+<ol class="dates"><li class=""><span class="dt"><b>Oct 24</b>Sat</span><span class="ev">Early voting opens<small>Runs through Nov 1</small></span></li><li class=""><span class="dt"><b>Nov 1</b>Sun</span><span class="ev">Early voting closes</span></li><li class=""><span class="dt"><b>Nov 3</b>Tue</span><span class="ev">Election Day<small>Polls open 6 a.m. – 9 p.m.</small></span></li></ol>
 
 
 <div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook Political Report, Sabato's Crystal Ball, Emerson College, Marist, NYT/Siena, CNN, WRAL/SurveyUSA, Trafalgar, Pollsmax, PoliAgg/VoteHub, Polymarket, Kalshi; ballot details from The Ballot Brief (NYS BOE Sept 4 certification), the Erie, Niagara, Monroe and Chautauqua boards of elections, WXXI, WKBW and Chautauqua Today. Polls are snapshots with margins of error of 3–5 points; a lead inside that range is a coin flip. Compiled each morning; <a href="/election/data.json">the underlying numbers</a> carry a source link per row.</div>
