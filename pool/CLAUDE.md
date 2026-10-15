@@ -210,7 +210,7 @@ https://benthambulletin.github.io/pool/"
   else). Top level: `venmo`, `venmoUrl`, `venmoNames` (hashed payer names → pool names).
 - Paid = a Venmo row with status `ok`, a `manual` row, or `season.autoPaid`: **Garret and Kaylani & Luka are paid
   automatically the moment they file** (Garret pays for both). `season.covers`: **Mrs. Sombloski pays $10 for herself and Mike Sombloski** —
-  a $10 payment from her books $5 to each. (Tom pays only for himself; Thom plays free — Garret, Oct 7.) She files as "Missy" (alias set Oct 7). Cash or PayPal: add a `manual` row (`{"id": "manual-w<N>-<name>", "amt": "5.00", "who": <pool name>, "status": "manual"}`) only when Garret says so in chat (Arod and Andy R paid by PayPal in Week 5).
+  a $10 payment from her books $5 to each. (Tom pays only for himself; Thom plays free — Garret, Oct 7.) **Leah pays $10 for herself and B-rad** (`covers`, Oct 15). She files as "Missy" (alias set Oct 7). Cash or PayPal: add a `manual` row (`{"id": "manual-w<N>-<name>", "amt": "5.00", "who": <pool name>, "status": "manual"}`) only when Garret says so in chat (Arod and Andy R paid by PayPal in Week 5).
   The form's "Paid / Playing free" answer is only the player's claim; it never makes anyone paid.
   If an auto-paid person also Venmos $5, score.py marks it `dup` (refund).
 - **Teaching a payer name:** when Garret says "$X from <Venmo name> is <pool name>", set
