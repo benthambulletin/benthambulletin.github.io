@@ -1,0 +1,556 @@
+{
+ "as_of": "2026-10-14",
+ "updated_at": "2026-10-14T20:45:00-04:00",
+ "election_day": "2026-11-03",
+ "early_voting": {
+  "start": "2026-10-24",
+  "end": "2026-11-01"
+ },
+ "bottom_line": [
+  {
+   "order": 1,
+   "headline": "Democrats are favored to take the House",
+   "detail": "Generic ballot D+8.9 (Silver Bulletin, Oct 9). Cook projects a Democratic gain of 9–19 seats."
+  },
+  {
+   "order": 2,
+   "headline": "The Senate is a coin flip tilting Democratic",
+   "detail": "Dems need net +4. Five GOP-held seats are toss-ups: Maine, Ohio, Texas, Iowa, Kansas. Markets: ~63% Democratic Senate."
+  },
+  {
+   "order": 3,
+   "headline": "Trump is deeply underwater",
+   "detail": "Net approval −25 across trackers; Pew has approval at 30%, the lowest of either term."
+  },
+  {
+   "order": 4,
+   "headline": "Hochul is comfortably ahead in New York",
+   "detail": "Up 11–12 on Blakeman (Marist, Emerson), though Blakeman leads Upstate."
+  },
+  {
+   "order": 5,
+   "headline": "Buffalo and Long Island House seats are safe; NY-17 isn't",
+   "detail": "NY-26 (Kennedy) Solid D; NY-01 (LaLota) Lean R, no poll. Lawler vs Conley in the Hudson Valley is the state's only toss-up: Conley 48–46."
+  },
+  {
+   "order": 6,
+   "headline": "North Tonawanda: Ortt vs Arida and an $18M bond",
+   "detail": "State Senate 62 and the North Tonawanda community center bond are the two local items to watch. Early voting Oct 24–Nov 1."
+  }
+ ],
+ "what_changed": [],
+ "generic_ballot": [
+  {
+   "tracker": "Silver Bulletin (all polls)",
+   "dem": null,
+   "rep": null,
+   "margin": 8.9,
+   "window": "Rolling average",
+   "as_of": "2026-10-09",
+   "url": "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls"
+  },
+  {
+   "tracker": "Silver Bulletin (likely-voter adjusted)",
+   "dem": null,
+   "rep": null,
+   "margin": 9.6,
+   "window": "Rolling average",
+   "as_of": "2026-10-09",
+   "url": "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls"
+  },
+  {
+   "tracker": "RealClearPolling average",
+   "dem": 50.2,
+   "rep": 41.9,
+   "margin": 8.3,
+   "window": "Sep 21 – Oct 11",
+   "as_of": "2026-10-11",
+   "url": "https://www.realclearpolling.com/polls/state-of-the-union/generic-congressional-vote"
+  }
+ ],
+ "approval": [
+  {
+   "tracker": "Average of trackers",
+   "approve": 36.3,
+   "disapprove": 61.2,
+   "net": -24.8,
+   "as_of": "2026-10-08",
+   "url": "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"
+  },
+  {
+   "tracker": "Ballotpedia",
+   "approve": 38.0,
+   "disapprove": 60.0,
+   "net": -22.0,
+   "as_of": "2026-10-08",
+   "url": "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"
+  },
+  {
+   "tracker": "CNN",
+   "approve": 33.0,
+   "disapprove": 66.0,
+   "net": -33.0,
+   "as_of": "2026-10-08",
+   "url": "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"
+  },
+  {
+   "tracker": "Decision Desk HQ",
+   "approve": 37.1,
+   "disapprove": 60.5,
+   "net": -23.4,
+   "as_of": "2026-10-08",
+   "url": "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"
+  },
+  {
+   "tracker": "FiftyPlusOne",
+   "approve": 34.6,
+   "disapprove": 62.2,
+   "net": -27.6,
+   "as_of": "2026-10-08",
+   "url": "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"
+  },
+  {
+   "tracker": "NBC News",
+   "approve": 38.0,
+   "disapprove": 59.0,
+   "net": -21.0,
+   "as_of": "2026-10-08",
+   "url": "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"
+  },
+  {
+   "tracker": "RealClearPolling",
+   "approve": 37.6,
+   "disapprove": 60.2,
+   "net": -22.6,
+   "as_of": "2026-10-08",
+   "url": "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"
+  },
+  {
+   "tracker": "Silver Bulletin",
+   "approve": 36.6,
+   "disapprove": 60.5,
+   "net": -23.9,
+   "as_of": "2026-10-08",
+   "url": "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"
+  },
+  {
+   "tracker": "The Economist",
+   "approve": 35.0,
+   "disapprove": 61.0,
+   "net": -26.0,
+   "as_of": "2026-10-08",
+   "url": "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"
+  },
+  {
+   "tracker": "New York Times",
+   "approve": 37.0,
+   "disapprove": 61.0,
+   "net": -24.0,
+   "as_of": "2026-10-08",
+   "url": "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"
+  }
+ ],
+ "senate": [
+  {
+   "state": "Maine",
+   "race": "Collins seat",
+   "held_by": "R",
+   "democrat": "Troy Jackson",
+   "republican": "Susan Collins (inc.)",
+   "cook_rating": "Toss Up",
+   "dem_pct": 48.6,
+   "rep_pct": 47.3,
+   "margin": 1.3,
+   "pollster": "RealClearPolling average",
+   "dates": "Sep 15 – Oct 11",
+   "note": "Latest: Suffolk (Oct 8–11) Jackson 49–47. Collins outran her polls by ~12 pts in 2020.",
+   "url": "https://www.realclearpolling.com/polls/senate/general/2026/collins-vs-jackson"
+  },
+  {
+   "state": "Ohio",
+   "race": "Husted seat (special)",
+   "held_by": "R",
+   "democrat": "Sherrod Brown",
+   "republican": "Jon Husted (inc.)",
+   "cook_rating": "Toss Up",
+   "dem_pct": 49,
+   "rep_pct": 43,
+   "margin": 6,
+   "pollster": "CNN",
+   "dates": "Oct 8",
+   "note": "NYT/Siena (late Sep) had Brown 49–46.",
+   "url": "https://www.cnn.com/2026/10/05/politics/10-senate-seats-most-likely-to-flip-2026"
+  },
+  {
+   "state": "Texas",
+   "race": "Open (Cornyn retiring)",
+   "held_by": "R",
+   "democrat": "James Talarico",
+   "republican": "Ken Paxton",
+   "cook_rating": "Toss Up",
+   "dem_pct": 48.1,
+   "rep_pct": 45.3,
+   "margin": 2.8,
+   "pollster": "RealClearPolling average",
+   "dates": "through Oct 8",
+   "note": "Oct 14: Marist Talarico 47–45; UT 50–47. NYT/Siena Oct 3: 51–45.",
+   "url": "https://www.realclearpolling.com/latest-polls/senate"
+  },
+  {
+   "state": "Iowa",
+   "race": "Open (Ernst retiring)",
+   "held_by": "R",
+   "democrat": "Josh Turek",
+   "republican": "Ashley Hinson",
+   "cook_rating": "Toss Up",
+   "dem_pct": 45,
+   "rep_pct": 47,
+   "margin": -2,
+   "pollster": "Emerson",
+   "dates": "Oct 5–6",
+   "note": "CNN Oct 8: Hinson 45–43. YouGov Oct 14: Turek 47–46. Race has tightened toward Hinson.",
+   "url": "https://electiontracker.live/"
+  },
+  {
+   "state": "Kansas",
+   "race": "Marshall seat",
+   "held_by": "R",
+   "democrat": "Adam Hamilton",
+   "republican": "Roger Marshall (inc.)",
+   "cook_rating": "Toss Up",
+   "dem_pct": 46,
+   "rep_pct": 47,
+   "margin": -1,
+   "pollster": "NYT/Siena",
+   "dates": "Oct 7",
+   "note": "Cook moved to Toss Up on Oct 6. Trump won KS by 16 in 2024.",
+   "url": "https://www.forbes.com/sites/saradorn/2026/10/14/hottest-2026-midterm-races-talarico-ahead-in-texas-senate-race-in-2-new-polls-updated-daily/"
+  },
+  {
+   "state": "Alaska",
+   "race": "Sullivan seat",
+   "held_by": "R",
+   "democrat": "Mary Peltola",
+   "republican": "Dan Sullivan (inc.)",
+   "cook_rating": "Toss Up",
+   "dem_pct": null,
+   "rep_pct": null,
+   "margin": null,
+   "pollster": null,
+   "dates": null,
+   "note": "Sabato's Crystal Ball moved to Leans D on Oct 6; no recent public poll surfaced.",
+   "url": "https://www.270towin.com/2026-senate-election-predictions/"
+  },
+  {
+   "state": "Michigan",
+   "race": "Open (Peters retiring)",
+   "held_by": "D",
+   "democrat": "Abdul El-Sayed",
+   "republican": "Mike Rogers",
+   "cook_rating": "Toss Up",
+   "dem_pct": null,
+   "rep_pct": null,
+   "margin": null,
+   "pollster": null,
+   "dates": null,
+   "note": "Inside Elections: Tilt D (Oct 1). Only Democratic-held toss-up.",
+   "url": "https://www.270towin.com/2026-senate-election-predictions/"
+  },
+  {
+   "state": "North Carolina",
+   "race": "Open (Tillis retiring)",
+   "held_by": "R",
+   "democrat": "Roy Cooper",
+   "republican": "Michael Whatley",
+   "cook_rating": "Likely D",
+   "dem_pct": 54,
+   "rep_pct": 40,
+   "margin": 14,
+   "pollster": "WRAL/SurveyUSA",
+   "dates": "Oct 13",
+   "note": "Cook moved from Lean D to Likely D on Oct 6.",
+   "url": "https://www.realclearpolling.com/latest-polls"
+  },
+  {
+   "state": "Georgia",
+   "race": "Ossoff seat",
+   "held_by": "D",
+   "democrat": "Jon Ossoff (inc.)",
+   "republican": "Mike Collins",
+   "cook_rating": "Likely D",
+   "dem_pct": 51,
+   "rep_pct": 43,
+   "margin": 8,
+   "pollster": "Trafalgar Group",
+   "dates": "Oct 10",
+   "note": "Top GOP pickup target has drifted toward Democrats.",
+   "url": "https://www.realclearpolling.com/latest-polls/senate"
+  }
+ ],
+ "control": [
+  {
+   "measure": "Democratic-leaning seats (RCP map)",
+   "value": 46,
+   "note": "Includes two independents who caucus with Democrats",
+   "as_of": "2026-10-12",
+   "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
+  },
+  {
+   "measure": "Republican-leaning seats (RCP map)",
+   "value": 46,
+   "note": null,
+   "as_of": "2026-10-12",
+   "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
+  },
+  {
+   "measure": "Toss-up seats (RCP map)",
+   "value": 8,
+   "note": "AK, IA, KS, ME, MI, MN, OH, TX",
+   "as_of": "2026-10-12",
+   "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
+  },
+  {
+   "measure": "Toss-up seats (Cook)",
+   "value": 7,
+   "note": "AK, IA, KS, ME, MI, OH, TX",
+   "as_of": "2026-10-06",
+   "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+  },
+  {
+   "measure": "Net seats Democrats need for 51",
+   "value": 4,
+   "note": "Currently 47 D / 53 R",
+   "as_of": "2026-10-14",
+   "url": "https://www.gamingtoday.com/prediction-markets/politics/2026-midterm-elections-predictions/"
+  },
+  {
+   "measure": "Polymarket odds of Democratic Senate (%)",
+   "value": 64,
+   "note": "Prediction market",
+   "as_of": "2026-10-14",
+   "url": "https://www.gamingtoday.com/prediction-markets/politics/2026-midterm-elections-predictions/"
+  },
+  {
+   "measure": "Kalshi odds of Democratic Senate (%)",
+   "value": 62,
+   "note": "Prediction market",
+   "as_of": "2026-10-14",
+   "url": "https://www.gamingtoday.com/prediction-markets/politics/2026-midterm-elections-predictions/"
+  },
+  {
+   "measure": "Cook House toss-ups",
+   "value": 21,
+   "note": "Cook moved 18 House races toward Democrats on Oct 9",
+   "as_of": "2026-10-09",
+   "url": "https://electiontracker.live/"
+  },
+  {
+   "measure": "Cook projected Democratic House gain (low)",
+   "value": 9,
+   "note": "Seats",
+   "as_of": "2026-10-09",
+   "url": "https://electiontracker.live/"
+  },
+  {
+   "measure": "Cook projected Democratic House gain (high)",
+   "value": 19,
+   "note": "Seats",
+   "as_of": "2026-10-09",
+   "url": "https://electiontracker.live/"
+  }
+ ],
+ "ny_governor": [
+  {
+   "poll": "Emerson College / PIX11",
+   "dates": "Oct 3–5",
+   "sample": "900 LV",
+   "hochul": 52,
+   "blakeman": 40,
+   "margin": 12,
+   "note": "Independents break for Blakeman 55–34; Hochul job approval 40/46",
+   "url": "https://emersoncollegepolling.com/new-york-2026-poll-governor-hochul-leads-blakeman-by-12/"
+  },
+  {
+   "poll": "Marist",
+   "dates": "Oct 1–4",
+   "sample": "1,361 RV",
+   "hochul": 53,
+   "blakeman": 42,
+   "margin": 11,
+   "note": "Blakeman leads Upstate 51%; Hochul 69% in NYC; 29-pt gender gap",
+   "url": "https://maristpoll.marist.edu/polls/midterm-elections-in-new-york-october-2026/"
+  },
+  {
+   "poll": "Pollsmax average (28 polls)",
+   "dates": "through Oct 5",
+   "sample": "—",
+   "hochul": 50.8,
+   "blakeman": 38.9,
+   "margin": 11.9,
+   "note": "Aggregate",
+   "url": "https://www.pollsmax.com/governor/new-york/"
+  },
+  {
+   "poll": "VoteHub average (5 polls)",
+   "dates": "through Oct 5",
+   "sample": "—",
+   "hochul": 51.5,
+   "blakeman": 38.5,
+   "margin": 13,
+   "note": "Aggregate",
+   "url": "https://poliagg.com/race/us-governor-2026-ny/"
+  }
+ ],
+ "ny_house": [
+  {
+   "district": "NY-17",
+   "area": "Hudson Valley",
+   "incumbent": "Mike Lawler",
+   "party": "R",
+   "challenger": "Cait Conley (D)",
+   "rating": "Toss-up",
+   "rating_source": "Cook / consensus",
+   "dem_pct": 48,
+   "rep_pct": 46,
+   "margin": 2,
+   "pollster": "Emerson / PIX11",
+   "dates": "Sep 27–29",
+   "note": "Lawler internal (McLaughlin, Sep 28–30) had Lawler 50–47. Most competitive seat in the state.",
+   "url": "https://emersoncollegepolling.com/ny-17-2026-poll/"
+  },
+  {
+   "district": "NY-01",
+   "area": "Eastern Suffolk (Rocky Point)",
+   "incumbent": "Nick LaLota",
+   "party": "R",
+   "challenger": "Chris Gallant (D)",
+   "rating": "Lean R",
+   "rating_source": "Decision Desk HQ",
+   "dem_pct": null,
+   "rep_pct": null,
+   "margin": null,
+   "pollster": null,
+   "dates": null,
+   "note": "No public poll yet. Trump +10 and LaLota +10 in 2024. Gallant: Army Guard pilot, former air traffic controller.",
+   "url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_New_York"
+  },
+  {
+   "district": "NY-04",
+   "area": "Southwest Nassau",
+   "incumbent": "Laura Gillen",
+   "party": "D",
+   "challenger": "Jeanine Driscoll (R)",
+   "rating": "Lean D",
+   "rating_source": "PollingSource",
+   "dem_pct": null,
+   "rep_pct": null,
+   "margin": null,
+   "pollster": null,
+   "dates": null,
+   "note": "Gillen flipped the seat in 2024; no public poll surfaced.",
+   "url": "https://pollingsource.com/house/state/ny"
+  },
+  {
+   "district": "NY-26",
+   "area": "Buffalo – Niagara Falls – North Tonawanda",
+   "incumbent": "Tim Kennedy",
+   "party": "D",
+   "challenger": "Dennis Hannon (R)",
+   "rating": "Solid D",
+   "rating_source": "Cook",
+   "dem_pct": null,
+   "rep_pct": null,
+   "margin": null,
+   "pollster": null,
+   "dates": null,
+   "note": "Kennedy won 65.2% in 2024; district PVI D+11.",
+   "url": "https://www.cookpolitical.com/house/race/483701"
+  }
+ ],
+ "local": [
+  {
+   "contest": "State Senate – 62nd District",
+   "area": "Niagara County incl. North Tonawanda",
+   "candidates": "Rob Ortt (R/Con",
+   "what_to_know": " inc.) vs Thomas Arida (D/WFP)",
+   "url": "Ortt is the Senate minority leader; both candidates are North Tonawanda residents.",
+   "null": [
+    "https://www.beenews.com/ken_ton_bee/news/2026-general-election-ballot-includes-federal-state-and-local-races/article_78968f85-34f5-49a1-be83-adac718d92e6.html"
+   ]
+  },
+  {
+   "contest": "North Tonawanda Proposition – Community Center bond",
+   "area": "City of North Tonawanda",
+   "candidates": "Yes / No",
+   "what_to_know": "Authorizes up to $18 million in serial bonds to acquire and build a community center.",
+   "url": "https://www.beenews.com/ken_ton_bee/news/2026-general-election-ballot-includes-federal-state-and-local-races/article_78968f85-34f5-49a1-be83-adac718d92e6.html"
+  },
+  {
+   "contest": "State Assembly – 144th District",
+   "area": "Lockport-area Niagara County",
+   "candidates": "Paul Bologna (R",
+   "what_to_know": " inc.) vs Donna Sholk (D)",
+   "url": "Freshman Republican facing a Democratic challenger.",
+   "null": [
+    "https://www.yahoo.com/news/articles/niagara-democratic-committee-backs-12-045900420.html"
+   ]
+  },
+  {
+   "contest": "State Assembly – 145th District (open)",
+   "area": "Niagara Falls / Grand Island / part of NT",
+   "candidates": "Rebecca Wydysh (R)",
+   "what_to_know": "Angelo Morinello retiring; Wydysh formally announced in January.",
+   "url": "https://en.wikipedia.org/wiki/New_York%27s_145th_State_Assembly_district"
+  },
+  {
+   "contest": "Niagara County Legislature",
+   "area": "All 15 districts",
+   "candidates": "Democrats contesting 12 of 15 seats",
+   "what_to_know": "Winners get the new four-year term starting Jan 2027.",
+   "url": "https://www.yahoo.com/news/articles/niagara-democratic-committee-backs-12-045900420.html"
+  },
+  {
+   "contest": "NY Supreme Court – 8th Judicial District",
+   "area": "Western New York",
+   "candidates": "Multiple candidates",
+   "what_to_know": "Crowded race on every WNY ballot.",
+   "url": "https://www.wgrz.com/article/news/politics/elections/election-day-voter-guide-2026/71-44509f20-7e0f-4c57-b2c2-e5cf71e1d41c"
+  },
+  {
+   "contest": "Statewide offices",
+   "area": "New York",
+   "candidates": "Governor · Attorney General · Comptroller",
+   "what_to_know": "All three statewide offices are on the ballot.",
+   "url": "https://www.beenews.com/ken_ton_bee/news/2026-general-election-ballot-includes-federal-state-and-local-races/article_78968f85-34f5-49a1-be83-adac718d92e6.html"
+  }
+ ],
+ "key_dates": [
+  {
+   "event": "Early voting opens",
+   "date": "2026-10-24",
+   "note": "Runs through Nov 1",
+   "url": "https://www.wgrz.com/article/news/politics/elections/election-day-voter-guide-2026/71-44509f20-7e0f-4c57-b2c2-e5cf71e1d41c"
+  },
+  {
+   "event": "Early voting closes",
+   "date": "2026-11-01",
+   "note": null,
+   "url": "https://www.wgrz.com/article/news/politics/elections/election-day-voter-guide-2026/71-44509f20-7e0f-4c57-b2c2-e5cf71e1d41c"
+  },
+  {
+   "event": "Election Day",
+   "date": "2026-11-03",
+   "note": "Polls open 6 a.m. – 9 p.m.",
+   "url": "https://www.wgrz.com/article/news/politics/elections/election-day-voter-guide-2026/71-44509f20-7e0f-4c57-b2c2-e5cf71e1d41c"
+  }
+ ],
+ "history": [
+  {
+   "date": "2026-10-14",
+   "generic_ballot": 8.9,
+   "trump_net": -24.8,
+   "dem_senate_odds": 64,
+   "hochul_margin": 12
+  }
+ ]
+}
