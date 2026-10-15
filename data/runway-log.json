@@ -4834,5 +4834,13 @@
   "wake_dev_min": 49,
   "bb_high": 89,
   "stress_yday": 29.0
+ },
+ {
+  "date": "2026-10-15",
+  "score": 0,
+  "flags": [],
+  "wake_dev_min": 11,
+  "bb_high": 91,
+  "stress_yday": 29.0
  }
 ]
