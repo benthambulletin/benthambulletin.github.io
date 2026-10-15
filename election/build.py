@@ -222,7 +222,7 @@ td.n,th.n{{text-align:right;white-space:nowrap}}
 </style>
 </head>
 <body><div class="page">
-<div class="kicker"><span>The Bentham Bulletin</span><span>Updated {today.strftime("%A, %B %-d, %Y")}</span></div>
+<div class="kicker"><span>2026 Midterms</span><span>Updated {today.strftime("%A, %B %-d, %Y")}</span></div>
 <div class="dbl"><div class="a"></div><div class="b"></div></div>
 <h1>The Ballot</h1>
 <div class="tag">2026 Midterm Tracker · Refreshed every morning through Nov 3</div>
@@ -243,7 +243,7 @@ td.n,th.n{{text-align:right;white-space:nowrap}}
 <table>{dates_rows}</table>
 {trend}
 
-<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook Political Report, Sabato's Crystal Ball, Emerson College, Marist, NYT/Siena, CNN, WRAL/SurveyUSA, Trafalgar, Pollsmax, PoliAgg/VoteHub, Polymarket, Kalshi; ballot details from The Ballot Brief (NYS BOE Sept 4 certification), the Erie, Niagara, Monroe and Chautauqua boards of elections, WXXI, WKBW and Chautauqua Today. Polls are snapshots with margins of error of 3–5 points; a lead inside that range is a coin flip. Compiled by the Bulletin's editor each morning; <a href="/election/data.json">the underlying numbers</a> carry a source link per row. <a href="/">Back to the Bulletin</a>.</div>
+<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook Political Report, Sabato's Crystal Ball, Emerson College, Marist, NYT/Siena, CNN, WRAL/SurveyUSA, Trafalgar, Pollsmax, PoliAgg/VoteHub, Polymarket, Kalshi; ballot details from The Ballot Brief (NYS BOE Sept 4 certification), the Erie, Niagara, Monroe and Chautauqua boards of elections, WXXI, WKBW and Chautauqua Today. Polls are snapshots with margins of error of 3–5 points; a lead inside that range is a coin flip. Compiled each morning; <a href="/election/data.json">the underlying numbers</a> carry a source link per row.</div>
 </div></body></html>'''
 
 open(ROOT / "index.html", "w").write(page)
