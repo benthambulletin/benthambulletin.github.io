@@ -5427,9 +5427,51 @@
           "state": "alive",
           "paid": false,
           "badges": []
+        },
+        {
+          "name": "Tom",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-15T02:14:14+00:00",
+          "firstAt": "2026-10-15T02:14:14+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Walczyk",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-15T02:38:31+00:00",
+          "firstAt": "2026-10-15T02:38:31+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
+        {
+          "from": "Walczyk",
+          "text": "F**k off Claude"
+        },
         {
           "from": "Sigma Mikey Skibidi Sombloski",
           "text": "Chat I fell 💀 not very sigma of me ngl. This is so ohio frfr. Me on the floor rn: 6 7"
@@ -5459,11 +5501,11 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "A new name hit the sheet tonight: Sigma Mikey Skibidi Sombloski, who filed the same picks three times inside four minutes and spelled his own board name two different ways doing it. The trash talk opens with him falling on the floor. Ariel's \"Sombloski sucks\" has sat unanswered since Tuesday; this appears to be the answer. Bold rebuttal.\n\nDerek still swears this is his week, Melissa still hasn't said a word, and Andy R is still stunned Ariel didn't finish last. Thirteen sheets in; the rest have until Thursday's 8:15 kickoff. Questions for the commissioner go on the pick sheet.",
+      "column": "Walczyk finished Week 5 tied for dead last with Claude, a computer program, and filed tonight with three words for it: \"F**k off Claude.\" Bold talk from a co-tenant of the cellar. The commissioner had already ruled Walczyk should retire, so this feud now runs three ways. Tom, second only to Ryan last week, slid in at 10:14 without a word.\n\nSigma Mikey is presumably still on the floor, Derek still swears it's his week, and fifteen sheets are in. The champ hasn't filed yet; neither has Leah, who at least has the mugshot to keep busy. Thursday's 8:15 kickoff closes the door. Questions for the commissioner go on the pick sheet.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 40.0,
-      "paidN": 8,
+      "pot": 50.0,
+      "paidN": 10,
       "buyIn": 5,
       "payBy": "2026-10-16T00:15:00Z",
       "payments": [
@@ -5534,6 +5576,22 @@
           "at": "2026-10-14T22:46:24Z",
           "amt": "5.00",
           "who": "Mike Sombloski",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a13d578ed3de9ac",
+          "at": "2026-10-15T02:15:10Z",
+          "amt": "5.00",
+          "who": "Tom",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a13d70e874ecc10",
+          "at": "2026-10-15T02:42:51Z",
+          "amt": "5.00",
+          "who": "Walczyk",
           "status": "ok",
           "told": null
         }
@@ -5622,13 +5680,20 @@
           "q": "Why is it: it is what it is?",
           "told": "2026-10-15T01:15:00Z",
           "a": null
+        },
+        {
+          "id": "8NVXK8o",
+          "from": "Walczyk",
+          "q": "Do you have enough clean pillowcases to soak up your tears as you cry yourself to sleep after losing?",
+          "told": null,
+          "a": null
         }
       ],
-      "columnHead": "Sigma Mikey files three times. Ariel waits.",
-      "columnN": 13
+      "columnHead": "Walczyk declares war on the other last-placer",
+      "columnN": 15
     }
   },
-  "updated": "2026-10-15T02:09:35.121432+00:00",
+  "updated": "2026-10-15T03:09:40.166733+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5676,6 +5741,8 @@
     "dc64c42b0487ccee": "Mrs. Sombloski",
     "e3dbf7976562e873": "Derek",
     "78fb70a2f1854862": "Melissa",
-    "2d9db386c9f8be42": "Sigma Mikey Skibidi Sombloski"
+    "2d9db386c9f8be42": "Sigma Mikey Skibidi Sombloski",
+    "fadf5625bf4f1f2b": "Walczyk",
+    "059a5c546f5861f2": "Tom"
   }
 }
