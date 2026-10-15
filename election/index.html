@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="description" content="2026 midterm tracker — national polling, the Senate, and New York's races, refreshed every morning.">
+<meta property="og:title" content="The Ballot — 2026 Midterm Tracker">
+<meta property="og:description" content="Democrats lead the generic ballot by 8.9; 7 Senate toss-ups; Hochul up 12 in New York. Updated Oct 14.">
+<meta property="og:url" content="https://benthambulletin.github.io/election/">
+<meta property="og:type" content="website">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="icon" href="/assets/favicon.svg">
+<title>The Ballot — 2026 Midterm Tracker</title>
+<style>
+@font-face{font-family:'PF';src:url(/assets/fonts/PlayfairDisplay.ttf);font-weight:100 900;font-display:swap}
+@font-face{font-family:'LO';src:url(/assets/fonts/Lora.ttf);font-weight:100 900;font-display:swap}
+@font-face{font-family:'AR';src:url(/assets/fonts/Archivo.ttf);font-weight:100 900;font-display:swap}
+:root{--paper:#fbf5e4;--ink:#1c170f;--red:#c8302f;--blue:#2e5fa3;--gold:#e8b100;--soft:#5f5238;--rule:#d6cbaf;--wash:#f3ead2}
+*{box-sizing:border-box}
+html{background:#ece4d1}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'LO',Georgia,serif;font-size:1.05rem;line-height:1.45;font-weight:480;-webkit-text-size-adjust:100%;font-variant-numeric:tabular-nums}
+.page{max-width:44rem;margin:0 auto;padding:1.1rem 1.1rem 2.4rem}
+a{color:inherit}
+.kicker{display:flex;justify-content:space-between;gap:1rem;font-family:'AR';font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-bottom:.4rem}
+.dbl .a{height:3px;background:var(--ink)}.dbl .b{height:1px;background:var(--ink);margin-top:3px}.dbl{margin:.5rem 0 .9rem}
+h1{margin:.5rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size:clamp(2rem,9vw,3.2rem);line-height:.95;letter-spacing:-.01em}
+.tag{text-align:center;font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-top:.45rem}
+.orn{text-align:center;color:var(--gold);font-size:1rem;letter-spacing:.9em;margin:.5rem 0 .4rem}
+h2{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:1.6rem 0 .5rem;padding-bottom:.25rem;border-bottom:1px solid var(--ink)}
+.bottom{list-style:none;margin:0;padding:0;counter-reset:n}
+.bottom li{position:relative;padding:.45rem 0 .45rem 2.1rem;border-bottom:1px solid var(--rule);counter-increment:n}
+.bottom li::before{content:counter(n);position:absolute;left:0;top:.5rem;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--ink);color:var(--paper);font-family:'AR';font-weight:700;font-size:.8rem;display:flex;align-items:center;justify-content:center}
+.bottom b{display:block;font-family:'PF';font-weight:700;font-size:1.08rem;line-height:1.2}
+.bottom span{display:block;color:var(--soft);font-size:.92rem;margin-top:.1rem}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin-top:.9rem}
+.tile{background:var(--wash);border:1px solid var(--rule);padding:.6rem .7rem;min-width:0}
+.tile .lbl{font-family:'AR';font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:600}
+.tile .big{font-family:'PF';font-weight:800;font-size:2rem;line-height:1.05;margin:.15rem 0}
+.tile .sub{font-size:.78rem;color:var(--soft);line-height:1.3}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+td,th{padding:.45rem .3rem;border-bottom:1px solid var(--rule);vertical-align:top;text-align:left}
+th{font-family:'AR';font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap}
+.mut{color:var(--soft);font-size:.8rem}
+.d{color:var(--blue)}.r{color:var(--red)}
+.barcell{min-width:9rem}
+.bar{display:flex;width:100%;height:.7rem;margin:.2rem 0 .15rem}
+.bar .half{flex:1;position:relative;border-left:1px solid var(--rule)}
+.bar .half:first-child{border-left:0;border-right:1px solid var(--ink)}
+.bar i{position:absolute;top:0;bottom:0;display:block}
+.bar i.d{left:0;background:var(--blue)}.bar i.r{right:0;background:var(--red)}
+.nopoll{color:var(--soft);font-size:.8rem;font-style:italic}
+.notes{font-size:.88rem;color:var(--soft);padding-left:1.1rem;margin:.5rem 0 0}
+.notes li{margin:.2rem 0}
+.changed{padding-left:1.1rem;margin:0}.changed li{margin:.25rem 0}
+.legend{font-size:.78rem;color:var(--soft);margin:.3rem 0 .2rem}
+.legend i{display:inline-block;width:.7rem;height:.7rem;vertical-align:middle;margin-right:.3rem}
+.foot{font-size:.8rem;color:var(--soft);margin-top:1.8rem;line-height:1.4}
+.foot a{text-decoration:underline}
+@media(max-width:380px){.tiles{grid-template-columns:1fr 1fr}.tile .big{font-size:1.7rem}}
+</style>
+</head>
+<body><div class="page">
+<div class="kicker"><span>The Bentham Bulletin</span><span>Updated Wednesday, October 14, 2026</span></div>
+<div class="dbl"><div class="a"></div><div class="b"></div></div>
+<h1>The Ballot</h1>
+<div class="tag">2026 Midterm Tracker · Refreshed every morning through Nov 3</div>
+<div class="orn">✦ ✦ ✦</div>
+
+<h2>The bottom line</h2>
+<ol class="bottom"><li><b>Democrats are favored to take the House</b><span>Generic ballot D+8.9 (Silver Bulletin, Oct 9). Cook projects a Democratic gain of 9–19 seats.</span></li><li><b>The Senate is a coin flip tilting Democratic</b><span>Dems need net +4. Five GOP-held seats are toss-ups: Maine, Ohio, Texas, Iowa, Kansas. Markets: ~63% Democratic Senate.</span></li><li><b>Trump is deeply underwater</b><span>Net approval −25 across trackers; Pew has approval at 30%, the lowest of either term.</span></li><li><b>Hochul is comfortably ahead in New York</b><span>Up 11–12 on Blakeman (Marist, Emerson), though Blakeman leads Upstate.</span></li><li><b>Buffalo and Long Island House seats are safe; NY-17 isn&#x27;t</b><span>NY-26 (Kennedy) Solid D; NY-01 (LaLota) Lean R, no poll. Lawler vs Conley in the Hudson Valley is the state&#x27;s only toss-up: Conley 48–46.</span></li><li><b>North Tonawanda: Ortt vs Arida and an $18M bond</b><span>State Senate 62 and the North Tonawanda community center bond are the two local items to watch. Early voting Oct 24–Nov 1.</span></li></ol>
+
+
+<div class="tiles">
+ <div class="tile"><div class="lbl">Generic ballot</div><div class="big">D +8.9</div><div class="sub">Silver Bulletin, Oct 9 · RCP D +8.3</div></div>
+ <div class="tile"><div class="lbl">Trump net approval</div><div class="big">−24.8</div><div class="sub">36.3% approve · 61.2% disapprove</div></div>
+ <div class="tile"><div class="lbl">Odds of a Democratic Senate</div><div class="big">64%</div><div class="sub">Polymarket · 7 Cook toss-ups · Dems need net +4</div></div>
+ <div class="tile"><div class="lbl">Days to Election Day</div><div class="big">20</div><div class="sub">Nov 3 · early voting Oct 24–Nov 1</div></div>
+</div>
+
+<h2>Senate battleground</h2>
+<div class="legend"><i style="background:var(--blue)"></i>Democrat ahead &nbsp; <i style="background:var(--red)"></i>Republican ahead &nbsp; · latest public poll or average</div>
+<table><tr><td><b>North Carolina</b><br><span class="mut">Likely D · held R</span></td>
+<td>Roy Cooper<br><span class="mut">vs Michael Whatley</span></td>
+<td class="barcell"><span class="bar"><span class="half"></span><span class="half"><i class=d style=width:46.666666666666664%></i></span></span><br><span class="mut">D +14 · WRAL/SurveyUSA, Oct 13</span></td></tr><tr><td><b>Georgia</b><br><span class="mut">Likely D · held D</span></td>
+<td>Jon Ossoff (inc.)<br><span class="mut">vs Mike Collins</span></td>
+<td class="barcell"><span class="bar"><span class="half"></span><span class="half"><i class=d style=width:26.666666666666668%></i></span></span><br><span class="mut">D +8 · Trafalgar Group, Oct 10</span></td></tr><tr><td><b>Ohio</b><br><span class="mut">Toss Up · held R</span></td>
+<td>Sherrod Brown<br><span class="mut">vs Jon Husted (inc.)</span></td>
+<td class="barcell"><span class="bar"><span class="half"></span><span class="half"><i class=d style=width:20.0%></i></span></span><br><span class="mut">D +6 · CNN, Oct 8</span></td></tr><tr><td><b>Texas</b><br><span class="mut">Toss Up · held R</span></td>
+<td>James Talarico<br><span class="mut">vs Ken Paxton</span></td>
+<td class="barcell"><span class="bar"><span class="half"></span><span class="half"><i class=d style=width:9.333333333333332%></i></span></span><br><span class="mut">D +2.8 · RealClearPolling average, through Oct 8</span></td></tr><tr><td><b>Maine</b><br><span class="mut">Toss Up · held R</span></td>
+<td>Troy Jackson<br><span class="mut">vs Susan Collins (inc.)</span></td>
+<td class="barcell"><span class="bar"><span class="half"></span><span class="half"><i class=d style=width:4.333333333333334%></i></span></span><br><span class="mut">D +1.3 · RealClearPolling average, Sep 15 – Oct 11</span></td></tr><tr><td><b>Kansas</b><br><span class="mut">Toss Up · held R</span></td>
+<td>Adam Hamilton<br><span class="mut">vs Roger Marshall (inc.)</span></td>
+<td class="barcell"><span class="bar"><span class="half"><i class=r style=width:3.3333333333333335%></i></span><span class="half"></span></span><br><span class="mut">R +1 · NYT/Siena, Oct 7</span></td></tr><tr><td><b>Iowa</b><br><span class="mut">Toss Up · held R</span></td>
+<td>Josh Turek<br><span class="mut">vs Ashley Hinson</span></td>
+<td class="barcell"><span class="bar"><span class="half"><i class=r style=width:6.666666666666667%></i></span><span class="half"></span></span><br><span class="mut">R +2 · Emerson, Oct 5–6</span></td></tr><tr><td><b>Alaska</b><br><span class="mut">Toss Up · held R</span></td>
+<td>Mary Peltola<br><span class="mut">vs Dan Sullivan (inc.)</span></td>
+<td class="barcell"><span class="nopoll">no public poll</span><br><span class="mut">no poll</span></td></tr><tr><td><b>Michigan</b><br><span class="mut">Toss Up · held D</span></td>
+<td>Abdul El-Sayed<br><span class="mut">vs Mike Rogers</span></td>
+<td class="barcell"><span class="nopoll">no public poll</span><br><span class="mut">no poll</span></td></tr></table>
+<ul class="notes"><li><b>Maine:</b> Latest: Suffolk (Oct 8–11) Jackson 49–47. Collins outran her polls by ~12 pts in 2020.</li><li><b>Ohio:</b> NYT/Siena (late Sep) had Brown 49–46.</li><li><b>Texas:</b> Oct 14: Marist Talarico 47–45; UT 50–47. NYT/Siena Oct 3: 51–45.</li><li><b>Iowa:</b> CNN Oct 8: Hinson 45–43. YouGov Oct 14: Turek 47–46. Race has tightened toward Hinson.</li><li><b>Kansas:</b> Cook moved to Toss Up on Oct 6. Trump won KS by 16 in 2024.</li><li><b>Alaska:</b> Sabato&#x27;s Crystal Ball moved to Leans D on Oct 6; no recent public poll surfaced.</li><li><b>Michigan:</b> Inside Elections: Tilt D (Oct 1). Only Democratic-held toss-up.</li><li><b>North Carolina:</b> Cook moved from Lean D to Likely D on Oct 6.</li><li><b>Georgia:</b> Top GOP pickup target has drifted toward Democrats.</li></ul>
+
+<h2>New York governor</h2>
+<table><tr><th>Poll</th><th class="n">Hochul</th><th class="n">Blakeman</th><th class="n">Margin</th></tr><tr><td>Emerson College / PIX11<br><span class="mut">Oct 3–5 · 900 LV</span></td>
+<td class="n d">52%</td><td class="n r">40%</td><td class="n"><b>Hochul +12</b></td></tr><tr><td>Marist<br><span class="mut">Oct 1–4 · 1,361 RV</span></td>
+<td class="n d">53%</td><td class="n r">42%</td><td class="n"><b>Hochul +11</b></td></tr><tr><td>Pollsmax average (28 polls)<br><span class="mut">through Oct 5</span></td>
+<td class="n d">50.8%</td><td class="n r">38.9%</td><td class="n"><b>Hochul +11.9</b></td></tr><tr><td>VoteHub average (5 polls)<br><span class="mut">through Oct 5</span></td>
+<td class="n d">51.5%</td><td class="n r">38.5%</td><td class="n"><b>Hochul +13</b></td></tr></table>
+<p class="mut">Blakeman leads Upstate and among independents; Hochul's margin comes from New York City.</p>
+
+<h2>House seats we watch</h2>
+<table><tr><td><b>NY-17</b><br><span class="mut">Hudson Valley</span></td>
+<td><span class="r">Mike Lawler (R)</span><br><span class="mut">vs Cait Conley (D)</span></td>
+<td>Toss-up<br><span class="mut">Latest: Emerson / PIX11 48–46</span></td></tr><tr><td><b>NY-01</b><br><span class="mut">Eastern Suffolk (Rocky Point)</span></td>
+<td><span class="r">Nick LaLota (R)</span><br><span class="mut">vs Chris Gallant (D)</span></td>
+<td>Lean R<br><span class="mut">No public poll yet. Trump +10 and LaLota +10 in 2024. Gallant: Army Guard pilot, former air traffic controller.</span></td></tr><tr><td><b>NY-04</b><br><span class="mut">Southwest Nassau</span></td>
+<td><span class="d">Laura Gillen (D)</span><br><span class="mut">vs Jeanine Driscoll (R)</span></td>
+<td>Lean D<br><span class="mut">Gillen flipped the seat in 2024; no public poll surfaced.</span></td></tr><tr><td><b>NY-26</b><br><span class="mut">Buffalo – Niagara Falls – North Tonawanda</span></td>
+<td><span class="d">Tim Kennedy (D)</span><br><span class="mut">vs Dennis Hannon (R)</span></td>
+<td>Solid D<br><span class="mut">Kennedy won 65.2% in 2024; district PVI D+11.</span></td></tr></table>
+
+<h2>Niagara County &amp; North Tonawanda</h2>
+<table><tr><td><b>State Senate – 62nd District</b><br><span class="mut">Niagara County incl. North Tonawanda</span></td><td>Rob Ortt (R/Con<br><span class="mut"> inc.) vs Thomas Arida (D/WFP)</span></td></tr><tr><td><b>North Tonawanda Proposition – Community Center bond</b><br><span class="mut">City of North Tonawanda</span></td><td>Yes / No<br><span class="mut">Authorizes up to $18 million in serial bonds to acquire and build a community center.</span></td></tr><tr><td><b>State Assembly – 144th District</b><br><span class="mut">Lockport-area Niagara County</span></td><td>Paul Bologna (R<br><span class="mut"> inc.) vs Donna Sholk (D)</span></td></tr><tr><td><b>State Assembly – 145th District (open)</b><br><span class="mut">Niagara Falls / Grand Island / part of NT</span></td><td>Rebecca Wydysh (R)<br><span class="mut">Angelo Morinello retiring; Wydysh formally announced in January.</span></td></tr><tr><td><b>Niagara County Legislature</b><br><span class="mut">All 15 districts</span></td><td>Democrats contesting 12 of 15 seats<br><span class="mut">Winners get the new four-year term starting Jan 2027.</span></td></tr><tr><td><b>NY Supreme Court – 8th Judicial District</b><br><span class="mut">Western New York</span></td><td>Multiple candidates<br><span class="mut">Crowded race on every WNY ballot.</span></td></tr><tr><td><b>Statewide offices</b><br><span class="mut">New York</span></td><td>Governor · Attorney General · Comptroller<br><span class="mut">All three statewide offices are on the ballot.</span></td></tr></table>
+
+<h2>Key dates</h2>
+<table><tr><td>Early voting opens</td><td>Sat, Oct 24</td><td class="mut">Runs through Nov 1</td></tr><tr><td>Early voting closes</td><td>Sun, Nov 1</td><td class="mut"></td></tr><tr><td>Election Day</td><td>Tue, Nov 3</td><td class="mut">Polls open 6 a.m. – 9 p.m.</td></tr></table>
+
+
+<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook Political Report, Sabato's Crystal Ball, Emerson College, Marist, NYT/Siena, CNN, WRAL/SurveyUSA, Trafalgar, Pollsmax, PoliAgg/VoteHub, Polymarket, Kalshi; local coverage from the Ken-Ton Bee, WGRZ and the Niagara Gazette. Polls are snapshots with margins of error of 3–5 points; a lead inside that range is a coin flip. Compiled by the Bulletin's editor each morning; <a href="/election/data.json">the underlying numbers</a> carry a source link per row. <a href="/">Back to the Bulletin</a>.</div>
+</div></body></html>

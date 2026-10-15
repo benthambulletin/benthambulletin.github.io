@@ -44,3 +44,4 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - Oct 3, No. 101 — Friday night football sunset cover (Garret, 7:03).
 - Oct 4, No. 102 — Luka doctor cover from spool (Garret, Sat 3 p.m.); month-in-migraine Spotlight run; October voice and palette in force.
 - Oct 6, No. 104 — Luka stairs cover from spool; first Sunday Tax box (Week 5, Devin won Week 4).
+- Oct 14 (standing): `/election/` is a separate public tracker with its own daily task and rules in `election/CLAUDE.md`. The paper's Ballot section may link to it (https://benthambulletin.github.io/election/) but does not build it.
