@@ -5523,6 +5523,25 @@
           "state": "alive",
           "paid": true,
           "badges": []
+        },
+        {
+          "name": "Wendy",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-15T15:52:32+00:00",
+          "firstAt": "2026-10-15T15:50:06+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -5566,8 +5585,8 @@
       "column": "Ryan Holovics filed at 9:09 this morning and opened by asking whether you'll let him play again after that beating. Ninety-five dollars richer, still fishing for compliments. Walczyk is still telling Claude off from the basement, B-rad's 1 a.m. sheet stands, and Derek says this is his week, which is what Derek says.\n\nEighteen in. Arod and Leah haven't filed; tonight's 8:15 kickoff closes the door. Questions for the commissioner go on the pick sheet.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 65.0,
-      "paidN": 13,
+      "pot": 70.0,
+      "paidN": 14,
       "buyIn": 5,
       "payBy": "2026-10-16T00:15:00Z",
       "payments": [
@@ -5656,6 +5675,14 @@
           "who": "Walczyk",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1403eb2747da74",
+          "at": "2026-10-15T15:46:52Z",
+          "amt": "5.00",
+          "who": "Wendy",
+          "status": "ok",
+          "told": null
         }
       ],
       "opensAt": "2026-10-13T08:08:01Z",
@@ -5741,7 +5768,7 @@
       "columnN": 18
     }
   },
-  "updated": "2026-10-15T14:18:04.800542+00:00",
+  "updated": "2026-10-15T15:54:59.443196+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -5797,7 +5824,8 @@
     "059a5c546f5861f2": "Tom",
     "f521bba06403a40f": "B-rad",
     "786a36c5a7042b16": "Kaylani & Luka",
-    "30a0fca14f7ccbd8": "Ryan Holovics"
+    "30a0fca14f7ccbd8": "Ryan Holovics",
+    "1947a0b7cf319a8d": "Wendy"
   },
   "keepNames": [
     "Kaylani & Luka"
