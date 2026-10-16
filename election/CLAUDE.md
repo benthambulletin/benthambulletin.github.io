@@ -22,3 +22,6 @@
 - Nov 4 run: results special — replace polls with results where called (AP), keep the layout. After Nov 4 the task should be deleted.
 - The Your-ballot box is reference, not news: keep it one `office`/`race` line per item, every item sourced, and never pad a town that has nothing.
 - Don't touch anything outside `election/`.
+
+## Standing notes from Garret
+- **Oct 15 — the holds are not free.** The NYT (Oct 15, "Democrats Worry That a Few Senate Races in Bluer States Aren't Slam Dunks") reports Maine, Michigan and Minnesota are all within about three points with local headwinds. From the Oct 16 run: track Minnesota (Flanagan vs Tafoya) as a full `senate` row, not a mention; and the bottom line and Senate intro should say plainly that Democrats must also hold Michigan and Minnesota (and win Maine) — lose one and they need five pickups, not four. Keep the framing proportionate: Democrats lead or tie in every toss-up, so this is a caveat, not a reversal.
