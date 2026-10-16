@@ -1,13 +1,15 @@
 {
- "updated": "2026-10-16T03:31:31Z",
+ "updated": "2026-10-16T03:33:33Z",
  "week": 6,
  "games": {
   "0": {
-   "state": "in",
+   "state": "post",
    "away": 14,
-   "home": 14,
-   "detail": "6:26 - OT",
-   "line": "Tied 14–14 · 6:26 - OT"
+   "home": 17,
+   "detail": "Final/OT",
+   "winner": "Broncos",
+   "score": "17–14",
+   "line": "Final · Broncos 17–14 (OT)"
   }
  }
 }
