@@ -1,16 +1,16 @@
 {
- "generated_utc": "2026-10-16T11:00Z",
+ "generated_utc": "2026-10-16T14:44Z",
  "towns": {
   "North Tonawanda": {
-   "issued": "2026-10-16T07:57:43+00:00",
+   "issued": "2026-10-16T14:33:03+00:00",
    "periods": [
     {
      "name": "Today",
      "temp": 68,
-     "wind": "W 16 to 24 mph",
+     "wind": "W 16 to 21 mph",
      "pop": 90,
      "short": "Periods Of Light Rain",
-     "detail": "Periods of rain and a slight chance of thunderstorms before 2pm, then a chance of rain showers between 2pm and 4pm, then rain likely between 4pm and 5pm, then a chance of rain showers. Cloudy. High near 68, with temperatures falling to around 58 in the afternoon. West wind 16 to 24 mph, with gusts as high as 39 mph. Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible."
+     "detail": "Periods of rain before 2pm, then a chance of rain showers between 2pm and 4pm, then rain likely between 4pm and 5pm, then a chance of rain showers. Cloudy. High near 68, with temperatures falling to around 58 in the afternoon. West wind 16 to 21 mph, with gusts as high as 41 mph. Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch possible."
     },
     {
      "name": "Tonight",
@@ -87,21 +87,21 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-16T10:40:00+00:00",
-    "text": "Cloudy",
-    "temp_f": 70
+    "time": "2026-10-16T14:30:00+00:00",
+    "text": "Light Rain and Fog/Mist",
+    "temp_f": 66
    }
   },
   "Dunkirk": {
-   "issued": "2026-10-16T07:57:43+00:00",
+   "issued": "2026-10-16T14:33:03+00:00",
    "periods": [
     {
      "name": "Today",
-     "temp": 69,
-     "wind": "W 20 to 26 mph",
+     "temp": 72,
+     "wind": "W 22 to 29 mph",
      "pop": 94,
      "short": "Periods Of Rain",
-     "detail": "Periods of rain and a slight chance of thunderstorms before 2pm, then a chance of rain showers between 2pm and 3pm, then rain likely. Cloudy. High near 69, with temperatures falling to around 59 in the afternoon. West wind 20 to 26 mph, with gusts as high as 40 mph. Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible."
+     "detail": "Periods of rain and a slight chance of thunderstorms before 2pm, then a chance of rain showers between 2pm and 3pm, then rain likely. Cloudy. High near 72, with temperatures falling to around 59 in the afternoon. West wind 22 to 29 mph, with gusts as high as 39 mph. Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible."
     },
     {
      "name": "Tonight",
@@ -178,21 +178,21 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-16T10:45:00+00:00",
-    "text": "Cloudy",
-    "temp_f": 72
+    "time": "2026-10-16T14:20:00+00:00",
+    "text": "Light Rain and Fog/Mist",
+    "temp_f": 66
    }
   },
   "Scottsville": {
-   "issued": "2026-10-16T07:57:43+00:00",
+   "issued": "2026-10-16T14:33:03+00:00",
    "periods": [
     {
      "name": "Today",
-     "temp": 70,
-     "wind": "SW 12 to 21 mph",
+     "temp": 69,
+     "wind": "W 12 to 21 mph",
      "pop": 97,
      "short": "Periods Of Light Rain",
-     "detail": "Periods of rain before 2pm, then a chance of rain showers. Cloudy. High near 70, with temperatures falling to around 59 in the afternoon. Southwest wind 12 to 21 mph, with gusts as high as 35 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
+     "detail": "Periods of rain before 2pm, then a chance of rain showers. Cloudy. High near 69, with temperatures falling to around 59 in the afternoon. West wind 12 to 21 mph, with gusts as high as 35 mph. Chance of precipitation is 100%. New rainfall amounts between a tenth and quarter of an inch possible."
     },
     {
      "name": "Tonight",
@@ -269,9 +269,9 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-16T10:45:00+00:00",
-    "text": "Light Rain",
-    "temp_f": 64
+    "time": "2026-10-16T14:30:00+00:00",
+    "text": "Cloudy",
+    "temp_f": 68
    }
   }
  },
