@@ -195,6 +195,33 @@ def results_main():
 is_results = D.get("mode") == "results"
 main = results_main() if is_results else polls_main
 numbers = main if is_results else f"<h2>The numbers</h2>{tiles}"
+# ---------- calm box, steadiness line, election night ----------
+calm = ""
+if D.get("how_to_read"):
+    h = D["how_to_read"]
+    calm = (f'<details class="town state-h calm" open><summary><span class="tn">{e(h["title"])}</span></summary><ul class="changed">'
+            + "".join(f"<li>{e(i)}</li>" for i in h["items"]) + "</ul></details>")
+
+steady = ""
+hist = D.get("history", [])
+if len(hist) >= 2:
+    first, last = hist[0], hist[-1]
+    span = (datetime.date.fromisoformat(last["date"]) - datetime.date.fromisoformat(first["date"])).days
+    def delta(a, b, unit=""):
+        dlt = float(b) - float(a)
+        if abs(dlt) < 0.05: return "unchanged"
+        return ("up " if dlt > 0 else "down ") + num(abs(dlt)) + unit
+    steady = (f'<p class="intro steady">Over the past {span} day{"s" if span != 1 else ""} the generic ballot is '
+              f'{delta(first["generic_ballot"], last["generic_ballot"], " pts")}, Trump\'s net approval is '
+              f'{delta(first["trump_net"], last["trump_net"], " pts")}, and the odds of a Democratic Senate are '
+              f'{delta(first["dem_senate_odds"], last["dem_senate_odds"], " pts")}. Slow movement is the normal state.</p>')
+
+enight = ""
+if D.get("election_night"):
+    n = D["election_night"]
+    enight = (f'<h2>{e(n["title"])}</h2><p class="intro">{e(n["intro"])}</p><ul class="changed">'
+              + "".join(f'<li><b>{e(i["when"])}</b>: {e(i["what"])}</li>' for i in n["items"]) + "</ul>")
+
 outlook = ""
 if D.get("outlook"):
     o = D["outlook"]
@@ -366,6 +393,8 @@ page = f'''<!DOCTYPE html>
 <h2>The bottom line</h2>
 <ol class="bottom">{bottom}</ol>
 {numbers}
+{steady}
+{calm}
 {glossary}
 {changed}
 {outlook}
@@ -375,6 +404,8 @@ page = f'''<!DOCTYPE html>
 <p class="intro">Tap a town. Beyond the statewide races, what it votes on {eday_short} — nobody polls these.</p>
 <details class="town state-h" open><summary><span class="tn">Every New York ballot</span></summary><dl>{statewide}</dl></details>
 {ballot_boxes}
+
+{enight}
 
 <h2>Key dates</h2>
 <ol class="dates">{dates_rows}</ol>

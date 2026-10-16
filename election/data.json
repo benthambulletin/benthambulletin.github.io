@@ -812,5 +812,47 @@
     "url": "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls"
    }
   ]
+ },
+ "how_to_read": {
+  "title": "How to read this without panicking",
+  "items": [
+   "A lead of 2 points is a tie. A lead of 5 is a real edge, not a lock. Polls miss by 3–5 points in a normal year.",
+   "One poll means almost nothing. The averages on this page are what to watch, and they move slowly on purpose.",
+   "Headlines say \"Democrats worry\" because worry gets clicks. Check it against the numbers below before you believe it.",
+   "What would actually be bad news: the averages moving 3 or more points toward Republicans across several states at once. One state wobbling is noise.",
+   "The Senate may not be known on election night (see Election night, below). A slow count is not a bad count."
+  ]
+ },
+ "election_night": {
+  "title": "What to expect on election night",
+  "intro": "Polls close in waves; counts finish on each state's own schedule. Here is what is normal, so a slow result doesn't read as a bad one.",
+  "items": [
+   {
+    "when": "By 10 p.m.",
+    "what": "New York (governor, NY-17, NY-26 and the local races) and most of the East count fast. North Carolina, Georgia and Ohio usually report the bulk of their vote within a few hours of polls closing."
+   },
+   {
+    "when": "Late night",
+    "what": "Texas, Iowa and Kansas typically have near-complete counts by midnight Eastern. Michigan and Minnesota can run into the early morning when close."
+   },
+   {
+    "when": "Days later",
+    "what": "Maine: if nobody clears 50% of first choices (write-in candidates make that likely), the ranked-choice count happens in Augusta and took about nine days in June's primary. Alaska: by law the ranked-choice tabulation is Nov 18 and by-mail ballots count if postmarked by Nov 3, so a close race there waits two weeks."
+   },
+   {
+    "when": "The upshot",
+    "what": "If the Senate comes down to Maine or Alaska, control may not be known until mid-November. That is the calendar, not a sign anything went wrong."
+   }
+  ],
+  "urls": [
+   {
+    "label": "Alaska Public Media, Oct 5",
+    "url": "https://alaskapublic.org/news/politics/elections/2026-10-05/what-to-know-about-alaskas-general-election"
+   },
+   {
+    "label": "Bangor Daily News, Jun 17 (June RCV count)",
+    "url": "https://www.bangordailynews.com/2026/06/17/politics/elections/maines-pivotal-ranked-choice-voting-count-could-stretch-into-thursday/"
+   }
+  ]
  }
 }
