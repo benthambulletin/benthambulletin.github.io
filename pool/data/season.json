@@ -5016,7 +5016,9 @@
               "Josh",
               "Garret"
             ]
-          }
+          },
+          "live": "Broncos 7–3 · 2nd qtr",
+          "liveAt": "2026-10-16T01:07:22Z"
         },
         {
           "away": "Texans",
@@ -5952,7 +5954,7 @@
       "columnN": 21
     }
   },
-  "updated": "2026-10-16T00:20:32.607449+00:00",
+  "updated": "2026-10-16T01:10:49.091897+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
