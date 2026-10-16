@@ -5179,7 +5179,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -5217,7 +5217,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -5623,8 +5623,8 @@
       "column": "Arod and Leah slid in four minutes apart after lunch, so the roll is complete: everybody who could be shamed into filing has filed. Wendy filed twice in two minutes on her first try, which is either thoroughness or nerves. Ryan Holovics is still asking permission to play after last week's beating, Walczyk is still telling Claude where to go, and Derek says this is his week, which Derek says every week.\n\nTwenty-one in. Tonight's 8:15 kickoff in Denver opens the week.",
       "weekWinners": [],
       "weekPayout": 0,
-      "pot": 85.0,
-      "paidN": 17,
+      "pot": 95.0,
+      "paidN": 19,
       "buyIn": 5,
       "payBy": "2026-10-16T00:15:00Z",
       "payments": [
@@ -5632,6 +5632,18 @@
           "id": "manual-w6-ryan-holovics",
           "amt": "5.00",
           "who": "Ryan Holovics",
+          "status": "manual"
+        },
+        {
+          "id": "manual-w6-andy-r",
+          "amt": "5.00",
+          "who": "Andy R",
+          "status": "manual"
+        },
+        {
+          "id": "manual-w6-arod",
+          "amt": "5.00",
+          "who": "Arod",
           "status": "manual"
         },
         {
@@ -5830,7 +5842,7 @@
       "columnN": 21
     }
   },
-  "updated": "2026-10-15T23:10:20.825249+00:00",
+  "updated": "2026-10-16T00:02:25.350594+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
