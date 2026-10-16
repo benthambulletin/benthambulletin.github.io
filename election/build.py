@@ -160,7 +160,7 @@ if len(D.get("history", [])) > 1:
 # ---------- main body: polls until election night, results after ----------
 polls_main = f"""
 <h2>Senate battleground</h2>
-<p class="intro">Latest public poll or polling average. Bars run from even in the middle: <span class="p d">Democrat ahead</span> to the left, <span class="p r">Republican ahead</span> to the right. <span class="chip tu">Toss Up</span> ratings are Cook's.</p>
+<p class="intro">Latest public poll or polling average. Bars run from even in the middle: <span class="p d">Democrat ahead</span> to the left, <span class="p r">Republican ahead</span> to the right. <span class="chip tu">Toss Up</span> ratings are Cook's.{(" " + e(D["senate_intro"])) if D.get("senate_intro") else ""}</p>
 <ul class="races">{senate_rows}</ul>
 
 <h2>New York governor</h2>
