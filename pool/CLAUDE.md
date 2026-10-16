@@ -100,7 +100,7 @@ real-life stuff (jobs, looks, family, money, health), payment status, sealed pic
 any kid. Funny beats cruel; if a line would sting at a family dinner instead of getting a laugh, cut it.
 **Claude never replies under trash talk** (tried Oct 8, Garret: "too much") — `weeks.N.replies` stays empty.
 **Talk Back (players, Oct 16 — Garret: "make it collapsible so it doesn't get too noisy"):** every trash line has a small
-Reply link to form ArP6rk (`?to=<author>&w=<N>`); replies sit under the line behind a collapsed "N replies ›". Printed as
+Reply link to form ArP6rk (`?to=<author>&w=<N>`; answered Ask the Commissioner entries get one too, `to=ask:<id>`); replies sit under the line behind a collapsed "N replies ›". Printed as
 written, 280 characters max; never edited, answered or commented on by Claude.
 **Ask the Commissioner (from Week 6):** score.py prints `ASK: id=<id> <name>: <question>` for new questions. Send them to
 Garret privately (8:07 digest, roll call, or the run's message) and set that entry's `told` in `weeks.N.asks`. Claude
