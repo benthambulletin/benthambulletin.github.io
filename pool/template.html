@@ -261,6 +261,7 @@ details.g summary::-webkit-details-marker{display:none}
 .g .m .w{color:var(--ink)}
 .g .s.live{color:var(--red)}
 .col p:first-of-type::first-letter{color:var(--ink)}
+.col .aqa p:first-of-type::first-letter{font:inherit;font-size:inherit;float:none;padding:0;color:inherit;line-height:inherit}
 .tag.house{color:var(--soft);border-color:var(--rule)}
 .mug .k{color:var(--soft)}
 .more a,.cal{color:var(--ink)}
@@ -290,6 +291,8 @@ details.gmore[open]>summary{display:none}
 .tt li .rpl{display:block;font-family:'AR';font-style:normal;font-size:.8rem;color:var(--soft);margin:.25rem 0 0 1rem;line-height:1.35}
 .tt li .rpl i{font-style:normal;font-weight:700;color:var(--ink);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase}
 .tt li .rpl{border-left:2px solid var(--rule);padding-left:.5rem;margin-left:.5rem}
+.aqa .rpl{display:block;font-family:'AR';font-size:.8rem;color:var(--soft);margin:.25rem 0 0 .5rem;line-height:1.35;border-left:2px solid var(--rule);padding-left:.5rem}.aqa .rpl i{font-style:normal;font-weight:700;color:var(--ink);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase}
+.aqa details.thr{margin:-.6rem 0 .9rem}.aqa details.thr summary,.aqa a.rlink{list-style:none;cursor:pointer;display:inline-block;font-family:'AR';font-style:normal;font-weight:700;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding:.2rem 0;text-decoration:none}.aqa details.thr summary::-webkit-details-marker{display:none}.aqa a.rlink{color:var(--teal);margin-left:.6rem}
 .tt details.thr{font-style:normal;margin:.15rem 0 0}
 .tt details.thr summary{list-style:none;cursor:pointer;display:inline-block;font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding:.2rem 0}
 .tt details.thr summary::-webkit-details-marker{display:none}
@@ -687,22 +690,22 @@ D.games.forEach(function(g,i){
 h+='</details>';
 secs.games=h; h="";
 /* column */
+var TH=D.threads||{};
+function RL(k){return D.replyUrl&&!D.archive?'<a class="rlink" href="'+esc(D.replyUrl+'?to='+encodeURIComponent(k)+'&w='+D.week)+'">Reply</a>':'';}
+function THR(k){var r=TH[k]||[]; return r.length?'<details class="thr"'+(window.THOPEN&&window.THOPEN[k]?' open':'')+' data-k="'+esc(k)+'"><summary>'+r.length+(r.length===1?' reply':' replies')+' ›</summary>'+r.map(function(y){return '<span class="rpl">'+esc(y.text)+' <i>— '+DN(y.from)+'</i></span>';}).join('')+'</details>':'';}
 var QA=D.qa||[];
 if(D.column||QA.length){
   h+='<a id="column"></a>'+orn("The Column")+'<div class="col">'+(D.columnHead?'<div class="colhd">'+esc(D.columnHead)+'</div>':'');
   (D.column||'').split(/\n\n+/).filter(Boolean).slice(0,2).forEach(function(p){h+='<p>'+esc(p)+'</p>';});
   /* Ask the Commissioner: Garret's answers close the column; until then one line on how to ask (Oct 13) */
-  if(QA.length) h+='<div class="aqa"><div class="aqk">Ask the Commissioner</div>'+QA.map(function(x){return '<p class="q">“'+esc(x.q)+'” — '+DN(x.from)+'</p><p class="a"><b>G.:</b> '+esc(x.a)+'</p>';}).join('')+'</div>';
+  if(QA.length) h+='<div class="aqa"><div class="aqk">Ask the Commissioner</div>'+QA.map(function(x){return '<p class="q">“'+esc(x.q)+'” — '+DN(x.from)+'</p><p class="a"><b>G.:</b> '+esc(x.a)+RL('ask:'+x.id)+'</p>'+THR('ask:'+x.id);}).join('')+'</div>';
   else if(D.bot&&!D.archive) h+='<p class="aqh">Got a question or an appeal for the commissioner? Ask it in the last box on your <a href="'+esc(D.formUrl)+'">pick sheet</a>.</p>';
   h+='</div>';
 }
 secs.column=h; h="";
 /* trash talk: the three newest up front, the rest one tap away */
 if(D.trash.length){
-  var TT=D.trash.slice().reverse(), TH=D.threads||{}, li=function(t){var r=TH[t.from]||[], u=D.replyUrl&&!D.archive?D.replyUrl+'?to='+encodeURIComponent(t.from)+'&w='+D.week:'';
-    var x='<li>“'+esc(t.text)+'”<b>'+DN(t.from)+'</b>'+(u?'<a class="rlink" href="'+esc(u)+'">Reply</a>':'');
-    if(r.length) x+='<details class="thr"'+(window.THOPEN&&window.THOPEN[t.from]?' open':'')+' data-k="'+esc(t.from)+'"><summary>'+r.length+(r.length===1?' reply':' replies')+' ›</summary>'+r.map(function(y){return '<span class="rpl">'+esc(y.text)+' <i>— '+DN(y.from)+'</i></span>';}).join('')+'</details>';
-    return x+'</li>';};
+  var TT=D.trash.slice().reverse(), li=function(t){return '<li>“'+esc(t.text)+'”<b>'+DN(t.from)+'</b>'+RL(t.from)+THR(t.from)+'</li>';};
   h+=orn("Trash Talk")+'<ul class="tt">'+TT.slice(0,3).map(li).join('')+'</ul>';
   if(TT.length>3) h+='<details class="tmore"><summary>Show all '+TT.length+' ›</summary><ul class="tt">'+TT.slice(3).map(li).join('')+'</ul></details>';
 }
