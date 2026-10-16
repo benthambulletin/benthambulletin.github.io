@@ -80,7 +80,7 @@ def make_page(k, w, archive=False):
         "tiebreakTotal": w.get("tiebreakTotal"), "tbUsed": w.get("tbUsed", False),
         "players": w.get("players", []), "weekWinners": w.get("weekWinners", []),
         "weekPayout": w.get("weekPayout", 0), "season_table": list(tot.values()),
-        "trash": w.get("trash", []), "replies": w.get("replies", {}), "bot": _bot(w), "botTally": bot_tally, "qa": [x for x in w.get("asks", []) if x.get("a")], "column": w.get("column", ""), "columnHead": w.get("columnHead", ""), "notice": _notice(k, w), "displayNames": _dn(season),
+        "trash": w.get("trash", []), "replies": w.get("replies", {}), "threads": w.get("threads", {}), "replyUrl": season["form"].get("replyUrl", ""), "bot": _bot(w), "botTally": bot_tally, "qa": [x for x in w.get("asks", []) if x.get("a")], "column": w.get("column", ""), "columnHead": w.get("columnHead", ""), "notice": _notice(k, w), "displayNames": _dn(season),
         "seasonFrom": min([int(x) for x, ww in season["weeks"].items() if ww.get("status") == "final"] or [0]),
         "updates": w.get("updates", []), "decides": w.get("decides", []),
         "stats": w.get("stats"), "face": w.get("face"), "homer": homer, "house": season.get("house"),
