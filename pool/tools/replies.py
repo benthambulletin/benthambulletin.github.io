@@ -42,6 +42,9 @@ def main():
         for r in s.get("responses", []):
             t = qs.get(r.get("questionId"), ""); a = r.get("answer")
             if isinstance(a, dict): f.update({k.lower(): v for k, v in a.items()})   # hidden fields come back as one object
+            elif isinstance(a, list) and a and isinstance(a[0], dict) and "name" in a[0]:   # or as [{name, value}]
+                f.update({str(x.get("name", "")).lower(): x.get("value") for x in a})
+            elif t in ("to", "w"): f[t] = a
             elif "name" in t: f["from"] = a
             elif "reply" in t: f["text"] = a
         for k in ("to", "w", "from", "text"):
