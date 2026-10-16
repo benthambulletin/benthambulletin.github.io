@@ -288,7 +288,13 @@ details.gmore[open]>summary{display:none}
 .whoin .pst{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
 .whoin .pst.ok{color:var(--ink)}
 .tt li .rpl{display:block;font-family:'AR';font-style:normal;font-size:.8rem;color:var(--soft);margin:.25rem 0 0 1rem;line-height:1.35}
-.tt li .rpl i{font-style:normal;font-weight:700;color:var(--ink)}
+.tt li .rpl i{font-style:normal;font-weight:700;color:var(--ink);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase}
+.tt li .rpl{border-left:2px solid var(--rule);padding-left:.5rem;margin-left:.5rem}
+.tt details.thr{font-style:normal;margin:.15rem 0 0}
+.tt details.thr summary{list-style:none;cursor:pointer;display:inline-block;font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding:.2rem 0}
+.tt details.thr summary::-webkit-details-marker{display:none}
+.tt a.rlink{display:inline-block;font-family:'AR';font-style:normal;font-weight:700;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal,#0e8a8a);text-decoration:none;padding:.2rem 0;margin-left:.1rem}
+.tt li>a.rlink{margin-left:.6rem}
 .btb{font-size:.95rem;line-height:1.45}
 .btb .lk{border:1px solid var(--rule);padding:.6rem .75rem;margin:0 0 .7rem;background:var(--wash)}
 .btb .lk b{font-family:'PF';font-size:1.1rem}
@@ -357,7 +363,7 @@ function tick(){
 setInterval(tick,1000);
 /* live scores: a GitHub job publishes ESPN's scoreboard to the pool-live branch every ~5 minutes */
 document.addEventListener('click',function(e){if(e.target&&e.target.id==='seasAll'){e.preventDefault();window.SEAS=true;render();}});
-document.addEventListener('toggle',function(e){if(e.target&&e.target.id==='smore')window.SMORE=e.target.open;if(e.target&&e.target.id==='gmore')window.GMORE=e.target.open;},true);
+document.addEventListener('toggle',function(e){if(e.target&&e.target.id==='smore')window.SMORE=e.target.open;if(e.target&&e.target.id==='gmore')window.GMORE=e.target.open;if(e.target&&e.target.classList&&e.target.classList.contains('thr')){window.THOPEN=window.THOPEN||{};window.THOPEN[e.target.getAttribute('data-k')]=e.target.open;}},true);
 var LIVE_URL="https://raw.githubusercontent.com/benthambulletin/benthambulletin.github.io/pool-live/live.json", LV=null;
 function applyLive(){
   if(!LV||LV.week!==D.week||!LV.games) return;
@@ -693,7 +699,10 @@ if(D.column||QA.length){
 secs.column=h; h="";
 /* trash talk: the three newest up front, the rest one tap away */
 if(D.trash.length){
-  var TT=D.trash.slice().reverse(), li=function(t){var r=(D.replies||{})[t.from]; return '<li>“'+esc(t.text)+'”<b>'+DN(t.from)+'</b>'+(r?'<span class="rpl"><i>Claude:</i> '+esc(r)+'</span>':'')+'</li>';};
+  var TT=D.trash.slice().reverse(), TH=D.threads||{}, li=function(t){var r=TH[t.from]||[], u=D.replyUrl&&!D.archive?D.replyUrl+'?to='+encodeURIComponent(t.from)+'&w='+D.week:'';
+    var x='<li>“'+esc(t.text)+'”<b>'+DN(t.from)+'</b>'+(u?'<a class="rlink" href="'+esc(u)+'">Reply</a>':'');
+    if(r.length) x+='<details class="thr"'+(window.THOPEN&&window.THOPEN[t.from]?' open':'')+' data-k="'+esc(t.from)+'"><summary>'+r.length+(r.length===1?' reply':' replies')+' ›</summary>'+r.map(function(y){return '<span class="rpl">'+esc(y.text)+' <i>— '+DN(y.from)+'</i></span>';}).join('')+'</details>';
+    return x+'</li>';};
   h+=orn("Trash Talk")+'<ul class="tt">'+TT.slice(0,3).map(li).join('')+'</ul>';
   if(TT.length>3) h+='<details class="tmore"><summary>Show all '+TT.length+' ›</summary><ul class="tt">'+TT.slice(3).map(li).join('')+'</ul></details>';
 }

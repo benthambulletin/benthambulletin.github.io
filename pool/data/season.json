@@ -30,7 +30,9 @@
       "fullName": "OBA57a",
       "nick": "JVz8Gd",
       "ask": "gQGWgd"
-    }
+    },
+    "replyUrl": "https://tally.so/r/ArP6rk",
+    "replyId": "ArP6rk"
   },
   "aliases": {
     "kaylani & luka": "Kaylani & Luka",
@@ -5966,7 +5968,8 @@
       ],
       "columnHead": "Two up, nineteen down, London next",
       "columnN": 21,
-      "thuDone": true
+      "thuDone": true,
+      "threads": {}
     }
   },
   "updated": "2026-10-16T14:10:57.360443+00:00",
