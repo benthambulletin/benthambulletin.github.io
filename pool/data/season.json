@@ -4984,11 +4984,35 @@
           "kickoff": "2026-10-16T00:15:00Z",
           "when": "Thu 8:15 PM",
           "tv": "Prime Video",
-          "winner": null,
-          "score": null,
-          "status": "live",
-          "hits": [],
-          "misses": [],
+          "winner": "Broncos",
+          "score": "17–14",
+          "status": "final",
+          "hits": [
+            "Josh",
+            "Garret"
+          ],
+          "misses": [
+            "Thom",
+            "Ariel",
+            "Devin",
+            "Dan",
+            "Brandon Goes Commando",
+            "Andy R",
+            "Nate V",
+            "Mrs. Sombloski",
+            "Derek",
+            "Melissa",
+            "Mike Sombloski",
+            "Tom",
+            "Walczyk",
+            "B-rad",
+            "Kaylani & Luka",
+            "Ryan Holovics",
+            "Wendy",
+            "Arod",
+            "Leah",
+            "Claude"
+          ],
           "sides": {
             "Seahawks": [
               "Thom",
@@ -5016,9 +5040,7 @@
               "Josh",
               "Garret"
             ]
-          },
-          "live": "Broncos 14–11 · 4th qtr",
-          "liveAt": "2026-10-16T03:09:11Z"
+          }
         },
         {
           "away": "Texans",
@@ -5193,201 +5215,12 @@
       "tiebreakTotal": null,
       "players": [
         {
-          "name": "Andy R",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Seahawks"
-          },
-          "filedAt": "2026-10-14T13:22:47+00:00",
-          "firstAt": "2026-10-14T13:22:47+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Ariel",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Seahawks"
-          },
-          "filedAt": "2026-10-13T19:15:36+00:00",
-          "firstAt": "2026-10-13T19:15:36+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Arod",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Seahawks"
-          },
-          "filedAt": "2026-10-15T17:13:53+00:00",
-          "firstAt": "2026-10-15T17:13:53+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
-          "name": "B-rad",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Seahawks"
-          },
-          "filedAt": "2026-10-15T05:08:03+00:00",
-          "firstAt": "2026-10-15T05:08:03+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Brandon Goes Commando",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Seahawks"
-          },
-          "filedAt": "2026-10-13T19:36:10+00:00",
-          "firstAt": "2026-10-13T19:36:10+00:00",
-          "free": true,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": false,
-          "badges": []
-        },
-        {
-          "name": "Claude",
-          "house": true,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Seahawks"
-          },
-          "filedAt": "2026-10-13T08:08:01+00:00",
-          "firstAt": "2026-10-13T08:08:01+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "house",
-          "paid": false,
-          "badges": []
-        },
-        {
-          "name": "Dan",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Seahawks"
-          },
-          "filedAt": "2026-10-13T19:34:40+00:00",
-          "firstAt": "2026-10-13T19:34:40+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Derek",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Seahawks"
-          },
-          "filedAt": "2026-10-14T20:29:54+00:00",
-          "firstAt": "2026-10-14T20:29:54+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Devin",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Seahawks"
-          },
-          "filedAt": "2026-10-13T19:33:15+00:00",
-          "firstAt": "2026-10-13T19:33:15+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
           "name": "Garret",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -5405,10 +5238,10 @@
         {
           "name": "Josh",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -5424,13 +5257,202 @@
           "badges": []
         },
         {
+          "name": "Andy R",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Seahawks"
+          },
+          "filedAt": "2026-10-14T13:22:47+00:00",
+          "firstAt": "2026-10-14T13:22:47+00:00",
+          "free": false,
+          "rank": 3,
+          "delta": -2,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Ariel",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Seahawks"
+          },
+          "filedAt": "2026-10-13T19:15:36+00:00",
+          "firstAt": "2026-10-13T19:15:36+00:00",
+          "free": false,
+          "rank": 3,
+          "delta": -2,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Arod",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Seahawks"
+          },
+          "filedAt": "2026-10-15T17:13:53+00:00",
+          "firstAt": "2026-10-15T17:13:53+00:00",
+          "free": false,
+          "rank": 3,
+          "delta": -2,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "B-rad",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Seahawks"
+          },
+          "filedAt": "2026-10-15T05:08:03+00:00",
+          "firstAt": "2026-10-15T05:08:03+00:00",
+          "free": false,
+          "rank": 3,
+          "delta": -2,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Brandon Goes Commando",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Seahawks"
+          },
+          "filedAt": "2026-10-13T19:36:10+00:00",
+          "firstAt": "2026-10-13T19:36:10+00:00",
+          "free": true,
+          "rank": 3,
+          "delta": -2,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Claude",
+          "house": true,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Seahawks"
+          },
+          "filedAt": "2026-10-13T08:08:01+00:00",
+          "firstAt": "2026-10-13T08:08:01+00:00",
+          "free": false,
+          "rank": 3,
+          "delta": -2,
+          "state": "house",
+          "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Dan",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Seahawks"
+          },
+          "filedAt": "2026-10-13T19:34:40+00:00",
+          "firstAt": "2026-10-13T19:34:40+00:00",
+          "free": false,
+          "rank": 3,
+          "delta": -2,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Derek",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Seahawks"
+          },
+          "filedAt": "2026-10-14T20:29:54+00:00",
+          "firstAt": "2026-10-14T20:29:54+00:00",
+          "free": false,
+          "rank": 3,
+          "delta": -2,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Devin",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Seahawks"
+          },
+          "filedAt": "2026-10-13T19:33:15+00:00",
+          "firstAt": "2026-10-13T19:33:15+00:00",
+          "free": false,
+          "rank": 3,
+          "delta": -2,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Kaylani & Luka",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5438,8 +5460,8 @@
           "filedAt": "2026-10-15T12:54:00+00:00",
           "firstAt": "2026-10-15T12:54:00+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -5448,10 +5470,10 @@
           "name": "Leah",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5459,8 +5481,8 @@
           "filedAt": "2026-10-15T17:17:16+00:00",
           "firstAt": "2026-10-15T17:17:16+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -5469,10 +5491,10 @@
           "name": "Melissa",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5480,8 +5502,8 @@
           "filedAt": "2026-10-14T22:29:31+00:00",
           "firstAt": "2026-10-14T22:29:31+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -5490,10 +5512,10 @@
           "name": "Mike Sombloski",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5501,8 +5523,8 @@
           "filedAt": "2026-10-15T00:53:34+00:00",
           "firstAt": "2026-10-15T00:50:16+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -5511,10 +5533,10 @@
           "name": "Mrs. Sombloski",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5522,8 +5544,8 @@
           "filedAt": "2026-10-15T18:00:39+00:00",
           "firstAt": "2026-10-14T15:47:21+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -5532,10 +5554,10 @@
           "name": "Nate V",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5543,8 +5565,8 @@
           "filedAt": "2026-10-14T14:33:06+00:00",
           "firstAt": "2026-10-14T14:33:06+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -5553,10 +5575,10 @@
           "name": "Ryan Holovics",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5564,8 +5586,8 @@
           "filedAt": "2026-10-15T13:09:16+00:00",
           "firstAt": "2026-10-15T13:09:16+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -5574,10 +5596,10 @@
           "name": "Thom",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5585,8 +5607,8 @@
           "filedAt": "2026-10-13T19:02:13+00:00",
           "firstAt": "2026-10-13T19:02:13+00:00",
           "free": true,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -5595,10 +5617,10 @@
           "name": "Tom",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5606,8 +5628,8 @@
           "filedAt": "2026-10-15T02:14:14+00:00",
           "firstAt": "2026-10-15T02:14:14+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -5616,10 +5638,10 @@
           "name": "Walczyk",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5627,8 +5649,8 @@
           "filedAt": "2026-10-15T02:38:31+00:00",
           "firstAt": "2026-10-15T02:38:31+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -5637,10 +5659,10 @@
           "name": "Wendy",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Seahawks"
@@ -5648,8 +5670,8 @@
           "filedAt": "2026-10-15T15:52:32+00:00",
           "firstAt": "2026-10-15T15:50:06+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 3,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -5693,7 +5715,7 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Thursday's sides are public, and it's a stampede: nineteen on Seattle, plus the house. Two holdouts took Denver — Josh and the commissioner, who apparently runs the pool and its contrarian wing. If the Broncos win, Garret and Josh jump the entire field before anyone's had Sunday breakfast. If they lose, the commissioner opens 0–1 with a bonnet and a hearing.\n\nThe trash is pure Week 5 grudge: Garret wants Walczyk retired, Walczyk wants Claude gone, Ariel says Sombloski sucks, and Mike Sombloski answered by falling on the floor in Gen Alpha. Ryan is still asking permission to defend his title. Granted. The beating is optional.",
+      "column": "Denver 17, Seattle 14, in overtime, and the stampede ran straight off a cliff. Nineteen humans and the house rode the Seahawks; all of them open 0–1. The only two who didn't: Josh and the commissioner, who now share first place and will be unbearable about it until Sunday's 9:30 kickoff.\n\nWalczyk told Claude to get lost, then sided with Claude on Thursday. Ryan asked permission to defend his title and opened by losing. Derek announced this is his week. It was not his Thursday.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 95.0,
@@ -5834,37 +5856,13 @@
       ],
       "opensAt": "2026-10-13T08:08:01Z",
       "tbUsed": false,
-      "decides": [
+      "decides": [],
+      "updates": [
         {
-          "game": 0,
-          "away": [
-            "Thom",
-            "Ariel",
-            "Devin",
-            "Dan",
-            "Brandon Goes Commando",
-            "Andy R",
-            "Nate V",
-            "Mrs. Sombloski",
-            "Derek",
-            "Melissa",
-            "Mike Sombloski",
-            "Tom",
-            "Walczyk",
-            "B-rad",
-            "Kaylani & Luka",
-            "Ryan Holovics",
-            "Wendy",
-            "Arod",
-            "Leah"
-          ],
-          "home": [
-            "Josh",
-            "Garret"
-          ]
+          "at": "2026-10-16T03:39:39.881486+00:00",
+          "note": "1 of 14 final. Garret and Josh tied at 1–0."
         }
       ],
-      "updates": [],
       "housePicks": {
         "trash": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it.",
         "picks": {
@@ -5911,17 +5909,33 @@
             "minorityWho": [
               "Josh",
               "Garret"
-            ]
+            ],
+            "upset": true,
+            "rightN": 2
           }
         },
-        "upsets": 0,
-        "decided": 0,
-        "best": null,
-        "worst": null,
+        "upsets": 1,
+        "decided": 1,
+        "best": {
+          "game": 0,
+          "n": 2,
+          "who": [
+            "Josh",
+            "Garret"
+          ]
+        },
+        "worst": {
+          "game": 0,
+          "n": 2,
+          "who": [
+            "Josh",
+            "Garret"
+          ]
+        },
         "bills": null,
         "jets": null
       },
-      "decidedAtLastRun": 0,
+      "decidedAtLastRun": 1,
       "outAtLastRun": [],
       "bot": true,
       "botPaid": true,
@@ -5950,11 +5964,12 @@
           "a": "I'm wondering if that was an insinuation that men don't do laundry? Didn't you finish last last week?"
         }
       ],
-      "columnHead": "Garret and Josh ride Denver alone",
-      "columnN": 21
+      "columnHead": "Garret and Josh rob the whole room",
+      "columnN": 21,
+      "thuDone": true
     }
   },
-  "updated": "2026-10-16T03:10:21.574519+00:00",
+  "updated": "2026-10-16T03:39:39.881486+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
