@@ -4,22 +4,8 @@ PRODID:-//The Sunday Tax//Pool//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:sundaytax-2026-w6-Seahawks-Broncos@benthambulletin.github.io
-DTSTAMP:20261016T001325Z
-DTSTART:20261016T001500Z
-DURATION:PT15M
-SUMMARY:Sunday Tax: Seahawks at Broncos locks — get your picks in
-URL:https://tally.so/r/RGOakJ
-DESCRIPTION:Each game locks at its own kickoff. Picks: https://tally.so/r/RGOakJ\nStandings: https://benthambulletin.github.io/pool/
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Sunday Tax: Seahawks at Broncos locks — get your picks in
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:sundaytax-2026-w6-Texans-Jaguars@benthambulletin.github.io
-DTSTAMP:20261016T001325Z
+DTSTAMP:20261016T002128Z
 DTSTART:20261018T133000Z
 DURATION:PT15M
 SUMMARY:Sunday Tax: Texans at Jaguars locks — get your picks in
