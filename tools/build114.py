@@ -95,3 +95,33 @@ p=json.load(open('site/data/pressure.json')); p=[x for x in p if x['date']!='202
 p.append({'date':'2026-10-16','in':29.61,'mb':1002.7,'station':'KIAG','time':'06:53 EDT'}); json.dump(p,open('site/data/pressure.json','w'),indent=1)
 m=json.load(open('site/data/migraines.json')); m['updated']='2026-10-16'; json.dump(m,open('site/data/migraines.json','w'),indent=1)
 print('built')
+# --- review fixes ---
+d=json.load(open('edition-2026-10-16.json')); b=d['body_html']
+fx=[
+("This week Jim Kelly paid a surprise visit to former News 8 sports anchor John Kucko, who is fighting brain cancer, two old Rochester faces with cancer fights in common.","Buffalo carries a 4&ndash;1 record west. Jim Kelly recently paid a surprise visit to former News 8 sports anchor John Kucko, who is battling brain cancer; the two share a history of fighting the disease."),
+("At New England Sunday, 1:00, so the family's two games run back to back. Thursday night, Denver beat Seattle 17&ndash;14.","At New England Sunday, 1:00, 2&ndash;3 against the 3&ndash;2 Patriots in a division game. A win pulls them even with New England, and the family's two games run back to back."),
+('<div class="tile"><div class="v">68&deg;</div>','<div class="tile"><div class="v">70&deg;</div>'),
+('<div class="bigtemp">68<sup>','<div class="bigtemp">70<sup>'),
+('<div class="d">Fri</div><div class="i">&#127783;</div><div class="h">68</div>','<div class="d">Fri</div><div class="i">&#127783;</div><div class="h">70</div>'),
+("Falling to the upper 50s this afternoon &middot; west","70 at dawn and falling, to the upper 50s this afternoon &middot; west"),
+('<div class="d">Cloudy &middot; high 68&deg;</div>','<div class="d">Cloudy &middot; falling to 58</div>'),
+('<div class="d">Cloudy &middot; high 69&deg;</div>','<div class="d">Cloudy &middot; falling to 59</div>'),
+("Rain and wind today, the first frost tomorrow night","Rain and wind today, a frost chance tomorrow night"),
+('<span class="lbl r">Frost watch</span>','<span class="lbl r">Frost chance</span>'),
+("and it drops to freezing after dark, so pack coats","and it heads for freezing overnight, so pack coats"),
+("The first of the last four races goes off Sunday at 3 p.m. on USA. Kyle Larson leads Denny Hamlin by 49 points, Christopher Bell by 51 and Chase Briscoe by 65; the title goes to whoever has the most points after Homestead on Nov. 8.","Kyle Larson takes a 49-point lead over Denny Hamlin into Phoenix, with Christopher Bell 51 back and Chase Briscoe 65 back, four races from the end. Green flag Sunday, 3 p.m., USA."),
+("<b>Mars in your sign trines Saturn, exact</b>. Drive with discipline behind it. Finish what you start.","<b>The Sun sextiles Jupiter in your sign</b>. A helpful word from an unexpected corner. Take it."),
+("<b>The Sun sextiles Jupiter</b>. A helpful word from an unexpected corner. Take it. <span class=\"who\">Derek","<b>Neptune sextiles Pluto</b>. Slow change, quietly in your favor. Don't rush it. <span class=\"who\">Derek"),
+("Good night for a party.","Good weekend for a party."),
+("&middot; scores, standings and NASCAR points via Sportradar","&middot; race time via NASCAR.com &middot; scores, standings and NASCAR points via Sportradar"),
+("mixed with rain showers Saturday.","mixed with rain showers Saturday morning."),
+("It is the first step toward next year's local ballot.","Council seats at large and by ward are both on the list."),
+("Today's wind will pull down plenty of leaves either way;","Gusts near 40 today could strip a good share of leaves either way;"),
+("I have plenty of ears but can't hear a thing, and every October people pay to get lost in me. What am I?","I'm picked in the fall, bobbed for at parties and said to keep the doctor away. What am I?"),
+("<b>Question of the Day:</b> A cornfield, cut into a corn maze.","<b>Question of the Day:</b> An apple."),
+]
+for o,n in fx: R(o,n)
+d['body_html']=b
+json.dump(d,open('edition-2026-10-16.json','w'),ensure_ascii=False,indent=1)
+json.dump(d,open('site/data/edition-2026-10-16.json','w'),ensure_ascii=False,indent=1)
+print('fixed')
