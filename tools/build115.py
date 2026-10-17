@@ -94,3 +94,25 @@ p=json.load(open('site/data/pressure.json')); p=[x for x in p if x['date']!='202
 p.append({'date':'2026-10-17','in':30.30,'mb':1026.2,'station':'KIAG','time':'06:53 EDT'}); json.dump(p,open('site/data/pressure.json','w'),indent=1)
 m=json.load(open('site/data/migraines.json')); m['updated']='2026-10-17'; json.dump(m,open('site/data/migraines.json','w'),indent=1)
 print('built')
+# --- review fixes ---
+d=json.load(open('edition-2026-10-17.json')); b=d['body_html']
+fx=[
+("Photos released Thursday showed him","Photos released Friday showed him"),
+("Eight of those seats are held by Republicans and six by Democrats, by the <i>Observer</i>'s count.","That is about two-thirds of the county Legislature, by the <i>Observer</i>'s count."),
+('<div class="k">Leveling off</div>','<div class="k">Still climbing</div>'),
+("it adds about a fifth of an inch more by Monday morning, then holds steady.","it adds about a fifth of an inch more by Sunday morning, then holds steady."),
+("Santa Ana winds pushed the Norte Fire into coastal homes in Southern California, forcing thousands to evacuate. It is one of 13 fires burning across the state.","Santa Ana winds are driving fires through Southern California, burning coastal homes and forcing thousands to evacuate. The fast-moving Norte Fire is one of 13 burning across the state."),
+("<i>Street Fighter</i> leads the weekend at about $30 million.","Holmes's partner, Billy Evans, defended making the film: \"Make up your own mind.\""),
+("on the second anniversary of his former One Direction bandmate's death.</p>","on the second anniversary of his former One Direction bandmate's death. Payne died in a fall from a hotel balcony in Buenos Aires in 2024; he was 31.</p>"),
+("At New England, 1:00. The Jets are 2&ndash;3 and coming off their win over Cleveland; the Patriots are 3&ndash;2.","At New England, 1:00. The Jets are 2&ndash;3 after beating Cleveland 17&ndash;12 last Sunday, and a win pulls them even with the 3&ndash;2 Patriots in the division."),
+("At Las Vegas, 4:25. Buffalo is 4&ndash;1 after the overtime win in Los Angeles; the Raiders are 3&ndash;2.","At Las Vegas, 4:25. Buffalo is 4&ndash;1 after outlasting the Rams 37&ndash;34 in overtime Monday night; the Raiders are 3&ndash;2."),
+("Next week's numbers come Wednesday afternoon, the week North Tonawanda usually peaks.","Next week's numbers come Wednesday afternoon; North Tonawanda usually peaks in the last week of October."),
+("foliage per the I LOVE NY report &middot;","foliage per the I LOVE NY report (via thisiscny.com) &middot;"),
+("Clear and cold tonight, with patchy frost before dawn, so bring the warm coat. Tomorrow is a football doubleheader, Jets at 1:00 and Bills at 4:25.","Bundle up for the ride home; the night turns clear and cold."),
+("patchy frost around 4 to 5 a.m. &middot; northwest 6&ndash;13","patchy frost around 4 to 5 a.m. &middot; northwest wind 6&ndash;13 today"),
+]
+for o,n in fx: R(o,n)
+d['body_html']=b
+json.dump(d,open('edition-2026-10-17.json','w'),ensure_ascii=False,indent=1)
+json.dump(d,open('site/data/edition-2026-10-17.json','w'),ensure_ascii=False,indent=1)
+print('fixed')
