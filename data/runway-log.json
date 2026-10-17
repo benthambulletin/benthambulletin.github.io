@@ -4855,7 +4855,7 @@
   "date": "2026-10-17",
   "score": 0,
   "flags": [],
-  "wake_dev_min": -6,
+  "wake_dev_min": -3,
   "bb_high": 92,
   "stress_yday": 31.0
  }
