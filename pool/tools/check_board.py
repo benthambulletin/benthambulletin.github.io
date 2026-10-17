@@ -37,7 +37,7 @@ def look(with_live):
             pg.route("**/live.json*", lambda r: r.abort())
         pg.route("**/page.json*", lambda r: r.fulfill(path=pj, headers={"content-type": "application/json"}))
         pg.goto("file://" + page); pg.wait_for_timeout(2500)
-        out = {"errs": errs, "hero": pg.inner_text("#nowL"), "sub": pg.inner_text("#nowS"), "body": pg.inner_text("body")}
+        out = {"errs": errs, "hero": pg.inner_text("#nowL"), "sub": pg.inner_text("#nowS"), "body": pg.inner_text("body"), "all": pg.text_content("body")}
         b.close(); return out
 
 for mode in ([True, False] if L else [False]):
@@ -56,7 +56,7 @@ for mode in ([True, False] if L else [False]):
         for k, g in L.get("games", {}).items():
             gm = D["games"][int(k)]
             if g.get("state") == "post" and g.get("winner") and g["winner"] != "TIE":
-                if (gm["away"] + " at " + gm["home"]) in o["body"] and g["winner"] + " " + (g.get("score") or "") not in o["body"]:
+                if (gm["away"] + " at " + gm["home"]) in o["body"] and g["winner"] + " " + (g.get("score") or "") not in o["all"]:  # the games list may be collapsed
                     problems.append(f"{tag}: {gm['away']} at {gm['home']} is final on ESPN ({g['winner']} {g.get('score')}) but the board doesn't show it")
 
 # a sealed game must never show "no pick" (the board read a game as open before its sides were revealed)
