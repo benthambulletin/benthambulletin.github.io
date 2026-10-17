@@ -10,3 +10,4 @@ for p in ['edition-2026-10-17.json','site/data/edition-2026-10-17.json']:
     json.dump(d,open(p,'w'),ensure_ascii=False,indent=1)
 print('ok')
 # --- review fixes: gamma 0.56 overall; caption 'The pines under a heavy October sky'; alt without sun claim ---
+# --- Garret 7:23: 'Its sunrise' → caption 'An October sunrise behind the pines', alt updated ---
