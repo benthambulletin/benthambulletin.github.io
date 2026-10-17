@@ -15,6 +15,7 @@
 6. Say nothing to Garret unless the run failed or something big moved (a rating change in a Senate toss-up, a NY poll outside the prior range) — then one line with SendUserMessage.
 
 ## Rules
+- **Sabato's Crystal Ball:** centerforpolitics.org refuses automated fetches. Read its rating changes through a dated secondary (Newsweek, The Hill, Political Wire, 270toWin's change log) and cite that; don't mark the row "not refreshed" if a secondary from the same week confirms it.
 - **Oct 15 (Garret): readers are nervous.** The page's job is to keep them steady and informed, not to soothe or alarm. The steadiness line (7-day deltas from `history`) is computed by build.py; never edit it by hand. When early voting opens Oct 24, add a short "What you can do" item (check registration, early-vote sites, bring a friend) to the banner — non-partisan.
 - **Oct 14 fact-check lesson:** a search snippet is not a source. The first build cited an approval table to Wikipedia that the page did not actually show, called three Senate races "no poll" when RCP listed polls days old, and cited a House rating to a site that said the opposite. Before writing a row, open the url and read the number on the page; before writing "no poll", check RCP's latest-polls list for that state.
 - Never print a number without a dated source row in data.json. If a source can't be read today, keep yesterday's row and say so in `what_changed` ("RCP Senate average not refreshed today").

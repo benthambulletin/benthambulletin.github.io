@@ -50,8 +50,7 @@
   "The holds: Rasmussen (Oct 12–14, Republican-leaning) has El-Sayed 46–44 in Michigan; the average eased to +2.6 from +2.7, and none of the last six polls has Rogers ahead. Minnesota's average widened to Flanagan +2.9 from +2.6 as older polls dropped out of the window. Both holds still stand; both are still inside the margin.",
   "Texas: the University of Texas poll (Sep 25–Oct 5, Talarico 50–47) entered the average, which read Talarico +2.2 against +2.3 yesterday. Alaska widened to Peltola +2.5 from +1.4 and Georgia to Ossoff +9.0 from +8.1 with no new poll in either — September surveys aged out of RealClearPolling's window. Iowa (Turek +0.9), Kansas (Marshall +0.3) and Maine (Jackson +1.6) are effectively unchanged.",
   "House: Cook's Oct 16 note, \"Eleven More House Races Shift Toward Democrats,\" moved Montana's open 1st to Toss Up, Florida's 25th (Moskowitz) from Toss Up to Lean D, Ohio's 1st (Landsman) to Likely D, and New York's open 21st from Likely R to Lean R among them (full list via the Denver Gazette). Cook's toss-up count stays at 21; its Solid R column reads 171, down from the 174 this page carried yesterday.",
-  "National: Silver Bulletin's generic ballot rose to D+8.9 from D+8.6; RealClearPolling is steady at D+8.0. Trump's net approval slipped to −20.7 from −20.4 on RealClearPolling as RMG Research (−17) and a new Rasmussen week entered; Silver Bulletin reads −22.3. Polymarket has a Democratic Senate at 64.5%, Kalshi 62.5% (Oct 16).",
-  "Not refreshed today: Sabato's Crystal Ball's rating page could not be read, so its row carries the Oct 14 values (five toss-ups)."
+  "National: Silver Bulletin's generic ballot rose to D+8.9 from D+8.6; RealClearPolling is steady at D+8.0. Trump's net approval slipped to −20.7 from −20.4 on RealClearPolling as RMG Research (−17) and a new Rasmussen week entered; Silver Bulletin reads −22.3. Polymarket has a Democratic Senate at 64.5%, Kalshi 62.5% (Oct 16)."
  ],
  "generic_ballot": [
   {
@@ -376,9 +375,9 @@
   {
    "measure": "Toss-up seats (Sabato's Crystal Ball)",
    "value": 5,
-   "note": "IA, KS, ME, OH, TX; five ratings moved Oct 14 (KS to Toss-up, MN to Leans D, NH to Likely D, NE to Leans R, MS to Likely R)",
+   "note": "KS, IA, ME, OH, TX. Oct 14 changes: KS to Toss-up, MN to Leans D, NH to Likely D, NE to Leans R (via Newsweek; centerforpolitics.org blocks automated reads).",
    "as_of": "2026-10-14",
-   "url": "https://sabatoscrystalball.substack.com/p/five-senate-rating-changes-as-close"
+   "url": "https://newsweek.com/republicans-get-new-midterm-warning-sign-as-kansas-senate-race-shifts-12569771"
   },
   {
    "measure": "Net seats Democrats need for 51",
