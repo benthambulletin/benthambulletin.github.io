@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T20:20:21Z",
+ "updated": "2026-10-18T20:22:23Z",
  "week": 6,
  "games": {
   "1": {
@@ -15,8 +15,8 @@
    "state": "in",
    "away": 25,
    "home": 14,
-   "detail": "2:37 - 4th",
-   "line": "Panthers 25–14 · 2:37 - 4th"
+   "detail": "2:00 - 4th",
+   "line": "Panthers 25–14 · 2:00 - 4th"
   },
   "3": {
    "state": "post",
@@ -40,8 +40,8 @@
    "state": "in",
    "away": 34,
    "home": 27,
-   "detail": "1:06 - 4th",
-   "line": "Saints 34–27 · 1:06 - 4th"
+   "detail": "0:24 - 4th",
+   "line": "Saints 34–27 · 0:24 - 4th"
   },
   "6": {
    "state": "post",
@@ -56,8 +56,8 @@
    "state": "in",
    "away": 19,
    "home": 19,
-   "detail": "End of 4th",
-   "line": "Tied 19–19 · End of 4th"
+   "detail": "9:48 - OT",
+   "line": "Tied 19–19 · 9:48 - OT"
   },
   "8": {
    "state": "post",
@@ -72,8 +72,8 @@
    "state": "in",
    "away": 0,
    "home": 3,
-   "detail": "8:20 - 1st",
-   "line": "Rams 3–0 · 8:20 - 1st"
+   "detail": "7:03 - 1st",
+   "line": "Rams 3–0 · 7:03 - 1st"
   },
   "10": {
    "state": "pre",
