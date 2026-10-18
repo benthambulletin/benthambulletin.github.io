@@ -56,7 +56,7 @@ if ed:
     # 9b. every visible web address must be a clickable link (Garret, Oct 18: older readers won't copy and paste)
     _vis=re.sub(r'<a [^>]*>.*?</a>','',s,flags=re.S)
     _vis=re.sub(r'<[^>]+>',' ',_vis)
-    for _u in sorted(set(re.findall(r'\b(?:https?://|tally\.so/|benthambulletin\.github\.io/)\S*',_vis))):
+    for _u in sorted(set(re.findall(r'\b(?:https?://\S*|tally\.so/\S*|benthambulletin\.github\.io\S*|(?:www\.)?[a-z0-9-]+\.(?:com|org|gov|net|edu)\b\S*)',_vis))):
         fails.append(f'UNLINKED URL: {_u}')
     # 10. barograph number matches pressure.json
     pr={x['date']:x['in'] for x in json.load(open('site/data/pressure.json'))}
