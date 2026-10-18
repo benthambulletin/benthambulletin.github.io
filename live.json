@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T22:58:39Z",
+ "updated": "2026-10-18T23:00:41Z",
  "week": 6,
  "games": {
   "1": {
@@ -75,25 +75,27 @@
    "line": "Final · Titans 26–20"
   },
   "9": {
-   "state": "in",
-   "away": 15,
+   "state": "post",
+   "away": 18,
    "home": 16,
-   "detail": "0:35 - 4th",
-   "line": "Rams 16–15 · 0:35 - 4th"
+   "detail": "Final",
+   "winner": "Cardinals",
+   "score": "18–16",
+   "line": "Final · Cardinals 18–16"
   },
   "10": {
    "state": "in",
    "away": 23,
-   "home": 16,
-   "detail": "8:53 - 4th",
-   "line": "Bills 23–16 · 8:53 - 4th"
+   "home": 23,
+   "detail": "8:07 - 4th",
+   "line": "Tied 23–23 · 8:07 - 4th"
   },
   "11": {
    "state": "in",
    "away": 6,
    "home": 19,
-   "detail": "11:46 - 4th",
-   "line": "Chiefs 19–6 · 11:46 - 4th"
+   "detail": "11:09 - 4th",
+   "line": "Chiefs 19–6 · 11:09 - 4th"
   },
   "12": {
    "state": "pre",
