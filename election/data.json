@@ -46,11 +46,11 @@
   }
  ],
  "what_changed": [
-  "Iowa tightened: Trafalgar (Oct 13–15, Republican-leaning) has Hinson 46–44, and RealClearPolling's average narrowed to Turek +0.6 from +0.9 — now the closest of the six pickups alongside Kansas (Marshall +0.3). The surest four still run through Maine, Ohio and Texas plus one of Alaska, Iowa and Kansas; Alaska (Peltola +2.5) is the widest of the three.",
-  "The holds: the same Trafalgar round has Flanagan 48–45 in Minnesota; the average eased to +2.8 from +2.9, and every poll taken in October has her up 3 or 4. Michigan (El-Sayed +2.6) had no new poll. Both holds still stand; both are still inside the margin.",
-  "No new poll in Maine, Ohio, Texas, Kansas, Alaska or Michigan; their averages are unchanged. North Carolina read Cooper +9.6 against +9.5 as RealClearPolling's window shifted. Cook's Senate ratings (Oct 6) and Sabato's (Oct 14) did not move.",
-  "New today: four Pennsylvania House seats — PA-1, PA-7, PA-8, PA-10 — added under House seats we watch. Cook has one Toss Up (PA-8), two Lean D (PA-7, PA-10) and one Lean R (PA-1). They count fast on election night; the Times' rule of thumb is that Democrats flipping all four means a wave, none means the polls were wrong.",
-  "National: nothing moved. Silver Bulletin's generic ballot stays D+8.9 and net approval −22.3 (both Oct 16); RealClearPolling's generic ballot (D+8.0) and approval (−20.7) carried no new polls overnight. Polymarket 64.5% and Kalshi 62.5% for a Democratic Senate (Oct 17). No new New York poll."
+  "Iowa got closer: Josh Turek (D) now leads Ashley Hinson (R) by less than a point. A Republican-leaning poll (Trafalgar) had Hinson up 2; the average narrowed from +0.9 to +0.6. Iowa and Kansas are now the two closest races in the country.",
+  "Minnesota is holding: Peggy Flanagan (D) leads Michele Tafoya (R) by about 3, and every October poll has her ahead. The average slipped a hair, from +2.9 to +2.8.",
+  "No new polls in Maine, Ohio, Texas, Kansas, Alaska or Michigan. Those averages didn't move.",
+  "New on the page: the four Pennsylvania House seats the Times says will tell us early how the night is going (under House seats we watch).",
+  "Nationally, nothing moved: generic ballot D+8.9, Trump net approval about −21, Senate odds 64%."
  ],
  "generic_ballot": [
   {
@@ -509,12 +509,12 @@
    "challenger": "Chris Gallant (D)",
    "rating": "Solid R",
    "rating_source": "Cook (page dated Oct 16)",
-   "dem_pct": 38,
-   "rep_pct": 41,
-   "margin": -3,
-   "pollster": "PPP (Democratic-leaning)",
-   "dates": "Dec 11, 2025",
-   "note": "Cook rates it Solid R (ratings page dated Oct 16). The only public poll is a Democratic one (PPP, 579 voters) from December, listed at Pollsmax. Trump +10 and LaLota +10 in 2024. Gallant: Army National Guard pilot, former air traffic controller.",
+   "dem_pct": null,
+   "rep_pct": null,
+   "margin": null,
+   "pollster": null,
+   "dates": null,
+   "note": "Only number is a Democratic poll from December 2025 (PPP): LaLota 41–38. Too old or too partisan to count as a lead. Cook rates it Solid R (ratings page dated Oct 16). The only public poll is a Democratic one (PPP, 579 voters) from December, listed at Pollsmax. Trump +10 and LaLota +10 in 2024. Gallant: Army National Guard pilot, former air traffic controller.",
    "url": "https://www.pollsmax.com/2026-us-house/new-york-1/"
   },
   {
@@ -928,12 +928,12 @@
    "challenger": "Bob Harvie (D)",
    "rating": "Lean R",
    "rating_source": "Cook (moved from Likely R, Oct 9; page dated Oct 16)",
-   "dem_pct": 46,
-   "rep_pct": 46,
-   "margin": 0,
-   "pollster": "Global Strategy Group (Democratic firm, internal)",
-   "dates": "Oct 1–8",
-   "note": "The only recent public number is a Democratic-firm internal (1,032 LV, sponsor not named) reported by PoliticsPA on Oct 12: tied 46–46. Weigh it lightly.",
+   "dem_pct": null,
+   "rep_pct": null,
+   "margin": null,
+   "pollster": null,
+   "dates": null,
+   "note": "Only number is a Democratic-firm internal: tied. Too old or too partisan to count as a lead. The only recent public number is a Democratic-firm internal (1,032 LV, sponsor not named) reported by PoliticsPA on Oct 12: tied 46–46. Weigh it lightly.",
    "url": "https://politicspa.com/internal-poll-fitzpatrick-harvie-tied-at-46/154076/"
   },
   {

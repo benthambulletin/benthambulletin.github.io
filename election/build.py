@@ -35,6 +35,20 @@ gb = {r["tracker"]: r for r in D["generic_ballot"]}
 ap = {r["tracker"]: r for r in D["approval"]}
 gov = {r["poll"]: r for r in D["ny_governor"]}
 
+def tag(name, party):
+    """Candidate name followed by a colored party letter."""
+    pc = {"D": "d", "R": "r"}.get(party, "")
+    return f'{e(name)} <span class="pt {pc}">({e(party)})</span>'
+
+def tag_text(text):
+    """Color the (D), (R), (D, inc.), (R/WFP), (D+R/...) tags already written inside free text."""
+    def sub(m):
+        inner = m.group(1); first = inner[0]
+        pc = "d" if first == "D" else "r" if first == "R" else ""
+        if "D+R" in inner or "R+D" in inner: pc = "both"
+        return f'<span class="pt {pc}">({e(inner)})</span>'
+    return re.sub(r"\(((?:D|R|Con|WFP)[^()]*)\)", sub, e(text))
+
 def bar(m, scale=15):
     """Diverging bar for a D−R margin: Democrat lead grows left (blue), Republican lead grows right (red)."""
     if m is None: return '<div class="dv none"><span>No public poll</span></div>'
@@ -54,18 +68,64 @@ def lead(m):
 def lede(text):
     """Bold the short lead-in before a colon ("Texas: ...") — presentation only."""
     k = text.find(": ")
-    if 0 < k <= 40: return f"<b>{e(text[:k])}</b>{e(text[k:])}"
-    return e(text)
+    if 0 < k <= 40: return f"<b>{e(text[:k])}</b>{tag_text(text[k:])}"
+    return tag_text(text)
+
+def plain_margin(m):
+    """'leads by about 3 points' / 'are tied' / 'no public poll'."""
+    if m is None: return None
+    m = float(m); a = abs(m)
+    if a < 0.75: return "tied"
+    if a < 1.5: return "about 1 point"
+    return f"about {int(round(a))} points"
+
+def rating_words(rating):
+    t = (rating or "").strip()
+    if not t: return ""
+    low = t.lower()
+    if "toss" in low: return "a toss-up"
+    party = "Democrats" if low.endswith(" d") else "Republicans" if low.endswith(" r") else None
+    if not party: return t
+    if low.startswith("lean") or low.startswith("tilt"): return f"leaning {party[:-1]}ic" if party == "Democrats" else "leaning Republican"
+    if low.startswith("likely"): return "likely " + ("Democratic" if party == "Democrats" else "Republican")
+    if low.startswith("solid") or low.startswith("safe"): return "safe for " + party
+    return t
+
+def race_sentence(dem, rep, margin, held_by=None, open_seat=False, rating=None, dem_inc=False, rep_inc=False):
+    """One sentence a first-time reader can parse: who leads whom by how much, whose seat it is, how the raters call it."""
+    d = f'{e(dem)} <span class="pt d">(D)</span>'; r = f'{e(rep)} <span class="pt r">(R)</span>'
+    pm = plain_margin(margin)
+    if pm is None: lead_s = f"{d} vs {r}. No public poll yet"
+    elif pm == "tied": lead_s = f"{d} and {r} are tied"
+    elif float(margin) > 0: lead_s = f"{d} leads {r} by {pm}"
+    else: lead_s = f"{r} leads {d} by {pm}"
+    bits = [lead_s + "."]
+    if held_by:
+        who = "a Democrat" if held_by == "D" else "a Republican"
+        bits.append(("Open seat, now held by " if open_seat else "Seat now held by ") + who + ".")
+    rw = rating_words(rating)
+    if rw: bits.append(f"Forecasters call it {rw}.")
+    return " ".join(bits)
+
+def polls_fold(label, text):
+    if not text: return ""
+    return f'<details class="fold"><summary>{e(label)}</summary><p class="note">{tag_text(text)}</p></details>'
 
 # ---------- sections ----------
 bottom = "".join(
-    f'<li><span class="ov" aria-hidden="true">{k}</span><div><h3>{e(r["headline"])}</h3><p>{e(r["detail"])}</p></div></li>'
+    f'<li><span class="ov" aria-hidden="true">{k}</span><div><h3>{e(r["headline"])}</h3><p>{tag_text(r["detail"])}</p></div></li>'
     for k, r in enumerate(sorted(D["bottom_line"], key=lambda r: r["order"]), 1))
 
 changed = ""
 if D.get("what_changed"):
-    changed = '<h2>What changed since yesterday</h2><ul class="changed">' + "".join(
-        f"<li>{lede(c)}</li>" for c in D["what_changed"]) + "</ul>"
+    def split_first(c):
+        m = re.match(r"(.+?[.!?])(\s+.+)?$", c.strip(), re.S)
+        return (m.group(1), (m.group(2) or "").strip()) if m else (c, "")
+    items = []
+    for c in D["what_changed"]:
+        first, rest = split_first(c)
+        items.append(f"<li>{lede(first)}{polls_fold('More', rest) if rest else ''}</li>")
+    changed = '<h2>What changed since yesterday</h2><ul class="changed">' + "".join(items) + "</ul>"
 
 sb = gb["Silver Bulletin (all polls)"]; rcp = gb["RealClearPolling average"]; avg = ap["RealClearPolling average"]
 eday_short = fdate(D["election_day"]); eday_long = fdate(D["election_day"], "%A, %b %-d")
@@ -77,29 +137,16 @@ tiles = f"""
  <div class="tile"><div class="lbl">Days to Election Day</div><div class="big">{days}</div><div class="sub">{eday_long}. Early voting {fdate(D["early_voting"]["start"])} – {fdate(D["early_voting"]["end"])}.</div></div>
 </div>"""
 
-def tag(name, party):
-    """Candidate name followed by a colored party letter."""
-    pc = {"D": "d", "R": "r"}.get(party, "")
-    return f'{e(name)} <span class="pt {pc}">({e(party)})</span>'
-
-def tag_text(text):
-    """Color the (D), (R), (D, inc.), (R/WFP), (D+R/...) tags already written inside free text."""
-    def sub(m):
-        inner = m.group(1); first = inner[0]
-        pc = "d" if first == "D" else "r" if first == "R" else ""
-        if "D+R" in inner or "R+D" in inner: pc = "both"
-        return f'<span class="pt {pc}">({e(inner)})</span>'
-    return re.sub(r"\(((?:D|R|Con|WFP)[^()]*)\)", sub, e(text))
 
 def senate_row(r):
-    held = {"D": "Democratic", "R": "Republican"}.get(r["held_by"], r["held_by"])
+    open_seat = (r.get("race") or "").lower().startswith("open")
     src = (e(r["pollster"]) + (", " + e(r["dates"]) if r["dates"] else "")) if r["pollster"] else ""
+    detail = (r.get("note") or "")
     return f"""<li class="race">
  <div class="rh"><h3>{e(r["state"])}</h3>{chip(r["cook_rating"])}{lead(r["margin"])}</div>
  {bar(r["margin"])}
- <p class="who"><span class="p d">{tag(r["democrat"], "D")}</span> <span class="vs">vs</span> <span class="p r">{tag(r["republican"], "R")}</span></p>
- <p class="meta">{e(r["race"])}, {held} seat.{(" Poll: " + src + ".") if src else ""}</p>
- {f'<p class="note">{e(r["note"])}</p>' if r.get("note") else ""}
+ <p class="say">{race_sentence(r["democrat"].replace(" (inc.)",""), r["republican"].replace(" (inc.)",""), r["margin"], r["held_by"], open_seat, r["cook_rating"])}</p>
+ {polls_fold("Show the polls", (("Based on " + src + ". ") if src else "") + detail)}
 </li>"""
 senate_rows = "".join(senate_row(r) for r in sorted(D["senate"], key=lambda r: (r["margin"] is None, -(r["margin"] or 0))))
 
@@ -117,12 +164,13 @@ gov_rows = "".join(gov_row(r) for r in D["ny_governor"])
 
 def house_row(r):
     pc = r["party"].lower()
-    poll = (f' Latest poll: {e(r["pollster"])}, {e(r["dates"] or "")}, {num(r["dem_pct"])}–{num(r["rep_pct"])}.') if r["pollster"] else ""
+    inc, chal = r["incumbent"], re.sub(r"\s*\([^)]*\)\s*$", "", r["challenger"])
+    dem, rep = (inc, chal) if pc == "d" else (chal, inc)
+    poll = (f'Latest poll: {r["pollster"]}, {r["dates"] or ""}, {num(r["dem_pct"])}–{num(r["rep_pct"])}. ') if r["pollster"] else ""
     return f"""<li class="race">
  <div class="rh"><h3>{e(r["district"])}</h3>{chip(r["rating"])}{lead(r["margin"]) if r["margin"] is not None else ""}</div>
- <p class="who"><span class="p {pc}">{e(r["incumbent"])} <span class="pt {pc}">({e(r["party"])}, inc.)</span></span> <span class="vs">vs</span> <span class="p {"r" if pc == "d" else "d"}">{tag_text(r["challenger"])}</span></p>
- <p class="meta">{e(r["area"])}. Rating: {e(r["rating_source"])}.{poll}</p>
- {f'<p class="note">{e(r["note"])}</p>' if r.get("note") else ""}
+ <p class="say">{race_sentence(dem, rep, r["margin"], r["party"], False, r["rating"])} <span class="mut">{e(r["area"])}.</span></p>
+ {polls_fold("Show the polls", poll + (r.get("note") or ""))}
 </li>"""
 house_rows = "".join(house_row(r) for r in D["ny_house"])
 pa_rows = "".join(house_row(r) for r in D.get("pa_bellwethers", []))
@@ -331,6 +379,9 @@ h3{margin:0;font-weight:700;font-size:1.05rem;line-height:1.25}
 .poll .who{display:flex;justify-content:space-between}
 .meta{font-size:.82rem;color:var(--soft);margin-top:.2rem;line-height:1.45}
 .note{font-size:.88rem;margin-top:.35rem;line-height:1.5}
+.say{font-size:1rem;line-height:1.5;margin-top:.35rem}
+.fold{margin-top:.3rem}.fold summary{cursor:pointer;font-family:var(--sans);font-size:.78rem;color:var(--soft);list-style:none;display:inline-block;border-bottom:1px dotted var(--soft)}.fold summary::-webkit-details-marker{display:none}.fold[open] summary{margin-bottom:.2rem}
+.changed .fold{margin-top:.15rem}
 .res .who{font-size:1.15rem;margin-top:.3rem}
 .status{font-size:.75rem;font-weight:650;padding:.12rem .55rem;border-radius:1rem;border:1.5px solid var(--purple);color:var(--purple);white-space:nowrap}
 .status.called{background:var(--ink);border-color:var(--ink);color:var(--paper)}
