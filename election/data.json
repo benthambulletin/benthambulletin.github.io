@@ -954,5 +954,30 @@
    "note": "Franklin & Marshall (378 RV) had Stelson 47–44, per Newsweek (Oct 10). A rematch of 2024.",
    "url": "https://www.newsweek.com/janelle-stelson-in-striking-distance-of-flipping-gop-seat-amid-dhs-attack-12551162"
   }
- ]
+ ],
+ "mood": {
+  "title": "Why the mood is sour",
+  "intro": "Is it real or just headlines? Three government numbers say it's real, and none of them will move before Nov 3.",
+  "items": [
+   {
+    "what": "Growth is real but narrow.",
+    "why": "Business investment is near $4 trillion a year, and almost all of the rise since 2023 is software, chips and data centers. Investment in everything else has been flat since 2022.",
+    "source": "Bureau of Economic Analysis",
+    "url": "https://www.bea.gov/data/gdp/gross-domestic-product"
+   },
+   {
+    "what": "Nobody's getting fired, and nobody's getting hired.",
+    "why": "Layoffs are near record lows, but hiring has slid back to 2016 levels and fewer people quit than before the pandemic. People have jobs; they don't have options.",
+    "source": "Bureau of Labor Statistics, JOLTS",
+    "url": "https://www.bls.gov/jlt/"
+   },
+   {
+    "what": "Prices are rising faster than paychecks again.",
+    "why": "Wages are up 3.0% over the past year; prices are up 3.7%. The lines crossed this year for the first time since 2023, so the average worker is losing ground.",
+    "source": "Bureau of Labor Statistics, CPI and average hourly earnings",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "note": "Charts and framing from Ben Casselman, The New York Times, Oct 18, 2026."
+ }
 }

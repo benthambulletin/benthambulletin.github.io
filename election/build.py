@@ -187,6 +187,13 @@ if D.get("how_to_read"):
     h = D["how_to_read"]
     calm = f'<h2>{e(h["title"])}</h2><ul class="list">' + "".join(f"<li>{e(i)}</li>" for i in h["items"]) + "</ul>"
 
+mood = ""
+if D.get("mood"):
+    m_ = D["mood"]
+    mood = (f'<h2>{e(m_["title"])}</h2><p class="intro">{e(m_["intro"])}</p><ul class="list">'
+            + "".join(f'<li><b>{e(i["what"])}</b> {e(i["why"])} <span class="mut">({e(i["source"])})</span></li>' for i in m_["items"])
+            + f'</ul><p class="mut" style="font-size:.8rem">{e(m_.get("note",""))}</p>')
+
 R = D.get("results") or {}
 is_results = D.get("mode") == "results"
 def results_block():
@@ -212,7 +219,7 @@ def results_block():
 
 tab_today = (strip + (results_block() if is_results else "")
              + f'<h2>Bottom line</h2><ol class="bottom">{bottom}</ol>'
-             + changed + ("" if is_results else tiles) + calm)
+             + changed + ("" if is_results else tiles) + calm + mood)
 
 # ---------- SENATE ----------
 def senate_card(r):
