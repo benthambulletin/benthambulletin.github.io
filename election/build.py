@@ -111,6 +111,10 @@ def house_row(r):
  {f'<p class="note">{e(r["note"])}</p>' if r.get("note") else ""}
 </li>"""
 house_rows = "".join(house_row(r) for r in D["ny_house"])
+pa_rows = "".join(house_row(r) for r in D.get("pa_bellwethers", []))
+pa_block = (f'<h3 class="sub-h">Pennsylvania: four seats that tell you early</h3>'
+            f'<p class="intro">Pennsylvania counts fast, and these four districts cover every kind of swing seat. Democrats flipping all four is a wave; none means the polls were wrong; two or three is the expected night.</p>'
+            f'<ul class="races">{pa_rows}</ul>') if pa_rows else ""
 
 def rows(items):
     return "".join(f'<div class="row"><dt>{e(i["office"])}</dt><dd>{e(i["race"])}</dd></div>' for i in items)
@@ -168,7 +172,8 @@ polls_main = f"""
 <ul class="races">{gov_rows}</ul>
 
 <h2>House seats we watch</h2>
-<ul class="races">{house_rows}</ul>"""
+<ul class="races">{house_rows}</ul>
+{pa_block}"""
 
 R = D.get("results") or {}
 def results_main():
