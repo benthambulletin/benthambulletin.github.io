@@ -18,6 +18,9 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 - **The Sunday Tax (from Sept 29): Tuesdays, Wednesdays and Thursdays** run a small bordered box in The Gridiron, headed "The Sunday Tax," with: the pick link **https://tally.so/r/RGOakJ**, the standings link **https://benthambulletin.github.io/pool/**, and one line — while `pool/data/season.json` has `buyIn` 0: "Free to play for now, straight-up winners, bragging rights on the line; a $5 buy-in may come later. Sheets lock at each kickoff; first game Thu <time>." Once `buyIn` is 5: "$5 a week, straight-up winners, the pot to the best record. Sheets lock at each kickoff; first game Thu <time>." It is open to friends and coworkers too, not just family — say "anyone with the link." Read `pool/data/season.json` for the current week number and the Thursday kickoff. Tuesday's box also names last week's winner (and payout only when `buyIn` was on) if `weeks[N-1].status` is final. No box Fri–Mon; the Sunday paper may mention the pot in a line if there is room. Never edit anything under `pool/`.
 
+- **The Ballot mirrors /election/ (Garret, Oct 18).** The paper's Ballot section and any election item are a summary of `election/data.json`, the tracker Garret built. Every poll, rating, margin, candidate name, party label, date and early-voting site must match that file as of the morning's run; no number the tracker doesn't carry, no wording that contradicts its bottom line. Read `election/data.json` before writing the Ballot, and give the reviewer the file to compare against.
+- **Every web address is a link (Garret, Oct 18).** Older readers won't copy and paste. Any tally.so, benthambulletin.github.io or other URL in the paper is an `<a href>`; qc.py now fails on an unlinked one.
+
 - **Family form (Oct 4):** https://tally.so/r/rjxDpl — check every morning, run entries automatically per CLAUDE.md, hold only anything unkind or private and flag it to Garret.
 
 ## Dated
