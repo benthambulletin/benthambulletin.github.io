@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T20:42:41Z",
+ "updated": "2026-10-18T20:44:43Z",
  "week": 6,
  "games": {
   "1": {
@@ -57,11 +57,13 @@
    "line": "Final · Patriots 26–19"
   },
   "7": {
-   "state": "in",
+   "state": "post",
    "away": 26,
    "home": 19,
-   "detail": "1:06 - OT",
-   "line": "Steelers 26–19 · 1:06 - OT"
+   "detail": "Final/OT",
+   "winner": "Steelers",
+   "score": "26–19",
+   "line": "Final · Steelers 26–19 (OT)"
   },
   "8": {
    "state": "post",
@@ -82,9 +84,9 @@
   "10": {
    "state": "in",
    "away": 3,
-   "home": 0,
-   "detail": "4:36 - 1st",
-   "line": "Bills 3–0 · 4:36 - 1st"
+   "home": 7,
+   "detail": "4:27 - 1st",
+   "line": "Raiders 7–3 · 4:27 - 1st"
   },
   "11": {
    "state": "in",
