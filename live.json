@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T18:30:38Z",
+ "updated": "2026-10-18T18:32:39Z",
  "week": 6,
  "games": {
   "1": {
@@ -15,8 +15,8 @@
    "state": "in",
    "away": 10,
    "home": 7,
-   "detail": "2:42 - 2nd",
-   "line": "Panthers 10–7 · 2:42 - 2nd"
+   "detail": "2:00 - 2nd",
+   "line": "Panthers 10–7 · 2:00 - 2nd"
   },
   "3": {
    "state": "in",
@@ -29,15 +29,15 @@
    "state": "in",
    "away": 21,
    "home": 7,
-   "detail": "0:56 - 2nd",
-   "line": "Bears 21–7 · 0:56 - 2nd"
+   "detail": "0:33 - 2nd",
+   "line": "Bears 21–7 · 0:33 - 2nd"
   },
   "5": {
    "state": "in",
    "away": 10,
    "home": 10,
-   "detail": "0:01 - 2nd",
-   "line": "Tied 10–10 · 0:01 - 2nd"
+   "detail": "Halftime",
+   "line": "Tied 10–10 · Halftime"
   },
   "6": {
    "state": "in",
@@ -48,10 +48,10 @@
   },
   "7": {
    "state": "in",
-   "away": 0,
+   "away": 3,
    "home": 13,
-   "detail": "0:03 - 2nd",
-   "line": "Buccaneers 13–0 · 0:03 - 2nd"
+   "detail": "Halftime",
+   "line": "Buccaneers 13–3 · Halftime"
   },
   "8": {
    "state": "in",
