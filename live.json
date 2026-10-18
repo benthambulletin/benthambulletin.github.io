@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T23:27:05Z",
+ "updated": "2026-10-18T23:29:07Z",
  "week": 6,
  "games": {
   "1": {
@@ -86,16 +86,18 @@
   "10": {
    "state": "in",
    "away": 33,
-   "home": 23,
-   "detail": "1:43 - 4th",
-   "line": "Bills 33–23 · 1:43 - 4th"
+   "home": 30,
+   "detail": "1:32 - 4th",
+   "line": "Bills 33–30 · 1:32 - 4th"
   },
   "11": {
-   "state": "in",
+   "state": "post",
    "away": 6,
    "home": 22,
-   "detail": "0:23 - 4th",
-   "line": "Chiefs 22–6 · 0:23 - 4th"
+   "detail": "Final",
+   "winner": "Chiefs",
+   "score": "22–6",
+   "line": "Final · Chiefs 22–6"
   },
   "12": {
    "state": "pre",
