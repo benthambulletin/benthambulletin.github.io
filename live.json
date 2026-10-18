@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T23:23:01Z",
+ "updated": "2026-10-18T23:25:03Z",
  "week": 6,
  "games": {
   "1": {
@@ -85,17 +85,17 @@
   },
   "10": {
    "state": "in",
-   "away": 30,
+   "away": 33,
    "home": 23,
-   "detail": "2:00 - 4th",
-   "line": "Bills 30–23 · 2:00 - 4th"
+   "detail": "1:56 - 4th",
+   "line": "Bills 33–23 · 1:56 - 4th"
   },
   "11": {
    "state": "in",
    "away": 6,
    "home": 22,
-   "detail": "1:09 - 4th",
-   "line": "Chiefs 22–6 · 1:09 - 4th"
+   "detail": "0:58 - 4th",
+   "line": "Chiefs 22–6 · 0:58 - 4th"
   },
   "12": {
    "state": "pre",
