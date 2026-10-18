@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T23:31:08Z",
+ "updated": "2026-10-18T23:33:10Z",
  "week": 6,
  "games": {
   "1": {
@@ -84,11 +84,13 @@
    "line": "Final · Cardinals 18–16"
   },
   "10": {
-   "state": "in",
+   "state": "post",
    "away": 33,
    "home": 30,
-   "detail": "1:32 - 4th",
-   "line": "Bills 33–30 · 1:32 - 4th"
+   "detail": "Final",
+   "winner": "Bills",
+   "score": "33–30",
+   "line": "Final · Bills 33–30"
   },
   "11": {
    "state": "post",
