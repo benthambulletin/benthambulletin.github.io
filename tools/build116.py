@@ -144,3 +144,28 @@ p=json.load(open('site/data/pressure.json')); p=[x for x in p if x['date']!='202
 p.append({'date':'2026-10-18','in':30.52,'mb':1033.6,'station':'KIAG','time':'06:53 EDT'}); json.dump(p,open('site/data/pressure.json','w'),indent=1)
 m=json.load(open('site/data/migraines.json')); m['updated']='2026-10-18'; json.dump(m,open('site/data/migraines.json','w'),indent=1)
 print('built')
+# --- review fixes ---
+d=json.load(open('edition-2026-10-18.json')); b=d['body_html']
+fx=[
+("Their only debate, Tuesday, turned on utility bills, data centers and immigration enforcement.","In their only debate last Tuesday night they sparred over energy costs, immigration and public safety."),
+("People were killed and hurt Saturday in an incident that set off a major fire at Canadian Forces Base Wainwright in Alberta, Canada's defense minister said. Officials have not given a cause or a death toll.","Several people were killed or hurt in a major fire at Canadian Forces Base Wainwright in Alberta. Officials have not given a cause or a death toll, calling the situation \"very active and delicate.\""),
+("the half moon rides high in the south after dark","the half moon hangs low in the south after dark"),
+("Democrat Nate McMurray, who has been pressing Wydysh to debate.","Democrat Nate McMurray, who ran for Congress in 2018 and 2020."),
+("8th District, which covers Erie, Niagara and Chautauqua counties","8th District, which includes Erie, Niagara and Chautauqua counties"),
+("the main trial court for big civil cases and serious crimes, not the state's highest court.","the main trial court for big civil cases, such as major lawsuits and divorces, not the state's highest court."),
+("on a house assessed at $150,000, that is about $126 a year, and grants would bring it down.</div>","on a house assessed at $150,000, that is about $126 a year, and grants would bring it down. <b>Early voting:</b> Wheatfield Community Center, 2790 Church Rd, or Wendelville Fire Co., 7340 Campbell Blvd, Oct 24&ndash;Nov 1.</div>"),
+("Sheriff Quattrone, a Republican, is unopposed. No ballot questions.</div>","Sheriff Quattrone, a Republican, is unopposed. No ballot questions. <b>Early voting:</b> the County Fairgrounds 4-H Building, 1089 Central Ave, Oct 24&ndash;Nov 1.</div>"),
+("Wheatland Supervisor Kirch, a Republican, are unopposed. No ballot questions.</div>","Wheatland Supervisor Kirch, a Republican, are unopposed. No ballot questions. <b>Early voting:</b> the nearest sites are Henrietta Library, 625 Calkins Rd, and Gates Presbyterian, 1049 Wegman Rd; any of the county's 15 sites works, Oct 24&ndash;Nov 1.</div>"),
+("A dry, sunny week should hold the color on the trees after Friday's wind. Last week's report had Niagara Falls at 50 percent and Chautauqua Institution at 70.","Last week's report, still the latest, had Niagara Falls at 50 percent color, Chautauqua Institution at 70 and Greece, in Monroe County, at 30."),
+("Scottsville has more frost tonight and Monday morning, at 33, and dips to 34 Tuesday night.","Scottsville gets areas of frost again after 1 a.m. tonight and into Monday morning, with a low of 33; Tuesday night is nearly as cold, at 34."),
+("30.52, the highest reading of the week, up about a fifth of an inch since yesterday morning. It eases off slowly from here, down about a seventh of an inch by Tuesday morning.","30.52, up about a fifth of an inch since yesterday morning. It drops back about a seventh of an inch between Monday morning and early Tuesday, mostly Monday afternoon."),
+("The metal band announced a 2027 North American tour, the third and final leg of its 50th-anniversary run, starting in April.","The metal band announced its 2027 Run for Your Lives North American tour, starting in April. It is the third and final leg of the band's 50th-anniversary run."),
+("A win over the 3&ndash;2 Patriots would put the 2&ndash;3 Jets level with them in the division. Next week, Miami at home.","They come in 2&ndash;3, two games behind Buffalo; Miami visits next Sunday at 1:00."),
+("<span class=\"lbl t\">Hunter's Moon</span> Mon, Oct 26</div></div>","<span class=\"lbl t\">Hunter's Moon</span> Mon, Oct 26 &middot; <span class=\"lbl t\">New moon</span> Mon, Nov 9</div></div>"),
+("No public poll; Cook rates it solidly Democratic.","No public poll; the district leans Democratic."),
+]
+for o,n in fx: R(o,n)
+d['body_html']=b
+json.dump(d,open('edition-2026-10-18.json','w'),ensure_ascii=False,indent=1)
+json.dump(d,open('site/data/edition-2026-10-18.json','w'),ensure_ascii=False,indent=1)
+print('fixed')
