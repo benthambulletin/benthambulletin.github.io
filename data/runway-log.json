@@ -4866,7 +4866,7 @@
    "woke a bit early",
    "stress elevated yesterday"
   ],
-  "wake_dev_min": -17,
+  "wake_dev_min": -19,
   "bb_high": 82,
   "stress_yday": 35.0
  }
