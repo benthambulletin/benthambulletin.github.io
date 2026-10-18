@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T18:40:45Z",
+ "updated": "2026-10-18T18:42:47Z",
  "week": 6,
  "games": {
   "1": {
@@ -22,8 +22,8 @@
    "state": "in",
    "away": 10,
    "home": 0,
-   "detail": "12:41 - 3rd",
-   "line": "Ravens 10–0 · 12:41 - 3rd"
+   "detail": "11:20 - 3rd",
+   "line": "Ravens 10–0 · 11:20 - 3rd"
   },
   "4": {
    "state": "in",
@@ -55,10 +55,10 @@
   },
   "8": {
    "state": "in",
-   "away": 0,
+   "away": 3,
    "home": 13,
-   "detail": "13:37 - 3rd",
-   "line": "Colts 13–0 · 13:37 - 3rd"
+   "detail": "13:30 - 3rd",
+   "line": "Colts 13–3 · 13:30 - 3rd"
   },
   "9": {
    "state": "pre",
