@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T19:31:38Z",
+ "updated": "2026-10-18T19:33:40Z",
  "week": 6,
  "games": {
   "1": {
@@ -15,29 +15,29 @@
    "state": "in",
    "away": 13,
    "home": 7,
-   "detail": "1:07 - 3rd",
-   "line": "Panthers 13–7 · 1:07 - 3rd"
+   "detail": "15:00 - 4th",
+   "line": "Panthers 13–7 · 15:00 - 4th"
   },
   "3": {
    "state": "in",
    "away": 10,
    "home": 10,
-   "detail": "6:59 - 4th",
-   "line": "Tied 10–10 · 6:59 - 4th"
+   "detail": "5:50 - 4th",
+   "line": "Tied 10–10 · 5:50 - 4th"
   },
   "4": {
    "state": "in",
-   "away": 28,
+   "away": 31,
    "home": 7,
-   "detail": "15:00 - 4th",
-   "line": "Bears 28–7 · 15:00 - 4th"
+   "detail": "14:56 - 4th",
+   "line": "Bears 31–7 · 14:56 - 4th"
   },
   "5": {
    "state": "in",
    "away": 27,
    "home": 10,
-   "detail": "14:06 - 4th",
-   "line": "Saints 27–10 · 14:06 - 4th"
+   "detail": "12:41 - 4th",
+   "line": "Saints 27–10 · 12:41 - 4th"
   },
   "6": {
    "state": "in",
@@ -50,15 +50,15 @@
    "state": "in",
    "away": 10,
    "home": 16,
-   "detail": "13:48 - 4th",
-   "line": "Buccaneers 16–10 · 13:48 - 4th"
+   "detail": "13:14 - 4th",
+   "line": "Buccaneers 16–10 · 13:14 - 4th"
   },
   "8": {
    "state": "in",
-   "away": 13,
+   "away": 19,
    "home": 13,
-   "detail": "10:30 - 4th",
-   "line": "Tied 13–13 · 10:30 - 4th"
+   "detail": "10:17 - 4th",
+   "line": "Titans 19–13 · 10:17 - 4th"
   },
   "9": {
    "state": "pre",
