@@ -5050,8 +5050,8 @@
           "kickoff": "2026-10-18T13:30:00Z",
           "when": "Sun 9:30 AM · London",
           "tv": "NFL Network",
-          "winner": null,
-          "score": null,
+          "winner": "Texans",
+          "score": "34–31",
           "status": "live",
           "hits": [],
           "misses": [],
@@ -5082,9 +5082,7 @@
               "Leah",
               "Claude"
             ]
-          },
-          "live": "Texans 31–21 · 4th qtr",
-          "liveAt": "2026-10-18T16:08:58Z"
+          }
         },
         {
           "away": "Panthers",
@@ -5768,7 +5766,7 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Saturday was a bonfire. No. 1 Georgia lost to unranked Auburn, Notre Dame fell to BYU, Tennessee ran Alabama out 26–10, and Texas blew a 17–3 lead at home to Florida. Five of the top eight went down in one afternoon. Does any of it carry to Sunday? Different sport, grown men, no AP poll. But somebody in here woke up this morning feeling brave, and fourteen hours from now we'll know if it was courage or a hangover.\n\nTwenty-one sheets in. Ariel opened with \"Sombloski sucks\"; Andy R says it's shocking Ariel isn't dead last. Only Josh and the commissioner got Thursday right, so the garage talk comes from a man with a record. London at 9:30. Thirteen games left.",
+      "column": "Saturday's college chaos made it to London. Texans 34, Jaguars 31, and only five sheets saw it coming: Ariel, Andy R, Mrs. Sombloski, B-rad and Brandon Goes Commando. Ariel and Andy R spent the week calling each other last place, then picked the same team. Touching. Mrs. Sombloski is 1–1. Mike is 0–2 and still sigma about it.\n\nSeven sheets are 1–1: the London five plus the commissioner and Josh, the only two who got Thursday right. Everyone else is 0–2, the defending champ and the house included. Seven games kick off now. If the favorites keep falling like Georgia and Notre Dame did, this board is about to get ugly.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 95.0,
@@ -6058,7 +6056,7 @@
           "a": "I'm wondering if that was an insinuation that men don't do laundry? Didn't you finish last last week?"
         }
       ],
-      "columnHead": "Saturday burned the chalk. Sunday's turn?",
+      "columnHead": "The upset bug crossed the ocean",
       "columnN": 21,
       "thuDone": true,
       "threads": {}
