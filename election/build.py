@@ -4,7 +4,7 @@
 Usage: python3 election/build.py   (from the repo root)
 Every number on the page comes from data.json; nothing is typed into this file.
 """
-import json, html, datetime, pathlib
+import json, re, html, datetime, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent
 D = json.load(open(ROOT / "data.json"))
@@ -77,13 +77,27 @@ tiles = f"""
  <div class="tile"><div class="lbl">Days to Election Day</div><div class="big">{days}</div><div class="sub">{eday_long}. Early voting {fdate(D["early_voting"]["start"])} – {fdate(D["early_voting"]["end"])}.</div></div>
 </div>"""
 
+def tag(name, party):
+    """Candidate name followed by a colored party letter."""
+    pc = {"D": "d", "R": "r"}.get(party, "")
+    return f'{e(name)} <span class="pt {pc}">({e(party)})</span>'
+
+def tag_text(text):
+    """Color the (D), (R), (D, inc.), (R/WFP), (D+R/...) tags already written inside free text."""
+    def sub(m):
+        inner = m.group(1); first = inner[0]
+        pc = "d" if first == "D" else "r" if first == "R" else ""
+        if "D+R" in inner or "R+D" in inner: pc = "both"
+        return f'<span class="pt {pc}">({e(inner)})</span>'
+    return re.sub(r"\(((?:D|R|Con|WFP)[^()]*)\)", sub, e(text))
+
 def senate_row(r):
     held = {"D": "Democratic", "R": "Republican"}.get(r["held_by"], r["held_by"])
     src = (e(r["pollster"]) + (", " + e(r["dates"]) if r["dates"] else "")) if r["pollster"] else ""
     return f"""<li class="race">
  <div class="rh"><h3>{e(r["state"])}</h3>{chip(r["cook_rating"])}{lead(r["margin"])}</div>
  {bar(r["margin"])}
- <p class="who"><span class="p d">{e(r["democrat"])}</span> <span class="vs">vs</span> <span class="p r">{e(r["republican"])}</span></p>
+ <p class="who"><span class="p d">{tag(r["democrat"], "D")}</span> <span class="vs">vs</span> <span class="p r">{tag(r["republican"], "R")}</span></p>
  <p class="meta">{e(r["race"])}, {held} seat.{(" Poll: " + src + ".") if src else ""}</p>
  {f'<p class="note">{e(r["note"])}</p>' if r.get("note") else ""}
 </li>"""
@@ -96,7 +110,7 @@ def gov_row(r):
     return f"""<li class="poll">
  <div class="rh"><h3>{e(r["poll"])}</h3><span class="lead {"d" if m >= 0 else "r"}">{who}</span></div>
  <div class="split" aria-hidden="true"><i class="d" style="width:{float(r["hochul"]):.1f}%"></i><i class="r" style="width:{float(r["blakeman"]):.1f}%"></i></div>
- <p class="who"><span class="p d">Hochul {num(r["hochul"])}%</span> <span class="p r">Blakeman {num(r["blakeman"])}%</span></p>
+ <p class="who"><span class="p d">Hochul <span class="pt d">(D)</span> {num(r["hochul"])}%</span> <span class="p r">Blakeman <span class="pt r">(R)</span> {num(r["blakeman"])}%</span></p>
  <p class="meta">{e(r["dates"])}{sample}</p>{note}
 </li>"""
 gov_rows = "".join(gov_row(r) for r in D["ny_governor"])
@@ -106,7 +120,7 @@ def house_row(r):
     poll = (f' Latest poll: {e(r["pollster"])}, {e(r["dates"] or "")}, {num(r["dem_pct"])}–{num(r["rep_pct"])}.') if r["pollster"] else ""
     return f"""<li class="race">
  <div class="rh"><h3>{e(r["district"])}</h3>{chip(r["rating"])}{lead(r["margin"]) if r["margin"] is not None else ""}</div>
- <p class="who"><span class="p {pc}">{e(r["incumbent"])} ({e(r["party"])}, inc.)</span> <span class="vs">vs</span> <span class="p {"r" if pc == "d" else "d"}">{e(r["challenger"])}</span></p>
+ <p class="who"><span class="p {pc}">{e(r["incumbent"])} <span class="pt {pc}">({e(r["party"])}, inc.)</span></span> <span class="vs">vs</span> <span class="p {"r" if pc == "d" else "d"}">{tag_text(r["challenger"])}</span></p>
  <p class="meta">{e(r["area"])}. Rating: {e(r["rating_source"])}.{poll}</p>
  {f'<p class="note">{e(r["note"])}</p>' if r.get("note") else ""}
 </li>"""
@@ -117,7 +131,7 @@ pa_block = (f'<h3 class="sub-h">Pennsylvania: four seats that tell you early</h3
             f'<ul class="races">{pa_rows}</ul>') if pa_rows else ""
 
 def rows(items):
-    return "".join(f'<div class="row"><dt>{e(i["office"])}</dt><dd>{e(i["race"])}</dd></div>' for i in items)
+    return "".join(f'<div class="row"><dt>{e(i["office"])}</dt><dd>{tag_text(i["race"])}</dd></div>' for i in items)
 def town_block(t, open_):
     body = rows(t["items"]) + f'<div class="row ev"><dt>Early voting</dt><dd>{e(t["early_voting"]["site"])}</dd></div>'
     return (f'<details class="town"{" open" if open_ else ""}><summary><span class="tn">{e(t["town"])}</span><span class="cty">{e(t["county"])} County</span></summary>'
@@ -313,6 +327,7 @@ h3{margin:0;font-weight:700;font-size:1.05rem;line-height:1.25}
 .vs{color:var(--soft);font-weight:400;padding:0 .1rem}
 .p::before{content:"";display:inline-block;width:.55rem;height:.55rem;border-radius:2px;margin-right:.3rem;vertical-align:.05em}
 .p.d::before{background:var(--blue)}.p.r::before{background:var(--red)}
+.pt{font-family:var(--sans);font-weight:700;font-size:.78em;letter-spacing:.02em}.pt.d{color:var(--blue)}.pt.r{color:var(--red)}.pt.both{color:var(--purple)}
 .poll .who{display:flex;justify-content:space-between}
 .meta{font-size:.82rem;color:var(--soft);margin-top:.2rem;line-height:1.45}
 .note{font-size:.88rem;margin-top:.35rem;line-height:1.5}
@@ -397,11 +412,11 @@ page = f'''<!DOCTYPE html>
 
 <h2>The bottom line</h2>
 <ol class="bottom">{bottom}</ol>
+{changed}
 {numbers}
 {steady}
 {calm}
 {glossary}
-{changed}
 {outlook}
 {"" if is_results else main}
 

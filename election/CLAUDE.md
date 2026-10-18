@@ -23,6 +23,7 @@
 - Margins are Democrat minus Republican. `cook_rating` uses Cook's words.
 - Nov 4 run: results special — replace polls with results where called (AP), keep the layout. After Nov 4 the task should be deleted.
 - The Your-ballot box is reference, not news: keep it one `office`/`race` line per item, every item sourced, and never pad a town that has nothing.
+- **Party tags (Garret, Oct 18):** every candidate name on the page carries a colored (D)/(R). build.py does it for the Senate, governor and House rows; in free-text fields (`your_ballot[*].items[*].race`, `statewide`) write the tag yourself after every name — "Smith (R, inc.) vs Jones (D)" — and build.py colors it. Never leave a name without one.
 - Don't touch anything outside `election/`.
 
 ## Standing notes from Garret
