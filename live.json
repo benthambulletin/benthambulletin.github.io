@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T19:23:31Z",
+ "updated": "2026-10-18T19:25:33Z",
  "week": 6,
  "games": {
   "1": {
@@ -15,29 +15,29 @@
    "state": "in",
    "away": 13,
    "home": 7,
-   "detail": "7:14 - 3rd",
-   "line": "Panthers 13–7 · 7:14 - 3rd"
+   "detail": "6:17 - 3rd",
+   "line": "Panthers 13–7 · 6:17 - 3rd"
   },
   "3": {
    "state": "in",
    "away": 10,
-   "home": 3,
-   "detail": "9:17 - 4th",
-   "line": "Ravens 10–3 · 9:17 - 4th"
+   "home": 10,
+   "detail": "8:33 - 4th",
+   "line": "Tied 10–10 · 8:33 - 4th"
   },
   "4": {
    "state": "in",
-   "away": 21,
+   "away": 28,
    "home": 7,
-   "detail": "1:54 - 3rd",
-   "line": "Bears 21–7 · 1:54 - 3rd"
+   "detail": "1:48 - 3rd",
+   "line": "Bears 28–7 · 1:48 - 3rd"
   },
   "5": {
    "state": "in",
    "away": 27,
    "home": 10,
-   "detail": "1:12 - 3rd",
-   "line": "Saints 27–10 · 1:12 - 3rd"
+   "detail": "0:44 - 3rd",
+   "line": "Saints 27–10 · 0:44 - 3rd"
   },
   "6": {
    "state": "in",
@@ -55,10 +55,10 @@
   },
   "8": {
    "state": "in",
-   "away": 12,
+   "away": 13,
    "home": 13,
    "detail": "13:00 - 4th",
-   "line": "Colts 13–12 · 13:00 - 4th"
+   "line": "Tied 13–13 · 13:00 - 4th"
   },
   "9": {
    "state": "pre",
