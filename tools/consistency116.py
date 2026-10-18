@@ -27,3 +27,19 @@ R("theballotbrief.com","The Ballot Brief")
 d['body_html']=b
 for p in ['edition-2026-10-18.json','site/data/edition-2026-10-18.json']: json.dump(d,open(p,'w'),ensure_ascii=False,indent=1)
 print('ok')
+# --- fourth review fixes ---
+d=json.load(open('site/data/edition-2026-10-18.json')); b=d['body_html']
+for o,n in [
+("<b>5. Orchard Park.</b> Congress, 23rd District: Republican Nick Langworthy, the incumbent, against Democrat Aaron Gies. State Senate","<b>5. Orchard Park.</b> State Senate"),
+("The same Congress, State Senate and Assembly races as Dunkirk.","The same State Senate and Assembly races as Dunkirk."),
+("<b>NY-23, Dunkirk.</b>","<b>NY-23, Orchard Park, Dunkirk and Fredonia.</b>"),
+("winning four of six Republican-held races that are within the polls' margin of error.","winning four of the six Republican-held toss-ups."),
+("The justices serve 14-year terms. ",""),
+("Democrat Nate McMurray, who ran for Congress in 2018 and 2020.","Democrat Nate McMurray."),
+("Saturday: early voting opens, and runs through Nov 1.","Early voting opens Saturday and runs through Nov 1."),
+("Early voting opens Saturday, Oct 24, and runs through Nov 1, and polls are open 6 a.m. to 9 p.m. on Election Day, Nov 3.","Early voting runs from Saturday, Oct 24, through Nov 1; polls are open 6 a.m. to 9 p.m. on Election Day, Nov 3."),
+]:
+    assert b.count(o)==1,o[:60]; b=b.replace(o,n)
+d['body_html']=b
+for p in ['edition-2026-10-18.json','site/data/edition-2026-10-18.json']: json.dump(d,open(p,'w'),ensure_ascii=False,indent=1)
+print('fixed')
