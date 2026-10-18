@@ -1,13 +1,15 @@
 {
- "updated": "2026-10-18T16:47:25Z",
+ "updated": "2026-10-18T16:49:26Z",
  "week": 6,
  "games": {
   "1": {
-   "state": "in",
-   "away": 31,
+   "state": "post",
+   "away": 34,
    "home": 31,
-   "detail": "0:47 - 4th",
-   "line": "Tied 31–31 · 0:47 - 4th"
+   "detail": "Final",
+   "winner": "Texans",
+   "score": "34–31",
+   "line": "Final · Texans 34–31"
   },
   "2": {
    "state": "pre",
