@@ -17,40 +17,28 @@
   {
    "order": 1,
    "headline": "Democrats are favored to take the House",
-   "detail": "Generic ballot D+8.9 (Silver Bulletin, Oct 16); RealClearPolling D+8.0. Cook moved 11 more House races toward Democrats on Oct 16, on top of 18 the week before; it counts 21 toss-ups and its latest published projection (Oct 9) is a Democratic gain of 9–19 seats. New below: the four Pennsylvania seats that will tell you early on election night."
+   "detail": "Cook, the nonpartisan rater, expects them to gain 9 to 19 seats."
   },
   {
    "order": 2,
-   "headline": "The Senate is a coin flip tilting Democratic — and the holds are not free",
-   "detail": "Dems need net +4: hold Michigan and Minnesota (both within 3) and win four of six GOP-held toss-ups — Maine, Ohio, Texas, Iowa, Kansas, Alaska. Averages have the Democrat ahead in five, but Iowa is down to Turek +0.6 and Kansas sits at Marshall +0.3. Lose a hold and it takes five pickups. Markets put a Democratic Senate at 62–65%."
+   "headline": "The Senate is close, tilting Democratic",
+   "detail": "Democrats lead or are tied in all six Republican seats they are chasing and are well ahead in North Carolina, but they also have to keep Michigan and Minnesota."
   },
   {
    "order": 3,
-   "headline": "Trump is deeply underwater",
-   "detail": "Net approval −21 (RealClearPolling) to −22 (Silver Bulletin). This week's polls run from −13 (Rasmussen) to −28 (Fox, AP-NORC); Pew has approval at 30%."
+   "headline": "Trump is deeply unpopular",
+   "detail": "Presidents this far underwater usually lose seats in a midterm."
   },
   {
    "order": 4,
-   "headline": "Hochul is comfortably ahead in New York",
-   "detail": "Up 11–12 on Blakeman (Marist, Emerson) and 9 in Siena's last poll. One small text-message poll last week had it at 3; treat it as an outlier until a major pollster agrees. No new statewide poll this week."
-  },
-  {
-   "order": 5,
-   "headline": "Buffalo and Long Island House seats are settled; NY-17 isn't",
-   "detail": "Cook: NY-26 (Kennedy) Solid D, NY-01 (LaLota) Solid R, NY-04 (Gillen) Likely D. Lawler vs Conley in the Hudson Valley is the state's only toss-up: Conley 48–46 in the one independent poll. Cook also moved the open North Country seat, NY-21, from Likely R to Lean R on Oct 16."
-  },
-  {
-   "order": 6,
-   "headline": "Your ballot: five towns, one box at the bottom",
-   "detail": "North Tonawanda, Orchard Park, Scottsville, Dunkirk and Fredonia — Congress, state legislature, county seats and the one proposition (NT's $18M community center). Early voting opens Saturday, Oct 24, and runs through Nov 1."
+   "headline": "Hochul leads comfortably in New York",
+   "detail": "Hochul (D) is ahead of Blakeman (R) by about 12 points; NY-17 in the Hudson Valley is the state's only close House race."
   }
  ],
  "what_changed": [
-  "Iowa got closer: Josh Turek (D) now leads Ashley Hinson (R) by less than a point. A Republican-leaning poll (Trafalgar) had Hinson up 2; the average narrowed from +0.9 to +0.6. Iowa and Kansas are now the two closest races in the country.",
-  "Minnesota is holding: Peggy Flanagan (D) leads Michele Tafoya (R) by about 3, and every October poll has her ahead. The average slipped a hair, from +2.9 to +2.8.",
-  "No new polls in Maine, Ohio, Texas, Kansas, Alaska or Michigan. Those averages didn't move.",
-  "New on the page: the four Pennsylvania House seats the Times says will tell us early how the night is going (under House seats we watch).",
-  "Nationally, nothing moved: generic ballot D+8.9, Trump net approval about −21, Senate odds 64%."
+  "Iowa is now tied: Josh Turek (D) and Ashley Hinson (R) are less than a point apart. A Republican-leaning poll (Trafalgar) had Hinson up 2; Iowa and Kansas are now the two closest races in the country.",
+  "Minnesota is holding: Peggy Flanagan (D) leads Michele Tafoya (R) by about 3 points. Every October poll has her ahead.",
+  "No new polls in Maine, Ohio, Texas, Kansas, Alaska or Michigan."
  ],
  "generic_ballot": [
   {
@@ -470,8 +458,9 @@
    "hochul": 50.8,
    "blakeman": 38.8,
    "margin": 12.0,
-   "note": "Aggregate",
-   "url": "https://www.pollsmax.com/governor/new-york/"
+   "note": null,
+   "url": "https://www.pollsmax.com/governor/new-york/",
+   "headline": true
   },
   {
    "poll": "PoliAgg average (57 polls)",
@@ -480,7 +469,7 @@
    "hochul": 52.0,
    "blakeman": 40.1,
    "margin": 11.6,
-   "note": "Aggregate polling average D+11.6; the page's headline D+21 is a model projection, not the poll average. Generated Oct 15.",
+   "note": null,
    "url": "https://poliagg.com/race/us-governor-2026-ny/"
   }
  ],
@@ -613,27 +602,27 @@
    "county": "Niagara",
    "items": [
     {
-     "office": "NY-26",
+     "office": "Congress (District 26)",
      "race": "Kennedy (D, inc.) vs Hannon (R)",
      "url": "https://theballotbrief.com/zip/14120"
     },
     {
-     "office": "SD-62",
+     "office": "State Senate (District 62)",
      "race": "Ortt (R, inc.) vs Arida (D)",
      "url": "https://theballotbrief.com/zip/14120"
     },
     {
-     "office": "AD-140 / 145",
+     "office": "Assembly (Districts 140, 145)",
      "race": "Conrad (D, inc.) vs Faisal (R) · open: Wydysh (R) vs McMurray (D)",
      "url": "https://theballotbrief.com/state/new-york/niagara-county"
     },
     {
-     "office": "County Leg. 7–9",
+     "office": "County Legislature (Districts 7–9)",
      "race": "Gooch (R, inc.) vs Mooradian (D) · Andres (R, inc.) vs Kennedy (D) · Bradt (R, inc.) vs Osborn (D)",
      "url": "https://theballotbrief.com/state/new-york/niagara-county"
     },
     {
-     "office": "Prop: $18M community center",
+     "office": "Proposition: $18M community center",
      "race": "Yes/No on an $18M community center at the Keller Building, paid by a special property tax of about $0.84 per $1,000 assessed before grants",
      "url": "https://www.wkbw.com/niagara-county/an-investment-north-tonawanda-to-vote-on-18m-community-center-project"
     }
@@ -648,17 +637,17 @@
    "county": "Erie",
    "items": [
     {
-     "office": "NY-23",
+     "office": "Congress (District 23)",
      "race": "Langworthy (R, inc.) vs Gies (D)",
      "url": "https://theballotbrief.com/zip/14127"
     },
     {
-     "office": "SD-60",
+     "office": "State Senate (District 60)",
      "race": "Gallivan (R, inc.) unopposed",
      "url": "https://theballotbrief.com/state/new-york/erie-county"
     },
     {
-     "office": "AD-142 / 147",
+     "office": "Assembly (Districts 142, 147)",
      "race": "Burke (D, inc.) vs Dickson (R) · DiPietro (R, inc.) unopposed",
      "url": "https://theballotbrief.com/state/new-york/erie-county"
     },
@@ -678,17 +667,17 @@
    "county": "Monroe",
    "items": [
     {
-     "office": "NY-25",
+     "office": "Congress (District 25)",
      "race": "Morelle (D, inc.) vs McIntyre (R)",
      "url": "https://theballotbrief.com/zip/14546"
     },
     {
-     "office": "SD-54",
+     "office": "State Senate (District 54)",
      "race": "Helming (R, inc.) vs Mills (D)",
      "url": "https://theballotbrief.com/state/new-york/monroe-county"
     },
     {
-     "office": "AD-139",
+     "office": "Assembly (District 139)",
      "race": "Hawley (R, inc.) vs Wolcott (D)",
      "url": "https://theballotbrief.com/state/new-york/monroe-county"
     },
@@ -708,23 +697,23 @@
    "county": "Chautauqua",
    "items": [
     {
-     "office": "NY-23",
+     "office": "Congress (District 23)",
      "race": "Langworthy (R, inc.) vs Gies (D)",
      "url": "https://theballotbrief.com/zip/14048"
     },
     {
-     "office": "SD-57",
+     "office": "State Senate (District 57)",
      "race": "Borrello (R, inc.) vs Guite-Williams (D)",
      "url": "https://theballotbrief.com/zip/14048"
     },
     {
-     "office": "AD-150",
+     "office": "Assembly (District 150)",
      "race": "Molitor (R, inc.) vs Carle (D)",
      "url": "https://theballotbrief.com/zip/14048"
     },
     {
      "office": "County",
-     "race": "Leg. LD-1 Buchanan (D, inc.) vs Garza (R); LD-2 Bankoski (D) unopp. · Family Court: Sullivan (R, inc.) vs Moss (D) · Sheriff Quattrone (R) unopp. No propositions.",
+     "race": "Legislature District 1: Buchanan (D, inc.) vs Garza (R); District 2: Bankoski (D) unopp. · Family Court: Sullivan (R, inc.) vs Moss (D) · Sheriff Quattrone (R) unopp. No propositions.",
      "url": "https://theballotbrief.com/state/new-york/chautauqua-county"
     }
    ],
@@ -738,12 +727,12 @@
    "county": "Chautauqua",
    "items": [
     {
-     "office": "NY-23 · SD-57 · AD-150",
+     "office": "Congress, State Senate, Assembly",
      "race": "Same as Dunkirk: Langworthy (R, inc.) vs Gies (D) · Borrello (R, inc.) vs Guite-Williams (D) · Molitor (R, inc.) vs Carle (D)",
      "url": "https://theballotbrief.com/zip/14063"
     },
     {
-     "office": "County Leg. LD-3 / 4",
+     "office": "County Legislature (Districts 3, 4)",
      "race": "Scudder (R, inc.) vs Lee (D) · Lewis (D) unopposed",
      "url": "https://theballotbrief.com/state/new-york/chautauqua-county"
     },
@@ -773,7 +762,7 @@
    "race": "DiNapoli (D, inc.) vs Hernandez (R)"
   },
   {
-   "office": "Supreme Court, 8th District (vote for 4; Erie, Niagara, Chautauqua)",
+   "office": "State Supreme Court, 8th District (vote for 4; Erie, Niagara, Chautauqua)",
    "race": "Bucki (D/WFP) · Joynt (D/WFP) · Amodeo (D+R/WFP) · Richardson (D+R/Con) · Tripi (R/Con) · Hickey (R/Con) · Vario (Con). Amodeo and Richardson are cross-endorsed by both parties, so the contest is Bucki and Joynt vs Tripi and Hickey for the other two seats.",
    "url": "https://theballotbrief.com/state/new-york/niagara-county"
   }
@@ -806,24 +795,24 @@
    "text": "The share of adults who approve of the president minus the share who disapprove. Negative means more people disapprove. Presidents with net approval this low usually lose seats in a midterm."
   },
   {
-   "term": "Toss Up, Lean, Likely, Solid",
-   "text": "Race ratings from the Cook Political Report, a nonpartisan handicapper. Toss Up means either side could win; Lean is a slight edge; Likely a clear one; Solid is not in doubt. Ratings move when polls or candidates change. Sabato's Crystal Ball (University of Virginia) is a similar nonpartisan handicapper; when it differs from Cook, the race note says so."
+   "term": "Toss-up, Lean, Likely, Solid",
+   "text": "Race ratings from the Cook Political Report, a nonpartisan handicapper. Toss-up means either side could win; Lean is a slight edge; Likely a clear one; Solid is not in doubt. Ratings move when polls or candidates change. Sabato's Crystal Ball (University of Virginia) is a similar nonpartisan handicapper; when it differs from Cook, the race's polls note says so."
   },
   {
    "term": "Bellwether",
-   "text": "A race whose result tends to show how the whole night is going. The four Pennsylvania seats listed under House seats we watch are bellwethers because Pennsylvania counts fast and they cover every kind of swing district — suburbs, a Latino-heavy valley, a blue-collar city, a conservative capital region. Flip all four and it is a wave; flip none and the polls were wrong; two or three is the expected night."
+   "text": "A race whose result tends to show how the whole night is going. This year's are the four Pennsylvania seats on the House tab."
   },
   {
    "term": "Odds of a Democratic Senate",
-   "text": "Prediction markets (Polymarket, Kalshi) let people bet real money on outcomes; the price is the crowd's probability. 64% means the market thinks Democrats win the Senate about two times in three. It is a forecast, not a poll."
+   "text": "Prediction markets (Polymarket, Kalshi) let people bet real money on outcomes; the price is the crowd's probability. Around 65% means the market thinks Democrats win the Senate about two times in three. It is a forecast, not a poll."
   },
   {
-   "term": "Why +4",
-   "text": "The Senate is 53 Republicans to 47 Democrats (counting two independents who vote with Democrats). Democrats need a net gain of four seats for 51. That means holding every seat they have now — Michigan and Minnesota are the close ones, Georgia and New Hampshire less so — and winning four of the six Republican-held toss-ups: Maine, Ohio, Texas, Iowa, Kansas, Alaska. A \"hold\" is keeping a seat you already have; a \"pickup\" is taking one from the other party. Lose a hold and the number becomes five pickups."
+   "term": "Hold, pickup",
+   "text": "A \"hold\" is keeping a seat your party already has; a \"pickup\" (or \"flip\") is taking one from the other party. Democrats need four more pickups than losses to reach 51 seats."
   },
   {
    "term": "Average vs. one poll",
-   "text": "The headline number for each Senate race is RealClearPolling's average of recent polls, which is steadier than any single survey. The note under it lists the latest individual polls. \"Republican-leaning\" or \"Democratic-leaning\" after a pollster means the firm works for that party or has a record of tilting that way — weigh those lighter."
+   "text": "The headline number for each Senate race is RealClearPolling's average of recent polls, which is steadier than any single survey. \"Show the polls\" under each race lists the latest individual polls. \"Republican-leaning\" or \"Democratic-leaning\" after a pollster means the firm works for that party or has a record of tilting that way — weigh those lighter."
   },
   {
    "term": "Margin of error",
@@ -831,32 +820,13 @@
   },
   {
    "term": "The bars",
-   "text": "In the Senate section the bar runs from the middle: blue to the left for a Democratic lead, red to the right for a Republican one, longer for a bigger lead. In the governor section the two bars run toward each other and the gap is undecided voters."
+   "text": "Each bar runs from the middle: blue to the left for a Democratic lead, red to the right for a Republican one. Longer means a bigger lead. A race with no bar has no recent public poll."
   }
  ],
  "outlook": {
   "title": "What could still change this",
-  "as_of": "2026-10-15",
-  "lede": "The October surprise already happened, in February: the Iran war. It is the main reason the president's net approval sits around −20 instead of the −10 range he held at New Year's, and nothing in the next three weeks is likely to swing the national mood that far again. So the question is not whether a shock changes the House — at D+9 that would take a very large one — but whether anything tips the four to six Senate seats sitting inside the margin of error.",
-  "items": [
-   {
-    "what": "The war itself",
-    "why": "A ceasefire, a major casualty event or an escalation is the one thing that could move national numbers several points in either direction. Everything else is small by comparison."
-   },
-   {
-    "what": "Prices at the pump",
-    "why": "Gas is the number voters feel directly. A spike in the last two weeks hurts the party in power; a drop helps a little."
-   },
-   {
-    "what": "A candidate moment",
-    "why": "Texas and Maine are within a couple of points, so one bad week for a candidate — a scandal, a debate stumble — can decide a seat."
-   },
-   {
-    "what": "The early vote",
-    "why": "Early voting starts Oct 24. The first week's turnout in the toss-up states is the first real signal; prediction markets react to it before the polls do."
-   }
-  ],
-  "noise": "What usually matters less than it looks: a late rally blitz (it fires up both bases) and any single surprising poll. Ignore it unless an average moves.",
+  "as_of": "2026-10-18",
+  "text": "The national mood has been set since the Iran war began in February. What could still tip the close Senate races: a ceasefire or escalation, a gas-price spike, a bad week for a candidate in Texas or Maine, or the first week of early-vote turnout. A late rally or one surprising poll usually matters less than it looks.",
   "urls": [
    {
     "label": "Trump approval trend",
@@ -873,13 +843,13 @@
   "items": [
    "A lead of 2 points is a tie. A lead of 5 is a real edge, not a lock. Polls miss by 3–5 points in a normal year.",
    "One poll means almost nothing. The averages on this page are what to watch, and they move slowly on purpose.",
-   "Headlines say \"Democrats worry\" because worry gets clicks. Check it against the numbers below before you believe it.",
+   "Headlines say \"Democrats worry\" because worry gets clicks. Check it against the numbers here before you believe it.",
    "What would actually be bad news: the averages moving 3 or more points toward Republicans across several states at once. One state wobbling is noise.",
-   "The Senate may not be known on election night (see Election night, below). A slow count is not a bad count."
+   "The Senate may not be known on election night (see Election night on the My ballot tab). A slow count is not a bad count."
   ]
  },
  "election_night": {
-  "title": "What to expect on election night",
+  "title": "Election night",
   "intro": "Polls close in waves; counts finish on each state's own schedule. Here is what is normal, so a slow result doesn't read as a bad one.",
   "items": [
    {
@@ -888,7 +858,7 @@
    },
    {
     "when": "The early tell (around 11 p.m.)",
-    "what": "Pennsylvania counts fast, and four of its House seats cover every fault line in the country: PA-1 (Fitzpatrick, Philadelphia suburbs), PA-7 (Mackenzie, Lehigh Valley and Latino Allentown), PA-8 (Bresnahan, Scranton), PA-10 (Perry, central PA). The Times' rule of thumb: Democrats flip all four, it's a wave; flip none, the polls were wrong. Two or three is the expected night. Trump's approval in the state is 34% (Times/Inquirer/Siena)."
+    "what": "The four Pennsylvania seats on the House tab count fast and are the first real read on the House. Trump's approval in the state is 34% (Times/Inquirer/Siena)."
    },
    {
     "when": "Late night",
@@ -918,7 +888,7 @@
    }
   ]
  },
- "senate_intro": "Democrats need a net gain of four: hold Michigan and Minnesota (Democratic-held, both close) and win four of the six Republican-held toss-ups. Lose a hold and it takes five.",
+ "senate_intro": "Republicans hold 53 seats, Democrats 47. Democrats need a net gain of 4 for control: keep every seat they have and flip four Republican ones.",
  "pa_bellwethers": [
   {
    "district": "PA-1",
