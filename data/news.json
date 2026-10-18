@@ -1,28 +1,476 @@
 {
- "generated_utc": "2026-10-17T13:37Z",
+ "generated_utc": "2026-10-18T11:00Z",
  "window_hours": 48,
  "sections": {
   "national": [
    {
-    "title": "Protests erupt in France against living costs, support of students",
+    "title": "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting",
+    "link": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-18T10:53Z",
+    "summary": "Around 1,800 people were arrested after nationwide protests saw outbreaks of violence and vandalism.",
+    "source": "BBC World"
+   },
+   {
+    "title": "More than 1,800 arrested in France as protester violence erupts",
     "link": "https://www.cbsnews.com/news/protests-france-rising-living-costs-students/",
-    "published": "2026-10-17T13:13Z",
+    "published": "2026-10-18T10:25Z",
     "summary": "Police used tear gas to push back people wearing hoods and masks and throwing fireworks and other objects at officers in the Place de la R\u00e9publique, northeast of the Paris city center.",
     "source": "CBS News"
    },
    {
-    "title": "Pope to be discharged days after lung cancer surgery",
-    "link": "https://www.bbc.co.uk/news/articles/c5x2vkddrkrko?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T12:37Z",
-    "summary": "The pontiff will give the traditional Angelus prayer and blessing in St Peter's Square on Sunday.",
+    "title": "Reported attacks on ships around Hormuz reach record highs",
+    "link": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-yemen-houthis-saudi-arabia/",
+    "published": "2026-10-18T09:45Z",
+    "summary": "Data from a monitoring agency shows attacks around the Strait of Hormuz at a record high, as two more vessels report being attacked on Friday.",
+    "source": "CBS News"
+   },
+   {
+    "title": "With an ad aimed at Trump, this Republican exposed GOP angst about Latino voters",
+    "link": "https://www.npr.org/2026/10/18/nx-s1-5978762/maria-elvira-salazar-immigration-trump",
+    "published": "2026-10-18T09:00Z",
+    "summary": "Rep. Mar\u00eda Elvira Salazar filmed an ad warning the president that he's \"gone too far\" on immigration. It reflected concern among some Republicans that their gains with Latino voters could be at risk.",
+    "source": "NPR News"
+   },
+   {
+    "title": "With an ad aimed at Trump, this Republican exposed GOP angst about Latino voters",
+    "link": "https://www.npr.org/2026/10/18/nx-s1-5978762/maria-elvira-salazar-immigration-trump",
+    "published": "2026-10-18T09:00Z",
+    "summary": "Rep. Mar\u00eda Elvira Salazar filmed an ad warning the president that he's \"gone too far\" on immigration. It reflected concern among some Republicans that their gains with Latino voters could be at risk.",
+    "source": "NPR Politics"
+   },
+   {
+    "title": "Several dead or injured in major fire at Canada military base",
+    "link": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-18T08:52Z",
+    "summary": "Officials have not given a cause or death toll, citing the \"very active and delicate\" situation at Canadian Forces Base Wainwright.",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "Several dead or injured in major fire at Canada military base",
+    "link": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-18T08:52Z",
+    "summary": "Officials have not given a cause or death toll, citing the \"very active and delicate\" situation at Canadian Forces Base Wainwright.",
     "source": "BBC World"
    },
    {
-    "title": "Hero bystander, teacher praised for saving lives in school shooting",
-    "link": "https://www.cbsnews.com/news/oregon-school-shooter-bystander-identified-silver-rail-elementary/",
-    "published": "2026-10-17T12:17Z",
-    "summary": "The bystander who pursued and killed the Silver Rail Elementary School shooter is thanking first responders and the community for their support.",
+    "title": "Major fire breaks out in Alberta after deadly incident at military base",
+    "link": "https://www.npr.org/2026/10/18/nx-s1-6007276/fire-alberta-deadly-canada-military-base",
+    "published": "2026-10-18T07:56Z",
+    "summary": "Canada's defense minister said Saturday that people were killed and injured in an incident at a military base in Alberta that caused a major fire.",
+    "source": "NPR News"
+   },
+   {
+    "title": "Fire breaks out after deadly incident at Canadian military base, officials say",
+    "link": "https://www.cbsnews.com/news/deadly-incident-fire-alberta-canada-military-base-cfb-wainwright/",
+    "published": "2026-10-18T06:55Z",
+    "summary": "Canada's defense minister said Saturday that people were killed and injured in an incident at a military base in Alberta that caused a major fire.",
     "source": "CBS News"
+   },
+   {
+    "title": "Elusive murder suspect falls victim to detectives' chewing gum sting",
+    "link": "https://www.cbsnews.com/news/judy-weaver-susan-vesey-washington-cold-case-murders-mitchell-gaff-chewing-gum-dna-48-hours/",
+    "published": "2026-10-18T06:10Z",
+    "summary": "A detective from Everett, Washington, linked two cold case killings to a known predator. Needing fresh DNA to charge him, she helped devise a clever undercover sting using chewing gum to crack the case.",
+    "source": "CBS News"
+   },
+   {
+    "title": "\"48 Hours\" show schedule",
+    "link": "https://www.cbsnews.com/48-hours/episode-schedule/",
+    "published": "2026-10-18T06:10Z",
+    "summary": "\"48 Hours\" uncovers the narrative behind true crime cases with unmatched reporting and suspense.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Iowa son fights to overturn his father's conviction in mother's murder",
+    "link": "https://www.cbsnews.com/news/amy-mullis-todd-mullis-iowa-corn-rake-witness-48-hours/",
+    "published": "2026-10-18T05:05Z",
+    "summary": "Trysten Mullis was 13 when he found his mother Amy Mullis impaled with a corn rake at the family's Iowa farm. In an exclusive interview, the now 21-year-old is speaking out about what he says he witnessed, determined to overturn his father Todd's murder conviction.",
+    "source": "CBS News"
+   },
+   {
+    "title": "A wave of homemade, synthetic drugs sweeps US and deepens crisis",
+    "link": "https://www.bbc.co.uk/news/articles/cmx2wvyv5j17o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-18T05:04Z",
+    "summary": "BBC News hears from users, dealers, prison and recovery workers as the country battles with a deadly new drug epidemic.",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "A wave of homemade, synthetic drugs sweeps US and deepens crisis",
+    "link": "https://www.bbc.co.uk/news/articles/cmx2wvyv5j17o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-18T05:04Z",
+    "summary": "BBC News hears from users, dealers, prison and recovery workers as the country battles with a deadly new drug epidemic.",
+    "source": "BBC World"
+   },
+   {
+    "title": "The Corn Rake Witness",
+    "link": "https://www.cbsnews.com/video/the-corn-rake-witness/",
+    "published": "2026-10-18T05:00Z",
+    "summary": "For the first time, a key witness in the corn rake murder case speaks out to say his father is innocent. \"48 Hours\" correspondent Erin Moriarty reports.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Watch: Highlights from Vance's CBS News town hall",
+    "link": "https://www.cbsnews.com/video/watch-highlights-from-vances-cbs-news-town-hall/",
+    "published": "2026-10-18T04:17Z",
+    "summary": "Vice President JD Vance took voter questions on topics ranging from the war in Iran to gas prices and immigration in a town hall hosted by CBS News that aired Saturday night. Watch the highlights.",
+    "source": "CBS News"
+   },
+   {
+    "title": "7 highlights from JD Vance's CBS News town hall",
+    "link": "https://www.cbsnews.com/news/jd-vance-cbs-town-hall-highlights-michigan/",
+    "published": "2026-10-18T04:01Z",
+    "summary": "In an hour-long town hall hosted by CBS News, Vice President JD Vance argued the Trump administration's handling of the economy and Iran will pay dividends in the future.",
+    "source": "CBS News"
+   },
+   {
+    "title": "A Town Hall with JD Vance",
+    "link": "https://www.cbsnews.com/video/101826-things-that-matter/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "Vice President JD Vance discusses ICE, the economy, corruption, midterms and more in this town hall moderated by Tony Dokoupil.",
+    "source": "CBS News"
+   },
+   {
+    "title": "This week on \"Sunday Morning\" (Oct. 18)",
+    "link": "https://www.cbsnews.com/news/this-week-on-sunday-morning-oct-18-2026/",
+    "published": "2026-10-18T03:29Z",
+    "summary": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Alligator kills 71-year-old man fishing at pond in Florida",
+    "link": "https://www.cbsnews.com/news/alligator-kills-man-fishing-at-pond-winter-garden-florida/",
+    "published": "2026-10-18T02:53Z",
+    "summary": "The man was dragged into a pond and killed by the alligator, according to authorities.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Trump waives tariffs on largest buyers of Russian oil",
+    "link": "https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/",
+    "published": "2026-10-18T02:49Z",
+    "summary": "President Trump prevented some new sanctions on Russia and hefty tariffs on large-scale buyers of Russian oil from taking effect late Friday, as he seeks to ease prices by tapping Russian energy.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Florida man killed by 12-foot alligator near Orlando while fishing",
+    "link": "https://www.cbsnews.com/video/florida-man-killed-by-12-foot-alligator-near-orlando-while-fishing/",
+    "published": "2026-10-18T02:49Z",
+    "summary": "A 71-year-old man was killed by a 12-foot alligator near Orlando, Florida. Witnesses say he was fishing.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Ukraine still can't intercept drones due to Starlink issues, Zelenskyy says",
+    "link": "https://www.cbsnews.com/news/ukraine-trump-zelenskyy-starlink-russia-war-drones/",
+    "published": "2026-10-18T02:48Z",
+    "summary": "The Ukrainian president said Starlink issues are hampering his country's defensive efforts against Russian drones.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Replenishing U.S. missile stockpile after Iran war will take at least 4 years, sources say",
+    "link": "https://www.cbsnews.com/video/replenishing-us-missile-stockpile-after-iran-war-will-take-at-least-4-years-sources-say/",
+    "published": "2026-10-18T02:47Z",
+    "summary": "Just months before President Trump's war on Iran began, the Pentagon was warned of critically low missile defenses and continues to face challenges. Charlie D'Agata reports.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Pope's surgeon details operating on \"ideal patient\"",
+    "link": "https://www.cbsnews.com/news/pope-leo-surgeon-details-operation-lung-cancer/",
+    "published": "2026-10-18T02:47Z",
+    "summary": "Pope Leo XIV was undergoing an examination for another reason when doctors discovered a tumor on his right lung, his doctor said.",
+    "source": "CBS News"
+   },
+   {
+    "title": "In Kentucky campaign stop, Trump says he \"can do stuff that is unbelievable\"",
+    "link": "https://www.cbsnews.com/news/trump-kentucky-midterm-campaign-stop/",
+    "published": "2026-10-18T02:44Z",
+    "summary": "President Trump spoke in the city of Highland Heights to boost Republican candidates, including Ed Gallrein\u200b for the U.S. House.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Oregon school shooter ID'd, used shotgun bought by mother, sources say",
+    "link": "https://www.cbsnews.com/news/oregon-school-shooter-identified-silver-rail-elementary/",
+    "published": "2026-10-18T02:44Z",
+    "summary": "The suspect, a former student at the school, fired as many as 15 rounds during the shooting, police said, and another 44 rounds of ammunition were located at the scene.",
+    "source": "CBS News"
+   },
+   {
+    "title": "New nationwide protests rock France as buildings looted, burned",
+    "link": "https://www.cbsnews.com/video/new-nationwide-protests-rock-france-as-buildings-looted-burned/",
+    "published": "2026-10-18T02:41Z",
+    "summary": "A new wave of nationwide protests is hitting France as grievances expand beyond student concerns to encompass inequality and affordability.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Trump visits Kentucky for 13th rally in the last month as midterms approach",
+    "link": "https://www.cbsnews.com/video/trump-visits-kentucky-for-13th-rally-in-the-last-month-as-midterms-approach/",
+    "published": "2026-10-18T02:41Z",
+    "summary": "President Trump rallied in Kentucky ahead of the midterms as \"no kings\" protests, encouraging early voting against his party, continue. Taurean Small reports.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Zelenskyy says Trump's decision to waive new sanctions on Russia \"seems wrong\"",
+    "link": "https://www.cbsnews.com/video/zelenskyy-says-trumps-decision-to-waive-new-sanctions-on-russia-seems-wrong/",
+    "published": "2026-10-18T02:38Z",
+    "summary": "President Trump waived virtually all new Russia sanctions he had signed as strikes against Ukraine continue, drawing backlash. Ramy Inocencio has more.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Boy among 2 killed after truck drives onto Wichita soccer field",
+    "link": "https://www.cbsnews.com/news/driver-soccer-field-wichita-kansas/",
+    "published": "2026-10-18T02:37Z",
+    "summary": "A 6-year-old boy and a 35-year-old man were killed during a soccer game at Stryker Soccer Complex in Wichita, Kansas, according to police.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Pope Leo discharged from Rome hospital ahead of schedule after successful lung surgery",
+    "link": "https://www.cbsnews.com/video/pope-leo-discharged-from-rome-hospital-ahead-of-schedule-after-successful-lung-surgery/",
+    "published": "2026-10-18T02:35Z",
+    "summary": "Pope Leo was discharged from a Rome hospital ahead of schedule on Saturday following the lung surgery that led to a cancer diagnosis. Chris Livesay has the story.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Man who took out Oregon school shooter called his mom after: \"I couldn't save them all\"",
+    "link": "https://www.cbsnews.com/video/man-who-took-out-oregon-school-shooter-called-his-mom-after-i-couldnt-save-them-all/",
+    "published": "2026-10-18T02:33Z",
+    "summary": "The civilian who took out the 16-year-old Oregon elementary school shooter called his mother after the incident. Ash-har Quraishi has the details.",
+    "source": "CBS News"
+   },
+   {
+    "title": "California homeowners describe terrifying moments when Norte fire spread, forced evacuations",
+    "link": "https://www.cbsnews.com/video/california-homeowners-describe-terrifying-moments-when-norte-fire-spread-forced-evacuations/",
+    "published": "2026-10-18T02:26Z",
+    "summary": "Firefighters are still working to contain the Norte and Bryson fires in California, as many homeowners are forced to evacuate. Akiko Fujita reports, and Andrew Kozak has the forecast.",
+    "source": "CBS News"
+   },
+   {
+    "title": "At least 2 killed, including child, after truck plows through children's soccer game in Wichita",
+    "link": "https://www.cbsnews.com/video/at-least-2-killed-including-child-after-truck-plows-through-childrens-soccer-game-in-wichita/",
+    "published": "2026-10-18T02:21Z",
+    "summary": "Police say at least one adult and one child were killed after a pickup truck plowed through a children's soccer game in Wichita, Kansas.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Watch: JD Vance on whether he will run for president in 2028",
+    "link": "https://www.cbsnews.com/video/watch-jd-vance-on-whether-he-will-run-for-president-in-2028/",
+    "published": "2026-10-18T02:11Z",
+    "summary": "Vice President Vance was questioned on whether he plans to run for president in the upcoming 2028 election during a town hall hosted by CBS News.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+    "link": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-18T01:10Z",
+    "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+    "link": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-18T01:10Z",
+    "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+    "source": "BBC World"
+   },
+   {
+    "title": "The Detective and the Chewing Gum Sting",
+    "link": "https://www.cbsnews.com/video/the-detective-and-the-chewing-gum-sting/",
+    "published": "2026-10-18T01:00Z",
+    "summary": "How a clever detective caught an elusive killer with a stick of gum. \"48 Hours\" correspondent Peter Van Sant reports.",
+    "source": "CBS News"
+   },
+   {
+    "title": "Three takeaways from Elon Musk's latest political donations",
+    "link": "https://www.bbc.co.uk/news/articles/ckx2dgq8jljjo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-18T00:41Z",
+    "summary": "New filings show the world's richest person spent this summer again trying to help Republicans win office, with most of his focus on one candidate.",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "European diplomats attacked by Israeli settlers in West Bank",
+    "link": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-17T23:52Z",
+    "summary": "The Israeli military condemns the violence but the prime minister's office says it is part of a \"smear\" campaign.",
+    "source": "BBC World"
+   },
+   {
+    "title": "Oregon governor Tina Kotek reacts to Silver Rail Elementary school shooting",
+    "link": "https://www.npr.org/2026/10/17/nx-s1-6005814/oregon-governor-tina-kotek-reacts-to-silver-rail-elementary-school-shooting",
+    "published": "2026-10-17T22:45Z",
+    "summary": "NPR's Joel Rose talks with Oregon Governor Tina Kotek about the shooting at Silver Rail Elementary in Bend, Oregon.",
+    "source": "NPR News"
+   },
+   {
+    "title": "Oregon governor Tina Kotek reacts to Silver Rail Elementary school shooting",
+    "link": "https://www.npr.org/2026/10/17/nx-s1-6005814/oregon-governor-tina-kotek-reacts-to-silver-rail-elementary-school-shooting",
+    "published": "2026-10-17T22:45Z",
+    "summary": "NPR's Joel Rose talks with Oregon Governor Tina Kotek about the shooting at Silver Rail Elementary in Bend, Oregon.",
+    "source": "NPR National"
+   },
+   {
+    "title": "Photos show luxury boat with 50m pool and water slides near Kim Jong Un's summer retreat",
+    "link": "https://www.bbc.co.uk/news/articles/cmy4xnyyg1lyo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-17T22:09Z",
+    "summary": "Satellite images give clues about how Kim spends his holidays - something far out of reach for most North Koreans.",
+    "source": "BBC World"
+   },
+   {
+    "title": "How day of protests unfolded as disorder breaks out across France",
+    "link": "https://www.bbc.co.uk/news/videos/cwz0vy770gpzo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-17T21:33Z",
+    "summary": "Demonstrations across the country turned violent, with cars and buildings set alight and shops ransacked.",
+    "source": "BBC World"
+   },
+   {
+    "title": "The Republican governor candidates walking back some of their abortion stances",
+    "link": "https://www.pbs.org/newshour/politics/the-republican-governor-candidates-walking-back-some-of-their-abortion-stances",
+    "published": "2026-10-17T21:23Z",
+    "summary": "The candidates' retreat suggests that, even as reproductive rights fade from the national spotlight and polls show voters are far more likely to prioritize cost-of-living concerns, the political ramifications of pushing for new abortion restrictions remain substantial.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Iowa's vote in midterms may help determine balance of power in Congress",
+    "link": "https://www.npr.org/2026/10/17/nx-s1-6003962/iowas-vote-in-midterms-may-help-determine-balance-of-power-in-congress",
+    "published": "2026-10-17T21:18Z",
+    "summary": "Iowa Public Radio's Natalie Krebs reports on how Iowa - a state that reliably votes Republican for president - has some competitive races for Republicans in November, which could help determine the balance of power in Congress.",
+    "source": "NPR National"
+   },
+   {
+    "title": "President Trump's widening stamp on D.C. landmarks",
+    "link": "https://www.npr.org/2026/10/17/nx-s1-6001826/president-trumps-widening-stamp-on-d-c-landmarks",
+    "published": "2026-10-17T21:18Z",
+    "summary": "NPR's Joel Rose and Rachel Treisman met at East Potomac Golf Links, a golf course that President Trump has ambitions to transform, to discuss the president's widening stamp on D.C. landmarks.",
+    "source": "NPR National"
+   },
+   {
+    "title": "Biking along the Great American Rail-Trail",
+    "link": "https://www.npr.org/2026/10/17/nx-s1-5973071/biking-along-the-great-american-rail-trail",
+    "published": "2026-10-17T21:18Z",
+    "summary": "Organizers hope to connect more than 150 existing rail-trails, greenways and other paths spanning more than 3,700 miles across America. NPR's Joel Rose checks on their progress in western Pennsylvania, West Virginia and Ohio.",
+    "source": "NPR National"
+   },
+   {
+    "title": "How public bathrooms reflect America's inequality",
+    "link": "https://www.npr.org/2026/10/17/nx-s1-5886128/how-public-bathrooms-reflect-americas-inequality",
+    "published": "2026-10-17T21:18Z",
+    "summary": "Public restrooms are scarce in cities across the U.S. It's a topic historian and Temple University professor Bryant Simon writes about in his new book 'For Customers Only: Public Bathrooms and the Making of American Inequality.'",
+    "source": "NPR National"
+   },
+   {
+    "title": "Houthi strikes on Saudi Arabia show the Yemeni rebels' growing strength",
+    "link": "https://www.pbs.org/newshour/world/houthi-strikes-on-saudi-arabia-show-the-yemeni-rebels-growing-strength",
+    "published": "2026-10-17T21:04Z",
+    "summary": "At various times over the last decade, Saudi Arabia, the United Arab Emirates, the United States, Britain and Israel have carried out punishing air raids on the rebels \u2014 only to see them grow even stronger.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Anti-government protesters battle with police in Albania",
+    "link": "https://www.bbc.co.uk/news/articles/crwydey50xeno?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-17T20:53Z",
+    "summary": "There were violent clashes between demonstrators and riot police throughout Saturday in the capital Tirana.",
+    "source": "BBC World"
+   },
+   {
+    "title": "At least 17 dead in crush at Hindu festival event in India",
+    "link": "https://www.bbc.co.uk/news/articles/c820vwq7qg2ko?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-17T19:19Z",
+    "summary": "Many more have been injured at an event in the Indian city of Kolkata to mark a Hindu festival.",
+    "source": "BBC World"
+   },
+   {
+    "title": "Fast-moving California wildfire burns homes as people are ordered to leave",
+    "link": "https://www.bbc.co.uk/news/articles/c6vgjnk8nw2wo?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-17T19:13Z",
+    "summary": "Fanned by the fierce Santa Ana winds, the Norte Fire is one of 13 burning across the state.",
+    "source": "BBC US & Canada"
+   },
+   {
+    "title": "Oregon father is the latest armed civilian to confront a gunman in a U.S. mass shooting",
+    "link": "https://www.pbs.org/newshour/nation/oregon-father-is-the-latest-armed-civilian-to-confront-a-gunman-in-a-u-s-mass-shooting",
+    "published": "2026-10-17T19:07Z",
+    "summary": "The heroic \"good guy with a gun\" who can stop an attack even before law enforcement can arrive has long been a rallying cry by gun rights advocates, arguing that armed citizens can act as a first line of self-defense and public protection.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "America's politically divided Jewish community braces for Israel's elections",
+    "link": "https://www.pbs.org/newshour/politics/americas-politically-divided-jewish-community-braces-for-israels-elections",
+    "published": "2026-10-17T18:41Z",
+    "summary": "Netanyahu's supporters, especially among Orthodox Jews, believe he's protecting a country they love as central to their identity. Many liberal and younger Jewish Americans believe his policies have harmed Israel's global standing.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "No Kings rallies across U.S. urge voters to cast ballots early ahead of midterms",
+    "link": "https://www.pbs.org/newshour/nation/no-kings-rallies-across-u-s-urge-voters-to-cast-ballots-early-ahead-of-midterms",
+    "published": "2026-10-17T18:26Z",
+    "summary": "The hundreds of planned events were being billed as nonpartisan, though they sought to build on nearly two years' worth of No Kings marches and demonstrations by people upset with Trump's presidency.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Zelenskyy urges support for new U.S. sanctions on Russia put on hold by Trump",
+    "link": "https://www.pbs.org/newshour/world/zelenskyy-urges-support-for-new-u-s-sanctions-on-russia-put-on-hold-by-trump",
+    "published": "2026-10-17T18:02Z",
+    "summary": "Zelenskyy called Trump's decision unfortunate but avoided directly criticizing the U.S. leader despite deepening tensions between Ukraine and Washington in recent days.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "How Alberta separatism went from fringe cause to referendum",
+    "link": "https://www.pbs.org/newshour/world/how-alberta-separatism-went-from-fringe-cause-to-referendum",
+    "published": "2026-10-17T17:35Z",
+    "summary": "Alberta is not voting to leave Canada on Oct. 19. Instead, voters will decide whether the province should remain in Canada or begin the legal process toward a future referendum on separation.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Masked settlers attack European diplomats in the occupied West Bank",
+    "link": "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank",
+    "published": "2026-10-17T16:28Z",
+    "summary": "In Saturday's attack in the village of Taybeh, settlers targeted Belgium's consul general, French and Polish diplomats and Catholic representatives, Belgian Foreign Minister Maxime Prevot said.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "House Speaker Mike Johnson draws on faith as he fights to hold the Republican majority",
+    "link": "https://www.pbs.org/newshour/politics/house-speaker-mike-johnson-draws-on-faith-as-he-fights-to-hold-the-republican-majority",
+    "published": "2026-10-17T16:17Z",
+    "summary": "Ever the optimist, Speaker Mike Johnson said he believes Republicans will hold on to their U.S. House majority, defying a surge of Democratic momentum in the final stretch of the midterm elections that will determine control of Congress.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Paris police report 855 arrests after violent clashes and looting during protests",
+    "link": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
+    "published": "2026-10-17T15:57Z",
+    "summary": "Paris police said Sunday that 855 people were arrested in the French capital region after violent groups clashed with officers and looted shops during a protest march that drew about 110,000 people.",
+    "source": "NPR News"
+   },
+   {
+    "title": "Trump's decision to waive Russian sanctions outrages Congress, but no quick counter seen",
+    "link": "https://www.pbs.org/newshour/politics/trumps-decision-to-waive-russian-sanctions-outrages-congress-but-no-quick-counter-seen",
+    "published": "2026-10-17T15:57Z",
+    "summary": "Lawmakers from both parties blasted the executive order late Friday, the latest in a series of steps that the Republican president has taken drawing the United States closer to Russia's Vladimir Putin.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Pope returns to Vatican days after surgery; surgeon says he should be fit for Latin America tour",
+    "link": "https://www.pbs.org/newshour/world/pope-leo-returns-to-the-vatican-4-days-after-lung-cancer-surgery",
+    "published": "2026-10-17T15:27Z",
+    "summary": "The Vatican had initially estimated a weeklong hospital stay and canceled his audiences through Tuesday. Experts said patients could be discharged earlier depending on their recovery.",
+    "source": "PBS NewsHour"
+   },
+   {
+    "title": "Pope Leo XIV leaves hospital days after lung cancer surgery",
+    "link": "https://www.npr.org/2026/10/17/nx-s1-6006762/pope-leo-xiv-leaves-hospital-days-after-lung-cancer-surgery",
+    "published": "2026-10-17T15:10Z",
+    "summary": "The Pope left Rome's Gemelli Hospital Saturday, days after surgery for lung cancer removed the lower lobe of his right lung. He is currently scheduled to travel to Latin America in November.",
+    "source": "NPR News"
+   },
+   {
+    "title": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold",
+    "link": "https://www.npr.org/2026/10/17/nx-s1-6006745/us-sanctions-russia",
+    "published": "2026-10-17T14:25Z",
+    "summary": "Zelenskyy described the move as unfortunate, adding it would encourage Russia to continue its assault. Trump told Congress that the pause was in the national interest but gave no further details.",
+    "source": "NPR News"
+   },
+   {
+    "title": "Pope discharged from hospital days after lung cancer surgery",
+    "link": "https://www.bbc.co.uk/news/articles/c5x2vkddrkrko?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-17T13:51Z",
+    "summary": "The pontiff will give the traditional Angelus prayer and blessing in St Peter's Square on Sunday.",
+    "source": "BBC World"
    },
    {
     "title": "Nursery owner in China jailed for life after hundreds of children poisoned",
@@ -32,13 +480,6 @@
     "source": "BBC World"
    },
    {
-    "title": "Killers of U.S., Australian surf trio sentenced to 158 years",
-    "link": "https://www.cbsnews.com/news/australian-us-surfers-mexico-murder-sentence-prison/",
-    "published": "2026-10-17T12:08Z",
-    "summary": "Brothers Jake and Callum Robinson and Carter Rhoad were on a surfing trip to Mexico's Baja California when they were killed during an attempted robbery.",
-    "source": "CBS News"
-   },
-   {
     "title": "Perspective: Midterm money madness",
     "link": "https://www.npr.org/2026/10/17/nx-s1-5997474/perspective-midterm-money-madness",
     "published": "2026-10-17T12:00Z",
@@ -46,45 +487,17 @@
     "source": "NPR News"
    },
    {
-    "title": "Woman, 26, felt her concerns were being dismissed before cancer diagnosis",
-    "link": "https://www.cbsnews.com/news/breast-cancer-awareness-young-diagnosis-baptist-health/",
-    "published": "2026-10-17T12:00Z",
-    "summary": "Andrea De Armas thought her concerns weren't being taken seriously. Then she received alarming information.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
-    "link": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T11:56Z",
-    "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
-    "source": "BBC US & Canada"
-   },
-   {
-    "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
-    "link": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T11:56Z",
-    "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
-    "source": "BBC World"
-   },
-   {
-    "title": "On economy, Vance says \"we're turning the ship around\"",
-    "link": "https://www.cbsnews.com/news/vance-cbs-town-hall-take-time-economy-improve/",
-    "published": "2026-10-17T11:54Z",
-    "summary": "As Americans express frustration with the country's economic outlook, Vice President JD Vance told CBS News this week it could take some time to see improvement.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Vance says it's going to take time to turn around the economy",
-    "link": "https://www.cbsnews.com/video/vance-says-its-going-to-take-time-to-turn-around-the-economy/",
-    "published": "2026-10-17T11:46Z",
-    "summary": "In response to a question from a woman who says her small business is struggling in today's economy, Vice President JD Vance said it will take time to turn things around. \"It's going to take more than 18 months to fix things and turn 'em around,\" Vance said in a CBS News \"Things that Matter\" town ha",
-    "source": "CBS News"
-   },
-   {
     "title": "Fraud, affordability and Trump policies drive friction in Minnesota Senate debate",
     "link": "https://www.npr.org/2026/10/17/nx-s1-6004910/minn-us-senate-race",
     "published": "2026-10-17T11:43Z",
     "summary": "The major party candidates for Minnesota's U.S. Senate seat faced off in an hourlong debate Friday on MPR News with fraud, affordability and fallout from the Trump administration's policies as key points of friction.",
+    "source": "NPR News"
+   },
+   {
+    "title": "Dozens of critically endangered orangutans rescued from Indonesian wildfires",
+    "link": "https://www.npr.org/2026/10/17/nx-s1-6004881/dozens-of-critically-endangered-orangutans-rescued-from-indonesian-wildfires",
+    "published": "2026-10-17T11:43Z",
+    "summary": "Rescuers in Indonesia have saved dozens of orangutans from wildfires. The critically endangered species is fighting for their lives and habitats during this deadly wildfire season.",
     "source": "NPR News"
    },
    {
@@ -144,427 +557,189 @@
     "source": "BBC World"
    },
    {
-    "title": "Reported attacks on ships around Strait of Hormuz reach record highs",
-    "link": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-yemen-houthis-saudi-arabia/",
-    "published": "2026-10-17T10:37Z",
-    "summary": "Data from a monitoring agency shows attacks around the Strait of Hormuz at a record high, as two more vessels report being attacked on Friday.",
-    "source": "CBS News"
-   },
-   {
-    "title": "The Uplift: The Hundred Acre Wood",
-    "link": "https://www.cbsnews.com/video/101726-the-uplift/",
-    "published": "2026-10-17T10:30Z",
-    "summary": "Take a trip to the Hundred Acre Wood to celebrate the 100th anniversary of Winnie the Pooh and friends. Plus, David Begnaud helps a group of friends plan a special girls night out.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Pope Leo to be discharged from hospital on Saturday, Vatican says",
-    "link": "https://www.cbsnews.com/news/pope-leo-hospital-released-discharged-saturday-appearance/",
-    "published": "2026-10-17T10:16Z",
-    "summary": "The Vatican announced Pope Leo XIV would be discharged from hospital on Saturday, four days after his surgery",
-    "source": "CBS News"
-   },
-   {
-    "title": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'",
+    "title": "Teacher fought US school attacker before armed dad shot suspect 'multiple times'",
     "link": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-17T09:58Z",
     "summary": "The 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Trump waives tariffs on largest buyers of Russian oil",
-    "link": "https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/",
-    "published": "2026-10-17T09:39Z",
-    "summary": "President Trump prevented some new sanctions on Russia and hefty tariffs on large-scale buyers of Russian oil from taking effect late Friday, as he seeks to ease prices by tapping Russian energy.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Katie Zacharia leaving White House role less than five days into job",
-    "link": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T09:14Z",
-    "summary": "Her public debut as press secretary ended with a flurry of media criticism about her credentials and preparedness.",
-    "source": "BBC World"
-   },
-   {
-    "title": "No Kings turns its focus to voting this weekend. Here's what we know",
-    "link": "https://www.npr.org/2026/10/17/nx-s1-6004887/no-kings-voting-trump",
-    "published": "2026-10-17T09:00Z",
-    "summary": "The coalition behind nationwide anti-Trump protests is shifting its strategies this weekend to focus on voter turnout. Organizers say Saturday's events are a nonpartisan effort to get people to the polls.",
-    "source": "NPR News"
-   },
-   {
-    "title": "Sidewalk sleepers: They have nowhere else to stay while a loved one is in the hospital",
-    "link": "https://www.npr.org/2026/10/17/g-s1-147874/hospital-diagnosis-patients-india-sidewalk",
-    "published": "2026-10-17T09:00Z",
-    "summary": "Patients travel miles to be treated at public hospitals in Delhi. Those in need get financial aid for their care. But for overnight accommodations, families are often on their own \u2014 and on the street.",
-    "source": "NPR News"
-   },
-   {
-    "title": "Trump promised a swing district blitz. He's going to a lot of very red states",
-    "link": "https://www.npr.org/2026/10/17/nx-s1-6004276/trump-travel-midterms",
-    "published": "2026-10-17T09:00Z",
-    "summary": "President Trump's midterm travel blitz ahead of Election Day includes several red states he won easily 2 years ago, showing the electoral landscape is more challenging for Republicans.",
-    "source": "NPR News"
-   },
-   {
-    "title": "Weddings are expensive. How about a grocery store cake?",
-    "link": "https://www.npr.org/2026/10/17/nx-s1-5976921/grocery-store-wedding-cakes",
-    "published": "2026-10-17T09:00Z",
-    "summary": "About a third of couples are willing to save money on cake and dessert, according to the wedding-planning site Zola.",
-    "source": "NPR News"
-   },
-   {
-    "title": "No Kings turns its focus to voting this weekend. Here's what we know",
-    "link": "https://www.npr.org/2026/10/17/nx-s1-6004887/no-kings-voting-trump",
-    "published": "2026-10-17T09:00Z",
-    "summary": "The coalition behind nationwide anti-Trump protests is shifting its strategies this weekend to focus on voter turnout. Organizers say Saturday's events are a nonpartisan effort to get people to the polls.",
-    "source": "NPR National"
-   },
-   {
-    "title": "Trump promised a swing district blitz. He's going to a lot of very red states",
-    "link": "https://www.npr.org/2026/10/17/nx-s1-6004276/trump-travel-midterms",
-    "published": "2026-10-17T09:00Z",
-    "summary": "President Trump's midterm travel blitz ahead of Election Day includes several red states he won easily 2 years ago, showing the electoral landscape is more challenging for Republicans.",
-    "source": "NPR National"
-   },
-   {
-    "title": "Weddings are expensive. How about a grocery store cake?",
-    "link": "https://www.npr.org/2026/10/17/nx-s1-5976921/grocery-store-wedding-cakes",
-    "published": "2026-10-17T09:00Z",
-    "summary": "About a third of couples are willing to save money on cake and dessert, according to the wedding-planning site Zola.",
-    "source": "NPR National"
-   },
-   {
-    "title": "Trump promised a swing district blitz. He's going to a lot of very red states",
-    "link": "https://www.npr.org/2026/10/17/nx-s1-6004276/trump-travel-midterms",
-    "published": "2026-10-17T09:00Z",
-    "summary": "President Trump's midterm travel blitz ahead of Election Day includes several red states he won easily 2 years ago, showing the electoral landscape is more challenging for Republicans.",
-    "source": "NPR Politics"
-   },
-   {
-    "title": "Coastal homes burn as hot winds fuel California fires",
-    "link": "https://www.npr.org/2026/10/17/g-s1-148569/coastal-homes-burn-in-california-fires",
-    "published": "2026-10-17T08:20Z",
-    "summary": "High winds are fueling a fast-moving fire that has burned homes in Southern California. Flames engulfed expensive coastal properties and prompted thousands to evacuate.",
-    "source": "NPR News"
-   },
-   {
-    "title": "Coastal homes burn as hot winds fuel California fires",
-    "link": "https://www.npr.org/2026/10/17/g-s1-148569/coastal-homes-burn-in-california-fires",
-    "published": "2026-10-17T08:20Z",
-    "summary": "High winds are fueling a fast-moving fire that has burned homes in Southern California. Flames engulfed expensive coastal properties and prompted thousands to evacuate.",
-    "source": "NPR National"
-   },
-   {
-    "title": "Pope's health should not be taken 'for granted', says top Vatican diplomat",
-    "link": "https://www.bbc.co.uk/news/articles/c6kg53zrexdeo?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T05:01Z",
-    "summary": "Archbishop Paul Gallagher tells the BBC there was no sign of the Pope's ill health prior to his operation this week.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
-    "link": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T03:11Z",
-    "summary": "Brothers Jake and Callum Robinson and their friend Carter Rhoad were killed on a surfing trip in an apparent botched robbery.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Brazil sees record fall in Amazon deforestation as key election looms",
-    "link": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T02:33Z",
-    "summary": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Oregon school shooter ID'd, used shotgun bought by mother, sources say",
-    "link": "https://www.cbsnews.com/news/oregon-school-shooter-identified-silver-rail-elementary/",
-    "published": "2026-10-17T02:24Z",
-    "summary": "The suspect, a former student at the school, fired as many as 15 rounds during the shooting, police said, and another 44 rounds of ammunition were located at the scene.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Actress Selma Blair says she 'did not intend to harm anyone' in plane altercation",
-    "link": "https://www.bbc.co.uk/news/articles/cwly3zd1r45ro?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T01:55Z",
-    "summary": "A publicist for the actress said the incident stemmed from a \"medical emergency\" and said she has a neurological disorder that can cause out-of-control responses.",
     "source": "BBC US & Canada"
-   },
-   {
-    "title": "Actress Selma Blair says she 'did not intend to harm anyone' in plane altercation",
-    "link": "https://www.bbc.co.uk/news/articles/cwly3zd1r45ro?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T01:55Z",
-    "summary": "A publicist for the actress said the incident stemmed from a \"medical emergency\" and said she has a neurological disorder that can cause out-of-control responses.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Katie Zacharia out as White House press secretary after first week",
-    "link": "https://www.cbsnews.com/news/trump-katie-zacharia-white-house-press-secretary/",
-    "published": "2026-10-17T01:40Z",
-    "summary": "Katie Zacharia, President Trump's new White House press secretary, is being removed from the role after just five days on the job.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Evacuation orders as fast-moving California wildfire burns homes",
-    "link": "https://www.bbc.co.uk/news/articles/c6vgjnk8nw2wo?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T01:36Z",
-    "summary": "Fanned by the fierce Santa Ana winds, the Norte Fire is one of 13 burning across the state.",
-    "source": "BBC US & Canada"
-   },
-   {
-    "title": "The uncertain future of Canada's 30 rescued belugas",
-    "link": "https://www.bbc.co.uk/news/articles/c623dnn3xvpko?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T01:18Z",
-    "summary": "An international rescue operation for the last 30 captive whales in Canada made headlines. Then five of them died.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Sacramento mom says \"hero\" son shot, killed Oregon school shooter",
-    "link": "https://www.cbsnews.com/news/sacramento-mother-says-son-confronts-oregon-school-shooter/",
-    "published": "2026-10-17T01:13Z",
-    "summary": "A Sacramento mother says her son acted on instinct when he confronted and fatally shot a gunman during a deadly school shooting in Oregon\u200b, an attack that killed three children and a teacher.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Why visitors are flocking to Philadelphia's popular pigeon tour",
-    "link": "https://www.cbsnews.com/news/tourists-flock-philadelphia-pigeon-tour/",
-    "published": "2026-10-17T00:46Z",
-    "summary": "The 90-minute tour, which TripAdvisor now ranks as the third most popular in Philadelphia, answers all your burning pigeon-related questions.",
-    "source": "CBS News"
-   },
-   {
-    "title": "A thousand slogans echoed here - but it could be the end for iconic Delhi protest site",
-    "link": "https://www.bbc.co.uk/news/articles/c6kgqjvdv4n2o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T00:41Z",
-    "summary": "Jantar Mantar, an 18th Century site almost synonymous with demonstrations in Delhi, has been denotified as a protest site.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Judge throws out child sex abuse charges against actor Timothy Busfield",
-    "link": "https://www.bbc.co.uk/news/articles/c8vgxwq4q5r2o?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-17T00:38Z",
-    "summary": "The judge in the case said on Friday that the prosecutor \"failed to act in a fair and impartial manner\".",
-    "source": "BBC World"
-   },
-   {
-    "title": "Sean \"Diddy\" Combs moved to prison in Pennsylvania",
-    "link": "https://www.cbsnews.com/news/sean-diddy-combs-prison-transfer-pennsylvania/",
-    "published": "2026-10-17T00:35Z",
-    "summary": "Sean \"Diddy\" Combs has been moved to a federal prison in Pennsylvania after reports that the hip-hop mogul was living the high life at his New Jersey lockup.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Teacher and 5-year-old student killed in Oregon school shooting identified",
-    "link": "https://www.cbsnews.com/news/bend-oregon-elementary-school-shooting-victims/",
-    "published": "2026-10-17T00:28Z",
-    "summary": "Two of the four victims killed in the shooting at an Oregon elementary school on Thursday have been identified as a 25-year-old teacher and a 5-year-old student.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Milwaukee Brewers reach World Series for first time in 44 years",
-    "link": "https://www.cbsnews.com/video/milwaukee-brewers-reach-world-series-for-first-time-in-44-years/",
-    "published": "2026-10-17T00:24Z",
-    "summary": "The Milwaukee Brewers are heading to the World Series for the first time in 44 years after sweeping the heavily-favored Los Angeles Dodgers. Mark Strassmann has the story.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Feds probing suspicious letters to election officials, lawmakers",
-    "link": "https://www.cbsnews.com/news/suspicious-letters-election-officials-congressional-offices-fbi-us-postal-service/",
-    "published": "2026-10-17T00:09Z",
-    "summary": "Federal investigators said they are looking into suspicious letters containing unknown substances that were mailed to state election officials and congressional offices.",
-    "source": "CBS News"
-   },
-   {
-    "title": "With Tesla Roadster debut, Elon Musk shows \"flying cars are real\"",
-    "link": "https://www.cbsnews.com/news/tesla-roadster-debut-elon-musk-flying-cars-are-real/",
-    "published": "2026-10-17T00:07Z",
-    "summary": "Elon Musk unveiled Tesla's new Roadster, which uses high-pressure air thrusters to leave the road entirely during a livestreamed event at his SpaceX facility in Texas.",
-    "source": "CBS News"
-   },
-   {
-    "title": "How a Philadelphia couple turned pigeons into one of the city's most popular tours",
-    "link": "https://www.cbsnews.com/video/how-a-philadelphia-couple-turned-pigeons-into-one-of-the-citys-most-popular-tours/",
-    "published": "2026-10-17T00:06Z",
-    "summary": "Hannah Michelle Brower and Aspen Simone turned pigeons, what many view as a nuisance, into a thriving sightseeing experience in Philadelphia. Steve Hartman has the story in \"On the Road.\"",
-    "source": "CBS News"
-   },
-   {
-    "title": "Who would oversee a flying car? We asked the DOT.",
-    "link": "https://www.cbsnews.com/news/tesla-roadster-dot-flying-car/",
-    "published": "2026-10-17T00:05Z",
-    "summary": "Tesla and SpaceX CEO Elon Musk unveiled Tesla's new Roadster Rocket, which he called a \"flying car\" equipped with \"ultra high-pressure air tanks.\"",
-    "source": "CBS News"
-   },
-   {
-    "title": "Photos show pope celebrating Mass at hospital after cancer surgery",
-    "link": "https://www.cbsnews.com/news/photos-pope-leo-mass-hospital-recovery-surgery/",
-    "published": "2026-10-17T00:04Z",
-    "summary": "The Vatican also released photos of some get-well notes that had been sent to Pope Leo from patients in the hospital's pediatric oncology ward.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Elon Musk unveils flying Tesla prototype to cheering Texas crowd",
-    "link": "https://www.cbsnews.com/video/elon-musk-unveils-flying-tesla-prototype-to-cheering-texas-crowd/",
-    "published": "2026-10-17T00:02Z",
-    "summary": "Elon Musk unveiled a Tesla prototype equipped with thrusters that can perform air acrobatics. But the vehicle is not yet approved for sale or use on the road.",
-    "source": "CBS News"
-   },
-   {
-    "title": "3 children, 1 teacher killed in Oregon school shooting, police say",
-    "link": "https://www.cbsnews.com/live-updates/oregon-silver-rail-elementary-shooting-bend/",
-    "published": "2026-10-17T00:02Z",
-    "summary": "Three children and a teacher were killed, and two others critically wounded, in a shooting at Silver Rail Elementary School in Bend, Oregon. The suspect was shot and killed by a bystander.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Tesla shows off new flying car concept",
-    "link": "https://www.cbsnews.com/video/tesla-shows-off-new-flying-car-concept/",
-    "published": "2026-10-17T00:02Z",
-    "summary": "Elon Musk unveiled the new Tesla Roadster on Thursday, demonstrating the car's ability to flip and fly using the same kind of thrusters used on SpaceX rockets. Edmunds editor Chris Rosales, who was at the event, joins CBS News to recount what he saw.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Fundraising to protect key natural sites falls short ahead of UN biodiversity summit",
-    "link": "https://www.pbs.org/newshour/world/fundraising-to-protect-key-natural-sites-falls-short-ahead-of-un-biodiversity-summit",
-    "published": "2026-10-16T23:58Z",
-    "summary": "Efforts to raise hundreds of billions of dollars to preserve the world's oceans, forests, rivers, lakes and other parts of the natural world have fallen short ahead of a key U.N. summit on biodiversity.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC",
-    "link": "https://www.bbc.co.uk/news/articles/c64g18ljjd8do?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-16T23:54Z",
-    "summary": "Defence Minister Guido Crosetto tells the BBC the US risks prolonging Russia's full-scale invasion rather than helping to end it.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Israeli settlers attack Palestinians during West Bank olive harvest and beat U.S. photojournalist",
-    "link": "https://www.pbs.org/newshour/world/israeli-settlers-attack-palestinians-during-west-bank-olive-harvest-and-beat-u-s-photojournalist",
-    "published": "2026-10-16T23:46Z",
-    "summary": "Israeli settlers attacked Palestinian villages across the occupied West Bank on Friday, setting fire to cars and trees and beating residents and a Washington Post photographer, in the latest violence to disrupt the territory's annual olive harvest this month.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "DOJ says California officials who process ballots from suspected noncitizens risk prosecution",
-    "link": "https://www.pbs.org/newshour/politics/doj-says-california-officials-who-process-ballots-from-suspected-noncitizens-risk-prosecution",
-    "published": "2026-10-16T23:30Z",
-    "summary": "The Trump administration is escalating its fight with California ahead of next month's midterm election, warning that local officials who process and tabulate ballots submitted by suspected noncitizen voters are putting themselves at risk of criminal investigation and potential prosecution.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Mayor of Bend shares how her community is doing after elementary school shooting",
-    "link": "https://www.npr.org/2026/10/16/nx-s1-6005377/mayor-of-bend-shares-how-her-community-is-doing-after-elementary-school-shooting",
-    "published": "2026-10-16T23:15Z",
-    "summary": "NPR's Ailsa Chang talks with Mayor of Bend Melanie Kebler about how the community is grieving the three children and teacher who were killed in a shooting at Silver Rail Elementary School on Thursday.",
-    "source": "NPR National"
-   },
-   {
-    "title": "Trial of German steakhouse heiress that sparked a huge spy scandal",
-    "link": "https://www.bbc.co.uk/news/articles/cwvgdn3d656vo?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-16T23:07Z",
-    "summary": "For 15 months, a high-security courtroom in Hamburg has been hearing the case of Christina Block, accused of ordering the abduction of her children.",
-    "source": "BBC World"
-   },
-   {
-    "title": "Oregon school shooter attacked special education classroom, police say",
-    "link": "https://www.pbs.org/newshour/show/oregon-school-shooter-attacked-special-education-classroom-police-say",
-    "published": "2026-10-16T22:55Z",
-    "summary": "Police in Bend, Oregon, are still investigating the motive behind the deadly shooting at Silver Rail Elementary School. Four people were killed, including three young children and a teacher. Police identified the shooter as a 16-year-old who previously attended the school. They said he attacked a sp",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "A rare family of barn owls moved into Manhattan's Upper West Side, captivating New Yorkers",
-    "link": "https://www.pbs.org/newshour/nation/a-rare-family-of-barn-owls-moved-into-manhattans-upper-west-side-captivating-new-yorkers",
-    "published": "2026-10-16T22:52Z",
-    "summary": "This is the first documented instance of barn owls nesting in Manhattan in modern history, according to one expert, and the owls have attracted nightly crowds of people in the street eager to get a glimpse of the elusive birds.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "What makes the Oregon school shooting different \u2013 and what can be learned",
-    "link": "https://www.pbs.org/newshour/show/what-makes-the-oregon-school-shooting-different-and-what-can-be-learned",
-    "published": "2026-10-16T22:52Z",
-    "summary": "There are many more questions to be answered about the deadly elementary school shooting in Bend, Oregon. To explore some of them, Amna Nawaz spoke with James Densley, professor and chair of criminology and criminal justice at Metro State University. He is best known for co-creating the Violence Pre",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "News Wrap: Zacharia out as White House press secretary after less than a week on the job",
-    "link": "https://www.pbs.org/newshour/show/news-wrap-zacharia-out-as-white-house-press-secretary-after-less-than-a-week-on-the-job",
-    "published": "2026-10-16T22:50Z",
-    "summary": "In our news wrap Friday, White House Press Secretary Katie Zacharia is \"transitioning out\" of her role after less than a week on the job, three large brush fires in Southern California are forcing people to flee their homes and dozens of Israeli settlers set cars and trees ablaze across the West Ban",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Examining the controversial claims Trump is making at his midterm rallies",
-    "link": "https://www.pbs.org/newshour/show/examining-the-controversial-claims-trump-is-making-at-his-midterm-rallies",
-    "published": "2026-10-16T22:45Z",
-    "summary": "Ahead of the midterms, President Trump is on the campaign trail looking to rally his base in battleground races. His controversial comments at those rallies have drawn attention. White House correspondent Liz Landers has a fact check on some of Trump's claims.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "How Alaska became a key battleground in the fight for the Senate",
-    "link": "https://www.pbs.org/newshour/show/how-alaska-became-a-key-battleground-in-the-fight-for-the-senate",
-    "published": "2026-10-16T22:40Z",
-    "summary": "Alaska could play a pivotal role in Democrats' efforts to reclaim control of the Senate. In a debate, Republican incumbent Sen. Dan Sullivan faced questions about rising fuel costs driven by the war with Iran and Democratic challenger Mary Peltola pushed back against allegations that she mistreated ",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Kerry Kennedy remembers her mother's life and advocacy in new book",
-    "link": "https://www.pbs.org/newshour/show/kerry-kennedy-remembers-her-mothers-life-and-advocacy-in-new-book",
-    "published": "2026-10-16T22:35Z",
-    "summary": "Two years ago, Ethel Kennedy passed away. The matriarch of the prominent political dynasty, she was a steadfast supporter of her husband, Robert F. Kennedy, and a lifelong advocate for human rights. She's now being remembered in a new book by her daughter called \"Ethel Kennedy: The Extraordinary Lif",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Capehart and Continetti on the White House press secretary's quick exit",
-    "link": "https://www.pbs.org/newshour/show/capehart-and-continetti-on-the-white-house-press-secretarys-quick-exit",
-    "published": "2026-10-16T22:30Z",
-    "summary": "Jonathan Capehart of MS NOW and Wall Street Journal opinion columnist Matthew Continetti join Geoff Bennett to discuss the week in politics, the White House press secretary's exit after five days on the job, President Trump's renewed feud with Ukraine's president and new reporting on who is paying f",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "10/16: CBS Evening News",
-    "link": "https://www.cbsnews.com/video/101626-cbs-evening-news/",
-    "published": "2026-10-16T22:30Z",
-    "summary": "Evacuations ordered as California fires spread; New details in deadly Oregon school shooting.",
-    "source": "CBS News"
-   },
-   {
-    "title": "Exhibition explores connection between Black women and the works of Shakespeare",
-    "link": "https://www.pbs.org/newshour/show/exhibition-explores-connection-between-black-women-and-the-works-of-shakespeare",
-    "published": "2026-10-16T22:25Z",
-    "summary": "The Folger Shakespeare Library's newest exhibition maps an unlikely historical connection between Black women and the works of William Shakespeare. Nearly 100 objects document the stories of renowned scholars, popular actors and little-known historic figures. Geoff Bennett spoke with curator Patrici",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "China says it will curb tech exports, including AI, citing national security risks",
-    "link": "https://www.pbs.org/newshour/world/china-says-it-will-curb-tech-exports-including-ai-citing-national-security-risks",
-    "published": "2026-10-16T22:00Z",
-    "summary": "The proposal came as China and the U.S. made progress in dialogues over AI safety and governance and on the setting up of a notification mechanism between the two superpowers for AI incidents that could threaten national security.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Arab-led parties could decide the Israeli election, if anyone would partner with them",
-    "link": "https://www.pbs.org/newshour/world/arab-led-parties-could-decide-the-israeli-election-if-anyone-would-partner-with-them",
-    "published": "2026-10-16T21:55Z",
-    "summary": "Prime Minister Benjamin Netanyahu and his chief rivals have said they won't form a coalition with any Arab-led party after the Oct. 27 election \u2013 even if that means months of gridlock and another round of voting.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Democrats say Trump increased investments in drugmakers that were given Medicare exemptions",
-    "link": "https://www.pbs.org/newshour/politics/democrats-say-trump-increased-investments-in-drugmakers-that-were-given-medicare-exemptions",
-    "published": "2026-10-16T21:32Z",
-    "summary": "The report from congressional Democrats found that Trump's pharmaceutical stock holdings grew from a maximum reported value of $1.7 million in 2024 to as much as $56.2 million at the end of 2025.",
-    "source": "PBS NewsHour"
-   },
-   {
-    "title": "Vance says admin. must take action when ICE agents \"screw up\"",
-    "link": "https://www.cbsnews.com/news/vance-ice-investigate-agents-screw-up/",
-    "published": "2026-10-16T21:22Z",
-    "summary": "Vice President JD Vance acknowledged Thursday that there are some federal immigration officers \"who really screw up.\"",
-    "source": "CBS News"
    }
   ],
   "local": [
+   {
+    "title": "Valley Historical Society hears Charlotte Center Church history",
+    "link": "https://www.observertoday.com/life/sunday-lifestyles/2026/10/valley-historical-society-hears-charlotte-center-church-history/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "SINCLAIRVILLE \u2014 Members and guests of the Valley Historical Society met in the Sinclairville Firehall Community room for a meeting and program. President Sheryl Christy welcome all and led the group in the Lord\u2019s Prayer, then treasurer John Sipos led all with the Pledge of Allegiance. Secretary Evel",
+    "source": "Dunkirk Observer"
+   },
+   {
+    "title": "New internship offers student chance to apply knowledge",
+    "link": "https://www.observertoday.com/news/local-region/2026/10/new-internship-offers-student-chance-to-apply-knowledge/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "A new internship at SUNY Fredonia is allowing a Social Work student to apply classroom lessons in a research setting. Xavier Lake, a senior Social Work major from Binghamton, is taking part in a pilot internship opportunity with the Fredonia Program Evaluation Center this fall. \u201cThis internship has ",
+    "source": "Dunkirk Observer"
+   },
+   {
+    "title": "Small rescues happen daily at Centaur Stride",
+    "link": "https://www.observertoday.com/news/top-stories/2026/10/small-rescues-happen-daily-at-centaur-stride/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "Imagine a mother sitting in the front passenger seat of a car, her face radiating exhaustion and defeat. In the back seat sits her young son, separated from the front by a partially drawn divider curtain. The driver is out of view. The mother\u2019s expression says it all: \u201cHELP!\u201d A social media post com",
+    "source": "Dunkirk Observer"
+   },
+   {
+    "title": "Dunkirk grad earns Congressional Award Gold Medal",
+    "link": "https://www.observertoday.com/news/top-stories/2026/10/dunkirk-grad-earns-congressional-award-gold-medal/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "Riley Grey Smith Mallon has earned the Congressional Award Gold Medal. A Dunkirk High School Class of 2025 graduate, he is the son of Dr. Cynthia Smith and Mr. Craig Mallon of Dunkirk, and a sophomore at the Rochester Institute of Technology, majoring in Pre-Law/History with Minors in Mechanical Eng",
+    "source": "Dunkirk Observer"
+   },
+   {
+    "title": "Pen pal shares her summer adventures",
+    "link": "https://www.observertoday.com/news/top-stories/2026/10/pen-pal-shares-her-summer-adventures/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "When I was a kid, on more than one occasion my classmates and I were given a back to school writing assignment titled \u201cWhat I Did On My Summer Vacation.\u201d I don\u2019t see or hear of too many students completing this writing task nowadays. Perhaps it is due to some politically correct reasons or because [",
+    "source": "Dunkirk Observer"
+   },
+   {
+    "title": "Life\u2019s not all doom, gloom if surrounded by love",
+    "link": "https://www.observertoday.com/opinion/commentary/2026/10/lifes-not-all-doom-gloom-if-surrounded-by-love/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "To turn a phrase from the great blues artist Albert King, \u201cif it wasn\u2019t for bad news, there wouldn\u2019t be no news at all.\u201d A friend recently confided in me that she never watches the news because it makes her feel frightened and hopeless. The world is so full of violence and hate, and she [\u2026]",
+    "source": "Dunkirk Observer"
+   },
+   {
+    "title": "DAR celebrates teacher\u2019s work, dedication",
+    "link": "https://www.observertoday.com/news/local-region/2026/10/dar-celebrates-teachers-work-dedication/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "The National Society Daughters of the American Revolution Outstanding Teacher of American History for New York is Gregory Birner of Westfield Academy and Central School, nominated by the Jamestown Chapter Daughters of the American Revolution. Birner has dedicated 28 years to teaching American histor",
+    "source": "Dunkirk Observer"
+   },
+   {
+    "title": "Clerks donate to charities",
+    "link": "https://www.observertoday.com/life/sunday-lifestyles/2026/10/clerks-donate-to-charities/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "The Chautauqua County Municipal Clerks Association held its August meeting in Westfield and the members brought baskets of donated items that were raffled off. Proceeds from the raffle were donated to two local charities, Sinclairville 76ers and Northern Chautauqua Canine Rescue. Each charity receiv",
+    "source": "Dunkirk Observer"
+   },
+   {
+    "title": "Little Mice by Dunkirk\u2019s Caleb Spell",
+    "link": "https://www.observertoday.com/life/sunday-lifestyles/2026/10/little-mice-by-dunkirks-caleb-spell-57/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "",
+    "source": "Dunkirk Observer"
+   },
+   {
+    "title": "Ability Awareness Awards event is Nov. 3",
+    "link": "https://www.observertoday.com/life/sunday-lifestyles/2026/10/ability-awareness-awards-event-is-nov-3/",
+    "published": "2026-10-18T04:00Z",
+    "summary": "The achievements of people with disabilities and the efforts of those who support them will be showcased when The Resource Center holds its 37th Ability Awareness Awards Celebration on Tuesday, Nov. 3. The luncheon be held at The White Inn in Fredonia from 11:30 a.m. to 1 p.m. The awards recognize p",
+    "source": "Dunkirk Observer"
+   },
+   {
+    "title": "Rocmaidan marks 12 years of aiding Ukraine with gala",
+    "link": "https://www.rochesterfirst.com/news/local-news/rocmaidan-marks-12-years-of-aiding-ukraine-with-gala/",
+    "published": "2026-10-18T03:09Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Rocmaidan held a gala earlier this evening to mark 12 years of providing essential medical supplies and humanitarian aid to people in Ukraine. The organization was founded in 2014 as an affiliate of the Ukrainian Cultural Center of Rochester Since 2022, the organization and ",
+    "source": "Rochester First"
+   },
+   {
+    "title": "Sabres salvage another point in OT loss at Montreal",
+    "link": "https://www.wivb.com/sports/buffalo-sabres/sabres-salvage-another-point-in-ot-loss-at-montreal/",
+    "published": "2026-10-18T03:03Z",
+    "summary": "MONTREAL (AP) \u2014 Cole Caufield scored his second goal of the game 54 seconds into overtime to lift the Montreal Canadiens over the Buffalo Sabres 4-3 on Saturday night. Caufield had a breakaway after Josh Norris missed his shot on a 3-on-1 rush. He ripped a shot into the top-left corner, extending hi",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "House of Mercy testing capacity amid cold snap",
+    "link": "https://www.rochesterfirst.com/news/local-news/house-of-mercy-facing-increased-capacity-amid-cold-snap/",
+    "published": "2026-10-18T02:59Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2014 The recent cold snap in Rochester is testing the House of Mercy's capacity. The executive director, Michael Ford, says it's a wake-up call to start getting ready for the colder months. \"It's just a reminder that it is coming. And we do have to be prepared so that it doesn't ",
+    "source": "Rochester First"
+   },
+   {
+    "title": "'No Kings' rallies held across the country, in Western New York",
+    "link": "https://www.wivb.com/news/local-news/no-kings-rallies-held-across-the-country-in-western-new-york/",
+    "published": "2026-10-18T02:46Z",
+    "summary": "BUFFALO, N.Y. (WIVB) \u2014 Community members came together Saturday in Downtown Buffalo with signs, costumes, and songs in support of one of the many \u2018No Kings\u2019 rallies taking place across the country. Throughout Western New York, five protests were held, spanning from Williamsville to East Aurora to Ni",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "College hoops season tips off in downtown Buffalo",
+    "link": "https://www.wivb.com/sports/university-at-buffalo-bulls-college-sports/college-hoops-season-tips-off-in-downtown-buffalo/",
+    "published": "2026-10-18T01:44Z",
+    "summary": "BUFFALO, N.Y. (WIVB) \u2014 The college basketball season got underway earlier in the calendar than ever before Saturday with an exhibition doubleheader at KeyBank Center in downtown Buffalo. Penn State beat St. Bonaventure 68-65 in front of a crowd of 3,500 following Daemen's 74-66 victory against St. J",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "Willow holds 18th annual Walk With Willow in Rochester",
+    "link": "https://www.rochesterfirst.com/news/willow-holds-18th-annual-walk-with-willow-in-rochester/",
+    "published": "2026-10-17T23:48Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2014 The Willow Domestic Violence Center held its 18th annual 'Walk with Willow' today. The event aims to raise awareness and funds for Willow's life-saving programs and services. Organizers say every step taken at the walk represents hope, strength, and a commitment to eliminati",
+    "source": "Rochester First"
+   },
+   {
+    "title": "Weather Forecast: Frosty Sunday morning before milder air returns",
+    "link": "https://www.rochesterfirst.com/news/weather-forecast-frosty-sunday-morning-before-milder-air-returns/",
+    "published": "2026-10-17T22:28Z",
+    "summary": "Skies are clear and temperatures are chilly this Saturday, maxing out in the mid-40s. Overnight lows fall to the mid to low 30s, prompting a Freeze Warning for counties in which the growing season is still active. Southerly breezes return for Sunday and Monday, bringing high temps back to the low to",
+    "source": "Rochester First"
+   },
+   {
+    "title": "Clarence Global Methodist Church holds 40th Apple Festival",
+    "link": "https://www.wivb.com/news/local-news/erie-county/clarence/clarence-global-methodist-church-holds-40th-apple-festival/",
+    "published": "2026-10-17T22:26Z",
+    "summary": "BUFFALO, N.Y. (WIVB) \u2014 The Clarence Global Methodist Church celebrated their 40th Apple Festival on Saturday, bringing the community together to raise money for causes around Western New York. \u201cWe\u2019ve been making apple pies for the past three weeks,\u201d Carlton Van Pyrz with the Apple Festival said. \u201cWe",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "UB Bulls rally to beat UMass in overtime",
+    "link": "https://www.wivb.com/sports/university-at-buffalo-bulls-college-sports/ub-bulls-rally-to-beat-umass-in-overtime/",
+    "published": "2026-10-17T21:30Z",
+    "summary": "BUFFALO, N.Y. (WIVB) \u2014 Jason Wright threw a 15-yard touchdown pass to Clint Walker on the first drive of overtime and the Buffalo Bulls defense kept UMass out of the end. zone to complete a 25-18 comeback victory against on Saturday at UB's Broadview Stadium. Winning for the second week in a row, UB",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "Agencies respond to three alarm fire on French Road in Cheektowaga",
+    "link": "https://www.wivb.com/news/local-news/erie-county/cheektowaga/structure-fire-closes-french-road-between-brentwood-and-borden-drive/",
+    "published": "2026-10-17T21:29Z",
+    "summary": "BUFFALO, N.Y. (WIVB) -- A three-alarm fire that broke out inside a large commercial building on French Road Saturday afternoon in Cheektowaga saw a response from more than 16 agencies and took nearly seven hours to extinguish. The Cheektowaga Fire Department said they received multiple calls for a f",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "NY to quadruple firefighter and ambulance worker tax credit",
+    "link": "https://www.rochesterfirst.com/new-york-state/ny-to-quadruple-firefighter-and-ambulance-worker-tax-credit/",
+    "published": "2026-10-17T20:14Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Gov. Kathy Hochul signed legislation increasing New York\u2019s personal income tax credit for eligible volunteer firefighters and ambulance workers. The new law increases the annual credit from $200 to $800 for individuals and from $400 to $1,600 for married couples. The higher ",
+    "source": "Rochester First"
+   },
+   {
+    "title": "Jewish Museum of Buffalo to celebrate public launch",
+    "link": "https://www.wivb.com/news/local-news/jewish-museum-of-buffalo-celebrates-public-launch/",
+    "published": "2026-10-17T20:13Z",
+    "summary": "BUFFALO, N.Y. (WIVB) -- The Jewish Museum of Buffalo will be welcoming the community inside for the first time during regular public hours on Saturday, celebrating its grand opening with a special event featuring Buffalo native and CNN anchor Wolf Blitzer. \"He's a Jewish Buffalonian who's gone on to",
+    "source": "WIVB Buffalo"
+   },
+   {
+    "title": "Video showing dog abuse launches investigation: RPD",
+    "link": "https://www.rochesterfirst.com/news/rpd/video-showing-dog-abuse-launches-investigation-rpd/",
+    "published": "2026-10-17T19:54Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2014 The Rochester Police Department says they are aware of a video circulating online of animal abuse in Rochester. Police said they are aware of a video of a dog allegedly being abused in the 1500 block area of Clifford Avenue. The Humane Society has safely removed the dog from",
+    "source": "Rochester First"
+   },
+   {
+    "title": "City of Olean offering new residents $4000 incentive as part of MakeMyMove program",
+    "link": "https://www.wkbw.com/news/local-news/cattaraugus-county/city-of-olean-offering-new-residents-4000-incentive-as-part-of-makemymove-program",
+    "published": "2026-10-17T14:44Z",
+    "summary": "How much money would it take for you to move into a new home? Maybe even a new city? For those looking at the City of Olean, we now know how much, thanks to a new initiative.",
+    "source": "WKBW Buffalo"
+   },
+   {
+    "title": "Football on the Bricks to host Bills watch party",
+    "link": "https://www.rochesterfirst.com/news/local-news/football-on-the-bricks-host-bills-watch-party/",
+    "published": "2026-10-17T13:52Z",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2013 Rochester's longest running free concert series, Football on the Bricks will return to the Rochester Public Market on Sunday. The doors will open at 1 p.m. BBDANG will be performing at 1:30 p.m. before the Buffalo Bills take on the Las Vegas Raiders. The General admission co",
+    "source": "Rochester First"
+   },
    {
     "title": "ESL Ballpark to host Making Strides Against Breast Cancer Walk",
     "link": "https://www.rochesterfirst.com/news/local-news/esl-ballpark-to-host-making-strides-against-breast-cancer-walk/",
@@ -573,10 +748,10 @@
     "source": "Rochester First"
    },
    {
-    "title": "Science icon Bill Nye to speak at RIT's homecoming",
+    "title": "Science icon Bill Nye speaks at RIT's homecoming",
     "link": "https://www.rochesterfirst.com/news/local-news/science-icon-bill-nye-to-speak-at-rits-homecoming/",
     "published": "2026-10-17T13:14Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2013 RIT has a special guest in town for its homecoming weekend. World-class science educator Bill Nye, best known for his Emmy-winning television series Bill Nye The Science Guy, will be this year's Brick City Weekend & Student Government speaker. Nye will be at the Gordon Field",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2013 RIT had a special guest in town for its homecoming weekend. World-class science educator Bill Nye, best known for his Emmy-winning television series Bill Nye The Science Guy, was this year's Brick City Weekend & Student Government speaker. Since the early 90s, Nye has helped",
     "source": "Rochester First"
    },
    {
@@ -594,17 +769,17 @@
     "source": "Rochester First"
    },
    {
-    "title": "RCSD to host community listening session with Superintendent Rosser",
+    "title": "Community holds listening session with RCSD Superintendent Rosser",
     "link": "https://www.rochesterfirst.com/news/local-news/rcsd-to-host-community-listening-session-with-superintendent-rosser/",
     "published": "2026-10-17T12:54Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2013 The Rochester City School District will be hosting a community listening session on Saturday in effort to help students improve their English Language Arts proficiency. Organizers are encouraging families within the RCSD to attend to express their concerns and tell Superinte",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Members of F.I.G.H.T. and the Green Party held a community conversation to share concerns, ideas, and a vision for the future of Rochester City Schools. Rochester City School District Superintendent Doctor Eric Rosser attended the weekly meeting to hear the feedback and conc",
     "source": "Rochester First"
    },
    {
-    "title": "Rally to pass the New York Health Act",
+    "title": "Rally held in Rochester to pass the New York Health Act",
     "link": "https://www.rochesterfirst.com/news/local-news/rally-to-pass-the-new-york-health-act/",
     "published": "2026-10-17T12:47Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2013 Dozens of community members are expected to gather on Saturday morning to call on the State Legislature to pass the New York Health Act. New Yorkers will stand together with one unified message for Albany: guarantee healthcare for every New Yorker. No Kings organizers will a",
+    "summary": "ROCHESTER, N.Y. (WROC) \u2013 Community members rallied on Saturday morning to call on the State Legislature to pass the New York Health Act. New Yorkers stood together with one unified message for Albany: guarantee healthcare for every New Yorker. No Kings organizers were also be in attendance. The rall",
     "source": "Rochester First"
    },
    {
@@ -612,83 +787,6 @@
     "link": "https://www.rochesterfirst.com/sports/football-frenzy/football-frenzy-live-rush-henrietta-and-victor-get-wins-in-overtime-thrillers/",
     "published": "2026-10-17T04:57Z",
     "summary": "Rush-Henrietta 31, Hilton 28 (2OT) This back-and-forth battle took two overtimes to decide a winner, but in the end, it was Rush-Henrietta who held on to defend their home field. Hilton took an early 7-0 lead before Rush-Henrietta scored 14 unanswered points to enter halftime ahead 14-7. Out of the ",
-    "source": "Rochester First"
-   },
-   {
-    "title": "Two-thirds of all county legislative districts have race",
-    "link": "https://www.observertoday.com/news/top-stories/2026/10/two-thirds-of-all-county-legislative-districts-have-race/",
-    "published": "2026-10-17T04:00Z",
-    "summary": "About two-thirds of all Chautauqua County legislative districts will have a competitive race in November. There are 19 legislative districts in the county. Of that amount 13 have contested races. Of the 13 competitive races, eight have an incumbent Republican and six have an incumbent Democrat. Of t",
-    "source": "Dunkirk Observer"
-   },
-   {
-    "title": "Ronald S. Trezenski",
-    "link": "https://www.observertoday.com/obituaries/2026/10/ronald-s-trezenski/",
-    "published": "2026-10-17T04:00Z",
-    "summary": "Ronald \u201cBobo\u201d S. Trezenski passed away peacefully after a remarkable 90 years. Born in Dunkirk in April 1936, Ronald was a near-lifelong resident of the community before moving to Largo, Florida, in 2020. After serving in the United States Army in Chicago, Ronald returned to Dunkirk and started his ",
-    "source": "Dunkirk Observer"
-   },
-   {
-    "title": "Sherman graduate launches business on E2CCB experience",
-    "link": "https://www.observertoday.com/news/local-region/2026/10/sherman-graduate-launches-business-on-e2ccb-experience/",
-    "published": "2026-10-17T04:00Z",
-    "summary": "For Colton Courtney, the opening of the Branding Iron of Sherman is the latest chapter in a career that has always been closely connected to agriculture, animals, and his hometown. The 2023 Sherman Central School graduate opened the retail meat store Aug. 1 at 121 W. Main St., bringing locally raise",
-    "source": "Dunkirk Observer"
-   },
-   {
-    "title": "Cougars volleyball tops Silver Creek",
-    "link": "https://www.observertoday.com/sports/local-sports/2026/10/cougars-volleyball-tops-silver-creek/",
-    "published": "2026-10-17T04:00Z",
-    "summary": "CASSADAGA \u2014 Alexis Pattyson scored 14 kills, three aces and nine points, while adding 10 digs and two blocks to lead Cassadaga Valley past Silver Creek 25-13, 27-29, 26-24, 25-21 in nonleague volleyball action on Friday. Kailee Lacki added 13 kills, 10 digs, three aces and 10 points for the Cougars ",
-    "source": "Dunkirk Observer"
-   },
-   {
-    "title": "Chautauqua Lake/Westfield swimmers fall to P/MG/C/S",
-    "link": "https://www.observertoday.com/sports/local-sports/2026/10/chautauqua-lake-westfield-swimmers-fall-to-p-mg-c-s/",
-    "published": "2026-10-17T04:00Z",
-    "summary": "PANAMA \u2014 Emery Watkins and Jessica Lyon were double winners to lead Panama/Maple Grove/Clymer/Sherman past Chautauqua Lake/Westfield 139-35 in Chautauqua-Cattaraugus Athletic Association girls swimming and diving Friday. Watkins claimed the 200-yard freestyle (2:07.50) and 500-yard freestyle (5:44.2",
-    "source": "Dunkirk Observer"
-   },
-   {
-    "title": "Shutout in Fredonia",
-    "link": "https://www.observertoday.com/sports/local-sports/2026/10/shutout-in-fredonia/",
-    "published": "2026-10-17T04:00Z",
-    "summary": "FREDONIA \u2014 Chautauqua Lake/Westfield/Brocton has been carried by its defense all season long. Head coach Ty Harper said as much on Friday night. The Eagles\u2019 defense did it again as Harper and company walked away from the Orange Bowl with a 21-0 win over the Hillbillies in a Class C South football ga",
-    "source": "Dunkirk Observer"
-   },
-   {
-    "title": "Domestic violence paralegal shares experiences in court, life",
-    "link": "https://www.observertoday.com/news/local-region/2026/10/domestic-violence-paralegal-shares-experiences-in-court-life/",
-    "published": "2026-10-17T04:00Z",
-    "summary": "As a domestic violence paralegal, Krystle Pullan knows what it is like to be in the courtroom with domestic violence cases and how to maneuver through the court system. When she herself became a domestic violence survivor, she found even with her experience that she struggled to navigate the system.",
-    "source": "Dunkirk Observer"
-   },
-   {
-    "title": "Golden days of Dunkirk are long lost",
-    "link": "https://www.observertoday.com/opinion/commentary/2026/10/golden-days-of-dunkirk-are-long-lost/",
-    "published": "2026-10-17T04:00Z",
-    "summary": "I am looking at all of Dunkirk\u2019s problems, including the current mayor and her support staff, the Democratic leadership, and the deep despair of a city that appears to have lost its way. I grew up in a community surrounded by neighborhoods and churches, corner stores, a thriving downtown, and factor",
-    "source": "Dunkirk Observer"
-   },
-   {
-    "title": "Anna E. Russell",
-    "link": "https://www.observertoday.com/obituaries/2026/10/anna-e-russell/",
-    "published": "2026-10-17T04:00Z",
-    "summary": "Anna E. Russell, 87, of Silver Creek, NY passed away peacefully on Sunday evening October 11, 2026 at her home with her family at her side. She was born in North Bend, Pa on August 20, 1939 the daughter of the late Benny and Ida Abbott. She married Ray Russell on October 31, 1952 and [\u2026]",
-    "source": "Dunkirk Observer"
-   },
-   {
-    "title": "Have IDA take on city\u2019s development efforts",
-    "link": "https://www.observertoday.com/opinion/the-observers-view/2026/10/have-ida-take-on-citys-development-efforts-2/",
-    "published": "2026-10-17T04:00Z",
-    "summary": "Since Vince DeJoy was hired as Dunkirk\u2019s Director of Planning and Development, the landscape of the city has changed greatly. One of DeJoy\u2019s greatest successes in the role was New York state\u2019s awarding of $10 million in funding for the Downtown Revitalization Initiative. That money remains an import",
-    "source": "Dunkirk Observer"
-   },
-   {
-    "title": "Bill Nye returns to Rochester for RIT homecoming",
-    "link": "https://www.rochesterfirst.com/news/bill-nye-returns-to-rochester-for-rit-homecoming/",
-    "published": "2026-10-17T02:20Z",
-    "summary": "ROCHESTER, N.Y. (WWROC) \u2014 Bill Nye, yes, the Science Guy, is returning to Rochester during RIT's homecoming weekend. Nye will take the stage as the university's guest speaker for Brick City Weekend and Student Government. He is best known for his Emmy-winning television series, Bill Nye the Science ",
     "source": "Rochester First"
    },
    {
@@ -706,6 +804,13 @@
     "source": "WKBW Buffalo"
    },
    {
+    "title": "One dead following crash in East Aurora",
+    "link": "https://www.wivb.com/news/crime/fatal-motorcycle-crash-at-buffalo-and-bowen-road-intersection-in-east-aurora/",
+    "published": "2026-10-16T23:37Z",
+    "summary": "BUFFALO, N.Y. (WIVB) -- One man is dead following a crash between a motorcycle and a pickup truck at the intersection of Buffalo and Bowen Roads on Friday, the East Aurora Police Department said. The department received a report of the crash shortly after 2 p.m. and arrived at the scene to find the ",
+    "source": "WIVB Buffalo"
+   },
+   {
     "title": "Broadway Market construction start date pushed back to spring 2027",
     "link": "https://www.wkbw.com/news/local-news/buffalo/broadway-market-construction-start-date-pushed-back-to-spring-2027",
     "published": "2026-10-16T23:11Z",
@@ -718,13 +823,6 @@
     "published": "2026-10-16T22:54Z",
     "summary": "Nearly seven months after 30-year-old JohnLuc Jubert was killed in a four-vehicle crash on the Kensington Expressway, his family and friends say they are still searching for answers and justice.",
     "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Historic Naval Park ships to remain in water through winter",
-    "link": "https://www.wivb.com/news/local-news/buffalo/historic-naval-park-ships-to-remain-in-water-through-winter/",
-    "published": "2026-10-16T22:53Z",
-    "summary": "BUFFALO, N.Y. (WIVB) -- For nearly five decades, two historic ships have called the Buffalo Naval Yard home. While plans for their repairs continue to take shape, Naval Park leadership said they hope to see them dry docked as soon as next spring, but there is still no set timeline, meaning the ships",
-    "source": "WIVB Buffalo"
    },
    {
     "title": "Orchard Park revisits zoning rules around Bills stadium as town eyes taller buildings",
@@ -755,20 +853,6 @@
     "source": "Rochester First"
    },
    {
-    "title": "Sunday marks 182 years since Buffalo's worst natural disaster",
-    "link": "https://www.wivb.com/news/local-news/sunday-marks-182-years-since-buffalos-worst-natural-disaster/",
-    "published": "2026-10-16T21:42Z",
-    "summary": "BUFFALO, N.Y. (WIVB) -- Twenty years ago this week, the Western New York community experienced the October Surprise Storm in 2006; however, before that, there was another October storm that happened in 1844. Mike Vogel, the President of the Buffalo Lighthouse Association said that storm on October 1",
-    "source": "WIVB Buffalo"
-   },
-   {
-    "title": "Two accused of stealing vehicle, leading chase in Niagara County",
-    "link": "https://www.wivb.com/news/crime/two-accused-of-stealing-vehicle-leading-chase-in-niagara-county/",
-    "published": "2026-10-16T21:08Z",
-    "summary": "BUFFALO, N.Y. (WIVB) -- Two individuals, including one minor, have been accused of stealing a vehicle in the city of Niagara Falls, the Niagara County Sheriff's Office said. Shortly after 1 a.m. on Thursday, the Sheriff's Office was alerted via license plate reader technology to a stolen vehicle tra",
-    "source": "WIVB Buffalo"
-   },
-   {
     "title": "Rooting and Rising: Miss Julie's School of Beauty to host free expo Saturday",
     "link": "https://www.rochesterfirst.com/news/business/local-business/rooting-and-rising-miss-julies-school-of-beauty-to-host-free-expo-saturday/",
     "published": "2026-10-16T21:01Z",
@@ -790,13 +874,6 @@
     "source": "Rochester First"
    },
    {
-    "title": "Copart completes $1.9 billion acquisition of Buffalo-based ACV",
-    "link": "https://www.wivb.com/news/local-news/buffalo/copart-completes-1-9-billion-acquisition-of-buffalo-based-acv/",
-    "published": "2026-10-16T20:13Z",
-    "summary": "BUFFALO, N.Y. (WIVB) \u2014 Online car auction company Copart has completed a $1.9 billion acquisition of Buffalo-based ACV Auctions, ACV confirmed on Friday. Dallas-based Copart first announced the deal in September. ACV, which has around 600 employees in Western New York, was founded in 2015. \"From day",
-    "source": "WIVB Buffalo"
-   },
-   {
     "title": "Man arrested in Florida in connection to 2004 Rochester arson death",
     "link": "https://www.rochesterfirst.com/crime/man-arrested-in-florida-in-connection-to-2004-rochester-arson-death/",
     "published": "2026-10-16T20:07Z",
@@ -804,7 +881,7 @@
     "source": "Rochester First"
    },
    {
-    "title": "Police close interesction of Buffalo and Bowen roads while investigating fatal motorcycle crash",
+    "title": "Motorcyclist killed in East Aurora crash",
     "link": "https://www.wkbw.com/news/local-news/police-close-interesction-of-buffalo-and-bowen-roads-while-investigating-fatal-motorcycle-crash",
     "published": "2026-10-16T19:52Z",
     "summary": "The intersection of Buffalo and Bowen roads was shut down by East Aurora Police on Friday afternoon due to a fatal motorcycle crash.",
@@ -830,13 +907,6 @@
     "published": "2026-10-16T18:49Z",
     "summary": "During \"Connections with Evan Dawson\" on Oct. 16, 2026, we sit down with Harry Bronson, candidate for NYS Assembly District 138. The incumbent discusses affordability, data centers, and more.",
     "source": "WXXI Rochester"
-   },
-   {
-    "title": "Niagara County dispatcher gets DWI in sheriff's office parking lot",
-    "link": "https://www.wivb.com/news/local-news/niagara-county/niagara-county-dispatcher-gets-dwi-in-sheriffs-office-parking-lot/",
-    "published": "2026-10-16T18:44Z",
-    "summary": "BUFFALO, N.Y. (WIVB) \u2014 A Niagara County police dispatcher got a DWI in the sheriff's office parking lot on Thursday night. Police said 61-year-old Brenda Higgins, who has been a dispatcher with the sheriff's office since 2012, hit a parked car in the parking lot of the sheriff's office, located on N",
-    "source": "WIVB Buffalo"
    },
    {
     "title": "NYSP report 10,803 tickets during Columbus Day weekend",
@@ -881,32 +951,11 @@
     "source": "WKBW Buffalo"
    },
    {
-    "title": "4 games to watch: Key division matchups in Week 7 of WNY football season",
-    "link": "https://www.wivb.com/sports/high-school-sports/4-games-to-watch-key-division-matchups-in-week-7-of-wny-football-season/",
-    "published": "2026-10-16T14:44Z",
-    "summary": "BUFFALO, N.Y. (WIVB) \u2014 With two weeks remaining until the Section VI playoffs commence, a number of division titles will be on the line in Week 7 of the Western New York high school football season. Here are some of the games WIVB News 4 will be watching. Bennett at Lancaster 7 p.m. Friday Two [...]",
-    "source": "WIVB Buffalo"
-   },
-   {
-    "title": "Body of 18-year-old who fell in Niagara River in July identified",
-    "link": "https://www.wivb.com/news/local-news/niagara-county/niagara-falls/body-of-18-year-old-who-fell-in-niagara-river-in-july-identified/",
-    "published": "2026-10-16T13:27Z",
-    "summary": "BUFFALO, N.Y. (WIVB) \u2014 The body that New York State Police found in the Niagara River has been identified as the 18-year-old who fell into the river in July. State Police used dental records to identify Aung S. Hla, who fell into the river around 10:15 a.m. on July 22 while fishing with friends. Hla",
-    "source": "WIVB Buffalo"
-   },
-   {
     "title": "Two races, two candidates in studio: Harry Bronson; Alissa Ellman",
     "link": "https://www.wxxinews.org/2026-10-16/two-races-two-candidates-in-studio-harry-bronson-alissa-ellman",
     "published": "2026-10-16T12:58Z",
     "summary": "During \"Connections with Evan Dawson\" on Oct. 16, 2026, we talk with NYS Assembly candidate Harry Bronson and Congressional candidate Alissa Ellman about their priorities for office, if elected.",
     "source": "WXXI Rochester"
-   },
-   {
-    "title": "Batavia woman killed after crashing into disabled tractor in Genesee County",
-    "link": "https://www.wivb.com/news/local-news/western-new-york/genesee-county/batavia-woman-killed-after-crashing-into-disabled-tractor-in-genesee-county/",
-    "published": "2026-10-16T12:35Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 A Batavia woman is dead after a crash involving a disabled farm tractor in Genesee County. On Thursday evening, according to investigators, 64-year-old Victoria Klimczak was driving her Chevy Trax east on Lewiston Road in the Town of Alabama. On the shoulder of the road was ",
-    "source": "WIVB Buffalo"
    },
    {
     "title": "Batavia woman killed after crashing into disabled tractor in Genesee County",
@@ -921,224 +970,273 @@
     "published": "2026-10-16T11:05Z",
     "summary": "ROCHESTER, N.Y. (WROC) \u2014 Stay up to date on the latest headlines in today's Sunrise Smart Start for Friday, October 16, 2026. Weather forecast: Rain, wind, and a cold blast Outside of rain, temperatures surge. Expect highs in the upper 60s. Winds will ramp up as well as gusts go 30-40 mph. Winds are",
     "source": "Rochester First"
-   },
-   {
-    "title": "Daily News: Batavia wife says husband taken by ICE, animal advocates seek state financial support, WXXI Election Day prep",
-    "link": "https://www.wxxinews.org/podcast/rochester-local-news/2026-10-16/daily-news-batavia-wife-says-husband-taken-by-ice-animal-advocates-seek-state-financial-support-wxxi-election-day-prep",
-    "published": "2026-10-16T10:57Z",
-    "summary": "In today's top stories:A Batavia woman demands answers from ICE after agents took her husband away.Advocates want New York State to fund recovery for animals rescued from hoarding and abuse.WXXI prepares you for election day with an in depth break down of the governor candidate debate and the in's a",
-    "source": "WXXI Rochester"
-   },
-   {
-    "title": "Jamestown honors late teacher, councilman Tony Dolce with Riverwalk dedication",
-    "link": "https://www.wkbw.com/chautauqua-county/jamestown-honors-late-teacher-councilman-tony-dolce-with-riverwalk-dedication",
-    "published": "2026-10-16T10:17Z",
-    "summary": "Months after his unexpected passing, the Jamestown community gathered to pay tribute to friend and teacher Tony Dolce by dedicating the Greater Jamestown Riverwalk in his name.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Weather forecast: A sunny (but chilly) weekend",
-    "link": "https://www.rochesterfirst.com/weather/weather-forecasts/weather-forecast-rain-wind-and-a-cold-blast/",
-    "published": "2026-10-16T09:56Z",
-    "summary": "ROCHESTER, NY (WROC) - That north wind will suck in colder air and we tumble down to the 40s and upper 30s Saturday morning. There will be some lingering rain showers around that turn over to wet flakes at higher elevations south of the thruway. Sun emerges in the afternoon, it's a raw north flow, [",
-    "source": "Rochester First"
-   },
-   {
-    "title": "'Wrecking Ball' Wheelchair Rugby Tournament returns this weekend with fierce competition",
-    "link": "https://www.wxxinews.org/local-news/2026-10-16/wrecking-ball-wheelchair-rugby-tournament-returns-this-weekend-with-fierce-competition",
-    "published": "2026-10-16T09:05Z",
-    "summary": "Wheelchair rugby season starts in earnest at the Wrecking Ball Wheelchair Rugby Tournament this weekend.",
-    "source": "WXXI Rochester"
-   },
-   {
-    "title": "Behind the Curtain | \u2018Dance Moms\u2019 star Abby Lee Miller bringing dance experience to Macedon this weekend",
-    "link": "https://www.rochesterfirst.com/entertainment-news/behind-the-curtain-dance-moms-star-abby-lee-miller-bringing-dance-experience-to-macedon-this-weekend/",
-    "published": "2026-10-16T03:21Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Get ready to point your toes, straighten those knees and save your tears for the pillow. \"Dance Moms\" star Abby Lee Miller is making her way to the Rochester area this weekend, giving fans and aspiring dancers a chance to step into her world. The outspoken dance instructor a",
-    "source": "Rochester First"
-   },
-   {
-    "title": "Perlo's Restaurant celebrates 25 years of food, family and community",
-    "link": "https://www.rochesterfirst.com/monroe-county/perlos-restaurant-celebrates-25-years-of-food-family-and-community/",
-    "published": "2026-10-16T00:52Z",
-    "summary": "EAST ROCHESTER, N.Y. (WROC) \u2014 A longtime East Rochester restaurant is celebrating a milestone 25 years in the making, and its owners say the secret to success has always been the community. Perlo's Restaurant marked its 25th anniversary Thursday, celebrating a quarter-century of serving Monroe Count",
-    "source": "Rochester First"
-   },
-   {
-    "title": "Banana Ball is coming to Rochester in 2027: What to know",
-    "link": "https://www.rochesterfirst.com/rochester/banana-ball-is-coming-to-rochester-in-2027-what-to-know/",
-    "published": "2026-10-16T00:31Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 Get ready, Rochester! Banana Ball is bringing its high-energy, baseball-meets-entertainment experience to the Flower City in 2027. The Banana Ball Championship League announced Thursday that the Loco Beach Coconuts will take on the Texas Tailgaters at ESL Ballpark on July 2 ",
-    "source": "Rochester First"
-   },
-   {
-    "title": "'Baseball meets circus': Banana Ball set to return to Buffalo in June",
-    "link": "https://www.wkbw.com/news/local-news/buffalo/baseball-meets-circus-banana-ball-set-to-return-to-buffalo-in-june",
-    "published": "2026-10-15T23:18Z",
-    "summary": "Banana Ball, the league founded by the popular Savannah Bananas baseball team, announced it will return to Buffalo in June 2027.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Spotlight Team of the Week: Pittsford Panthers football",
-    "link": "https://www.rochesterfirst.com/primetime585/spotlight-team-of-the-week-pittsford-panthers-football/",
-    "published": "2026-10-15T22:37Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 The News 8 Primetime 585 Spotlight Team of the Week is the Pittsford Panthers football team. The Panthers advanced to 5-1 after beating previously undefeated Hilton 21-14. The Panthers were led by the dynamic duo of quarterback Brody Pusateri and wide receiver Dayshawn Prest",
-    "source": "Rochester First"
-   },
-   {
-    "title": "SUNY Brockport students, faculty rally in support of employee detained by ICE",
-    "link": "https://www.rochesterfirst.com/brockport/suny-brockport-students-faculty-rally-in-support-of-employee-detained-by-ice/",
-    "published": "2026-10-15T22:24Z",
-    "summary": "BROCKPORT, N.Y. (WROC) \u2014 Students and faculty at SUNY Brockport gathered Thursday afternoon to show support for a university employee detained by Immigration and Customs Enforcement (ICE) agents earlier this week. The event, hosted by United University Professions (UUP), the union representing SUNY ",
-    "source": "Rochester First"
-   },
-   {
-    "title": "Buffalo Water Board sues 17 companies over alleged PFAS contamination in Lake Erie",
-    "link": "https://www.wkbw.com/news/local-news/buffalo-water-board-sues-17-companies-over-alleged-pfas-contamination-in-lake-erie",
-    "published": "2026-10-15T22:23Z",
-    "summary": "The lawsuit claims chemicals used in firefighting foam have contaminated the water supply serving about 276,000 people. The Water Board is seeking damages for testing, treatment and other costs.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Founder of Buffalo\u2019s Persistence Prep wins $100,000 Robert Wilmers Integrity Prize",
-    "link": "https://www.wkbw.com/news/local-news/buffalo/buffalos-persistence-prep-wins-100-000-robert-wilmers-integrity-prize",
-    "published": "2026-10-15T22:08Z",
-    "summary": "Persistence Prep Charter School founder Joelle Formato accepted the $100,000 prize, which will fund scholarships for students pursuing high school and college opportunities.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Clarence calls for action on repeat juvenile offenders",
-    "link": "https://www.wkbw.com/news/local-news/northtowns/clarence-calls-for-action-on-repeat-juvenile-offenders",
-    "published": "2026-10-15T21:45Z",
-    "summary": "The town board approved a resolution urging New York lawmakers to give judges more discretion when handling cases involving young people accused of repeat offenses.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Lake Shore High School students run their own credit union with new partner",
-    "link": "https://www.wkbw.com/news/local-news/lake-shore-high-school-students-run-their-own-credit-union-with-new-partner",
-    "published": "2026-10-15T21:27Z",
-    "summary": "Lake Shore High School's student-run credit union has entered a new partnership with Radius Federal Credit Union. Learn more in the comments:",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "DEC believes petroleum is behind the growing rainbow sheen in Buffalo River as crews work to contain it",
-    "link": "https://www.wkbw.com/news/dec-believes-petroleum-is-behind-the-growing-rainbow-sheen-in-buffalo-river-as-crews-work-to-contain-it",
-    "published": "2026-10-15T21:25Z",
-    "summary": "State regulators believe petroleum is behind a growing spill in the Buffalo River. Cleanup crews have been deployed to contain it.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "Erie County Executive Mark Poloncarz unveils proposed $2.4B budget for 2027",
-    "link": "https://www.wkbw.com/news/local-news/erie-county-executive-mark-poloncarz-unveils-proposed-2-4b-budget-for-2027",
-    "published": "2026-10-15T21:14Z",
-    "summary": "Erie County Executive Mark Poloncarz unveiled his proposed 2027 budget Thursday, a spending plan totaling just over $2.4 billion across all operating funds.",
-    "source": "WKBW Buffalo"
-   },
-   {
-    "title": "A SUNY Brockport employee is in ICE custody. His wife questions why he was detained",
-    "link": "https://www.wxxinews.org/local-news/2026-10-15/suny-brockport-employee-detained-outside-home-currently-held-in-buffalo-facility",
-    "published": "2026-10-15T18:34Z",
-    "summary": "German Machado Guillen, an IT technician at SUNY Brockport, was detained by U.S. Immigration and Customs Enforcement agents Tuesday morning outside his home in Batavia.",
-    "source": "WXXI Rochester"
-   },
-   {
-    "title": "She came from Uruguay to help people see",
-    "link": "https://www.wxxinews.org/2026-10-15/she-came-from-uruguay-to-help-people-see",
-    "published": "2026-10-15T16:46Z",
-    "summary": "From Sept. 15 to Oct. 15, the nation honored the contributions and influence that Latino and Hispanic people have had on our communities. And here at WXXI, we recognize Latinos who have been making changes locally.",
-    "source": "WXXI Rochester"
-   },
-   {
-    "title": "'There are no words': Gates PD release body-cam footage of officer shooting woman with replica gun",
-    "link": "https://www.rochesterfirst.com/crime/police/gates-pd-will-release-body-worn-camera-footage-of-woman-shot-and-killed-by-officer/",
-    "published": "2026-10-15T16:40Z",
-    "summary": "ROCHESTER, N.Y. (WROC) \u2014 The Gates Police Department released the body-cam footage showing 24-year-old Haley Rodriguez being shot by a police officer. She was shot after police said she had a replica handgun. The footage shows an officer getting out of his car and speaking to Rodriguez in the middle",
-    "source": "Rochester First"
-   },
-   {
-    "title": "Outdoor fitness court opens at Genesee Valley Park",
-    "link": "https://www.wxxinews.org/local-news/2026-10-15/outdoor-fitness-court-opens-at-genesee-valley-park",
-    "published": "2026-10-15T16:27Z",
-    "summary": "The seven workout stations are for people of all abilities, ages 14 and up.",
-    "source": "WXXI Rochester"
-   },
-   {
-    "title": "Police: 37-year-old man charged in accidental shooting of 11-year-old girl in Buffalo",
-    "link": "https://www.wkbw.com/news/local-news/buffalo/police-37-year-old-man-charged-in-accidental-shooting-of-11-year-old-girl-in-buffalo",
-    "published": "2026-10-15T15:56Z",
-    "summary": "A 37-year-old man was arrested in connection with the accidental shooting of an 11-year-old girl, the Buffalo Police Department announced Wednesday.",
-    "source": "WKBW Buffalo"
    }
   ],
   "entertainment": [
    {
-    "title": "Joel Coen Talks Studio Consolidation \u2013 \u2018Competition Is What Produces Opportunities for Different Kinds of Movies\u2019 \u2013 and Teases Reunion Film With Brother Ethan",
-    "link": "https://variety.com/2026/film/global/joel-coen-on-studio-consolidation-competition-1236914741/",
-    "published": "2026-10-17T12:52Z",
-    "summary": "The Coen brothers could be heading back to their hometown in Minneapolis for a reunion movie eight years after their last joint film, \u201cThe Ballad of Buster Scruggs.\u201d While at Lyon\u2019s Lumi\u00e8re Film Festival, where they received a career tribute, Joel and Ethan Coen revealed they have several projects i",
+    "title": "NFL London Game 2026: Where to Watch Houston Texans vs. Jacksonville Jaguars Live Online Free",
+    "link": "https://www.billboard.com/culture/product-recommendations/nfl-london-2026-texans-jaguars-watch-live-online-free-1236359693/",
+    "published": "2026-10-18T10:30Z",
+    "summary": "Livestream the Texans take on the Jaguars live from London on Oct. 18.",
+    "source": "Billboard"
+   },
+   {
+    "title": "James Austin Johnson\u2019s Trump Stops by \u2018SNL U.K.\u2019 for Meeting With Burnham and Zelenskyy: \u2018You Don\u2019t Have One Guy Who Can Play Trump?\u2019",
+    "link": "https://variety.com/2026/tv/global/snl-uk-james-austin-johnson-trump-surprise-cold-open-1236915603/",
+    "published": "2026-10-18T09:23Z",
+    "summary": "Donald Trump made his first appearance on \u201cSNL U.K.,\u201d courtesy of \u201cSNL\u201d cast member James Austin Johnson. Saturday night\u2019s cold open recreated U.K. Prime Minister Andy Burnham (George Fouracres) meeting with Ukraine\u2019s President Zelenskyy (Freddie Meredith) to reaffirm Britain\u2019s support in their war ",
     "source": "Variety"
    },
    {
-    "title": "Joe Keery On Making His Broadway Debut and Balancing Music and Acting Post-\u2018Stranger Things\u2019",
-    "link": "https://www.hollywoodreporter.com/lifestyle/arts/joe-keery-broadway-debut-stranger-things-1236733706/",
-    "published": "2026-10-17T12:45Z",
-    "summary": "Keery is appearing on stage with Julia Louis-Dreyfus, Allison Janney, Ed Harris and Lily Rabe.",
+    "title": "\u2018What Belongs to Others\u2019 Wins Top Warsaw Film Festival Award",
+    "link": "https://www.hollywoodreporter.com/movies/movie-news/warsaw-film-festival-2026-awards-winners-what-belongs-to-others-1236734712/",
+    "published": "2026-10-18T09:10Z",
+    "summary": "Cai Chengjie was named best director for 'Suzhou Quartet,' while 'Agia' was honored with the Competition 1-2 award at the 42nd edition of the Polish festival.",
     "source": "Hollywood Reporter"
    },
    {
-    "title": "Controversial \u2018Downstate\u2019 Again Delays First Broadway Preview Due To Illness",
-    "link": "https://deadline.com/2026/10/downstate-broadway-opening-date-1237155592/",
-    "published": "2026-10-17T12:30Z",
-    "summary": "UPDATE: Downstate, the controversial new play by Bruce Norris directed by Joe Mantello, has bumped its first Broadway preview date again due to an illness within the company. The play will now have its first performance at the Booth Theatre on Tuesday, October 20. The October 29 performance has been",
+    "title": "\u2018SNL U.K.\u2019 Weekend Update Takes Jab at Shane Gillis: \u2018You Stupid F\u2014ing C\u2014\u2019",
+    "link": "https://variety.com/2026/tv/global/snl-uk-shane-gillis-monologue-weekend-update-1236915579/",
+    "published": "2026-10-18T08:45Z",
+    "summary": "\u201cSNL U.K.\u201d didn\u2019t hold back from criticizing its American counterpart on Saturday night\u2019s Weekend Update, roasting Shane Gillis\u2019 controversial hosting appearance. After cracking jokes about everything from U.S. President Donald Trump\u2019s recently fired press secretary to ridiculous claims that King Ch",
+    "source": "Variety"
+   },
+   {
+    "title": "Roger Deakins on Instinct, Experience and Not Knowing What Is a Cinematographer: \u2018I Still Can\u2019t Answer That\u2019",
+    "link": "https://variety.com/2026/artisans/global/roger-deakins-instinct-experience-not-knowing-1236914679/",
+    "published": "2026-10-18T08:38Z",
+    "summary": "Walking through Turin with his wife and creative partner James Ellis Deakins, Roger Deakins found himself thinking about Giorgio de Chirico. The Italian painter, one of his favorites, had drawn inspiration from the city\u2019s vast squares, long arcades and unusual arrangements of light and shadow. Deaki",
+    "source": "Variety"
+   },
+   {
+    "title": "Eminem Defends Kid Rock Collaboration: \u2018Not About Choosing Sides\u2019",
+    "link": "https://www.billboard.com/music/rb-hip-hop/eminem-defends-kid-rock-collaboration-heal-my-faith-1236362405/",
+    "published": "2026-10-18T08:14Z",
+    "summary": "The rapper addressed backlash over his guest verse on Kid Rock\u2019s new faith-based album, pointing to the pair\u2019s decades-long friendship",
+    "source": "Billboard"
+   },
+   {
+    "title": "South Africa\u2019s Oscar Entry \u2018Variations on a Theme\u2019 Was Written With Microsoft Excel",
+    "link": "https://www.hollywoodreporter.com/movies/movie-news/oscars-2027-south-africa-film-variations-on-a-theme-excel-1236734314/",
+    "published": "2026-10-18T07:30Z",
+    "summary": "Plus, an Estonian composer also has something to do with the film\u2019s musical vibes, co-writer and co-director Devon Delmar shared with THR at the BFI London Film Festival.",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "Ryan Gosling\u2019s Zero-G Stunts on \u2018Project Hail Mary\u2019 Broken Down by the Space Epic\u2019s VFX Supervisors",
+    "link": "https://variety.com/2026/film/global/ryan-gosling-zero-g-stunts-in-project-hail-mary-explained-1236915066/",
+    "published": "2026-10-18T07:28Z",
+    "summary": "For Oscar-winning VFX supervisor Paul Lambert Lambert, of all the huge challenges presented by Ryan Gosling space epic \u201cProject Hail Mary,\u201d the most daunting was creating convincing zero gravity. \u201cZero-G was probably my personal biggest concern going into the movie,\u201d he said at View Conference in Tu",
+    "source": "Variety"
+   },
+   {
+    "title": "Academy Museum Gala: Taylor Swift, Sabrina Carpenter, Jennifer Hudson, Connor Storrie, More Stars Walk the Carpet",
+    "link": "https://www.hollywoodreporter.com/gallery/taylor-swift-anna-kendrick-photos-academy-museum-gala-2026-1236734470/",
+    "published": "2026-10-18T01:59Z",
+    "summary": "Inde Navarrette, Colman Domingo, Teyana Taylor, Anna Kendrick, Rami Malek, Jamie Lee Curtis, Jacob Elordi, Adrien Brody, Mikey Madison, Chase Infiniti, Mark Hamill, Kate Hudson, Sofia Vergara, Seth Rogen, Pamela Anderson, Naomi Ackie, Charlize Theron, Alexa Demie, Mia Goth, Cailee Spaeny, Mckenna Gr",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "Academy Museum Gala 2026 Red Carpet: Taylor Swift, Inde Navarrette, Kate Hudson and More",
+    "link": "https://variety.com/gallery/academy-museum-gala-2026-red-carpet-photos/",
+    "published": "2026-10-18T01:30Z",
+    "summary": "The red carpet at the Academy Museum Gala is now open. Once again, the event is proving to be one of Hollywood\u2019s most glamorous A-list nights of the year. Among those expected to walk the carpet are Taylor Swift, Connor Storrie, Jessica Biel and Justin Timberlake, Kim Kardashian, Jacob Elordi, Kenda",
+    "source": "Variety"
+   },
+   {
+    "title": "James McAvoy Pitched \u2018Star Trek\u2019 Series About \u201cYoung Picard,\u201d Jokes \u201cAll I Really Want To Do\u201d Is Play Young Patrick Stewart",
+    "link": "https://deadline.com/2026/10/james-mcavoy-pitched-star-trek-series-young-picard-1237166532/",
+    "published": "2026-10-18T00:29Z",
+    "summary": "After putting in his tenure in the X-Men franchise, James McAvoy had his sights set on another iconic character originated by Patrick Stewart. The Golden Globe nominee recently revealed that he pitched a Star Trek series about \u201cyoung Picard\u201d that was titled Mutiny On the Stargazer, noting that he ne",
     "source": "Deadline"
    },
    {
-    "title": "Indiana vs. Ohio State: Where to Watch the Top-Five College Football Matchup Online",
-    "link": "https://www.hollywoodreporter.com/tv/tv-news/watch-indiana-vs-ohio-state-football-game-free-streams-2026-1236734000/",
-    "published": "2026-10-17T12:15Z",
-    "summary": "Here's how to livestream the Big Ten showdown between the Buckeyes and Hoosiers on Saturday, Oct. 17.",
+    "title": "Quentin Tarantino Confirms He\u2019s \u2018Written a Script\u2019 for His Tenth Film, But Won\u2019t Pursue It Yet Because He Wants to \u2018Live a Little\u2019",
+    "link": "https://variety.com/2026/film/news/quentin-tarantino-confirms-script-for-tenth-film-1236915169/",
+    "published": "2026-10-17T23:59Z",
+    "summary": "Quentin Tarantino has long said he\u2019ll be retiring after his tenth feature film, but fans shouldn\u2019t worry yet. While the \u201cPulp Fiction\u201d director confirmed he\u2019d finished penning the script for his final project, he won\u2019t be getting much further with it until his newly opened play, \u201cThe Popinjay Cavali",
+    "source": "Variety"
+   },
+   {
+    "title": "Jaime Pressly Defends \u2018Mom\u2019 Co-Stars As \u201cBeautifully Flawed\u201d After Chuck Lorre Memoir: \u201cIncredible Cast Of Women\u201d",
+    "link": "https://deadline.com/2026/10/jaime-pressly-defends-mom-co-stars-chuck-lorre-memoir-1237166522/",
+    "published": "2026-10-17T23:49Z",
+    "summary": "After Anna Faris responded to Mom co-creator Chuck Lorre\u2019s professional criticisms, Jaime Pressly has chimed in. The actress, who played recovering addict Jill Kendall on the CBS sitcom, defended her co-stars as \u201can incredible cast of women\u201d after Lorre wrote in his memoir Sitcom that he \u201cwas, in fa",
+    "source": "Deadline"
+   },
+   {
+    "title": "Gene Schwam, Hollywood Publicist to Elvis Presley, Judy Garland and Julie Andrews, Dies at 96",
+    "link": "https://www.hollywoodreporter.com/movies/movie-news/gene-schwam-dead-publicist-elvis-judy-garland-julie-andrews-1236734445/",
+    "published": "2026-10-17T23:35Z",
+    "summary": "Schwam died Friday in Los Angeles following a brief illness.",
     "source": "Hollywood Reporter"
    },
    {
-    "title": "Path\u00e9 Unveils Sofia Coppola\u2019s \u2018Marie Antoinette\u2019 4K Restoration as Sophie and J\u00e9r\u00f4me Seydoux Are Feted in Lyon",
-    "link": "https://variety.com/2026/film/global/pathe-sofia-coppola-marie-antoinette-jerome-seydoux-1236914657/",
-    "published": "2026-10-17T12:07Z",
-    "summary": "Sofia Coppola\u2019s cult classic \u201cMarie Antoinette\u201d and three works by Louis Daquin, a champion of the Communist Resistance during the German occupation, are among the latest restored works from French studio Path\u00e9. The company, whose owners J\u00e9r\u00f4me Seydoux and Sophie Seydoux are being honored at the Lum",
+    "title": "Clive Barker Teases \u2018Hellraiser: Revival\u2019 Video Game Has Reignited \u201cMany Ideas\u201d For Film Franchise: \u201cPlanning To Keep My Fingers In That Pie\u201d",
+    "link": "https://deadline.com/2026/10/clive-barker-hellraiser-revival-reignited-ideas-film-franchise-1237166512/",
+    "published": "2026-10-17T23:25Z",
+    "summary": "Nearly 40 years after first opening the Lament Configuration on screen, Clive Barker is ready to explore pain and pleasure again in the Hellraiser film franchise. With the recent release of the Saber Interactive\u2019s Hellraiser: Revival video game, the writer/director of the original 1987 horror movie,",
+    "source": "Deadline"
+   },
+   {
+    "title": "James McAvoy Says \u2018Split\u2019 Is The Only Film That \u2018Really Consistently Pays Me\u2019",
+    "link": "https://variety.com/2026/film/news/james-mcavoy-split-only-film-that-consistently-pays-me-1236915162/",
+    "published": "2026-10-17T23:21Z",
+    "summary": "James McAvoy has starred in films including \u201cSpeak No Evil,\u201d \u201cAtonement\u201d and \u201cX-Men: First Class,\u201d but he recently revealed the \u201conly\u201d film he still consistently receives residuals from is M. Night Shyamalan\u2019s 2016 horror \u201cSplit.\u201d \u201cYou get the odd check for, you know, a couple 100 quid here or somet",
     "source": "Variety"
    },
    {
-    "title": "\u2018Trust Me, I\u2019m a Doctor\u2019 Review: Kal Penn and Abbie Cornish Star in a Minor Sidebar to the Anna Nicole Smith Story",
-    "link": "https://variety.com/2026/film/reviews/trust-me-im-a-doctor-review-1236914737/",
-    "published": "2026-10-17T11:31Z",
-    "summary": "Andy Warhol famously said that in the future, everyone will have 15 minutes of fame. \u201cTrust Me, I\u2019m A Doctor\u201d expands that tally to an hour and 51 minutes for Sandeep Kapoor, the physician who treated Playboy Playmate Anna Nicole Smith and was implicated in her death from a prescription drug overdos",
+    "title": "Miley Cyrus Returns to the Stage With Emotional and Cathartic Hollywood Bowl Show",
+    "link": "https://www.hollywoodreporter.com/music/music-news/miley-cyrus-live-hollywood-bowl-2026-night-1-highlights-1236734276/",
+    "published": "2026-10-17T23:17Z",
+    "summary": "The 33-year-old played her first major concert in four years Friday night for the first of two shows at the iconic L.A. venue.",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "\u2018The Diplomat\u2019 U.K. Prime Minister on the Operatic Way He Learned of His \u201cShocking\u201d Season 4 Storyline",
+    "link": "https://www.hollywoodreporter.com/tv/tv-news/the-diplomat-trowbridge-resigns-rory-kinnear-interview-1236734442/",
+    "published": "2026-10-17T23:11Z",
+    "summary": "Showrunner Debora Cahn and actor Rory Kinnear break down the realistic reasons for the Netflix series' latest political shakeup, which plays out amid a surreal episode replete with hallucinations, costumes and an aria.",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "Here\u2019s Where to Buy New York Knicks Home Opener Tickets at Madison Square Garden Online",
+    "link": "https://variety.com/2026/shopping/news/new-york-knicks-home-opener-2026-msg-tickets-buy-online-1236874638/",
+    "published": "2026-10-17T23:03Z",
+    "summary": "With the start of the NBA only a few days away, the hottest ticket in New York City is to the Knicks home opener at Madison Square Garden on Tuesday, Oct. 20. Since winning the NBA Finals against the San Antonio Spurs back in June, the Knicks have become the toast of New York with [\u2026]",
     "source": "Variety"
    },
    {
-    "title": "J.K. Rowling\u2019s Agent Slams Trans Rights Protest at \u2018Harry Potter and the Cursed Child\u2019 in London: It Put \u2018Others at Risk\u2019",
-    "link": "https://variety.com/2026/legit/global/jk-rowling-trans-protest-harry-potter-and-the-cursed-child-1236914728/",
-    "published": "2026-10-17T11:03Z",
-    "summary": "J.K. Rowling\u2019s agent Neil Blair has slammed the transgender rights activists who staged a dramatic protest before a gala performance of \u201cHarry Potter and the Cursed Child\u201d on Thursday in London\u2019s West End. The protesters, many wearing masks, hats and goggles to hide their identity, stormed the red c",
+    "title": "Paul McCartney Was Concerned Paul Mescal Is \u201cMarkedly Shorter\u201d Than \u2018The Beatles\u2019 Co-Stars",
+    "link": "https://deadline.com/2026/10/paul-mccartney-concerned-paul-mescal-markedly-shorter-beatles-1237166503/",
+    "published": "2026-10-17T22:53Z",
+    "summary": "As Beatles fans are transported back to Abbey Road for Sam Mendes\u2019 upcoming biopic, Paul McCartney has some thoughts on the casting. The Beatles alum said he was concerned that Paul Mescal looks \u201cmarkedly shorter\u201d compared to his co-stars, and he even reached out to Mendes about it, but doesn\u2019t know",
+    "source": "Deadline"
+   },
+   {
+    "title": "Donald Trump Finally Arrives On \u2018SNL UK\u2019 In Job Swap Cold Open With Andy Burnham & Volodymyr Zelenskyy",
+    "link": "https://deadline.com/2026/10/snl-uk-donald-trump-first-time-andy-burnham-zelensky-1237166466/",
+    "published": "2026-10-17T21:23Z",
+    "summary": "Donald Trump has spent some time in the UK these past few years but tonight he finally made his debut on Saturday Night Live UK. James Austin Johnson brought his POTUS to Sky\u2019s hit UK version of the NBC show in a job swap cold open alongside Andy Burnham (George Fouracres) and Volodymyr Zelenskyy (F",
+    "source": "Deadline"
+   },
+   {
+    "title": "Harry Styles Debuts Unreleased Song at MSG to Honor Liam Payne on Second Death Anniversary",
+    "link": "https://www.hollywoodreporter.com/music/music-news/harry-styles-unreleased-song-honor-liam-payne-anniversary-1236734395/",
+    "published": "2026-10-17T21:07Z",
+    "summary": "The pair were former bandmates of One Direction from 2010 to 2016.",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "\u2018Street Fighter\u2019s Orville Peck Tried To \u201cOrchestrate\u201d Kylie Minogue Cameo: \u201cGuys, I Can Text Her\u201d",
+    "link": "https://deadline.com/2026/10/street-fighter-orville-peck-tried-kylie-minogue-cameo-1237166445/",
+    "published": "2026-10-17T21:06Z",
+    "summary": "More than 30 years later after she blew away Street Fighter fans as bazooka-toting Cammy, Kylie Minogue nearly returned for a cameo in the latest feature adaptation. The 2x Grammy-winning Australian pop icon\u2019s friend and collaborator Orville Peck, who stars as Vega in the newly released Paramount vi",
+    "source": "Deadline"
+   },
+   {
+    "title": "Here\u2019s Where to Watch Sebastian Fundora vs. Ermal Hadribeaj Title Boxing Match Live Online for Free",
+    "link": "https://variety.com/2026/shopping/news/how-to-watch-fundora-vs-hadribeaj-boxing-live-online-free-1236909640/",
+    "published": "2026-10-17T21:00Z",
+    "summary": "This weekend, boxing promoters Premier Boxing Champions travels to Las Vegas for prime title bout between two world-class fighters. American southpaw Sebastian Fundora defends his WBC super welterweight championship belt against Albanian fighter Ermal Hadribeaj. The title bout is scheduled for 12 ro",
     "source": "Variety"
    },
    {
-    "title": "Taylor Swift Heroine Clara Bow\u2019s Breakout Movie \u2018It\u2019 Leads Carlotta Films, Artcraft Pictures French Distribution Deal of Hollywood Classics",
-    "link": "https://variety.com/2026/film/global/taylor-swift-heroine-clara-bow-it-in-carlotta-artcraft-deal-1236914724/",
-    "published": "2026-10-17T10:37Z",
-    "summary": "LYON, France \u2014 \u201cIt,\u201d the 1927 breakout movie of silent film star Clara Bow, to whom Taylor Swift paid tribute in a song named after her in \u201cThe Tortured Poets Department,\u201d leads a deal between French classic film distributor Carlotta Films and U.S. restoration company Artcraft Pictures. Under the te",
+    "title": "Paul Bettany Says He and Johnny Depp \u2018Hadn\u2019t Spoken\u2019 in Years When Their Texts Were Read During Libel Trial: \u2018I Was Being Painted As This Close Friend\u2019",
+    "link": "https://variety.com/2026/film/news/paul-bettany-johnny-depp-hadnt-spoken-in-years-libel-trial-1236915108/",
+    "published": "2026-10-17T20:48Z",
+    "summary": "Paul Bettany opened up in a recent interview with The Times about the public\u2019s misconception of his relationship with Johnny Depp after text messages between the two actors were used in court during Depp\u2019s libel lawsuit against The Sun. \u201cI hadn\u2019t spoken to Johnny in years when that happened and I ha",
     "source": "Variety"
    },
    {
-    "title": "Coen Brothers Bring Laughs to Lumi\u00e8re Award Ceremony as Javier Bardem Recalls \u2018No Country for Old Men\u2019: \u2018They Gave Me One Masterpiece\u2019",
-    "link": "https://variety.com/2026/film/global/coen-brothers-profane-thank-you-lumiere-award-1236914700/",
-    "published": "2026-10-17T09:20Z",
-    "summary": "To the sound of the Gipsy Kings\u2019 Spanish-language rendition of \u201cHotel California,\u201d Joel and Ethan Coen took the stage at Lyon\u2019s Lumi\u00e8re Film Festival on Friday evening to receive the Lumi\u00e8re Award, celebrating four decades of filmmaking with a characteristically irreverent tribute to the inventors o",
-    "source": "Variety"
+    "title": "Ari Emanuel Pitches Brother Rahm as Centrist Democratic President and Says He Isn\u2019t Too Worried About AI: \u201cIt Doesn\u2019t Have Taste\u201d",
+    "link": "https://www.hollywoodreporter.com/business/business-news/ari-emanuel-pitches-brother-rahm-president-ai-has-no-taste-1236734288/",
+    "published": "2026-10-17T20:44Z",
+    "summary": "In a conversation with Tina Brown in London, the super-agent discussed his memoirs, why the UFC was his hardest deal and how live sports can provide \"common ground\" in a politically divided world.",
+    "source": "Hollywood Reporter"
    },
    {
-    "title": "J.K. Rowling\u2019s Agent Neil Blair Condemns Trans Rights Protest At \u2018Harry Potter And The Cursed Child\u2019",
-    "link": "https://deadline.com/2026/10/jk-rowling-agent-protest-harry-potter-and-the-cursed-child-1237166312/",
-    "published": "2026-10-17T08:43Z",
-    "summary": "EXCLUSIVE: J.K. Rowling\u2019s agent Neil Blair has claimed that a trans rights protest at a gala performance of Harry Potter and the Cursed Child put people at risk. During an event celebrating a shortened version of the West End stage show at the Palace Theatre on Thursday night, a number of protesters",
+    "title": "Carrot Top Breaks Silence After Suicide Attempt and Hospitalization as Comedian Preps Return to Stage",
+    "link": "https://www.hollywoodreporter.com/news/general-news/carrot-top-suicide-attempt-hospitalization-luxor-residency-1236734402/",
+    "published": "2026-10-17T19:41Z",
+    "summary": "\u201cI\u2019m truly overwhelmed by the outpouring of love, support, prayers, and well wishes I\u2019ve received over the past couple of weeks,\" wrote Scott Thompson, who will be back on stage at Luxor Las Vegas Oct. 19.",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "\u2018Dancing With The Stars\u2019 Suspends Val Chmerkovskiy For TikTok Referencing Will Smith Oscar Moment; Dancer Responds, \u201cInstinct Was To Defend My Wife\u201d",
+    "link": "https://deadline.com/2026/10/val-chmerkovskiy-dancing-with-the-stars-suspension-1237166428/",
+    "published": "2026-10-17T19:30Z",
+    "summary": "UDPATED with Chmerkovskiy response: Val Chmerkovskiy is being suspended from Dancing with the Stars for a week after he posted a controversial TikTok message that seemed to reference Will Smith\u2019s 2022 Oscar slap. In a statement released today, producer BBC Studios said, \u201cThe well-being of everyone w",
+    "source": "Deadline"
+   },
+   {
+    "title": "Val Chmerkovskiy Ousted From Next \u2018DWTS\u2019 Episode Amid Will Smith Oscars Slap Reference, Jenna Dewan to Dance With Alan Bersten",
+    "link": "https://www.hollywoodreporter.com/tv/tv-news/val-booted-dwts-will-smith-oscars-slap-jenna-dewan-alan-bersten-1236734379/",
+    "published": "2026-10-17T19:30Z",
+    "summary": "\u201cThe well-being of everyone who works on 'Dancing With the Stars' is non-negotiable. Val\u2019s social media post was inappropriate and does not reflect the values or standards expected of anyone connected with the show. As a result, he will not participate in next week\u2019s show,\" BBC Studios said in a sta",
+    "source": "Hollywood Reporter"
+   },
+   {
+    "title": "Zach Bryan Gets Candid About Sobriety in Matthew McConaughey Interview: \u2018Why Am I Drinking?\u2019",
+    "link": "https://www.billboard.com/music/country/zach-bryan-sobriety-matthew-mcconaughey-interview-1236362369/",
+    "published": "2026-10-17T19:28Z",
+    "summary": "The country star\u2019s two-hour conversation with the Oscar-winning actor was uploaded to YouTube on Oct. 16.",
+    "source": "Billboard"
+   },
+   {
+    "title": "Miley Cyrus Tearfully Remembers Dolly Parton At Hollywood Bowl Concert, Performs \u2018Jolene\u2019",
+    "link": "https://deadline.com/2026/10/miley-cyrus-dolly-parton-jolene-hollywood-bowl-1237166419/",
+    "published": "2026-10-17T18:26Z",
+    "summary": "Miley Cyrus delivered a teary tribute to her godmother Dolly Parton at the Hollywood Bowl last night, sitting on the edge of the stage and lamenting the fact that she\u2019d only got to see the country music icon perform just once at that very venue. \u201cI only got to see Dolly Parton live in concert [\u2026]",
+    "source": "Deadline"
+   },
+   {
+    "title": "Iron Maiden Announce 2027 Run for Your Lives North American Tour: See the Dates",
+    "link": "https://www.billboard.com/music/rock/iron-maiden-2027-north-american-tour-dates-1236362365/",
+    "published": "2026-10-17T17:52Z",
+    "summary": "The third and final leg of the metal legends\u2019 50th-anniversary trek launches in April.",
+    "source": "Billboard"
+   },
+   {
+    "title": "Harry Styles Pays Tribute To Liam Payne With New Song At Madison Square Garden Concert",
+    "link": "https://deadline.com/2026/10/harry-styles-liam-payne-madison-square-garden-1237166392/",
+    "published": "2026-10-17T17:04Z",
+    "summary": "Harry Styles paid tribute last night to his late One Direction bandmate Liam Payne by performing an unreleased acoustic song titled \u201cWhat Is Enough\u201d from the stage of Madison Square Garden. The sold-out performance came on the two-year anniversary of Payne\u2019s death at 31 from a fall from a balcony at",
+    "source": "Deadline"
+   },
+   {
+    "title": "Bette Midler Accepts 2026 Woody Guthrie Prize, Sings Protest Classic: \u2018My Small Contribution to the Resistance\u2019",
+    "link": "https://www.billboard.com/music/awards/bette-midler-woody-guthrie-prize-2026-accepts-performs-1236362345/",
+    "published": "2026-10-17T16:15Z",
+    "summary": "Yep, she's woke. And proud of it.",
+    "source": "Billboard"
+   },
+   {
+    "title": "Pro Wrestler Benjamin Satterley Cause Of Death Determined",
+    "link": "https://deadline.com/2026/10/benjamin-satterley-cause-of-death-1237166368/",
+    "published": "2026-10-17T16:08Z",
+    "summary": "Champion professional wrestler Benjamin Satterley died last month at 40 of bronchial asthma, Chicago\u2019s Cook County Medical Examiner\u2019s Office has determined. The death was classified as natural. The cause of death was first reported by The New York Post and has been confirmed by other media outlets. ",
+    "source": "Deadline"
+   },
+   {
+    "title": "\u2018Street Fighter\u2019 Socks $31M, \u2018You Can See Everything\u2019 Has Lines Around The Block With $12M+ Docu Milestone \u2013 Saturday Update",
+    "link": "https://deadline.com/2026/10/box-office-street-fighter-you-can-see-everything-1237159320/",
+    "published": "2026-10-17T15:01Z",
+    "summary": "SATURDAY AM: It\u2019s a healthy third weekend at the October box office even with a bellyflop in 20th Century Studio\u2019s $60M Whalefall in the mix which is only swallowing a $7.5M opening. Paramount/Legendary/Capcom\u2019s Street Fighter is doing what it\u2019s supposed to do with a $31M start, largely pulling in a",
+    "source": "Deadline"
+   },
+   {
+    "title": "Becky G Brings World Mental Health Day Festival to a Powerful Close in NYC & More Uplifting Moments",
+    "link": "https://www.billboard.com/music/latin/becky-g-world-mental-health-day-latin-grammys-leading-ladies-1236360559/",
+    "published": "2026-10-17T14:00Z",
+    "summary": "Adem\u00e1s, BMI impulsa a las compositoras de la m\u00fasica mexicana, y Lin-Manuel Miranda recibir\u00e1 el Premio Coraz\u00f3n Latino de iHeartRadio.",
+    "source": "Billboard"
+   },
+   {
+    "title": "Michael Forest Dies: Actor In Roger Corman B-Movies, \u2018Star Trek\u2019s Apollo Was 97",
+    "link": "https://deadline.com/2026/10/michael-forest-dead-1237166329/",
+    "published": "2026-10-17T13:42Z",
+    "summary": "Michael Forest, a prolific and longtime character actor who appeared in the B movies of Roger Corman, lent his voice to numerous anime projects and guest starred in scores of TV series from The Adventures of Rin Tin Tin, The Twilight Zone and The Dick Van Dyke Show to Silk Stalkings, daytime soaps a",
     "source": "Deadline"
    },
    {
@@ -1149,102 +1247,11 @@
     "source": "Billboard"
    },
    {
-    "title": "\u2018Perfect Road\u2019 Is a Doc That Follows a Nomadic Cyclist Pursuing Grueling Challenges \u2013 and Freedom",
-    "link": "https://www.hollywoodreporter.com/movies/movie-news/perfect-road-doc-film-nomadic-cyclist-freedom-lff-2026-1236730750/",
-    "published": "2026-10-17T08:00Z",
-    "summary": "Adam and Christian Bonke's documentary and character study, screening at the London Film Festival, is a road trip full of mountain vistas and other nature \u2013 and existential questions.",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "Miley Cyrus Embraces Being the Anti-Pop Pop Star With Her First \u2018Bass Persuades\u2019 Concert at Hollywood Bowl: Concert Review",
-    "link": "https://variety.com/2026/music/news/miley-cyrus-bass-persuades-hollywood-bowl-concert-review-1236914661/",
-    "published": "2026-10-17T07:53Z",
-    "summary": "After she descended from a B-stage in the middle of the stands at the Hollywood Bowl on Friday night, Miley Cyrus sat hunched over on the main stage, visibly sapped by the 200-foot trek back to the spotlight. \u201cYou guys gave me so much energy, but you also took a little energy out of me, [\u2026]",
-    "source": "Variety"
-   },
-   {
-    "title": "\u2018Renoir\u2019 Producers Join Asia-Europe Co-Production Panel at Tokyo Market as Japanese Accelerator Atmovie Global Track Partners With Ties That Bind",
-    "link": "https://variety.com/2026/film/markets-festivals/renoir-producers-asia-europe-co-production-panel-tiffcom-1236914637/",
-    "published": "2026-10-17T05:37Z",
-    "summary": "Producers behind Hayakawa Chie\u2019s Cannes competition title \u201cRenoir\u201d are among the speakers at a session on Asia-Europe co-production at Tokyo\u2019s TIFFCOM market on Oct. 30, as Japanese accelerator Atmovie Global Track formalizes a partnership with Europe-based workshop Ties That Bind. The open panel, t",
-    "source": "Variety"
-   },
-   {
     "title": "Harry Styles Pays Tribute to Liam Payne With Unreleased Song on Anniversary of His Death",
     "link": "https://www.billboard.com/music/music-news/harry-styles-dedicates-song-to-liam-payne-1236362307/",
     "published": "2026-10-17T05:07Z",
     "summary": "Styles premiered the unreleased tribute \u201cWhat Is Enough\u201d on the second anniversary of his former One Direction bandmate\u2019s death.",
     "source": "Billboard"
-   },
-   {
-    "title": "Miley Cyrus Tearfully Pays Tribute to Dolly Parton With \u201cJolene\u201d Performance at Hollywood Bowl: \u201cMe and Dolly, We Are Eternal\u201d",
-    "link": "https://www.hollywoodreporter.com/music/music-news/miley-cyrus-dolly-parton-hollywood-bowl-jolene-watch-1236734264/",
-    "published": "2026-10-17T04:48Z",
-    "summary": "The singer told the crowd that one of the things that inspired her to play the venue was the memory of the only time she was able to sit and enjoy a Parton show at the Hollywood Bowl.",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "Anthony Scaramucci Reacts To Katie Zacharia\u2019s White House Tenure Being Shorter Than His: \u201cRecords Are Made To Be Broken\u201d",
-    "link": "https://deadline.com/2026/10/anthony-scaramucci-katie-zacharia-trump-press-secretary-1237166304/",
-    "published": "2026-10-17T03:38Z",
-    "summary": "Anthony Scaramucci weighed in on the tenure of Katie Zacharia as White House press secretary, which turned out to be shorter than his 10-day stint as Donald Trump\u2019s communications director in 2017. \u201cRecords are made to be broken,\u201d Scaramucci wrote on X. Then, he added, \u201cBut I take no pleasure in oth",
-    "source": "Deadline"
-   },
-   {
-    "title": "Miley Cyrus Setlist: Every Song Played at \u2018Bass Persuades \u2013 Live at the Hollywood Bowl\u2019",
-    "link": "https://variety.com/2026/music/news/miley-cyrus-setlist-hollywood-bowl-los-angeles-1236914492/",
-    "published": "2026-10-17T03:37Z",
-    "summary": "Miley Cyrus kicked off her \u201cMiley: Bass Persuades \u2013 Live at the Hollywood Bowl\u201d shows on Friday night at the famed Los Angeles venue, giving her first headlining performance in years. The pop star, who is going mononomously as just Miley for this era, announced this pair of Friday and Sunday shows i",
-    "source": "Variety"
-   },
-   {
-    "title": "\u20189-1-1: Nashville\u2019 Pays Tribute To Chad Lowe\u2019s Daughter Fiona With Title Card In Season 2 Premiere",
-    "link": "https://deadline.com/2026/10/9-1-1-nashville-pays-tribute-chad-lowe-daughter-title-card-1237166302/",
-    "published": "2026-10-17T03:34Z",
-    "summary": "As 9-1-1: Nashville returns for its sophomore season, executive producer Chad Lowe is grieving the death of his daughter Fiona. Thursday\u2019s Season 2 premiere episode \u201cGoing Rogue\u201d on ABC ended with a title card honoring Fiona, featuring a picture of her after her death at age 13 last month. \u201cIn lovin",
-    "source": "Deadline"
-   },
-   {
-    "title": "KJ Apa Asked \u2018Riverdale\u2019 Showrunner Roberto Aguirre-Sacasa For \u2018Afterlife with Archie\u2019 Cameo: \u201cI Don\u2019t Know Who I\u2019d Play\u201d",
-    "link": "https://deadline.com/2026/10/kj-apa-asked-roberto-aguirre-sacasa-afterlife-archie-cameo-1237166299/",
-    "published": "2026-10-17T02:50Z",
-    "summary": "As KJ Apa navigates life after Riverdale, he\u2019s up for a return to the upcoming Afterlife with Archie series adaptation. Following his performance as Archie on the CW series for its seven-season run from 2017-\u201923, the actor expressed his excitement for series creator Roberto Aguirre-Sacasa, the Archi",
-    "source": "Deadline"
-   },
-   {
-    "title": "Jacob Elordi Thought He Was Having a Mental Breakdown Until He Saw a John Cassavetes Film: \u201cMade Me Feel a Lot Less Insane and Alone\u201d",
-    "link": "https://www.hollywoodreporter.com/movies/movie-news/jacob-elordi-interview-cartier-john-cassavetes-film-sean-baker-1236734149/",
-    "published": "2026-10-17T01:56Z",
-    "summary": "The Oscar-nominated actor and Cartier ambassador joined Oscar-winning filmmaker Sean Baker and moderator Kim Morgan for a Cartier Cinema Club event at Santa Monica's Aero Theatre on Friday.",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "Brad Caleb Kane Teases \u2018It: Welcome to Derry\u2019 Is \u201cBigger\u201d In Season 2 With \u201cA Different Kind Of Pennywise\u201d",
-    "link": "https://deadline.com/2026/10/brad-caleb-kane-teases-it-welcome-to-derry-season-2-pennywise-1237166286/",
-    "published": "2026-10-17T01:30Z",
-    "summary": "As he flies solo to take the reins on Season 2 of It: Welcome to Derry, Brad Caleb Kane is ready to give fans a whole new version of Pennywise. The showrunner teased to Deadline that the killer clown (played by Bill Skarsg\u00e5rd) is depicted in a \u201cway you\u2019ve never seen that character before,\u201d with [\u2026]",
-    "source": "Deadline"
-   },
-   {
-    "title": "How Netflix\u2019s Messy Transition Will Rock Hollywood: Looking at You, NBCU",
-    "link": "https://variety.com/2026/film/news/netflix-peter-rice-bajaria-messy-dan-lin-jinny-howe-nbcu-1236914573/",
-    "published": "2026-10-17T01:13Z",
-    "summary": "It started with a dinner. Peter Rice and Ynon Kreiz met for a meal in late September, days before Kreiz surprised the industry by jumping from the CEO job at Mattel to become co-chief executive of Skydance with David Ellison. The report of the Kreiz-Rice meeting came in the New York Post\u2019s Page Six ",
-    "source": "Variety"
-   },
-   {
-    "title": "Diablo Cody Teases \u2018Jennifer\u2019s Body 2\u2019 Explores A More \u201cSympathetic\u201d Side Of Megan Fox\u2019s Character",
-    "link": "https://deadline.com/2026/10/diablo-cody-jennifers-body-2-more-sympathetic-1237166245/",
-    "published": "2026-10-17T01:01Z",
-    "summary": "As Diablo Cody prepares to resurrect Megan Fox\u2019s teen succubus one more time, she\u2019s adding a more human element to the demonic role. While discussing the \u201cimminent\u201d sequel Jennifer\u2019s Body 2, the Oscar-winning writer explained that the followup will \u201cexplore even more about why Jennifer is sympatheti",
-    "source": "Deadline"
-   },
-   {
-    "title": "Malibu\u2019s Bryson Fire Containment Grows To 39% As Wind Conditions Begin To Improve",
-    "link": "https://deadline.com/2026/10/bryson-fire-malibu-1237158950/",
-    "published": "2026-10-17T01:00Z",
-    "summary": "UPDATED with latest: Improving wind conditions helped firefighters make progress on the Bryson Fire north of Malibu on Friday, with the latest reports saying the brushfire is now 39% contained. The fire has consumed an estimated 147 acres as of a report this afternoon by the Los Angeles County Fire ",
-    "source": "Deadline"
    },
    {
     "title": "50 Cent Says Diddy\u2019s \u2018Gonna Turn Up in This Next Joint\u2019 After Prison Transfer",
@@ -1258,111 +1265,6 @@
     "link": "https://www.billboard.com/business/legal/diddy-moved-from-new-jersey-prison-to-pennsylvania-1236362285/",
     "published": "2026-10-17T00:53Z",
     "summary": "The transfer follows reports that the music mogul has gotten into prison fights and was living a \u201cpampered\u201d life behind bars.",
-    "source": "Billboard"
-   },
-   {
-    "title": "Angie Nixon Says Black Republican Byron Donalds \u201cDoesn\u2019t Support Black People\u201d",
-    "link": "https://www.hollywoodreporter.com/news/politics-news/angie-nixon-byron-donalds-criticism-polls-ahead-running-1236734130/",
-    "published": "2026-10-17T00:37Z",
-    "summary": "The Florida Senate candidate, who is also Black, criticizes the Florida gubernatorial hopeful on an upcoming episode of Crooked Media's 'Long Play.'",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "Swizz Beatz Reveals Michael Jackson Had a Crush on Alicia Keys: \u2018I Think Janet Was the One That Told A.K.\u2019",
-    "link": "https://www.billboard.com/music/rb-hip-hop/swizz-beatz-michael-jackson-crush-alicia-keys-1236362241/",
-    "published": "2026-10-17T00:04Z",
-    "summary": "The Bronx beatmaker thought it was cool, so he set up Alicia & Michael meeting at the King of Pop's house.",
-    "source": "Billboard"
-   },
-   {
-    "title": "Billboard\u2019s Music Industry Events Calendar",
-    "link": "https://www.billboard.com/pro/music-industry-events-calendar-festivals-awards-conferences/",
-    "published": "2026-10-17T00:02Z",
-    "summary": "A complete rundown of the most important events across the music business.",
-    "source": "Billboard"
-   },
-   {
-    "title": "How \u2018Whalefall\u2019s Director & Author Wove The Closure Of A Father-Son Relationship Into A Survival Tale",
-    "link": "https://deadline.com/2026/10/whalefall-dad-son-themes-director-author-explain-set-visit-1237158531/",
-    "published": "2026-10-16T23:20Z",
-    "summary": "SPOILER ALERT: This story spoils the plot of the film Whalefall, now out in theaters, based on Daniel Kraus\u2019 novel. A running joke Whalefall director Brian Duffield had going to summarize the film hailing from 20th Century Studios and Imagine Entertainment and hitting theaters this week was that \u201cme",
-    "source": "Deadline"
-   },
-   {
-    "title": "How \u2018You Can See Everything\u2019 Exacts Hollywood\u2019s Revenge on Big Tech",
-    "link": "https://www.hollywoodreporter.com/business/digital/you-can-see-everything-fielder-holmes-themes-showtimes-1236734072/",
-    "published": "2026-10-16T23:13Z",
-    "summary": "Along with 'Artificial,' 'Musk' and 'The Social Reckoning,' the storytellers are finally getting back at the engineers.",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "Mark Pucci, Veteran Music Publicist & Recognized Blues Advocate, Dies at 79",
-    "link": "https://www.billboard.com/pro/mark-pucci-death-publicist-lynyrd-skynyrd-johnny-cash-dead/",
-    "published": "2026-10-16T23:12Z",
-    "summary": "Over a 50-year career, Pucci represented such music icons as Johnny Cash, Lynyrd Skynyrd and The Allman Brothers Band.",
-    "source": "Billboard"
-   },
-   {
-    "title": "Timothy Busfield Child Sex Abuse Case Dismissed Over Prosecutorial Misconduct",
-    "link": "https://www.hollywoodreporter.com/news/general-news/timothy-busfield-child-sex-abuse-case-dismissed-1236734102/",
-    "published": "2026-10-16T23:09Z",
-    "summary": "A New Mexico judge says prosecutors failed to act \u201cin a fair and impartial manner\u201d before the grand jury, but refiling remains possible.",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "John Amos\u2019 Daughter Sues Brother for Wrongful Death Over Actor\u2019s Death",
-    "link": "https://www.hollywoodreporter.com/news/general-news/john-amos-daughter-sues-brother-for-wrongful-death-over-actors-death-1236733965/",
-    "published": "2026-10-16T23:00Z",
-    "summary": "Shannon Amos accuses K.C. Amos of exploiting their father while ignoring his medical needs in a plan to gain control of the actor's finances upon his death.",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "Austin Abrams Still Won\u2019t Admit Which Was Tougher to Shoot, \u2018Whalefall\u2019 or \u2018Resident Evil\u2019",
-    "link": "https://www.hollywoodreporter.com/movies/movie-features/whalefall-austin-abrams-resident-evil-1236733923/",
-    "published": "2026-10-16T22:48Z",
-    "summary": "The actor dives deep into 'Whalefall,' and partakes in a 'Resident Evil' post-mortem speed round.",
-    "source": "Hollywood Reporter"
-   },
-   {
-    "title": "\u2018La Bola Negra\u2019 Directing Duo Los Javis Reveal How Spanish Sensation Became \u201cThe Journey Of Our Lives\u201d",
-    "link": "https://deadline.com/2026/10/la-bola-negra-directors-interview-los-javis-1237165637/",
-    "published": "2026-10-16T22:15Z",
-    "summary": "Pen\u00e9lope Cruz had been a muse to Los Javis \u2014 the moniker for Spanish filmmakers Javier Ambrossi and Javier Calvo \u2014 for years before they met for lunch to persuade her to play a singer (more a force of nature, really) in La Bola Negra, an electrifying sensation at Cannes that\u2019s now Spain\u2019s entry for ",
-    "source": "Deadline"
-   },
-   {
-    "title": "Drake Sued Over \u2018Janice STFU\u2019: Songwriter Claims Chorus Is \u2018Literally Identical\u2019 to His Demo",
-    "link": "https://www.billboard.com/pro/drake-janice-stfu-lawsuit-songwriter-sues-copied-demo/",
-    "published": "2026-10-16T22:05Z",
-    "summary": "Aviel Calev Hirschfield alleges the rapper's reps \"shamelessly refuse to acknowledge\" his contributions. Drake's team calls the lawsuit \"entirely fabricated.\"",
-    "source": "Billboard"
-   },
-   {
-    "title": "\u2018Crystal Lake\u2019s Gwendolyn Sundstrom On Grace\u2019s Friendship With Jason, \u201cLearning A Lot\u201d From Linda Cardellini & That Killer Twist",
-    "link": "https://deadline.com/2026/10/crystal-lake-gwendolyn-sundstrom-killer-twist-1237158527/",
-    "published": "2026-10-16T22:00Z",
-    "summary": "SPOILER ALERT: This post contains details about Peacock\u2019s series Crystal Lake. While Crystal Lake revisits several familiar locals from the Friday the 13th franchise, Gwendolyn Sundstrom brings a fresh role to the slasher prequel series. Now available to stream on Peacock, Sundstrom told Deadline th",
-    "source": "Deadline"
-   },
-   {
-    "title": "In Canada: Cardi B Named First-Ever Global Woman of the Year at Billboard Canada Women in Music 2026",
-    "link": "https://www.billboard.com/pro/cardi-b-billboard-canada-women-in-music-2026-award-news/",
-    "published": "2026-10-16T21:42Z",
-    "summary": "Also up north this week: Drake extends a chart record with \"Habibti\" and holders of obstructed Backstreet Boys tickets may get an upgrade.",
-    "source": "Billboard"
-   },
-   {
-    "title": "\u2018Street Fighter\u2019 Socking $30M, \u2018You Can See Everything\u2019 Beaming 2nd Best Opening For Documentary At $12M \u2013 Friday Box Office Update",
-    "link": "https://deadline.com/2026/10/box-office-street-fighter-you-can-see-everything-1237159320/",
-    "published": "2026-10-16T21:39Z",
-    "summary": "FRIDAY PM UPDATE: Street Fighter is currently coming in at the lower end of expectations with a $30M opening after a $12.5M Friday (including previews) at 3,575 theaters, which includes previews. Hopefully Saturday can keep it together with family traffic. Note, the only MLB playoff game this weeken",
-    "source": "Deadline"
-   },
-   {
-    "title": "NuNew on Whether Acting or Singing Makes Him More Nervous: \u2018If You Make a Mistake, That\u2019s It\u2019",
-    "link": "https://www.billboard.com/music/pop/nunew-tima-interview-1236362238/",
-    "published": "2026-10-16T21:34Z",
-    "summary": "Billboard spoke to the Thai singer-actor backstage at the 2026 TMElive International Music Awards.",
     "source": "Billboard"
    }
   ]
