@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T20:50:48Z",
+ "updated": "2026-10-18T20:52:50Z",
  "week": 6,
  "games": {
   "1": {
@@ -78,22 +78,22 @@
    "state": "in",
    "away": 6,
    "home": 3,
-   "detail": "10:55 - 2nd",
-   "line": "Cardinals 6–3 · 10:55 - 2nd"
+   "detail": "9:08 - 2nd",
+   "line": "Cardinals 6–3 · 9:08 - 2nd"
   },
   "10": {
    "state": "in",
    "away": 3,
    "home": 7,
-   "detail": "End of 1st",
-   "line": "Raiders 7–3 · End of 1st"
+   "detail": "15:00 - 2nd",
+   "line": "Raiders 7–3 · 15:00 - 2nd"
   },
   "11": {
    "state": "in",
-   "away": 0,
+   "away": 3,
    "home": 9,
-   "detail": "2:20 - 1st",
-   "line": "Chiefs 9–0 · 2:20 - 1st"
+   "detail": "1:33 - 1st",
+   "line": "Chiefs 9–3 · 1:33 - 1st"
   },
   "12": {
    "state": "pre",
