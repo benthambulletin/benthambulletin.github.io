@@ -107,3 +107,31 @@ p=json.load(open('site/data/pressure.json')); p=[x for x in p if x['date']!='202
 p.append({'date':'2026-10-19','in':30.47,'mb':1031.9,'station':'KIAG','time':'06:53 EDT'}); json.dump(p,open('site/data/pressure.json','w'),indent=1)
 m=json.load(open('site/data/migraines.json')); m['updated']='2026-10-19'; json.dump(m,open('site/data/migraines.json','w'),indent=1)
 print('built')
+# --- review fixes ---
+d=json.load(open('edition-2026-10-19.json')); b=d['body_html']
+R("It dips about a seventh of an inch this afternoon, most of it between noon and 3, then holds steady through Wednesday.","It dips about a tenth of an inch this afternoon, most of it between noon and 3, then drifts back up a little Tuesday.")
+S('<div class="line"><b>Bills 33, Raiders 30.</b>','<div class="line"><b>Got right:</b> no turnovers','''<div class="line"><b>Bills 33, Raiders 30.</b> Josh Allen threw touchdown passes to Khalil Shakir and Keon Coleman, tying the Bills' career record for touchdown passes, the AP reported, and Tyler Bass kicked four field goals. Las Vegas rallied to tie it at 23 midway through the fourth quarter before James Cook's 3-yard run put Buffalo back ahead with 4:49 left. Bass added a 38-yarder, and the Raiders' late touchdown and onside kick came up short.</div>
+''')
+S('<div class="line"><b>Patriots 26, Jets 19.</b>','<div class="line"><b>Got right:</b> the defense','''<div class="line"><b>Patriots 26, Jets 19.</b> New England led 17&ndash;3 at halftime on two Drake Maye touchdown passes, 42 yards to Doubs and 9 to Douglas, and Maye added a 7-yarder to Hunter Henry in the fourth quarter. The Jets kept coming: Geno Smith hit Omar Cooper for a 48-yard touchdown, and Jason Sanders kicked four field goals.</div>
+''')
+S('<div class="line"><b>Report day is Wednesday.</b>','<h2 class="sec"><span class="o">&#9790;</span>The Almanac Sky','''<div class="line"><b>Report day is Wednesday.</b> Last week's report, still the latest, had Niagara Falls at 50 percent color, Chautauqua Institution at 70 and Greece, in Monroe County, at 30. New numbers run here Thursday; North Tonawanda usually peaks the last week of October.</div>
+''')
+S('<div class="ledger">','<h2 class="sec"><span class="o">&#10038;</span>The National Wire','''<div class="ledger"><div class="num"><div class="cap">Chautauqua County spending, 2027</div><div class="big">+6.5%</div></div>
+<div class="txt">Chautauqua County's spending rises 6.5 percent for 2027, the <i>Observer</i> reports, a sharp break from the smaller increases every year since 2020.</div></div>
+''')
+S('<div class="wire"><div class="num">1</div><div><h3>Dunkirk &middot; Marauders','<h2 class="sec"><span class="o">&#9733;</span>The Marquee','''<div class="wire"><div class="num">1</div><div><h3>Rochester &middot; Downtown Housing Pitches</h3><p>The mayor is backing several new proposals for downtown housing, WXXI reports. The state has received at least nine applications for its Rochester-Monroe Transformation Initiative and plans to announce the first awards before the end of the year.</p></div></div>
+<div class="wire"><div class="num">2</div><div><h3>Dunkirk &middot; Marauders Win Again</h3><p>Xzavier Boland threw three touchdown passes as Dunkirk beat East Aurora/Holland 34&ndash;14 Friday at Karl Hoeppner Field. Jordan Thomas Smith caught two of them.</p></div></div>
+<div class="wire"><div class="num">3</div><div><h3>Wilson &middot; Top Seed in Soccer Playoffs</h3><p>Wilson, one win from a state Class C title last season, is the No. 1 seed in Section VI Class C as the boys soccer playoffs begin today. The team is 14&ndash;1&ndash;1.</p></div></div>
+''')
+R('<li><span class="dt">Oct 31</span><span>Halloween</span></li>','<li><span class="dt">Oct 31</span><span>Halloween</span></li>\n<li><span class="dt">Nov 1</span><span>Ravens at Bills</span></li>')
+R("<b>Bills 5&ndash;1 and off next week.</b> Claire's birthday is Friday, and Garret and Ariel share theirs on Sunday. Halloween is twelve days out, and the whole week runs dry and sunny.","<b>Birthday week.</b> Claire's birthday is Friday, and Garret and Ariel share theirs on Sunday. Halloween is twelve days out.")
+R("<p>Days after his lung cancer surgery, Pope Leo led the Sunday prayer at the Vatican and said he will resume his activities.</p>","<p>Pope Leo XIV led the Sunday prayer at the Vatican one day after leaving the hospital following lung cancer surgery. He said he will resume his activities.</p>")
+R("Arizona won 18&ndash;16 in Los Angeles against the Rams","Arizona beat the Rams 18&ndash;16")
+R("Green Bay beat Dallas 23&ndash;13 Sunday night.","Green Bay beat Dallas 23&ndash;13.")
+R("the Rams losing at home to Arizona to fall to 2&ndash;4","the Rams losing to Arizona to fall to 2&ndash;4")
+R("Kyle Larson's day ended in the garage, and his lead is down to 5 points over Christopher Bell, who finished fourth.","Kyle Larson's day ended in the garage, and he now leads Christopher Bell, who finished fourth, by 5 points.")
+R("headlines via CBS, BBC, Dunkirk Observer,","headlines via CBS, BBC, AP, Dunkirk Observer,")
+d['body_html']=b
+json.dump(d,open('edition-2026-10-19.json','w'),ensure_ascii=False,indent=1)
+json.dump(d,open('site/data/edition-2026-10-19.json','w'),ensure_ascii=False,indent=1)
+print('fixed')
