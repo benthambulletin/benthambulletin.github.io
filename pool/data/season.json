@@ -5786,7 +5786,9 @@
               "Leah",
               "Claude"
             ]
-          }
+          },
+          "live": "Packers 7–0 · 2nd qtr",
+          "liveAt": "2026-10-19T01:10:45Z"
         },
         {
           "away": "Commanders",
@@ -7166,7 +7168,7 @@
       }
     }
   },
-  "updated": "2026-10-19T00:25:01.945789+00:00",
+  "updated": "2026-10-19T01:12:18.895500+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
