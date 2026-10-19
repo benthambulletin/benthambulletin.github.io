@@ -1,16 +1,16 @@
 {
- "generated_utc": "2026-10-19T11:01Z",
+ "generated_utc": "2026-10-19T16:55Z",
  "towns": {
   "North Tonawanda": {
-   "issued": "2026-10-19T07:57:38+00:00",
+   "issued": "2026-10-19T13:58:22+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 64,
-     "wind": "SW 5 to 8 mph",
+     "wind": "SW 8 mph",
      "pop": 0,
      "short": "Sunny",
-     "detail": "Sunny, with a high near 64. Southwest wind 5 to 8 mph."
+     "detail": "Sunny, with a high near 64. Southwest wind around 8 mph."
     },
     {
      "name": "Tonight",
@@ -87,21 +87,21 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-19T10:35:00+00:00",
+    "time": "2026-10-19T16:35:00+00:00",
     "text": "Clear",
-    "temp_f": 43
+    "temp_f": 63
    }
   },
   "Dunkirk": {
-   "issued": "2026-10-19T07:57:38+00:00",
+   "issued": "2026-10-19T13:58:22+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 62,
-     "wind": "SW 8 mph",
+     "wind": "W 8 mph",
      "pop": 0,
      "short": "Sunny",
-     "detail": "Sunny, with a high near 62. Southwest wind around 8 mph."
+     "detail": "Sunny, with a high near 62. West wind around 8 mph."
     },
     {
      "name": "Tonight",
@@ -178,21 +178,21 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-19T10:40:00+00:00",
+    "time": "2026-10-19T16:35:00+00:00",
     "text": "Clear",
-    "temp_f": 45
+    "temp_f": 64
    }
   },
   "Scottsville": {
-   "issued": "2026-10-19T07:57:38+00:00",
+   "issued": "2026-10-19T13:58:22+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 66,
-     "wind": "SW 7 mph",
+     "wind": "W 7 mph",
      "pop": 0,
-     "short": "Areas Of Frost then Sunny",
-     "detail": "Areas of frost before 9am. Sunny, with a high near 66. Southwest wind around 7 mph."
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 66. West wind around 7 mph."
     },
     {
      "name": "Tonight",
@@ -269,9 +269,9 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-19T09:54:00+00:00",
-    "text": "Clear",
-    "temp_f": 41
+    "time": "2026-10-19T15:54:00+00:00",
+    "text": "",
+    "temp_f": 61
    }
   }
  },
