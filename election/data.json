@@ -22,7 +22,7 @@
   {
    "order": 2,
    "headline": "The Senate is close, tilting Democratic",
-   "detail": "Democrats lead or are tied in all six Republican seats they are chasing and are well ahead in North Carolina, but they also have to keep Michigan and Minnesota."
+   "detail": "Democrats lead or are tied in all six Republican seats they are chasing and are well ahead in North Carolina; South Carolina, where Lindsey Graham's sister holds his seat, is a long shot but close. They also have to keep Michigan and Minnesota."
   },
   {
    "order": 3,
@@ -36,6 +36,7 @@
   }
  ],
  "what_changed": [
+  "Added South Carolina: Darline Graham Nordone (R), appointed after her brother Lindsey Graham died in July, leads Annie Andrews (D) by about 4 points. A reach, but it's on the board. Cook calls it Likely Republican.",
   "Texas is still about a 2-point race: James Talarico (D) leads Ken Paxton (R) by about 2 points, unchanged. A new CBS News poll taken Oct 8–16 has Talarico 51–49, in line with the average; with North Carolina, the three more pickups Democrats need still run through Maine, Ohio and Texas.",
   "No new polls since Saturday in Maine, Ohio, Iowa, Kansas, Alaska, Michigan or Minnesota, and no rating changes from Cook. The Senate math is where it was: Iowa and Kansas remain the two closest races."
  ],
@@ -328,6 +329,21 @@
    "dates": "Sep 15 – Oct 9",
    "note": "Latest: Trafalgar (Oct 7–9, Republican-leaning) Ossoff 51–43; InsiderAdvantage (Sep 22–23, Republican-leaning) 50–42; Big Data Poll 55–45; YouGov 52–42. Top GOP pickup target has drifted toward Democrats; Cook Likely D since Sep 23.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/georgia/ossoff-vs-collins"
+  },
+  {
+   "state": "South Carolina",
+   "race": "Graham seat (special; Lindsey Graham died July 11)",
+   "held_by": "R",
+   "democrat": "Annie Andrews",
+   "republican": "Darline Graham Nordone (inc.)",
+   "cook_rating": "Likely R",
+   "dem_pct": 45,
+   "rep_pct": 49,
+   "margin": -4,
+   "pollster": "Rasmussen",
+   "dates": "Oct 5–8",
+   "note": "Nordone is Lindsey Graham's sister, appointed July 13 and nominated in an August runoff over Ralph Norman. Andrews, a pediatrician, had raised about $10.8M by August. Rasmussen (Republican-leaning, Oct 5–8) 49–45; Trafalgar (Sep 23–25) 43–42; InsiderAdvantage (Sep 8–9) 45–43. Sabato moved it to Likely R on Oct 6. A reach for Democrats, but closer than South Carolina has been in decades.",
+   "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
   }
  ],
  "control": [
