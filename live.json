@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T01:49:19Z",
+ "updated": "2026-10-19T01:51:21Z",
  "week": 6,
  "games": {
   "1": {
@@ -105,8 +105,8 @@
    "state": "in",
    "away": 0,
    "home": 17,
-   "detail": "0:23 - 2nd",
-   "line": "Packers 17–0 · 0:23 - 2nd"
+   "detail": "Halftime",
+   "line": "Packers 17–0 · Halftime"
   }
  }
 }
