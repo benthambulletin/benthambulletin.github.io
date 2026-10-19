@@ -1,6 +1,6 @@
 {
- "as_of": "2026-10-18",
- "updated_at": "2026-10-18T06:13:00-04:00",
+ "as_of": "2026-10-19",
+ "updated_at": "2026-10-19T06:08:00-04:00",
  "election_day": "2026-11-03",
  "early_voting": {
   "start": "2026-10-24",
@@ -36,9 +36,8 @@
   }
  ],
  "what_changed": [
-  "Iowa is now tied: Josh Turek (D) and Ashley Hinson (R) are less than a point apart. A Republican-leaning poll (Trafalgar) had Hinson up 2; Iowa and Kansas are now the two closest races in the country.",
-  "Minnesota is holding: Peggy Flanagan (D) leads Michele Tafoya (R) by about 3 points. Every October poll has her ahead.",
-  "No new polls in Maine, Ohio, Texas, Kansas, Alaska or Michigan."
+  "Texas is still about a 2-point race: James Talarico (D) leads Ken Paxton (R) by about 2 points, unchanged. A new CBS News poll taken Oct 8–16 has Talarico 51–49, in line with the average; with North Carolina, the three more pickups Democrats need still run through Maine, Ohio and Texas.",
+  "No new polls since Saturday in Maine, Ohio, Iowa, Kansas, Alaska, Michigan or Minnesota, and no rating changes from Cook. The Senate math is where it was: Iowa and Kansas remain the two closest races."
  ],
  "generic_ballot": [
   {
@@ -46,8 +45,8 @@
    "dem": null,
    "rep": null,
    "margin": 8.9,
-   "window": "Rolling average",
-   "as_of": "2026-10-16",
+   "window": "Rolling average (page updated Oct 18)",
+   "as_of": "2026-10-18",
    "url": "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls"
   },
   {
@@ -61,10 +60,10 @@
   },
   {
    "tracker": "RealClearPolling average",
-   "dem": 50.0,
-   "rep": 42.0,
-   "margin": 8.0,
-   "window": "Sep 24 – Oct 13",
+   "dem": 50.7,
+   "rep": 42.4,
+   "margin": 8.3,
+   "window": "Sep 28 – Oct 13",
    "as_of": "2026-10-13",
    "url": "https://www.realclearpolling.com/polls/state-of-the-union/generic-congressional-vote"
   }
@@ -84,7 +83,7 @@
    "approve": null,
    "disapprove": null,
    "net": -22.3,
-   "as_of": "2026-10-16",
+   "as_of": "2026-10-18",
    "note": "Net only; detail paywalled",
    "url": "https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin"
   },
@@ -217,12 +216,12 @@
    "democrat": "James Talarico",
    "republican": "Ken Paxton",
    "cook_rating": "Toss Up",
-   "dem_pct": 48.2,
-   "rep_pct": 46.0,
+   "dem_pct": 48.5,
+   "rep_pct": 46.3,
    "margin": 2.2,
    "pollster": "RealClearPolling average",
-   "dates": "Sep 24 – Oct 14",
-   "note": "Latest: InsiderAdvantage (Oct 13–14, Republican-leaning) Paxton 49–48, the only one of the last eight polls with Paxton ahead; Quantus (Oct 9–11, Republican-leaning) tied 47–47; Marist 47–45; Trafalgar (Republican-leaning) 47–44; ReconMR/Siena 48–44; YouGov 50–44; University of Texas (Sep 25–Oct 5) 50–47. Tilting D but inside the margin.",
+   "dates": "Sep 24 – Oct 16",
+   "note": "Latest: CBS News/YouGov (Oct 8–16, 1,492 RV) Talarico 51–49; InsiderAdvantage (Oct 13–14, Republican-leaning) Paxton 49–48, the only one of the last nine polls with Paxton ahead; Quantus (Oct 9–11, Republican-leaning) tied 47–47; Marist (Oct 8–11) 47–45; Trafalgar (Republican-leaning) 47–44; ReconMR/Siena 48–44; YouGov 50–44; University of Texas (Sep 25–Oct 5) 50–47. Tilting D but inside the margin.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/texas/talarico-vs-paxton"
   },
   {
@@ -336,21 +335,21 @@
    "measure": "Democratic-leaning seats (RCP map)",
    "value": 46,
    "note": "Includes two independents who caucus with Democrats",
-   "as_of": "2026-10-18",
+   "as_of": "2026-10-19",
    "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
   {
    "measure": "Republican-leaning seats (RCP map)",
    "value": 46,
    "note": null,
-   "as_of": "2026-10-18",
+   "as_of": "2026-10-19",
    "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
   {
    "measure": "Toss-up seats (RCP map)",
    "value": 8,
    "note": "AK, IA, KS, ME, MI, MN, OH, TX",
-   "as_of": "2026-10-18",
+   "as_of": "2026-10-19",
    "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
   {
@@ -371,22 +370,22 @@
    "measure": "Net seats Democrats need for 51",
    "value": 4,
    "note": "Currently 47 D (incl. two independents) / 53 R",
-   "as_of": "2026-10-18",
+   "as_of": "2026-10-19",
    "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
   {
    "measure": "Polymarket odds of Democratic Senate (%)",
-   "value": 64.5,
-   "note": "Prediction market; 64.5¢ at 7:40 p.m. UTC Oct 17",
-   "as_of": "2026-10-17",
-   "url": "https://predictreport.io/arbitrage/politics/senate-control-2026"
+   "value": 65.0,
+   "note": "Prediction market; 65¢ observed 6:05 a.m. ET Oct 19",
+   "as_of": "2026-10-19",
+   "url": "https://defirate.com/prediction-markets/2026-midterms/"
   },
   {
    "measure": "Kalshi odds of Democratic Senate (%)",
-   "value": 62.5,
-   "note": "Prediction market; 62.5¢ at 7:40 p.m. UTC Oct 17",
-   "as_of": "2026-10-17",
-   "url": "https://predictreport.io/arbitrage/politics/senate-control-2026"
+   "value": 62.8,
+   "note": "Prediction market; 62.8¢ observed 6:05 a.m. ET Oct 19 (price built from two contracts)",
+   "as_of": "2026-10-19",
+   "url": "https://defirate.com/prediction-markets/2026-midterms/"
   },
   {
    "measure": "Cook House toss-ups",
@@ -593,6 +592,13 @@
    "generic_ballot": 8.9,
    "trump_net": -20.7,
    "dem_senate_odds": 64.5,
+   "hochul_margin": 12
+  },
+  {
+   "date": "2026-10-19",
+   "generic_ballot": 8.9,
+   "trump_net": -20.7,
+   "dem_senate_odds": 65.0,
    "hochul_margin": 12
   }
  ],
