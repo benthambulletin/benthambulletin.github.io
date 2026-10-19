@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T00:21:52Z",
+ "updated": "2026-10-19T00:23:54Z",
  "week": 6,
  "games": {
   "1": {
@@ -102,10 +102,11 @@
    "line": "Final · Chiefs 22–6"
   },
   "12": {
-   "state": "pre",
+   "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "10/18 - 8:20 PM EDT"
+   "detail": "14:55 - 1st",
+   "line": "Tied 0–0 · 14:55 - 1st"
   }
  }
 }
