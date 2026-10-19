@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T03:47:03Z",
+ "updated": "2026-10-19T03:49:05Z",
  "week": 6,
  "games": {
   "1": {
@@ -102,11 +102,13 @@
    "line": "Final · Chiefs 22–6"
   },
   "12": {
-   "state": "in",
+   "state": "post",
    "away": 13,
    "home": 23,
-   "detail": "0:38 - 4th",
-   "line": "Packers 23–13 · 0:38 - 4th"
+   "detail": "Final",
+   "winner": "Packers",
+   "score": "23–13",
+   "line": "Final · Packers 23–13"
   }
  }
 }
