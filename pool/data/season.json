@@ -52,7 +52,7 @@
     "missy verhague": "Mrs. Sombloski",
     "sigma mikey skibidi sombloski": "Mike Sombloski"
   },
-  "currentWeek": 6,
+  "currentWeek": 7,
   "weeks": {
     "4": {
       "status": "final",
@@ -7325,6 +7325,174 @@
         ]
       },
       "rollOut": 0
+    },
+    "7": {
+      "status": "pre",
+      "games": [
+        {
+          "away": "Patriots",
+          "home": "Bears",
+          "kickoff": "2026-10-23T00:15:00Z",
+          "when": "Thu 8:15 PM",
+          "tv": "Prime Video",
+          "winner": null
+        },
+        {
+          "away": "Steelers",
+          "home": "Saints",
+          "kickoff": "2026-10-25T13:30:00Z",
+          "when": "Sun 9:30 AM · Paris",
+          "tv": "NFL Network",
+          "winner": null
+        },
+        {
+          "away": "Browns",
+          "home": "Titans",
+          "kickoff": "2026-10-25T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "winner": null
+        },
+        {
+          "away": "Bengals",
+          "home": "Ravens",
+          "kickoff": "2026-10-25T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "winner": null
+        },
+        {
+          "away": "Colts",
+          "home": "Vikings",
+          "kickoff": "2026-10-25T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "winner": null
+        },
+        {
+          "away": "Dolphins",
+          "home": "Jets",
+          "kickoff": "2026-10-25T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "winner": null
+        },
+        {
+          "away": "Giants",
+          "home": "Texans",
+          "kickoff": "2026-10-25T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null
+        },
+        {
+          "away": "49ers",
+          "home": "Falcons",
+          "kickoff": "2026-10-25T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null
+        },
+        {
+          "away": "Buccaneers",
+          "home": "Panthers",
+          "kickoff": "2026-10-25T17:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null
+        },
+        {
+          "away": "Broncos",
+          "home": "Cardinals",
+          "kickoff": "2026-10-25T20:05:00Z",
+          "when": "Sun 4:05 PM",
+          "tv": "CBS",
+          "winner": null
+        },
+        {
+          "away": "Packers",
+          "home": "Lions",
+          "kickoff": "2026-10-25T20:25:00Z",
+          "when": "Sun 4:25 PM",
+          "tv": "FOX",
+          "winner": null
+        },
+        {
+          "away": "Rams",
+          "home": "Raiders",
+          "kickoff": "2026-10-25T20:25:00Z",
+          "when": "Sun 4:25 PM",
+          "tv": "FOX",
+          "winner": null
+        },
+        {
+          "away": "Chiefs",
+          "home": "Seahawks",
+          "kickoff": "2026-10-26T00:20:00Z",
+          "when": "Sun 8:20 PM",
+          "tv": "NBC",
+          "winner": null
+        },
+        {
+          "away": "Cowboys",
+          "home": "Eagles",
+          "kickoff": "2026-10-27T00:15:00Z",
+          "when": "Mon 8:15 PM",
+          "tv": "ESPN/ABC",
+          "winner": null
+        }
+      ],
+      "players": [],
+      "trash": [],
+      "payments": [],
+      "buyIn": 5,
+      "payBy": "2026-10-23T00:15:00Z",
+      "pot": 0,
+      "paidN": 0,
+      "opensAt": "2026-10-20T08:06:02Z",
+      "housePicks": {
+        "trash": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions.",
+        "picks": {
+          "0": "Bears",
+          "1": "Steelers",
+          "2": "Browns",
+          "3": "Ravens",
+          "4": "Vikings",
+          "5": "Jets",
+          "6": "Texans",
+          "7": "49ers",
+          "8": "Panthers",
+          "9": "Broncos",
+          "10": "Lions",
+          "11": "Rams",
+          "12": "Seahawks",
+          "13": "Cowboys"
+        },
+        "why": {
+          "0": "Caleb's back; Bears lay a field goal at home.",
+          "1": "Steelers by a field goal in Paris.",
+          "2": "Browns by a point and a half. Ugly game.",
+          "3": "Ravens by three, and Lamar may be back.",
+          "4": "Vikings by six at home.",
+          "5": "Jets by four and a half. Don't make me regret it.",
+          "6": "Biggest line of the week. Texans by nearly ten.",
+          "7": "Niners by four and a half, even without Evans.",
+          "8": "Panthers by three; Mayfield's thumb still iffy.",
+          "9": "Broncos by four and a half on the road.",
+          "10": "Lions by a field goal at Ford Field.",
+          "11": "Rams by six, even without Adams.",
+          "12": "Seahawks by a point and a half at home.",
+          "13": "Hurts is out for the year. Cowboys by five."
+        },
+        "lock": "6",
+        "lockWhy": "Texans by 9.5 at home over the Giants. Biggest number on the board."
+      },
+      "bot": true,
+      "botPaid": true,
+      "rollIn": 0,
+      "namesForm": true,
+      "asks": [],
+      "threads": {}
     }
   },
   "updated": "2026-10-20T04:24:41.285422+00:00",
