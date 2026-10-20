@@ -90,7 +90,11 @@ details.g[open] summary .s::after{transform:rotate(90deg)}
 /* the mugshot */
 .lastw{margin:1.2rem 0 0;text-align:center;font-family:'AR';font-weight:700;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
 .lastw b{color:var(--ink);font-family:'PF';font-weight:800;font-size:1.05rem;letter-spacing:.01em;text-transform:none}
-.lastw:not([hidden])+#mug .mug{margin-top:.45rem}
+.wbx{margin:1.1rem 0 .2rem;padding:.85rem 1rem .8rem;border:1px solid var(--rule);border-top:3px double var(--ink);background:var(--wash);text-align:center}
+.wbx .wk{font-family:'AR';font-weight:800;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.wbx .wn{font-family:'PF';font-weight:800;font-size:1.9rem;line-height:1.1;margin:.2rem 0 .3rem;color:var(--ink)}
+.wbx .wd{font-family:'AR';font-weight:600;font-size:.85rem;color:var(--ink);line-height:1.4}
+.wbx .wl{display:inline-block;margin-top:.5rem;font-family:'AR';font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--teal);text-decoration:none}
 .mug{margin:1.2rem 0 0;border:3px double var(--ink);padding:.7rem .8rem .6rem;display:grid;grid-template-columns:6.2rem 1fr;gap:0 .9rem;align-items:center;background:var(--wash)}
 .mug img{width:6.2rem;height:6.2rem;object-fit:cover;border:1px solid var(--ink);display:block;transform:rotate(-2deg);box-shadow:2px 2px 0 var(--rule)}
 .mug .k{font-family:'AR';font-weight:800;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
@@ -324,6 +328,7 @@ details.gmore[open]>summary{display:none}
   <nav class="tabs" aria-label="The Sunday Tax"><a id="tabBoard" class="on" aria-current="page" href="/pool/">Board</a><a id="tabSeason" href="/pool/season/">Season</a><a class="go" href="https://tally.so/r/RGOakJ">Picks</a><a href="/pool/about/">Rules</a></nav>
 
   <div id="ack"></div>
+  <div class="wbx" id="lastW" hidden></div>
   <div class="now">
     <div class="nk" id="nowK"></div>
     <div class="nl" id="nowL"></div>
@@ -333,7 +338,6 @@ details.gmore[open]>summary{display:none}
     <div class="nn" id="nowN" hidden></div>
   </div>
   <div class="rnote" id="rNote" hidden></div>
-  <div class="lastw" id="lastW" hidden></div>
   <div id="mug"></div>
 
   <div id="root"></div>
@@ -584,9 +588,15 @@ if(!(D.face&&D.face.photo)&&!D.archive){
 /* last week's champion, right above the mugshot they get to pick */
 (function(){
   var pw=(D.pastWeeks||[]).filter(function(w){return w.week===D.week-1&&w.winners&&w.winners.length;})[0];
-  if(!pw||D.status==="final"||D.archive||(D.face&&D.face.photo)) return;   /* with a face up, the mugshot caption carries this (Oct 13) */
-  var el=$("lastW");
-  el.innerHTML='Week '+pw.week+' champ · <b>'+esc(pw.winners.join(" & "))+'</b>'+(pw.record?' · '+esc(pw.record):'')+(pw.tbUsed?' (tiebreaker)':'')+(pw.payout>0?' · won '+money(pw.payout)+(pw.winners.length>1?' each':''):'');
+  /* winner box on top until the new week's first kickoff (Garret, Oct 20: "really unclear on the main page") */
+  var fk=D.games&&D.games.length?Date.parse(D.games[0].kickoff):0;
+  if(!pw||D.status==="final"||D.archive||(fk&&Date.now()>=fk)) return;
+  var el=$("lastW"), two=pw.winners.length>1, bits=[];
+  if(pw.record) bits.push(esc(pw.record));
+  if(pw.payout>0) bits.push('won '+money(pw.payout)+(two?' each':'')+(pw.tbUsed?' on the tiebreaker':''));
+  else if(pw.tbUsed) bits.push('won on the tiebreaker');
+  var tl=(pw.tbUsed&&pw.tbTotal!=null&&pw.tb&&pw.tb.length)?(two?'Guessed '+pw.tb.join(' and '):'Guessed '+pw.tb[0])+'; the total was '+pw.tbTotal+'.':'';
+  el.innerHTML='<div class="wk">Week '+pw.week+' winner'+(two?'s':'')+'</div><div class="wn">'+esc(pw.winners.join(" & "))+'</div><div class="wd">'+bits.join(' · ')+(pw.repeat?' · back-to-back':'')+'</div>'+(tl?'<div class="wd">'+tl+'</div>':'')+'<a class="wl" href="/pool/weeks/'+pw.week+'/">See the Week '+pw.week+' final board ›</a>';
   el.hidden=false;
 })();
 /* the mugshot: the previous winner's pick of one loser's face */

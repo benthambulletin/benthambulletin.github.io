@@ -128,7 +128,12 @@ def _champ(k):
     w = season["weeks"][str(k)]; W = w.get("weekWinners", [])
     wp = next((p for p in w.get("players", []) if p["name"] in W), None)
     return {"week": k, "winners": W, "record": f"{wp['correct']}–{wp['missed']}" if wp else None,
-            "tbUsed": w.get("tbUsed", False), "payout": w.get("weekPayout", 0) if w.get("buyIn", 0) else 0}
+            "tbUsed": w.get("tbUsed", False), "payout": w.get("weekPayout", 0) if w.get("buyIn", 0) else 0,
+            "tb": [p.get("tb") for p in w.get("players", []) if p["name"] in W], "tbTotal": w.get("tiebreakTotal"),
+            "repeat": _repeat(k, W)}
+def _repeat(k, W):   # same winner(s) as the previous final week
+    prev = [int(j) for j, x in season["weeks"].items() if x.get("status") == "final" and int(j) < k]
+    return bool(W) and bool(prev) and set(season["weeks"][str(max(prev))].get("weekWinners", [])) == set(W)
 past = [_champ(k) for k in past]
 for pw in past:
     k = str(pw["week"]); os.makedirs(f"{HERE}/weeks/{k}", exist_ok=True)
