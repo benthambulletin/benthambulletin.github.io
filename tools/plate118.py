@@ -9,3 +9,5 @@ d['body_html']=b; d['plate_path']='/home/claude/plate118.jpg'; d['plate_caption'
 json.dump(d,open('edition-2026-10-20.json','w'),ensure_ascii=False,indent=1)
 json.dump(d,open('site/data/edition-2026-10-20.json','w'),ensure_ascii=False,indent=1)
 print('plated')
+
+# --- review fix --- recrop landscape: exif_transpose, crop (400,700,1932,1920) on the 1932x2576 original, resize to 1500 wide
