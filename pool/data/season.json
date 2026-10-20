@@ -5820,10 +5820,37 @@
           "tv": "ESPN/ABC",
           "winner": null,
           "score": null,
-          "status": "sealed",
+          "status": "live",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Commanders": [
+              "Ariel"
+            ],
+            "49ers": [
+              "Thom",
+              "Devin",
+              "Dan",
+              "Brandon Goes Commando",
+              "Josh",
+              "Garret",
+              "Andy R",
+              "Nate V",
+              "Mrs. Sombloski",
+              "Derek",
+              "Melissa",
+              "Mike Sombloski",
+              "Tom",
+              "Walczyk",
+              "B-rad",
+              "Kaylani & Luka",
+              "Ryan Holovics",
+              "Wendy",
+              "Arod",
+              "Leah",
+              "Claude"
+            ]
+          }
         }
       ],
       "tiebreakTotal": null,
@@ -5836,7 +5863,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 54,
           "sheet": {
             "0": "Seahawks",
             "1": "Texans",
@@ -5850,7 +5877,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-15T05:08:03+00:00",
           "firstAt": "2026-10-15T05:08:03+00:00",
@@ -5874,7 +5902,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 67,
           "sheet": {
             "0": "Seahawks",
             "1": "Texans",
@@ -5888,7 +5916,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-15T18:00:39+00:00",
           "firstAt": "2026-10-14T15:47:21+00:00",
@@ -5912,7 +5941,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 52,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -5926,7 +5955,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-18T12:29:39+00:00",
           "firstAt": "2026-10-15T13:09:16+00:00",
@@ -5950,7 +5980,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 48,
           "sheet": {
             "0": "Seahawks",
             "1": "Texans",
@@ -5964,7 +5994,8 @@
             "9": "Cardinals",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-13T19:36:10+00:00",
           "firstAt": "2026-10-13T19:36:10+00:00",
@@ -5983,7 +6014,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 52,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -5997,7 +6028,8 @@
             "9": "Cardinals",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-15T17:17:16+00:00",
           "firstAt": "2026-10-15T17:17:16+00:00",
@@ -6016,7 +6048,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 51,
           "sheet": {
             "0": "Seahawks",
             "1": "Texans",
@@ -6030,7 +6062,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chargers",
-            "12": "Cowboys"
+            "12": "Cowboys",
+            "13": "49ers"
           },
           "filedAt": "2026-10-14T13:22:47+00:00",
           "firstAt": "2026-10-14T13:22:47+00:00",
@@ -6054,7 +6087,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 52,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6068,7 +6101,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-13T08:08:01+00:00",
           "firstAt": "2026-10-13T08:08:01+00:00",
@@ -6087,7 +6121,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 43,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6101,7 +6135,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-13T19:34:40+00:00",
           "firstAt": "2026-10-13T19:34:40+00:00",
@@ -6125,7 +6160,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 53,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6139,7 +6174,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-13T19:33:15+00:00",
           "firstAt": "2026-10-13T19:33:15+00:00",
@@ -6163,7 +6199,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 47,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6177,7 +6213,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-15T12:54:00+00:00",
           "firstAt": "2026-10-15T12:54:00+00:00",
@@ -6201,7 +6238,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 40,
           "sheet": {
             "0": "Seahawks",
             "1": "Texans",
@@ -6215,7 +6252,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Cowboys"
+            "12": "Cowboys",
+            "13": "Commanders"
           },
           "filedAt": "2026-10-13T19:15:36+00:00",
           "firstAt": "2026-10-13T19:15:36+00:00",
@@ -6247,7 +6285,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 56,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6261,7 +6299,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-15T17:13:53+00:00",
           "firstAt": "2026-10-15T17:13:53+00:00",
@@ -6293,7 +6332,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 38,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6307,7 +6346,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-14T20:29:54+00:00",
           "firstAt": "2026-10-14T20:29:54+00:00",
@@ -6335,7 +6375,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 55,
           "sheet": {
             "0": "Broncos",
             "1": "Jaguars",
@@ -6349,7 +6389,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Cowboys"
+            "12": "Cowboys",
+            "13": "49ers"
           },
           "filedAt": "2026-10-14T01:00:26+00:00",
           "firstAt": "2026-10-14T01:00:26+00:00",
@@ -6377,7 +6418,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 48,
           "sheet": {
             "0": "Broncos",
             "1": "Jaguars",
@@ -6391,7 +6432,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Cowboys"
+            "12": "Cowboys",
+            "13": "49ers"
           },
           "filedAt": "2026-10-13T19:45:11+00:00",
           "firstAt": "2026-10-13T19:45:11+00:00",
@@ -6419,7 +6461,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 47,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6433,7 +6475,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-15T00:53:34+00:00",
           "firstAt": "2026-10-15T00:50:16+00:00",
@@ -6461,7 +6504,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 44,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6475,7 +6518,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-15T02:14:14+00:00",
           "firstAt": "2026-10-15T02:14:14+00:00",
@@ -6503,7 +6547,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 52,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6517,7 +6561,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chargers",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-15T02:38:31+00:00",
           "firstAt": "2026-10-15T02:38:31+00:00",
@@ -6545,7 +6590,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 34,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6559,7 +6604,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-15T15:52:32+00:00",
           "firstAt": "2026-10-15T15:50:06+00:00",
@@ -6587,7 +6633,7 @@
           "void": 0,
           "remaining": 1,
           "max": 6,
-          "tb": null,
+          "tb": 37,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6601,7 +6647,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Cowboys"
+            "12": "Cowboys",
+            "13": "49ers"
           },
           "filedAt": "2026-10-14T22:29:31+00:00",
           "firstAt": "2026-10-14T22:29:31+00:00",
@@ -6633,7 +6680,7 @@
           "void": 0,
           "remaining": 1,
           "max": 6,
-          "tb": null,
+          "tb": 62,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6647,7 +6694,8 @@
             "9": "Rams",
             "10": "Bills",
             "11": "Chiefs",
-            "12": "Cowboys"
+            "12": "Cowboys",
+            "13": "49ers"
           },
           "filedAt": "2026-10-14T14:33:06+00:00",
           "firstAt": "2026-10-14T14:33:06+00:00",
@@ -6679,7 +6727,7 @@
           "void": 0,
           "remaining": 1,
           "max": 6,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Seahawks",
             "1": "Jaguars",
@@ -6693,7 +6741,8 @@
             "9": "Rams",
             "10": "Raiders",
             "11": "Chiefs",
-            "12": "Packers"
+            "12": "Packers",
+            "13": "49ers"
           },
           "filedAt": "2026-10-13T19:02:13+00:00",
           "firstAt": "2026-10-13T19:02:13+00:00",
@@ -6752,7 +6801,7 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Seven upsets this week and Ariel tried to call all of them. She went against the room eight times, Jets at New England included, and has 6–7 to show for it. Thom stood alone on the Raiders. The Bills declined.\n\nB-rad, Mrs. Sombloski and Ryan Holovics share the top at 9–4; Leah and Brandon Goes Commando sit a game back and need help. Melissa and Nate V hold the cellar at 5–8. Tonight: Commanders at 49ers, sides and tiebreakers sealed until kickoff.",
+      "column": "Everybody took the 49ers except Ariel, alone on Washington and 6–7 either way. The three leaders all have San Francisco, so who wins doesn't matter — only the total does. Ryan Holovics said 52, B-rad 54, Mrs. Sombloski 67.\n\nFifty-two or under: Ryan goes back-to-back and has to stop asking if he's allowed to play. Exactly 53 splits Ryan and B-rad. 54 to 60 is B-rad's. 61 or more and Mrs. Sombloski cashes the most optimistic number on the board. The line is 52, and so is Claude's guess, which is cute for a 7–6 robot that can't win.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 95.0,
@@ -6963,7 +7012,8 @@
           "13": "Unbeaten Niners at home, laying more than a touchdown."
         },
         "lock": "9",
-        "lockWhy": "Rams by 12.5 at home. If I miss this one, hang my mugshot."
+        "lockWhy": "Rams by 12.5 at home. If I miss this one, hang my mugshot.",
+        "tb": 52
       },
       "stats": {
         "games": {
@@ -7143,6 +7193,14 @@
             ],
             "upset": false,
             "rightN": 15
+          },
+          "13": {
+            "away": 1,
+            "home": 20,
+            "minority": "Commanders",
+            "minorityWho": [
+              "Ariel"
+            ]
           }
         },
         "upsets": 7,
@@ -7221,7 +7279,7 @@
           "a": "I'm wondering if that was an insinuation that men don't do laundry? Didn't you finish last last week?"
         }
       ],
-      "columnHead": "Three at 9–4, and Ariel fought the room",
+      "columnHead": "Three tied, and one number decides it",
       "columnN": 21,
       "thuDone": true,
       "threads": {
@@ -7236,7 +7294,7 @@
       }
     }
   },
-  "updated": "2026-10-20T00:10:17.451511+00:00",
+  "updated": "2026-10-20T00:21:03.171415+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
