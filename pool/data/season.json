@@ -7335,7 +7335,11 @@
           "kickoff": "2026-10-23T00:15:00Z",
           "when": "Thu 8:15 PM",
           "tv": "Prime Video",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Steelers",
@@ -7343,7 +7347,11 @@
           "kickoff": "2026-10-25T13:30:00Z",
           "when": "Sun 9:30 AM · Paris",
           "tv": "NFL Network",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Browns",
@@ -7351,7 +7359,11 @@
           "kickoff": "2026-10-25T17:00:00Z",
           "when": "Sun 1:00 PM",
           "tv": "CBS",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Bengals",
@@ -7359,7 +7371,11 @@
           "kickoff": "2026-10-25T17:00:00Z",
           "when": "Sun 1:00 PM",
           "tv": "CBS",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Colts",
@@ -7367,7 +7383,11 @@
           "kickoff": "2026-10-25T17:00:00Z",
           "when": "Sun 1:00 PM",
           "tv": "CBS",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Dolphins",
@@ -7375,7 +7395,11 @@
           "kickoff": "2026-10-25T17:00:00Z",
           "when": "Sun 1:00 PM",
           "tv": "CBS",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Giants",
@@ -7383,7 +7407,11 @@
           "kickoff": "2026-10-25T17:00:00Z",
           "when": "Sun 1:00 PM",
           "tv": "FOX",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "49ers",
@@ -7391,7 +7419,11 @@
           "kickoff": "2026-10-25T17:00:00Z",
           "when": "Sun 1:00 PM",
           "tv": "FOX",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Buccaneers",
@@ -7399,7 +7431,11 @@
           "kickoff": "2026-10-25T17:00:00Z",
           "when": "Sun 1:00 PM",
           "tv": "FOX",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Broncos",
@@ -7407,7 +7443,11 @@
           "kickoff": "2026-10-25T20:05:00Z",
           "when": "Sun 4:05 PM",
           "tv": "CBS",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Packers",
@@ -7415,7 +7455,11 @@
           "kickoff": "2026-10-25T20:25:00Z",
           "when": "Sun 4:25 PM",
           "tv": "FOX",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Rams",
@@ -7423,7 +7467,11 @@
           "kickoff": "2026-10-25T20:25:00Z",
           "when": "Sun 4:25 PM",
           "tv": "FOX",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Chiefs",
@@ -7431,7 +7479,11 @@
           "kickoff": "2026-10-26T00:20:00Z",
           "when": "Sun 8:20 PM",
           "tv": "NBC",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         },
         {
           "away": "Cowboys",
@@ -7439,15 +7491,44 @@
           "kickoff": "2026-10-27T00:15:00Z",
           "when": "Mon 8:15 PM",
           "tv": "ESPN/ABC",
-          "winner": null
+          "winner": null,
+          "hits": [],
+          "misses": [],
+          "status": "sealed",
+          "sides": null
         }
       ],
-      "players": [],
-      "trash": [],
+      "players": [
+        {
+          "name": "Claude",
+          "house": true,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-20T08:06:02+00:00",
+          "firstAt": "2026-10-20T08:06:02+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "house",
+          "paid": false,
+          "badges": []
+        }
+      ],
+      "trash": [
+        {
+          "from": "Claude",
+          "text": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions."
+        }
+      ],
       "payments": [],
       "buyIn": 5,
       "payBy": "2026-10-23T00:15:00Z",
-      "pot": 0,
+      "pot": 0.0,
       "paidN": 0,
       "opensAt": "2026-10-20T08:06:02Z",
       "housePicks": {
@@ -7492,10 +7573,29 @@
       "rollIn": 0,
       "namesForm": true,
       "asks": [],
-      "threads": {}
+      "threads": {},
+      "stats": {
+        "games": {},
+        "upsets": 0,
+        "decided": 0,
+        "best": null,
+        "worst": null,
+        "bills": null,
+        "jets": null
+      },
+      "decides": [],
+      "weekWinners": [],
+      "weekPayout": 0,
+      "tbUsed": false,
+      "updates": [],
+      "decidedAtLastRun": 0,
+      "outAtLastRun": [],
+      "columnHead": "Ryan goes for three. Who stops him?",
+      "column": "Week 7 is open and the board is empty, the only week anybody's been tied with Ryan Holovics. He's won two straight at 10–4, the last on the tiebreaker. Ariel nailed Monday's total dead on and still went 6–8; this week try picking winners too. Mike Sombloski has a clean sheet and a fresh chance to stop losing to his own household. The bot already named its Lock, the Texans, so you have a target.\n\nPatriots at Bears, Thursday 8:15. Pay by then. Questions for the commissioner go on the pick sheet.",
+      "columnN": 0
     }
   },
-  "updated": "2026-10-20T04:24:41.285422+00:00",
+  "updated": "2026-10-20T12:08:55.549725+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
