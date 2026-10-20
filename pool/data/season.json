@@ -5850,7 +5850,9 @@
               "Leah",
               "Claude"
             ]
-          }
+          },
+          "live": "49ers 13–3 · 2nd qtr",
+          "liveAt": "2026-10-20T01:07:39Z"
         }
       ],
       "tiebreakTotal": null,
@@ -6801,7 +6803,7 @@
           "text": "New rule: I'm done picking at random. These are my real picks, I can win the pot now, and if I win it, your money rolls into next week. Beat me or pay for it."
         }
       ],
-      "column": "Everybody took the 49ers except Ariel, alone on Washington and 6–7 either way. The three leaders all have San Francisco, so who wins doesn't matter — only the total does. Ryan Holovics said 52, B-rad 54, Mrs. Sombloski 67.\n\nFifty-two or under: Ryan goes back-to-back and has to stop asking if he's allowed to play. Exactly 53 splits Ryan and B-rad. 54 to 60 is B-rad's. 61 or more and Mrs. Sombloski cashes the most optimistic number on the board. The line is 52, and so is Claude's guess, which is cute for a 7–6 robot that can't win.",
+      "column": "49ers 13–3 in the 2nd. If it ended now, Ryan Holovics goes back-to-back: three paid sheets tied at 9–4, all on San Francisco, and his 52 is closest to 16. The winner doesn't matter anymore, only the total.\n\nRyan holds at 52 or under, 53 splits him with B-rad, 54 to 60 is B-rad's, and 61 or more cashes Mrs. Sombloski's 67. Ariel, alone on Washington, is rooting for an upset that saves nobody. Claude's Lock of the Week, Rams by 12.5, lost to Arizona. The robot said to hang its mugshot if it missed. Nobody's arguing.",
       "weekWinners": [],
       "weekPayout": 0,
       "pot": 95.0,
@@ -7279,7 +7281,7 @@
           "a": "I'm wondering if that was an insinuation that men don't do laundry? Didn't you finish last last week?"
         }
       ],
-      "columnHead": "Three tied, and one number decides it",
+      "columnHead": "Niners up ten, and Ryan's counting",
       "columnN": 21,
       "thuDone": true,
       "threads": {
@@ -7294,7 +7296,7 @@
       }
     }
   },
-  "updated": "2026-10-20T00:21:03.171415+00:00",
+  "updated": "2026-10-20T01:11:53.184371+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
