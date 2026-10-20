@@ -1,13 +1,15 @@
 {
- "updated": "2026-10-20T03:21:49Z",
+ "updated": "2026-10-20T03:23:51Z",
  "week": 6,
  "games": {
   "13": {
-   "state": "in",
+   "state": "post",
    "away": 17,
    "home": 23,
-   "detail": "0:06 - 4th",
-   "line": "49ers 23–17 · 0:06 - 4th"
+   "detail": "Final",
+   "winner": "49ers",
+   "score": "23–17",
+   "line": "Final · 49ers 23–17"
   }
  }
 }
