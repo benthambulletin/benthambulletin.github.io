@@ -7544,7 +7544,14 @@
           "text": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions."
         }
       ],
-      "payments": [],
+      "payments": [
+        {
+          "id": "manual-w7-Ryan Holovics",
+          "amt": "5.00",
+          "who": "Ryan Holovics",
+          "status": "manual"
+        }
+      ],
       "buyIn": 5,
       "payBy": "2026-10-23T00:15:00Z",
       "pot": 0.0,
