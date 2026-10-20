@@ -100,3 +100,30 @@ p=json.load(open('site/data/pressure.json')); p=[x for x in p if x['date']!='202
 p.append({'date':'2026-10-20','in':30.41,'mb':1029.8,'station':'KIAG','time':'06:53 EDT'}); json.dump(p,open('site/data/pressure.json','w'),indent=1)
 m=json.load(open('site/data/migraines.json')); m['updated']='2026-10-20'; json.dump(m,open('site/data/migraines.json','w'),indent=1)
 print('built')
+# --- review fixes ---
+d=json.load(open('edition-2026-10-20.json')); b=d['body_html']
+S('<div class="ledger">','<h2 class="sec"><span class="o">&#10038;</span>The National Wire','''<div class="ledger"><div class="num"><div class="cap">Volunteer firefighter tax credit</div><div class="big">$800</div></div>
+<div class="txt">New York's volunteer firefighters and EMS workers get $800 off their state income taxes starting next tax year, up from $200. It is the first raise since the credit began in 2006.</div></div>
+''')
+S('<div class="wire"><div class="num">1</div><div><h3>Niagara Falls &middot;','<h2 class="sec"><span class="o">&#9733;</span>The Marquee','''<div class="wire"><div class="num">1</div><div><h3>North Tonawanda &middot; Gas at Walmart?</h3><p>Walmart's North Tonawanda superstore is looking to add its own gas station and convenience store. Few other Walmart locations in the state have one, the <i>Niagara Gazette</i> reports.</p></div></div>
+<div class="wire"><div class="num">2</div><div><h3>Rochester &middot; Planetarium Gets $1.7 Million</h3><p>State Sen. Samra Brouk and Assemblymember Harry Bronson secured $1.7 million for upgrades at the RMSC Strasenburgh Planetarium, Rochester First reports. Money from community donors helped it reach its $2.11 million goal.</p></div></div>
+<div class="wire"><div class="num">3</div><div><h3>Niagara Falls &middot; A Look Before Goodyear Leaves</h3><p>Goodyear is closing its chemical plant in Niagara Falls, and Niagara County lawmakers plan to back environmental activists who want the state to take a close look at the plant's operation. The <i>Niagara Gazette</i> reports they want that review done before the plant closes.</p></div></div>
+<div class="wire"><div class="num">4</div><div><h3>Pomfret &middot; Against the Cameras</h3><p>The Pomfret town board is weighing a resolution against Flock Safety cameras, the <i>Observer</i> reports. Board member Mike Lee, running for the Chautauqua County Legislature, has made the cameras a central issue, arguing they are too intrusive and their data can be misused.</p></div></div>
+''')
+R('<div class="line"><b>Jets</b> &middot; Home Sunday at 1:00 against Miami, still looking for its first win. The Jets are 2&ndash;4; a win would be their third.</div>','<div class="line"><b>Jets</b> &middot; Home Sunday at 1:00 against Miami, which is 0&ndash;5. A win would put the Jets at 3&ndash;4 heading into November.</div>')
+R("and a chance to heal before Baltimore comes to Orchard Park on Nov. 1. The Ravens lost in Cleveland on Sunday and are 4&ndash;2.","with a chance to heal. Safety C.J. Gardner-Johnson was suspended one game without pay for spitting toward a Raiders player, WIVB reports. Baltimore, 4&ndash;2, visits Nov. 1 at 1:00.")
+R('<b>New numbers tomorrow.</b>','<b>Report day is tomorrow.</b>')
+R('Another sunny day, and the first frost of the week tonight','Sweater-weather sun again, and frost on the windshields by morning')
+R('30.41&#8243; &#9650;','30.41&#8243; &#9660;')
+S('<div class="touch-head">Talladega Sunday</div>','<h2 class="sec"><span class="o">&#9790;</span>On This Day','''<div class="touch-head">Talladega Sunday</div>
+<div class="line">Three races left; Larson leads Bell by 5 going to the big track in Alabama.</div>
+''')
+R('<h3>Alberta Stays</h3>','<h3>Update: Alberta Stays</h3>')
+R('The warnings surfaced in a trove of court records not reported before.',"“I have been fighting about fixing this for months with people who didn't think the harms are severe enough,” one staffer wrote.")
+R('''<p>The <i>SNL</i> alum says he "didn't understand the kerfuffle" over Shane Gillis's Oct. 10 monologue mocking women at the gym. Carvey said he "just saw it" as "a joke."</p>''','''<p>Comedian Shane Gillis drew outrage opening his Oct. 10 <i>SNL</i> hosting stint by mocking women at the gym. <i>SNL</i> alum Dana Carvey says he "didn't understand the kerfuffle" and "just saw it" as "a joke."</p>''')
+R('with Saturn lower in the east-southeast.</div>','with Saturn lower in the east-southeast. Sunset is 6:24, two minutes earlier than yesterday.</div>')
+R('headlines via CBS, BBC, NPR, AP, Niagara Gazette, Dunkirk Observer, Spectrum News,','headlines via CBS, BBC, NPR, AP, WIVB, Rochester First, Niagara Gazette, Dunkirk Observer, Spectrum News,')
+d['body_html']=b
+json.dump(d,open('edition-2026-10-20.json','w'),ensure_ascii=False,indent=1)
+json.dump(d,open('site/data/edition-2026-10-20.json','w'),ensure_ascii=False,indent=1)
+print('fixed')
