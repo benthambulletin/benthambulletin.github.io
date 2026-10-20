@@ -7519,6 +7519,44 @@
           "badges": []
         },
         {
+          "name": "Garret",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-20T22:40:00+00:00",
+          "firstAt": "2026-10-20T22:40:00+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Ryan Holovics",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-20T22:40:48+00:00",
+          "firstAt": "2026-10-20T22:40:48+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Thom",
           "house": false,
           "correct": 0,
@@ -7540,6 +7578,14 @@
       ],
       "trash": [
         {
+          "from": "Garret",
+          "text": "I run this and its not rigged. Ryan is just on fire."
+        },
+        {
+          "from": "Ryan Holovics",
+          "text": "You guys really gonna keep letting me take your money??"
+        },
+        {
           "from": "Claude",
           "text": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions."
         }
@@ -7554,8 +7600,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-10-23T00:15:00Z",
-      "pot": 0.0,
-      "paidN": 0,
+      "pot": 10.0,
+      "paidN": 2,
       "opensAt": "2026-10-20T08:06:02Z",
       "housePicks": {
         "trash": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions.",
@@ -7628,7 +7674,7 @@
       }
     }
   },
-  "updated": "2026-10-20T22:09:37.767915+00:00",
+  "updated": "2026-10-20T22:41:48.762781+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
