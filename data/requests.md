@@ -21,6 +21,10 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - **The Ballot mirrors /election/ (Garret, Oct 18).** The paper's Ballot section and any election item are a summary of `election/data.json`, the tracker Garret built. Every poll, rating, margin, candidate name, party label, date and early-voting site must match that file as of the morning's run; no number the tracker doesn't carry, no wording that contradicts its bottom line. Read `election/data.json` before writing the Ballot, and give the reviewer the file to compare against.
 - **Every web address is a link (Garret, Oct 18).** Older readers won't copy and paste. Any tally.so, benthambulletin.github.io or other URL in the paper is an `<a href>`; qc.py now fails on an unlinked one.
 
+- **Reader tools (Garret, Oct 21: "hell yes").** Every edition carries "Read it to me" (the browser reads the paper aloud) and "Bigger print" (remembered per device) at the top. Built into `tools/site.py`; no analytics, nothing sent anywhere. Don't remove them.
+- **Traveler's Weather (Garret, Oct 21).** When someone in the family is traveling, show the weather where they're going for every day of the trip. See CLAUDE.md, `data/travel.json`.
+- **Daily Ballot through Nov 2 (Garret, Oct 21).** `tools/ballot_box.py`; see CLAUDE.md section 10.
+- **Form photos stay private (Garret, Oct 21).** Encrypted pipeline only; see CLAUDE.md, the family form.
 - **Family form (Oct 4):** https://tally.so/r/rjxDpl — check every morning, run entries automatically per CLAUDE.md, hold only anything unkind or private and flag it to Garret.
 
 ## Dated
