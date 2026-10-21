@@ -1,1 +1,9 @@
-[]
+[
+ {
+  "id": "1WY1BZQ",
+  "asked": "2026-10-21T21:44:23Z",
+  "question": "My watch died and I am travelling. I wont be collecting data for a few days",
+  "answer": "No problem. The dashboard will say \"watch not synced\" and the strip goes grey for those nights; no scores get logged, so nothing counts against the scoreboard. When it's charged again, open Garmin Connect once and the next pull backfills the gap automatically \u2014 nothing for you to do. Two things still worth doing without the watch: the evening check-in if you get a minute, and logging it if a migraine comes (tally.so/r/obWNYP?who=Garret). The attack log is the part that can't be backfilled.",
+  "answered": "2026-10-21T21:48:13Z"
+ }
+]
