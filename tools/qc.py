@@ -11,7 +11,7 @@ fails=[];warns=[]
 if ed:
     s=ed['body_html']
     # 1. every standing section present
-    REQUIRED=['Family Today','The Weather Glass','The Almanac Sky','The Barograph','The Ledger',
+    REQUIRED=['Family Today','The Weather Glass','The Almanac Sky','The Ledger',
               'The National Wire','The Home Wire','The Gridiron','The Chase','The Marquee',
               'On This Day','Question of the Day']
     if dt.weekday()==6: REQUIRED=[x for x in REQUIRED if x not in('The Marquee',)]
@@ -58,6 +58,10 @@ if ed:
     _vis=re.sub(r'<[^>]+>',' ',_vis)
     for _u in sorted(set(re.findall(r'\b(?:https?://\S*|tally\.so/\S*|benthambulletin\.github\.io\S*|(?:www\.)?[a-z0-9-]+\.(?:com|org|gov|net|edu)\b\S*)',_vis))):
         fails.append(f'UNLINKED URL: {_u}')
+    # 9c. barometric pressure retired from the paper (Garret, Oct 21)
+    if TODAY>='2026-10-22':
+        for _bad,_why in (('The Barograph','Barograph section'),('class="baro','barograph trace/dial'),('&#8243;','inches-of-mercury reading')):
+            if _bad in s: fails.append(f'PRESSURE RETIRED: {_why} still in the paper')
     # 10. barograph number matches pressure.json
     pr={x['date']:x['in'] for x in json.load(open('site/data/pressure.json'))}
     m=re.search(r'<div class="press">([\d.]+)',s)

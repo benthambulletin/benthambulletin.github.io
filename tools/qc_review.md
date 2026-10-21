@@ -10,7 +10,7 @@ Return a numbered list of problems. Each one gets the exact sentence, what is wr
 
 **Freshness of data (the most common failure)**
 - Dawn temps in the three-town strip come from `forecast.json` → `towns[*].observation` (~6:45 a.m.), not from the pressure summary.
-- Barograph, masthead barometer tile, `pressure.json` entry and the Week in the Glass (Sundays) all match the latest KIAG reading in `pressure-summary.json`, and that reading is under 3 hours old at build time.
+- **No barometric pressure anywhere in the paper (Garret, Oct 21):** no Barograph, no pressure tile, no pressure line in the Weather Glass or the Sunday Week in the Glass. Flag any that slips back in.
 - `forecast.json` `generated_utc` is this morning. Highs, lows, rain chances and the 5-day match it.
 - Every news item is dated within 48 hours, and none ran yesterday (compare with yesterday's JSON) in any wording.
 
@@ -23,7 +23,7 @@ Return a numbered list of problems. Each one gets the exact sentence, what is wr
 - Sunday Spotlight: each item has what happened, what it means for a normal person and for this family, and what is next. Terms explained in the same sentence. Modest effects called modest. Ends with "Coming down the road."
 - Sunday Ballot covers the governor, NY-26, NY-23 and NY-25 by name, with candidates, the latest numbers and what they mean. Weekday ballot line is present.
 - Wire, Home Wire and Marquee items are two real sentences, not one thin one. Marquee has three. Home Wire follows the order: Scottsville first, else Rochester; Dunkirk for Chautauqua; North Tonawanda when real.
-- Barograph is two lines at most: the reading with the change in plain words, and whether it's a big-swing day. Once the migraine log has entries, a line with days since each person's last logged migraine and the month's count. No jargon, no paragraph, no repeating the log invitation in other sections.
+- The migraine log line (days since each person's last logged migraine and the month's count) sits in Family Today, one line, who and when only. No pressure context with it.
 
 **House rules**
 - Plain English everywhere. No "the glass", no "hundredths".
