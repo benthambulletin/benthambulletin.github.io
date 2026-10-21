@@ -1,3 +1,10 @@
 [
- {"who": "Garret", "place": "Long Island", "lat": 40.9526, "lon": -72.9254, "start": "2026-10-20", "end": null}
+ {
+  "who": "Garret",
+  "place": "Long Island",
+  "lat": 40.9526,
+  "lon": -72.9254,
+  "start": "2026-10-20",
+  "end": "2026-10-26"
+ }
 ]
