@@ -3,9 +3,9 @@
 <title>The Bentham Bulletin · No. 119 · Wednesday, October 21, 2026</title>
 <meta property="og:title" content="The Bentham Bulletin · No. 119 · Wednesday, October 21, 2026"><meta property="og:description" content="Frosty start, sunny week · Russia frees Stephen Hubbard · Jets host Miami Sunday"><meta property="og:image" content="https://benthambulletin.github.io/2026/10/21/plate.jpg">
 <meta property="og:type" content="article">
-<link rel="stylesheet" href="/assets/style.css?v=09704fc9">
+<link rel="stylesheet" href="/assets/style.css?v=7e54bb15">
 <link rel="icon" href="/assets/favicon.svg"></head><body><div class="page">
-<div class="kicker"><span>Vol. I &middot; No. 119</span><span>Est. 2026</span><span>Price &middot; One Smile</span></div>
+<div class="tools"><button type="button" id="bb-read" aria-pressed="false">&#128264; Read it to me</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div><div class="kicker"><span>Vol. I &middot; No. 119</span><span>Est. 2026</span><span>Price &middot; One Smile</span></div>
 <div class="hr-thick"></div>
 <div class="the">The</div><h1 class="mast">Bentham Bulletin</h1>
 <div class="tag">A Daily Almanac for the Family</div>
@@ -112,4 +112,34 @@ Low <b>36&deg;</b> tonight &middot; light northeast wind<br>No rain in the forec
 <div class="s">Forecast per NWS Buffalo &middot; barometer forecast via Open-Meteo &middot; Niagara Falls, Dunkirk and Rochester stations &middot; sky computed for 14120 &middot; election summary from the paper's election tracker &middot; headlines via CBS, BBC, NPR, AP, WKBW, Rochester First, Dunkirk Observer, Variety, Billboard, Deadline &middot; scores, standings, odds and NASCAR points via Sportradar</div>
 <div class="sig">&mdash; G.</div><div class="orn">&#127809; &#127875; &#127810;</div></div>
 <div class="nav"><a href="/2026/10/20/">&larr; 2026-10-20</a><a href="/album/">Album</a><a href="/archive/">Archive</a><a href="/">Today</a></div>
-</div></body></html>
+</div><script>
+(function(){
+var root=document.documentElement, big=document.getElementById('bb-big'), rd=document.getElementById('bb-read');
+function setBig(on){root.classList.toggle('big',on);big.setAttribute('aria-pressed',on?'true':'false');big.innerHTML=on?'A&minus; Normal print':'A+ Bigger print';try{localStorage.setItem('bb-big',on?'1':'0')}catch(e){}}
+try{if(localStorage.getItem('bb-big')==='1')setBig(true)}catch(e){}
+big.addEventListener('click',function(){setBig(!root.classList.contains('big'))});
+var ss=window.speechSynthesis; if(!ss||!window.SpeechSynthesisUtterance){rd.style.display='none';return}
+function lines(){
+  var page=document.querySelector('.page'), c=page.cloneNode(true);
+  c.querySelectorAll('.tools,.nav,.kicker,svg,script,img,.sig,.orn').forEach(function(e){e.remove()});
+  var box=document.createElement('div'); box.style.cssText='position:absolute;left:-9999px;top:0;width:40rem';
+  box.appendChild(c); document.body.appendChild(box);
+  var t=c.innerText; box.remove();
+  return t.split(/\n+/).map(function(l){return l
+    .replace(/(\d)″/g,'$1 inches').replace(/°/g,' degrees').replace(/[·—|]/g,', ')
+    .replace(/–/g,' to ').replace(/(\d)a\b/g,'$1 a.m.').replace(/(\d)p\b/g,'$1 p.m.')
+    .replace(/[^\x20-\x7E\u00C0-\u024F\u2018-\u201D\u00BD]/g,' ').replace(/\s+/g,' ').trim();})
+    .map(function(l){return (l===l.toUpperCase()&&/[A-Z]{3}/.test(l))?l.charAt(0)+l.slice(1).toLowerCase():l})
+    .filter(function(l){return /[A-Za-z0-9]/.test(l)});
+}
+function stop(){ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128264; Read it to me'}
+rd.addEventListener('click',function(){
+  if(rd.getAttribute('aria-pressed')==='true'){stop();return}
+  ss.cancel(); var L=lines(); if(!L.length)return;
+  rd.setAttribute('aria-pressed','true'); rd.innerHTML='&#9632; Stop reading';
+  L.forEach(function(l,i){var u=new SpeechSynthesisUtterance(l); u.rate=0.95; u.lang='en-US';
+    if(i===L.length-1){u.onend=stop} ss.speak(u)});
+});
+window.addEventListener('pagehide',function(){ss.cancel()});
+})();
+</script></body></html>

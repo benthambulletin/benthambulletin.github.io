@@ -4,7 +4,9 @@
 Run by .github/workflows/morning.yml at about 6:30 a.m. Eastern, before the
 6:59 build. Writes:
   data/forecast.json  NWS point forecast + latest observation for the three towns
-  data/news.json      recent headlines from national, local and entertainment RSS feeds
+  data/news.json      recent headlines from national, local and entertainment RSS feeds,
+                      plus "body": the first paragraphs of each article (Garret, Oct 21: the build
+                      session can't open news pages, so the feed fetches them here for real sourcing)
 Every source is fetched independently; one failure never stops the rest, and
 failures are recorded in the output so the editor knows what is missing.
 """
@@ -14,6 +16,7 @@ from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 
 ROOT = Path(__file__).resolve().parent.parent
 UA = {"User-Agent": "bentham-bulletin (noreply@anthropic.com)", "Accept": "application/geo+json, application/json, application/rss+xml, application/xml, text/xml, */*"}
@@ -109,6 +112,43 @@ def parse_feed(raw):
     return items
 
 
+PAGE_UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+           "Accept": "text/html,application/xhtml+xml"}
+SKIP = re.compile(r"(subscribe|sign up|newsletter|all rights reserved|copyright|cookie|advertis|click here|download the app|follow us|share this|read more:|related:|^photo|getty images|\(ap photo)", re.I)
+
+
+def article_text(url, max_paras=8, max_chars=2400):
+    """First real paragraphs of an article page, or None. Best-effort, never raises."""
+    if not url or not url.startswith("http"):
+        return None
+    try:
+        req = urllib.request.Request(url, headers=PAGE_UA)
+        with urllib.request.urlopen(req, timeout=15) as r:
+            raw = r.read(1_500_000).decode(r.headers.get_content_charset() or "utf-8", "replace")
+    except Exception:
+        return None
+    raw = re.sub(r"(?is)<(script|style|noscript|aside|nav|footer|header|figure|form)[^>]*>.*?</\1>", " ", raw)
+    m = re.search(r"(?is)<article[^>]*>(.*?)</article>", raw)
+    scope = m.group(1) if m and len(m.group(1)) > 800 else raw
+    paras, total = [], 0
+    for p in re.findall(r"(?is)<p[^>]*>(.*?)</p>", scope):
+        t = clean(p)
+        if len(t) < 60 or SKIP.search(t) or t in paras:
+            continue
+        paras.append(t); total += len(t)
+        if len(paras) >= max_paras or total >= max_chars:
+            break
+    return "\n\n".join(paras) if paras else None
+
+
+def add_bodies(rows, limit=45):
+    todo = [r for r in rows[:limit] if r.get("link")]
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for r, body in zip(todo, ex.map(lambda r: article_text(r["link"]), todo)):
+            if body:
+                r["body"] = body
+
+
 def news(hours=48):
     cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
     out = {"generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "window_hours": hours, "sections": {}, "errors": []}
@@ -126,7 +166,9 @@ def news(hours=48):
             except Exception as e:
                 out["errors"].append(f"{name}: {e}")
         rows.sort(key=lambda r: r["published"] or "", reverse=True)
-        out["sections"][section] = rows[:80]
+        rows = rows[:80]
+        add_bodies(rows)
+        out["sections"][section] = rows
     return out
 
 

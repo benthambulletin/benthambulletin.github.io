@@ -146,6 +146,13 @@ a{color:inherit}
 .promo .h{font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
 .promo .t{font-family:'LO';font-size:.98rem;line-height:1.45;margin-top:.25rem}
 .promo a{color:var(--teal);font-weight:700;text-decoration:none}
+/* reader tools: read aloud + bigger print (Garret, Oct 21: for the older readers) */
+.tools{display:flex;justify-content:flex-end;gap:.5rem;margin:0 0 .7rem}
+.tools button{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);background:transparent;border:2px solid var(--teal);padding:.45rem .7rem;cursor:pointer;line-height:1.2}
+.tools button[aria-pressed="true"]{background:var(--teal);color:var(--paper)}
+html.big{font-size:125%}
+.page a{overflow-wrap:anywhere}
+html.big .tools button{font-size:.62rem}
 /* archive */
 .arch{list-style:none;padding:0;margin:0}
 .arch li{display:flex;gap:.9rem;align-items:center;padding:.7rem 0;border-bottom:1px solid #e3cfac}

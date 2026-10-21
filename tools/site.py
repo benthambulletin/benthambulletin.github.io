@@ -154,6 +154,13 @@ a{color:inherit}
 .promo .h{font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
 .promo .t{font-family:'LO';font-size:.98rem;line-height:1.45;margin-top:.25rem}
 .promo a{color:var(--teal);font-weight:700;text-decoration:none}
+/* reader tools: read aloud + bigger print (Garret, Oct 21: for the older readers) */
+.tools{display:flex;justify-content:flex-end;gap:.5rem;margin:0 0 .7rem}
+.tools button{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);background:transparent;border:2px solid var(--teal);padding:.45rem .7rem;cursor:pointer;line-height:1.2}
+.tools button[aria-pressed="true"]{background:var(--teal);color:var(--paper)}
+html.big{font-size:125%}
+.page a{overflow-wrap:anywhere}
+html.big .tools button{font-size:.62rem}
 /* archive */
 .arch{list-style:none;padding:0;margin:0}
 .arch li{display:flex;gap:.9rem;align-items:center;padding:.7rem 0;border-bottom:1px solid #e3cfac}
@@ -165,7 +172,40 @@ a{color:inherit}
 """
 
 import hashlib
-def shell(title, body, og_image=None, desc="A daily almanac for the family"):
+TOOLS = """<div class="tools"><button type="button" id="bb-read" aria-pressed="false">&#128264; Read it to me</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>"""
+TOOLS_JS = r"""<script>
+(function(){
+var root=document.documentElement, big=document.getElementById('bb-big'), rd=document.getElementById('bb-read');
+function setBig(on){root.classList.toggle('big',on);big.setAttribute('aria-pressed',on?'true':'false');big.innerHTML=on?'A&minus; Normal print':'A+ Bigger print';try{localStorage.setItem('bb-big',on?'1':'0')}catch(e){}}
+try{if(localStorage.getItem('bb-big')==='1')setBig(true)}catch(e){}
+big.addEventListener('click',function(){setBig(!root.classList.contains('big'))});
+var ss=window.speechSynthesis; if(!ss||!window.SpeechSynthesisUtterance){rd.style.display='none';return}
+function lines(){
+  var page=document.querySelector('.page'), c=page.cloneNode(true);
+  c.querySelectorAll('.tools,.nav,.kicker,svg,script,img,.sig,.orn').forEach(function(e){e.remove()});
+  var box=document.createElement('div'); box.style.cssText='position:absolute;left:-9999px;top:0;width:40rem';
+  box.appendChild(c); document.body.appendChild(box);
+  var t=c.innerText; box.remove();
+  return t.split(/\n+/).map(function(l){return l
+    .replace(/(\d)″/g,'$1 inches').replace(/°/g,' degrees').replace(/[·—|]/g,', ')
+    .replace(/–/g,' to ').replace(/(\d)a\b/g,'$1 a.m.').replace(/(\d)p\b/g,'$1 p.m.')
+    .replace(/[^\x20-\x7E\u00C0-\u024F\u2018-\u201D\u00BD]/g,' ').replace(/\s+/g,' ').trim();})
+    .map(function(l){return (l===l.toUpperCase()&&/[A-Z]{3}/.test(l))?l.charAt(0)+l.slice(1).toLowerCase():l})
+    .filter(function(l){return /[A-Za-z0-9]/.test(l)});
+}
+function stop(){ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128264; Read it to me'}
+rd.addEventListener('click',function(){
+  if(rd.getAttribute('aria-pressed')==='true'){stop();return}
+  ss.cancel(); var L=lines(); if(!L.length)return;
+  rd.setAttribute('aria-pressed','true'); rd.innerHTML='&#9632; Stop reading';
+  L.forEach(function(l,i){var u=new SpeechSynthesisUtterance(l); u.rate=0.95; u.lang='en-US';
+    if(i===L.length-1){u.onend=stop} ss.speak(u)});
+});
+window.addEventListener('pagehide',function(){ss.cancel()});
+})();
+</script>"""
+
+def shell(title, body, og_image=None, desc="A daily almanac for the family", tools=False):
     CSSV = hashlib.md5(CSS.encode()).hexdigest()[:8]
     og = f'<meta property="og:image" content="https://benthambulletin.github.io{og_image}">' if og_image else ''
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -175,8 +215,8 @@ def shell(title, body, og_image=None, desc="A daily almanac for the family"):
 <meta property="og:type" content="article">
 <link rel="stylesheet" href="/assets/style.css?v={CSSV}">
 <link rel="icon" href="/assets/favicon.svg"></head><body><div class="page">
-{body}
-</div></body></html>"""
+{TOOLS if tools else ""}{body}
+</div>{TOOLS_JS if tools else ""}</body></html>"""
 
 def build(edition):
     """edition: dict with keys date (YYYY-MM-DD), no, body_html (the paper from kicker to colophon,
@@ -214,7 +254,7 @@ def build(edition):
     else:
         body = edition['body_html'] + nav
     title = f"The Bentham Bulletin · No. {edition['no']} · {d.strftime('%A, %B %-d, %Y')}"
-    html = shell(title, body, plate_rel, edition['headline'])
+    html = shell(title, body, plate_rel, edition['headline'], tools=True)
     open(os.path.join(outdir,'index.html'),'w').write(html)
     # front page = newest issue
     newest = issues[0]

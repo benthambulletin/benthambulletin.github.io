@@ -1,32 +1,30 @@
 name: Family photos
 
-# Pulls photos sent through the family form into data/inbox/. Run by the build when the queue has items.
+# Fetches photos sent through the family form and hands them to the build as a
+# short-lived workflow artifact. Nothing is committed: photos never land in this
+# public repo (Garret, Oct 21). The build downloads the artifact, then deletes it.
 on:
   workflow_dispatch:
+    inputs:
+      items:
+        description: 'JSON list: [{"id": "<submission id>", "url": "<Tally file url>"}]'
+        required: true
 
 permissions:
-  contents: write
-
-concurrency:
-  group: pressure-log
-  cancel-in-progress: false
+  contents: read
 
 jobs:
   photos:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download queued photos
+      - name: Download photos
+        env:
+          ITEMS: ${{ inputs.items }}
         run: python3 tools/fetch_photos.py
-      - name: Commit
-        run: |
-          git config user.name "Family photos"
-          git config user.email "noreply@anthropic.com"
-          git add data/inbox
-          if git diff --cached --quiet; then echo "no change"; exit 0; fi
-          git commit -m "Family photos: $(date -u +'%Y-%m-%d %H:%MZ')"
-          for i in 1 2 3; do
-            git pull --rebase origin main && git push && exit 0
-            sleep 15
-          done
-          exit 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: family-photos
+          path: photo-out/
+          retention-days: 1
+          if-no-files-found: error

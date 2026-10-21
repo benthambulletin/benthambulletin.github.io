@@ -47,18 +47,28 @@ def build(marks=()):
     lt, lv = pts[-1]
     d3, d12, d24 = s["d3h_mb"], s["d12h_mb"], s["d24h_mb"]
     score = min(100, round(abs(d24) * 6 + abs(d12) * 4 + abs(d3) * 6))
-    # house rule (CLAUDE.md): a 24-hour fall of 3 mb is MODERATE, 5 mb is HIGH,
-    # and a fast fall of 1.5 mb in three hours is HIGH regardless
-    if d24 <= -5 or d3 <= -1.5:
-        score = max(score, 60)
-    elif d24 <= -3:
-        score = max(score, 35)
+    # house rule (CLAUDE.md): a 24-hour swing of 3 mb is MODERATE, 5 mb is HIGH,
+    # and a fast swing of 1.5 mb in three hours is HIGH regardless. Rises count
+    # as well as falls (abs), and the next-48-hour forecast counts too, so the dial
+    # never says Low while the prose warns of a big swing (fixed Oct 21).
+    def rule(c24, c3):
+        if abs(c24) >= 5 or abs(c3) >= 1.5: return 60
+        if abs(c24) >= 3: return 35
+        return 0
+    score = max(score, rule(d24, d3))
+    fc = json.load(open(ROOT / "data" / "pressure-summary.json")).get("forecast", {}).get("KIAG", {})
+    ahead = rule(fc.get("max_24h_change_mb") or 0, fc.get("max_3h_change_mb") or 0)
+    tag = ""
+    if ahead > score:
+        score = ahead; tag = " ahead"
     level = "High" if score >= 60 else "Moderate" if score >= 35 else "Low"
-    arrow = "&#8593;" if d12 > 0.8 else "&#8595;" if d12 < -0.8 else "&#8212;"
-    word = "rising" if d12 > 0.8 else "falling" if d12 < -0.8 else "steady"
-    dial_cls = "dial hi" if level == "High" else "dial"
+    level += tag
+    # trend word from the last 3 hours, matching "steady/rising/falling at dawn" in the prose
+    arrow = "&#8593;" if d3 > 0.6 else "&#8595;" if d3 < -0.6 else "&#8594;"
+    word = "rising" if d3 > 0.6 else "falling" if d3 < -0.6 else "steady"
+    dial_cls = "dial hi" if level.startswith("High") else "dial"
     top = (f'<div class="baro-top"><div class="{dial_cls}">{level} &middot; {score}/100</div>'
-           f'<div class="press">{lv:.2f}&#8243;</div><div class="trend">{arrow} {word} overnight</div></div>')
+           f'<div class="press">{lv:.2f}&#8243;</div><div class="trend">{arrow} {word} at dawn</div></div>')
     svg = (f'<div class="baro"><svg viewBox="0 0 820 180" xmlns="http://www.w3.org/2000/svg">'
            f'<g font-family="AR" font-size="13" fill="#6b5f44">{"".join(g)}{"".join(days)}</g>{"".join(mk)}'
            f'<polyline points="{poly}" fill="none" stroke="#2f5e3e" stroke-width="3" stroke-linejoin="round"/>'
