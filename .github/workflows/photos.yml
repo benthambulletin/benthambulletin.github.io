@@ -1,8 +1,10 @@
 name: Family photos
 
-# Fetches photos sent through the family form and hands them to the build as a
-# short-lived workflow artifact. Nothing is committed: photos never land in this
-# public repo (Garret, Oct 21). The build downloads the artifact, then deletes it.
+# Fetches photos sent through the family form and commits them ENCRYPTED to
+# data/inbox/ (<id>.enc + <id>.key). Each photo gets a random AES key, which is
+# sealed with tools/photo_pubkey.pem. Only the build session holds the private key,
+# so nothing readable lands in this public repo (Garret, Oct 21). The build decrypts
+# with tools/get_photos.py and deletes the encrypted files once used.
 on:
   workflow_dispatch:
     inputs:
@@ -11,20 +13,30 @@ on:
         required: true
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: pressure-log
+  cancel-in-progress: false
 
 jobs:
   photos:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download photos
+      - name: Download and encrypt
         env:
           ITEMS: ${{ inputs.items }}
         run: python3 tools/fetch_photos.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: family-photos
-          path: photo-out/
-          retention-days: 1
-          if-no-files-found: error
+      - name: Commit
+        run: |
+          git config user.name "Family photos"
+          git config user.email "noreply@anthropic.com"
+          git add data/inbox
+          if git diff --cached --quiet; then echo "no change"; exit 1; fi
+          git commit -m "Family photos (encrypted): $(date -u +'%Y-%m-%d %H:%MZ')"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 15
+          done
+          exit 1

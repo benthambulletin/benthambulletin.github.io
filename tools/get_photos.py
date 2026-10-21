@@ -1,43 +1,44 @@
 #!/usr/bin/env python3
 """Fetch family-form photos privately (run from the build session).
 
-Usage: python3 tools/get_photos.py '<json items>' <out_dir>
+Usage: python3 tools/get_photos.py '<json items>' [out_dir]
 items = [{"id": "<submission id>", "url": "<Tally file url>"}]
-Dispatches photos.yml, waits for it, downloads the artifact into out_dir (outside the
-repo, e.g. /home/claude/inbox), then deletes the artifact so it doesn't linger.
+Dispatches photos.yml (which commits the photos ENCRYPTED to data/inbox/), pulls,
+decrypts each into out_dir (default /home/claude/inbox, outside the repo) with the
+private key at /home/claude/.bulletin_photo_key.pem, then git-rms the encrypted files.
+Commit that removal with the day's build.
+
+If the private key is missing (workspace reset): make a new pair with
+  openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:3072 -out /home/claude/.bulletin_photo_key.pem
+  openssl pkey -in /home/claude/.bulletin_photo_key.pem -pubout -out tools/photo_pubkey.pem
+commit the new public key, and re-run (photos are still in Tally).
 """
-import json, subprocess, sys, time, zipfile, io, os
-from datetime import datetime, timezone
+import json, os, subprocess, sys, time
+from pathlib import Path
 
+ROOT = Path(__file__).resolve().parent.parent
+PRIV = "/home/claude/.bulletin_photo_key.pem"
 REPO = "repos/benthambulletin/benthambulletin.github.io"
-
-
-def gh(*args, raw=False):
-    r = subprocess.run(["gh", "api", *args], capture_output=True)
-    if r.returncode:
-        raise SystemExit(f"gh api {' '.join(args)} failed: {r.stderr.decode()[:300]}")
-    return r.stdout if raw else (json.loads(r.stdout) if r.stdout.strip() else None)
-
-
-items, out = sys.argv[1], sys.argv[2]
-json.loads(items)  # validate
-start = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-gh("-X", "POST", f"{REPO}/actions/workflows/photos.yml/dispatches", "-f", "ref=main", "-f", f"inputs[items]={items}")
-run = None
+items = json.loads(sys.argv[1]); out = sys.argv[2] if len(sys.argv) > 2 else "/home/claude/inbox"
+ids = [i["id"] for i in items]
+run = lambda *a: subprocess.run(a, cwd=ROOT, check=True, capture_output=True)
+subprocess.run(["gh", "api", "-X", "POST", f"{REPO}/actions/workflows/photos.yml/dispatches", "-f", "ref=main",
+                "-f", "inputs[items]=" + json.dumps(items)], check=True, capture_output=True)
+inbox = ROOT / "data" / "inbox"
 for _ in range(60):
     time.sleep(5)
-    runs = gh(f"{REPO}/actions/workflows/photos.yml/runs?per_page=5")["workflow_runs"]
-    runs = [r for r in runs if r["created_at"] >= start[:17]]
-    if runs and runs[0]["status"] == "completed":
-        run = runs[0]; break
-if not run:
-    raise SystemExit("photos run did not finish in 5 minutes")
-if run["conclusion"] != "success":
-    raise SystemExit(f"photos run {run['id']} ended {run['conclusion']}")
-arts = gh(f"{REPO}/actions/runs/{run['id']}/artifacts")["artifacts"]
+    subprocess.run(["git", "pull", "--rebase", "-q"], cwd=ROOT, capture_output=True)
+    if all((inbox / f"{i}.enc").exists() for i in ids):
+        break
+else:
+    raise SystemExit("photos did not arrive in 5 minutes; check the photos.yml run")
 os.makedirs(out, exist_ok=True)
-for a in arts:
-    z = zipfile.ZipFile(io.BytesIO(gh(f"{REPO}/actions/artifacts/{a['id']}/zip", raw=True)))
-    z.extractall(out)
-    gh("-X", "DELETE", f"{REPO}/actions/artifacts/{a['id']}")
-print("saved:", sorted(os.listdir(out)))
+for i in ids:
+    key = subprocess.run(["openssl", "pkeyutl", "-decrypt", "-inkey", PRIV, "-pkeyopt", "rsa_padding_mode:oaep",
+                          "-in", str(inbox / f"{i}.key")], check=True, capture_output=True).stdout
+    kf = Path(out) / f".{i}.k"; kf.write_bytes(key)
+    subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-in", str(inbox / f"{i}.enc"),
+                    "-out", str(Path(out) / f"{i}.jpg"), "-pass", f"file:{kf}"], check=True)
+    kf.unlink()
+    run("git", "rm", "-q", f"data/inbox/{i}.enc", f"data/inbox/{i}.key")
+print("saved:", [f"{out}/{i}.jpg" for i in ids], "(encrypted copies git-rm'd; commit with the build)")
