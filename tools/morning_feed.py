@@ -78,6 +78,31 @@ def forecasts():
     return out
 
 
+def travel_forecasts(out):
+    """Weather for family members away from home (Garret, Oct 21). data/travel.json:
+    [{"who": "Garret", "place": "Long Island (Rocky Point)", "lat": 40.95, "lon": -72.93,
+      "start": "2026-10-20", "end": "2026-10-23"}]  (end may be null until known)
+    Active trips (start <= tomorrow, end >= today or null) go into out["travel"]."""
+    path = ROOT / "data" / "travel.json"
+    if not path.exists():
+        return
+    today = datetime.now(timezone(timedelta(hours=-4))).date()
+    out["travel"] = {}
+    for t in json.loads(path.read_text()):
+        try:
+            start = datetime.fromisoformat(t["start"]).date()
+            end = datetime.fromisoformat(t["end"]).date() if t.get("end") else None
+            if start > today + timedelta(days=1) or (end and end < today):
+                continue
+            pt = json.loads(get(f"https://api.weather.gov/points/{t['lat']},{t['lon']}"))["properties"]
+            fc = json.loads(get(pt["forecast"]))["properties"]
+            out["travel"][t["place"]] = {"who": t["who"], "start": t["start"], "end": t.get("end"),
+                "periods": [{"name": p["name"], "temp": p["temperature"], "pop": (p.get("probabilityOfPrecipitation") or {}).get("value"),
+                             "short": p["shortForecast"], "detail": p["detailedForecast"]} for p in fc["periods"][:10]]}
+        except Exception as e:
+            out["errors"].append(f"travel {t.get('place')}: {e}")
+
+
 def clean(s):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", s or ""))).strip()
 
@@ -174,6 +199,8 @@ def news(hours=48):
 
 if __name__ == "__main__":
     (ROOT / "data").mkdir(exist_ok=True)
-    (ROOT / "data" / "forecast.json").write_text(json.dumps(forecasts(), indent=1))
+    fc = forecasts()
+    travel_forecasts(fc)
+    (ROOT / "data" / "forecast.json").write_text(json.dumps(fc, indent=1))
     (ROOT / "data" / "news.json").write_text(json.dumps(news(), indent=1))
     print("ok")
