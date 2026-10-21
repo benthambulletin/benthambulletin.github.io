@@ -139,7 +139,7 @@ def parse_feed(raw):
 
 PAGE_UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
            "Accept": "text/html,application/xhtml+xml"}
-SKIP = re.compile(r"(subscribe|sign up|newsletter|all rights reserved|copyright|cookie|advertis|click here|download the app|follow us|share this|read more:|related:|^photo|getty images|\(ap photo)", re.I)
+SKIP = re.compile(r"(subscribe|sign up|newsletter|all rights reserved|copyright|cookie|advertis|click here|download the app|follow us|share this|read more:|related:|^photo|getty images|\(ap photo|story idea|^hello! i'm)", re.I)
 
 
 def article_text(url, max_paras=8, max_chars=2400):
@@ -152,12 +152,21 @@ def article_text(url, max_paras=8, max_chars=2400):
             raw = r.read(1_500_000).decode(r.headers.get_content_charset() or "utf-8", "replace")
     except Exception:
         return None
+    for blob in re.findall(r'(?is)<script[^>]+application/ld\+json[^>]*>(.*?)</script>', raw):
+        m = re.search(r'"articleBody"\s*:\s*"((?:[^"\\]|\\.)*)"', blob)
+        if m:
+            try:
+                body = clean(json.loads('"' + m.group(1) + '"'))
+            except Exception:
+                body = ""
+            if len(body) > 200:
+                return body[:max_chars]
     raw = re.sub(r"(?is)<(script|style|noscript|aside|nav|footer|header|figure|form)[^>]*>.*?</\1>", " ", raw)
     m = re.search(r"(?is)<article[^>]*>(.*?)</article>", raw)
     scope = m.group(1) if m and len(m.group(1)) > 800 else raw
     paras, total = [], 0
     for p in re.findall(r"(?is)<p[^>]*>(.*?)</p>", scope):
-        t = clean(p)
+        t = re.sub(r"^(?:(?:Facebook|Twitter|LinkedIn|Email|Print|X)\s+){2,}", "", clean(p))
         if len(t) < 60 or SKIP.search(t) or t in paras:
             continue
         paras.append(t); total += len(t)
