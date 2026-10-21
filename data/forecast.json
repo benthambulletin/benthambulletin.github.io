@@ -1,277 +1,277 @@
 {
- "generated_utc": "2026-10-20T14:56Z",
+ "generated_utc": "2026-10-21T11:01Z",
  "towns": {
   "North Tonawanda": {
-   "issued": "2026-10-20T13:57:54+00:00",
+   "issued": "2026-10-21T07:57:39+00:00",
    "periods": [
     {
      "name": "Today",
-     "temp": 64,
-     "wind": "NE 5 to 9 mph",
-     "pop": 0,
-     "short": "Sunny",
-     "detail": "Sunny, with a high near 64. Northeast wind 5 to 9 mph."
-    },
-    {
-     "name": "Tonight",
-     "temp": 33,
-     "wind": "E 2 to 7 mph",
-     "pop": 0,
-     "short": "Clear then Patchy Frost",
-     "detail": "Patchy frost after 4am. Clear, with a low around 33. East wind 2 to 7 mph."
-    },
-    {
-     "name": "Wednesday",
-     "temp": 62,
+     "temp": 60,
      "wind": "NE 1 to 5 mph",
      "pop": 0,
-     "short": "Areas Of Frost then Sunny",
-     "detail": "Areas of frost before 9am. Sunny, with a high near 62. Northeast wind 1 to 5 mph."
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 60. Northeast wind 1 to 5 mph."
     },
     {
-     "name": "Wednesday Night",
-     "temp": 38,
-     "wind": "SE 3 mph",
+     "name": "Tonight",
+     "temp": 36,
+     "wind": "NE 0 to 5 mph",
      "pop": 0,
      "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 38. Southeast wind around 3 mph."
+     "detail": "Mostly clear, with a low around 36. Northeast wind 0 to 5 mph."
     },
     {
      "name": "Thursday",
-     "temp": 62,
-     "wind": "NW 1 to 8 mph",
-     "pop": 0,
-     "short": "Mostly Sunny",
-     "detail": "Mostly sunny, with a high near 62. Northwest wind 1 to 8 mph."
-    },
-    {
-     "name": "Thursday Night",
-     "temp": 36,
-     "wind": "N 7 mph",
-     "pop": 0,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 36. North wind around 7 mph."
-    },
-    {
-     "name": "Friday",
-     "temp": 57,
-     "wind": "NE 3 to 7 mph",
-     "pop": 0,
-     "short": "Sunny",
-     "detail": "Sunny, with a high near 57. Northeast wind 3 to 7 mph."
-    },
-    {
-     "name": "Friday Night",
-     "temp": 36,
-     "wind": "E 5 mph",
-     "pop": 0,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 36. East wind around 5 mph."
-    },
-    {
-     "name": "Saturday",
      "temp": 60,
-     "wind": "S 2 mph",
+     "wind": "NW 1 to 7 mph",
      "pop": 0,
-     "short": "Sunny",
-     "detail": "Sunny, with a high near 60."
-    },
-    {
-     "name": "Saturday Night",
-     "temp": 42,
-     "wind": "SE 3 mph",
-     "pop": 0,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 42."
-    }
-   ],
-   "observation": {
-    "station": "KIAG",
-    "time": "2026-10-20T14:30:00+00:00",
-    "text": "Clear",
-    "temp_f": 55
-   }
-  },
-  "Dunkirk": {
-   "issued": "2026-10-20T13:57:54+00:00",
-   "periods": [
-    {
-     "name": "Today",
-     "temp": 64,
-     "wind": "NE 6 to 13 mph",
-     "pop": 0,
-     "short": "Sunny",
-     "detail": "Sunny, with a high near 64. Northeast wind 6 to 13 mph."
-    },
-    {
-     "name": "Tonight",
-     "temp": 38,
-     "wind": "NE 5 to 10 mph",
-     "pop": 0,
-     "short": "Clear",
-     "detail": "Clear, with a low around 38. Northeast wind 5 to 10 mph."
-    },
-    {
-     "name": "Wednesday",
-     "temp": 61,
-     "wind": "E 2 to 6 mph",
-     "pop": 0,
-     "short": "Sunny",
-     "detail": "Sunny, with a high near 61. East wind 2 to 6 mph."
-    },
-    {
-     "name": "Wednesday Night",
-     "temp": 44,
-     "wind": "NE 3 mph",
-     "pop": 0,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 44. Northeast wind around 3 mph."
-    },
-    {
-     "name": "Thursday",
-     "temp": 62,
-     "wind": "N 1 to 8 mph",
-     "pop": 4,
-     "short": "Sunny",
-     "detail": "Sunny, with a high near 62. North wind 1 to 8 mph."
-    },
-    {
-     "name": "Thursday Night",
-     "temp": 40,
-     "wind": "NE 7 to 10 mph",
-     "pop": 4,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 40. Northeast wind 7 to 10 mph."
-    },
-    {
-     "name": "Friday",
-     "temp": 58,
-     "wind": "NE 8 mph",
-     "pop": 0,
-     "short": "Sunny",
-     "detail": "Sunny, with a high near 58. Northeast wind around 8 mph."
-    },
-    {
-     "name": "Friday Night",
-     "temp": 42,
-     "wind": "E 7 mph",
-     "pop": 0,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 42. East wind around 7 mph."
-    },
-    {
-     "name": "Saturday",
-     "temp": 59,
-     "wind": "SE 6 mph",
-     "pop": 0,
-     "short": "Sunny",
-     "detail": "Sunny, with a high near 59."
-    },
-    {
-     "name": "Saturday Night",
-     "temp": 46,
-     "wind": "SE 3 to 7 mph",
-     "pop": 0,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 46."
-    }
-   ],
-   "observation": {
-    "station": "KDKK",
-    "time": "2026-10-20T14:30:00+00:00",
-    "text": "Clear",
-    "temp_f": 55
-   }
-  },
-  "Scottsville": {
-   "issued": "2026-10-20T13:57:54+00:00",
-   "periods": [
-    {
-     "name": "Today",
-     "temp": 62,
-     "wind": "NE 5 to 12 mph",
-     "pop": 0,
-     "short": "Sunny",
-     "detail": "Sunny, with a high near 62. Northeast wind 5 to 12 mph."
-    },
-    {
-     "name": "Tonight",
-     "temp": 33,
-     "wind": "E 1 to 6 mph",
-     "pop": 0,
-     "short": "Clear then Areas Of Frost",
-     "detail": "Areas of frost after 4am. Clear, with a low around 33. East wind 1 to 6 mph."
-    },
-    {
-     "name": "Wednesday",
-     "temp": 61,
-     "wind": "S 0 to 5 mph",
-     "pop": 0,
-     "short": "Areas Of Frost then Sunny",
-     "detail": "Areas of frost before 9am. Sunny, with a high near 61. South wind 0 to 5 mph."
-    },
-    {
-     "name": "Wednesday Night",
-     "temp": 36,
-     "wind": "W 0 to 3 mph",
-     "pop": 0,
-     "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 36. West wind 0 to 3 mph."
-    },
-    {
-     "name": "Thursday",
-     "temp": 61,
-     "wind": "NW 3 to 9 mph",
-     "pop": 3,
      "short": "Mostly Sunny",
-     "detail": "Mostly sunny, with a high near 61. Northwest wind 3 to 9 mph."
+     "detail": "Mostly sunny, with a high near 60. Northwest wind 1 to 7 mph."
     },
     {
      "name": "Thursday Night",
-     "temp": 36,
-     "wind": "N 3 to 8 mph",
-     "pop": 1,
-     "short": "Partly Cloudy",
-     "detail": "Partly cloudy, with a low around 36. North wind 3 to 8 mph."
+     "temp": 35,
+     "wind": "NE 6 mph",
+     "pop": 0,
+     "short": "Mostly Clear",
+     "detail": "Mostly clear, with a low around 35. Northeast wind around 6 mph."
     },
     {
      "name": "Friday",
      "temp": 56,
-     "wind": "NE 2 to 7 mph",
+     "wind": "E 6 mph",
      "pop": 0,
      "short": "Sunny",
-     "detail": "Sunny, with a high near 56. Northeast wind 2 to 7 mph."
+     "detail": "Sunny, with a high near 56. East wind around 6 mph."
     },
     {
      "name": "Friday Night",
-     "temp": 33,
+     "temp": 32,
      "wind": "E 2 to 6 mph",
      "pop": 0,
      "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 33. East wind 2 to 6 mph."
+     "detail": "Mostly clear, with a low around 32. East wind 2 to 6 mph."
     },
     {
      "name": "Saturday",
-     "temp": 59,
-     "wind": "S 5 mph",
+     "temp": 62,
+     "wind": "S 2 mph",
      "pop": 0,
      "short": "Sunny",
-     "detail": "Sunny, with a high near 59."
+     "detail": "Sunny, with a high near 62. South wind around 2 mph."
+    },
+    {
+     "name": "Saturday Night",
+     "temp": 41,
+     "wind": "SE 5 mph",
+     "pop": 0,
+     "short": "Mostly Clear",
+     "detail": "Mostly clear, with a low around 41. Southeast wind around 5 mph."
+    },
+    {
+     "name": "Sunday",
+     "temp": 64,
+     "wind": "S 5 to 10 mph",
+     "pop": 1,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 64."
+    },
+    {
+     "name": "Sunday Night",
+     "temp": 48,
+     "wind": "SW 7 mph",
+     "pop": 1,
+     "short": "Partly Cloudy",
+     "detail": "Partly cloudy, with a low around 48."
+    }
+   ],
+   "observation": {
+    "station": "KIAG",
+    "time": "2026-10-21T10:45:00+00:00",
+    "text": "Clear",
+    "temp_f": 34
+   }
+  },
+  "Dunkirk": {
+   "issued": "2026-10-21T07:57:39+00:00",
+   "periods": [
+    {
+     "name": "Today",
+     "temp": 58,
+     "wind": "NE 6 mph",
+     "pop": 0,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 58. Northeast wind around 6 mph."
+    },
+    {
+     "name": "Tonight",
+     "temp": 41,
+     "wind": "SE 3 mph",
+     "pop": 0,
+     "short": "Mostly Clear",
+     "detail": "Mostly clear, with a low around 41. Southeast wind around 3 mph."
+    },
+    {
+     "name": "Thursday",
+     "temp": 58,
+     "wind": "W 1 to 6 mph",
+     "pop": 0,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 58. West wind 1 to 6 mph."
+    },
+    {
+     "name": "Thursday Night",
+     "temp": 37,
+     "wind": "NE 8 mph",
+     "pop": 1,
+     "short": "Mostly Clear",
+     "detail": "Mostly clear, with a low around 37. Northeast wind around 8 mph."
+    },
+    {
+     "name": "Friday",
+     "temp": 56,
+     "wind": "E 8 mph",
+     "pop": 0,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 56. East wind around 8 mph."
+    },
+    {
+     "name": "Friday Night",
+     "temp": 38,
+     "wind": "E 7 mph",
+     "pop": 0,
+     "short": "Mostly Clear",
+     "detail": "Mostly clear, with a low around 38. East wind around 7 mph."
+    },
+    {
+     "name": "Saturday",
+     "temp": 61,
+     "wind": "NW 5 mph",
+     "pop": 0,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 61. Northwest wind around 5 mph."
+    },
+    {
+     "name": "Saturday Night",
+     "temp": 43,
+     "wind": "SE 3 to 9 mph",
+     "pop": 0,
+     "short": "Mostly Clear",
+     "detail": "Mostly clear, with a low around 43. Southeast wind 3 to 9 mph."
+    },
+    {
+     "name": "Sunday",
+     "temp": 64,
+     "wind": "S 9 mph",
+     "pop": 0,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 64."
+    },
+    {
+     "name": "Sunday Night",
+     "temp": 49,
+     "wind": "SW 7 mph",
+     "pop": 1,
+     "short": "Partly Cloudy",
+     "detail": "Partly cloudy, with a low around 49."
+    }
+   ],
+   "observation": {
+    "station": "KDKK",
+    "time": "2026-10-21T10:45:00+00:00",
+    "text": "Clear",
+    "temp_f": 28
+   }
+  },
+  "Scottsville": {
+   "issued": "2026-10-21T07:57:39+00:00",
+   "periods": [
+    {
+     "name": "Today",
+     "temp": 59,
+     "wind": "NW 0 to 5 mph",
+     "pop": 0,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 59. Northwest wind 0 to 5 mph."
+    },
+    {
+     "name": "Tonight",
+     "temp": 34,
+     "wind": "W 0 to 3 mph",
+     "pop": 0,
+     "short": "Mostly Clear",
+     "detail": "Mostly clear, with a low around 34. West wind 0 to 3 mph."
+    },
+    {
+     "name": "Thursday",
+     "temp": 59,
+     "wind": "NW 3 to 9 mph",
+     "pop": 0,
+     "short": "Mostly Sunny",
+     "detail": "Mostly sunny, with a high near 59. Northwest wind 3 to 9 mph."
+    },
+    {
+     "name": "Thursday Night",
+     "temp": 32,
+     "wind": "NE 2 to 6 mph",
+     "pop": 0,
+     "short": "Mostly Clear",
+     "detail": "Mostly clear, with a low around 32. Northeast wind 2 to 6 mph."
+    },
+    {
+     "name": "Friday",
+     "temp": 54,
+     "wind": "E 1 to 7 mph",
+     "pop": 0,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 54. East wind 1 to 7 mph."
+    },
+    {
+     "name": "Friday Night",
+     "temp": 29,
+     "wind": "SE 5 mph",
+     "pop": 0,
+     "short": "Mostly Clear",
+     "detail": "Mostly clear, with a low around 29. Southeast wind around 5 mph."
+    },
+    {
+     "name": "Saturday",
+     "temp": 62,
+     "wind": "SE 3 mph",
+     "pop": 0,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 62. Southeast wind around 3 mph."
     },
     {
      "name": "Saturday Night",
      "temp": 36,
-     "wind": "SE 5 mph",
+     "wind": "SE 2 to 6 mph",
      "pop": 0,
      "short": "Mostly Clear",
-     "detail": "Mostly clear, with a low around 36."
+     "detail": "Mostly clear, with a low around 36. Southeast wind 2 to 6 mph."
+    },
+    {
+     "name": "Sunday",
+     "temp": 66,
+     "wind": "SW 3 to 7 mph",
+     "pop": 0,
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 66."
+    },
+    {
+     "name": "Sunday Night",
+     "temp": 45,
+     "wind": "SW 5 mph",
+     "pop": 1,
+     "short": "Partly Cloudy",
+     "detail": "Partly cloudy, with a low around 45."
     }
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-20T13:54:00+00:00",
-    "text": "Mostly Clear",
-    "temp_f": 46
+    "time": "2026-10-21T09:54:00+00:00",
+    "text": "",
+    "temp_f": 32
    }
   }
  },
