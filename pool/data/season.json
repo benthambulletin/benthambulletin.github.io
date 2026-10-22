@@ -7500,7 +7500,7 @@
       ],
       "players": [
         {
-          "name": "Andy R.",
+          "name": "Andy R",
           "house": false,
           "correct": 0,
           "missed": 0,
@@ -7625,6 +7625,25 @@
           "sheet": {},
           "filedAt": "2026-10-20T22:40:00+00:00",
           "firstAt": "2026-10-20T22:40:00+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Leah",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-22T22:23:57+00:00",
+          "firstAt": "2026-10-22T22:23:57+00:00",
           "free": false,
           "rank": 1,
           "delta": 0,
@@ -7799,7 +7818,7 @@
           "text": "Help, I fell... but the exit polls have me up"
         },
         {
-          "from": "Andy R.",
+          "from": "Andy R",
           "text": "This league is clearly rigged with the commish & Ryan splitting the pot"
         },
         {
@@ -7885,12 +7904,28 @@
           "who": "Derek",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a165b545bf86b23",
+          "at": "2026-10-22T22:22:20Z",
+          "amt": "5.00",
+          "who": "Leah",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a165b545bf86b23~1",
+          "at": "2026-10-22T22:22:20Z",
+          "amt": "5.00",
+          "who": "B-rad",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-10-23T00:15:00Z",
-      "pot": 55.0,
-      "paidN": 11,
+      "pot": 60.0,
+      "paidN": 12,
       "opensAt": "2026-10-20T08:06:02Z",
       "housePicks": {
         "trash": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions.",
@@ -7959,9 +7994,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Fourteen in. Arod beats the buzzer.",
-      "column": "Arod filed at 5:58 tonight, two hours and change before kickoff, which in this pool counts as early. Andy R. is still out here alleging the commish and Ryan Holovics are splitting the pot. The commissioner went 7–7 last week; if this is a con, it's the worst-run con going. Ryan, two titles running, just wants to know how long you'll keep letting him do this. Fourteen sheets say a while longer.\n\nDerek filed with his own mugshot staring back at him. Mike Somballotboxski is still on the floor citing exit polls. Ariel, B-rad: Patriots at Bears kicks off at 8:15. Questions for the commissioner go on the pick sheet.",
-      "columnN": 14,
+      "columnHead": "Fifteen in. Andy smells a fix.",
+      "column": "Fifteen sheets in with kickoff closing fast. Andy R says the league is rigged, with the commissioner and Ryan splitting the pot. The commissioner says Ryan is just on fire. Ryan says thanks for the money. Derek, hanging on the mugshot all week, filed anyway, which is either courage or he hasn't seen the photo.\n\nStill out: Ariel, B-rad, Josh, Walczyk and Kaylani & Luka. Patriots at Bears locks at 8:15.",
+      "columnN": 15,
       "face": {
         "photo": "/pool/faces/w7.jpg",
         "who": "Derek",
@@ -7971,7 +8006,7 @@
       }
     }
   },
-  "updated": "2026-10-22T22:10:48.383833+00:00",
+  "updated": "2026-10-22T22:37:53.001804+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -8013,7 +8048,8 @@
     "Nqvj20Q": "Mike Sombloski",
     "RW1Nql4": "Mike Sombloski",
     "vXVZ8ZQ": "Mike Sombloski",
-    "PRNBGbe": "Ryan Holovics"
+    "PRNBGbe": "Ryan Holovics",
+    "aOJ5WNv": "Andy R"
   },
   "people": {
     "603444b89dab4f0e": "Thom",
@@ -8040,7 +8076,7 @@
     "b6c729d57f24889e": "Ryan Holovics",
     "5024342dbb4d6256": "Mike Sombloski",
     "ec4f2dbb3b140095": "Dan",
-    "981a33ebb14fea4a": "Andy R."
+    "981a33ebb14fea4a": "Andy R"
   },
   "keepNames": [
     "Kaylani & Luka"
