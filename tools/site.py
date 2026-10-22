@@ -193,12 +193,28 @@ function lines(){
     .map(function(l){return (l===l.toUpperCase()&&/[A-Z]{3}/.test(l))?l.charAt(0)+l.slice(1).toLowerCase():l})
     .filter(function(l){return /[A-Za-z0-9]/.test(l)});
 }
-var Q=[],qi=0,on=false;
+var Q=[],qi=0,on=false,best=null;
+// Prefer the phone's best English voice: Premium/Enhanced downloads first, then known natural ones,
+// then any US English, then any English.
+function pickVoice(){
+  if(best)return best;
+  var V=(ss.getVoices()||[]).filter(function(x){return /^en/i.test(x.lang)}); if(!V.length)return null;
+  function score(x){var n=x.name, s=0;
+    if(/premium/i.test(n))s+=100; else if(/enhanced|neural|natural/i.test(n))s+=60;
+    if(/^(Ava|Zoe|Evan|Nathan|Noelle|Allison|Susan|Tom|Samantha|Joelle|Aaron)\b/.test(n))s+=20;
+    if(/Google US English|Microsoft (Aria|Jenny|Guy)/.test(n))s+=40;
+    if(/^en(-|_)US/i.test(x.lang))s+=10;
+    if(/Fred|Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Good News|Jester|Organ|Superstar|Trinoids|Whisper|Wobble|Zarvox|Junior|Ralph|Kathy|Grandma|Grandpa|Rocko|Shelley|Flo|Eddy|Reed|Sandy/.test(n))s-=200;
+    return s}
+  V.sort(function(a,b){return score(b)-score(a)}); best=V[0]; return best;
+}
+if(ss.onvoiceschanged!==undefined)ss.onvoiceschanged=function(){best=null};
+ss.getVoices();
 function stop(){on=false;Q=[];ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128264; Read it to me'}
 function next(){
   if(!on)return; if(qi>=Q.length){stop();return}
   var u=new SpeechSynthesisUtterance(Q[qi++]); u.rate=0.95; u.lang='en-US';
-  var v=(ss.getVoices()||[]).filter(function(x){return /^en(-|_)US/i.test(x.lang)})[0]; if(v)u.voice=v;
+  var v=pickVoice(); if(v){try{u.voice=v}catch(e){}}
   u.onend=next; u.onerror=next; ss.speak(u);
 }
 rd.addEventListener('click',function(){
