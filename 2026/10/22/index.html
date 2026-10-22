@@ -131,13 +131,22 @@ function lines(){
     .map(function(l){return (l===l.toUpperCase()&&/[A-Z]{3}/.test(l))?l.charAt(0)+l.slice(1).toLowerCase():l})
     .filter(function(l){return /[A-Za-z0-9]/.test(l)});
 }
-function stop(){ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128264; Read it to me'}
+var Q=[],qi=0,on=false;
+function stop(){on=false;Q=[];ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128264; Read it to me'}
+function next(){
+  if(!on)return; if(qi>=Q.length){stop();return}
+  var u=new SpeechSynthesisUtterance(Q[qi++]); u.rate=0.95; u.lang='en-US';
+  var v=(ss.getVoices()||[]).filter(function(x){return /^en(-|_)US/i.test(x.lang)})[0]; if(v)u.voice=v;
+  u.onend=next; u.onerror=next; ss.speak(u);
+}
 rd.addEventListener('click',function(){
-  if(rd.getAttribute('aria-pressed')==='true'){stop();return}
-  ss.cancel(); var L=lines(); if(!L.length)return;
-  rd.setAttribute('aria-pressed','true'); rd.innerHTML='&#9632; Stop reading';
-  L.forEach(function(l,i){var u=new SpeechSynthesisUtterance(l); u.rate=0.95; u.lang='en-US';
-    if(i===L.length-1){u.onend=stop} ss.speak(u)});
+  if(on){stop();return}
+  Q=lines(); qi=0; if(!Q.length)return;
+  on=true; rd.setAttribute('aria-pressed','true'); rd.innerHTML='&#9632; Stop reading';
+  // iPhone: speak inside the tap itself, one line at a time (queuing everything at once, or a
+  // cancel() right before speak(), makes iOS Safari stay silent)
+  if(ss.paused)ss.resume();
+  next();
 });
 window.addEventListener('pagehide',function(){ss.cancel()});
 })();
