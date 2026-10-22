@@ -1,9 +1,9 @@
 name: Read-aloud audio
 
-# Records each edition as an MP3 with a natural voice (Piper, offline) so every phone hears the
-# same good voice with nothing to download (Garret, Oct 22). The MP3 is uploaded to the "audio"
-# release as <date>.mp3, not committed. The page's "Read it to me" button plays it, and falls back
-# to the phone's own voice if it isn't there yet.
+# Records each edition as an MP3 with a natural voice (Kokoro, open-source) so every phone hears
+# the same good voice with nothing to download (Garret, Oct 22). The MP3 is uploaded to the
+# "audio" release as <date>.mp3, not committed. The page's "Read it to me" button plays it, and
+# falls back to the phone's own voice if it isn't there yet. Voice: VOICE below.
 on:
   push:
     branches: [main]
@@ -13,13 +13,19 @@ on:
       date:
         description: 'YYYY-MM-DD (default: today, Eastern)'
         required: false
+      samples:
+        description: 'Space-separated voices to make ~1-minute samples of instead (e.g. af_heart am_michael)'
+        required: false
 
 permissions:
   contents: write
 
 concurrency:
-  group: audio
+  group: audio-${{ inputs.samples != '' && 'samples' || 'daily' }}
   cancel-in-progress: true
+
+env:
+  VOICE: af_heart
 
 jobs:
   audio:
@@ -29,30 +35,30 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install Python packages
-        timeout-minutes: 8
-        run: pip install --progress-bar off piper-tts beautifulsoup4 lameenc
-      - name: Download voice
-        timeout-minutes: 4
+      - name: Install
+        timeout-minutes: 10
         run: |
-          mkdir -p voice
-          base=https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/hfc_female/medium
-          curl -sSfL --max-time 180 -o voice/v.onnx "$base/en_US-hfc_female-medium.onnx"
-          curl -sSfL --max-time 60 -o voice/v.onnx.json "$base/en_US-hfc_female-medium.onnx.json"
-          ls -la voice
+          pip install --progress-bar off torch --index-url https://download.pytorch.org/whl/cpu
+          pip install --progress-bar off "kokoro>=0.9" soundfile beautifulsoup4 lameenc "misaki[en]"
       - name: Record
-        timeout-minutes: 12
+        timeout-minutes: 15
         env:
           D: ${{ inputs.date }}
+          SAMPLES: ${{ inputs.samples }}
         run: |
           if [ -z "$D" ]; then D=$(TZ=America/New_York date +%F); fi
           test -f data/edition-$D.json || { echo "no edition for $D"; exit 0; }
-          python3 tools/make_audio.py "$D" voice/v.onnx "$D.mp3"
-          echo "D=$D" >> $GITHUB_ENV
+          mkdir -p out
+          if [ -n "$SAMPLES" ]; then
+            for v in $SAMPLES; do python3 tools/make_audio.py "$D" "$v" "out/sample-$v.mp3" 900; done
+          else
+            python3 tools/make_audio.py "$D" "$VOICE" "out/$D.mp3"
+          fi
+          echo "READY=1" >> $GITHUB_ENV
       - name: Upload
-        if: env.D != ''
+        if: env.READY == '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release view audio >/dev/null 2>&1 || gh release create audio --title "Read-aloud audio" --notes "Daily recordings of the paper for the Read it to me button."
-          gh release upload audio "$D.mp3" --clobber
+          gh release upload audio out/*.mp3 --clobber
