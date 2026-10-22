@@ -218,6 +218,8 @@ function next(){
   u.onend=next; u.onerror=next; ss.speak(u);
 }
 var A=null,noAudio=false;
+(function(){var u=rd.getAttribute('data-audio'); if(!u){noAudio=true;return}
+  try{fetch(u,{method:'HEAD',cache:'no-store'}).then(function(r){if(!r.ok)noAudio=true}).catch(function(){noAudio=true})}catch(e){noAudio=true}})();
 function stopAll(){ if(A){try{A.pause()}catch(e){} A=null} stop(); }
 function speak(){
   Q=lines(); qi=0; if(!Q.length)return;
@@ -293,7 +295,7 @@ def build(edition):
     else:
         body = edition['body_html'] + nav
     title = f"The Bentham Bulletin · No. {edition['no']} · {d.strftime('%A, %B %-d, %Y')}"
-    html = shell(title, body, plate_rel, edition['headline'], tools=True, audio=f"https://github.com/benthambulletin/benthambulletin.github.io/releases/download/audio/{edition['date']}.mp3")
+    html = shell(title, body, plate_rel, edition['headline'], tools=True, audio=f"/audio/{edition['date']}.mp3")
     open(os.path.join(outdir,'index.html'),'w').write(html)
     # front page = newest issue
     newest = issues[0]

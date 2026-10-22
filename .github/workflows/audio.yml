@@ -1,8 +1,8 @@
 name: Read-aloud audio
 
 # Records each edition as an MP3 with a natural voice (Kokoro, open-source) so every phone hears
-# the same good voice with nothing to download (Garret, Oct 22). The MP3 is uploaded to the
-# "audio" release as <date>.mp3, not committed. The page's "Read it to me" button plays it, and
+# the same good voice with nothing to download (Garret, Oct 22). The MP3 is committed to audio/<date>.mp3
+# (last 7 days kept) so the site serves it; voice samples go to the "audio" release. The page's "Read it to me" button plays it, and
 # falls back to the phone's own voice if it isn't there yet. Voice: VOICE below (Emma, British; Garret chose it Oct 22).
 on:
   push:
@@ -55,10 +55,29 @@ jobs:
             python3 tools/make_audio.py "$D" "$VOICE" "out/$D.mp3"
           fi
           echo "READY=1" >> $GITHUB_ENV
-      - name: Upload
+      - name: Publish
         if: env.READY == '1'
         env:
           GH_TOKEN: ${{ github.token }}
+          SAMPLES: ${{ inputs.samples }}
         run: |
-          gh release view audio >/dev/null 2>&1 || gh release create audio --title "Read-aloud audio" --notes "Daily recordings of the paper for the Read it to me button."
-          gh release upload audio out/*.mp3 --clobber
+          if [ -n "$SAMPLES" ]; then
+            gh release view audio >/dev/null 2>&1 || gh release create audio --title "Voice samples" --notes "Voice samples."
+            gh release upload audio out/*.mp3 --clobber
+            exit 0
+          fi
+          # Daily recording is served from the site itself (iPhones won't play it from the release
+          # download server). Keep the last 7 days in the tree.
+          git config user.name "Read-aloud audio"
+          git config user.email "noreply@anthropic.com"
+          for i in 1 2 3 4; do
+            git pull --rebase -q origin main
+            mkdir -p audio && cp out/*.mp3 audio/
+            ls audio/*.mp3 | sort | head -n -7 | xargs -r git rm -q
+            git add audio
+            git diff --cached --quiet && exit 0
+            git commit -qm "Read-aloud audio: $(ls out)"
+            git push -q && exit 0
+            git reset -q --hard origin/main; sleep 10
+          done
+          exit 1

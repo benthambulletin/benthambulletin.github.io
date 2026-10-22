@@ -4,7 +4,7 @@ Usage: python3 tools/make_audio.py YYYY-MM-DD VOICE OUT.mp3 [max_chars]
 VOICE is a Kokoro voice name (e.g. af_heart) or a Piper .onnx model path. max_chars trims for samples.
 Reads data/edition-DATE.json, turns the paper into plain spoken lines (same idea as the
 read-aloud button), synthesizes with Kokoro (open-source neural TTS, Apache-2.0) or Piper, encodes a small MP3 (lameenc).
-Run by .github/workflows/audio.yml; the MP3 goes to the repo's "audio" release, not into git."""
+Run by .github/workflows/audio.yml; the MP3 is committed to audio/<date>.mp3 (32 kbps mono, ~3 MB; last 7 days kept)."""
 import json, re, sys, wave, subprocess, tempfile, os, html
 from pathlib import Path
 from bs4 import BeautifulSoup
@@ -51,7 +51,7 @@ print(f"{len(lines)} lines, {len(text)} chars")
 
 import lameenc
 def mp3(pcm16, rate, path):
-    enc = lameenc.Encoder(); enc.set_bit_rate(64); enc.set_in_sample_rate(rate)
+    enc = lameenc.Encoder(); enc.set_bit_rate(32); enc.set_in_sample_rate(rate)
     enc.set_channels(1); enc.set_quality(2)
     open(path, "wb").write(enc.encode(pcm16) + enc.flush())
 

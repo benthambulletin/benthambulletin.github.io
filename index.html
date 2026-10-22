@@ -5,7 +5,7 @@
 <meta property="og:type" content="article">
 <link rel="stylesheet" href="/assets/style.css?v=7e54bb15">
 <link rel="icon" href="/assets/favicon.svg"></head><body><div class="page">
-<div class="tools"><button type="button" id="bb-read" data-audio="https://github.com/benthambulletin/benthambulletin.github.io/releases/download/audio/2026-10-22.mp3" aria-pressed="false">&#128264; Read it to me</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div><div class="kicker"><span>Vol. I &middot; No. 120</span><span>Est. 2026</span><span>Price &middot; One Smile</span></div>
+<div class="tools"><button type="button" id="bb-read" data-audio="/audio/2026-10-22.mp3" aria-pressed="false">&#128264; Read it to me</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div><div class="kicker"><span>Vol. I &middot; No. 120</span><span>Est. 2026</span><span>Price &middot; One Smile</span></div>
 <div class="hr-thick"></div>
 <div class="the">The</div><h1 class="mast">Bentham Bulletin</h1>
 <div class="tag">A Daily Almanac for the Family</div>
@@ -156,6 +156,8 @@ function next(){
   u.onend=next; u.onerror=next; ss.speak(u);
 }
 var A=null,noAudio=false;
+(function(){var u=rd.getAttribute('data-audio'); if(!u){noAudio=true;return}
+  try{fetch(u,{method:'HEAD',cache:'no-store'}).then(function(r){if(!r.ok)noAudio=true}).catch(function(){noAudio=true})}catch(e){noAudio=true}})();
 function stopAll(){ if(A){try{A.pause()}catch(e){} A=null} stop(); }
 function speak(){
   Q=lines(); qi=0; if(!Q.length)return;
