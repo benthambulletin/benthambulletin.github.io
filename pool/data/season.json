@@ -7500,6 +7500,25 @@
       ],
       "players": [
         {
+          "name": "Andy R.",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-22T18:22:05+00:00",
+          "firstAt": "2026-10-22T18:22:05+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Claude",
           "house": true,
           "correct": 0,
@@ -7538,6 +7557,25 @@
           "badges": []
         },
         {
+          "name": "Derek",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-22T18:51:03+00:00",
+          "firstAt": "2026-10-22T18:51:03+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Devin",
           "house": false,
           "correct": 0,
@@ -7568,6 +7606,25 @@
           "sheet": {},
           "filedAt": "2026-10-20T22:40:00+00:00",
           "firstAt": "2026-10-20T22:40:00+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Melissa",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-22T06:43:31+00:00",
+          "firstAt": "2026-10-22T06:43:31+00:00",
           "free": false,
           "rank": 1,
           "delta": 0,
@@ -7669,6 +7726,44 @@
           "state": "alive",
           "paid": false,
           "badges": []
+        },
+        {
+          "name": "Tom",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-22T12:26:53+00:00",
+          "firstAt": "2026-10-22T12:26:53+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Wendy",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-22T14:11:03+00:00",
+          "firstAt": "2026-10-22T14:11:03+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -7683,6 +7778,10 @@
         {
           "from": "Mike Sombloski",
           "text": "Help, I fell... but the exit polls have me up"
+        },
+        {
+          "from": "Andy R.",
+          "text": "This league is clearly rigged with the commish & Ryan splitting the pot"
         },
         {
           "from": "Claude",
@@ -7735,12 +7834,44 @@
           "who": "Devin",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1625a3dd7f47f4",
+          "at": "2026-10-22T06:44:03Z",
+          "amt": "5.00",
+          "who": "Melissa",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a16394e344f4b87",
+          "at": "2026-10-22T12:27:44Z",
+          "amt": "5.00",
+          "who": "Tom",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a163f503cbe56b0",
+          "at": "2026-10-22T14:12:41Z",
+          "amt": "5.00",
+          "who": "Wendy",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a164ee83c5af5d4",
+          "at": "2026-10-22T18:45:14Z",
+          "amt": "5.00",
+          "who": "Derek",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-10-23T00:15:00Z",
-      "pot": 35.0,
-      "paidN": 7,
+      "pot": 55.0,
+      "paidN": 11,
       "opensAt": "2026-10-20T08:06:02Z",
       "housePicks": {
         "trash": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions.",
@@ -7809,9 +7940,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Eight in. Devin slides in late.",
-      "column": "Devin filed Wednesday night, the eighth sheet in and the first since Mrs. Sombloski, who's still one win from making the household feud official while Mike Somballotboxski lies on the floor reading exit polls. Ryan Holovics, back-to-back champ, wants to know if you'll keep letting him take your money. Eight sheets say yes. The commissioner swears it isn't rigged, which is exactly what a rigged commissioner swears. Thom's in free, purely to spoil.\n\nAriel, B-rad: Thursday's coming. The bot's Lock is the Texans; the rest stays sealed. Questions for the commissioner go on the pick sheet.",
-      "columnN": 8,
+      "columnHead": "Thirteen in. The mugshot files.",
+      "column": "Derek filed at 2:51 this afternoon, which is brave for a man whose face is currently hanging on this board. Andy R. beat him in by 29 minutes with a conspiracy theory: the commish and Ryan Holovics are splitting the pot. The commissioner would like it noted that he went 7–7 last week, which is a lousy way to run a con. Ryan, two titles running, just wants to know how long you'll keep letting him do this. Thirteen sheets say a while longer.\n\nWendy, Tom and Melissa slipped in Thursday without a word of trash talk between them, which is how the quiet ones win. Mike Somballotboxski is still on the floor citing exit polls. Ariel, B-rad: first kickoff is tonight at 8:15. Questions for the commissioner go on the pick sheet.",
+      "columnN": 13,
       "face": {
         "photo": "/pool/faces/w7.jpg",
         "who": "Derek",
@@ -7821,7 +7952,7 @@
       }
     }
   },
-  "updated": "2026-10-22T01:31:24.901691+00:00",
+  "updated": "2026-10-22T19:12:11.144160+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -7853,7 +7984,8 @@
   "displayNames": {
     "Mike Sombloski": "Mike Somballotboxski",
     "Andy R": "Andy",
-    "Ryan Holovics": "Ryan"
+    "Ryan Holovics": "Ryan",
+    "Andy R.": "Andy"
   },
   "subNames": {
     "EqrypLL": "Andy R",
@@ -7888,7 +8020,8 @@
     "b13704921511cab0": "Leah",
     "b6c729d57f24889e": "Ryan Holovics",
     "5024342dbb4d6256": "Mike Sombloski",
-    "ec4f2dbb3b140095": "Dan"
+    "ec4f2dbb3b140095": "Dan",
+    "981a33ebb14fea4a": "Andy R."
   },
   "keepNames": [
     "Kaylani & Luka"
