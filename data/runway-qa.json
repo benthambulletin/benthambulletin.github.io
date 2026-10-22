@@ -3,7 +3,14 @@
   "id": "1WY1BZQ",
   "asked": "2026-10-21T21:44:23Z",
   "question": "My watch died and I am travelling. I wont be collecting data for a few days",
-  "answer": "No problem. The dashboard will say \"watch not synced\" and the strip goes grey for those nights; no scores get logged, so nothing counts against the scoreboard. When it's charged again, open Garmin Connect once and the next pull backfills the gap automatically \u2014 nothing for you to do. Two things still worth doing without the watch: the evening check-in if you get a minute, and logging it if a migraine comes (tally.so/r/obWNYP?who=Garret). The attack log is the part that can't be backfilled.",
+  "answer": "No problem. The dashboard will say \"watch not synced\" and the strip goes grey for those nights; no scores get logged, so nothing counts against the scoreboard. When it's charged again, open Garmin Connect once and the next pull backfills the gap automatically — nothing for you to do. Two things still worth doing without the watch: the evening check-in if you get a minute, and logging it if a migraine comes (tally.so/r/obWNYP?who=Garret). The attack log is the part that can't be backfilled.",
   "answered": "2026-10-21T21:48:13Z"
+ },
+ {
+  "id": "2jdAl4p",
+  "asked": "2026-10-22T20:01:49Z",
+  "question": "Is the garmin the right tool for the job? Are there other technology products available that would help manage, give insight or predict the outcome?",
+  "answer": "Partly. For the one thing that holds up — sleep loss and schedule shifts — the Garmin is as good as anything: it gets bedtime, wake time and hours without you doing anything. Body Battery, stress and HRV are guesses; nobody has shown they predict attacks, and your own scoreboard so far is 13 scored days, one 9 (Oct 19) with no attack logged — a false alarm, no hits yet. Too early to call, but keep expectations low.\n\nAlternatives: an Oura ring tracks sleep a bit better, same limits. Migraine Buddy is a diary, which you already have in the form. N1-Headache (formerly Curelator) is the one app with published trigger analysis; it needs about 90 days of daily entries before it says anything. Cefaly and Nerivio are treatment devices, not predictors — your prescriber's call. Nothing on the market predicts a migraine well. Your best predictor is you: prodrome signs in the evening check-in and how recently the last attack hit. Keep the watch for sleep; don't buy anything for prediction.",
+  "answered": "2026-10-22T20:43:01Z"
  }
 ]
