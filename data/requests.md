@@ -23,6 +23,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 - **No barometric pressure in the paper (Garret, Oct 21: "remove the barometric pressure stuff").** Barograph section, pressure tile and every pressure line are gone from No. 120 on. Middle tile is sunset time. The migraine log line moves to Family Today. See CLAUDE.md section 6.
 - **The family gets the link by text at 8:00 a.m. (Garret, Oct 21).** His iPhone texts https://benthambulletin.github.io to the family group ("Gang of Seven") daily at 8:00. The paper must be live, reviewed and final by then; any post-8:00 change goes to people who already opened it, so get the cover and fixes in before 8 when possible.
+- **Read-aloud uses a recorded natural voice (Garret, Oct 22).** Nobody should have to download anything for it to sound good. See CLAUDE.md, reader tools.
 - **Reader tools (Garret, Oct 21: "hell yes").** Every edition carries "Read it to me" (the browser reads the paper aloud) and "Bigger print" (remembered per device) at the top. Built into `tools/site.py`; no analytics, nothing sent anywhere. Don't remove them.
 - **Traveler's Weather (Garret, Oct 21).** When someone in the family is traveling, show the weather where they're going for every day of the trip. See CLAUDE.md, `data/travel.json`.
 - **Daily Ballot through Nov 2 (Garret, Oct 21).** `tools/ballot_box.py`; see CLAUDE.md section 10.
