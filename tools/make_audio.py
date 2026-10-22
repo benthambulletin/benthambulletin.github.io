@@ -2,7 +2,7 @@
 """Record the day's paper as audio (Garret, Oct 22: the parents won't download better phone voices).
 Usage: python3 tools/make_audio.py YYYY-MM-DD MODEL.onnx OUT.mp3
 Reads data/edition-DATE.json, turns the paper into plain spoken lines (same idea as the
-read-aloud button), synthesizes with Piper (offline neural TTS), encodes a small mono MP3.
+read-aloud button), synthesizes with Piper (offline neural TTS), encodes a small MP3 (lameenc).
 Run by .github/workflows/audio.yml; the MP3 goes to the repo's "audio" release, not into git."""
 import json, re, sys, wave, subprocess, tempfile, os, html
 from pathlib import Path
@@ -54,6 +54,10 @@ with tempfile.TemporaryDirectory() as td:
             voice.synthesize_wav(text, w)
         else:
             voice.synthesize(text, w)
-    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", wav, "-ac", "1", "-ar", "22050",
-                    "-codec:a", "libmp3lame", "-b:a", "48k", out], check=True)
+    import lameenc
+    with wave.open(wav, "rb") as r:
+        rate, ch, frames = r.getframerate(), r.getnchannels(), r.readframes(r.getnframes())
+    enc = lameenc.Encoder(); enc.set_bit_rate(48); enc.set_in_sample_rate(rate)
+    enc.set_channels(ch); enc.set_quality(2)
+    open(out, "wb").write(enc.encode(frames) + enc.flush())
 print("wrote", out, os.path.getsize(out))
