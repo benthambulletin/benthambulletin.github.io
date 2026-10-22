@@ -93,3 +93,17 @@ json.dump(d,open('edition-2026-10-22.json','w'),ensure_ascii=False,indent=1)
 json.dump(d,open('site/data/edition-2026-10-22.json','w'),ensure_ascii=False,indent=1)
 m=json.load(open('site/data/migraines.json')); m['updated']='2026-10-22'; json.dump(m,open('site/data/migraines.json','w'),indent=1)
 print('built')
+# --- review fixes ---
+d=json.load(open('edition-2026-10-22.json')); b=d['body_html']
+R("Low <b>38&deg;</b> tonight &middot; light northwest wind<br>Dry through Sunday; Monday's rain chance is near zero","Low <b>38&deg;</b> tonight &middot; light northeast wind<br>Dry through Monday")
+R('<div class="v">6:22</div><div class="k">Sunset</div>','<div class="v">6:22</div><div class="k">Sunset &middot; 1&frac12; min earlier</div>')
+R("Saving for a down payment and closing costs now takes twice as long as it did in 2019, a new Center for Responsible Lending analysis finds, NPR reports.","A median-income renter household now needs 16 years to save a down payment and closing costs for a starter home, twice as long as in 2019, a new Center for Responsible Lending analysis finds, NPR reports.")
+R("<h3>Two Hostages Freed After a Year</h3>","<h3>Two Hostages Freed After More Than a Year</h3>")
+R("kidnapped separately in Niger early last year,","kidnapped separately in Agadez, Niger, in January and April last year,")
+R("Supervisor Brian McAvoy called it \"the right thing to do,\" though he said it may be more ceremonial than a big savings.","Veterans will save $21 to $107 a year on town taxes starting in 2028; Supervisor Brian McAvoy called it \"the right thing to do,\" if more ceremonial than a big savings.")
+R("<b>Jets</b> &middot; Home Sunday at 1:00 against winless Miami. Tonight's game is the one to watch for both teams: New England, second in the division at 4&ndash;2, plays at Chicago at 8:15 on Prime Video.","<b>Jets</b> &middot; Home Sunday at 1:00 against winless Miami, 0&ndash;5. Tonight New England, second in the division at 4&ndash;2, plays at Chicago.")
+R("A second Bill was suspended for spitting:","A second Bill, after C.J. Gardner-Johnson, was suspended for spitting:")
+d['body_html']=b
+json.dump(d,open('edition-2026-10-22.json','w'),ensure_ascii=False,indent=1)
+json.dump(d,open('site/data/edition-2026-10-22.json','w'),ensure_ascii=False,indent=1)
+print('fixed')
