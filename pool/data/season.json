@@ -7519,6 +7519,25 @@
           "badges": []
         },
         {
+          "name": "Ariel",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-22T22:48:26+00:00",
+          "firstAt": "2026-10-22T22:48:26+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Arod",
           "house": false,
           "correct": 0,
@@ -7785,6 +7804,25 @@
           "badges": []
         },
         {
+          "name": "Walczyk",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-22T22:51:39+00:00",
+          "firstAt": "2026-10-22T22:51:39+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Wendy",
           "house": false,
           "correct": 0,
@@ -7820,6 +7858,10 @@
         {
           "from": "Andy R",
           "text": "This league is clearly rigged with the commish & Ryan splitting the pot"
+        },
+        {
+          "from": "Ariel",
+          "text": "Who is this Nate V person?"
         },
         {
           "from": "Claude",
@@ -7920,12 +7962,28 @@
           "who": "B-rad",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a165cdaad114ad6",
+          "at": "2026-10-22T22:48:59Z",
+          "amt": "5.00",
+          "who": "Ariel",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a165d4e3087f8cf",
+          "at": "2026-10-22T22:56:52Z",
+          "amt": "5.00",
+          "who": "Walczyk",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-10-23T00:15:00Z",
-      "pot": 60.0,
-      "paidN": 12,
+      "pot": 70.0,
+      "paidN": 14,
       "opensAt": "2026-10-20T08:06:02Z",
       "housePicks": {
         "trash": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions.",
@@ -7994,9 +8052,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Fifteen in. Andy smells a fix.",
-      "column": "Fifteen sheets in with kickoff closing fast. Andy R says the league is rigged, with the commissioner and Ryan splitting the pot. The commissioner says Ryan is just on fire. Ryan says thanks for the money. Derek, hanging on the mugshot all week, filed anyway, which is either courage or he hasn't seen the photo.\n\nStill out: Ariel, B-rad, Josh, Walczyk and Kaylani & Luka. Patriots at Bears locks at 8:15.",
-      "columnN": 15,
+      "columnHead": "Seventeen in. Andy smells a fix.",
+      "column": "Seventeen sheets in with kickoff closing fast. Andy R says the league is rigged, with the commissioner and Ryan splitting the pot. The commissioner says Ryan is just on fire. Ryan says thanks for the money. Ariel showed up late wanting to know who Nate V is. He went 6–8 last week. So did she.\n\nDerek, hanging on the mugshot all week, filed anyway. Still out: B-rad, Josh and Kaylani & Luka. Patriots at Bears locks at 8:15.",
+      "columnN": 17,
       "face": {
         "photo": "/pool/faces/w7.jpg",
         "who": "Derek",
@@ -8006,7 +8064,7 @@
       }
     }
   },
-  "updated": "2026-10-22T22:37:53.001804+00:00",
+  "updated": "2026-10-22T22:57:21.100391+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
