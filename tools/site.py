@@ -179,7 +179,7 @@ var root=document.documentElement, big=document.getElementById('bb-big'), rd=doc
 function setBig(on){root.classList.toggle('big',on);big.setAttribute('aria-pressed',on?'true':'false');big.innerHTML=on?'A&minus; Normal print':'A+ Bigger print';try{localStorage.setItem('bb-big',on?'1':'0')}catch(e){}}
 try{if(localStorage.getItem('bb-big')==='1')setBig(true)}catch(e){}
 big.addEventListener('click',function(){setBig(!root.classList.contains('big'))});
-var ss=window.speechSynthesis; if(!ss||!window.SpeechSynthesisUtterance){rd.style.display='none';return}
+var ss=(window.speechSynthesis&&window.SpeechSynthesisUtterance)?window.speechSynthesis:null; if(!ss&&!rd.getAttribute('data-audio')){rd.style.display='none';return}
 function lines(){
   var page=document.querySelector('.page'), c=page.cloneNode(true);
   c.querySelectorAll('.tools,.nav,.kicker,svg,script,img,.sig,.orn').forEach(function(e){e.remove()});
@@ -208,29 +208,43 @@ function pickVoice(){
     return s}
   V.sort(function(a,b){return score(b)-score(a)}); best=V[0]; return best;
 }
-if(ss.onvoiceschanged!==undefined)ss.onvoiceschanged=function(){best=null};
-ss.getVoices();
-function stop(){on=false;Q=[];ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128264; Read it to me'}
+if(ss&&ss.onvoiceschanged!==undefined)ss.onvoiceschanged=function(){best=null};
+if(ss)ss.getVoices();
+function stop(){on=false;Q=[];if(ss)ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128264; Read it to me'}
 function next(){
   if(!on)return; if(qi>=Q.length){stop();return}
   var u=new SpeechSynthesisUtterance(Q[qi++]); u.rate=0.95; u.lang='en-US';
   var v=pickVoice(); if(v){try{u.voice=v}catch(e){}}
   u.onend=next; u.onerror=next; ss.speak(u);
 }
-rd.addEventListener('click',function(){
-  if(on){stop();return}
+var A=null,noAudio=false;
+function stopAll(){ if(A){try{A.pause()}catch(e){} A=null} stop(); }
+function speak(){
   Q=lines(); qi=0; if(!Q.length)return;
   on=true; rd.setAttribute('aria-pressed','true'); rd.innerHTML='&#9632; Stop reading';
-  // iPhone: speak inside the tap itself, one line at a time (queuing everything at once, or a
-  // cancel() right before speak(), makes iOS Safari stay silent)
+  // iPhone: speak inside the tap itself, one line at a time
   if(ss.paused)ss.resume();
   next();
+}
+rd.addEventListener('click',function(){
+  if(on||A){stopAll();return}
+  var url=rd.getAttribute('data-audio');
+  // First choice: the recorded edition (same natural voice on every phone, nothing to download).
+  if(url&&!noAudio){
+    A=new Audio(url); A.preload='auto';
+    rd.setAttribute('aria-pressed','true'); rd.innerHTML='&#9632; Stop reading';
+    A.addEventListener('ended',stopAll);
+    A.addEventListener('error',function(){ A=null; noAudio=true; if(!on){ stop(); if(ss)speak(); } });
+    var p=A.play(); if(p&&p.catch)p.catch(function(){ if(!A)return; A=null; noAudio=true; stop(); if(ss)speak(); });
+    return;
+  }
+  if(ss)speak();
 });
-window.addEventListener('pagehide',function(){ss.cancel()});
+window.addEventListener('pagehide',function(){stopAll()});
 })();
 </script>"""
 
-def shell(title, body, og_image=None, desc="A daily almanac for the family", tools=False):
+def shell(title, body, og_image=None, desc="A daily almanac for the family", tools=False, audio=None):
     CSSV = hashlib.md5(CSS.encode()).hexdigest()[:8]
     og = f'<meta property="og:image" content="https://benthambulletin.github.io{og_image}">' if og_image else ''
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -240,7 +254,7 @@ def shell(title, body, og_image=None, desc="A daily almanac for the family", too
 <meta property="og:type" content="article">
 <link rel="stylesheet" href="/assets/style.css?v={CSSV}">
 <link rel="icon" href="/assets/favicon.svg"></head><body><div class="page">
-{TOOLS if tools else ""}{body}
+{(TOOLS.replace('id="bb-read"', f'id="bb-read" data-audio="{audio}"') if audio else TOOLS) if tools else ""}{body}
 </div>{TOOLS_JS if tools else ""}</body></html>"""
 
 def build(edition):
@@ -279,7 +293,7 @@ def build(edition):
     else:
         body = edition['body_html'] + nav
     title = f"The Bentham Bulletin · No. {edition['no']} · {d.strftime('%A, %B %-d, %Y')}"
-    html = shell(title, body, plate_rel, edition['headline'], tools=True)
+    html = shell(title, body, plate_rel, edition['headline'], tools=True, audio=f"https://github.com/benthambulletin/benthambulletin.github.io/releases/download/audio/{edition['date']}.mp3")
     open(os.path.join(outdir,'index.html'),'w').write(html)
     # front page = newest issue
     newest = issues[0]

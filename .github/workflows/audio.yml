@@ -1,0 +1,54 @@
+name: Read-aloud audio
+
+# Records each edition as an MP3 with a natural voice (Piper, offline) so every phone hears the
+# same good voice with nothing to download (Garret, Oct 22). The MP3 is uploaded to the "audio"
+# release as <date>.mp3, not committed. The page's "Read it to me" button plays it, and falls back
+# to the phone's own voice if it isn't there yet.
+on:
+  push:
+    branches: [main]
+    paths: ['data/edition-*.json']
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'YYYY-MM-DD (default: today, Eastern)'
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audio
+  cancel-in-progress: true
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q piper-tts beautifulsoup4
+          mkdir -p voice
+          base=https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/hfc_female/medium
+          curl -sSfL -o voice/v.onnx "$base/en_US-hfc_female-medium.onnx"
+          curl -sSfL -o voice/v.onnx.json "$base/en_US-hfc_female-medium.onnx.json"
+      - name: Record
+        env:
+          D: ${{ inputs.date }}
+        run: |
+          if [ -z "$D" ]; then D=$(TZ=America/New_York date +%F); fi
+          test -f data/edition-$D.json || { echo "no edition for $D"; exit 0; }
+          python3 tools/make_audio.py "$D" voice/v.onnx "$D.mp3"
+          echo "D=$D" >> $GITHUB_ENV
+      - name: Upload
+        if: env.D != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view audio >/dev/null 2>&1 || gh release create audio --title "Read-aloud audio" --notes "Daily recordings of the paper for the Read it to me button."
+          gh release upload audio "$D.mp3" --clobber
