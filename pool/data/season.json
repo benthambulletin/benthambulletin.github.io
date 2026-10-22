@@ -7538,6 +7538,25 @@
           "badges": []
         },
         {
+          "name": "Devin",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-22T00:07:06+00:00",
+          "firstAt": "2026-10-22T00:07:06+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Garret",
           "house": false,
           "correct": 0,
@@ -7708,12 +7727,20 @@
           "who": "Mike Sombloski",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a160ebcbe22ab91",
+          "at": "2026-10-22T00:03:47Z",
+          "amt": "5.00",
+          "who": "Devin",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-10-23T00:15:00Z",
-      "pot": 30.0,
-      "paidN": 6,
+      "pot": 35.0,
+      "paidN": 7,
       "opensAt": "2026-10-20T08:06:02Z",
       "housePicks": {
         "trash": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions.",
@@ -7782,9 +7809,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Seven in. Mrs. Sombloski is back.",
-      "column": "Mrs. Sombloski filed Wednesday morning, fresh off a 10–4 week and a tiebreaker guess of 67 that's still bouncing off the rim. She's one win from making the household feud official: Mike Somballotboxski is still on the floor reading exit polls. Ryan Holovics, back-to-back and $95 richer, wants to know if you'll keep letting him take your money. Seven sheets say yes. The commissioner swears it isn't rigged, which is exactly what a rigged commissioner swears. Thom's in free, purely to spoil.\n\nAriel, B-rad: Thursday's coming. The bot's Lock is the Texans; the rest stays sealed. Questions for the commissioner go on the pick sheet.",
-      "columnN": 7,
+      "columnHead": "Eight in. Devin slides in late.",
+      "column": "Devin filed Wednesday night, the eighth sheet in and the first since Mrs. Sombloski, who's still one win from making the household feud official while Mike Somballotboxski lies on the floor reading exit polls. Ryan Holovics, back-to-back champ, wants to know if you'll keep letting him take your money. Eight sheets say yes. The commissioner swears it isn't rigged, which is exactly what a rigged commissioner swears. Thom's in free, purely to spoil.\n\nAriel, B-rad: Thursday's coming. The bot's Lock is the Texans; the rest stays sealed. Questions for the commissioner go on the pick sheet.",
+      "columnN": 8,
       "face": {
         "photo": "/pool/faces/w7.jpg",
         "who": "Derek",
@@ -7794,7 +7821,7 @@
       }
     }
   },
-  "updated": "2026-10-21T23:10:00.670782+00:00",
+  "updated": "2026-10-22T01:14:37.963544+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
