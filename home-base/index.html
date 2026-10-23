@@ -4,11 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#d9822b">
+<meta name="apple-mobile-web-app-title" content="Home Base">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
 <title>Bentham Home Base</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap">
 <style>
-/* One scrolling page: greeting, add button, Today, Coming up, To-dos, Groceries, Luka */
+/* One scrolling page: greeting, Tell Hearth, Today, Coming up, To-dos, Groceries, Luka. Done-ticks batch into a sticky bar that sends ids to Hearth. */
 :root{
   --bg:#f6f7f4; --surface:#ffffff; --line:#dfe3dc; --ink:#1f2a26; --muted:#65716b;
   --accent:#d9822b; --accent-ink:#1f1408; --accent-soft:#fbead8;
@@ -26,7 +30,7 @@
 html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45}
 [hidden]{display:none!important}
-.wrap{max-width:640px;margin:0 auto;padding-block:22px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:26px}
+.wrap{max-width:640px;margin:0 auto;padding-block:22px 120px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:26px}
 header{display:grid;gap:4px}
 h1{font-family:var(--display);font-weight:700;font-size:1.85rem;line-height:1.15;margin:0;letter-spacing:-.01em;text-wrap:balance}
 .sub{color:var(--muted);font-size:.92rem}
@@ -34,43 +38,13 @@ h1{font-family:var(--display);font-weight:700;font-size:1.85rem;line-height:1.15
 .add{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:var(--accent-ink);font:700 1.1rem var(--body);text-decoration:none;border-radius:14px;padding:16px;min-height:56px}
 .add span{font-size:1.5rem;line-height:1}
 .addnote{color:var(--muted);font-size:.82rem;text-align:center;margin-top:-18px}
+.tip{background:var(--accent-soft);border-radius:12px;padding:10px 12px;font-size:.88rem;display:flex;gap:10px;align-items:flex-start}
+.tip button{margin-left:auto;background:none;border:0;color:var(--muted);font-size:1.1rem;cursor:pointer;line-height:1;padding:0 2px}
 section{display:grid;gap:10px}
 h2{font-family:var(--display);font-size:1.25rem;margin:0;display:flex;align-items:baseline;gap:8px}
 h2 .n{font-family:var(--body);font-size:.85rem;color:var(--muted);font-weight:500}
 h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:6px 0 0;font-weight:600}
 ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.row{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;min-width:0}
-.row .main{flex:1;min-width:0;overflow-wrap:anywhere}
-.row .meta{display:block;font-size:.82rem;color:var(--muted)}
-.when{min-width:66px;text-align:center;font-variant-numeric:tabular-nums}
-.when b{display:block;font-family:var(--display);font-size:1.05rem}
-.when small{font-size:.75rem;color:var(--muted)}
-.who{font-size:.75rem;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
-.who.Garret{background:var(--garret-soft);color:var(--garret)}
-.who.Kaylani{background:var(--kaylani-soft);color:var(--kaylani)}
-.who.Both{background:var(--both-soft);color:var(--both)}
-.luka{font-size:.75rem;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
-.row.done .main{text-decoration:line-through;color:var(--muted)}
-.row.late{border-color:var(--late)}
-.late-t{color:var(--late);font-weight:600}
-input[type=checkbox]{width:24px;height:24px;accent-color:var(--both);flex:none;margin:0}
-label.row{cursor:pointer}
-.empty{color:var(--muted);background:none;border:1px dashed var(--line);border-radius:12px;padding:14px;font-size:.92rem}
-.today{background:var(--surface);border:2px solid var(--ink);border-radius:16px;padding:14px;display:grid;gap:10px}
-.today ul .row{border-color:var(--line)}
-.notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-@media (max-width:480px){.notes{grid-template-columns:1fr}}
-.note{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;min-width:0}
-.note .k{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.note .t{white-space:pre-wrap;overflow-wrap:anywhere}
-.pick{position:fixed;inset:0;background:color-mix(in srgb,var(--bg) 92%,transparent);display:grid;place-items:center;padding:24px;z-index:5}
-.pick .box{display:grid;gap:12px;width:min(340px,100%);text-align:center}
-.pick button{font:700 1.15rem var(--body);border:0;border-radius:14px;padding:16px;cursor:pointer}
-.pick .g{background:var(--garret);color:#fff} .pick .k2{background:var(--kaylani);color:#fff}
-.pick .skip{background:none;color:var(--muted);font-weight:500;font-size:.92rem}
-details summary{cursor:pointer;color:var(--muted);font-size:.92rem;padding:4px 0}
-footer{color:var(--muted);font-size:.82rem;text-align:center}
-a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 ul.agenda{gap:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:2px 12px}
 li.ev{display:flex;align-items:baseline;gap:12px;padding:11px 0;border-top:1px solid var(--line);min-width:0}
 li.ev:first-child{border-top:0}
@@ -80,7 +54,41 @@ li.ev .tt{flex:1;min-width:0;overflow-wrap:anywhere}
 li.ev .lk{color:var(--accent);font-weight:600;font-size:.88rem}
 li.ev .ow{font-size:.78rem;font-weight:600;white-space:nowrap}
 li.ev .ow.Garret{color:var(--garret)} li.ev .ow.Kaylani{color:var(--kaylani)}
+.row{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;min-width:0;cursor:pointer}
+.row .main{flex:1;min-width:0;overflow-wrap:anywhere}
+.row .meta{display:block;font-size:.82rem;color:var(--muted)}
+.row.done{opacity:.55}
+.row.done .main{text-decoration:line-through}
+.row.late{border-color:var(--late)}
+.late-t{color:var(--late);font-weight:600}
+.row.pending{border-style:dashed}
+.who{font-size:.75rem;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.who.Garret{background:var(--garret-soft);color:var(--garret)}
+.who.Kaylani{background:var(--kaylani-soft);color:var(--kaylani)}
+.who.Both{background:var(--both-soft);color:var(--both)}
+input[type=checkbox]{width:24px;height:24px;accent-color:var(--both);flex:none;margin:0}
+.empty{color:var(--muted);background:none;border:1px dashed var(--line);border-radius:12px;padding:14px;font-size:.92rem}
+.today{background:var(--surface);border:2px solid var(--ink);border-radius:16px;padding:14px;display:grid;gap:10px}
 .today ul.agenda{border:0;padding:0;background:none}
+.notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:480px){.notes{grid-template-columns:1fr}}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;min-width:0}
+.note .k{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.note .t{white-space:pre-wrap;overflow-wrap:anywhere}
+.pick{position:fixed;inset:0;background:color-mix(in srgb,var(--bg) 94%,transparent);display:grid;place-items:center;padding:24px;z-index:5}
+.pick .box{display:grid;gap:12px;width:min(340px,100%);text-align:center}
+.pick button{font:700 1.15rem var(--body);border:0;border-radius:14px;padding:16px;cursor:pointer}
+.pick .g{background:var(--garret);color:#fff} .pick .k2{background:var(--kaylani);color:#fff}
+.pick .skip{background:none;color:var(--muted);font-weight:500;font-size:.92rem}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -6px 24px rgba(0,0,0,.08);z-index:4}
+.bar .in{max-width:640px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.bar .txt{flex:1;min-width:0;font-size:.95rem}
+.bar .txt small{display:block;color:var(--muted);font-size:.8rem}
+.bar a{background:var(--ink);color:var(--bg);font:700 .95rem var(--body);text-decoration:none;border-radius:10px;padding:12px 16px;white-space:nowrap}
+.bar button{background:none;border:0;color:var(--muted);font-size:.85rem;cursor:pointer;text-decoration:underline}
+details summary{cursor:pointer;color:var(--muted);font-size:.92rem;padding:4px 0}
+footer{color:var(--muted);font-size:.82rem;text-align:center}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 </style>
 </head>
 <body>
@@ -100,8 +108,10 @@ li.ev .ow.Garret{color:var(--garret)} li.ev .ow.Kaylani{color:var(--kaylani)}
     <div class="sub"><span id="today"></span> · <button id="switch">Not you?</button></div>
   </header>
 
-  <a class="add" href="https://tally.so/r/jeaE19" target="_blank" rel="noopener"><span>+</span> Tell Hearth</a>
-  <div class="addnote">An event, a to-do, groceries or a Luka detail. It shows up here within the hour.</div>
+  <a class="add" id="addLink" href="https://tally.so/r/jeaE19" target="_blank" rel="noopener"><span>+</span> Tell Hearth</a>
+  <div class="addnote">Type it like a text: a date, a to-do, groceries, a Luka detail. It's on the board within the hour.</div>
+
+  <div class="tip" id="tip" hidden><span>Put this on your home screen: tap <b>Share</b>, then <b>Add to Home Screen</b>.</span><button aria-label="Dismiss" id="tipX">×</button></div>
 
   <section class="today" aria-labelledby="h-today">
     <h2 id="h-today">Today</h2>
@@ -117,7 +127,6 @@ li.ev .ow.Garret{color:var(--garret)} li.ev .ow.Kaylani{color:var(--kaylani)}
   <section aria-labelledby="h-todo">
     <h2 id="h-todo">To-dos <span class="n" id="todoCount"></span></h2>
     <div id="todoGroups" style="display:grid;gap:10px"></div>
-    <details id="doneWrap" hidden><summary id="doneSum">Done</summary><ul id="doneList" style="margin-top:8px"></ul></details>
   </section>
 
   <section aria-labelledby="h-gro">
@@ -126,21 +135,28 @@ li.ev .ow.Garret{color:var(--garret)} li.ev .ow.Kaylani{color:var(--kaylani)}
   </section>
 
   <section aria-labelledby="h-luka">
-    <h2 id="h-luka">Luka</h2>
+    <h2 id="h-luka">Luka <span class="n" id="age"></span></h2>
     <div id="lukaNotes"></div>
   </section>
 
-  <footer id="foot">Tick boxes save on this phone. Hearth checks for new items every hour, 7 a.m. to 11 p.m.</footer>
+  <footer id="foot"></footer>
 </div>
+
+<div class="bar" id="bar" hidden><div class="in">
+  <div class="txt"><b id="barN"></b><small>Send it so it clears on both phones.</small></div>
+  <button id="barUndo">Undo</button>
+  <a id="barGo" href="#" target="_blank" rel="noopener">Tell Hearth</a>
+</div></div>
 
 <script>
 const $=s=>document.querySelector(s);
+const FORM="https://tally.so/r/jeaE19";
 const LUKA=[["bedtime","Bedtime routine"],["nap","Nap"],["meals","Meals & favorites"],["sizes","Clothes & shoe sizes"],["doctor","Pediatrician"],["school","Daycare / school"],["sitters","Sitters & backup care"],["now","Working on right now"]];
-let D={events:[],tasks:[],groceries:[],luka:{}}, done={}, me=null;
+let D={events:[],tasks:[],groceries:[],luka:{}}, me=null, ticked={}, sent={};
 const get=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
 const put=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
-try{done=JSON.parse(get("hb-done")||"{}")}catch(e){}
-me=get("hb-me");
+const J=(k,d)=>{try{return JSON.parse(get(k))||d}catch(e){return d}};
+me=get("hb-me")||null; ticked=J("hb-ticked",{}); sent=J("hb-sent",{});
 const iso=d=>{const z=new Date(d);z.setMinutes(z.getMinutes()-z.getTimezoneOffset());return z.toISOString().slice(0,10)};
 const T=iso(new Date());
 const addDays=n=>{const d=new Date();d.setDate(d.getDate()+n);return iso(d)};
@@ -153,28 +169,37 @@ const md=s=>dt(s).toLocaleDateString(undefined,{month:"short",day:"numeric"});
 const wk=s=>dt(s).toLocaleDateString(undefined,{weekday:"short"});
 $("#today").textContent=new Date().toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric"});
 
+/* identity */
 function greet(){
   const h=new Date().getHours(), part=h<12?"Good morning":h<17?"Good afternoon":"Good evening";
   $("#hello").textContent=me?`${part}, ${me}`:part;
   $("#switch").textContent=me?`Not ${me}?`:"Who's this?";
+  $("#addLink").href=me?FORM+"?who="+me:FORM;
 }
 $("#pick").addEventListener("click",e=>{const b=e.target.closest("[data-me]");if(!b)return;me=b.dataset.me||null;put("hb-me",me||"");put("hb-asked","1");$("#pick").hidden=true;greet();renderAll()});
 $("#switch").onclick=()=>{$("#pick").hidden=false};
 if(!get("hb-asked"))$("#pick").hidden=false;
 
+/* home-screen tip: iPhone Safari, not yet installed, not dismissed */
+const isIOS=/iPhone|iPad/.test(navigator.userAgent), standalone=navigator.standalone||matchMedia("(display-mode: standalone)").matches;
+if(isIOS&&!standalone&&!get("hb-tip"))$("#tip").hidden=false;
+$("#tipX").onclick=()=>{put("hb-tip","1");$("#tip").hidden=true};
+
+/* rendering */
 const whoTag=w=>`<span class="who ${w}">${w==="Both"?"Both of you":w}</span>`;
-const isDone=t=>!!done["t:"+(t.id||t.title)];
+const state=id=>sent[id]?"pending":ticked[id]?"done":"";
 const evRow=e=>{const t=daysAway(e.date)===0;return `<li class="ev"><span class="d">${t?"Today":wk(e.date)+" "+md(e.date)}${e.time?`<small>${fmtTime(e.time)}</small>`:""}</span><span class="tt">${esc(e.title)}${e.luka?' <span class="lk">· Luka</span>':""}</span>${e.who!=="Both"?`<span class="ow ${e.who}">${e.who}</span>`:""}</li>`};
-const taskRow=(t,noTag)=>{const k="t:"+(t.id||t.title),d=isDone(t),late=!d&&t.due&&t.due<T;
-  return `<li><label class="row ${d?"done":""} ${late?"late":""}"><input type="checkbox" data-k="${esc(k)}" ${d?"checked":""}><div class="main">${esc(t.title)}${t.due?`<span class="meta ${late?"late-t":""}">${late?"Overdue · was due "+md(t.due):"Due "+rel(t.due).toLowerCase()+" · "+md(t.due)}</span>`:""}</div>${noTag?"":whoTag(t.who)}</label></li>`};
+const taskRow=(t,noTag)=>{const st=state(t.id),late=!st&&t.due&&t.due<T;
+  return `<li><label class="row ${st} ${late?"late":""}"><input type="checkbox" data-id="${esc(t.id)}" ${st?"checked":""} ${st==="pending"?"disabled":""}><div class="main">${esc(t.title)}<span class="meta">${st==="pending"?"Sent to Hearth, clearing soon":t.due?(late?`<span class="late-t">Overdue · was due ${md(t.due)}</span>`:`Due ${rel(t.due).toLowerCase()} · ${md(t.due)}`):""}</span></div>${noTag||st?"":whoTag(t.who)}</label></li>`};
+const groRow=g=>{const st=state(g.id);return `<li><label class="row ${st}"><input type="checkbox" data-id="${esc(g.id)}" ${st?"checked":""} ${st==="pending"?"disabled":""}><div class="main">${esc(g.item)}${st==="pending"?'<span class="meta">Sent to Hearth, clearing soon</span>':""}</div></label></li>`};
 
 function renderToday(){
   const ev=D.events.filter(e=>e.date===T).sort((a,b)=>(a.time||"99").localeCompare(b.time||"99"));
-  const tk=D.tasks.filter(t=>!isDone(t)&&t.due&&t.due<=T&&(!me||t.who===me||t.who==="Both"));
+  const tk=D.tasks.filter(t=>!state(t.id)&&t.due&&t.due<=T&&(!me||t.who===me||t.who==="Both"));
   const parts=[...(ev.length?[`<li><ul class="agenda">${ev.map(evRow).join("")}</ul></li>`]:[]),...tk.map(t=>taskRow(t))];
-  $("#todayList").innerHTML=parts.length?parts.join(""):`<li class="empty">Nothing on today.${D.events.length?" Next up: "+nextUp():""}</li>`;
+  $("#todayList").innerHTML=parts.length?parts.join(""):`<li class="empty">Nothing on today.${nextUp()}</li>`;
 }
-function nextUp(){const n=D.events.filter(e=>e.date>T).sort((a,b)=>a.date.localeCompare(b.date))[0];return n?`${esc(n.title)}, ${rel(n.date).toLowerCase()}.`:""}
+function nextUp(){const n=D.events.filter(e=>e.date>T).sort((a,b)=>a.date.localeCompare(b.date))[0];return n?` Next up: ${esc(n.title)}, ${rel(n.date).toLowerCase()}.`:""}
 function renderSoon(){
   const up=D.events.filter(e=>e.date>T).sort((a,b)=>(a.date+(a.time||"")).localeCompare(b.date+(b.time||"")));
   const cut=addDays(14), soon=up.filter(e=>e.date<=cut), later=up.filter(e=>e.date>cut);
@@ -182,32 +207,55 @@ function renderSoon(){
   $("#laterWrap").hidden=!later.length; $("#laterList").innerHTML=later.map(evRow).join("");
 }
 function renderTodos(){
-  const open=D.tasks.filter(t=>!isDone(t)), fin=D.tasks.filter(isDone);
-  const sortT=a=>a.slice().sort((x,y)=>(x.due||"9").localeCompare(y.due||"9"));
+  const all=D.tasks, live=all.filter(t=>!state(t.id));
+  const sortT=a=>a.slice().sort((x,y)=>(!!state(x.id))-(!!state(y.id))||(x.due||"9").localeCompare(y.due||"9"));
   const other=me==="Garret"?"Kaylani":me==="Kaylani"?"Garret":null;
-  const groups=me?[["Yours",open.filter(t=>t.who===me)],["Both of you",open.filter(t=>t.who==="Both")],[other+"'s",open.filter(t=>t.who===other)]]
-                 :[["Garret",open.filter(t=>t.who==="Garret")],["Kaylani",open.filter(t=>t.who==="Kaylani")],["Both of you",open.filter(t=>t.who==="Both")]];
-  $("#todoCount").textContent=open.length?open.length+" open":"";
-  $("#todoGroups").innerHTML=open.length?groups.filter(g=>g[1].length).map(([h,l])=>`<div style="display:grid;gap:8px"><h3>${h} · ${l.length}</h3><ul>${sortT(l).map(t=>taskRow(t,true)).join("")}</ul></div>`).join(""):'<div class="empty">All caught up.</div>';
-  $("#doneWrap").hidden=!fin.length; $("#doneSum").textContent=`Done (${fin.length})`; $("#doneList").innerHTML=fin.map(taskRow).join("");
+  const groups=me?[["Yours",all.filter(t=>t.who===me)],["Both of you",all.filter(t=>t.who==="Both")],[other+"'s",all.filter(t=>t.who===other)]]
+                 :[["Garret",all.filter(t=>t.who==="Garret")],["Kaylani",all.filter(t=>t.who==="Kaylani")],["Both of you",all.filter(t=>t.who==="Both")]];
+  $("#todoCount").textContent=live.length?live.length+" open":"";
+  $("#todoGroups").innerHTML=all.length?groups.filter(g=>g[1].length).map(([h,l])=>`<div style="display:grid;gap:8px"><h3>${h} · ${l.filter(t=>!state(t.id)).length}</h3><ul>${sortT(l).map(t=>taskRow(t,true)).join("")}</ul></div>`).join(""):'<div class="empty">All caught up.</div>';
 }
 function renderGro(){
-  const items=D.groceries.map(g=>typeof g==="string"?g:g.item);
-  const left=items.filter(n=>!done["g:"+n]).length;
-  $("#groCount").textContent=items.length?left+" to get":"";
-  $("#groList").innerHTML=items.length?items.sort((a,b)=>(!!done["g:"+a])-(!!done["g:"+b])).map(n=>{const k="g:"+n,d=!!done[k];return `<li><label class="row ${d?"done":""}"><input type="checkbox" data-k="${esc(k)}" ${d?"checked":""}><div class="main">${esc(n)}</div></label></li>`}).join(""):'<li class="empty">The list is empty. Tap <b>Tell Hearth</b> to put items on it.</li>';
+  const left=D.groceries.filter(g=>!state(g.id)).length;
+  $("#groCount").textContent=D.groceries.length?left+" to get":"";
+  $("#groList").innerHTML=D.groceries.length?D.groceries.slice().sort((a,b)=>(!!state(a.id))-(!!state(b.id))).map(groRow).join(""):'<li class="empty">The list is empty. Tap <b>Tell Hearth</b> and type what you need.</li>';
 }
 function renderLuka(){
+  const born=new Date(2023,3,19), now=new Date();
+  let m=(now.getFullYear()-born.getFullYear())*12+now.getMonth()-born.getMonth(); if(now.getDate()<born.getDate())m--;
+  $("#age").textContent=`${Math.floor(m/12)} years, ${m%12} months`;
   const filled=LUKA.filter(([k])=>D.luka[k]);
   $("#lukaNotes").innerHTML=filled.length?`<div class="notes">${filled.map(([k,l])=>`<div class="note"><div class="k">${l}</div><div class="t">${esc(D.luka[k])}</div></div>`).join("")}</div>`
-    :'<div class="empty">Nothing here yet. Add his bedtime routine, sizes, pediatrician or sitters with <b>Tell Hearth</b>.</div>';
+    :'<div class="empty">Nothing here yet. Tell Hearth his bedtime routine, sizes, pediatrician or sitters and they\'ll show up here.</div>';
 }
-function renderAll(){renderToday();renderSoon();renderTodos();renderGro();renderLuka()}
-document.addEventListener("change",e=>{const k=e.target.dataset.k;if(!k)return;done[k]=e.target.checked;put("hb-done",JSON.stringify(done));renderAll()});
+function renderBar(){
+  const ids=Object.keys(ticked).filter(id=>!sent[id]);
+  $("#bar").hidden=!ids.length; if(!ids.length)return;
+  $("#barN").textContent=ids.length===1?"1 thing done":ids.length+" things done";
+  $("#barGo").href=FORM+"?done="+encodeURIComponent(ids.join("|"))+(me?"&who="+me:"");
+}
+function renderAll(){renderToday();renderSoon();renderTodos();renderGro();renderLuka();renderBar()}
+
+/* ticks */
+document.addEventListener("change",e=>{const id=e.target.dataset.id;if(!id)return;
+  if(e.target.checked)ticked[id]=1;else delete ticked[id];
+  put("hb-ticked",JSON.stringify(ticked));renderAll()});
+$("#barUndo").onclick=()=>{for(const id in ticked)if(!sent[id])delete ticked[id];put("hb-ticked",JSON.stringify(ticked));renderAll()};
+$("#barGo").onclick=()=>{for(const id in ticked)if(!sent[id])sent[id]=Date.now();put("hb-sent",JSON.stringify(sent));setTimeout(renderAll,300)};
+
+/* data: live fetch, cached copy as fallback */
+function apply(j){D={...D,...j};
+  const ids=new Set([...D.tasks,...D.groceries].map(x=>x.id));
+  for(const id in ticked)if(!ids.has(id))delete ticked[id];
+  for(const id in sent)if(!ids.has(id)||Date.now()-sent[id]>36e5*3)delete sent[id];
+  put("hb-ticked",JSON.stringify(ticked));put("hb-sent",JSON.stringify(sent));
+  renderAll();
+  const u=D.updated?new Date(D.updated):null;
+  $("#foot").textContent=(u&&!isNaN(u)?`Hearth last updated this ${u.toLocaleDateString(undefined,{weekday:"short"})} ${u.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"})}. `:"")+"Hearth checks for new messages every hour, 7 a.m. to 11 p.m.";
+}
 greet();renderAll();
-fetch("data.json?"+Date.now()).then(r=>r.json()).then(j=>{D={...D,...j};renderAll();
-  $("#foot").textContent=`Updated ${md(D.updated||T)}. Tick boxes save on this phone. Hearth checks for new items every hour, 7 a.m. to 11 p.m.`;
-}).catch(()=>{$("#foot").textContent="Couldn't load the board. Pull down to refresh."});
+fetch("data.json?"+Date.now()).then(r=>r.json()).then(j=>{put("hb-data",JSON.stringify(j));apply(j)})
+ .catch(()=>{const c=J("hb-data",null);if(c){apply(c);$("#foot").textContent+=" Showing the last copy saved on this phone; no connection right now."}else $("#foot").textContent="Couldn't load the board. Check your connection and pull down to refresh."});
 </script>
 </body>
 </html>

@@ -2,7 +2,9 @@
 
 Garret and Kaylani's family board: https://benthambulletin.github.io/home-base/
 
-Not part of the Bulletin. Never link it from the paper, and edition runs leave this folder alone. Claude updates `data.json` when Garret or Kaylani ask.
+Not part of the Bulletin. Never link it from the paper, and edition runs leave this folder alone.
+
+**How it works.** Either of them taps **Tell Hearth** on the board and types a message (form jeaE19). Hearth (`CLAUDE.md` here) runs hourly 7 a.m.–11 p.m., reads new messages and updates `data.json`. Ticking a box on the board queues the item; a **Tell Hearth** bar sends the ids back so it clears on both phones. Sundays at 6 p.m. Hearth sends Garret a week-ahead brief.
 
 ## Follow-ups (Oct 22, 2026)
 
@@ -18,8 +20,6 @@ Not part of the Bulletin. Never link it from the paper, and edition runs leave t
 - [ ] Send Claude the next 2–3 weeks of plans
 - [ ] List recurring items: daycare days, Rocky Point trips, trash night
 - [ ] Fill in Luka's details: bedtime, sizes, pediatrician, sitters
-- [ ] Decide on an automatic Sunday-night week-ahead summary
 
 **Claude, once ready**
 - [ ] Add events to the Family calendar and to `data.json`
-- [ ] Set up the Sunday summary if wanted
