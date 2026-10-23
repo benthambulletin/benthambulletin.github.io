@@ -7327,7 +7327,7 @@
       "rollOut": 0
     },
     "7": {
-      "status": "pre",
+      "status": "live",
       "games": [
         {
           "away": "Patriots",
@@ -7338,8 +7338,34 @@
           "winner": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null
+          "status": "live",
+          "sides": {
+            "Patriots": [
+              "Garret",
+              "Mike Sombloski",
+              "Nate V",
+              "Andy R",
+              "Leah",
+              "Ariel"
+            ],
+            "Bears": [
+              "Thom",
+              "Ryan Holovics",
+              "Dan",
+              "Mrs. Sombloski",
+              "Devin",
+              "Melissa",
+              "Tom",
+              "Wendy",
+              "Derek",
+              "Arod",
+              "Walczyk",
+              "Kaylani & Luka",
+              "Josh",
+              "B-rad",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Steelers",
@@ -7508,7 +7534,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Patriots"
+          },
           "filedAt": "2026-10-22T18:22:05+00:00",
           "firstAt": "2026-10-22T18:22:05+00:00",
           "free": false,
@@ -7527,7 +7555,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Patriots"
+          },
           "filedAt": "2026-10-22T22:48:26+00:00",
           "firstAt": "2026-10-22T22:48:26+00:00",
           "free": false,
@@ -7546,7 +7576,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-22T21:58:39+00:00",
           "firstAt": "2026-10-22T21:58:39+00:00",
           "free": false,
@@ -7565,7 +7597,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-23T00:03:19+00:00",
           "firstAt": "2026-10-23T00:03:19+00:00",
           "free": false,
@@ -7589,7 +7623,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-20T08:06:02+00:00",
           "firstAt": "2026-10-20T08:06:02+00:00",
           "free": false,
@@ -7608,7 +7644,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-21T01:01:09+00:00",
           "firstAt": "2026-10-21T01:01:09+00:00",
           "free": false,
@@ -7627,7 +7665,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-22T18:51:03+00:00",
           "firstAt": "2026-10-22T18:51:03+00:00",
           "free": false,
@@ -7646,7 +7686,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-22T00:07:06+00:00",
           "firstAt": "2026-10-22T00:07:06+00:00",
           "free": false,
@@ -7665,7 +7707,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Patriots"
+          },
           "filedAt": "2026-10-20T22:40:00+00:00",
           "firstAt": "2026-10-20T22:40:00+00:00",
           "free": false,
@@ -7684,7 +7728,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-22T23:02:41+00:00",
           "firstAt": "2026-10-22T23:02:41+00:00",
           "free": false,
@@ -7703,7 +7749,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-22T22:59:05+00:00",
           "firstAt": "2026-10-22T22:59:05+00:00",
           "free": false,
@@ -7722,7 +7770,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Patriots"
+          },
           "filedAt": "2026-10-22T22:23:57+00:00",
           "firstAt": "2026-10-22T22:23:57+00:00",
           "free": false,
@@ -7741,7 +7791,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-22T06:43:31+00:00",
           "firstAt": "2026-10-22T06:43:31+00:00",
           "free": false,
@@ -7760,7 +7812,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Patriots"
+          },
           "filedAt": "2026-10-21T00:37:23+00:00",
           "firstAt": "2026-10-21T00:37:23+00:00",
           "free": false,
@@ -7779,7 +7833,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-21T14:44:39+00:00",
           "firstAt": "2026-10-21T14:44:39+00:00",
           "free": false,
@@ -7798,7 +7854,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Patriots"
+          },
           "filedAt": "2026-10-21T02:11:58+00:00",
           "firstAt": "2026-10-21T02:11:58+00:00",
           "free": false,
@@ -7817,7 +7875,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-20T22:40:48+00:00",
           "firstAt": "2026-10-20T22:40:48+00:00",
           "free": false,
@@ -7836,7 +7896,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-20T12:19:32+00:00",
           "firstAt": "2026-10-20T12:19:32+00:00",
           "free": true,
@@ -7855,7 +7917,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-22T12:26:53+00:00",
           "firstAt": "2026-10-22T12:26:53+00:00",
           "free": false,
@@ -7874,7 +7938,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-22T22:51:39+00:00",
           "firstAt": "2026-10-22T22:51:39+00:00",
           "free": false,
@@ -7893,7 +7959,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Bears"
+          },
           "filedAt": "2026-10-22T14:11:03+00:00",
           "firstAt": "2026-10-22T14:11:03+00:00",
           "free": false,
@@ -8123,7 +8191,21 @@
       ],
       "threads": {},
       "stats": {
-        "games": {},
+        "games": {
+          "0": {
+            "away": 6,
+            "home": 14,
+            "minority": "Patriots",
+            "minorityWho": [
+              "Garret",
+              "Mike Sombloski",
+              "Nate V",
+              "Andy R",
+              "Leah",
+              "Ariel"
+            ]
+          }
+        },
         "upsets": 0,
         "decided": 0,
         "best": null,
@@ -8131,15 +8213,43 @@
         "bills": null,
         "jets": null
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 0,
+          "away": [
+            "Garret",
+            "Mike Sombloski",
+            "Nate V",
+            "Andy R",
+            "Leah",
+            "Ariel"
+          ],
+          "home": [
+            "Thom",
+            "Ryan Holovics",
+            "Dan",
+            "Mrs. Sombloski",
+            "Devin",
+            "Melissa",
+            "Tom",
+            "Wendy",
+            "Derek",
+            "Arod",
+            "Walczyk",
+            "Kaylani & Luka",
+            "Josh",
+            "B-rad"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Twenty in. B-rad beats the buzzer.",
-      "column": "Twenty sheets in, and B-rad slid his under the door twelve minutes before kickoff. Andy R says the league is rigged, with the commissioner and Ryan splitting the pot. The commissioner says Ryan is just on fire. Ryan says thanks for the money. Ariel wants to know who Nate V is. He went 6–8 last week. So did she.\n\nJosh is now Dickie Smalls and promises Bertburgers for everyone if he wins. Mike says he fell, but the exit polls have him up. Derek, hanging on the mugshot all week, filed anyway. Patriots at Bears locks at 8:15.",
+      "columnHead": "Six on the Patriots. Fifteen on Chicago.",
+      "column": "Thursday's out of the envelope: fifteen sheets on the Bears, six on the Patriots. The New England six: the commissioner, Andy R, Mike, Nate V, Leah and Ariel. Andy R says the league is rigged for the commissioner and Ryan, then took the commissioner's side of the only game that's open. Ryan took the other one. Some conspiracy.\n\nAriel asked who Nate V is. Answer: the guy standing next to her on the Patriots. Mike says the exit polls have him up. Polls close at the final whistle. Claude rode with the Bears and the crowd. Dickie Smalls is still promising Bertburgers. Everything else stays sealed until Sunday.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w7.jpg",
@@ -8150,7 +8260,7 @@
       }
     }
   },
-  "updated": "2026-10-23T00:12:53.310916+00:00",
+  "updated": "2026-10-23T00:19:57.894004+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
