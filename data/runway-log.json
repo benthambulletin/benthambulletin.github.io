@@ -4916,16 +4916,14 @@
  },
  {
   "date": "2026-10-23",
-  "score": 5,
+  "score": 3,
   "flags": [
-   "woke a bit early",
    "Body Battery so-so",
    "stress elevated yesterday",
-   "resting HR up",
-   "short night"
+   "resting HR up"
   ],
-  "wake_dev_min": -17,
-  "bb_high": 71,
+  "wake_dev_min": 54,
+  "bb_high": 72,
   "stress_yday": 35.0
  }
 ]
