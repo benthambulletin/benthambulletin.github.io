@@ -7885,7 +7885,7 @@
           "firstAt": "2026-10-22T18:22:05+00:00",
           "free": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -7906,7 +7906,7 @@
           "firstAt": "2026-10-22T22:48:26+00:00",
           "free": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -7927,7 +7927,7 @@
           "firstAt": "2026-10-20T22:40:00+00:00",
           "free": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -7948,7 +7948,7 @@
           "firstAt": "2026-10-22T22:23:57+00:00",
           "free": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -7969,7 +7969,7 @@
           "firstAt": "2026-10-21T00:37:23+00:00",
           "free": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -7990,7 +7990,7 @@
           "firstAt": "2026-10-21T02:11:58+00:00",
           "free": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8298,8 +8298,8 @@
       ],
       "decidedAtLastRun": 1,
       "outAtLastRun": [],
-      "columnHead": "Six on the Patriots. Fifteen on Chicago.",
-      "column": "Thursday's out of the envelope: fifteen sheets on the Bears, six on the Patriots. The New England six: the commissioner, Andy R, Mike, Nate V, Leah and Ariel. Andy R says the league is rigged for the commissioner and Ryan, then took the commissioner's side of the only game that's open. Ryan took the other one. Some conspiracy.\n\nAriel asked who Nate V is. Answer: the guy standing next to her on the Patriots. Mike says the exit polls have him up. Polls close at the final whistle. Claude rode with the Bears and the crowd. Dickie Smalls is still promising Bertburgers. Everything else stays sealed until Sunday.",
+      "columnHead": "Bears 30, Conspiracy Theory 0",
+      "column": "Bears 30–24, and the rigging theory died with the final whistle. The commissioner took New England and is 0–1. Ryan took Chicago and is 1–0. Andy R, who called the fix, sat on the commissioner's side and lost with him. Some cartel.\n\nMike's exit polls had him up; the actual count has him 0–1 while Mrs. Sombloski is 1–0. Ariel still doesn't know who Nate V is, but they're 0–1 together. Fifteen sheets sit at 1–0, Claude included; six at 0–1. Thirteen games Sunday. Everything else stays sealed.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w7.jpg",
@@ -8307,10 +8307,11 @@
         "by": "Ryan Holovics",
         "week": 6,
         "line": ""
-      }
+      },
+      "thuDone": true
     }
   },
-  "updated": "2026-10-23T03:25:39.730700+00:00",
+  "updated": "2026-10-23T03:34:57.870334+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
