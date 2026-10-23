@@ -7515,7 +7515,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -7553,32 +7553,8 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
-          "badges": []
-        },
-        {
-          "name": "B-rad",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {},
-          "filedAt": "2026-10-23T00:03:19+00:00",
-          "firstAt": "2026-10-23T00:03:19+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
           "paid": true,
-          "badges": [
-            {
-              "id": "buzzer",
-              "note": "filed inside the last hour before Thursday kickoff"
-            }
-          ]
+          "badges": []
         },
         {
           "name": "Claude",
@@ -7942,6 +7918,18 @@
           "status": "manual"
         },
         {
+          "id": "manual-w7-Andy R",
+          "amt": "5.00",
+          "who": "Andy R",
+          "status": "manual"
+        },
+        {
+          "id": "manual-w7-Arod",
+          "amt": "5.00",
+          "who": "Arod",
+          "status": "manual"
+        },
+        {
           "id": "1a15bfaa9513a7c0",
           "at": "2026-10-21T01:01:55Z",
           "amt": "5.00",
@@ -8056,8 +8044,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-10-23T00:15:00Z",
-      "pot": 85.0,
-      "paidN": 17,
+      "pot": 90.0,
+      "paidN": 18,
       "opensAt": "2026-10-20T08:06:02Z",
       "housePicks": {
         "trash": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions.",
@@ -8138,7 +8126,7 @@
       }
     }
   },
-  "updated": "2026-10-23T00:11:06.074279+00:00",
+  "updated": "2026-10-23T00:12:19.897386+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
