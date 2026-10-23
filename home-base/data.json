@@ -92,7 +92,7 @@
     },
     {
       "id": "plans",
-      "title": "Send Claude the next 2–3 weeks of plans",
+      "title": "Add the next 2–3 weeks of plans",
       "who": "Both",
       "due": ""
     },
@@ -104,13 +104,7 @@
     },
     {
       "id": "luka-cards",
-      "title": "Fill in Luka's details: bedtime, sizes, pediatrician, sitters",
-      "who": "Both",
-      "due": ""
-    },
-    {
-      "id": "sunday",
-      "title": "Decide on an automatic Sunday-night week-ahead summary",
+      "title": "Add Luka's details: bedtime, sizes, pediatrician, sitters",
       "who": "Both",
       "due": ""
     }
