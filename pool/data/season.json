@@ -7335,10 +7335,33 @@
           "kickoff": "2026-10-23T00:15:00Z",
           "when": "Thu 8:15 PM",
           "tv": "Prime Video",
-          "winner": null,
-          "hits": [],
-          "misses": [],
-          "status": "live",
+          "winner": "Bears",
+          "hits": [
+            "Thom",
+            "Ryan Holovics",
+            "Dan",
+            "Mrs. Sombloski",
+            "Devin",
+            "Melissa",
+            "Tom",
+            "Wendy",
+            "Derek",
+            "Arod",
+            "Walczyk",
+            "Kaylani & Luka",
+            "Josh",
+            "B-rad",
+            "Claude"
+          ],
+          "misses": [
+            "Garret",
+            "Mike Sombloski",
+            "Nate V",
+            "Andy R",
+            "Leah",
+            "Ariel"
+          ],
+          "status": "final",
           "sides": {
             "Patriots": [
               "Garret",
@@ -7366,8 +7389,7 @@
               "Claude"
             ]
           },
-          "live": "Bears 27–14 · 3rd qtr",
-          "liveAt": "2026-10-23T02:09:57Z"
+          "score": "30–24"
         },
         {
           "away": "Steelers",
@@ -7528,54 +7550,12 @@
       ],
       "players": [
         {
-          "name": "Andy R",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Patriots"
-          },
-          "filedAt": "2026-10-22T18:22:05+00:00",
-          "firstAt": "2026-10-22T18:22:05+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Ariel",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Patriots"
-          },
-          "filedAt": "2026-10-22T22:48:26+00:00",
-          "firstAt": "2026-10-22T22:48:26+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
           "name": "Arod",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7593,10 +7573,10 @@
         {
           "name": "B-rad",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7619,10 +7599,10 @@
         {
           "name": "Claude",
           "house": true,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7640,10 +7620,10 @@
         {
           "name": "Dan",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7661,10 +7641,10 @@
         {
           "name": "Derek",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7682,10 +7662,10 @@
         {
           "name": "Devin",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7701,33 +7681,12 @@
           "badges": []
         },
         {
-          "name": "Garret",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Patriots"
-          },
-          "filedAt": "2026-10-20T22:40:00+00:00",
-          "firstAt": "2026-10-20T22:40:00+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
           "name": "Josh",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7745,10 +7704,10 @@
         {
           "name": "Kaylani & Luka",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7764,33 +7723,12 @@
           "badges": []
         },
         {
-          "name": "Leah",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Patriots"
-          },
-          "filedAt": "2026-10-22T22:23:57+00:00",
-          "firstAt": "2026-10-22T22:23:57+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
           "name": "Melissa",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7806,33 +7744,12 @@
           "badges": []
         },
         {
-          "name": "Mike Sombloski",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Patriots"
-          },
-          "filedAt": "2026-10-21T00:37:23+00:00",
-          "firstAt": "2026-10-21T00:37:23+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
           "name": "Mrs. Sombloski",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7848,33 +7765,12 @@
           "badges": []
         },
         {
-          "name": "Nate V",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Patriots"
-          },
-          "filedAt": "2026-10-21T02:11:58+00:00",
-          "firstAt": "2026-10-21T02:11:58+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
           "name": "Ryan Holovics",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7892,10 +7788,10 @@
         {
           "name": "Thom",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7913,10 +7809,10 @@
         {
           "name": "Tom",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7934,10 +7830,10 @@
         {
           "name": "Walczyk",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7955,10 +7851,10 @@
         {
           "name": "Wendy",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -7969,6 +7865,132 @@
           "free": false,
           "rank": 1,
           "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Andy R",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Patriots"
+          },
+          "filedAt": "2026-10-22T18:22:05+00:00",
+          "firstAt": "2026-10-22T18:22:05+00:00",
+          "free": false,
+          "rank": 16,
+          "delta": -15,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Ariel",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Patriots"
+          },
+          "filedAt": "2026-10-22T22:48:26+00:00",
+          "firstAt": "2026-10-22T22:48:26+00:00",
+          "free": false,
+          "rank": 16,
+          "delta": -15,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Garret",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Patriots"
+          },
+          "filedAt": "2026-10-20T22:40:00+00:00",
+          "firstAt": "2026-10-20T22:40:00+00:00",
+          "free": false,
+          "rank": 16,
+          "delta": -15,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Leah",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Patriots"
+          },
+          "filedAt": "2026-10-22T22:23:57+00:00",
+          "firstAt": "2026-10-22T22:23:57+00:00",
+          "free": false,
+          "rank": 16,
+          "delta": -15,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Mike Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Patriots"
+          },
+          "filedAt": "2026-10-21T00:37:23+00:00",
+          "firstAt": "2026-10-21T00:37:23+00:00",
+          "free": false,
+          "rank": 16,
+          "delta": -15,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Nate V",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Patriots"
+          },
+          "filedAt": "2026-10-21T02:11:58+00:00",
+          "firstAt": "2026-10-21T02:11:58+00:00",
+          "free": false,
+          "rank": 16,
+          "delta": -15,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8191,7 +8213,16 @@
           "a": null
         }
       ],
-      "threads": {},
+      "threads": {
+        "Andy R": [
+          {
+            "id": "ArRvxaN",
+            "from": "Comish",
+            "text": "Bite your tongue.",
+            "at": "2026-10-23T02:53:49.000Z"
+          }
+        ]
+      },
       "stats": {
         "games": {
           "0": {
@@ -8205,28 +8236,17 @@
               "Andy R",
               "Leah",
               "Ariel"
-            ]
+            ],
+            "upset": false,
+            "rightN": 14
           }
         },
         "upsets": 0,
-        "decided": 0,
-        "best": null,
-        "worst": null,
-        "bills": null,
-        "jets": null
-      },
-      "decides": [
-        {
+        "decided": 1,
+        "best": {
           "game": 0,
-          "away": [
-            "Garret",
-            "Mike Sombloski",
-            "Nate V",
-            "Andy R",
-            "Leah",
-            "Ariel"
-          ],
-          "home": [
+          "n": 14,
+          "who": [
             "Thom",
             "Ryan Holovics",
             "Dan",
@@ -8242,13 +8262,41 @@
             "Josh",
             "B-rad"
           ]
-        }
-      ],
+        },
+        "worst": {
+          "game": 0,
+          "n": 14,
+          "who": [
+            "Thom",
+            "Ryan Holovics",
+            "Dan",
+            "Mrs. Sombloski",
+            "Devin",
+            "Melissa",
+            "Tom",
+            "Wendy",
+            "Derek",
+            "Arod",
+            "Walczyk",
+            "Kaylani & Luka",
+            "Josh",
+            "B-rad"
+          ]
+        },
+        "bills": null,
+        "jets": null
+      },
+      "decides": [],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
-      "updates": [],
-      "decidedAtLastRun": 0,
+      "updates": [
+        {
+          "at": "2026-10-23T03:25:39.730700+00:00",
+          "note": "1 of 14 final. 14 tied at 1–0."
+        }
+      ],
+      "decidedAtLastRun": 1,
       "outAtLastRun": [],
       "columnHead": "Six on the Patriots. Fifteen on Chicago.",
       "column": "Thursday's out of the envelope: fifteen sheets on the Bears, six on the Patriots. The New England six: the commissioner, Andy R, Mike, Nate V, Leah and Ariel. Andy R says the league is rigged for the commissioner and Ryan, then took the commissioner's side of the only game that's open. Ryan took the other one. Some conspiracy.\n\nAriel asked who Nate V is. Answer: the guy standing next to her on the Patriots. Mike says the exit polls have him up. Polls close at the final whistle. Claude rode with the Bears and the crowd. Dickie Smalls is still promising Bertburgers. Everything else stays sealed until Sunday.",
@@ -8262,7 +8310,7 @@
       }
     }
   },
-  "updated": "2026-10-23T02:10:49.000258+00:00",
+  "updated": "2026-10-23T03:25:39.730700+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
