@@ -302,6 +302,7 @@ details.gmore[open]>summary{display:none}
 .tt details.thr summary::-webkit-details-marker{display:none}
 .tt a.rlink{display:inline-block;font-family:'AR';font-style:normal;font-weight:700;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal,#0e8a8a);text-decoration:none;padding:.2rem 0;margin-left:.1rem}
 .tt li>a.rlink{margin-left:.6rem}
+.rback{margin:.2rem 0 0 1rem}.rback a.rlink{margin-left:0!important;color:var(--teal)}
 .btb{font-size:.95rem;line-height:1.45}
 .btb .lk{border:1px solid var(--rule);padding:.6rem .75rem;margin:0 0 .7rem;background:var(--wash)}
 .btb .lk b{font-family:'PF';font-size:1.1rem}
@@ -702,7 +703,7 @@ secs.games=h; h="";
 /* column */
 var TH=D.threads||{};
 function RL(k){return D.replyUrl&&!D.archive?'<a class="rlink" href="'+esc(D.replyUrl+'?to='+encodeURIComponent(k)+'&w='+D.week)+'">Reply</a>':'';}
-function THR(k){var r=TH[k]||[]; return r.length?'<details class="thr"'+(window.THOPEN&&window.THOPEN[k]?' open':'')+' data-k="'+esc(k)+'"><summary>'+r.length+(r.length===1?' reply':' replies')+' ›</summary>'+r.map(function(y){return '<span class="rpl">'+esc(y.text)+' <i>— '+DN(y.from)+'</i></span>';}).join('')+'</details>':'';}
+function THR(k){var r=TH[k]||[]; return r.length?'<details class="thr"'+(window.THOPEN&&window.THOPEN[k]?' open':'')+' data-k="'+esc(k)+'"><summary>'+r.length+(r.length===1?' reply':' replies')+' ›</summary>'+r.map(function(y){return '<span class="rpl">'+esc(y.text)+' <i>— '+DN(y.from)+'</i></span>';}).join('')+(RL(k)?'<div class="rback">'+RL(k).replace('>Reply<','>Reply to this thread<')+'</div>':'')+'</details>':'';}
 var QA=D.qa||[];
 if(D.column||QA.length){
   h+='<a id="column"></a>'+orn("The Column")+'<div class="col">'+(D.columnHead?'<div class="colhd">'+esc(D.columnHead)+'</div>':'');
