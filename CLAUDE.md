@@ -151,6 +151,8 @@ An occasional signed feature where the paper makes a real prediction and lives w
 
 `/album/` is **The Family Album** — every cover, newest first, built from `issues.json` (call them **covers** there, not plates). `/archive/` is every edition. Both are linked at the bottom of every paper. **`/runway/` is Garret's private dashboard, not part of the paper:** never link it, never edit it during an edition run, never remove its `noindex`.
 
+**`/home-base/` is Garret and Kaylani's family board, run by Hearth (`home-base/CLAUDE.md`), not part of the paper:** never link it, never edit it during an edition run.
+
 **No analytics, by decision.** Don't add a counter or suggest one.
 
 ## Design
