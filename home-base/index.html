@@ -108,10 +108,12 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     <div class="sub"><span id="today"></span> · <button id="switch">Not you?</button></div>
   </header>
 
-  <a class="add" id="addLink" href="https://tally.so/r/jeaE19" target="_blank" rel="noopener"><span>+</span> Tell Hearth</a>
-  <div class="addnote">Type it like a text: a date, a to-do, groceries, a Luka detail. It's on the board within the hour.</div>
+  <a class="add" id="addLink" href="https://tally.so/r/jeaE19" target="_blank" rel="noopener"><span>+</span> Ask or tell Hearth</a>
+  <div class="addnote">Type it like a text. Add a date, a to-do, groceries or a Luka detail, or ask a question. Hearth answers here within the hour.</div>
 
   <div class="tip" id="tip" hidden><span>Put this on your home screen: tap <b>Share</b>, then <b>Add to Home Screen</b>.</span><button aria-label="Dismiss" id="tipX">×</button></div>
+
+  <section id="says" hidden><h2>Hearth says</h2><ul id="saysList" class="agenda"></ul></section>
 
   <section class="today" aria-labelledby="h-today">
     <h2 id="h-today">Today</h2>
@@ -152,7 +154,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 const $=s=>document.querySelector(s);
 const FORM="https://tally.so/r/jeaE19";
 const LUKA=[["bedtime","Bedtime routine"],["nap","Nap"],["meals","Meals & favorites"],["sizes","Clothes & shoe sizes"],["doctor","Pediatrician"],["school","Daycare / school"],["sitters","Sitters & backup care"],["now","Working on right now"]];
-let D={events:[],tasks:[],groceries:[],luka:{}}, me=null, ticked={}, sent={};
+let D={events:[],tasks:[],groceries:[],luka:{},replies:[]}, me=null, ticked={}, sent={};
 const get=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
 const put=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
 const J=(k,d)=>{try{return JSON.parse(get(k))||d}catch(e){return d}};
@@ -234,7 +236,8 @@ function renderBar(){
   $("#barN").textContent=ids.length===1?"1 thing done":ids.length+" things done";
   $("#barGo").href=FORM+"?done="+encodeURIComponent(ids.join("|"))+(me?"&who="+me:"");
 }
-function renderAll(){renderToday();renderSoon();renderTodos();renderGro();renderLuka();renderBar()}
+function renderSays(){const cut=Date.now()-48*36e5;const r=(D.replies||[]).filter(x=>new Date(x.at)>cut&&(!me||!x.to||x.to===me||x.to==="Both")).sort((a,b)=>new Date(b.at)-new Date(a.at));$("#says").hidden=!r.length;$("#saysList").innerHTML=r.map(x=>`<li class="ev"><span class="d">${new Date(x.at).toLocaleDateString(undefined,{weekday:"short"})}<small>${new Date(x.at).toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"})}</small></span><span class="tt"><span class="meta" style="display:block;font-size:.82rem;color:var(--muted)">${esc(x.to||"")}${x.to?" asked: ":""}${esc(x.q)}</span>${esc(x.a)}</span></li>`).join("")}
+function renderAll(){renderSays();renderToday();renderSoon();renderTodos();renderGro();renderLuka();renderBar()}
 
 /* ticks */
 document.addEventListener("change",e=>{const id=e.target.dataset.id;if(!id)return;

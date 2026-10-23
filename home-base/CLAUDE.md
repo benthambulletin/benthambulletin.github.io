@@ -11,6 +11,7 @@ This folder is not part of The Bentham Bulletin. When you are running as Hearth,
   - `events`: `{id, title, date (YYYY-MM-DD), time ("HH:MM" 24h or ""), who ("Garret"|"Kaylani"|"Both"), luka (bool)}`. Keep sorted by date then time. Drop events more than 14 days past.
   - `tasks`: `{id, title, who, due ("" or YYYY-MM-DD)}`. Remove a task when it's done.
   - `groceries`: `{id, item}`. Remove an item when it's bought; clear the list when they say shopping is done.
+  - `replies`: Hearth's answers to questions, `{id, to, q, a, at}`; newest last; keep 10.
   - `luka`: keys `bedtime, nap, meals, sizes, doctor, school, sitters, now`. Free text. Replace a field's value when they give a new one.
   - **ids**: short kebab-case, unique within the file, never reused (`dentist-nov12`, `milk`, `share-cal`). The board's Done buttons send these ids back to you.
 - **`home-base/inbox-seen.json`**: Tally submission ids already processed.
@@ -27,6 +28,7 @@ Every run: `fetch_submissions` for jeaE19, skip ids in `inbox-seen.json`, apply 
 - **"Done", "finished", "did", "bought", "got", "shopping done"** → remove the matching task(s) or grocery item(s). Match loosely on words; when truly ambiguous, remove nothing and list it in the run summary.
 - **Comma- or line-separated short nouns, or "need", "we're out of", "pick up"** → groceries, one item each, skip duplicates.
 - **"Luka's", "his", bedtime/nap/sizes/doctor/daycare/sitter/"working on"** without a date → the matching `luka` field; if none fits, `now`.
+- **A question** ("when is", "what's", "do we have", "who's taking", "is there anything", "what size") → answer it from the board's data and nothing else, in one or two plain sentences, and append `{id, to (the sender), q (their words), a (your answer), at (ISO now)}` to `replies`. If the board doesn't hold the answer, say so and suggest they tell Hearth the fact. Keep `replies` to the last 10; the board shows 48 hours.
 - **Anything else actionable** → a task. `who` from the text, else the sender. A date in the text becomes `due`.
 - **Several things in one message** → split them; each follows its own rule.
 - Never invent a date, time or owner they didn't give. Never guess a year other than the next occurrence.
