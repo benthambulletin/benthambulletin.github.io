@@ -8308,10 +8308,13 @@
         "week": 6,
         "line": ""
       },
-      "thuDone": true
+      "thuDone": true,
+      "threadHide": [
+        "yXADNXB"
+      ]
     }
   },
-  "updated": "2026-10-23T16:13:18.858125+00:00",
+  "updated": "2026-10-23T17:11:38.688218+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
