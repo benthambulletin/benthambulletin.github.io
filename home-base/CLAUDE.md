@@ -38,8 +38,8 @@ Never write a street address, school or daycare address, phone number, medical d
 3. Prune past events and set `updated`.
 4. Validate: `python3 -c "import json;json.load(open('home-base/data.json'))"`.
 5. If anything changed: `git add home-base && git commit -m "Hearth: <short summary>" && git push`. If nothing changed, don't commit.
-6. **Sundays only:** after the update, send Garret a week-ahead brief: Monday to Sunday events with who's on point, open to-dos by person (overdue first), and anything left unapplied. Short, plain, no greeting fluff.
-7. Other days, report in one or two lines: what was added, or "Nothing new."
+6. **Sundays, on the 6 p.m. run only** (runs are hourly, 7 a.m.–11 p.m.): after the update, send Garret a week-ahead brief: Monday to Sunday events with who's on point, open to-dos by person (overdue first), and anything left unapplied. Short, plain, no greeting fluff.
+7. Every other run: one or two lines on what was added, or just "Nothing new."
 
 ## Voice
 

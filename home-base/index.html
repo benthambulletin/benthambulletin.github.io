@@ -100,8 +100,8 @@ li.ev .ow.Garret{color:var(--garret)} li.ev .ow.Kaylani{color:var(--kaylani)}
     <div class="sub"><span id="today"></span> · <button id="switch">Not you?</button></div>
   </header>
 
-  <a class="add" href="https://tally.so/r/jeaE19" target="_blank" rel="noopener"><span>+</span> Add something</a>
-  <div class="addnote">An event, a to-do, groceries or a Luka detail. It shows up here by tonight.</div>
+  <a class="add" href="https://tally.so/r/jeaE19" target="_blank" rel="noopener"><span>+</span> Tell Hearth</a>
+  <div class="addnote">An event, a to-do, groceries or a Luka detail. It shows up here within the hour.</div>
 
   <section class="today" aria-labelledby="h-today">
     <h2 id="h-today">Today</h2>
@@ -130,7 +130,7 @@ li.ev .ow.Garret{color:var(--garret)} li.ev .ow.Kaylani{color:var(--kaylani)}
     <div id="lukaNotes"></div>
   </section>
 
-  <footer id="foot">Tick boxes save on this phone. Hearth updates the board every evening.</footer>
+  <footer id="foot">Tick boxes save on this phone. Hearth checks for new items every hour, 7 a.m. to 11 p.m.</footer>
 </div>
 
 <script>
@@ -195,18 +195,18 @@ function renderGro(){
   const items=D.groceries.map(g=>typeof g==="string"?g:g.item);
   const left=items.filter(n=>!done["g:"+n]).length;
   $("#groCount").textContent=items.length?left+" to get":"";
-  $("#groList").innerHTML=items.length?items.sort((a,b)=>(!!done["g:"+a])-(!!done["g:"+b])).map(n=>{const k="g:"+n,d=!!done[k];return `<li><label class="row ${d?"done":""}"><input type="checkbox" data-k="${esc(k)}" ${d?"checked":""}><div class="main">${esc(n)}</div></label></li>`}).join(""):'<li class="empty">The list is empty. Tap <b>Add something</b> to put items on it.</li>';
+  $("#groList").innerHTML=items.length?items.sort((a,b)=>(!!done["g:"+a])-(!!done["g:"+b])).map(n=>{const k="g:"+n,d=!!done[k];return `<li><label class="row ${d?"done":""}"><input type="checkbox" data-k="${esc(k)}" ${d?"checked":""}><div class="main">${esc(n)}</div></label></li>`}).join(""):'<li class="empty">The list is empty. Tap <b>Tell Hearth</b> to put items on it.</li>';
 }
 function renderLuka(){
   const filled=LUKA.filter(([k])=>D.luka[k]);
   $("#lukaNotes").innerHTML=filled.length?`<div class="notes">${filled.map(([k,l])=>`<div class="note"><div class="k">${l}</div><div class="t">${esc(D.luka[k])}</div></div>`).join("")}</div>`
-    :'<div class="empty">Nothing here yet. Add his bedtime routine, sizes, pediatrician or sitters with <b>Add something</b>.</div>';
+    :'<div class="empty">Nothing here yet. Add his bedtime routine, sizes, pediatrician or sitters with <b>Tell Hearth</b>.</div>';
 }
 function renderAll(){renderToday();renderSoon();renderTodos();renderGro();renderLuka()}
 document.addEventListener("change",e=>{const k=e.target.dataset.k;if(!k)return;done[k]=e.target.checked;put("hb-done",JSON.stringify(done));renderAll()});
 greet();renderAll();
 fetch("data.json?"+Date.now()).then(r=>r.json()).then(j=>{D={...D,...j};renderAll();
-  $("#foot").textContent=`Updated ${md(D.updated||T)}. Tick boxes save on this phone. Hearth updates the board every evening.`;
+  $("#foot").textContent=`Updated ${md(D.updated||T)}. Tick boxes save on this phone. Hearth checks for new items every hour, 7 a.m. to 11 p.m.`;
 }).catch(()=>{$("#foot").textContent="Couldn't load the board. Pull down to refresh."});
 </script>
 </body>
