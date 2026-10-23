@@ -1,6 +1,6 @@
 # Bentham Home Base
 
-Garret and Kaylani's family board: https://benthambulletin.github.io/home-base/
+Garret and Kaylani's family board. **Superseded Oct 22, 2026:** the live board with Hearth built in now lives on claude.ai (private link, shared with Kaylani). This folder is the earlier static version, kept as a fallback; the hourly Hearth task is paused.
 
 Not part of the Bulletin. Never link it from the paper, and edition runs leave this folder alone.
 
