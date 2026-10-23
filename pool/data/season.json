@@ -7557,6 +7557,30 @@
           "badges": []
         },
         {
+          "name": "B-rad",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-23T00:03:19+00:00",
+          "firstAt": "2026-10-23T00:03:19+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
+        },
+        {
           "name": "Claude",
           "house": true,
           "correct": 0,
@@ -8032,8 +8056,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-10-23T00:15:00Z",
-      "pot": 80.0,
-      "paidN": 16,
+      "pot": 85.0,
+      "paidN": 17,
       "opensAt": "2026-10-20T08:06:02Z",
       "housePicks": {
         "trash": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions.",
@@ -8102,9 +8126,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Nineteen in. Andy smells a fix.",
-      "column": "Nineteen sheets in with kickoff closing fast. Andy R says the league is rigged, with the commissioner and Ryan splitting the pot. The commissioner says Ryan is just on fire. Ryan says thanks for the money. Ariel showed up late wanting to know who Nate V is. He went 6–8 last week. So did she.\n\nJosh is now Dickie Smalls and promises Bertburgers for everyone if he wins. Derek, hanging on the mugshot all week, filed anyway. B-rad is the last one out. Patriots at Bears locks at 8:15.",
-      "columnN": 19,
+      "columnHead": "Twenty in. B-rad beats the buzzer.",
+      "column": "Twenty sheets in, and B-rad slid his under the door twelve minutes before kickoff. Andy R says the league is rigged, with the commissioner and Ryan splitting the pot. The commissioner says Ryan is just on fire. Ryan says thanks for the money. Ariel wants to know who Nate V is. He went 6–8 last week. So did she.\n\nJosh is now Dickie Smalls and promises Bertburgers for everyone if he wins. Mike says he fell, but the exit polls have him up. Derek, hanging on the mugshot all week, filed anyway. Patriots at Bears locks at 8:15.",
+      "columnN": 20,
       "face": {
         "photo": "/pool/faces/w7.jpg",
         "who": "Derek",
@@ -8114,7 +8138,7 @@
       }
     }
   },
-  "updated": "2026-10-22T23:09:58.233177+00:00",
+  "updated": "2026-10-23T00:11:06.074279+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
