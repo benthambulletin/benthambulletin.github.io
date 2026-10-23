@@ -7557,6 +7557,30 @@
           "badges": []
         },
         {
+          "name": "B-rad",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-23T00:03:19+00:00",
+          "firstAt": "2026-10-23T00:03:19+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
+        },
+        {
           "name": "Claude",
           "house": true,
           "correct": 0,
@@ -8044,8 +8068,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-10-23T00:15:00Z",
-      "pot": 90.0,
-      "paidN": 18,
+      "pot": 95.0,
+      "paidN": 19,
       "opensAt": "2026-10-20T08:06:02Z",
       "housePicks": {
         "trash": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions.",
@@ -8126,7 +8150,7 @@
       }
     }
   },
-  "updated": "2026-10-23T00:12:19.897386+00:00",
+  "updated": "2026-10-23T00:12:53.310916+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
