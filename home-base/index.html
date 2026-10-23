@@ -71,6 +71,16 @@ label.row{cursor:pointer}
 details summary{cursor:pointer;color:var(--muted);font-size:.92rem;padding:4px 0}
 footer{color:var(--muted);font-size:.82rem;text-align:center}
 a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+ul.agenda{gap:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:2px 12px}
+li.ev{display:flex;align-items:baseline;gap:12px;padding:11px 0;border-top:1px solid var(--line);min-width:0}
+li.ev:first-child{border-top:0}
+li.ev .d{flex:none;width:92px;font-weight:600;font-variant-numeric:tabular-nums;font-size:.92rem}
+li.ev .d small{display:block;font-weight:400;color:var(--muted);font-size:.8rem}
+li.ev .tt{flex:1;min-width:0;overflow-wrap:anywhere}
+li.ev .lk{color:var(--accent);font-weight:600;font-size:.88rem}
+li.ev .ow{font-size:.78rem;font-weight:600;white-space:nowrap}
+li.ev .ow.Garret{color:var(--garret)} li.ev .ow.Kaylani{color:var(--kaylani)}
+.today ul.agenda{border:0;padding:0;background:none}
 </style>
 </head>
 <body>
@@ -100,8 +110,8 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 
   <section aria-labelledby="h-soon">
     <h2 id="h-soon">Coming up <span class="n">next 2 weeks</span></h2>
-    <ul id="soonList"></ul>
-    <details id="laterWrap"><summary>Further out</summary><ul id="laterList" style="margin-top:8px"></ul></details>
+    <ul id="soonList" class="agenda"></ul>
+    <details id="laterWrap"><summary>Further out</summary><ul id="laterList" class="agenda" style="margin-top:8px"></ul></details>
   </section>
 
   <section aria-labelledby="h-todo">
@@ -154,21 +164,21 @@ if(!get("hb-asked"))$("#pick").hidden=false;
 
 const whoTag=w=>`<span class="who ${w}">${w==="Both"?"Both of you":w}</span>`;
 const isDone=t=>!!done["t:"+(t.id||t.title)];
-const evRow=e=>`<li class="row"><div class="when"><b>${daysAway(e.date)===0?(fmtTime(e.time)||"All day"):md(e.date)}</b><small>${daysAway(e.date)===0?"":wk(e.date)+(e.time?" · "+fmtTime(e.time):"")}</small></div><div class="main">${esc(e.title)}<span class="meta">${daysAway(e.date)===0?"":rel(e.date)}</span></div>${e.luka?'<span class="luka">Luka</span>':""}${whoTag(e.who)}</li>`;
+const evRow=e=>{const t=daysAway(e.date)===0;return `<li class="ev"><span class="d">${t?"Today":wk(e.date)+" "+md(e.date)}${e.time?`<small>${fmtTime(e.time)}</small>`:""}</span><span class="tt">${esc(e.title)}${e.luka?' <span class="lk">· Luka</span>':""}</span>${e.who!=="Both"?`<span class="ow ${e.who}">${e.who}</span>`:""}</li>`};
 const taskRow=(t,noTag)=>{const k="t:"+(t.id||t.title),d=isDone(t),late=!d&&t.due&&t.due<T;
   return `<li><label class="row ${d?"done":""} ${late?"late":""}"><input type="checkbox" data-k="${esc(k)}" ${d?"checked":""}><div class="main">${esc(t.title)}${t.due?`<span class="meta ${late?"late-t":""}">${late?"Overdue · was due "+md(t.due):"Due "+rel(t.due).toLowerCase()+" · "+md(t.due)}</span>`:""}</div>${noTag?"":whoTag(t.who)}</label></li>`};
 
 function renderToday(){
   const ev=D.events.filter(e=>e.date===T).sort((a,b)=>(a.time||"99").localeCompare(b.time||"99"));
   const tk=D.tasks.filter(t=>!isDone(t)&&t.due&&t.due<=T&&(!me||t.who===me||t.who==="Both"));
-  const parts=[...ev.map(evRow),...tk.map(taskRow)];
+  const parts=[...(ev.length?[`<li><ul class="agenda">${ev.map(evRow).join("")}</ul></li>`]:[]),...tk.map(t=>taskRow(t))];
   $("#todayList").innerHTML=parts.length?parts.join(""):`<li class="empty">Nothing on today.${D.events.length?" Next up: "+nextUp():""}</li>`;
 }
 function nextUp(){const n=D.events.filter(e=>e.date>T).sort((a,b)=>a.date.localeCompare(b.date))[0];return n?`${esc(n.title)}, ${rel(n.date).toLowerCase()}.`:""}
 function renderSoon(){
   const up=D.events.filter(e=>e.date>T).sort((a,b)=>(a.date+(a.time||"")).localeCompare(b.date+(b.time||"")));
   const cut=addDays(14), soon=up.filter(e=>e.date<=cut), later=up.filter(e=>e.date>cut);
-  $("#soonList").innerHTML=soon.length?soon.map(evRow).join(""):'<li class="empty">Nothing in the next two weeks.</li>';
+  $("#soonList").innerHTML=soon.length?soon.map(evRow).join(""):'<li class="ev" style="color:var(--muted)">Nothing in the next two weeks.</li>';
   $("#laterWrap").hidden=!later.length; $("#laterList").innerHTML=later.map(evRow).join("");
 }
 function renderTodos(){
