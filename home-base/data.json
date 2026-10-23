@@ -1,0 +1,120 @@
+{
+  "updated": "2026-10-22",
+  "events": [
+    {
+      "title": "Claire's birthday",
+      "date": "2026-10-23",
+      "time": "",
+      "who": "Both",
+      "luka": false
+    },
+    {
+      "title": "Garret & Ariel's birthday",
+      "date": "2026-10-25",
+      "time": "",
+      "who": "Both",
+      "luka": false
+    },
+    {
+      "title": "Mike Jacob Sr's birthday",
+      "date": "2026-10-29",
+      "time": "",
+      "who": "Both",
+      "luka": false
+    },
+    {
+      "title": "Halloween",
+      "date": "2026-10-31",
+      "time": "",
+      "who": "Both",
+      "luka": true
+    },
+    {
+      "title": "Missy VerHague's birthday",
+      "date": "2026-11-04",
+      "time": "",
+      "who": "Both",
+      "luka": false
+    },
+    {
+      "title": "Melody Recchione's birthday",
+      "date": "2026-11-22",
+      "time": "",
+      "who": "Both",
+      "luka": false
+    },
+    {
+      "title": "Sue Telfer's birthday",
+      "date": "2026-12-30",
+      "time": "",
+      "who": "Both",
+      "luka": false
+    },
+    {
+      "title": "Aunt Debbie's birthday",
+      "date": "2026-12-31",
+      "time": "",
+      "who": "Both",
+      "luka": false
+    },
+    {
+      "title": "Jessica Plank's birthday",
+      "date": "2026-12-31",
+      "time": "",
+      "who": "Both",
+      "luka": false
+    }
+  ],
+  "tasks": [
+    {
+      "id": "share-cal",
+      "title": "Share the iPhone Family calendar with Kaylani's iCloud email",
+      "who": "Garret",
+      "due": ""
+    },
+    {
+      "id": "ecal-sync",
+      "title": "Check eCalendar settings for an Apple/iCloud calendar sync",
+      "who": "Garret",
+      "due": ""
+    },
+    {
+      "id": "ecal-decide",
+      "title": "Decide: keep eCalendar, or switch to the Family calendar plus Home Base",
+      "who": "Garret",
+      "due": ""
+    },
+    {
+      "id": "accept-cal",
+      "title": "Accept the Family calendar invite",
+      "who": "Kaylani",
+      "due": ""
+    },
+    {
+      "id": "plans",
+      "title": "Send Claude the next 2–3 weeks of plans",
+      "who": "Both",
+      "due": ""
+    },
+    {
+      "id": "recurring",
+      "title": "List recurring items: daycare days, Rocky Point trips, trash night",
+      "who": "Both",
+      "due": ""
+    },
+    {
+      "id": "luka-cards",
+      "title": "Fill in Luka's details: bedtime, sizes, pediatrician, sitters",
+      "who": "Both",
+      "due": ""
+    },
+    {
+      "id": "sunday",
+      "title": "Decide on an automatic Sunday-night week-ahead summary",
+      "who": "Both",
+      "due": ""
+    }
+  ],
+  "groceries": [],
+  "luka": {}
+}
