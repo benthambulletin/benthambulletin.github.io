@@ -93,3 +93,23 @@ d['body_html']=b; d['plate_path']=None; d['plate_caption']=None
 json.dump(d,open('edition-2026-10-24.json','w'),ensure_ascii=False,indent=1)
 json.dump(d,open('site/data/edition-2026-10-24.json','w'),ensure_ascii=False,indent=1)
 print('built')
+# --- review fixes ---
+d=json.load(open('edition-2026-10-24.json')); b=d['body_html']
+R("<b>Jets</b> &middot; Winless Miami comes to MetLife Sunday at 1:00. A win would pull the Jets to 3&ndash;4, one game behind New England.","<b>Jets</b> &middot; Kickoff against Miami is 1:00 tomorrow at MetLife. The Jets are 2&ndash;4; the Dolphins are still looking for their first win.")
+R("Garret logged one Friday at 12:25 p.m. Days since the last one: Dad 18, Mom 15.","Garret logged a migraine Friday at 12:25 p.m. Days since the last one: Garret 1, Dad 18, Mom 15.")
+R("and both say their forces will stop firing Monday night.","and both say their forces will stop firing Monday night; the White House puts the start of the truce at Thursday, Oct. 29.")
+R("his sequel to <i>Once Upon a Time in Hollywood</i>","the sequel to his <i>Once Upon a Time in Hollywood</i>")
+R("Mayor Kathy Tampio toured it and praised the project.","Its 54 apartments are for people 62 and older; 113 people applied, so a lottery will pick the tenants.")
+R("The birth rate for women 30 to 45 is rising.","The CDC says the fertility rate fell 1 percent in 2025, with a 6 percent drop among women 20 to 24, while the rate for women 30 to 45 is rising.")
+R("no one was hurt.","no injuries were reported.")
+R("with Saturn close beside it; by 8 p.m. the pair sits low in the east.","with Saturn about a fist's width away; by 8 p.m. the pair is a third of the way up the eastern sky.")
+R("then a near-full moon rising at dusk","then a near-full moon already up by dusk")
+R("Dry through Tuesday; warmest Sunday at 65","Dry all week; warmest Sunday at 65")
+R("<b>The sun and Venus travel together in your sign</b>. Birthday eve for Garret and Ariel, and you're all in good light.","<b>The sun in your sign squares Pluto</b>. Birthday eve for Garret and Ariel: let someone else plan the party.")
+R("<b>The sun squares Pluto</b>. Someone wants control of the plan. Let them have the small stuff.","<b>Venus squares Pluto</b>. Someone wants control of the plan. Let them have the small stuff.")
+R("Seven drivers sit within 56 points with three races to go; Larson leads Bell by 5.","Larson 2,370, Bell 2,365; seven within 56 points.")
+R("<b>Western New York is turning fast.</b> This week's state foliage report lists","<b>This week's state foliage report</b> lists")
+d['body_html']=b
+json.dump(d,open('edition-2026-10-24.json','w'),ensure_ascii=False,indent=1)
+json.dump(d,open('site/data/edition-2026-10-24.json','w'),ensure_ascii=False,indent=1)
+print('fixed')
