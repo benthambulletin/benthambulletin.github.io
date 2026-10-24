@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "entries": [
   {
    "who": "Garret",
@@ -300,6 +300,13 @@
    "date": "2026-10-09",
    "time": "04:00",
    "woke": true,
+   "source": "form"
+  },
+  {
+   "who": "Garret",
+   "date": "2026-10-23",
+   "time": "12:25",
+   "woke": false,
    "source": "form"
   }
  ]
