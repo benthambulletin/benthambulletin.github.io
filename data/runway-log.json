@@ -4945,7 +4945,7 @@
   "flags": [
    "stress elevated yesterday"
   ],
-  "wake_dev_min": 11,
+  "wake_dev_min": 5,
   "bb_high": 87,
   "stress_yday": 38.0
  }
