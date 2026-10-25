@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T19:38:44Z",
+ "updated": "2026-10-25T19:40:46Z",
  "week": 7,
  "games": {
   "1": {
@@ -14,16 +14,16 @@
   "2": {
    "state": "in",
    "away": 17,
-   "home": 14,
-   "detail": "9:31 - 4th",
-   "line": "Browns 17–14 · 9:31 - 4th"
+   "home": 17,
+   "detail": "8:41 - 4th",
+   "line": "Tied 17–17 · 8:41 - 4th"
   },
   "3": {
    "state": "in",
    "away": 28,
    "home": 13,
-   "detail": "7:16 - 4th",
-   "line": "Bengals 28–13 · 7:16 - 4th"
+   "detail": "6:28 - 4th",
+   "line": "Bengals 28–13 · 6:28 - 4th"
   },
   "4": {
    "state": "in",
@@ -36,29 +36,29 @@
    "state": "in",
    "away": 28,
    "home": 17,
-   "detail": "4:44 - 4th",
-   "line": "Dolphins 28–17 · 4:44 - 4th"
+   "detail": "4:21 - 4th",
+   "line": "Dolphins 28–17 · 4:21 - 4th"
   },
   "6": {
    "state": "in",
-   "away": 14,
+   "away": 20,
    "home": 14,
-   "detail": "10:20 - 4th",
-   "line": "Tied 14–14 · 10:20 - 4th"
+   "detail": "8:55 - 4th",
+   "line": "Giants 20–14 · 8:55 - 4th"
   },
   "7": {
    "state": "in",
    "away": 14,
    "home": 26,
-   "detail": "8:50 - 4th",
-   "line": "Falcons 26–14 · 8:50 - 4th"
+   "detail": "7:33 - 4th",
+   "line": "Falcons 26–14 · 7:33 - 4th"
   },
   "8": {
    "state": "in",
    "away": 43,
    "home": 13,
-   "detail": "3:51 - 4th",
-   "line": "Buccaneers 43–13 · 3:51 - 4th"
+   "detail": "3:03 - 4th",
+   "line": "Buccaneers 43–13 · 3:03 - 4th"
   },
   "9": {
    "state": "pre",
