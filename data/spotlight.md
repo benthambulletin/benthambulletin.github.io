@@ -5,7 +5,7 @@ Upcoming Sunday Spotlight topics, in order. Garret approves, strikes or reorders
 - [x] **Sun Oct 4 — The month in migraine.** (No. 102) Brief is in data/requests.md (from the monthly migraine run).
 - [x] **Sun Oct 11 — How lake-effect snow actually works.** (No. 109) Why Buffalo gets buried and Rochester doesn't, what a band is, how forecasters call it, before the first one arrives. Plus: what AI forecasting (Isaias, NYT piece Garret sent) can and can't do for lake-effect bands — see requests.md.
 - [x] **Sun Oct 18 — What's on your ballot besides the governor.** (No. 116) One week before early voting: every race and any ballot proposals for North Tonawanda, Dunkirk and Scottsville voters, in plain terms. No endorsements.
-- [ ] **Sun Oct 25 — Spotting an AI scam.** Look-alike shopping sites, voice-clone calls, fake texts: what they look like now and the three checks that catch them. (Birthday edition; keep it short.)
+- [x] **Sun Oct 25 — Spotting an AI scam.** (No. 123) Look-alike shopping sites, voice-clone calls, fake texts: what they look like now and the three checks that catch them. (Birthday edition; keep it short.)
 - [ ] **Sun Nov 1 — Why we change the clocks tonight.** Daylight saving ends at 2 a.m.; where it came from, whether it saves anything, and where the push to end it stands.
 - [ ] **Sun Nov 8 — How the NASCAR Chase ends.** Finale day at Homestead: the format, the math, who can still win.
 - [ ] **Sun Nov 15 — This winter's heating bill.** National Grid and NYSEG rates, what's changed, and the cheapest things that actually lower a bill.
