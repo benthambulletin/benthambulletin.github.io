@@ -29,7 +29,7 @@ env:
 
 jobs:
   audio:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -52,7 +52,7 @@ jobs:
           if [ -n "$SAMPLES" ]; then
             for v in $SAMPLES; do python3 tools/make_audio.py "$D" "$v" "out/sample-$v.mp3" 900; done
           else
-            python3 tools/make_audio.py "$D" "$VOICE" "out/$D.mp3"
+            python3 tools/make_audio.py "$D" "$VOICE" "out/$D.mp3" 2> err.txt || { tail -c 600 err.txt | tr '\n' ' ' | sed 's/^/::error::/'; echo; exit 1; }
           fi
           echo "READY=1" >> $GITHUB_ENV
       - name: Publish
