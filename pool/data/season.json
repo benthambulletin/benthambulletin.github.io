@@ -7428,8 +7428,8 @@
               "Josh"
             ]
           },
-          "live": "Halftime · Steelers 13–10",
-          "liveAt": "2026-10-25T15:10:34Z"
+          "live": "Steelers 16–10 · 4th qtr",
+          "liveAt": "2026-10-25T16:09:26Z"
         },
         {
           "away": "Browns",
@@ -8404,11 +8404,12 @@
       },
       "thuDone": true,
       "threadHide": [
-        "yXADNXB"
+        "yXADNXB",
+        "M1ZGl8E"
       ]
     }
   },
-  "updated": "2026-10-25T15:12:38.388306+00:00",
+  "updated": "2026-10-25T16:10:53.737044+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
