@@ -1,15 +1,78 @@
 {
- "updated": "2026-10-23T05:14:12Z",
+ "updated": "2026-10-25T13:33:09Z",
  "week": 7,
  "games": {
-  "0": {
-   "state": "post",
-   "away": 24,
-   "home": 30,
-   "detail": "Final",
-   "winner": "Bears",
-   "score": "30–24",
-   "line": "Final · Bears 30–24"
+  "1": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 9:30 AM EDT"
+  },
+  "2": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 1:00 PM EDT"
+  },
+  "3": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 1:00 PM EDT"
+  },
+  "4": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 1:00 PM EDT"
+  },
+  "5": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 1:00 PM EDT"
+  },
+  "6": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 1:00 PM EDT"
+  },
+  "7": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 1:00 PM EDT"
+  },
+  "8": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 1:00 PM EDT"
+  },
+  "9": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 4:05 PM EDT"
+  },
+  "10": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 4:25 PM EDT"
+  },
+  "11": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 4:25 PM EDT"
+  },
+  "12": {
+   "state": "pre",
+   "away": 0,
+   "home": 0,
+   "detail": "10/25 - 8:20 PM EDT"
   }
  }
 }
