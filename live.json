@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T23:34:24Z",
+ "updated": "2026-10-25T23:36:26Z",
  "week": 7,
  "games": {
   "1": {
@@ -93,11 +93,13 @@
    "line": "Final · Lions 20–17"
   },
   "11": {
-   "state": "in",
+   "state": "post",
    "away": 35,
    "home": 21,
-   "detail": "1:19 - 4th",
-   "line": "Rams 35–21 · 1:19 - 4th"
+   "detail": "Final",
+   "winner": "Rams",
+   "score": "35–21",
+   "line": "Final · Rams 35–21"
   },
   "12": {
    "state": "pre",
