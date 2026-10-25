@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T18:45:44Z",
+ "updated": "2026-10-25T18:47:46Z",
  "week": 7,
  "games": {
   "1": {
@@ -15,22 +15,22 @@
    "state": "in",
    "away": 17,
    "home": 14,
-   "detail": "Halftime",
-   "line": "Browns 17–14 · Halftime"
+   "detail": "15:00 - 3rd",
+   "line": "Browns 17–14 · 15:00 - 3rd"
   },
   "3": {
    "state": "in",
    "away": 7,
    "home": 13,
-   "detail": "9:24 - 3rd",
-   "line": "Ravens 13–7 · 9:24 - 3rd"
+   "detail": "8:47 - 3rd",
+   "line": "Ravens 13–7 · 8:47 - 3rd"
   },
   "4": {
    "state": "in",
    "away": 10,
    "home": 6,
-   "detail": "9:37 - 3rd",
-   "line": "Colts 10–6 · 9:37 - 3rd"
+   "detail": "8:56 - 3rd",
+   "line": "Colts 10–6 · 8:56 - 3rd"
   },
   "5": {
    "state": "in",
@@ -50,15 +50,15 @@
    "state": "in",
    "away": 14,
    "home": 19,
-   "detail": "8:53 - 3rd",
-   "line": "Falcons 19–14 · 8:53 - 3rd"
+   "detail": "6:24 - 3rd",
+   "line": "Falcons 19–14 · 6:24 - 3rd"
   },
   "8": {
    "state": "in",
    "away": 33,
    "home": 6,
-   "detail": "12:57 - 3rd",
-   "line": "Buccaneers 33–6 · 12:57 - 3rd"
+   "detail": "12:17 - 3rd",
+   "line": "Buccaneers 33–6 · 12:17 - 3rd"
   },
   "9": {
    "state": "pre",
