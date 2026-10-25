@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T19:48:53Z",
+ "updated": "2026-10-25T19:50:55Z",
  "week": 7,
  "games": {
   "1": {
@@ -22,8 +22,8 @@
    "state": "in",
    "away": 35,
    "home": 13,
-   "detail": "4:39 - 4th",
-   "line": "Bengals 35–13 · 4:39 - 4th"
+   "detail": "3:53 - 4th",
+   "line": "Bengals 35–13 · 3:53 - 4th"
   },
   "4": {
    "state": "post",
@@ -38,15 +38,15 @@
    "state": "in",
    "away": 28,
    "home": 25,
-   "detail": "3:24 - 4th",
-   "line": "Dolphins 28–25 · 3:24 - 4th"
+   "detail": "3:10 - 4th",
+   "line": "Dolphins 28–25 · 3:10 - 4th"
   },
   "6": {
    "state": "in",
    "away": 21,
    "home": 14,
-   "detail": "6:50 - 4th",
-   "line": "Giants 21–14 · 6:50 - 4th"
+   "detail": "6:45 - 4th",
+   "line": "Giants 21–14 · 6:45 - 4th"
   },
   "7": {
    "state": "in",
@@ -56,11 +56,13 @@
    "line": "Falcons 26–20 · 5:05 - 4th"
   },
   "8": {
-   "state": "in",
+   "state": "post",
    "away": 43,
    "home": 13,
-   "detail": "0:39 - 4th",
-   "line": "Buccaneers 43–13 · 0:39 - 4th"
+   "detail": "Final",
+   "winner": "Buccaneers",
+   "score": "43–13",
+   "line": "Final · Buccaneers 43–13"
   },
   "9": {
    "state": "pre",
