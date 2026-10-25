@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T18:31:32Z",
+ "updated": "2026-10-25T18:33:34Z",
  "week": 7,
  "games": {
   "1": {
@@ -13,10 +13,10 @@
   },
   "2": {
    "state": "in",
-   "away": 14,
+   "away": 17,
    "home": 14,
-   "detail": "0:13 - 2nd",
-   "line": "Tied 14–14 · 0:13 - 2nd"
+   "detail": "Halftime",
+   "line": "Browns 17–14 · Halftime"
   },
   "3": {
    "state": "in",
@@ -29,15 +29,15 @@
    "state": "in",
    "away": 10,
    "home": 6,
-   "detail": "Halftime",
-   "line": "Colts 10–6 · Halftime"
+   "detail": "15:00 - 3rd",
+   "line": "Colts 10–6 · 15:00 - 3rd"
   },
   "5": {
    "state": "in",
    "away": 21,
    "home": 7,
-   "detail": "Halftime",
-   "line": "Dolphins 21–7 · Halftime"
+   "detail": "15:00 - 3rd",
+   "line": "Dolphins 21–7 · 15:00 - 3rd"
   },
   "6": {
    "state": "in",
