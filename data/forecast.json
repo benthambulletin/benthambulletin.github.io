@@ -1,16 +1,16 @@
 {
- "generated_utc": "2026-10-25T11:01Z",
+ "generated_utc": "2026-10-25T14:16Z",
  "towns": {
   "North Tonawanda": {
-   "issued": "2026-10-25T07:57:26+00:00",
+   "issued": "2026-10-25T13:57:41+00:00",
    "periods": [
     {
      "name": "Today",
-     "temp": 65,
-     "wind": "S 6 mph",
+     "temp": 66,
+     "wind": "S 5 to 8 mph",
      "pop": 0,
      "short": "Sunny",
-     "detail": "Sunny, with a high near 65. South wind around 6 mph."
+     "detail": "Sunny, with a high near 66. South wind 5 to 8 mph."
     },
     {
      "name": "Tonight",
@@ -87,29 +87,29 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-25T10:50:00+00:00",
+    "time": "2026-10-25T13:55:00+00:00",
     "text": "Clear",
-    "temp_f": 37
+    "temp_f": 50
    }
   },
   "Dunkirk": {
-   "issued": "2026-10-25T07:57:26+00:00",
+   "issued": "2026-10-25T13:57:41+00:00",
    "periods": [
     {
      "name": "Today",
-     "temp": 64,
-     "wind": "S 5 to 8 mph",
+     "temp": 65,
+     "wind": "SW 6 to 12 mph",
      "pop": 0,
      "short": "Sunny",
-     "detail": "Sunny, with a high near 64. South wind 5 to 8 mph."
+     "detail": "Sunny, with a high near 65. Southwest wind 6 to 12 mph."
     },
     {
      "name": "Tonight",
      "temp": 48,
-     "wind": "S 3 to 8 mph",
+     "wind": "SW 5 to 8 mph",
      "pop": 2,
      "short": "Partly Cloudy",
-     "detail": "Partly cloudy, with a low around 48. South wind 3 to 8 mph."
+     "detail": "Partly cloudy, with a low around 48. Southwest wind 5 to 8 mph."
     },
     {
      "name": "Monday",
@@ -178,21 +178,21 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-25T10:25:00+00:00",
+    "time": "2026-10-25T13:55:00+00:00",
     "text": "Clear",
-    "temp_f": 50
+    "temp_f": 55
    }
   },
   "Scottsville": {
-   "issued": "2026-10-25T07:57:26+00:00",
+   "issued": "2026-10-25T13:57:41+00:00",
    "periods": [
     {
      "name": "Today",
      "temp": 68,
-     "wind": "SW 3 to 7 mph",
+     "wind": "SW 6 mph",
      "pop": 0,
-     "short": "Patchy Fog then Sunny",
-     "detail": "Patchy fog before 10am. Sunny, with a high near 68. Southwest wind 3 to 7 mph."
+     "short": "Sunny",
+     "detail": "Sunny, with a high near 68. Southwest wind around 6 mph."
     },
     {
      "name": "Tonight",
@@ -269,16 +269,16 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-25T10:50:00+00:00",
+    "time": "2026-10-25T13:15:00+00:00",
     "text": "Clear",
-    "temp_f": 37
+    "temp_f": 43
    }
   }
  },
  "errors": [],
  "travel": {
   "Long Island": {
-   "who": "Garret",
+   "who": "Garret and the family",
    "start": "2026-10-20",
    "end": "2026-10-26",
    "periods": [
