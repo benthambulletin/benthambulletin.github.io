@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T17:16:25Z",
+ "updated": "2026-10-25T17:18:27Z",
  "week": 7,
  "games": {
   "1": {
@@ -15,8 +15,8 @@
    "state": "in",
    "away": 0,
    "home": 7,
-   "detail": "10:41 - 1st",
-   "line": "Titans 7–0 · 10:41 - 1st"
+   "detail": "9:23 - 1st",
+   "line": "Titans 7–0 · 9:23 - 1st"
   },
   "3": {
    "state": "in",
@@ -29,8 +29,8 @@
    "state": "in",
    "away": 7,
    "home": 0,
-   "detail": "9:13 - 1st",
-   "line": "Colts 7–0 · 9:13 - 1st"
+   "detail": "7:19 - 1st",
+   "line": "Colts 7–0 · 7:19 - 1st"
   },
   "5": {
    "state": "in",
@@ -43,22 +43,22 @@
    "state": "in",
    "away": 0,
    "home": 3,
-   "detail": "11:32 - 1st",
-   "line": "Texans 3–0 · 11:32 - 1st"
+   "detail": "9:39 - 1st",
+   "line": "Texans 3–0 · 9:39 - 1st"
   },
   "7": {
    "state": "in",
    "away": 7,
    "home": 0,
-   "detail": "9:14 - 1st",
-   "line": "49ers 7–0 · 9:14 - 1st"
+   "detail": "7:48 - 1st",
+   "line": "49ers 7–0 · 7:48 - 1st"
   },
   "8": {
    "state": "in",
    "away": 7,
    "home": 0,
-   "detail": "7:22 - 1st",
-   "line": "Buccaneers 7–0 · 7:22 - 1st"
+   "detail": "6:18 - 1st",
+   "line": "Buccaneers 7–0 · 6:18 - 1st"
   },
   "9": {
    "state": "pre",
