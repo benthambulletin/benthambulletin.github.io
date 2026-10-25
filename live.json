@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T20:21:23Z",
+ "updated": "2026-10-25T20:23:24Z",
  "week": 7,
  "games": {
   "1": {
@@ -48,11 +48,13 @@
    "line": "Final · Dolphins 28–25"
   },
   "6": {
-   "state": "in",
-   "away": 21,
+   "state": "post",
+   "away": 27,
    "home": 21,
-   "detail": "7:33 - OT",
-   "line": "Tied 21–21 · 7:33 - OT"
+   "detail": "Final/OT",
+   "winner": "Giants",
+   "score": "27–21",
+   "line": "Final · Giants 27–21 (OT)"
   },
   "7": {
    "state": "post",
