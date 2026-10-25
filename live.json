@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T21:56:50Z",
+ "updated": "2026-10-25T21:58:52Z",
  "week": 7,
  "games": {
   "1": {
@@ -78,8 +78,8 @@
    "state": "in",
    "away": 13,
    "home": 6,
-   "detail": "13:29 - 3rd",
-   "line": "Broncos 13–6 · 13:29 - 3rd"
+   "detail": "12:51 - 3rd",
+   "line": "Broncos 13–6 · 12:51 - 3rd"
   },
   "10": {
    "state": "in",
@@ -91,9 +91,9 @@
   "11": {
    "state": "in",
    "away": 28,
-   "home": 3,
-   "detail": "0:03 - 2nd",
-   "line": "Rams 28–3 · 0:03 - 2nd"
+   "home": 6,
+   "detail": "Halftime",
+   "line": "Rams 28–6 · Halftime"
   },
   "12": {
    "state": "pre",
