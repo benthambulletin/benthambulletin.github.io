@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T20:57:56Z",
+ "updated": "2026-10-25T20:59:58Z",
  "week": 7,
  "games": {
   "1": {
@@ -85,15 +85,15 @@
    "state": "in",
    "away": 7,
    "home": 7,
-   "detail": "0:58 - 1st",
-   "line": "Tied 7–7 · 0:58 - 1st"
+   "detail": "End of 1st",
+   "line": "Tied 7–7 · End of 1st"
   },
   "11": {
    "state": "in",
    "away": 7,
-   "home": 0,
-   "detail": "2:22 - 1st",
-   "line": "Rams 7–0 · 2:22 - 1st"
+   "home": 3,
+   "detail": "0:51 - 1st",
+   "line": "Rams 7–3 · 0:51 - 1st"
   },
   "12": {
    "state": "pre",
