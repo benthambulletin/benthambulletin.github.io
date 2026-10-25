@@ -67,7 +67,7 @@ h2{font-family:var(--display);font-weight:600;font-size:19px;margin:0 0 10px;tex
 .scale{display:flex;gap:2px;margin-top:8px;height:5px;border-radius:3px;overflow:hidden} .scale i{flex:1;background:var(--line)} .scale i.g{background:var(--good)} .scale i.y{background:var(--watch)} .scale i.r{background:var(--bad)} .scale i.dim{opacity:.3}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
 .flags{display:flex;flex-wrap:wrap;gap:8px}
-.qa{border-top:1px solid var(--line);padding:10px 0}.qa:first-child{border-top:0;padding-top:0}.qa .q{font-weight:600}.qa .a{margin-top:6px}.qa .d{font-size:12px;color:var(--ink-2);margin-top:4px}.qa .pend{color:var(--ink-2);font-style:italic}
+.qa{border-top:1px solid var(--line);padding:10px 0}.qa:first-child{border-top:0;padding-top:0}.qa .q{font-weight:600}.qa summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:8px;align-items:baseline}.qa summary::-webkit-details-marker{display:none}.qa summary::after{content:"+";color:var(--ink-2);font-family:var(--mono);flex:none}.qa[open] summary::after{content:"–"}.qa summary .d{margin-top:0;white-space:nowrap}.qa .a{margin-top:6px}.qa .d{font-size:12px;color:var(--ink-2);margin-top:4px}.qa .pend{color:var(--ink-2);font-style:italic}
 .flag{padding:6px 10px;border-radius:8px;font-size:13px;border:1px solid var(--line);background:var(--bg)}
 .flag.on{background:var(--bad-bg);border-color:var(--bad);color:var(--bad);font-weight:600}
 .flag.mid{background:var(--watch-bg);border-color:var(--watch);color:var(--watch);font-weight:600}
@@ -160,7 +160,7 @@ td.n{text-align:right;font-family:var(--mono)}
   <section class="panel" id="qa" hidden>
     <h2>Notes &amp; answers</h2>
     <div id="qa-list"></div>
-    <p class="note" style="margin:10px 0 0">Anything you send through "Ask / comment" lands here with Claude's answer, usually within the hour during the day.</p>
+    <p class="note" style="margin:10px 0 0">Anything you send through "Ask / comment" lands here with Claude's answer, usually within the hour during the day. After 48 hours an entry folds to its question; tap to open it.</p>
   </section>
 
   <section class="panel">
@@ -215,7 +215,8 @@ td.n{text-align:right;font-family:var(--mono)}
     let qa=[];try{qa=await getJSON("runway-qa.json");}catch(e){}
     qa=(Array.isArray(qa)?qa:[]).sort((a,b)=>a.asked<b.asked?1:-1).slice(0,8);
     $("qa").hidden=!qa.length;
-    $("qa-list").innerHTML=qa.map(x=>`<div class="qa"><div class="q">${esc(x.question)}</div><div class="a ${x.answer?"":"pend"}">${x.answer?esc(x.answer):"Not answered yet."}</div><div class="d">${fmtWhen(x.asked)}${x.answered?" · answered "+fmtWhen(x.answered):""}</div></div>`).join("");
+    const fresh48=x=>Date.now()-new Date(x.asked).getTime()<48*3600*1000||!x.answer;
+    $("qa-list").innerHTML=qa.map(x=>`<details class="qa"${fresh48(x)?" open":""}><summary><span class="q">${esc(x.question)}</span><span class="d"> · ${fmtWhen(x.asked)}</span></summary><div class="a ${x.answer?"":"pend"}">${x.answer?esc(x.answer):"Not answered yet."}</div><div class="d">${x.answered?"answered "+fmtWhen(x.answered):""}</div></details>`).join("");
     $("error").hidden=!errs.length; if(errs.length)$("error").textContent="Couldn't load: "+errs.join(", ")+". Showing what came through.";
     lastLoad=Date.now(); $("updated").textContent="Updated "+new Date().toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"})+(g?" · watch data to "+g.night_ending:"");
 
