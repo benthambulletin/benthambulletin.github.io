@@ -32,7 +32,10 @@ def walk(n):
 walk(soup); flush()
 
 def speakable(l):
+    import unicodedata
     l = html.unescape(l)
+    l = l.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
+    l = unicodedata.normalize("NFKD", l).encode("ascii", "ignore").decode()  # accents (Malaga, Flavio) break the voice engine
     l = re.sub(r"(\d)″", r"\1 inches", l).replace("°", " degrees")
     l = re.sub(r"[·—|]", ", ", l).replace("–", " to ")
     l = re.sub(r"(\d)a\b", r"\1 a.m.", l); l = re.sub(r"(\d)p\b", r"\1 p.m.", l)
@@ -70,9 +73,14 @@ else:
     pipe = KPipeline(lang_code="a" if model[0] == "a" else "b")
     parts = []
     gap = np.zeros(int(24000 * 0.35), dtype=np.float32)
-    for _, _, audio in pipe(text, voice=model, speed=1.0, split_pattern=r"\n+"):
-        a = audio.numpy() if hasattr(audio, "numpy") else np.asarray(audio)
-        parts += [a.astype(np.float32), gap]
+    # one line at a time, so a single unpronounceable line is skipped instead of failing the whole recording
+    for line in text.split("\n"):
+        try:
+            for _, _, audio in pipe(line, voice=model, speed=1.0):
+                a = audio.numpy() if hasattr(audio, "numpy") else np.asarray(audio)
+                parts += [a.astype(np.float32), gap]
+        except Exception as e:
+            print("skipped line:", line[:60], type(e).__name__)
     pcm = np.clip(np.concatenate(parts), -1, 1)
     mp3((pcm * 32767).astype("<i2").tobytes(), 24000, out)
 print("wrote", out, os.path.getsize(out))
