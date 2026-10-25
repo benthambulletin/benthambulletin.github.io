@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T17:10:20Z",
+ "updated": "2026-10-25T17:12:22Z",
  "week": 7,
  "games": {
   "1": {
@@ -15,22 +15,22 @@
    "state": "in",
    "away": 0,
    "home": 7,
-   "detail": "12:57 - 1st",
-   "line": "Titans 7–0 · 12:57 - 1st"
+   "detail": "12:51 - 1st",
+   "line": "Titans 7–0 · 12:51 - 1st"
   },
   "3": {
    "state": "in",
    "away": 0,
    "home": 7,
-   "detail": "13:36 - 1st",
-   "line": "Ravens 7–0 · 13:36 - 1st"
+   "detail": "12:48 - 1st",
+   "line": "Ravens 7–0 · 12:48 - 1st"
   },
   "4": {
    "state": "in",
-   "away": 0,
+   "away": 7,
    "home": 0,
-   "detail": "10:41 - 1st",
-   "line": "Tied 0–0 · 10:41 - 1st"
+   "detail": "9:13 - 1st",
+   "line": "Colts 7–0 · 9:13 - 1st"
   },
   "5": {
    "state": "in",
@@ -42,23 +42,23 @@
   "6": {
    "state": "in",
    "away": 0,
-   "home": 0,
-   "detail": "11:48 - 1st",
-   "line": "Tied 0–0 · 11:48 - 1st"
+   "home": 3,
+   "detail": "11:40 - 1st",
+   "line": "Texans 3–0 · 11:40 - 1st"
   },
   "7": {
    "state": "in",
-   "away": 0,
+   "away": 7,
    "home": 0,
-   "detail": "10:08 - 1st",
-   "line": "Tied 0–0 · 10:08 - 1st"
+   "detail": "9:22 - 1st",
+   "line": "49ers 7–0 · 9:22 - 1st"
   },
   "8": {
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "10:35 - 1st",
-   "line": "Tied 0–0 · 10:35 - 1st"
+   "detail": "8:28 - 1st",
+   "line": "Tied 0–0 · 8:28 - 1st"
   },
   "9": {
    "state": "pre",
