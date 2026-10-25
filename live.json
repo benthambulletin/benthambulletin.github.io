@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T17:30:38Z",
+ "updated": "2026-10-25T17:32:40Z",
  "week": 7,
  "games": {
   "1": {
@@ -22,15 +22,15 @@
    "state": "in",
    "away": 0,
    "home": 7,
-   "detail": "5:42 - 1st",
-   "line": "Ravens 7–0 · 5:42 - 1st"
+   "detail": "5:00 - 1st",
+   "line": "Ravens 7–0 · 5:00 - 1st"
   },
   "4": {
    "state": "in",
    "away": 7,
    "home": 0,
-   "detail": "4:59 - 1st",
-   "line": "Colts 7–0 · 4:59 - 1st"
+   "detail": "2:38 - 1st",
+   "line": "Colts 7–0 · 2:38 - 1st"
   },
   "5": {
    "state": "in",
@@ -50,15 +50,15 @@
    "state": "in",
    "away": 7,
    "home": 3,
-   "detail": "2:37 - 1st",
-   "line": "49ers 7–3 · 2:37 - 1st"
+   "detail": "1:35 - 1st",
+   "line": "49ers 7–3 · 1:35 - 1st"
   },
   "8": {
    "state": "in",
    "away": 7,
    "home": 0,
-   "detail": "0:47 - 1st",
-   "line": "Buccaneers 7–0 · 0:47 - 1st"
+   "detail": "15:00 - 2nd",
+   "line": "Buccaneers 7–0 · 15:00 - 2nd"
   },
   "9": {
    "state": "pre",
