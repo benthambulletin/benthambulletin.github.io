@@ -7893,10 +7893,33 @@
           "kickoff": "2026-10-25T20:05:00Z",
           "when": "Sun 4:05 PM",
           "tv": "CBS",
-          "winner": null,
-          "hits": [],
-          "misses": [],
-          "status": "live",
+          "winner": "Broncos",
+          "hits": [
+            "Thom",
+            "Garret",
+            "Ryan Holovics",
+            "Mike Sombloski",
+            "Dan",
+            "Nate V",
+            "Mrs. Sombloski",
+            "Devin",
+            "Melissa",
+            "Tom",
+            "Wendy",
+            "Andy R",
+            "Derek",
+            "Arod",
+            "Ariel",
+            "Walczyk",
+            "Josh",
+            "B-rad",
+            "Claude"
+          ],
+          "misses": [
+            "Leah",
+            "Kaylani & Luka"
+          ],
+          "status": "final",
           "sides": {
             "Broncos": [
               "Thom",
@@ -7924,8 +7947,7 @@
               "Kaylani & Luka"
             ]
           },
-          "live": "Broncos 30–16 · 4th qtr",
-          "liveAt": "2026-10-25T23:09:59Z"
+          "score": "30–16"
         },
         {
           "away": "Packers",
@@ -7933,10 +7955,33 @@
           "kickoff": "2026-10-25T20:25:00Z",
           "when": "Sun 4:25 PM",
           "tv": "FOX",
-          "winner": null,
-          "hits": [],
-          "misses": [],
-          "status": "live",
+          "winner": "Lions",
+          "hits": [
+            "Dan",
+            "Nate V",
+            "Mrs. Sombloski",
+            "Devin",
+            "Melissa",
+            "Wendy",
+            "Andy R",
+            "Derek",
+            "Leah",
+            "Walczyk",
+            "Kaylani & Luka",
+            "Josh",
+            "Claude"
+          ],
+          "misses": [
+            "Thom",
+            "Garret",
+            "Ryan Holovics",
+            "Mike Sombloski",
+            "Tom",
+            "Arod",
+            "Ariel",
+            "B-rad"
+          ],
+          "status": "final",
           "sides": {
             "Packers": [
               "Thom",
@@ -7964,8 +8009,7 @@
               "Claude"
             ]
           },
-          "live": "Tied 17–17 · 4th qtr",
-          "liveAt": "2026-10-25T23:09:59Z"
+          "score": "20–17"
         },
         {
           "away": "Rams",
@@ -7973,10 +8017,33 @@
           "kickoff": "2026-10-25T20:25:00Z",
           "when": "Sun 4:25 PM",
           "tv": "FOX",
-          "winner": null,
-          "hits": [],
-          "misses": [],
-          "status": "live",
+          "winner": "Rams",
+          "hits": [
+            "Thom",
+            "Garret",
+            "Ryan Holovics",
+            "Mike Sombloski",
+            "Nate V",
+            "Mrs. Sombloski",
+            "Devin",
+            "Wendy",
+            "Andy R",
+            "Derek",
+            "Leah",
+            "Ariel",
+            "Walczyk",
+            "Kaylani & Luka",
+            "Josh",
+            "Claude"
+          ],
+          "misses": [
+            "Dan",
+            "Melissa",
+            "Tom",
+            "Arod",
+            "B-rad"
+          ],
+          "status": "final",
           "sides": {
             "Rams": [
               "Thom",
@@ -8004,8 +8071,7 @@
               "B-rad"
             ]
           },
-          "live": "Rams 28–18 · 4th qtr",
-          "liveAt": "2026-10-25T23:09:59Z"
+          "score": "35–21"
         },
         {
           "away": "Chiefs",
@@ -8034,33 +8100,33 @@
       ],
       "players": [
         {
-          "name": "Arod",
+          "name": "Derek",
           "house": false,
-          "correct": 6,
-          "missed": 3,
+          "correct": 8,
+          "missed": 4,
           "void": 0,
-          "remaining": 5,
-          "max": 11,
+          "remaining": 2,
+          "max": 10,
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Saints",
+            "1": "Steelers",
             "2": "Browns",
             "3": "Bengals",
             "4": "Vikings",
             "5": "Jets",
             "6": "Texans",
-            "7": "Falcons",
-            "8": "Buccaneers",
+            "7": "49ers",
+            "8": "Panthers",
             "9": "Broncos",
-            "10": "Packers",
-            "11": "Raiders"
+            "10": "Lions",
+            "11": "Rams"
           },
-          "filedAt": "2026-10-22T21:58:39+00:00",
-          "firstAt": "2026-10-22T21:58:39+00:00",
+          "filedAt": "2026-10-22T18:51:03+00:00",
+          "firstAt": "2026-10-22T18:51:03+00:00",
           "free": false,
           "rank": 1,
-          "delta": 0,
+          "delta": 3,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -8075,39 +8141,76 @@
           ]
         },
         {
-          "name": "B-rad",
+          "name": "Devin",
           "house": false,
-          "correct": 6,
-          "missed": 3,
+          "correct": 8,
+          "missed": 4,
           "void": 0,
-          "remaining": 5,
-          "max": 11,
+          "remaining": 2,
+          "max": 10,
           "tb": null,
           "sheet": {
             "0": "Bears",
             "1": "Steelers",
-            "2": "Titans",
+            "2": "Browns",
             "3": "Ravens",
             "4": "Vikings",
             "5": "Dolphins",
             "6": "Texans",
-            "7": "Falcons",
-            "8": "Buccaneers",
+            "7": "49ers",
+            "8": "Panthers",
             "9": "Broncos",
-            "10": "Packers",
-            "11": "Raiders"
+            "10": "Lions",
+            "11": "Rams"
           },
-          "filedAt": "2026-10-23T00:03:19+00:00",
-          "firstAt": "2026-10-23T00:03:19+00:00",
+          "filedAt": "2026-10-22T00:07:06+00:00",
+          "firstAt": "2026-10-22T00:07:06+00:00",
           "free": false,
           "rank": 1,
-          "delta": 0,
+          "delta": 3,
           "state": "alive",
           "paid": true,
           "badges": [
             {
-              "id": "buzzer",
-              "note": "filed inside the last hour before Thursday kickoff"
+              "id": "crown",
+              "note": "leading the week"
+            }
+          ]
+        },
+        {
+          "name": "Josh",
+          "house": false,
+          "correct": 8,
+          "missed": 4,
+          "void": 0,
+          "remaining": 2,
+          "max": 10,
+          "tb": null,
+          "sheet": {
+            "0": "Bears",
+            "1": "Saints",
+            "2": "Browns",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "Falcons",
+            "8": "Panthers",
+            "9": "Broncos",
+            "10": "Lions",
+            "11": "Rams"
+          },
+          "filedAt": "2026-10-22T23:02:41+00:00",
+          "firstAt": "2026-10-22T23:02:41+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 3,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "homer",
+              "note": "took the Jets, who lost"
             },
             {
               "id": "crown",
@@ -8118,11 +8221,11 @@
         {
           "name": "Thom",
           "house": false,
-          "correct": 6,
-          "missed": 3,
+          "correct": 8,
+          "missed": 4,
           "void": 0,
-          "remaining": 5,
-          "max": 11,
+          "remaining": 2,
+          "max": 10,
           "tb": null,
           "sheet": {
             "0": "Bears",
@@ -8153,229 +8256,12 @@
           ]
         },
         {
-          "name": "Derek",
-          "house": false,
-          "correct": 5,
-          "missed": 4,
-          "void": 0,
-          "remaining": 5,
-          "max": 10,
-          "tb": null,
-          "sheet": {
-            "0": "Bears",
-            "1": "Steelers",
-            "2": "Browns",
-            "3": "Bengals",
-            "4": "Vikings",
-            "5": "Jets",
-            "6": "Texans",
-            "7": "49ers",
-            "8": "Panthers",
-            "9": "Broncos",
-            "10": "Lions",
-            "11": "Rams"
-          },
-          "filedAt": "2026-10-22T18:51:03+00:00",
-          "firstAt": "2026-10-22T18:51:03+00:00",
-          "free": false,
-          "rank": 4,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": [
-            {
-              "id": "homer",
-              "note": "took the Jets, who lost"
-            }
-          ]
-        },
-        {
-          "name": "Devin",
-          "house": false,
-          "correct": 5,
-          "missed": 4,
-          "void": 0,
-          "remaining": 5,
-          "max": 10,
-          "tb": null,
-          "sheet": {
-            "0": "Bears",
-            "1": "Steelers",
-            "2": "Browns",
-            "3": "Ravens",
-            "4": "Vikings",
-            "5": "Dolphins",
-            "6": "Texans",
-            "7": "49ers",
-            "8": "Panthers",
-            "9": "Broncos",
-            "10": "Lions",
-            "11": "Rams"
-          },
-          "filedAt": "2026-10-22T00:07:06+00:00",
-          "firstAt": "2026-10-22T00:07:06+00:00",
-          "free": false,
-          "rank": 4,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Josh",
-          "house": false,
-          "correct": 5,
-          "missed": 4,
-          "void": 0,
-          "remaining": 5,
-          "max": 10,
-          "tb": null,
-          "sheet": {
-            "0": "Bears",
-            "1": "Saints",
-            "2": "Browns",
-            "3": "Bengals",
-            "4": "Vikings",
-            "5": "Jets",
-            "6": "Texans",
-            "7": "Falcons",
-            "8": "Panthers",
-            "9": "Broncos",
-            "10": "Lions",
-            "11": "Rams"
-          },
-          "filedAt": "2026-10-22T23:02:41+00:00",
-          "firstAt": "2026-10-22T23:02:41+00:00",
-          "free": false,
-          "rank": 4,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": [
-            {
-              "id": "homer",
-              "note": "took the Jets, who lost"
-            }
-          ]
-        },
-        {
-          "name": "Melissa",
-          "house": false,
-          "correct": 5,
-          "missed": 4,
-          "void": 0,
-          "remaining": 5,
-          "max": 10,
-          "tb": null,
-          "sheet": {
-            "0": "Bears",
-            "1": "Steelers",
-            "2": "Browns",
-            "3": "Bengals",
-            "4": "Vikings",
-            "5": "Jets",
-            "6": "Texans",
-            "7": "49ers",
-            "8": "Panthers",
-            "9": "Broncos",
-            "10": "Lions",
-            "11": "Raiders"
-          },
-          "filedAt": "2026-10-22T06:43:31+00:00",
-          "firstAt": "2026-10-22T06:43:31+00:00",
-          "free": false,
-          "rank": 4,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": [
-            {
-              "id": "homer",
-              "note": "took the Jets, who lost"
-            }
-          ]
-        },
-        {
-          "name": "Ryan Holovics",
-          "house": false,
-          "correct": 5,
-          "missed": 4,
-          "void": 0,
-          "remaining": 5,
-          "max": 10,
-          "tb": null,
-          "sheet": {
-            "0": "Bears",
-            "1": "Steelers",
-            "2": "Browns",
-            "3": "Bengals",
-            "4": "Vikings",
-            "5": "Jets",
-            "6": "Texans",
-            "7": "49ers",
-            "8": "Panthers",
-            "9": "Broncos",
-            "10": "Packers",
-            "11": "Rams"
-          },
-          "filedAt": "2026-10-25T11:43:20+00:00",
-          "firstAt": "2026-10-20T22:40:48+00:00",
-          "free": false,
-          "rank": 4,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": [
-            {
-              "id": "homer",
-              "note": "took the Jets, who lost"
-            }
-          ]
-        },
-        {
-          "name": "Tom",
-          "house": false,
-          "correct": 5,
-          "missed": 4,
-          "void": 0,
-          "remaining": 5,
-          "max": 10,
-          "tb": null,
-          "sheet": {
-            "0": "Bears",
-            "1": "Steelers",
-            "2": "Browns",
-            "3": "Bengals",
-            "4": "Vikings",
-            "5": "Jets",
-            "6": "Texans",
-            "7": "49ers",
-            "8": "Panthers",
-            "9": "Broncos",
-            "10": "Packers",
-            "11": "Raiders"
-          },
-          "filedAt": "2026-10-22T12:26:53+00:00",
-          "firstAt": "2026-10-22T12:26:53+00:00",
-          "free": false,
-          "rank": 4,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": [
-            {
-              "id": "homer",
-              "note": "took the Jets, who lost"
-            }
-          ]
-        },
-        {
           "name": "Wendy",
           "house": false,
-          "correct": 5,
+          "correct": 8,
           "missed": 4,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 10,
           "tb": null,
           "sheet": {
@@ -8395,24 +8281,28 @@
           "filedAt": "2026-10-22T14:11:03+00:00",
           "firstAt": "2026-10-22T14:11:03+00:00",
           "free": false,
-          "rank": 4,
-          "delta": 0,
+          "rank": 1,
+          "delta": 3,
           "state": "alive",
           "paid": true,
           "badges": [
             {
               "id": "homer",
               "note": "took the Jets, who lost"
+            },
+            {
+              "id": "crown",
+              "note": "leading the week"
             }
           ]
         },
         {
           "name": "Andy R",
           "house": false,
-          "correct": 4,
+          "correct": 7,
           "missed": 5,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 9,
           "tb": null,
           "sheet": {
@@ -8432,8 +8322,8 @@
           "filedAt": "2026-10-22T18:22:05+00:00",
           "firstAt": "2026-10-22T18:22:05+00:00",
           "free": false,
-          "rank": 11,
-          "delta": 0,
+          "rank": 6,
+          "delta": 5,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -8444,49 +8334,86 @@
           ]
         },
         {
-          "name": "Ariel",
+          "name": "Arod",
           "house": false,
-          "correct": 4,
+          "correct": 7,
           "missed": 5,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 9,
           "tb": null,
           "sheet": {
-            "0": "Patriots",
-            "1": "Steelers",
+            "0": "Bears",
+            "1": "Saints",
             "2": "Browns",
-            "3": "Ravens",
+            "3": "Bengals",
             "4": "Vikings",
             "5": "Jets",
             "6": "Texans",
-            "7": "49ers",
+            "7": "Falcons",
             "8": "Buccaneers",
             "9": "Broncos",
             "10": "Packers",
-            "11": "Rams"
+            "11": "Raiders"
           },
-          "filedAt": "2026-10-22T22:48:26+00:00",
-          "firstAt": "2026-10-22T22:48:26+00:00",
+          "filedAt": "2026-10-22T21:58:39+00:00",
+          "firstAt": "2026-10-22T21:58:39+00:00",
           "free": false,
-          "rank": 11,
-          "delta": 0,
+          "rank": 6,
+          "delta": -5,
           "state": "alive",
           "paid": true,
           "badges": [
             {
               "id": "homer",
               "note": "took the Jets, who lost"
+            }
+          ]
+        },
+        {
+          "name": "B-rad",
+          "house": false,
+          "correct": 7,
+          "missed": 5,
+          "void": 0,
+          "remaining": 2,
+          "max": 9,
+          "tb": null,
+          "sheet": {
+            "0": "Bears",
+            "1": "Steelers",
+            "2": "Titans",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Dolphins",
+            "6": "Texans",
+            "7": "Falcons",
+            "8": "Buccaneers",
+            "9": "Broncos",
+            "10": "Packers",
+            "11": "Raiders"
+          },
+          "filedAt": "2026-10-23T00:03:19+00:00",
+          "firstAt": "2026-10-23T00:03:19+00:00",
+          "free": false,
+          "rank": 6,
+          "delta": -5,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
             }
           ]
         },
         {
           "name": "Claude",
           "house": true,
-          "correct": 4,
+          "correct": 7,
           "missed": 5,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 9,
           "tb": null,
           "sheet": {
@@ -8506,40 +8433,40 @@
           "filedAt": "2026-10-20T08:06:02+00:00",
           "firstAt": "2026-10-20T08:06:02+00:00",
           "free": false,
-          "rank": 11,
-          "delta": 0,
+          "rank": 6,
+          "delta": 5,
           "state": "house",
           "paid": false,
           "badges": []
         },
         {
-          "name": "Garret",
+          "name": "Melissa",
           "house": false,
-          "correct": 4,
+          "correct": 7,
           "missed": 5,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 9,
           "tb": null,
           "sheet": {
-            "0": "Patriots",
+            "0": "Bears",
             "1": "Steelers",
-            "2": "Titans",
+            "2": "Browns",
             "3": "Bengals",
             "4": "Vikings",
             "5": "Jets",
             "6": "Texans",
             "7": "49ers",
-            "8": "Buccaneers",
+            "8": "Panthers",
             "9": "Broncos",
-            "10": "Packers",
-            "11": "Rams"
+            "10": "Lions",
+            "11": "Raiders"
           },
-          "filedAt": "2026-10-20T22:40:00+00:00",
-          "firstAt": "2026-10-20T22:40:00+00:00",
+          "filedAt": "2026-10-22T06:43:31+00:00",
+          "firstAt": "2026-10-22T06:43:31+00:00",
           "free": false,
-          "rank": 11,
-          "delta": 0,
+          "rank": 6,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -8552,10 +8479,10 @@
         {
           "name": "Mrs. Sombloski",
           "house": false,
-          "correct": 4,
+          "correct": 7,
           "missed": 5,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 9,
           "tb": null,
           "sheet": {
@@ -8575,40 +8502,77 @@
           "filedAt": "2026-10-21T14:44:39+00:00",
           "firstAt": "2026-10-21T14:44:39+00:00",
           "free": false,
-          "rank": 11,
-          "delta": 0,
+          "rank": 6,
+          "delta": 5,
           "state": "alive",
           "paid": true,
           "badges": []
         },
         {
-          "name": "Kaylani & Luka",
+          "name": "Ryan Holovics",
           "house": false,
-          "correct": 3,
-          "missed": 6,
+          "correct": 7,
+          "missed": 5,
           "void": 0,
-          "remaining": 5,
-          "max": 8,
+          "remaining": 2,
+          "max": 9,
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Saints",
-            "2": "Titans",
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers",
+            "9": "Broncos",
+            "10": "Packers",
+            "11": "Rams"
+          },
+          "filedAt": "2026-10-25T11:43:20+00:00",
+          "firstAt": "2026-10-20T22:40:48+00:00",
+          "free": false,
+          "rank": 6,
+          "delta": -2,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "homer",
+              "note": "took the Jets, who lost"
+            }
+          ]
+        },
+        {
+          "name": "Ariel",
+          "house": false,
+          "correct": 6,
+          "missed": 6,
+          "void": 0,
+          "remaining": 2,
+          "max": 8,
+          "tb": null,
+          "sheet": {
+            "0": "Patriots",
+            "1": "Steelers",
+            "2": "Browns",
             "3": "Ravens",
             "4": "Vikings",
             "5": "Jets",
             "6": "Texans",
-            "7": "Falcons",
-            "8": "Panthers",
-            "9": "Cardinals",
-            "10": "Lions",
+            "7": "49ers",
+            "8": "Buccaneers",
+            "9": "Broncos",
+            "10": "Packers",
             "11": "Rams"
           },
-          "filedAt": "2026-10-22T22:59:05+00:00",
-          "firstAt": "2026-10-22T22:59:05+00:00",
+          "filedAt": "2026-10-22T22:48:26+00:00",
+          "firstAt": "2026-10-22T22:48:26+00:00",
           "free": false,
-          "rank": 16,
-          "delta": 0,
+          "rank": 13,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -8618,54 +8582,99 @@
             },
             {
               "id": "coin",
-              "note": "behind Claude, 3–4"
+              "note": "behind Claude, 6–7"
             }
           ]
         },
         {
-          "name": "Leah",
+          "name": "Garret",
           "house": false,
-          "correct": 3,
+          "correct": 6,
           "missed": 6,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 8,
           "tb": null,
           "sheet": {
             "0": "Patriots",
-            "1": "Saints",
+            "1": "Steelers",
             "2": "Titans",
-            "3": "Ravens",
+            "3": "Bengals",
             "4": "Vikings",
-            "5": "Dolphins",
+            "5": "Jets",
             "6": "Texans",
-            "7": "Falcons",
-            "8": "Panthers",
-            "9": "Cardinals",
-            "10": "Lions",
+            "7": "49ers",
+            "8": "Buccaneers",
+            "9": "Broncos",
+            "10": "Packers",
             "11": "Rams"
           },
-          "filedAt": "2026-10-22T22:23:57+00:00",
-          "firstAt": "2026-10-22T22:23:57+00:00",
+          "filedAt": "2026-10-20T22:40:00+00:00",
+          "firstAt": "2026-10-20T22:40:00+00:00",
           "free": false,
-          "rank": 16,
-          "delta": 0,
+          "rank": 13,
+          "delta": -2,
           "state": "alive",
           "paid": true,
           "badges": [
             {
+              "id": "homer",
+              "note": "took the Jets, who lost"
+            },
+            {
               "id": "coin",
-              "note": "behind Claude, 3–4"
+              "note": "behind Claude, 6–7"
+            }
+          ]
+        },
+        {
+          "name": "Tom",
+          "house": false,
+          "correct": 6,
+          "missed": 6,
+          "void": 0,
+          "remaining": 2,
+          "max": 8,
+          "tb": null,
+          "sheet": {
+            "0": "Bears",
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers",
+            "9": "Broncos",
+            "10": "Packers",
+            "11": "Raiders"
+          },
+          "filedAt": "2026-10-22T12:26:53+00:00",
+          "firstAt": "2026-10-22T12:26:53+00:00",
+          "free": false,
+          "rank": 13,
+          "delta": -9,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "homer",
+              "note": "took the Jets, who lost"
+            },
+            {
+              "id": "coin",
+              "note": "behind Claude, 6–7"
             }
           ]
         },
         {
           "name": "Walczyk",
           "house": false,
-          "correct": 3,
+          "correct": 6,
           "missed": 6,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 8,
           "tb": null,
           "sheet": {
@@ -8685,8 +8694,8 @@
           "filedAt": "2026-10-22T22:51:39+00:00",
           "firstAt": "2026-10-22T22:51:39+00:00",
           "free": false,
-          "rank": 16,
-          "delta": 0,
+          "rank": 13,
+          "delta": 3,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -8696,17 +8705,17 @@
             },
             {
               "id": "coin",
-              "note": "behind Claude, 3–4"
+              "note": "behind Claude, 6–7"
             }
           ]
         },
         {
-          "name": "Dan",
+          "name": "Kaylani & Luka",
           "house": false,
-          "correct": 2,
+          "correct": 5,
           "missed": 7,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 7,
           "tb": null,
           "sheet": {
@@ -8717,18 +8726,18 @@
             "4": "Vikings",
             "5": "Jets",
             "6": "Texans",
-            "7": "49ers",
+            "7": "Falcons",
             "8": "Panthers",
-            "9": "Broncos",
+            "9": "Cardinals",
             "10": "Lions",
-            "11": "Raiders"
+            "11": "Rams"
           },
-          "filedAt": "2026-10-21T01:01:09+00:00",
-          "firstAt": "2026-10-21T01:01:09+00:00",
+          "filedAt": "2026-10-22T22:59:05+00:00",
+          "firstAt": "2026-10-22T22:59:05+00:00",
           "free": false,
-          "rank": 19,
-          "delta": 0,
-          "state": "alive",
+          "rank": 17,
+          "delta": -1,
+          "state": "out",
           "paid": true,
           "badges": [
             {
@@ -8737,66 +8746,62 @@
             },
             {
               "id": "coin",
-              "note": "behind Claude, 2–4"
+              "note": "behind Claude, 5–7"
             },
             {
-              "id": "cellar",
-              "note": "last place this week"
+              "id": "dead",
+              "note": "mathematically out"
             }
           ]
         },
         {
-          "name": "Mike Sombloski",
+          "name": "Leah",
           "house": false,
-          "correct": 2,
+          "correct": 5,
           "missed": 7,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 7,
           "tb": null,
           "sheet": {
             "0": "Patriots",
             "1": "Saints",
             "2": "Titans",
-            "3": "Bengals",
+            "3": "Ravens",
             "4": "Vikings",
-            "5": "Jets",
+            "5": "Dolphins",
             "6": "Texans",
-            "7": "49ers",
+            "7": "Falcons",
             "8": "Panthers",
-            "9": "Broncos",
-            "10": "Packers",
+            "9": "Cardinals",
+            "10": "Lions",
             "11": "Rams"
           },
-          "filedAt": "2026-10-21T00:37:23+00:00",
-          "firstAt": "2026-10-21T00:37:23+00:00",
+          "filedAt": "2026-10-22T22:23:57+00:00",
+          "firstAt": "2026-10-22T22:23:57+00:00",
           "free": false,
-          "rank": 19,
-          "delta": 0,
-          "state": "alive",
+          "rank": 17,
+          "delta": -1,
+          "state": "out",
           "paid": true,
           "badges": [
             {
-              "id": "homer",
-              "note": "took the Jets, who lost"
-            },
-            {
               "id": "coin",
-              "note": "behind Claude, 2–4"
+              "note": "behind Claude, 5–7"
             },
             {
-              "id": "cellar",
-              "note": "last place this week"
+              "id": "dead",
+              "note": "mathematically out"
             }
           ]
         },
         {
           "name": "Nate V",
           "house": false,
-          "correct": 2,
+          "correct": 5,
           "missed": 7,
           "void": 0,
-          "remaining": 5,
+          "remaining": 2,
           "max": 7,
           "tb": null,
           "sheet": {
@@ -8816,9 +8821,9 @@
           "filedAt": "2026-10-21T02:11:58+00:00",
           "firstAt": "2026-10-21T02:11:58+00:00",
           "free": false,
-          "rank": 19,
-          "delta": 0,
-          "state": "alive",
+          "rank": 17,
+          "delta": 2,
+          "state": "out",
           "paid": true,
           "badges": [
             {
@@ -8827,7 +8832,105 @@
             },
             {
               "id": "coin",
-              "note": "behind Claude, 2–4"
+              "note": "behind Claude, 5–7"
+            },
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
+          "name": "Dan",
+          "house": false,
+          "correct": 4,
+          "missed": 8,
+          "void": 0,
+          "remaining": 2,
+          "max": 6,
+          "tb": null,
+          "sheet": {
+            "0": "Bears",
+            "1": "Saints",
+            "2": "Titans",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers",
+            "9": "Broncos",
+            "10": "Lions",
+            "11": "Raiders"
+          },
+          "filedAt": "2026-10-21T01:01:09+00:00",
+          "firstAt": "2026-10-21T01:01:09+00:00",
+          "free": false,
+          "rank": 20,
+          "delta": -1,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "homer",
+              "note": "took the Jets, who lost"
+            },
+            {
+              "id": "coin",
+              "note": "behind Claude, 4–7"
+            },
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            },
+            {
+              "id": "cellar",
+              "note": "last place this week"
+            }
+          ]
+        },
+        {
+          "name": "Mike Sombloski",
+          "house": false,
+          "correct": 4,
+          "missed": 8,
+          "void": 0,
+          "remaining": 2,
+          "max": 6,
+          "tb": null,
+          "sheet": {
+            "0": "Patriots",
+            "1": "Saints",
+            "2": "Titans",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers",
+            "9": "Broncos",
+            "10": "Packers",
+            "11": "Rams"
+          },
+          "filedAt": "2026-10-21T00:37:23+00:00",
+          "firstAt": "2026-10-21T00:37:23+00:00",
+          "free": false,
+          "rank": 20,
+          "delta": -1,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "homer",
+              "note": "took the Jets, who lost"
+            },
+            {
+              "id": "coin",
+              "note": "behind Claude, 4–7"
+            },
+            {
+              "id": "dead",
+              "note": "mathematically out"
             },
             {
               "id": "cellar",
@@ -9205,7 +9308,9 @@
             "minorityWho": [
               "Leah",
               "Kaylani & Luka"
-            ]
+            ],
+            "upset": false,
+            "rightN": 18
           },
           "10": {
             "away": 8,
@@ -9220,7 +9325,9 @@
               "Arod",
               "Ariel",
               "B-rad"
-            ]
+            ],
+            "upset": false,
+            "rightN": 12
           },
           "11": {
             "away": 15,
@@ -9232,11 +9339,13 @@
               "Tom",
               "Arod",
               "B-rad"
-            ]
+            ],
+            "upset": false,
+            "rightN": 15
           }
         },
         "upsets": 5,
-        "decided": 9,
+        "decided": 12,
         "best": {
           "game": 6,
           "n": 3,
@@ -9263,89 +9372,7 @@
           "won": false
         }
       },
-      "decides": [
-        {
-          "game": 10,
-          "away": [
-            "Thom",
-            "Garret",
-            "Ryan Holovics",
-            "Mike Sombloski",
-            "Tom",
-            "Arod",
-            "Ariel",
-            "B-rad"
-          ],
-          "home": [
-            "Dan",
-            "Nate V",
-            "Mrs. Sombloski",
-            "Devin",
-            "Melissa",
-            "Wendy",
-            "Andy R",
-            "Derek",
-            "Leah",
-            "Walczyk",
-            "Kaylani & Luka",
-            "Josh"
-          ]
-        },
-        {
-          "game": 11,
-          "away": [
-            "Thom",
-            "Garret",
-            "Ryan Holovics",
-            "Mike Sombloski",
-            "Nate V",
-            "Mrs. Sombloski",
-            "Devin",
-            "Wendy",
-            "Andy R",
-            "Derek",
-            "Leah",
-            "Ariel",
-            "Walczyk",
-            "Kaylani & Luka",
-            "Josh"
-          ],
-          "home": [
-            "Dan",
-            "Melissa",
-            "Tom",
-            "Arod",
-            "B-rad"
-          ]
-        },
-        {
-          "game": 9,
-          "away": [
-            "Thom",
-            "Garret",
-            "Ryan Holovics",
-            "Mike Sombloski",
-            "Dan",
-            "Nate V",
-            "Mrs. Sombloski",
-            "Devin",
-            "Melissa",
-            "Tom",
-            "Wendy",
-            "Andy R",
-            "Derek",
-            "Arod",
-            "Ariel",
-            "Walczyk",
-            "Josh",
-            "B-rad"
-          ],
-          "home": [
-            "Leah",
-            "Kaylani & Luka"
-          ]
-        }
-      ],
+      "decides": [],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -9365,12 +9392,22 @@
         {
           "at": "2026-10-25T20:50:57.604478+00:00",
           "note": "9 of 14 final. Arod and B-rad tied at 6–3."
+        },
+        {
+          "at": "2026-10-25T23:50:59.909285+00:00",
+          "note": "12 of 14 final. 4 tied at 8–4. Out of it: Kaylani & Luka, Leah, Nate V, Dan, Mike Sombloski."
         }
       ],
-      "decidedAtLastRun": 9,
-      "outAtLastRun": [],
-      "columnHead": "Giants Stun Houston. The House Lock Sinks.",
-      "column": "Three sheets called the Giants' 27–21 overtime stunner in Houston: Thom, Nate V and Mrs. Sombloski. The house wasn't one of them; Claude's Lock of the Week was the Texans. Arod, B-rad and Thom share the top at 6–3. Mike Sombloski's exit polls now show him at 2–7, tied in the cellar with Dan and Nate V.\n\nThe week turns on Packers at Lions. All three leaders took Green Bay, and so did Ryan, 5–4 and chasing a third straight; Derek, Devin and Wendy ride Detroit. Rams at Raiders splits the top: Arod and B-rad on Vegas, Thom on L.A. Andy R called the pool rigged. He and the commissioner are both 4–5. Some rig.",
+      "decidedAtLastRun": 12,
+      "outAtLastRun": [
+        "Kaylani & Luka",
+        "Leah",
+        "Nate V",
+        "Dan",
+        "Mike Sombloski"
+      ],
+      "columnHead": "Detroit Flips the Board. Five Tied on Top.",
+      "column": "Detroit's 20–17 win over Green Bay rewrote the standings. Derek, Devin, Josh and Wendy rode the Lions and sit at 8–4, joined by Thom. This afternoon's co-leaders, Arod and B-rad, took Green Bay and the Raiders, went 1–2 in the late window and slid to 7–5, right where Ryan sits chasing his third straight. The house is 7–5 too.\n\nOut of it: Kaylani & Luka, Leah, Nate V, Dan and Mike Sombloski, whose exit polls have now called it at 4–8. Andy R says the pool is rigged. If so, the commissioner rigged it against himself: 6–6, a game behind Andy. Two left, Sunday night and Monday, both sealed until kickoff.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w7.jpg",
@@ -9386,7 +9423,7 @@
       ]
     }
   },
-  "updated": "2026-10-25T23:11:29.165606+00:00",
+  "updated": "2026-10-25T23:50:59.909285+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
