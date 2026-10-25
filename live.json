@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T20:01:04Z",
+ "updated": "2026-10-25T20:03:06Z",
  "week": 7,
  "games": {
   "1": {
@@ -14,9 +14,9 @@
   "2": {
    "state": "in",
    "away": 24,
-   "home": 23,
+   "home": 24,
    "detail": "0:58 - 4th",
-   "line": "Browns 24–23 · 0:58 - 4th"
+   "line": "Tied 24–24 · 0:58 - 4th"
   },
   "3": {
    "state": "post",
@@ -49,15 +49,15 @@
    "state": "in",
    "away": 21,
    "home": 14,
-   "detail": "2:00 - 4th",
-   "line": "Giants 21–14 · 2:00 - 4th"
+   "detail": "1:10 - 4th",
+   "line": "Giants 21–14 · 1:10 - 4th"
   },
   "7": {
    "state": "in",
    "away": 20,
-   "home": 26,
-   "detail": "2:00 - 4th",
-   "line": "Falcons 26–20 · 2:00 - 4th"
+   "home": 29,
+   "detail": "1:56 - 4th",
+   "line": "Falcons 29–20 · 1:56 - 4th"
   },
   "8": {
    "state": "post",
