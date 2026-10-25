@@ -39,7 +39,9 @@ jobs:
         timeout-minutes: 10
         run: |
           pip install --progress-bar off torch --index-url https://download.pytorch.org/whl/cpu
-          pip install --progress-bar off "kokoro>=0.9" soundfile beautifulsoup4 lameenc "misaki[en]" "spacy==3.8.7"  # a newer spaCy broke tokenizer loading on Oct 25
+          pip install --progress-bar off "kokoro>=0.9" soundfile beautifulsoup4 lameenc "misaki[en]" "spacy==3.8.7" "preshed<3.0.10" "cymem<2.0.12" "murmurhash<1.0.14"  # Oct 25: a dependency update broke spaCy's tokenizer load
+          pip install --progress-bar off piper-tts || true
+          mkdir -p voice && curl -sSfL --max-time 120 -o voice/v.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_GB/alba/medium/en_GB-alba-medium.onnx && curl -sSfL --max-time 60 -o voice/v.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_GB/alba/medium/en_GB-alba-medium.onnx.json || true
       - name: Record
         timeout-minutes: 15
         env:
@@ -52,7 +54,8 @@ jobs:
           if [ -n "$SAMPLES" ]; then
             for v in $SAMPLES; do python3 tools/make_audio.py "$D" "$v" "out/sample-$v.mp3" 900; done
           else
-            python3 tools/make_audio.py "$D" "$VOICE" "out/$D.mp3" 2> err.txt || { tail -c 600 err.txt | tr '\n' ' ' | sed 's/^/::error::/'; echo; exit 1; }
+            # Emma (Kokoro) first; if the engine breaks, fall back to a Piper British voice so the button still works
+            python3 tools/make_audio.py "$D" "$VOICE" "out/$D.mp3" 2> err.txt || { tail -c 500 err.txt | tr '\n' ' ' | sed 's/^/::warning::Emma failed, using backup voice: /'; echo; python3 tools/make_audio.py "$D" voice/v.onnx "out/$D.mp3"; }
           fi
           echo "READY=1" >> $GITHUB_ENV
       - name: Publish
