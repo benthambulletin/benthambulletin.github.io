@@ -7490,8 +7490,8 @@
               "B-rad"
             ]
           },
-          "live": "Titans 7–0 · 1st qtr",
-          "liveAt": "2026-10-25T17:10:20Z"
+          "live": "Titans 14–7 · 2nd qtr",
+          "liveAt": "2026-10-25T18:09:12Z"
         },
         {
           "away": "Bengals",
@@ -7530,8 +7530,8 @@
               "Claude"
             ]
           },
-          "live": "Ravens 7–0 · 1st qtr",
-          "liveAt": "2026-10-25T17:10:20Z"
+          "live": "Ravens 10–0 · 2nd qtr",
+          "liveAt": "2026-10-25T18:09:12Z"
         },
         {
           "away": "Colts",
@@ -7570,8 +7570,8 @@
               "Claude"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-10-25T17:10:20Z"
+          "live": "Colts 7–6 · 2nd qtr",
+          "liveAt": "2026-10-25T18:09:12Z"
         },
         {
           "away": "Dolphins",
@@ -7610,8 +7610,8 @@
               "Claude"
             ]
           },
-          "live": "Dolphins 7–0 · 1st qtr",
-          "liveAt": "2026-10-25T17:10:20Z"
+          "live": "Dolphins 14–7 · 2nd qtr",
+          "liveAt": "2026-10-25T18:09:12Z"
         },
         {
           "away": "Giants",
@@ -7650,8 +7650,8 @@
               "Claude"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-10-25T17:10:20Z"
+          "live": "Giants 7–6 · 2nd qtr",
+          "liveAt": "2026-10-25T18:09:12Z"
         },
         {
           "away": "49ers",
@@ -7690,8 +7690,8 @@
               "B-rad"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-10-25T17:10:20Z"
+          "live": "49ers 14–9 · 2nd qtr",
+          "liveAt": "2026-10-25T18:09:12Z"
         },
         {
           "away": "Buccaneers",
@@ -7730,8 +7730,8 @@
               "Claude"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-10-25T17:10:20Z"
+          "live": "Buccaneers 26–6 · 2nd qtr",
+          "liveAt": "2026-10-25T18:09:12Z"
         },
         {
           "away": "Broncos",
@@ -8085,7 +8085,7 @@
           "firstAt": "2026-10-22T22:48:26+00:00",
           "free": false,
           "rank": 10,
-          "delta": 6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8114,7 +8114,7 @@
           "firstAt": "2026-10-22T21:58:39+00:00",
           "free": false,
           "rank": 10,
-          "delta": -9,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8143,7 +8143,7 @@
           "firstAt": "2026-10-21T01:01:09+00:00",
           "free": false,
           "rank": 10,
-          "delta": -9,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8172,7 +8172,7 @@
           "firstAt": "2026-10-20T22:40:00+00:00",
           "free": false,
           "rank": 10,
-          "delta": 6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8201,7 +8201,7 @@
           "firstAt": "2026-10-22T23:02:41+00:00",
           "free": false,
           "rank": 10,
-          "delta": -9,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8230,7 +8230,7 @@
           "firstAt": "2026-10-22T22:59:05+00:00",
           "free": false,
           "rank": 10,
-          "delta": -9,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8259,7 +8259,7 @@
           "firstAt": "2026-10-21T14:44:39+00:00",
           "free": false,
           "rank": 10,
-          "delta": -9,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8288,7 +8288,7 @@
           "firstAt": "2026-10-22T22:51:39+00:00",
           "free": false,
           "rank": 10,
-          "delta": -9,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8317,7 +8317,7 @@
           "firstAt": "2026-10-22T18:22:05+00:00",
           "free": false,
           "rank": 18,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8346,7 +8346,7 @@
           "firstAt": "2026-10-22T22:23:57+00:00",
           "free": false,
           "rank": 18,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8375,7 +8375,7 @@
           "firstAt": "2026-10-21T00:37:23+00:00",
           "free": false,
           "rank": 18,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8404,7 +8404,7 @@
           "firstAt": "2026-10-21T02:11:58+00:00",
           "free": false,
           "rank": 18,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -8938,7 +8938,7 @@
       ]
     }
   },
-  "updated": "2026-10-25T17:11:07.243875+00:00",
+  "updated": "2026-10-25T18:11:24.914398+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
