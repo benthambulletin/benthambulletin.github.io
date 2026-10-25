@@ -1,13 +1,15 @@
 {
- "updated": "2026-10-25T16:33:48Z",
+ "updated": "2026-10-25T16:35:49Z",
  "week": 7,
  "games": {
   "1": {
-   "state": "in",
+   "state": "post",
    "away": 16,
    "home": 10,
-   "detail": "1:01 - 4th",
-   "line": "Steelers 16–10 · 1:01 - 4th"
+   "detail": "Final",
+   "winner": "Steelers",
+   "score": "16–10",
+   "line": "Final · Steelers 16–10"
   },
   "2": {
    "state": "pre",
