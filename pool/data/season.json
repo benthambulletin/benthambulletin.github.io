@@ -7440,8 +7440,34 @@
           "winner": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null
+          "status": "live",
+          "sides": {
+            "Browns": [
+              "Thom",
+              "Ryan Holovics",
+              "Nate V",
+              "Mrs. Sombloski",
+              "Devin",
+              "Melissa",
+              "Tom",
+              "Wendy",
+              "Andy R",
+              "Derek",
+              "Arod",
+              "Ariel",
+              "Walczyk",
+              "Josh",
+              "Claude"
+            ],
+            "Titans": [
+              "Garret",
+              "Mike Sombloski",
+              "Dan",
+              "Leah",
+              "Kaylani & Luka",
+              "B-rad"
+            ]
+          }
         },
         {
           "away": "Bengals",
@@ -7452,8 +7478,34 @@
           "winner": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null
+          "status": "live",
+          "sides": {
+            "Bengals": [
+              "Garret",
+              "Ryan Holovics",
+              "Mike Sombloski",
+              "Melissa",
+              "Tom",
+              "Andy R",
+              "Derek",
+              "Arod",
+              "Josh"
+            ],
+            "Ravens": [
+              "Thom",
+              "Dan",
+              "Nate V",
+              "Mrs. Sombloski",
+              "Devin",
+              "Wendy",
+              "Leah",
+              "Ariel",
+              "Walczyk",
+              "Kaylani & Luka",
+              "B-rad",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Colts",
@@ -7464,8 +7516,34 @@
           "winner": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null
+          "status": "live",
+          "sides": {
+            "Colts": [
+              "Thom",
+              "Nate V",
+              "Mrs. Sombloski"
+            ],
+            "Vikings": [
+              "Garret",
+              "Ryan Holovics",
+              "Mike Sombloski",
+              "Dan",
+              "Devin",
+              "Melissa",
+              "Tom",
+              "Wendy",
+              "Andy R",
+              "Derek",
+              "Arod",
+              "Leah",
+              "Ariel",
+              "Walczyk",
+              "Kaylani & Luka",
+              "Josh",
+              "B-rad",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Dolphins",
@@ -7476,8 +7554,34 @@
           "winner": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null
+          "status": "live",
+          "sides": {
+            "Dolphins": [
+              "Mrs. Sombloski",
+              "Devin",
+              "Leah",
+              "B-rad"
+            ],
+            "Jets": [
+              "Thom",
+              "Garret",
+              "Ryan Holovics",
+              "Mike Sombloski",
+              "Dan",
+              "Nate V",
+              "Melissa",
+              "Tom",
+              "Wendy",
+              "Andy R",
+              "Derek",
+              "Arod",
+              "Ariel",
+              "Walczyk",
+              "Kaylani & Luka",
+              "Josh",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Giants",
@@ -7488,8 +7592,34 @@
           "winner": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null
+          "status": "live",
+          "sides": {
+            "Giants": [
+              "Thom",
+              "Nate V",
+              "Mrs. Sombloski"
+            ],
+            "Texans": [
+              "Garret",
+              "Ryan Holovics",
+              "Mike Sombloski",
+              "Dan",
+              "Devin",
+              "Melissa",
+              "Tom",
+              "Wendy",
+              "Andy R",
+              "Derek",
+              "Arod",
+              "Leah",
+              "Ariel",
+              "Walczyk",
+              "Kaylani & Luka",
+              "Josh",
+              "B-rad",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "49ers",
@@ -7500,8 +7630,34 @@
           "winner": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null
+          "status": "live",
+          "sides": {
+            "49ers": [
+              "Thom",
+              "Garret",
+              "Ryan Holovics",
+              "Mike Sombloski",
+              "Dan",
+              "Nate V",
+              "Mrs. Sombloski",
+              "Devin",
+              "Melissa",
+              "Tom",
+              "Wendy",
+              "Derek",
+              "Ariel",
+              "Walczyk",
+              "Claude"
+            ],
+            "Falcons": [
+              "Andy R",
+              "Arod",
+              "Leah",
+              "Kaylani & Luka",
+              "Josh",
+              "B-rad"
+            ]
+          }
         },
         {
           "away": "Buccaneers",
@@ -7512,8 +7668,34 @@
           "winner": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null
+          "status": "live",
+          "sides": {
+            "Buccaneers": [
+              "Thom",
+              "Garret",
+              "Wendy",
+              "Arod",
+              "Ariel",
+              "B-rad"
+            ],
+            "Panthers": [
+              "Ryan Holovics",
+              "Mike Sombloski",
+              "Dan",
+              "Nate V",
+              "Mrs. Sombloski",
+              "Devin",
+              "Melissa",
+              "Tom",
+              "Andy R",
+              "Derek",
+              "Leah",
+              "Walczyk",
+              "Kaylani & Luka",
+              "Josh",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Broncos",
@@ -7588,7 +7770,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Saints"
+            "1": "Saints",
+            "2": "Browns",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "Falcons",
+            "8": "Buccaneers"
           },
           "filedAt": "2026-10-22T21:58:39+00:00",
           "firstAt": "2026-10-22T21:58:39+00:00",
@@ -7610,7 +7799,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Titans",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Dolphins",
+            "6": "Texans",
+            "7": "Falcons",
+            "8": "Buccaneers"
           },
           "filedAt": "2026-10-23T00:03:19+00:00",
           "firstAt": "2026-10-23T00:03:19+00:00",
@@ -7637,7 +7833,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-20T08:06:02+00:00",
           "firstAt": "2026-10-20T08:06:02+00:00",
@@ -7659,7 +7862,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Saints"
+            "1": "Saints",
+            "2": "Titans",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-21T01:01:09+00:00",
           "firstAt": "2026-10-21T01:01:09+00:00",
@@ -7681,7 +7891,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-22T18:51:03+00:00",
           "firstAt": "2026-10-22T18:51:03+00:00",
@@ -7703,7 +7920,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Dolphins",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-22T00:07:06+00:00",
           "firstAt": "2026-10-22T00:07:06+00:00",
@@ -7725,7 +7949,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Saints"
+            "1": "Saints",
+            "2": "Browns",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "Falcons",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-22T23:02:41+00:00",
           "firstAt": "2026-10-22T23:02:41+00:00",
@@ -7747,7 +7978,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Saints"
+            "1": "Saints",
+            "2": "Titans",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "Falcons",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-22T22:59:05+00:00",
           "firstAt": "2026-10-22T22:59:05+00:00",
@@ -7769,7 +8007,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-22T06:43:31+00:00",
           "firstAt": "2026-10-22T06:43:31+00:00",
@@ -7791,7 +8036,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Saints"
+            "1": "Saints",
+            "2": "Browns",
+            "3": "Ravens",
+            "4": "Colts",
+            "5": "Dolphins",
+            "6": "Giants",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-21T14:44:39+00:00",
           "firstAt": "2026-10-21T14:44:39+00:00",
@@ -7813,7 +8065,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-25T11:43:20+00:00",
           "firstAt": "2026-10-20T22:40:48+00:00",
@@ -7835,7 +8094,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Ravens",
+            "4": "Colts",
+            "5": "Jets",
+            "6": "Giants",
+            "7": "49ers",
+            "8": "Buccaneers"
           },
           "filedAt": "2026-10-20T12:19:32+00:00",
           "firstAt": "2026-10-20T12:19:32+00:00",
@@ -7857,7 +8123,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-22T12:26:53+00:00",
           "firstAt": "2026-10-22T12:26:53+00:00",
@@ -7879,7 +8152,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Saints"
+            "1": "Saints",
+            "2": "Browns",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-22T22:51:39+00:00",
           "firstAt": "2026-10-22T22:51:39+00:00",
@@ -7901,7 +8181,14 @@
           "tb": null,
           "sheet": {
             "0": "Bears",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Buccaneers"
           },
           "filedAt": "2026-10-22T14:11:03+00:00",
           "firstAt": "2026-10-22T14:11:03+00:00",
@@ -7923,7 +8210,14 @@
           "tb": null,
           "sheet": {
             "0": "Patriots",
-            "1": "Saints"
+            "1": "Saints",
+            "2": "Browns",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "Falcons",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-22T18:22:05+00:00",
           "firstAt": "2026-10-22T18:22:05+00:00",
@@ -7945,7 +8239,14 @@
           "tb": null,
           "sheet": {
             "0": "Patriots",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Browns",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Buccaneers"
           },
           "filedAt": "2026-10-22T22:48:26+00:00",
           "firstAt": "2026-10-22T22:48:26+00:00",
@@ -7967,7 +8268,14 @@
           "tb": null,
           "sheet": {
             "0": "Patriots",
-            "1": "Steelers"
+            "1": "Steelers",
+            "2": "Titans",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Buccaneers"
           },
           "filedAt": "2026-10-20T22:40:00+00:00",
           "firstAt": "2026-10-20T22:40:00+00:00",
@@ -7989,7 +8297,14 @@
           "tb": null,
           "sheet": {
             "0": "Patriots",
-            "1": "Saints"
+            "1": "Saints",
+            "2": "Titans",
+            "3": "Ravens",
+            "4": "Vikings",
+            "5": "Dolphins",
+            "6": "Texans",
+            "7": "Falcons",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-22T22:23:57+00:00",
           "firstAt": "2026-10-22T22:23:57+00:00",
@@ -8011,7 +8326,14 @@
           "tb": null,
           "sheet": {
             "0": "Patriots",
-            "1": "Saints"
+            "1": "Saints",
+            "2": "Titans",
+            "3": "Bengals",
+            "4": "Vikings",
+            "5": "Jets",
+            "6": "Texans",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-21T00:37:23+00:00",
           "firstAt": "2026-10-21T00:37:23+00:00",
@@ -8033,7 +8355,14 @@
           "tb": null,
           "sheet": {
             "0": "Patriots",
-            "1": "Saints"
+            "1": "Saints",
+            "2": "Browns",
+            "3": "Ravens",
+            "4": "Colts",
+            "5": "Jets",
+            "6": "Giants",
+            "7": "49ers",
+            "8": "Panthers"
           },
           "filedAt": "2026-10-21T02:11:58+00:00",
           "firstAt": "2026-10-21T02:11:58+00:00",
@@ -8305,6 +8634,92 @@
               "Kaylani & Luka",
               "Josh"
             ]
+          },
+          "2": {
+            "away": 14,
+            "home": 6,
+            "minority": "Titans",
+            "minorityWho": [
+              "Garret",
+              "Mike Sombloski",
+              "Dan",
+              "Leah",
+              "Kaylani & Luka",
+              "B-rad"
+            ]
+          },
+          "3": {
+            "away": 9,
+            "home": 11,
+            "minority": "Bengals",
+            "minorityWho": [
+              "Garret",
+              "Ryan Holovics",
+              "Mike Sombloski",
+              "Melissa",
+              "Tom",
+              "Andy R",
+              "Derek",
+              "Arod",
+              "Josh"
+            ]
+          },
+          "4": {
+            "away": 3,
+            "home": 17,
+            "minority": "Colts",
+            "minorityWho": [
+              "Thom",
+              "Nate V",
+              "Mrs. Sombloski"
+            ]
+          },
+          "5": {
+            "away": 4,
+            "home": 16,
+            "minority": "Dolphins",
+            "minorityWho": [
+              "Mrs. Sombloski",
+              "Devin",
+              "Leah",
+              "B-rad"
+            ]
+          },
+          "6": {
+            "away": 3,
+            "home": 17,
+            "minority": "Giants",
+            "minorityWho": [
+              "Thom",
+              "Nate V",
+              "Mrs. Sombloski"
+            ]
+          },
+          "7": {
+            "away": 14,
+            "home": 6,
+            "minority": "Falcons",
+            "minorityWho": [
+              "Andy R",
+              "Arod",
+              "Leah",
+              "Kaylani & Luka",
+              "Josh",
+              "B-rad"
+            ]
+          },
+          "8": {
+            "away": 6,
+            "home": 14,
+            "minority": "Buccaneers",
+            "minorityWho": [
+              "Thom",
+              "Garret",
+              "Wendy",
+              "Arod",
+              "Ariel",
+              "B-rad"
+            ]
           }
         },
         "upsets": 0,
@@ -8379,6 +8794,87 @@
             "Kaylani & Luka",
             "Josh"
           ]
+        },
+        {
+          "game": 3,
+          "away": [
+            "Garret",
+            "Ryan Holovics",
+            "Mike Sombloski",
+            "Melissa",
+            "Tom",
+            "Andy R",
+            "Derek",
+            "Arod",
+            "Josh"
+          ],
+          "home": [
+            "Thom",
+            "Dan",
+            "Nate V",
+            "Mrs. Sombloski",
+            "Devin",
+            "Wendy",
+            "Leah",
+            "Ariel",
+            "Walczyk",
+            "Kaylani & Luka",
+            "B-rad"
+          ]
+        },
+        {
+          "game": 2,
+          "away": [
+            "Thom",
+            "Ryan Holovics",
+            "Nate V",
+            "Mrs. Sombloski",
+            "Devin",
+            "Melissa",
+            "Tom",
+            "Wendy",
+            "Andy R",
+            "Derek",
+            "Arod",
+            "Ariel",
+            "Walczyk",
+            "Josh"
+          ],
+          "home": [
+            "Garret",
+            "Mike Sombloski",
+            "Dan",
+            "Leah",
+            "Kaylani & Luka",
+            "B-rad"
+          ]
+        },
+        {
+          "game": 7,
+          "away": [
+            "Thom",
+            "Garret",
+            "Ryan Holovics",
+            "Mike Sombloski",
+            "Dan",
+            "Nate V",
+            "Mrs. Sombloski",
+            "Devin",
+            "Melissa",
+            "Tom",
+            "Wendy",
+            "Derek",
+            "Ariel",
+            "Walczyk"
+          ],
+          "home": [
+            "Andy R",
+            "Arod",
+            "Leah",
+            "Kaylani & Luka",
+            "Josh",
+            "B-rad"
+          ]
         }
       ],
       "weekWinners": [],
@@ -8409,7 +8905,7 @@
       ]
     }
   },
-  "updated": "2026-10-25T16:10:53.737044+00:00",
+  "updated": "2026-10-25T17:04:54.553459+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
