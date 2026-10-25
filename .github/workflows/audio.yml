@@ -39,7 +39,7 @@ jobs:
         timeout-minutes: 10
         run: |
           pip install --progress-bar off torch --index-url https://download.pytorch.org/whl/cpu
-          pip install --progress-bar off "kokoro>=0.9" soundfile beautifulsoup4 lameenc "misaki[en]"
+          pip install --progress-bar off "kokoro>=0.9" soundfile beautifulsoup4 lameenc "misaki[en]" "spacy==3.8.7"  # a newer spaCy broke tokenizer loading on Oct 25
       - name: Record
         timeout-minutes: 15
         env:
