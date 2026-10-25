@@ -303,7 +303,7 @@ if len(pts) > 1:
              + "".join(f'<tr><td>{fdate(p["date"])}</td><td>{tracker_margin(p["generic_ballot"])}</td><td>{net(p["trump_net"])}</td><td>{num(p["dem_senate_odds"],0)}%</td><td>{badge_text(p["hochul_margin"])}</td></tr>'
                        for p in reversed(pts)) + "</tbody></table>")
 
-sources = ('<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook Political Report, Sabato\'s Crystal Ball, Emerson College, Marist, Siena, Pollfinity, NYT/Siena, CNN, WRAL/SurveyUSA, Trafalgar, Pollsmax, PoliAgg/VoteHub, Polymarket, Kalshi; '
+sources = ('<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook Political Report, Sabato\'s Crystal Ball, Emerson College, Quinnipiac, Marist, Siena, Pollfinity, Poll Vault, Susquehanna, Franklin &amp; Marshall, NYT/Siena, CNN, WRAL/SurveyUSA, Trafalgar, Pollsmax, PoliAgg/VoteHub, Polymarket, Kalshi; '
            'ballot details from The Ballot Brief (NYS BOE Sept 4 certification), the Erie, Niagara, Monroe and Chautauqua boards of elections, WXXI, WKBW and Chautauqua Today. '
            'Polls are snapshots with margins of error of 3–5 points; a lead inside that range is a coin flip. Compiled each morning; '
            '<a href="/election/data.json">the underlying numbers</a> carry a source link per row.</div>')
