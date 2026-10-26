@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T03:15:37Z",
+ "updated": "2026-10-26T03:17:38Z",
  "week": 7,
  "games": {
   "1": {
@@ -102,11 +102,13 @@
    "line": "Final · Rams 35–21"
   },
   "12": {
-   "state": "in",
+   "state": "post",
    "away": 3,
    "home": 20,
-   "detail": "0:38 - 4th",
-   "line": "Seahawks 20–3 · 0:38 - 4th"
+   "detail": "Final",
+   "winner": "Seahawks",
+   "score": "20–3",
+   "line": "Final · Seahawks 20–3"
   }
  }
 }
