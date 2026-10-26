@@ -4948,5 +4948,16 @@
   "wake_dev_min": 5,
   "bb_high": 87,
   "stress_yday": 38.0
+ },
+ {
+  "date": "2026-10-26",
+  "score": 4,
+  "flags": [
+   "woke early",
+   "short night"
+  ],
+  "wake_dev_min": -123,
+  "bb_high": 82,
+  "stress_yday": 34.0
  }
 ]
