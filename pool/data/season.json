@@ -8135,7 +8135,9 @@
             ]
           },
           "fav": "Seahawks",
-          "line": "Seahawks −3"
+          "line": "Seahawks −3",
+          "live": "Seahawks 3–0 · 2nd qtr",
+          "liveAt": "2026-10-26T01:10:00Z"
         },
         {
           "away": "Cowboys",
@@ -9549,7 +9551,7 @@
       ]
     }
   },
-  "updated": "2026-10-26T00:24:38.558828+00:00",
+  "updated": "2026-10-26T01:11:37.743467+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
