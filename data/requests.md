@@ -33,6 +33,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Sun Nov 1 — Sunday Question answers:** Gregg sent his (form, Oct 25): best costume was "the man from Mercury" — an old motorcycle helmet with the dashboard and backup lights from a Mercury, run off a motorcycle battery, wrapped in black, six inches taller; won first place at Mickey Rats in Jamestown. (Leave out the prize and the ride-home line.)
 - **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
 
 ## Done
