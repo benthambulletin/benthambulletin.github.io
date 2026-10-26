@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-10-26T17:16Z",
+ "generated_utc": "2026-10-26T21:48Z",
  "night_ending": "2026-10-26",
  "last_night": {
   "sleep_h": "7.25",
@@ -11,14 +11,14 @@
   "awake_h": "0.00",
   "bb_high": "82",
   "bb_low": "19",
-  "stress": "23",
+  "stress": "33",
   "rhr": "47",
   "hrv": "",
   "resp": "12.0",
-  "steps": "2904",
+  "steps": "5149",
   "step_goal": "6890",
-  "active_kcal": "133",
-  "intensity_min": "0"
+  "active_kcal": "361",
+  "intensity_min": "6"
  },
  "score": 4,
  "flags": [
