@@ -687,7 +687,7 @@ D.games.forEach(function(g,i){
     var notHouse=function(n){return !ps.some(function(p){return p.house&&p.name===n;});};
     var A=(g.sides[g.away]||[]).filter(notHouse),H=(g.sides[g.home]||[]).filter(notHouse);
     var na=gs?gs.away:A.length, nh=gs?gs.home:H.length;
-    sp='<span class="sp"><b>'+na+'</b> picked '+esc(g.away)+' · <b>'+nh+'</b> '+esc(g.home)+(gs&&gs.upset&&na!==nh?' · <b style="color:var(--red)">upset</b>':'')+'</span>';
+    sp='<span class="sp"><b>'+na+'</b> picked '+esc(g.away)+' · <b>'+nh+'</b> '+esc(g.home)+(gs&&gs.upset?' · <b style="color:var(--red)">upset</b>':'')+(g.line?'<br>Line at kickoff: '+esc(g.line):'')+'</span>';
     if(g.winner&&g.winner!=="TIE"){
       who='<div class="who">'+(g.hits.filter(notHouse).length?'<span class="lab">Right</span><span class="h">'+esc(g.hits.filter(notHouse).join(", "))+'</span><br>':'')+(g.misses.filter(notHouse).length?'<span class="lab">Wrong</span><span class="x">'+esc(g.misses.filter(notHouse).join(", "))+'</span>':'')+'</div>';
     } else {
@@ -739,7 +739,7 @@ secs.trash=h; h="";
 if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
   var S=D.stats, G=D.games;
   h+=orn("By the Numbers",true)+'<div class="num">';
-  h+='<div class="it"><div class="k">Upset rate</div><div class="v">'+S.upsets+' of '+S.decided+'</div><div class="d">Games where the smaller side of the room was right.</div></div>';
+  h+='<div class="it"><div class="k">Upset rate</div><div class="v">'+S.upsets+' of '+S.decided+'</div><div class="d">Games the betting underdog won, using the line at kickoff (injuries included).</div></div>';
   if(S.best&&S.best.who&&(S.best.who.length<=2||S.best.who.length*3<realPs.length)){var bg=G[S.best.game];h+='<div class="it"><div class="k">Best pick</div><div class="v">'+esc(bg.winner)+'</div><div class="d">'+esc(bg.away)+' at '+esc(bg.home)+'. Only <b>'+esc(S.best.who.join(", "))+'</b> had it.</div></div>';}
   if(S.worst&&S.worst.n===0){var wg=G[S.worst.game];h+='<div class="it"><div class="k">Nobody had</div><div class="v">'+esc(wg.winner)+'</div><div class="d">'+esc(wg.away)+' at '+esc(wg.home)+'. The whole room, wrong.</div></div>';}
   var hp=ps.filter(function(p){return p.house;})[0];

@@ -348,7 +348,9 @@ def main():
         w = g.get("winner")
         if w and w != "TIE":
             stats["decided"] += 1
-            gs["upset"] = (w == mino and len(ra) != len(rh))
+            # upset = the betting underdog won (closing line, injuries priced in; Garret, Oct 25). No line on file -> no call.
+            gs["upset"] = bool(g.get("fav")) and w != g["fav"]
+            gs["roomUpset"] = (w == mino and len(ra) != len(rh))
             if gs["upset"]: stats["upsets"] += 1
             right = [n for n in g["hits"] if n != house_name]
             gs["rightN"] = len(right)

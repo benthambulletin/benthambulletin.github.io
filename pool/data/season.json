@@ -7389,7 +7389,9 @@
               "Claude"
             ]
           },
-          "score": "30–24"
+          "score": "30–24",
+          "fav": "Bears",
+          "line": "Bears −3"
         },
         {
           "away": "Steelers",
@@ -7451,7 +7453,9 @@
               "Josh"
             ]
           },
-          "score": "16–10"
+          "score": "16–10",
+          "fav": "Steelers",
+          "line": "Steelers −3"
         },
         {
           "away": "Browns",
@@ -7513,7 +7517,9 @@
               "B-rad"
             ]
           },
-          "score": "27–24"
+          "score": "27–24",
+          "fav": "Browns",
+          "line": "Browns −2.5"
         },
         {
           "away": "Bengals",
@@ -7575,7 +7581,9 @@
               "Claude"
             ]
           },
-          "score": "35–13"
+          "score": "35–13",
+          "fav": "Bengals",
+          "line": "Bengals −1.5 (Lamar Jackson out)"
         },
         {
           "away": "Colts",
@@ -7637,7 +7645,9 @@
               "Claude"
             ]
           },
-          "score": "16–10"
+          "score": "16–10",
+          "fav": "Vikings",
+          "line": "Vikings −6.5"
         },
         {
           "away": "Dolphins",
@@ -7699,7 +7709,9 @@
               "Claude"
             ]
           },
-          "score": "28–25"
+          "score": "28–25",
+          "fav": "Jets",
+          "line": "Jets −4.5"
         },
         {
           "away": "Giants",
@@ -7761,7 +7773,9 @@
               "Claude"
             ]
           },
-          "score": "27–21"
+          "score": "27–21",
+          "fav": "Texans",
+          "line": "Texans −10.5"
         },
         {
           "away": "49ers",
@@ -7823,7 +7837,9 @@
               "B-rad"
             ]
           },
-          "score": "29–20"
+          "score": "29–20",
+          "fav": "49ers",
+          "line": "49ers −2.5"
         },
         {
           "away": "Buccaneers",
@@ -7885,7 +7901,9 @@
               "Claude"
             ]
           },
-          "score": "43–13"
+          "score": "43–13",
+          "fav": "Panthers",
+          "line": "Panthers −3"
         },
         {
           "away": "Broncos",
@@ -7947,7 +7965,9 @@
               "Kaylani & Luka"
             ]
           },
-          "score": "30–16"
+          "score": "30–16",
+          "fav": "Broncos",
+          "line": "Broncos −4.5"
         },
         {
           "away": "Packers",
@@ -8009,7 +8029,9 @@
               "Claude"
             ]
           },
-          "score": "20–17"
+          "score": "20–17",
+          "fav": "Lions",
+          "line": "Lions −3"
         },
         {
           "away": "Rams",
@@ -8071,7 +8093,9 @@
               "B-rad"
             ]
           },
-          "score": "35–21"
+          "score": "35–21",
+          "fav": "Rams",
+          "line": "Rams −3.5"
         },
         {
           "away": "Chiefs",
@@ -8082,8 +8106,36 @@
           "winner": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null
+          "status": "live",
+          "sides": {
+            "Chiefs": [
+              "Thom",
+              "Garret",
+              "Mike Sombloski",
+              "Dan",
+              "Mrs. Sombloski",
+              "Devin",
+              "Melissa",
+              "Wendy",
+              "Derek",
+              "Walczyk",
+              "Kaylani & Luka"
+            ],
+            "Seahawks": [
+              "Ryan Holovics",
+              "Nate V",
+              "Tom",
+              "Andy R",
+              "Arod",
+              "Leah",
+              "Ariel",
+              "Josh",
+              "B-rad",
+              "Claude"
+            ]
+          },
+          "fav": "Seahawks",
+          "line": "Seahawks −3"
         },
         {
           "away": "Cowboys",
@@ -8095,7 +8147,9 @@
           "hits": [],
           "misses": [],
           "status": "sealed",
-          "sides": null
+          "sides": null,
+          "fav": "Cowboys",
+          "line": "Cowboys −4.5"
         }
       ],
       "players": [
@@ -8120,7 +8174,8 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-22T18:51:03+00:00",
           "firstAt": "2026-10-22T18:51:03+00:00",
@@ -8161,7 +8216,8 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-22T00:07:06+00:00",
           "firstAt": "2026-10-22T00:07:06+00:00",
@@ -8198,7 +8254,8 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Seahawks"
           },
           "filedAt": "2026-10-22T23:02:41+00:00",
           "firstAt": "2026-10-22T23:02:41+00:00",
@@ -8239,7 +8296,8 @@
             "8": "Buccaneers",
             "9": "Broncos",
             "10": "Packers",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-20T12:19:32+00:00",
           "firstAt": "2026-10-20T12:19:32+00:00",
@@ -8276,7 +8334,8 @@
             "8": "Buccaneers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-22T14:11:03+00:00",
           "firstAt": "2026-10-22T14:11:03+00:00",
@@ -8317,7 +8376,8 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Seahawks"
           },
           "filedAt": "2026-10-22T18:22:05+00:00",
           "firstAt": "2026-10-22T18:22:05+00:00",
@@ -8354,7 +8414,8 @@
             "8": "Buccaneers",
             "9": "Broncos",
             "10": "Packers",
-            "11": "Raiders"
+            "11": "Raiders",
+            "12": "Seahawks"
           },
           "filedAt": "2026-10-22T21:58:39+00:00",
           "firstAt": "2026-10-22T21:58:39+00:00",
@@ -8391,7 +8452,8 @@
             "8": "Buccaneers",
             "9": "Broncos",
             "10": "Packers",
-            "11": "Raiders"
+            "11": "Raiders",
+            "12": "Seahawks"
           },
           "filedAt": "2026-10-23T00:03:19+00:00",
           "firstAt": "2026-10-23T00:03:19+00:00",
@@ -8428,7 +8490,8 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Seahawks"
           },
           "filedAt": "2026-10-20T08:06:02+00:00",
           "firstAt": "2026-10-20T08:06:02+00:00",
@@ -8460,7 +8523,8 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Raiders"
+            "11": "Raiders",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-22T06:43:31+00:00",
           "firstAt": "2026-10-22T06:43:31+00:00",
@@ -8497,7 +8561,8 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-21T14:44:39+00:00",
           "firstAt": "2026-10-21T14:44:39+00:00",
@@ -8529,13 +8594,14 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Packers",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Seahawks"
           },
           "filedAt": "2026-10-25T11:43:20+00:00",
           "firstAt": "2026-10-20T22:40:48+00:00",
           "free": false,
           "rank": 6,
-          "delta": 0,
+          "delta": 6,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -8566,13 +8632,14 @@
             "8": "Buccaneers",
             "9": "Broncos",
             "10": "Packers",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Seahawks"
           },
           "filedAt": "2026-10-22T22:48:26+00:00",
           "firstAt": "2026-10-22T22:48:26+00:00",
           "free": false,
           "rank": 13,
-          "delta": 0,
+          "delta": -1,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -8607,13 +8674,14 @@
             "8": "Buccaneers",
             "9": "Broncos",
             "10": "Packers",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-20T22:40:00+00:00",
           "firstAt": "2026-10-20T22:40:00+00:00",
           "free": false,
           "rank": 13,
-          "delta": 0,
+          "delta": -1,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -8648,13 +8716,14 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Packers",
-            "11": "Raiders"
+            "11": "Raiders",
+            "12": "Seahawks"
           },
           "filedAt": "2026-10-22T12:26:53+00:00",
           "firstAt": "2026-10-22T12:26:53+00:00",
           "free": false,
           "rank": 13,
-          "delta": 0,
+          "delta": -1,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -8689,13 +8758,14 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-22T22:51:39+00:00",
           "firstAt": "2026-10-22T22:51:39+00:00",
           "free": false,
           "rank": 13,
-          "delta": 0,
+          "delta": -1,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -8730,7 +8800,8 @@
             "8": "Panthers",
             "9": "Cardinals",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-22T22:59:05+00:00",
           "firstAt": "2026-10-22T22:59:05+00:00",
@@ -8775,7 +8846,8 @@
             "8": "Panthers",
             "9": "Cardinals",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Seahawks"
           },
           "filedAt": "2026-10-22T22:23:57+00:00",
           "firstAt": "2026-10-22T22:23:57+00:00",
@@ -8816,7 +8888,8 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Seahawks"
           },
           "filedAt": "2026-10-21T02:11:58+00:00",
           "firstAt": "2026-10-21T02:11:58+00:00",
@@ -8861,7 +8934,8 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Lions",
-            "11": "Raiders"
+            "11": "Raiders",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-21T01:01:09+00:00",
           "firstAt": "2026-10-21T01:01:09+00:00",
@@ -8910,7 +8984,8 @@
             "8": "Panthers",
             "9": "Broncos",
             "10": "Packers",
-            "11": "Rams"
+            "11": "Rams",
+            "12": "Chiefs"
           },
           "filedAt": "2026-10-21T00:37:23+00:00",
           "firstAt": "2026-10-21T00:37:23+00:00",
@@ -9181,6 +9256,7 @@
               "Ariel"
             ],
             "upset": false,
+            "roomUpset": false,
             "rightN": 14
           },
           "1": {
@@ -9200,6 +9276,7 @@
               "Josh"
             ],
             "upset": false,
+            "roomUpset": false,
             "rightN": 10
           },
           "2": {
@@ -9215,6 +9292,7 @@
               "B-rad"
             ],
             "upset": false,
+            "roomUpset": false,
             "rightN": 14
           },
           "3": {
@@ -9232,7 +9310,8 @@
               "Arod",
               "Josh"
             ],
-            "upset": true,
+            "upset": false,
+            "roomUpset": true,
             "rightN": 9
           },
           "4": {
@@ -9244,6 +9323,7 @@
               "Mrs. Sombloski"
             ],
             "upset": false,
+            "roomUpset": false,
             "rightN": 18
           },
           "5": {
@@ -9257,6 +9337,7 @@
               "B-rad"
             ],
             "upset": true,
+            "roomUpset": true,
             "rightN": 4
           },
           "6": {
@@ -9269,6 +9350,7 @@
               "Mrs. Sombloski"
             ],
             "upset": true,
+            "roomUpset": true,
             "rightN": 3
           },
           "7": {
@@ -9284,6 +9366,7 @@
               "B-rad"
             ],
             "upset": true,
+            "roomUpset": true,
             "rightN": 6
           },
           "8": {
@@ -9299,6 +9382,7 @@
               "B-rad"
             ],
             "upset": true,
+            "roomUpset": true,
             "rightN": 6
           },
           "9": {
@@ -9310,6 +9394,7 @@
               "Kaylani & Luka"
             ],
             "upset": false,
+            "roomUpset": false,
             "rightN": 18
           },
           "10": {
@@ -9327,6 +9412,7 @@
               "B-rad"
             ],
             "upset": false,
+            "roomUpset": false,
             "rightN": 12
           },
           "11": {
@@ -9341,10 +9427,27 @@
               "B-rad"
             ],
             "upset": false,
+            "roomUpset": false,
             "rightN": 15
+          },
+          "12": {
+            "away": 11,
+            "home": 9,
+            "minority": "Seahawks",
+            "minorityWho": [
+              "Ryan Holovics",
+              "Nate V",
+              "Tom",
+              "Andy R",
+              "Arod",
+              "Leah",
+              "Ariel",
+              "Josh",
+              "B-rad"
+            ]
           }
         },
-        "upsets": 5,
+        "upsets": 4,
         "decided": 12,
         "best": {
           "game": 6,
@@ -9372,7 +9475,30 @@
           "won": false
         }
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 12,
+          "away": [
+            "Thom",
+            "Garret",
+            "Mrs. Sombloski",
+            "Devin",
+            "Melissa",
+            "Wendy",
+            "Derek",
+            "Walczyk"
+          ],
+          "home": [
+            "Ryan Holovics",
+            "Tom",
+            "Andy R",
+            "Arod",
+            "Ariel",
+            "Josh",
+            "B-rad"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -9423,7 +9549,7 @@
       ]
     }
   },
-  "updated": "2026-10-26T00:11:16.523175+00:00",
+  "updated": "2026-10-26T00:20:27.761776+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",

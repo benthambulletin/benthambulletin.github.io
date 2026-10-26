@@ -108,6 +108,15 @@ never answers them and never acts on them. When Garret answers in chat, set that
 answered questions print at the end of The Column under a small "Ask the Commissioner" label, signed G.; until one is
 answered the column ends with one line on how to ask on the pick sheet (Garret, Oct 13 — no separate box).
 
+**Favorites and upsets (Garret, Oct 25 — the board called Bengals over a Lamar-less Ravens an "upset").** An upset means the
+betting underdog won, never "the smaller side of the room." Each game carries `fav` (team) and `line` ("Bengals −1.5 (Lamar
+Jackson out)") from the line **at kickoff**, two sources, injuries priced in: every KICKOFF LOCK run sets them for the games
+kicking off (re-check injury reports — a starting QB ruled out flips games); NEW WEEK may set opening values, which the lock
+run overwrites. No line on file → no upset call. score.py: `upset` = winner ≠ fav; `roomUpset` keeps the old room measure.
+**Claude's picks follow the news too:** before each Sunday window (the refresh before 9:30 / 1:00 / 4:05) and before the
+Sunday-night and Monday games, check injury reports for every unplayed game; if a starter's status flips the favorite, Claude may
+change that unplayed pick in `housePicks.picks` (like any player resubmitting), never after kickoff and never the Lock once shown.
+
 ## Run: REFRESH (hourly at :07, 8 am–11 pm) — task "hourly refresh"
 Stop if the week is `final` — except on Tuesday after 8 a.m. ET: if the next week still isn't set up, alert Garret once
 ("Week N+1 isn't up — the new-week run didn't land") and stop. S1, S2, S3, S4, S5. **Column:** write it (S6) only
