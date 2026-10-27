@@ -1,13 +1,15 @@
 {
- "updated": "2026-10-27T03:17:18Z",
+ "updated": "2026-10-27T03:19:20Z",
  "week": 7,
  "games": {
   "13": {
-   "state": "in",
+   "state": "post",
    "away": 38,
    "home": 21,
-   "detail": "1:51 - 4th",
-   "line": "Cowboys 38–21 · 1:51 - 4th"
+   "detail": "Final",
+   "winner": "Cowboys",
+   "score": "38–21",
+   "line": "Final · Cowboys 38–21"
   }
  }
 }
