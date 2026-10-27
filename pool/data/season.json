@@ -8199,7 +8199,9 @@
             ]
           },
           "fav": "Cowboys",
-          "line": "Cowboys −4.5 (Jalen Hurts out)"
+          "line": "Cowboys −4.5 (Jalen Hurts out)",
+          "live": "Eagles 14–10 · 2nd qtr",
+          "liveAt": "2026-10-27T01:09:21Z"
         }
       ],
       "players": [
@@ -9646,8 +9648,8 @@
         "Dan",
         "Mike Sombloski"
       ],
-      "columnHead": "Josh Needs Philly. Dallas Means Math.",
-      "column": "Josh is 9–4 and rode the Eagles. Philly wins and he takes the week outright; the Bertburgers are on him. B-rad, Wendy and Thom are on Philly too, mostly to keep him company.\n\nDallas wins and it's a seven-way pileup at 9–5 — Josh, Ryan, Devin, Derek, Andy R, Arod and the house — settled on total points. Vegas says 43.5. Devin and Claude both said 44 and would split it; Josh 48, Ryan 52, Derek 38, Andy R 37, Arod 26. A shootout is Ryan's three-peat. A rock fight is Arod's. The house's Lock, the Texans, already died in Houston. Got a question for the commissioner? Ask it on the pick sheet.",
+      "columnHead": "Philly Up Four. Josh Smells Bertburgers.",
+      "column": "Eagles 14–10 in the second quarter, and if it ends there Josh takes the week outright at 10–4. Nobody else on the Philly side can catch him; Thom, Wendy and B-rad are just riding in his car.\n\nA Dallas comeback makes it a six-way tie at 9–5 — Ryan, Devin, Derek, Andy R, Arod and the house — settled on total points, with 24 already up. Arod's 26 needs both offenses to clock out now. Derek's 38 and Andy R's 37 want a slog; Devin and Claude share 44; Ryan's 52 needs fireworks for the three-peat. The house's Lock, the Texans, is still dead. Got a question for the commissioner? Ask it on the pick sheet.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w7.jpg",
@@ -9663,7 +9665,7 @@
       ]
     }
   },
-  "updated": "2026-10-27T00:20:04.941037+00:00",
+  "updated": "2026-10-27T01:12:41.302294+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
