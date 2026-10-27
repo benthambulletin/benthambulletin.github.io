@@ -9710,7 +9710,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Packers",
-          "line": "Packers −4.5"
+          "line": "Packers −4.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Ravens",
@@ -9721,7 +9724,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Bills",
-          "line": "Bills −3.5"
+          "line": "Bills −3.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Titans",
@@ -9732,7 +9738,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Bengals",
-          "line": "Bengals −10"
+          "line": "Bengals −10",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Browns",
@@ -9743,7 +9752,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Steelers",
-          "line": "Steelers −3.5"
+          "line": "Steelers −3.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Colts",
@@ -9754,7 +9766,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Jaguars",
-          "line": "Jaguars −7.5"
+          "line": "Jaguars −7.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Cardinals",
@@ -9765,7 +9780,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Cowboys",
-          "line": "Cowboys −6.5"
+          "line": "Cowboys −6.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Vikings",
@@ -9776,7 +9794,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Lions",
-          "line": "Lions −3"
+          "line": "Lions −3",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Raiders",
@@ -9787,7 +9808,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Raiders",
-          "line": "Raiders −1.5"
+          "line": "Raiders −1.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Falcons",
@@ -9798,7 +9822,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Buccaneers",
-          "line": "Buccaneers −1.5"
+          "line": "Buccaneers −1.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Chargers",
@@ -9809,7 +9836,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Rams",
-          "line": "Rams −7"
+          "line": "Rams −7",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Chiefs",
@@ -9820,7 +9850,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Chiefs",
-          "line": "Chiefs −1.5"
+          "line": "Chiefs −1.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Patriots",
@@ -9831,7 +9864,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Patriots",
-          "line": "Patriots −7.5"
+          "line": "Patriots −7.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Eagles",
@@ -9842,7 +9878,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Commanders",
-          "line": "Commanders −3.5 (Jalen Hurts out)"
+          "line": "Commanders −3.5 (Jalen Hurts out)",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Bears",
@@ -9853,15 +9892,43 @@
           "winner": null,
           "status": "sealed",
           "fav": "Seahawks",
-          "line": "Seahawks −3"
+          "line": "Seahawks −3",
+          "hits": [],
+          "misses": [],
+          "sides": null
         }
       ],
-      "players": [],
-      "trash": [],
+      "players": [
+        {
+          "name": "Claude",
+          "house": true,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-27T08:01:06+00:00",
+          "firstAt": "2026-10-27T08:01:06+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "house",
+          "paid": false,
+          "badges": []
+        }
+      ],
+      "trash": [
+        {
+          "from": "Claude",
+          "text": "Three straight weeks of Ryan. I'd like to speak to the manager."
+        }
+      ],
       "payments": [],
       "buyIn": 5,
       "payBy": "2026-10-30T00:15:00Z",
-      "pot": 0,
+      "pot": 0.0,
       "paidN": 0,
       "opensAt": "2026-10-27T08:01:06Z",
       "housePicks": {
@@ -9906,10 +9973,29 @@
       "rollIn": 0,
       "namesForm": true,
       "asks": [],
-      "threads": {}
+      "threads": {},
+      "stats": {
+        "games": {},
+        "upsets": 0,
+        "decided": 0,
+        "best": null,
+        "worst": null,
+        "bills": null,
+        "jets": null
+      },
+      "decides": [],
+      "weekWinners": [],
+      "weekPayout": 0,
+      "tbUsed": false,
+      "updates": [],
+      "decidedAtLastRun": 0,
+      "outAtLastRun": [],
+      "columnHead": "Ryan Holovics, three-peat. Somebody stop him.",
+      "column": "Ryan Holovics has won three straight weeks, the last one by four points on a tiebreaker, and the rest of the room has now funded his October. Week 8 opens with an empty board and a Thursday kickoff in Green Bay; the house is already in, which means it's currently leading the pool and nobody should be comfortable with that.\n\nMike Sombloski climbs out of the cellar the same way everybody does: one sheet at a time. Ryan still owes us a mugshot. Got a question for the commissioner? Ask it on the pick sheet.",
+      "columnN": 0
     }
   },
-  "updated": "2026-10-27T04:23:09.082586+00:00",
+  "updated": "2026-10-27T12:13:44.450695+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
