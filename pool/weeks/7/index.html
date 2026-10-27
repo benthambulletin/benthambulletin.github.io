@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="description" content="The Sunday Tax — a weekly NFL pick 'em. Pick every game straight up, talk your trash, lose your face.">
+<meta property="og:title" content="The Sunday Tax">
+<meta property="og:description" content="Pick every game. Talk your trash. Lose your face. Standings, live scores and the column.">
+<meta property="og:image" content="https://benthambulletin.github.io/pool/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://benthambulletin.github.io/pool/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="apple-touch-icon" href="/pool/icon.png">
+<link rel="icon" type="image/png" href="/pool/icon.png">
+<meta name="apple-mobile-web-app-title" content="Sunday Tax">
+<meta name="theme-color" content="#fbf5e4">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>The Sunday Tax</title>
+<style>
+@font-face{font-family:'PF';src:url(/assets/fonts/PlayfairDisplay.ttf);font-weight:100 900;font-display:swap}
+@font-face{font-family:'PFI';src:url(/assets/fonts/PlayfairDisplay-Italic.ttf);font-weight:100 900;font-style:italic;font-display:swap}
+@font-face{font-family:'LO';src:url(/assets/fonts/Lora.ttf);font-weight:100 900;font-display:swap}
+@font-face{font-family:'LOI';src:url(/assets/fonts/Lora-Italic.ttf);font-weight:100 900;font-style:italic;font-display:swap}
+@font-face{font-family:'AR';src:url(/assets/fonts/Archivo.ttf);font-weight:100 900;font-display:swap}
+:root{--paper:#fbf5e4;--ink:#1c170f;--red:#c8302f;--teal:#0e8a8a;--gold:#e8b100;--soft:#5f5238;--rule:#d6cbaf;--wash:#f3ead2}
+*{box-sizing:border-box}
+html{background:#ece4d1}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'LO',Georgia,serif;font-size:1.1rem;line-height:1.5;font-weight:480;-webkit-text-size-adjust:100%;font-variant-numeric:tabular-nums}
+.page{max-width:44rem;margin:0 auto;padding:1.1rem 1.1rem 2.4rem}
+a{color:inherit}
+
+/* masthead */
+.kicker{display:flex;justify-content:space-between;gap:1rem;font-family:'AR';font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-bottom:.4rem}
+.dbl .a{height:3px;background:var(--ink)}.dbl .b{height:1px;background:var(--ink);margin-top:3px}
+.dbl{margin:.5rem 0 .9rem}.dbl.tight{margin:.7rem 0 .6rem}
+h1{margin:.5rem 0 0;text-align:center;font-family:'PF';font-weight:800;font-size:clamp(2.2rem,10vw,3.4rem);line-height:.95;letter-spacing:-.01em}
+.tag{text-align:center;font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-top:.45rem}
+.orn{text-align:center;color:var(--gold);font-size:1rem;letter-spacing:.9em;margin:.5rem 0 .4rem}
+.dateline{text-align:center;font-family:'AR';font-weight:800;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase}
+.dateline .st{color:var(--red)}.dateline .st.final{color:var(--teal)}
+.nav{display:flex;justify-content:center;flex-wrap:wrap;gap:.4rem 1.8rem;font-family:'AR';font-weight:700;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;padding:.8rem 0 .2rem}
+.nav a{text-decoration:none;color:var(--teal)}
+.nav a.about{color:var(--soft)}
+.more{margin:2rem 0 0;padding:.9rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);text-align:center;font-size:.95rem;color:var(--soft)}
+.more a{color:var(--teal);font-family:'AR';font-weight:700;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+
+html{scroll-padding-top:3.4rem}
+.tabs{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:repeat(4,1fr);background:var(--paper);border-bottom:2px solid var(--ink);margin:0 -1.1rem;padding:0 1.1rem}
+.tabs a{display:flex;align-items:center;justify-content:center;min-height:3rem;text-align:center;text-decoration:none;font-family:'AR';font-weight:800;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);border-bottom:4px solid transparent;margin-bottom:-2px}
+.tabs a.on{color:var(--ink);border-bottom-color:var(--red)}
+body.mseason .now,body.mseason #lastW,body.mseason #mug,body.mseason #ack,body.mseason #rNote{display:none!important}
+.tabs a.go{color:var(--red)}
+/* right now */
+.now{margin:1rem 0 0;text-align:center}
+.now .nk{font-family:'AR';font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.now .nk.final{color:var(--teal)}
+.now .nl{font-family:'PF';font-weight:800;font-size:clamp(2rem,10vw,2.9rem);line-height:1.05;margin:.35rem 0 .2rem;letter-spacing:-.01em}
+.now .nl .sc{white-space:nowrap}
+.now .ns{font-family:'AR';font-weight:700;font-size:.85rem;letter-spacing:.04em;color:var(--soft);line-height:1.45}
+.now .ns b{color:var(--ink)}
+.now .nn{margin:.85rem 0 0;padding:.55rem .7rem;border:1px solid var(--rule);background:var(--wash);border-radius:3px;font-family:'AR';font-weight:700;font-size:.8rem;letter-spacing:.03em;color:var(--soft);line-height:1.5}
+.now .nn b{color:var(--ink)}
+#potN{margin-top:.3rem}
+.pd{color:var(--soft);font-family:'AR';font-weight:700;font-size:.8em;margin-left:.3rem}
+.now .nn .cd{color:var(--red);white-space:nowrap}
+.now .fresh{justify-content:center;gap:.2rem 1rem;border-bottom:0;padding:.55rem 0 0;font-size:.7rem}
+.hint{text-align:center;font-family:'AR';font-weight:700;font-size:.78rem;letter-spacing:.06em;color:var(--soft);margin:-.3rem 0 .7rem}
+.brow .rec::after{content:"›";display:inline-block;margin-left:.45rem;color:var(--teal);font-family:'AR';font-weight:800;transition:transform .15s}
+.brow[open] .rec::after{transform:rotate(90deg)}
+details.g summary .s::after{content:"›";display:inline-block;margin-left:.4rem;color:var(--teal);font-weight:800;transition:transform .15s}
+details.g[open] summary .s::after{transform:rotate(90deg)}
+.cal[hidden]{display:none}
+.cal{display:block;margin:.55rem 0 0;font-family:'AR';font-weight:700;font-size:.8rem;letter-spacing:.06em;color:var(--teal);text-decoration:none}
+.pastwk{margin:1rem 0 0;text-align:center;font-family:'AR';font-weight:700;font-size:.85rem;line-height:2}
+.pastwk{text-align:left;display:grid;gap:.45rem}.pastwk a.pw{display:flex;justify-content:space-between;align-items:center;gap:.8rem;padding:.6rem .8rem;border:1px solid var(--rule);border-radius:3px;background:var(--wash);color:var(--ink);text-decoration:none;line-height:1.35}.pastwk a.pw .go{flex:none;color:var(--teal);font-size:.75rem;letter-spacing:.04em;text-decoration:underline;text-underline-offset:3px}.pastwk a.pw:active{background:var(--rule)}
+/* tiles */
+.tiles{display:flex;margin-top:1rem;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.tile{flex:1;text-align:center;padding:.6rem .2rem;border-right:1px solid var(--rule);min-width:0}
+.tile:last-child{border-right:0}
+.tile .v{font-family:'PF';font-weight:800;font-size:clamp(1.4rem,6.5vw,2.3rem);line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile .v.red{color:var(--red)}
+.tile .k{font-family:'AR';font-weight:700;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin-top:.2rem}
+.fresh{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.2rem .6rem;font-family:'AR';font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding:.45rem .1rem;border-bottom:1px solid var(--rule)}
+.fresh b{color:var(--ink);font-weight:700}
+.fresh .dot{display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:var(--teal);margin-right:.35rem;vertical-align:.02em}
+.fresh .dot.stale{background:var(--gold)}.fresh .dot.old{background:var(--red)}
+
+/* the mugshot */
+.lastw{margin:1.2rem 0 0;text-align:center;font-family:'AR';font-weight:700;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
+.lastw b{color:var(--ink);font-family:'PF';font-weight:800;font-size:1.05rem;letter-spacing:.01em;text-transform:none}
+.wbx{margin:1.1rem 0 .2rem;padding:.85rem 1rem .8rem;border:1px solid var(--rule);border-top:3px double var(--ink);background:var(--wash);text-align:center}
+.wbx .wk{font-family:'AR';font-weight:800;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.wbx .wn{font-family:'PF';font-weight:800;font-size:1.9rem;line-height:1.1;margin:.2rem 0 .3rem;color:var(--ink)}
+.wbx .wd{font-family:'AR';font-weight:600;font-size:.85rem;color:var(--ink);line-height:1.4}
+.wbx .wl{display:inline-block;margin-top:.5rem;font-family:'AR';font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--teal);text-decoration:none}
+.mug{margin:1.2rem 0 0;border:3px double var(--ink);padding:.7rem .8rem .6rem;display:grid;grid-template-columns:6.2rem 1fr;gap:0 .9rem;align-items:center;background:var(--wash)}
+.mug img{width:6.2rem;height:6.2rem;object-fit:cover;border:1px solid var(--ink);display:block;transform:rotate(-2deg);box-shadow:2px 2px 0 var(--rule)}
+.mug .k{font-family:'AR';font-weight:800;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.mug .n{font-family:'PF';font-weight:800;font-size:1.5rem;line-height:1.1;margin:.1rem 0}
+.mug .d{font-size:.92rem;color:var(--soft);line-height:1.35}
+.mug .d b{color:var(--ink);font-weight:600}
+.mug.dark{background:#17130d;border-color:#17130d;color:#efe6cf;box-shadow:inset 0 0 0 1px #3a3122}
+.mug.dark .sil{width:6.2rem;height:6.2rem;display:block;border:1px solid #3a3122;transform:rotate(-2deg)}
+.mug.dark .k,.mug.dark .k a{color:#d8473f}
+.mug.dark .n{color:#efe6cf;letter-spacing:.02em}
+.mug.dark .d{color:#b3a787}
+.mug.dark .d b{color:#efe6cf}
+/* cta */
+.cta{display:block;margin:1rem 0 0;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-family:'AR';font-weight:800;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;padding:.85rem;border-radius:3px}
+.cta.quiet{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.closes{text-align:center;font-family:'AR';font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:.45rem 0 0}
+.closes b{color:var(--red)}
+.closes a{color:var(--teal);text-decoration:none}
+.ack{margin:1rem 0 0;border:3px double var(--teal);background:var(--wash);padding:.7rem .9rem;text-align:center}
+.ack .k{font-family:'AR';font-weight:800;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
+.ack .n{font-family:'PF';font-weight:800;font-size:1.35rem;line-height:1.15;margin:.15rem 0}
+.ack .d{font-size:.92rem;color:var(--soft);line-height:1.4}
+.ack .d a{color:var(--teal)}
+.ruleref{color:var(--teal);text-decoration:none}
+.sheet .earned a{color:inherit;text-decoration:underline dotted var(--rule)}
+.cta:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+
+/* sections */
+.sec{text-align:center;font-family:'AR';font-weight:800;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;margin:1.9rem 0 .9rem;padding-top:1.1rem;border-top:1px solid var(--rule);color:var(--red)}
+.sec.t{color:var(--teal)}
+.sec .o{color:var(--gold);margin:0 .7rem;letter-spacing:0}
+#root>.sec:first-of-type{margin-top:1.4rem;padding-top:0;border-top:0}
+.lede{font-family:'PFI';font-style:italic;text-align:center;color:var(--soft);margin:-.4rem 0 .9rem;font-size:1rem}
+
+/* board */
+.brow{border-bottom:1px solid var(--rule)}
+.brow summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1.6rem 1fr auto;gap:0 .6rem;align-items:baseline;padding:.55rem 0}
+.brow summary::-webkit-details-marker{display:none}
+.brow .rk{font-family:'AR';font-weight:700;font-size:.75rem;color:var(--soft)}
+.brow .nm{font-family:'PF';font-weight:700;font-size:1.15rem;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brow .nm .mv{font-family:'AR';font-size:.7rem;font-weight:700;margin-left:.35rem;vertical-align:.1em}
+.brow .nm .mv.up{color:var(--teal)}.brow .nm .mv.dn{color:var(--red)}
+.brow .dots{grid-column:2/4;display:flex;flex-wrap:wrap;gap:3px;margin-top:.3rem}
+.brow .dots i{display:block;width:9px;height:9px;border-radius:50%;background:var(--rule)}
+.brow .dots i.ok{background:var(--teal)}.brow .dots i.no{background:var(--red)}.brow .dots i.p{background:transparent;box-shadow:inset 0 0 0 1.5px var(--soft)}
+.brow .rec{font-family:'PF';font-weight:800;font-size:1.15rem;text-align:right}
+.brow.lead .nm,.brow.lead .rk{color:var(--red)}
+.brow .tag{display:inline-block;font-family:'AR';font-weight:700;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;padding:.05rem .4rem;border:1px solid;border-radius:2px;margin-left:.4rem;vertical-align:.15em}
+.tag.clinched{color:var(--teal);border-color:var(--teal)}.tag.out{color:var(--soft);border-color:var(--rule)}
+.tag.house{color:var(--gold);border-color:var(--gold)}
+.bd{display:inline-block;font-size:1rem;line-height:1;margin-left:.22rem;vertical-align:-.08em;position:relative;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+.bd sup{position:absolute;right:-.45em;top:-.35em;font-family:'AR';font-size:.5rem;font-weight:800;color:var(--paper);background:var(--red);border-radius:.6em;padding:0 .25em;line-height:1.3}
+.bd.crown{animation:bob 2.6s ease-in-out infinite}
+.bd.coin{animation:flip 4s linear infinite}
+.bd.streak{animation:flicker 1.1s ease-in-out infinite}
+.bd.wolf{animation:howl 3s ease-in-out infinite}
+.bd.homer{animation:shake 5s ease-in-out infinite}
+.bd.cellar,.bd.dead{animation:sink 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-2px) rotate(6deg)}}
+@keyframes flip{0%,60%{transform:rotateY(0)}80%{transform:rotateY(180deg)}100%{transform:rotateY(360deg)}}
+@keyframes flicker{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.15) translateY(-1px);opacity:.85}}
+@keyframes howl{0%,80%,100%{transform:scale(1)}90%{transform:scale(1.25) rotate(-8deg)}}
+@keyframes shake{0%,90%,100%{transform:translateX(0)}92%{transform:translateX(-2px)}94%{transform:translateX(2px)}96%{transform:translateX(-2px)}98%{transform:translateX(2px)}}
+@keyframes sink{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
+@media (prefers-reduced-motion:reduce){.bd{animation:none!important}}
+.sheet .earned{margin:.1rem 0 .35rem;color:var(--ink)}
+.sheet .earned .bd{margin:0 .25rem 0 0}
+details.fold summary{list-style:none;cursor:pointer;font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding:.4rem 0}
+details.fold summary::-webkit-details-marker{display:none}
+details.fold summary::after{content:" +";}
+details.fold[open] summary::after{content:" –";}
+.tt{margin:.4rem 0 0;padding:0;list-style:none}
+.tt li{padding:.35rem 0;border-top:1px dotted var(--rule);font-family:'PFI';font-style:italic;font-size:1.05rem;line-height:1.3}
+.tt li b{font-family:'AR';font-style:normal;font-weight:700;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-left:.4rem}
+.brow.house .nm,.brow.house .rec{color:var(--soft)}
+.num{display:grid;grid-template-columns:1fr 1fr;gap:.6rem .9rem}
+@media (max-width:380px){.num{grid-template-columns:1fr}}
+.num .it{border-top:2px solid var(--ink);padding-top:.35rem}
+.num .k{font-family:'AR';font-weight:700;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.num .v{font-family:'PF';font-weight:800;font-size:1.5rem;line-height:1.05;margin:.1rem 0}
+.num .d{font-size:.9rem;color:var(--soft);line-height:1.35}
+.num .d b{color:var(--ink);font-weight:600}
+.sheet{padding:.2rem 0 .7rem 2.2rem;font-family:'AR';font-size:.75rem;line-height:1.7;color:var(--soft)}
+.sheet .ok{color:var(--teal);font-weight:600}.sheet .no{color:var(--red);font-weight:600;text-decoration:line-through}
+.sheet .pend{color:var(--ink)}.sheet .sealed{font-style:italic}
+.bhead{display:grid;grid-template-columns:1.6rem 1fr auto;gap:0 .6rem;font-family:'AR';font-weight:700;font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);padding:.3rem 0;border-bottom:2px solid var(--ink)}
+.bhead span:nth-child(n+3){text-align:right}
+
+/* standings */
+table{width:100%;border-collapse:collapse}
+.stand th{font-family:'AR';font-weight:700;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);text-align:right;padding:.3rem .25rem;border-bottom:2px solid var(--ink)}
+.stand th:first-child,.stand td:first-child{text-align:left;padding-left:0}
+.stand th:last-child,.stand td:last-child{padding-right:0}
+.stand td{padding:.5rem .25rem;border-bottom:1px solid var(--rule);text-align:right;font-size:1.05rem}
+.stand td.nm{font-family:'PF';font-weight:700;font-size:1.15rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:0;width:52%}
+.stand td.nm .rk{display:inline-block;width:1.5rem;font-family:'AR';font-weight:700;font-size:.75rem;color:var(--soft)}
+.stand tr.lead td.nm{color:var(--red)}
+.stand tr.lead td.nm .rk{color:var(--red)}
+.stand td.rec{font-family:'PF';font-weight:800;font-size:1.15rem}
+.stand td.tb{color:var(--soft);font-size:.95rem}
+.filed{font-size:1rem;color:var(--soft)}
+.filed b{color:var(--ink);font-weight:600}
+
+/* column */
+.col p{margin:0 0 .85rem;font-size:1.1rem}
+.col p:first-of-type::first-letter{font-family:'PF';font-weight:800;font-size:3.1rem;line-height:.8;float:left;padding:.28rem .45rem 0 0;color:var(--red)}
+.pq{margin:1rem 0 1rem;padding:.6rem 0 .6rem 1rem;border-left:3px solid var(--gold)}
+.pq .q{font-family:'PFI';font-style:italic;font-size:1.25rem;line-height:1.3}
+.pq .who{font-family:'AR';font-weight:700;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin-top:.35rem}
+.byline{font-family:'AR';font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:-.4rem 0 .8rem;text-align:center}
+.byline.dir{margin:.7rem 0 0;line-height:1.7}
+
+/* slate */
+.slot{font-family:'AR';font-weight:700;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:1rem 0 .3rem;padding-bottom:.2rem;border-bottom:1px solid var(--rule)}
+.g{display:grid;grid-template-columns:1fr auto;gap:.1rem .8rem;align-items:baseline;padding:.45rem 0;border-bottom:1px dotted var(--rule)}
+details.g{display:block}
+details.g summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:.1rem .8rem;align-items:baseline}
+details.g summary::-webkit-details-marker{display:none}
+.g .m{font-family:'PF';font-weight:700;font-size:1.1rem;line-height:1.2}
+.g .m .w{color:var(--teal)}.g .m .at{color:var(--soft);font-family:'LOI';font-style:italic;font-weight:400;font-size:.95rem}
+.g .s{font-family:'AR';font-size:.72rem;color:var(--soft);white-space:nowrap;letter-spacing:.04em}
+.g .s .tv{color:var(--ink);font-weight:700}
+.g .s.fin{font-weight:700;color:var(--ink)}
+.g .s.live{color:var(--red);font-weight:700}
+.g .sp{grid-column:1/3;font-family:'AR';font-size:.7rem;color:var(--soft);letter-spacing:.02em}
+.g .sp b{color:var(--ink);font-weight:700}
+.g .sp .sealed{font-style:italic}
+.g .who{padding:.3rem 0 .2rem;font-family:'AR';font-size:.68rem;line-height:1.55;letter-spacing:.02em}
+.g .who .h{color:var(--teal);font-weight:600}.g .who .x{color:var(--red);font-weight:600}.g .who .side{color:var(--ink)}
+.g .who .lab{color:var(--soft);font-weight:700;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;margin-right:.3rem}
+
+/* season */
+.seas{table-layout:fixed}
+.seas th{white-space:normal;line-height:1.15;vertical-align:bottom;letter-spacing:.05em;font-size:.55rem;padding-left:.1rem;padding-right:.1rem}
+.seas th.sr,.seas td.sr{width:2rem;text-align:left;padding-left:0}
+.seas td.sr{font-family:'AR';font-weight:700;font-size:.72rem;color:var(--soft)}
+.seas td.snm{font-family:'PF';font-weight:700;font-size:.98rem;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}
+.seas th.snm{text-align:left}
+.seas td{padding:.32rem .2rem;font-size:.98rem;font-variant-numeric:tabular-nums;vertical-align:baseline}
+.seas th.sr,.seas td.sr{width:1.9rem}.seas th.rc,.seas td.rc{width:3.3rem}.seas th.sw,.seas td.sw{width:2.3rem}.seas th.money,.seas td.money{width:3.1rem;text-align:right}
+.seas td.rc{font-family:'PF';font-weight:700}
+.seas th.pct,.seas td.pct{width:3.2rem}.seas td.pct{color:var(--soft)}
+.seas td.sw,.seas td.money{color:var(--soft)}
+.seas td.money b{font-family:'PF';font-weight:800;color:var(--teal)}
+.seas td.sw b{color:var(--ink)}
+
+.empty{text-align:center;font-family:'PFI';font-style:italic;color:var(--soft);padding:.4rem 0 .2rem;font-size:1.05rem}
+
+/* colophon */
+.colo{margin-top:2rem;text-align:center;font-family:'AR';font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);line-height:2}
+.sig{font-family:'PFI';font-style:italic;font-size:1.2rem;color:var(--ink);letter-spacing:0;text-transform:none}
+/* calm pass (Oct 2): one accent, no competing colors */
+.tabs a,.tabs a.go{color:var(--soft)}
+.tabs a.on{color:var(--ink)}
+.now .nk,.now .nk.final{color:var(--soft)}
+.now .nn{background:none;border:0;border-top:1px solid var(--rule);border-radius:0;margin:.8rem 0 0;padding:.6rem 0 0;font-size:.82rem}
+.now .nn .cd,.now .nl .cd{color:var(--ink)}
+.now .fresh{font-size:.68rem;padding-top:.6rem;letter-spacing:.06em}
+.now .fresh .dot{display:none}
+.now .fresh{gap:0 .25rem}
+.now .nk .lv{color:var(--red)}
+.sec,.sec.t{color:var(--ink)}
+.sec .o{display:none}
+.hint{font-weight:600;color:var(--soft)}
+.brow.lead .nm,.brow.lead .rk{color:var(--ink)}
+.ruleref,.ruleref.sealed{color:inherit;text-decoration:underline dotted var(--rule);text-underline-offset:3px}
+.slot{color:var(--soft)}
+.g .m .w{color:var(--ink)}
+.g .s.live{color:var(--red)}
+.col p:first-of-type::first-letter{color:var(--ink)}
+.col .aqa p:first-of-type::first-letter{font:inherit;font-size:inherit;float:none;padding:0;color:inherit;line-height:inherit}
+.tag.house{color:var(--soft);border-color:var(--rule)}
+.mug .k{color:var(--soft)}
+.more a,.cal{color:var(--ink)}
+details.g summary .s::after,.brow .rec::after{color:var(--soft)}
+/* expert pass (Oct 2) */
+.now .nn{border:0;margin:.5rem 0 0;padding:0;font-size:.78rem;background:none}
+.now .nn a{color:var(--soft);text-decoration:underline dotted var(--rule);text-underline-offset:3px}
+.now .cta{margin-top:1rem}
+.now .cta[hidden]{display:none}
+.fresh.bottom{justify-content:center;border:0;font-size:.62rem;padding:.2rem 0 0}
+.brow summary{grid-template-columns:2rem 1fr auto auto;align-items:center;padding:.42rem 0}
+.brow .nm{font-size:1.05rem}
+.brow .rec{font-size:1.05rem;grid-column:4}
+.brow .dots{grid-column:3;grid-row:1;max-width:8.6rem;margin:0 .2rem 0 0;gap:2px;justify-content:flex-end}
+.brow .dots i{width:7px;height:7px}
+.filed .nm2{white-space:nowrap}
+details.tmore summary{list-style:none;cursor:pointer;font-family:'AR';font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--soft);padding:.5rem 0}
+details.tmore summary::-webkit-details-marker{display:none}
+details.smore>summary{text-align:center}
+details.smore[open]>summary{display:none}
+details.gmore>summary,details.bmore>summary{text-align:center}
+details.gmore[open]>summary{display:none}
+.whoin{list-style:none;margin:0 auto;padding:0;max-width:22rem}
+.whoin li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.4rem 0;border-bottom:1px dotted var(--rule);font-size:1.02rem}
+.whoin .pst{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.whoin .pst.ok{color:var(--ink)}
+.tt li .rpl{display:block;font-family:'AR';font-style:normal;font-size:.8rem;color:var(--soft);margin:.25rem 0 0 1rem;line-height:1.35}
+.tt li .rpl i{font-style:normal;font-weight:700;color:var(--ink);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase}
+.tt li .rpl{border-left:2px solid var(--rule);padding-left:.5rem;margin-left:.5rem}
+.aqa .rpl{display:block;font-family:'AR';font-size:.8rem;color:var(--soft);margin:.25rem 0 0 .5rem;line-height:1.35;border-left:2px solid var(--rule);padding-left:.5rem}.aqa .rpl i{font-style:normal;font-weight:700;color:var(--ink);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase}
+.aqa details.thr{margin:-.6rem 0 .9rem}.aqa details.thr summary,.aqa a.rlink{list-style:none;cursor:pointer;display:inline-block;font-family:'AR';font-style:normal;font-weight:700;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding:.2rem 0;text-decoration:none}.aqa details.thr summary::-webkit-details-marker{display:none}.aqa a.rlink{color:var(--teal);margin-left:.6rem}
+.tt details.thr{font-style:normal;margin:.15rem 0 0}
+.tt details.thr summary{list-style:none;cursor:pointer;display:inline-block;font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding:.2rem 0}
+.tt details.thr summary::-webkit-details-marker{display:none}
+.tt a.rlink{display:inline-block;font-family:'AR';font-style:normal;font-weight:700;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal,#0e8a8a);text-decoration:none;padding:.2rem 0;margin-left:.1rem}
+.tt li>a.rlink{margin-left:.6rem}
+.rback{margin:.2rem 0 0 1rem}.rback a.rlink{margin-left:0!important;color:var(--teal)}
+.btb{font-size:.95rem;line-height:1.45}
+.btb .lk{border:1px solid var(--rule);padding:.6rem .75rem;margin:0 0 .7rem;background:var(--wash)}
+.btb .lk b{font-family:'PF';font-size:1.1rem}
+.btb ul{list-style:none;margin:0;padding:0}
+.btb li{padding:.3rem 0;border-top:1px dotted var(--rule)}
+.btb .why{color:var(--soft);font-size:.85rem}.btb .lkx{display:block;margin-top:.35rem;font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.03em}
+.btb .tl{margin:.7rem 0 0;font-family:'AR';font-size:.8rem;color:var(--soft);text-align:center}
+.aqa{border-top:1px solid var(--rule);margin-top:.8rem;padding-top:.6rem}.aqa .aqk{font-family:'AR';font-weight:800;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-bottom:.35rem}.col .aqh{font-family:'AR';font-weight:700;font-size:.75rem;color:var(--soft);margin:.7rem 0 0}.aqa p{margin:0 0 .3rem}.aqa .q{font-style:italic}.aqa .a{margin-bottom:.9rem}
+.lng{font-size:.7em;line-height:1.2;white-space:normal;display:inline-block;vertical-align:baseline}
+.stand td.nm:has(.lng),.whoin.two li>span:first-child:has(.lng){white-space:normal}
+.whoin.two{display:grid;grid-template-columns:1fr 1fr;column-gap:1.2rem;max-width:none}
+.whoin.two li{font-size:.95rem;min-width:0}
+.whoin.two li>span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.colhd{font-family:'PF';font-weight:800;font-size:1.35rem;line-height:1.2;text-align:center;margin:0 0 .8rem}
+.rnote{margin:.9rem 0 0;padding:.7rem .85rem;border:1px solid var(--ink);border-left-width:4px;background:var(--wash);font-size:.92rem;line-height:1.5}
+.rnote b{font-family:'AR';font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:.2rem}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="dbl"><div class="a"></div><div class="b"></div></div>
+  <h1 id="poolName">The Sunday Tax</h1>
+  <div class="dbl tight"><div class="a"></div><div class="b"></div></div>
+  <nav class="tabs" aria-label="The Sunday Tax"><a id="tabBoard" class="on" aria-current="page" href="/pool/">Board</a><a id="tabSeason" href="/pool/season/">Season</a><a class="go" href="https://tally.so/r/RGOakJ">Picks</a><a href="/pool/about/">Rules</a></nav>
+
+  <div id="ack"></div>
+  <div class="wbx" id="lastW" hidden></div>
+  <div class="now">
+    <div class="nk" id="nowK"></div>
+    <div class="nl" id="nowL"></div>
+    <div class="ns" id="nowS"></div>
+    <a class="cta" id="cta" href="#">Make your picks</a>
+    <div class="nn" id="potN" hidden></div>
+    <div class="nn" id="nowN" hidden></div>
+  </div>
+  <div class="rnote" id="rNote" hidden></div>
+  <div id="mug"></div>
+
+  <div id="root"></div>
+
+  <div class="fresh bottom" id="fresh"></div>
+  <div class="colo">
+    <span class="sig">— G.</span><br>
+    Scores and picks kept by Claude on a schedule
+  </div>
+</div>
+
+<script id="data" type="application/json">
+{"name": "The Sunday Tax", "season": "NFL 2026", "formUrl": "https://tally.so/r/RGOakJ", "buyIn": 5, "plannedBuyIn": 5, "pot": 95.0, "rollIn": 0, "rollOut": 0, "paidN": 19, "payBy": "2026-10-23T00:15:00Z", "venmo": "@Garret-Bentham", "venmoUrl": "https://venmo.com/Garret-Bentham?txn=pay&amount=5&note=Sunday%20Tax", "anyPaid": true, "week": 7, "status": "final", "updated": "2026-10-27T04:23:09Z", "games": [{"away": "Patriots", "home": "Bears", "kickoff": "2026-10-23T00:15:00Z", "when": "Thu 8:15 PM", "tv": "Prime Video", "winner": "Bears", "hits": ["Thom", "Ryan Holovics", "Dan", "Mrs. Sombloski", "Devin", "Melissa", "Tom", "Wendy", "Derek", "Arod", "Walczyk", "Kaylani & Luka", "Josh", "B-rad", "Claude"], "misses": ["Garret", "Mike Sombloski", "Nate V", "Andy R", "Leah", "Ariel"], "status": "final", "sides": {"Patriots": ["Garret", "Mike Sombloski", "Nate V", "Andy R", "Leah", "Ariel"], "Bears": ["Thom", "Ryan Holovics", "Dan", "Mrs. Sombloski", "Devin", "Melissa", "Tom", "Wendy", "Derek", "Arod", "Walczyk", "Kaylani & Luka", "Josh", "B-rad", "Claude"]}, "score": "30–24", "fav": "Bears", "line": "Bears −3"}, {"away": "Steelers", "home": "Saints", "kickoff": "2026-10-25T13:30:00Z", "when": "Sun 9:30 AM · Paris", "tv": "NFL Network", "winner": "Steelers", "hits": ["Thom", "Garret", "Ryan Holovics", "Devin", "Melissa", "Tom", "Wendy", "Derek", "Ariel", "B-rad", "Claude"], "misses": ["Mike Sombloski", "Dan", "Nate V", "Mrs. Sombloski", "Andy R", "Arod", "Leah", "Walczyk", "Kaylani & Luka", "Josh"], "status": "final", "sides": {"Steelers": ["Thom", "Garret", "Ryan Holovics", "Devin", "Melissa", "Tom", "Wendy", "Derek", "Ariel", "B-rad", "Claude"], "Saints": ["Mike Sombloski", "Dan", "Nate V", "Mrs. Sombloski", "Andy R", "Arod", "Leah", "Walczyk", "Kaylani & Luka", "Josh"]}, "score": "16–10", "fav": "Steelers", "line": "Steelers −3"}, {"away": "Browns", "home": "Titans", "kickoff": "2026-10-25T17:00:00Z", "when": "Sun 1:00 PM", "tv": "CBS", "winner": "Browns", "hits": ["Thom", "Ryan Holovics", "Nate V", "Mrs. Sombloski", "Devin", "Melissa", "Tom", "Wendy", "Andy R", "Derek", "Arod", "Ariel", "Walczyk", "Josh", "Claude"], "misses": ["Garret", "Mike Sombloski", "Dan", "Leah", "Kaylani & Luka", "B-rad"], "status": "final", "sides": {"Browns": ["Thom", "Ryan Holovics", "Nate V", "Mrs. Sombloski", "Devin", "Melissa", "Tom", "Wendy", "Andy R", "Derek", "Arod", "Ariel", "Walczyk", "Josh", "Claude"], "Titans": ["Garret", "Mike Sombloski", "Dan", "Leah", "Kaylani & Luka", "B-rad"]}, "score": "27–24", "fav": "Browns", "line": "Browns −2.5"}, {"away": "Bengals", "home": "Ravens", "kickoff": "2026-10-25T17:00:00Z", "when": "Sun 1:00 PM", "tv": "CBS", "winner": "Bengals", "hits": ["Garret", "Ryan Holovics", "Mike Sombloski", "Melissa", "Tom", "Andy R", "Derek", "Arod", "Josh"], "misses": ["Thom", "Dan", "Nate V", "Mrs. Sombloski", "Devin", "Wendy", "Leah", "Ariel", "Walczyk", "Kaylani & Luka", "B-rad", "Claude"], "status": "final", "sides": {"Bengals": ["Garret", "Ryan Holovics", "Mike Sombloski", "Melissa", "Tom", "Andy R", "Derek", "Arod", "Josh"], "Ravens": ["Thom", "Dan", "Nate V", "Mrs. Sombloski", "Devin", "Wendy", "Leah", "Ariel", "Walczyk", "Kaylani & Luka", "B-rad", "Claude"]}, "score": "35–13", "fav": "Bengals", "line": "Bengals −1.5 (Lamar Jackson out)"}, {"away": "Colts", "home": "Vikings", "kickoff": "2026-10-25T17:00:00Z", "when": "Sun 1:00 PM", "tv": "CBS", "winner": "Vikings", "hits": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Dan", "Devin", "Melissa", "Tom", "Wendy", "Andy R", "Derek", "Arod", "Leah", "Ariel", "Walczyk", "Kaylani & Luka", "Josh", "B-rad", "Claude"], "misses": ["Nate V", "Mrs. Sombloski"], "status": "final", "sides": {"Colts": ["Nate V", "Mrs. Sombloski"], "Vikings": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Dan", "Devin", "Melissa", "Tom", "Wendy", "Andy R", "Derek", "Arod", "Leah", "Ariel", "Walczyk", "Kaylani & Luka", "Josh", "B-rad", "Claude"]}, "score": "16–10", "fav": "Vikings", "line": "Vikings −6.5"}, {"away": "Dolphins", "home": "Jets", "kickoff": "2026-10-25T17:00:00Z", "when": "Sun 1:00 PM", "tv": "CBS", "winner": "Dolphins", "hits": ["Mrs. Sombloski", "Devin", "Leah", "B-rad"], "misses": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Dan", "Nate V", "Melissa", "Tom", "Wendy", "Andy R", "Derek", "Arod", "Ariel", "Walczyk", "Kaylani & Luka", "Josh", "Claude"], "status": "final", "sides": {"Dolphins": ["Mrs. Sombloski", "Devin", "Leah", "B-rad"], "Jets": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Dan", "Nate V", "Melissa", "Tom", "Wendy", "Andy R", "Derek", "Arod", "Ariel", "Walczyk", "Kaylani & Luka", "Josh", "Claude"]}, "score": "28–25", "fav": "Jets", "line": "Jets −4.5"}, {"away": "Giants", "home": "Texans", "kickoff": "2026-10-25T17:00:00Z", "when": "Sun 1:00 PM", "tv": "FOX", "winner": "Giants", "hits": ["Thom", "Nate V", "Mrs. Sombloski"], "misses": ["Garret", "Ryan Holovics", "Mike Sombloski", "Dan", "Devin", "Melissa", "Tom", "Wendy", "Andy R", "Derek", "Arod", "Leah", "Ariel", "Walczyk", "Kaylani & Luka", "Josh", "B-rad", "Claude"], "status": "final", "sides": {"Giants": ["Thom", "Nate V", "Mrs. Sombloski"], "Texans": ["Garret", "Ryan Holovics", "Mike Sombloski", "Dan", "Devin", "Melissa", "Tom", "Wendy", "Andy R", "Derek", "Arod", "Leah", "Ariel", "Walczyk", "Kaylani & Luka", "Josh", "B-rad", "Claude"]}, "score": "27–21", "fav": "Texans", "line": "Texans −10.5"}, {"away": "49ers", "home": "Falcons", "kickoff": "2026-10-25T17:00:00Z", "when": "Sun 1:00 PM", "tv": "FOX", "winner": "Falcons", "hits": ["Andy R", "Arod", "Leah", "Kaylani & Luka", "Josh", "B-rad"], "misses": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Dan", "Nate V", "Mrs. Sombloski", "Devin", "Melissa", "Tom", "Wendy", "Derek", "Ariel", "Walczyk", "Claude"], "status": "final", "sides": {"49ers": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Dan", "Nate V", "Mrs. Sombloski", "Devin", "Melissa", "Tom", "Wendy", "Derek", "Ariel", "Walczyk", "Claude"], "Falcons": ["Andy R", "Arod", "Leah", "Kaylani & Luka", "Josh", "B-rad"]}, "score": "29–20", "fav": "49ers", "line": "49ers −2.5"}, {"away": "Buccaneers", "home": "Panthers", "kickoff": "2026-10-25T17:00:00Z", "when": "Sun 1:00 PM", "tv": "FOX", "winner": "Buccaneers", "hits": ["Thom", "Garret", "Wendy", "Arod", "Ariel", "B-rad"], "misses": ["Ryan Holovics", "Mike Sombloski", "Dan", "Nate V", "Mrs. Sombloski", "Devin", "Melissa", "Tom", "Andy R", "Derek", "Leah", "Walczyk", "Kaylani & Luka", "Josh", "Claude"], "status": "final", "sides": {"Buccaneers": ["Thom", "Garret", "Wendy", "Arod", "Ariel", "B-rad"], "Panthers": ["Ryan Holovics", "Mike Sombloski", "Dan", "Nate V", "Mrs. Sombloski", "Devin", "Melissa", "Tom", "Andy R", "Derek", "Leah", "Walczyk", "Kaylani & Luka", "Josh", "Claude"]}, "score": "43–13", "fav": "Panthers", "line": "Panthers −3"}, {"away": "Broncos", "home": "Cardinals", "kickoff": "2026-10-25T20:05:00Z", "when": "Sun 4:05 PM", "tv": "CBS", "winner": "Broncos", "hits": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Dan", "Nate V", "Mrs. Sombloski", "Devin", "Melissa", "Tom", "Wendy", "Andy R", "Derek", "Arod", "Ariel", "Walczyk", "Josh", "B-rad", "Claude"], "misses": ["Leah", "Kaylani & Luka"], "status": "final", "sides": {"Broncos": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Dan", "Nate V", "Mrs. Sombloski", "Devin", "Melissa", "Tom", "Wendy", "Andy R", "Derek", "Arod", "Ariel", "Walczyk", "Josh", "B-rad", "Claude"], "Cardinals": ["Leah", "Kaylani & Luka"]}, "score": "30–16", "fav": "Broncos", "line": "Broncos −4.5"}, {"away": "Packers", "home": "Lions", "kickoff": "2026-10-25T20:25:00Z", "when": "Sun 4:25 PM", "tv": "FOX", "winner": "Lions", "hits": ["Dan", "Nate V", "Mrs. Sombloski", "Devin", "Melissa", "Wendy", "Andy R", "Derek", "Leah", "Walczyk", "Kaylani & Luka", "Josh", "Claude"], "misses": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Tom", "Arod", "Ariel", "B-rad"], "status": "final", "sides": {"Packers": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Tom", "Arod", "Ariel", "B-rad"], "Lions": ["Dan", "Nate V", "Mrs. Sombloski", "Devin", "Melissa", "Wendy", "Andy R", "Derek", "Leah", "Walczyk", "Kaylani & Luka", "Josh", "Claude"]}, "score": "20–17", "fav": "Lions", "line": "Lions −3"}, {"away": "Rams", "home": "Raiders", "kickoff": "2026-10-25T20:25:00Z", "when": "Sun 4:25 PM", "tv": "FOX", "winner": "Rams", "hits": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Nate V", "Mrs. Sombloski", "Devin", "Wendy", "Andy R", "Derek", "Leah", "Ariel", "Walczyk", "Kaylani & Luka", "Josh", "Claude"], "misses": ["Dan", "Melissa", "Tom", "Arod", "B-rad"], "status": "final", "sides": {"Rams": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Nate V", "Mrs. Sombloski", "Devin", "Wendy", "Andy R", "Derek", "Leah", "Ariel", "Walczyk", "Kaylani & Luka", "Josh", "Claude"], "Raiders": ["Dan", "Melissa", "Tom", "Arod", "B-rad"]}, "score": "35–21", "fav": "Rams", "line": "Rams −3.5"}, {"away": "Chiefs", "home": "Seahawks", "kickoff": "2026-10-26T00:20:00Z", "when": "Sun 8:20 PM", "tv": "NBC", "winner": "Seahawks", "hits": ["Ryan Holovics", "Nate V", "Tom", "Andy R", "Arod", "Leah", "Ariel", "Josh", "B-rad", "Claude"], "misses": ["Thom", "Garret", "Mike Sombloski", "Dan", "Mrs. Sombloski", "Devin", "Melissa", "Wendy", "Derek", "Walczyk", "Kaylani & Luka"], "status": "final", "sides": {"Chiefs": ["Thom", "Garret", "Mike Sombloski", "Dan", "Mrs. Sombloski", "Devin", "Melissa", "Wendy", "Derek", "Walczyk", "Kaylani & Luka"], "Seahawks": ["Ryan Holovics", "Nate V", "Tom", "Andy R", "Arod", "Leah", "Ariel", "Josh", "B-rad", "Claude"]}, "fav": "Seahawks", "line": "Seahawks −3", "score": "20–3"}, {"away": "Cowboys", "home": "Eagles", "kickoff": "2026-10-27T00:15:00Z", "when": "Mon 8:15 PM", "tv": "ESPN/ABC", "winner": "Cowboys", "hits": ["Garret", "Ryan Holovics", "Dan", "Nate V", "Devin", "Melissa", "Tom", "Andy R", "Derek", "Arod", "Walczyk", "Kaylani & Luka", "Claude"], "misses": ["Thom", "Mike Sombloski", "Mrs. Sombloski", "Wendy", "Leah", "Ariel", "Josh", "B-rad"], "status": "final", "sides": {"Cowboys": ["Garret", "Ryan Holovics", "Dan", "Nate V", "Devin", "Melissa", "Tom", "Andy R", "Derek", "Arod", "Walczyk", "Kaylani & Luka", "Claude"], "Eagles": ["Thom", "Mike Sombloski", "Mrs. Sombloski", "Wendy", "Leah", "Ariel", "Josh", "B-rad"]}, "fav": "Cowboys", "line": "Cowboys −4.5 (Jalen Hurts out)", "score": "38–21"}], "tiebreakTotal": 59, "tbUsed": true, "players": [{"name": "Ryan Holovics", "house": false, "correct": 9, "missed": 5, "void": 0, "remaining": 0, "max": 9, "tb": 52, "sheet": {"0": "Bears", "1": "Steelers", "2": "Browns", "3": "Bengals", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Packers", "11": "Rams", "12": "Seahawks", "13": "Cowboys"}, "filedAt": "2026-10-25T11:43:20+00:00", "firstAt": "2026-10-20T22:40:48+00:00", "free": false, "rank": 1, "delta": 1, "state": "alive", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "crown", "note": "won the week on the tiebreaker"}]}, {"name": "Andy R", "house": false, "correct": 9, "missed": 5, "void": 0, "remaining": 0, "max": 9, "tb": 37, "sheet": {"0": "Patriots", "1": "Saints", "2": "Browns", "3": "Bengals", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "Falcons", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Rams", "12": "Seahawks", "13": "Cowboys"}, "filedAt": "2026-10-22T18:22:05+00:00", "firstAt": "2026-10-22T18:22:05+00:00", "free": false, "rank": 2, "delta": 1, "state": "alive", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}]}, {"name": "Arod", "house": false, "correct": 9, "missed": 5, "void": 0, "remaining": 0, "max": 9, "tb": 26, "sheet": {"0": "Bears", "1": "Saints", "2": "Browns", "3": "Bengals", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "Falcons", "8": "Buccaneers", "9": "Broncos", "10": "Packers", "11": "Raiders", "12": "Seahawks", "13": "Cowboys"}, "filedAt": "2026-10-22T21:58:39+00:00", "firstAt": "2026-10-22T21:58:39+00:00", "free": false, "rank": 2, "delta": 1, "state": "alive", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}]}, {"name": "Claude", "house": true, "correct": 9, "missed": 5, "void": 0, "remaining": 0, "max": 9, "tb": 44, "sheet": {"0": "Bears", "1": "Steelers", "2": "Browns", "3": "Ravens", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Rams", "12": "Seahawks", "13": "Cowboys"}, "filedAt": "2026-10-20T08:06:02+00:00", "firstAt": "2026-10-20T08:06:02+00:00", "free": false, "rank": 2, "delta": 1, "state": "house", "paid": false, "badges": []}, {"name": "Derek", "house": false, "correct": 9, "missed": 5, "void": 0, "remaining": 0, "max": 9, "tb": 38, "sheet": {"0": "Bears", "1": "Steelers", "2": "Browns", "3": "Bengals", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Rams", "12": "Chiefs", "13": "Cowboys"}, "filedAt": "2026-10-22T18:51:03+00:00", "firstAt": "2026-10-22T18:51:03+00:00", "free": false, "rank": 2, "delta": 1, "state": "alive", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}]}, {"name": "Devin", "house": false, "correct": 9, "missed": 5, "void": 0, "remaining": 0, "max": 9, "tb": 44, "sheet": {"0": "Bears", "1": "Steelers", "2": "Browns", "3": "Ravens", "4": "Vikings", "5": "Dolphins", "6": "Texans", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Rams", "12": "Chiefs", "13": "Cowboys"}, "filedAt": "2026-10-22T00:07:06+00:00", "firstAt": "2026-10-22T00:07:06+00:00", "free": false, "rank": 2, "delta": 1, "state": "alive", "paid": true, "badges": []}, {"name": "Josh", "house": false, "correct": 9, "missed": 5, "void": 0, "remaining": 0, "max": 9, "tb": 48, "sheet": {"0": "Bears", "1": "Saints", "2": "Browns", "3": "Bengals", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "Falcons", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Rams", "12": "Seahawks", "13": "Eagles"}, "filedAt": "2026-10-22T23:02:41+00:00", "firstAt": "2026-10-22T23:02:41+00:00", "free": false, "rank": 2, "delta": 0, "state": "alive", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}]}, {"name": "B-rad", "house": false, "correct": 8, "missed": 6, "void": 0, "remaining": 0, "max": 8, "tb": 38, "sheet": {"0": "Bears", "1": "Steelers", "2": "Titans", "3": "Ravens", "4": "Vikings", "5": "Dolphins", "6": "Texans", "7": "Falcons", "8": "Buccaneers", "9": "Broncos", "10": "Packers", "11": "Raiders", "12": "Seahawks", "13": "Eagles"}, "filedAt": "2026-10-23T00:03:19+00:00", "firstAt": "2026-10-23T00:03:19+00:00", "free": false, "rank": 8, "delta": -6, "state": "out", "paid": true, "badges": [{"id": "coin", "note": "behind Claude, 8–9"}, {"id": "dead", "note": "mathematically out"}, {"id": "buzzer", "note": "filed inside the last hour before Thursday kickoff"}]}, {"name": "Melissa", "house": false, "correct": 8, "missed": 6, "void": 0, "remaining": 0, "max": 8, "tb": 42, "sheet": {"0": "Bears", "1": "Steelers", "2": "Browns", "3": "Bengals", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Raiders", "12": "Chiefs", "13": "Cowboys"}, "filedAt": "2026-10-22T06:43:31+00:00", "firstAt": "2026-10-22T06:43:31+00:00", "free": false, "rank": 8, "delta": 3, "state": "out", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 8–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Thom", "house": false, "correct": 8, "missed": 6, "void": 0, "remaining": 0, "max": 8, "tb": 45, "sheet": {"0": "Bears", "1": "Steelers", "2": "Browns", "3": "Ravens", "4": "Vikings", "5": "Jets", "6": "Giants", "7": "49ers", "8": "Buccaneers", "9": "Broncos", "10": "Packers", "11": "Rams", "12": "Chiefs", "13": "Eagles"}, "filedAt": "2026-10-20T12:19:32+00:00", "firstAt": "2026-10-20T12:19:32+00:00", "free": true, "rank": 8, "delta": -6, "state": "alive", "paid": false, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 8–9"}]}, {"name": "Tom", "house": false, "correct": 8, "missed": 6, "void": 0, "remaining": 0, "max": 8, "tb": 42, "sheet": {"0": "Bears", "1": "Steelers", "2": "Browns", "3": "Bengals", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Packers", "11": "Raiders", "12": "Seahawks", "13": "Cowboys"}, "filedAt": "2026-10-22T12:26:53+00:00", "firstAt": "2026-10-22T12:26:53+00:00", "free": false, "rank": 8, "delta": 3, "state": "out", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 8–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Wendy", "house": false, "correct": 8, "missed": 6, "void": 0, "remaining": 0, "max": 8, "tb": 21, "sheet": {"0": "Bears", "1": "Steelers", "2": "Browns", "3": "Ravens", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Buccaneers", "9": "Broncos", "10": "Lions", "11": "Rams", "12": "Chiefs", "13": "Eagles"}, "filedAt": "2026-10-22T14:11:03+00:00", "firstAt": "2026-10-22T14:11:03+00:00", "free": false, "rank": 8, "delta": -6, "state": "out", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 8–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Ariel", "house": false, "correct": 7, "missed": 7, "void": 0, "remaining": 0, "max": 7, "tb": 40, "sheet": {"0": "Patriots", "1": "Steelers", "2": "Browns", "3": "Ravens", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Buccaneers", "9": "Broncos", "10": "Packers", "11": "Rams", "12": "Seahawks", "13": "Eagles"}, "filedAt": "2026-10-22T22:48:26+00:00", "firstAt": "2026-10-22T22:48:26+00:00", "free": false, "rank": 13, "delta": -2, "state": "out", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 7–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Garret", "house": false, "correct": 7, "missed": 7, "void": 0, "remaining": 0, "max": 7, "tb": 45, "sheet": {"0": "Patriots", "1": "Steelers", "2": "Titans", "3": "Bengals", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Buccaneers", "9": "Broncos", "10": "Packers", "11": "Rams", "12": "Chiefs", "13": "Cowboys"}, "filedAt": "2026-10-20T22:40:00+00:00", "firstAt": "2026-10-20T22:40:00+00:00", "free": false, "rank": 13, "delta": 2, "state": "out", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 7–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Mrs. Sombloski", "house": false, "correct": 7, "missed": 7, "void": 0, "remaining": 0, "max": 7, "tb": 44, "sheet": {"0": "Bears", "1": "Saints", "2": "Browns", "3": "Ravens", "4": "Colts", "5": "Dolphins", "6": "Giants", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Rams", "12": "Chiefs", "13": "Eagles"}, "filedAt": "2026-10-21T14:44:39+00:00", "firstAt": "2026-10-21T14:44:39+00:00", "free": false, "rank": 13, "delta": -2, "state": "out", "paid": true, "badges": [{"id": "coin", "note": "behind Claude, 7–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Nate V", "house": false, "correct": 7, "missed": 7, "void": 0, "remaining": 0, "max": 7, "tb": 56, "sheet": {"0": "Patriots", "1": "Saints", "2": "Browns", "3": "Ravens", "4": "Colts", "5": "Jets", "6": "Giants", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Rams", "12": "Seahawks", "13": "Cowboys"}, "filedAt": "2026-10-21T02:11:58+00:00", "firstAt": "2026-10-21T02:11:58+00:00", "free": false, "rank": 13, "delta": 2, "state": "out", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 7–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Walczyk", "house": false, "correct": 7, "missed": 7, "void": 0, "remaining": 0, "max": 7, "tb": 56, "sheet": {"0": "Bears", "1": "Saints", "2": "Browns", "3": "Ravens", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Rams", "12": "Chiefs", "13": "Cowboys"}, "filedAt": "2026-10-22T22:51:39+00:00", "firstAt": "2026-10-22T22:51:39+00:00", "free": false, "rank": 13, "delta": 2, "state": "out", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 7–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Kaylani & Luka", "house": false, "correct": 6, "missed": 8, "void": 0, "remaining": 0, "max": 6, "tb": 56, "sheet": {"0": "Bears", "1": "Saints", "2": "Titans", "3": "Ravens", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "Falcons", "8": "Panthers", "9": "Cardinals", "10": "Lions", "11": "Rams", "12": "Chiefs", "13": "Cowboys"}, "filedAt": "2026-10-22T22:59:05+00:00", "firstAt": "2026-10-22T22:59:05+00:00", "free": false, "rank": 18, "delta": 1, "state": "out", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 6–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Leah", "house": false, "correct": 6, "missed": 8, "void": 0, "remaining": 0, "max": 6, "tb": 37, "sheet": {"0": "Patriots", "1": "Saints", "2": "Titans", "3": "Ravens", "4": "Vikings", "5": "Dolphins", "6": "Texans", "7": "Falcons", "8": "Panthers", "9": "Cardinals", "10": "Lions", "11": "Rams", "12": "Seahawks", "13": "Eagles"}, "filedAt": "2026-10-22T22:23:57+00:00", "firstAt": "2026-10-22T22:23:57+00:00", "free": false, "rank": 18, "delta": -3, "state": "out", "paid": true, "badges": [{"id": "coin", "note": "behind Claude, 6–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Dan", "house": false, "correct": 5, "missed": 9, "void": 0, "remaining": 0, "max": 5, "tb": 39, "sheet": {"0": "Bears", "1": "Saints", "2": "Titans", "3": "Ravens", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Raiders", "12": "Chiefs", "13": "Cowboys"}, "filedAt": "2026-10-21T01:01:09+00:00", "firstAt": "2026-10-21T01:01:09+00:00", "free": false, "rank": 20, "delta": 0, "state": "out", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 5–9"}, {"id": "dead", "note": "mathematically out"}]}, {"name": "Mike Sombloski", "house": false, "correct": 4, "missed": 10, "void": 0, "remaining": 0, "max": 4, "tb": 44, "sheet": {"0": "Patriots", "1": "Saints", "2": "Titans", "3": "Bengals", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Packers", "11": "Rams", "12": "Chiefs", "13": "Eagles"}, "filedAt": "2026-10-21T00:37:23+00:00", "firstAt": "2026-10-21T00:37:23+00:00", "free": false, "rank": 21, "delta": -1, "state": "out", "paid": true, "badges": [{"id": "homer", "note": "took the Jets, who lost"}, {"id": "coin", "note": "behind Claude, 4–9"}, {"id": "dead", "note": "mathematically out"}, {"id": "cellar", "note": "last place this week"}]}], "weekWinners": ["Ryan Holovics"], "weekPayout": 95.0, "season_table": [{"name": "Devin", "correct": 39, "missed": 19, "weeksWon": 1, "won": 0.0}, {"name": "Nate V", "correct": 35, "missed": 23, "weeksWon": 0, "won": 0}, {"name": "Dan", "correct": 34, "missed": 24, "weeksWon": 0, "won": 0}, {"name": "Peggy", "correct": 17, "missed": 13, "weeksWon": 0, "won": 0}, {"name": "Thom", "correct": 32, "missed": 26, "weeksWon": 0, "won": 0}, {"name": "Andy R", "correct": 35, "missed": 23, "weeksWon": 0, "won": 0}, {"name": "Derek", "correct": 36, "missed": 22, "weeksWon": 0, "won": 0}, {"name": "Josh", "correct": 35, "missed": 23, "weeksWon": 0, "won": 0}, {"name": "Mike Sombloski", "correct": 31, "missed": 27, "weeksWon": 0, "won": 0}, {"name": "Arod", "correct": 35, "missed": 23, "weeksWon": 0, "won": 0}, {"name": "Garret", "correct": 33, "missed": 25, "weeksWon": 0, "won": 0}, {"name": "Marky Mark", "correct": 9, "missed": 7, "weeksWon": 0, "won": 0}, {"name": "Melissa", "correct": 30, "missed": 28, "weeksWon": 0, "won": 0}, {"name": "Tom", "correct": 35, "missed": 23, "weeksWon": 0, "won": 0}, {"name": "Walczyk", "correct": 27, "missed": 31, "weeksWon": 0, "won": 0}, {"name": "Brandon Goes Commando", "correct": 17, "missed": 11, "weeksWon": 0, "won": 0}, {"name": "Andrew Clarke", "correct": 16, "missed": 14, "weeksWon": 0, "won": 0}, {"name": "Kaylani & Luka", "correct": 32, "missed": 26, "weeksWon": 0, "won": 0}, {"name": "Leah", "correct": 31, "missed": 27, "weeksWon": 0, "won": 0}, {"name": "B-rad", "correct": 33, "missed": 24, "weeksWon": 0, "won": 0}, {"name": "Jeff G", "correct": 7, "missed": 9, "weeksWon": 0, "won": 0}, {"name": "Kara", "correct": 7, "missed": 9, "weeksWon": 0, "won": 0}, {"name": "Ariel", "correct": 27, "missed": 31, "weeksWon": 0, "won": 0}, {"name": "Mrs. Sombloski", "correct": 27, "missed": 21, "weeksWon": 0, "won": 0}, {"name": "Ryan Holovics", "correct": 31, "missed": 11, "weeksWon": 3, "won": 285.0}, {"name": "Wendy", "correct": 15, "missed": 13, "weeksWon": 0, "won": 0}], "trash": [{"from": "Garret", "text": "I run this and its not rigged. Ryan is just on fire."}, {"from": "Ryan Holovics", "text": "You guys really gonna keep letting me take your money??"}, {"from": "Mike Sombloski", "text": "Help, I fell... but the exit polls have me up"}, {"from": "Andy R", "text": "This league is clearly rigged with the commish & Ryan splitting the pot"}, {"from": "Ariel", "text": "Who is this Nate V person?"}, {"from": "Josh", "text": "Bertburgers for everyone if I win"}, {"from": "Claude", "text": "The Rams cost me last week. I'm over it. Mostly. Texans are the lock, and I'm not taking questions."}], "replies": {}, "threads": {"Andy R": [{"id": "ArRvxaN", "from": "Comish", "text": "Bite your tongue.", "at": "2026-10-23T02:53:49.000Z"}]}, "replyUrl": "https://tally.so/r/ArP6rk", "bot": {"picks": {"0": "Bears", "1": "Steelers", "2": "Browns", "3": "Ravens", "4": "Vikings", "5": "Jets", "6": "Texans", "7": "49ers", "8": "Panthers", "9": "Broncos", "10": "Lions", "11": "Rams", "12": "Seahawks", "13": "Cowboys"}, "why": {"0": "Caleb's back; Bears lay a field goal at home.", "1": "Steelers by a field goal in Paris.", "2": "Browns by a point and a half. Ugly game.", "3": "Ravens by three, and Lamar may be back.", "4": "Vikings by six at home.", "5": "Jets by four and a half. Don't make me regret it.", "6": "Biggest line of the week. Texans by nearly ten.", "7": "Niners by four and a half, even without Evans.", "8": "Panthers by three; Mayfield's thumb still iffy.", "9": "Broncos by four and a half on the road.", "10": "Lions by a field goal at Ford Field.", "11": "Rams by six, even without Adams.", "12": "Seahawks by a point and a half at home.", "13": "Hurts is out for the year. Cowboys by five."}, "lock": "6", "lockWhy": "Texans by 9.5 at home over the Giants. Biggest number on the board.", "sealedN": 0}, "botTally": {"Ryan Holovics": 1, "B-rad": 1, "Mrs. Sombloski": 1, "Brandon Goes Commando": 1, "Leah": 1}, "qa": [], "column": "Seven sheets finished 9–5 — Ryan, Josh, Devin, Derek, Andy R, Arod and the house — and the Cowboys settled it 38–21, 59 points that blew past every guess in the room. Ryan's 52 was closest by four, so the man who asked how long you'd keep letting him take his money is back-to-back champ. Andy R called the league rigged and then guessed 37. The commissioner says it isn't rigged; the commissioner also went 7–7.\n\nDumbest pick goes to the house, which made the Texans, 10.5-point favorites, its Lock of the Week and watched the Giants walk out 27–21. Thom, Nate V and Mrs. Sombloski saw it coming; nobody else did. Mike Sombloski, whose exit polls had him up, went 4–10 and owns the cellar outright. Josh's Bertburgers stay in the freezer. Got a question for the commissioner? Ask it on the pick sheet.", "columnHead": "Ryan again. Seven-way tie, one tiebreaker, same guy.", "notice": "", "displayNames": {"Mike Sombloski": "Mike Somballotboxski", "Ryan Holovics": "Ryan", "Josh": "Dickie Smalls"}, "seasonFrom": 4, "updates": [{"at": "2026-10-23T03:25:39.730700+00:00", "note": "1 of 14 final. 14 tied at 1–0."}, {"at": "2026-10-25T17:11:07.243875+00:00", "note": "2 of 14 final. 8 tied at 2–0."}, {"at": "2026-10-25T20:12:14.166782+00:00", "note": "8 of 14 final. Arod and B-rad tied at 6–2."}, {"at": "2026-10-25T20:50:57.604478+00:00", "note": "9 of 14 final. Arod and B-rad tied at 6–3."}, {"at": "2026-10-25T23:50:59.909285+00:00", "note": "12 of 14 final. 4 tied at 8–4. Out of it: Kaylani & Luka, Leah, Nate V, Dan, Mike Sombloski."}, {"at": "2026-10-26T03:50:00.880056+00:00", "note": "13 of 14 final. Josh leads at 9–4. Out of it: Ariel, Melissa, Mrs. Sombloski, Tom, Garret, Walczyk."}, {"at": "2026-10-27T04:23:09.082586+00:00", "note": "Final: Ryan Holovics takes Week 7 on the tiebreaker."}], "decides": [], "stats": {"games": {"0": {"away": 6, "home": 14, "minority": "Patriots", "minorityWho": ["Garret", "Mike Sombloski", "Nate V", "Andy R", "Leah", "Ariel"], "upset": false, "roomUpset": false, "rightN": 14}, "1": {"away": 10, "home": 10, "minority": "Saints", "minorityWho": ["Mike Sombloski", "Dan", "Nate V", "Mrs. Sombloski", "Andy R", "Arod", "Leah", "Walczyk", "Kaylani & Luka", "Josh"], "upset": false, "roomUpset": false, "rightN": 10}, "2": {"away": 14, "home": 6, "minority": "Titans", "minorityWho": ["Garret", "Mike Sombloski", "Dan", "Leah", "Kaylani & Luka", "B-rad"], "upset": false, "roomUpset": false, "rightN": 14}, "3": {"away": 9, "home": 11, "minority": "Bengals", "minorityWho": ["Garret", "Ryan Holovics", "Mike Sombloski", "Melissa", "Tom", "Andy R", "Derek", "Arod", "Josh"], "upset": false, "roomUpset": true, "rightN": 9}, "4": {"away": 2, "home": 18, "minority": "Colts", "minorityWho": ["Nate V", "Mrs. Sombloski"], "upset": false, "roomUpset": false, "rightN": 18}, "5": {"away": 4, "home": 16, "minority": "Dolphins", "minorityWho": ["Mrs. Sombloski", "Devin", "Leah", "B-rad"], "upset": true, "roomUpset": true, "rightN": 4}, "6": {"away": 3, "home": 17, "minority": "Giants", "minorityWho": ["Thom", "Nate V", "Mrs. Sombloski"], "upset": true, "roomUpset": true, "rightN": 3}, "7": {"away": 14, "home": 6, "minority": "Falcons", "minorityWho": ["Andy R", "Arod", "Leah", "Kaylani & Luka", "Josh", "B-rad"], "upset": true, "roomUpset": true, "rightN": 6}, "8": {"away": 6, "home": 14, "minority": "Buccaneers", "minorityWho": ["Thom", "Garret", "Wendy", "Arod", "Ariel", "B-rad"], "upset": true, "roomUpset": true, "rightN": 6}, "9": {"away": 18, "home": 2, "minority": "Cardinals", "minorityWho": ["Leah", "Kaylani & Luka"], "upset": false, "roomUpset": false, "rightN": 18}, "10": {"away": 8, "home": 12, "minority": "Packers", "minorityWho": ["Thom", "Garret", "Ryan Holovics", "Mike Sombloski", "Tom", "Arod", "Ariel", "B-rad"], "upset": false, "roomUpset": false, "rightN": 12}, "11": {"away": 15, "home": 5, "minority": "Raiders", "minorityWho": ["Dan", "Melissa", "Tom", "Arod", "B-rad"], "upset": false, "roomUpset": false, "rightN": 15}, "12": {"away": 11, "home": 9, "minority": "Seahawks", "minorityWho": ["Ryan Holovics", "Nate V", "Tom", "Andy R", "Arod", "Leah", "Ariel", "Josh", "B-rad"], "upset": false, "roomUpset": true, "rightN": 9}, "13": {"away": 12, "home": 8, "minority": "Eagles", "minorityWho": ["Thom", "Mike Sombloski", "Mrs. Sombloski", "Wendy", "Leah", "Ariel", "Josh", "B-rad"], "upset": false, "roomUpset": false, "rightN": 12}}, "upsets": 4, "decided": 14, "best": {"game": 6, "n": 3, "who": ["Thom", "Nate V", "Mrs. Sombloski"]}, "worst": {"game": 6, "n": 3, "who": ["Thom", "Nate V", "Mrs. Sombloski"]}, "bills": null, "jets": {"game": 5, "right": 4, "wrong": 16, "won": false}}, "face": {"photo": "/pool/faces/w7.jpg", "who": "Derek", "by": "Ryan Holovics", "week": 6, "line": ""}, "homer": {"Devin": {"bills": [2, 1], "jets": [3, 1]}, "Nate V": {"bills": [2, 1], "jets": [3, 1]}, "Dan": {"bills": [2, 1], "jets": [2, 2]}, "Peggy": {"bills": [1, 1], "jets": [1, 1]}, "Thom": {"bills": [0, 3], "jets": [2, 2]}, "Andy R": {"bills": [2, 1], "jets": [3, 1]}, "Derek": {"bills": [1, 2], "jets": [2, 2]}, "Josh": {"bills": [2, 1], "jets": [1, 3]}, "Mike Sombloski": {"bills": [2, 1], "jets": [3, 1]}, "Arod": {"bills": [1, 2], "jets": [2, 2]}, "Garret": {"bills": [2, 1], "jets": [3, 1]}, "Marky Mark": {"bills": [0, 1], "jets": [1, 0]}, "Melissa": {"bills": [2, 1], "jets": [2, 2]}, "Tom": {"bills": [2, 1], "jets": [3, 1]}, "Walczyk": {"bills": [2, 1], "jets": [2, 2]}, "Brandon Goes Commando": {"bills": [1, 1], "jets": [2, 0]}, "Andrew Clarke": {"bills": [0, 2], "jets": [1, 1]}, "Claude": {"bills": [2, 1], "jets": [2, 2]}, "Kaylani & Luka": {"bills": [2, 1], "jets": [1, 3]}, "Leah": {"bills": [2, 1], "jets": [3, 1]}, "B-rad": {"bills": [2, 1], "jets": [3, 1]}, "Jeff G": {"bills": [0, 1], "jets": [0, 1]}, "Kara": {"bills": [0, 1], "jets": [1, 0]}, "Ariel": {"bills": [2, 1], "jets": [0, 4]}, "Mrs. Sombloski": {"bills": [2, 0], "jets": [2, 1]}, "Ryan Holovics": {"bills": [1, 1], "jets": [2, 1]}, "Wendy": {"bills": [1, 0], "jets": [1, 1]}}, "house": {"name": "Claude", "enabled": true, "note": "House entry. Picks are drawn at random when the week opens, seeded from the week number, and sealed like everyone else's. Not eligible to win the week."}, "seasonBadges": {}, "streak": {"Devin": 1, "Nate V": 5, "Dan": 1, "Peggy": 1, "Thom": 0, "Andy R": 5, "Derek": 1, "Josh": 0, "Mike Sombloski": 0, "Arod": 2, "Garret": 1, "Marky Mark": 0, "Melissa": 1, "Tom": 2, "Walczyk": 1, "Brandon Goes Commando": 5, "Andrew Clarke": 0, "Kaylani & Luka": 1, "Leah": 0, "B-rad": 0, "Jeff G": 0, "Kara": 0, "Ariel": 0, "Mrs. Sombloski": 0, "Ryan Holovics": 3, "Wendy": 0}, "awards": [], "pastWeeks": [{"week": 7, "winners": ["Ryan Holovics"], "record": "9–5", "tbUsed": true, "payout": 95.0, "tb": [52], "tbTotal": 59, "repeat": true}, {"week": 6, "winners": ["Ryan Holovics"], "record": "10–4", "tbUsed": true, "payout": 95.0, "tb": [52], "tbTotal": 40, "repeat": true}, {"week": 5, "winners": ["Ryan Holovics"], "record": "12–2", "tbUsed": false, "payout": 95.0, "tb": [63], "tbTotal": 71, "repeat": false}, {"week": 4, "winners": ["Devin"], "record": "12–4", "tbUsed": true, "payout": 0, "tb": [47], "tbTotal": 69, "repeat": false}], "archive": true, "tpl": "bc3c7b410f"}
+</script>
+
+<script>
+(function(){
+"use strict";
+var D=JSON.parse(document.getElementById("data").textContent);
+function tick(){
+  var els=document.querySelectorAll(".cd[data-until]"), now=Date.now();
+  for(var i=0;i<els.length;i++){
+    var ms=Date.parse(els[i].getAttribute("data-until"))-now;
+    if(ms<=0){els[i].textContent="locked";continue;}
+    var m=Math.floor(ms/60000), d=Math.floor(m/1440), h=Math.floor(m%1440/60), mm=m%60, ss=Math.floor(ms%60000/1000);
+    /* inside the last hour it's a real clock: minutes and seconds, ticking */
+    els[i].textContent=(d?d+"d "+h+"h":h?h+"h "+mm+"m":mm+":"+(ss<10?"0":"")+ss)+(els[i].closest&&els[i].closest(".nl")?"":" left");
+  }
+}
+setInterval(tick,1000);
+/* live scores: a GitHub job publishes ESPN's scoreboard to the pool-live branch every ~5 minutes */
+document.addEventListener('click',function(e){if(e.target&&e.target.id==='seasAll'){e.preventDefault();window.SEAS=true;render();}});
+document.addEventListener('toggle',function(e){if(e.target&&e.target.id==='smore')window.SMORE=e.target.open;if(e.target&&e.target.id==='gmore')window.GMORE=e.target.open;if(e.target&&e.target.classList&&e.target.classList.contains('thr')){window.THOPEN=window.THOPEN||{};window.THOPEN[e.target.getAttribute('data-k')]=e.target.open;}},true);
+var LIVE_URL="https://raw.githubusercontent.com/benthambulletin/benthambulletin.github.io/pool-live/live.json", LV=null;
+function applyLive(){
+  if(!LV||LV.week!==D.week||!LV.games) return;
+  Object.keys(LV.games).forEach(function(k){var g=D.games[+k], r=LV.games[k]; if(!g||g.winner) return;
+    if(r.state==="in"&&r.line){g.live=r.line; g.liveAt=LV.updated; if(g.status!=="sealed") g.status="live"; g.liveFinal=null;}  /* a sealed game stays sealed until the build reveals its sides */
+    else if(r.state==="post"&&r.line){g.liveFinal=r.line; g.live=null;}});
+  /* count ESPN finals right away: records move the minute a game ends; the next Claude run confirms them */
+  D.players.forEach(function(p){ if(p._c===undefined){p._c=p.correct;p._m=p.missed;} p.correct=p._c; p.missed=p._m; });
+  Object.keys(LV.games).forEach(function(k){var i=+k, g=D.games[i], r=LV.games[k];
+    if(!g||(g.winner&&!g.prov)||r.state!=="post"||!r.winner) return;
+    g.winner=r.winner; g.score=r.score; g.prov=true; g.live=null; g.hits=[]; g.misses=[];
+    if(r.winner==="TIE") return;
+    D.players.forEach(function(p){var pk=p.sheet?p.sheet[String(i)]:null; if(!pk) return;
+      if(pk===r.winner){p.correct++; g.hits.push(p.name);} else {p.missed++; g.misses.push(p.name);} });
+  });
+}
+function inWindow(){var n=Date.now();return D.games.some(function(g){var k=Date.parse(g.kickoff);return n>=k-20*60000&&n<=k+5*3600000;});}
+function pollLive(){
+  if(D.archive||!window.fetch||!inWindow()) return;
+  fetch(LIVE_URL+"?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(J){
+    if(J&&(!LV||J.updated!==LV.updated)){LV=J;render();}
+  }).catch(function(){});
+}
+function render(){
+applyLive();
+var $=function(id){return document.getElementById(id);};
+$("nowK").className="nk"; $("cta").className="cta"; $("mug").innerHTML="";
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function money(n){n=Math.round((+n||0)*100)/100; return "$"+(n%1?n.toFixed(2):String(n));}
+function fmtWhen(iso){try{return new Date(iso).toLocaleString("en-US",{weekday:"short",hour:"numeric",minute:"2-digit",timeZone:"America/New_York"})+" ET";}catch(e){return "";}}
+function DN(n){var d=(D.displayNames||{})[n]; return d?(d.length>18?'<span class="lng">'+esc(d)+'</span>':esc(d)):esc(n);}   /* the board name a player chose; long ones in smaller type */   /* a player's chosen long name, set by Garret */
+function orn(t,teal){return '<div class="sec'+(teal?' t':'')+'"><span class="o">❦</span>'+t+'<span class="o">❦</span></div>';}
+
+var BADGE={
+  crown: {i:"👑",l:"The Crown",d:"Leading the week. Wins it if it holds."},
+  cellar:{i:"💩",l:"Porta Potty",d:"Last place. Somebody has to live there."},
+  wolf:  {i:"🐺",l:"Lone Wolf",d:"The only one in the pool who picked a game right. The number is how many games."},
+  homer: {i:"🦬",l:"Homer Tax",d:"Picked the Bills or the Jets out of loyalty. They lost."},
+  coin:  {i:"🪙",l:"The Coin",d:"Losing to Claude, who picks by coin flip."},
+  dead:  {i:"☠️",l:"Dead",d:"Can't catch the leader this week. Mathematically out."},
+  buzzer:{i:"🚨",l:"Buzzer Beater",d:"Filed inside the last hour before Thursday kickoff."},
+  streak:{i:"🔥",l:"On Fire",d:"Three or more correct picks in a row. The number is the streak."}
+};
+if(D.bot){BADGE.coin={i:"🤖",l:"Beaten by the Bot",d:"Behind Claude's picks this week."};}
+function badgesFor(p){
+  var out=(p.badges||[]).slice();
+  ((D.seasonBadges&&D.seasonBadges[p.name])||[]).forEach(function(b){out.push(b);});
+  (D.awards||[]).forEach(function(a){ if(a.name===p.name) out.push({id:a.badge,note:a.note||""}); });
+  var st=D.streak&&D.streak[p.name];
+  if(st&&st>=3) out.push({id:"streak",n:st,note:st+" straight"});
+  return out.filter(function(b){return BADGE[b.id]&&!(D.status==="final"&&b.id==="dead");});
+}
+function badgeIcons(p){
+  return badgesFor(p).map(function(b){
+    return '<span class="bd '+esc(b.id)+'" title="'+esc(BADGE[b.id].l)+'">'+BADGE[b.id].i+(b.n&&b.n>1?'<sup>'+b.n+'</sup>':'')+'</span>';
+  }).join('');
+}
+document.title=D.name; $("poolName").textContent=D.name;
+$("cta").href=D.formUrl;
+var stTxt={pre:"Picks are open",live:"Games under way",final:"Final"}[D.status]||"";
+$("nowK").textContent='Week '+D.week; if(D.status==="final") $("nowK").classList.add("final");
+(function(){
+  var t=Date.parse(D.updated), mins=isNaN(t)?null:Math.max(0,Math.round((Date.now()-t)/60000));
+  var ago=mins==null?"":(mins<1?"just now":mins<60?mins+" min ago":mins<120?"1 hr ago":Math.round(mins/60)+" hrs ago");
+  var cls=mins==null?"":(mins<=70?"":mins<=180?"stale":"old");
+  var nextTxt=D.status==="final"?"Week "+(D.week+1)+" slate Tuesday":"Updates hourly, 8 AM–11 PM ET";
+  $("fresh").innerHTML='<span>Updated '+esc(fmtWhen(D.updated).replace(/^\w+ /,""))+(D.status==="final"?' · '+nextTxt:'')+'</span>';
+})();
+
+var played=D.games.filter(function(g){return g.winner&&g.winner!=="TIE";}).length;
+var left=D.games.filter(function(g){return !g.winner;}).length;
+var entrants=D.players.filter(function(p){return !p.house;}).length, pot=D.pot||0;
+function PD(p){return D.buyIn>0&&p.paid?'<span class="pd" title="Paid">✓</span>':'';}
+var WW=(D.status==="final"&&D.weekWinners)||[];
+var ps=D.players.slice().sort(function(a,b){return ((WW.indexOf(b.name)>=0)-(WW.indexOf(a.name)>=0))||(b.correct-a.correct)||(a.missed-b.missed)||a.name.localeCompare(b.name);});
+var realPs=ps.filter(function(p){return !p.house;});
+var top=realPs.length?realPs[0].correct:0;
+
+var finals=D.games.filter(function(g){return g.winner;}).length;
+var openN=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)>Date.now();}).length;
+/* the old tiles are now one quiet line under the button: the hero already says the rest */
+$("fresh").insertAdjacentHTML("afterbegin",'<span>'+entrants+' '+(entrants===1?"player":"players")+' · '+finals+' of '+D.games.length+' final ·&nbsp;</span>');
+if(D.status==="final"){$("cta").textContent="Week "+(D.week+1)+" picks";}
+if(D.status==="pre"){$("cta").textContent="Make your picks";}
+if(D.status==="live"){$("cta").textContent="Make your picks";}
+$("cta").hidden=(D.status!=="final"&&!openN&&!D.archive);
+
+$("fresh").style.display=D.archive?"":"none";
+if(D.archive){$("cta").textContent="Back to this week’s board";$("cta").href="/pool/";$("cta").classList.add("quiet");$("fresh").textContent="Week "+D.week+" is in the books.";}
+
+/* the hero: the one thing to know right now, then the next deadline with a live countdown */
+(function(){
+  var now=Date.now(), open=D.games.filter(function(g){return !g.winner&&Date.parse(g.kickoff)>now;});
+  /* live = ESPN says in progress; without the live feed, only games kicked off in the last 3h45m */
+  var inplay=D.games.filter(function(g,i){if(g.winner||g.liveFinal||Date.parse(g.kickoff)>now) return false;
+    if(LV&&LV.games&&LV.week===D.week){var r=LV.games[String(i)]; return !!r&&r.state==="in";}
+    return now-Date.parse(g.kickoff)<225*60000;});
+  var EP=D.buyIn>0?realPs.filter(function(p){return p.paid;}):realPs, etop=EP.length?Math.max.apply(null,EP.map(function(p){return p.correct;})):0;
+  var L=etop>0?EP.filter(function(p){return p.correct===etop;}):[];
+  var leadTxt=!L.length?'':(L.length===1?'<b>'+esc(L[0].name)+'</b> leads at <b>'+L[0].correct+'–'+L[0].missed+'</b>':'<b>'+L.length+' tied</b> at the top, <b>'+etop+'</b> right');
+  var left=D.games.filter(function(g){return !g.winner;}).length;
+  var k="", v="", sub="", isCd=false;
+  if(D.status==="final"){
+    var W=D.weekWinners||[];
+    k=W.length>1?'Week '+D.week+' · split':'Week '+D.week+' champion';
+    v=W.length?esc(W.join(" & ")):'Final';
+    var wp=realPs.filter(function(p){return W.indexOf(p.name)>=0;})[0];
+    sub=(wp?'<b>'+wp.correct+'–'+wp.missed+'</b>'+(D.tbUsed?' · won on the tiebreaker':''):'')+(D.buyIn>0&&W.length?' · '+(W.length>1?'each wins ':'wins ')+'<b>'+money(D.weekPayout)+'</b>':'')+(D.archive||!W.length?'':' · picks next week’s mugshot');
+    $("nowK").classList.add("final");
+  } else if(inplay.length===1){
+    var g=inplay[0], parts=(g.live||"").split(" · ");
+    k='<span class="lv">●</span> On now · '+esc(g.away)+' at '+esc(g.home)+(g.tv?' · '+esc(g.tv):'');
+    v=g.live?'<span class="sc">'+esc(parts[0])+'</span>':esc(g.away)+' <span style="font-weight:400;font-style:italic">at</span> '+esc(g.home);
+    sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+(g.liveAt?' · as of '+esc(fmtWhen(g.liveAt).replace(/^\w+ /,"")):'')+'<br>':'')+(leadTxt||'');
+    /* the tiebreaker game, last one left: who wins if it ended now, and the tiebreaker race */
+    var gi=D.games.indexOf(g), lr=LV&&LV.games&&LV.games[String(gi)];
+    if(gi===D.games.length-1&&lr&&lr.state==="in"&&!D.games.some(function(x){return x!==g&&!x.winner&&!x.liveFinal;})){
+      var tot=(+lr.away||0)+(+lr.home||0), ahead=lr.away>lr.home?g.away:(lr.home>lr.away?g.home:null);
+      var best=EP.length?Math.max.apply(null,EP.map(function(p){return p.correct;})):0;   /* only sheets that can win the week */
+      var alive=EP.filter(function(p){var pk=p.sheet&&p.sheet[String(gi)];return p.correct+(pk?1:0)>=best;});
+      var proj=function(p){var pk=p.sheet&&p.sheet[String(gi)];return p.correct+(ahead&&pk===ahead?1:0);};
+      var pb=Math.max.apply(null,alive.map(proj)), front=alive.filter(function(p){return proj(p)===pb;});
+      var dist=function(p){return p.tb==null?1e9:Math.abs(p.tb-tot);};
+      var line='';
+      if(front.length){
+        var md=Math.min.apply(null,front.map(dist)), win=front.filter(function(p){return dist(p)===md;});
+        line='If it ended now: <b>'+win.map(function(p){return esc(p.name);}).join(' &amp; ')+'</b>'+(front.length>1&&md<1e9?' on the tiebreaker':'');
+      }
+      var race=front.filter(function(p){return p.tb!=null;}).sort(function(a,b){return dist(a)-dist(b);}).slice(0,4);
+      if(line) line+=' · total <b>'+tot+'</b>';
+      /* what each result means: who's left if each team wins, and the total each one needs */
+      var scen=[g.away,g.home].map(function(T){
+        var pr=function(p){var pk=p.sheet&&p.sheet[String(gi)];return p.correct+(pk===T?1:0);};
+        var mx=Math.max.apply(null,alive.map(pr)), who=alive.filter(function(p){return pr(p)===mx&&p.tb!=null;}).sort(function(a,b){return a.tb-b.tb;});
+        if(!who.length) return '';
+        /* same guess = same fate: group by tiebreaker number */
+        var grp=[]; who.forEach(function(p){var l=grp[grp.length-1]; if(l&&l.tb===p.tb) l.names.push(p.name); else grp.push({tb:p.tb,names:[p.name]});});
+        if(grp.length===1) return '<b>'+esc(T)+' win:</b> '+grp[0].names.map(esc).join(' &amp; ');
+        return '<b>'+esc(T)+' win:</b> '+grp.map(function(p,i){
+          var lo=i>0?Math.floor((grp[i-1].tb+p.tb)/2)+1:null, hi=i<grp.length-1?Math.ceil((p.tb+grp[i+1].tb)/2)-1:null;
+          return p.names.map(esc).join(' &amp; ')+' ('+p.tb+(lo==null?', ≤'+hi:hi==null?', '+lo+'+':', '+lo+'–'+hi)+')';}).join(' vs ');
+      }).filter(Boolean);
+      if(scen.length) line+='<br>'+scen.join('<br>');
+      if(line) sub=(g.live&&parts[1]?esc(parts.slice(1).join(" · "))+'<br>':'')+line;
+    }
+  } else if(inplay.length>1){
+    k='<span class="lv">●</span> On now';
+    v=inplay.length+' games live';
+    /* the home teams' scores, if they're playing */
+    var fam=inplay.filter(function(g){return g.live&&/Bills|Jets/.test(g.away+g.home);}).map(function(g){
+      var pr=g.live.split(" · "), q=(pr[1]||"").split(" - ").pop();
+      var t=/Bills/.test(g.away+g.home)?'Bills':'Jets', sc=/^Tied/.test(pr[0])?t+' tied '+pr[0].replace(/^Tied\s*/,''):pr[0];
+      return '<b>'+esc(sc)+'</b>'+(q?' '+esc(q):'');});
+    sub=(fam.length?fam.join(' · ')+'<br>':'')+(leadTxt?leadTxt+' · <b>'+left+'</b> to go':'<b>'+left+'</b> games to go');
+  } else if(L.length&&left===1&&open.length===1&&Date.parse(open[0].kickoff)-now<=45*60000){
+    /* 45 minutes before the last game: who's still alive (no picks, they're sealed) */
+    var o=open[0], al=EP.filter(function(p){return p.state!=="out";});
+    var byRec={}; al.forEach(function(p){(byRec[p.correct]=byRec[p.correct]||[]).push(p.name);});
+    k='One game left · '+esc(o.away)+' at '+esc(o.home);
+    v=al.length===1?esc(al[0].name):al.length+' still alive';
+    sub=(al.length>1?Object.keys(byRec).sort(function(a,b){return b-a;}).map(function(c){return byRec[c].map(esc).join(' · ')+' — <b>'+c+'</b> right';}).join('<br>')+'<br>':'')+
+        'Kickoff · <span class="cd" data-until="'+esc(o.kickoff)+'"></span>';
+  } else if(L.length&&open.length&&Date.parse(open[0].kickoff)-now<=60*60000){
+    /* last hour before the next lock: the countdown takes the big line (Garret, Oct 11) */
+    var nk=open[0].kickoff, batch=open.filter(function(g){return g.kickoff===nk;}); isCd=true;
+    k='Next lock · '+(batch.length===1?esc(batch[0].away)+' at '+esc(batch[0].home):batch.length+' games kick off');
+    v='<span class="cd" data-until="'+esc(nk)+'"></span>';
+    sub=(L.length===1?'Leader: '+esc(L[0].name)+' · <b>'+L[0].correct+'–'+L[0].missed+'</b>':L.length+'-way tie at <b>'+etop+'</b> right')+' · <b>'+left+'</b> game'+(left===1?'':'s')+' to go';
+  } else if(L.length){
+    k='Leading Week '+D.week;
+    v=L.length===1?esc(L[0].name):L.length+'-way tie';
+    sub=(L.length===1?'<b>'+L[0].correct+'–'+L[0].missed+'</b>':'at <b>'+etop+'</b> right')+' · <b>'+left+'</b> game'+(left===1?'':'s')+' to go';
+  } else if(open.length){
+    var payDue=D.buyIn>0&&D.payBy&&Date.parse(D.payBy)>now; isCd=true;
+    k=payDue?'Payment due · first kickoff':'First kickoff';
+    v='<span class="cd" data-until="'+esc(open[0].kickoff)+'"></span>';
+    sub=esc(open[0].away)+' at '+esc(open[0].home)+' · '+esc(fmtWhen(open[0].kickoff))+(D.buyIn>0?'':' · <b>'+entrants+'</b> in so far');
+  } else { k='Week '+D.week; v='All games kicked off'; sub=leadTxt; }
+  $("nowK").innerHTML=k; $("nowL").innerHTML=v; $("nowS").innerHTML=sub;
+  /* next deadline, unless the hero already is the countdown */
+  var nn=$("nowN");
+  if(open.length&&!D.archive&&D.status!=="final"){
+    var g2=open[0];
+    nn.innerHTML=(isCd?'':'Next lock '+esc(fmtWhen(g2.kickoff))+' · <span class="cd" data-until="'+esc(g2.kickoff)+'"></span><br>')+
+      'Each game locks at its own kickoff. <a href="'+esc(D.formUrl)+'">Resubmit</a> to change games that haven’t started. · <a href="/pool/week.ics">Add to calendar</a>';
+    nn.hidden=false;
+  } else nn.hidden=true;
+  var rn=$("rNote"); if(D.notice&&!D.archive){rn.innerHTML='<b>Commissioner\u2019s ruling</b>'+esc(D.notice);rn.hidden=false;} else rn.hidden=true;
+  var pn=$("potN");
+  if(D.buyIn>0&&!D.archive){
+    var payOpen=D.payBy&&Date.parse(D.payBy)>now;
+    pn.innerHTML='<b>'+entrants+'</b> in · <b>'+(D.paidN||0)+'</b> paid · <b>'+money(pot)+'</b> pot'+(D.rollIn>0?' (incl. '+money(D.rollIn)+' rolled over from Claude)':'')+(payOpen&&D.venmoUrl?' · <a href="'+esc(D.venmoUrl)+'">Venmo '+esc(D.venmo||'')+'</a>':'');
+    pn.hidden=false;
+  } else pn.hidden=true;
+  tick();
+})();
+
+/* back from the form: Tally sends people here with ?filed */
+(function(){
+  var q=location.search;
+  if(!/[?&]filed\b/.test(q)) return;
+  $("ack").innerHTML='<div class="ack"><div class="k">Sheet received</div><div class="n">You’re in for Week '+D.week+'.</div><div class="d">Your picks stay sealed until each game kicks off. Changed your mind? <a href="'+esc(D.formUrl)+'">Submit again</a>; your latest sheet before each kickoff counts. The board picks up new sheets on the hour.</div></div>';
+  try{ history.replaceState(null,"",location.pathname+location.hash); }catch(e){}
+})();
+
+var h="";
+
+/* empty frame until a face is hung */
+if(!(D.face&&D.face.photo)&&!D.archive){
+  var sil='<svg class="sil" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#221c13"/>'+[20,40,60,80].map(function(y){return '<line x1="0" x2="100" y1="'+y+'" y2="'+y+'" stroke="#3a3122" stroke-width="1"/><text x="3" y="'+(y-2)+'" font-size="6" fill="#4d4230" font-family="monospace">'+(7-y/20)+'\'</text>';}).join('')+'<circle cx="50" cy="40" r="15" fill="#0c0a06"/><path d="M18 100 C20 72 34 62 50 62 C66 62 80 72 82 100 Z" fill="#0c0a06"/><text x="50" y="47" text-anchor="middle" font-size="18" font-family="Georgia,serif" fill="#3a3122">?</text></svg>';
+  var pw=(D.pastWeeks||[]).filter(function(w){return w.week===D.week-1&&w.winners&&w.winners.length;})[0];   /* last week's winner still owes us a face */
+  var mk=pw?D.week:D.week+1, md=pw?'The champ picks who hangs here. <b>Could be yours.</b>':'The Week '+D.week+' winner hangs a face here Tuesday. <b>Could be yours.</b>';
+  $("mug").innerHTML='<div class="mug dark">'+sil+'<div><div class="k"><a class="ruleref" href="/pool/about/#mugshot">The Mugshot</a> · Week '+mk+'</div><div class="n">Wanted: one loser.</div><div class="d">'+md+'</div></div></div>';
+}
+/* last week's champion, right above the mugshot they get to pick */
+(function(){
+  var pw=(D.pastWeeks||[]).filter(function(w){return w.week===D.week-1&&w.winners&&w.winners.length;})[0];
+  /* winner box on top until the new week's first kickoff (Garret, Oct 20: "really unclear on the main page") */
+  var fk=D.games&&D.games.length?Date.parse(D.games[0].kickoff):0;
+  if(!pw||D.status==="final"||D.archive||(fk&&Date.now()>=fk)) return;
+  var el=$("lastW"), two=pw.winners.length>1, bits=[];
+  if(pw.record) bits.push(esc(pw.record));
+  if(pw.payout>0) bits.push('won '+money(pw.payout)+(two?' each':'')+(pw.tbUsed?' on the tiebreaker':''));
+  else if(pw.tbUsed) bits.push('won on the tiebreaker');
+  var tl=(pw.tbUsed&&pw.tbTotal!=null&&pw.tb&&pw.tb.length)?(two?'Guessed '+pw.tb.join(' and '):'Guessed '+pw.tb[0])+'; the total was '+pw.tbTotal+'.':'';
+  el.innerHTML='<div class="wk">Week '+pw.week+' winner'+(two?'s':'')+'</div><div class="wn">'+esc(pw.winners.join(" & "))+'</div><div class="wd">'+bits.join(' · ')+(pw.repeat?' · back-to-back':'')+'</div>'+(tl?'<div class="wd">'+tl+'</div>':'')+'<a class="wl" href="/pool/weeks/'+pw.week+'/">See the Week '+pw.week+' final board ›</a>';
+  el.hidden=false;
+})();
+/* the mugshot: the previous winner's pick of one loser's face */
+if(D.face&&D.face.photo){
+  var F=D.face;
+  $("mug").innerHTML='<div class="mug"><img src="'+esc(F.photo)+'" alt=""><div><div class="k"><a class="ruleref" style="color:inherit" href="/pool/about/#mugshot">The Mugshot</a> · Week '+D.week+'</div><div class="n">'+esc(F.who)+'</div><div class="d">Hung here by <b>'+esc(F.by)+'</b>, who won Week '+esc(F.week||(D.week-1))+(function(){var w=(D.pastWeeks||[]).filter(function(x){return x.week===(F.week||(D.week-1));})[0];return w?(w.record?' at '+esc(w.record):'')+(w.payout>0?' and took home '+money(w.payout):''):'';})()+'.'+(F.line?' '+esc(F.line):'')+'</div></div></div>';
+}
+
+var secs={};
+var MODE=(!D.archive&&/\/pool\/season\/?$/.test(location.pathname))?"season":"board";
+if(MODE==="season"){document.body.classList.add("mseason");var tb=$("tabBoard"),ts=$("tabSeason");if(tb&&ts){tb.className="";tb.removeAttribute("aria-current");ts.className="on";ts.setAttribute("aria-current","page");}}
+var decidedN=D.games.filter(function(g){return g.winner;}).length;
+/* board */
+h+='<a id="board"></a>'+orn(decidedN||D.status==="final"?"Standings":"Who’s In");
+if(!D.archive){var ut=Date.parse(D.updated), um=isNaN(ut)?0:Math.round((Date.now()-ut)/60000);
+  h+='<div class="hint">Updated '+esc(fmtWhen(D.updated).replace(/^\w+ /,""))+(um>90?' ('+(um<120?'1 hr':Math.round(um/60)+' hrs')+' ago)':'')+(decidedN||D.status==="final"?' · live scores during games':' · <a class="ruleref" href="/pool/about/#sealed">picks sealed until kickoff</a>')+'</div>';}
+var sealedN=D.games.filter(function(g){return g.status==="sealed";}).length;
+if(!ps.length){
+  h+='<div class="empty">Nobody has filed yet. The board fills in as sheets come in.</div>';
+} else if(!decidedN&&D.status!=="final"){
+  var hseP=ps.filter(function(p){return p.house;})[0];   /* the house sheet is filed when the week opens; list it last */
+  var payOpenW=D.payBy&&Date.parse(D.payBy)>Date.now();
+  var two=realPs.length>10;
+  var pst=function(p){if(!(D.buyIn>0)) return ''; return p.paid?'<span class="pst ok">Paid</span>':'<span class="pst">'+((payOpenW&&!p.free)?(two?'Pending':'Payment pending'):(two?'Free':'Playing free'))+'</span>';};
+  h+='<ul class="whoin'+(two?' two':'')+'">'+(realPs.length?realPs.map(function(p){return '<li><span>'+DN(p.name)+'</span>'+pst(p)+'</li>';}).join(""):'<li>Nobody yet.</li>')+(hseP?'<li><span>'+esc(hseP.name)+'</span><span class="tag house">House</span></li>':'')+'</ul>';
+} else {
+  var dots=function(p){var o='';D.games.forEach(function(g,i){if(g.status==="sealed")return;var pk=p.sheet?p.sheet[String(i)]:null;
+      o+='<i class="'+(!pk?'':!g.winner?'p':g.winner==="TIE"?'':(pk===g.winner?'ok':'no'))+'" title="'+esc(g.away)+' at '+esc(g.home)+'"></i>';});return o?'<span class="dots">'+o+'</span>':'';};
+  var W=(D.status==="final"&&D.weekWinners)||[], isW=function(p){return W.indexOf(p.name)>=0;};
+  var beats=function(q,p){if(isW(q)!==isW(p)) return isW(q);   /* the week's winner ranks first on the final board */
+    return q.correct>p.correct||(q.correct===p.correct&&(q.missed<p.missed||(q.missed===p.missed&&isW(q)&&!isW(p))));};
+  var dispRank=function(p){return 1+realPs.filter(function(q){return beats(q,p);}).length;};
+  h+='<div class="hint">Tap a name for their picks'+(D.buyIn>0?' · <span class="pd" style="margin:0">✓</span> = paid':'')+'</div>';
+  var TOPN=5;
+  ps.forEach(function(p,pi){
+    if(pi===TOPN&&ps.length>TOPN+1) h+='<details class="tmore smore" id="smore"'+(window.SMORE?' open':'')+'><summary>Show all '+realPs.length+' players'+(ps.length>realPs.length?' + the house':'')+' ›</summary>';
+    var lead=!p.house&&p.correct>0&&dispRank(p)===1&&(!(D.buyIn>0)||p.paid);
+    var mv=p.delta>0?'<span class="mv up">▲'+p.delta+'</span>':(p.delta<0?'<span class="mv dn">▼'+(-p.delta)+'</span>':'');
+    var tag=p.house?'<span class="tag house">House</span>':D.status==="final"?'':(p.state==="clinched"?'<span class="tag clinched">Clinched</span>':(p.state==="out"?'<span class="tag out">Out</span>':''));
+    h+='<details class="brow'+(lead?' lead':'')+(p.house?' house':'')+'"><summary><span class="rk">'+(p.house?'–':(realPs.filter(function(q){return q!==p&&!beats(q,p)&&!beats(p,q);}).length?'T':'')+dispRank(p))+'</span>'+
+       '<span class="nm">'+DN(p.name)+PD(p)+mv+tag+badgeIcons(p)+'</span><span class="rec">'+p.correct+'–'+p.missed+'</span>'+dots(p)+'</summary><div class="sheet">';
+    var earned=badgesFor(p);
+    if(earned.length){
+      h+='<div class="earned">'+earned.map(function(b){return '<span class="bd '+esc(b.id)+'">'+BADGE[b.id].i+'</span><a href="/pool/about/#b-'+esc(b.id)+'">'+esc(BADGE[b.id].l)+'</a>'+(b.note?' — '+esc(b.note):(BADGE[b.id].d?' — '+esc(BADGE[b.id].d):''));}).join('<br>')+'</div>';
+    }
+    var lines=[];
+    D.games.forEach(function(g,i){
+      if(g.status==="sealed") return;
+      var pk=p.sheet?p.sheet[String(i)]:undefined;
+      if(pk===null||pk===undefined) lines.push('<span class="no">'+esc(g.away)+'@'+esc(g.home)+' no pick</span>');
+      else if(!g.winner) lines.push('<span class="pend">'+esc(pk)+'</span>');
+      else if(g.winner==="TIE") lines.push(esc(pk)+' (tie)');
+      else lines.push('<span class="'+(pk===g.winner?'ok':'no')+'">'+esc(pk)+'</span>');
+    });
+    h+=lines.join(' · ')+(sealedN?' · <span class="sealed">'+sealedN+' sealed</span>':'');
+    var hm=D.homer&&D.homer[p.name];
+    if(hm&&(hm.bills[0]+hm.bills[1]+hm.jets[0]+hm.jets[1])>0) h+='<br>Season on Bills games '+hm.bills[0]+'–'+hm.bills[1]+' · Jets games '+hm.jets[0]+'–'+hm.jets[1];
+    if(p.tb!=null&&D.games[D.games.length-1].status!=="sealed") h+='<br><a class="ruleref" href="/pool/about/#tiebreak">Tiebreaker</a> '+p.tb;
+
+    h+='</div></details>';
+  });
+  if(ps.length>TOPN+1) h+='</details>';
+}
+
+
+secs.board=h; h="";
+/* slate */
+h+='<a id="slate"></a>'+orn("This Week’s Games",true);
+h+='<div class="hint">All times Eastern'+(D.games.some(function(g){return g.status!=="sealed"&&g.sides;})?' · tap a started game for who picked whom':'')+'</div>';
+var gOpen=window.GMORE===undefined?(!D.archive&&inWindow()):window.GMORE;   /* open on its own while games are on */
+h+='<details class="tmore gmore" id="gmore"'+(gOpen?' open':'')+'><summary>See all '+D.games.length+' games ›</summary>';
+var lastSlot="";
+D.games.forEach(function(g,i){
+  var slot=(g.when||"").replace(/\s+\d{1,2}:\d{2}\s*[AP]M.*$/,"").replace(/^(Sun|Mon|Thu|Sat)\b/,function(m){return {Sun:"Sunday",Mon:"Monday",Thu:"Thursday",Sat:"Saturday"}[m];});
+  var time=(g.when||"").replace(/^\w{3}\s+/,"").replace(/\s*·\s*/g," ");
+  if(slot!==lastSlot){h+='<div class="slot">'+esc(slot)+'</div>';lastSlot=slot;}
+  var gs=D.stats&&D.stats.games&&D.stats.games[String(i)];
+  var m,s,sp="",who="";
+  if(g.winner==="TIE"){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s fin">Tie · nobody</span>';}
+  else if(g.winner){var aw=g.winner===g.away;
+    m='<span class="'+(aw?'w':'')+'">'+esc(g.away)+'</span> <span class="at">at</span> <span class="'+(aw?'':'w')+'">'+esc(g.home)+'</span>';
+    s='<span class="s fin">'+(g.score?esc(g.winner)+' '+esc(g.score):'Final')+'</span>';}
+  else if(g.liveFinal){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s fin">'+esc(g.liveFinal)+'</span>';}
+  else if(g.status==="live"||(g.status==="sealed"&&g.live)){m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s live">'+(g.live?esc(g.live):'Live')+'</span>';}
+  else {m=esc(g.away)+' <span class="at">at</span> '+esc(g.home);s='<span class="s">'+esc(time)+(g.tv?' · <b class="tv">'+esc(g.tv)+'</b>':'')+'</span>';}
+  if(g.status!=="sealed"&&g.sides){
+    var notHouse=function(n){return !ps.some(function(p){return p.house&&p.name===n;});};
+    var A=(g.sides[g.away]||[]).filter(notHouse),H=(g.sides[g.home]||[]).filter(notHouse);
+    var na=gs?gs.away:A.length, nh=gs?gs.home:H.length;
+    sp='<span class="sp"><b>'+na+'</b> picked '+esc(g.away)+' · <b>'+nh+'</b> '+esc(g.home)+(gs&&gs.upset?' · <b style="color:var(--red)">upset</b>':'')+(g.line?'<br>Line at kickoff: '+esc(g.line):'')+'</span>';
+    if(g.winner&&g.winner!=="TIE"){
+      who='<div class="who">'+(g.hits.filter(notHouse).length?'<span class="lab">Right</span><span class="h">'+esc(g.hits.filter(notHouse).join(", "))+'</span><br>':'')+(g.misses.filter(notHouse).length?'<span class="lab">Wrong</span><span class="x">'+esc(g.misses.filter(notHouse).join(", "))+'</span>':'')+'</div>';
+    } else {
+      who='<div class="who"><span class="lab">'+esc(g.away)+'</span><span class="side">'+(A.length?esc(A.join(", ")):"—")+'</span><br><span class="lab">'+esc(g.home)+'</span><span class="side">'+(H.length?esc(H.join(", ")):"—")+'</span></div>';
+    }
+    h+='<details class="g"><summary><div class="m">'+m+'</div>'+s+sp+'</summary>'+who+'</details>';
+  } else {
+    h+='<div class="g"><div class="m">'+m+'</div>'+s+'</div>';
+  }
+});
+h+='</details>';
+secs.games=h; h="";
+/* column */
+var TH=D.threads||{};
+function RL(k){return D.replyUrl&&!D.archive?'<a class="rlink" href="'+esc(D.replyUrl+'?to='+encodeURIComponent(k)+'&w='+D.week)+'">Reply</a>':'';}
+function THR(k){var r=TH[k]||[]; return r.length?'<details class="thr"'+(window.THOPEN&&window.THOPEN[k]?' open':'')+' data-k="'+esc(k)+'"><summary>'+r.length+(r.length===1?' reply':' replies')+' ›</summary>'+r.map(function(y){return '<span class="rpl">'+esc(y.text)+' <i>— '+DN(y.from)+'</i></span>';}).join('')+(RL(k)?'<div class="rback">'+RL(k).replace('>Reply<','>Reply to this thread<')+'</div>':'')+'</details>':'';}
+var QA=D.qa||[];
+if(D.column||QA.length){
+  h+='<a id="column"></a>'+orn("The Column")+'<div class="col">'+(D.columnHead?'<div class="colhd">'+esc(D.columnHead)+'</div>':'');
+  (D.column||'').split(/\n\n+/).filter(Boolean).slice(0,2).forEach(function(p){h+='<p>'+esc(p)+'</p>';});
+  /* Ask the Commissioner: Garret's answers close the column; until then one line on how to ask (Oct 13) */
+  if(QA.length) h+='<div class="aqa"><div class="aqk">Ask the Commissioner</div>'+QA.map(function(x){return '<p class="q">“'+esc(x.q)+'” — '+DN(x.from)+'</p><p class="a"><b>G.:</b> '+esc(x.a)+RL('ask:'+x.id)+'</p>'+THR('ask:'+x.id);}).join('')+'</div>';
+  else if(D.bot&&!D.archive) h+='<p class="aqh">Got a question or an appeal for the commissioner? Ask it in the last box on your <a href="'+esc(D.formUrl)+'">pick sheet</a>.</p>';
+  h+='</div>';
+}
+secs.column=h; h="";
+/* trash talk: the three newest up front, the rest one tap away */
+if(D.trash.length){
+  var TT=D.trash.slice().reverse(), li=function(t){return '<li>“'+esc(t.text)+'”<b>'+DN(t.from)+'</b>'+RL(t.from)+THR(t.from)+'</li>';};
+  h+=orn("Trash Talk")+'<ul class="tt">'+TT.slice(0,3).map(li).join('')+'</ul>';
+  if(TT.length>3) h+='<details class="tmore"><summary>Show all '+TT.length+' ›</summary><ul class="tt">'+TT.slice(3).map(li).join('')+'</ul></details>';
+}
+/* Beat the Bot: Claude's picks out in the open (bot weeks) */
+if(D.bot&&D.bot.picks&&(Object.keys(D.bot.picks).length||D.bot.sealedN)){
+  var B=D.bot, gi=function(i){return D.games[+i];};
+  h+=orn("Beat the Bot",true)+'<div class="hint">Claude makes real picks and can win. Beat its record this week and you get a point on the Beat the Bot scoreboard. If Claude wins the week, the pot rolls over.</div><div class="btb">';
+  if(B.lock!=null&&gi(B.lock)){var lg=gi(B.lock); var lp=B.picks[String(B.lock)]||''; h+='<div class="lk">🔒 Lock of the Week: <b>'+esc(lp)+'</b> over '+esc(lp===lg.home?lg.away:lg.home)+(lg.winner?(lg.winner===B.picks[String(B.lock)]?' · <b style="color:var(--teal)">cashed</b>':' · <b style="color:var(--red)">busted</b>'):'')+(B.lockWhy?'<br><span class="why">'+esc(B.lockWhy)+'</span>':'')+'<br><span class="why lkx">Claude’s surest pick of the week. No extra points, just bragging rights.</span>'+'</div>';}
+  var opened=Object.keys(B.picks).filter(function(i){return String(i)!==String(B.lock);});
+  if(opened.length) h+='<details class="tmore bmore"><summary>Claude’s picks so far ›</summary><ul>'+opened.sort(function(a,b){return a-b;}).map(function(i){var g=gi(i);if(!g)return '';var pk=B.picks[i],ok=g.winner?(g.winner===pk?' ✓':' ✗'):'';
+    return '<li><b>'+esc(pk)+'</b>'+ok+' <span class="why">over '+esc(pk===g.home?g.away:g.home)+((B.why||{})[i]?' — '+esc(B.why[i]):'')+'</span></li>';}).join('')+'</ul></details>';
+  if(B.sealedN>0) h+='<div class="tl">Claude’s other picks are sealed until each kickoff, same as yours.</div>';
+  var tl=Object.keys(D.botTally||{}).sort(function(a,b){return D.botTally[b]-D.botTally[a]||a.localeCompare(b);});
+  if(tl.length) h+='<div class="tl">Beat the Bot, season: '+tl.slice(0,8).map(function(n){return DN(n)+' '+D.botTally[n];}).join(' · ')+'</div>';
+  h+='</div>';
+}
+secs.trash=h; h="";
+
+/* by the numbers */
+if(D.status!=="pre"&&D.stats&&D.stats.decided>0){
+  var S=D.stats, G=D.games;
+  h+=orn("By the Numbers",true)+'<div class="num">';
+  h+='<div class="it"><div class="k">Upset rate</div><div class="v">'+S.upsets+' of '+S.decided+'</div><div class="d">Games the betting underdog won, using the line at kickoff (injuries included).</div></div>';
+  if(S.best&&S.best.who&&(S.best.who.length<=2||S.best.who.length*3<realPs.length)){var bg=G[S.best.game];h+='<div class="it"><div class="k">Best pick</div><div class="v">'+esc(bg.winner)+'</div><div class="d">'+esc(bg.away)+' at '+esc(bg.home)+'. Only <b>'+esc(S.best.who.join(", "))+'</b> had it.</div></div>';}
+  if(S.worst&&S.worst.n===0){var wg=G[S.worst.game];h+='<div class="it"><div class="k">Nobody had</div><div class="v">'+esc(wg.winner)+'</div><div class="d">'+esc(wg.away)+' at '+esc(wg.home)+'. The whole room, wrong.</div></div>';}
+  var hp=ps.filter(function(p){return p.house;})[0];
+  if(hp){var beat=realPs.filter(function(p){return p.correct<hp.correct;}).length;h+='<div class="it"><div class="k">'+esc(hp.name)+(D.bot?', the bot':', the coin')+'</div><div class="v">'+hp.correct+'–'+hp.missed+'</div><div class="d">'+(beat?'Ahead of <b>'+beat+'</b> of you.':(realPs.every(function(p){return p.correct>hp.correct;})?'Behind everyone. For now.':'Ahead of nobody yet.'))+'</div></div>';}
+  h+='</div>';
+}
+
+secs.nums=h; h="";
+/* season */
+if(D.season_table.length){
+h+=orn("The Season",true)+(D.seasonFrom>1?'<div class="hint">Since Week '+D.seasonFrom+'</div>':'');
+  var scmp=function(a,b){return (b.won-a.won)||(b.weeksWon-a.weeksWon)||(b.correct-a.correct)||(a.missed-b.missed);};
+  var ss=D.season_table.slice().sort(function(a,b){return scmp(a,b)||a.name.localeCompare(b.name);});
+  var srk=function(p){return 1+ss.filter(function(q){return scmp(q,p)<0;}).length;}, stied=function(p){return ss.some(function(q){return q!==p&&scmp(q,p)===0;});};
+  var SN=10, sOpen=!!window.SEAS, anyWon=ss.some(function(p){return p.won>0;});
+  h+='<table class="stand seas"><thead><tr><th class="sr"></th><th class="snm">Player</th><th class="rc">Record</th><th class="pct">Win %</th><th class="sw">Weeks won</th>'+(anyWon?'<th class="money">Won</th>':'')+'</tr></thead><tbody>';   /* Winnings appears once someone has won money */
+  var pct=function(p){var n=p.correct+p.missed; return n?Math.round(100*p.correct/n)+'%':'';};
+  ss.forEach(function(p,i){if(i>=SN&&!sOpen&&ss.length>SN+1) return; h+='<tr><td class="sr">'+(stied(p)?'T':'')+srk(p)+'</td><td class="snm">'+esc(p.name)+'</td><td class="rc">'+p.correct+'–'+p.missed+'</td><td class="pct">'+pct(p)+'</td><td class="sw">'+(p.weeksWon?'<b>'+p.weeksWon+'</b>':'')+'</td>'+(anyWon?'<td class="money">'+(p.won?'<b>'+money(p.won)+'</b>':'')+'</td>':'')+'</tr>';});
+  h+='</tbody></table>';
+  if(ss.length>SN+1&&!sOpen) h+='<div class="tmore" style="text-align:center"><a href="#" id="seasAll" style="font-family:\'AR\';font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--soft);text-decoration:none">Show all '+ss.length+' players ›</a></div>';
+}
+
+/* past weeks */
+if(D.pastWeeks&&D.pastWeeks.length){
+  h+=orn("Past Weeks")+'<div class="hint">Tap a week to see its final board</div><div class="pastwk">'+D.pastWeeks.slice().reverse().map(function(w){return '<a href="/pool/weeks/'+w.week+'/" class="pw"><span>Week '+w.week+(w.winners&&w.winners.length?' · '+esc(w.winners.join(" & "))+(w.record?', '+esc(w.record):'')+(w.tbUsed?' (tiebreaker)':''):'')+'</span><span class="go">View board ›</span></a>';}).join('')+'</div>';
+}
+/* how it works */
+/* 'How it works' footer removed Oct 13: the Rules tab at the top does that job */
+
+secs.season=h; h="";
+var order=[secs.board,secs.column,secs.trash,secs.games,secs.nums];
+/* Season tab (Oct 13): /pool/season/ shows the season table and past weeks; the board is this week only */
+$("root").innerHTML=MODE==="season"?(secs.season||'<div class="empty">The season table starts after the first final.</div>'):order.join("")+(D.archive?secs.season:"");
+}
+render();
+
+/* phones cache this page hard; pull the live data past the cache and re-render if it is newer */
+function refresh(){
+  if(!window.fetch) return;
+  fetch("/pool/data/page.json?v="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(N){
+    /* the page's own code changed (a design fix): a cached copy can't show it, so load the new one once */
+    if(N&&N.tpl&&D.tpl&&N.tpl!==D.tpl&&location.search.indexOf("v="+N.tpl)<0){location.replace(location.pathname+"?v="+N.tpl+location.hash);return;}
+    if(N&&N.updated&&Date.parse(N.updated)>Date.parse(D.updated||0)){D=N;render();}
+  }).catch(function(){});
+}
+if(!D.archive){
+refresh();
+document.addEventListener("visibilitychange",function(){if(!document.hidden) refresh();});
+setInterval(refresh,10*60*1000);
+pollLive();
+setInterval(pollLive,60*1000);
+document.addEventListener("visibilitychange",function(){if(!document.hidden) pollLive();});
+}
+})();
+</script>
+</body>
+</html>

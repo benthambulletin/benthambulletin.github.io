@@ -3,4 +3,32 @@ VERSION:2.0
 PRODID:-//The Sunday Tax//Pool//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sundaytax-2026-w8-Panthers-Packers@benthambulletin.github.io
+DTSTAMP:20261027T080210Z
+DTSTART:20261030T001500Z
+DURATION:PT15M
+SUMMARY:Sunday Tax: Panthers at Packers locks — get your picks in
+URL:https://tally.so/r/RGOakJ
+DESCRIPTION:Each game locks at its own kickoff. Picks: https://tally.so/r/RGOakJ\nStandings: https://benthambulletin.github.io/pool/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sunday Tax: Panthers at Packers locks — get your picks in
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sundaytax-2026-w8-Ravens-Bills@benthambulletin.github.io
+DTSTAMP:20261027T080210Z
+DTSTART:20261101T180000Z
+DURATION:PT15M
+SUMMARY:Sunday Tax: Ravens at Bills locks — get your picks in
+URL:https://tally.so/r/RGOakJ
+DESCRIPTION:Each game locks at its own kickoff. Picks: https://tally.so/r/RGOakJ\nStandings: https://benthambulletin.github.io/pool/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sunday Tax: Ravens at Bills locks — get your picks in
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
 END:VCALENDAR
