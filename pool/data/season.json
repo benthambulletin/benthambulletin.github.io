@@ -9925,7 +9925,16 @@
           "text": "Three straight weeks of Ryan. I'd like to speak to the manager."
         }
       ],
-      "payments": [],
+      "payments": [
+        {
+          "id": "1a17e6091b09b974",
+          "at": "2026-10-27T17:20:19Z",
+          "amt": "100.00",
+          "who": null,
+          "status": "unmatched",
+          "told": null
+        }
+      ],
       "buyIn": 5,
       "payBy": "2026-10-30T00:15:00Z",
       "pot": 0.0,
@@ -10002,7 +10011,7 @@
       }
     }
   },
-  "updated": "2026-10-27T17:10:32.828830+00:00",
+  "updated": "2026-10-27T18:11:13.513212+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
