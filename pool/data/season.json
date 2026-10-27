@@ -8170,10 +8170,36 @@
           "winner": null,
           "hits": [],
           "misses": [],
-          "status": "sealed",
-          "sides": null,
+          "status": "live",
+          "sides": {
+            "Cowboys": [
+              "Garret",
+              "Ryan Holovics",
+              "Dan",
+              "Nate V",
+              "Devin",
+              "Melissa",
+              "Tom",
+              "Andy R",
+              "Derek",
+              "Arod",
+              "Walczyk",
+              "Kaylani & Luka",
+              "Claude"
+            ],
+            "Eagles": [
+              "Thom",
+              "Mike Sombloski",
+              "Mrs. Sombloski",
+              "Wendy",
+              "Leah",
+              "Ariel",
+              "Josh",
+              "B-rad"
+            ]
+          },
           "fav": "Cowboys",
-          "line": "Cowboys −4.5"
+          "line": "Cowboys −4.5 (Jalen Hurts out)"
         }
       ],
       "players": [
@@ -8185,7 +8211,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 48,
           "sheet": {
             "0": "Bears",
             "1": "Saints",
@@ -8199,7 +8225,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Rams",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Eagles"
           },
           "filedAt": "2026-10-22T23:02:41+00:00",
           "firstAt": "2026-10-22T23:02:41+00:00",
@@ -8227,7 +8254,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 37,
           "sheet": {
             "0": "Patriots",
             "1": "Saints",
@@ -8241,7 +8268,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Rams",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-22T18:22:05+00:00",
           "firstAt": "2026-10-22T18:22:05+00:00",
@@ -8265,7 +8293,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 26,
           "sheet": {
             "0": "Bears",
             "1": "Saints",
@@ -8279,7 +8307,8 @@
             "9": "Broncos",
             "10": "Packers",
             "11": "Raiders",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-22T21:58:39+00:00",
           "firstAt": "2026-10-22T21:58:39+00:00",
@@ -8303,7 +8332,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 38,
           "sheet": {
             "0": "Bears",
             "1": "Steelers",
@@ -8317,7 +8346,8 @@
             "9": "Broncos",
             "10": "Packers",
             "11": "Raiders",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Eagles"
           },
           "filedAt": "2026-10-23T00:03:19+00:00",
           "firstAt": "2026-10-23T00:03:19+00:00",
@@ -8341,7 +8371,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 44,
           "sheet": {
             "0": "Bears",
             "1": "Steelers",
@@ -8355,7 +8385,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Rams",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-20T08:06:02+00:00",
           "firstAt": "2026-10-20T08:06:02+00:00",
@@ -8374,7 +8405,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 38,
           "sheet": {
             "0": "Bears",
             "1": "Steelers",
@@ -8388,7 +8419,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Rams",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-22T18:51:03+00:00",
           "firstAt": "2026-10-22T18:51:03+00:00",
@@ -8412,7 +8444,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 44,
           "sheet": {
             "0": "Bears",
             "1": "Steelers",
@@ -8426,7 +8458,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Rams",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-22T00:07:06+00:00",
           "firstAt": "2026-10-22T00:07:06+00:00",
@@ -8445,7 +8478,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 52,
           "sheet": {
             "0": "Bears",
             "1": "Steelers",
@@ -8459,7 +8492,8 @@
             "9": "Broncos",
             "10": "Packers",
             "11": "Rams",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-25T11:43:20+00:00",
           "firstAt": "2026-10-20T22:40:48+00:00",
@@ -8483,7 +8517,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Bears",
             "1": "Steelers",
@@ -8497,7 +8531,8 @@
             "9": "Broncos",
             "10": "Packers",
             "11": "Rams",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Eagles"
           },
           "filedAt": "2026-10-20T12:19:32+00:00",
           "firstAt": "2026-10-20T12:19:32+00:00",
@@ -8521,7 +8556,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 21,
           "sheet": {
             "0": "Bears",
             "1": "Steelers",
@@ -8535,7 +8570,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Rams",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Eagles"
           },
           "filedAt": "2026-10-22T14:11:03+00:00",
           "firstAt": "2026-10-22T14:11:03+00:00",
@@ -8559,7 +8595,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 40,
           "sheet": {
             "0": "Patriots",
             "1": "Steelers",
@@ -8573,7 +8609,8 @@
             "9": "Broncos",
             "10": "Packers",
             "11": "Rams",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Eagles"
           },
           "filedAt": "2026-10-22T22:48:26+00:00",
           "firstAt": "2026-10-22T22:48:26+00:00",
@@ -8605,7 +8642,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 42,
           "sheet": {
             "0": "Bears",
             "1": "Steelers",
@@ -8619,7 +8656,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Raiders",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-22T06:43:31+00:00",
           "firstAt": "2026-10-22T06:43:31+00:00",
@@ -8651,7 +8689,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 44,
           "sheet": {
             "0": "Bears",
             "1": "Saints",
@@ -8665,7 +8703,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Rams",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Eagles"
           },
           "filedAt": "2026-10-21T14:44:39+00:00",
           "firstAt": "2026-10-21T14:44:39+00:00",
@@ -8693,7 +8732,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 42,
           "sheet": {
             "0": "Bears",
             "1": "Steelers",
@@ -8707,7 +8746,8 @@
             "9": "Broncos",
             "10": "Packers",
             "11": "Raiders",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-22T12:26:53+00:00",
           "firstAt": "2026-10-22T12:26:53+00:00",
@@ -8739,7 +8779,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Patriots",
             "1": "Steelers",
@@ -8753,7 +8793,8 @@
             "9": "Broncos",
             "10": "Packers",
             "11": "Rams",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-20T22:40:00+00:00",
           "firstAt": "2026-10-20T22:40:00+00:00",
@@ -8785,7 +8826,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 37,
           "sheet": {
             "0": "Patriots",
             "1": "Saints",
@@ -8799,7 +8840,8 @@
             "9": "Cardinals",
             "10": "Lions",
             "11": "Rams",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Eagles"
           },
           "filedAt": "2026-10-22T22:23:57+00:00",
           "firstAt": "2026-10-22T22:23:57+00:00",
@@ -8827,7 +8869,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 56,
           "sheet": {
             "0": "Patriots",
             "1": "Saints",
@@ -8841,7 +8883,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Rams",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-21T02:11:58+00:00",
           "firstAt": "2026-10-21T02:11:58+00:00",
@@ -8873,7 +8916,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 56,
           "sheet": {
             "0": "Bears",
             "1": "Saints",
@@ -8887,7 +8930,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Rams",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-22T22:51:39+00:00",
           "firstAt": "2026-10-22T22:51:39+00:00",
@@ -8919,7 +8963,7 @@
           "void": 0,
           "remaining": 1,
           "max": 6,
-          "tb": null,
+          "tb": 56,
           "sheet": {
             "0": "Bears",
             "1": "Saints",
@@ -8933,7 +8977,8 @@
             "9": "Cardinals",
             "10": "Lions",
             "11": "Rams",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-22T22:59:05+00:00",
           "firstAt": "2026-10-22T22:59:05+00:00",
@@ -8965,7 +9010,7 @@
           "void": 0,
           "remaining": 1,
           "max": 5,
-          "tb": null,
+          "tb": 39,
           "sheet": {
             "0": "Bears",
             "1": "Saints",
@@ -8979,7 +9024,8 @@
             "9": "Broncos",
             "10": "Lions",
             "11": "Raiders",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Cowboys"
           },
           "filedAt": "2026-10-21T01:01:09+00:00",
           "firstAt": "2026-10-21T01:01:09+00:00",
@@ -9015,7 +9061,7 @@
           "void": 0,
           "remaining": 1,
           "max": 5,
-          "tb": null,
+          "tb": 44,
           "sheet": {
             "0": "Patriots",
             "1": "Saints",
@@ -9029,7 +9075,8 @@
             "9": "Broncos",
             "10": "Packers",
             "11": "Rams",
-            "12": "Chiefs"
+            "12": "Chiefs",
+            "13": "Eagles"
           },
           "filedAt": "2026-10-21T00:37:23+00:00",
           "firstAt": "2026-10-21T00:37:23+00:00",
@@ -9260,7 +9307,8 @@
           "13": "Hurts is out for the year. Cowboys by five."
         },
         "lock": "6",
-        "lockWhy": "Texans by 9.5 at home over the Giants. Biggest number on the board."
+        "lockWhy": "Texans by 9.5 at home over the Giants. Biggest number on the board.",
+        "tb": 44
       },
       "bot": true,
       "botPaid": true,
@@ -9492,6 +9540,21 @@
             "upset": false,
             "roomUpset": true,
             "rightN": 9
+          },
+          "13": {
+            "away": 12,
+            "home": 8,
+            "minority": "Eagles",
+            "minorityWho": [
+              "Thom",
+              "Mike Sombloski",
+              "Mrs. Sombloski",
+              "Wendy",
+              "Leah",
+              "Ariel",
+              "Josh",
+              "B-rad"
+            ]
           }
         },
         "upsets": 4,
@@ -9522,7 +9585,24 @@
           "won": false
         }
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 13,
+          "away": [
+            "Ryan Holovics",
+            "Devin",
+            "Andy R",
+            "Derek",
+            "Arod"
+          ],
+          "home": [
+            "Thom",
+            "Wendy",
+            "Josh",
+            "B-rad"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -9566,8 +9646,8 @@
         "Dan",
         "Mike Sombloski"
       ],
-      "columnHead": "Josh Alone at 9–4, Nine Sheets Circling",
-      "column": "Josh sits alone at 9–4 with one game left, and nine sheets are parked at 8–5 a game back. The Giants were the week's knife: 10.5-point dogs in Houston, and only Thom, Nate V and Mrs. Sombloski saw it coming. The house made the Texans its Lock. The house is not taking questions.\n\nDan and Mike Sombloski bled out at 4–9; Mike's exit polls did not hold. Tonight it's Cowboys at Eagles. Josh's Bertburgers ride on one game, sealed until the 8:15 kickoff.",
+      "columnHead": "Josh Needs Philly. Dallas Means Math.",
+      "column": "Josh is 9–4 and rode the Eagles. Philly wins and he takes the week outright; the Bertburgers are on him. B-rad, Wendy and Thom are on Philly too, mostly to keep him company.\n\nDallas wins and it's a seven-way pileup at 9–5 — Josh, Ryan, Devin, Derek, Andy R, Arod and the house — settled on total points. Vegas says 43.5. Devin and Claude both said 44 and would split it; Josh 48, Ryan 52, Derek 38, Andy R 37, Arod 26. A shootout is Ryan's three-peat. A rock fight is Arod's. The house's Lock, the Texans, already died in Houston. Got a question for the commissioner? Ask it on the pick sheet.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w7.jpg",
@@ -9583,7 +9663,7 @@
       ]
     }
   },
-  "updated": "2026-10-27T00:12:14.746433+00:00",
+  "updated": "2026-10-27T00:20:04.941037+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
