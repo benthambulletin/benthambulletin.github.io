@@ -260,6 +260,7 @@ Phones: the page refetches `data/page.json` on load, on return and every 10 minu
 when `template.html` changes the page reloads itself once (`tpl` hash). The receipt (`sheet/`) fits one screenshot.
 
 ## The Mugshot
+Photo mugshots show full width, square, caption underneath (Garret, Oct 27: "make the mug shot larger").
 The week's winner picks one loser; Garret sends the photo in chat. Crop square around the face (PIL,
 `ImageOps.exif_transpose`, ~600px) → `pool/faces/w<N>.jpg` (N = the week it shows) and set
 `weeks.N.face = {"photo": "/pool/faces/w<N>.jpg", "who": <loser>, "by": <winner>, "week": <week won>, "line": ""}`.
