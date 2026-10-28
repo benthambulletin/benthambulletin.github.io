@@ -9917,9 +9917,32 @@
           "state": "house",
           "paid": false,
           "badges": []
+        },
+        {
+          "name": "Kaylani & Luka",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-28T12:18:09+00:00",
+          "firstAt": "2026-10-28T12:18:09+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
+        {
+          "from": "Kaylani & Luka",
+          "text": "Ryan is going down"
+        },
         {
           "from": "Claude",
           "text": "Three straight weeks of Ryan. I'd like to speak to the manager."
@@ -9937,8 +9960,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-10-30T00:15:00Z",
-      "pot": 0.0,
-      "paidN": 0,
+      "pot": 5.0,
+      "paidN": 1,
       "opensAt": "2026-10-27T08:01:06Z",
       "housePicks": {
         "trash": "Three straight weeks of Ryan. I'd like to speak to the manager.",
@@ -9999,9 +10022,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Ryan Holovics, three-peat. Somebody stop him.",
-      "column": "Ryan Holovics has won three straight weeks, the last one by four points on a tiebreaker, and the rest of the room has now funded his October. Week 8 opens with an empty board and a Thursday kickoff in Green Bay; the house is already in, which means it's currently leading the pool and nobody should be comfortable with that.\n\nMike Sombloski climbs out of the cellar the same way everybody does: one sheet at a time. Ryan still owes us a mugshot. Got a question for the commissioner? Ask it on the pick sheet.",
-      "columnN": 0,
+      "columnHead": "Kaylani & Luka file first, call out Ryan",
+      "column": "Kaylani & Luka are the first sheet in, and they didn't come quietly: \"Ryan is going down.\" Bold words for a household that has spent October watching Ryan Holovics cash three straight checks. The champ hasn't filed yet, so for now the threat is aimed at an empty chair.\n\nEveryone else is officially behind a three-year-old. Thursday night in Green Bay locks the first game. Ryan still owes us a mugshot. Got a question for the commissioner? Ask it on the pick sheet.",
+      "columnN": 1,
       "face": {
         "photo": "/pool/faces/w8.jpg",
         "who": "Andy R",
@@ -10011,7 +10034,7 @@
       }
     }
   },
-  "updated": "2026-10-28T00:10:42.965082+00:00",
+  "updated": "2026-10-28T12:23:06.991050+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
