@@ -9936,6 +9936,25 @@
           "state": "alive",
           "paid": true,
           "badges": []
+        },
+        {
+          "name": "Mrs. Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-28T13:37:17+00:00",
+          "firstAt": "2026-10-28T13:37:17+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -9956,12 +9975,28 @@
           "who": null,
           "status": "unmatched",
           "told": "2026-10-28"
+        },
+        {
+          "id": "1a182bb6c653cbdb",
+          "at": "2026-10-28T13:38:03Z",
+          "amt": "5.00",
+          "who": "Mrs. Sombloski",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a182bb6c653cbdb~1",
+          "at": "2026-10-28T13:38:03Z",
+          "amt": "5.00",
+          "who": "Mike Sombloski",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-10-30T00:15:00Z",
-      "pot": 5.0,
-      "paidN": 1,
+      "pot": 10.0,
+      "paidN": 2,
       "opensAt": "2026-10-27T08:01:06Z",
       "housePicks": {
         "trash": "Three straight weeks of Ryan. I'd like to speak to the manager.",
@@ -10022,9 +10057,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Kaylani & Luka file first, call out Ryan",
-      "column": "Kaylani & Luka are the first sheet in, and they didn't come quietly: \"Ryan is going down.\" Bold words for a household that has spent October watching Ryan Holovics cash three straight checks. The champ hasn't filed yet, so for now the threat is aimed at an empty chair.\n\nEveryone else is officially behind a three-year-old. Thursday night in Green Bay locks the first game. Ryan still owes us a mugshot. Got a question for the commissioner? Ask it on the pick sheet.",
-      "columnN": 1,
+      "columnHead": "Mrs. Sombloski files; Mike still in the cellar",
+      "column": "Two sheets in. Kaylani & Luka opened with \"Ryan is going down,\" and Mrs. Sombloski answered by filing without a word of trash talk, which is either quiet confidence or a woman who has seen Mike's 4–10 and wants no part of the family name this week. Mike himself hasn't filed. The cellar keeps the lights on.\n\nRyan, the back-to-back champ, also hasn't filed, so the threat is still aimed at an empty chair. Andy R is on the mugshot for calling the league rigged; Ryan hung him there personally. Thursday in Green Bay locks the first game. Got a question for the commissioner? Ask it on the pick sheet.",
+      "columnN": 2,
       "face": {
         "photo": "/pool/faces/w8.jpg",
         "who": "Andy R",
@@ -10034,7 +10069,7 @@
       }
     }
   },
-  "updated": "2026-10-28T13:35:10.203966+00:00",
+  "updated": "2026-10-28T14:17:50.241194+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
