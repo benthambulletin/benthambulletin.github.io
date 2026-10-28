@@ -41,12 +41,12 @@ When Garret asks for something in chat, add it here and push in the same turn.
   - **Background: the PACAP drug.** Lundbeck's bocunebart blocks PACAP, a second migraine messenger besides CGRP; it cut migraine days in a mid-stage trial in June, and a phase 3 update is expected by year's end. Nothing new in October. (https://www.lundbeck.com/us/newsroom/2026/lundbeck-presents-positive-phase-iib-data-for-bocunebart-lu-ag09222)
   - **The family's own month (Tally obWNYP, Sept 27–Oct 27), counts and days only:** four logged migraines: Garret two (Oct 6, Oct 23), Joanne one (Oct 9), Gregg one (Oct 6). One of the four started overnight. Garret and Gregg logged the same day, Oct 6. Re-pull the form Sunday morning in case more come in. **No pressure / barometer line** (Garret, Oct 21, overrides the research task's "what the glass was doing"); never symptoms or medication by person.
   - Say in the section that an AI wrote it.
-- **Wed Oct 28 — Question of the Day from Gregg (Garret, Oct 27):** "How much fog can one pail of water make?" Answer in the colophon: "Enough to cover one square mile to a depth of 50 feet." Credit it to Gregg ("Gregg asks:"). It holds up roughly (light fog is about a tenth to a quarter of a gram of water per cubic meter); keep it his question, don't add numbers.
 - **Sun Nov 1 — Sunday Question answers:** Gregg sent his (form, Oct 25): best costume was "the man from Mercury" — an old motorcycle helmet with the dashboard and backup lights from a Mercury, run off a motorcycle battery, wrapped in black, six inches taller; won first place at Mickey Rats in Jamestown. (Leave out the prize and the ride-home line.)
 - **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
 
 ## Done
 
+- Oct 28, No. 126 — Gregg's fog question ran as Question of the Day; Chautauqua Ridge moonrise cover from spool.
 - Sep 26, No. 94 — nor'easter Long Island update; answered "rain tomorrow?" (30% after 5 p.m. Sunday).
 - Sep 27, No. 95 — cannabis-seed Spotlight; Toby cover; Luka get-well line. Published by the 7:20 check (scheduled 6:59 run did not push).
 - Sep 28, No. 96 — Mars into Leo in the Stars; built by the 6:59 in-session run.
