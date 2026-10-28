@@ -9919,6 +9919,25 @@
           "badges": []
         },
         {
+          "name": "Garret",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-28T16:52:10+00:00",
+          "firstAt": "2026-10-28T16:52:10+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Kaylani & Luka",
           "house": false,
           "correct": 0,
@@ -9963,6 +9982,10 @@
           "text": "Ryan is going down"
         },
         {
+          "from": "Garret",
+          "text": "Someone please beat Ryan"
+        },
+        {
           "from": "Claude",
           "text": "Three straight weeks of Ryan. I'd like to speak to the manager."
         }
@@ -9995,8 +10018,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-10-30T00:15:00Z",
-      "pot": 10.0,
-      "paidN": 2,
+      "pot": 15.0,
+      "paidN": 3,
       "opensAt": "2026-10-27T08:01:06Z",
       "housePicks": {
         "trash": "Three straight weeks of Ryan. I'd like to speak to the manager.",
@@ -10057,9 +10080,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Mrs. Sombloski files; Mike still in the cellar",
-      "column": "Two sheets in. Kaylani & Luka opened with \"Ryan is going down,\" and Mrs. Sombloski answered by filing without a word of trash talk, which is either quiet confidence or a woman who has seen Mike's 4–10 and wants no part of the family name this week. Mike himself hasn't filed. The cellar keeps the lights on.\n\nRyan, the back-to-back champ, also hasn't filed, so the threat is still aimed at an empty chair. Andy R is on the mugshot for calling the league rigged; Ryan hung him there personally. Thursday in Green Bay locks the first game. Got a question for the commissioner? Ask it on the pick sheet.",
-      "columnN": 2,
+      "columnHead": "Commissioner files, begs the room to beat Ryan",
+      "column": "Three sheets in, and the theme is unanimous: Ryan. Kaylani & Luka opened with \"Ryan is going down,\" and the commissioner followed with \"Someone please beat Ryan,\" which is less a threat than a man filing a missing-persons report for his own pool. Mrs. Sombloski filed without a word, which still beats anything Mike has said since his 4–10.\n\nRyan, the back-to-back champ, hasn't filed, so the whole room is yelling at an empty chair. Mike hasn't either; the cellar keeps the lights on. Andy R still hangs on the mugshot for calling the league rigged, courtesy of Ryan. Thursday in Green Bay locks the first game. Got a question for the commissioner? Ask it on the pick sheet.",
+      "columnN": 3,
       "face": {
         "photo": "/pool/faces/w8.jpg",
         "who": "Andy R",
@@ -10069,7 +10092,7 @@
       }
     }
   },
-  "updated": "2026-10-28T16:12:42.857770+00:00",
+  "updated": "2026-10-28T17:10:23.530177+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
