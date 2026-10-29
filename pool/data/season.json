@@ -9938,6 +9938,25 @@
           "badges": []
         },
         {
+          "name": "Arod",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T23:00:31+00:00",
+          "firstAt": "2026-10-29T23:00:31+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "B-rad",
           "house": false,
           "correct": 0,
@@ -9995,6 +10014,25 @@
           "badges": []
         },
         {
+          "name": "Derek",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T21:47:08+00:00",
+          "firstAt": "2026-10-29T21:47:08+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Devin",
           "house": false,
           "correct": 0,
@@ -10033,6 +10071,44 @@
           "badges": []
         },
         {
+          "name": "Josh",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T22:09:58+00:00",
+          "firstAt": "2026-10-29T22:09:58+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Kara",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T22:33:06+00:00",
+          "firstAt": "2026-10-29T22:33:06+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Kaylani & Luka",
           "house": false,
           "correct": 0,
@@ -10063,6 +10139,25 @@
           "sheet": {},
           "filedAt": "2026-10-29T14:18:48+00:00",
           "firstAt": "2026-10-29T14:18:48+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Melissa",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T21:54:49+00:00",
+          "firstAt": "2026-10-29T21:54:49+00:00",
           "free": false,
           "rank": 1,
           "delta": 0,
@@ -10202,6 +10297,25 @@
           "state": "alive",
           "paid": true,
           "badges": []
+        },
+        {
+          "name": "Wendy",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T21:50:52+00:00",
+          "firstAt": "2026-10-29T21:50:52+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -10224,6 +10338,10 @@
         {
           "from": "Ryan Holovics",
           "text": "Is anyone else even trying?"
+        },
+        {
+          "from": "Josh",
+          "text": "Your momma"
         },
         {
           "from": "Claude",
@@ -10324,12 +10442,44 @@
           "who": "Derek",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a189a5b4bf634b4",
+          "at": "2026-10-29T21:55:00Z",
+          "amt": "5.00",
+          "who": "Wendy",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a189a92f8cbe499",
+          "at": "2026-10-29T21:58:00Z",
+          "amt": "5.00",
+          "who": "Melissa",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a189b7e6c65767d",
+          "at": "2026-10-29T22:15:00Z",
+          "amt": "5.00",
+          "who": "Josh",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a189c812d4b7a99",
+          "at": "2026-10-29T22:34:00Z",
+          "amt": "5.00",
+          "who": "Kara",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-10-30T00:15:00Z",
-      "pot": 65.0,
-      "paidN": 13,
+      "pot": 90.0,
+      "paidN": 18,
       "opensAt": "2026-10-27T08:01:06Z",
       "housePicks": {
         "trash": "Three straight weeks of Ryan. I'd like to speak to the manager.",
@@ -10398,9 +10548,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Fifteen in. Ryan asks if anyone's trying.",
-      "column": "Fifteen sheets in and the whole room has one target. Kaylani & Luka say Ryan is going down. The commissioner is begging someone to beat him. Ariel wants to know if she should just Venmo Ryan directly. Ryan finally filed and asked if anyone else is even trying.\n\nAndy is hanging on the mugshot next to a clown and filed anyway. Mike is Mike Spookloski this week. Still out: Arod, Derek, Josh, Melissa and Wendy. Panthers at Packers locks at 8:15.",
-      "columnN": 15,
+      "columnHead": "Twenty-one in. A new face shows up.",
+      "column": "Twenty-one sheets and a rookie: Kara is in, which means somebody new gets to find out what the mugshot feels like. Ryan wants to know if anyone else is even trying. Ariel offered to just Venmo him directly. Josh, now Dickter, answered everyone with \"your momma.\"\n\nAndy is on the mugshot next to a clown and filed anyway. Everybody from last week is in. Panthers at Packers locks at 8:15.",
+      "columnN": 21,
       "face": {
         "photo": "/pool/faces/w8.jpg",
         "who": "Andy R",
@@ -10410,7 +10560,7 @@
       }
     }
   },
-  "updated": "2026-10-29T21:42:20.288893+00:00",
+  "updated": "2026-10-29T23:49:27.480358+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -10444,7 +10594,7 @@
     "Andy R": "Andy",
     "Ryan Holovics": "Ryan",
     "Andy R.": "Andy",
-    "Josh": "Dickie Smalls"
+    "Josh": "Dickter"
   },
   "subNames": {
     "EqrypLL": "Andy R",
@@ -10482,7 +10632,8 @@
     "b6c729d57f24889e": "Ryan Holovics",
     "5024342dbb4d6256": "Mike Sombloski",
     "ec4f2dbb3b140095": "Dan",
-    "981a33ebb14fea4a": "Andy R"
+    "981a33ebb14fea4a": "Andy R",
+    "7e38faf5b4e19850": "Kara"
   },
   "keepNames": [
     "Kaylani & Luka"
