@@ -1,16 +1,16 @@
 {
- "generated_utc": "2026-10-29T12:36Z",
+ "generated_utc": "2026-10-29T16:51Z",
  "towns": {
   "North Tonawanda": {
    "issued": "2026-10-29T10:49:36+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 70,
-     "wind": "SW 12 to 21 mph",
+     "wind": "SW 17 to 21 mph",
      "pop": 29,
-     "short": "Mostly Sunny then Chance Rain Showers",
-     "detail": "A chance of rain showers after 5pm. Mostly sunny, with a high near 70. Southwest wind 12 to 21 mph, with gusts as high as 37 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible."
+     "short": "Chance Rain Showers",
+     "detail": "A chance of rain showers after 5pm. Mostly sunny, with a high near 70. Southwest wind 17 to 21 mph, with gusts as high as 37 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible."
     },
     {
      "name": "Tonight",
@@ -87,16 +87,16 @@
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-10-29T12:10:00+00:00",
+    "time": "2026-10-29T16:40:00+00:00",
     "text": "Clear",
-    "temp_f": 54
+    "temp_f": 68
    }
   },
   "Dunkirk": {
    "issued": "2026-10-29T10:49:36+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 71,
      "wind": "SW 17 mph",
      "pop": 8,
@@ -178,21 +178,21 @@
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-10-29T12:10:00+00:00",
+    "time": "2026-10-29T16:40:00+00:00",
     "text": "Clear",
-    "temp_f": 57
+    "temp_f": 73
    }
   },
   "Scottsville": {
    "issued": "2026-10-29T10:49:36+00:00",
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "temp": 75,
-     "wind": "SW 14 to 17 mph",
+     "wind": "SW 17 mph",
      "pop": 8,
-     "short": "Sunny",
-     "detail": "Sunny, with a high near 75. Southwest wind 14 to 17 mph, with gusts as high as 29 mph."
+     "short": "Mostly Sunny",
+     "detail": "Mostly sunny, with a high near 75. Southwest wind around 17 mph, with gusts as high as 29 mph."
     },
     {
      "name": "Tonight",
@@ -269,9 +269,9 @@
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-10-29T12:10:00+00:00",
+    "time": "2026-10-29T16:10:00+00:00",
     "text": "Clear",
-    "temp_f": 54
+    "temp_f": 70
    }
   }
  },
