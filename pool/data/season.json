@@ -9900,6 +9900,25 @@
       ],
       "players": [
         {
+          "name": "Andy R",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T21:38:17+00:00",
+          "firstAt": "2026-10-29T21:38:17+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Ariel",
           "house": false,
           "correct": 0,
@@ -9934,7 +9953,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -9954,6 +9973,25 @@
           "delta": 0,
           "state": "house",
           "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Dan",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T15:42:01+00:00",
+          "firstAt": "2026-10-29T15:42:01+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
           "badges": []
         },
         {
@@ -10014,6 +10052,25 @@
           "badges": []
         },
         {
+          "name": "Leah",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T14:18:48+00:00",
+          "firstAt": "2026-10-29T14:18:48+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Mike Sombloski",
           "house": false,
           "correct": 0,
@@ -10044,6 +10101,44 @@
           "sheet": {},
           "filedAt": "2026-10-28T13:37:17+00:00",
           "firstAt": "2026-10-28T13:37:17+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Nate V",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T15:50:36+00:00",
+          "firstAt": "2026-10-29T15:50:36+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Ryan Holovics",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T13:15:49+00:00",
+          "firstAt": "2026-10-29T13:15:49+00:00",
           "free": false,
           "rank": 1,
           "delta": 0,
@@ -10088,6 +10183,25 @@
           "state": "alive",
           "paid": true,
           "badges": []
+        },
+        {
+          "name": "Walczyk",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T20:45:43+00:00",
+          "firstAt": "2026-10-29T20:45:43+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -10106,6 +10220,10 @@
         {
           "from": "Ariel",
           "text": "Should I just Venmo Ryan directly?"
+        },
+        {
+          "from": "Ryan Holovics",
+          "text": "Is anyone else even trying?"
         },
         {
           "from": "Claude",
@@ -10158,12 +10276,60 @@
           "who": "Devin",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a18807e18280908",
+          "at": "2026-10-29T14:18:00Z",
+          "amt": "5.00",
+          "who": "Leah",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a18807e18280908~1",
+          "at": "2026-10-29T14:18:00Z",
+          "amt": "5.00",
+          "who": "B-rad",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a188542e64cc0af",
+          "at": "2026-10-29T15:42:00Z",
+          "amt": "5.00",
+          "who": "Dan",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1885973248c869",
+          "at": "2026-10-29T15:50:00Z",
+          "amt": "5.00",
+          "who": "Nate V",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1896a1adc16b2a",
+          "at": "2026-10-29T20:45:00Z",
+          "amt": "5.00",
+          "who": "Walczyk",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1899b49f150551",
+          "at": "2026-10-29T21:15:00Z",
+          "amt": "5.00",
+          "who": "Derek",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-10-30T00:15:00Z",
-      "pot": 35.0,
-      "paidN": 7,
+      "pot": 65.0,
+      "paidN": 13,
       "opensAt": "2026-10-27T08:01:06Z",
       "housePicks": {
         "trash": "Three straight weeks of Ryan. I'd like to speak to the manager.",
@@ -10232,9 +10398,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Nine in. Everybody wants Ryan.",
-      "column": "Nine sheets in and the whole room has one target. Kaylani & Luka say Ryan is going down. The commissioner is begging someone to beat him. Ariel wants to know if she should just Venmo Ryan directly and skip the middleman. Mike filed as Mike Spookloski and fell again, this time in costume.\n\nAndy is hanging on the mugshot next to a clown for calling the league rigged. Ryan hasn't filed yet. Panthers at Packers locks tonight at 8:15.",
-      "columnN": 9,
+      "columnHead": "Fifteen in. Ryan asks if anyone's trying.",
+      "column": "Fifteen sheets in and the whole room has one target. Kaylani & Luka say Ryan is going down. The commissioner is begging someone to beat him. Ariel wants to know if she should just Venmo Ryan directly. Ryan finally filed and asked if anyone else is even trying.\n\nAndy is hanging on the mugshot next to a clown and filed anyway. Mike is Mike Spookloski this week. Still out: Arod, Derek, Josh, Melissa and Wendy. Panthers at Packers locks at 8:15.",
+      "columnN": 15,
       "face": {
         "photo": "/pool/faces/w8.jpg",
         "who": "Andy R",
@@ -10244,7 +10410,7 @@
       }
     }
   },
-  "updated": "2026-10-29T12:54:04.017890+00:00",
+  "updated": "2026-10-29T21:42:20.288893+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -10288,7 +10454,8 @@
     "RW1Nql4": "Mike Sombloski",
     "vXVZ8ZQ": "Mike Sombloski",
     "PRNBGbe": "Ryan Holovics",
-    "aOJ5WNv": "Andy R"
+    "aOJ5WNv": "Andy R",
+    "7X74JkP": "Andy R"
   },
   "people": {
     "603444b89dab4f0e": "Thom",
