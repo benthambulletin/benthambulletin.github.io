@@ -9900,6 +9900,44 @@
       ],
       "players": [
         {
+          "name": "Ariel",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T12:41:33+00:00",
+          "firstAt": "2026-10-29T12:41:33+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "B-rad",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T12:45:09+00:00",
+          "firstAt": "2026-10-29T12:45:09+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Claude",
           "house": true,
           "correct": 0,
@@ -9916,6 +9954,25 @@
           "delta": 0,
           "state": "house",
           "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Devin",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T12:44:08+00:00",
+          "firstAt": "2026-10-29T12:44:08+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
           "badges": []
         },
         {
@@ -10012,6 +10069,25 @@
           "state": "alive",
           "paid": false,
           "badges": []
+        },
+        {
+          "name": "Tom",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-10-29T12:36:34+00:00",
+          "firstAt": "2026-10-29T12:36:34+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -10028,11 +10104,21 @@
           "text": "Help, I fell. Trick or Treat."
         },
         {
+          "from": "Ariel",
+          "text": "Should I just Venmo Ryan directly?"
+        },
+        {
           "from": "Claude",
           "text": "Three straight weeks of Ryan. I'd like to speak to the manager."
         }
       ],
       "payments": [
+        {
+          "id": "manual-w8-Ryan Holovics",
+          "amt": "5.00",
+          "who": "Ryan Holovics",
+          "status": "manual"
+        },
         {
           "id": "1a182bb6c653cbdb",
           "at": "2026-10-28T13:38:03Z",
@@ -10050,16 +10136,34 @@
           "told": null
         },
         {
-          "id": "manual-w8-Ryan Holovics",
+          "id": "1a187aa71489f33d",
+          "at": "2026-10-29T12:38:00Z",
           "amt": "5.00",
-          "who": "Ryan Holovics",
-          "status": "manual"
+          "who": "Tom",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a187aea207418be",
+          "at": "2026-10-29T12:43:00Z",
+          "amt": "5.00",
+          "who": "Ariel",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a187ae17aa30be0",
+          "at": "2026-10-29T12:43:00Z",
+          "amt": "5.00",
+          "who": "Devin",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-10-30T00:15:00Z",
-      "pot": 20.0,
-      "paidN": 4,
+      "pot": 35.0,
+      "paidN": 7,
       "opensAt": "2026-10-27T08:01:06Z",
       "housePicks": {
         "trash": "Three straight weeks of Ryan. I'd like to speak to the manager.",
@@ -10102,7 +10206,15 @@
       "botPaid": true,
       "rollIn": 0,
       "namesForm": true,
-      "asks": [],
+      "asks": [
+        {
+          "id": "ArMDq5o",
+          "from": "Tom",
+          "q": "When will the misery with the Jets end?",
+          "told": "2026-10-29T12:54:09Z",
+          "a": null
+        }
+      ],
       "threads": {},
       "stats": {
         "games": {},
@@ -10120,9 +10232,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Five in. One target. His name is Ryan.",
-      "column": "Five sheets in and every one of them is about Ryan. Kaylani & Luka say he's going down. The commissioner is begging the room to beat him, which is not how commissioners usually talk. Mike filed as Mike Spookloski and fell again, this time in costume.\n\nAndy is hanging on the mugshot next to a clown for calling the league rigged. Ryan hasn't filed yet. Panthers at Packers locks tonight at 8:15.",
-      "columnN": 5,
+      "columnHead": "Nine in. Everybody wants Ryan.",
+      "column": "Nine sheets in and the whole room has one target. Kaylani & Luka say Ryan is going down. The commissioner is begging someone to beat him. Ariel wants to know if she should just Venmo Ryan directly and skip the middleman. Mike filed as Mike Spookloski and fell again, this time in costume.\n\nAndy is hanging on the mugshot next to a clown for calling the league rigged. Ryan hasn't filed yet. Panthers at Packers locks tonight at 8:15.",
+      "columnN": 9,
       "face": {
         "photo": "/pool/faces/w8.jpg",
         "who": "Andy R",
@@ -10132,7 +10244,7 @@
       }
     }
   },
-  "updated": "2026-10-29T12:36:09.552881+00:00",
+  "updated": "2026-10-29T12:54:04.017890+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
