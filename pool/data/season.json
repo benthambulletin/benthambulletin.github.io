@@ -9915,7 +9915,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -9953,7 +9953,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -10356,6 +10356,18 @@
           "status": "manual"
         },
         {
+          "id": "manual-w8-Andy R",
+          "amt": "5.00",
+          "who": "Andy R",
+          "status": "manual"
+        },
+        {
+          "id": "manual-w8-Arod",
+          "amt": "5.00",
+          "who": "Arod",
+          "status": "manual"
+        },
+        {
           "id": "1a182bb6c653cbdb",
           "at": "2026-10-28T13:38:03Z",
           "amt": "5.00",
@@ -10478,8 +10490,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-10-30T00:15:00Z",
-      "pot": 90.0,
-      "paidN": 18,
+      "pot": 100.0,
+      "paidN": 20,
       "opensAt": "2026-10-27T08:01:06Z",
       "housePicks": {
         "trash": "Three straight weeks of Ryan. I'd like to speak to the manager.",
@@ -10560,7 +10572,7 @@
       }
     }
   },
-  "updated": "2026-10-29T23:49:27.480358+00:00",
+  "updated": "2026-10-29T23:50:04.429760+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
