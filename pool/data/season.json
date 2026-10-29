@@ -10048,6 +10048,12 @@
           "who": "Mike Sombloski",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "manual-w8-Ryan Holovics",
+          "amt": "5.00",
+          "who": "Ryan Holovics",
+          "status": "manual"
         }
       ],
       "buyIn": 5,
