@@ -10464,6 +10464,14 @@
           "status": "manual"
         },
         {
+          "id": "1a17e6091b09b974",
+          "at": "2026-10-27T17:20:19Z",
+          "amt": "100.00",
+          "who": null,
+          "status": "unmatched",
+          "told": null
+        },
+        {
           "id": "1a182bb6c653cbdb",
           "at": "2026-10-28T13:38:03Z",
           "amt": "5.00",
@@ -10732,7 +10740,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-30T21:11:16.935069+00:00",
+  "updated": "2026-10-30T22:09:03.538435+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
