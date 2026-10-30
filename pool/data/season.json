@@ -9707,12 +9707,36 @@
           "kickoff": "2026-10-30T00:15:00Z",
           "when": "Thu 8:15 PM",
           "tv": "Prime Video",
-          "winner": null,
-          "status": "live",
+          "winner": "Packers",
+          "status": "final",
           "fav": "Packers",
           "line": "Packers −4.5",
-          "hits": [],
-          "misses": [],
+          "hits": [
+            "Kaylani & Luka",
+            "Garret",
+            "Thom",
+            "Tom",
+            "Ariel",
+            "Devin",
+            "B-rad",
+            "Ryan Holovics",
+            "Dan",
+            "Walczyk",
+            "Andy R",
+            "Derek",
+            "Melissa",
+            "Josh",
+            "Kara",
+            "Arod",
+            "Claude"
+          ],
+          "misses": [
+            "Mrs. Sombloski",
+            "Mike Sombloski",
+            "Leah",
+            "Nate V",
+            "Wendy"
+          ],
           "sides": {
             "Panthers": [
               "Mrs. Sombloski",
@@ -9741,8 +9765,7 @@
               "Claude"
             ]
           },
-          "live": "Panthers 3–0 · 1st qtr",
-          "liveAt": "2026-10-30T00:27:00Z"
+          "score": "27–19"
         },
         {
           "away": "Ravens",
@@ -9931,10 +9954,10 @@
         {
           "name": "Andy R",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -9952,10 +9975,10 @@
         {
           "name": "Ariel",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -9973,10 +9996,10 @@
         {
           "name": "Arod",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -9994,10 +10017,10 @@
         {
           "name": "B-rad",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10015,10 +10038,10 @@
         {
           "name": "Claude",
           "house": true,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10036,10 +10059,10 @@
         {
           "name": "Dan",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10057,10 +10080,10 @@
         {
           "name": "Derek",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10078,10 +10101,10 @@
         {
           "name": "Devin",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10099,10 +10122,10 @@
         {
           "name": "Garret",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10120,10 +10143,10 @@
         {
           "name": "Josh",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10141,10 +10164,10 @@
         {
           "name": "Kara",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10162,10 +10185,10 @@
         {
           "name": "Kaylani & Luka",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10181,33 +10204,12 @@
           "badges": []
         },
         {
-          "name": "Leah",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Panthers"
-          },
-          "filedAt": "2026-10-29T14:18:48+00:00",
-          "firstAt": "2026-10-29T14:18:48+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
           "name": "Melissa",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10223,75 +10225,12 @@
           "badges": []
         },
         {
-          "name": "Mike Sombloski",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Panthers"
-          },
-          "filedAt": "2026-10-28T23:59:21+00:00",
-          "firstAt": "2026-10-28T23:59:21+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Mrs. Sombloski",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Panthers"
-          },
-          "filedAt": "2026-10-28T13:37:17+00:00",
-          "firstAt": "2026-10-28T13:37:17+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
-          "name": "Nate V",
-          "house": false,
-          "correct": 0,
-          "missed": 0,
-          "void": 0,
-          "remaining": 14,
-          "max": 14,
-          "tb": null,
-          "sheet": {
-            "0": "Panthers"
-          },
-          "filedAt": "2026-10-29T15:50:36+00:00",
-          "firstAt": "2026-10-29T15:50:36+00:00",
-          "free": false,
-          "rank": 1,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": []
-        },
-        {
           "name": "Ryan Holovics",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10309,10 +10248,10 @@
         {
           "name": "Thom",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10330,10 +10269,10 @@
         {
           "name": "Tom",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10351,10 +10290,10 @@
         {
           "name": "Walczyk",
           "house": false,
-          "correct": 0,
+          "correct": 1,
           "missed": 0,
           "void": 0,
-          "remaining": 14,
+          "remaining": 13,
           "max": 14,
           "tb": null,
           "sheet": {
@@ -10370,13 +10309,97 @@
           "badges": []
         },
         {
+          "name": "Leah",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Panthers"
+          },
+          "filedAt": "2026-10-29T14:18:48+00:00",
+          "firstAt": "2026-10-29T14:18:48+00:00",
+          "free": false,
+          "rank": 18,
+          "delta": -17,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Mike Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Panthers"
+          },
+          "filedAt": "2026-10-28T23:59:21+00:00",
+          "firstAt": "2026-10-28T23:59:21+00:00",
+          "free": false,
+          "rank": 18,
+          "delta": -17,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Mrs. Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Panthers"
+          },
+          "filedAt": "2026-10-28T13:37:17+00:00",
+          "firstAt": "2026-10-28T13:37:17+00:00",
+          "free": false,
+          "rank": 18,
+          "delta": -17,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Nate V",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Panthers"
+          },
+          "filedAt": "2026-10-29T15:50:36+00:00",
+          "firstAt": "2026-10-29T15:50:36+00:00",
+          "free": false,
+          "rank": 18,
+          "delta": -17,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Wendy",
           "house": false,
           "correct": 0,
-          "missed": 0,
+          "missed": 1,
           "void": 0,
-          "remaining": 14,
-          "max": 14,
+          "remaining": 13,
+          "max": 13,
           "tb": null,
           "sheet": {
             "0": "Panthers"
@@ -10384,8 +10407,8 @@
           "filedAt": "2026-10-29T21:50:52+00:00",
           "firstAt": "2026-10-29T21:50:52+00:00",
           "free": false,
-          "rank": 1,
-          "delta": 0,
+          "rank": 18,
+          "delta": -17,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -10629,27 +10652,18 @@
               "Leah",
               "Nate V",
               "Wendy"
-            ]
+            ],
+            "upset": false,
+            "roomUpset": false,
+            "rightN": 16
           }
         },
         "upsets": 0,
-        "decided": 0,
-        "best": null,
-        "worst": null,
-        "bills": null,
-        "jets": null
-      },
-      "decides": [
-        {
+        "decided": 1,
+        "best": {
           "game": 0,
-          "away": [
-            "Mrs. Sombloski",
-            "Mike Sombloski",
-            "Leah",
-            "Nate V",
-            "Wendy"
-          ],
-          "home": [
+          "n": 16,
+          "who": [
             "Kaylani & Luka",
             "Garret",
             "Thom",
@@ -10667,16 +10681,46 @@
             "Kara",
             "Arod"
           ]
-        }
-      ],
+        },
+        "worst": {
+          "game": 0,
+          "n": 16,
+          "who": [
+            "Kaylani & Luka",
+            "Garret",
+            "Thom",
+            "Tom",
+            "Ariel",
+            "Devin",
+            "B-rad",
+            "Ryan Holovics",
+            "Dan",
+            "Walczyk",
+            "Andy R",
+            "Derek",
+            "Melissa",
+            "Josh",
+            "Kara",
+            "Arod"
+          ]
+        },
+        "bills": null,
+        "jets": null
+      },
+      "decides": [],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
-      "updates": [],
-      "decidedAtLastRun": 0,
+      "updates": [
+        {
+          "at": "2026-10-30T15:02:50.018496+00:00",
+          "note": "1 of 14 final. 16 tied at 1–0."
+        }
+      ],
+      "decidedAtLastRun": 1,
       "outAtLastRun": [],
-      "columnHead": "Five ride the Panthers. Seventeen don't.",
-      "column": "Locked. Seventeen took the Packers, Claude included. Five went with Carolina: Mrs. Sombloski, Mike, Leah, Nate V and Wendy. The Sombloski household voted as a bloc for once, and Carolina kicked a field goal on the opening drive like it read the column.\n\nRyan is with the crowd on Green Bay, so a Panthers win puts five people a game up on the three-time champ before Sunday. Kara's first pick in the pool: Packers. Welcome. Pot's $100.",
+      "columnHead": "Green Bay holds. Five start in the hole.",
+      "column": "Packers 27, Panthers 19, and the crowd was right. Seventeen sheets are 1–0, Ryan among them, so the three-time champ starts the weekend tied with everybody, including Kara in her first week. The five who rode Carolina (Mrs. Sombloski, Mike, Leah, Nate V and Wendy) are a game down before Sunday, and the Sombloski household lost together, which is at least efficient.\n\nBills and Ravens lead off the 1:00 slate. Pot's $100 with 20 paid.",
       "columnN": 21,
       "face": {
         "photo": "/pool/faces/w8.jpg",
@@ -10684,10 +10728,11 @@
         "by": "Ryan Holovics",
         "week": 7,
         "line": "For calling the system rigged. Lesson learned?"
-      }
+      },
+      "thuDone": true
     }
   },
-  "updated": "2026-10-30T00:24:15.965141+00:00",
+  "updated": "2026-10-30T15:02:50.018496+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
