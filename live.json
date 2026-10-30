@@ -1,13 +1,15 @@
 {
- "updated": "2026-10-30T03:24:54Z",
+ "updated": "2026-10-30T03:26:55Z",
  "week": 8,
  "games": {
   "0": {
-   "state": "in",
+   "state": "post",
    "away": 19,
    "home": 27,
-   "detail": "0:04 - 4th",
-   "line": "Packers 27–19 · 0:04 - 4th"
+   "detail": "Final",
+   "winner": "Packers",
+   "score": "27–19",
+   "line": "Final · Packers 27–19"
   }
  }
 }
