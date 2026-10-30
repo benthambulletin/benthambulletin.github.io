@@ -1,15 +1,13 @@
 {
- "updated": "2026-10-27T05:13:06Z",
- "week": 7,
+ "updated": "2026-10-30T00:24:19Z",
+ "week": 8,
  "games": {
-  "13": {
-   "state": "post",
-   "away": 38,
-   "home": 21,
-   "detail": "Final",
-   "winner": "Cowboys",
-   "score": "38–21",
-   "line": "Final · Cowboys 38–21"
+  "0": {
+   "state": "in",
+   "away": 3,
+   "home": 0,
+   "detail": "11:43 - 1st",
+   "line": "Panthers 3–0 · 11:43 - 1st"
   }
  }
 }
