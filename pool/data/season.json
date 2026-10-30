@@ -10324,7 +10324,7 @@
           "firstAt": "2026-10-29T14:18:48+00:00",
           "free": false,
           "rank": 18,
-          "delta": -17,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -10345,7 +10345,7 @@
           "firstAt": "2026-10-28T23:59:21+00:00",
           "free": false,
           "rank": 18,
-          "delta": -17,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -10366,7 +10366,7 @@
           "firstAt": "2026-10-28T13:37:17+00:00",
           "free": false,
           "rank": 18,
-          "delta": -17,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -10387,7 +10387,7 @@
           "firstAt": "2026-10-29T15:50:36+00:00",
           "free": false,
           "rank": 18,
-          "delta": -17,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -10408,7 +10408,7 @@
           "firstAt": "2026-10-29T21:50:52+00:00",
           "free": false,
           "rank": 18,
-          "delta": -17,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -10732,7 +10732,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-10-30T15:02:50.018496+00:00",
+  "updated": "2026-10-30T15:15:36.862495+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
