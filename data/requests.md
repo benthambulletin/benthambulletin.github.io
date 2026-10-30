@@ -31,6 +31,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - **/election/ is a separate tracker (Oct 14).** It has its own daily task and rules in `election/CLAUDE.md`. The paper may link to it (https://benthambulletin.github.io/election/) but never builds it or edits `election/`.
 - **Family form (Oct 4):** https://tally.so/r/rjxDpl — check every morning, run entries automatically per CLAUDE.md, hold only anything unkind or private and flag it to Garret.
 
+- **Migraine log `who` (Oct 30):** take the person from the visible "Who is this for?" answer, never the hidden `who` field — that one is just the pre-fill from the link (Garret's link opens as Garret, so Mom's Oct 29 entry was mis-tagged and dropped).
+
 ## Dated
 
 - **Sun Nov 1, 2026 — Sunday Spotlight: the month in migraine.** (Monthly research run, Oct 27.) A quiet month for the family's own medicines: no news on Qulipta or Ubrelvy, nothing new on the PACAP drug or Biohaven's TRPM3 pill. What did happen, Sept 27–Oct 27:
