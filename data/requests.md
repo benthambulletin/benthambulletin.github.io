@@ -33,6 +33,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 - **Migraine log `who` (Oct 30):** take the person from the visible "Who is this for?" answer, never the hidden `who` field — that one is just the pre-fill from the link (Garret's link opens as Garret, so Mom's Oct 29 entry was mis-tagged and dropped).
 
+- **No photo? Draw the cover (Garret, Oct 31).** When nobody sends a photo by build time, Plate I is an illustrated, lightly animated inline SVG made for the day (holiday, game day, weather, season, sky) in the paper's palette, like the Oct 25 confetti and Oct 31 Halloween covers. No real people, no copyrighted characters or logos, no stock photos. Caption it plainly; a real family photo always wins and replaces it.
+
 ## Dated
 
 - **Sun Nov 1, 2026 — Sunday Spotlight: the month in migraine.** (Monthly research run, Oct 27.) A quiet month for the family's own medicines: no news on Qulipta or Ubrelvy, nothing new on the PACAP drug or Biohaven's TRPM3 pill. What did happen, Sept 27–Oct 27:
