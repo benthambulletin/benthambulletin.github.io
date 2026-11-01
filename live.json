@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-01T19:35:03Z",
+ "updated": "2026-11-01T19:37:05Z",
  "week": 8,
  "games": {
   "1": {
    "state": "in",
    "away": 7,
    "home": 13,
-   "detail": "1:36 - 2nd",
-   "line": "Bills 13–7 · 1:36 - 2nd"
+   "detail": "1:27 - 2nd",
+   "line": "Bills 13–7 · 1:27 - 2nd"
   },
   "2": {
    "state": "in",
    "away": 13,
    "home": 14,
-   "detail": "0:20 - 2nd",
-   "line": "Bengals 14–13 · 0:20 - 2nd"
+   "detail": "Halftime",
+   "line": "Bengals 14–13 · Halftime"
   },
   "3": {
    "state": "in",
@@ -40,9 +40,9 @@
   "6": {
    "state": "in",
    "away": 7,
-   "home": 3,
-   "detail": "0:05 - 2nd",
-   "line": "Vikings 7–3 · 0:05 - 2nd"
+   "home": 6,
+   "detail": "0:02 - 2nd",
+   "line": "Vikings 7–6 · 0:02 - 2nd"
   },
   "7": {
    "state": "in",
