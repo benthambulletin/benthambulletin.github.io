@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-01T21:16:29Z",
+ "updated": "2026-11-01T21:18:31Z",
  "week": 8,
  "games": {
   "1": {
    "state": "in",
    "away": 10,
    "home": 36,
-   "detail": "3:13 - 4th",
-   "line": "Bills 36–10 · 3:13 - 4th"
+   "detail": "2:00 - 4th",
+   "line": "Bills 36–10 · 2:00 - 4th"
   },
   "2": {
    "state": "in",
    "away": 36,
-   "home": 29,
-   "detail": "2:00 - 4th",
-   "line": "Titans 36–29 · 2:00 - 4th"
+   "home": 36,
+   "detail": "1:17 - 4th",
+   "line": "Tied 36–36 · 1:17 - 4th"
   },
   "3": {
    "state": "post",
@@ -38,8 +38,8 @@
    "state": "in",
    "away": 24,
    "home": 30,
-   "detail": "0:36 - 4th",
-   "line": "Cowboys 30–24 · 0:36 - 4th"
+   "detail": "0:10 - 4th",
+   "line": "Cowboys 30–24 · 0:10 - 4th"
   },
   "6": {
    "state": "post",
@@ -72,8 +72,8 @@
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "10:50 - 1st",
-   "line": "Tied 0–0 · 10:50 - 1st"
+   "detail": "10:42 - 1st",
+   "line": "Tied 0–0 · 10:42 - 1st"
   },
   "10": {
    "state": "pre",
