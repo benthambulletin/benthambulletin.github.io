@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T23:44:46Z",
+ "updated": "2026-11-01T23:46:47Z",
  "week": 8,
  "games": {
   "1": {
@@ -78,22 +78,22 @@
    "state": "in",
    "away": 9,
    "home": 24,
-   "detail": "4:30 - 4th",
-   "line": "Rams 24–9 · 4:30 - 4th"
+   "detail": "3:44 - 4th",
+   "line": "Rams 24–9 · 3:44 - 4th"
   },
   "10": {
    "state": "in",
    "away": 24,
    "home": 13,
-   "detail": "1:33 - 3rd",
-   "line": "Chiefs 24–13 · 1:33 - 3rd"
+   "detail": "1:23 - 3rd",
+   "line": "Chiefs 24–13 · 1:23 - 3rd"
   },
   "11": {
    "state": "in",
    "away": 17,
    "home": 13,
-   "detail": "0:54 - 3rd",
-   "line": "Patriots 17–13 · 0:54 - 3rd"
+   "detail": "End of 3rd",
+   "line": "Patriots 17–13 · End of 3rd"
   },
   "12": {
    "state": "pre",
