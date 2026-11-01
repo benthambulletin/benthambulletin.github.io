@@ -10,7 +10,8 @@ Return a numbered list of problems. Each one gets the exact sentence, what is wr
 
 **Freshness of data (the most common failure)**
 - Dawn temps in the three-town strip come from `forecast.json` → `towns[*].observation` (~6:45 a.m.).
-- **No barometric pressure anywhere in the paper (Garret, Oct 21):** no Barograph, no pressure tile, no pressure line in the Weather Glass or the Sunday Week in the Glass. Flag any that slips back in.
+- **The Week in the Glass is retired (Garret, Nov 1):** flag it if it reappears; the Sunday Week Ahead weather line should open with a one-clause "Last week:" look back.
+- **No barometric pressure anywhere in the paper (Garret, Oct 21):** no Barograph, no pressure tile, no pressure line in the Weather Glass or the Sunday Week Ahead. Flag any that slips back in.
 - `forecast.json` `generated_utc` is this morning. Highs, lows, rain chances and the 5-day match it.
 - Every news item is dated within 48 hours, and none ran yesterday (compare with yesterday's JSON) in any wording.
 

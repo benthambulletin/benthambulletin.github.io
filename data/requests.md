@@ -35,6 +35,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 - **No photo? Draw the cover (Garret, Oct 31).** When nobody sends a photo by build time, Plate I is an illustrated, lightly animated inline SVG made for the day (holiday, game day, weather, season, sky) in the paper's palette, like the Oct 25 confetti and Oct 31 Halloween covers. No real people, no copyrighted characters or logos, no stock photos. Caption it plainly; a real family photo always wins and replaces it.
 
+- **No Week in the Glass (Garret, Nov 1).** The Sunday look-back table is retired from No. 131 on; one short "Last week:" clause opens The Week Ahead's weather line instead.
+
 ## Dated
 
 - **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
