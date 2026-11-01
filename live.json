@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-01T19:59:24Z",
+ "updated": "2026-11-01T20:01:26Z",
  "week": 8,
  "games": {
   "1": {
    "state": "in",
    "away": 7,
    "home": 16,
-   "detail": "Halftime",
-   "line": "Bills 16–7 · Halftime"
+   "detail": "14:51 - 3rd",
+   "line": "Bills 16–7 · 14:51 - 3rd"
   },
   "2": {
    "state": "in",
    "away": 13,
    "home": 21,
-   "detail": "12:25 - 3rd",
-   "line": "Bengals 21–13 · 12:25 - 3rd"
+   "detail": "11:49 - 3rd",
+   "line": "Bengals 21–13 · 11:49 - 3rd"
   },
   "3": {
    "state": "in",
@@ -26,9 +26,9 @@
   "4": {
    "state": "in",
    "away": 0,
-   "home": 28,
-   "detail": "9:15 - 3rd",
-   "line": "Jaguars 28–0 · 9:15 - 3rd"
+   "home": 35,
+   "detail": "9:08 - 3rd",
+   "line": "Jaguars 35–0 · 9:08 - 3rd"
   },
   "5": {
    "state": "in",
@@ -48,15 +48,15 @@
    "state": "in",
    "away": 21,
    "home": 30,
-   "detail": "7:28 - 3rd",
-   "line": "Jets 30–21 · 7:28 - 3rd"
+   "detail": "5:37 - 3rd",
+   "line": "Jets 30–21 · 5:37 - 3rd"
   },
   "8": {
    "state": "in",
    "away": 0,
    "home": 9,
-   "detail": "7:09 - 3rd",
-   "line": "Buccaneers 9–0 · 7:09 - 3rd"
+   "detail": "5:41 - 3rd",
+   "line": "Buccaneers 9–0 · 5:41 - 3rd"
   },
   "9": {
    "state": "pre",
