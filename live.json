@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-01T20:27:48Z",
+ "updated": "2026-11-01T20:29:50Z",
  "week": 8,
  "games": {
   "1": {
    "state": "in",
    "away": 10,
    "home": 23,
-   "detail": "7:54 - 3rd",
-   "line": "Bills 23–10 · 7:54 - 3rd"
+   "detail": "6:35 - 3rd",
+   "line": "Bills 23–10 · 6:35 - 3rd"
   },
   "2": {
    "state": "in",
    "away": 21,
    "home": 21,
-   "detail": "2:56 - 3rd",
-   "line": "Tied 21–21 · 2:56 - 3rd"
+   "detail": "1:40 - 3rd",
+   "line": "Tied 21–21 · 1:40 - 3rd"
   },
   "3": {
    "state": "in",
@@ -27,15 +27,15 @@
    "state": "in",
    "away": 7,
    "home": 42,
-   "detail": "13:58 - 4th",
-   "line": "Jaguars 42–7 · 13:58 - 4th"
+   "detail": "13:36 - 4th",
+   "line": "Jaguars 42–7 · 13:36 - 4th"
   },
   "5": {
    "state": "in",
    "away": 10,
    "home": 24,
-   "detail": "14:20 - 4th",
-   "line": "Cowboys 24–10 · 14:20 - 4th"
+   "detail": "12:09 - 4th",
+   "line": "Cowboys 24–10 · 12:09 - 4th"
   },
   "6": {
    "state": "in",
@@ -48,15 +48,15 @@
    "state": "in",
    "away": 35,
    "home": 30,
-   "detail": "10:18 - 4th",
-   "line": "Raiders 35–30 · 10:18 - 4th"
+   "detail": "10:06 - 4th",
+   "line": "Raiders 35–30 · 10:06 - 4th"
   },
   "8": {
    "state": "in",
    "away": 0,
    "home": 16,
-   "detail": "8:13 - 4th",
-   "line": "Buccaneers 16–0 · 8:13 - 4th"
+   "detail": "7:18 - 4th",
+   "line": "Buccaneers 16–0 · 7:18 - 4th"
   },
   "9": {
    "state": "pre",
