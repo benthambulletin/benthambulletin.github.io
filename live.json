@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T21:53:00Z",
+ "updated": "2026-11-01T21:55:02Z",
  "week": 8,
  "games": {
   "1": {
@@ -76,24 +76,24 @@
   },
   "9": {
    "state": "in",
-   "away": 3,
+   "away": 6,
    "home": 3,
-   "detail": "12:01 - 2nd",
-   "line": "Tied 3–3 · 12:01 - 2nd"
+   "detail": "10:06 - 2nd",
+   "line": "Chargers 6–3 · 10:06 - 2nd"
   },
   "10": {
    "state": "in",
    "away": 7,
    "home": 3,
-   "detail": "3:51 - 1st",
-   "line": "Chiefs 7–3 · 3:51 - 1st"
+   "detail": "2:58 - 1st",
+   "line": "Chiefs 7–3 · 2:58 - 1st"
   },
   "11": {
    "state": "in",
    "away": 3,
    "home": 3,
-   "detail": "3:39 - 1st",
-   "line": "Tied 3–3 · 3:39 - 1st"
+   "detail": "2:13 - 1st",
+   "line": "Tied 3–3 · 2:13 - 1st"
   },
   "12": {
    "state": "pre",
