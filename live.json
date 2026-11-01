@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T23:08:03Z",
+ "updated": "2026-11-01T23:10:05Z",
  "week": 8,
  "games": {
   "1": {
@@ -77,9 +77,9 @@
   "9": {
    "state": "in",
    "away": 9,
-   "home": 17,
-   "detail": "5:05 - 3rd",
-   "line": "Rams 17–9 · 5:05 - 3rd"
+   "home": 23,
+   "detail": "3:41 - 3rd",
+   "line": "Rams 23–9 · 3:41 - 3rd"
   },
   "10": {
    "state": "in",
@@ -92,8 +92,8 @@
    "state": "in",
    "away": 3,
    "home": 13,
-   "detail": "12:13 - 3rd",
-   "line": "Dolphins 13–3 · 12:13 - 3rd"
+   "detail": "11:52 - 3rd",
+   "line": "Dolphins 13–3 · 11:52 - 3rd"
   },
   "12": {
    "state": "pre",
