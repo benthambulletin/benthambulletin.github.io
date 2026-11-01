@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-01T18:24:01Z",
+ "updated": "2026-11-01T18:26:03Z",
  "week": 8,
  "games": {
   "1": {
    "state": "in",
    "away": 0,
-   "home": 7,
-   "detail": "7:17 - 1st",
-   "line": "Bills 7–0 · 7:17 - 1st"
+   "home": 10,
+   "detail": "6:05 - 1st",
+   "line": "Bills 10–0 · 6:05 - 1st"
   },
   "2": {
    "state": "in",
@@ -19,30 +19,30 @@
   "3": {
    "state": "in",
    "away": 0,
-   "home": 6,
+   "home": 7,
    "detail": "7:57 - 1st",
-   "line": "Steelers 6–0 · 7:57 - 1st"
+   "line": "Steelers 7–0 · 7:57 - 1st"
   },
   "4": {
    "state": "in",
    "away": 0,
    "home": 7,
-   "detail": "4:56 - 1st",
-   "line": "Jaguars 7–0 · 4:56 - 1st"
+   "detail": "3:25 - 1st",
+   "line": "Jaguars 7–0 · 3:25 - 1st"
   },
   "5": {
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "6:12 - 1st",
-   "line": "Tied 0–0 · 6:12 - 1st"
+   "detail": "5:23 - 1st",
+   "line": "Tied 0–0 · 5:23 - 1st"
   },
   "6": {
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "7:21 - 1st",
-   "line": "Tied 0–0 · 7:21 - 1st"
+   "detail": "7:17 - 1st",
+   "line": "Tied 0–0 · 7:17 - 1st"
   },
   "7": {
    "state": "in",
