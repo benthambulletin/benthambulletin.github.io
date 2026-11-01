@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T23:52:51Z",
+ "updated": "2026-11-01T23:54:53Z",
  "week": 8,
  "games": {
   "1": {
@@ -75,11 +75,13 @@
    "line": "Final · Buccaneers 16–0"
   },
   "9": {
-   "state": "in",
+   "state": "post",
    "away": 9,
    "home": 24,
-   "detail": "1:54 - 4th",
-   "line": "Rams 24–9 · 1:54 - 4th"
+   "detail": "Final",
+   "winner": "Rams",
+   "score": "24–9",
+   "line": "Final · Rams 24–9"
   },
   "10": {
    "state": "in",
