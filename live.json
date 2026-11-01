@@ -1,34 +1,36 @@
 {
- "updated": "2026-11-01T21:04:19Z",
+ "updated": "2026-11-01T21:06:21Z",
  "week": 8,
  "games": {
   "1": {
    "state": "in",
    "away": 10,
    "home": 29,
-   "detail": "9:31 - 4th",
-   "line": "Bills 29–10 · 9:31 - 4th"
+   "detail": "8:14 - 4th",
+   "line": "Bills 29–10 · 8:14 - 4th"
   },
   "2": {
    "state": "in",
    "away": 28,
    "home": 29,
-   "detail": "5:43 - 4th",
-   "line": "Bengals 29–28 · 5:43 - 4th"
+   "detail": "3:50 - 4th",
+   "line": "Bengals 29–28 · 3:50 - 4th"
   },
   "3": {
    "state": "in",
    "away": 6,
    "home": 27,
-   "detail": "1:44 - 4th",
-   "line": "Steelers 27–6 · 1:44 - 4th"
+   "detail": "0:22 - 4th",
+   "line": "Steelers 27–6 · 0:22 - 4th"
   },
   "4": {
-   "state": "in",
+   "state": "post",
    "away": 7,
    "home": 42,
-   "detail": "2:00 - 4th",
-   "line": "Jaguars 42–7 · 2:00 - 4th"
+   "detail": "Final",
+   "winner": "Jaguars",
+   "score": "42–7",
+   "line": "Final · Jaguars 42–7"
   },
   "5": {
    "state": "in",
@@ -41,15 +43,17 @@
    "state": "in",
    "away": 15,
    "home": 19,
-   "detail": "1:52 - 4th",
-   "line": "Lions 19–15 · 1:52 - 4th"
+   "detail": "1:48 - 4th",
+   "line": "Lions 19–15 · 1:48 - 4th"
   },
   "7": {
-   "state": "in",
+   "state": "post",
    "away": 38,
    "home": 33,
-   "detail": "0:07 - 4th",
-   "line": "Raiders 38–33 · 0:07 - 4th"
+   "detail": "Final",
+   "winner": "Raiders",
+   "score": "38–33",
+   "line": "Final · Raiders 38–33"
   },
   "8": {
    "state": "post",
@@ -61,10 +65,11 @@
    "line": "Final · Buccaneers 16–0"
   },
   "9": {
-   "state": "pre",
+   "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "11/1 - 4:05 PM EST"
+   "detail": "15:00 - 1st",
+   "line": "Tied 0–0 · 15:00 - 1st"
   },
   "10": {
    "state": "pre",
