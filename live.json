@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T21:38:48Z",
+ "updated": "2026-11-01T21:40:50Z",
  "week": 8,
  "games": {
   "1": {
@@ -15,8 +15,8 @@
    "state": "in",
    "away": 36,
    "home": 43,
-   "detail": "6:16 - OT",
-   "line": "Bengals 43–36 · 6:16 - OT"
+   "detail": "5:40 - OT",
+   "line": "Bengals 43–36 · 5:40 - OT"
   },
   "3": {
    "state": "post",
@@ -37,11 +37,13 @@
    "line": "Final · Jaguars 42–7"
   },
   "5": {
-   "state": "in",
-   "away": 30,
+   "state": "post",
+   "away": 33,
    "home": 30,
-   "detail": "2:58 - OT",
-   "line": "Tied 30–30 · 2:58 - OT"
+   "detail": "Final/OT",
+   "winner": "Cardinals",
+   "score": "33–30",
+   "line": "Final · Cardinals 33–30 (OT)"
   },
   "6": {
    "state": "post",
@@ -72,24 +74,24 @@
   },
   "9": {
    "state": "in",
-   "away": 0,
+   "away": 3,
    "home": 3,
-   "detail": "1:59 - 1st",
-   "line": "Rams 3–0 · 1:59 - 1st"
+   "detail": "0:04 - 1st",
+   "line": "Tied 3–3 · 0:04 - 1st"
   },
   "10": {
    "state": "in",
    "away": 0,
    "home": 3,
-   "detail": "9:43 - 1st",
-   "line": "Broncos 3–0 · 9:43 - 1st"
+   "detail": "9:03 - 1st",
+   "line": "Broncos 3–0 · 9:03 - 1st"
   },
   "11": {
    "state": "in",
    "away": 3,
    "home": 0,
-   "detail": "9:10 - 1st",
-   "line": "Patriots 3–0 · 9:10 - 1st"
+   "detail": "7:45 - 1st",
+   "line": "Patriots 3–0 · 7:45 - 1st"
   },
   "12": {
    "state": "pre",
