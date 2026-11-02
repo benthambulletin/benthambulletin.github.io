@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-01",
- "updated_at": "2026-11-01T06:40:00-05:00",
+ "as_of": "2026-11-02",
+ "updated_at": "2026-11-02T06:30:00-05:00",
  "election_day": "2026-11-03",
  "early_voting": {
   "start": "2026-10-24",
@@ -17,12 +17,12 @@
   {
    "order": 1,
    "headline": "Democrats are favored to take the House",
-   "detail": "Cook, the nonpartisan rater, now expects them to gain 12 to 25 seats, and on Friday it moved two of the four Pennsylvania districts that decide the majority toward them."
+   "detail": "Cook, the nonpartisan rater, expects them to gain 12 to 25 seats, and last Friday it moved two of the four Pennsylvania districts that decide the majority toward them."
   },
   {
    "order": 2,
    "headline": "The Senate is close, tilting Democratic",
-   "detail": "Democrats lead narrowly in Maine, Ohio and Texas and comfortably in North Carolina; Iowa and Alaska are dead heats; Kansas has tipped to the Democrat; and Michigan and Minnesota, two seats they must keep, both lean their way."
+   "detail": "Democrats lead in Maine, Ohio, Texas and Kansas and comfortably in North Carolina; Iowa and Alaska are dead heats; and Michigan and Minnesota, two seats they must keep, both lean their way."
   },
   {
    "order": 3,
@@ -36,11 +36,11 @@
   }
  ],
  "what_changed": [
-  "Texas tightened a little: James Talarico (D) now leads Ken Paxton (R) by about 1 point in the average, down from about 2, which keeps Texas the shakiest of the three pickups Democrats need beyond North Carolina. Three new polls entered: CNN Talarico 49–43, Texas Southern/YouGov 49–47, and Republican-leaning Quantus 49–48 Paxton.",
-  "Maine ticked toward Troy Jackson (D), who now leads Susan Collins (R) by about 2 points in the average, up from about 1, as older September polls dropped out; no new poll was added.",
-  "Michigan, a seat Democrats must hold, firmed a hair: Abdul El-Sayed (D) now leads Mike Rogers (R) by about 4 points in the average, up from about 3. A Republican-leaning Rasmussen poll (Oct 28–29) that has El-Sayed up 5 entered it.",
-  "In Pennsylvania’s 7th District, one of the four House bellwethers, a second poll has Bob Brooks (D) ahead of Ryan Mackenzie (R), by 49 to 43. Muhlenberg College interviewed voters Oct 6–15.",
-  "Not refreshed today: RealClearPolling’s Iowa, South Carolina and Senate-map pages served older versions, so Saturday’s readings are kept (Iowa tied, South Carolina leaning to Darline Graham Nordone (R) by about 3); the New York governor averages could not be opened, and no new New York poll has appeared since Oct 28."
+  "The final polls moved Maine, Texas and Kansas toward the Democrats: Troy Jackson (D) now leads Susan Collins (R) by about 3 points, James Talarico (D) leads Ken Paxton (R) by about 3, and Adam Hamilton (D) leads Roger Marshall (R) by about 4. With North Carolina, those three are the four pickups Democrats need; each lead grew by about 1 to 2 points as final New York Times/Siena and YouGov polls entered the averages.",
+  "Ohio held: Sherrod Brown (D) leads Jon Husted (R) by about 3 points, nearly unchanged, so it remains the spare pickup if one of the other three slips.",
+  "Iowa and Alaska are still coin flips: Ashley Hinson (R) and Josh Turek (D) are tied, and Mary Peltola (D) leads Dan Sullivan (R) by about 1 point. The two newest Iowa polls both had Turek up 1.",
+  "Michigan, a seat Democrats must hold, firmed: Abdul El-Sayed (D) now leads Mike Rogers (R) by about 5 points, up from about 4, while Minnesota held with Peggy Flanagan (D) about 5 points ahead of Michele Tafoya (R).",
+  "Not refreshed today: RealClearPolling’s North Carolina, Georgia, South Carolina, generic-ballot, Trump-approval and Senate-map pages served older versions, so earlier readings are kept; the New York governor averages could not be opened, and no new nonpartisan New York poll has appeared since Oct 28."
  ],
  "generic_ballot": [
   {
@@ -252,12 +252,12 @@
    "democrat": "Troy Jackson",
    "republican": "Susan Collins (inc.)",
    "cook_rating": "Toss Up",
-   "dem_pct": 48.7,
-   "rep_pct": 47.0,
-   "margin": 1.7,
+   "dem_pct": 49.9,
+   "rep_pct": 46.6,
+   "margin": 3.3,
    "pollster": "RealClearPolling average",
-   "dates": "Oct 5 – Oct 26",
-   "note": "Average as read Nov 1: Jackson +1.7, up from +1.4 as late-September polls aged out (no new poll added). Not in the average: Data for Progress (Democratic-leaning; Political Wire, Oct 30) Jackson 50–45. In the average: Marist (Oct 22–25) Jackson 49–47; CNN (Oct 20–26) 49–45; Trafalgar (Oct 21–23, Republican-leaning) tied 47–47; FOX News (Oct 16–20) tied 49–49; InsiderAdvantage (Oct 13–14, Republican-leaning) Jackson 49–47; Suffolk (Oct 8–11) 49–47; Rasmussen (Oct 5–8, Republican-leaning) 49–47. Sabato’s Crystal Ball (Oct 27) names Maine and Texas the likeliest majority-makers.",
+   "dates": "Oct 8 – Nov 1",
+   "note": "Average as read Nov 2: Jackson +3.3, up from +1.7 after three new polls entered: NYT/Siena (Oct 27–Nov 1, 714 LV) Jackson 51–45; University of New Hampshire (Oct 27–31, 1,654 LV) 54–45; YouGov (Oct 26–29, 1,503 LV) 52–47. Also in the average: Marist (Oct 22–25) Jackson 49–47; CNN (Oct 20–26) 49–45; Trafalgar (Oct 21–23, Republican-leaning) tied 47–47; FOX News (Oct 16–20) tied 49–49; InsiderAdvantage (Oct 13–14, Republican-leaning) Jackson 49–47; Suffolk (Oct 8–11) 49–47. Not in the average: Data for Progress (Democratic-leaning; Political Wire, Oct 30) Jackson 50–45. Sabato’s Crystal Ball (Oct 27) names Maine and Texas the likeliest majority-makers.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/collins-vs-jackson"
   },
   {
@@ -267,12 +267,12 @@
    "democrat": "Sherrod Brown",
    "republican": "Jon Husted (inc.)",
    "cook_rating": "Toss Up",
-   "dem_pct": 47.9,
-   "rep_pct": 45.3,
-   "margin": 2.6,
+   "dem_pct": 48.9,
+   "rep_pct": 46.1,
+   "margin": 2.8,
    "pollster": "RealClearPolling average",
-   "dates": "Oct 5 – Oct 26",
-   "note": "Latest: Suffolk (Oct 21–26) Brown 47–44; InsiderAdvantage (Oct 21–22, Republican-leaning) Brown 47–44; FOX News (Oct 15–19) Brown 52–47; Marist (Oct 15–18) Brown 48–44; Rasmussen (Oct 12–14, Republican-leaning) Husted 49–47; Cook Political Report (Oct 9–13) Brown 49–43; co/efficient (Oct 5–6, Republican-leaning) Husted 46–45. Two Republican-leaning polls this month have Husted ahead; every nonpartisan poll since September has Brown. The average slipped from Brown +3.3 to +2.6 as late-September polls aged out and Suffolk was added.",
+   "dates": "Oct 12 – Nov 1",
+   "note": "Average as read Nov 2: Brown +2.8, up from +2.6 as three new polls entered: NYT/Siena (Oct 26–Nov 1, 717 LV) Brown 49–44; InsiderAdvantage (Oct 29–30, Republican-leaning) Brown 49–47; YouGov (Oct 26–29, 2,090 LV) Brown 50–48. Also: Suffolk (Oct 21–26) Brown 47–44; FOX News (Oct 15–19) 52–47; Marist (Oct 15–18) 48–44; Rasmussen (Oct 12–14, Republican-leaning) Husted 49–47. Every poll in the average except Rasmussen has Brown ahead.",
    "url": "https://www.realclearpolling.com/polls/senate/special-election/2026/ohio/husted-vs-brown"
   },
   {
@@ -282,12 +282,12 @@
    "democrat": "James Talarico",
    "republican": "Ken Paxton",
    "cook_rating": "Toss Up",
-   "dem_pct": 48.2,
-   "rep_pct": 46.8,
-   "margin": 1.4,
+   "dem_pct": 49.0,
+   "rep_pct": 46.5,
+   "margin": 2.5,
    "pollster": "RealClearPolling average",
-   "dates": "Oct 15 – Oct 28",
-   "note": "Average as read Nov 1: Talarico +1.4, down from +1.8 as three new polls entered and older ones dropped: Quantus (Oct 26–28, Republican-leaning) Paxton 49–48; Texas Southern University/YouGov (Oct 21–25) Talarico 49–47; CNN (Oct 20–27) Talarico 49–43. Also in the average: Rasmussen (Oct 20–21, Republican-leaning) tied 45–45; Emerson (Oct 17–19) Talarico 49–48; FOX News (Oct 15–19) tied 49–49; TPOR (Oct 15–18) Talarico 51–47; Univision/YouGov (Oct 13–21) 50–45. Not in the average: Data for Progress (Democratic-leaning; Political Wire, Oct 30) Talarico 49–45.",
+   "dates": "Oct 15 – Nov 1",
+   "note": "Average as read Nov 2: Talarico +2.5, up from +1.4 as four new polls entered: Trafalgar (Oct 31–Nov 1, Republican-leaning) tied 48–48; NYT/Siena (Oct 27–Nov 1, 1,215 LV) Talarico 50–43; AtlasIntel (Oct 28–Nov 1, 1,678 LV) 52–46; YouGov (Oct 26–29, 2,141 LV) 51–47. Also in the average: Quantus (Oct 26–28, Republican-leaning) Paxton 49–48; Texas Southern University/YouGov (Oct 21–25) Talarico 49–47; CNN (Oct 20–27) 49–43; Rasmussen (Oct 20–21, Republican-leaning) tied 45–45; Emerson (Oct 17–19) Talarico 49–48; FOX News (Oct 15–19) tied 49–49.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/texas/talarico-vs-paxton"
   },
   {
@@ -297,12 +297,12 @@
    "democrat": "Josh Turek",
    "republican": "Ashley Hinson",
    "cook_rating": "Toss Up",
-   "dem_pct": 45.5,
-   "rep_pct": 46.0,
-   "margin": -0.5,
+   "dem_pct": 46.5,
+   "rep_pct": 46.8,
+   "margin": -0.3,
    "pollster": "RealClearPolling average",
-   "dates": "Sep 29 – Oct 28",
-   "note": "Latest: co/efficient (Oct 28, Republican-leaning) Hinson 48–46; InsiderAdvantage (Oct 21–22, Republican-leaning) Hinson 47–45; co/efficient (Oct 15–19, Republican-leaning) Hinson 49–46; Trafalgar (Oct 13–15, Republican-leaning) Hinson 46–44; Cook Political Report (Oct 9–13) Turek 46–44; YouGov (Oct 6–12) Turek 47–46; Marist (Oct 8–11) Turek 48–45; Emerson (Oct 5–6) Hinson 47–45; CNN (Sep 29–Oct 5) Hinson 45–43. The four most recent polls all have Hinson up 2 or 3, and all four are from Republican-leaning firms; the three nonpartisan polls before them (Cook, YouGov, Marist) all had Turek up 1 to 3. The Oct 28 co/efficient poll moved the average from Hinson +0.6 to +0.5. On Nov 1 the race page served an older version (Hinson +0.6, through Oct 22, without the Oct 28 poll), so the Oct 31 reading is kept.",
+   "dates": "Oct 9 – Nov 1",
+   "note": "Average as read Nov 2: Hinson +0.3, effectively tied (Oct 31: Hinson +0.5). Two new polls both have Turek up 1: NYT/Siena (Oct 26–Nov 1, 705 LV) Turek 48–47; YouGov (Oct 26–29, 2,020 LV) Turek 50–49. Also in the average: co/efficient (Oct 28, Republican-leaning) Hinson 48–46; InsiderAdvantage (Oct 21–22, Republican-leaning) Hinson 47–45; Trafalgar (Oct 13–15, Republican-leaning) Hinson 46–44; Cook Political Report (Oct 9–13) Turek 46–44. Every recent poll with Hinson ahead is from a Republican-leaning firm; the nonpartisan polls in the average have Turek up 1 to 2.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/iowa/turek-vs-hinson"
   },
   {
@@ -312,12 +312,12 @@
    "democrat": "Adam Hamilton",
    "republican": "Roger Marshall (inc.)",
    "cook_rating": "Toss Up",
-   "dem_pct": 48.3,
-   "rep_pct": 45.7,
-   "margin": 2.6,
+   "dem_pct": 49.8,
+   "rep_pct": 46.2,
+   "margin": 3.6,
    "pollster": "RealClearPolling average",
-   "dates": "Sep 22 – Oct 28",
-   "note": "Three new polls, all with Hamilton ahead, moved RealClearPolling’s average from Marshall +0.3 to Hamilton +2.6: Emerson (Oct 26–28, 800 LV) Hamilton 50–47 (49–45 with Libertarian David Graham at 3); Washington Post/Schar School (Oct 22–26, 801 LV) 54–44 (52–43 with Graham at 4); CNN (Oct 20–26) 49–45. Also in the average: InsiderAdvantage (Oct 13–14, Republican-leaning) Marshall 48–47; InsiderAdvantage (Oct 9–10) Hamilton 48–47; YouGov (Sep 24–Oct 4) Hamilton 48–45; Trafalgar (Sep 29–Oct 1, Republican-leaning) tied 44–44; NYT/Siena (Sep 22–Oct 1) Marshall 47–46. Cook moved to Toss Up on Oct 6, Sabato’s Crystal Ball on Oct 14. Trump won KS by 16 in 2024.",
+   "dates": "Oct 13 – Nov 1",
+   "note": "Average as read Nov 2: Hamilton +3.6, up from +2.6 as two new polls entered: NYT/Siena (Oct 27–Nov 1, 736 LV) Hamilton 49–44 (Libertarian David Graham 4); YouGov (Oct 26–29, 2,092 LV) Hamilton 50–49. Also in the average: Emerson (Oct 26–28, 800 LV) Hamilton 50–47; Washington Post/Schar School (Oct 22–26) 54–44; CNN (Oct 20–26) 49–45; InsiderAdvantage (Oct 13–14, Republican-leaning) Marshall 48–47. Cook moved to Toss Up on Oct 6, Sabato’s Crystal Ball on Oct 14. Trump won KS by 16 in 2024.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/kansas/marshall-vs-hamilton"
   },
   {
@@ -327,12 +327,12 @@
    "democrat": "Mary Peltola",
    "republican": "Dan Sullivan (inc.)",
    "cook_rating": "Toss Up",
-   "dem_pct": 49.0,
-   "rep_pct": 48.2,
-   "margin": 0.8,
+   "dem_pct": 49.2,
+   "rep_pct": 47.8,
+   "margin": 1.4,
    "pollster": "RealClearPolling average",
-   "dates": "Sep 28 – Oct 16",
-   "note": "Newer, not consistently in the average as read Nov 1 (the race page still shows the average through Oct 16): Alaska Survey Research (Oct 26–29, 1,326 LV) Peltola 51–49. In the average: PPP (Oct 14–15, Democratic-leaning) Peltola 48–47; Rasmussen (Oct 12–15, Republican-leaning) Sullivan 48–47; Data for Progress (Oct 8–16, Democratic-leaning) 51–49; InsiderAdvantage (Oct 9–10, Republican-leaning) 50–48; Alaska Survey Research (Oct 1–3) 51–49. A dead heat. Ranked-choice race; Sabato’s Crystal Ball moved to Leans D on Oct 6.",
+   "dates": "Oct 8 – Oct 30",
+   "note": "Average as read Nov 2: Peltola +1.4, up from +0.8 after NYT/Siena (Oct 23–30, 610 LV) Peltola 48–46 and Alaska Survey Research (Oct 26–29, 1,326 LV) Peltola 51–49 entered. Also in the average: PPP (Oct 14–15, Democratic-leaning) 48–47; Data for Progress (Oct 8–16, Democratic-leaning) 51–49; Rasmussen (Oct 12–15, Republican-leaning) Sullivan 48–47; InsiderAdvantage (Oct 9–10, Republican-leaning) Peltola 50–48. Ranked-choice race; Sabato’s Crystal Ball moved to Leans D on Oct 6.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/alaska/peltola-vs-sullivan"
   },
   {
@@ -342,12 +342,12 @@
    "democrat": "Abdul El-Sayed",
    "republican": "Mike Rogers",
    "cook_rating": "Toss Up",
-   "dem_pct": 49.1,
-   "rep_pct": 45.6,
-   "margin": 3.5,
+   "dem_pct": 50.1,
+   "rep_pct": 44.8,
+   "margin": 5.3,
    "pollster": "RealClearPolling average",
-   "dates": "Sep 28 – Oct 29",
-   "note": "Average as read Nov 1: El-Sayed +3.5, up from +3.2 after Rasmussen (Oct 28–29, 745 LV, Republican-leaning) El-Sayed 49–44 was added. Others in the average include: CBS News/Mitchell (Oct 26–27) 51–44; CNN (Oct 20–27) 49–42; Detroit News/Glengariff (Oct 19–22) 51–45; InsiderAdvantage (Oct 21–22, Republican-leaning) 47–46; Marist (Oct 15–18) 50–48; Rasmussen (Oct 12–14) 46–44; Michigan State/YouGov (Oct 2–19) 48–46. Not in the average: Data for Progress (Democratic-leaning; Political Wire, Oct 30) 50–46. A Democratic-held seat; no poll in the list has Rogers ahead.",
+   "dates": "Oct 15 – Nov 1",
+   "note": "Average as read Nov 2: El-Sayed +5.3, up from +3.5 after NYT/Siena (Oct 23–Nov 1, 1,011 LV) El-Sayed 53–42 and YouGov (Oct 26–29, 2,093 LV) 51–47 entered. Also in the average: Rasmussen (Oct 28–29, Republican-leaning) 49–44; CBS News/Mitchell (Oct 26–27) 51–44; CNN (Oct 20–27) 49–42; Detroit News/Glengariff (Oct 19–22) 51–45; InsiderAdvantage (Oct 21–22, Republican-leaning) 47–46; Marist (Oct 15–18) 50–48. A Democratic-held seat; no poll in the list has Rogers ahead.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed"
   },
   {
@@ -357,12 +357,12 @@
    "democrat": "Peggy Flanagan",
    "republican": "Michele Tafoya",
    "cook_rating": "Lean D",
-   "dem_pct": 48.3,
-   "rep_pct": 42.5,
-   "margin": 5.8,
+   "dem_pct": 48.4,
+   "rep_pct": 43.0,
+   "margin": 5.4,
    "pollster": "RealClearPolling average",
-   "dates": "Oct 2 – Oct 28",
-   "note": "Latest: KSTP/SurveyUSA (Oct 24–28, 714 LV) Flanagan 48–41; NYT/Siena (Oct 19–26) 54–40; Rasmussen (Oct 20–21, Republican-leaning) 48–45; Trafalgar (Oct 13–15, Republican-leaning) 48–45; KSTP/SurveyUSA (Oct 8–12) 45–42; Star Tribune/Mason-Dixon (Oct 5–7) 47–43; Rasmussen (Oct 5–7) 48–45; Morning Consult (Oct 2–7) 45–41. A hold, not a pickup: every October poll has Flanagan ahead. The NYT/Siena and KSTP polls entered the average this week, lifting it from Flanagan +3.4 to +5.8. RealClearPolling moved the race from Toss Up to Leans Dem on Oct 28. Cook moved it from Likely D to Lean D on Oct 20; Sabato’s Crystal Ball made the same move Oct 14.",
+   "dates": "Oct 2 – Oct 30",
+   "note": "Average as read Nov 2: Flanagan +5.4, down from +5.8 after InsiderAdvantage (Oct 29–30, 1,200 LV, Republican-leaning) Flanagan 49–46 entered. Also: KSTP/SurveyUSA (Oct 24–28, 714 LV) 48–41; NYT/Siena (Oct 19–26) 54–40; Rasmussen (Oct 20–21, Republican-leaning) 48–45; Trafalgar (Oct 13–15, Republican-leaning) 48–45; Daily Agenda/Morning Consult (Oct 2–7, registered voters) 45–41; Star Tribune/Mason-Dixon (Oct 5–7) 47–43. A hold, not a pickup: every October poll has Flanagan ahead. RealClearPolling moved the race from Toss Up to Leans Dem on Oct 28. Cook moved it from Likely D to Lean D on Oct 20.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/minnesota/tafoya-vs-flanagan"
   },
   {
@@ -377,7 +377,7 @@
    "margin": 10.7,
    "pollster": "RealClearPolling average",
    "dates": "Sep 27 – Oct 25",
-   "note": "In the average: Quantus (Oct 24–25, Republican-leaning) Cooper 51–43; Carolina Journal/Harper (Oct 18–20, Republican-leaning) 49–39; High Point University (Oct 1–20) 54–40; Trafalgar (Oct 8–10, Republican-leaning) 49–41; WRAL/SurveyUSA (Oct 1–7) 54–40; Carolina Forward/Change Research (Oct 1–7, Democratic-leaning) 50–40; Elon (Sep 29–Oct 8) 52–39; East Carolina (Sep 30–Oct 3) 50–43; Big Data Poll (Sep 27–29) 51–39. High Point lifted the average from Cooper +10.3 to +10.7. Cook moved from Lean D to Likely D on Oct 6; Sabato’s Crystal Ball made Cooper more of a favorite Oct 27.",
+   "note": "In the average: Quantus (Oct 24–25, Republican-leaning) Cooper 51–43; Carolina Journal/Harper (Oct 18–20, Republican-leaning) 49–39; High Point University (Oct 1–20) 54–40; Trafalgar (Oct 8–10, Republican-leaning) 49–41; WRAL/SurveyUSA (Oct 1–7) 54–40; Carolina Forward/Change Research (Oct 1–7, Democratic-leaning) 50–40; Elon (Sep 29–Oct 8) 52–39; East Carolina (Sep 30–Oct 3) 50–43; Big Data Poll (Sep 27–29) 51–39. High Point lifted the average from Cooper +10.3 to +10.7. Cook moved from Lean D to Likely D on Oct 6; Sabato’s Crystal Ball made Cooper more of a favorite Oct 27. On Nov 2 the race page again served an older version, so the last full reading is kept.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/north-carolina/cooper-vs-whatley"
   },
   {
@@ -392,7 +392,7 @@
    "margin": 8.2,
    "pollster": "RealClearPolling average",
    "dates": "Sep 21 – Oct 17",
-   "note": "Latest: Atlanta Journal-Constitution (Oct 7–15) Ossoff 48–40; Quantus (Oct 15–17, Republican-leaning) 52–45; Trafalgar (Oct 7–9, Republican-leaning) 51–43; InsiderAdvantage (Sep 22–23, Republican-leaning) 50–42; Big Data Poll (Sep 21–23) 55–45. Top GOP pickup target has drifted toward Democrats; RealClearPolling's map now lists it Likely Dem, matching Cook's Likely D. No newer poll on RealClearPolling’s Senate latest-polls list as of Oct 31.",
+   "note": "Latest: Atlanta Journal-Constitution (Oct 7–15) Ossoff 48–40; Quantus (Oct 15–17, Republican-leaning) 52–45; Trafalgar (Oct 7–9, Republican-leaning) 51–43; InsiderAdvantage (Sep 22–23, Republican-leaning) 50–42; Big Data Poll (Sep 21–23) 55–45. Top GOP pickup target has drifted toward Democrats; RealClearPolling's map now lists it Likely Dem, matching Cook's Likely D. No newer poll on RealClearPolling’s Senate latest-polls list as of Oct 31. On Nov 2 the race page again served an older version, so the last full reading is kept.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/georgia/ossoff-vs-collins"
   },
   {
@@ -407,7 +407,7 @@
    "margin": -2.7,
    "pollster": "RealClearPolling average",
    "dates": "Sep 28 – Oct 26",
-   "note": "Nordone is Lindsey Graham’s sister, appointed to the seat after his death in July. Three polls entered the average this week, which holds at Nordone +2.7: NYT/Siena (Oct 19–26, 707 LV) tied 48–48; East Carolina University (Oct 19–24, 955 LV) Nordone 51–47; The Citadel (Oct 14–25, 890 LV) Nordone 43–39. Also: Trafalgar (Oct 16–18, Republican-leaning) Nordone 49–46; Rasmussen (Oct 5–8, Republican-leaning) 49–45; InsiderAdvantage (Sep 28–29, Republican-leaning) 46–45. Not in the average: South Carolina Policy Council/Targoz (Oct 16–25, 895 likely or already-voted) Nordone 47–46. Cook moved it from Likely R to Lean R on Oct 20; Sabato’s Crystal Ball made Nordone less of a favorite Oct 27; RealClearPolling’s map lists it Toss Up. On Nov 1 the race page served an older version (through Oct 18), so the Oct 31 reading is kept.",
+   "note": "Nordone is Lindsey Graham’s sister, appointed to the seat after his death in July. Three polls entered the average this week, which holds at Nordone +2.7: NYT/Siena (Oct 19–26, 707 LV) tied 48–48; East Carolina University (Oct 19–24, 955 LV) Nordone 51–47; The Citadel (Oct 14–25, 890 LV) Nordone 43–39. Also: Trafalgar (Oct 16–18, Republican-leaning) Nordone 49–46; Rasmussen (Oct 5–8, Republican-leaning) 49–45; InsiderAdvantage (Sep 28–29, Republican-leaning) 46–45. Not in the average: South Carolina Policy Council/Targoz (Oct 16–25, 895 likely or already-voted) Nordone 47–46. Cook moved it from Likely R to Lean R on Oct 20; Sabato’s Crystal Ball made Nordone less of a favorite Oct 27; RealClearPolling’s map lists it Toss Up. On Nov 1 the race page served an older version (through Oct 18), so the Oct 31 reading is kept. On Nov 2 the race page again served an older version, so the last full reading is kept.",
    "url": "https://www.realclearpolling.com/polls/senate/general/2026/south-carolina/graham-nordone-vs-andrews"
   }
  ],
@@ -415,21 +415,21 @@
   {
    "measure": "Democratic-leaning seats (RCP map)",
    "value": 47,
-   "note": "Includes two independents who caucus with Democrats Kept from Oct 31: on Nov 1 the map served an older version (Minnesota still Toss Up).",
+   "note": "Includes two independents who caucus with Democrats Kept from Oct 31: on Nov 1 and Nov 2 the map served an older version (Minnesota still Toss Up).",
    "as_of": "2026-10-31",
    "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
   {
    "measure": "Republican-leaning seats (RCP map)",
    "value": 44,
-   "note": "Kept from Oct 31: on Nov 1 the map served an older version (Minnesota still Toss Up).",
+   "note": "Kept from Oct 31: on Nov 1 and Nov 2 the map served an older version (Minnesota still Toss Up).",
    "as_of": "2026-10-31",
    "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
   {
    "measure": "Toss-up seats (RCP map)",
    "value": 9,
-   "note": "AK, IA, KS, ME, MI, NE, OH, SC, TX. Minnesota moved from Toss Up to Leans Dem on Oct 28. Nebraska is Ricketts (R) vs independent Dan Osborn; no Democrat running. Kept from Oct 31: on Nov 1 the map served an older version (Minnesota still Toss Up).",
+   "note": "AK, IA, KS, ME, MI, NE, OH, SC, TX. Minnesota moved from Toss Up to Leans Dem on Oct 28. Nebraska is Ricketts (R) vs independent Dan Osborn; no Democrat running. Kept from Oct 31: on Nov 1 and Nov 2 the map served an older version (Minnesota still Toss Up).",
    "as_of": "2026-10-31",
    "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up"
   },
@@ -456,16 +456,16 @@
   },
   {
    "measure": "Polymarket odds of Democratic Senate (%)",
-   "value": 70.5,
-   "note": "Prediction market; 70¢ bid / 71¢ ask on Polymarket, via Rivo’s comparison page read the morning of Nov 1 (midpoint shown). Down from 71¢ on Oct 31.",
-   "as_of": "2026-11-01",
+   "value": 71.5,
+   "note": "Prediction market; 71¢ bid / 72¢ ask on Polymarket, via Rivo’s comparison page read the morning of Nov 2 (midpoint shown; chart runs through Nov 1). Up from 70.5¢ on Nov 1.",
+   "as_of": "2026-11-02",
    "url": "https://rivo.markets/markets/senate-control-2026/democrats"
   },
   {
    "measure": "Kalshi odds of Democratic Senate (%)",
-   "value": 71.5,
-   "note": "Prediction market; 71¢ bid / 72¢ ask on Kalshi, via Rivo’s comparison page read the morning of Nov 1 (midpoint shown). Up from 70.5¢ on Oct 31.",
-   "as_of": "2026-11-01",
+   "value": 70.5,
+   "note": "Prediction market; 70¢ bid / 71¢ ask on Kalshi, via Rivo’s comparison page read the morning of Nov 2 (midpoint shown). Down from 71.5¢ on Nov 1.",
+   "as_of": "2026-11-02",
    "url": "https://rivo.markets/markets/senate-control-2026/democrats"
   },
   {
@@ -577,7 +577,7 @@
    "margin": 2,
    "pollster": "Emerson / PIX11",
    "dates": "Sep 27–29",
-   "note": "Lawler internal (McLaughlin, Sep 28–30, 400 LV, released by the campaign Oct 2) had Lawler 50–47. Most competitive seat in the state. No newer public poll found as of Oct 31.",
+   "note": "Two campaign-side polls since: a Lawler internal (McLaughlin, Sep 28–30, 400 LV, released Oct 2) had Lawler 50–47; RedBox Research (Democratic-aligned, Oct 22, 726 LV; listed by PoliAgg, page dated Oct 31) has Conley 48–46. Most competitive seat in the state. No newer nonpartisan public poll as of Nov 2.",
    "url": "https://emersoncollegepolling.com/ny-17-2026-poll/"
   },
   {
@@ -767,6 +767,13 @@
    "generic_ballot": 8.9,
    "trump_net": -20.8,
    "dem_senate_odds": 70.5,
+   "hochul_margin": 12.7
+  },
+  {
+   "date": "2026-11-02",
+   "generic_ballot": 8.9,
+   "trump_net": -20.8,
+   "dem_senate_odds": 71.5,
    "hochul_margin": 12.7
   }
  ],
