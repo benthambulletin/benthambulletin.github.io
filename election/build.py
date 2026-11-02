@@ -290,13 +290,29 @@ def results_today():
     if not r_upd: tiles_r = f'<h2>Results</h2>{asof}'
     return ((strip if not r_upd else "") + tiles_r + path_block()
             + f'<h2>Bottom line</h2><ol class="bottom">{bottom}</ol>'
-            + changed + nxt_h + sen_h + hou_h + loc_h + normal + srcn)
+            + changed + nxt_h + ("" if r_upd else early_block()) + sen_h + hou_h + loc_h + normal + srcn)
+
+def early_block():
+    ev_ = D.get("early_vote")
+    if not ev_: return ""
+    def src(i):
+        u2 = f' and <a href="{e(i["url2"])}">here</a>' if i.get("url2") else ""
+        return f'<a href="{e(i["url"])}">{e(i["source"])}</a>{u2}'
+    tiles_e = "".join(f'<li><div class="evn">{e(i["big"])}</div><div><b>{e(i["label"])}</b> {e(i["text"])} <span class="mut evs">{src(i)}</span></div></li>' for i in ev_["turnout"])
+    prow = "".join(f'<tr><th>{e(r["state"])}</th><td>{tag_text(r["now"])}</td><td>{tag_text(r["then"])}</td></tr>' for r in ev_.get("party", []))
+    ptable = (f'<table class="trend evt"><thead><tr><th>State</th><th>Early vote now</th><th>Same point, 2024</th></tr></thead><tbody>{prow}</tbody></table>'
+              f'<p class="mut evs"><a href="{e(ev_["party_source_url"])}">{e(ev_["party_source"])}</a></p>') if prow else ""
+    means = "".join(f"<li>{tag_text(m)}</li>" for m in ev_.get("means", []))
+    return (f'<h2>{e(ev_["title"])}</h2><p class="intro">{e(ev_["intro"])}</p><ul class="evl">{tiles_e}</ul>'
+            f'<h3 class="sub-h">Who is voting early</h3><p class="intro">{e(ev_["party_intro"])} <a class="mut" href="{e(ev_["party_url"])}">Source</a></p>'
+            + fold("Show the states", ptable)
+            + (f'<h3 class="sub-h">What it means</h3><ul class="list">{means}</ul>' if means else ""))
 
 if is_results:
     tab_today = results_today()
 else:
     tab_today = (strip + f'<h2>Bottom line</h2><ol class="bottom">{bottom}</ol>'
-                 + changed + tiles + calm + mood)
+                 + changed + early_block() + tiles + calm + mood)
 
 # ---------- SENATE ----------
 def senate_card(r):
@@ -389,7 +405,7 @@ sources = ('<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook P
 tab_ballot = (f'<h2>Statewide</h2><p class="intro">On every New York ballot.</p><dl class="plain">{rows(D["statewide"])}</dl>'
               f'<h2>Your town</h2><p class="intro">Tap a town for what it votes on and where to vote early. Nobody polls these races.</p>'
               + "".join(town_block(t) for t in D["your_ballot"])
-              + ('' if is_results else enight) + glossary + outlook + trend + sources)
+              + ('' if is_results else enight) + (early_block() if (is_results and r_upd) else '') + glossary + outlook + trend + sources)
 
 CSS = """
 @font-face{font-family:'Archivo';src:url(/assets/fonts/Archivo.ttf) format('truetype');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
@@ -546,6 +562,12 @@ dd{margin:0;font-size:.92rem;line-height:1.45}
 .cells .r.ahead{border-color:var(--red)}.cells .r.ahead span{color:var(--red)}
 .polnote{margin:1rem 0 0;padding:.6rem .8rem;background:var(--tint);border-radius:.3rem;font-size:.9rem}
 .srcn{font-size:.8rem;margin-top:1rem}
+.evl{list-style:none;margin:.4rem 0 0;padding:0}
+.evl li{display:grid;grid-template-columns:7.2rem 1fr;gap:.75rem;padding:.7rem 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.evl li:last-child{border-bottom:0}
+.evn{font-family:var(--sans);font-weight:800;font-stretch:80%;font-size:1.35rem;line-height:1.1}
+.evl b{display:block;font-family:var(--sans);font-size:.85rem}.evs{font-size:.78rem}.evs a{color:var(--soft)}
+.trend.evt th,.trend.evt td{text-align:left;vertical-align:top}.evt tbody th{color:var(--ink);font-size:.85rem}
 .banner{margin:1rem -1rem 0;padding:1.1rem 1rem 1rem;background:var(--purple);color:#fff}
 .banner .bh{margin:0;padding:0;background:none;color:#fff;font-size:1.45rem;font-weight:800;font-stretch:95%;line-height:1.15}
 .banner .bs{margin-top:.4rem;font-size:.95rem}
