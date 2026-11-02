@@ -1680,9 +1680,25 @@
   "party_source": "Decision Desk HQ, Nov 1. Georgia and Texas don't register voters by party; those shares are estimates.",
   "party_source_url": "https://decisiondeskhq.substack.com/p/early-mail-vote-2026-midterms-senate-control-analysis-trends",
   "means": [
-   "More people have voted early than in 2022, and Democrats make up a bigger share of the early vote than two years ago. Some of that is voters switching from Election Day to early voting, so it doesn't show how many will vote in all.",
-   "It is not a forecast. A party registration is not a vote, unaffiliated voters could go either way, and Election Day voters have leaned Republican in recent elections, so the count can shift toward Republicans as Election Day votes are counted.",
-   "Decision Desk HQ's read: the early vote is \"spooky for GOP — but not fatal.\""
+   "In the Senate states with party data, the early vote leans more Democratic than it did at the same point in 2024. Democrats have leaned toward early voting since 2020, but these comparisons are early vote against early vote, so that habit is already counted: in most of these states, Republicans are a smaller share of the early vote than two years ago.",
+   "Some of the jump in early voting may be people switching from Election Day, so it doesn't show how many will vote in all.",
+   "It is not a forecast. A party registration is not a vote, unaffiliated voters (about a third of North Carolina's early vote) could go either way, and Election Day voters have leaned Republican in recent elections, so the count can shift toward Republicans as Election Day votes are counted.",
+   "New York and its counties don't publish the party makeup of early voters, so there is no read on how Western New York's early voters lean. About 65% of the state's early votes came from outside New York City, and Erie County's Republican chairman said, in WBFO's report, that the number of Republican early voters is up from past years, without giving figures.",
+   "Decision Desk HQ's read: the early vote is \"spooky for GOP — but not fatal.\" It fits a Democratic-leaning year in the polls; it doesn't say who wins Maine, Ohio or Texas."
+  ],
+  "means_urls": [
+   {
+    "label": "WBFO, Nov 2",
+    "url": "https://www.btpm.org/local/2026-11-02/republicans-make-final-push-on-eve-of-midterm-elections-hopeful-for-gubernatorial-race"
+   },
+   {
+    "label": "Decision Desk HQ, Nov 1",
+    "url": "https://decisiondeskhq.substack.com/p/early-mail-vote-2026-midterms-senate-control-analysis-trends"
+   },
+   {
+    "label": "CBS6, Nov 2",
+    "url": "https://cbs6albany.com/news/local/early-voting-soars-in-new-york-nearing-2-million-ballots-cast-city-albany-county-saratoga-schenectady-rensselaer-capital-region-voters-election-day-state-board-of-elections-tuesday-statewide-cbs6-wrgb"
+   }
   ]
  }
 }

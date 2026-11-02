@@ -306,7 +306,8 @@ def early_block():
     return (f'<h2>{e(ev_["title"])}</h2><p class="intro">{e(ev_["intro"])}</p><ul class="evl">{tiles_e}</ul>'
             f'<h3 class="sub-h">Who is voting early</h3><p class="intro">{e(ev_["party_intro"])} <a class="mut" href="{e(ev_["party_url"])}">Source</a></p>'
             + fold("Show the states", ptable)
-            + (f'<h3 class="sub-h">What it means</h3><ul class="list">{means}</ul>' if means else ""))
+            + (f'<h3 class="sub-h">Which way they lean</h3><ul class="list">{means}</ul>' if means else "")
+            + (('<p class="mut evs">Sources: ' + ", ".join(f'<a href="{e(u["url"])}">{e(u["label"])}</a>' for u in ev_.get("means_urls", [])) + '</p>') if ev_.get("means_urls") else ""))
 
 if is_results:
     tab_today = results_today()
