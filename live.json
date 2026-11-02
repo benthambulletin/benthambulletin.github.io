@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T00:31:21Z",
+ "updated": "2026-11-02T00:33:22Z",
  "week": 8,
  "games": {
   "1": {
@@ -87,15 +87,17 @@
    "state": "in",
    "away": 24,
    "home": 28,
-   "detail": "1:14 - 4th",
-   "line": "Broncos 28–24 · 1:14 - 4th"
+   "detail": "1:06 - 4th",
+   "line": "Broncos 28–24 · 1:06 - 4th"
   },
   "11": {
-   "state": "in",
+   "state": "post",
    "away": 24,
    "home": 19,
-   "detail": "0:34 - 4th",
-   "line": "Patriots 24–19 · 0:34 - 4th"
+   "detail": "Final",
+   "winner": "Patriots",
+   "score": "24–19",
+   "line": "Final · Patriots 24–19"
   },
   "12": {
    "state": "pre",
