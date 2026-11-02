@@ -5023,5 +5023,18 @@
   "wake_dev_min": -40,
   "bb_high": 81,
   "stress_yday": 35.0
+ },
+ {
+  "date": "2026-11-02",
+  "score": 6,
+  "flags": [
+   "woke early",
+   "Body Battery so-so",
+   "stress elevated yesterday",
+   "short night"
+  ],
+  "wake_dev_min": -38,
+  "bb_high": 78,
+  "stress_yday": 36.0
  }
 ]
