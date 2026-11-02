@@ -38,6 +38,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - **No Week in the Glass (Garret, Nov 1).** The Sunday look-back table is retired from No. 131 on; one short "Last week:" clause opens The Week Ahead's weather line instead.
 
 ## Dated
+- **Sun Nov 8 — Sunday Question answers.** "First election you remember?" Ariel: "Clinton's first term!" (form, Nov 1).
 
 - **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
 
