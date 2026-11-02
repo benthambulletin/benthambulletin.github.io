@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T02:04:31Z",
+ "updated": "2026-11-02T02:06:32Z",
  "week": 8,
  "games": {
   "1": {
@@ -104,9 +104,9 @@
   "12": {
    "state": "in",
    "away": 10,
-   "home": 0,
-   "detail": "1:17 - 1st",
-   "line": "Eagles 10–0 · 1:17 - 1st"
+   "home": 3,
+   "detail": "0:28 - 1st",
+   "line": "Eagles 10–3 · 0:28 - 1st"
   }
  }
 }
