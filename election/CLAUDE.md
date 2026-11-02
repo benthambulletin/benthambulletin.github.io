@@ -49,7 +49,7 @@ Sticky tab bar; the URL hash picks the tab (`/election/#senate`), switching is c
 
 ## Election night (Nov 3 from 8 p.m., and the mornings after)
 
-The page flips to results mode on the first results run. Runs: 8:07, 9:07, 10:07, 11:37 p.m., 1:07 a.m., noon Nov 4, then the 5:52 a.m. daily run each morning until every row is Called. **Speed beats ceremony tonight:** no fact-check sub-agent; publish within ~25 minutes. Accuracy rules still hold: never invent a call or a number.
+The page wears the results layout from Election Day morning (Garret, Nov 1): build.py switches automatically once `as_of` reaches `election_day`, showing the Election Day banner, an empty path-to-51 board and the poll-closing timeline in `results.next` until the first results run sets `mode` to "results" and `results.updated`. Runs: 8:07, 9:07, 10:07, 11:37 p.m., 1:07 a.m., noon Nov 4, then the 5:52 a.m. daily run each morning until every row is Called. **Speed beats ceremony tonight:** no fact-check sub-agent; publish within ~25 minutes. Accuracy rules still hold: never invent a call or a number.
 
 **What readers get (Garret, Nov 1):** one link to keep open all night that says, in ten seconds, where things stand, what's still out, and whether a slow count is normal. Calm and plain; no cable-news panic, no cheering.
 

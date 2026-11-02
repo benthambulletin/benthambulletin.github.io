@@ -55,6 +55,13 @@ days = (eday - today).days
 ctrl = {r["measure"]: r["value"] for r in D["control"]}
 gb = {r["tracker"]: r for r in D["generic_ballot"]}
 ap = {r["tracker"]: r for r in D["approval"]}
+R = D.get("results") or {}
+# Election Day morning on, the page wears the results layout even before the first results run sets mode.
+is_results = D.get("mode") == "results" or D["as_of"] >= D["election_day"]
+r_upd = None
+if R.get("updated"):
+    try: r_upd = datetime.datetime.fromisoformat(R["updated"])
+    except ValueError: r_upd = None
 
 PARTY_TAG = re.compile(r"\(((?:D|R|Con|WFP)(?:[,/+][^()]*)?)\)")
 def tag_text(text):
@@ -149,7 +156,7 @@ elif ev_start <= today <= eday:
     else:
         when = "today" if today == eday else fdate(D["election_day"], "%A")
         strip = (f'<section class="banner"><h2 class="bh">Election Day is {when}</h2>'
-                 f'<p class="bs">{"Polls are open " + e(eday_hours) + ". " if eday_hours else ""}Early voting has closed. Vote at your assigned polling place: '
+                 f'<p class="bs">{"Polls are open " + e(eday_hours.rstrip(".")) + ". " if eday_hours else ""}Early voting has closed. Vote at your assigned polling place: '
                  f'<a href="https://voterlookup.elections.ny.gov/">look it up at voterlookup.elections.ny.gov</a>.</p></section>')
 
 bottom = "".join(
@@ -170,8 +177,8 @@ if len(hist) >= 2:
     steady = (f'<li><b>{label}</b>: over the past {span} day{"s" if span != 1 else ""} the generic ballot is {delta(ds[0])}, '
               f'Trump\'s net approval is {delta(ds[1])} and the odds of a Democratic Senate are {delta(ds[2])}. '
               f'<span class="mut">Slow movement is normal.</span></li>')
-changed_items = "".join(f"<li>{lede(c)}</li>" for c in D.get("what_changed", [])) + ("" if D.get("mode") == "results" else steady)
-changed = f'<h2>{"Since the last update" if D.get("mode") == "results" else "What changed"}</h2><ul class="list">{changed_items}</ul>' if changed_items else ""
+changed_items = "".join(f"<li>{lede(c)}</li>" for c in D.get("what_changed", [])) + ("" if is_results else steady)
+changed = f'<h2>{"Since the last update" if (is_results and r_upd) else "What changed"}</h2><ul class="list">{changed_items}</ul>' if changed_items else ""
 
 sb = gb["Silver Bulletin (all polls)"]; rcp = gb["RealClearPolling average"]; avg = ap["RealClearPolling average"]
 odds = ctrl["Polymarket odds of Democratic Senate (%)"]
@@ -194,12 +201,6 @@ if D.get("mood"):
             + "".join(f'<li><b>{e(i["what"])}</b> {e(i["why"])} <span class="mut">({e(i["source"])})</span></li>' for i in m_["items"])
             + f'</ul><p class="mut" style="font-size:.8rem">{e(m_.get("note",""))}</p>')
 
-R = D.get("results") or {}
-is_results = D.get("mode") == "results"
-r_upd = None
-if R.get("updated"):
-    try: r_upd = datetime.datetime.fromisoformat(R["updated"])
-    except ValueError: r_upd = None
 def clock(dt):
     return dt.strftime("%-I:%M %p").replace("AM", "a.m.").replace("PM", "p.m.").replace(":00 ", " ")
 
@@ -243,7 +244,9 @@ def path_block():
     netg = len(dgain) - len(rgain)
     left = need_net_ - netg
     def names(rs): return ", ".join(r["race"].replace(" Senate", "") for r in rs)
-    if left <= 0:
+    if not called:
+        head = f"Democrats need a net gain of {need_net_} seats for 51. Nothing is called yet."
+    elif left <= 0:
         head = f"Democrats have the net {need_net_} seats they needed for 51."
     else:
         bits = [f"Democrats have flipped {len(dgain)} Republican seat{'s' if len(dgain) != 1 else ''}" + (f" ({names(dgain)})" if dgain else "")]
@@ -265,6 +268,8 @@ def results_today():
     sen_, hou_ = R.get("senate", {}), R.get("house", {})
     def n_(x): return "—" if x is None else str(x)
     asof = f'<p class="asof">As of {clock(r_upd)} Eastern{", " + r_upd.strftime("%A") if r_upd and r_upd.date() != eday else ""}. Refresh for the latest.</p>' if r_upd else ""
+    if not r_upd:
+        asof = '<p class="asof">No results yet. The first polls close at 7 p.m. Eastern; this page updates from 8 p.m.</p>'
     tiles_r = (f'<h2>Results</h2>{asof}<div class="tiles results">'
                f'<div class="tile"><div class="lbl">Senate</div><div class="big"><span class="d">{n_(sen_.get("dem"))}</span><span class="dash">–</span><span class="r">{n_(sen_.get("rep"))}</span></div><div class="sub">51 for control. Includes seats not up this year. {e(sen_.get("note",""))}</div></div>'
                f'<div class="tile"><div class="lbl">House</div><div class="big"><span class="d">{n_(hou_.get("dem"))}</span><span class="dash">–</span><span class="r">{n_(hou_.get("rep"))}</span></div><div class="sub">218 for control. Seats called so far. {e(hou_.get("note",""))}</div></div>'
@@ -282,7 +287,8 @@ def results_today():
         n = D["election_night"]
         normal = (f'<h2>What\'s normal tonight</h2><ul class="list">' + "".join(f'<li><b>{e(i["when"])}</b>: {tag_text(i["what"])}</li>' for i in n["items"]) + "</ul>")
     srcn = f'<p class="intro srcn">{e(R["source_note"])}</p>' if R.get("source_note") else ""
-    return (tiles_r + path_block()
+    if not r_upd: tiles_r = f'<h2>Results</h2>{asof}'
+    return ((strip if not r_upd else "") + tiles_r + path_block()
             + f'<h2>Bottom line</h2><ol class="bottom">{bottom}</ol>'
             + changed + nxt_h + sen_h + hou_h + loc_h + normal + srcn)
 

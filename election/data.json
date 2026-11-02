@@ -1369,7 +1369,28 @@
     "url": ""
    }
   ],
-  "next": [],
+  "next": [
+   {
+    "when": "7 p.m.",
+    "what": "First polls close: Georgia and South Carolina."
+   },
+   {
+    "when": "7:30 p.m.",
+    "what": "North Carolina and Ohio."
+   },
+   {
+    "when": "8 p.m.",
+    "what": "Pennsylvania and Maine, and most of Michigan, Texas and Kansas. The four Pennsylvania House seats start counting."
+   },
+   {
+    "when": "9 p.m.",
+    "what": "New York, Minnesota and Iowa, and the rest of Michigan, Texas and Kansas. The governor's race and your towns start counting."
+   },
+   {
+    "when": "Midnight",
+    "what": "Alaska closes. Its count runs for days."
+   }
+  ],
   "source_note": ""
  },
  "glossary": [
