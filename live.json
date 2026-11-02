@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T00:37:25Z",
+ "updated": "2026-11-02T00:39:27Z",
  "week": 8,
  "games": {
   "1": {
@@ -84,11 +84,13 @@
    "line": "Final · Rams 24–9"
   },
   "10": {
-   "state": "in",
+   "state": "post",
    "away": 24,
    "home": 28,
-   "detail": "0:03 - 4th",
-   "line": "Broncos 28–24 · 0:03 - 4th"
+   "detail": "Final",
+   "winner": "Broncos",
+   "score": "28–24",
+   "line": "Final · Broncos 28–24"
   },
   "11": {
    "state": "post",
