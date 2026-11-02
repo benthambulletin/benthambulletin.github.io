@@ -170,8 +170,8 @@ if len(hist) >= 2:
     steady = (f'<li><b>{label}</b>: over the past {span} day{"s" if span != 1 else ""} the generic ballot is {delta(ds[0])}, '
               f'Trump\'s net approval is {delta(ds[1])} and the odds of a Democratic Senate are {delta(ds[2])}. '
               f'<span class="mut">Slow movement is normal.</span></li>')
-changed_items = "".join(f"<li>{lede(c)}</li>" for c in D.get("what_changed", [])) + steady
-changed = f'<h2>What changed</h2><ul class="list">{changed_items}</ul>' if changed_items else ""
+changed_items = "".join(f"<li>{lede(c)}</li>" for c in D.get("what_changed", [])) + ("" if D.get("mode") == "results" else steady)
+changed = f'<h2>{"Since the last update" if D.get("mode") == "results" else "What changed"}</h2><ul class="list">{changed_items}</ul>' if changed_items else ""
 
 sb = gb["Silver Bulletin (all polls)"]; rcp = gb["RealClearPolling average"]; avg = ap["RealClearPolling average"]
 odds = ctrl["Polymarket odds of Democratic Senate (%)"]
@@ -196,30 +196,101 @@ if D.get("mood"):
 
 R = D.get("results") or {}
 is_results = D.get("mode") == "results"
-def results_block():
-    sen, hou = R.get("senate", {}), R.get("house", {})
-    tiles_r = f"""<h2>Results</h2><div class="tiles results">
- <div class="tile"><div class="lbl">Senate seats called</div><div class="big"><span class="d">{sen.get("dem","—")}</span><span class="dash">–</span><span class="r">{sen.get("rep","—")}</span></div><div class="sub">51 for control. {e(sen.get("called_note",""))}</div></div>
- <div class="tile"><div class="lbl">House seats called</div><div class="big"><span class="d">{hou.get("dem","—")}</span><span class="dash">–</span><span class="r">{hou.get("rep","—")}</span></div><div class="sub">218 for control.</div></div>
-</div>"""
-    def race_row(r):
-        status = r.get("status", "")
-        st = "called" if status.strip().lower() == "called" else "open"
-        ld = r.get("leader", "")
-        pm = plain_margin(r.get("pct_lead"))
-        verb = " wins" if st == "called" else ((" leads by less than a point" if pm == "tied" else f" leads by {pm}") if pm else "")
-        lead_ = f'{tag_text(ld)}{verb if ld else ""}'
-        return (f'<li class="race res"><div class="rh"><h3>{e(r["race"])}</h3><span class="status {st}">{e(status)}</span></div>'
-                f'<p class="say res-l">{lead_}</p><p class="meta">{tag_text(r.get("candidates",""))}{". " + e(r["reporting"]) if r.get("reporting") else ""}</p></li>')
-    rows_ = "".join(race_row(r) for r in R.get("races", []))
-    local = "".join(race_row(r) for r in R.get("local", []))
-    return (tiles_r + (f'<h3 class="sub-h">Races on this page</h3><ul class="races">{rows_}</ul>' if rows_ else "")
-            + (f'<h3 class="sub-h">Your towns</h3><ul class="races">{local}</ul>' if local else "")
-            + (f'<p class="intro">{e(R.get("source_note",""))}</p>' if R.get("source_note") else ""))
+r_upd = None
+if R.get("updated"):
+    try: r_upd = datetime.datetime.fromisoformat(R["updated"])
+    except ValueError: r_upd = None
+def clock(dt):
+    return dt.strftime("%-I:%M %p").replace("AM", "a.m.").replace("PM", "p.m.").replace(":00 ", " ")
 
-tab_today = (strip + (results_block() if is_results else "")
-             + f'<h2>Bottom line</h2><ol class="bottom">{bottom}</ol>'
-             + changed + ("" if is_results else tiles) + calm + mood)
+STATUS_ORDER = {"called": 0, "leading": 1, "too close": 2, "not yet": 3}
+def st_key(r): return (r.get("status") or "Not yet").strip().lower()
+def lp(r):
+    """Leader's party: explicit leader_party, else read from the (D)/(R) tag in leader."""
+    if r.get("leader_party"): return r["leader_party"][0].upper()
+    m = PARTY_TAG.search(r.get("leader") or "")
+    return m.group(1)[0] if m else ""
+
+def race_row(r):
+    status = r.get("status") or "Not yet"
+    k = st_key(r)
+    cls = {"called": "called", "leading": "lead", "too close": "close"}.get(k, "wait")
+    ld = r.get("leader", "")
+    towns = f'<span class="towns">{e(r["towns"])}</span>' if r.get("towns") else ""
+    if k == "not yet" or not ld:
+        return (f'<li class="race res wait"><div class="rh"><h3>{e(r["race"])}</h3><span class="status {cls}">{e(status)}</span></div>'
+                f'<p class="meta">{tag_text(r.get("candidates",""))}{towns}</p></li>')
+    pm = plain_margin(r.get("pct_lead"))
+    if k == "called": verb = " wins"
+    elif pm == "tied" or pm is None: verb = " leads narrowly" if pm == "tied" else " leads"
+    else: verb = f" leads by {pm}"
+    flip = ""
+    if r.get("held_by") and lp(r) and lp(r) != r["held_by"][0]:
+        flip = f' <span class="flip">{"Flip" if k == "called" else "Would flip"}</span>'
+    side = {"D": "d", "R": "r"}.get(lp(r), "")
+    return (f'<li class="race res {side}"><div class="rh"><h3>{e(r["race"])}</h3><span class="status {cls}">{e(status)}</span></div>'
+            f'<p class="say res-l">{tag_text(ld)}{verb}.{flip}</p>'
+            f'<p class="meta">{tag_text(r.get("candidates",""))}{". " + e(r["reporting"]) if r.get("reporting") else ""}{towns}</p></li>')
+
+def path_block():
+    """The Democratic path to 51, computed from the Senate rows in results.races."""
+    sr = [r for r in R.get("races", []) if r.get("group") == "senate"]
+    if not sr: return ""
+    need_net_ = int(ctrl["Net seats Democrats need for 51"])
+    called = [r for r in sr if st_key(r) == "called"]
+    dgain = [r for r in called if r.get("held_by") == "R" and lp(r) == "D"]
+    rgain = [r for r in called if r.get("held_by") == "D" and lp(r) == "R"]
+    netg = len(dgain) - len(rgain)
+    left = need_net_ - netg
+    def names(rs): return ", ".join(r["race"].replace(" Senate", "") for r in rs)
+    if left <= 0:
+        head = f"Democrats have the net {need_net_} seats they needed for 51."
+    else:
+        bits = [f"Democrats have flipped {len(dgain)} Republican seat{'s' if len(dgain) != 1 else ''}" + (f" ({names(dgain)})" if dgain else "")]
+        if rgain: bits.append(f"lost {len(rgain)} of their own ({names(rgain)})")
+        head = " and ".join(bits) + f". They need {left} more for 51."
+    def cell(r):
+        k = st_key(r); p_ = lp(r)
+        if k == "called": cls, word = ("d" if p_ == "D" else "r") + " won", ("D win" if p_ == "D" else "R win")
+        elif p_ and k in ("leading", "too close"): cls, word = ("d" if p_ == "D" else "r") + " ahead", (("D" if p_ == "D" else "R") + (" ahead" if k == "leading" else " edge"))
+        else: cls, word = "wait", "Not yet"
+        return f'<li class="{cls}"><b>{e(r["race"].replace(" Senate", ""))}</b><span>{word}</span></li>'
+    rseats = [r for r in sr if r.get("held_by") == "R"]
+    dseats = [r for r in sr if r.get("held_by") == "D"]
+    return (f'<section class="path"><h2 class="ph">The path to 51</h2><p class="pl">{e(head)}</p>'
+            f'<p class="pk">Republican seats Democrats are trying to flip</p><ul class="cells">{"".join(cell(r) for r in rseats)}</ul>'
+            f'<p class="pk">Democratic seats they have to hold</p><ul class="cells">{"".join(cell(r) for r in dseats)}</ul></section>')
+
+def results_today():
+    sen_, hou_ = R.get("senate", {}), R.get("house", {})
+    def n_(x): return "—" if x is None else str(x)
+    asof = f'<p class="asof">As of {clock(r_upd)} Eastern{", " + r_upd.strftime("%A") if r_upd and r_upd.date() != eday else ""}. Refresh for the latest.</p>' if r_upd else ""
+    tiles_r = (f'<h2>Results</h2>{asof}<div class="tiles results">'
+               f'<div class="tile"><div class="lbl">Senate</div><div class="big"><span class="d">{n_(sen_.get("dem"))}</span><span class="dash">–</span><span class="r">{n_(sen_.get("rep"))}</span></div><div class="sub">51 for control. Includes seats not up this year. {e(sen_.get("note",""))}</div></div>'
+               f'<div class="tile"><div class="lbl">House</div><div class="big"><span class="d">{n_(hou_.get("dem"))}</span><span class="dash">–</span><span class="r">{n_(hou_.get("rep"))}</span></div><div class="sub">218 for control. Seats called so far. {e(hou_.get("note",""))}</div></div>'
+               f'</div>')
+    nxt = R.get("next") or []
+    nxt_h = (f'<h2>What\'s next tonight</h2><ul class="list">' + "".join(f'<li><b>{e(i["when"])}</b>: {tag_text(i["what"])}</li>' for i in nxt) + "</ul>") if nxt else ""
+    races_ = R.get("races", [])
+    def grp(g): return "".join(race_row(r) for r in sorted([r for r in races_ if r.get("group") == g], key=lambda r: STATUS_ORDER.get(st_key(r), 9)))
+    sen_h = (f'<h2>Senate races</h2><ul class="races">{grp("senate")}</ul>') if grp("senate") else ""
+    hou_h = (f'<h2>House and governor</h2><ul class="races">{grp("house")}{grp("governor")}</ul>') if (grp("house") or grp("governor")) else ""
+    loc = "".join(race_row(r) for r in R.get("local", []))
+    loc_h = (f'<h2>Your towns</h2><p class="intro">County boards post unofficial counts through the night; absentee ballots are added later.</p><ul class="races">{loc}</ul>') if loc else ""
+    normal = ""
+    if D.get("election_night"):
+        n = D["election_night"]
+        normal = (f'<h2>What\'s normal tonight</h2><ul class="list">' + "".join(f'<li><b>{e(i["when"])}</b>: {tag_text(i["what"])}</li>' for i in n["items"]) + "</ul>")
+    srcn = f'<p class="intro srcn">{e(R["source_note"])}</p>' if R.get("source_note") else ""
+    return (tiles_r + path_block()
+            + f'<h2>Bottom line</h2><ol class="bottom">{bottom}</ol>'
+            + changed + nxt_h + sen_h + hou_h + loc_h + normal + srcn)
+
+if is_results:
+    tab_today = results_today()
+else:
+    tab_today = (strip + f'<h2>Bottom line</h2><ol class="bottom">{bottom}</ol>'
+                 + changed + tiles + calm + mood)
 
 # ---------- SENATE ----------
 def senate_card(r):
@@ -239,7 +310,8 @@ need_net = int(ctrl["Net seats Democrats need for 51"])
 need = need_net - len(safe_flip)
 cards = lambda rows, closest_first=False: '<ul class="races">' + "".join(senate_card(r) for r in (by_margin(rows)[::-1] if closest_first else by_margin(rows))) + "</ul>"
 flip_names = " and ".join(r["state"] for r in safe_flip)
-tab_senate = (f'<h2>Senate</h2><p class="intro">{e(D.get("senate_intro",""))} Labels are Cook Political Report ratings.</p>'
+POLLS_NOTE = '<p class="polnote">These are the final polls from before Election Day. Results are on the <a href="#today">Today</a> tab.</p>' if is_results else ''
+tab_senate = (POLLS_NOTE + f'<h2>Senate</h2><p class="intro">{e(D.get("senate_intro",""))} Labels are Cook Political Report ratings.</p>'
               f'<h3 class="sub-h">Must hold</h3><p class="intro">Democratic seats. Lose one and Democrats need one more flip.</p>{cards(holds, True)}'
               + (f'<h3 class="sub-h">Likely pickup</h3><p class="intro">A Republican seat Democrats are well ahead in.</p>{cards(safe_flip)}' if safe_flip else "")
               + f'<h3 class="sub-h">Need {need} of these {len(chase)}</h3>'
@@ -267,7 +339,7 @@ gov_card = (f'<ul class="races"><li class="race"><div class="rh"><h3>Hochul vs B
             f'<span class="mut">{e(g["poll"].split(" (")[0])}, {e(g["dates"])}.</span></p>'
             f'{fold("Show the polls", gov_polls)}</li></ul>')
 
-tab_house = (f'<h2>New York House seats</h2><p class="intro">Labels are Cook Political Report ratings.</p><ul class="races">{ny_cards}</ul>'
+tab_house = (POLLS_NOTE + f'<h2>New York House seats</h2><p class="intro">Labels are Cook Political Report ratings.</p><ul class="races">{ny_cards}</ul>'
              + (f'<h2>Pennsylvania House seats</h2><p class="intro">Pennsylvania counts fast, and these four cover every kind of swing seat. '
                 f'Democrats flipping all four is a wave; none means the polls were wrong; two or three is the expected night.</p><ul class="races">{pa_cards}</ul>' if pa_cards else "")
              + f'<h2>New York governor</h2>{gov_card}')
@@ -311,7 +383,7 @@ sources = ('<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook P
 tab_ballot = (f'<h2>Statewide</h2><p class="intro">On every New York ballot.</p><dl class="plain">{rows(D["statewide"])}</dl>'
               f'<h2>Your town</h2><p class="intro">Tap a town for what it votes on and where to vote early. Nobody polls these races.</p>'
               + "".join(town_block(t) for t in D["your_ballot"])
-              + enight + glossary + outlook + trend + sources)
+              + ('' if is_results else enight) + glossary + outlook + trend + sources)
 
 CSS = """
 @font-face{font-family:'Archivo';src:url(/assets/fonts/Archivo.ttf) format('truetype');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
@@ -444,6 +516,30 @@ dd{margin:0;font-size:.92rem;line-height:1.45}
 .gloss dd{font-size:.95rem;margin:.15rem 0 .9rem}
 
 /* banner (early voting, Election Day) */
+.status.lead{border-color:var(--ink);color:var(--ink)}
+.status.close{border-color:var(--purple);color:var(--purple)}
+.status.wait{border-color:var(--rule);color:var(--soft);font-weight:550}
+.race.res.wait{padding:.55rem 0}
+.race.res.wait h3{font-size:.98rem}
+.race.res.d{box-shadow:inset 3px 0 0 var(--blue);padding-left:.6rem}
+.race.res.r{box-shadow:inset 3px 0 0 var(--red);padding-left:.6rem}
+.flip{font-family:var(--sans);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:var(--purple-t);color:var(--purple);padding:.08rem .4rem;border-radius:.2rem;vertical-align:.1em}
+.towns{display:block;font-family:var(--sans);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin-top:.15rem}
+.asof{font-family:var(--sans);font-size:.85rem;color:var(--soft);margin:.2rem 0 .6rem}
+.path{margin:1.2rem 0 .4rem;padding:1rem;border:2px solid var(--ink);border-radius:.35rem}
+.path .ph{margin:0 0 .35rem;padding:0;background:none;color:var(--ink);font-size:1.15rem}
+.path .pl{font-family:var(--sans);font-weight:700;font-size:1.1rem;line-height:1.3}
+.path .pk{font-family:var(--sans);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--soft);margin:.9rem 0 .35rem}
+.cells{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(6.6rem,1fr));gap:.35rem}
+.cells li{border:1.5px solid var(--rule);border-radius:.3rem;padding:.35rem .45rem;font-family:var(--sans);line-height:1.2}
+.cells b{display:block;font-size:.85rem}
+.cells span{font-size:.72rem;color:var(--soft)}
+.cells .d.won{background:var(--blue);border-color:var(--blue);color:#fff}.cells .r.won{background:var(--red);border-color:var(--red);color:#fff}
+.cells .won span{color:#fff}
+.cells .d.ahead{border-color:var(--blue)}.cells .d.ahead span{color:var(--blue)}
+.cells .r.ahead{border-color:var(--red)}.cells .r.ahead span{color:var(--red)}
+.polnote{margin:1rem 0 0;padding:.6rem .8rem;background:var(--tint);border-radius:.3rem;font-size:.9rem}
+.srcn{font-size:.8rem;margin-top:1rem}
 .banner{margin:1rem -1rem 0;padding:1.1rem 1rem 1rem;background:var(--purple);color:#fff}
 .banner .bh{margin:0;padding:0;background:none;color:#fff;font-size:1.45rem;font-weight:800;font-stretch:95%;line-height:1.15}
 .banner .bs{margin-top:.4rem;font-size:.95rem}
@@ -472,6 +568,18 @@ TABS = [("today", "Today", tab_today), ("senate", "Senate", tab_senate), ("house
 nav = "".join(f'<a href="#{k}" data-tab="{k}"{" class=\"on\" aria-current=\"page\"" if k == "today" else ""}>{label}</a>' for k, label, _ in TABS)
 sections = "".join(f'<section class="tab" data-tab="{k}" aria-label="{label}">{body}</section>' for k, label, body in TABS)
 
+if is_results and r_upd:
+    UPD = "Updated " + r_upd.strftime("%a, %b %-d") + ", " + clock(r_upd)
+else:
+    UPD = "Updated " + today.strftime("%A, %B %-d")
+DEK = ("Results for the Senate, the House and New York's races, updated through the night. A race nobody has called says so."
+       if is_results else
+       f"National polling, the Senate map and New York's races, explained plainly and refreshed every morning through {fdate(D['election_day'])}.")
+if is_results:
+    _s, _h = R.get("senate", {}), R.get("house", {})
+    OG = f"Results: Senate D {_s.get('dem','—')}, R {_s.get('rep','—')}; House D {_h.get('dem','—')}, R {_h.get('rep','—')}. {UPD}."
+else:
+    OG = f"Generic ballot {tracker_margin(sb_m)}; {num(ctrl['Toss-up seats (Cook)'],0)} Senate toss-ups; Hochul ahead by about {whole(g['margin'])} in New York. Updated {today.strftime('%b %-d')}."
 page = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -481,7 +589,7 @@ page = f'''<!DOCTYPE html>
 <meta name="theme-color" content="#1b1f2a">
 <meta name="description" content="2026 midterm tracker — national polling, the Senate, and New York's races, refreshed every morning.">
 <meta property="og:title" content="The Ballot — 2026 Midterm Tracker">
-<meta property="og:description" content="Generic ballot {tracker_margin(sb_m)}; {num(ctrl["Toss-up seats (Cook)"],0)} Senate toss-ups; Hochul ahead by about {whole(g["margin"])} in New York. Updated {today.strftime("%b %-d")}.">
+<meta property="og:description" content="{e(OG)}">
 <meta property="og:url" content="https://benthambulletin.github.io/election/">
 <meta property="og:type" content="website">
 <meta http-equiv="Cache-Control" content="no-cache">
@@ -493,9 +601,9 @@ page = f'''<!DOCTYPE html>
 <body><div class="page">
 <div class="marks" aria-hidden="true"></div>
 <header>
-<p class="upd"><span>2026 midterms</span><span>Updated {today.strftime("%A, %B %-d")}</span></p>
+<p class="upd"><span>2026 midterms</span><span>{UPD}</span></p>
 <h1>The Ballot</h1>
-<p class="dek">National polling, the Senate map and New York's races, explained plainly and refreshed every morning through {fdate(D["election_day"])}.</p>
+<p class="dek">{DEK}</p>
 </header>
 <nav class="tabs" aria-label="Sections">{nav}</nav>
 {sections}

@@ -29,7 +29,7 @@ Sticky tab bar; the URL hash picks the tab (`/election/#senate`), switching is c
 - Never print a number without a dated source row in data.json. If a source can't be read today, keep yesterday's row and say so in `what_changed` ("RCP Senate average not refreshed today").
 - **Prefer averages over single polls.** For every Senate row use the RealClearPolling race-page average (and Silver Bulletin's where readable) as the headline number; a single poll goes in `note`, not in `dem_pct`/`rep_pct`, unless no average exists. When the only recent poll is from a partisan or low-rated firm (InsiderAdvantage, Trafalgar, Rasmussen, co/efficient, McLaughlin, any campaign internal, any pollster marked (R) or (D)), say so in the row's `note` in plain words ("Republican-leaning pollster") so readers can weigh it. Never let a single such poll move a bottom-line sentence on its own.
 - Margins are Democrat minus Republican. `cook_rating` uses Cook's words.
-- Nov 4 run: results special — replace polls with results where called (AP), keep the layout. After Nov 4 the task should be deleted.
+- Election night and after: see **Election night** at the end of this file. It replaces the morning routine from the first results run on Nov 3.
 - The Your-ballot box is reference, not news: keep it one `office`/`race` line per item, every item sourced, and never pad a town that has nothing.
 - **Party tags (Garret, Oct 18):** every candidate name on the page carries a colored (D)/(R). build.py does it for the Senate, governor and House rows; in free-text fields (`your_ballot[*].items[*].race`, `statewide`) write the tag yourself after every name — "Smith (R, inc.) vs Jones (D)" — and build.py colors it. Never leave a name without one.
 - Don't touch anything outside `election/`.
@@ -46,3 +46,48 @@ Sticky tab bar; the URL hash picks the tab (`/election/#senate`), switching is c
 - **Oct 15 — the holds are not free.** The NYT (Oct 15, "Democrats Worry That a Few Senate Races in Bluer States Aren't Slam Dunks") reports Maine, Michigan and Minnesota are all within about three points with local headwinds. From the Oct 16 run: track Minnesota (Flanagan vs Tafoya) as a full `senate` row, not a mention; and the bottom line should say plainly that Democrats must also hold Michigan and Minnesota; the Senate tab's Must hold group shows it. Keep the framing proportionate: Democrats lead or tie in every toss-up, so this is a caveat, not a reversal.
 - **Oct 17 — Pennsylvania bellwethers.** NYT (Goldmacher, Oct 17): PA-1, PA-7, PA-8, PA-10 together decide the House majority and resolve early on election night. From the next run, carry the four as rows in a new `pa_bellwethers` list (`district, incumbent, party, challenger, rating, rating_source, pollster, dates, dem_pct, rep_pct, note, url`) with Cook ratings and any public poll, and build.py renders them on the House tab under "Pennsylvania House seats", same card as the NY rows. In results mode they go in `results.races` with Called/Leading status.
 - **Oct 19 — South Carolina is a Senate row.** Lindsey Graham died July 11; his sister Darline Graham Nordone (R) was appointed and nominated; Annie Andrews (D) is within single digits. Track it like the other Republican seats (RCP race page: south-carolina/graham-nordone-vs-andrews). Lesson: the Senate list came from Cook's toss-up column alone; a Likely R seat polling inside 5 belongs on the page too. Each run, scan RCP's Senate map for any seat with an average under 6 points that isn't already a row.
+
+## Election night (Nov 3 from 8 p.m., and the mornings after)
+
+The page flips to results mode on the first results run. Runs: 8:07, 9:07, 10:07, 11:37 p.m., 1:07 a.m., noon Nov 4, then the 5:52 a.m. daily run each morning until every row is Called. **Speed beats ceremony tonight:** no fact-check sub-agent; publish within ~25 minutes. Accuracy rules still hold: never invent a call or a number.
+
+**What readers get (Garret, Nov 1):** one link to keep open all night that says, in ten seconds, where things stand, what's still out, and whether a slow count is normal. Calm and plain; no cable-news panic, no cheering.
+
+### Sources (WebFetch only loads URLs that appear in full in the run's prompt or a search result — use these exact URLs; search for anything else before fetching)
+- **Race calls and votes — Decision Desk HQ** (readable, tested Nov 1; always use the `/results` ending, without it you get the forecast):
+  - Senate: `https://votes.decisiondeskhq.com/races/2026-11-03/{state}-us-senate-general-election/results` for maine, texas, iowa, kansas, alaska, michigan, minnesota, north-carolina, georgia, south-carolina; Ohio is `https://votes.decisiondeskhq.com/races/2026-11-03/ohio-us-senate-special-election-general/results`. (South Carolina is also a special; if the general slug 404s, search "decisiondeskhq south carolina senate 2026".)
+  - House: `https://votes.decisiondeskhq.com/races/2026-11-03/pennsylvania-us-house-{1,7,8,10}-general-election/results`, `https://votes.decisiondeskhq.com/races/2026-11-03/new-york-us-house-{1,4,17,23,25,26}-general-election/results`
+  - Governor: `https://votes.decisiondeskhq.com/races/2026-11-03/new-york-governor-general-election/results`
+  - State Senate: `https://votes.decisiondeskhq.com/races/2026-11-03/new-york-state-senate-{54,57,62}-general-election/results`; Assembly (DDHQ calls it state-house): `https://votes.decisiondeskhq.com/races/2026-11-03/new-york-state-house-{139,140,142,145,150}-general-election/results`
+  - Balance of power: `https://votes.decisiondeskhq.com/balance-of-power/2026/senate` and `https://votes.decisiondeskhq.com/balance-of-power/2026/house` (read the timestamp line; the Senate page counts D 34, R 31 seats not up this year).
+- **AP calls (cross-check):** `https://www.foxnews.com/elections/2026/midterm-results/senate` (networks use AP data). apnews.com, NPR, NYT and Politico are not reachable from these runs; don't burn time on them.
+- **New York State BOE unofficial:** `https://nyenr.elections.ny.gov/` (statewide, Congress, legislature).
+- **Counties (unofficial, often only on the night):** Erie `https://erie.resultscaster.com/r/GEN26?usersessionid=none` (guessed from 2025's GEN25); Niagara posts on vic.ntsdata.com (number changes per election; search "Niagara County unofficial results 2026 ntsdata"); Monroe posts timestamped PDFs (search "monroecounty.gov GE26 Unofficial Results"); Chautauqua: search Observer Today (observertoday.com) and Post-Journal for "election results". News fallbacks: btpm.org (WBFO) live blog, WKBW, Lockport Journal, WXXI. The North Tonawanda proposition and Niagara County Legislature 7–9 will likely only appear on the Niagara results site or in Niagara Gazette / Lockport Journal stories; if neither is readable, leave them "Not yet" and say so in `source_note`.
+
+### Status words (one meaning each)
+- **Called** — DDHQ or AP (via Fox) has declared a winner; for county/town races, the county board's count is complete or a news outlet reports a winner or a concession.
+- **Leading** — a candidate is ahead with a meaningful share counted (roughly a third or more of the expected vote) and by more than a point.
+- **Too close** — ahead by under a point, or the race-call source says too close to call.
+- **Not yet** — little or no vote counted. Leave `leader` empty.
+
+### The `results` object (build.py renders it; do not touch build.py)
+- `updated` — ISO time, Eastern (UTC−5 after Nov 1), e.g. `2026-11-03T21:07:00-05:00`. The page header and "As of" read it.
+- `senate` / `house` — `{dem, rep, note, url}`. Senate counts are **total seats including those not up this year** (DDHQ balance of power, or AP via Fox). House is seats called so far. `note` is optional, one short phrase.
+- `races` — pre-seeded rows; update in place, never delete or reorder. Fields: `key`, `group` (`senate` / `house` / `governor`), `race`, `candidates` (keep as is), `held_by`, `leader` ("Roy Cooper (D)" — name plus party tag; for a proposition "Yes" or "No"), `pct_lead` (percentage-point margin, a number), `status`, `reporting` ("About 80% counted"), `url` (the page you read). build.py computes the path to 51, flips and "Would flip" from `held_by`, `leader` and `status` — never write that math yourself.
+- `local` — same fields plus `towns`.
+- `next` — "What's next tonight": 2–4 items `{when, what}`, only things still ahead (poll closings, a state that usually reports late, Maine's ranked-choice count, Alaska's Nov 18 tabulation). Drop anything already past. Poll closings ET (greenpapers, read Nov 1): GA, SC 7:00; NC, OH 7:30; PA, ME, most of MI, TX, KS 8:00; NY, MN, IA, rest of MI/TX/KS 9:00; Alaska midnight, Aleutians 1 a.m.
+- `source_note` — one line naming where tonight's calls came from ("Race calls from Decision Desk HQ and the AP; local counts from the county boards, unofficial."), plus any race that couldn't be read.
+
+### Rewrite each run
+- `bottom_line` — four items as a results read: **Senate** first (where the net-plus-four stands, in words), then **House**, **New York**, **Your towns**. Headline plus one plain sentence each. Honest about what isn't known ("The Senate likely won't be settled tonight: Maine is headed to a ranked-choice count").
+- `what_changed` — the page labels it "Since the last update": one line per race newly called or newly flipped since the previous run, with (D)/(R) tags. Empty if nothing moved.
+- Leave `election_night` (shown as "What's normal tonight"), the polls rows and `history` alone.
+
+### Each results run
+1. Pull. If `mode` is "polls", set it to "results".
+2. Read the balance-of-power pages, then every race row's results page (start with the Senate). Update the rows. Then `local`.
+3. Rewrite `next`, `bottom_line`, `what_changed`, `source_note`; set `updated`.
+4. `python3 election/build.py`; render `index.html#today` at 390px full page with Playwright and Read it (no "None", no empty path box, counts look right).
+5. Commit only `election/` as "Ballot — results <slot>", `git pull --rebase`, push, confirm the Pages deploy (`gh api repos/benthambulletin/benthambulletin.github.io/actions/runs?per_page=3`).
+6. One line to Garret via SendUserMessage: Senate and House counts, the path-to-51 sentence as it reads on the page, anything newly called in his towns, the link.
+7. Before Election Day, polls-mode runs must leave the pre-seeded `results` object in place.
