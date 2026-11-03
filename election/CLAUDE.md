@@ -82,6 +82,8 @@ The page wears the results layout from Election Day morning (Garret, Nov 1): bui
 - `races` — pre-seeded rows; update in place, never delete or reorder. Fields: `key`, `group` (`senate` / `house` / `governor`), `race`, `candidates` (keep as is), `held_by`, `leader` ("Roy Cooper (D)" — name plus party tag; for a proposition "Yes" or "No"), `pct_lead` (percentage-point margin, a number), `status`, `reporting` ("About 80% counted"), `url` (the page you read). build.py computes the path to 51, flips and "Would flip" from `held_by`, `leader` and `status` — never write that math yourself.
 - `local` — same fields plus `towns`.
 - `next` — "What's next tonight": 2–4 items `{when, what}`, only things still ahead (poll closings, a state that usually reports late, Maine's ranked-choice count, Alaska's Nov 18 tabulation). Drop anything already past. Poll closings ET (greenpapers, read Nov 1): GA, SC 7:00; NC, OH 7:30; PA, ME, most of MI, TX, KS 8:00; NY, MN, IA, rest of MI/TX/KS 9:00; Alaska midnight, Aleutians 1 a.m.
+- `headline` — ONE sentence, the biggest thing right now (Garret, Nov 3: the purple box at the top reports the headline and the next thing coming). E.g. "Roy Cooper (D) wins North Carolina, the first Senate flip of the night." Rewrite every run; (D)/(R) tags on names; no cheering.
+- The box's **Next** line is the first item of `next`, so keep `next` in time order with the nearest upcoming item first.
 - `source_note` — one line naming where tonight's calls came from ("Race calls from Decision Desk HQ and the AP; local counts from the county boards, unofficial."), plus any race that couldn't be read.
 
 ### Rewrite each run

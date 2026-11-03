@@ -286,6 +286,15 @@ def house_block():
     return (f'<section class="path house"><h2>The House</h2><p class="pl">{e(head)}</p>'
             f'<p class="pk">The early tell: Republican seats that count fast</p><ul class="cells">{"".join(cell(r) for r in hr)}</ul></section>')
 
+def ticker(first=False):
+    """Headline and the next thing to watch: results.headline plus the first item of results.next."""
+    hl = R.get("headline") or ""
+    nxt0 = (R.get("next") or [None])[0]
+    out = ""
+    if hl: out += f'<p class="tk{" tk1" if first else ""}"><b>Latest</b>{tag_text(hl)}</p>'
+    if nxt0: out += f'<p class="tk"><b>Next</b>{e(nxt0["when"])}: {tag_text(nxt0["what"])}</p>'
+    return out
+
 def results_today():
     """Election Day and election night: one calm column, light section heads, no stacked bars.
     Before the first results run: the Election Day note (which also says when results start), the empty path board,
@@ -295,7 +304,7 @@ def results_today():
     def n_(x): return "—" if x is None else str(x)
     if r_upd:
         day = f", {r_upd.strftime('%A')}" if r_upd.date() != eday else ""
-        top = (f'<section class="score"><p class="sk">The count at {clock(r_upd)} Eastern{day} <span>Refresh for the latest</span></p><div class="sc">'
+        top = ('<section class="now live">' + ticker(first=True) + '</section>' + f'<section class="score"><p class="sk">The count at {clock(r_upd)} Eastern{day} <span>Refresh for the latest</span></p><div class="sc">'
                f'<div><p class="lbl">Senate</p><p class="big"><span class="d">{n_(sen_.get("dem"))}</span><span class="dash">–</span><span class="r">{n_(sen_.get("rep"))}</span></p>'
                f'<p class="sub">51 for control. Includes seats not up this year.{" " + e(sen_["note"]) if sen_.get("note") else ""}</p></div>'
                f'<div><p class="lbl">House</p><p class="big"><span class="d">{n_(hou_.get("dem"))}</span><span class="dash">–</span><span class="r">{n_(hou_.get("rep"))}</span></p>'
@@ -306,7 +315,7 @@ def results_today():
         top = (f'<section class="now"><p class="nk">Election Day · {eday_long}</p>'
                f'<p class="nh">{"Polls are open " + hrs + "." if hrs else "Polls are open today."}</p>'
                f'<p>Vote at your assigned polling place: <a href="https://voterlookup.elections.ny.gov/">look it up at voterlookup.elections.ny.gov</a>.</p>'
-               f'<p class="nn">No results yet. The first polls close at 7 p.m. Eastern; results start here after 8 p.m.</p></section>')
+               + ticker() + '</section>')
     latest = (f'<section class="latest"><h2>Since the last update</h2><ul class="list">{"".join(f"<li>{lede(c)}</li>" for c in D.get("what_changed", []))}</ul></section>'
               if (r_upd and D.get("what_changed")) else "")
     bl = "".join(f'<li><h3>{e(r["headline"])}</h3><p>{tag_text(r["detail"])}</p></li>'
@@ -594,6 +603,10 @@ dd{margin:0;font-size:.92rem;line-height:1.45}
 .evl b{display:block;font-family:var(--sans);font-size:.85rem}.evs{font-size:.78rem}.evs a{color:var(--soft)}
 .trend.evt th,.trend.evt td{text-align:left;vertical-align:top}.evt tbody th{color:var(--ink);font-size:.85rem}
 .fold.polls{margin-top:1.5rem}
+.now .tk{font-family:var(--sans);font-size:.95rem;line-height:1.4;margin-top:.55rem;padding-top:.55rem;border-top:1px solid rgba(103,70,148,.25);color:var(--ink)}
+.now .tk b{display:inline-block;min-width:3.6rem;color:var(--purple);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+.now .tk1{margin-top:0;padding-top:0;border-top:0}
+.now.live{margin-bottom:1.1rem}
 .banner{margin:1rem -1rem 0;padding:1.1rem 1rem 1rem;background:var(--purple);color:#fff}
 .banner .bh{margin:0;padding:0;background:none;color:#fff;font-size:1.45rem;font-weight:800;font-stretch:95%;line-height:1.15}
 .banner .bs{margin-top:.4rem;font-size:.95rem}
