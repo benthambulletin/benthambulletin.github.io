@@ -1,114 +1,13 @@
 {
- "updated": "2026-11-02T06:19:57Z",
+ "updated": "2026-11-03T01:18:32Z",
  "week": 8,
  "games": {
-  "1": {
-   "state": "post",
-   "away": 10,
-   "home": 36,
-   "detail": "Final",
-   "winner": "Bills",
-   "score": "36–10",
-   "line": "Final · Bills 36–10"
-  },
-  "2": {
-   "state": "post",
-   "away": 36,
-   "home": 43,
-   "detail": "Final/OT",
-   "winner": "Bengals",
-   "score": "43–36",
-   "line": "Final · Bengals 43–36 (OT)"
-  },
-  "3": {
-   "state": "post",
-   "away": 6,
-   "home": 27,
-   "detail": "Final",
-   "winner": "Steelers",
-   "score": "27–6",
-   "line": "Final · Steelers 27–6"
-  },
-  "4": {
-   "state": "post",
-   "away": 7,
-   "home": 42,
-   "detail": "Final",
-   "winner": "Jaguars",
-   "score": "42–7",
-   "line": "Final · Jaguars 42–7"
-  },
-  "5": {
-   "state": "post",
-   "away": 33,
-   "home": 30,
-   "detail": "Final/OT",
-   "winner": "Cardinals",
-   "score": "33–30",
-   "line": "Final · Cardinals 33–30 (OT)"
-  },
-  "6": {
-   "state": "post",
-   "away": 15,
-   "home": 19,
-   "detail": "Final",
-   "winner": "Lions",
-   "score": "19–15",
-   "line": "Final · Lions 19–15"
-  },
-  "7": {
-   "state": "post",
-   "away": 38,
-   "home": 33,
-   "detail": "Final",
-   "winner": "Raiders",
-   "score": "38–33",
-   "line": "Final · Raiders 38–33"
-  },
-  "8": {
-   "state": "post",
+  "13": {
+   "state": "in",
    "away": 0,
-   "home": 16,
-   "detail": "Final",
-   "winner": "Buccaneers",
-   "score": "16–0",
-   "line": "Final · Buccaneers 16–0"
-  },
-  "9": {
-   "state": "post",
-   "away": 9,
-   "home": 24,
-   "detail": "Final",
-   "winner": "Rams",
-   "score": "24–9",
-   "line": "Final · Rams 24–9"
-  },
-  "10": {
-   "state": "post",
-   "away": 24,
-   "home": 28,
-   "detail": "Final",
-   "winner": "Broncos",
-   "score": "28–24",
-   "line": "Final · Broncos 28–24"
-  },
-  "11": {
-   "state": "post",
-   "away": 24,
-   "home": 19,
-   "detail": "Final",
-   "winner": "Patriots",
-   "score": "24–19",
-   "line": "Final · Patriots 24–19"
-  },
-  "12": {
-   "state": "post",
-   "away": 10,
-   "home": 27,
-   "detail": "Final",
-   "winner": "Commanders",
-   "score": "27–10",
-   "line": "Final · Commanders 27–10"
+   "home": 0,
+   "detail": "14:16 - 1st",
+   "line": "Tied 0–0 · 14:16 - 1st"
   }
  }
 }
