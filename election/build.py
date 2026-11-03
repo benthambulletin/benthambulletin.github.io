@@ -274,7 +274,7 @@ def house_block():
     called = [r for r in hr if st_key(r) == "called"]
     flips = [r for r in called if r.get("held_by") and lp(r) and lp(r) != r["held_by"][0]]
     if not called:
-        head = (f"218 seats for control. Democrats need a net gain of about {int(need_h)}" if need_h else "218 seats for control") + (f"; Cook expects them to gain {int(lo)} to {int(hi)}." if lo and hi else ".")
+        head = (f"218 seats for control. Democrats need a net gain of {int(need_h)}" if need_h else "218 seats for control") + (f"; Cook expects them to gain {int(lo)} to {int(hi)}." if lo and hi else ".")
     else:
         head = f"Democrats have flipped {len(flips)} of these {len(hr)} Republican seats so far."
     def cell(r):
