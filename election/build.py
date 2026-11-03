@@ -287,12 +287,17 @@ def house_block():
             f'<p class="pk">The early tell: Republican seats that count fast</p><ul class="cells">{"".join(cell(r) for r in hr)}</ul></section>')
 
 def ticker(first=False):
-    """Headline and the next thing to watch: results.headline plus the first item of results.next."""
+    """Headline and the next thing to watch. Items in results.next that carry an `at` time are emitted as data
+    so the page can count down to the next one in the reader's clock and roll past items on its own."""
     hl = R.get("headline") or ""
-    nxt0 = (R.get("next") or [None])[0]
+    nxt = R.get("next") or []
     out = ""
     if hl: out += f'<p class="tk{" tk1" if first else ""}"><b>Latest</b>{tag_text(hl)}</p>'
-    if nxt0: out += f'<p class="tk"><b>Next</b>{e(nxt0["when"])}: {tag_text(nxt0["what"])}</p>'
+    if nxt:
+        n0 = nxt[0]
+        items = "".join(f'<span class="nx" data-at="{e(i["at"])}" data-when="{e(i["when"])}" hidden>{tag_text(i["what"])}</span>' for i in nxt if i.get("at"))
+        out += (f'<p class="tk tkn"><b>Next</b><span class="nxt">{e(n0["when"])}: {tag_text(n0["what"])}</span>'
+                f'<span class="cd" hidden></span>{items}</p>')
     return out
 
 def results_today():
@@ -607,6 +612,7 @@ dd{margin:0;font-size:.92rem;line-height:1.45}
 .now .tk b{display:inline-block;min-width:3.6rem;color:var(--purple);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
 .now .tk1{margin-top:.5rem;padding-top:0;border-top:0}
 .now.live{margin-bottom:1.1rem}
+.tkn .cd{display:inline-block;margin-left:.45rem;font-family:var(--sans);font-weight:700;font-variant-numeric:tabular-nums;color:var(--purple);white-space:nowrap}
 .banner{margin:1rem -1rem 0;padding:1.1rem 1rem 1rem;background:var(--purple);color:#fff}
 .banner .bh{margin:0;padding:0;background:none;color:#fff;font-size:1.45rem;font-weight:800;font-stretch:95%;line-height:1.15}
 .banner .bs{margin-top:.4rem;font-size:.95rem}
@@ -658,7 +664,15 @@ dd{margin:0;font-size:.92rem;line-height:1.45}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 """
 
-JS = """(function(){var T=['today','senate','house','ballot'],nav=document.querySelector('.tabs');
+JS = """(function(){var p=document.querySelector('.tkn');if(!p)return;var items=[].slice.call(p.querySelectorAll('.nx')),cur=p.querySelector('.nxt'),cd=p.querySelector('.cd');if(!items.length)return;
+function pad(n){return n<10?'0'+n:''+n}
+function tick(){var now=Date.now(),nx=null;for(var i=0;i<items.length;i++){var t=Date.parse(items[i].getAttribute('data-at'));if(t>now){nx=items[i];break}}
+if(!nx){cd.hidden=true;return}
+var ms=Date.parse(nx.getAttribute('data-at'))-now,h=Math.floor(ms/36e5),m=Math.floor(ms%36e5/6e4),sec=Math.floor(ms%6e4/1e3);
+cur.innerHTML=nx.getAttribute('data-when')+': '+nx.innerHTML;
+cd.textContent='in '+(h>0?h+'h ':'')+(h>0?pad(m):m)+'m '+pad(sec)+'s';cd.hidden=false}
+tick();setInterval(tick,1000)})();
+(function(){var T=['today','senate','house','ballot'],nav=document.querySelector('.tabs');
 function cur(){var h=location.hash.slice(1);return T.indexOf(h)<0?'today':h}
 function show(scroll){var t=cur();document.querySelectorAll('.tab').forEach(function(s){s.hidden=s.getAttribute('data-tab')!==t});
 document.querySelectorAll('.tabs a').forEach(function(a){var on=a.getAttribute('data-tab')===t;a.classList.toggle('on',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});

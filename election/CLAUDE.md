@@ -87,7 +87,7 @@ Nothing on the Today tab assumes the reader follows politics. No rater or pollst
 - `local` — same fields plus `towns`.
 - `next` — "What's next tonight": 2–4 items `{when, what}`, only things still ahead (poll closings, a state that usually reports late, Maine's ranked-choice count, Alaska's Nov 18 tabulation). Drop anything already past. Poll closings ET (greenpapers, read Nov 1; 270toWin, read Nov 3): most of IN, KY 6:00; GA, SC, VA, VT, most of FL 7:00; NC, OH 7:30; PA, ME, most of MI, TX, KS 8:00; NY, MN, IA, rest of MI/TX/KS 9:00; Alaska midnight, Aleutians 1 a.m.
 - `headline` — ONE sentence, the biggest thing right now (Garret, Nov 3: the purple box at the top reports the headline and the next thing coming). E.g. "Roy Cooper (D) wins North Carolina, the first Senate flip of the night." Rewrite every run; (D)/(R) tags on names; no cheering.
-- The box's **Next** line is the first item of `next`, so keep `next` in time order with the nearest upcoming item first.
+- The box's **Next** line counts down live in the reader's browser: every `next` item that is a clock event carries `at` (ISO, Eastern, e.g. `2026-11-03T19:00:00-05:00`), and the page shows the first future one with "in 2h 11m 15s", rolling to the next on its own. Keep `next` in time order; give every timed item an `at`; items without `at` (a recount, "days later") are shown only in the timeline.
 - `source_note` — one line naming where tonight's calls came from, in plain words ("Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified."), plus any race that couldn't be read.
 
 ### Rewrite each run

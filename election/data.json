@@ -1438,27 +1438,33 @@
   "next": [
    {
     "when": "6 p.m.",
-    "what": "First polls of the night close, in most of Indiana and Kentucky. None of the races on this page."
+    "what": "First polls of the night close, in most of Indiana and Kentucky. None of the races on this page.",
+    "at": "2026-11-03T18:00:00-05:00"
    },
    {
     "when": "7 p.m.",
-    "what": "Georgia and South Carolina, plus Virginia, Vermont and most of Florida."
+    "what": "Georgia and South Carolina, plus Virginia, Vermont and most of Florida.",
+    "at": "2026-11-03T19:00:00-05:00"
    },
    {
     "when": "7:30 p.m.",
-    "what": "North Carolina and Ohio."
+    "what": "North Carolina and Ohio.",
+    "at": "2026-11-03T19:30:00-05:00"
    },
    {
     "when": "8 p.m.",
-    "what": "Pennsylvania and Maine, and most of Michigan, Texas and Kansas. The four Pennsylvania House seats start counting."
+    "what": "Pennsylvania and Maine, and most of Michigan, Texas and Kansas. The four Pennsylvania House seats start counting.",
+    "at": "2026-11-03T20:00:00-05:00"
    },
    {
     "when": "9 p.m.",
-    "what": "New York, Minnesota and Iowa, and the rest of Michigan, Texas and Kansas. The governor's race and your towns start counting."
+    "what": "New York, Minnesota and Iowa, and the rest of Michigan, Texas and Kansas. The governor's race and your towns start counting.",
+    "at": "2026-11-03T21:00:00-05:00"
    },
    {
     "when": "Midnight",
-    "what": "Alaska closes. Its count runs for days."
+    "what": "Alaska closes. Its count runs for days.",
+    "at": "2026-11-04T00:00:00-05:00"
    }
   ],
   "source_note": "",
