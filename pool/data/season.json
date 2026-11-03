@@ -10598,7 +10598,9 @@
               "Arod",
               "Claude"
             ]
-          }
+          },
+          "live": "Bears 7–3 · 2nd qtr",
+          "liveAt": "2026-11-03T02:09:15Z"
         }
       ],
       "players": [
@@ -12073,8 +12075,8 @@
         "Mrs. Sombloski",
         "Walczyk"
       ],
-      "columnHead": "Seattle crowns the commissioner; Chicago calls the tiebreaker",
-      "column": "Bears at Seahawks is the whole week. Garret sits at 12–1 with Seattle: a Seahawks win makes him 13–1 and the champ, no math required. Kaylani & Luka, Devin and Kara rode Seattle too, but 12 is their ceiling, so they're cheering for the commissioner whether they like it or not.\n\nTom is the threat that counts, and he's on the Bears. A Chicago win ties him with Garret at 12–2 and sends it to the tiebreaker: Garret said 60, Tom said 49. Fifty-five or more, the commissioner; 54 or fewer, Tom. Vegas set the total at 46.5. Advantage Tom, on paper.",
+      "columnHead": "Bears up 7–3, and Tom can smell it",
+      "column": "Chicago leads Seattle 7–3 in the second quarter, and if it ended now the commissioner and Tom would both sit at 12–2. Tiebreaker: Garret said 60, Tom said 49, and ten points on the board makes Tom the champ tonight. Hold that thought.\n\nThe math is simple. Seahawks win, Garret goes 13–1 and wins outright. Bears win, it's Garret vs. Tom on points: 55 or more total, the commissioner; 54 or fewer, Tom. Kaylani & Luka, Devin and Kara are along for Seattle's ride with nothing left to win. The house's Lock, Bengals over Titans, cashed — barely, 43–36 — but the house is out of it either way.",
       "columnN": 21,
       "face": {
         "photo": "/pool/faces/w8.jpg",
@@ -12086,7 +12088,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-03T01:20:25.367218+00:00",
+  "updated": "2026-11-03T02:10:58.269162+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
