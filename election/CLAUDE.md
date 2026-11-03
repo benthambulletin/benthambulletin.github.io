@@ -70,6 +70,9 @@ The page wears the results layout from Election Day morning (Garret, Nov 1): bui
 - **Senate / House:** results lists first; the final polls sit in a closed "Final polls before Election Day" fold.
 - **Your towns** (the My ballot tab, renamed): local results first, then the ballot reference, What's normal tonight, the early vote, glossary.
 
+### Plain English on Today (Garret, Nov 3: "Cook? I don't know who that is, nobody else will")
+Nothing on the Today tab assumes the reader follows politics. No rater or pollster names there (no Cook, Sabato, Silver, RealClearPolling, Decision Desk HQ): say "forecasters", "a nonpartisan race handicapper", "the vote-counting service". Every term explained in the same sentence the first time it appears ("net gain": pick up more than they lose; "ranked-choice": voters rank candidates). Names are fine on the other tabs where the detail lives, with one plain-words gloss the first time.
+
 ### Status words (one meaning each)
 - **Called** — DDHQ or AP (via Fox) has declared a winner; for county/town races, the county board's count is complete or a news outlet reports a winner or a concession.
 - **Leading** — a candidate is ahead with a meaningful share counted (roughly a third or more of the expected vote) and by more than a point.
@@ -84,7 +87,7 @@ The page wears the results layout from Election Day morning (Garret, Nov 1): bui
 - `next` — "What's next tonight": 2–4 items `{when, what}`, only things still ahead (poll closings, a state that usually reports late, Maine's ranked-choice count, Alaska's Nov 18 tabulation). Drop anything already past. Poll closings ET (greenpapers, read Nov 1; 270toWin, read Nov 3): most of IN, KY 6:00; GA, SC, VA, VT, most of FL 7:00; NC, OH 7:30; PA, ME, most of MI, TX, KS 8:00; NY, MN, IA, rest of MI/TX/KS 9:00; Alaska midnight, Aleutians 1 a.m.
 - `headline` — ONE sentence, the biggest thing right now (Garret, Nov 3: the purple box at the top reports the headline and the next thing coming). E.g. "Roy Cooper (D) wins North Carolina, the first Senate flip of the night." Rewrite every run; (D)/(R) tags on names; no cheering.
 - The box's **Next** line is the first item of `next`, so keep `next` in time order with the nearest upcoming item first.
-- `source_note` — one line naming where tonight's calls came from ("Race calls from Decision Desk HQ and the AP; local counts from the county boards, unofficial."), plus any race that couldn't be read.
+- `source_note` — one line naming where tonight's calls came from, in plain words ("Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified."), plus any race that couldn't be read.
 
 ### Rewrite each run
 - `bottom_line` — three items as a results read: **Senate** first (where the net-plus-four stands, in words), then **House**, then **New York and your towns**. Headline plus one plain sentence each. Honest about what isn't known ("The Senate likely won't be settled tonight: Maine is headed to a ranked-choice count").

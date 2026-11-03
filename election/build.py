@@ -245,7 +245,7 @@ def path_block():
     left = need_net_ - netg
     def names(rs): return ", ".join(r["race"].replace(" Senate", "") for r in rs)
     if not called:
-        head = f"Democrats need a net gain of {need_net_} seats for 51. Nothing is called yet."
+        head = f"Democrats need to win {need_net_} more seats than they lose to reach 51. Nothing is called yet."
     elif left <= 0:
         head = f"Democrats have the net {need_net_} seats they needed for 51."
     else:
@@ -261,7 +261,7 @@ def path_block():
     rseats = [r for r in sr if r.get("held_by") == "R"]
     dseats = [r for r in sr if r.get("held_by") == "D"]
     return (f'<section class="path"><h2>The path to 51</h2><p class="pl">{e(head)}</p>'
-            f'<p class="pk">Republican seats Democrats are trying to flip</p><ul class="cells">{"".join(cell(r) for r in rseats)}</ul>'
+            f'<p class="pk">Republican seats Democrats are trying to win</p><ul class="cells">{"".join(cell(r) for r in rseats)}</ul>'
             f'<p class="pk">Democratic seats they have to hold</p><ul class="cells">{"".join(cell(r) for r in dseats)}</ul></section>')
 
 def house_block():
@@ -274,9 +274,9 @@ def house_block():
     called = [r for r in hr if st_key(r) == "called"]
     flips = [r for r in called if r.get("held_by") and lp(r) and lp(r) != r["held_by"][0]]
     if not called:
-        head = (f"218 seats for control. Democrats need a net gain of {int(need_h)}" if need_h else "218 seats for control") + (f"; Cook expects them to gain {int(lo)} to {int(hi)}." if lo and hi else ".")
+        head = (f"218 seats for control. Democrats need to win {int(need_h)} more than they lose" if need_h else "218 seats for control") + (f". Forecasters expect them to pick up {int(lo)} to {int(hi)}." if lo and hi else ".")
     else:
-        head = f"Democrats have flipped {len(flips)} of these {len(hr)} Republican seats so far."
+        head = f"Democrats have flipped {len(flips)} of these {len(hr)} Republican-held seats so far. 218 seats for control; they need to win {int(need_h)} more than they lose." if need_h else f"Democrats have flipped {len(flips)} of these {len(hr)} Republican-held seats so far."
     def cell(r):
         k = st_key(r); p_ = lp(r)
         if k == "called": cls, word = ("d" if p_ == "D" else "r") + " won", ("D win" if p_ == "D" else "R win")
@@ -363,7 +363,7 @@ need = need_net - len(safe_flip)
 cards = lambda rows, closest_first=False: '<ul class="races">' + "".join(senate_card(r) for r in (by_margin(rows)[::-1] if closest_first else by_margin(rows))) + "</ul>"
 flip_names = " and ".join(r["state"] for r in safe_flip)
 POLLS_NOTE = ''
-tab_senate = (POLLS_NOTE + f'<h2>Senate</h2><p class="intro">{e(D.get("senate_intro",""))} Labels are Cook Political Report ratings.</p>'
+tab_senate = (POLLS_NOTE + f'<h2>Senate</h2><p class="intro">{e(D.get("senate_intro",""))} The labels (Toss-up, Lean, Likely) are from the Cook Political Report, a nonpartisan race handicapper.</p>'
               f'<h3 class="sub-h">Must hold</h3><p class="intro">Democratic seats. Lose one and Democrats need one more flip.</p>{cards(holds, True)}'
               + (f'<h3 class="sub-h">Likely pickup</h3><p class="intro">A Republican seat Democrats are well ahead in.</p>{cards(safe_flip)}' if safe_flip else "")
               + f'<h3 class="sub-h">Need {need} of these {len(chase)}</h3>'
@@ -395,7 +395,7 @@ gov_card = (f'<ul class="races"><li class="race"><div class="rh"><h3>Hochul vs B
             f'<span class="mut">{e(g["poll"].split(" (")[0])}, {e(g["dates"])}.</span></p>'
             f'{fold("Show the polls", gov_polls)}</li></ul>')
 
-tab_house = (POLLS_NOTE + f'<h2>New York House seats</h2><p class="intro">Labels are Cook Political Report ratings.</p><ul class="races">{ny_cards}</ul>'
+tab_house = (POLLS_NOTE + f'<h2>New York House seats</h2><p class="intro">The labels (Toss-up, Lean, Likely) are from the Cook Political Report, a nonpartisan race handicapper.</p><ul class="races">{ny_cards}</ul>'
              + (f'<h2>Pennsylvania House seats</h2><p class="intro">Pennsylvania counts fast, and these four cover every kind of swing seat. '
                 f'Democrats flipping all four is a wave; none means the polls were wrong; two or three is the expected night.</p><ul class="races">{pa_cards}</ul>' if pa_cards else "")
              + f'<h2>New York governor</h2>{gov_card}')
