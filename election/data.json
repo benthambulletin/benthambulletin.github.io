@@ -16,21 +16,11 @@
  "bottom_line": [
   {
    "order": 1,
-   "headline": "Democrats are favored to take the House",
-   "detail": "Cook, the nonpartisan rater, expects them to gain 12 to 25 seats, and last Friday it moved two of the four Pennsylvania districts that decide the majority toward them."
-  },
-  {
-   "order": 2,
    "headline": "The Senate is close, tilting Democratic",
    "detail": "Democrats lead in Maine, Ohio, Texas and Kansas and comfortably in North Carolina; Iowa and Alaska are dead heats; and Michigan and Minnesota, two seats they must keep, both lean their way."
   },
   {
-   "order": 3,
-   "headline": "Trump is deeply unpopular",
-   "detail": "His approval is near the lowest point of his term, and presidents this far underwater usually lose seats in a midterm."
-  },
-  {
-   "order": 4,
+   "order": 2,
    "headline": "Hochul leads comfortably in New York",
    "detail": "Hochul (D) is ahead of Blakeman (R) by about 13 points, and NY-17 in the Hudson Valley is still the state's only toss-up House race."
   }
@@ -487,6 +477,13 @@
    "note": "Seats; Cook’s Oct 30 closing projection: Democrats flip 12 to 25 seats (its Oct 23 projection was 12 to 22)",
    "as_of": "2026-10-30",
    "url": "https://thecookpoliticalreport.substack.com/p/two-senate-and-a-dozen-house-moves"
+  },
+  {
+   "measure": "Net House seats Democrats need for 218",
+   "value": 3,
+   "note": "Ballotpedia: \"Democrats need to gain a net of three districts to win a majority in the chamber.\" Its composition table lists 214 D, 218 R, 1 independent, 2 vacancies.",
+   "as_of": "2026-09-03",
+   "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections,_2026"
   }
  ],
  "ny_governor": [
@@ -1600,111 +1597,5 @@
    }
   ],
   "note": "Charts and framing from Ben Casselman, The New York Times, Oct 18, 2026."
- },
- "early_vote": {
-  "title": "The early vote",
-  "intro": "Early voting in New York closed Sunday. These numbers count who voted, not how they voted.",
-  "turnout": [
-   {
-    "big": "53.1 million",
-    "label": "Nationwide",
-    "text": "Americans had voted early, in person or by mail, by Sunday morning. About 46 million voted early in the 2022 midterm.",
-    "source": "University of Florida Election Lab, via Al Jazeera, Nov 1",
-    "url": "https://www.aljazeera.com/news/2026/11/1/more-than-50-million-votes-cast-in-us-midterm-elections-what-does-it-mean"
-   },
-   {
-    "big": "1.97 million",
-    "label": "New York",
-    "text": "New Yorkers voted early, up from 1.18 million in 2022, about two-thirds more. Nearly two of every three came from outside New York City.",
-    "source": "State Board of Elections (unofficial), via CBS6, Nov 2",
-    "url": "https://cbs6albany.com/news/local/early-voting-soars-in-new-york-nearing-2-million-ballots-cast-city-albany-county-saratoga-schenectady-rensselaer-capital-region-voters-election-day-state-board-of-elections-tuesday-statewide-cbs6-wrgb"
-   },
-   {
-    "big": "99,283",
-    "label": "Erie County (Orchard Park)",
-    "text": "Voted early, up from 70,077 in 2022, about 40 percent more.",
-    "source": "Erie County Board of Elections via WGRZ, Nov 1; 2022 figure via WBEN, Nov 8, 2022",
-    "url": "https://www.yahoo.com/news/politics/articles/nearly-100-000-erie-county-022247368.html",
-    "url2": "https://www.audacy.com/wben/news/politics/early-voting-turnout-strong-more-to-come-on-election-day"
-   },
-   {
-    "big": "About 96,000",
-    "label": "Monroe County (Scottsville)",
-    "text": "Voted early, a county record; the old record was 70,000.",
-    "source": "WXXI, Nov 2; record via WHEC, Nov 1",
-    "url": "https://www.wxxinews.org/local-news/2026-11-02/almost-96-000-ballots-cast-during-monroe-county-early-voting",
-    "url2": "https://www.whec.com/top-news/monroe-county-early-voting-tops-90000-before-tuesdays-2026-midterm-election/"
-   },
-   {
-    "big": "22,475",
-    "label": "Niagara County (North Tonawanda)",
-    "text": "Early and mail ballots in so far. Chautauqua County (Dunkirk, Fredonia): 12,911. No 2022 comparison was given.",
-    "source": "State Board of Elections (unofficial), via WBLK, Nov 2",
-    "url": "https://wblk.com/wny-midterm-early-vote-totals/"
-   }
-  ],
-  "party_intro": "In states that register voters by party, registered Democrats are a bigger share of the early vote than at the same point in 2024; estimates for Georgia and Texas point the same way. Nationally, about 11 million registered Democrats and 8 million registered Republicans had voted early by Sunday.",
-  "party_url": "https://www.aljazeera.com/news/2026/11/1/more-than-50-million-votes-cast-in-us-midterm-elections-what-does-it-mean",
-  "party": [
-   {
-    "state": "North Carolina",
-    "now": "Democrats 38%, Republicans 26%",
-    "then": "Republicans 33%, Democrats 32%",
-    "asof": "Nov 1"
-   },
-   {
-    "state": "Maine",
-    "now": "Democrats 47%",
-    "then": "Democrats 42%",
-    "asof": "Oct 30"
-   },
-   {
-    "state": "Iowa",
-    "now": "Democrats 47%, Republicans 34%",
-    "then": "about 40% each",
-    "asof": "Oct 30"
-   },
-   {
-    "state": "Georgia",
-    "now": "Democrats 47%, Republicans 39% (estimated)",
-    "then": "Democrats 42%, Republicans 39% (2024 final early vote)",
-    "asof": "Nov 1 report"
-   },
-   {
-    "state": "Kansas",
-    "now": "Republicans 43%, Democrats 42%",
-    "then": "Republicans 52%, Democrats 34%",
-    "asof": "Oct 30"
-   },
-   {
-    "state": "Texas",
-    "now": "Republicans 42%, Democrats 39% (estimated)",
-    "then": "Republicans 50%, Democrats 41% (2024 final early vote)",
-    "asof": "Oct 31"
-   }
-  ],
-  "party_source": "Decision Desk HQ, Nov 1. Georgia and Texas don't register voters by party; those shares are estimates.",
-  "party_source_url": "https://decisiondeskhq.substack.com/p/early-mail-vote-2026-midterms-senate-control-analysis-trends",
-  "means": [
-   "In the Senate states with party data, the early vote leans more Democratic than it did at the same point in 2024. Democrats have leaned toward early voting since 2020, but these comparisons are early vote against early vote, so that habit is already counted: in most of these states, Republicans are a smaller share of the early vote than two years ago.",
-   "Some of the jump in early voting may be people switching from Election Day, so it doesn't show how many will vote in all.",
-   "It is not a forecast. A party registration is not a vote, unaffiliated voters (about a third of North Carolina's early vote) could go either way, and Election Day voters have leaned Republican in recent elections, so the count can shift toward Republicans as Election Day votes are counted.",
-   "New York and its counties don't publish the party makeup of early voters, so there is no read on how Western New York's early voters lean. About 65% of the state's early votes came from outside New York City, and Erie County's Republican chairman said, in WBFO's report, that the number of Republican early voters is up from past years, without giving figures.",
-   "Decision Desk HQ's read: the early vote is \"spooky for GOP — but not fatal.\" It fits a Democratic-leaning year in the polls; it doesn't say who wins Maine, Ohio or Texas."
-  ],
-  "means_urls": [
-   {
-    "label": "WBFO, Nov 2",
-    "url": "https://www.btpm.org/local/2026-11-02/republicans-make-final-push-on-eve-of-midterm-elections-hopeful-for-gubernatorial-race"
-   },
-   {
-    "label": "Decision Desk HQ, Nov 1",
-    "url": "https://decisiondeskhq.substack.com/p/early-mail-vote-2026-midterms-senate-control-analysis-trends"
-   },
-   {
-    "label": "CBS6, Nov 2",
-    "url": "https://cbs6albany.com/news/local/early-voting-soars-in-new-york-nearing-2-million-ballots-cast-city-albany-county-saratoga-schenectady-rensselaer-capital-region-voters-election-day-state-board-of-elections-tuesday-statewide-cbs6-wrgb"
-   }
-  ]
  }
 }

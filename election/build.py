@@ -156,7 +156,7 @@ elif ev_start <= today <= eday:
     else:
         when = "today" if today == eday else fdate(D["election_day"], "%A")
         strip = (f'<section class="banner"><h2 class="bh">Election Day is {when}</h2>'
-                 f'<p class="bs">{"Polls are open " + e(eday_hours.rstrip(".")) + ". " if eday_hours else ""}Early voting has closed. Vote at your assigned polling place: '
+                 f'<p class="bs">{"Polls are open " + e(eday_hours.rstrip(".")) + ". " if eday_hours else ""}Vote at your assigned polling place: '
                  f'<a href="https://voterlookup.elections.ny.gov/">look it up at voterlookup.elections.ny.gov</a>.</p></section>')
 
 bottom = "".join(
@@ -264,6 +264,28 @@ def path_block():
             f'<p class="pk">Republican seats Democrats are trying to flip</p><ul class="cells">{"".join(cell(r) for r in rseats)}</ul>'
             f'<p class="pk">Democratic seats they have to hold</p><ul class="cells">{"".join(cell(r) for r in dseats)}</ul></section>')
 
+def house_block():
+    """The House in one small block: 218, the net needed, Cook's range, and the five early-counting bellwethers as tiles."""
+    keys = ["pa-1", "pa-7", "pa-8", "pa-10", "ny-17"]
+    hr = [r for k in keys for r in R.get("races", []) if r.get("key") == k]
+    if not hr: return ""
+    need_h = ctrl.get("Net House seats Democrats need for 218")
+    lo, hi = ctrl.get("Cook projected Democratic House gain (low)"), ctrl.get("Cook projected Democratic House gain (high)")
+    called = [r for r in hr if st_key(r) == "called"]
+    flips = [r for r in called if r.get("held_by") and lp(r) and lp(r) != r["held_by"][0]]
+    if not called:
+        head = (f"218 seats for control. Democrats need a net gain of about {int(need_h)}" if need_h else "218 seats for control") + (f"; Cook expects them to gain {int(lo)} to {int(hi)}." if lo and hi else ".")
+    else:
+        head = f"Democrats have flipped {len(flips)} of these {len(hr)} Republican seats so far."
+    def cell(r):
+        k = st_key(r); p_ = lp(r)
+        if k == "called": cls, word = ("d" if p_ == "D" else "r") + " won", ("D win" if p_ == "D" else "R win")
+        elif p_ and k in ("leading", "too close"): cls, word = ("d" if p_ == "D" else "r") + " ahead", (("D" if p_ == "D" else "R") + (" ahead" if k == "leading" else " edge"))
+        else: cls, word = "wait", "Not yet"
+        return f'<li class="{cls}"><b>{e(r["race"])}</b><span>{word}</span></li>'
+    return (f'<section class="path house"><h2>The House</h2><p class="pl">{e(head)}</p>'
+            f'<p class="pk">The early tell: Republican seats that count fast</p><ul class="cells">{"".join(cell(r) for r in hr)}</ul></section>')
+
 def results_today():
     """Election Day and election night: one calm column, light section heads, no stacked bars.
     Before the first results run: the Election Day note (which also says when results start), the empty path board,
@@ -283,7 +305,7 @@ def results_today():
         hrs = e(eday_hours.rstrip(".")) if eday_hours else ""
         top = (f'<section class="now"><p class="nk">Election Day · {eday_long}</p>'
                f'<p class="nh">{"Polls are open " + hrs + "." if hrs else "Polls are open today."}</p>'
-               f'<p>Early voting has closed. Vote at your assigned polling place: <a href="https://voterlookup.elections.ny.gov/">look it up at voterlookup.elections.ny.gov</a>.</p>'
+               f'<p>Vote at your assigned polling place: <a href="https://voterlookup.elections.ny.gov/">look it up at voterlookup.elections.ny.gov</a>.</p>'
                f'<p class="nn">No results yet. The first polls close at 7 p.m. Eastern; results start here after 8 p.m.</p></section>')
     latest = (f'<section class="latest"><h2>Since the last update</h2><ul class="list">{"".join(f"<li>{lede(c)}</li>" for c in D.get("what_changed", []))}</ul></section>'
               if (r_upd and D.get("what_changed")) else "")
@@ -294,7 +316,7 @@ def results_today():
     nxt_h = (f'<h2>What\'s next tonight</h2><ul class="tl">' + "".join(f'<li><b>{e(i["when"])}</b><span>{tag_text(i["what"])}</span></li>' for i in nxt) + "</ul>") if nxt else ""
     more = ('<nav class="more" aria-label="Every race"><p>Every race</p><a href="#senate">Senate</a><a href="#house">House &amp; governor</a><a href="#ballot">Your towns</a></nav>')
     srcn = f'<p class="srcn">{e(R["source_note"])}</p>' if R.get("source_note") else ""
-    return '<div class="night">' + top + path_block() + latest + bl_h + nxt_h + more + srcn + '</div>'
+    return '<div class="night">' + top + path_block() + house_block() + latest + bl_h + nxt_h + more + srcn + '</div>'
 
 def res_group(*groups):
     rs = [r for r in R.get("races", []) if r.get("group") in groups]
@@ -309,28 +331,11 @@ def normal_block():
     n = D["election_night"]
     return (f'<h2>What\'s normal tonight</h2><ul class="list">' + "".join(f'<li><b>{e(i["when"])}</b>: {tag_text(i["what"])}</li>' for i in n["items"]) + "</ul>")
 
-def early_block():
-    ev_ = D.get("early_vote")
-    if not ev_: return ""
-    def src(i):
-        u2 = f' and <a href="{e(i["url2"])}">here</a>' if i.get("url2") else ""
-        return f'<a href="{e(i["url"])}">{e(i["source"])}</a>{u2}'
-    tiles_e = "".join(f'<li><div class="evn">{e(i["big"])}</div><div><b>{e(i["label"])}</b> {e(i["text"])} <span class="mut evs">{src(i)}</span></div></li>' for i in ev_["turnout"])
-    prow = "".join(f'<tr><th>{e(r["state"])}</th><td>{tag_text(r["now"])}</td><td>{tag_text(r["then"])}</td></tr>' for r in ev_.get("party", []))
-    ptable = (f'<table class="trend evt"><thead><tr><th>State</th><th>Early vote now</th><th>Same point, 2024</th></tr></thead><tbody>{prow}</tbody></table>'
-              f'<p class="mut evs"><a href="{e(ev_["party_source_url"])}">{e(ev_["party_source"])}</a></p>') if prow else ""
-    means = "".join(f"<li>{tag_text(m)}</li>" for m in ev_.get("means", []))
-    return (f'<h2>{e(ev_["title"])}</h2><p class="intro">{e(ev_["intro"])}</p><ul class="evl">{tiles_e}</ul>'
-            f'<h3 class="sub-h">Who is voting early</h3><p class="intro">{e(ev_["party_intro"])} <a class="mut" href="{e(ev_["party_url"])}">Source</a></p>'
-            + fold("Show the states", ptable)
-            + (f'<h3 class="sub-h">Which way they lean</h3><ul class="list">{means}</ul>' if means else "")
-            + (('<p class="mut evs">Sources: ' + ", ".join(f'<a href="{e(u["url"])}">{e(u["label"])}</a>' for u in ev_.get("means_urls", [])) + '</p>') if ev_.get("means_urls") else ""))
-
 if is_results:
     tab_today = results_today()
 else:
     tab_today = (strip + f'<h2>Bottom line</h2><ol class="bottom">{bottom}</ol>'
-                 + changed + early_block() + tiles + calm + mood)
+                 + changed + tiles + calm + mood)
 
 # ---------- SENATE ----------
 def senate_card(r):
@@ -397,7 +402,7 @@ def rows(items):
     return "".join(f'<div class="row"><dt>{e(i["office"])}</dt><dd>{tag_text(i["race"])}</dd></div>' for i in items)
 def town_block(t):
     hrs = ev["hours"].get(t["county"], "")
-    body = rows(t["items"]) + f'<div class="row ev"><dt>Early voting</dt><dd>{e(t["early_voting"]["site"])}{f"<span class=hrs>{e(hrs)}</span>" if hrs else ""}</dd></div>'
+    body = rows(t["items"]) + ("" if is_results else f'<div class="row ev"><dt>Early voting</dt><dd>{e(t["early_voting"]["site"])}{f"<span class=hrs>{e(hrs)}</span>" if hrs else ""}</dd></div>')
     return fold(f'<span class="tn">{e(t["town"])}</span><span class="cty">{e(t["county"])} County</span>', f"<dl>{body}</dl>", "town")
 
 enight = ""
@@ -429,9 +434,9 @@ sources = ('<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook P
            '<a href="/election/data.json">the underlying numbers</a> carry a source link per row.</div>')
 
 tab_ballot = ((res_local() if is_results else '') + f'<h2>Statewide</h2><p class="intro">On every New York ballot.</p><dl class="plain">{rows(D["statewide"])}</dl>'
-              f'<h2>Your town</h2><p class="intro">Tap a town for what it votes on and where to vote early. Nobody polls these races.</p>'
+              f'<h2>Your town</h2><p class="intro">{"Tap a town for what is on its ballot." if is_results else "Tap a town for what it votes on and where to vote early. Nobody polls these races."}</p>'
               + "".join(town_block(t) for t in D["your_ballot"])
-              + (normal_block() if is_results else enight) + (early_block() if is_results else '') + glossary + outlook + trend + sources)
+              + (normal_block() if is_results else enight) + glossary + outlook + trend + sources)
 
 CSS = """
 @font-face{font-family:'Archivo';src:url(/assets/fonts/Archivo.ttf) format('truetype');font-weight:100 900;font-stretch:62% 125%;font-display:swap}

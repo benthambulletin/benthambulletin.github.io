@@ -43,7 +43,7 @@ Sticky tab bar; the URL hash picks the tab (`/election/#senate`), switching is c
 - Every candidate named in free text carries a (D)/(R) tag; use surnames when data.json has no first name.
 
 ## Standing notes from Garret
-- **Nov 2 — The early vote.** `early_vote` (turnout tiles, party-share table, What it means) renders on Today before results, then moves to My ballot. Sourced and fact-checked Nov 2 (MINOR, fixed). Leave it alone unless a newer final count appears; never print a party share as a vote share.
+- **Nov 3 — early vote retired.** Early voting is over; no early-vote section or mention anywhere on the page (Garret).
 - **Oct 15 — the holds are not free.** The NYT (Oct 15, "Democrats Worry That a Few Senate Races in Bluer States Aren't Slam Dunks") reports Maine, Michigan and Minnesota are all within about three points with local headwinds. From the Oct 16 run: track Minnesota (Flanagan vs Tafoya) as a full `senate` row, not a mention; and the bottom line should say plainly that Democrats must also hold Michigan and Minnesota; the Senate tab's Must hold group shows it. Keep the framing proportionate: Democrats lead or tie in every toss-up, so this is a caveat, not a reversal.
 - **Oct 17 — Pennsylvania bellwethers.** NYT (Goldmacher, Oct 17): PA-1, PA-7, PA-8, PA-10 together decide the House majority and resolve early on election night. From the next run, carry the four as rows in a new `pa_bellwethers` list (`district, incumbent, party, challenger, rating, rating_source, pollster, dates, dem_pct, rep_pct, note, url`) with Cook ratings and any public poll, and build.py renders them on the House tab under "Pennsylvania House seats", same card as the NY rows. In results mode they go in `results.races` with Called/Leading status.
 - **Oct 19 — South Carolina is a Senate row.** Lindsey Graham died July 11; his sister Darline Graham Nordone (R) was appointed and nominated; Annie Andrews (D) is within single digits. Track it like the other Republican seats (RCP race page: south-carolina/graham-nordone-vs-andrews). Lesson: the Senate list came from Cook's toss-up column alone; a Likely R seat polling inside 5 belongs on the page too. Each run, scan RCP's Senate map for any seat with an average under 6 points that isn't already a row.
@@ -85,7 +85,7 @@ The page wears the results layout from Election Day morning (Garret, Nov 1): bui
 - `source_note` — one line naming where tonight's calls came from ("Race calls from Decision Desk HQ and the AP; local counts from the county boards, unofficial."), plus any race that couldn't be read.
 
 ### Rewrite each run
-- `bottom_line` — four items as a results read: **Senate** first (where the net-plus-four stands, in words), then **House**, **New York**, **Your towns**. Headline plus one plain sentence each. Honest about what isn't known ("The Senate likely won't be settled tonight: Maine is headed to a ranked-choice count").
+- `bottom_line` — three items as a results read: **Senate** first (where the net-plus-four stands, in words), then **House**, then **New York and your towns**. Headline plus one plain sentence each. Honest about what isn't known ("The Senate likely won't be settled tonight: Maine is headed to a ranked-choice count").
 - `what_changed` — the page labels it "Since the last update": one line per race newly called or newly flipped since the previous run, with (D)/(R) tags. Empty if nothing moved.
 - Leave `election_night` (shown as "What's normal tonight"), the polls rows and `history` alone.
 
