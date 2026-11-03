@@ -280,6 +280,15 @@ td.n{text-align:right;font-family:var(--mono)}
     if(sc!=null&&sc>=3) plan.push(`<b>Tonight:</b> do the Evening check-in and mark anything you felt. That's the running test of whether the morning warning is real.`);
     $("plan").hidden=!plan.length; $("plan-list").innerHTML=plan.map(p=>`<li>${p}</li>`).join("");
 
+    // in an attack: the score answers "will one start", so pause it while one is logged today or yesterday
+    const yd=iso(new Date(today-86400000)); const inAtt=mineDates.has(T)||mineDates.has(yd);
+    if(inAtt){const a=mine.find(x=>x.date===T)||mine.find(x=>x.date===yd);
+      rk.className="risk bad"; $("r-score").textContent="–"; $("r-meter").innerHTML="";
+      $("r-txt").innerHTML=`<b>In an attack</b> (logged ${nice(D(a.date))}${a.time?" "+a.time:""}). The score only predicts whether one will start, so it's paused until a day passes with nothing logged.`+$("r-txt").innerHTML.replace(/^[\s\S]*?(?=<div class="board">)/,"");
+      st.className="pill bad"; st.textContent="In an attack";
+      $("today").innerHTML=`<b>Today:</b> rest, fluids, dark room if it helps. Log how it ends — whether the treatment worked is the useful part.`;
+      $("plan").hidden=true;}
+
     // flags panel
     const names=["woke early","woke a bit early","Body Battery low","Body Battery so-so","stressful yesterday","stress elevated yesterday","resting HR up","short night"];
     $("flags").innerHTML=sc==null?`<span class="muted">No reading yet.</span>`:names.map(n=>`<span class="flag ${flags.includes(n)?(/bit|so-so|elevated/.test(n)?"mid":"on"):""}">${n}</span>`).join("");
