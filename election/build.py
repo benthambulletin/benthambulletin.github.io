@@ -311,11 +311,9 @@ def results_today():
                f'<p class="sub">218 for control. Seats called so far.{" " + e(hou_["note"]) if hou_.get("note") else ""}</p></div>'
                f'</div></section>')
     else:
-        hrs = e(eday_hours.rstrip(".")) if eday_hours else ""
-        top = (f'<section class="now"><p class="nk">Election Day · {eday_long}</p>'
-               f'<p class="nh">{"Polls are open " + hrs + "." if hrs else "Polls are open today."}</p>'
-               f'<p>Vote at your assigned polling place: <a href="https://voterlookup.elections.ny.gov/">look it up at voterlookup.elections.ny.gov</a>.</p>'
-               + ticker() + '</section>')
+        close = eday_hours.split("–")[-1].rstrip(".") if eday_hours and "–" in eday_hours else ""
+        top = (f'<section class="now"><p class="nk">Election Day · {eday_long}{" · polls close " + e(close).replace("p.m", "p.m.") if close else ""}</p>'
+               + ticker(first=True) + '</section>')
     latest = (f'<section class="latest"><h2>Since the last update</h2><ul class="list">{"".join(f"<li>{lede(c)}</li>" for c in D.get("what_changed", []))}</ul></section>'
               if (r_upd and D.get("what_changed")) else "")
     bl = "".join(f'<li><h3>{e(r["headline"])}</h3><p>{tag_text(r["detail"])}</p></li>'
@@ -605,7 +603,7 @@ dd{margin:0;font-size:.92rem;line-height:1.45}
 .fold.polls{margin-top:1.5rem}
 .now .tk{font-family:var(--sans);font-size:.95rem;line-height:1.4;margin-top:.55rem;padding-top:.55rem;border-top:1px solid rgba(103,70,148,.25);color:var(--ink)}
 .now .tk b{display:inline-block;min-width:3.6rem;color:var(--purple);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
-.now .tk1{margin-top:0;padding-top:0;border-top:0}
+.now .tk1{margin-top:.5rem;padding-top:0;border-top:0}
 .now.live{margin-bottom:1.1rem}
 .banner{margin:1rem -1rem 0;padding:1.1rem 1rem 1rem;background:var(--purple);color:#fff}
 .banner .bh{margin:0;padding:0;background:none;color:#fff;font-size:1.45rem;font-weight:800;font-stretch:95%;line-height:1.15}
