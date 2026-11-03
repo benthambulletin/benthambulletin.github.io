@@ -107,7 +107,7 @@ def lede(text):
 
 def race_sentence(dem, rep, margin, held_by, open_seat=False):
     """'Sherrod Brown (D) leads Jon Husted (R) by about 3 points. Republican-held.'"""
-    d = f'{e(dem)} <span class="pt d">(D)</span>'; r = f'{e(rep)} <span class="pt r">(R)</span>'
+    d = f'{e(dem)}' if "(independent)" in dem else f'{e(dem)} <span class="pt d">(D)</span>'; r = f'{e(rep)} <span class="pt r">(R)</span>'
     pm = plain_margin(margin)
     if pm is None: s = f"{d} vs {r}. No public poll yet."
     elif pm == "tied": s = f"{d} and {r} are tied."
@@ -235,7 +235,7 @@ def race_row(r):
 
 def path_block():
     """The Democratic path to 51, computed from the Senate rows in results.races."""
-    sr = [r for r in R.get("races", []) if r.get("group") == "senate"]
+    sr = [r for r in R.get("races", []) if r.get("group") == "senate" and not r.get("no_path")]
     if not sr: return ""
     need_net_ = int(ctrl["Net seats Democrats need for 51"])
     called = [r for r in sr if st_key(r) == "called"]
@@ -357,7 +357,8 @@ def by_margin(rows): return sorted(rows, key=lambda r: (r["margin"] is None, -(r
 sen = D["senate"]
 holds = [r for r in sen if r["held_by"] == "D"]
 safe_flip = [r for r in sen if r["held_by"] == "R" and re.match(r"(likely|solid|safe) d", (r["cook_rating"] or "").lower())]
-chase = [r for r in sen if r["held_by"] == "R" and r not in safe_flip]
+chase = [r for r in sen if r["held_by"] == "R" and r not in safe_flip and not r.get("no_path")]
+other = [r for r in sen if r.get("no_path")]
 need_net = int(ctrl["Net seats Democrats need for 51"])
 need = need_net - len(safe_flip)
 cards = lambda rows, closest_first=False: '<ul class="races">' + "".join(senate_card(r) for r in (by_margin(rows)[::-1] if closest_first else by_margin(rows))) + "</ul>"
@@ -367,7 +368,8 @@ tab_senate = (POLLS_NOTE + f'<h2>Senate</h2><p class="intro">{e(D.get("senate_in
               f'<h3 class="sub-h">Must hold</h3><p class="intro">Democratic seats. Lose one and Democrats need one more flip.</p>{cards(holds, True)}'
               + (f'<h3 class="sub-h">Likely pickup</h3><p class="intro">A Republican seat Democrats are well ahead in.</p>{cards(safe_flip)}' if safe_flip else "")
               + f'<h3 class="sub-h">Need {need} of these {len(chase)}</h3>'
-              + f'<p class="intro">Republican seats. {f"Counts {e(flip_names)} as a flip; without it, Democrats need {need_net} of these." if safe_flip else ""}</p>{cards(chase)}')
+              + f'<p class="intro">Republican seats. {f"Counts {e(flip_names)} as a flip; without it, Democrats need {need_net} of these." if safe_flip else ""}</p>{cards(chase)}'
+              + (f'<h3 class="sub-h">Also close</h3><p class="intro">No Democrat is running here, so it is not in the count above; an independent win would still change the Senate arithmetic.</p>{cards(other)}' if other else ""))
 
 if is_results:
     tab_senate = (f'<h2>Senate results</h2><p class="intro">Updated with each results run. A race nobody has called says so.</p><ul class="races">{res_group("senate")}</ul>'

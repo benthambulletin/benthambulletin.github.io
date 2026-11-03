@@ -95,7 +95,7 @@ Nothing on the Today tab assumes the reader follows politics. No rater or pollst
 - `what_changed` — **empty it or rewrite it before setting `updated`**; the morning's polling text must never survive into results mode. The page labels it "Since the last update": one line per race newly called or newly flipped since the previous run, with (D)/(R) tags. Empty if nothing moved.
 - Leave `election_night` (shown as "What's normal tonight"), the polls rows and `history` alone.
 
-- Nebraska (Ricketts (R) vs independent Dan Osborn) is not on the path board. If Osborn wins, the Senate score and the path sentence will disagree by one; say so in one `bottom_line` sentence and leave the board alone.
+- **Nov 3 additions:** New Hampshire (Pappas (D) vs Sununu (R), open D seat, Lean D) is on the board as a hold. Nebraska (Ricketts (R) vs independent Dan Osborn) is a Senate row with `no_path: true`: it shows on the Senate tab under "Also close" and in the results list, but not on the path board, because no Democrat is running. If Osborn wins, the Senate score and the path sentence will disagree by one; say so in one `bottom_line` sentence and leave the board alone.
 
 ### Each results run
 1. Pull. If `mode` is "polls", set it to "results".
