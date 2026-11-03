@@ -276,21 +276,26 @@ def results_today():
                f'</div>')
     nxt = R.get("next") or []
     nxt_h = (f'<h2>What\'s next tonight</h2><ul class="list">' + "".join(f'<li><b>{e(i["when"])}</b>: {tag_text(i["what"])}</li>' for i in nxt) + "</ul>") if nxt else ""
-    races_ = R.get("races", [])
-    def grp(g): return "".join(race_row(r) for r in sorted([r for r in races_ if r.get("group") == g], key=lambda r: STATUS_ORDER.get(st_key(r), 9)))
-    sen_h = (f'<h2>Senate races</h2><ul class="races">{grp("senate")}</ul>') if grp("senate") else ""
-    hou_h = (f'<h2>House and governor</h2><ul class="races">{grp("house")}{grp("governor")}</ul>') if (grp("house") or grp("governor")) else ""
-    loc = "".join(race_row(r) for r in R.get("local", []))
-    loc_h = (f'<h2>Your towns</h2><p class="intro">County boards post unofficial counts through the night; absentee ballots are added later.</p><ul class="races">{loc}</ul>') if loc else ""
-    normal = ""
-    if D.get("election_night"):
-        n = D["election_night"]
-        normal = (f'<h2>What\'s normal tonight</h2><ul class="list">' + "".join(f'<li><b>{e(i["when"])}</b>: {tag_text(i["what"])}</li>' for i in n["items"]) + "</ul>")
+    more = ('<p class="more">Every race: <a href="#senate">Senate</a> · <a href="#house">House &amp; governor</a> · <a href="#ballot">Your towns</a></p>')
     srcn = f'<p class="intro srcn">{e(R["source_note"])}</p>' if R.get("source_note") else ""
     if not r_upd: tiles_r = f'<h2>Results</h2>{asof}'
     return ((strip if not r_upd else "") + tiles_r + path_block()
+            + (changed if r_upd else "")
             + f'<h2>Bottom line</h2><ol class="bottom">{bottom}</ol>'
-            + changed + nxt_h + ("" if r_upd else early_block()) + sen_h + hou_h + loc_h + normal + srcn)
+            + nxt_h + more + srcn)
+
+def res_group(*groups):
+    rs = [r for r in R.get("races", []) if r.get("group") in groups]
+    return "".join(race_row(r) for r in sorted(rs, key=lambda r: STATUS_ORDER.get(st_key(r), 9)))
+
+def res_local():
+    loc = "".join(race_row(r) for r in R.get("local", []))
+    return (f'<h2>Your towns: results</h2><p class="intro">County boards post unofficial counts through the night; absentee ballots are added later.</p><ul class="races">{loc}</ul>') if loc else ""
+
+def normal_block():
+    if not D.get("election_night"): return ""
+    n = D["election_night"]
+    return (f'<h2>What\'s normal tonight</h2><ul class="list">' + "".join(f'<li><b>{e(i["when"])}</b>: {tag_text(i["what"])}</li>' for i in n["items"]) + "</ul>")
 
 def early_block():
     ev_ = D.get("early_vote")
@@ -333,12 +338,16 @@ need_net = int(ctrl["Net seats Democrats need for 51"])
 need = need_net - len(safe_flip)
 cards = lambda rows, closest_first=False: '<ul class="races">' + "".join(senate_card(r) for r in (by_margin(rows)[::-1] if closest_first else by_margin(rows))) + "</ul>"
 flip_names = " and ".join(r["state"] for r in safe_flip)
-POLLS_NOTE = '<p class="polnote">These are the final polls from before Election Day. Results are on the <a href="#today">Today</a> tab.</p>' if is_results else ''
+POLLS_NOTE = ''
 tab_senate = (POLLS_NOTE + f'<h2>Senate</h2><p class="intro">{e(D.get("senate_intro",""))} Labels are Cook Political Report ratings.</p>'
               f'<h3 class="sub-h">Must hold</h3><p class="intro">Democratic seats. Lose one and Democrats need one more flip.</p>{cards(holds, True)}'
               + (f'<h3 class="sub-h">Likely pickup</h3><p class="intro">A Republican seat Democrats are well ahead in.</p>{cards(safe_flip)}' if safe_flip else "")
               + f'<h3 class="sub-h">Need {need} of these {len(chase)}</h3>'
               + f'<p class="intro">Republican seats. {f"Counts {e(flip_names)} as a flip; without it, Democrats need {need_net} of these." if safe_flip else ""}</p>{cards(chase)}')
+
+if is_results:
+    tab_senate = (f'<h2>Senate results</h2><p class="intro">Updated with each results run. A race nobody has called says so.</p><ul class="races">{res_group("senate")}</ul>'
+                  + fold("Final polls before Election Day", tab_senate, "polls"))
 
 # ---------- HOUSE ----------
 def house_card(r):
@@ -366,6 +375,10 @@ tab_house = (POLLS_NOTE + f'<h2>New York House seats</h2><p class="intro">Labels
              + (f'<h2>Pennsylvania House seats</h2><p class="intro">Pennsylvania counts fast, and these four cover every kind of swing seat. '
                 f'Democrats flipping all four is a wave; none means the polls were wrong; two or three is the expected night.</p><ul class="races">{pa_cards}</ul>' if pa_cards else "")
              + f'<h2>New York governor</h2>{gov_card}')
+
+if is_results:
+    tab_house = (f'<h2>House and governor results</h2><ul class="races">{res_group("house", "governor")}</ul>'
+                 + fold("Final polls before Election Day", tab_house, "polls"))
 
 # ---------- MY BALLOT ----------
 def rows(items):
@@ -403,10 +416,10 @@ sources = ('<div class="foot">Sources: Silver Bulletin, RealClearPolling, Cook P
            'Polls are snapshots with margins of error of 3–5 points; a lead inside that range is a coin flip. Compiled each morning; '
            '<a href="/election/data.json">the underlying numbers</a> carry a source link per row.</div>')
 
-tab_ballot = (f'<h2>Statewide</h2><p class="intro">On every New York ballot.</p><dl class="plain">{rows(D["statewide"])}</dl>'
+tab_ballot = ((res_local() if is_results else '') + f'<h2>Statewide</h2><p class="intro">On every New York ballot.</p><dl class="plain">{rows(D["statewide"])}</dl>'
               f'<h2>Your town</h2><p class="intro">Tap a town for what it votes on and where to vote early. Nobody polls these races.</p>'
               + "".join(town_block(t) for t in D["your_ballot"])
-              + ('' if is_results else enight) + (early_block() if (is_results and r_upd) else '') + glossary + outlook + trend + sources)
+              + (normal_block() if is_results else enight) + (early_block() if is_results else '') + glossary + outlook + trend + sources)
 
 CSS = """
 @font-face{font-family:'Archivo';src:url(/assets/fonts/Archivo.ttf) format('truetype');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
@@ -569,6 +582,7 @@ dd{margin:0;font-size:.92rem;line-height:1.45}
 .evn{font-family:var(--sans);font-weight:800;font-stretch:80%;font-size:1.35rem;line-height:1.1}
 .evl b{display:block;font-family:var(--sans);font-size:.85rem}.evs{font-size:.78rem}.evs a{color:var(--soft)}
 .trend.evt th,.trend.evt td{text-align:left;vertical-align:top}.evt tbody th{color:var(--ink);font-size:.85rem}
+.more{margin:1.2rem 0 0;font-family:var(--sans);font-size:.95rem}.fold.polls{margin-top:1.5rem}
 .banner{margin:1rem -1rem 0;padding:1.1rem 1rem 1rem;background:var(--purple);color:#fff}
 .banner .bh{margin:0;padding:0;background:none;color:#fff;font-size:1.45rem;font-weight:800;font-stretch:95%;line-height:1.15}
 .banner .bs{margin-top:.4rem;font-size:.95rem}
@@ -593,7 +607,7 @@ if(scroll&&window.scrollY>nav.offsetTop)window.scrollTo(0,nav.offsetTop)}
 window.addEventListener('hashchange',function(){show(true)});show(false)})();"""
 
 sb_m = sb["margin"]
-TABS = [("today", "Today", tab_today), ("senate", "Senate", tab_senate), ("house", "House", tab_house), ("ballot", "My ballot", tab_ballot)]
+TABS = [("today", "Today", tab_today), ("senate", "Senate", tab_senate), ("house", "House", tab_house), ("ballot", "Your towns" if is_results else "My ballot", tab_ballot)]
 nav = "".join(f'<a href="#{k}" data-tab="{k}"{" class=\"on\" aria-current=\"page\"" if k == "today" else ""}>{label}</a>' for k, label, _ in TABS)
 sections = "".join(f'<section class="tab" data-tab="{k}" aria-label="{label}">{body}</section>' for k, label, body in TABS)
 

@@ -65,6 +65,11 @@ The page wears the results layout from Election Day morning (Garret, Nov 1): bui
 - **New York State BOE unofficial:** `https://nyenr.elections.ny.gov/` (statewide, Congress, legislature).
 - **Counties (unofficial, often only on the night):** Erie `https://erie.resultscaster.com/r/GEN26?usersessionid=none` (guessed from 2025's GEN25); Niagara posts on vic.ntsdata.com (number changes per election; search "Niagara County unofficial results 2026 ntsdata"); Monroe posts timestamped PDFs (search "monroecounty.gov GE26 Unofficial Results"); Chautauqua: search Observer Today (observertoday.com) and Post-Journal for "election results". News fallbacks: btpm.org (WBFO) live blog, WKBW, Lockport Journal, WXXI. The North Tonawanda proposition and Niagara County Legislature 7–9 will likely only appear on the Niagara results site or in Niagara Gazette / Lockport Journal stories; if neither is readable, leave them "Not yet" and say so in `source_note`.
 
+### Layout in results mode (Garret, Nov 3: "simplify; just headline updates and results")
+- **Today:** Election Day banner (before results only), the score, the path to 51, Since the last update, Bottom line, What's next, links to every race. Nothing else.
+- **Senate / House:** results lists first; the final polls sit in a closed "Final polls before Election Day" fold.
+- **Your towns** (the My ballot tab, renamed): local results first, then the ballot reference, What's normal tonight, the early vote, glossary.
+
 ### Status words (one meaning each)
 - **Called** — DDHQ or AP (via Fox) has declared a winner; for county/town races, the county board's count is complete or a news outlet reports a winner or a concession.
 - **Leading** — a candidate is ahead with a meaningful share counted (roughly a third or more of the expected vote) and by more than a point.
