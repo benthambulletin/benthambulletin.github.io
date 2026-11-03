@@ -12138,7 +12138,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Jaguars",
-          "line": "Jaguars −9.5 (Lamar Jackson hurt)"
+          "line": "Jaguars −9.5 (Lamar Jackson hurt)",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Bengals",
@@ -12149,7 +12152,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Bengals",
-          "line": "Bengals −3.5"
+          "line": "Bengals −3.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Cowboys",
@@ -12160,7 +12166,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Cowboys",
-          "line": "Cowboys −5.5"
+          "line": "Cowboys −5.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Jets",
@@ -12171,7 +12180,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Chiefs",
-          "line": "Chiefs −10.5"
+          "line": "Chiefs −10.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Lions",
@@ -12182,7 +12194,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Lions",
-          "line": "Lions −7.5"
+          "line": "Lions −7.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Browns",
@@ -12193,7 +12208,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Saints",
-          "line": "Saints −2.5"
+          "line": "Saints −2.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Giants",
@@ -12204,7 +12222,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Giants",
-          "line": "Giants −3.5"
+          "line": "Giants −3.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Rams",
@@ -12215,7 +12236,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Rams",
-          "line": "Rams −5.5"
+          "line": "Rams −5.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Broncos",
@@ -12226,7 +12250,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Broncos",
-          "line": "Broncos −2.5"
+          "line": "Broncos −2.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Texans",
@@ -12237,7 +12264,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Texans",
-          "line": "Texans −4.5"
+          "line": "Texans −4.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Packers",
@@ -12248,7 +12278,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Patriots",
-          "line": "Patriots −2.5"
+          "line": "Patriots −2.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Raiders",
@@ -12259,7 +12292,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "49ers",
-          "line": "49ers −9.5"
+          "line": "49ers −9.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Cardinals",
@@ -12270,7 +12306,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Seahawks",
-          "line": "Seahawks −10.5"
+          "line": "Seahawks −10.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Buccaneers",
@@ -12281,7 +12320,10 @@
           "winner": null,
           "status": "sealed",
           "fav": "Bears",
-          "line": "Bears −5.5"
+          "line": "Bears −5.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Bills",
@@ -12292,15 +12334,62 @@
           "winner": null,
           "status": "sealed",
           "fav": "Bills",
-          "line": "Bills −3"
+          "line": "Bills −3",
+          "hits": [],
+          "misses": [],
+          "sides": null
         }
       ],
-      "players": [],
-      "trash": [],
+      "players": [
+        {
+          "name": "Claude",
+          "house": true,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-03T08:59:51+00:00",
+          "firstAt": "2026-11-03T08:59:51+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "house",
+          "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Thom",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-03T11:07:58+00:00",
+          "firstAt": "2026-11-03T11:07:58+00:00",
+          "free": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        }
+      ],
+      "trash": [
+        {
+          "from": "Claude",
+          "text": "Eleven right and still third. I'm told this is character-building."
+        }
+      ],
       "payments": [],
       "buyIn": 5,
       "payBy": "2026-11-06T01:15:00Z",
-      "pot": 0,
+      "pot": 0.0,
       "paidN": 0,
       "opensAt": "2026-11-03T08:59:51Z",
       "housePicks": {
@@ -12347,10 +12436,29 @@
       "rollIn": 0,
       "namesForm": true,
       "asks": [],
-      "threads": {}
+      "threads": {},
+      "stats": {
+        "games": {},
+        "upsets": 0,
+        "decided": 0,
+        "best": null,
+        "worst": null,
+        "bills": null,
+        "jets": null
+      },
+      "decides": [],
+      "weekWinners": [],
+      "weekPayout": 0,
+      "tbUsed": false,
+      "updates": [],
+      "decidedAtLastRun": 0,
+      "outAtLastRun": [],
+      "columnHead": "Thom files first, Tom still counting money",
+      "column": "Week 9 opened before sunrise and Thom had a sheet in just after six. Not Tom, the one holding Week 8's $100 — Thom, the other one, who apparently decided the best way to stop getting mistaken for the champion is to beat him to the form. Bold. Sealed until kickoff, so that's all you get.\n\nEverybody else: Jaguars at Ravens Thursday night, and the Bills close it out Monday in Minnesota. Ryan, the throne's empty and the trash-talk box is open. Claude already filed a complaint about finishing third. Nobody else has said a word.",
+      "columnN": 1
     }
   },
-  "updated": "2026-11-03T05:22:45.864542+00:00",
+  "updated": "2026-11-03T13:13:54.767012+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
