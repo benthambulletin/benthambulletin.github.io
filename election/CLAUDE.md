@@ -97,6 +97,15 @@ Nothing on the Today tab assumes the reader follows politics. No rater or pollst
 
 - **Nov 3 additions:** New Hampshire (Pappas (D) vs Sununu (R), open D seat, Lean D) is on the board as a hold. Nebraska (Ricketts (R) vs independent Dan Osborn) is a Senate row with `no_path: true`: it shows on the Senate tab under "Also close" and in the results list, but not on the path board, because no Democrat is running. If Osborn wins, the Senate score and the path sentence will disagree by one; say so in one `bottom_line` sentence and leave the board alone.
 
+### Stay nimble (Garret, Nov 3: "as results trickle in, pivot and add as things evolve")
+Each run has standing permission to change the page to fit the night, within the schema build.py reads:
+- **Add a race** that has become the story (a surprise close Senate or House seat, a governor's race people are talking about): append a row to `results.races` with the same fields (`key`, `group` senate/house/governor, `race`, `candidates` with (D)/(R) tags, `held_by`, and `no_path: true` if it should not sit on the path board), with a dated `url`. Senate additions with a Democrat running go on the board automatically.
+- **Add a local race** to `results.local` if a county result matters to the family.
+- **Rewrite `headline` freely** for the biggest thing right now, and reorder `next` so the nearest item is first; add items as the night suggests them (a recount, a ranked-choice count, a county that stopped counting).
+- **Rewrite `bottom_line`** every run to say what the night means in plain words, and `election_night` ("What's normal tonight") if a real explanation is needed (why a state is slow, what a "red shift" is).
+- **Retire what is stale:** drop a `next` item once past; cut a bottom-line item that no longer matters.
+- Never change build.py, never change the schema, never move a called race off the page, never print a number without a url. When in doubt, add rather than ask: there is nobody to ask tonight.
+
 ### Each results run
 1. Pull. If `mode` is "polls", set it to "results".
 2. Read the balance-of-power pages, then every race row's results page (start with the Senate). Update the rows. Then `local`.
