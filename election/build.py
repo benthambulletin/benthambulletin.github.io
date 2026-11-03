@@ -260,29 +260,41 @@ def path_block():
         return f'<li class="{cls}"><b>{e(r["race"].replace(" Senate", ""))}</b><span>{word}</span></li>'
     rseats = [r for r in sr if r.get("held_by") == "R"]
     dseats = [r for r in sr if r.get("held_by") == "D"]
-    return (f'<section class="path"><h2 class="ph">The path to 51</h2><p class="pl">{e(head)}</p>'
+    return (f'<section class="path"><h2>The path to 51</h2><p class="pl">{e(head)}</p>'
             f'<p class="pk">Republican seats Democrats are trying to flip</p><ul class="cells">{"".join(cell(r) for r in rseats)}</ul>'
             f'<p class="pk">Democratic seats they have to hold</p><ul class="cells">{"".join(cell(r) for r in dseats)}</ul></section>')
 
 def results_today():
+    """Election Day and election night: one calm column, light section heads, no stacked bars.
+    Before the first results run: the Election Day note (which also says when results start), the empty path board,
+    the morning's bottom line labeled as the read going in, and tonight's timeline.
+    From the first results run: the count (with its time), the path to 51, since the last update, bottom line, what's next."""
     sen_, hou_ = R.get("senate", {}), R.get("house", {})
     def n_(x): return "—" if x is None else str(x)
-    asof = f'<p class="asof">As of {clock(r_upd)} Eastern{", " + r_upd.strftime("%A") if r_upd and r_upd.date() != eday else ""}. Refresh for the latest.</p>' if r_upd else ""
-    if not r_upd:
-        asof = '<p class="asof">No results yet. The first polls close at 7 p.m. Eastern; this page updates from 8 p.m.</p>'
-    tiles_r = (f'<h2>Results</h2>{asof}<div class="tiles results">'
-               f'<div class="tile"><div class="lbl">Senate</div><div class="big"><span class="d">{n_(sen_.get("dem"))}</span><span class="dash">–</span><span class="r">{n_(sen_.get("rep"))}</span></div><div class="sub">51 for control. Includes seats not up this year. {e(sen_.get("note",""))}</div></div>'
-               f'<div class="tile"><div class="lbl">House</div><div class="big"><span class="d">{n_(hou_.get("dem"))}</span><span class="dash">–</span><span class="r">{n_(hou_.get("rep"))}</span></div><div class="sub">218 for control. Seats called so far. {e(hou_.get("note",""))}</div></div>'
-               f'</div>')
+    if r_upd:
+        day = f", {r_upd.strftime('%A')}" if r_upd.date() != eday else ""
+        top = (f'<section class="score"><p class="sk">The count at {clock(r_upd)} Eastern{day} <span>Refresh for the latest</span></p><div class="sc">'
+               f'<div><p class="lbl">Senate</p><p class="big"><span class="d">{n_(sen_.get("dem"))}</span><span class="dash">–</span><span class="r">{n_(sen_.get("rep"))}</span></p>'
+               f'<p class="sub">51 for control. Includes seats not up this year.{" " + e(sen_["note"]) if sen_.get("note") else ""}</p></div>'
+               f'<div><p class="lbl">House</p><p class="big"><span class="d">{n_(hou_.get("dem"))}</span><span class="dash">–</span><span class="r">{n_(hou_.get("rep"))}</span></p>'
+               f'<p class="sub">218 for control. Seats called so far.{" " + e(hou_["note"]) if hou_.get("note") else ""}</p></div>'
+               f'</div></section>')
+    else:
+        hrs = e(eday_hours.rstrip(".")) if eday_hours else ""
+        top = (f'<section class="now"><p class="nk">Election Day · {eday_long}</p>'
+               f'<p class="nh">{"Polls are open " + hrs + "." if hrs else "Polls are open today."}</p>'
+               f'<p>Early voting has closed. Vote at your assigned polling place: <a href="https://voterlookup.elections.ny.gov/">look it up at voterlookup.elections.ny.gov</a>.</p>'
+               f'<p class="nn">No results yet. The first polls close at 7 p.m. Eastern; results start here after 8 p.m.</p></section>')
+    latest = (f'<section class="latest"><h2>Since the last update</h2><ul class="list">{"".join(f"<li>{lede(c)}</li>" for c in D.get("what_changed", []))}</ul></section>'
+              if (r_upd and D.get("what_changed")) else "")
+    bl = "".join(f'<li><h3>{e(r["headline"])}</h3><p>{tag_text(r["detail"])}</p></li>'
+                 for r in sorted(D["bottom_line"], key=lambda r: r["order"]))
+    bl_h = f'<h2>{"Bottom line" if r_upd else "Going into tonight"}</h2><ul class="bl">{bl}</ul>'
     nxt = R.get("next") or []
-    nxt_h = (f'<h2>What\'s next tonight</h2><ul class="list">' + "".join(f'<li><b>{e(i["when"])}</b>: {tag_text(i["what"])}</li>' for i in nxt) + "</ul>") if nxt else ""
-    more = ('<p class="more">Every race: <a href="#senate">Senate</a> · <a href="#house">House &amp; governor</a> · <a href="#ballot">Your towns</a></p>')
-    srcn = f'<p class="intro srcn">{e(R["source_note"])}</p>' if R.get("source_note") else ""
-    if not r_upd: tiles_r = f'<h2>Results</h2>{asof}'
-    return ((strip if not r_upd else "") + tiles_r + path_block()
-            + (changed if r_upd else "")
-            + f'<h2>Bottom line</h2><ol class="bottom">{bottom}</ol>'
-            + nxt_h + more + srcn)
+    nxt_h = (f'<h2>What\'s next tonight</h2><ul class="tl">' + "".join(f'<li><b>{e(i["when"])}</b><span>{tag_text(i["what"])}</span></li>' for i in nxt) + "</ul>") if nxt else ""
+    more = ('<nav class="more" aria-label="Every race"><p>Every race</p><a href="#senate">Senate</a><a href="#house">House &amp; governor</a><a href="#ballot">Your towns</a></nav>')
+    srcn = f'<p class="srcn">{e(R["source_note"])}</p>' if R.get("source_note") else ""
+    return '<div class="night">' + top + path_block() + latest + bl_h + nxt_h + more + srcn + '</div>'
 
 def res_group(*groups):
     rs = [r for r in R.get("races", []) if r.get("group") in groups]
@@ -347,7 +359,7 @@ tab_senate = (POLLS_NOTE + f'<h2>Senate</h2><p class="intro">{e(D.get("senate_in
 
 if is_results:
     tab_senate = (f'<h2>Senate results</h2><p class="intro">Updated with each results run. A race nobody has called says so.</p><ul class="races">{res_group("senate")}</ul>'
-                  + fold("Final polls before Election Day", tab_senate, "polls"))
+                  + fold("Final polls before Election Day", tab_senate + ("" if r_upd else changed), "polls"))
 
 # ---------- HOUSE ----------
 def house_card(r):
@@ -561,13 +573,8 @@ dd{margin:0;font-size:.92rem;line-height:1.45}
 .race.res.r{box-shadow:inset 3px 0 0 var(--red);padding-left:.6rem}
 .flip{font-family:var(--sans);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:var(--purple-t);color:var(--purple);padding:.08rem .4rem;border-radius:.2rem;vertical-align:.1em}
 .towns{display:block;font-family:var(--sans);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin-top:.15rem}
-.asof{font-family:var(--sans);font-size:.85rem;color:var(--soft);margin:.2rem 0 .6rem}
-.path{margin:1.2rem 0 .4rem;padding:1rem;border:2px solid var(--ink);border-radius:.35rem}
-.path .ph{margin:0 0 .35rem;padding:0;background:none;color:var(--ink);font-size:1.15rem}
-.path .pl{font-family:var(--sans);font-weight:700;font-size:1.1rem;line-height:1.3}
-.path .pk{font-family:var(--sans);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--soft);margin:.9rem 0 .35rem}
-.cells{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(6.6rem,1fr));gap:.35rem}
-.cells li{border:1.5px solid var(--rule);border-radius:.3rem;padding:.35rem .45rem;font-family:var(--sans);line-height:1.2}
+.cells{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(6.4rem,1fr));gap:.35rem}
+.cells li{border:1.5px solid var(--rule);border-radius:.3rem;padding:.35rem .45rem;font-family:var(--sans);line-height:1.2;min-width:0}
 .cells b{display:block;font-size:.85rem}
 .cells span{font-size:.72rem;color:var(--soft)}
 .cells .d.won{background:var(--blue);border-color:var(--blue);color:#fff}.cells .r.won{background:var(--red);border-color:var(--red);color:#fff}
@@ -575,19 +582,53 @@ dd{margin:0;font-size:.92rem;line-height:1.45}
 .cells .d.ahead{border-color:var(--blue)}.cells .d.ahead span{color:var(--blue)}
 .cells .r.ahead{border-color:var(--red)}.cells .r.ahead span{color:var(--red)}
 .polnote{margin:1rem 0 0;padding:.6rem .8rem;background:var(--tint);border-radius:.3rem;font-size:.9rem}
-.srcn{font-size:.8rem;margin-top:1rem}
 .evl{list-style:none;margin:.4rem 0 0;padding:0}
 .evl li{display:grid;grid-template-columns:7.2rem 1fr;gap:.75rem;padding:.7rem 0;border-bottom:1px solid var(--rule);align-items:baseline}
 .evl li:last-child{border-bottom:0}
 .evn{font-family:var(--sans);font-weight:800;font-stretch:80%;font-size:1.35rem;line-height:1.1}
 .evl b{display:block;font-family:var(--sans);font-size:.85rem}.evs{font-size:.78rem}.evs a{color:var(--soft)}
 .trend.evt th,.trend.evt td{text-align:left;vertical-align:top}.evt tbody th{color:var(--ink);font-size:.85rem}
-.more{margin:1.2rem 0 0;font-family:var(--sans);font-size:.95rem}.fold.polls{margin-top:1.5rem}
+.fold.polls{margin-top:1.5rem}
 .banner{margin:1rem -1rem 0;padding:1.1rem 1rem 1rem;background:var(--purple);color:#fff}
 .banner .bh{margin:0;padding:0;background:none;color:#fff;font-size:1.45rem;font-weight:800;font-stretch:95%;line-height:1.15}
 .banner .bs{margin-top:.4rem;font-size:.95rem}
 .banner a{color:#fff}
 .banner dl{margin:.8rem 0 0;background:var(--paper);color:var(--ink);border-radius:.3rem;padding:.2rem .85rem}
+
+/* results-mode Today: one calm column; light heads instead of black bars */
+.is-night header{padding:1rem 0 .8rem}
+.is-night h1{font-size:clamp(2.5rem,12.5vw,3.6rem);margin:.35rem 0 .4rem}
+.is-night .dek{font-size:.95rem;color:var(--soft)}
+.night h2{margin:2.1rem 0 .7rem;padding:.75rem 0 0;background:none;color:var(--ink);border-top:2px solid var(--ink);font-size:1.15rem;font-weight:750}
+.night>:first-child{margin-top:1.1rem}
+.now{padding:1rem 1rem 1.05rem;background:var(--purple-t);border-radius:.4rem;font-size:.98rem}
+.now .nk{font-family:var(--sans);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--purple)}
+.now .nh{font-family:var(--sans);font-size:1.4rem;font-weight:800;font-stretch:95%;line-height:1.15;margin:.25rem 0 .45rem}
+.now .nn{margin-top:.75rem;padding-top:.7rem;border-top:1px solid rgba(103,70,148,.25);font-family:var(--sans);font-size:.9rem;font-weight:600;color:var(--purple)}
+.score .sk{font-family:var(--sans);font-size:.95rem;font-weight:700;margin-bottom:.55rem}
+.score .sk span{display:block;font-size:.8rem;font-weight:500;color:var(--soft)}
+.sc{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.sc>div{background:var(--tint);border-radius:.4rem;padding:.7rem .75rem .8rem;min-width:0}
+.sc .big{font-family:var(--sans);font-size:clamp(1.9rem,10vw,2.6rem);font-weight:800;font-stretch:78%;line-height:1;margin:.3rem 0 .4rem;white-space:nowrap}
+.sc .big .d{color:var(--blue)}.sc .big .r{color:var(--red)}
+.sc .sub{font-size:.78rem;color:var(--soft);line-height:1.4}
+.path .pl{font-family:var(--sans);font-weight:700;font-size:1.1rem;line-height:1.3}
+.path .pk{font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--soft);margin:.9rem 0 .35rem}
+.path .cells .wait{border-color:transparent;background:var(--tint)}
+.latest .list li{font-size:1rem}
+.bl{list-style:none;margin:0;padding:0}
+.bl li{padding:.6rem 0;border-bottom:1px solid var(--rule)}
+.bl li:first-child{padding-top:0}.bl li:last-child{border-bottom:0}
+.bl h3{font-size:1.02rem;font-weight:700}
+.bl p{font-size:.95rem;margin-top:.15rem;color:var(--soft)}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:4.6rem 1fr;gap:.6rem;padding:.5rem 0;border-bottom:1px solid var(--rule);font-size:.95rem;line-height:1.45}
+.tl li:last-child{border-bottom:0}
+.tl b{font-family:var(--sans);font-weight:700;font-size:.9rem;padding-top:.05rem}
+.more{margin:2rem 0 0;padding-top:.75rem;border-top:2px solid var(--ink);display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem;font-family:var(--sans)}
+.more p{grid-column:1/-1;font-weight:750;font-size:1.15rem;margin-bottom:.2rem}
+.more a{display:flex;align-items:center;justify-content:center;text-align:center;min-height:3rem;padding:.3rem;border:1.5px solid var(--ink);border-radius:.35rem;text-decoration:none;font-weight:650;font-size:.88rem;line-height:1.2}
+.srcn{font-size:.8rem;color:var(--soft);margin-top:1rem}
 
 .trend{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:.85rem}
 .trend th,.trend td{padding:.45rem .3rem;border-bottom:1px solid var(--rule);text-align:right}
@@ -615,12 +656,15 @@ if is_results and r_upd:
     UPD = "Updated " + r_upd.strftime("%a, %b %-d") + ", " + clock(r_upd)
 else:
     UPD = "Updated " + today.strftime("%A, %B %-d")
-DEK = ("Results for the Senate, the House and New York's races, updated through the night. A race nobody has called says so."
+DEK = ("Results for the Senate, the House and New York, updated through the night."
        if is_results else
        f"National polling, the Senate map and New York's races, explained plainly and refreshed every morning through {fdate(D['election_day'])}.")
 if is_results:
     _s, _h = R.get("senate", {}), R.get("house", {})
-    OG = f"Results: Senate D {_s.get('dem','—')}, R {_s.get('rep','—')}; House D {_h.get('dem','—')}, R {_h.get('rep','—')}. {UPD}."
+    if r_upd:
+        OG = f"Results: Senate D {_s.get('dem') if _s.get('dem') is not None else '—'}, R {_s.get('rep') if _s.get('rep') is not None else '—'}; House D {_h.get('dem') if _h.get('dem') is not None else '—'}, R {_h.get('rep') if _h.get('rep') is not None else '—'}. {UPD}."
+    else:
+        OG = f"Election Day. No results yet; results start here after 8 p.m. Eastern. {UPD}."
 else:
     OG = f"Generic ballot {tracker_margin(sb_m)}; {num(ctrl['Toss-up seats (Cook)'],0)} Senate toss-ups; Hochul ahead by about {whole(g['margin'])} in New York. Updated {today.strftime('%b %-d')}."
 page = f'''<!DOCTYPE html>
@@ -641,7 +685,7 @@ page = f'''<!DOCTYPE html>
 <title>The Ballot — 2026 Midterm Tracker</title>
 <style>{CSS}</style>
 </head>
-<body><div class="page">
+<body><div class="page{" is-night" if is_results else ""}">
 <div class="marks" aria-hidden="true"></div>
 <header>
 <p class="upd"><span>2026 midterms</span><span>{UPD}</span></p>
