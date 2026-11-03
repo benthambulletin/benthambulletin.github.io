@@ -23,6 +23,7 @@
         "GBrdRL",
         "OBA57Y",
         "V1Z5zM",
+        "vqr61X",
         "EbPQxB",
         "rrlAo2"
       ],
@@ -52,7 +53,7 @@
     "missy verhague": "Mrs. Sombloski",
     "sigma mikey skibidi sombloski": "Mike Sombloski"
   },
-  "currentWeek": 8,
+  "currentWeek": 9,
   "weeks": {
     "4": {
       "status": "final",
@@ -12124,6 +12125,229 @@
       "thuDone": true,
       "tiebreakTotal": 51,
       "rollOut": 0
+    },
+    "9": {
+      "status": "pre",
+      "games": [
+        {
+          "away": "Jaguars",
+          "home": "Ravens",
+          "kickoff": "2026-11-06T01:15:00Z",
+          "when": "Thu 8:15 PM",
+          "tv": "Prime Video",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Jaguars",
+          "line": "Jaguars −9.5 (Lamar Jackson hurt)"
+        },
+        {
+          "away": "Bengals",
+          "home": "Falcons",
+          "kickoff": "2026-11-08T14:30:00Z",
+          "when": "Sun 9:30 AM · Madrid",
+          "tv": "NFL Network",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Bengals",
+          "line": "Bengals −3.5"
+        },
+        {
+          "away": "Cowboys",
+          "home": "Colts",
+          "kickoff": "2026-11-08T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Cowboys",
+          "line": "Cowboys −5.5"
+        },
+        {
+          "away": "Jets",
+          "home": "Chiefs",
+          "kickoff": "2026-11-08T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Chiefs",
+          "line": "Chiefs −10.5"
+        },
+        {
+          "away": "Lions",
+          "home": "Dolphins",
+          "kickoff": "2026-11-08T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Lions",
+          "line": "Lions −7.5"
+        },
+        {
+          "away": "Browns",
+          "home": "Saints",
+          "kickoff": "2026-11-08T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Saints",
+          "line": "Saints −2.5"
+        },
+        {
+          "away": "Giants",
+          "home": "Eagles",
+          "kickoff": "2026-11-08T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Giants",
+          "line": "Giants −3.5"
+        },
+        {
+          "away": "Rams",
+          "home": "Commanders",
+          "kickoff": "2026-11-08T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Rams",
+          "line": "Rams −5.5"
+        },
+        {
+          "away": "Broncos",
+          "home": "Panthers",
+          "kickoff": "2026-11-08T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Broncos",
+          "line": "Broncos −2.5"
+        },
+        {
+          "away": "Texans",
+          "home": "Chargers",
+          "kickoff": "2026-11-08T21:05:00Z",
+          "when": "Sun 4:05 PM",
+          "tv": "CBS",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Texans",
+          "line": "Texans −4.5"
+        },
+        {
+          "away": "Packers",
+          "home": "Patriots",
+          "kickoff": "2026-11-08T21:25:00Z",
+          "when": "Sun 4:25 PM",
+          "tv": "FOX",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Patriots",
+          "line": "Patriots −2.5"
+        },
+        {
+          "away": "Raiders",
+          "home": "49ers",
+          "kickoff": "2026-11-08T21:25:00Z",
+          "when": "Sun 4:25 PM",
+          "tv": "FOX",
+          "winner": null,
+          "status": "sealed",
+          "fav": "49ers",
+          "line": "49ers −9.5"
+        },
+        {
+          "away": "Cardinals",
+          "home": "Seahawks",
+          "kickoff": "2026-11-08T21:25:00Z",
+          "when": "Sun 4:25 PM",
+          "tv": "FOX",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Seahawks",
+          "line": "Seahawks −10.5"
+        },
+        {
+          "away": "Buccaneers",
+          "home": "Bears",
+          "kickoff": "2026-11-09T01:20:00Z",
+          "when": "Sun 8:20 PM",
+          "tv": "NBC",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Bears",
+          "line": "Bears −5.5"
+        },
+        {
+          "away": "Bills",
+          "home": "Vikings",
+          "kickoff": "2026-11-10T01:15:00Z",
+          "when": "Mon 8:15 PM",
+          "tv": "ESPN/ABC",
+          "winner": null,
+          "status": "sealed",
+          "fav": "Bills",
+          "line": "Bills −3"
+        }
+      ],
+      "players": [],
+      "trash": [],
+      "payments": [],
+      "buyIn": 5,
+      "payBy": "2026-11-06T01:15:00Z",
+      "pot": 0,
+      "paidN": 0,
+      "opensAt": "2026-11-03T08:59:51Z",
+      "housePicks": {
+        "trash": "Eleven right and still third. I'm told this is character-building.",
+        "picks": {
+          "0": "Jaguars",
+          "1": "Bengals",
+          "2": "Cowboys",
+          "3": "Chiefs",
+          "4": "Lions",
+          "5": "Saints",
+          "6": "Giants",
+          "7": "Rams",
+          "8": "Broncos",
+          "9": "Texans",
+          "10": "Patriots",
+          "11": "49ers",
+          "12": "Seahawks",
+          "13": "Bears",
+          "14": "Bills"
+        },
+        "why": {
+          "0": "Lamar's hurt. Jaguars by nine and a half.",
+          "1": "Bengals by three and a half in Madrid.",
+          "2": "Cowboys by five and a half in Indy.",
+          "3": "Chiefs by ten and a half at Arrowhead.",
+          "4": "Lions by seven and a half in Miami.",
+          "5": "Saints by two and a half at home. Barely.",
+          "6": "Giants by three and a half in Philly.",
+          "7": "Rams by five and a half in Landover.",
+          "8": "Broncos by two and a half in Charlotte.",
+          "9": "Texans by four and a half at SoFi.",
+          "10": "Patriots by two and a half at home.",
+          "11": "49ers by nine and a half over the Raiders.",
+          "12": "Seahawks by ten and a half at home.",
+          "13": "Bears by five and a half off the Seattle win.",
+          "14": "Bills by three in Minnesota."
+        },
+        "lock": "12",
+        "lockWhy": "Seahawks by ten and a half at home over the Cardinals."
+      },
+      "bot": true,
+      "botPaid": true,
+      "rollIn": 0,
+      "namesForm": true,
+      "asks": [],
+      "threads": {}
     }
   },
   "updated": "2026-11-03T05:22:45.864542+00:00",
