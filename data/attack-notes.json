@@ -1,0 +1,5 @@
+{
+ "_about": "Kept by Claude, not the morning run. 'ends': when an attack was over. 'continuations': a log entry that is day two (or later) of an earlier attack, so it isn't counted as a new one.",
+ "ends": {"Garret 2026-11-02": "2026-11-04T12:00"},
+ "continuations": {"Garret 2026-11-03": "2026-11-02"}
+}

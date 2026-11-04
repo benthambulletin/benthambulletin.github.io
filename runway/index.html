@@ -209,7 +209,8 @@ td.n{text-align:right;font-family:var(--mono)}
     let g=null,daily=[],attacks=[],press=null,rlog=[];const errs=[];
     try{g=await getJSON("garmin-summary.json");}catch(e){errs.push("watch summary");}
     try{daily=await getCSV("garmin-daily.csv");}catch(e){errs.push("watch history");}
-    try{const m=await getJSON("migraines.json");attacks=(Array.isArray(m)?m:m.entries||[]).map(e=>({who:e.who,date:e.date,time:e.time||"",woke:e.woke}));}
+    try{const m=await getJSON("migraines.json");let an={ends:{},continuations:{}};try{an=await getJSON("attack-notes.json");}catch(e){}
+      attacks=(Array.isArray(m)?m:m.entries||[]).filter(e=>!(an.continuations||{})[e.who+" "+e.date]).map(e=>({who:e.who,date:e.date,time:e.time||"",woke:e.woke,ended:(an.ends||{})[e.who+" "+e.date]||e.ended||""}));}
     catch(e){try{const h=await getCSV("migraines-history.csv");attacks=h.map(e=>({who:e.person,date:e.date,time:e.time_local,woke:e.woke_from_sleep==="y"}));}catch(e2){errs.push("attack log");}}
     try{rlog=await getJSON("runway-log.json");}catch(e){}
     let qa=[];try{qa=await getJSON("runway-qa.json");}catch(e){}
@@ -281,10 +282,11 @@ td.n{text-align:right;font-family:var(--mono)}
     $("plan").hidden=!plan.length; $("plan-list").innerHTML=plan.map(p=>`<li>${p}</li>`).join("");
 
     // in an attack: the score answers "will one start", so pause it while one is logged today or yesterday
-    const yd=iso(new Date(today-86400000)); const inAtt=mineDates.has(T)||mineDates.has(yd);
-    if(inAtt){const a=mine.find(x=>x.date===T)||mine.find(x=>x.date===yd);
+    // open attack = started in the last 3 days with no end logged; an attack that ended counts as over
+    const open=mine.filter(x=>!x.ended&&dayDiff(today,D(x.date))<=2); const inAtt=open.length>0;
+    if(inAtt){const a=open[0];
       rk.className="risk bad"; $("r-score").textContent="–"; $("r-meter").innerHTML="";
-      $("r-txt").innerHTML=`<b>In an attack</b> (logged ${nice(D(a.date))}${a.time?" "+a.time:""}). The score only predicts whether one will start, so it's paused until a day passes with nothing logged.`+$("r-txt").innerHTML.replace(/^[\s\S]*?(?=<div class="board">)/,"");
+      $("r-txt").innerHTML=`<b>In an attack</b> (logged ${nice(D(a.date))}${a.time?" "+a.time:""}). The score only predicts whether one will start, so it's paused until you log that it's over (Ask / comment: \"it broke at noon\").`+$("r-txt").innerHTML.replace(/^[\s\S]*?(?=<div class="board">)/,"");
       st.className="pill bad"; st.textContent="In an attack";
       $("today").innerHTML=`<b>Today:</b> rest, fluids, dark room if it helps. Log how it ends — whether the treatment worked is the useful part.`;
       $("plan").hidden=true;}
