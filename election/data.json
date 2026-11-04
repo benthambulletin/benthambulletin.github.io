@@ -22,12 +22,12 @@
   {
    "order": 2,
    "headline": "House: Democrats far ahead in seats called",
-   "detail": "Democrats had 101 seats called to Republicans' 54 at 9:56 p.m.; none of the Pennsylvania or New York seats on our list has been called, and in Westchester (NY-17) ballots were bagged to be counted later after scanners failed."
+   "detail": "Democrats had 107 seats called to Republicans' 62 at 10:12 p.m.; none of the Pennsylvania or New York seats on our list has been called, and in Westchester (NY-17) ballots were bagged to be counted later after scanners failed."
   },
   {
    "order": 3,
    "headline": "New York: Hochul re-elected; your towns still counting",
-   "detail": "The governor's race is decided; the congressional, state legislature and county races on your ballot have no reported results yet and nothing local has been called."
+   "detail": "The governor's race is decided. In the Southern Tier district, Nick Langworthy (R) leads Aaron Gies (D) by about 7 points with about a third counted; the rest of your ballot has little or nothing reported, and nothing local has been called."
   }
  ],
  "what_changed": [],
@@ -1000,7 +1000,7 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T22:14-05:00",
+  "updated": "2026-11-03T22:22-05:00",
   "senate": {
    "dem": 46,
    "rep": 36,
@@ -1299,11 +1299,11 @@
     "candidates": "Langworthy (R, inc.) vs Gies (D)",
     "towns": "Orchard Park · Dunkirk · Fredonia",
     "held_by": "R",
-    "leader": "",
-    "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "leader": "Nick Langworthy (R)",
+    "pct_lead": 7,
+    "status": "Leading",
+    "reporting": "About a third of districts reporting; Langworthy 53%, Gies 46%; not called",
+    "url": "https://www.post-journal.com/news/top-stories/2026/11/langworthy-leads-gies-by-7-across-district"
    },
    {
     "key": "ny-25",
