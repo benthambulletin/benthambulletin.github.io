@@ -31,8 +31,7 @@
     }
   ],
   "what_changed": [
-    "Kathy Hochul (D) won re-election as governor over Bruce Blakeman (R).",
-    "James Talarico (D) leads Ken Paxton (R) in Texas's early returns; the race has not been called."
+    "Sherrod Brown (D) leads Jon Husted (R) in Ohio, about 60% to 37%, but only mail-in ballots have been counted so far."
   ],
   "generic_ballot": [
     {
@@ -1003,11 +1002,11 @@
   "statewide_url": "https://theballotbrief.com/zip/14120",
   "mode": "results",
   "results": {
-    "updated": "2026-11-03T21:22:00-05:00",
+    "updated": "2026-11-03T21:32:00-05:00",
     "senate": {
       "dem": 36,
-      "rep": 32,
-      "note": "Full count last read at 7:55 (Georgia, Virginia, West Virginia); calls since then are on the board below",
+      "rep": 31,
+      "note": "Full count at about 7:55; the North Carolina, New Hampshire and Florida calls since then are on the board below, not in this count",
       "url": "https://www.newsnationnow.com/politics/2026-midterm-elections/midterm-election-day-2026-live-results/amp/"
     },
     "house": {
@@ -1036,10 +1035,10 @@
         "candidates": "Jon Husted (R, inc.) vs Sherrod Brown (D)",
         "held_by": "R",
         "leader": "Sherrod Brown (D)",
-        "pct_lead": 31.1,
+        "pct_lead": 23,
         "status": "Too close",
-        "reporting": "About 7% counted, mostly Franklin and Butler counties (count at 7:42)",
-        "url": "https://votes.decisiondeskhq.com/races/2026-11-03/ohio-us-senate-special-election-general/results"
+        "reporting": "Only mail-in ballots counted so far, from 67 of 88 counties",
+        "url": "https://www.springfieldnewssun.com/local/u-s-senate-race-husted-hopes-to-hold-on-to-seat-as-brown-seeks-political/article_e0da7615-7e36-5774-9740-2394867e00b2.html"
       },
       {
         "key": "texas-senate",
@@ -1120,9 +1119,9 @@
         "candidates": "Michael Whatley (R) vs Roy Cooper (D)",
         "held_by": "R",
         "leader": "Roy Cooper (D)",
-        "pct_lead": 35.2,
+        "pct_lead": null,
         "status": "Called",
-        "reporting": "Called by the AP at about 8:23",
+        "reporting": "Called by the AP at about 8:23; at the call Cooper led 67% to 32% in early returns",
         "url": "https://www.wbtv.com/2026/11/04/roy-cooper-wins-2026-us-senate-race-north-carolina-ap-projects/"
       },
       {
@@ -1158,7 +1157,7 @@
         "leader": "Chris Pappas (D)",
         "pct_lead": null,
         "status": "Called",
-        "reporting": "Called by the AP at about 8:40",
+        "reporting": "Called by the AP by 8:41",
         "url": "https://wset.com/news/nation-world/democrat-chris-pappas-wins-new-hampshires-open-us-senate-seat-john-e-sununu-election-day-midterms-midterm-elections-politics-vote-voting-voters-taxpayers-polls-ballots-congress-president-donald-trump"
       },
       {
@@ -1243,8 +1242,8 @@
         "leader": "",
         "pct_lead": null,
         "status": "Not yet",
-        "reporting": "",
-        "url": ""
+        "reporting": "Westchester County's ballot scanners failed today; ballots were set aside in secure bags to be counted",
+        "url": "https://www.pbs.org/newshour/politics/live-updates-midterm-voters-go-to-the-polls-on-election-day"
       },
       {
         "key": "ny-01",
@@ -1476,7 +1475,7 @@
         "what": "Your towns' congressional, state legislature and county races are counting; county results come in through the night."
       }
     ],
-    "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. Tonight's live results pages would not load, so calls come from news reports of AP and Decision Desk HQ projections; Ohio's count is from 7:42.",
+    "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. Calls come from news reports of AP and Decision Desk HQ projections; Ohio's count is an early snapshot.",
     "headline": "Kathy Hochul (D) wins a second full term as governor; in the Senate, Democrats have flipped North Carolina and lead early in Ohio and Texas."
   },
   "glossary": [
