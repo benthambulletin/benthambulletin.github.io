@@ -12342,6 +12342,25 @@
       ],
       "players": [
         {
+          "name": "B-rad",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-04T15:40:37+00:00",
+          "firstAt": "2026-11-04T15:40:37+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Claude",
           "house": true,
           "correct": 0,
@@ -12358,6 +12377,25 @@
           "delta": 0,
           "state": "house",
           "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Devin",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-04T15:50:48+00:00",
+          "firstAt": "2026-11-04T15:50:48+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
           "badges": []
         },
         {
@@ -12430,6 +12468,12 @@
       ],
       "payments": [
         {
+          "id": "manual-w9-Tom",
+          "amt": "5.00",
+          "who": "Tom",
+          "status": "manual"
+        },
+        {
           "id": "1a1a4089922dc6b6",
           "at": "2026-11-04T00:49:48Z",
           "amt": "5.00",
@@ -12446,24 +12490,18 @@
           "told": null
         },
         {
-          "id": "1a1a40d885ed8575",
-          "at": "2026-11-04T00:55:12Z",
-          "amt": "50.00",
-          "who": "Josh",
-          "status": "odd",
-          "told": "2026-11-04"
-        },
-        {
-          "id": "manual-w9-Tom",
+          "id": "1a1a73e451967bb6",
+          "at": "2026-11-04T15:47:18Z",
           "amt": "5.00",
-          "who": "Tom",
-          "status": "manual"
+          "who": "Devin",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-06T01:15:00Z",
-      "pot": 10.0,
-      "paidN": 2,
+      "pot": 20.0,
+      "paidN": 4,
       "opensAt": "2026-11-03T08:59:51Z",
       "housePicks": {
         "trash": "Eleven right and still third. I'm told this is character-building.",
@@ -12538,7 +12576,7 @@
       }
     }
   },
-  "updated": "2026-11-04T15:09:58.944715+00:00",
+  "updated": "2026-11-04T15:57:54.807057+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
