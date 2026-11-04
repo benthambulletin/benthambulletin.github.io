@@ -31,7 +31,8 @@
     }
   ],
   "what_changed": [
-    "Sherrod Brown (D) leads Jon Husted (R) in Ohio, about 60% to 37%, but only mail-in ballots have been counted so far."
+    "Sherrod Brown (D) leads Jon Husted (R) in Ohio, about 60% to 37%, but only mail-in ballots have been counted so far.",
+    "Jamie Ager (D) flipped a western North Carolina House seat, the first House seat Democrats have taken from Republicans tonight."
   ],
   "generic_ballot": [
     {
@@ -1002,18 +1003,18 @@
   "statewide_url": "https://theballotbrief.com/zip/14120",
   "mode": "results",
   "results": {
-    "updated": "2026-11-03T21:32:00-05:00",
+    "updated": "2026-11-03T21:48:00-05:00",
     "senate": {
-      "dem": 36,
-      "rep": 31,
-      "note": "Full count at about 7:55; the North Carolina, New Hampshire and Florida calls since then are on the board below, not in this count",
-      "url": "https://www.newsnationnow.com/politics/2026-midterm-elections/midterm-election-day-2026-live-results/amp/"
+      "dem": 38,
+      "rep": 32,
+      "note": "The 65 seats not up this year (34 D, 31 R) plus the races called so far that this page has confirmed: Georgia, Virginia, North Carolina, New Hampshire (D) and Florida (R). Safe seats called elsewhere are added as they're confirmed.",
+      "url": "https://www.pbs.org/newshour/politics/live-updates-midterm-voters-go-to-the-polls-on-election-day"
     },
     "house": {
-      "dem": 0,
+      "dem": 1,
       "rep": 0,
-      "note": "No House seats called as of 7:55",
-      "url": "https://www.newsnationnow.com/politics/2026-midterm-elections/midterm-election-day-2026-live-results/amp/"
+      "note": "Seats called that this page has confirmed: Jamie Ager (D) flipped a western North Carolina seat. Other calls are added as they're confirmed.",
+      "url": "https://www.pbs.org/newshour/politics/live-updates-midterm-voters-go-to-the-polls-on-election-day"
     },
     "races": [
       {
