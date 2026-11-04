@@ -12414,7 +12414,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         }
       ],
@@ -12452,12 +12452,18 @@
           "who": "Josh",
           "status": "odd",
           "told": "2026-11-04"
+        },
+        {
+          "id": "manual-w9-Tom",
+          "amt": "5.00",
+          "who": "Tom",
+          "status": "manual"
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-06T01:15:00Z",
-      "pot": 5.0,
-      "paidN": 1,
+      "pot": 10.0,
+      "paidN": 2,
       "opensAt": "2026-11-03T08:59:51Z",
       "housePicks": {
         "trash": "Eleven right and still third. I'm told this is character-building.",
