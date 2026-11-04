@@ -16,18 +16,18 @@
  "bottom_line": [
   {
    "order": 1,
-   "headline": "Senate: one flip in hand, Texas tilting",
-   "detail": "North Carolina flipped and Georgia and New Hampshire held. Democrats need three more Republican seats; Texas has them ahead by about 20 points with about 41% counted, Ohio's early count favors them too, and Maine, Iowa, Kansas, South Carolina and Alaska have little or nothing counted yet. Neither Texas nor Ohio has been called, so nothing is settled."
+   "headline": "Senate: one flip in hand, Texas leaning their way",
+   "detail": "North Carolina flipped and Georgia and New Hampshire held. Democrats need three more Republican seats; in Texas, James Talarico (D) is ahead by about 14 points with about 64% counted, Ohio's early mail ballots favor Sherrod Brown (D), and Maine has under a tenth counted. None of those is called, and Maine may not be settled for days."
   },
   {
    "order": 2,
-   "headline": "House: one flip so far",
-   "detail": "Democrats took a western North Carolina seat; none of the Pennsylvania or New York seats on our list has been called."
+   "headline": "House: Democrats far ahead in seats called",
+   "detail": "Democrats had 101 seats called to Republicans' 54 at 9:56 p.m.; none of the Pennsylvania or New York seats on our list has been called, and in Westchester (NY-17) ballots were bagged to be counted later after scanners failed."
   },
   {
    "order": 3,
-   "headline": "New York: Hochul re-elected; your towns counting",
-   "detail": "The governor's race is decided; the congressional, state legislature and county races on your ballot are still being counted and nothing local has been called."
+   "headline": "New York: Hochul re-elected; your towns still counting",
+   "detail": "The governor's race is decided; the congressional, state legislature and county races on your ballot have no reported results yet and nothing local has been called."
   }
  ],
  "what_changed": [],
@@ -1000,7 +1000,7 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T21:57-05:00",
+  "updated": "2026-11-03T22:11-05:00",
   "senate": {
    "dem": 45,
    "rep": 36,
@@ -1023,8 +1023,8 @@
     "leader": "",
     "pct_lead": null,
     "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "reporting": "Under 10% counted at 9:32 p.m.; Collins near 49%; not called",
+    "url": "https://pressherald.com/2026/11/03/polls-open-across-maine-on-election-day"
    },
    {
     "key": "ohio-senate",
@@ -1276,8 +1276,8 @@
     "leader": "Kathy Hochul (D)",
     "pct_lead": null,
     "status": "Called",
-    "reporting": "Called by the AP at about 9:00",
-    "url": "https://www.wcax.com/2026/11/04/new-york-gov-hochul-wins-reelection/"
+    "reporting": "Called by the AP at 9:18 p.m.; Hochul led 64% to 35% early in the count",
+    "url": "https://www.btpm.org/live-updates/live-blog-2026-new-york-midterm-election-results"
    }
   ],
   "local": [
@@ -1477,8 +1477,8 @@
     "what": "If no one in Maine tops 50%, a ranked-choice count (voters rank the candidates, and last-place votes move to their next choice) runs in Augusta the following week."
    }
   ],
-  "source_note": "Winners are called by the Associated Press (counts read from the New York Times at 9:51 p.m.) and Decision Desk HQ; local counts come from the county boards and are unofficial until certified.",
-  "headline": "Democrats have flipped North Carolina and lead in Ohio and Texas, with most of Texas counted; neither is called. They need three more pickups for 51."
+  "source_note": "Winners are called by the Associated Press and a vote-counting service; seat counts are the AP tally as of 9:56 p.m. (newer national counts could not be read for this update). Local counts come from the county boards and are unofficial until certified.",
+  "headline": "Democrats have flipped North Carolina and lead in Texas, with about two-thirds counted, and in Ohio; neither is called. They need three more pickups for 51."
  },
  "glossary": [
   {
