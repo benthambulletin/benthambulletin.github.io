@@ -30,9 +30,7 @@
    "detail": "The governor's race is decided. In the Southern Tier district, Nick Langworthy (R) leads Aaron Gies (D) by about 7 points with about a third counted; the rest of your ballot has little or nothing reported, and nothing local has been called."
   }
  ],
- "what_changed": [
-  "James Talarico (D) beat Ken Paxton (R) in Texas, a flip. Democrats have now taken three Republican seats: North Carolina, South Carolina and Texas."
- ],
+ "what_changed": [],
  "generic_ballot": [
   {
    "tracker": "Silver Bulletin (all polls)",
@@ -1002,7 +1000,7 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T22:56-05:00",
+  "updated": "2026-11-03T23:04-05:00",
   "senate": {
    "dem": 46,
    "rep": 36,
@@ -1479,7 +1477,7 @@
     "what": "If no one in Maine tops 50%, a ranked-choice count (voters rank the candidates, and last-place votes move to their next choice) runs in Augusta the following week."
    }
   ],
-  "source_note": "Winners are called by the Associated Press and a vote-counting service; seat counts are the AP tally as of 9:56 p.m. (newer national counts could not be read for this update). Local counts come from the county boards and are unofficial until certified.",
+  "source_note": "Winners are called by the Associated Press and a vote-counting service; seat counts are the AP tally as of 10:12 p.m. (no newer national count or race call could be read for this update). Local counts come from the county boards and are unofficial until certified.",
   "headline": "James Talarico (D) wins Texas, the third Republican Senate seat Democrats have flipped tonight, after North Carolina and South Carolina. One more flip gives them 51; Sherrod Brown (D) leads in Ohio, not yet called."
  },
  "glossary": [
