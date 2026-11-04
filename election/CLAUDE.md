@@ -81,7 +81,7 @@ Nothing on the Today tab assumes the reader follows politics. No rater or pollst
 - Under a third counted but a lead over a point: **Too close** with `leader` filled (it shows as "edge"). Never set `leader` on a Not yet row.
 
 ### The `results` object (build.py renders it; do not touch build.py)
-- `updated` — ISO time, Eastern (UTC−5 after Nov 1), e.g. `2026-11-03T21:07:00-05:00`. The page header and "As of" read it.
+- `updated` — the ACTUAL wall-clock time you write it, read from the clock (`TZ=America/New_York date -Iminutes`), never the run's slot name and never a rounded or future time (Nov 3: a hand run stamped 9:45 while it was 9:37). ISO, Eastern, e.g. `2026-11-03T21:37:00-05:00`. The page header and "The count at" read it.
 - `senate` / `house` — `{dem, rep, note, url}`. Senate counts are **total seats including those not up this year** (DDHQ balance of power, or AP via Fox). House is seats called so far. `note` is optional, one short phrase.
 - `races` — pre-seeded rows; update in place, never delete or reorder. Fields: `key`, `group` (`senate` / `house` / `governor`), `race`, `candidates` (keep as is), `held_by`, `leader` ("Roy Cooper (D)" — name plus party tag; for a proposition "Yes" or "No"), `pct_lead` (percentage-point margin, a number), `status`, `reporting` ("About 80% counted"), `url` (the page you read). build.py computes the path to 51, flips and "Would flip" from `held_by`, `leader` and `status` — never write that math yourself.
 - `local` — same fields plus `towns`.
