@@ -429,6 +429,21 @@
    "note": "Osborn is an independent, not a Democrat; he has not said which party he would sit with. Polls: National Public Affairs (Oct 20) Ricketts 46–43; YouGov (Oct 6) Osborn 48–47; co/efficient (Oct 2, Republican-leaning) Ricketts 45–40. Cook moved it Likely R to Lean R on Oct 30. Not counted in the path to 51.",
    "url": "https://www.270towin.com/2026-senate-polls/nebraska",
    "no_path": true
+  },
+  {
+   "state": "Florida",
+   "race": "Moody seat (special; appointed to Rubio's seat)",
+   "held_by": "R",
+   "democrat": "Angie Nixon",
+   "republican": "Ashley Moody (inc.)",
+   "cook_rating": "Likely R",
+   "dem_pct": 43.3,
+   "rep_pct": 49.5,
+   "margin": -6.2,
+   "pollster": "Pollcheck average",
+   "dates": "through Nov 2",
+   "note": "Latest: Research Co. (Oct 31–Nov 2) Moody 51–44; RedBox Research (Oct 30–31) Moody 47–45; Big Data Poll (Oct 26–30) Moody 52–45. Two September polls had it tied (St. Pete Polls 45–45; Change Research 47–47). Cook moved it Solid R to Likely R on Oct 30. Added Nov 3 at Garret's request; a long shot, worth watching because Florida counts fast.",
+   "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/florida-special"
   }
  ],
  "control": [
@@ -1150,6 +1165,18 @@
     "candidates": "Pete Ricketts (R, inc.) vs Dan Osborn (independent)",
     "held_by": "R",
     "no_path": true,
+    "leader": "",
+    "pct_lead": null,
+    "status": "Not yet",
+    "reporting": "",
+    "url": ""
+   },
+   {
+    "key": "florida-senate",
+    "group": "senate",
+    "race": "Florida Senate",
+    "candidates": "Ashley Moody (R, inc.) vs Angie Nixon (D)",
+    "held_by": "R",
     "leader": "",
     "pct_lead": null,
     "status": "Not yet",
