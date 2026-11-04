@@ -16,13 +16,13 @@
  "bottom_line": [
   {
    "order": 1,
-   "headline": "Democrats are on the verge of the Senate",
-   "detail": "They have flipped five Republican seats and need to hold Michigan and Minnesota, both still counting, to finish at 51 or better."
+   "headline": "Democrats have won the Senate",
+   "detail": "The AP count reached 51 after flips in North Carolina, South Carolina, Texas, Ohio, Kansas and Iowa; Michigan and Minnesota are still counting and would add to the margin."
   },
   {
    "order": 2,
    "headline": "The House is heading to Democrats",
-   "detail": "They lead 152 seats to 95 in the AP count, with 218 needed, and the New York Times says they are on track to take it."
+   "detail": "They lead 154 seats to 96 in the AP count, with 218 needed, and the New York Times says they are on track to take it."
   },
   {
    "order": 3,
@@ -31,7 +31,8 @@
   }
  ],
  "what_changed": [
-  "Adam Hamilton (D) beat Roger Marshall (R) in Kansas, the fifth flip of the night, after North Carolina, South Carolina, Texas and Ohio."
+  "The AP called control of the Senate for Democrats at 51 seats.",
+  "Josh Turek (D) beat Ashley Hinson (R) in Iowa, the sixth flip of the night."
  ],
  "generic_ballot": [
   {
@@ -1002,17 +1003,17 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T23:28-05:00",
+  "updated": "2026-11-03T23:35-05:00",
   "senate": {
-   "dem": 50,
-   "rep": 38,
-   "note": "AP count via the New York Times, 11:27 p.m.",
+   "dem": 51,
+   "rep": 39,
+   "note": "The AP has called control of the Senate for Democrats (via the New York Times, 11:35 p.m.).",
    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-senate.html"
   },
   "house": {
-   "dem": 152,
-   "rep": 95,
-   "note": "AP count via the New York Times, 11:27 p.m.",
+   "dem": 154,
+   "rep": 96,
+   "note": "AP count via the New York Times, 11:35 p.m.",
    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-house.html"
   },
   "races": [
@@ -1058,11 +1059,11 @@
     "race": "Iowa Senate",
     "candidates": "Ashley Hinson (R) vs Josh Turek (D)",
     "held_by": "R",
-    "leader": "",
+    "leader": "Josh Turek (D)",
     "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "status": "Called",
+    "reporting": "Called by the AP by 11:35 p.m. (shown as a Democratic flip on the AP map via the New York Times)",
+    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-iowa-senate.html"
    },
    {
     "key": "kansas-senate",
@@ -1480,7 +1481,7 @@
    }
   ],
   "source_note": "Winners are called by the Associated Press and a vote-counting service; seat counts are the AP tally as of 10:12 p.m. (no newer national count or race call could be read for this update). Local counts come from the county boards and are unofficial until certified.",
-  "headline": "Adam Hamilton (D) wins Kansas, the fifth Republican Senate seat Democrats have flipped tonight, one more than they needed. The AP count stands at 50 Democrats; the New York Times says they are on track to take both the House and the Senate. Michigan and Minnesota are still being counted."
+  "headline": "Democrats win the Senate. The AP put them at 51 seats at 11:35 p.m. after Josh Turek (D) flipped Iowa, their sixth pickup of the night. Michigan and Minnesota are still counting; the House is heading their way too."
  },
  "glossary": [
   {
