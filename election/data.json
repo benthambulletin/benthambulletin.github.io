@@ -1000,18 +1000,18 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T21:37:00-05:00",
+  "updated": "2026-11-03T21:53:00-05:00",
   "senate": {
-   "dem": 38,
-   "rep": 32,
-   "note": "The 65 seats not up this year (34 D, 31 R) plus the races called so far that this page has confirmed: Georgia, Virginia, North Carolina, New Hampshire (D) and Florida (R). Safe seats called elsewhere are added as they're confirmed.",
-   "url": "https://www.pbs.org/newshour/politics/live-updates-midterm-voters-go-to-the-polls-on-election-day"
+   "dem": 45,
+   "rep": 36,
+   "note": "AP count via the New York Times, 9:51 p.m.",
+   "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-senate.html"
   },
   "house": {
-   "dem": 1,
-   "rep": 0,
-   "note": "Seats called that this page has confirmed: Jamie Ager (D) flipped a western North Carolina seat. Other calls are added as they're confirmed.",
-   "url": "https://www.pbs.org/newshour/politics/live-updates-midterm-voters-go-to-the-polls-on-election-day"
+   "dem": 97,
+   "rep": 52,
+   "note": "AP count via the New York Times, 9:51 p.m.",
+   "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-house.html"
   },
   "races": [
    {
@@ -1477,7 +1477,7 @@
     "what": "If no one in Maine tops 50%, a ranked-choice count (voters rank the candidates, and last-place votes move to their next choice) runs in Augusta the following week."
    }
   ],
-  "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. At 9:45 p.m. the vote-counting service's pages couldn't be reached, so earlier calls stand as they were; the Texas figure comes from a results feed time-stamped 9:06 p.m. Your towns' races and the county board sites had nothing readable yet.",
+  "source_note": "Winners are called by the Associated Press (counts read from the New York Times at 9:51 p.m.) and Decision Desk HQ; local counts come from the county boards and are unofficial until certified.",
   "headline": "Kathy Hochul (D) wins a second full term as governor; in the Senate, Democrats have flipped North Carolina, James Talarico (D) leads Ken Paxton (R) by about 20 points in Texas with about 41% counted, and Sherrod Brown (D) leads early in Ohio."
  },
  "glossary": [
