@@ -16,8 +16,8 @@
  "bottom_line": [
   {
    "order": 1,
-   "headline": "Senate: one flip in hand, Texas leaning their way",
-   "detail": "North Carolina flipped and Georgia and New Hampshire held. Democrats need three more Republican seats; in Texas, James Talarico (D) is ahead by about 14 points with about 64% counted, Ohio's early mail ballots favor Sherrod Brown (D), and Maine has under a tenth counted. None of those is called, and Maine may not be settled for days."
+   "headline": "Senate: two flips in hand",
+   "detail": "North Carolina and South Carolina flipped to Democrats, and Georgia and New Hampshire held. Democrats need two more Republican seats; James Talarico (D) led in Texas and Sherrod Brown (D) in Ohio's early mail ballots at last count, and neither is called. Maine may not be settled for days."
   },
   {
    "order": 2,
@@ -30,7 +30,9 @@
    "detail": "The governor's race is decided. In the Southern Tier district, Nick Langworthy (R) leads Aaron Gies (D) by about 7 points with about a third counted; the rest of your ballot has little or nothing reported, and nothing local has been called."
   }
  ],
- "what_changed": [],
+ "what_changed": [
+  "South Carolina Senate: Annie Andrews (D) wins, a Democratic flip (AP)."
+ ],
  "generic_ballot": [
   {
    "tracker": "Silver Bulletin (all polls)",
@@ -1000,7 +1002,7 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T22:22-05:00",
+  "updated": "2026-11-03T22:43-05:00",
   "senate": {
    "dem": 46,
    "rep": 36,
@@ -1140,11 +1142,11 @@
     "race": "South Carolina Senate",
     "candidates": "Darline Graham Nordone (R, inc.) vs Annie Andrews (D)",
     "held_by": "R",
-    "leader": "",
+    "leader": "Annie Andrews (D)",
     "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "status": "Called",
+    "reporting": "Projected winner by the AP, reported by 10 p.m.",
+    "url": "https://www.foxcarolina.com/2026/11/04/annie-andrews-projected-win-us-senate-race-flipping-south-carolina-seat-blue/"
    },
    {
     "key": "new-hampshire-senate",
@@ -1478,7 +1480,7 @@
    }
   ],
   "source_note": "Winners are called by the Associated Press and a vote-counting service; seat counts are the AP tally as of 9:56 p.m. (newer national counts could not be read for this update). Local counts come from the county boards and are unofficial until certified.",
-  "headline": "Democrats have flipped North Carolina and lead in Texas, with about two-thirds counted, and in Ohio; neither is called. They need three more pickups for 51."
+  "headline": "Annie Andrews (D) beats Sen. Darline Graham Nordone (R) in South Carolina, the second Senate flip of the night."
  },
  "glossary": [
   {
