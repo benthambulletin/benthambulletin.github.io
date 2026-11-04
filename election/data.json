@@ -16,22 +16,24 @@
   "bottom_line": [
     {
       "order": 1,
-      "headline": "Senate: one hold down, no flips yet",
-      "detail": "Georgia stayed Democratic; the four extra seats Democrats need all come from states still counting, so the Senate will not be settled for hours."
+      "headline": "Senate: one flip, two holds",
+      "detail": "North Carolina flipped and Georgia and New Hampshire held, so Democrats now need three more Republican seats, from Maine, Ohio, Texas, Iowa, Kansas, Alaska or South Carolina, while also keeping Michigan and Minnesota."
     },
     {
       "order": 2,
-      "headline": "House: early",
-      "detail": "The four Pennsylvania seats that usually signal where the House is going closed at 8 and are counting now."
+      "headline": "House: still counting",
+      "detail": "No seat on our list has been called yet."
     },
     {
       "order": 3,
-      "headline": "New York and your towns: polls open until 9",
+      "headline": "New York and your towns: polls close at 9",
       "detail": "The governor's race and every race on your ballot start counting after 9 p.m."
     }
   ],
   "what_changed": [
-    "Sherrod Brown (D) leads Jon Husted (R) in Ohio's early count. Only about 7% of the vote is in, mostly from Columbus's county, so this edge can shrink a lot."
+    "Roy Cooper (D) won North Carolina, flipping a Republican seat.",
+    "Chris Pappas (D) won New Hampshire over John E. Sununu (R), a seat Democrats had to hold.",
+    "Ashley Moody (R) won Florida over Angie Nixon (D)."
   ],
   "generic_ballot": [
     {
@@ -1002,11 +1004,11 @@
   "statewide_url": "https://theballotbrief.com/zip/14120",
   "mode": "results",
   "results": {
-    "updated": "2026-11-03T20:28:00-05:00",
+    "updated": "2026-11-03T20:58:00-05:00",
     "senate": {
       "dem": 36,
       "rep": 32,
-      "note": "Includes Georgia, Virginia and West Virginia; last read at 7:55",
+      "note": "Full count last read at 7:55 (Georgia, Virginia, West Virginia); calls since then are on the board below",
       "url": "https://www.newsnationnow.com/politics/2026-midterm-elections/midterm-election-day-2026-live-results/amp/"
     },
     "house": {
@@ -1118,11 +1120,11 @@
         "race": "North Carolina Senate",
         "candidates": "Michael Whatley (R) vs Roy Cooper (D)",
         "held_by": "R",
-        "leader": "",
-        "pct_lead": null,
-        "status": "Not yet",
-        "reporting": "Count delayed 45 minutes; no votes posted at 8:15",
-        "url": "https://votes.decisiondeskhq.com/races/2026-11-03/north-carolina-us-senate-general-election/results"
+        "leader": "Roy Cooper (D)",
+        "pct_lead": 35.2,
+        "status": "Called",
+        "reporting": "Called by the AP at about 8:23",
+        "url": "https://www.wbtv.com/2026/11/04/roy-cooper-wins-2026-us-senate-race-north-carolina-ap-projects/"
       },
       {
         "key": "georgia-senate",
@@ -1154,11 +1156,11 @@
         "race": "New Hampshire Senate",
         "candidates": "Chris Pappas (D) vs John E. Sununu (R)",
         "held_by": "D",
-        "leader": "",
+        "leader": "Chris Pappas (D)",
         "pct_lead": null,
-        "status": "Not yet",
-        "reporting": "",
-        "url": ""
+        "status": "Called",
+        "reporting": "Called by the AP at about 8:40",
+        "url": "https://wset.com/news/nation-world/democrat-chris-pappas-wins-new-hampshires-open-us-senate-seat-john-e-sununu-election-day-midterms-midterm-elections-politics-vote-voting-voters-taxpayers-polls-ballots-congress-president-donald-trump"
       },
       {
         "key": "nebraska-senate",
@@ -1179,11 +1181,11 @@
         "race": "Florida Senate",
         "candidates": "Ashley Moody (R, inc.) vs Angie Nixon (D)",
         "held_by": "R",
-        "leader": "",
+        "leader": "Ashley Moody (R)",
         "pct_lead": null,
-        "status": "Not yet",
-        "reporting": "",
-        "url": ""
+        "status": "Called",
+        "reporting": "Called by the AP at 8:34",
+        "url": "https://www.mysuncoast.com/2026/11/04/republican-ashley-moody-wins-reelection-us-senate-florida/"
       },
       {
         "key": "pa-1",
@@ -1476,8 +1478,8 @@
         "at": "2026-11-04T00:00:00-05:00"
       }
     ],
-    "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. At 8:28 most results pages showed no counted votes yet; Ohio's count is from 7:42. North Carolina delayed posting results by 45 minutes after some polling places stayed open late.",
-    "headline": "Jon Ossoff (D) kept Georgia; Sherrod Brown (D) has an early edge in Ohio with only a sliver counted, and no seat has flipped yet."
+    "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. Tonight's live results pages would not load, so calls come from news reports of AP and Decision Desk HQ projections; Ohio's count is from 7:42.",
+    "headline": "Roy Cooper (D) wins North Carolina, the first Senate seat Democrats have flipped tonight; Chris Pappas (D) keeps New Hampshire."
   },
   "glossary": [
     {
