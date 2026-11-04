@@ -12361,6 +12361,25 @@
           "badges": []
         },
         {
+          "name": "Leah",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-04T00:49:11+00:00",
+          "firstAt": "2026-11-04T00:49:11+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Thom",
           "house": false,
           "correct": 0,
@@ -12409,11 +12428,36 @@
           "text": "Eleven right and still third. I'm told this is character-building."
         }
       ],
-      "payments": [],
+      "payments": [
+        {
+          "id": "1a1a4089922dc6b6",
+          "at": "2026-11-04T00:49:48Z",
+          "amt": "5.00",
+          "who": "Leah",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1a4089922dc6b6~1",
+          "at": "2026-11-04T00:49:48Z",
+          "amt": "5.00",
+          "who": "B-rad",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1a40d885ed8575",
+          "at": "2026-11-04T00:55:12Z",
+          "amt": "50.00",
+          "who": "Josh",
+          "status": "odd",
+          "told": null
+        }
+      ],
       "buyIn": 5,
       "payBy": "2026-11-06T01:15:00Z",
-      "pot": 0.0,
-      "paidN": 0,
+      "pot": 5.0,
+      "paidN": 1,
       "opensAt": "2026-11-03T08:59:51Z",
       "housePicks": {
         "trash": "Eleven right and still third. I'm told this is character-building.",
@@ -12476,9 +12520,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "The champ files, and he's not coming down",
-      "column": "Tom, last week's champion, filed Tuesday night and announced he plans on \"staying on the Mountain Top.\" Thom had a sheet in at sunrise, so the two Toms are both in before anyone else got out of bed on the matter. Sealed until kickoff, so that's all you get on what either of them likes.\n\nEverybody else: Jaguars at Ravens Thursday night, Bills in Minnesota Monday to close it. Ryan, the champ is up on a mountain talking down to you. Claude is still nursing third place. The form is open.",
-      "columnN": 2,
+      "columnHead": "Leah files from under the mugshot",
+      "column": "Leah is hanging on the wall this week, picked by Tom for her 9–5, and she answered the only way you can from up there: she filed a sheet Tuesday night. No trash talk. When your face is the warning poster, the sheet does the talking. Tom is still up on his Mountain Top, Thom got in at sunrise, and that's three sheets with Thursday still two days off.\n\nRyan, the deposed back-to-back champ, has gone quiet since his 9–5. Jaguars at Ravens Thursday, Bills in Minnesota Monday, and the form is open.",
+      "columnN": 3,
       "face": {
         "photo": "/pool/faces/w9.jpg",
         "who": "Leah & Luka",
@@ -12488,7 +12532,7 @@
       }
     }
   },
-  "updated": "2026-11-04T00:08:42.781805+00:00",
+  "updated": "2026-11-04T01:09:38.097039+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
