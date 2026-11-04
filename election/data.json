@@ -1002,7 +1002,7 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T23:11-05:00",
+  "updated": "2026-11-03T23:18-05:00",
   "senate": {
    "dem": 49,
    "rep": 37,
@@ -1301,11 +1301,11 @@
     "candidates": "Langworthy (R, inc.) vs Gies (D)",
     "towns": "Orchard Park · Dunkirk · Fredonia",
     "held_by": "R",
-    "leader": "Nick Langworthy (R)",
+    "leader": "Langworthy (R)",
     "pct_lead": 7,
-    "status": "Leading",
-    "reporting": "About a third of districts reporting; Langworthy 53%, Gies 46%; not called",
-    "url": "https://www.post-journal.com/news/top-stories/2026/11/langworthy-leads-gies-by-7-across-district"
+    "status": "Called",
+    "reporting": "Called by the AP (WBFO live blog headline, after 11 p.m.)",
+    "url": "https://www.btpm.org/live-updates/live-blog-2026-new-york-midterm-election-results"
    },
    {
     "key": "ny-25",
