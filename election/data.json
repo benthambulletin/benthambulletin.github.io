@@ -1000,7 +1000,7 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T21:53:00-05:00",
+  "updated": "2026-11-03T21:55-05:00",
   "senate": {
    "dem": 45,
    "rep": 36,
@@ -1045,10 +1045,10 @@
     "candidates": "Ken Paxton (R) vs James Talarico (D)",
     "held_by": "R",
     "leader": "James Talarico (D)",
-    "pct_lead": 20,
+    "pct_lead": 14,
     "status": "Leading",
-    "reporting": "About 41% counted as of 9:06 p.m.; Talarico about 59% to 39%; not yet called",
-    "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/texas"
+    "reporting": "About 64% counted as of 9:40 p.m.; Talarico 56%, Paxton 42%; not called",
+    "url": "https://votes.decisiondeskhq.com/races/2026-11-03/texas-us-senate-general-election"
    },
    {
     "key": "iowa-senate",
@@ -1478,7 +1478,7 @@
    }
   ],
   "source_note": "Winners are called by the Associated Press (counts read from the New York Times at 9:51 p.m.) and Decision Desk HQ; local counts come from the county boards and are unofficial until certified.",
-  "headline": "Kathy Hochul (D) wins a second full term as governor; in the Senate, Democrats have flipped North Carolina, James Talarico (D) leads Ken Paxton (R) by about 20 points in Texas with about 41% counted, and Sherrod Brown (D) leads early in Ohio."
+  "headline": "Democrats have flipped North Carolina and lead in Ohio and Texas, with most of Texas counted; neither is called. They need three more pickups for 51."
  },
  "glossary": [
   {
