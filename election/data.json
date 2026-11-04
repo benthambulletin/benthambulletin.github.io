@@ -16,22 +16,22 @@
  "bottom_line": [
   {
    "order": 1,
-   "headline": "Senate: two flips in hand",
-   "detail": "North Carolina and South Carolina flipped to Democrats, and Georgia and New Hampshire held. Democrats need two more Republican seats; James Talarico (D) led in Texas and Sherrod Brown (D) in Ohio's early mail ballots at last count, and neither is called. Maine may not be settled for days."
+   "headline": "Democrats are on the verge of the Senate",
+   "detail": "They have flipped five Republican seats and need to hold Michigan and Minnesota, both still counting, to finish at 51 or better."
   },
   {
    "order": 2,
-   "headline": "House: Democrats far ahead in seats called",
-   "detail": "Democrats had 107 seats called to Republicans' 62 at 10:12 p.m.; none of the Pennsylvania or New York seats on our list has been called, and in Westchester (NY-17) ballots were bagged to be counted later after scanners failed."
+   "headline": "The House is heading to Democrats",
+   "detail": "They lead 152 seats to 95 in the AP count, with 218 needed, and the New York Times says they are on track to take it."
   },
   {
    "order": 3,
-   "headline": "New York: Hochul re-elected; your towns still counting",
-   "detail": "The governor's race is decided. In the Southern Tier district, Nick Langworthy (R) leads Aaron Gies (D) by about 7 points with about a third counted; the rest of your ballot has little or nothing reported, and nothing local has been called."
+   "headline": "New York and your towns",
+   "detail": "Hochul (D) won a second full term, and Langworthy (R) held NY-23. The rest of the local races have not reported to the sources this page can read."
   }
  ],
  "what_changed": [
-  "Sherrod Brown (D) beat Jon Husted (R) in Ohio, the fourth flip of the night, after North Carolina, South Carolina and Texas."
+  "Adam Hamilton (D) beat Roger Marshall (R) in Kansas, the fifth flip of the night, after North Carolina, South Carolina, Texas and Ohio."
  ],
  "generic_ballot": [
   {
@@ -1002,17 +1002,17 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T23:18-05:00",
+  "updated": "2026-11-03T23:28-05:00",
   "senate": {
-   "dem": 49,
-   "rep": 37,
-   "note": "AP count via the New York Times, 11:11 p.m.",
+   "dem": 50,
+   "rep": 38,
+   "note": "AP count via the New York Times, 11:27 p.m.",
    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-senate.html"
   },
   "house": {
-   "dem": 144,
-   "rep": 90,
-   "note": "AP count via the New York Times, 11:11 p.m.",
+   "dem": 152,
+   "rep": 95,
+   "note": "AP count via the New York Times, 11:27 p.m.",
    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-house.html"
   },
   "races": [
@@ -1070,11 +1070,11 @@
     "race": "Kansas Senate",
     "candidates": "Roger Marshall (R, inc.) vs Adam Hamilton (D)",
     "held_by": "R",
-    "leader": "",
+    "leader": "Adam Hamilton (D)",
     "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "status": "Called",
+    "reporting": "Called by the AP by 11:27 p.m. (shown as a Democratic flip on the AP map via the New York Times)",
+    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-kansas-senate.html"
    },
    {
     "key": "alaska-senate",
@@ -1480,7 +1480,7 @@
    }
   ],
   "source_note": "Winners are called by the Associated Press and a vote-counting service; seat counts are the AP tally as of 10:12 p.m. (no newer national count or race call could be read for this update). Local counts come from the county boards and are unofficial until certified.",
-  "headline": "Sherrod Brown (D) wins Ohio: Democrats have now flipped four Republican Senate seats (North Carolina, South Carolina, Texas, Ohio), the number they needed for 51, as long as they hold Michigan, Minnesota and Georgia. Michigan and Minnesota are not yet called."
+  "headline": "Adam Hamilton (D) wins Kansas, the fifth Republican Senate seat Democrats have flipped tonight, one more than they needed. The AP count stands at 50 Democrats; the New York Times says they are on track to take both the House and the Senate. Michigan and Minnesota are still being counted."
  },
  "glossary": [
   {
