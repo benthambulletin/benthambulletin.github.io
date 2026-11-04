@@ -1000,17 +1000,17 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T21:55-05:00",
+  "updated": "2026-11-03T21:57-05:00",
   "senate": {
    "dem": 45,
    "rep": 36,
-   "note": "AP count via the New York Times, 9:51 p.m.",
+   "note": "AP count via the New York Times, 9:56 p.m.",
    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-senate.html"
   },
   "house": {
-   "dem": 97,
-   "rep": 52,
-   "note": "AP count via the New York Times, 9:51 p.m.",
+   "dem": 101,
+   "rep": 54,
+   "note": "AP count via the New York Times, 9:56 p.m.",
    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-house.html"
   },
   "races": [
