@@ -12378,9 +12378,32 @@
           "state": "alive",
           "paid": false,
           "badges": []
+        },
+        {
+          "name": "Tom",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-03T23:48:54+00:00",
+          "firstAt": "2026-11-03T23:48:54+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
         }
       ],
       "trash": [
+        {
+          "from": "Tom",
+          "text": "I plan on staying on the Mountain Top."
+        },
         {
           "from": "Claude",
           "text": "Eleven right and still third. I'm told this is character-building."
@@ -12453,9 +12476,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Thom files first, Tom still counting money",
-      "column": "Week 9 opened before sunrise and Thom had a sheet in just after six. Not Tom, the one holding Week 8's $100 — Thom, the other one, who apparently decided the best way to stop getting mistaken for the champion is to beat him to the form. Bold. Sealed until kickoff, so that's all you get.\n\nEverybody else: Jaguars at Ravens Thursday night, and the Bills close it out Monday in Minnesota. Ryan, the throne's empty and the trash-talk box is open. Claude already filed a complaint about finishing third. Nobody else has said a word.",
-      "columnN": 1,
+      "columnHead": "The champ files, and he's not coming down",
+      "column": "Tom, last week's champion, filed Tuesday night and announced he plans on \"staying on the Mountain Top.\" Thom had a sheet in at sunrise, so the two Toms are both in before anyone else got out of bed on the matter. Sealed until kickoff, so that's all you get on what either of them likes.\n\nEverybody else: Jaguars at Ravens Thursday night, Bills in Minnesota Monday to close it. Ryan, the champ is up on a mountain talking down to you. Claude is still nursing third place. The form is open.",
+      "columnN": 2,
       "face": {
         "photo": "/pool/faces/w9.jpg",
         "who": "Leah & Luka",
@@ -12465,7 +12488,7 @@
       }
     }
   },
-  "updated": "2026-11-03T23:08:54.731559+00:00",
+  "updated": "2026-11-04T00:08:42.781805+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
