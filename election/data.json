@@ -30,7 +30,9 @@
       "detail": "The governor's race and every race on your ballot start counting after 9 p.m."
     }
   ],
-  "what_changed": [],
+  "what_changed": [
+    "Sherrod Brown (D) leads Jon Husted (R) in Ohio's early count. Only about 7% of the vote is in, mostly from Columbus's county, so this edge can shrink a lot."
+  ],
   "generic_ballot": [
     {
       "tracker": "Silver Bulletin (all polls)",
@@ -1000,7 +1002,7 @@
   "statewide_url": "https://theballotbrief.com/zip/14120",
   "mode": "results",
   "results": {
-    "updated": "2026-11-03T20:20:00-05:00",
+    "updated": "2026-11-03T20:28:00-05:00",
     "senate": {
       "dem": 36,
       "rep": 32,
@@ -1032,11 +1034,11 @@
         "race": "Ohio Senate",
         "candidates": "Jon Husted (R, inc.) vs Sherrod Brown (D)",
         "held_by": "R",
-        "leader": "",
-        "pct_lead": null,
-        "status": "Not yet",
-        "reporting": "",
-        "url": ""
+        "leader": "Sherrod Brown (D)",
+        "pct_lead": 31.1,
+        "status": "Too close",
+        "reporting": "About 7% counted, mostly Franklin and Butler counties (count at 7:42)",
+        "url": "https://votes.decisiondeskhq.com/races/2026-11-03/ohio-us-senate-special-election-general/results"
       },
       {
         "key": "texas-senate",
@@ -1474,8 +1476,8 @@
         "at": "2026-11-04T00:00:00-05:00"
       }
     ],
-    "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. At 8:20 the results pages could not be read, so races other than Georgia show as Not yet; North Carolina delayed posting results by 45 minutes after some polling places stayed open late.",
-    "headline": "Jon Ossoff (D) kept Georgia; Pennsylvania, Maine, Texas and Michigan closed at 8, and no seat has flipped yet."
+    "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. At 8:28 most results pages showed no counted votes yet; Ohio's count is from 7:42. North Carolina delayed posting results by 45 minutes after some polling places stayed open late.",
+    "headline": "Jon Ossoff (D) kept Georgia; Sherrod Brown (D) has an early edge in Ohio with only a sliver counted, and no seat has flipped yet."
   },
   "glossary": [
     {
