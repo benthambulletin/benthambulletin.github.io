@@ -31,7 +31,7 @@
   }
  ],
  "what_changed": [
-  "South Carolina Senate: Annie Andrews (D) wins, a Democratic flip (AP)."
+  "James Talarico (D) beat Ken Paxton (R) in Texas, a flip: Democrats have now taken two Republican seats, North Carolina and Texas."
  ],
  "generic_ballot": [
   {
@@ -1002,7 +1002,7 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T22:43-05:00",
+  "updated": "2026-11-03T22:56-05:00",
   "senate": {
    "dem": 46,
    "rep": 36,
@@ -1048,9 +1048,9 @@
     "held_by": "R",
     "leader": "James Talarico (D)",
     "pct_lead": 14,
-    "status": "Leading",
-    "reporting": "About 64% counted as of 9:40 p.m.; Talarico 56%, Paxton 42%; not called",
-    "url": "https://votes.decisiondeskhq.com/races/2026-11-03/texas-us-senate-general-election"
+    "status": "Called",
+    "reporting": "Called by the AP at about 10:55 p.m.; Talarico led Paxton 56% to 42% with about two-thirds counted at 9:40",
+    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-texas-senate.html"
    },
    {
     "key": "iowa-senate",
@@ -1480,7 +1480,7 @@
    }
   ],
   "source_note": "Winners are called by the Associated Press and a vote-counting service; seat counts are the AP tally as of 9:56 p.m. (newer national counts could not be read for this update). Local counts come from the county boards and are unofficial until certified.",
-  "headline": "Annie Andrews (D) beats Sen. Darline Graham Nordone (R) in South Carolina, the second Senate flip of the night."
+  "headline": "James Talarico (D) wins Texas, the second Republican Senate seat Democrats have flipped tonight; they need two more for 51. Sherrod Brown (D) leads in Ohio, not yet called."
  },
  "glossary": [
   {
