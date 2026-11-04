@@ -30,7 +30,9 @@
    "detail": "The governor's race is decided. In the Southern Tier district, Nick Langworthy (R) leads Aaron Gies (D) by about 7 points with about a third counted; the rest of your ballot has little or nothing reported, and nothing local has been called."
   }
  ],
- "what_changed": [],
+ "what_changed": [
+  "Sherrod Brown (D) beat Jon Husted (R) in Ohio, the fourth flip of the night, after North Carolina, South Carolina and Texas."
+ ],
  "generic_ballot": [
   {
    "tracker": "Silver Bulletin (all polls)",
@@ -1000,17 +1002,17 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-03T23:04-05:00",
+  "updated": "2026-11-03T23:11-05:00",
   "senate": {
-   "dem": 46,
-   "rep": 36,
-   "note": "AP count via the New York Times, 10:12 p.m.",
+   "dem": 49,
+   "rep": 37,
+   "note": "AP count via the New York Times, 11:11 p.m.",
    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-senate.html"
   },
   "house": {
-   "dem": 107,
-   "rep": 62,
-   "note": "AP count via the New York Times, 10:12 p.m.",
+   "dem": 144,
+   "rep": 90,
+   "note": "AP count via the New York Times, 11:11 p.m.",
    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-house.html"
   },
   "races": [
@@ -1034,9 +1036,9 @@
     "held_by": "R",
     "leader": "Sherrod Brown (D)",
     "pct_lead": 23,
-    "status": "Too close",
-    "reporting": "Only mail-in ballots counted so far, from 67 of 88 counties",
-    "url": "https://www.springfieldnewssun.com/local/u-s-senate-race-husted-hopes-to-hold-on-to-seat-as-brown-seeks-political/article_e0da7615-7e36-5774-9740-2394867e00b2.html"
+    "status": "Called",
+    "reporting": "Called by the AP by 11:11 p.m. (shown as a Democratic flip on the AP map via the New York Times)",
+    "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-ohio-senate.html"
    },
    {
     "key": "texas-senate",
@@ -1478,7 +1480,7 @@
    }
   ],
   "source_note": "Winners are called by the Associated Press and a vote-counting service; seat counts are the AP tally as of 10:12 p.m. (no newer national count or race call could be read for this update). Local counts come from the county boards and are unofficial until certified.",
-  "headline": "James Talarico (D) wins Texas, the third Republican Senate seat Democrats have flipped tonight, after North Carolina and South Carolina. One more flip gives them 51; Sherrod Brown (D) leads in Ohio, not yet called."
+  "headline": "Sherrod Brown (D) wins Ohio: Democrats have now flipped four Republican Senate seats (North Carolina, South Carolina, Texas, Ohio), the number they needed for 51, as long as they hold Michigan, Minnesota and Georgia. Michigan and Minnesota are not yet called."
  },
  "glossary": [
   {
