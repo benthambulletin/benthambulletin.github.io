@@ -17,21 +17,24 @@
   {
    "order": 1,
    "headline": "Democrats have won the Senate",
-   "detail": "The AP count is at 52 after six flips and holds in Georgia, New Hampshire and Minnesota; Michigan is still counting and would add to the margin."
+   "detail": "They took seven Republican seats, including Maine overnight, and kept every seat they had to defend; Alaska and Nebraska are still counting."
   },
   {
    "order": 2,
-   "headline": "The House is heading to Democrats",
-   "detail": "They lead 189 seats to 110 in the AP count, with 218 needed, and the New York Times says they are on pace for a large majority."
+   "headline": "Democrats are winning the House",
+   "detail": "They flipped three Pennsylvania seats, Lawler (R) conceded NY-17, and news outlets say Democrats have the majority, though many seats are still being counted."
   },
   {
    "order": 3,
    "headline": "New York and your towns",
-   "detail": "Hochul (D) won a second full term, and Langworthy (R) held NY-23. The rest of the local races have not reported to the sources this page can read."
+   "detail": "Hochul (D) won a second full term; Kennedy (D) and Morelle (D) are far ahead, Langworthy (R) won, and most state and county races are still unofficial."
   }
  ],
  "what_changed": [
-  "Peggy Flanagan (D) beat Michele Tafoya (R) in Minnesota, a seat Democrats had to keep."
+  "Troy Jackson (D) beat Susan Collins (R) in Maine, a seventh Democratic flip; Collins conceded.",
+  "Abdul El-Sayed (D) beat Mike Rogers (R) in Michigan, the last seat Democrats had to hold.",
+  "Democrats flipped three Pennsylvania House seats: Bob Brooks (D), Paige Cognetti (D) and Janelle Stelson (D) beat Ryan Mackenzie (R), Rob Bresnahan (R) and Scott Perry (R).",
+  "Mike Lawler (R) conceded NY-17 to Cait Conley (D); a formal call is still pending."
  ],
  "generic_ballot": [
   {
@@ -1002,18 +1005,18 @@
  "statewide_url": "https://theballotbrief.com/zip/14120",
  "mode": "results",
  "results": {
-  "updated": "2026-11-04T00:09-05:00",
+  "updated": "2026-11-04T06:07:00-05:00",
   "senate": {
    "dem": 52,
-   "rep": 40,
-   "note": "The AP has called control of the Senate for Democrats (via the New York Times, 12:08 a.m.).",
-   "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-senate.html"
+   "rep": 41,
+   "note": "AP count at 12:30 a.m.; Maine and Michigan were called for Democrats after it.",
+   "url": "https://www.yahoo.com/news/politics/articles/election-results-2026-balance-power-015809470.html"
   },
   "house": {
-   "dem": 189,
-   "rep": 110,
-   "note": "AP count via the New York Times, 12:08 a.m.",
-   "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-house.html"
+   "dem": 197,
+   "rep": 117,
+   "note": "AP count at 12:30 a.m.; 121 seats not yet called then.",
+   "url": "https://www.yahoo.com/news/politics/articles/election-results-2026-balance-power-015809470.html"
   },
   "races": [
    {
@@ -1022,11 +1025,11 @@
     "race": "Maine Senate",
     "candidates": "Susan Collins (R, inc.) vs Troy Jackson (D)",
     "held_by": "R",
-    "leader": "",
-    "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "Under 10% counted at 9:32 p.m.; Collins near 49%; not called",
-    "url": "https://pressherald.com/2026/11/03/polls-open-across-maine-on-election-day"
+    "leader": "Troy Jackson (D)",
+    "pct_lead": 5,
+    "status": "Called",
+    "reporting": "Called by the AP just after 1 a.m.; Collins conceded before the call. Jackson led by over 5 points with about two-thirds of precincts in",
+    "url": "https://www.wbur.org/news/2026/11/04/maine-troy-jackson-wins-senate-race"
    },
    {
     "key": "ohio-senate",
@@ -1085,7 +1088,7 @@
     "leader": "",
     "pct_lead": null,
     "status": "Not yet",
-    "reporting": "",
+    "reporting": "Not called. Alaska counts for days; the final tally is Nov. 18",
     "url": ""
    },
    {
@@ -1094,11 +1097,11 @@
     "race": "Michigan Senate",
     "candidates": "Abdul El-Sayed (D) vs Mike Rogers (R)",
     "held_by": "D",
-    "leader": "",
+    "leader": "Abdul El-Sayed (D)",
     "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "status": "Called",
+    "reporting": "Projected the winner by Fox News early Wednesday (AP data)",
+    "url": "https://www.foxnews.com/politics/abdul-el-sayed-delivers-major-blow-gop-michigan-after-bruising-senate-race"
    },
    {
     "key": "minnesota-senate",
@@ -1191,11 +1194,11 @@
     "race": "PA-1",
     "candidates": "Brian Fitzpatrick (R, inc.) vs Bob Harvie (D)",
     "held_by": "R",
-    "leader": "",
+    "leader": "Bob Harvie (D)",
     "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "status": "Leading",
+    "reporting": "Reported as the winner overnight (Washington Sun, 1:29 a.m.); no AP call found yet",
+    "url": "https://www.washingtonsun.com/campaigns/fitzpatrick-harvie-perry-brooks-pensylvania-house-results-2026"
    },
    {
     "key": "pa-7",
@@ -1203,11 +1206,11 @@
     "race": "PA-7",
     "candidates": "Ryan Mackenzie (R, inc.) vs Bob Brooks (D)",
     "held_by": "R",
-    "leader": "",
-    "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "leader": "Bob Brooks (D)",
+    "pct_lead": 14,
+    "status": "Called",
+    "reporting": "Called by the AP by 10:30 p.m. with 76% counted; Brooks led by 14 points at 10:50",
+    "url": "https://www.yahoo.com/news/politics/articles/democrat-bob-brooks-defeats-u-041900322.html"
    },
    {
     "key": "pa-8",
@@ -1215,11 +1218,11 @@
     "race": "PA-8",
     "candidates": "Rob Bresnahan (R, inc.) vs Paige Cognetti (D)",
     "held_by": "R",
-    "leader": "",
+    "leader": "Paige Cognetti (D)",
     "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "status": "Called",
+    "reporting": "Called by the AP Tuesday night",
+    "url": "https://www.yahoo.com/news/politics/articles/democrat-bob-brooks-defeats-u-041900322.html"
    },
    {
     "key": "pa-10",
@@ -1227,11 +1230,11 @@
     "race": "PA-10",
     "candidates": "Scott Perry (R, inc.) vs Janelle Stelson (D)",
     "held_by": "R",
-    "leader": "",
+    "leader": "Janelle Stelson (D)",
     "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "status": "Called",
+    "reporting": "Called by the AP Tuesday night",
+    "url": "https://www.witf.org/2026/11/03/janelle-stelson-wins-flipping-pa-10-democratic/"
    },
    {
     "key": "ny-17",
@@ -1239,11 +1242,11 @@
     "race": "NY-17",
     "candidates": "Mike Lawler (R, inc.) vs Cait Conley (D)",
     "held_by": "R",
-    "leader": "",
+    "leader": "Cait Conley (D)",
     "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "Westchester County's ballot scanners failed today; ballots were set aside in secure bags to be counted",
-    "url": "https://www.pbs.org/newshour/politics/live-updates-midterm-voters-go-to-the-polls-on-election-day"
+    "status": "Leading",
+    "reporting": "Lawler (R) conceded Tuesday night; delayed Westchester ballots are being counted Wednesday; no AP call found yet",
+    "url": "https://abc7ny.com/post/conley-wins-ny-17-bennett-defeats-kean-nj-7/20014683/"
    },
    {
     "key": "ny-01",
@@ -1289,11 +1292,11 @@
     "candidates": "Kennedy (D, inc.) vs Hannon (R)",
     "towns": "North Tonawanda",
     "held_by": "D",
-    "leader": "",
-    "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "leader": "Kennedy (D)",
+    "pct_lead": 31,
+    "status": "Leading",
+    "reporting": "Kennedy 65.4% to 34.4% with about 82% counted (AP count, 11:35 p.m.)",
+    "url": "https://spectrumlocalnews.com/nys/central-ny/news/2026/11/03/several-members-of-congress-secure-reelection-across-new-york"
    },
    {
     "key": "ny-23",
@@ -1313,11 +1316,11 @@
     "candidates": "Morelle (D, inc.) vs McIntyre (R)",
     "towns": "Scottsville",
     "held_by": "D",
-    "leader": "",
-    "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "leader": "Morelle (D)",
+    "pct_lead": 26,
+    "status": "Leading",
+    "reporting": "Morelle 62.9% to 36.9% with about 75% counted (AP count, 11:35 p.m.)",
+    "url": "https://spectrumlocalnews.com/nys/central-ny/news/2026/11/03/several-members-of-congress-secure-reelection-across-new-york"
    },
    {
     "key": "sd-62",
@@ -1337,11 +1340,11 @@
     "candidates": "Helming (R, inc.) vs Mills (D)",
     "towns": "Scottsville",
     "held_by": "R",
-    "leader": "",
+    "leader": "Helming (R)",
     "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "status": "Leading",
+    "reporting": "Leading Tuesday night, not called (13WHAM, 11:18 p.m.)",
+    "url": "https://13wham.com/news/election/election-results-winners-emerge-in-rochester-area-and-new-york-state-races"
    },
    {
     "key": "sd-57",
@@ -1373,11 +1376,11 @@
     "candidates": "Wydysh (R) vs McMurray (D)",
     "towns": "North Tonawanda",
     "held_by": null,
-    "leader": "",
-    "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "leader": "Wydysh (R)",
+    "pct_lead": 8,
+    "status": "Leading",
+    "reporting": "Wydysh at 54% in the unofficial count (WBUF, as of press time)",
+    "url": "https://wbuf.com/ixp/11/p/2025-wny-midterm-election-preliminary-results/"
    },
    {
     "key": "ad-142",
@@ -1397,11 +1400,11 @@
     "candidates": "Hawley (R, inc.) vs Wolcott (D)",
     "towns": "Scottsville",
     "held_by": "R",
-    "leader": "",
+    "leader": "Hawley (R)",
     "pct_lead": null,
-    "status": "Not yet",
-    "reporting": "",
-    "url": ""
+    "status": "Leading",
+    "reporting": "Reported as reelected by 13WHAM Tuesday night; unofficial",
+    "url": "https://13wham.com/news/election/election-results-winners-emerge-in-rochester-area-and-new-york-state-races"
    },
    {
     "key": "ad-150",
@@ -1466,21 +1469,16 @@
   ],
   "next": [
    {
-    "when": "Midnight",
-    "what": "Alaska closes. Its count runs for days; the final tally is Nov. 18.",
-    "at": "2026-11-04T00:00:00-05:00"
+    "when": "Wednesday",
+    "what": "Westchester's delayed ballots are counted, settling the final NY-17 numbers."
    },
    {
-    "when": "Later tonight",
-    "what": "Your towns' congressional, state legislature and county races are counting; county results come in through the night."
-   },
-   {
-    "when": "Days later",
-    "what": "If no one in Maine tops 50%, a ranked-choice count (voters rank the candidates, and last-place votes move to their next choice) runs in Augusta the following week."
+    "when": "Nov. 18",
+    "what": "Alaska's final tally; New York counties begin their official canvass."
    }
   ],
-  "source_note": "Winners are called by the Associated Press and a vote-counting service; seat counts are the AP tally as of 11:35 p.m. (no newer national count could be read after that). Local counts come from the county boards and are unofficial until certified.",
-  "headline": "Democrats hold Minnesota: Peggy Flanagan (D) wins the open seat, putting the AP count at 52. Michigan is the last Senate seat they must hold still counting. The House is at 189 of the 218 needed, with Democrats on pace to win it."
+  "source_note": "Winners are called by the Associated Press and a vote-counting service; seat counts are the AP tally at 12:30 a.m. Local counts are unofficial until certified; Niagara and Chautauqua county races could not be read this morning.",
+  "headline": "Democrats win Maine and Michigan overnight: Troy Jackson (D) unseats Susan Collins (R), and Abdul El-Sayed (D) holds Michigan."
  },
  "glossary": [
   {
