@@ -26,14 +26,13 @@
     },
     {
       "order": 3,
-      "headline": "New York and your towns: polls close at 9",
-      "detail": "The governor's race and every race on your ballot start counting after 9 p.m."
+      "headline": "New York: Hochul re-elected; your towns counting",
+      "detail": "The governor's race is decided; the races on your ballot are still being counted."
     }
   ],
   "what_changed": [
-    "Roy Cooper (D) won North Carolina, flipping a Republican seat.",
-    "Chris Pappas (D) won New Hampshire over John E. Sununu (R), a seat Democrats had to hold.",
-    "Ashley Moody (R) won Florida over Angie Nixon (D)."
+    "Kathy Hochul (D) won re-election as governor over Bruce Blakeman (R).",
+    "James Talarico (D) leads Ken Paxton (R) in Texas's early returns; the race has not been called."
   ],
   "generic_ballot": [
     {
@@ -1004,7 +1003,7 @@
   "statewide_url": "https://theballotbrief.com/zip/14120",
   "mode": "results",
   "results": {
-    "updated": "2026-11-03T20:58:00-05:00",
+    "updated": "2026-11-03T21:22:00-05:00",
     "senate": {
       "dem": 36,
       "rep": 32,
@@ -1048,11 +1047,11 @@
         "race": "Texas Senate",
         "candidates": "Ken Paxton (R) vs James Talarico (D)",
         "held_by": "R",
-        "leader": "",
+        "leader": "James Talarico (D)",
         "pct_lead": null,
-        "status": "Not yet",
-        "reporting": "",
-        "url": ""
+        "status": "Too close",
+        "reporting": "Early returns only; the AP had not called it",
+        "url": "https://www.texastribune.org/2026/11/03/texas-ken-paxton-james-talarico-us-senate-elections-2026/"
       },
       {
         "key": "iowa-senate",
@@ -1277,11 +1276,11 @@
         "race": "New York governor",
         "candidates": "Kathy Hochul (D, inc.) vs Bruce Blakeman (R)",
         "held_by": "D",
-        "leader": "",
+        "leader": "Kathy Hochul (D)",
         "pct_lead": null,
-        "status": "Not yet",
-        "reporting": "",
-        "url": ""
+        "status": "Called",
+        "reporting": "Called by the AP at about 9:00",
+        "url": "https://www.wcax.com/2026/11/04/new-york-gov-hochul-wins-reelection/"
       }
     ],
     "local": [
@@ -1468,18 +1467,17 @@
     ],
     "next": [
       {
-        "when": "9 p.m.",
-        "what": "New York, Minnesota and Iowa, and the rest of Michigan, Texas and Kansas. The governor's race and your towns start counting.",
-        "at": "2026-11-03T21:00:00-05:00"
-      },
-      {
         "when": "Midnight",
         "what": "Alaska closes. Its count runs for days.",
         "at": "2026-11-04T00:00:00-05:00"
+      },
+      {
+        "when": "Later tonight",
+        "what": "Your towns' congressional, state legislature and county races are counting; county results come in through the night."
       }
     ],
     "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. Tonight's live results pages would not load, so calls come from news reports of AP and Decision Desk HQ projections; Ohio's count is from 7:42.",
-    "headline": "Roy Cooper (D) wins North Carolina, the first Senate seat Democrats have flipped tonight; Chris Pappas (D) keeps New Hampshire."
+    "headline": "Kathy Hochul (D) wins a second full term as governor; in the Senate, Democrats have flipped North Carolina and lead early in Ohio and Texas."
   },
   "glossary": [
     {
