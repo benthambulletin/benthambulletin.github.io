@@ -17,12 +17,12 @@
     {
       "order": 1,
       "headline": "Senate: one hold down, no flips yet",
-      "detail": "Georgia stayed Democratic, but the four extra seats Democrats need all have to come from states still counting or not yet closed, so the Senate will not be settled for hours."
+      "detail": "Georgia stayed Democratic; the four extra seats Democrats need all come from states still counting, so the Senate will not be settled for hours."
     },
     {
       "order": 2,
-      "headline": "House: nothing called",
-      "detail": "The first seats that matter, four in Pennsylvania, start counting at 8."
+      "headline": "House: early",
+      "detail": "The four Pennsylvania seats that usually signal where the House is going closed at 8 and are counting now."
     },
     {
       "order": 3,
@@ -30,9 +30,7 @@
       "detail": "The governor's race and every race on your ballot start counting after 9 p.m."
     }
   ],
-  "what_changed": [
-    "Jon Ossoff (D) won re-election in Georgia over Mike Collins (R), a seat Democrats had to keep."
-  ],
+  "what_changed": [],
   "generic_ballot": [
     {
       "tracker": "Silver Bulletin (all polls)",
@@ -1002,17 +1000,17 @@
   "statewide_url": "https://theballotbrief.com/zip/14120",
   "mode": "results",
   "results": {
-    "updated": "2026-11-03T19:55:00-05:00",
+    "updated": "2026-11-03T20:20:00-05:00",
     "senate": {
       "dem": 36,
       "rep": 32,
-      "note": "Includes Georgia, Virginia and West Virginia, called so far",
+      "note": "Includes Georgia, Virginia and West Virginia; last read at 7:55",
       "url": "https://www.newsnationnow.com/politics/2026-midterm-elections/midterm-election-day-2026-live-results/amp/"
     },
     "house": {
       "dem": 0,
       "rep": 0,
-      "note": "No House seats called yet",
+      "note": "No House seats called as of 7:55",
       "url": "https://www.newsnationnow.com/politics/2026-midterm-elections/midterm-election-day-2026-live-results/amp/"
     },
     "races": [
@@ -1121,8 +1119,8 @@
         "leader": "",
         "pct_lead": null,
         "status": "Not yet",
-        "reporting": "",
-        "url": ""
+        "reporting": "Count delayed 45 minutes; no votes posted at 8:15",
+        "url": "https://votes.decisiondeskhq.com/races/2026-11-03/north-carolina-us-senate-general-election/results"
       },
       {
         "key": "georgia-senate",
@@ -1466,11 +1464,6 @@
     ],
     "next": [
       {
-        "when": "8 p.m.",
-        "what": "Pennsylvania and Maine, most of Michigan, Texas and Kansas, and Florida's western panhandle. The four Pennsylvania House seats start counting. North Carolina and Ohio, closed at 7:30, are still counting.",
-        "at": "2026-11-03T20:00:00-05:00"
-      },
-      {
         "when": "9 p.m.",
         "what": "New York, Minnesota and Iowa, and the rest of Michigan, Texas and Kansas. The governor's race and your towns start counting.",
         "at": "2026-11-03T21:00:00-05:00"
@@ -1481,8 +1474,8 @@
         "at": "2026-11-04T00:00:00-05:00"
       }
     ],
-    "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. At 7:55, vote counts for South Carolina, Florida, North Carolina and Ohio could not be read yet, so they show as Not yet.",
-    "headline": "Jon Ossoff (D) keeps Georgia, a seat Democrats had to hold; North Carolina and Ohio are counting, and no seat has flipped yet."
+    "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. At 8:20 the results pages could not be read, so races other than Georgia show as Not yet; North Carolina delayed posting results by 45 minutes after some polling places stayed open late.",
+    "headline": "Jon Ossoff (D) kept Georgia; Pennsylvania, Maine, Texas and Michigan closed at 8, and no seat has flipped yet."
   },
   "glossary": [
     {
