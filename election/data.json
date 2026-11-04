@@ -16,24 +16,21 @@
   "bottom_line": [
     {
       "order": 1,
-      "headline": "Senate: one flip, two holds",
-      "detail": "North Carolina flipped and Georgia and New Hampshire held, so Democrats now need three more Republican seats, from Maine, Ohio, Texas, Iowa, Kansas, Alaska or South Carolina, while also keeping Michigan and Minnesota."
+      "headline": "Senate: one flip in hand, Texas tilting",
+      "detail": "North Carolina flipped and Georgia and New Hampshire held. Democrats need three more Republican seats; Texas has them ahead by about 20 points with about 41% counted, Ohio's early count favors them too, and Maine, Iowa, Kansas, South Carolina and Alaska have little or nothing counted yet. Neither Texas nor Ohio has been called, so nothing is settled."
     },
     {
       "order": 2,
-      "headline": "House: still counting",
-      "detail": "No seat on our list has been called yet."
+      "headline": "House: one flip so far",
+      "detail": "Democrats took a western North Carolina seat; none of the Pennsylvania or New York seats on our list has been called."
     },
     {
       "order": 3,
       "headline": "New York: Hochul re-elected; your towns counting",
-      "detail": "The governor's race is decided; the races on your ballot are still being counted."
+      "detail": "The governor's race is decided; the congressional, state legislature and county races on your ballot are still being counted and nothing local has been called."
     }
   ],
-  "what_changed": [
-    "Sherrod Brown (D) leads Jon Husted (R) in Ohio, about 60% to 37%, but only mail-in ballots have been counted so far.",
-    "Jamie Ager (D) flipped a western North Carolina House seat, the first House seat Democrats have taken from Republicans tonight."
-  ],
+  "what_changed": [],
   "generic_ballot": [
     {
       "tracker": "Silver Bulletin (all polls)",
@@ -1003,7 +1000,7 @@
   "statewide_url": "https://theballotbrief.com/zip/14120",
   "mode": "results",
   "results": {
-    "updated": "2026-11-03T21:48:00-05:00",
+    "updated": "2026-11-03T21:45:00-05:00",
     "senate": {
       "dem": 38,
       "rep": 32,
@@ -1048,10 +1045,10 @@
         "candidates": "Ken Paxton (R) vs James Talarico (D)",
         "held_by": "R",
         "leader": "James Talarico (D)",
-        "pct_lead": null,
-        "status": "Too close",
-        "reporting": "Early returns only; the AP had not called it",
-        "url": "https://www.texastribune.org/2026/11/03/texas-ken-paxton-james-talarico-us-senate-elections-2026/"
+        "pct_lead": 20,
+        "status": "Leading",
+        "reporting": "About 41% counted as of 9:06 p.m.; Talarico about 59% to 39%; not yet called",
+        "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/texas"
       },
       {
         "key": "iowa-senate",
@@ -1468,16 +1465,20 @@
     "next": [
       {
         "when": "Midnight",
-        "what": "Alaska closes. Its count runs for days.",
+        "what": "Alaska closes. Its count runs for days; the final tally is Nov. 18.",
         "at": "2026-11-04T00:00:00-05:00"
       },
       {
         "when": "Later tonight",
         "what": "Your towns' congressional, state legislature and county races are counting; county results come in through the night."
+      },
+      {
+        "when": "Days later",
+        "what": "If no one in Maine tops 50%, a ranked-choice count (voters rank the candidates, and last-place votes move to their next choice) runs in Augusta the following week."
       }
     ],
-    "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. Calls come from news reports of AP and Decision Desk HQ projections; Ohio's count is an early snapshot.",
-    "headline": "Kathy Hochul (D) wins a second full term as governor; in the Senate, Democrats have flipped North Carolina and lead early in Ohio and Texas."
+    "source_note": "Winners are called by Decision Desk HQ, a vote-counting service, and the Associated Press; local counts come from the county boards and are unofficial until certified. At 9:45 p.m. the vote-counting service's pages couldn't be reached, so earlier calls stand as they were; the Texas figure comes from a results feed time-stamped 9:06 p.m. Your towns' races and the county board sites had nothing readable yet.",
+    "headline": "Kathy Hochul (D) wins a second full term as governor; in the Senate, Democrats have flipped North Carolina, James Talarico (D) leads Ken Paxton (R) by about 20 points in Texas with about 41% counted, and Sherrod Brown (D) leads early in Ohio."
   },
   "glossary": [
     {
