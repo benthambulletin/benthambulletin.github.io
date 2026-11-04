@@ -12418,6 +12418,25 @@
           "badges": []
         },
         {
+          "name": "Mrs. Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-04T22:38:15+00:00",
+          "firstAt": "2026-11-04T22:38:15+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Thom",
           "house": false,
           "correct": 0,
@@ -12496,12 +12515,28 @@
           "who": "Devin",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1a8b39e0d37bfa",
+          "at": "2026-11-04T22:35:05Z",
+          "amt": "5.00",
+          "who": "Mrs. Sombloski",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1a8b39e0d37bfa~1",
+          "at": "2026-11-04T22:35:05Z",
+          "amt": "5.00",
+          "who": "Mike Sombloski",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-06T01:15:00Z",
-      "pot": 20.0,
-      "paidN": 4,
+      "pot": 25.0,
+      "paidN": 5,
       "opensAt": "2026-11-03T08:59:51Z",
       "housePicks": {
         "trash": "Eleven right and still third. I'm told this is character-building.",
@@ -12564,9 +12599,9 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Five sheets in, and B-rad wants out of the basement",
-      "column": "Tom is still on his mountain, and now he has company at the base camp. B-rad filed Wednesday morning, fresh off a 7–7 week in the cellar, and Devin followed ten minutes later like she'd been timing him. Leah filed from under her own mugshot, Thom filed before sunrise Tuesday, and that's five sheets.\n\nRyan, Ariel, the Sombloskis, Arod, Walczyk: the Jaguars kick off in Baltimore Thursday night, and that's the deadline. Ryan, nobody wins a crown back from the couch. Questions for the commissioner go on the pick sheet.",
-      "columnN": 5,
+      "columnHead": "Mrs. Sombloski files; Mike still missing",
+      "column": "Six sheets in. Mrs. Sombloski filed Wednesday night, which means the Ariel feud is officially back on the docket, and she brought exactly one sheet. Mike, your seat at the table is getting cold. Tom is still on his mountain, B-rad and Devin filed ten minutes apart like a getaway crew, and Leah filed from under her own mugshot.\n\nRyan, Ariel, Mike, Arod, Walczyk: the Jaguars kick off in Baltimore Thursday night, and that's the deadline. Questions for the commissioner go on the pick sheet.",
+      "columnN": 6,
       "face": {
         "photo": "/pool/faces/w9.jpg",
         "who": "Leah & Luka",
@@ -12576,7 +12611,7 @@
       }
     }
   },
-  "updated": "2026-11-04T22:10:02.525946+00:00",
+  "updated": "2026-11-04T23:08:41.586809+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
