@@ -12471,7 +12471,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -12569,12 +12569,20 @@
           "who": "Mike Sombloski",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1abff43955b931",
+          "at": "2026-11-05T13:56:34Z",
+          "amt": "5.00",
+          "who": "Ryan Holovics",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-06T01:15:00Z",
-      "pot": 30.0,
-      "paidN": 6,
+      "pot": 35.0,
+      "paidN": 7,
       "opensAt": "2026-11-03T08:59:51Z",
       "housePicks": {
         "trash": "Eleven right and still third. I'm told this is character-building.",
@@ -12657,7 +12665,7 @@
       }
     }
   },
-  "updated": "2026-11-05T13:54:05.230568+00:00",
+  "updated": "2026-11-05T14:09:42.701994+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
