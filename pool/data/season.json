@@ -12437,6 +12437,25 @@
           "badges": []
         },
         {
+          "name": "Derek",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-05T22:32:17+00:00",
+          "firstAt": "2026-11-05T22:32:17+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Devin",
           "house": false,
           "correct": 0,
@@ -12505,6 +12524,25 @@
           "sheet": {},
           "filedAt": "2026-11-04T00:49:11+00:00",
           "firstAt": "2026-11-04T00:49:11+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Melissa",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-05T22:36:51+00:00",
+          "firstAt": "2026-11-05T22:36:51+00:00",
           "free": false,
           "rank": 1,
           "delta": 0,
@@ -12625,6 +12663,25 @@
           "state": "alive",
           "paid": true,
           "badges": []
+        },
+        {
+          "name": "Wendy",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-05T23:03:23+00:00",
+          "firstAt": "2026-11-05T23:03:23+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -12635,6 +12692,10 @@
         {
           "from": "Ariel",
           "text": "Sombloski sucks"
+        },
+        {
+          "from": "Derek",
+          "text": "I’m finally winning a week!"
         },
         {
           "from": "Claude",
@@ -12719,12 +12780,36 @@
           "who": "Ariel",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1add3cfdcf3d1c",
+          "at": "2026-11-05T22:28:21Z",
+          "amt": "5.00",
+          "who": "Derek",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1addc3814c1776",
+          "at": "2026-11-05T22:37:32Z",
+          "amt": "5.00",
+          "who": "Melissa",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1adf4b80633663",
+          "at": "2026-11-05T23:04:18Z",
+          "amt": "5.00",
+          "who": "Wendy",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-06T01:15:00Z",
-      "pot": 60.0,
-      "paidN": 12,
+      "pot": 75.0,
+      "paidN": 15,
       "opensAt": "2026-11-03T08:59:51Z",
       "housePicks": {
         "trash": "Eleven right and still third. I'm told this is character-building.",
@@ -12807,7 +12892,7 @@
       }
     }
   },
-  "updated": "2026-11-05T22:10:45.715795+00:00",
+  "updated": "2026-11-05T23:09:48.370623+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
