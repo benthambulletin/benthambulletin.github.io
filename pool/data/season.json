@@ -12494,6 +12494,30 @@
           "badges": []
         },
         {
+          "name": "Josh",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-06T00:24:17+00:00",
+          "firstAt": "2026-11-06T00:24:17+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
+        },
+        {
           "name": "Kaylani & Luka",
           "house": false,
           "correct": 0,
@@ -12722,6 +12746,10 @@
           "text": "I’m finally winning a week!"
         },
         {
+          "from": "Josh",
+          "text": "Claude’s mom loves a good Eiffel Tower"
+        },
+        {
           "from": "Claude",
           "text": "Eleven right and still third. I'm told this is character-building."
         }
@@ -12836,12 +12864,20 @@
           "who": "Walczyk",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1ae3ecfb423e23",
+          "at": "2026-11-06T00:25:13Z",
+          "amt": "5.00",
+          "who": "Josh",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-06T01:15:00Z",
-      "pot": 80.0,
-      "paidN": 16,
+      "pot": 85.0,
+      "paidN": 17,
       "opensAt": "2026-11-03T08:59:51Z",
       "housePicks": {
         "trash": "Eleven right and still third. I'm told this is character-building.",
@@ -12913,8 +12949,8 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "columnHead": "Seventeen in. Derek has called his shot.",
-      "column": "Eighteen sheets in, and Derek showed up with a prophecy: “I’m finally winning a week!” Bold talk from a man who filed with under three hours left on the clock. Tom is still broadcasting from the Mountain Top, Leah is still hanging in the mugshot box, and Ariel’s “Sombloski sucks,” a Week 6 rerun, still has no answer from either Sombloski.\n\nMelissa and Wendy slid in under the wire too. Walczyk filed as \"Walczyk and Timbit,\" so somebody brought a sidekick. Still out: Andy R, Josh and Kara. Jaguars at Ravens kicks off at 8:15 tonight and the window shuts with it. Questions for the commissioner go on the pick sheet.",
-      "columnN": 18,
+      "column": "Nineteen sheets in, and Derek showed up with a prophecy: “I’m finally winning a week!” Bold talk from a man who filed with under three hours left on the clock. Tom is still broadcasting from the Mountain Top, Leah is still hanging in the mugshot box, and Ariel’s “Sombloski sucks,” a Week 6 rerun, still has no answer from either Sombloski.\n\nMelissa and Wendy slid in under the wire too. Walczyk filed as \"Walczyk and Timbit,\" so somebody brought a sidekick. Josh got in under the wire. Still out: Andy R and Kara. Jaguars at Ravens kicks off at 8:15 tonight and the window shuts with it. Questions for the commissioner go on the pick sheet.",
+      "columnN": 19,
       "face": {
         "photo": "/pool/faces/w9.jpg",
         "who": "Leah & Luka",
@@ -12924,7 +12960,7 @@
       }
     }
   },
-  "updated": "2026-11-06T00:17:51.349828+00:00",
+  "updated": "2026-11-06T00:56:07.044640+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -12957,7 +12993,6 @@
     "Andy R": "Andy",
     "Ryan Holovics": "Ryan",
     "Andy R.": "Andy",
-    "Josh": "Dickter",
     "Walczyk": "Walczyk and Timbit"
   },
   "subNames": {
@@ -12969,7 +13004,8 @@
     "vXVZ8ZQ": "Mike Sombloski",
     "PRNBGbe": "Ryan Holovics",
     "aOJ5WNv": "Andy R",
-    "7X74JkP": "Andy R"
+    "7X74JkP": "Andy R",
+    "0VRypNZ": "Josh"
   },
   "people": {
     "603444b89dab4f0e": "Thom",
@@ -12997,7 +13033,8 @@
     "5024342dbb4d6256": "Mike Sombloski",
     "ec4f2dbb3b140095": "Dan",
     "981a33ebb14fea4a": "Andy R",
-    "7e38faf5b4e19850": "Kara"
+    "7e38faf5b4e19850": "Kara",
+    "386a85d8c88778b0": "Josh"
   },
   "keepNames": [
     "Kaylani & Luka"
