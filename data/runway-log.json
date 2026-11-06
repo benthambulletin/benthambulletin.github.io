@@ -5074,7 +5074,7 @@
   "date": "2026-11-06",
   "score": 0,
   "flags": [],
-  "wake_dev_min": -13,
+  "wake_dev_min": 26,
   "bb_high": 89,
   "stress_yday": 28.0
  }
