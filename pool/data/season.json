@@ -12357,7 +12357,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": true,
+          "paid": false,
           "badges": [
             {
               "id": "buzzer",
@@ -12984,8 +12984,8 @@
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Seventeen in. Derek has called his shot.",
-      "column": "Twenty sheets in, and Derek showed up with a prophecy: “I’m finally winning a week!” Bold talk from a man who filed with under three hours left on the clock. Tom is still broadcasting from the Mountain Top, Leah is still hanging in the mugshot box, and Ariel’s “Sombloski sucks,” a Week 6 rerun, still has no answer from either Sombloski.\n\nMelissa and Wendy slid in under the wire too. Walczyk filed as \"Walczyk and Timbit,\" so somebody brought a sidekick. Josh got in under the wire, and Andy R filed at 8:06 with nine minutes to spare. Still out: Kara. Jaguars at Ravens kicks off at 8:15 tonight and the window shuts with it. Questions for the commissioner go on the pick sheet.",
+      "columnHead": "Andy R beats the buzzer by nine minutes",
+      "column": "Twenty sheets in, and Andy R filed at 8:06, nine minutes before kickoff, which in this pool counts as planning ahead. Derek is still calling his shot, Tom is still broadcasting from the Mountain Top, and Ariel’s Sombloski feud is on its second lap with no rebuttal from either Sombloski.\n\nOnly Kara is still out. Jaguars at Ravens kicks off at 8:15 and the window shuts with it. Questions for the commissioner go on the pick sheet.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w9.jpg",
@@ -12996,7 +12996,7 @@
       }
     }
   },
-  "updated": "2026-11-06T01:09:50.411442+00:00",
+  "updated": "2026-11-06T01:10:41.447608+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
