@@ -12127,7 +12127,7 @@
       "rollOut": 0
     },
     "9": {
-      "status": "pre",
+      "status": "live",
       "games": [
         {
           "away": "Jaguars",
@@ -12136,12 +12136,38 @@
           "when": "Thu 8:15 PM",
           "tv": "Prime Video",
           "winner": null,
-          "status": "sealed",
+          "status": "live",
           "fav": "Jaguars",
           "line": "Jaguars −9.5 (Lamar Jackson hurt)",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Jaguars": [
+              "Thom",
+              "Tom",
+              "Leah",
+              "Devin",
+              "Mike Sombloski",
+              "Ryan Holovics",
+              "Garret",
+              "Nate V",
+              "Dan",
+              "Arod",
+              "Kaylani & Luka",
+              "Ariel",
+              "Derek",
+              "Melissa",
+              "Wendy",
+              "Walczyk",
+              "Josh",
+              "Andy R",
+              "Claude"
+            ],
+            "Ravens": [
+              "B-rad",
+              "Mrs. Sombloski"
+            ]
+          }
         },
         {
           "away": "Bengals",
@@ -12350,7 +12376,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-06T01:06:40+00:00",
           "firstAt": "2026-11-06T01:06:40+00:00",
           "free": false,
@@ -12374,7 +12402,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T21:53:47+00:00",
           "firstAt": "2026-11-05T21:53:47+00:00",
           "free": false,
@@ -12393,7 +12423,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T21:39:42+00:00",
           "firstAt": "2026-11-05T21:39:42+00:00",
           "free": false,
@@ -12412,7 +12444,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Ravens"
+          },
           "filedAt": "2026-11-04T15:40:37+00:00",
           "firstAt": "2026-11-04T15:40:37+00:00",
           "free": false,
@@ -12431,7 +12465,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-03T08:59:51+00:00",
           "firstAt": "2026-11-03T08:59:51+00:00",
           "free": false,
@@ -12450,7 +12486,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T21:39:13+00:00",
           "firstAt": "2026-11-05T21:39:13+00:00",
           "free": false,
@@ -12469,7 +12507,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T22:32:17+00:00",
           "firstAt": "2026-11-05T22:32:17+00:00",
           "free": false,
@@ -12488,7 +12528,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-04T15:50:48+00:00",
           "firstAt": "2026-11-04T15:50:48+00:00",
           "free": false,
@@ -12507,7 +12549,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T21:37:39+00:00",
           "firstAt": "2026-11-05T21:37:39+00:00",
           "free": false,
@@ -12526,7 +12570,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-06T00:24:17+00:00",
           "firstAt": "2026-11-06T00:24:17+00:00",
           "free": false,
@@ -12550,7 +12596,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T21:43:26+00:00",
           "firstAt": "2026-11-05T21:43:26+00:00",
           "free": false,
@@ -12569,7 +12617,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-04T00:49:11+00:00",
           "firstAt": "2026-11-04T00:49:11+00:00",
           "free": false,
@@ -12588,7 +12638,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T22:36:51+00:00",
           "firstAt": "2026-11-05T22:36:51+00:00",
           "free": false,
@@ -12607,7 +12659,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T02:09:24+00:00",
           "firstAt": "2026-11-05T02:09:24+00:00",
           "free": false,
@@ -12626,7 +12680,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Ravens"
+          },
           "filedAt": "2026-11-04T22:38:15+00:00",
           "firstAt": "2026-11-04T22:38:15+00:00",
           "free": false,
@@ -12645,7 +12701,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T21:37:55+00:00",
           "firstAt": "2026-11-05T21:37:55+00:00",
           "free": false,
@@ -12664,7 +12722,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T13:35:25+00:00",
           "firstAt": "2026-11-05T13:35:25+00:00",
           "free": false,
@@ -12683,7 +12743,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-03T11:07:58+00:00",
           "firstAt": "2026-11-03T11:07:58+00:00",
           "free": true,
@@ -12702,7 +12764,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-03T23:48:54+00:00",
           "firstAt": "2026-11-03T23:48:54+00:00",
           "free": false,
@@ -12721,7 +12785,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-06T00:16:11+00:00",
           "firstAt": "2026-11-06T00:16:11+00:00",
           "free": false,
@@ -12745,7 +12811,9 @@
           "remaining": 15,
           "max": 15,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Jaguars"
+          },
           "filedAt": "2026-11-05T23:03:23+00:00",
           "firstAt": "2026-11-05T23:03:23+00:00",
           "free": false,
@@ -12969,7 +13037,17 @@
       ],
       "threads": {},
       "stats": {
-        "games": {},
+        "games": {
+          "0": {
+            "away": 18,
+            "home": 2,
+            "minority": "Ravens",
+            "minorityWho": [
+              "B-rad",
+              "Mrs. Sombloski"
+            ]
+          }
+        },
         "upsets": 0,
         "decided": 0,
         "best": null,
@@ -12977,15 +13055,43 @@
         "bills": null,
         "jets": null
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 0,
+          "away": [
+            "Thom",
+            "Tom",
+            "Leah",
+            "Devin",
+            "Mike Sombloski",
+            "Ryan Holovics",
+            "Garret",
+            "Nate V",
+            "Dan",
+            "Arod",
+            "Kaylani & Luka",
+            "Ariel",
+            "Derek",
+            "Melissa",
+            "Wendy",
+            "Walczyk",
+            "Josh",
+            "Andy R"
+          ],
+          "home": [
+            "B-rad",
+            "Mrs. Sombloski"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
       "updates": [],
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
-      "columnHead": "Andy R beats the buzzer by nine minutes",
-      "column": "Twenty sheets in, and Andy R filed at 8:06, nine minutes before kickoff, which in this pool counts as planning ahead. Derek is still calling his shot, Tom is still broadcasting from the Mountain Top, and Ariel’s Sombloski feud is on its second lap with no rebuttal from either Sombloski.\n\nOnly Kara is still out. Jaguars at Ravens kicks off at 8:15 and the window shuts with it. Questions for the commissioner go on the pick sheet.",
+      "columnHead": "Nineteen on Jacksonville, two holding the Ravens",
+      "column": "Jaguars at Ravens is under way, and the room went Jacksonville nineteen to two, Claude included. The only two sheets holding Baltimore without Lamar Jackson: B-rad and Mrs. Sombloski. That puts Mrs. Sombloski on the other side of the breakfast table from Mike, who went with the crowd. If the Ravens pull it off, Ariel's “Sombloski sucks” ages badly by halftime.\n\nDerek says he's finally winning a week. Everyone else needs Jacksonville to cover the 9.5 just to keep pace, and Tom is still up on his Mountain Top. Twenty sheets, and the window's shut on this one.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w9.jpg",
@@ -12996,7 +13102,7 @@
       }
     }
   },
-  "updated": "2026-11-06T01:10:41.447608+00:00",
+  "updated": "2026-11-06T01:16:44.489101+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
