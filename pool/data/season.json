@@ -12342,6 +12342,30 @@
       ],
       "players": [
         {
+          "name": "Andy R",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 15,
+          "max": 15,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-06T01:06:40+00:00",
+          "firstAt": "2026-11-06T01:06:40+00:00",
+          "free": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": [
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
+        },
+        {
           "name": "Ariel",
           "house": false,
           "correct": 0,
@@ -12955,8 +12979,8 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "columnHead": "Seventeen in. Derek has called his shot.",
-      "column": "Nineteen sheets in, and Derek showed up with a prophecy: “I’m finally winning a week!” Bold talk from a man who filed with under three hours left on the clock. Tom is still broadcasting from the Mountain Top, Leah is still hanging in the mugshot box, and Ariel’s “Sombloski sucks,” a Week 6 rerun, still has no answer from either Sombloski.\n\nMelissa and Wendy slid in under the wire too. Walczyk filed as \"Walczyk and Timbit,\" so somebody brought a sidekick. Josh got in under the wire. Still out: Andy R and Kara. Jaguars at Ravens kicks off at 8:15 tonight and the window shuts with it. Questions for the commissioner go on the pick sheet.",
-      "columnN": 19,
+      "column": "Twenty sheets in, and Derek showed up with a prophecy: “I’m finally winning a week!” Bold talk from a man who filed with under three hours left on the clock. Tom is still broadcasting from the Mountain Top, Leah is still hanging in the mugshot box, and Ariel’s “Sombloski sucks,” a Week 6 rerun, still has no answer from either Sombloski.\n\nMelissa and Wendy slid in under the wire too. Walczyk filed as \"Walczyk and Timbit,\" so somebody brought a sidekick. Josh got in under the wire, and Andy R filed at 8:06 with nine minutes to spare. Still out: Kara. Jaguars at Ravens kicks off at 8:15 tonight and the window shuts with it. Questions for the commissioner go on the pick sheet.",
+      "columnN": 20,
       "face": {
         "photo": "/pool/faces/w9.jpg",
         "who": "Leah & Luka",
@@ -12966,7 +12990,7 @@
       }
     }
   },
-  "updated": "2026-11-06T00:57:29.305561+00:00",
+  "updated": "2026-11-06T01:09:17.398199+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -13011,7 +13035,8 @@
     "PRNBGbe": "Ryan Holovics",
     "aOJ5WNv": "Andy R",
     "7X74JkP": "Andy R",
-    "0VRypNZ": "Josh"
+    "0VRypNZ": "Josh",
+    "q517Rzk": "Andy R"
   },
   "people": {
     "603444b89dab4f0e": "Thom",
