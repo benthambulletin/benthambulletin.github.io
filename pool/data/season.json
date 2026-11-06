@@ -12376,7 +12376,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -12762,6 +12762,12 @@
           "status": "manual"
         },
         {
+          "id": "manual-w9-Arod",
+          "amt": "5.00",
+          "who": "Arod",
+          "status": "manual"
+        },
+        {
           "id": "1a1a4089922dc6b6",
           "at": "2026-11-04T00:49:48Z",
           "amt": "5.00",
@@ -12876,8 +12882,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-11-06T01:15:00Z",
-      "pot": 85.0,
-      "paidN": 17,
+      "pot": 90.0,
+      "paidN": 18,
       "opensAt": "2026-11-03T08:59:51Z",
       "housePicks": {
         "trash": "Eleven right and still third. I'm told this is character-building.",
@@ -12960,7 +12966,7 @@
       }
     }
   },
-  "updated": "2026-11-06T00:56:07.044640+00:00",
+  "updated": "2026-11-06T00:57:29.305561+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
