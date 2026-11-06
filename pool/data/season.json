@@ -12821,7 +12821,7 @@
           "firstAt": "2026-11-04T15:40:37+00:00",
           "free": false,
           "rank": 20,
-          "delta": -19,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -12842,7 +12842,7 @@
           "firstAt": "2026-11-04T22:38:15+00:00",
           "free": false,
           "rank": 20,
-          "delta": -19,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -13140,8 +13140,8 @@
       ],
       "decidedAtLastRun": 1,
       "outAtLastRun": [],
-      "columnHead": "Nineteen on Jacksonville, two holding the Ravens",
-      "column": "Jaguars at Ravens is under way, and the room went Jacksonville nineteen to two, Claude included. The only two sheets holding Baltimore without Lamar Jackson: B-rad and Mrs. Sombloski. That puts Mrs. Sombloski on the other side of the breakfast table from Mike, who went with the crowd. If the Ravens pull it off, Ariel's “Sombloski sucks” ages badly by halftime.\n\nDerek says he's finally winning a week. Nineteen of us just need Jacksonville to win, which they're favored by 9.5 to do. Tom is still up on his Mountain Top. Twenty sheets, and the window's shut on this one.",
+      "columnHead": "Jaguars roll, and one Sombloski goes down",
+      "column": "Jaguars 33, Ravens 10, and Baltimore without Lamar looked exactly like Baltimore without Lamar. Nineteen sheets got it right, so the first standings line is a nineteen-way tie at 1–0, Claude wedged in the middle like a cousin at Thanksgiving. Derek's “finally winning a week” is technically true until Sunday morning.\n\nThe 0–1 club: B-rad and Mrs. Sombloski, alone at the bottom with all of Sunday to dig out. Ariel wrote “Sombloski sucks”; one Sombloski obliged. Mike went with the crowd and will be bringing that up at breakfast. Questions for the commissioner go on the pick sheet.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w9.jpg",
@@ -13149,10 +13149,11 @@
         "by": "Tom",
         "week": 8,
         "line": "Leah went 9–5. Luka's here for moral support."
-      }
+      },
+      "thuDone": true
     }
   },
-  "updated": "2026-11-06T04:10:08.490996+00:00",
+  "updated": "2026-11-06T04:34:45.735612+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
