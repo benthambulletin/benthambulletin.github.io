@@ -12167,7 +12167,9 @@
               "B-rad",
               "Mrs. Sombloski"
             ]
-          }
+          },
+          "live": "Jaguars 10–3 · 2nd qtr",
+          "liveAt": "2026-11-06T02:09:27Z"
         },
         {
           "away": "Bengals",
@@ -12385,7 +12387,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": [
             {
               "id": "buzzer",
@@ -13102,7 +13104,7 @@
       }
     }
   },
-  "updated": "2026-11-06T01:16:44.489101+00:00",
+  "updated": "2026-11-06T02:10:53.690630+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
