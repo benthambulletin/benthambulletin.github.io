@@ -12357,7 +12357,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": [
             {
               "id": "buzzer",
@@ -12792,6 +12792,12 @@
           "status": "manual"
         },
         {
+          "id": "manual-w9-andyr",
+          "amt": "5.00",
+          "who": "Andy R",
+          "status": "manual"
+        },
+        {
           "id": "1a1a4089922dc6b6",
           "at": "2026-11-04T00:49:48Z",
           "amt": "5.00",
@@ -12906,8 +12912,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-11-06T01:15:00Z",
-      "pot": 90.0,
-      "paidN": 18,
+      "pot": 95.0,
+      "paidN": 19,
       "opensAt": "2026-11-03T08:59:51Z",
       "housePicks": {
         "trash": "Eleven right and still third. I'm told this is character-building.",
@@ -12990,7 +12996,7 @@
       }
     }
   },
-  "updated": "2026-11-06T01:09:17.398199+00:00",
+  "updated": "2026-11-06T01:09:50.411442+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
