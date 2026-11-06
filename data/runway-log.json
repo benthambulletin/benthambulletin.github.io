@@ -5059,5 +5059,15 @@
   "wake_dev_min": 61,
   "bb_high": 75,
   "stress_yday": 36.0
+ },
+ {
+  "date": "2026-11-05",
+  "score": 1,
+  "flags": [
+   "resting HR up"
+  ],
+  "wake_dev_min": 48,
+  "bb_high": 96,
+  "stress_yday": 27.0
  }
 ]
