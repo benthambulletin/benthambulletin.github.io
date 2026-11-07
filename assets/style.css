@@ -162,6 +162,8 @@ html.big .tools button{font-size:.62rem}
 .arch .no{font-family:'AR';font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
 .arch .c{font-family:'LOI';font-style:italic;color:var(--soft);font-size:.95rem}
 
+.calline{font-family:'AR';font-size:.72rem;letter-spacing:.06em;text-align:center;color:var(--soft);border-bottom:1px solid var(--rule);padding:.45rem .2rem;margin:.2rem 0 .6rem}.calline b{color:var(--red);letter-spacing:.16em;text-transform:uppercase;margin-right:.4rem}
+.colo .ask{font-size:.85em;margin:.4rem 0}
 /* Nov 6 layout pass (Garret: "do them all") */
 .lbl{white-space:nowrap}
 .town .d{font-size:.74rem;line-height:1.25}
