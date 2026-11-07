@@ -172,6 +172,7 @@ html.big .tools button{font-size:.62rem}
 
 .calline{font-family:'AR';font-size:.72rem;letter-spacing:.06em;text-align:center;color:var(--soft);border-bottom:1px solid var(--rule);padding:.45rem .2rem;margin:.2rem 0 .6rem}.calline b{color:var(--red);letter-spacing:.16em;text-transform:uppercase;margin-right:.4rem}
 .colo .ask{font-size:.85em;margin:.4rem 0}
+.tools.under{justify-content:center;margin:.6rem 0 .2rem}
 /* Nov 6: highlight the reader tools for a week (toned down) */
 .tools.promo{flex-direction:column;align-items:flex-end;gap:.3rem;margin:0 0 .7rem}
 .tools.promo .pr{display:flex;gap:.5rem}
@@ -293,6 +294,16 @@ def promo_tools(t):
             '<div class="home">Add it to your home screen: Share &rarr; Add to Home Screen.</div></div>')
 
 
+def place_tools(body, t):
+    """Garret, Nov 6: the reader buttons sit centered under the masthead, after the dateline/place line."""
+    t = t.replace('<div class="tools">', '<div class="tools under">')
+    i = body.find('<div class="place">')
+    if i >= 0:
+        j = body.find('</div>', i) + len('</div>')
+        return body[:j] + '\n' + t + body[j:]
+    return t + body
+
+
 def shell(title, body, og_image=None, desc="A daily almanac for the family", tools=False, audio=None, date=None):
     CSSV = hashlib.md5(CSS.encode()).hexdigest()[:8]
     og = f'<meta property="og:image" content="https://benthambulletin.github.io{og_image}">' if og_image else ''
@@ -307,7 +318,7 @@ def shell(title, body, og_image=None, desc="A daily almanac for the family", too
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Bulletin"><meta name="theme-color" content="#24170c"></head><body><div class="page">
-{((lambda t: promo_tools(t) if (date and date <= PROMO_UNTIL) else t)(TOOLS.replace('id="bb-read"', f'id="bb-read" data-audio="{audio}"') if audio else TOOLS)) if tools else ""}{body}
+{place_tools(body, (TOOLS.replace('id="bb-read"', f'id="bb-read" data-audio="{audio}"') if audio else TOOLS)) if tools else body}
 </div>{TOOLS_JS if tools else ""}</body></html>"""
 
 SHORT = {'Family Today': 'Family', 'The Weather Glass': 'Weather', 'The Almanac Sky': 'Sky', 'The Ledger': 'Ledger',
