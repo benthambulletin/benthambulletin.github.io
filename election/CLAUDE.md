@@ -1,3 +1,7 @@
+# CLOSED (Nov 6, 2026)
+
+Garret pulled the election tracker after the 2026 midterms. The page is a closed notice; data.json was removed (it remains in git history). Do not rebuild or refresh it.
+
 # The Ballot — /election/ refresh rules
 
 `/election/` is a public tracker Garret shares by link: https://benthambulletin.github.io/election/. It is a standalone page: no mention of The Bentham Bulletin, the paper, or any link back to the home page anywhere on it (Garret, Oct 14). It only happens to live in this repo. One job: every morning through Nov 4, 2026, bring `election/data.json` up to date and rebuild.
