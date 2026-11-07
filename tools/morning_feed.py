@@ -47,8 +47,8 @@ FEEDS = {
         "Deadline": "https://deadline.com/feed/",
         "Billboard": "https://www.billboard.com/feed/",
         "Hollywood Reporter": "https://www.hollywoodreporter.com/feed/",
-        "People": "https://people.com/feed/",
-        "Entertainment Weekly": "https://ew.com/feed/",
+        "Us Weekly": "https://www.usmagazine.com/feed/",
+        "Page Six": "https://pagesix.com/feed/",
         "E! News": "https://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml",
         "Rolling Stone": "https://www.rollingstone.com/feed/",
         "TVLine": "https://tvline.com/feed/",
@@ -57,16 +57,27 @@ FEEDS = {
     "sports": {
         "Buffalo Rumblings": "https://www.buffalorumblings.com/rss/index.xml",
         "Gang Green Nation": "https://www.ganggreennation.com/rss/index.xml",
-        "ESPN NFL": "https://www.espn.com/espn/rss/nfl/news",
+        "ProFootballTalk": "https://www.nbcsports.com/profootballtalk.rss",
         "WGRZ Sports": "https://www.wgrz.com/feeds/syndication/rss/sports",
     },
 }
 
 
-def get(url, timeout=30):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+def get(url, timeout=30, tries=3):
+    import time, urllib.error
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 503) and i < tries - 1:
+                time.sleep(20 * (i + 1)); continue
+            raise
+        except OSError:
+            if i < tries - 1:
+                time.sleep(5); continue
+            raise
 
 
 def forecasts():
