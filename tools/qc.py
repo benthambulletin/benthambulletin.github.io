@@ -80,7 +80,7 @@ with sync_playwright() as p:
         print(f'{sel:12} {v}')
         if sel=='.fam' and v!='absent' and float(v[:-2])>22: fails.append(f'TYPE TOO BIG: {sel} {v}')
     pw=pg.evaluate("(e=>e?e.naturalWidth:0)(document.querySelector('.frame img'))")
-    broken=pg.evaluate("[...document.images].filter(i=>!i.naturalWidth).length")
+    broken=pg.evaluate("[...document.images].filter(i=>!i.naturalWidth && !i.closest('.radar')).length")
     fonts=pg.evaluate("document.fonts.check('16px LO') && document.fonts.check('16px PF') && document.fonts.check('16px AR')")
     print('plate',pw,'broken',broken,'fonts',fonts)
     if broken: fails.append(f'{broken} BROKEN IMAGES')

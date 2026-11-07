@@ -180,6 +180,15 @@ html.big .tools button{font-size:.62rem}
 .tools.promo .pt{font-family:'LOI';font-style:italic;font-size:.85rem;color:var(--soft);text-align:center;line-height:1.35}
 @keyframes bbpulse{0%,100%{box-shadow:0 0 0 0 rgba(15,110,110,0)}50%{box-shadow:0 0 0 6px rgba(15,110,110,.18)}}
 html.big .tools.promo button{font-size:.85rem}
+/* Nov 6: riddle reveal, radar */
+.reveal{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper);background:var(--teal);border:0;padding:.5rem .8rem;margin-top:.5rem;cursor:pointer}
+.qans[hidden]{display:none}
+.qans{display:block;font-family:'PF';font-style:italic;font-size:1.25rem;color:var(--red);margin-top:.5rem}
+.radar{margin:.6rem 0;border:1px solid var(--rule)}
+.radar summary{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);padding:.55rem .7rem;cursor:pointer}
+.radar img{display:block;width:100%;height:auto}
+.radar .rc{font-family:'LOI';font-style:italic;font-size:.75rem;color:var(--soft);padding:.3rem .6rem .5rem}
+.tools.promo .home{font-family:'AR';font-size:.68rem;letter-spacing:.06em;color:var(--teal);text-align:center}
 /* Nov 6 layout pass (Garret: "do them all") */
 .lbl{white-space:nowrap}
 .town .d{font-size:.74rem;line-height:1.25}
@@ -284,7 +293,8 @@ def promo_tools(t):
     return ('<div class="tools promo"><div class="ph">New: two buttons to make the paper easier</div>'
             '<div class="pr">' + btns + '</div>'
             '<div class="pt">&#128264; <b>Read it to me</b> plays the whole paper out loud. '
-            'A+ <b>Bigger print</b> makes the type larger, and your phone remembers it.</div></div>')
+            'A+ <b>Bigger print</b> makes the type larger, and your phone remembers it.</div>'
+            '<div class="home">Make it an app: on iPhone tap Share &rarr; Add to Home Screen; on Android tap &#8942; &rarr; Add to Home screen.</div></div>')
 
 
 def shell(title, body, og_image=None, desc="A daily almanac for the family", tools=False, audio=None, date=None):
@@ -296,7 +306,11 @@ def shell(title, body, og_image=None, desc="A daily almanac for the family", too
 <meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">{og}
 <meta property="og:type" content="article">
 <link rel="stylesheet" href="/assets/style.css?v={CSSV}">
-<link rel="icon" href="/assets/favicon.svg"></head><body><div class="page">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bulletin"><meta name="theme-color" content="#24170c"></head><body><div class="page">
 {((lambda t: promo_tools(t) if (date and date <= PROMO_UNTIL) else t)(TOOLS.replace('id="bb-read"', f'id="bb-read" data-audio="{audio}"') if audio else TOOLS)) if tools else ""}{body}
 </div>{TOOLS_JS if tools else ""}</body></html>"""
 
@@ -304,6 +318,23 @@ SHORT = {'Family Today': 'Family', 'The Weather Glass': 'Weather', 'The Almanac 
          'The National Wire': 'Nation', 'The Home Wire': 'Home', 'The Marquee': 'Marquee', 'The Gridiron': 'Gridiron',
          'The Chase': 'Chase', 'On This Day': 'On This Day', 'Question of the Day': 'Riddle', 'The Sunday Spotlight': 'Spotlight',
          'The Week Ahead': 'Week Ahead', 'The Sunday Question': 'Sunday Q'}
+
+
+def riddle_reveal(body):
+    """Nov 6: the riddle answer hides behind a tap instead of sitting below the fold."""
+    import re as _re
+    m = _re.search(r'<b>Question of the Day:</b>\s*(.*?)</', body)
+    q = body.find('<div class="qotd">')
+    if not m or q < 0 or 'class="reveal"' in body:
+        return body
+    ans = m.group(1).strip()
+    end = body.find('</div>', q)
+    block = body[q:end]
+    block2 = _re.sub(r'\s*<i>Answer below the fold\.</i>', '', block)
+    btn = ('<br><button type="button" class="reveal" onclick="this.style.display=\'none\';this.nextElementSibling.hidden=false">'
+           'Tap for the answer</button><span class="qans" hidden>' + ans + '</span>')
+    body = body[:q] + block2 + btn + body[end:]
+    return _re.sub(r'<div class="s" style="margin-bottom:8px"><b>Question of the Day:</b>.*?</div>\n?', '', body, count=1)
 
 
 def inside_today(body):
@@ -370,7 +401,7 @@ def build(edition):
     nav += '<a href="/album/">Album</a><a href="/archive/">Archive</a>'
     nav += f'<a href="/{newer["slug"]}/">{dname(newer)} &rarr;</a>' if newer else '<a href="/">Today</a>'
     nav += '</div>'
-    edition = dict(edition); edition['body_html'] = inside_today(edition['body_html'])
+    edition = dict(edition); edition['body_html'] = riddle_reveal(inside_today(edition['body_html']))
     if edition.get('plate_path'):
         pv = hashlib.md5(open(edition['plate_path'],'rb').read()).hexdigest()[:8]
         body = edition['body_html'].replace('__PLATE__', plate_rel+'?v='+pv) + nav

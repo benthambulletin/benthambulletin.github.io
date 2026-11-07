@@ -172,6 +172,15 @@ html.big .tools button{font-size:.62rem}
 .tools.promo .pt{font-family:'LOI';font-style:italic;font-size:.85rem;color:var(--soft);text-align:center;line-height:1.35}
 @keyframes bbpulse{0%,100%{box-shadow:0 0 0 0 rgba(15,110,110,0)}50%{box-shadow:0 0 0 6px rgba(15,110,110,.18)}}
 html.big .tools.promo button{font-size:.85rem}
+/* Nov 6: riddle reveal, radar */
+.reveal{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper);background:var(--teal);border:0;padding:.5rem .8rem;margin-top:.5rem;cursor:pointer}
+.qans[hidden]{display:none}
+.qans{display:block;font-family:'PF';font-style:italic;font-size:1.25rem;color:var(--red);margin-top:.5rem}
+.radar{margin:.6rem 0;border:1px solid var(--rule)}
+.radar summary{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);padding:.55rem .7rem;cursor:pointer}
+.radar img{display:block;width:100%;height:auto}
+.radar .rc{font-family:'LOI';font-style:italic;font-size:.75rem;color:var(--soft);padding:.3rem .6rem .5rem}
+.tools.promo .home{font-family:'AR';font-size:.68rem;letter-spacing:.06em;color:var(--teal);text-align:center}
 /* Nov 6 layout pass (Garret: "do them all") */
 .lbl{white-space:nowrap}
 .town .d{font-size:.74rem;line-height:1.25}
