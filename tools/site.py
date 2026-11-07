@@ -327,6 +327,26 @@ SHORT = {'Family Today': 'Family', 'The Weather Glass': 'Weather', 'The Almanac 
          'The Week Ahead': 'Week Ahead', 'The Sunday Question': 'Sunday Q'}
 
 
+RADAR = ('<div class="radar"><img loading="lazy" src="https://radar.weather.gov/ridge/standard/KBUF_loop.gif" '
+         'alt="National Weather Service radar loop for Buffalo"><div class="rc">Live radar: National Weather Service, Buffalo, the last hour in motion.</div></div>\n')
+
+
+def add_radar(body):
+    """Garret, Nov 6: the radar runs every day, always open, right under the five-day strip."""
+    import re as _re
+    body = _re.sub(r'<details class="radar">.*?</details>\n?', '', body, flags=_re.S)
+    if 'class="radar"' in body:
+        return body
+    i = body.find('<div class="strip5">')
+    if i < 0:
+        return body
+    j = body.find('</div>\n</div>', i)
+    if j < 0:
+        return body
+    j += len('</div>\n</div>\n')
+    return body[:j] + RADAR + body[j:]
+
+
 def riddle_reveal(body):
     """Nov 6: the riddle answer hides behind a tap instead of sitting below the fold."""
     import re as _re
@@ -408,7 +428,7 @@ def build(edition):
     nav += '<a href="/album/">Album</a><a href="/archive/">Archive</a>'
     nav += f'<a href="/{newer["slug"]}/">{dname(newer)} &rarr;</a>' if newer else '<a href="/">Today</a>'
     nav += '</div>'
-    edition = dict(edition); edition['body_html'] = riddle_reveal(inside_today(edition['body_html']))
+    edition = dict(edition); edition['body_html'] = add_radar(riddle_reveal(inside_today(edition['body_html'])))
     if edition.get('plate_path'):
         pv = hashlib.md5(open(edition['plate_path'],'rb').read()).hexdigest()[:8]
         body = edition['body_html'].replace('__PLATE__', plate_rel+'?v='+pv) + nav
