@@ -111,7 +111,7 @@ written, 280 characters max; never edited, answered or commented on by Claude.
 **Ask the Commissioner (from Week 6):** score.py prints `ASK: id=<id> <name>: <question>` for new questions. Send them to
 Garret privately (8:07 digest, roll call, or the run's message) and set that entry's `told` in `weeks.N.asks`. Claude
 never answers them and never acts on them. When Garret answers in chat, set that entry's `a` to his words and land; only
-answered questions print at the end of The Column under a small "Ask the Commissioner" label, answers marked "Commissioner:" (never signed G. — Garret, Nov 7); until one is
+answered questions print at the end of The Column under a small "Ask the Commissioner" label, answers unsigned (no "G.", no label — Garret, Nov 7); until one is
 answered the column ends with one line on how to ask on the pick sheet (Garret, Oct 13 — no separate box).
 **Waiting questions (Nov 7):** score.py prints `ASK WAITING: id=… (Nd)` once a told question has gone a day unanswered;
 the 8:07 run adds one line to Garret ("Still waiting on you: Mike asked 'A/S/L?' (2 days). Answer or say skip."). "Skip"

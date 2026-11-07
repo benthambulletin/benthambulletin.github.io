@@ -711,7 +711,7 @@ if(D.column||QA.length){
   h+='<a id="column"></a>'+orn("The Column")+'<div class="col">'+(D.columnHead?'<div class="colhd">'+esc(D.columnHead)+'</div>':'');
   (D.column||'').split(/\n\n+/).filter(Boolean).slice(0,2).forEach(function(p){h+='<p>'+esc(p)+'</p>';});
   /* Ask the Commissioner: Garret's answers close the column; until then one line on how to ask (Oct 13) */
-  if(QA.length) h+='<div class="aqa"><div class="aqk">Ask the Commissioner</div>'+QA.map(function(x){return '<p class="q">“'+esc(x.q)+'” — '+DN(x.from)+'</p><p class="a"><b>Commissioner:</b> '+esc(x.a)+RL('ask:'+x.id)+'</p>'+THR('ask:'+x.id);}).join('')+'</div>';
+  if(QA.length) h+='<div class="aqa"><div class="aqk">Ask the Commissioner</div>'+QA.map(function(x){return '<p class="q">“'+esc(x.q)+'” — '+DN(x.from)+'</p><p class="a">'+esc(x.a)+RL('ask:'+x.id)+'</p>'+THR('ask:'+x.id);}).join('')+'</div>';
   else if(D.bot&&!D.archive) h+='<p class="aqh">Got a question or an appeal for the commissioner? Ask it in the last box on your <a href="'+esc(D.formUrl)+'">pick sheet</a>.</p>';
   h+='</div>';
 }
