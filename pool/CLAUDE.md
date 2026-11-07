@@ -220,6 +220,16 @@ CHECK means it was a guess (shared nickname or a name collision). Full names nev
 **Bot weeks (from Week 6, `weeks.N.bot`):** every new week makes Claude's real picks — for every game read the current line, injuries and
 form (two sources), never random — written as `housePicks = {"trash": <one dry line>, "picks": {"<i>": team}, "why":
 {"<i>": <one line, 12 words max>}, "lock": <i of the game Claude is surest of>, "lockWhy": <one line>}` (no `tb`) — the picks stay sealed until each kickoff (Lock of the Week excepted), and sets `bot = true`, `botPaid = true` and `rollIn` = last week's `rollOut`.
+**Lock of the Week = the best game on the slate, researched (Garret, Nov 7, after the Lock went 1–2 on "biggest spread"):**
+never pick it by the biggest number alone. For every game, gather: the moneyline win probability from at least two
+books (no-vig) plus the `win_probability` from the sports data tool; the injury report for both teams (starting QB,
+key linemen, top receivers, edge rushers — "questionable" counts as a risk); rest and travel (short week, coming off
+overtime or a road trip, across-country body clock, bye advantage); whether it's a division game (familiar opponents
+upset more — needs a clearly bigger edge to qualify); recent form (last three games, point differential, QB play);
+weather for outdoor games; and any lookahead/letdown spot. The Lock is the game where all of it points the same way
+with the fewest risks — usually a big favorite, but not automatically the biggest. Write `lockWhy` from the real
+reasons (one line: the edge plus the risk you checked, e.g. "Bills at home, rested, Vikings' QB out; no weather, not a
+division game"). Re-check it before the run lands; once shown it never changes.
 **Claude can win, free (Garret, Oct 12 — replaces "Garret pays Claude's $5"):** nobody pays for Claude and it adds nothing
 to the pot (`botPaid` now just means "eligible"; score.py leaves it out of paidN and the pot). Claude ranks and can win like a paid sheet, with no ✓. Whatever Claude wins (`rollOut`, printed as `ROLLOVER:`) is never paid out — it rolls
 into next week's pot (`rollIn`), and keeps rolling if Claude wins again. A tie with a human splits: the human is paid
