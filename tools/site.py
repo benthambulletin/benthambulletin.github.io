@@ -172,14 +172,11 @@ html.big .tools button{font-size:.62rem}
 
 .calline{font-family:'AR';font-size:.72rem;letter-spacing:.06em;text-align:center;color:var(--soft);border-bottom:1px solid var(--rule);padding:.45rem .2rem;margin:.2rem 0 .6rem}.calline b{color:var(--red);letter-spacing:.16em;text-transform:uppercase;margin-right:.4rem}
 .colo .ask{font-size:.85em;margin:.4rem 0}
-/* Nov 6: highlight the reader tools for a week */
-.tools.promo{flex-direction:column;align-items:stretch;gap:.45rem;border:2px solid var(--teal);background:#fffaf0;padding:.75rem .8rem .8rem;margin:0 0 1rem}
-.tools.promo .ph{font-family:'AR';font-weight:800;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);text-align:center}
-.tools.promo .pr{display:flex;gap:.6rem}
-.tools.promo button{flex:1;font-size:.95rem;padding:.75rem .5rem;border-width:2px;animation:bbpulse 2.4s ease-in-out 3}
-.tools.promo .pt{font-family:'LOI';font-style:italic;font-size:.85rem;color:var(--soft);text-align:center;line-height:1.35}
-@keyframes bbpulse{0%,100%{box-shadow:0 0 0 0 rgba(15,110,110,0)}50%{box-shadow:0 0 0 6px rgba(15,110,110,.18)}}
-html.big .tools.promo button{font-size:.85rem}
+/* Nov 6: highlight the reader tools for a week (toned down) */
+.tools.promo{flex-direction:column;align-items:flex-end;gap:.3rem;margin:0 0 .7rem}
+.tools.promo .pr{display:flex;gap:.5rem}
+.tools.promo .ph{display:none}
+.tools.promo .pt,.tools.promo .home{font-family:'LOI';font-style:italic;font-size:.74rem;color:var(--soft);text-align:right;line-height:1.3}
 /* Nov 6: riddle reveal, radar */
 .reveal{font-family:'AR';font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper);background:var(--teal);border:0;padding:.5rem .8rem;margin-top:.5rem;cursor:pointer}
 .qans[hidden]{display:none}
@@ -292,9 +289,8 @@ def promo_tools(t):
     btns = t[t.index('<button'):t.rindex('</button>') + len('</button>')]
     return ('<div class="tools promo"><div class="ph">New: two buttons to make the paper easier</div>'
             '<div class="pr">' + btns + '</div>'
-            '<div class="pt">&#128264; <b>Read it to me</b> plays the whole paper out loud. '
-            'A+ <b>Bigger print</b> makes the type larger, and your phone remembers it.</div>'
-            '<div class="home">Make it an app: on iPhone tap Share &rarr; Add to Home Screen; on Android tap &#8942; &rarr; Add to Home screen.</div></div>')
+            '<div class="pt">New: hear the paper read aloud, or make the print bigger.</div>'
+            '<div class="home">Add it to your home screen: Share &rarr; Add to Home Screen.</div></div>')
 
 
 def shell(title, body, og_image=None, desc="A daily almanac for the family", tools=False, audio=None, date=None):
