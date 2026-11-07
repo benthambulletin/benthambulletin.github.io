@@ -1,0 +1,47 @@
+name: Fetch public image
+
+# Downloads a public, credited image (e.g. NOAA / Wikimedia Commons) into
+# spool/incoming/ so the build session can crop it for the cover. Not for family
+# photos: those go through photos.yml, encrypted.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Image URL'
+        required: true
+      name:
+        description: 'File name to save as (e.g. lake-effect.jpg)'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pressure-log
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        env:
+          URL: ${{ inputs.url }}
+          NAME: ${{ inputs.name }}
+        run: |
+          case "$NAME" in */*|..*) echo "bad name"; exit 1;; esac
+          mkdir -p spool/incoming
+          curl -fsSL -A "BenthamBulletin/1.0 (family newspaper build)" -o "spool/incoming/$NAME" "$URL"
+          file "spool/incoming/$NAME"
+      - name: Commit
+        run: |
+          git config user.name "Fetch image"
+          git config user.email "noreply@anthropic.com"
+          git add spool/incoming
+          git commit -m "Fetched image: ${{ inputs.name }}"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 15
+          done
+          exit 1
