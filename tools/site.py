@@ -169,6 +169,25 @@ html.big .tools button{font-size:.62rem}
 .arch .d{font-family:'PF';font-weight:700;font-size:1.1rem}
 .arch .no{font-family:'AR';font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
 .arch .c{font-family:'LOI';font-style:italic;color:var(--soft);font-size:.95rem}
+
+/* Nov 6 layout pass (Garret: "do them all") */
+.lbl{white-space:nowrap}
+.town .d{font-size:.74rem;line-height:1.25}
+.sky svg{border-radius:50%;box-shadow:0 0 0 2px var(--ink)}
+.sky svg circle:first-of-type{fill:#5a4d3b}
+.touch-head{font-family:'AR';font-weight:800;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);text-align:center;margin:.1rem 0 .6rem}
+.inside{display:flex;flex-wrap:wrap;justify-content:center;gap:.2rem .9rem;font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:.5rem .2rem;margin:.9rem 0 .2rem}
+.inside span{color:var(--gold);letter-spacing:.2em}
+.inside a{color:var(--ink);text-decoration:none;white-space:nowrap}
+.inside a:hover{color:var(--red)}
+.sec{scroll-margin-top:1rem}
+.wire.lead{display:block;border-bottom:2px solid var(--ink);padding:.3rem 0 .9rem;margin-bottom:.4rem}
+.wire.lead .num{display:none}
+.wire.lead .kick{display:block;font-family:'AR';font-weight:800;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:.25rem}
+.wire.lead h3{font-size:1.85rem;line-height:1.12;margin-bottom:.45rem}
+.wire.lead p{font-size:1.04em;margin-bottom:.5rem}
+.wire.lead p:first-of-type::first-letter{float:left;font-family:'PF';font-weight:800;font-size:3.3em;line-height:.8;padding:.08em .1em 0 0;color:var(--red)}
+.pull{font-family:'PF';font-style:italic;font-size:1.25rem;line-height:1.3;text-align:center;color:var(--red);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:.6rem .4rem;margin:.6rem 1rem}
 """
 
 import hashlib
@@ -259,6 +278,45 @@ def shell(title, body, og_image=None, desc="A daily almanac for the family", too
 {(TOOLS.replace('id="bb-read"', f'id="bb-read" data-audio="{audio}"') if audio else TOOLS) if tools else ""}{body}
 </div>{TOOLS_JS if tools else ""}</body></html>"""
 
+SHORT = {'Family Today': 'Family', 'The Weather Glass': 'Weather', 'The Almanac Sky': 'Sky', 'The Ledger': 'Ledger',
+         'The National Wire': 'Nation', 'The Home Wire': 'Home', 'The Marquee': 'Marquee', 'The Gridiron': 'Gridiron',
+         'The Chase': 'Chase', 'On This Day': 'On This Day', 'Question of the Day': 'Riddle', 'The Sunday Spotlight': 'Spotlight',
+         'The Week Ahead': 'Week Ahead', 'The Sunday Question': 'Sunday Q'}
+
+
+def inside_today(body):
+    """Nov 6: give each section head an id and put an 'Inside today' jump strip under the cover."""
+    import re as _re
+    if 'class="inside"' in body:
+        return body
+    links = []
+    def tag(m):
+        name = _re.sub(r'<[^>]+>', '', m.group(2)).replace('&middot;', '·').strip()
+        name = _re.sub(r'^[^A-Za-z]+|[^A-Za-z]+$', '', _re.sub(r'&#?\w+;', '', name)).strip()
+        sid = 's-' + _re.sub(r'[^a-z]+', '-', name.lower()).strip('-')
+        short = next((v for k, v in SHORT.items() if name.startswith(k)), None)
+        if short and sid not in [l[0] for l in links]:
+            links.append((sid, short))
+        return f'<h2 class="sec" id="{sid}">{m.group(2)}</h2>'
+    body = _re.sub(r'<h2 class="sec"( id="[^"]*")?>(.*?)</h2>', tag, body)
+    if len(links) < 4:
+        return body
+    strip = '<nav class="inside" aria-label="Inside today"><span>Inside</span>' + ''.join(f'<a href="#{a}">{b}</a>' for a, b in links) + '</nav>\n'
+    i = body.find('<div class="plate-wrap">')
+    if i >= 0:
+        j = body.find('<div class="plate-sub">', i); j = body.find('</div></div>', j)
+        if j > 0:
+            j += len('</div></div>')
+            return body[:j] + '\n' + strip + body[j:]
+    i = body.find('<div class="tiles">')
+    if i >= 0:
+        j = body.find('</div>\n</div>', i)
+        if j > 0:
+            j += len('</div>\n</div>')
+            return body[:j] + '\n' + strip + body[j:]
+    return body
+
+
 def build(edition):
     """edition: dict with keys date (YYYY-MM-DD), no, body_html (the paper from kicker to colophon,
     with <img src="__PLATE__">), plate_path (jpg on disk), plate_caption, headline."""
@@ -285,10 +343,12 @@ def build(edition):
     newer = issues[idx-1] if idx>0 else None
     older = issues[idx+1] if idx+1 < len(issues) else None
     nav = '<div class="nav">'
-    nav += f'<a href="/{older["slug"]}/">&larr; {older["date"]}</a>' if older else '<span></span>'
+    dname = lambda i: datetime.date.fromisoformat(i["date"]).strftime('%A')
+    nav += f'<a href="/{older["slug"]}/">&larr; {dname(older)}</a>' if older else '<span></span>'
     nav += '<a href="/album/">Album</a><a href="/archive/">Archive</a>'
-    nav += f'<a href="/{newer["slug"]}/">{newer["date"]} &rarr;</a>' if newer else '<a href="/">Today</a>'
+    nav += f'<a href="/{newer["slug"]}/">{dname(newer)} &rarr;</a>' if newer else '<a href="/">Today</a>'
     nav += '</div>'
+    edition = dict(edition); edition['body_html'] = inside_today(edition['body_html'])
     if edition.get('plate_path'):
         pv = hashlib.md5(open(edition['plate_path'],'rb').read()).hexdigest()[:8]
         body = edition['body_html'].replace('__PLATE__', plate_rel+'?v='+pv) + nav
