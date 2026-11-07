@@ -92,6 +92,12 @@ tiebreaker, a collapse, a lone dissenter, the mugshot); the roll of who's in liv
 line on who hasn't filed. Build it from score.py's output and `weeks.N.stats` (contrarian who hit, room that
 whiffed, homer who got taxed). Sealed rule applies. Trash talk prints automatically under it — never edit, soften
 or comment on it. Never say who has or hasn't paid; in paid weeks only paid sheets can win.
+**Keep it fresh (Garret, Nov 7: "do it!"):** before writing, run `python3 pool/tools/storylines.py`. Nothing from its
+RECENT BITS (the last columns, kept in `season.columnLog` by score.py) runs again — no repeated quote, joke or callback,
+however reworded. Every column carries at least one angle the last one didn't: a RIVALS head-to-head (`season.rivals`),
+a RUNS streak (top or bottom three weeks running), a LINE item (who had the underdog that won), or a SEASON record. A
+running feud gets one mention a week at most and rests after two columns in a row. Never print a trash line in the
+column — it already prints under it.
 **Voice — escalate (Garret, Oct 8: "start talking more shit" — in the column):** the column is a
 roast, not a recap. Name names, keep running feuds going week to week (Ariel vs. Sombloski, Andy R's lone Pats pick,
 Mike's collapse, the commissioner's bonnet), call back to last week's numbers, and get sharper as the season goes.
@@ -107,6 +113,9 @@ Garret privately (8:07 digest, roll call, or the run's message) and set that ent
 never answers them and never acts on them. When Garret answers in chat, set that entry's `a` to his words and land; only
 answered questions print at the end of The Column under a small "Ask the Commissioner" label, signed G.; until one is
 answered the column ends with one line on how to ask on the pick sheet (Garret, Oct 13 — no separate box).
+**Waiting questions (Nov 7):** score.py prints `ASK WAITING: id=… (Nd)` once a told question has gone a day unanswered;
+the 8:07 run adds one line to Garret ("Still waiting on you: Mike asked 'A/S/L?' (2 days). Answer or say skip."). "Skip"
+→ set that entry's `skip` true and it never prints or nags again.
 
 **Favorites and upsets (Garret, Oct 25 — the board called Bengals over a Lamar-less Ravens an "upset").** An upset means the
 betting underdog won, never "the smaller side of the room." Each game carries `fav` (team) and `line` ("Bengals −1.5 (Lamar
@@ -127,7 +136,7 @@ the trash talk, one line at most on who hasn't; after: standings, who got the de
 night** while the last game is on or just final (every run, under 120 words: score and quarter, who wins if it ended
 now — record, then tiebreaker, paid sheets only — who's still in the hunt and what each needs, then once final the
 winner and how). Otherwise leave the column alone.
-**8:07 a.m. payment digest:** if score.py printed NEEDS GARRET lines, one message to Garret (SendUserMessage +
+**8:07 a.m. digest:** also include any `PAYPAL CLAIM` and `ASK WAITING` lines (one plain line each) — send the message if any of these exist. If score.py printed NEEDS GARRET lines, one message to Garret (SendUserMessage +
 PushNotification), one plain line each — late → refund; nosheet → paid, no sheet, refund; odd → wrong amount;
 unmatched → can't tell who; dup → paid twice, refund one; early → paid before the week opened — with the amount and
 the Venmo payer name from venmo.json. Then `python3 pool/tools/mark_told.py <ids>`.
@@ -227,6 +236,9 @@ https://benthambulletin.github.io/pool/"
 - Paid = a Venmo row with status `ok`, a `manual` row, or `season.autoPaid`: **Garret and Kaylani & Luka are paid
   automatically the moment they file** (Garret pays for both). `season.covers`: **Mrs. Sombloski pays $10 for herself and Mike Sombloski** —
   a $10 payment from her books $5 to each. (Tom pays only for himself; Thom plays free — Garret, Oct 7.) **Leah pays $10 for herself and B-rad** (`covers`, Oct 15). She files as "Missy" (alias set Oct 7). Cash or PayPal: add a `manual` row (`{"id": "manual-w<N>-<name>", "amt": "5.00", "who": <pool name>, "status": "manual"}`) only when Garret says so in chat (Arod and Andy R paid by PayPal in Week 5).
+  **PayPal on the form (Nov 7):** the sheet now offers "Paid $5 on PayPal". score.py prints `PAYPAL CLAIM: <name>` for each
+  such sheet not yet paid; put one line per claim in the run's message to Garret (8:07 digest, roll call, Thursday final:
+  "PayPal claims: Andy R, Arod — confirm?"). His "yes"/"confirmed" adds the manual rows. The claim alone never makes anyone paid.
   The form's "Paid / Playing free" answer is only the player's claim; it never makes anyone paid.
   If an auto-paid person also Venmos $5, score.py marks it `dup` (refund).
 - **Teaching a payer name:** when Garret says "$X from <Venmo name> is <pool name>", set
@@ -251,7 +263,8 @@ lock countdown once games have started) → mugshot caption ("Hung here by X, wh
 (before payBy, unless their latest sheet chose "Playing free") or "Playing free", Claude last as House; two across with short labels once more than 10 have filed; once a game is final "Standings" — top 5 + "Show all N
 players ›", winner ranks 1 at the final, leader highlight only for paid sheets, key "✓ = paid"; the hero never says "paid" — Garret, Oct 9), with one line under its heading: "Updated <time> · picks sealed until kickoff" before any game is final, "Updated <time> · live scores during games" after (tidied Oct 13) → The Column (headline + text) → Trash Talk → This Week's Games, collapsed behind "See all N games ›" except while games are on (it opens itself).
 Then By the Numbers, then the sign-off. **Season tab (`/pool/season/`, Oct 13; build.py writes the same page there and the
-template switches by path):** The Season (top 10 + "Show all N players ›", "Since Week 4" note; columns rank (T for ties) · Player (pool name, one line, never the long display name) · Record "12–4" · Win % · Weeks won · Won (only once someone has won money), empty cells blank — tightened Oct 8 and Oct 13 at Garret's ask), Past Weeks (one tappable card per week: "Week 5 · Ryan Holovics, 12–2" with a teal "View board ›" — Garret, Oct 13), and nothing else; the board's sign-off "— G." (the bottom updated line shows only on frozen past-week pages).
+template switches by path):** The Season (top 10 + "Show all N players ›", "Since Week 4" note; columns rank (T for ties) · Player (pool name, one line, never the long display name) · Record "12–4" · Win % · Weeks won · Won (only once someone has won money), empty cells blank — tightened Oct 8 and Oct 13 at Garret's ask), The Trophy Case (Nov 7: how many final weeks each player ended holding each weekly badge — leader ×n, then up to three
+more; built by build.py as `trophies`), Past Weeks (one tappable card per week: "Week 5 · Ryan Holovics, 12–2" with a teal "View board ›" — Garret, Oct 13), and nothing else; the board's sign-off "— G." (the bottom updated line shows only on frozen past-week pages).
 Finals read "Bears 23–12" (winner named). Game rows never read like a score. All times Eastern.
 **Color:** ink/grey text; red only for the picks button, live dot, live scores, wrong-pick dots; teal only for
 right-pick dots. **Eight badges, no more:** crown, cellar (Porta Potty), wolf, homer, coin, dead, buzzer, streak;
@@ -272,6 +285,9 @@ Your latest sheet before each game's kickoff counts for that game; a sheet after
 Tied game counts for nobody. Blank tiebreaker = worst guess. Skipping a week is free. Kaylani & Luka are one entrant
 (every spelling maps to "Kaylani & Luka" via `aliases`); add aliases for new spellings, never merge two people.
 **People:** Devin is a woman (she/her). Amanda Rodgers goes by **Arod** on the board (renamed in all weeks Oct 8). **Two Andys both file as plain "Andy":** Andrew Clarke (the `andy` alias) and Andy R. A new sheet named just "Andy" is ambiguous — ask Garret which, then map that one sheet with `season.subNames[<submission id>] = "Andy R"` (Week 5: Andy R paid by PayPal). Week 5: Andy R refiled Sunday morning as "Andy" (rDRK1Rl, also his). Use names, not guessed pronouns, for anyone else unless Garret says.
+**Unique board names (Nov 7):** the form now tells players to add an initial when a name is taken ("Andy R, not Andy").
+If a sheet still arrives as a bare shared name (score.py prints `LINKED CHECK`, or it's a plain "Andy"), ask Garret which
+person it is in that run's message before the next lock, and map it with `subNames`.
 Claude is the house entry, tagged House: through Week 5 random sealed picks that couldn't win; from Week 6 real public
 picks, free but eligible to win, winnings roll over (see Bot weeks).
 Trash talk is published exactly as written; the only edit is one the author asks for, via
@@ -288,6 +304,12 @@ Trash talk is published exactly as written; the only edit is one the author asks
 - `build.py` — board, `page.json`, `week.ics`, frozen `weeks/<N>/` pages for past weeks.
 - `template.html` — the page (change design here). `about/index.html` — rules + badge key (badge list mirrors
   `BADGE` in the template). `sheet/index.html` — receipt.
+- `tools/watchdog.py` + `.github/workflows/pool-watchdog.yml` (Nov 7) — every 30 min, checks season.json for a missed lock,
+  a missing Thursday final or Monday score, a stalled hourly refresh, or next week not up by Tuesday 6 a.m. Problems open
+  one GitHub issue ("Sunday Tax watchdog: a run didn't land"), which emails Garret; it closes itself when the board catches
+  up. When Garret says "run the pool catch-up", do the Catch-up check plus whichever of THURSDAY FINAL / SCORE / NEW WEEK
+  the issue names. A **backup sweep** scheduled task (Fri 12:43 a.m., Tue 1:43 and 5:43 a.m.) does the same unattended.
+- `tools/storylines.py` (Nov 7) — column fodder for S6 (recent bits, season, runs, rivals, the line). Read-only.
 - `tools/land.py` — publish. `tools/check_board.py` — phone-width render vs ESPN. `tools/mark_told.py` — mark
   payment rows reported.
 - `.github/workflows/pool-live.yml` — live scores every 2 min during games → `live.json` on the `pool-live` branch.

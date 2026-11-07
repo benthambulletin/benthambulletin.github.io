@@ -200,6 +200,9 @@ def main():
                     have.add(e["sid"])
         for x in asks:
             if not x.get("told"): print(f"ASK: id={x['id']} {x['from']}: {x['q']}")
+            elif not x.get("a") and not x.get("skip"):   # Garret, Nov 7: nudge him once a question has waited a day
+                hrs = (now() - P(x["told"])).total_seconds() / 3600
+                if hrs >= 24: print(f"ASK WAITING: id={x['id']} {x['from']} ({int(hrs // 24)}d): {x['q']}")
 
     # house entry (Claude): seeded random picks (coin weeks) or real picks (bot weeks); filed the moment the week opened
     house = season.get("house") or {}
@@ -268,7 +271,9 @@ def main():
                         "sheet": {str(k): v for k, v in sheet.items()},
                         "filedAt": lst[-1]["at"].isoformat(), "firstAt": lst[0]["at"].isoformat(),
                         # the form's "Playing free" answer on their latest sheet (a claim only; never makes anyone paid)
-                        "free": bool(q.get("paid")) and "free" in str(lst[-1]["r"].get(q["paid"]) or "").lower()})
+                        "free": bool(q.get("paid")) and "free" in str(lst[-1]["r"].get(q["paid"]) or "").lower(),
+                        # "Paid on PayPal" (Nov 7): a claim only; Garret confirms and the run adds a manual row
+                        "paypal": bool(q.get("paid")) and "paypal" in str(lst[-1]["r"].get(q["paid"]) or "").lower()})
         t = next((x["r"].get(q["trash"]) for x in reversed(lst) if (x["r"].get(q["trash"]) or "").strip()), None)   # a resubmit without trash keeps the earlier line
         if t and str(t).strip():
             tt = clean_text(t)
@@ -494,6 +499,10 @@ def main():
     if P(mnf["kickoff"]) > T:
         for p in players: p["tb"] = None
     season["updated"] = stamp
+    log = season.setdefault("columnLog", [])
+    if wk.get("column") and (not log or log[-1].get("text") != wk["column"]):
+        log.append({"week": season["currentWeek"], "at": stamp, "head": wk.get("columnHead", ""), "text": wk["column"]})
+        del log[:-8]
     json.dump(season, open(SEASON, "w"), indent=2, ensure_ascii=False)
 
     print(f"Week {season['currentWeek']} · {wk['status']} · {decided}/{len(games)} decided · {len(players)} entries")
@@ -507,6 +516,8 @@ def main():
         print(f"PAY: pot ${wk['pot']:g} · {wk['paidN']} paid · " + ", ".join(f"{k} {v}" for k, v in sorted(c.items())))
         need = [x for x in pays if x["status"] in ("odd", "unmatched", "dup", "late", "early", "nosheet") and not x.get("told")]
         for x in need: print(f"  NEEDS GARRET: {x['status']} id={x['id']} who={x['who']} amt={x['amt']}")
+        for p in players:
+            if p.get("paypal") and not p.get("paid"): print(f"  PAYPAL CLAIM: {p['name']} (confirm with Garret, then add a manual row)")
         if final:
             for x in pays:
                 if x["status"] in ("late", "nosheet", "dup"): print(f"  REFUND: {x['status']} who={x['who']} amt={x['amt']} id={x['id']}")

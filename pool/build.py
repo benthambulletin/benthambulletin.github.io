@@ -32,6 +32,17 @@ for k, w in season["weeks"].items():
 # season badges: none right now (the badges are all weekly, plus the streak below)
 season_badges = {}
 
+# trophy case (Garret, Nov 7): how many final weeks each player ended holding each weekly badge
+trophies = {}
+for k, w in season["weeks"].items():
+    if w.get("status") != "final": continue
+    for p in w.get("players", []):
+        if p.get("house"): continue
+        for b in p.get("badges", []):
+            if b["id"] in ("dead", "crown"): continue   # "dead" is every loser at the final; the crown is just the winner
+            trophies.setdefault(b["id"], {}).setdefault(p["name"], 0)
+            trophies[b["id"]][p["name"]] += 1
+
 # streak: consecutive correct picks across all weeks, in kickoff order, current week included
 streak = {}
 allweeks = [w for k, w in sorted(season["weeks"].items(), key=lambda kv: int(kv[0]))]
@@ -84,7 +95,7 @@ def make_page(k, w, archive=False):
         "seasonFrom": min([int(x) for x, ww in season["weeks"].items() if ww.get("status") == "final"] or [0]),
         "updates": w.get("updates", []), "decides": w.get("decides", []),
         "stats": w.get("stats"), "face": w.get("face"), "homer": homer, "house": season.get("house"),
-        "seasonBadges": season_badges, "streak": streak, "awards": w.get("awards", []),
+        "seasonBadges": season_badges, "trophies": trophies, "streak": streak, "awards": w.get("awards", []),
         "pastWeeks": past, "archive": archive, "tpl": _TPLV,
     }
 
