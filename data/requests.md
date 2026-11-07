@@ -47,6 +47,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 - **Family-form nudge about once a week (Garret, Nov 6).**
 
+- **Family Today only when there's family news; calendar as one slim line under the tiles; form links in the colophon (Garret, Nov 6).**
+
 ## Dated
 - **Sat Nov 7 — Lake Erie story and lake-effect cover (Garret, Nov 6).** Run a real story on Lake Erie's record warmth and what it means for this winter (WKBW via WBLK, NWS Buffalo lake temps). Cover: Shawn Smith's Nov. 14, 2014 photo of the lake-effect wall over the Southtowns from Buffalo City Hall (NOAA Weather in Focus contest, NOAA Photo Library, CC BY 2.0), cropped landscape, credited in the caption. Fetched to spool/incoming/ by fetch-image.yml. Story drafted in spool/next/lake_story.html (refresh the lake readings first).
 - **Sun Nov 8 — Sunday Question answers.** "First election you remember?" Ariel: "Clinton's first term!" (form, Nov 1).

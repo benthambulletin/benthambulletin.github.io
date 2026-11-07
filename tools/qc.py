@@ -11,7 +11,7 @@ fails=[];warns=[]
 if ed:
     s=ed['body_html']
     # 1. every standing section present
-    REQUIRED=['Family Today','The Weather Glass','The Almanac Sky','The Ledger',
+    REQUIRED=['The Weather Glass','The Almanac Sky','The Ledger',
               'The National Wire','The Home Wire','The Gridiron','The Chase','The Marquee',
               'On This Day','Question of the Day']
     if dt.weekday()==6: REQUIRED=[x for x in REQUIRED if x not in('The Marquee',)]
