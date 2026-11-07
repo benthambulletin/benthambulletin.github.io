@@ -328,7 +328,8 @@ SHORT = {'Family Today': 'Family', 'The Weather Glass': 'Weather', 'The Almanac 
 
 
 RADAR = ('<div class="radar"><img loading="lazy" src="https://radar.weather.gov/ridge/standard/KBUF_loop.gif" '
-         'alt="National Weather Service radar loop for Buffalo"><div class="rc">Live radar: National Weather Service, Buffalo, the last hour in motion.</div></div>\n')
+         'alt="National Weather Service radar loop for Buffalo"><div class="rc">Live radar: National Weather Service, Buffalo, the last hour in motion. Refreshes every 5 minutes.</div></div>\n'
+         '<script>setInterval(function(){var i=document.querySelector(".radar img");if(i)i.src=i.src.split("?")[0]+"?t="+Date.now()},300000)</script>\n')
 
 
 def add_radar(body):
