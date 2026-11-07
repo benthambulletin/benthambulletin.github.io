@@ -1,0 +1,45 @@
+name: Pool watchdog
+
+# The Sunday Tax (pool/), Garret Nov 7: every 30 minutes, check the board for a run that didn't land
+# (a game never locked, the Thursday final or the Monday score missing, the hourly refresh stalled,
+# next week not up by Tuesday morning). Problems open one GitHub issue, which emails Garret;
+# the issue closes itself once the board catches up. Reads pool/data/season.json only; writes nothing.
+on:
+  schedule:
+    - cron: "17,47 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: pool-watchdog
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: pool
+      - name: Check the board
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          out="$(python3 pool/tools/watchdog.py)"
+          echo "$out"
+          title="Sunday Tax watchdog: a run didn't land"
+          num="$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number // empty')"
+          if echo "$out" | grep -q '^PROBLEM:'; then
+            body="$(printf '%s\n\n%s\n' "$(echo "$out" | sed 's/^PROBLEM: /- /')" "Tell Claude \"run the pool catch-up\" (or just \"Run\"). This closes itself once the board catches up.")"
+            if [ -z "$num" ]; then
+              gh issue create --title "$title" --body "$body" --assignee benthambulletin || gh issue create --title "$title" --body "$body"
+            else
+              old="$(gh issue view "$num" --json body --jq .body)"
+              [ "$old" = "$body" ] || gh issue comment "$num" --body "$body"
+            fi
+          elif [ -n "$num" ]; then
+            gh issue close "$num" --comment "Board caught up."
+          fi
