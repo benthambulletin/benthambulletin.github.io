@@ -305,7 +305,7 @@ Trash talk is published exactly as written; the only edit is one the author asks
 - `template.html` — the page (change design here). `about/index.html` — rules + badge key (badge list mirrors
   `BADGE` in the template). `sheet/index.html` — receipt.
 - `tools/watchdog.py` + `.github/workflows/pool-watchdog.yml` (Nov 7) — every 30 min, checks season.json for a missed lock,
-  a missing Thursday final or Monday score, a stalled hourly refresh, or next week not up by Tuesday 6 a.m. Problems open
+  a missing Thursday final or Monday score, a stalled hourly refresh, or next week not up by Tuesday 5 a.m. Problems open
   one GitHub issue ("Sunday Tax watchdog: a run didn't land"), which emails Garret; it closes itself when the board catches
   up. When Garret says "run the pool catch-up", do the Catch-up check plus whichever of THURSDAY FINAL / SCORE / NEW WEEK
   the issue names. A **backup sweep** scheduled task (Fri 12:43 a.m., Tue 1:43 and 5:43 a.m.) does the same unattended.

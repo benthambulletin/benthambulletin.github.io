@@ -38,8 +38,8 @@ def main():
             probs.append(f"Week {n}: no board update since {et(upd):%a %-I:%M %p} ET (the hourly refresh looks stalled)")
     else:
         e = et(now)
-        # final week, and it's Tuesday 6 a.m. ET or later (or Wednesday on): the new-week run didn't land
-        if (e.weekday() == 1 and e.hour >= 6) or e.weekday() in (2, 3):
+        # final week, and it's Tuesday 5 a.m. ET or later (or Wednesday on): the new-week run didn't land
+        if (e.weekday() == 1 and e.hour >= 5) or e.weekday() in (2, 3):
             probs.append(f"Week {int(n) + 1} isn't up yet (the Tuesday new-week run didn't land)")
     for p in probs: print("PROBLEM:", p)
     if not probs: print("OK")
