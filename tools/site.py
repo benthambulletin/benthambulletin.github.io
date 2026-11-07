@@ -172,6 +172,14 @@ html.big .tools button{font-size:.62rem}
 
 .calline{font-family:'AR';font-size:.72rem;letter-spacing:.06em;text-align:center;color:var(--soft);border-bottom:1px solid var(--rule);padding:.45rem .2rem;margin:.2rem 0 .6rem}.calline b{color:var(--red);letter-spacing:.16em;text-transform:uppercase;margin-right:.4rem}
 .colo .ask{font-size:.85em;margin:.4rem 0}
+/* Nov 6: highlight the reader tools for a week */
+.tools.promo{flex-direction:column;align-items:stretch;gap:.45rem;border:2px solid var(--teal);background:#fffaf0;padding:.75rem .8rem .8rem;margin:0 0 1rem}
+.tools.promo .ph{font-family:'AR';font-weight:800;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);text-align:center}
+.tools.promo .pr{display:flex;gap:.6rem}
+.tools.promo button{flex:1;font-size:.95rem;padding:.75rem .5rem;border-width:2px;animation:bbpulse 2.4s ease-in-out 3}
+.tools.promo .pt{font-family:'LOI';font-style:italic;font-size:.85rem;color:var(--soft);text-align:center;line-height:1.35}
+@keyframes bbpulse{0%,100%{box-shadow:0 0 0 0 rgba(15,110,110,0)}50%{box-shadow:0 0 0 6px rgba(15,110,110,.18)}}
+html.big .tools.promo button{font-size:.85rem}
 /* Nov 6 layout pass (Garret: "do them all") */
 .lbl{white-space:nowrap}
 .town .d{font-size:.74rem;line-height:1.25}
@@ -267,7 +275,19 @@ window.addEventListener('pagehide',function(){stopAll()});
 })();
 </script>"""
 
-def shell(title, body, og_image=None, desc="A daily almanac for the family", tools=False, audio=None):
+PROMO_UNTIL = "2026-11-13"  # Garret, Nov 6: highlight the reader tools for a week
+
+
+def promo_tools(t):
+    """Wrap the two reader buttons in a bigger, explained box for the promo week."""
+    btns = t[t.index('<button'):t.rindex('</button>') + len('</button>')]
+    return ('<div class="tools promo"><div class="ph">New: two buttons to make the paper easier</div>'
+            '<div class="pr">' + btns + '</div>'
+            '<div class="pt">&#128264; <b>Read it to me</b> plays the whole paper out loud. '
+            'A+ <b>Bigger print</b> makes the type larger, and your phone remembers it.</div></div>')
+
+
+def shell(title, body, og_image=None, desc="A daily almanac for the family", tools=False, audio=None, date=None):
     CSSV = hashlib.md5(CSS.encode()).hexdigest()[:8]
     og = f'<meta property="og:image" content="https://benthambulletin.github.io{og_image}">' if og_image else ''
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -277,7 +297,7 @@ def shell(title, body, og_image=None, desc="A daily almanac for the family", too
 <meta property="og:type" content="article">
 <link rel="stylesheet" href="/assets/style.css?v={CSSV}">
 <link rel="icon" href="/assets/favicon.svg"></head><body><div class="page">
-{(TOOLS.replace('id="bb-read"', f'id="bb-read" data-audio="{audio}"') if audio else TOOLS) if tools else ""}{body}
+{((lambda t: promo_tools(t) if (date and date <= PROMO_UNTIL) else t)(TOOLS.replace('id="bb-read"', f'id="bb-read" data-audio="{audio}"') if audio else TOOLS)) if tools else ""}{body}
 </div>{TOOLS_JS if tools else ""}</body></html>"""
 
 SHORT = {'Family Today': 'Family', 'The Weather Glass': 'Weather', 'The Almanac Sky': 'Sky', 'The Ledger': 'Ledger',
@@ -357,7 +377,7 @@ def build(edition):
     else:
         body = edition['body_html'] + nav
     title = f"The Bentham Bulletin · No. {edition['no']} · {d.strftime('%A, %B %-d, %Y')}"
-    html = shell(title, body, plate_rel, edition['headline'], tools=True, audio=f"/audio/{edition['date']}.mp3")
+    html = shell(title, body, plate_rel, edition['headline'], tools=True, audio=f"/audio/{edition['date']}.mp3", date=edition['date'])
     open(os.path.join(outdir,'index.html'),'w').write(html)
     # front page = newest issue
     newest = issues[0]
