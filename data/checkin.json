@@ -1,0 +1,71 @@
+{
+ "updated": "2026-11-07",
+ "rule": "Warning = any sign marked or gut Yes/Maybe on the Evening Check-in (Tally Zj4dpo). Hit = an attack logged within 36 hours after the check-in. Counts only; no symptoms stored.",
+ "entries": [
+  {
+   "id": "4aR8bPk",
+   "who": "Garret",
+   "submitted": "2026-10-11T00:45:38Z",
+   "warning": true,
+   "attack_within_36h": false
+  },
+  {
+   "id": "0VzvGkB",
+   "who": "Garret",
+   "submitted": "2026-10-12T01:16:52Z",
+   "warning": false,
+   "attack_within_36h": false
+  },
+  {
+   "id": "RW1aVOv",
+   "who": "Garret",
+   "submitted": "2026-10-14T00:11:12Z",
+   "warning": false,
+   "attack_within_36h": false
+  },
+  {
+   "id": "PRLxek1",
+   "who": "Garret",
+   "submitted": "2026-10-15T00:23:28Z",
+   "warning": false,
+   "attack_within_36h": false
+  },
+  {
+   "id": "xV7akDv",
+   "who": "Garret",
+   "submitted": "2026-10-17T02:08:34Z",
+   "warning": true,
+   "attack_within_36h": false
+  },
+  {
+   "id": "OQZp8vY",
+   "who": "Garret",
+   "submitted": "2026-10-22T00:50:06Z",
+   "warning": true,
+   "attack_within_36h": false
+  },
+  {
+   "id": "q5QVOOG",
+   "who": "Garret",
+   "submitted": "2026-10-23T02:52:13Z",
+   "warning": false,
+   "attack_within_36h": true
+  },
+  {
+   "id": "J1vLrOr",
+   "who": "Garret",
+   "submitted": "2026-11-04T05:17:25Z",
+   "warning": true,
+   "attack_within_36h": false
+  }
+ ],
+ "counts": {
+  "warning_then_attack": 0,
+  "warning_no_attack": 4,
+  "calm_then_attack": 1,
+  "calm_no_attack": 3
+ },
+ "notes": [
+  "J1vLrOr was filed during the Nov 2-3 attack, not before one."
+ ]
+}
