@@ -38,7 +38,6 @@ FEEDS = {
         "WXXI Rochester": "https://www.wxxinews.org/local-news.rss",
         "Dunkirk Observer": "https://www.observertoday.com/feed/",
         "Niagara Gazette": "https://www.niagara-gazette.com/search/?f=rss&t=article&c=news/local_news&l=50&s=start_time&sd=desc",
-        "Tonawanda News": "https://www.tonawanda-news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc",
         "Lockport Journal": "https://www.lockportjournal.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc",
         "WGRZ Buffalo": "https://www.wgrz.com/feeds/syndication/rss/news/local",
     },
