@@ -38,12 +38,27 @@ FEEDS = {
         "WXXI Rochester": "https://www.wxxinews.org/local-news.rss",
         "Dunkirk Observer": "https://www.observertoday.com/feed/",
         "Niagara Gazette": "https://www.niagara-gazette.com/search/?f=rss&t=article&c=news/local_news&l=50&s=start_time&sd=desc",
+        "Tonawanda News": "https://www.tonawanda-news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc",
+        "Lockport Journal": "https://www.lockportjournal.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc",
+        "WGRZ Buffalo": "https://www.wgrz.com/feeds/syndication/rss/news/local",
     },
     "entertainment": {
         "Variety": "https://variety.com/feed/",
         "Deadline": "https://deadline.com/feed/",
         "Billboard": "https://www.billboard.com/feed/",
         "Hollywood Reporter": "https://www.hollywoodreporter.com/feed/",
+        "People": "https://people.com/feed/",
+        "Entertainment Weekly": "https://ew.com/feed/",
+        "E! News": "https://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml",
+        "Rolling Stone": "https://www.rollingstone.com/feed/",
+        "TVLine": "https://tvline.com/feed/",
+    },
+    # Bills and Jets news for the midweek Gridiron (Garret, Nov 6).
+    "sports": {
+        "Buffalo Rumblings": "https://www.buffalorumblings.com/rss/index.xml",
+        "Gang Green Nation": "https://www.ganggreennation.com/rss/index.xml",
+        "ESPN NFL": "https://www.espn.com/espn/rss/nfl/news",
+        "WGRZ Sports": "https://www.wgrz.com/feeds/syndication/rss/sports",
     },
 }
 
@@ -72,10 +87,54 @@ def forecasts():
                                     "temp_f": None if c is None else round(c * 9 / 5 + 32)}
             except Exception as e:
                 out["errors"].append(f"{town} observation: {e}")
+            if town == "North Tonawanda":
+                try:
+                    hr = json.loads(get(pt["forecastHourly"]))["properties"]["periods"][:24]
+                    t["hourly"] = [{"start": h["startTime"], "temp": h["temperature"], "short": h["shortForecast"]} for h in hr]
+                except Exception as e:
+                    out["errors"].append(f"hourly: {e}")
             out["towns"][town] = t
         except Exception as e:
             out["errors"].append(f"{town} forecast: {e}")
     return out
+
+
+def lakes(out):
+    """Lake temperatures from the NWS Buffalo lake page (Garret, Nov 6: run them daily).
+    Stores the parsed readings and the page's own text so the build can check the date."""
+    try:
+        raw = get("https://www.weather.gov/buf/LakeTemp").decode("utf-8", "ignore")
+        text = clean(raw)
+        out["lakes"] = {"fetched_utc": out["generated_utc"], "text": text[:9000]}
+        found = {}
+        for name, pat in (("Lake Erie (Buffalo)", r"Buffalo[^0-9]{0,60}?(\d{2})\s*(?:&deg;|°|degrees|F\b)"),
+                          ("Lake Ontario (Rochester)", r"Rochester[^0-9]{0,60}?(\d{2})\s*(?:&deg;|°|degrees|F\b)")):
+            m = re.search(pat, text)
+            if m:
+                found[name] = int(m.group(1))
+        out["lakes"]["readings"] = found
+    except Exception as e:
+        out["errors"].append(f"lakes: {e}")
+
+
+NORMAL_STATIONS = {"North Tonawanda": "USW00014733", "Scottsville": "USW00014768"}  # Buffalo and Rochester airports
+
+
+def normals():
+    """30-year (1991-2020) daily normal highs and lows from NOAA NCEI, fetched once into data/normals.json."""
+    path = ROOT / "data" / "normals.json"
+    if path.exists():
+        return
+    import csv, io
+    res = {"source": "NOAA NCEI U.S. Climate Normals 1991-2020, daily", "stations": {}}
+    for town, sid in NORMAL_STATIONS.items():
+        try:
+            rows = list(csv.DictReader(io.StringIO(get(f"https://www.ncei.noaa.gov/data/normals-daily/1991-2020/access/{sid}.csv").decode())))
+            res["stations"][town] = {"station": sid, "days": {r["DATE"]: {"tmax": float(r["DLY-TMAX-NORMAL"]), "tmin": float(r["DLY-TMIN-NORMAL"])} for r in rows}}
+        except Exception as e:
+            res.setdefault("errors", []).append(f"{town}: {e}")
+    if res["stations"]:
+        path.write_text(json.dumps(res, indent=1))
 
 
 def travel_forecasts(out):
@@ -200,8 +259,8 @@ def news(hours=48):
             except Exception as e:
                 out["errors"].append(f"{name}: {e}")
         rows.sort(key=lambda r: r["published"] or "", reverse=True)
-        rows = rows[:80]
-        add_bodies(rows)
+        rows = rows[:120]
+        add_bodies(rows, limit=60)
         out["sections"][section] = rows
     return out
 
@@ -210,6 +269,8 @@ if __name__ == "__main__":
     (ROOT / "data").mkdir(exist_ok=True)
     fc = forecasts()
     travel_forecasts(fc)
+    lakes(fc)
+    normals()
     (ROOT / "data" / "forecast.json").write_text(json.dumps(fc, indent=1))
     (ROOT / "data" / "news.json").write_text(json.dumps(news(), indent=1))
     print("ok")
