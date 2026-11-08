@@ -65,18 +65,17 @@ if lead:
     k = lead.select_one(".kick"); k and k.decompose()
     for pq in lead.select(".pull"): pq.decompose()
     heads.append(lead.find("h3").get_text(" ", strip=True))
+NAME = {A: "Linda", B: "John", C: "Reggie"}
+TOWN = {A: "in Scottsville", B: "in North Tonawanda", C: "in Dunkirk"}
 SPEAKER = {"weather": B, "sky": B, "gridiron": C, "chase": C, "monday morning": C, "sunday tax": C}
-INTRO = {"weather glass": [(A, "Now to John, in North Tonawanda, with the Weather Glass."), (B, "Thanks, Linda.")],
-         "almanac sky": (B, "Now, the sky above us. The Almanac Sky."),
-         "ledger": (A, "Thanks, John. The number of the day, from the Ledger."),
-         "national wire": (A, "Across the country, the National Wire."),
-         "home wire": (A, "Closer to home, the Home Wire."),
-         "marquee": (A, "In entertainment, the Marquee."),
-         "gridiron": [(A, "For sports, here's Reggie, in Dunkirk."), (C, "Thanks, Linda. The Gridiron.")],
-         "monday morning": [(A, "For sports, here's Reggie, in Dunkirk."), (C, "Thanks, Linda. Monday Morning Quarterback.")],
-         "chase": (C, "On the track, the Chase."),
-         "on this day": (A, "Thanks, Reggie. On this day in history."),
-         "question of the day": (A, "And finally, the question of the day.")}
+INTRO = {"weather glass": "The Weather Glass.", "almanac sky": "Now, the sky above us.",
+         "ledger": "The number of the day.", "national wire": "Across the country.",
+         "home wire": "Closer to home.", "marquee": "In entertainment.", "gridiron": "The Gridiron.",
+         "monday morning": "Monday Morning Quarterback.", "chase": "On the track, the Chase.",
+         "on this day": "On this day in history.", "question of the day": "And finally, the riddle of the day.",
+         "sunday spotlight": "This week's Sunday Spotlight.", "week ahead": "A look at the week ahead.",
+         "sunday question": "The Sunday Question.", "family today": "Family news.", "group chat": "From the group chat."}
+SKIP_SECTIONS = ("the chase",) if False else ()
 
 # walk the body into sections
 sections, cur = [], ["", []]
@@ -87,83 +86,113 @@ for el in list(soup.children):
     else:
         cur[1].append(el)
 sections.append(cur)
-for want in ("national", "marquee"):
+for want in ("national", "marquee", "home wire"):
     for name, els in sections:
         if want in name.lower():
-            h = next((el.find("h3") for el in els if el.find("h3")), None)
-            if h and len(heads) < 3: heads.append(h.get_text(" ", strip=True))
+            h = next((el.find("h3") for el in els if el.find("h3") and el is not lead and "lead" not in (el.get("class") or [])), None)
+            t = h.get_text(" ", strip=True) if h else ""
+            if t and t not in heads and len(heads) < 3: heads.append(re.sub(r"^[^·]+·\s*", "", t))
             break
 
+DAYS = {"Sun":"Sunday","Mon":"Monday","Tue":"Tuesday","Wed":"Wednesday","Thu":"Thursday","Fri":"Friday","Sat":"Saturday"}
+TEAMS = {"KC":"Kansas City","MIN":"Minnesota","MIA":"Miami","NE":"New England","BAL":"Baltimore","PIT":"Pittsburgh","CIN":"Cincinnati","CLE":"Cleveland","HOU":"Houston","IND":"Indianapolis","JAX":"Jacksonville","TEN":"Tennessee","DEN":"Denver","LV":"Las Vegas","LAC":"the Chargers","LAR":"the Rams","NYG":"the Giants","NYJ":"the Jets","BUF":"Buffalo","DAL":"Dallas","PHI":"Philadelphia","WAS":"Washington","CHI":"Chicago","DET":"Detroit","GB":"Green Bay","ATL":"Atlanta","CAR":"Carolina","NO":"New Orleans","TB":"Tampa Bay","ARI":"Arizona","SF":"San Francisco","SEA":"Seattle"}
+cal = ""
+cover = ""
+front = []
+for name, els in sections[:1]:
+    for el in els:
+        c = el.get("class") or []
+        if "calline" in c:
+            for l in lines_of(el):
+                if l.startswith("Coming up"):
+                    l = re.sub(r"\b(KC|MIN|MIA|NE|BAL|PIT|CIN|CLE|HOU|IND|JAX|TEN|DEN|LV|LAC|LAR|NYG|NYJ|BUF|DAL|PHI|WAS|CHI|DET|GB|ATL|CAR|NO|TB|ARI|SF|SEA)\b", lambda m: TEAMS[m.group(1)], l)
+                    l = re.sub(r"\b(Sun|Mon|Tue|Wed|Thu|Fri|Sat)\b", lambda m: DAYS[m.group(1)], l)
+                    parts = [x.strip() for x in l[len("Coming up"):].split("·")]
+                    # pairs: day, what
+                    items = [f"{parts[i]}, {parts[i+1]}" for i in range(0, len(parts) - 1, 2)]
+                    cal = "On the calendar: " + "; ".join(items) + "."
+        elif "plate-wrap" in c:
+            cover = text(el)
+        elif el.get_text(strip=True):
+            front.append(el)
+
 segs.append(("CHIME", "open"))
-say(A, f"Good morning. It's {day}, and this is The Bentham Bulletin. I'm Linda, in Scottsville.")
-say(B, "I'm John, in North Tonawanda, with your weather.")
-say(C, "And I'm Reggie, in Dunkirk, with sports.")
+say(A, f"Good morning. It's {day}, and this is The Bentham Bulletin. I'm Linda, {TOWN[A]}.")
+say(B, f"I'm John, {TOWN[B]}, with your weather.")
+say(C, f"And I'm Reggie, {TOWN[C]}, with sports.")
 if heads:
     say(A, "Here's what we're following this morning.", *[h.rstrip(".?!") + ("?" if h.endswith("?") else ".") for h in heads])
 segs.append(("CHIME", "sting"))
+cur_who = A
 if lead:
     say(A, "Our top story.", *lines_of(lead))
     lead.decompose()
+for el in front:
+    say(A, *lines_of(el))
+if cal: say(A, cal)
+if cover: say(A, "On the cover of today's paper: " + cover)
 
-for name, els in sections:
-    key = name.lower().strip(" \u2600-\U0001ffff")
+def handoff(to):
+    """Hand the mic from whoever spoke last to `to`, by name."""
+    global cur_who
+    if to == cur_who: return
+    if to == A:
+        say(A, f"Thanks, {NAME[cur_who]}.")
+    else:
+        say(cur_who, f"Now to {NAME[to]}, {TOWN[to]}." if to == B else f"For sports, here's {NAME[to]}, {TOWN[to]}.")
+        say(to, f"Thanks, {NAME[cur_who]}.")
+    cur_who = to
+
+for name, els in sections[1:]:
     low = name.lower()
-    if not name:   # the front: calendar line, cover, family items above the first section
-        for el in els:
-            c = el.get("class") or []
-            if "calline" in c:
-                DAYS = {"Sun":"Sunday","Mon":"Monday","Tue":"Tuesday","Wed":"Wednesday","Thu":"Thursday","Fri":"Friday","Sat":"Saturday"}
-                TEAMS = {"KC":"Kansas City","MIN":"Minnesota","MIA":"Miami","NE":"New England","BAL":"Baltimore","PIT":"Pittsburgh","CIN":"Cincinnati","CLE":"Cleveland","HOU":"Houston","IND":"Indianapolis","JAX":"Jacksonville","TEN":"Tennessee","DEN":"Denver","LV":"Las Vegas","LAC":"the Chargers","LAR":"the Rams","NYG":"the Giants","NYJ":"the Jets","BUF":"Buffalo","DAL":"Dallas","PHI":"Philadelphia","WAS":"Washington","CHI":"Chicago","DET":"Detroit","GB":"Green Bay","ATL":"Atlanta","CAR":"Carolina","NO":"New Orleans","TB":"Tampa Bay","ARI":"Arizona","SF":"San Francisco","SEA":"Seattle"}
-                fix = lambda l: re.sub(r"\b(KC|MIN|MIA|NE|BAL|PIT|CIN|CLE|HOU|IND|JAX|TEN|DEN|LV|LAC|LAR|NYG|NYJ|BUF|DAL|PHI|WAS|CHI|DET|GB|ATL|CAR|NO|TB|ARI|SF|SEA)\b", lambda m: TEAMS[m.group(1)], re.sub(r"\b(Sun|Mon|Tue|Wed|Thu|Fri|Sat)\b", lambda m: DAYS[m.group(1)], l))
-                say(A, *[fix(l).replace("Coming up", "Coming up this week:", 1).replace("Migraine log", "On the migraine log:", 1) for l in lines_of(el)])
-            elif "plate-wrap" in c:
-                t = text(el)
-                if t: say(A, "On the cover this morning: " + t)
-            elif el.get_text(strip=True):
-                say(A, *lines_of(el))
-        continue
     match = next((k for k in INTRO if k in low), None)
     who = next((v for k, v in SPEAKER.items() if k in low), A)
-    if [s for s in segs if s[0] != "CHIME"]: segs.append(("CHIME", "sting"))
-    if match:
-        iv = INTRO[match]
-        for w_, l_ in (iv if isinstance(iv, list) else [iv]): say(w_, l_)
-    else: say(A, re.sub(r"^[^A-Za-z]+|[^A-Za-z?!.]+$", "", name) + ".")
+    if not any(el.get_text(strip=True) for el in els): continue
+    segs.append(("CHIME", "sting"))
+    handoff(who)
+    say(who, INTRO[match] if match else re.sub(r"^[^A-Za-z]+|[^A-Za-z?!.]+$", "", name) + ".")
     for el in els:
         if not el.get_text(strip=True): continue
         c = el.get("class") or []
         if "towns" in c:
             parts = []
             for t in el.select(".town"):
-                n = t.select_one(".n").get_text(strip=True); v = t.select_one(".t").get_text("", strip=True)
-                dsc = t.select_one(".d").get_text(", ", strip=True).lower()
-                parts.append(f"{n}, {v} and {dsc}")
+                n = t.select_one(".n").get_text(strip=True); v = t.select_one(".t").get_text("", strip=True).replace("°", "")
+                d_ = t.select_one(".d").get_text(", ", strip=True).lower()
+                sky, _, hi = d_.partition(", high")
+                parts.append(f"{n}, {v} and {sky}, headed for {hi.strip().replace(chr(176), '')}")
             say(who, "At dawn: " + "; ".join(parts) + ".")
         elif "strip5" in c:
             parts = []
             for t in el.find_all("div", recursive=False):
                 g = lambda s: (t.select_one(s).get_text(strip=True) if t.select_one(s) else "")
-                parts.append(f"{g('.d')}, {g('.h')}, {g('.w')}")
-            names = {"Mon":"Monday","Tue":"Tuesday","Wed":"Wednesday","Thu":"Thursday","Fri":"Friday","Sat":"Saturday","Sun":"Sunday"}
-            say(who, "The five-day: " + "; ".join(re.sub(r"^(\w{3})", lambda m: names.get(m.group(1), m.group(1)), p) for p in parts) + ".")
-        elif "radar" in c or el.get_text(strip=True).startswith("Next 24 hours"):
+                parts.append(f"{DAYS.get(g('.d'), g('.d'))}, {g('.w')}, {g('.h')}")
+            say(who, "The five-day: " + "; ".join(parts) + ".")
+        elif "radar" in c or el.get_text(strip=True).startswith("Next 24 hours") or el.name == "svg":
             continue
         elif "stars" in c:
             for st in el.select(".star"):
                 sg = st.select_one(".sg").get_text(strip=True); w = st.select_one(".who")
                 wn = w.get_text(strip=True) if w else ""; w and w.decompose(); st.select_one(".sg").decompose()
-                say(who, f"{sg}, for {wn.replace(', ', ' and ')}." if wn else f"{sg}.", text(st))
+                say(who, (f"{sg}, for {' and '.join([', '.join(wn.split(', ')[:-1]), wn.split(', ')[-1]]) if ', ' in wn else wn}." if wn else f"{sg}.") + " " + text(st))
         elif "wire" in c:
             n = el.select_one(".num"); n and n.decompose()
-            say(who, *lines_of(el))
+            ls = lines_of(el)
+            if ls: ls[0] = re.sub(r"\s*·\s*", ": ", ls[0], count=1)
+            say(who, *ls)
+        elif "ledger" in c:
+            big = el.select_one(".big"); cap = el.select_one(".cap"); tx = el.select_one(".txt")
+            say(who, f"{big.get_text(strip=True) if big else ''}. {cap.get_text(' ', strip=True) if cap else ''}.", tx.get_text(" ", strip=True) if tx else "")
         elif "qotd" in c:
             q = text(el).replace("Answer below the fold.", "").replace("Tap for the answer", "").strip()
             say(who, q)
-            if answer: segs.append(("PAUSE", 2.5)); say(who, "The answer: " + answer)
+            if answer and "question of the day" in low:
+                segs.append(("PAUSE", 3.0)); say(who, "The answer: " + answer[0].lower() + answer[1:] if answer[:2] in ("A ", "An") else "The answer: " + answer)
         else:
-            say(who, *lines_of(el))
+            say(who, *[re.sub(r"^(\w[\w' ]{0,24}) · ", r"\1. ", l) for l in lines_of(el)])
 
 segs.append(("CHIME", "sting"))
+handoff(A)
 say(A, f"That's The Bentham Bulletin for this {d:%A}. For John and Reggie, I'm Linda. Have a good day.")
 say(C, "See you tomorrow morning.")
 segs.append(("CHIME", "close"))
@@ -180,7 +209,10 @@ def speakable(l):
     l = re.sub(r"(\d)%", r"\1 percent", l); l = re.sub(r"\s*\(fcst\)", " (forecast)", l); l = re.sub(r"\bmph\b", "miles per hour", l)
     l = re.sub(r"\b(Mon|Tue|Wed|Thu|Fri|Sat|Sun)(?=, [A-Z])", lambda m: {"Mon":"Monday","Tue":"Tuesday","Wed":"Wednesday","Thu":"Thursday","Fri":"Friday","Sat":"Saturday","Sun":"Sunday"}[m.group(1)], l)
     l = re.sub(r"\b(Jan|Feb|Mar|Apr|Aug|Sept?|Oct|Nov|Dec)\.? (?=\d)", lambda m: {"Jan":"January","Feb":"February","Mar":"March","Apr":"April","Aug":"August","Sep":"September","Sept":"September","Oct":"October","Nov":"November","Dec":"December"}[m.group(1)] + " ", l)
-    l = re.sub(r"https?://", "", l)
+    l = re.sub(r"(at )?(https?://)?tally\.so/r/\w+", "on the family form", l); l = re.sub(r"https?://\S+", "", l)
+    l = re.sub(r"\bfcst\b", "forecast", l, flags=re.I); l = l.replace(" & ", " and ").replace("&", " and ")
+    l = re.sub(r"\b(\d+) hours 0 minutes", r"\1 hours", l)
+    l = re.sub(r"\s*\(([^)]*)\)", r", \1,", l); l = re.sub(r",\s*([.;:!?])", r"\1", l)
     l = unicodedata.normalize("NFKD", l).encode("ascii", "ignore").decode()  # accents break the voice engine
     l = re.sub(r"\s+([,.;:])", r"\1", l); l = re.sub(r",\s*,", ",", l); l = re.sub(r"^[,\s]+", "", l)
     l = re.sub(r"\s+", " ", l).strip()
