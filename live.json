@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T18:23:33Z",
+ "updated": "2026-11-08T18:25:35Z",
  "week": 9,
  "games": {
   "1": {
@@ -14,9 +14,9 @@
   "2": {
    "state": "in",
    "away": 3,
-   "home": 6,
+   "home": 7,
    "detail": "6:13 - 1st",
-   "line": "Colts 6–3 · 6:13 - 1st"
+   "line": "Colts 7–3 · 6:13 - 1st"
   },
   "3": {
    "state": "in",
@@ -29,15 +29,15 @@
    "state": "in",
    "away": 3,
    "home": 0,
-   "detail": "5:14 - 1st",
-   "line": "Lions 3–0 · 5:14 - 1st"
+   "detail": "5:03 - 1st",
+   "line": "Lions 3–0 · 5:03 - 1st"
   },
   "5": {
    "state": "in",
    "away": 0,
    "home": 3,
-   "detail": "4:25 - 1st",
-   "line": "Saints 3–0 · 4:25 - 1st"
+   "detail": "4:14 - 1st",
+   "line": "Saints 3–0 · 4:14 - 1st"
   },
   "6": {
    "state": "in",
@@ -50,15 +50,15 @@
    "state": "in",
    "away": 0,
    "home": 3,
-   "detail": "5:18 - 1st",
-   "line": "Commanders 3–0 · 5:18 - 1st"
+   "detail": "3:38 - 1st",
+   "line": "Commanders 3–0 · 3:38 - 1st"
   },
   "8": {
    "state": "in",
    "away": 3,
    "home": 0,
-   "detail": "7:00 - 1st",
-   "line": "Broncos 3–0 · 7:00 - 1st"
+   "detail": "5:24 - 1st",
+   "line": "Broncos 3–0 · 5:24 - 1st"
   },
   "9": {
    "state": "pre",
