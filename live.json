@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T20:02:42Z",
+ "updated": "2026-11-08T20:04:43Z",
  "week": 9,
  "games": {
   "1": {
@@ -27,10 +27,10 @@
   },
   "4": {
    "state": "in",
-   "away": 9,
+   "away": 16,
    "home": 6,
-   "detail": "2:16 - 3rd",
-   "line": "Lions 9–6 · 2:16 - 3rd"
+   "detail": "1:20 - 3rd",
+   "line": "Lions 16–6 · 1:20 - 3rd"
   },
   "5": {
    "state": "in",
@@ -43,22 +43,22 @@
    "state": "in",
    "away": 6,
    "home": 8,
-   "detail": "10:47 - 3rd",
-   "line": "Eagles 8–6 · 10:47 - 3rd"
+   "detail": "10:35 - 3rd",
+   "line": "Eagles 8–6 · 10:35 - 3rd"
   },
   "7": {
    "state": "in",
    "away": 13,
    "home": 10,
-   "detail": "7:01 - 3rd",
-   "line": "Rams 13–10 · 7:01 - 3rd"
+   "detail": "7:33 - 3rd",
+   "line": "Rams 13–10 · 7:33 - 3rd"
   },
   "8": {
    "state": "in",
    "away": 13,
    "home": 14,
-   "detail": "7:33 - 3rd",
-   "line": "Panthers 14–13 · 7:33 - 3rd"
+   "detail": "5:06 - 3rd",
+   "line": "Panthers 14–13 · 5:06 - 3rd"
   },
   "9": {
    "state": "pre",
