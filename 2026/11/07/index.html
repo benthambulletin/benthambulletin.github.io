@@ -16,7 +16,7 @@
 <div class="orn">&#127809; &#127810; &#127809;</div>
 <div class="dateline">Saturday &middot; November 7 &middot; 2026</div>
 <div class="place">North Tonawanda, New York &mdash; compiled at dawn</div>
-<div class="tools under"><button type="button" id="bb-read" data-audio="/audio/2026-11-07.mp3" aria-pressed="false">&#128264; Read it to me</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>
+<div class="tools under"><button type="button" id="bb-read" data-audio="/audio/2026-11-07.mp3" aria-pressed="false">&#128251; Play the newscast</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>
 <div class="dbl-tight"><div class="a"></div><div class="b"></div></div>
 <div class="tiles">
   <div class="tile"><div class="v">52&deg;</div><div class="k">Showers Likely</div></div>
@@ -138,7 +138,7 @@ function pickVoice(){
 }
 if(ss&&ss.onvoiceschanged!==undefined)ss.onvoiceschanged=function(){best=null};
 if(ss)ss.getVoices();
-function stop(){on=false;Q=[];if(ss)ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128264; Read it to me'}
+function stop(){on=false;Q=[];if(ss)ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128251; Play the newscast'}
 function next(){
   if(!on)return; if(qi>=Q.length){stop();return}
   var u=new SpeechSynthesisUtterance(Q[qi++]); u.rate=0.95; u.lang='en-US';

@@ -208,7 +208,7 @@ html.big .tools button{font-size:.62rem}
 """
 
 import hashlib
-TOOLS = """<div class="tools"><button type="button" id="bb-read" aria-pressed="false">&#128264; Read it to me</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>"""
+TOOLS = """<div class="tools"><button type="button" id="bb-read" aria-pressed="false">&#128251; Play the newscast</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>"""
 TOOLS_JS = r"""<script>
 (function(){
 var root=document.documentElement, big=document.getElementById('bb-big'), rd=document.getElementById('bb-read');
@@ -246,7 +246,7 @@ function pickVoice(){
 }
 if(ss&&ss.onvoiceschanged!==undefined)ss.onvoiceschanged=function(){best=null};
 if(ss)ss.getVoices();
-function stop(){on=false;Q=[];if(ss)ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128264; Read it to me'}
+function stop(){on=false;Q=[];if(ss)ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128251; Play the newscast'}
 function next(){
   if(!on)return; if(qi>=Q.length){stop();return}
   var u=new SpeechSynthesisUtterance(Q[qi++]); u.rate=0.95; u.lang='en-US';
