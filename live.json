@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T20:00:40Z",
+ "updated": "2026-11-08T20:02:42Z",
  "week": 9,
  "games": {
   "1": {
@@ -15,29 +15,29 @@
    "state": "in",
    "away": 17,
    "home": 7,
-   "detail": "13:19 - 3rd",
-   "line": "Cowboys 17–7 · 13:19 - 3rd"
+   "detail": "11:24 - 3rd",
+   "line": "Cowboys 17–7 · 11:24 - 3rd"
   },
   "3": {
    "state": "in",
    "away": 12,
    "home": 21,
-   "detail": "9:34 - 3rd",
-   "line": "Chiefs 21–12 · 9:34 - 3rd"
+   "detail": "8:00 - 3rd",
+   "line": "Chiefs 21–12 · 8:00 - 3rd"
   },
   "4": {
    "state": "in",
    "away": 9,
    "home": 6,
-   "detail": "4:00 - 3rd",
-   "line": "Lions 9–6 · 4:00 - 3rd"
+   "detail": "2:16 - 3rd",
+   "line": "Lions 9–6 · 2:16 - 3rd"
   },
   "5": {
    "state": "in",
    "away": 6,
-   "home": 3,
-   "detail": "3:21 - 3rd",
-   "line": "Browns 6–3 · 3:21 - 3rd"
+   "home": 6,
+   "detail": "2:26 - 3rd",
+   "line": "Tied 6–6 · 2:26 - 3rd"
   },
   "6": {
    "state": "in",
@@ -57,8 +57,8 @@
    "state": "in",
    "away": 13,
    "home": 14,
-   "detail": "8:46 - 3rd",
-   "line": "Panthers 14–13 · 8:46 - 3rd"
+   "detail": "7:33 - 3rd",
+   "line": "Panthers 14–13 · 7:33 - 3rd"
   },
   "9": {
    "state": "pre",
