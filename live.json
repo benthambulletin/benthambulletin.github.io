@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T21:19:57Z",
+ "updated": "2026-11-08T21:21:59Z",
  "week": 9,
  "games": {
   "1": {
@@ -14,9 +14,9 @@
   "2": {
    "state": "in",
    "away": 20,
-   "home": 20,
-   "detail": "1:45 - 4th",
-   "line": "Tied 20–20 · 1:45 - 4th"
+   "home": 23,
+   "detail": "1:37 - 4th",
+   "line": "Colts 23–20 · 1:37 - 4th"
   },
   "3": {
    "state": "post",
@@ -39,9 +39,9 @@
   "5": {
    "state": "in",
    "away": 16,
-   "home": 16,
-   "detail": "5:00 - OT",
-   "line": "Tied 16–16 · 5:00 - OT"
+   "home": 23,
+   "detail": "4:17 - OT",
+   "line": "Saints 23–16 · 4:17 - OT"
   },
   "6": {
    "state": "post",
@@ -74,8 +74,8 @@
    "state": "in",
    "away": 7,
    "home": 0,
-   "detail": "8:37 - 1st",
-   "line": "Texans 7–0 · 8:37 - 1st"
+   "detail": "6:58 - 1st",
+   "line": "Texans 7–0 · 6:58 - 1st"
   },
   "10": {
    "state": "pre",
