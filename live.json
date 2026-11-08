@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T21:03:44Z",
+ "updated": "2026-11-08T21:05:46Z",
  "week": 9,
  "games": {
   "1": {
@@ -14,9 +14,9 @@
   "2": {
    "state": "in",
    "away": 20,
-   "home": 17,
-   "detail": "6:47 - 4th",
-   "line": "Cowboys 20–17 · 6:47 - 4th"
+   "home": 20,
+   "detail": "5:56 - 4th",
+   "line": "Tied 20–20 · 5:56 - 4th"
   },
   "3": {
    "state": "in",
@@ -38,22 +38,22 @@
    "state": "in",
    "away": 13,
    "home": 16,
-   "detail": "0:40 - 4th",
-   "line": "Saints 16–13 · 0:40 - 4th"
+   "detail": "0:13 - 4th",
+   "line": "Saints 16–13 · 0:13 - 4th"
   },
   "6": {
    "state": "in",
    "away": 19,
    "home": 11,
-   "detail": "1:56 - 4th",
-   "line": "Giants 19–11 · 1:56 - 4th"
+   "detail": "1:47 - 4th",
+   "line": "Giants 19–11 · 1:47 - 4th"
   },
   "7": {
    "state": "in",
    "away": 20,
    "home": 13,
-   "detail": "0:59 - 4th",
-   "line": "Rams 20–13 · 0:59 - 4th"
+   "detail": "0:31 - 4th",
+   "line": "Rams 20–13 · 0:31 - 4th"
   },
   "8": {
    "state": "in",
