@@ -12740,8 +12740,8 @@
               "Josh"
             ]
           },
-          "live": "Texans 10–9 · 2nd qtr",
-          "liveAt": "2026-11-08T22:08:38Z"
+          "live": "Texans 24–9 · 3rd qtr",
+          "liveAt": "2026-11-08T23:09:29Z"
         },
         {
           "away": "Packers",
@@ -12782,8 +12782,8 @@
               "Claude"
             ]
           },
-          "live": "Packers 17–0 · 2nd qtr",
-          "liveAt": "2026-11-08T22:08:38Z"
+          "live": "Halftime · Packers 24–14",
+          "liveAt": "2026-11-08T23:09:29Z"
         },
         {
           "away": "Raiders",
@@ -12824,8 +12824,8 @@
               "Claude"
             ]
           },
-          "live": "49ers 14–7 · 2nd qtr",
-          "liveAt": "2026-11-08T22:08:38Z"
+          "live": "49ers 28–17 · 3rd qtr",
+          "liveAt": "2026-11-08T23:09:29Z"
         },
         {
           "away": "Cardinals",
@@ -12865,8 +12865,8 @@
               "Claude"
             ]
           },
-          "live": "Seahawks 7–3 · 2nd qtr",
-          "liveAt": "2026-11-08T22:08:38Z"
+          "live": "Seahawks 14–3 · 3rd qtr",
+          "liveAt": "2026-11-08T23:09:29Z"
         },
         {
           "away": "Buccaneers",
@@ -14292,7 +14292,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-08T22:10:17.398574+00:00",
+  "updated": "2026-11-08T23:10:01.884387+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
