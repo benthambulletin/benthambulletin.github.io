@@ -50,11 +50,11 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - **Family Today only when there's family news; calendar as one slim line under the tiles; form links in the colophon (Garret, Nov 6).**
 
 ## Dated
-- **Sun Nov 8 — Sunday Question answers.** "First election you remember?" Ariel: "Clinton's first term!" (form, Nov 1).
 
 - **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
 
 ## Done
+- **Sun Nov 8 — Sunday Question answers.** "First election you remember?" Ariel: "Clinton's first term!" (form, Nov 1). — ran No. 137.
 - **Sat Nov 7 — Lake Erie story and lake-effect cover (Garret, Nov 6).** Run a real story on Lake Erie's record warmth and what it means for this winter (WKBW via WBLK, NWS Buffalo lake temps). Cover: Shawn Smith's Nov. 14, 2014 photo of the lake-effect wall over the Southtowns from Buffalo City Hall (NOAA Weather in Focus contest, NOAA Photo Library, CC BY 2.0), cropped landscape, credited in the caption. Fetched to spool/incoming/ by fetch-image.yml. Story drafted in spool/next/lake_story.html (refresh the lake readings first). — ran No. 136.
 
 - Nov 1, No. 130 — month-in-migraine Spotlight (with a short clocks note); Gregg's costume answer ran in the Sunday Question; trick-or-treat cover from spool.

@@ -7,7 +7,7 @@ Upcoming Sunday Spotlight topics, in order. Garret approves, strikes or reorders
 - [x] **Sun Oct 18 — What's on your ballot besides the governor.** (No. 116) One week before early voting: every race and any ballot proposals for North Tonawanda, Dunkirk and Scottsville voters, in plain terms. No endorsements.
 - [x] **Sun Oct 25 — Spotting an AI scam.** (No. 123) Look-alike shopping sites, voice-clone calls, fake texts: what they look like now and the three checks that catch them. (Birthday edition; keep it short.)
 - [x] **Sun Nov 1 — Why we change the clocks tonight.** (No. 130: ran as the month in migraine per the monthly rule, with a short clocks note.) Daylight saving ends at 2 a.m.; where it came from, whether it saves anything, and where the push to end it stands.
-- [ ] **Sun Nov 8 — How the NASCAR Chase ends.** Finale day at Homestead: the format, the math, who can still win.
+- [x] **Sun Nov 8 — How the NASCAR Chase ends.** (No. 137) Finale day at Homestead: the format, the math, who can still win.
 - [ ] **Sun Nov 15 — This winter's heating bill.** National Grid and NYSEG rates, what's changed, and the cheapest things that actually lower a bill.
 
 ## Done

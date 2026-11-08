@@ -352,7 +352,8 @@ def riddle_reveal(body):
     """Nov 6: the riddle answer hides behind a tap instead of sitting below the fold."""
     import re as _re
     m = _re.search(r'<b>Question of the Day:</b>\s*(.*?)</', body)
-    q = body.find('<div class="qotd">')
+    k = body.find('<i>Answer below the fold.</i>')          # the riddle, not the Sunday Question
+    q = body.rfind('<div class="qotd">', 0, k) if k >= 0 else body.rfind('<div class="qotd">')
     if not m or q < 0 or 'class="reveal"' in body:
         return body
     ans = m.group(1).strip()
