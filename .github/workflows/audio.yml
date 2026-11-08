@@ -27,6 +27,7 @@ concurrency:
 env:
   VOICE: bf_emma
   VOICE2: bm_george
+  VOICE3: bm_lewis
 
 jobs:
   audio:

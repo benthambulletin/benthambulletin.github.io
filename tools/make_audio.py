@@ -4,8 +4,8 @@ Usage: python3 tools/make_audio.py YYYY-MM-DD VOICE OUT.mp3 [max_chars]
 VOICE is a Kokoro voice name (e.g. af_heart) or a Piper .onnx model path. max_chars trims for samples.
 Reads data/edition-DATE.json, turns the paper into plain spoken lines (same idea as the
 read-aloud button), synthesizes with Kokoro (open-source neural TTS, Apache-2.0) or Piper, encodes a small MP3 (lameenc).
-Since Nov 7 it is a two-anchor morning newscast: Emma (VOICE) on news, George (VOICE2, bm_george) on weather, sky and
-sports, with short original chimes between segments; SCRIPT_ONLY=1 prints the script without recording.
+Since Nov 7 it is a three-anchor morning newscast (names Garret's): Linda of Scottsville (VOICE, bf_emma) on news,
+John of North Tonawanda (VOICE2, bm_george) on weather and sky, Reggie of Dunkirk (VOICE3, bm_lewis) on sports, with short original chimes between segments; SCRIPT_ONLY=1 prints the script without recording.
 Run by .github/workflows/audio.yml; the MP3 is committed to audio/<date>.mp3 (32 kbps mono, ~3 MB; last 7 days kept)."""
 import json, re, sys, wave, subprocess, tempfile, os, html
 from pathlib import Path
@@ -36,9 +36,10 @@ def lines_of(node):
     walk(node); flush()
     return out
 
-# ---- The newscast (Garret, Nov 7: "a newscast vibe"). Two anchors: Emma (VOICE) for news,
-# George (VOICE2) for weather, sky and sports; a short original chime between segments.
-A, B = "A", "B"
+# ---- The newscast (Garret, Nov 7: "a newscast vibe"). Three anchors, named by Garret: Linda from Scottsville
+# (VOICE, news), John from North Tonawanda (VOICE2, weather and sky), Reggie from Dunkirk (VOICE3, sports);
+# a short original chime between segments.
+A, B, C = "A", "B", "C"
 import datetime as _dt
 d = _dt.date.fromisoformat(date)
 nth = lambda n: f"{n}{'th' if 11 <= n % 100 <= 13 else {1:'st',2:'nd',3:'rd'}.get(n % 10, 'th')}"
@@ -63,17 +64,17 @@ if lead:
     k = lead.select_one(".kick"); k and k.decompose()
     for pq in lead.select(".pull"): pq.decompose()
     heads.append(lead.find("h3").get_text(" ", strip=True))
-SPEAKER = {"weather": B, "sky": B, "gridiron": B, "chase": B, "monday morning": B}
-INTRO = {"weather glass": (B, "Thanks, Emma. Let's check the Weather Glass."),
+SPEAKER = {"weather": B, "sky": B, "gridiron": C, "chase": C, "monday morning": C, "sunday tax": C}
+INTRO = {"weather glass": [(A, "Now to John, in North Tonawanda, with the Weather Glass."), (B, "Thanks, Linda.")],
          "almanac sky": (B, "Now, the sky above us. The Almanac Sky."),
-         "ledger": (A, "Thank you, George. The number of the day, from the Ledger."),
+         "ledger": (A, "Thanks, John. The number of the day, from the Ledger."),
          "national wire": (A, "Across the country, the National Wire."),
          "home wire": (A, "Closer to home, the Home Wire."),
          "marquee": (A, "In entertainment, the Marquee."),
-         "gridiron": (B, "Sports. The Gridiron."),
-         "monday morning": (B, "Sports. Monday Morning Quarterback."),
-         "chase": (B, "On the track, the Chase."),
-         "on this day": (A, "Thanks, George. On this day in history."),
+         "gridiron": [(A, "For sports, here's Reggie, in Dunkirk."), (C, "Thanks, Linda. The Gridiron.")],
+         "monday morning": [(A, "For sports, here's Reggie, in Dunkirk."), (C, "Thanks, Linda. Monday Morning Quarterback.")],
+         "chase": (C, "On the track, the Chase."),
+         "on this day": (A, "Thanks, Reggie. On this day in history."),
          "question of the day": (A, "And finally, the question of the day.")}
 
 # walk the body into sections
@@ -93,8 +94,9 @@ for want in ("national", "marquee"):
             break
 
 segs.append(("CHIME", "open"))
-say(A, f"Good morning. It's {day}. This is The Bentham Bulletin. I'm Emma.")
-say(B, "And I'm George, with your weather and sports.")
+say(A, f"Good morning. It's {day}, and this is The Bentham Bulletin. I'm Linda, in Scottsville.")
+say(B, "I'm John, in North Tonawanda, with your weather.")
+say(C, "And I'm Reggie, in Dunkirk, with sports.")
 if heads:
     say(A, "Here's what we're following this morning.", *[h.rstrip(".?!") + ("?" if h.endswith("?") else ".") for h in heads])
 segs.append(("CHIME", "sting"))
@@ -122,7 +124,9 @@ for name, els in sections:
     match = next((k for k in INTRO if k in low), None)
     who = next((v for k, v in SPEAKER.items() if k in low), A)
     if [s for s in segs if s[0] != "CHIME"]: segs.append(("CHIME", "sting"))
-    if match: say(*INTRO[match])
+    if match:
+        iv = INTRO[match]
+        for w_, l_ in (iv if isinstance(iv, list) else [iv]): say(w_, l_)
     else: say(A, re.sub(r"^[^A-Za-z]+|[^A-Za-z?!.]+$", "", name) + ".")
     for el in els:
         if not el.get_text(strip=True): continue
@@ -159,8 +163,8 @@ for name, els in sections:
             say(who, *lines_of(el))
 
 segs.append(("CHIME", "sting"))
-say(A, f"That's The Bentham Bulletin for this {d:%A}. From all of us, have a good day.")
-say(B, "See you tomorrow morning.")
+say(A, f"That's The Bentham Bulletin for this {d:%A}. For John and Reggie, I'm Linda. Have a good day.")
+say(C, "See you tomorrow morning.")
 segs.append(("CHIME", "close"))
 
 def speakable(l):
@@ -181,16 +185,16 @@ def speakable(l):
     l = re.sub(r"\s+", " ", l).strip()
     if l == l.upper() and re.search(r"[A-Z]{3}", l): l = l[0] + l[1:].lower()
     return l
-segs = [(w, speakable(t)) if w in (A, B) else (w, t) for w, t in segs]
-segs = [(w, t if re.search(r"[.!?:;][\"')]?$", t) else t + ".") if w in (A, B) else (w, t) for w, t in segs if w not in (A, B) or re.search(r"[A-Za-z0-9]", t)]
+segs = [(w, speakable(t)) if w in (A, B, C) else (w, t) for w, t in segs]
+segs = [(w, t if re.search(r"[.!?:;][\"')]?$", t) else t + ".") if w in (A, B, C) else (w, t) for w, t in segs if w not in (A, B, C) or re.search(r"[A-Za-z0-9]", t)]
 if maxc:
     n, keep = 0, []
     for sgm in segs:
-        n += len(sgm[1]) if sgm[0] in (A, B) else 0
+        n += len(sgm[1]) if sgm[0] in (A, B, C) else 0
         if n > maxc: break
         keep.append(sgm)
     segs = keep
-text = "\n".join(t for w, t in segs if w in (A, B))
+text = "\n".join(t for w, t in segs if w in (A, B, C))
 print(f"{len(segs)} segments, {len(text)} chars")
 if os.environ.get("SCRIPT_ONLY"):
     for w, t in segs: print(f"[{w}] {t}")
@@ -215,9 +219,11 @@ else:
     import numpy as np
     from kokoro import KPipeline
     R = 24000
-    model2 = os.environ.get("VOICE2", "bm_george")
-    pipe = KPipeline(lang_code="a" if model[0] == "a" else "b")
-    pipe2 = pipe if model2[0] == model[0] else KPipeline(lang_code="a" if model2[0] == "a" else "b")
+    VOICES = {A: model, B: os.environ.get("VOICE2", "bm_george"), C: os.environ.get("VOICE3", "bm_lewis")}
+    PIPES = {}
+    for k, v in VOICES.items():
+        lc = "a" if v[0] == "a" else "b"
+        PIPES[k] = next((p for kk, p in PIPES.items() if VOICES[kk][0] == v[0]), None) or KPipeline(lang_code=lc)
     def tone(notes, dur=0.55, vol=0.22):
         out = []
         for f in notes:
@@ -238,7 +244,7 @@ else:
         if w == "PAUSE":
             parts.append(sil(t)); continue
         try:
-            for _, _, audio in (pipe if w == A else pipe2)(t, voice=model if w == A else model2, speed=1.0):
+            for _, _, audio in PIPES[w](t, voice=VOICES[w], speed=1.0):
                 a_ = audio.numpy() if hasattr(audio, "numpy") else np.asarray(audio)
                 parts += [a_.astype(np.float32), sil(0.35)]
         except Exception as e:
