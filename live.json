@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T20:25:13Z",
+ "updated": "2026-11-08T20:27:15Z",
  "week": 9,
  "games": {
   "1": {
@@ -15,8 +15,8 @@
    "state": "in",
    "away": 17,
    "home": 10,
-   "detail": "3:04 - 3rd",
-   "line": "Cowboys 17–10 · 3:04 - 3rd"
+   "detail": "3:00 - 3rd",
+   "line": "Cowboys 17–10 · 3:00 - 3rd"
   },
   "3": {
    "state": "in",
@@ -29,8 +29,8 @@
    "state": "in",
    "away": 16,
    "home": 9,
-   "detail": "7:56 - 4th",
-   "line": "Lions 16–9 · 7:56 - 4th"
+   "detail": "6:46 - 4th",
+   "line": "Lions 16–9 · 6:46 - 4th"
   },
   "5": {
    "state": "in",
@@ -43,22 +43,22 @@
    "state": "in",
    "away": 13,
    "home": 8,
-   "detail": "0:17 - 3rd",
-   "line": "Giants 13–8 · 0:17 - 3rd"
+   "detail": "15:00 - 4th",
+   "line": "Giants 13–8 · 15:00 - 4th"
   },
   "7": {
    "state": "in",
-   "away": 13,
+   "away": 19,
    "home": 13,
-   "detail": "14:16 - 4th",
-   "line": "Tied 13–13 · 14:16 - 4th"
+   "detail": "12:51 - 4th",
+   "line": "Rams 19–13 · 12:51 - 4th"
   },
   "8": {
    "state": "in",
-   "away": 13,
+   "away": 19,
    "home": 14,
-   "detail": "11:04 - 4th",
-   "line": "Panthers 14–13 · 11:04 - 4th"
+   "detail": "10:17 - 4th",
+   "line": "Broncos 19–14 · 10:17 - 4th"
   },
   "9": {
    "state": "pre",
