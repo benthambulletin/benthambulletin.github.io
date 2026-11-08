@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T20:57:40Z",
+ "updated": "2026-11-08T20:59:41Z",
  "week": 9,
  "games": {
   "1": {
@@ -15,15 +15,15 @@
    "state": "in",
    "away": 20,
    "home": 17,
-   "detail": "9:49 - 4th",
-   "line": "Cowboys 20–17 · 9:49 - 4th"
+   "detail": "8:31 - 4th",
+   "line": "Cowboys 20–17 · 8:31 - 4th"
   },
   "3": {
    "state": "in",
    "away": 12,
    "home": 35,
-   "detail": "3:35 - 4th",
-   "line": "Chiefs 35–12 · 3:35 - 4th"
+   "detail": "2:39 - 4th",
+   "line": "Chiefs 35–12 · 2:39 - 4th"
   },
   "4": {
    "state": "post",
@@ -37,23 +37,23 @@
   "5": {
    "state": "in",
    "away": 13,
-   "home": 9,
-   "detail": "1:16 - 4th",
-   "line": "Browns 13–9 · 1:16 - 4th"
+   "home": 16,
+   "detail": "0:58 - 4th",
+   "line": "Saints 16–13 · 0:58 - 4th"
   },
   "6": {
    "state": "in",
    "away": 19,
    "home": 8,
-   "detail": "2:51 - 4th",
-   "line": "Giants 19–8 · 2:51 - 4th"
+   "detail": "2:00 - 4th",
+   "line": "Giants 19–8 · 2:00 - 4th"
   },
   "7": {
    "state": "in",
    "away": 20,
    "home": 13,
-   "detail": "2:00 - 4th",
-   "line": "Rams 20–13 · 2:00 - 4th"
+   "detail": "1:49 - 4th",
+   "line": "Rams 20–13 · 1:49 - 4th"
   },
   "8": {
    "state": "in",
