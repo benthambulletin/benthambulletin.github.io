@@ -12231,7 +12231,9 @@
               "Arod",
               "Josh"
             ]
-          }
+          },
+          "live": "Falcons 10–7 · End of 1st",
+          "liveAt": "2026-11-08T15:11:23Z"
         },
         {
           "away": "Cowboys",
@@ -13270,7 +13272,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-08T14:34:29.354757+00:00",
+  "updated": "2026-11-08T15:12:03.263677+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
