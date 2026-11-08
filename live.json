@@ -1,13 +1,15 @@
 {
- "updated": "2026-11-08T17:35:00Z",
+ "updated": "2026-11-08T17:37:02Z",
  "week": 9,
  "games": {
   "1": {
-   "state": "in",
+   "state": "post",
    "away": 34,
    "home": 17,
-   "detail": "0:39 - 4th",
-   "line": "Bengals 34–17 · 0:39 - 4th"
+   "detail": "Final",
+   "winner": "Bengals",
+   "score": "34–17",
+   "line": "Final · Bengals 34–17"
   },
   "2": {
    "state": "pre",
