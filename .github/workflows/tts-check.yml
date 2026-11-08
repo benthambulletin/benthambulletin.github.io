@@ -1,0 +1,29 @@
+name: tts-check
+# Nov 8: check how the newscast voices pronounce names in data/pronounce.json, without recording
+# or publishing anything. Prints the phonemes for each name, plain and with the pronunciation fix.
+on:
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: |
+          pip install --progress-bar off torch --index-url https://download.pytorch.org/whl/cpu
+          pip install --progress-bar off "kokoro>=0.9" soundfile "misaki[en]" "spacy==3.8.7" "preshed<3.0.10" "cymem<2.0.12" "murmurhash<1.0.14"
+      - name: Check
+        run: |
+          python3 - <<'PY'
+          import json
+          from kokoro import KPipeline
+          lex = json.load(open("data/pronounce.json"))["words"]
+          p = KPipeline(lang_code="a")
+          for w, ph in lex.items():
+              for label, t in (("plain", f"Hello from {w}."), ("fixed", f"Hello from [{w}](/{ph}/).")):
+                  for gs, ps, _ in p(t, voice="af_heart"):
+                      print(f"{w:12} {label}: {ps}")
+          PY

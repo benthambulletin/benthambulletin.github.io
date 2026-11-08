@@ -218,8 +218,32 @@ def speakable(l):
     l = re.sub(r"\s+", " ", l).strip()
     if l == l.upper() and re.search(r"[A-Z]{3}", l): l = l[0] + l[1:].lower()
     return l
+# Nov 8 (Garret: "choppy, doesn't flow"): the build writes a real broadcast script to
+# data/newscast/DATE.txt; when it exists it replaces the auto-built one above. Format, one per line:
+#   LINDA: text   JOHN: text   REGGIE: text   [CHIME]   [PAUSE]
+sp = ROOT / "data" / "newscast" / f"{date}.txt"
+if sp.exists():
+    WHO = {"LINDA": A, "JOHN": B, "REGGIE": C}
+    segs = [("CHIME", "open")]
+    for raw in sp.read_text().splitlines():
+        l = raw.strip()
+        if not l or l.startswith("#"): continue
+        if l.upper() == "[CHIME]": segs.append(("CHIME", "sting")); continue
+        if l.upper() == "[PAUSE]": segs.append(("PAUSE", 2.5)); continue
+        m = re.match(r"(LINDA|JOHN|REGGIE):\s*(.+)", l, re.I)
+        if m: segs.append((WHO[m.group(1).upper()], m.group(2)))
+        elif segs and segs[-1][0] in (A, B, C): segs[-1] = (segs[-1][0], segs[-1][1] + " " + l)
+    segs.append(("CHIME", "close"))
+    print("using hand-written script", sp.name)
 segs = [(w, speakable(t)) if w in (A, B, C) else (w, t) for w, t in segs]
 segs = [(w, t if re.search(r"[.!?:;][\"')]?$", t) else t + ".") if w in (A, B, C) else (w, t) for w, t in segs if w not in (A, B, C) or re.search(r"[A-Za-z0-9]", t)]
+merged = []
+for w, t in segs:
+    if merged and w in (A, B, C) and merged[-1][0] == w:
+        merged[-1] = (w, merged[-1][1] + " " + t)
+    else:
+        merged.append((w, t))
+segs = merged
 if maxc:
     n, keep = 0, []
     for sgm in segs:
@@ -270,6 +294,12 @@ else:
     CHIMES = {"open": tone([523.25, 659.25, 783.99, 1046.5]), "sting": tone([783.99, 1046.5], 0.45, 0.16),
               "close": tone([1046.5, 783.99, 659.25, 523.25])}
     sil = lambda sec: np.zeros(int(R * sec), dtype=np.float32)
+    LEX = json.load(open(ROOT / "data" / "pronounce.json"))["words"]
+    def say_right(t):
+        """Nov 8: names the engine guesses wrong get spelled out in sounds (misaki's [word](/phonemes/) markup)."""
+        for word, ph in sorted(LEX.items(), key=lambda kv: -len(kv[0])):
+            t = re.sub(r"(?<![\w\[])" + re.escape(word) + r"(?![\w\]])", f"[{word}](/{ph}/)", t)
+        return t
     parts, prev = [], None
     SPEED = {A: 1.0, B: 1.0, C: 1.07}
     for w, t in segs:
@@ -279,7 +309,7 @@ else:
             parts.append(sil(t)); continue
         try:
             chunk = []
-            for _, _, audio in PIPES[w](t, voice=VOICES[w], speed=SPEED[w]):
+            for _, _, audio in PIPES[w](say_right(t), voice=VOICES[w], speed=SPEED[w]):
                 a_ = audio.numpy() if hasattr(audio, "numpy") else np.asarray(audio)
                 chunk.append(a_.astype(np.float32))
             if chunk:
