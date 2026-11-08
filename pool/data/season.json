@@ -12296,8 +12296,8 @@
               "Josh"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-11-08T18:07:22Z"
+          "live": "Cowboys 10–7 · 2nd qtr",
+          "liveAt": "2026-11-08T19:08:04Z"
         },
         {
           "away": "Jets",
@@ -12337,8 +12337,8 @@
               "Claude"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-11-08T18:07:22Z"
+          "live": "Chiefs 14–9 · 2nd qtr",
+          "liveAt": "2026-11-08T19:08:04Z"
         },
         {
           "away": "Lions",
@@ -12378,8 +12378,8 @@
             ],
             "Dolphins": []
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-11-08T18:07:22Z"
+          "live": "Lions 6–3 · 2nd qtr",
+          "liveAt": "2026-11-08T19:08:04Z"
         },
         {
           "away": "Browns",
@@ -12420,8 +12420,8 @@
               "Claude"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-11-08T18:07:22Z"
+          "live": "Tied 3–3 · 2nd qtr",
+          "liveAt": "2026-11-08T19:08:04Z"
         },
         {
           "away": "Giants",
@@ -12462,8 +12462,8 @@
               "Josh"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-11-08T18:07:22Z"
+          "live": "Eagles 8–6 · 2nd qtr",
+          "liveAt": "2026-11-08T19:08:04Z"
         },
         {
           "away": "Rams",
@@ -12504,8 +12504,8 @@
               "Josh"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-11-08T18:07:22Z"
+          "live": "Commanders 10–3 · 2nd qtr",
+          "liveAt": "2026-11-08T19:08:04Z"
         },
         {
           "away": "Broncos",
@@ -12546,8 +12546,8 @@
               "Ryan Holovics"
             ]
           },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-11-08T18:07:22Z"
+          "live": "Broncos 10–0 · 2nd qtr",
+          "liveAt": "2026-11-08T19:08:04Z"
         },
         {
           "away": "Texans",
@@ -13120,7 +13120,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -13150,7 +13150,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -13185,7 +13185,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -13215,7 +13215,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -13245,7 +13245,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -13275,7 +13275,7 @@
           "free": false,
           "paypal": false,
           "rank": 21,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -13789,7 +13789,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-08T18:09:30.474801+00:00",
+  "updated": "2026-11-08T19:09:53.997269+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
