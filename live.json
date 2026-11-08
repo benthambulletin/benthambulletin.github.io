@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T22:35:00Z",
+ "updated": "2026-11-08T22:37:02Z",
  "week": 9,
  "games": {
   "1": {
@@ -78,29 +78,29 @@
    "state": "in",
    "away": 17,
    "home": 9,
-   "detail": "1:05 - 2nd",
-   "line": "Texans 17–9 · 1:05 - 2nd"
+   "detail": "0:52 - 2nd",
+   "line": "Texans 17–9 · 0:52 - 2nd"
   },
   "10": {
    "state": "in",
    "away": 17,
    "home": 7,
-   "detail": "7:04 - 2nd",
-   "line": "Packers 17–7 · 7:04 - 2nd"
+   "detail": "5:38 - 2nd",
+   "line": "Packers 17–7 · 5:38 - 2nd"
   },
   "11": {
    "state": "in",
    "away": 10,
    "home": 21,
-   "detail": "1:12 - 2nd",
-   "line": "49ers 21–10 · 1:12 - 2nd"
+   "detail": "Halftime",
+   "line": "49ers 21–10 · Halftime"
   },
   "12": {
    "state": "in",
    "away": 3,
    "home": 7,
-   "detail": "3:11 - 2nd",
-   "line": "Seahawks 7–3 · 3:11 - 2nd"
+   "detail": "3:10 - 2nd",
+   "line": "Seahawks 7–3 · 3:10 - 2nd"
   },
   "13": {
    "state": "pre",
