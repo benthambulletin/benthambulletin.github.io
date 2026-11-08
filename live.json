@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T19:38:25Z",
+ "updated": "2026-11-08T19:40:27Z",
  "week": 9,
  "games": {
   "1": {
@@ -15,8 +15,8 @@
    "state": "in",
    "away": 17,
    "home": 7,
-   "detail": "0:21 - 2nd",
-   "line": "Cowboys 17–7 · 0:21 - 2nd"
+   "detail": "Halftime",
+   "line": "Cowboys 17–7 · Halftime"
   },
   "3": {
    "state": "in",
@@ -29,15 +29,15 @@
    "state": "in",
    "away": 6,
    "home": 3,
-   "detail": "13:23 - 3rd",
-   "line": "Lions 6–3 · 13:23 - 3rd"
+   "detail": "11:32 - 3rd",
+   "line": "Lions 6–3 · 11:32 - 3rd"
   },
   "5": {
    "state": "in",
    "away": 3,
    "home": 3,
-   "detail": "13:33 - 3rd",
-   "line": "Tied 3–3 · 13:33 - 3rd"
+   "detail": "13:23 - 3rd",
+   "line": "Tied 3–3 · 13:23 - 3rd"
   },
   "6": {
    "state": "in",
@@ -50,8 +50,8 @@
    "state": "in",
    "away": 6,
    "home": 10,
-   "detail": "Halftime",
-   "line": "Commanders 10–6 · Halftime"
+   "detail": "14:55 - 3rd",
+   "line": "Commanders 10–6 · 14:55 - 3rd"
   },
   "8": {
    "state": "in",
