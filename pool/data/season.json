@@ -12740,8 +12740,8 @@
               "Josh"
             ]
           },
-          "live": "Texans 10–3 · 2nd qtr",
-          "liveAt": "2026-11-08T21:48:22Z"
+          "live": "Texans 10–9 · 2nd qtr",
+          "liveAt": "2026-11-08T22:08:38Z"
         },
         {
           "away": "Packers",
@@ -12782,8 +12782,8 @@
               "Claude"
             ]
           },
-          "live": "Packers 14–0 · 1st qtr",
-          "liveAt": "2026-11-08T21:48:22Z"
+          "live": "Packers 17–0 · 2nd qtr",
+          "liveAt": "2026-11-08T22:08:38Z"
         },
         {
           "away": "Raiders",
@@ -12824,8 +12824,8 @@
               "Claude"
             ]
           },
-          "live": "49ers 7–0 · 1st qtr",
-          "liveAt": "2026-11-08T21:48:22Z"
+          "live": "49ers 14–7 · 2nd qtr",
+          "liveAt": "2026-11-08T22:08:38Z"
         },
         {
           "away": "Cardinals",
@@ -12865,8 +12865,8 @@
               "Claude"
             ]
           },
-          "live": "Cardinals 3–0 · 1st qtr",
-          "liveAt": "2026-11-08T21:48:22Z"
+          "live": "Seahawks 7–3 · 2nd qtr",
+          "liveAt": "2026-11-08T22:08:38Z"
         },
         {
           "away": "Buccaneers",
@@ -13208,7 +13208,7 @@
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": 5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -13247,7 +13247,7 @@
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -7,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -13286,7 +13286,7 @@
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -7,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -13325,7 +13325,7 @@
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -7,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -13364,7 +13364,7 @@
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -7,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -13520,7 +13520,7 @@
           "free": false,
           "paypal": false,
           "rank": 13,
-          "delta": 5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -13559,7 +13559,7 @@
           "free": true,
           "paypal": false,
           "rank": 13,
-          "delta": -12,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": [
@@ -13598,7 +13598,7 @@
           "free": false,
           "paypal": false,
           "rank": 18,
-          "delta": -5,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -13676,7 +13676,7 @@
           "free": false,
           "paypal": false,
           "rank": 20,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -13723,7 +13723,7 @@
           "free": false,
           "paypal": false,
           "rank": 20,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -14292,7 +14292,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-08T21:50:42.239709+00:00",
+  "updated": "2026-11-08T22:10:17.398574+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -14384,6 +14384,12 @@
       "at": "2026-11-08T13:12:06.773904+00:00",
       "head": "Madrid at 9:30; Devin chases a third podium",
       "text": "Sunday morning: nineteen sheets knotted at 1–0, and Madrid kicks off at 9:30 Eastern, so somebody’s week goes sideways before brunch. Devin has finished top three two weeks running; a third makes her the closest thing this pool has to a closer. Ryan still leads the season at 40–16.\n\nAriel is 0–5 against Tom head to head this year. Andy R leads Arod 2–1 in the battle of the Rodgerses. B-rad and Mrs. Sombloski open the day in the cellar at 0–1, which is roomier than it sounds. Questions for the commissioner go on the pick sheet."
+    },
+    {
+      "week": 9,
+      "at": "2026-11-08T22:10:17.398574+00:00",
+      "head": "Seven perfect, and Walczyk is one of them",
+      "text": "Nine games down, seven sheets still spotless at 9–0: Andy R, Dan, Devin, Kaylani & Luka, Tom, Walczyk and the house. Walczyk started the day 34–38 on the season and is now tied for first. Every favorite has held, so the top is crowded and the cellar belongs to Josh and Mrs. Sombloski at 4–5.\n\nThe late window sorts it. Packers–Patriots splits the room ten and ten, and six of the perfect seven are on New England; Devin is the lone spotless sheet riding Green Bay, which jumped out early. Fourteen sheets have Houston over the Chargers. Thom and B-rad are alone on the Raiders in San Francisco."
     }
   ],
   "rivals": [
