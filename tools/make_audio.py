@@ -4,8 +4,9 @@ Usage: python3 tools/make_audio.py YYYY-MM-DD VOICE OUT.mp3 [max_chars]
 VOICE is a Kokoro voice name (e.g. af_heart) or a Piper .onnx model path. max_chars trims for samples.
 Reads data/edition-DATE.json, turns the paper into plain spoken lines (same idea as the
 read-aloud button), synthesizes with Kokoro (open-source neural TTS, Apache-2.0) or Piper, encodes a small MP3 (lameenc).
-Since Nov 7 it is a three-anchor morning newscast (names Garret's): Linda of Scottsville (VOICE, bf_emma) on news,
-John of North Tonawanda (VOICE2, bm_george) on weather and sky, Reggie of Dunkirk (VOICE3, bm_lewis) on sports, with short original chimes between segments; SCRIPT_ONLY=1 prints the script without recording.
+Since Nov 7 it is a three-anchor morning newscast (names Garret's): Linda of Scottsville (VOICE, af_heart) on news,
+John of North Tonawanda (VOICE2, am_michael) on weather and sky, Reggie of Dunkirk (VOICE3, am_fenrir, a touch faster) on sports.
+Nov 7 "level up": Kokoro's top-graded American voices, 64 kbps, loudness evened per anchor, beats after headlines and hand-offs; with short original chimes between segments; SCRIPT_ONLY=1 prints the script without recording.
 Run by .github/workflows/audio.yml; the MP3 is committed to audio/<date>.mp3 (32 kbps mono, ~3 MB; last 7 days kept)."""
 import json, re, sys, wave, subprocess, tempfile, os, html
 from pathlib import Path
@@ -202,7 +203,7 @@ if os.environ.get("SCRIPT_ONLY"):
 
 import lameenc
 def mp3(pcm16, rate, path):
-    enc = lameenc.Encoder(); enc.set_bit_rate(32); enc.set_in_sample_rate(rate)
+    enc = lameenc.Encoder(); enc.set_bit_rate(64); enc.set_in_sample_rate(rate)
     enc.set_channels(1); enc.set_quality(2)
     open(path, "wb").write(enc.encode(pcm16) + enc.flush())
 
@@ -219,7 +220,7 @@ else:
     import numpy as np
     from kokoro import KPipeline
     R = 24000
-    VOICES = {A: model, B: os.environ.get("VOICE2", "bm_george"), C: os.environ.get("VOICE3", "bm_lewis")}
+    VOICES = {A: model, B: os.environ.get("VOICE2", "am_michael"), C: os.environ.get("VOICE3", "am_fenrir")}
     PIPES = {}
     for k, v in VOICES.items():
         lc = "a" if v[0] == "a" else "b"
@@ -237,16 +238,26 @@ else:
     CHIMES = {"open": tone([523.25, 659.25, 783.99, 1046.5]), "sting": tone([783.99, 1046.5], 0.45, 0.16),
               "close": tone([1046.5, 783.99, 659.25, 523.25])}
     sil = lambda sec: np.zeros(int(R * sec), dtype=np.float32)
-    parts = []
+    parts, prev = [], None
+    SPEED = {A: 1.0, B: 1.0, C: 1.07}
     for w, t in segs:
         if w == "CHIME":
             parts += [sil(0.25), CHIMES[t], sil(0.35)]; continue
         if w == "PAUSE":
             parts.append(sil(t)); continue
         try:
-            for _, _, audio in PIPES[w](t, voice=VOICES[w], speed=1.0):
+            chunk = []
+            for _, _, audio in PIPES[w](t, voice=VOICES[w], speed=SPEED[w]):
                 a_ = audio.numpy() if hasattr(audio, "numpy") else np.asarray(audio)
-                parts += [a_.astype(np.float32), sil(0.35)]
+                chunk.append(a_.astype(np.float32))
+            if chunk:
+                x = np.concatenate(chunk)
+                rms = float(np.sqrt(np.mean(x ** 2))) or 1.0
+                x = x * min(4.0, 0.08 / rms)          # even loudness across the three anchors
+                short = len(t) < 70                   # headlines and hand-offs get a beat after them
+                if prev is not None and prev != w: parts.append(sil(0.25))   # a breath when the anchor changes
+                parts += [x, sil(0.6 if short else 0.4)]
+                prev = w
         except Exception as e:
             print("skipped line:", t[:60], type(e).__name__)
     pcm = np.clip(np.concatenate(parts), -1, 1)

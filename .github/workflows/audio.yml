@@ -3,7 +3,7 @@ name: Read-aloud audio
 # Records each edition as an MP3 with a natural voice (Kokoro, open-source) so every phone hears
 # the same good voice with nothing to download (Garret, Oct 22). The MP3 is committed to audio/<date>.mp3
 # (last 7 days kept) so the site serves it; voice samples go to the "audio" release. The page's "Read it to me" button plays it, and
-# falls back to the phone's own voice if it isn't there yet. Voice: VOICE below (Emma, British; Garret chose it Oct 22).
+# falls back to the phone's own voice if it isn't there yet. Voices: VOICE, VOICE2, VOICE3 below (Linda, John, Reggie: the newscast anchors, Nov 7).
 on:
   push:
     branches: [main]
@@ -25,9 +25,9 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  VOICE: bf_emma
-  VOICE2: bm_george
-  VOICE3: bm_lewis
+  VOICE: af_heart
+  VOICE2: am_michael
+  VOICE3: am_fenrir
 
 jobs:
   audio:
@@ -57,7 +57,7 @@ jobs:
             for v in $SAMPLES; do python3 tools/make_audio.py "$D" "$v" "out/sample-$v.mp3" 900; done
           else
             # Emma (Kokoro) first; if the engine breaks, fall back to a Piper British voice so the button still works
-            python3 tools/make_audio.py "$D" "$VOICE" "out/$D.mp3" 2> err.txt || { tail -c 500 err.txt | tr '\n' ' ' | sed 's/^/::warning::Emma failed, using backup voice: /'; echo; python3 tools/make_audio.py "$D" voice/v.onnx "out/$D.mp3"; }
+            python3 tools/make_audio.py "$D" "$VOICE" "out/$D.mp3" 2> err.txt || { tail -c 500 err.txt | tr '\n' ' ' | sed 's/^/::warning::Linda (Kokoro) failed, using backup voice: /'; echo; python3 tools/make_audio.py "$D" voice/v.onnx "out/$D.mp3"; }
           fi
           echo "READY=1" >> $GITHUB_ENV
       - name: Publish
