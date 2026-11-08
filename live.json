@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T21:32:09Z",
+ "updated": "2026-11-08T21:34:10Z",
  "week": 9,
  "games": {
   "1": {
@@ -15,8 +15,8 @@
    "state": "in",
    "away": 27,
    "home": 23,
-   "detail": "0:46 - 4th",
-   "line": "Cowboys 27–23 · 0:46 - 4th"
+   "detail": "0:35 - 4th",
+   "line": "Cowboys 27–23 · 0:35 - 4th"
   },
   "3": {
    "state": "post",
@@ -37,11 +37,13 @@
    "line": "Final · Lions 19–9"
   },
   "5": {
-   "state": "in",
+   "state": "post",
    "away": 22,
    "home": 23,
-   "detail": "1:00 - OT",
-   "line": "Saints 23–22 · 1:00 - OT"
+   "detail": "Final/OT",
+   "winner": "Saints",
+   "score": "23–22",
+   "line": "Final · Saints 23–22 (OT)"
   },
   "6": {
    "state": "post",
@@ -72,31 +74,31 @@
   },
   "9": {
    "state": "in",
-   "away": 7,
+   "away": 10,
    "home": 3,
-   "detail": "3:20 - 1st",
-   "line": "Texans 7–3 · 3:20 - 1st"
+   "detail": "3:12 - 1st",
+   "line": "Texans 10–3 · 3:12 - 1st"
   },
   "10": {
    "state": "in",
    "away": 7,
    "home": 0,
-   "detail": "13:19 - 1st",
-   "line": "Packers 7–0 · 13:19 - 1st"
+   "detail": "12:34 - 1st",
+   "line": "Packers 7–0 · 12:34 - 1st"
   },
   "11": {
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "11:30 - 1st",
-   "line": "Tied 0–0 · 11:30 - 1st"
+   "detail": "10:11 - 1st",
+   "line": "Tied 0–0 · 10:11 - 1st"
   },
   "12": {
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "12:53 - 1st",
-   "line": "Tied 0–0 · 12:53 - 1st"
+   "detail": "12:36 - 1st",
+   "line": "Tied 0–0 · 12:36 - 1st"
   },
   "13": {
    "state": "pre",
