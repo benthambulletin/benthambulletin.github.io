@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T20:49:33Z",
+ "updated": "2026-11-08T20:51:35Z",
  "week": 9,
  "games": {
   "1": {
@@ -15,50 +15,52 @@
    "state": "in",
    "away": 20,
    "home": 17,
-   "detail": "11:29 - 4th",
-   "line": "Cowboys 20–17 · 11:29 - 4th"
+   "detail": "9:59 - 4th",
+   "line": "Cowboys 20–17 · 9:59 - 4th"
   },
   "3": {
    "state": "in",
    "away": 12,
    "home": 28,
-   "detail": "6:07 - 4th",
-   "line": "Chiefs 28–12 · 6:07 - 4th"
+   "detail": "5:46 - 4th",
+   "line": "Chiefs 28–12 · 5:46 - 4th"
   },
   "4": {
-   "state": "in",
+   "state": "post",
    "away": 19,
    "home": 9,
-   "detail": "1:53 - 4th",
-   "line": "Lions 19–9 · 1:53 - 4th"
+   "detail": "Final",
+   "winner": "Lions",
+   "score": "19–9",
+   "line": "Final · Lions 19–9"
   },
   "5": {
    "state": "in",
    "away": 13,
    "home": 9,
-   "detail": "2:43 - 4th",
-   "line": "Browns 13–9 · 2:43 - 4th"
+   "detail": "2:00 - 4th",
+   "line": "Browns 13–9 · 2:00 - 4th"
   },
   "6": {
    "state": "in",
    "away": 16,
    "home": 8,
-   "detail": "6:43 - 4th",
-   "line": "Giants 16–8 · 6:43 - 4th"
+   "detail": "5:56 - 4th",
+   "line": "Giants 16–8 · 5:56 - 4th"
   },
   "7": {
    "state": "in",
    "away": 20,
    "home": 13,
-   "detail": "5:26 - 4th",
-   "line": "Rams 20–13 · 5:26 - 4th"
+   "detail": "3:55 - 4th",
+   "line": "Rams 20–13 · 3:55 - 4th"
   },
   "8": {
    "state": "in",
    "away": 26,
    "home": 14,
-   "detail": "4:27 - 4th",
-   "line": "Broncos 26–14 · 4:27 - 4th"
+   "detail": "3:58 - 4th",
+   "line": "Broncos 26–14 · 3:58 - 4th"
   },
   "9": {
    "state": "pre",
