@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T18:45:48Z",
+ "updated": "2026-11-08T18:47:50Z",
  "week": 9,
  "games": {
   "1": {
@@ -22,15 +22,15 @@
    "state": "in",
    "away": 6,
    "home": 7,
-   "detail": "14:51 - 2nd",
-   "line": "Chiefs 7–6 · 14:51 - 2nd"
+   "detail": "13:46 - 2nd",
+   "line": "Chiefs 7–6 · 13:46 - 2nd"
   },
   "4": {
    "state": "in",
    "away": 3,
    "home": 3,
-   "detail": "12:13 - 2nd",
-   "line": "Tied 3–3 · 12:13 - 2nd"
+   "detail": "10:58 - 2nd",
+   "line": "Tied 3–3 · 10:58 - 2nd"
   },
   "5": {
    "state": "in",
@@ -43,22 +43,22 @@
    "state": "in",
    "away": 6,
    "home": 8,
-   "detail": "0:42 - 1st",
-   "line": "Eagles 8–6 · 0:42 - 1st"
+   "detail": "0:29 - 1st",
+   "line": "Eagles 8–6 · 0:29 - 1st"
   },
   "7": {
    "state": "in",
    "away": 3,
    "home": 10,
-   "detail": "12:33 - 2nd",
-   "line": "Commanders 10–3 · 12:33 - 2nd"
+   "detail": "12:25 - 2nd",
+   "line": "Commanders 10–3 · 12:25 - 2nd"
   },
   "8": {
    "state": "in",
    "away": 10,
    "home": 0,
-   "detail": "15:00 - 2nd",
-   "line": "Broncos 10–0 · 15:00 - 2nd"
+   "detail": "14:06 - 2nd",
+   "line": "Broncos 10–0 · 14:06 - 2nd"
   },
   "9": {
    "state": "pre",
