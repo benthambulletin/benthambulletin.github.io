@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T19:52:35Z",
+ "updated": "2026-11-08T19:54:36Z",
  "week": 9,
  "games": {
   "1": {
@@ -15,43 +15,43 @@
    "state": "in",
    "away": 17,
    "home": 7,
-   "detail": "Halftime",
-   "line": "Cowboys 17–7 · Halftime"
+   "detail": "14:16 - 3rd",
+   "line": "Cowboys 17–7 · 14:16 - 3rd"
   },
   "3": {
    "state": "in",
    "away": 12,
-   "home": 14,
-   "detail": "11:41 - 3rd",
-   "line": "Chiefs 14–12 · 11:41 - 3rd"
+   "home": 20,
+   "detail": "10:20 - 3rd",
+   "line": "Chiefs 20–12 · 10:20 - 3rd"
   },
   "4": {
    "state": "in",
    "away": 9,
    "home": 3,
-   "detail": "7:13 - 3rd",
-   "line": "Lions 9–3 · 7:13 - 3rd"
+   "detail": "5:56 - 3rd",
+   "line": "Lions 9–3 · 5:56 - 3rd"
   },
   "5": {
    "state": "in",
    "away": 6,
    "home": 3,
-   "detail": "9:01 - 3rd",
-   "line": "Browns 6–3 · 9:01 - 3rd"
+   "detail": "8:50 - 3rd",
+   "line": "Browns 6–3 · 8:50 - 3rd"
   },
   "6": {
    "state": "in",
    "away": 6,
    "home": 8,
-   "detail": "14:00 - 3rd",
-   "line": "Eagles 8–6 · 14:00 - 3rd"
+   "detail": "12:59 - 3rd",
+   "line": "Eagles 8–6 · 12:59 - 3rd"
   },
   "7": {
    "state": "in",
    "away": 13,
    "home": 10,
-   "detail": "10:54 - 3rd",
-   "line": "Rams 13–10 · 10:54 - 3rd"
+   "detail": "9:27 - 3rd",
+   "line": "Rams 13–10 · 9:27 - 3rd"
   },
   "8": {
    "state": "in",
