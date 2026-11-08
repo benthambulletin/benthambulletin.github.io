@@ -12200,12 +12200,38 @@
           "when": "Sun 9:30 AM · Madrid",
           "tv": "NFL Network",
           "winner": null,
-          "status": "sealed",
+          "status": "live",
           "fav": "Bengals",
           "line": "Bengals −3.5",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Bengals": [
+              "Thom",
+              "Tom",
+              "Leah",
+              "Devin",
+              "Mrs. Sombloski",
+              "Mike Sombloski",
+              "Garret",
+              "Dan",
+              "Kaylani & Luka",
+              "Ariel",
+              "Derek",
+              "Melissa",
+              "Wendy",
+              "Walczyk",
+              "Andy R",
+              "Claude"
+            ],
+            "Falcons": [
+              "B-rad",
+              "Ryan Holovics",
+              "Nate V",
+              "Arod",
+              "Josh"
+            ]
+          }
         },
         {
           "away": "Cowboys",
@@ -12401,7 +12427,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-06T01:06:40+00:00",
           "firstAt": "2026-11-06T01:06:40+00:00",
@@ -12428,7 +12455,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-05T21:53:47+00:00",
           "firstAt": "2026-11-05T21:53:47+00:00",
@@ -12450,7 +12478,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Falcons"
           },
           "filedAt": "2026-11-05T21:39:42+00:00",
           "firstAt": "2026-11-05T21:39:42+00:00",
@@ -12472,7 +12501,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-03T08:59:51+00:00",
           "firstAt": "2026-11-03T08:59:51+00:00",
@@ -12494,7 +12524,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-05T21:39:13+00:00",
           "firstAt": "2026-11-05T21:39:13+00:00",
@@ -12516,7 +12547,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-05T22:32:17+00:00",
           "firstAt": "2026-11-05T22:32:17+00:00",
@@ -12538,7 +12570,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-04T15:50:48+00:00",
           "firstAt": "2026-11-04T15:50:48+00:00",
@@ -12560,7 +12593,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-05T21:37:39+00:00",
           "firstAt": "2026-11-05T21:37:39+00:00",
@@ -12582,7 +12616,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Falcons"
           },
           "filedAt": "2026-11-06T00:24:17+00:00",
           "firstAt": "2026-11-06T00:24:17+00:00",
@@ -12609,7 +12644,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-05T21:43:26+00:00",
           "firstAt": "2026-11-05T21:43:26+00:00",
@@ -12631,7 +12667,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-04T00:49:11+00:00",
           "firstAt": "2026-11-04T00:49:11+00:00",
@@ -12653,7 +12690,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-05T22:36:51+00:00",
           "firstAt": "2026-11-05T22:36:51+00:00",
@@ -12675,7 +12713,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-05T02:09:24+00:00",
           "firstAt": "2026-11-05T02:09:24+00:00",
@@ -12697,7 +12736,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Falcons"
           },
           "filedAt": "2026-11-05T21:37:55+00:00",
           "firstAt": "2026-11-05T21:37:55+00:00",
@@ -12719,7 +12759,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Falcons"
           },
           "filedAt": "2026-11-05T13:35:25+00:00",
           "firstAt": "2026-11-05T13:35:25+00:00",
@@ -12741,7 +12782,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-03T11:07:58+00:00",
           "firstAt": "2026-11-03T11:07:58+00:00",
@@ -12763,7 +12805,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-03T23:48:54+00:00",
           "firstAt": "2026-11-03T23:48:54+00:00",
@@ -12785,7 +12828,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-06T00:16:11+00:00",
           "firstAt": "2026-11-06T00:16:11+00:00",
@@ -12812,7 +12856,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Jaguars"
+            "0": "Jaguars",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-05T23:03:23+00:00",
           "firstAt": "2026-11-05T23:03:23+00:00",
@@ -12834,7 +12879,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Ravens"
+            "0": "Ravens",
+            "1": "Falcons"
           },
           "filedAt": "2026-11-04T15:40:37+00:00",
           "firstAt": "2026-11-04T15:40:37+00:00",
@@ -12856,7 +12902,8 @@
           "max": 14,
           "tb": null,
           "sheet": {
-            "0": "Ravens"
+            "0": "Ravens",
+            "1": "Bengals"
           },
           "filedAt": "2026-11-04T22:38:15+00:00",
           "firstAt": "2026-11-04T22:38:15+00:00",
@@ -13103,6 +13150,18 @@
             "upset": false,
             "roomUpset": false,
             "rightN": 18
+          },
+          "1": {
+            "away": 15,
+            "home": 5,
+            "minority": "Falcons",
+            "minorityWho": [
+              "B-rad",
+              "Ryan Holovics",
+              "Nate V",
+              "Arod",
+              "Josh"
+            ]
           }
         },
         "upsets": 0,
@@ -13158,7 +13217,35 @@
         "bills": null,
         "jets": null
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 1,
+          "away": [
+            "Thom",
+            "Tom",
+            "Leah",
+            "Devin",
+            "Mrs. Sombloski",
+            "Mike Sombloski",
+            "Garret",
+            "Dan",
+            "Kaylani & Luka",
+            "Ariel",
+            "Derek",
+            "Melissa",
+            "Wendy",
+            "Walczyk",
+            "Andy R"
+          ],
+          "home": [
+            "B-rad",
+            "Ryan Holovics",
+            "Nate V",
+            "Arod",
+            "Josh"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -13183,7 +13270,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-08T14:09:59.317597+00:00",
+  "updated": "2026-11-08T14:32:57.264523+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
