@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T19:24:15Z",
+ "updated": "2026-11-08T19:26:16Z",
  "week": 9,
  "games": {
   "1": {
@@ -22,8 +22,8 @@
    "state": "in",
    "away": 12,
    "home": 14,
-   "detail": "0:53 - 2nd",
-   "line": "Chiefs 14–12 · 0:53 - 2nd"
+   "detail": "0:42 - 2nd",
+   "line": "Chiefs 14–12 · 0:42 - 2nd"
   },
   "4": {
    "state": "in",
@@ -48,17 +48,17 @@
   },
   "7": {
    "state": "in",
-   "away": 3,
+   "away": 6,
    "home": 10,
-   "detail": "End of 2nd",
-   "line": "Commanders 10–3 · End of 2nd"
+   "detail": "Halftime",
+   "line": "Commanders 10–6 · Halftime"
   },
   "8": {
    "state": "in",
    "away": 10,
    "home": 7,
-   "detail": "1:27 - 2nd",
-   "line": "Broncos 10–7 · 1:27 - 2nd"
+   "detail": "0:20 - 2nd",
+   "line": "Broncos 10–7 · 0:20 - 2nd"
   },
   "9": {
    "state": "pre",
