@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T20:51:35Z",
+ "updated": "2026-11-08T20:53:36Z",
  "week": 9,
  "games": {
   "1": {
@@ -22,8 +22,8 @@
    "state": "in",
    "away": 12,
    "home": 28,
-   "detail": "5:46 - 4th",
-   "line": "Chiefs 28–12 · 5:46 - 4th"
+   "detail": "5:09 - 4th",
+   "line": "Chiefs 28–12 · 5:09 - 4th"
   },
   "4": {
    "state": "post",
@@ -43,24 +43,24 @@
   },
   "6": {
    "state": "in",
-   "away": 16,
+   "away": 19,
    "home": 8,
-   "detail": "5:56 - 4th",
-   "line": "Giants 16–8 · 5:56 - 4th"
+   "detail": "4:24 - 4th",
+   "line": "Giants 19–8 · 4:24 - 4th"
   },
   "7": {
    "state": "in",
    "away": 20,
    "home": 13,
-   "detail": "3:55 - 4th",
-   "line": "Rams 20–13 · 3:55 - 4th"
+   "detail": "2:32 - 4th",
+   "line": "Rams 20–13 · 2:32 - 4th"
   },
   "8": {
    "state": "in",
    "away": 26,
    "home": 14,
-   "detail": "3:58 - 4th",
-   "line": "Broncos 26–14 · 3:58 - 4th"
+   "detail": "3:44 - 4th",
+   "line": "Broncos 26–14 · 3:44 - 4th"
   },
   "9": {
    "state": "pre",
