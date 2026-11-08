@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T21:11:51Z",
+ "updated": "2026-11-08T21:13:53Z",
  "week": 9,
  "games": {
   "1": {
@@ -15,8 +15,8 @@
    "state": "in",
    "away": 20,
    "home": 20,
-   "detail": "3:30 - 4th",
-   "line": "Tied 20–20 · 3:30 - 4th"
+   "detail": "2:10 - 4th",
+   "line": "Tied 20–20 · 2:10 - 4th"
   },
   "3": {
    "state": "post",
@@ -40,36 +40,40 @@
    "state": "in",
    "away": 16,
    "home": 16,
-   "detail": "10:00 - OT",
-   "line": "Tied 16–16 · 10:00 - OT"
+   "detail": "9:27 - OT",
+   "line": "Tied 16–16 · 9:27 - OT"
   },
   "6": {
    "state": "in",
    "away": 19,
    "home": 11,
-   "detail": "0:53 - 4th",
-   "line": "Giants 19–11 · 0:53 - 4th"
+   "detail": "0:47 - 4th",
+   "line": "Giants 19–11 · 0:47 - 4th"
   },
   "7": {
-   "state": "in",
+   "state": "post",
    "away": 20,
    "home": 13,
-   "detail": "0:03 - 4th",
-   "line": "Rams 20–13 · 0:03 - 4th"
+   "detail": "Final",
+   "winner": "Rams",
+   "score": "20–13",
+   "line": "Final · Rams 20–13"
   },
   "8": {
-   "state": "in",
+   "state": "post",
    "away": 26,
    "home": 21,
-   "detail": "1:08 - 4th",
-   "line": "Broncos 26–21 · 1:08 - 4th"
+   "detail": "Final",
+   "winner": "Broncos",
+   "score": "26–21",
+   "line": "Final · Broncos 26–21"
   },
   "9": {
    "state": "in",
-   "away": 0,
+   "away": 7,
    "home": 0,
-   "detail": "11:26 - 1st",
-   "line": "Tied 0–0 · 11:26 - 1st"
+   "detail": "10:16 - 1st",
+   "line": "Texans 7–0 · 10:16 - 1st"
   },
   "10": {
    "state": "pre",
