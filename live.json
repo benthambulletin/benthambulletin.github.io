@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T18:01:18Z",
+ "updated": "2026-11-08T18:03:20Z",
  "week": 9,
  "games": {
   "1": {
@@ -18,28 +18,32 @@
    "detail": "11/8 - 1:00 PM EST"
   },
   "3": {
-   "state": "pre",
+   "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "11/8 - 1:00 PM EST"
+   "detail": "15:00 - 1st",
+   "line": "Tied 0–0 · 15:00 - 1st"
   },
   "4": {
-   "state": "pre",
+   "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "11/8 - 1:00 PM EST"
+   "detail": "15:00 - 1st",
+   "line": "Tied 0–0 · 15:00 - 1st"
   },
   "5": {
-   "state": "pre",
+   "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "11/8 - 1:00 PM EST"
+   "detail": "15:00 - 1st",
+   "line": "Tied 0–0 · 15:00 - 1st"
   },
   "6": {
-   "state": "pre",
+   "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "11/8 - 1:00 PM EST"
+   "detail": "15:00 - 1st",
+   "line": "Tied 0–0 · 15:00 - 1st"
   },
   "7": {
    "state": "pre",
@@ -48,10 +52,11 @@
    "detail": "11/8 - 1:00 PM EST"
   },
   "8": {
-   "state": "pre",
+   "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "11/8 - 1:00 PM EST"
+   "detail": "15:00 - 1st",
+   "line": "Tied 0–0 · 15:00 - 1st"
   },
   "9": {
    "state": "pre",
