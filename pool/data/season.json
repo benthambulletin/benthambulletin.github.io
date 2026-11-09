@@ -12776,6 +12776,7 @@
           "fav": "Patriots",
           "line": "Patriots −3",
           "hits": [
+            "Thom",
             "Leah",
             "B-rad",
             "Devin",
@@ -12787,7 +12788,6 @@
             "Wendy"
           ],
           "misses": [
-            "Thom",
             "Tom",
             "Mike Sombloski",
             "Garret",
@@ -12802,6 +12802,7 @@
           ],
           "sides": {
             "Packers": [
+              "Thom",
               "Leah",
               "B-rad",
               "Devin",
@@ -12813,7 +12814,6 @@
               "Wendy"
             ],
             "Patriots": [
-              "Thom",
               "Tom",
               "Mike Sombloski",
               "Garret",
@@ -12962,12 +12962,38 @@
           "when": "Sun 8:20 PM",
           "tv": "NBC",
           "winner": null,
-          "status": "sealed",
+          "status": "live",
           "fav": "Bears",
-          "line": "Bears −5.5",
+          "line": "Bears −6.5",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Buccaneers": [
+              "Leah",
+              "B-rad",
+              "Ariel",
+              "Josh"
+            ],
+            "Bears": [
+              "Thom",
+              "Tom",
+              "Devin",
+              "Mrs. Sombloski",
+              "Mike Sombloski",
+              "Ryan Holovics",
+              "Garret",
+              "Nate V",
+              "Dan",
+              "Arod",
+              "Kaylani & Luka",
+              "Derek",
+              "Melissa",
+              "Wendy",
+              "Walczyk",
+              "Andy R",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Bills",
@@ -13007,7 +13033,8 @@
             "9": "Texans",
             "10": "Packers",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-04T15:50:48+00:00",
           "firstAt": "2026-11-04T15:50:48+00:00",
@@ -13046,7 +13073,8 @@
             "9": "Texans",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-06T01:06:40+00:00",
           "firstAt": "2026-11-06T01:06:40+00:00",
@@ -13085,7 +13113,8 @@
             "9": "Texans",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-03T08:59:51+00:00",
           "firstAt": "2026-11-03T08:59:51+00:00",
@@ -13119,7 +13148,8 @@
             "9": "Texans",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-05T21:43:26+00:00",
           "firstAt": "2026-11-05T21:43:26+00:00",
@@ -13153,7 +13183,8 @@
             "9": "Texans",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-03T23:48:54+00:00",
           "firstAt": "2026-11-03T23:48:54+00:00",
@@ -13187,7 +13218,8 @@
             "9": "Texans",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-06T00:16:11+00:00",
           "firstAt": "2026-11-06T00:16:11+00:00",
@@ -13226,7 +13258,8 @@
             "9": "Chargers",
             "10": "Packers",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-05T21:39:42+00:00",
           "firstAt": "2026-11-05T21:39:42+00:00",
@@ -13265,7 +13298,8 @@
             "9": "Chargers",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-05T21:39:13+00:00",
           "firstAt": "2026-11-05T21:39:13+00:00",
@@ -13304,7 +13338,8 @@
             "9": "Texans",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-05T22:32:17+00:00",
           "firstAt": "2026-11-05T22:32:17+00:00",
@@ -13343,7 +13378,8 @@
             "9": "Texans",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-05T21:37:39+00:00",
           "firstAt": "2026-11-05T21:37:39+00:00",
@@ -13382,7 +13418,8 @@
             "9": "Texans",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-05T22:36:51+00:00",
           "firstAt": "2026-11-05T22:36:51+00:00",
@@ -13421,7 +13458,8 @@
             "9": "Texans",
             "10": "Packers",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-05T21:37:55+00:00",
           "firstAt": "2026-11-05T21:37:55+00:00",
@@ -13460,7 +13498,8 @@
             "9": "Texans",
             "10": "Packers",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-05T13:35:25+00:00",
           "firstAt": "2026-11-05T13:35:25+00:00",
@@ -13499,7 +13538,8 @@
             "9": "Chargers",
             "10": "Packers",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-05T23:03:23+00:00",
           "firstAt": "2026-11-05T23:03:23+00:00",
@@ -13538,7 +13578,8 @@
             "9": "Texans",
             "10": "Packers",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Buccaneers"
           },
           "filedAt": "2026-11-05T21:53:47+00:00",
           "firstAt": "2026-11-05T21:53:47+00:00",
@@ -13581,7 +13622,8 @@
             "9": "Chargers",
             "10": "Packers",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Buccaneers"
           },
           "filedAt": "2026-11-04T00:49:11+00:00",
           "firstAt": "2026-11-04T00:49:11+00:00",
@@ -13624,7 +13666,8 @@
             "9": "Texans",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-05T02:09:24+00:00",
           "firstAt": "2026-11-05T02:09:24+00:00",
@@ -13648,11 +13691,11 @@
         {
           "name": "Thom",
           "house": false,
-          "correct": 9,
-          "missed": 4,
+          "correct": 10,
+          "missed": 3,
           "void": 0,
           "remaining": 2,
-          "max": 11,
+          "max": 12,
           "tb": null,
           "sheet": {
             "0": "Jaguars",
@@ -13665,22 +13708,23 @@
             "7": "Rams",
             "8": "Broncos",
             "9": "Texans",
-            "10": "Patriots",
+            "10": "Packers",
             "11": "Raiders",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-03T11:07:58+00:00",
           "firstAt": "2026-11-03T11:07:58+00:00",
           "free": true,
           "paypal": false,
-          "rank": 18,
-          "delta": -3,
+          "rank": 15,
+          "delta": 3,
           "state": "alive",
           "paid": false,
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 9–12"
+              "note": "behind Claude, 10–12"
             }
           ]
         },
@@ -13706,7 +13750,8 @@
             "9": "Texans",
             "10": "Packers",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Bears"
           },
           "filedAt": "2026-11-04T22:38:15+00:00",
           "firstAt": "2026-11-04T22:38:15+00:00",
@@ -13749,7 +13794,8 @@
             "9": "Chargers",
             "10": "Packers",
             "11": "Raiders",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Buccaneers"
           },
           "filedAt": "2026-11-04T15:40:37+00:00",
           "firstAt": "2026-11-04T15:40:37+00:00",
@@ -13792,7 +13838,8 @@
             "9": "Chargers",
             "10": "Patriots",
             "11": "49ers",
-            "12": "Seahawks"
+            "12": "Seahawks",
+            "13": "Buccaneers"
           },
           "filedAt": "2026-11-06T00:24:17+00:00",
           "firstAt": "2026-11-06T00:24:17+00:00",
@@ -14182,23 +14229,24 @@
             "rightN": 14
           },
           "10": {
-            "away": 9,
-            "home": 11,
-            "minority": "Packers",
+            "away": 10,
+            "home": 10,
+            "minority": "Patriots",
             "minorityWho": [
-              "Leah",
-              "B-rad",
-              "Devin",
-              "Mrs. Sombloski",
-              "Ryan Holovics",
-              "Nate V",
-              "Arod",
-              "Ariel",
-              "Wendy"
+              "Tom",
+              "Mike Sombloski",
+              "Garret",
+              "Dan",
+              "Kaylani & Luka",
+              "Derek",
+              "Melissa",
+              "Walczyk",
+              "Josh",
+              "Andy R"
             ],
             "upset": true,
-            "roomUpset": true,
-            "rightN": 9
+            "roomUpset": false,
+            "rightN": 10
           },
           "11": {
             "away": 2,
@@ -14220,38 +14268,51 @@
             "upset": false,
             "roomUpset": false,
             "rightN": 20
+          },
+          "13": {
+            "away": 4,
+            "home": 16,
+            "minority": "Buccaneers",
+            "minorityWho": [
+              "Leah",
+              "B-rad",
+              "Ariel",
+              "Josh"
+            ]
           }
         },
         "upsets": 1,
         "decided": 13,
         "best": {
-          "game": 10,
-          "n": 9,
+          "game": 5,
+          "n": 10,
           "who": [
+            "Tom",
             "Leah",
             "B-rad",
             "Devin",
-            "Mrs. Sombloski",
             "Ryan Holovics",
-            "Nate V",
+            "Dan",
             "Arod",
-            "Ariel",
-            "Wendy"
+            "Kaylani & Luka",
+            "Walczyk",
+            "Andy R"
           ]
         },
         "worst": {
-          "game": 10,
-          "n": 9,
+          "game": 5,
+          "n": 10,
           "who": [
+            "Tom",
             "Leah",
             "B-rad",
             "Devin",
-            "Mrs. Sombloski",
             "Ryan Holovics",
-            "Nate V",
+            "Dan",
             "Arod",
-            "Ariel",
-            "Wendy"
+            "Kaylani & Luka",
+            "Walczyk",
+            "Andy R"
           ]
         },
         "bills": null,
@@ -14314,7 +14375,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-09T01:10:19.774131+00:00",
+  "updated": "2026-11-09T01:25:02.847031+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
