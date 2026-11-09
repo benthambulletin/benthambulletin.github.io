@@ -13686,7 +13686,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -13730,7 +13730,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -13774,7 +13774,7 @@
           "free": true,
           "paypal": false,
           "rank": 16,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": [
@@ -14443,7 +14443,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-09T14:14:52.583566+00:00",
+  "updated": "2026-11-09T15:13:51.385327+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
