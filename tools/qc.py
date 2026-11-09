@@ -15,6 +15,7 @@ if ed:
               'The National Wire','The Home Wire','The Gridiron','The Chase','The Marquee',
               'On This Day','Question of the Day']
     if dt.weekday()==6: REQUIRED=[x for x in REQUIRED if x not in('The Marquee',)]
+    if str(dt) > '2026-11-09' and str(dt) < '2027-02-01': REQUIRED.remove('The Chase')  # Chase rests between seasons (Nov 9)
     for sec in REQUIRED:
         if sec not in s: fails.append(f'MISSING SECTION: {sec}')
     # 2. issue number consistent
