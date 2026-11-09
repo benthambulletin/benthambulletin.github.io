@@ -12993,7 +12993,9 @@
               "Andy R",
               "Claude"
             ]
-          }
+          },
+          "live": "Bears 14–3 · 2nd qtr",
+          "liveAt": "2026-11-09T02:08:10Z"
         },
         {
           "away": "Bills",
@@ -13718,7 +13720,7 @@
           "free": true,
           "paypal": false,
           "rank": 15,
-          "delta": 3,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": [
@@ -14375,7 +14377,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-09T01:25:02.847031+00:00",
+  "updated": "2026-11-09T02:10:01.951177+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
