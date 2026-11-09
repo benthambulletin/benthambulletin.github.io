@@ -433,7 +433,7 @@ def build(edition):
     nav += '<a href="/album/">Album</a><a href="/archive/">Archive</a>'
     nav += f'<a href="/{newer["slug"]}/">{dname(newer)} &rarr;</a>' if newer else '<a href="/">Today</a>'
     nav += '</div>'
-    edition = dict(edition); edition['body_html'] = add_radar(riddle_reveal(inside_today(edition['body_html'])))
+    edition = dict(edition); edition['body_html'] = add_radar(riddle_reveal(edition['body_html']))  # Nov 9: Garret dropped the 'Inside' jump links
     if edition.get('plate_path'):
         pv = hashlib.md5(open(edition['plate_path'],'rb').read()).hexdigest()[:8]
         body = edition['body_html'].replace('__PLATE__', plate_rel+'?v='+pv) + nav

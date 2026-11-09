@@ -50,7 +50,7 @@ Photos from other sources (e.g. ESPN, a police department) get credited in the c
 ## Section calls
 
 - **The lead (Garret, Nov 6):** every edition picks ONE story as the day's lead and gives it the lead treatment: `<div class="wire lead"><div><span class="kick">The Lead</span><h3>…</h3><p>…</p><p>…</p></div></div>` at the top of its section (bigger headline, drop cap, no number). It can run three or four short paragraphs, and may carry one `<div class="pull">…</div>` quote from the source. Pick the story the family will talk about.
-- **Inside today:** the generator adds a jump strip under the cover from the section heads automatically; don't hand-write one.
+- **No "Inside" jump links (Garret, Nov 9: "the paper isn't long enough").** The generator no longer adds the strip; don't hand-write one.
 
 - **The National Wire:** two to four stories, the editor's call on what is solid that morning. Fewer rather than a shaky one.
 - **The Marquee:** three to five real items, verified and dated within 48 hours, from **all of pop culture** (Garret, Nov 6: "my family loves this"): movies, TV, streaming, music and charts, celebrities, viral moments, awards, books, games, sports personalities. Lead with what the family would talk about at dinner, not trade-business news (studio earnings, obscure castings) unless nothing better exists. Sources include E! News, Us Weekly, Page Six, Rolling Stone and TVLine in news.json alongside the trades.
