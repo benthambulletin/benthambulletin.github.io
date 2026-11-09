@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T00:20:28Z",
+ "updated": "2026-11-09T00:22:29Z",
  "week": 9,
  "games": {
   "1": {
@@ -78,8 +78,8 @@
    "state": "in",
    "away": 44,
    "home": 22,
-   "detail": "2:20 - 4th",
-   "line": "Texans 44–22 · 2:20 - 4th"
+   "detail": "2:00 - 4th",
+   "line": "Texans 44–22 · 2:00 - 4th"
   },
   "10": {
    "state": "in",
@@ -98,11 +98,13 @@
    "line": "Final · 49ers 38–17"
   },
   "12": {
-   "state": "in",
+   "state": "post",
    "away": 3,
    "home": 17,
-   "detail": "1:18 - 4th",
-   "line": "Seahawks 17–3 · 1:18 - 4th"
+   "detail": "Final",
+   "winner": "Seahawks",
+   "score": "17–3",
+   "line": "Final · Seahawks 17–3"
   },
   "13": {
    "state": "pre",
