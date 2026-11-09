@@ -16,7 +16,7 @@
 <div class="orn">&#127809; &#127810; &#127809;</div>
 <div class="dateline">Saturday &middot; November 7 &middot; 2026</div>
 <div class="place">North Tonawanda, New York &mdash; compiled at dawn</div>
-<div class="tools under"><button type="button" id="bb-read" data-audio="/audio/2026-11-07.mp3" aria-pressed="false">&#128251; Play the newscast</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>
+<div class="tools under"><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>
 <div class="dbl-tight"><div class="a"></div><div class="b"></div></div>
 <div class="tiles">
   <div class="tile"><div class="v">52&deg;</div><div class="k">Showers Likely</div></div>
@@ -100,13 +100,14 @@ Low <b>38&deg;</b> tonight &middot; showers likely before midnight<br>Rain today
 <div class="colo"><div class="s">Forecast, lake temperatures and radar per NWS Buffalo &middot; Niagara Falls, Dunkirk and Rochester stations &middot; normals from NOAA &middot; sky computed for 14120 &middot; headlines via CBS, PBS NewsHour, BBC, WKBW, WBLK, Rochester First, the <i>Niagara Gazette</i>, the <i>Lockport Journal</i>, the Dunkirk <i>Observer</i>, Variety, Deadline, Us Weekly, Billboard, Buffalo Rumblings, Gang Green Nation &middot; schedule and NASCAR points via Sportradar</div>
 <div class="ask"><a href="https://tally.so/r/rjxDpl">Send something to the paper</a> &middot; <a href="https://tally.so/r/obWNYP">Log a migraine</a></div>
 <div class="sig">&mdash; G.</div><div class="orn">&#127809; &#127810; &#127809;</div></div>
-<div class="nav"><a href="/2026/11/06/">&larr; Friday</a><a href="/album/">Album</a><a href="/archive/">Archive</a><a href="/">Today</a></div>
+<div class="nav"><a href="/2026/11/06/">&larr; Friday</a><a href="/album/">Album</a><a href="/archive/">Archive</a><a href="/2026/11/08/">Sunday &rarr;</a></div>
 </div><script>
 (function(){
 var root=document.documentElement, big=document.getElementById('bb-big'), rd=document.getElementById('bb-read');
 function setBig(on){root.classList.toggle('big',on);big.setAttribute('aria-pressed',on?'true':'false');big.innerHTML=on?'A&minus; Normal print':'A+ Bigger print';try{localStorage.setItem('bb-big',on?'1':'0')}catch(e){}}
 try{if(localStorage.getItem('bb-big')==='1')setBig(true)}catch(e){}
 big.addEventListener('click',function(){setBig(!root.classList.contains('big'))});
+if(!rd)return;  // Nov 9: Garret retired the newscast; only Bigger print remains
 var ss=(window.speechSynthesis&&window.SpeechSynthesisUtterance)?window.speechSynthesis:null; if(!ss&&!rd.getAttribute('data-audio')){rd.style.display='none';return}
 function lines(){
   var page=document.querySelector('.page'), c=page.cloneNode(true);

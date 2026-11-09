@@ -208,13 +208,14 @@ html.big .tools button{font-size:.62rem}
 """
 
 import hashlib
-TOOLS = """<div class="tools"><button type="button" id="bb-read" aria-pressed="false">&#128251; Play the newscast</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>"""
+TOOLS = """<div class="tools"><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>"""
 TOOLS_JS = r"""<script>
 (function(){
 var root=document.documentElement, big=document.getElementById('bb-big'), rd=document.getElementById('bb-read');
 function setBig(on){root.classList.toggle('big',on);big.setAttribute('aria-pressed',on?'true':'false');big.innerHTML=on?'A&minus; Normal print':'A+ Bigger print';try{localStorage.setItem('bb-big',on?'1':'0')}catch(e){}}
 try{if(localStorage.getItem('bb-big')==='1')setBig(true)}catch(e){}
 big.addEventListener('click',function(){setBig(!root.classList.contains('big'))});
+if(!rd)return;  // Nov 9: Garret retired the newscast; only Bigger print remains
 var ss=(window.speechSynthesis&&window.SpeechSynthesisUtterance)?window.speechSynthesis:null; if(!ss&&!rd.getAttribute('data-audio')){rd.style.display='none';return}
 function lines(){
   var page=document.querySelector('.page'), c=page.cloneNode(true);

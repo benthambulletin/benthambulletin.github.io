@@ -4,10 +4,8 @@ name: Read-aloud audio
 # the same good voice with nothing to download (Garret, Oct 22). The MP3 is committed to audio/<date>.mp3
 # (last 7 days kept) so the site serves it; voice samples go to the "audio" release. The page's "Read it to me" button plays it, and
 # falls back to the phone's own voice if it isn't there yet. Voices: VOICE, VOICE2, VOICE3 below (Linda, John, Reggie: the newscast anchors, Nov 7).
+# Nov 9: Garret retired the newscast ("stop recording it and remove the option"). No longer runs on push.
 on:
-  push:
-    branches: [main]
-    paths: ['data/edition-*.json']
   workflow_dispatch:
     inputs:
       date:

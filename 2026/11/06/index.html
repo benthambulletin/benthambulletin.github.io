@@ -16,7 +16,7 @@
 <div class="orn">&#127809; &#127810; &#127809;</div>
 <div class="dateline">Friday &middot; November 6 &middot; 2026</div>
 <div class="place">North Tonawanda, New York &mdash; compiled at dawn</div>
-<div class="tools under"><button type="button" id="bb-read" data-audio="/audio/2026-11-06.mp3" aria-pressed="false">&#128264; Read it to me</button><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>
+<div class="tools under"><button type="button" id="bb-big" aria-pressed="false">A+ Bigger print</button></div>
 <div class="dbl-tight"><div class="a"></div><div class="b"></div></div>
 <div class="tiles">
   <div class="tile"><div class="v">56&deg;</div><div class="k">Rain Showers</div></div>
@@ -102,13 +102,14 @@ Low <b>38&deg;</b> tonight &middot; showers likely, 60%<br>Rain today, 80%; ligh
 <div class="colo"><div class="s">Forecast per NWS Buffalo &middot; Niagara Falls, Dunkirk and Rochester stations &middot; sky computed for 14120 &middot; family counts from the paper's migraine log &middot; headlines via BBC, CBS, NPR, Rochester First, WXXI, the Dunkirk <i>Observer</i>, Deadline, Billboard, the <i>Hollywood Reporter</i> &middot; scores and NASCAR points via Sportradar</div>
 <div class="ask"><a href="https://tally.so/r/rjxDpl">Send something to the paper</a> &middot; <a href="https://tally.so/r/obWNYP">Log a migraine</a></div>
 <div class="sig">&mdash; G.</div><div class="orn">&#127809; &#127810; &#127809;</div></div>
-<div class="nav"><a href="/2026/11/05/">&larr; Thursday</a><a href="/album/">Album</a><a href="/archive/">Archive</a><a href="/">Today</a></div>
+<div class="nav"><a href="/2026/11/05/">&larr; Thursday</a><a href="/album/">Album</a><a href="/archive/">Archive</a><a href="/2026/11/07/">Saturday &rarr;</a></div>
 </div><script>
 (function(){
 var root=document.documentElement, big=document.getElementById('bb-big'), rd=document.getElementById('bb-read');
 function setBig(on){root.classList.toggle('big',on);big.setAttribute('aria-pressed',on?'true':'false');big.innerHTML=on?'A&minus; Normal print':'A+ Bigger print';try{localStorage.setItem('bb-big',on?'1':'0')}catch(e){}}
 try{if(localStorage.getItem('bb-big')==='1')setBig(true)}catch(e){}
 big.addEventListener('click',function(){setBig(!root.classList.contains('big'))});
+if(!rd)return;  // Nov 9: Garret retired the newscast; only Bigger print remains
 var ss=(window.speechSynthesis&&window.SpeechSynthesisUtterance)?window.speechSynthesis:null; if(!ss&&!rd.getAttribute('data-audio')){rd.style.display='none';return}
 function lines(){
   var page=document.querySelector('.page'), c=page.cloneNode(true);
@@ -140,7 +141,7 @@ function pickVoice(){
 }
 if(ss&&ss.onvoiceschanged!==undefined)ss.onvoiceschanged=function(){best=null};
 if(ss)ss.getVoices();
-function stop(){on=false;Q=[];if(ss)ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128264; Read it to me'}
+function stop(){on=false;Q=[];if(ss)ss.cancel();rd.setAttribute('aria-pressed','false');rd.innerHTML='&#128251; Play the newscast'}
 function next(){
   if(!on)return; if(qi>=Q.length){stop();return}
   var u=new SpeechSynthesisUtterance(Q[qi++]); u.rate=0.95; u.lang='en-US';
