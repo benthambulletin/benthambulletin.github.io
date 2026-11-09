@@ -111,6 +111,10 @@ a{color:inherit}
 .sky{display:flex;gap:1rem;align-items:center;margin-bottom:.6rem}
 .sky svg{width:5rem;height:5rem;flex:none}
 .stars{margin-top:.4rem}
+.moonmini{width:2.6rem;height:2.6rem;border-radius:50%;box-shadow:0 0 0 2px var(--ink);display:block;margin:.15rem auto}
+.skynote{margin:.2rem 0 .8rem}
+.stars.slim .star{display:block}
+.stars.slim .sgn{font-family:'AR';font-weight:700;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
 .star{display:flex;gap:.6rem;padding:.35rem 0;border-bottom:1px solid #e3cfac}
 .star:last-child{border-bottom:0}
 .star .sg{font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);min-width:4.6rem;padding-top:.3rem}
