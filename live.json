@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T04:38:24Z",
+ "updated": "2026-11-09T04:40:26Z",
  "week": 9,
  "games": {
   "1": {
@@ -111,11 +111,13 @@
    "line": "Final · Seahawks 17–3"
   },
   "13": {
-   "state": "in",
+   "state": "post",
    "away": 24,
-   "home": 24,
-   "detail": "0:03 - 4th",
-   "line": "Tied 24–24 · 0:03 - 4th"
+   "home": 27,
+   "detail": "Final",
+   "winner": "Bears",
+   "score": "27–24",
+   "line": "Final · Bears 27–24"
   }
  }
 }
