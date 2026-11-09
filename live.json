@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T00:40:45Z",
+ "updated": "2026-11-09T00:42:47Z",
  "week": 9,
  "games": {
   "1": {
@@ -84,11 +84,13 @@
    "line": "Final · Texans 44–22"
   },
   "10": {
-   "state": "in",
+   "state": "post",
    "away": 45,
    "home": 27,
-   "detail": "1:18 - 4th",
-   "line": "Packers 45–27 · 1:18 - 4th"
+   "detail": "Final",
+   "winner": "Packers",
+   "score": "45–27",
+   "line": "Final · Packers 45–27"
   },
   "11": {
    "state": "post",
