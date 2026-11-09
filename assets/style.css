@@ -39,6 +39,12 @@ a{color:inherit}
 .sec:nth-of-type(even){color:var(--teal)}
 .sec .o{color:var(--gold);margin:0 .7rem;letter-spacing:0}
 .wx{display:flex;align-items:flex-start;gap:1rem;margin-bottom:.8rem}
+.wx.slim{align-items:center;margin-bottom:.5rem}.wx.slim .wxtext{padding-top:0}.wx.slim .lede{margin:0}
+.wxrow{display:flex;border-top:1px solid var(--rule);margin-bottom:.7rem;text-align:center}
+.wxc{flex:1;padding:.45rem .2rem;border-right:1px solid var(--rule)}.wxc:last-child{border-right:0}
+.wxc .k{font-family:'AR';font-weight:800;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.wxc .v{font-family:'PF';font-weight:700;font-size:1.25rem;white-space:nowrap}
+.wxc .s{font-family:'LOI';font-style:italic;font-size:.78rem;color:var(--soft)}
 .bigtemp{font-family:'PF';font-weight:800;font-size:clamp(3.4rem,17vw,5.2rem);line-height:.82;letter-spacing:-.04em;white-space:nowrap}
 .bigtemp sup{font-size:.36em;font-weight:500;vertical-align:top;position:relative;top:.15em}
 .wxtext{padding-top:.2rem;font-size:1.05em}
