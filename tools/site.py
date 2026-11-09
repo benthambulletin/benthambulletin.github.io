@@ -183,6 +183,11 @@ html.big .tools button{font-size:.62rem}
 .arch .c{font-family:'LOI';font-style:italic;color:var(--soft);font-size:.95rem}
 
 .calline{font-family:'AR';font-size:.72rem;letter-spacing:.06em;text-align:center;color:var(--soft);border-bottom:1px solid var(--rule);padding:.45rem .2rem;margin:.2rem 0 .6rem}.calline b{color:var(--red);letter-spacing:.16em;text-transform:uppercase;margin-right:.4rem}
+.calbox{margin:.4rem 0 .9rem}
+.calbox .ch{font-family:'AR';font-weight:800;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);text-align:center;margin-bottom:.2rem}
+.calrow{display:flex;gap:.8rem;padding:.3rem 0;border-bottom:1px solid #e3cfac}
+.calrow .cd{font-family:'AR';font-weight:800;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red);min-width:4.2rem;padding-top:.2rem}
+.calnote{font-family:'LOI';font-style:italic;font-size:.82rem;color:var(--soft);margin-top:.35rem}
 .colo .ask{font-size:.85em;margin:.4rem 0}
 .tools.under{justify-content:center;margin:.6rem 0 .2rem}
 /* Nov 6: highlight the reader tools for a week (toned down) */
