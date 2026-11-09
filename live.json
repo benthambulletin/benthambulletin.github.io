@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T00:28:35Z",
+ "updated": "2026-11-09T00:30:36Z",
  "week": 9,
  "games": {
   "1": {
@@ -75,18 +75,20 @@
    "line": "Final · Broncos 26–21"
   },
   "9": {
-   "state": "in",
+   "state": "post",
    "away": 44,
    "home": 22,
-   "detail": "1:07 - 4th",
-   "line": "Texans 44–22 · 1:07 - 4th"
+   "detail": "Final",
+   "winner": "Texans",
+   "score": "44–22",
+   "line": "Final · Texans 44–22"
   },
   "10": {
    "state": "in",
    "away": 45,
-   "home": 21,
-   "detail": "4:14 - 4th",
-   "line": "Packers 45–21 · 4:14 - 4th"
+   "home": 27,
+   "detail": "3:54 - 4th",
+   "line": "Packers 45–27 · 3:54 - 4th"
   },
   "11": {
    "state": "post",
