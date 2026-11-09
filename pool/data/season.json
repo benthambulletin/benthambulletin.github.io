@@ -12776,6 +12776,7 @@
           "fav": "Patriots",
           "line": "Patriots −3",
           "hits": [
+            "Thom",
             "Leah",
             "B-rad",
             "Devin",
@@ -12787,7 +12788,6 @@
             "Wendy"
           ],
           "misses": [
-            "Thom",
             "Tom",
             "Mike Sombloski",
             "Garret",
@@ -12802,6 +12802,7 @@
           ],
           "sides": {
             "Packers": [
+              "Thom",
               "Leah",
               "B-rad",
               "Devin",
@@ -12813,7 +12814,6 @@
               "Wendy"
             ],
             "Patriots": [
-              "Thom",
               "Tom",
               "Mike Sombloski",
               "Garret",
@@ -13657,6 +13657,46 @@
           ]
         },
         {
+          "name": "Thom",
+          "house": false,
+          "correct": 11,
+          "missed": 3,
+          "void": 0,
+          "remaining": 1,
+          "max": 12,
+          "tb": null,
+          "sheet": {
+            "0": "Jaguars",
+            "1": "Bengals",
+            "2": "Colts",
+            "3": "Chiefs",
+            "4": "Lions",
+            "5": "Browns",
+            "6": "Giants",
+            "7": "Rams",
+            "8": "Broncos",
+            "9": "Texans",
+            "10": "Packers",
+            "11": "Raiders",
+            "12": "Seahawks",
+            "13": "Bears"
+          },
+          "filedAt": "2026-11-03T11:07:58+00:00",
+          "firstAt": "2026-11-03T11:07:58+00:00",
+          "free": true,
+          "paypal": false,
+          "rank": 15,
+          "delta": 1,
+          "state": "alive",
+          "paid": false,
+          "badges": [
+            {
+              "id": "coin",
+              "note": "behind Claude, 11–13"
+            }
+          ]
+        },
+        {
           "name": "Ariel",
           "house": false,
           "correct": 10,
@@ -13685,8 +13725,8 @@
           "firstAt": "2026-11-05T21:53:47+00:00",
           "free": false,
           "paypal": false,
-          "rank": 16,
-          "delta": 0,
+          "rank": 17,
+          "delta": -1,
           "state": "out",
           "paid": true,
           "badges": [
@@ -13729,8 +13769,8 @@
           "firstAt": "2026-11-04T00:49:11+00:00",
           "free": false,
           "paypal": false,
-          "rank": 16,
-          "delta": 0,
+          "rank": 17,
+          "delta": -1,
           "state": "out",
           "paid": true,
           "badges": [
@@ -13741,46 +13781,6 @@
             {
               "id": "dead",
               "note": "mathematically out"
-            }
-          ]
-        },
-        {
-          "name": "Thom",
-          "house": false,
-          "correct": 10,
-          "missed": 4,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": null,
-          "sheet": {
-            "0": "Jaguars",
-            "1": "Bengals",
-            "2": "Colts",
-            "3": "Chiefs",
-            "4": "Lions",
-            "5": "Browns",
-            "6": "Giants",
-            "7": "Rams",
-            "8": "Broncos",
-            "9": "Texans",
-            "10": "Patriots",
-            "11": "Raiders",
-            "12": "Seahawks",
-            "13": "Bears"
-          },
-          "filedAt": "2026-11-03T11:07:58+00:00",
-          "firstAt": "2026-11-03T11:07:58+00:00",
-          "free": true,
-          "paypal": false,
-          "rank": 16,
-          "delta": 0,
-          "state": "alive",
-          "paid": false,
-          "badges": [
-            {
-              "id": "coin",
-              "note": "behind Claude, 10–13"
             }
           ]
         },
@@ -14285,23 +14285,24 @@
             "rightN": 14
           },
           "10": {
-            "away": 9,
-            "home": 11,
-            "minority": "Packers",
+            "away": 10,
+            "home": 10,
+            "minority": "Patriots",
             "minorityWho": [
-              "Leah",
-              "B-rad",
-              "Devin",
-              "Mrs. Sombloski",
-              "Ryan Holovics",
-              "Nate V",
-              "Arod",
-              "Ariel",
-              "Wendy"
+              "Tom",
+              "Mike Sombloski",
+              "Garret",
+              "Dan",
+              "Kaylani & Luka",
+              "Derek",
+              "Melissa",
+              "Walczyk",
+              "Josh",
+              "Andy R"
             ],
             "upset": true,
-            "roomUpset": true,
-            "rightN": 9
+            "roomUpset": false,
+            "rightN": 10
           },
           "11": {
             "away": 2,
@@ -14342,33 +14343,35 @@
         "upsets": 1,
         "decided": 14,
         "best": {
-          "game": 10,
-          "n": 9,
+          "game": 5,
+          "n": 10,
           "who": [
+            "Tom",
             "Leah",
             "B-rad",
             "Devin",
-            "Mrs. Sombloski",
             "Ryan Holovics",
-            "Nate V",
+            "Dan",
             "Arod",
-            "Ariel",
-            "Wendy"
+            "Kaylani & Luka",
+            "Walczyk",
+            "Andy R"
           ]
         },
         "worst": {
-          "game": 10,
-          "n": 9,
+          "game": 5,
+          "n": 10,
           "who": [
+            "Tom",
             "Leah",
             "B-rad",
             "Devin",
-            "Mrs. Sombloski",
             "Ryan Holovics",
-            "Nate V",
+            "Dan",
             "Arod",
-            "Ariel",
-            "Wendy"
+            "Kaylani & Luka",
+            "Walczyk",
+            "Andy R"
           ]
         },
         "bills": null,
@@ -14443,7 +14446,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-09T16:12:10.770251+00:00",
+  "updated": "2026-11-09T17:10:24.810778+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
