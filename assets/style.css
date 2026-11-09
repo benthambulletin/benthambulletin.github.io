@@ -52,6 +52,8 @@ a{color:inherit}
 .town .t{font-family:'PF';font-weight:700;font-size:1.9rem;margin-top:.15rem}
 .town .t sup{font-size:.45em;vertical-align:top;position:relative;top:.2em}
 .town .d{font-family:'LOI';font-style:italic;font-size:.8rem;color:var(--soft);margin-top:.1rem}
+.towns.lakes{margin-top:-.7rem;border-top:0;background:#dcebef}
+.towns.lakes .n,.towns.lakes .t{color:#1f4652}
 .line{margin-bottom:.5rem}
 .lbl{font-family:'AR';font-weight:700;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;margin-right:.3rem}
 .lbl.r{color:var(--red)}.lbl.t{color:var(--teal)}

@@ -18,6 +18,7 @@ if ed:
     if str(dt) > '2026-11-09' and str(dt) < '2027-02-01': REQUIRED.remove('The Chase')  # Chase rests between seasons (Nov 9)
     for sec in REQUIRED:
         if sec not in s: fails.append(f'MISSING SECTION: {sec}')
+    if str(dt) >= '2026-11-10' and 'class="towns lakes"' not in s: fails.append('MISSING: lake row under the towns (Garret, Nov 9)')
     # 2. issue number consistent
     nos=set(re.findall(r'No\.\s*(\d+)',s))-{'1'}
     if nos and nos!={str(ed['no'])}: fails.append(f'ISSUE NO mismatch: {nos} vs {ed["no"]}')
