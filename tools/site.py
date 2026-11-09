@@ -77,14 +77,17 @@ a{color:inherit}
 .press{font-family:'PF';font-weight:800;font-size:2.3rem;letter-spacing:-.02em}
 .trend{font-family:'LOI';font-style:italic;font-size:1.15rem;color:var(--red)}
 .baro svg{display:block;width:100%;height:auto;margin:.2rem 0}
-.ledger{display:flex;gap:1rem;align-items:center}
-.ledger .num{flex:0 0 34%}
+.ledger{display:block;text-align:center;margin:.2rem 0 .8rem}
+.ledger .num{display:flex;flex-direction:column}
+.ledger .num .big{order:-1}
 .ledger .cap{font-family:'AR';font-weight:700;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);text-align:center}
 .ledger .big{font-family:'PF';font-weight:800;font-size:clamp(2.2rem,10vw,3.4rem);color:var(--red);text-align:center;line-height:1.05}
-.ledger .txt{flex:1}
+.ledger .txt{margin-top:.4rem}
+.ledger .cap{margin-top:.3rem}
+.standings{width:100%;border-collapse:collapse;margin:.2rem 0 .6rem;font-size:.95em}.standings td{padding:.2rem 0;border-bottom:1px solid #e3cfac}.standings td+td{text-align:right;font-family:'PF';font-weight:700}
 .wire{display:flex;gap:.7rem;padding:.55rem 0;border-bottom:1px solid #e3cfac}
 .wire:last-child{border-bottom:0}
-.wire .num{font-family:'PF';font-weight:800;font-size:1.5rem;color:var(--red);min-width:1.3rem;text-align:right;line-height:1.1}
+.wire .num{display:none;font-family:'PF';font-weight:800;font-size:1.5rem;color:var(--red);min-width:1.3rem;text-align:right;line-height:1.1}
 .wire h3{font-family:'PF';font-weight:800;font-size:1.3rem;margin:0 0 .15rem;line-height:1.2}
 .wire p{margin:0;font-size:.98em}
 .touch-head{text-align:center;font-family:'PF';font-weight:700;font-size:1.5rem;color:var(--red);margin-bottom:.6rem}
@@ -363,6 +366,10 @@ def add_radar(body):
     if j < 0:
         return body
     j += len('</div>\n</div>\n')
+    k = body.find('<span class="lbl t">Next 24 hours</span>', i)   # Nov 9: the 24-hour curve sits right under the five-day, radar after it
+    if k >= 0 and k - j < 200:
+        j = body.find('</svg>', k) + len('</svg>')
+        if body[j:j+1] == '\n': j += 1
     return body[:j] + RADAR + body[j:]
 
 
@@ -446,7 +453,7 @@ def build(edition):
     dname = lambda i: datetime.date.fromisoformat(i["date"]).strftime('%A')
     nav += f'<a href="/{older["slug"]}/">&larr; {dname(older)}</a>' if older else '<span></span>'
     nav += '<a href="/album/">Album</a><a href="/archive/">Archive</a>'
-    nav += f'<a href="/{newer["slug"]}/">{dname(newer)} &rarr;</a>' if newer else '<a href="/">Today</a>'
+    nav += f'<a href="/{newer["slug"]}/">{dname(newer)} &rarr;</a>' if newer else '<span></span>'  # Nov 9: no 'Today' link on today's paper
     nav += '</div>'
     edition = dict(edition); edition['body_html'] = add_radar(riddle_reveal(edition['body_html']))  # Nov 9: Garret dropped the 'Inside' jump links
     if edition.get('plate_path'):
