@@ -1,13 +1,15 @@
 {
- "updated": "2026-11-10T04:27:23Z",
+ "updated": "2026-11-10T04:29:25Z",
  "week": 9,
  "games": {
   "14": {
-   "state": "in",
+   "state": "post",
    "away": 23,
    "home": 6,
-   "detail": "0:33 - 4th",
-   "line": "Bills 23–6 · 0:33 - 4th"
+   "detail": "Final",
+   "winner": "Bills",
+   "score": "23–6",
+   "line": "Final · Bills 23–6"
   }
  }
 }
