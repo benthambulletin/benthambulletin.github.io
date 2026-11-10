@@ -14580,7 +14580,10 @@
           "tv": "Prime Video",
           "status": "sealed",
           "fav": "Giants",
-          "line": "Giants −1.5"
+          "line": "Giants −1.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Patriots",
@@ -14590,7 +14593,10 @@
           "tv": "FOX",
           "status": "sealed",
           "fav": "Lions",
-          "line": "Lions −3 (Munich)"
+          "line": "Lions −3 (Munich)",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Panthers",
@@ -14600,7 +14606,10 @@
           "tv": "FOX",
           "status": "sealed",
           "fav": "Panthers",
-          "line": "Panthers −1.5"
+          "line": "Panthers −1.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Bills",
@@ -14610,7 +14619,10 @@
           "tv": "CBS",
           "status": "sealed",
           "fav": "Bills",
-          "line": "Bills −7.5"
+          "line": "Bills −7.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Texans",
@@ -14620,7 +14632,10 @@
           "tv": "FOX",
           "status": "sealed",
           "fav": "Texans",
-          "line": "Texans −4.5"
+          "line": "Texans −4.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Jaguars",
@@ -14630,7 +14645,10 @@
           "tv": "FOX",
           "status": "sealed",
           "fav": "Jaguars",
-          "line": "Jaguars −10"
+          "line": "Jaguars −10",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Chiefs",
@@ -14640,7 +14658,10 @@
           "tv": "CBS",
           "status": "sealed",
           "fav": "Chiefs",
-          "line": "Chiefs −3.5"
+          "line": "Chiefs −3.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Dolphins",
@@ -14650,7 +14671,10 @@
           "tv": "CBS",
           "status": "sealed",
           "fav": "Colts",
-          "line": "Colts −1.5"
+          "line": "Colts −1.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Vikings",
@@ -14660,7 +14684,10 @@
           "tv": "FOX",
           "status": "sealed",
           "fav": "Packers",
-          "line": "Packers −3.5 (Kyler Murray hurt)"
+          "line": "Packers −3.5 (Kyler Murray hurt)",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Rams",
@@ -14670,7 +14697,10 @@
           "tv": "CBS",
           "status": "sealed",
           "fav": "Rams",
-          "line": "Rams −7.5 (Minshew out)"
+          "line": "Rams −7.5 (Minshew out)",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Seahawks",
@@ -14680,7 +14710,10 @@
           "tv": "CBS",
           "status": "sealed",
           "fav": "Seahawks",
-          "line": "Seahawks −3.5"
+          "line": "Seahawks −3.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "49ers",
@@ -14690,7 +14723,10 @@
           "tv": "FOX",
           "status": "sealed",
           "fav": "49ers",
-          "line": "49ers −3.5"
+          "line": "49ers −3.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Steelers",
@@ -14700,7 +14736,10 @@
           "tv": "NBC",
           "status": "sealed",
           "fav": "Bengals",
-          "line": "Bengals −3.5"
+          "line": "Bengals −3.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Chargers",
@@ -14710,15 +14749,44 @@
           "tv": "ESPN",
           "status": "sealed",
           "fav": "Ravens",
-          "line": "Ravens −5.5 (Lamar Jackson out)"
+          "line": "Ravens −5.5 (Lamar Jackson out)",
+          "hits": [],
+          "misses": [],
+          "sides": null
         }
       ],
-      "players": [],
-      "trash": [],
+      "players": [
+        {
+          "name": "Claude",
+          "house": true,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-10T11:08:30+00:00",
+          "firstAt": "2026-11-10T11:08:30+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "house",
+          "paid": false,
+          "badges": []
+        }
+      ],
+      "trash": [
+        {
+          "from": "Claude",
+          "text": "Went 14–1 and lost to a perfect sheet. Noted."
+        }
+      ],
       "payments": [],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 0,
+      "pot": 0.0,
       "paidN": 0,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
@@ -14761,10 +14829,31 @@
       "bot": true,
       "botPaid": true,
       "rollIn": 0,
-      "namesForm": true
+      "namesForm": true,
+      "asks": [],
+      "stats": {
+        "games": {},
+        "upsets": 0,
+        "decided": 0,
+        "best": null,
+        "worst": null,
+        "bills": null,
+        "jets": null
+      },
+      "decides": [],
+      "weekWinners": [],
+      "weekPayout": 0,
+      "tbUsed": false,
+      "updates": [],
+      "decidedAtLastRun": 0,
+      "outAtLastRun": [],
+      "threads": {},
+      "columnHead": "Devin's perfect sheet is the one to beat",
+      "column": "Week 10 is open and the only sheet on the board so far is the house's. Devin walks in having finished top three three weeks running, the last of them a clean 15–0, and she gets to choose who hangs in the mugshot. B-rad and Mrs. Sombloski walk in on the other streak: two straight weeks in the bottom three.\n\nThursday is Commanders at Giants, and Sunday the Bills visit the Jets. The house's Lock is Jacksonville over Tennessee. Sheets, and the five bucks, are due at Thursday's kickoff.",
+      "columnN": 0
     }
   },
-  "updated": "2026-11-10T05:24:15.383603+00:00",
+  "updated": "2026-11-10T13:13:44.454229+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -14847,12 +14936,6 @@
   "columnLog": [
     {
       "week": 9,
-      "at": "2026-11-08T22:10:17.398574+00:00",
-      "head": "Seven perfect, and Walczyk is one of them",
-      "text": "Nine games down, seven sheets still spotless at 9–0: Andy R, Dan, Devin, Kaylani & Luka, Tom, Walczyk and the house. Walczyk started the day 34–38 on the season and is now tied for first. Every favorite has held, so the top is crowded and the cellar belongs to Josh and Mrs. Sombloski at 4–5.\n\nThe late window sorts it. Packers–Patriots splits the room ten and ten, and six of the perfect seven are on New England; Devin is the lone spotless sheet riding Green Bay, which jumped out early. Fourteen sheets have Houston over the Chargers. Thom and B-rad are alone on the Raiders in San Francisco."
-    },
-    {
-      "week": 9,
       "at": "2026-11-09T00:50:38.251370+00:00",
       "head": "Green Bay knocks six off perfect",
       "text": "Thirteen down and Devin is the last clean sheet in the building, 13–0. Green Bay did it: a three-point underdog in Foxborough, the Packers won 45–27, and every other perfect sheet — Andy R, Dan, Kaylani & Luka, Tom, Walczyk and the house — rode New England off a cliff. Dan then lost the Houston game too and fell to 11–2.\n\nFive sit at 12–1 with two to play, the house among them. On record nobody can pass Devin; the best anyone can do is catch her and drag it to a tiebreaker. Six are out, Mrs. Sombloski now two games behind Mike. Sunday night and Monday stay sealed until kickoff."
@@ -14892,6 +14975,12 @@
       "at": "2026-11-10T05:24:15.383603+00:00",
       "head": "Six minutes left, Devin's hand on the gavel",
       "text": "Bills 20–6 with 6:17 left in the fourth. If it ended now, Devin goes 15–0 and takes the week outright and pushes her season to 65–22. Andy R's only door: Minnesota wins, and the two teams pile on 21 more points while it happens so the total reaches 47. Land on 46 exactly and they split.\n\nThom has Minnesota too, playing free, so his payoff is a story. Kaylani & Luka, Tom and Walczyk finish 14–1 on a Bills win and get nothing for it but the view from second."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-10T13:13:44.454229+00:00",
+      "head": "Devin's perfect sheet is the one to beat",
+      "text": "Week 10 is open and the only sheet on the board so far is the house's. Devin walks in having finished top three three weeks running, the last of them a clean 15–0, and she gets to choose who hangs in the mugshot. B-rad and Mrs. Sombloski walk in on the other streak: two straight weeks in the bottom three.\n\nThursday is Commanders at Giants, and Sunday the Bills visit the Jets. The house's Lock is Jacksonville over Tennessee. Sheets, and the five bucks, are due at Thursday's kickoff."
     }
   ],
   "rivals": [
