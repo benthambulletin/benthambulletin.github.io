@@ -13057,7 +13057,9 @@
               "Josh",
               "Andy R"
             ]
-          }
+          },
+          "live": "Bills 3–0 · 2nd qtr",
+          "liveAt": "2026-11-10T02:07:16Z"
         }
       ],
       "players": [
@@ -14506,8 +14508,8 @@
         "B-rad",
         "Josh"
       ],
-      "columnHead": "Andy R's whole week rides on Minnesota",
-      "column": "Kickoff, and the tiebreakers are public. Devin is 14–0 with Buffalo; a Bills win makes it 15–0 and nobody else gets a vote. Andy R is the only paid sheet holding the Vikings, so his week rides on a Minnesota team starting its backup quarterback. If the Vikings win, Devin and Andy R finish 14–1 and the total decides it: 45 or fewer points is Devin's, 47 or more is Andy R's, exactly 46 and they split.\n\nThom took Minnesota too, but he's playing free, so his upside is bragging rights. Everyone else on Buffalo, the house included, is now unwillingly rooting for Devin.",
+      "columnHead": "Bills up three, Devin's perfect week holding",
+      "column": "Bills 3–0 early in the second quarter. If it ended now, Devin goes 15–0 and takes the week outright, no tiebreaker needed, after finishing top three the last two weeks. Andy R is the only one who can still catch her: he needs Minnesota to win and the two teams to combine for 47 or more. At exactly 46 they split; at 45 or fewer it's Devin's either way.\n\nSo far the scoreboard is helping her twice, since three total points is a long way from 47. Thom has the Vikings too, playing free, for honor only. The house's Lock, Seattle at home over Arizona, already cashed; the rest of the house is just watching Devin.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w9.jpg",
@@ -14519,7 +14521,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-10T01:20:13.377347+00:00",
+  "updated": "2026-11-10T02:10:01.988841+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -14635,6 +14637,12 @@
       "at": "2026-11-09T14:14:52.583566+00:00",
       "head": "Saints by one cut the room in half",
       "text": "Monday, one game left. Devin sits alone at 14–0; Andy R, Kaylani & Luka, Walczyk and the house trail at 13–1, and everybody else is playing for pride. The week's coin flip was New Orleans 23, Cleveland 22: ten sheets took each side, and every sheet within one of Devin took the Saints.\n\nBleeding: Josh at 6–8, who went against the room seven times and lost all seven. Bills at Vikings, 8:15 tonight, settles whether Devin needs her tiebreaker."
+    },
+    {
+      "week": 9,
+      "at": "2026-11-10T02:10:01.988841+00:00",
+      "head": "Andy R's whole week rides on Minnesota",
+      "text": "Kickoff, and the tiebreakers are public. Devin is 14–0 with Buffalo; a Bills win makes it 15–0 and nobody else gets a vote. Andy R is the only paid sheet holding the Vikings, so his week rides on a Minnesota team starting its backup quarterback. If the Vikings win, Devin and Andy R finish 14–1 and the total decides it: 45 or fewer points is Devin's, 47 or more is Andy R's, exactly 46 and they split.\n\nThom took Minnesota too, but he's playing free, so his upside is bragging rights. Everyone else on Buffalo, the house included, is now unwillingly rooting for Devin."
     }
   ],
   "rivals": [
