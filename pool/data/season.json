@@ -12776,7 +12776,6 @@
           "fav": "Patriots",
           "line": "Patriots −3",
           "hits": [
-            "Thom",
             "Leah",
             "B-rad",
             "Devin",
@@ -12788,6 +12787,7 @@
             "Wendy"
           ],
           "misses": [
+            "Thom",
             "Tom",
             "Mike Sombloski",
             "Garret",
@@ -12802,7 +12802,6 @@
           ],
           "sides": {
             "Packers": [
-              "Thom",
               "Leah",
               "B-rad",
               "Devin",
@@ -12814,6 +12813,7 @@
               "Wendy"
             ],
             "Patriots": [
+              "Thom",
               "Tom",
               "Mike Sombloski",
               "Garret",
@@ -13058,8 +13058,8 @@
               "Andy R"
             ]
           },
-          "live": "Halftime · Bills 10–6",
-          "liveAt": "2026-11-10T03:06:11Z"
+          "live": "Bills 20–6 · 4th qtr",
+          "liveAt": "2026-11-10T04:07:05Z"
         }
       ],
       "players": [
@@ -13700,47 +13700,6 @@
           ]
         },
         {
-          "name": "Thom",
-          "house": false,
-          "correct": 11,
-          "missed": 3,
-          "void": 0,
-          "remaining": 1,
-          "max": 12,
-          "tb": 45,
-          "sheet": {
-            "0": "Jaguars",
-            "1": "Bengals",
-            "2": "Colts",
-            "3": "Chiefs",
-            "4": "Lions",
-            "5": "Browns",
-            "6": "Giants",
-            "7": "Rams",
-            "8": "Broncos",
-            "9": "Texans",
-            "10": "Packers",
-            "11": "Raiders",
-            "12": "Seahawks",
-            "13": "Bears",
-            "14": "Vikings"
-          },
-          "filedAt": "2026-11-03T11:07:58+00:00",
-          "firstAt": "2026-11-03T11:07:58+00:00",
-          "free": true,
-          "paypal": false,
-          "rank": 15,
-          "delta": 0,
-          "state": "alive",
-          "paid": false,
-          "badges": [
-            {
-              "id": "coin",
-              "note": "behind Claude, 11–13"
-            }
-          ]
-        },
-        {
           "name": "Ariel",
           "house": false,
           "correct": 10,
@@ -13770,8 +13729,8 @@
           "firstAt": "2026-11-05T21:53:47+00:00",
           "free": false,
           "paypal": false,
-          "rank": 17,
-          "delta": 0,
+          "rank": 16,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
@@ -13815,8 +13774,8 @@
           "firstAt": "2026-11-04T00:49:11+00:00",
           "free": false,
           "paypal": false,
-          "rank": 17,
-          "delta": 0,
+          "rank": 16,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
@@ -13827,6 +13786,47 @@
             {
               "id": "dead",
               "note": "mathematically out"
+            }
+          ]
+        },
+        {
+          "name": "Thom",
+          "house": false,
+          "correct": 10,
+          "missed": 4,
+          "void": 0,
+          "remaining": 1,
+          "max": 11,
+          "tb": 45,
+          "sheet": {
+            "0": "Jaguars",
+            "1": "Bengals",
+            "2": "Colts",
+            "3": "Chiefs",
+            "4": "Lions",
+            "5": "Browns",
+            "6": "Giants",
+            "7": "Rams",
+            "8": "Broncos",
+            "9": "Texans",
+            "10": "Patriots",
+            "11": "Raiders",
+            "12": "Seahawks",
+            "13": "Bears",
+            "14": "Vikings"
+          },
+          "filedAt": "2026-11-03T11:07:58+00:00",
+          "firstAt": "2026-11-03T11:07:58+00:00",
+          "free": true,
+          "paypal": false,
+          "rank": 16,
+          "delta": -1,
+          "state": "alive",
+          "paid": false,
+          "badges": [
+            {
+              "id": "coin",
+              "note": "behind Claude, 10–13"
             }
           ]
         },
@@ -14335,24 +14335,23 @@
             "rightN": 14
           },
           "10": {
-            "away": 10,
-            "home": 10,
-            "minority": "Patriots",
+            "away": 9,
+            "home": 11,
+            "minority": "Packers",
             "minorityWho": [
-              "Tom",
-              "Mike Sombloski",
-              "Garret",
-              "Dan",
-              "Kaylani & Luka",
-              "Derek",
-              "Melissa",
-              "Walczyk",
-              "Josh",
-              "Andy R"
+              "Leah",
+              "B-rad",
+              "Devin",
+              "Mrs. Sombloski",
+              "Ryan Holovics",
+              "Nate V",
+              "Arod",
+              "Ariel",
+              "Wendy"
             ],
             "upset": true,
-            "roomUpset": false,
-            "rightN": 10
+            "roomUpset": true,
+            "rightN": 9
           },
           "11": {
             "away": 2,
@@ -14404,35 +14403,33 @@
         "upsets": 1,
         "decided": 14,
         "best": {
-          "game": 5,
-          "n": 10,
+          "game": 10,
+          "n": 9,
           "who": [
-            "Tom",
             "Leah",
             "B-rad",
             "Devin",
+            "Mrs. Sombloski",
             "Ryan Holovics",
-            "Dan",
+            "Nate V",
             "Arod",
-            "Kaylani & Luka",
-            "Walczyk",
-            "Andy R"
+            "Ariel",
+            "Wendy"
           ]
         },
         "worst": {
-          "game": 5,
-          "n": 10,
+          "game": 10,
+          "n": 9,
           "who": [
-            "Tom",
             "Leah",
             "B-rad",
             "Devin",
+            "Mrs. Sombloski",
             "Ryan Holovics",
-            "Dan",
+            "Nate V",
             "Arod",
-            "Kaylani & Luka",
-            "Walczyk",
-            "Andy R"
+            "Ariel",
+            "Wendy"
           ]
         },
         "bills": null,
@@ -14508,8 +14505,8 @@
         "B-rad",
         "Josh"
       ],
-      "columnHead": "Halftime, and Devin is thirty minutes from perfect",
-      "column": "Halftime, Bills 10–6. If it ended here, Devin goes 15–0 and nobody else gets a say. Andy R is the last paid sheet with a pulse: he needs the Vikings to win the second half by five or more and the total to reach 47, which means 31 more points in two quarters. Land on exactly 46 and they split; anything under, it's Devin's either way.\n\nThom holds Minnesota too, playing free, so his ceiling is a good story. The house went 1–0 on its Lock, Seattle over Arizona 17–3, and is otherwise one more Bills fan rooting for Devin.",
+      "columnHead": "Six minutes left, Devin's hand on the gavel",
+      "column": "Bills 20–6 with 6:17 left in the fourth. If it ended now, Devin goes 15–0 and takes the week outright and pushes her season to 65–22. Andy R's only door: Minnesota wins, and the two teams pile on 21 more points while it happens so the total reaches 47. Land on 46 exactly and they split.\n\nThom has Minnesota too, playing free, so his payoff is a story. Kaylani & Luka, Tom and Walczyk finish 14–1 on a Bills win and get nothing for it but the view from second.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w9.jpg",
@@ -14521,7 +14518,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-10T03:10:07.617499+00:00",
+  "updated": "2026-11-10T04:10:00.161647+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
