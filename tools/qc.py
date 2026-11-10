@@ -19,6 +19,11 @@ if ed:
     for sec in REQUIRED:
         if sec not in s: fails.append(f'MISSING SECTION: {sec}')
     if str(dt) >= '2026-11-10' and 'class="towns lakes"' not in s: fails.append('MISSING: lake row under the towns (Garret, Nov 9)')
+    if str(dt) >= '2026-11-10':   # Nov 10 layout: two halves, each fact once
+        if s.count('<div class="part">')!=2: fails.append('LAYOUT: need the two part dividers (The News, The Almanac)')
+        if 'class="bigtemp"' in s: fails.append('LAYOUT: no big temperature in the Weather Glass (the tile has it)')
+        if '<span class="o">' in s.split('<h2 class="sec">',1)[-1].split('<div class="colo">')[0]: fails.append('LAYOUT: section heads are plain, no ornament spans')
+        if 0 <= s.find('The Weather Glass') < s.find('The National Wire'): fails.append('LAYOUT: The News comes before The Almanac')
     # 2. issue number consistent
     nos=set(re.findall(r'No\.\s*(\d+)',s))-{'1'}
     if nos and nos!={str(ed['no'])}: fails.append(f'ISSUE NO mismatch: {nos} vs {ed["no"]}')

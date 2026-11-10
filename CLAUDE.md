@@ -96,7 +96,18 @@ Things that have actually broken:
 
 **Honesty rule:** never print a number you can't verify as today's. Sourcing goes in the colophon, never in the body.
 
-## Standing sections (every edition), in this order
+## Standing sections (every edition)
+
+**Layout from Nov 10 (Garret: "pieces jammed together, not a cohesive unit"; mock approved, "Go for it"). This block overrides anything below that disagrees.**
+- **Order, two halves.** Masthead, three tiles, cover. Then `<div class="part"><span>The News</span></div>`: National Wire (with the lead), Home Wire, Marquee, Gridiron (Sunday Spotlight and Family Today, when they run, go at the top of The News after the lead section; From the Group Chat with Family Today). Then `<div class="part"><span>The Almanac</span></div>`: Weather Glass, Almanac Sky with The Stars, Coming Up, The Ledger, On This Day, Question of the Day (Sunday's Week Ahead and Sunday Question sit after Coming Up). Colophon. No double rule between the cover and The News.
+- **One section head:** `<h2 class="sec">The Home Wire</h2>` — plain, no ornament spans; the stylesheet sets it black, left, with a rule above.
+- **One label style:** every small label is the same green caps (the stylesheet handles it). Don't invent new label classes.
+- **Say each fact once.** No big temperature in the Weather Glass (the tile has the high): open with `<p class="wlede">one italic line</p>`, then the four-cell row, towns, lakes and five-day, which join into one grid. No Sunset cell in the Almanac Sky (the tile has it): Moon, Sunrise, Daylight.
+- **Coming Up** is its own section in The Almanac: `<h2 class="sec">Coming Up</h2>` then `<div class="calbox">` rows (no `.ch` label); the migraine `calnote` stays at its bottom.
+- **Gridiron items are wire items with headlines:** `<div class="wire"><div><h3>Bills 23, Vikings 6</h3><p>…</p></div></div>`, one for the Bills, one for the Jets, and the Sunday Tax (Tue–Thu) as a third with the headline "The Sunday Tax &middot; Week N". Monday's standings table goes inside its own wire item.
+- Fork from `tools/fix139b.py`'s output (No. 139 as republished); qc.py fails a paper without the two part dividers, with a `.bigtemp`, or with the Weather Glass ahead of the National Wire.
+
+The section notes, in the old numbering:
 
 1. **Masthead** — kicker (Vol/No/Est/Price · One Smile), "The Bentham Bulletin," "A Daily Almanac for the Family," ornaments, dateline. Then **three tiles**: today's high with a two-word sky; **sunset time** (from Oct 22, replacing the barometer; label "Sunset", and in the last two weeks of a month the minutes lost since yesterday); a **countdown** (Garret, Nov 6): the next thing worth counting down to: the next Bills game, a birthday, a holiday, Thanksgiving ("3 / Days to Bills–Vikings"). Never a number used elsewhere in the paper. Centered under the masthead and dateline (Garret, Nov 6), the generator adds the **"Bigger print" button** (Garret, Oct 21; built into `tools/site.py`; never remove). **The read-aloud newscast is retired (Garret, Nov 9: "stop recording it and remove the option").** No audio button, no recording, no newscast script; `audio.yml` no longer runs on push. Don't bring it back unless he asks.
 2. **Plate I · The Family Album** — the photo, landscape-cropped, one-line italic caption with names when given.
@@ -163,7 +174,7 @@ An occasional signed feature where the paper makes a real prediction and lives w
 
 ## Design
 
-Locked structure: aged-paper page, thick-thin double rules, centered small-caps section heads with printer's ornaments, Playfair Display masthead, Lora body, Archivo labels. Max-width 44rem; text obeys the phone's size setting. Banners: HYPE, JEST, NEEDS-INFO only.
+Locked structure: aged-paper page, thick-thin double rules, plain left-aligned small-caps section heads under a solid rule (Nov 10; the ornaments stay only in the masthead and colophon), two italic part dividers (The News, The Almanac), Playfair Display masthead, Lora body, Archivo labels. Max-width 44rem; text obeys the phone's size setting. Banners: HYPE, JEST, NEEDS-INFO only.
 
 **Palette evolves with the season, automatically — never ask, say nothing unless asked.** Shades change, not structure. **October** (`tools/site.py` :root): paper `#f8eedb`, surround `#e2cca8`, rules `#d3b88f`, rust `#9c3216`, forest `#2f5e3e`, pumpkin `#cf6f1a`, ink `#24170c`; ornaments maple leaf, jack-o'-lantern, fallen leaf (`&#127809; &#127875; &#127810;`) through Oct 31. **November:** leaves only. **December 1:** winter palette and ornaments. (The base, settled Sept 7, is light cream `#fbf5e4`, surround `#ece4d1`, rules `#d6cbaf` — not parchment, not white — with accents cherry `#c8302f` / turquoise `#0e8a8a` / sunflower `#e8b100`. Section heads alternate red and teal.)
 
