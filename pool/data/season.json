@@ -14775,6 +14775,46 @@
           "state": "house",
           "paid": false,
           "badges": []
+        },
+        {
+          "name": "Devin",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-10T13:30:40+00:00",
+          "firstAt": "2026-11-10T13:30:40+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Garret",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-10T13:36:41+00:00",
+          "firstAt": "2026-11-10T13:36:41+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -14786,8 +14826,8 @@
       "payments": [],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 0.0,
-      "paidN": 0,
+      "pot": 5.0,
+      "paidN": 1,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -14848,9 +14888,9 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Devin's perfect sheet is the one to beat",
-      "column": "Week 10 is open and the only sheet on the board so far is the house's. Devin walks in having finished top three three weeks running, the last of them a clean 15–0, and she gets to choose who hangs in the mugshot. B-rad and Mrs. Sombloski walk in on the other streak: two straight weeks in the bottom three.\n\nThursday is Commanders at Giants, and Sunday the Bills visit the Jets. The house's Lock is Jacksonville over Tennessee. Sheets, and the five bucks, are due at Thursday's kickoff.",
-      "columnN": 0,
+      "columnHead": "The champ and the commissioner, six minutes apart",
+      "column": "Devin filed at 8:30 this morning, fresh off a perfect week, and the commissioner followed six minutes later, which is either a show of nerve or a man who can't stand being second on his own board. Garret also leads Kaylani & Luka 3–2 head to head this season, so the household rivalry is officially live and the other half of it hasn't filed.\n\nEveryone else is still thinking. The house's Lock is Jacksonville over Tennessee; sheets, and the five bucks, are due at Thursday's kickoff, Commanders at Giants.",
+      "columnN": 2,
       "face": {
         "photo": "/pool/faces/w10.jpg",
         "who": "Kaylani & Luka",
@@ -14860,7 +14900,7 @@
       }
     }
   },
-  "updated": "2026-11-10T13:13:44.454229+00:00",
+  "updated": "2026-11-10T14:12:01.158010+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -14943,12 +14983,6 @@
   "columnLog": [
     {
       "week": 9,
-      "at": "2026-11-09T00:50:38.251370+00:00",
-      "head": "Green Bay knocks six off perfect",
-      "text": "Thirteen down and Devin is the last clean sheet in the building, 13–0. Green Bay did it: a three-point underdog in Foxborough, the Packers won 45–27, and every other perfect sheet — Andy R, Dan, Kaylani & Luka, Tom, Walczyk and the house — rode New England off a cliff. Dan then lost the Houston game too and fell to 11–2.\n\nFive sit at 12–1 with two to play, the house among them. On record nobody can pass Devin; the best anyone can do is catch her and drag it to a tiebreaker. Six are out, Mrs. Sombloski now two games behind Mike. Sunday night and Monday stay sealed until kickoff."
-    },
-    {
-      "week": 9,
       "at": "2026-11-09T04:50:46.529945+00:00",
       "head": "Devin goes 14–0; Monday holds the gavel",
       "text": "Fourteen for fourteen. Devin ran the table Sunday, Bears 27–24 over Tampa the last brick, and hers is the only unscratched sheet left. Behind her at 13–1: Andy R, Kaylani & Luka, Tom, Walczyk and the house. Nobody can pass her on record now. If her Monday pick hits, she wins outright; if it misses, anyone at 13–1 who got it right drags her to the tiebreaker. Who's on which side stays sealed until Buffalo kicks off in Minnesota.\n\nTampa's four believers, Leah, B-rad, Ariel and Josh, went down by a field goal. Ariel is now 0–5 against Tom in finished weeks, which is less a rivalry than a subscription."
@@ -14988,6 +15022,12 @@
       "at": "2026-11-10T13:13:44.454229+00:00",
       "head": "Devin's perfect sheet is the one to beat",
       "text": "Week 10 is open and the only sheet on the board so far is the house's. Devin walks in having finished top three three weeks running, the last of them a clean 15–0, and she gets to choose who hangs in the mugshot. B-rad and Mrs. Sombloski walk in on the other streak: two straight weeks in the bottom three.\n\nThursday is Commanders at Giants, and Sunday the Bills visit the Jets. The house's Lock is Jacksonville over Tennessee. Sheets, and the five bucks, are due at Thursday's kickoff."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-10T14:12:01.158010+00:00",
+      "head": "The champ and the commissioner, six minutes apart",
+      "text": "Devin filed at 8:30 this morning, fresh off a perfect week, and the commissioner followed six minutes later, which is either a show of nerve or a man who can't stand being second on his own board. Garret also leads Kaylani & Luka 3–2 head to head this season, so the household rivalry is officially live and the other half of it hasn't filed.\n\nEveryone else is still thinking. The house's Lock is Jacksonville over Tennessee; sheets, and the five bucks, are due at Thursday's kickoff, Commanders at Giants."
     }
   ],
   "rivals": [
