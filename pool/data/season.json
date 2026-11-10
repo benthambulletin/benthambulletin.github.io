@@ -13058,8 +13058,8 @@
               "Andy R"
             ]
           },
-          "live": "Bills 3–0 · 2nd qtr",
-          "liveAt": "2026-11-10T02:07:16Z"
+          "live": "Halftime · Bills 10–6",
+          "liveAt": "2026-11-10T03:06:11Z"
         }
       ],
       "players": [
@@ -14508,8 +14508,8 @@
         "B-rad",
         "Josh"
       ],
-      "columnHead": "Bills up three, Devin's perfect week holding",
-      "column": "Bills 3–0 early in the second quarter. If it ended now, Devin goes 15–0 and takes the week outright, no tiebreaker needed, after finishing top three the last two weeks. Andy R is the only one who can still catch her: he needs Minnesota to win and the two teams to combine for 47 or more. At exactly 46 they split; at 45 or fewer it's Devin's either way.\n\nSo far the scoreboard is helping her twice, since three total points is a long way from 47. Thom has the Vikings too, playing free, for honor only. The house's Lock, Seattle at home over Arizona, already cashed; the rest of the house is just watching Devin.",
+      "columnHead": "Halftime, and Devin is thirty minutes from perfect",
+      "column": "Halftime, Bills 10–6. If it ended here, Devin goes 15–0 and nobody else gets a say. Andy R is the last paid sheet with a pulse: he needs the Vikings to win the second half by five or more and the total to reach 47, which means 31 more points in two quarters. Land on exactly 46 and they split; anything under, it's Devin's either way.\n\nThom holds Minnesota too, playing free, so his ceiling is a good story. The house went 1–0 on its Lock, Seattle over Arizona 17–3, and is otherwise one more Bills fan rooting for Devin.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w9.jpg",
@@ -14521,7 +14521,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-10T02:10:01.988841+00:00",
+  "updated": "2026-11-10T03:10:07.617499+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -14604,12 +14604,6 @@
   "columnLog": [
     {
       "week": 9,
-      "at": "2026-11-07T18:00:02.887669+00:00",
-      "head": "Saturday: nineteen tied, Madrid on deck",
-      "text": "Saturday, and the board hasn’t moved: nineteen sheets at 1–0, B-rad and Mrs. Sombloski at 0–1. Ariel filed “Sombloski sucks,” and Thursday split the verdict: Mike rode Jacksonville, Mrs. Sombloski didn’t. Half right still counts in this pool, Ariel.\n\nTom defends the title from his Mountain Top; Ryan, dethroned at 9–5 last week, watches from the valley floor. The real week starts Sunday at 9:30 in Madrid, and by the 1:00 window somebody’s tie with eighteen people ends badly. Questions for the commissioner go on the pick sheet."
-    },
-    {
-      "week": 9,
       "at": "2026-11-08T13:12:06.773904+00:00",
       "head": "Madrid at 9:30; Devin chases a third podium",
       "text": "Sunday morning: nineteen sheets knotted at 1–0, and Madrid kicks off at 9:30 Eastern, so somebody’s week goes sideways before brunch. Devin has finished top three two weeks running; a third makes her the closest thing this pool has to a closer. Ryan still leads the season at 40–16.\n\nAriel is 0–5 against Tom head to head this year. Andy R leads Arod 2–1 in the battle of the Rodgerses. B-rad and Mrs. Sombloski open the day in the cellar at 0–1, which is roomier than it sounds. Questions for the commissioner go on the pick sheet."
@@ -14643,6 +14637,18 @@
       "at": "2026-11-10T02:10:01.988841+00:00",
       "head": "Andy R's whole week rides on Minnesota",
       "text": "Kickoff, and the tiebreakers are public. Devin is 14–0 with Buffalo; a Bills win makes it 15–0 and nobody else gets a vote. Andy R is the only paid sheet holding the Vikings, so his week rides on a Minnesota team starting its backup quarterback. If the Vikings win, Devin and Andy R finish 14–1 and the total decides it: 45 or fewer points is Devin's, 47 or more is Andy R's, exactly 46 and they split.\n\nThom took Minnesota too, but he's playing free, so his upside is bragging rights. Everyone else on Buffalo, the house included, is now unwillingly rooting for Devin."
+    },
+    {
+      "week": 9,
+      "at": "2026-11-10T03:09:39.490915+00:00",
+      "head": "Bills up three, Devin's perfect week holding",
+      "text": "Bills 3–0 early in the second quarter. If it ended now, Devin goes 15–0 and takes the week outright, no tiebreaker needed, after finishing top three the last two weeks. Andy R is the only one who can still catch her: he needs Minnesota to win and the two teams to combine for 47 or more. At exactly 46 they split; at 45 or fewer it's Devin's either way.\n\nSo far the scoreboard is helping her twice, since three total points is a long way from 47. Thom has the Vikings too, playing free, for honor only. The house's Lock, Seattle at home over Arizona, already cashed; the rest of the house is just watching Devin."
+    },
+    {
+      "week": 9,
+      "at": "2026-11-10T03:10:07.617499+00:00",
+      "head": "Halftime, and Devin is thirty minutes from perfect",
+      "text": "Halftime, Bills 10–6. If it ended here, Devin goes 15–0 and nobody else gets a say. Andy R is the last paid sheet with a pulse: he needs the Vikings to win the second half by five or more and the total to reach 47, which means 31 more points in two quarters. Land on exactly 46 and they split; anything under, it's Devin's either way.\n\nThom holds Minnesota too, playing free, so his ceiling is a good story. The house went 1–0 on its Lock, Seattle over Arizona 17–3, and is otherwise one more Bills fan rooting for Devin."
     }
   ],
   "rivals": [
