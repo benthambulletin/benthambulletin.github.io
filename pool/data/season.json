@@ -13026,12 +13026,38 @@
           "when": "Mon 8:15 PM",
           "tv": "ESPN/ABC",
           "winner": null,
-          "status": "sealed",
+          "status": "live",
           "fav": "Bills",
-          "line": "Bills −3",
+          "line": "Bills −3.5 (Kyler Murray out)",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Bills": [
+              "Tom",
+              "Leah",
+              "B-rad",
+              "Devin",
+              "Mrs. Sombloski",
+              "Ryan Holovics",
+              "Garret",
+              "Nate V",
+              "Dan",
+              "Arod",
+              "Kaylani & Luka",
+              "Ariel",
+              "Derek",
+              "Melissa",
+              "Wendy",
+              "Walczyk",
+              "Claude"
+            ],
+            "Vikings": [
+              "Thom",
+              "Mike Sombloski",
+              "Josh",
+              "Andy R"
+            ]
+          }
         }
       ],
       "players": [
@@ -13043,7 +13069,7 @@
           "void": 0,
           "remaining": 1,
           "max": 15,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13058,7 +13084,8 @@
             "10": "Packers",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-04T15:50:48+00:00",
           "firstAt": "2026-11-04T15:50:48+00:00",
@@ -13083,7 +13110,7 @@
           "void": 0,
           "remaining": 1,
           "max": 14,
-          "tb": null,
+          "tb": 47,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13098,7 +13125,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Vikings"
           },
           "filedAt": "2026-11-06T01:06:40+00:00",
           "firstAt": "2026-11-06T01:06:40+00:00",
@@ -13123,7 +13151,7 @@
           "void": 0,
           "remaining": 1,
           "max": 14,
-          "tb": null,
+          "tb": 46,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13138,7 +13166,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-03T08:59:51+00:00",
           "firstAt": "2026-11-03T08:59:51+00:00",
@@ -13158,7 +13187,7 @@
           "void": 0,
           "remaining": 1,
           "max": 14,
-          "tb": null,
+          "tb": 44,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13173,7 +13202,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-05T21:43:26+00:00",
           "firstAt": "2026-11-05T21:43:26+00:00",
@@ -13193,7 +13223,7 @@
           "void": 0,
           "remaining": 1,
           "max": 14,
-          "tb": null,
+          "tb": 53,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13208,7 +13238,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-03T23:48:54+00:00",
           "firstAt": "2026-11-03T23:48:54+00:00",
@@ -13228,7 +13259,7 @@
           "void": 0,
           "remaining": 1,
           "max": 14,
-          "tb": null,
+          "tb": 52,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13243,7 +13274,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-06T00:16:11+00:00",
           "firstAt": "2026-11-06T00:16:11+00:00",
@@ -13268,7 +13300,7 @@
           "void": 0,
           "remaining": 1,
           "max": 13,
-          "tb": null,
+          "tb": 60,
           "sheet": {
             "0": "Jaguars",
             "1": "Falcons",
@@ -13283,7 +13315,8 @@
             "10": "Packers",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-05T21:39:42+00:00",
           "firstAt": "2026-11-05T21:39:42+00:00",
@@ -13312,7 +13345,7 @@
           "void": 0,
           "remaining": 1,
           "max": 13,
-          "tb": null,
+          "tb": 42,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13327,7 +13360,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-05T21:39:13+00:00",
           "firstAt": "2026-11-05T21:39:13+00:00",
@@ -13356,7 +13390,7 @@
           "void": 0,
           "remaining": 1,
           "max": 13,
-          "tb": null,
+          "tb": 52,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13371,7 +13405,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-05T22:32:17+00:00",
           "firstAt": "2026-11-05T22:32:17+00:00",
@@ -13400,7 +13435,7 @@
           "void": 0,
           "remaining": 1,
           "max": 13,
-          "tb": null,
+          "tb": 60,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13415,7 +13450,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-05T21:37:39+00:00",
           "firstAt": "2026-11-05T21:37:39+00:00",
@@ -13444,7 +13480,7 @@
           "void": 0,
           "remaining": 1,
           "max": 13,
-          "tb": null,
+          "tb": 32,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13459,7 +13495,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-05T22:36:51+00:00",
           "firstAt": "2026-11-05T22:36:51+00:00",
@@ -13488,7 +13525,7 @@
           "void": 0,
           "remaining": 1,
           "max": 13,
-          "tb": null,
+          "tb": 49,
           "sheet": {
             "0": "Jaguars",
             "1": "Falcons",
@@ -13503,7 +13540,8 @@
             "10": "Packers",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-05T21:37:55+00:00",
           "firstAt": "2026-11-05T21:37:55+00:00",
@@ -13532,7 +13570,7 @@
           "void": 0,
           "remaining": 1,
           "max": 13,
-          "tb": null,
+          "tb": 47,
           "sheet": {
             "0": "Jaguars",
             "1": "Falcons",
@@ -13547,7 +13585,8 @@
             "10": "Packers",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-05T13:35:25+00:00",
           "firstAt": "2026-11-05T13:35:25+00:00",
@@ -13576,7 +13615,7 @@
           "void": 0,
           "remaining": 1,
           "max": 13,
-          "tb": null,
+          "tb": 42,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13591,7 +13630,8 @@
             "10": "Packers",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-05T23:03:23+00:00",
           "firstAt": "2026-11-05T23:03:23+00:00",
@@ -13620,7 +13660,7 @@
           "void": 0,
           "remaining": 1,
           "max": 12,
-          "tb": null,
+          "tb": 37,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13635,7 +13675,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Vikings"
           },
           "filedAt": "2026-11-05T02:09:24+00:00",
           "firstAt": "2026-11-05T02:09:24+00:00",
@@ -13664,7 +13705,7 @@
           "void": 0,
           "remaining": 1,
           "max": 12,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13679,7 +13720,8 @@
             "10": "Packers",
             "11": "Raiders",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Vikings"
           },
           "filedAt": "2026-11-03T11:07:58+00:00",
           "firstAt": "2026-11-03T11:07:58+00:00",
@@ -13704,7 +13746,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 40,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13719,7 +13761,8 @@
             "10": "Packers",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Buccaneers"
+            "13": "Buccaneers",
+            "14": "Bills"
           },
           "filedAt": "2026-11-05T21:53:47+00:00",
           "firstAt": "2026-11-05T21:53:47+00:00",
@@ -13748,7 +13791,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 49,
           "sheet": {
             "0": "Jaguars",
             "1": "Bengals",
@@ -13763,7 +13806,8 @@
             "10": "Packers",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Buccaneers"
+            "13": "Buccaneers",
+            "14": "Bills"
           },
           "filedAt": "2026-11-04T00:49:11+00:00",
           "firstAt": "2026-11-04T00:49:11+00:00",
@@ -13792,7 +13836,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 44,
           "sheet": {
             "0": "Ravens",
             "1": "Bengals",
@@ -13807,7 +13851,8 @@
             "10": "Packers",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Bears"
+            "13": "Bears",
+            "14": "Bills"
           },
           "filedAt": "2026-11-04T22:38:15+00:00",
           "firstAt": "2026-11-04T22:38:15+00:00",
@@ -13836,7 +13881,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 41,
           "sheet": {
             "0": "Ravens",
             "1": "Falcons",
@@ -13851,7 +13896,8 @@
             "10": "Packers",
             "11": "Raiders",
             "12": "Seahawks",
-            "13": "Buccaneers"
+            "13": "Buccaneers",
+            "14": "Bills"
           },
           "filedAt": "2026-11-04T15:40:37+00:00",
           "firstAt": "2026-11-04T15:40:37+00:00",
@@ -13880,7 +13926,7 @@
           "void": 0,
           "remaining": 1,
           "max": 7,
-          "tb": null,
+          "tb": 48,
           "sheet": {
             "0": "Jaguars",
             "1": "Falcons",
@@ -13895,7 +13941,8 @@
             "10": "Patriots",
             "11": "49ers",
             "12": "Seahawks",
-            "13": "Buccaneers"
+            "13": "Buccaneers",
+            "14": "Vikings"
           },
           "filedAt": "2026-11-06T00:24:17+00:00",
           "firstAt": "2026-11-06T00:24:17+00:00",
@@ -14121,7 +14168,8 @@
           "14": "Bills by three in Minnesota."
         },
         "lock": "12",
-        "lockWhy": "Seahawks by ten and a half at home over the Cardinals."
+        "lockWhy": "Seahawks by ten and a half at home over the Cardinals.",
+        "tb": 46
       },
       "bot": true,
       "botPaid": true,
@@ -14338,6 +14386,17 @@
             "upset": false,
             "roomUpset": false,
             "rightN": 16
+          },
+          "14": {
+            "away": 16,
+            "home": 4,
+            "minority": "Vikings",
+            "minorityWho": [
+              "Thom",
+              "Mike Sombloski",
+              "Josh",
+              "Andy R"
+            ]
           }
         },
         "upsets": 1,
@@ -14382,7 +14441,21 @@
           "won": false
         }
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 14,
+          "away": [
+            "Tom",
+            "Devin",
+            "Kaylani & Luka",
+            "Walczyk"
+          ],
+          "home": [
+            "Thom",
+            "Andy R"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -14433,8 +14506,8 @@
         "B-rad",
         "Josh"
       ],
-      "columnHead": "Saints by one cut the room in half",
-      "column": "Monday, one game left. Devin sits alone at 14–0; Andy R, Kaylani & Luka, Walczyk and the house trail at 13–1, and everybody else is playing for pride. The week's coin flip was New Orleans 23, Cleveland 22: ten sheets took each side, and every sheet within one of Devin took the Saints.\n\nBleeding: Josh at 6–8, who went against the room seven times and lost all seven. Bills at Vikings, 8:15 tonight, settles whether Devin needs her tiebreaker.",
+      "columnHead": "Andy R's whole week rides on Minnesota",
+      "column": "Kickoff, and the tiebreakers are public. Devin is 14–0 with Buffalo; a Bills win makes it 15–0 and nobody else gets a vote. Andy R is the only paid sheet holding the Vikings, so his week rides on a Minnesota team starting its backup quarterback. If the Vikings win, Devin and Andy R finish 14–1 and the total decides it: 45 or fewer points is Devin's, 47 or more is Andy R's, exactly 46 and they split.\n\nThom took Minnesota too, but he's playing free, so his upside is bragging rights. Everyone else on Buffalo, the house included, is now unwillingly rooting for Devin.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w9.jpg",
@@ -14446,7 +14519,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-10T01:11:27.568085+00:00",
+  "updated": "2026-11-10T01:20:13.377347+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
