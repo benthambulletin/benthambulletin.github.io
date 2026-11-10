@@ -1,123 +1,13 @@
 {
- "updated": "2026-11-09T06:19:55Z",
+ "updated": "2026-11-10T01:18:33Z",
  "week": 9,
  "games": {
-  "1": {
-   "state": "post",
-   "away": 34,
-   "home": 17,
-   "detail": "Final",
-   "winner": "Bengals",
-   "score": "34–17",
-   "line": "Final · Bengals 34–17"
-  },
-  "2": {
-   "state": "post",
-   "away": 27,
-   "home": 23,
-   "detail": "Final",
-   "winner": "Cowboys",
-   "score": "27–23",
-   "line": "Final · Cowboys 27–23"
-  },
-  "3": {
-   "state": "post",
-   "away": 12,
-   "home": 35,
-   "detail": "Final",
-   "winner": "Chiefs",
-   "score": "35–12",
-   "line": "Final · Chiefs 35–12"
-  },
-  "4": {
-   "state": "post",
-   "away": 19,
-   "home": 9,
-   "detail": "Final",
-   "winner": "Lions",
-   "score": "19–9",
-   "line": "Final · Lions 19–9"
-  },
-  "5": {
-   "state": "post",
-   "away": 22,
-   "home": 23,
-   "detail": "Final/OT",
-   "winner": "Saints",
-   "score": "23–22",
-   "line": "Final · Saints 23–22 (OT)"
-  },
-  "6": {
-   "state": "post",
-   "away": 19,
-   "home": 11,
-   "detail": "Final",
-   "winner": "Giants",
-   "score": "19–11",
-   "line": "Final · Giants 19–11"
-  },
-  "7": {
-   "state": "post",
-   "away": 20,
-   "home": 13,
-   "detail": "Final",
-   "winner": "Rams",
-   "score": "20–13",
-   "line": "Final · Rams 20–13"
-  },
-  "8": {
-   "state": "post",
-   "away": 26,
-   "home": 21,
-   "detail": "Final",
-   "winner": "Broncos",
-   "score": "26–21",
-   "line": "Final · Broncos 26–21"
-  },
-  "9": {
-   "state": "post",
-   "away": 44,
-   "home": 22,
-   "detail": "Final",
-   "winner": "Texans",
-   "score": "44–22",
-   "line": "Final · Texans 44–22"
-  },
-  "10": {
-   "state": "post",
-   "away": 45,
-   "home": 27,
-   "detail": "Final",
-   "winner": "Packers",
-   "score": "45–27",
-   "line": "Final · Packers 45–27"
-  },
-  "11": {
-   "state": "post",
-   "away": 17,
-   "home": 38,
-   "detail": "Final",
-   "winner": "49ers",
-   "score": "38–17",
-   "line": "Final · 49ers 38–17"
-  },
-  "12": {
-   "state": "post",
-   "away": 3,
-   "home": 17,
-   "detail": "Final",
-   "winner": "Seahawks",
-   "score": "17–3",
-   "line": "Final · Seahawks 17–3"
-  },
-  "13": {
-   "state": "post",
-   "away": 24,
-   "home": 27,
-   "detail": "Final",
-   "winner": "Bears",
-   "score": "27–24",
-   "line": "Final · Bears 27–24"
+  "14": {
+   "state": "in",
+   "away": 0,
+   "home": 0,
+   "detail": "14:52 - 1st",
+   "line": "Tied 0–0 · 14:52 - 1st"
   }
  }
 }
