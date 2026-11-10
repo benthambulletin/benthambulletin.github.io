@@ -12127,7 +12127,7 @@
       "rollOut": 0
     },
     "9": {
-      "status": "live",
+      "status": "final",
       "games": [
         {
           "away": "Jaguars",
@@ -12776,6 +12776,7 @@
           "fav": "Patriots",
           "line": "Patriots −3",
           "hits": [
+            "Thom",
             "Leah",
             "B-rad",
             "Devin",
@@ -12787,7 +12788,6 @@
             "Wendy"
           ],
           "misses": [
-            "Thom",
             "Tom",
             "Mike Sombloski",
             "Garret",
@@ -12802,6 +12802,7 @@
           ],
           "sides": {
             "Packers": [
+              "Thom",
               "Leah",
               "B-rad",
               "Devin",
@@ -12813,7 +12814,6 @@
               "Wendy"
             ],
             "Patriots": [
-              "Thom",
               "Tom",
               "Mike Sombloski",
               "Garret",
@@ -13025,12 +13025,35 @@
           "kickoff": "2026-11-10T01:15:00Z",
           "when": "Mon 8:15 PM",
           "tv": "ESPN/ABC",
-          "winner": null,
-          "status": "live",
+          "winner": "Bills",
+          "status": "final",
           "fav": "Bills",
           "line": "Bills −3.5 (Kyler Murray out)",
-          "hits": [],
-          "misses": [],
+          "hits": [
+            "Tom",
+            "Leah",
+            "B-rad",
+            "Devin",
+            "Mrs. Sombloski",
+            "Ryan Holovics",
+            "Garret",
+            "Nate V",
+            "Dan",
+            "Arod",
+            "Kaylani & Luka",
+            "Ariel",
+            "Derek",
+            "Melissa",
+            "Wendy",
+            "Walczyk",
+            "Claude"
+          ],
+          "misses": [
+            "Thom",
+            "Mike Sombloski",
+            "Josh",
+            "Andy R"
+          ],
           "sides": {
             "Bills": [
               "Tom",
@@ -13058,18 +13081,17 @@
               "Andy R"
             ]
           },
-          "live": "Bills 20–6 · 4th qtr",
-          "liveAt": "2026-11-10T04:07:05Z"
+          "score": "23–6"
         }
       ],
       "players": [
         {
           "name": "Devin",
           "house": false,
-          "correct": 14,
+          "correct": 15,
           "missed": 0,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 15,
           "tb": 45,
           "sheet": {
@@ -13095,63 +13117,22 @@
           "paypal": false,
           "rank": 1,
           "delta": 0,
-          "state": "alive",
+          "state": "clinched",
           "paid": true,
           "badges": [
             {
               "id": "crown",
-              "note": "leading the week"
-            }
-          ]
-        },
-        {
-          "name": "Andy R",
-          "house": false,
-          "correct": 13,
-          "missed": 1,
-          "void": 0,
-          "remaining": 1,
-          "max": 14,
-          "tb": 47,
-          "sheet": {
-            "0": "Jaguars",
-            "1": "Bengals",
-            "2": "Cowboys",
-            "3": "Chiefs",
-            "4": "Lions",
-            "5": "Saints",
-            "6": "Giants",
-            "7": "Rams",
-            "8": "Broncos",
-            "9": "Texans",
-            "10": "Patriots",
-            "11": "49ers",
-            "12": "Seahawks",
-            "13": "Bears",
-            "14": "Vikings"
-          },
-          "filedAt": "2026-11-06T01:06:40+00:00",
-          "firstAt": "2026-11-06T01:06:40+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 2,
-          "delta": 0,
-          "state": "alive",
-          "paid": true,
-          "badges": [
-            {
-              "id": "buzzer",
-              "note": "filed inside the last hour before Thursday kickoff"
+              "note": "won the week"
             }
           ]
         },
         {
           "name": "Claude",
           "house": true,
-          "correct": 13,
+          "correct": 14,
           "missed": 1,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 14,
           "tb": 46,
           "sheet": {
@@ -13184,10 +13165,10 @@
         {
           "name": "Kaylani & Luka",
           "house": false,
-          "correct": 13,
+          "correct": 14,
           "missed": 1,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 14,
           "tb": 44,
           "sheet": {
@@ -13213,17 +13194,22 @@
           "paypal": false,
           "rank": 2,
           "delta": 0,
-          "state": "alive",
+          "state": "out",
           "paid": true,
-          "badges": []
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
         },
         {
           "name": "Tom",
           "house": false,
-          "correct": 13,
+          "correct": 14,
           "missed": 1,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 14,
           "tb": 53,
           "sheet": {
@@ -13249,17 +13235,22 @@
           "paypal": false,
           "rank": 2,
           "delta": 0,
-          "state": "alive",
+          "state": "out",
           "paid": true,
-          "badges": []
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
         },
         {
           "name": "Walczyk",
           "house": false,
-          "correct": 13,
+          "correct": 14,
           "missed": 1,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 14,
           "tb": 52,
           "sheet": {
@@ -13285,9 +13276,62 @@
           "paypal": false,
           "rank": 2,
           "delta": 0,
-          "state": "alive",
+          "state": "out",
           "paid": true,
           "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            },
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
+        },
+        {
+          "name": "Andy R",
+          "house": false,
+          "correct": 13,
+          "missed": 2,
+          "void": 0,
+          "remaining": 0,
+          "max": 13,
+          "tb": 47,
+          "sheet": {
+            "0": "Jaguars",
+            "1": "Bengals",
+            "2": "Cowboys",
+            "3": "Chiefs",
+            "4": "Lions",
+            "5": "Saints",
+            "6": "Giants",
+            "7": "Rams",
+            "8": "Broncos",
+            "9": "Texans",
+            "10": "Patriots",
+            "11": "49ers",
+            "12": "Seahawks",
+            "13": "Bears",
+            "14": "Vikings"
+          },
+          "filedAt": "2026-11-06T01:06:40+00:00",
+          "firstAt": "2026-11-06T01:06:40+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 6,
+          "delta": -4,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "coin",
+              "note": "behind Claude, 13–14"
+            },
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            },
             {
               "id": "buzzer",
               "note": "filed inside the last hour before Thursday kickoff"
@@ -13297,10 +13341,10 @@
         {
           "name": "Arod",
           "house": false,
-          "correct": 12,
+          "correct": 13,
           "missed": 2,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 13,
           "tb": 60,
           "sheet": {
@@ -13324,14 +13368,14 @@
           "firstAt": "2026-11-05T21:39:42+00:00",
           "free": false,
           "paypal": false,
-          "rank": 7,
-          "delta": 0,
+          "rank": 6,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 12–13"
+              "note": "behind Claude, 13–14"
             },
             {
               "id": "dead",
@@ -13342,10 +13386,10 @@
         {
           "name": "Dan",
           "house": false,
-          "correct": 12,
+          "correct": 13,
           "missed": 2,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 13,
           "tb": 42,
           "sheet": {
@@ -13369,14 +13413,14 @@
           "firstAt": "2026-11-05T21:39:13+00:00",
           "free": false,
           "paypal": false,
-          "rank": 7,
-          "delta": 0,
+          "rank": 6,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 12–13"
+              "note": "behind Claude, 13–14"
             },
             {
               "id": "dead",
@@ -13387,10 +13431,10 @@
         {
           "name": "Derek",
           "house": false,
-          "correct": 12,
+          "correct": 13,
           "missed": 2,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 13,
           "tb": 52,
           "sheet": {
@@ -13414,14 +13458,14 @@
           "firstAt": "2026-11-05T22:32:17+00:00",
           "free": false,
           "paypal": false,
-          "rank": 7,
-          "delta": 0,
+          "rank": 6,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 12–13"
+              "note": "behind Claude, 13–14"
             },
             {
               "id": "dead",
@@ -13432,10 +13476,10 @@
         {
           "name": "Garret",
           "house": false,
-          "correct": 12,
+          "correct": 13,
           "missed": 2,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 13,
           "tb": 60,
           "sheet": {
@@ -13459,14 +13503,14 @@
           "firstAt": "2026-11-05T21:37:39+00:00",
           "free": false,
           "paypal": false,
-          "rank": 7,
-          "delta": 0,
+          "rank": 6,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 12–13"
+              "note": "behind Claude, 13–14"
             },
             {
               "id": "dead",
@@ -13477,10 +13521,10 @@
         {
           "name": "Melissa",
           "house": false,
-          "correct": 12,
+          "correct": 13,
           "missed": 2,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 13,
           "tb": 32,
           "sheet": {
@@ -13504,14 +13548,14 @@
           "firstAt": "2026-11-05T22:36:51+00:00",
           "free": false,
           "paypal": false,
-          "rank": 7,
-          "delta": 0,
+          "rank": 6,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 12–13"
+              "note": "behind Claude, 13–14"
             },
             {
               "id": "dead",
@@ -13522,10 +13566,10 @@
         {
           "name": "Nate V",
           "house": false,
-          "correct": 12,
+          "correct": 13,
           "missed": 2,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 13,
           "tb": 49,
           "sheet": {
@@ -13549,14 +13593,14 @@
           "firstAt": "2026-11-05T21:37:55+00:00",
           "free": false,
           "paypal": false,
-          "rank": 7,
-          "delta": 0,
+          "rank": 6,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 12–13"
+              "note": "behind Claude, 13–14"
             },
             {
               "id": "dead",
@@ -13567,10 +13611,10 @@
         {
           "name": "Ryan Holovics",
           "house": false,
-          "correct": 12,
+          "correct": 13,
           "missed": 2,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 13,
           "tb": 47,
           "sheet": {
@@ -13594,14 +13638,14 @@
           "firstAt": "2026-11-05T13:35:25+00:00",
           "free": false,
           "paypal": false,
-          "rank": 7,
-          "delta": 0,
+          "rank": 6,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 12–13"
+              "note": "behind Claude, 13–14"
             },
             {
               "id": "dead",
@@ -13612,10 +13656,10 @@
         {
           "name": "Wendy",
           "house": false,
-          "correct": 12,
+          "correct": 13,
           "missed": 2,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 13,
           "tb": 42,
           "sheet": {
@@ -13639,14 +13683,104 @@
           "firstAt": "2026-11-05T23:03:23+00:00",
           "free": false,
           "paypal": false,
-          "rank": 7,
-          "delta": 0,
+          "rank": 6,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 12–13"
+              "note": "behind Claude, 13–14"
+            },
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
+          "name": "Ariel",
+          "house": false,
+          "correct": 11,
+          "missed": 4,
+          "void": 0,
+          "remaining": 0,
+          "max": 11,
+          "tb": 40,
+          "sheet": {
+            "0": "Jaguars",
+            "1": "Bengals",
+            "2": "Colts",
+            "3": "Chiefs",
+            "4": "Lions",
+            "5": "Browns",
+            "6": "Eagles",
+            "7": "Rams",
+            "8": "Broncos",
+            "9": "Texans",
+            "10": "Packers",
+            "11": "49ers",
+            "12": "Seahawks",
+            "13": "Buccaneers",
+            "14": "Bills"
+          },
+          "filedAt": "2026-11-05T21:53:47+00:00",
+          "firstAt": "2026-11-05T21:53:47+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 15,
+          "delta": 1,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "coin",
+              "note": "behind Claude, 11–14"
+            },
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
+          "name": "Leah",
+          "house": false,
+          "correct": 11,
+          "missed": 4,
+          "void": 0,
+          "remaining": 0,
+          "max": 11,
+          "tb": 49,
+          "sheet": {
+            "0": "Jaguars",
+            "1": "Bengals",
+            "2": "Colts",
+            "3": "Chiefs",
+            "4": "Lions",
+            "5": "Saints",
+            "6": "Giants",
+            "7": "Rams",
+            "8": "Panthers",
+            "9": "Chargers",
+            "10": "Packers",
+            "11": "49ers",
+            "12": "Seahawks",
+            "13": "Buccaneers",
+            "14": "Bills"
+          },
+          "filedAt": "2026-11-04T00:49:11+00:00",
+          "firstAt": "2026-11-04T00:49:11+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 15,
+          "delta": 1,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "coin",
+              "note": "behind Claude, 11–14"
             },
             {
               "id": "dead",
@@ -13658,10 +13792,10 @@
           "name": "Mike Sombloski",
           "house": false,
           "correct": 11,
-          "missed": 3,
+          "missed": 4,
           "void": 0,
-          "remaining": 1,
-          "max": 12,
+          "remaining": 0,
+          "max": 11,
           "tb": 37,
           "sheet": {
             "0": "Jaguars",
@@ -13691,97 +13825,7 @@
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 11–13"
-            },
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            }
-          ]
-        },
-        {
-          "name": "Ariel",
-          "house": false,
-          "correct": 10,
-          "missed": 4,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": 40,
-          "sheet": {
-            "0": "Jaguars",
-            "1": "Bengals",
-            "2": "Colts",
-            "3": "Chiefs",
-            "4": "Lions",
-            "5": "Browns",
-            "6": "Eagles",
-            "7": "Rams",
-            "8": "Broncos",
-            "9": "Texans",
-            "10": "Packers",
-            "11": "49ers",
-            "12": "Seahawks",
-            "13": "Buccaneers",
-            "14": "Bills"
-          },
-          "filedAt": "2026-11-05T21:53:47+00:00",
-          "firstAt": "2026-11-05T21:53:47+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 16,
-          "delta": 1,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "coin",
-              "note": "behind Claude, 10–13"
-            },
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            }
-          ]
-        },
-        {
-          "name": "Leah",
-          "house": false,
-          "correct": 10,
-          "missed": 4,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": 49,
-          "sheet": {
-            "0": "Jaguars",
-            "1": "Bengals",
-            "2": "Colts",
-            "3": "Chiefs",
-            "4": "Lions",
-            "5": "Saints",
-            "6": "Giants",
-            "7": "Rams",
-            "8": "Panthers",
-            "9": "Chargers",
-            "10": "Packers",
-            "11": "49ers",
-            "12": "Seahawks",
-            "13": "Buccaneers",
-            "14": "Bills"
-          },
-          "filedAt": "2026-11-04T00:49:11+00:00",
-          "firstAt": "2026-11-04T00:49:11+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 16,
-          "delta": 1,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "coin",
-              "note": "behind Claude, 10–13"
+              "note": "behind Claude, 11–14"
             },
             {
               "id": "dead",
@@ -13792,10 +13836,10 @@
         {
           "name": "Thom",
           "house": false,
-          "correct": 10,
+          "correct": 11,
           "missed": 4,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 11,
           "tb": 45,
           "sheet": {
@@ -13809,7 +13853,7 @@
             "7": "Rams",
             "8": "Broncos",
             "9": "Texans",
-            "10": "Patriots",
+            "10": "Packers",
             "11": "Raiders",
             "12": "Seahawks",
             "13": "Bears",
@@ -13819,24 +13863,24 @@
           "firstAt": "2026-11-03T11:07:58+00:00",
           "free": true,
           "paypal": false,
-          "rank": 16,
-          "delta": -1,
+          "rank": 15,
+          "delta": 1,
           "state": "alive",
           "paid": false,
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 10–13"
+              "note": "behind Claude, 11–14"
             }
           ]
         },
         {
           "name": "Mrs. Sombloski",
           "house": false,
-          "correct": 9,
+          "correct": 10,
           "missed": 5,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 10,
           "tb": 44,
           "sheet": {
@@ -13867,7 +13911,7 @@
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 9–13"
+              "note": "behind Claude, 10–14"
             },
             {
               "id": "dead",
@@ -13878,10 +13922,10 @@
         {
           "name": "B-rad",
           "house": false,
-          "correct": 7,
+          "correct": 8,
           "missed": 7,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 8,
           "tb": 41,
           "sheet": {
@@ -13912,7 +13956,7 @@
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 7–13"
+              "note": "behind Claude, 8–14"
             },
             {
               "id": "dead",
@@ -13924,10 +13968,10 @@
           "name": "Josh",
           "house": false,
           "correct": 6,
-          "missed": 8,
+          "missed": 9,
           "void": 0,
-          "remaining": 1,
-          "max": 7,
+          "remaining": 0,
+          "max": 6,
           "tb": 48,
           "sheet": {
             "0": "Jaguars",
@@ -13957,7 +14001,7 @@
           "badges": [
             {
               "id": "coin",
-              "note": "behind Claude, 6–13"
+              "note": "behind Claude, 6–14"
             },
             {
               "id": "dead",
@@ -14335,23 +14379,24 @@
             "rightN": 14
           },
           "10": {
-            "away": 9,
-            "home": 11,
-            "minority": "Packers",
+            "away": 10,
+            "home": 10,
+            "minority": "Patriots",
             "minorityWho": [
-              "Leah",
-              "B-rad",
-              "Devin",
-              "Mrs. Sombloski",
-              "Ryan Holovics",
-              "Nate V",
-              "Arod",
-              "Ariel",
-              "Wendy"
+              "Tom",
+              "Mike Sombloski",
+              "Garret",
+              "Dan",
+              "Kaylani & Luka",
+              "Derek",
+              "Melissa",
+              "Walczyk",
+              "Josh",
+              "Andy R"
             ],
             "upset": true,
-            "roomUpset": true,
-            "rightN": 9
+            "roomUpset": false,
+            "rightN": 10
           },
           "11": {
             "away": 2,
@@ -14397,42 +14442,52 @@
               "Mike Sombloski",
               "Josh",
               "Andy R"
-            ]
+            ],
+            "upset": false,
+            "roomUpset": false,
+            "rightN": 16
           }
         },
         "upsets": 1,
-        "decided": 14,
+        "decided": 15,
         "best": {
-          "game": 10,
-          "n": 9,
+          "game": 5,
+          "n": 10,
           "who": [
+            "Tom",
             "Leah",
             "B-rad",
             "Devin",
-            "Mrs. Sombloski",
             "Ryan Holovics",
-            "Nate V",
+            "Dan",
             "Arod",
-            "Ariel",
-            "Wendy"
+            "Kaylani & Luka",
+            "Walczyk",
+            "Andy R"
           ]
         },
         "worst": {
-          "game": 10,
-          "n": 9,
+          "game": 5,
+          "n": 10,
           "who": [
+            "Tom",
             "Leah",
             "B-rad",
             "Devin",
-            "Mrs. Sombloski",
             "Ryan Holovics",
-            "Nate V",
+            "Dan",
             "Arod",
-            "Ariel",
-            "Wendy"
+            "Kaylani & Luka",
+            "Walczyk",
+            "Andy R"
           ]
         },
-        "bills": null,
+        "bills": {
+          "game": 14,
+          "right": 16,
+          "wrong": 4,
+          "won": true
+        },
         "jets": {
           "game": 3,
           "right": 20,
@@ -14440,23 +14495,11 @@
           "won": false
         }
       },
-      "decides": [
-        {
-          "game": 14,
-          "away": [
-            "Tom",
-            "Devin",
-            "Kaylani & Luka",
-            "Walczyk"
-          ],
-          "home": [
-            "Thom",
-            "Andy R"
-          ]
-        }
+      "decides": [],
+      "weekWinners": [
+        "Devin"
       ],
-      "weekWinners": [],
-      "weekPayout": 0,
+      "weekPayout": 95.0,
       "tbUsed": false,
       "updates": [
         {
@@ -14486,10 +14529,18 @@
         {
           "at": "2026-11-09T04:50:14.519237+00:00",
           "note": "14 of 15 final. Devin leads at 14–0. Out of it: Arod, Dan, Derek, Garret, Melissa, Nate V, Ryan Holovics, Wendy."
+        },
+        {
+          "at": "2026-11-10T05:24:15.383603+00:00",
+          "note": "Final: Devin takes Week 9."
         }
       ],
-      "decidedAtLastRun": 14,
+      "decidedAtLastRun": 15,
       "outAtLastRun": [
+        "Kaylani & Luka",
+        "Tom",
+        "Walczyk",
+        "Andy R",
         "Arod",
         "Dan",
         "Derek",
@@ -14498,15 +14549,15 @@
         "Nate V",
         "Ryan Holovics",
         "Wendy",
-        "Mike Sombloski",
         "Ariel",
         "Leah",
+        "Mike Sombloski",
         "Mrs. Sombloski",
         "B-rad",
         "Josh"
       ],
-      "columnHead": "Six minutes left, Devin's hand on the gavel",
-      "column": "Bills 20–6 with 6:17 left in the fourth. If it ended now, Devin goes 15–0 and takes the week outright and pushes her season to 65–22. Andy R's only door: Minnesota wins, and the two teams pile on 21 more points while it happens so the total reaches 47. Land on 46 exactly and they split.\n\nThom has Minnesota too, playing free, so his payoff is a story. Kaylani & Luka, Tom and Walczyk finish 14–1 on a Bills win and get nothing for it but the view from second.",
+      "columnHead": "Devin runs the table and takes the $95",
+      "column": "Devin went 15–0 and never needed the tiebreaker, which is lucky, because her 45 sailed well past the 29 points Buffalo and Minnesota actually scored. Four sheets finished 14–1 — Kaylani & Luka, Tom, Walczyk and the house — and get to share the view from second. The house's Lock, Seattle over Arizona, cashed 17–3; its only miss was Green Bay, the three-point dog ten of you had and the commissioner didn't.\n\nThe collapse belongs to Josh: 6–9, with misses on Tampa, Washington, the Chargers and a Monday ride on Minnesota that never left the garage. B-rad went 8–7 after sending the Raiders into San Francisco and getting 38–17 for it, and he's back in the bottom three. Mrs. Sombloski is down there with him at 10–5, one game behind Ariel, who will be unbearable about it. Thom went 11–4 playing free, the only way to lose that doesn't cost five bucks.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w9.jpg",
@@ -14515,10 +14566,12 @@
         "week": 8,
         "line": "Leah went 9–5. Luka's here for moral support."
       },
-      "thuDone": true
+      "thuDone": true,
+      "tiebreakTotal": 29,
+      "rollOut": 0
     }
   },
-  "updated": "2026-11-10T04:10:00.161647+00:00",
+  "updated": "2026-11-10T05:24:15.383603+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -14601,12 +14654,6 @@
   "columnLog": [
     {
       "week": 9,
-      "at": "2026-11-08T13:12:06.773904+00:00",
-      "head": "Madrid at 9:30; Devin chases a third podium",
-      "text": "Sunday morning: nineteen sheets knotted at 1–0, and Madrid kicks off at 9:30 Eastern, so somebody’s week goes sideways before brunch. Devin has finished top three two weeks running; a third makes her the closest thing this pool has to a closer. Ryan still leads the season at 40–16.\n\nAriel is 0–5 against Tom head to head this year. Andy R leads Arod 2–1 in the battle of the Rodgerses. B-rad and Mrs. Sombloski open the day in the cellar at 0–1, which is roomier than it sounds. Questions for the commissioner go on the pick sheet."
-    },
-    {
-      "week": 9,
       "at": "2026-11-08T22:10:17.398574+00:00",
       "head": "Seven perfect, and Walczyk is one of them",
       "text": "Nine games down, seven sheets still spotless at 9–0: Andy R, Dan, Devin, Kaylani & Luka, Tom, Walczyk and the house. Walczyk started the day 34–38 on the season and is now tied for first. Every favorite has held, so the top is crowded and the cellar belongs to Josh and Mrs. Sombloski at 4–5.\n\nThe late window sorts it. Packers–Patriots splits the room ten and ten, and six of the perfect seven are on New England; Devin is the lone spotless sheet riding Green Bay, which jumped out early. Fourteen sheets have Houston over the Chargers. Thom and B-rad are alone on the Raiders in San Francisco."
@@ -14646,6 +14693,12 @@
       "at": "2026-11-10T03:10:07.617499+00:00",
       "head": "Halftime, and Devin is thirty minutes from perfect",
       "text": "Halftime, Bills 10–6. If it ended here, Devin goes 15–0 and nobody else gets a say. Andy R is the last paid sheet with a pulse: he needs the Vikings to win the second half by five or more and the total to reach 47, which means 31 more points in two quarters. Land on exactly 46 and they split; anything under, it's Devin's either way.\n\nThom holds Minnesota too, playing free, so his ceiling is a good story. The house went 1–0 on its Lock, Seattle over Arizona 17–3, and is otherwise one more Bills fan rooting for Devin."
+    },
+    {
+      "week": 9,
+      "at": "2026-11-10T05:24:15.383603+00:00",
+      "head": "Six minutes left, Devin's hand on the gavel",
+      "text": "Bills 20–6 with 6:17 left in the fourth. If it ended now, Devin goes 15–0 and takes the week outright and pushes her season to 65–22. Andy R's only door: Minnesota wins, and the two teams pile on 21 more points while it happens so the total reaches 47. Land on 46 exactly and they split.\n\nThom has Minnesota too, playing free, so his payoff is a story. Kaylani & Luka, Tom and Walczyk finish 14–1 on a Bills win and get nothing for it but the view from second."
     }
   ],
   "rivals": [
