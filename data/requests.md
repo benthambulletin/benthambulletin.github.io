@@ -5,6 +5,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Standing
 
+- **No more Dana White (Garret, Nov 10: "I don't give a f--- about Dana White. That's 3 days in a row").** The story is dead; don't run it again in any form. **And no story runs more than two days, ever:** a follow-up ("Update:") is allowed once, the next day, only for something the family would bring up themselves (a verdict, a death, a storm, a Bills result). A celebrity or political sideshow never gets a second day. When in doubt, drop it.
 - **Jets: go gentle**, for Tommy's sake. Report the game honestly, no pile-on. Bills and Jets stay even in space.
 - **Next Jets and Bills games** go on the Family Today calendar.
 - **Home Wire order:** try Scottsville first; if nothing, run at least one Rochester, NY headline. Dunkirk (not Jamestown) for the Chautauqua beat. North Tonawanda only when there is real news.
