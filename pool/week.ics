@@ -3,4 +3,32 @@ VERSION:2.0
 PRODID:-//The Sunday Tax//Pool//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sundaytax-2026-w10-Commanders-Giants@benthambulletin.github.io
+DTSTAMP:20261110T110848Z
+DTSTART:20261113T011500Z
+DURATION:PT15M
+SUMMARY:Sunday Tax: Commanders at Giants locks — get your picks in
+URL:https://tally.so/r/RGOakJ
+DESCRIPTION:Each game locks at its own kickoff. Picks: https://tally.so/r/RGOakJ\nStandings: https://benthambulletin.github.io/pool/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sunday Tax: Commanders at Giants locks — get your picks in
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sundaytax-2026-w10-Patriots-Lions@benthambulletin.github.io
+DTSTAMP:20261110T110848Z
+DTSTART:20261115T143000Z
+DURATION:PT15M
+SUMMARY:Sunday Tax: Patriots at Lions locks — get your picks in
+URL:https://tally.so/r/RGOakJ
+DESCRIPTION:Each game locks at its own kickoff. Picks: https://tally.so/r/RGOakJ\nStandings: https://benthambulletin.github.io/pool/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sunday Tax: Patriots at Lions locks — get your picks in
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
 END:VCALENDAR

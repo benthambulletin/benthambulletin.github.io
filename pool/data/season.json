@@ -23,7 +23,6 @@
         "GBrdRL",
         "OBA57Y",
         "V1Z5zM",
-        "vqr61X",
         "EbPQxB",
         "rrlAo2"
       ],
@@ -53,7 +52,7 @@
     "missy verhague": "Mrs. Sombloski",
     "sigma mikey skibidi sombloski": "Mike Sombloski"
   },
-  "currentWeek": 9,
+  "currentWeek": 10,
   "weeks": {
     "4": {
       "status": "final",
@@ -14569,6 +14568,200 @@
       "thuDone": true,
       "tiebreakTotal": 29,
       "rollOut": 0
+    },
+    "10": {
+      "status": "pre",
+      "games": [
+        {
+          "away": "Commanders",
+          "home": "Giants",
+          "kickoff": "2026-11-13T01:15:00Z",
+          "when": "Thu 8:15 PM",
+          "tv": "Prime Video",
+          "status": "sealed",
+          "fav": "Giants",
+          "line": "Giants −1.5"
+        },
+        {
+          "away": "Patriots",
+          "home": "Lions",
+          "kickoff": "2026-11-15T14:30:00Z",
+          "when": "Sun 9:30 AM · Munich",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "Lions",
+          "line": "Lions −3 (Munich)"
+        },
+        {
+          "away": "Panthers",
+          "home": "Saints",
+          "kickoff": "2026-11-15T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "Panthers",
+          "line": "Panthers −1.5"
+        },
+        {
+          "away": "Bills",
+          "home": "Jets",
+          "kickoff": "2026-11-15T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "status": "sealed",
+          "fav": "Bills",
+          "line": "Bills −7.5"
+        },
+        {
+          "away": "Texans",
+          "home": "Browns",
+          "kickoff": "2026-11-15T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "Texans",
+          "line": "Texans −4.5"
+        },
+        {
+          "away": "Jaguars",
+          "home": "Titans",
+          "kickoff": "2026-11-15T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "Jaguars",
+          "line": "Jaguars −10"
+        },
+        {
+          "away": "Chiefs",
+          "home": "Falcons",
+          "kickoff": "2026-11-15T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "status": "sealed",
+          "fav": "Chiefs",
+          "line": "Chiefs −3.5"
+        },
+        {
+          "away": "Dolphins",
+          "home": "Colts",
+          "kickoff": "2026-11-15T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "status": "sealed",
+          "fav": "Colts",
+          "line": "Colts −1.5"
+        },
+        {
+          "away": "Vikings",
+          "home": "Packers",
+          "kickoff": "2026-11-15T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "Packers",
+          "line": "Packers −3.5 (Kyler Murray hurt)"
+        },
+        {
+          "away": "Rams",
+          "home": "Cardinals",
+          "kickoff": "2026-11-15T21:05:00Z",
+          "when": "Sun 4:05 PM",
+          "tv": "CBS",
+          "status": "sealed",
+          "fav": "Rams",
+          "line": "Rams −7.5 (Minshew out)"
+        },
+        {
+          "away": "Seahawks",
+          "home": "Raiders",
+          "kickoff": "2026-11-15T21:05:00Z",
+          "when": "Sun 4:05 PM",
+          "tv": "CBS",
+          "status": "sealed",
+          "fav": "Seahawks",
+          "line": "Seahawks −3.5"
+        },
+        {
+          "away": "49ers",
+          "home": "Cowboys",
+          "kickoff": "2026-11-15T21:25:00Z",
+          "when": "Sun 4:25 PM",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "49ers",
+          "line": "49ers −3.5"
+        },
+        {
+          "away": "Steelers",
+          "home": "Bengals",
+          "kickoff": "2026-11-16T01:20:00Z",
+          "when": "Sun 8:20 PM",
+          "tv": "NBC",
+          "status": "sealed",
+          "fav": "Bengals",
+          "line": "Bengals −3.5"
+        },
+        {
+          "away": "Chargers",
+          "home": "Ravens",
+          "kickoff": "2026-11-17T01:15:00Z",
+          "when": "Mon 8:15 PM",
+          "tv": "ESPN",
+          "status": "sealed",
+          "fav": "Ravens",
+          "line": "Ravens −5.5 (Lamar Jackson out)"
+        }
+      ],
+      "players": [],
+      "trash": [],
+      "payments": [],
+      "buyIn": 5,
+      "payBy": "2026-11-13T01:15:00Z",
+      "pot": 0,
+      "paidN": 0,
+      "opensAt": "2026-11-10T11:08:30Z",
+      "housePicks": {
+        "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
+        "picks": {
+          "0": "Giants",
+          "1": "Lions",
+          "2": "Saints",
+          "3": "Bills",
+          "4": "Texans",
+          "5": "Jaguars",
+          "6": "Chiefs",
+          "7": "Colts",
+          "8": "Packers",
+          "9": "Rams",
+          "10": "Seahawks",
+          "11": "49ers",
+          "12": "Bengals",
+          "13": "Ravens"
+        },
+        "why": {
+          "0": "Giants at home; Washington's top receivers are hurt.",
+          "1": "Lions have won three straight; Pats lose A.J. Brown.",
+          "2": "Panthers lost three straight. Saints at home.",
+          "3": "Bills 7–1, Jets 2–7 and getting sacked constantly.",
+          "4": "Stroud just threw five touchdowns. Browns' QB unsettled.",
+          "5": "Jaguars rested and rolling; Titans are 1–7.",
+          "6": "Mahomes's elbow checked out. Falcons back from Madrid.",
+          "7": "Colts by a point and a half. Nobody's thrilled.",
+          "8": "Vikings on a short week, Kyler Murray hurt.",
+          "9": "Cardinals down to a rookie quarterback.",
+          "10": "Seahawks by three and a half, even with Drew Lock.",
+          "11": "49ers 7–1; Dallas banged up at tight end.",
+          "12": "Bengals at home, three straight wins.",
+          "13": "Chargers 0–8. Ravens rested, Brissett starting."
+        },
+        "lock": "5",
+        "lockWhy": "Jaguars rested, 6–2 and rolling; Titans 1–7. Division game, but a 10-point edge."
+      },
+      "bot": true,
+      "botPaid": true,
+      "rollIn": 0,
+      "namesForm": true
     }
   },
   "updated": "2026-11-10T05:24:15.383603+00:00",
