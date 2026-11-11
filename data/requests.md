@@ -52,11 +52,11 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
-- **Wed Nov 11 (Garret, 2 a.m.): a frost item — has each town had a frost yet, and what's the latest first frost on record.** Verified from our own dawn strips: Dunkirk 28 and Scottsville 32 on Oct 21 (first freeze for both), 32 again Oct 22, Scottsville 32 Oct 24; the Oct 18 Rochester observation read "widespread frost". North Tonawanda's coldest dawn reading so far is 34 (Oct 21 and 22), frost range but no 32 in our readings. Forecast lows from the morning feed decide the rest (Tuesday's feed had 31 Friday night for North Tonawanda). Dawn readings are not daily lows: say "no dawn reading at 32 or below", not "no freeze". **The record is NOT verified:** the only sourced fact is from the Northeast Regional Climate Center, 2017: Buffalo and Rochester both first froze Nov 8 that year, Rochester's 2nd-longest frost-free season since 1872 and Buffalo's 5th-longest since 1874. Print a record date only if a source this morning gives one (NWS Buffalo, WGRZ, WIVB, WKBW; WGRZ and WIVB have run pieces on a record-late first snowflake in Buffalo, check their dates). Home is the Weather Glass frost line or the Ledger, once.
 
 - **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
 
 ## Done
+- **Wed Nov 11 — frost item (Garret, 2 a.m.).** Ran as the lead, "The First Freeze, at Last": North Tonawanda's first 32 at dawn; Dunkirk and Scottsville froze Oct 21; 2017 comparison from the Northeast Regional Climate Center; no all-time record printed (none verified). — ran No. 140.
 - **Sun Nov 8 — Sunday Question answers.** "First election you remember?" Ariel: "Clinton's first term!" (form, Nov 1). — ran No. 137.
 - **Sat Nov 7 — Lake Erie story and lake-effect cover (Garret, Nov 6).** Run a real story on Lake Erie's record warmth and what it means for this winter (WKBW via WBLK, NWS Buffalo lake temps). Cover: Shawn Smith's Nov. 14, 2014 photo of the lake-effect wall over the Southtowns from Buffalo City Hall (NOAA Weather in Focus contest, NOAA Photo Library, CC BY 2.0), cropped landscape, credited in the caption. Fetched to spool/incoming/ by fetch-image.yml. Story drafted in spool/next/lake_story.html (refresh the lake readings first). — ran No. 136.
 
