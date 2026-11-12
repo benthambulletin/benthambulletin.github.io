@@ -34,7 +34,8 @@ def main():
             if now - mko > timedelta(hours=7):
                 probs.append(f"Week {n}: Monday's game ended hours ago and the week was never scored")
         e = et(now)
-        if upd and 8 <= e.hour <= 23 and now - upd > timedelta(hours=3):
+        gap = 3 if e.weekday() in (0, 3, 6) else 8   # hourly on game days (Mon, Thu, Sun); three runs a day otherwise (Nov 12)
+        if upd and 9 <= e.hour <= 23 and now - upd > timedelta(hours=gap):
             probs.append(f"Week {n}: no board update since {et(upd):%a %-I:%M %p} ET (the hourly refresh looks stalled)")
     else:
         e = et(now)

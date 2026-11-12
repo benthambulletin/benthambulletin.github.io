@@ -126,7 +126,9 @@ run overwrites. No line on file → no upset call. score.py: `upset` = winner �
 Sunday-night and Monday games, check injury reports for every unplayed game; if a starter's status flips the favorite, Claude may
 change that unplayed pick in `housePicks.picks` (like any player resubmitting), never after kickoff and never the Lock once shown.
 
-## Run: REFRESH (hourly at :07, 8 am–11 pm) — task "hourly refresh"
+## Run: REFRESH — tasks "hourly refresh" and "off-day refresh"
+**Schedule (Garret, Nov 12, to save usage):** hourly at :07, 8 a.m.–11 p.m., on game days only (Thu, Sun, Mon); on
+Tue, Wed, Fri and Sat three runs, at 8:07 a.m., 1:07 p.m. and 8:07 p.m. Same run either way.
 Stop if the week is `final` — except on Tuesday after 8 a.m. ET: if the next week still isn't set up, alert Garret once
 ("Week N+1 isn't up — the new-week run didn't land") and stop. S1, S2, S3, S4, S5. **Column:** write it (S6) only
 (a) if it's empty and someone has filed, or before the first kickoff when the number of real sheets has changed
