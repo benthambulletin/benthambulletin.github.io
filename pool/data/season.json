@@ -14793,7 +14793,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -14883,11 +14883,20 @@
           "text": "Went 14–1 and lost to a perfect sheet. Noted."
         }
       ],
-      "payments": [],
+      "payments": [
+        {
+          "id": "1a1cfe25592da2ad",
+          "at": "2026-11-12T13:11:18Z",
+          "amt": "5.00",
+          "who": "Dan",
+          "status": "ok",
+          "told": null
+        }
+      ],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 5.0,
-      "paidN": 1,
+      "pot": 10.0,
+      "paidN": 2,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -14960,7 +14969,7 @@
       }
     }
   },
-  "updated": "2026-11-12T13:12:22.832296+00:00",
+  "updated": "2026-11-12T14:10:54.807375+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
