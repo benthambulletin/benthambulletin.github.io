@@ -14757,6 +14757,26 @@
       ],
       "players": [
         {
+          "name": "B-rad",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T18:01:22+00:00",
+          "firstAt": "2026-11-12T18:01:22+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Claude",
           "house": true,
           "correct": 0,
@@ -14837,6 +14857,26 @@
           "badges": []
         },
         {
+          "name": "Leah",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T18:02:25+00:00",
+          "firstAt": "2026-11-12T18:02:25+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Mike Sombloski",
           "house": false,
           "correct": 0,
@@ -14854,6 +14894,26 @@
           "delta": 0,
           "state": "alive",
           "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Nate V",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T18:00:32+00:00",
+          "firstAt": "2026-11-12T18:00:32+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
           "badges": []
         },
         {
@@ -14875,6 +14935,26 @@
           "state": "alive",
           "paid": false,
           "badges": []
+        },
+        {
+          "name": "Tom",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T18:03:39+00:00",
+          "firstAt": "2026-11-12T18:03:39+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -14885,6 +14965,12 @@
       ],
       "payments": [
         {
+          "id": "manual-w10-devin",
+          "amt": "5.00",
+          "who": "Devin",
+          "status": "manual"
+        },
+        {
           "id": "1a1cfe25592da2ad",
           "at": "2026-11-12T13:11:18Z",
           "amt": "5.00",
@@ -14893,16 +14979,42 @@
           "told": null
         },
         {
-          "id": "manual-w10-devin",
+          "id": "1a1d0e9d9b90f4e2",
+          "at": "2026-11-12T17:59:08Z",
           "amt": "5.00",
-          "who": "Devin",
-          "status": "manual"
+          "who": "Nate V",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1d0eb1f66d2704",
+          "at": "2026-11-12T18:00:31Z",
+          "amt": "5.00",
+          "who": "Leah",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1d0eb1f66d2704~1",
+          "at": "2026-11-12T18:00:31Z",
+          "amt": "5.00",
+          "who": "B-rad",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1d0ee892726889",
+          "at": "2026-11-12T18:04:15Z",
+          "amt": "5.00",
+          "who": "Tom",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 15.0,
-      "paidN": 3,
+      "pot": 35.0,
+      "paidN": 7,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -14963,9 +15075,9 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Dan climbs in with the morning coffee",
-      "column": "Dan filed at 8:10 this morning and makes it five real sheets. He's the hottest hand nobody is talking about: 20th in Week 7, 12th in Week 8, sixth last week at 13–2, his best week of the season. That puts him at 56–31, nine games behind Devin's 65–22, on a climb that only points one way.\n\nEverybody else has until tonight's kickoff, Commanders at Giants at 8:15. Tom, Ariel and Kaylani & Luka are still on the bench.",
-      "columnN": 5,
+      "columnHead": "Four sheets in four minutes at lunch",
+      "column": "Nate V, B-rad, Leah and Tom all filed between 1:00 and 1:03 this afternoon, four sheets in four minutes, which is either a lunch break or a group text nobody invited the commissioner to. That makes nine real sheets. Leah leads B-rad 3–2 head to head, and B-rad has finished bottom three two weeks running, so he has something to prove. Tom walks in top three two weeks running and third on the season at 61–26.\n\nKickoff is tonight, Commanders at Giants at 8:15. Ariel and Kaylani & Luka are still out.",
+      "columnN": 9,
       "face": {
         "photo": "/pool/faces/w10.jpg",
         "who": "Kaylani & Luka",
@@ -14975,7 +15087,7 @@
       }
     }
   },
-  "updated": "2026-11-12T17:55:52.894511+00:00",
+  "updated": "2026-11-12T18:09:09.192389+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -15058,12 +15170,6 @@
   "columnLog": [
     {
       "week": 9,
-      "at": "2026-11-10T03:10:07.617499+00:00",
-      "head": "Halftime, and Devin is thirty minutes from perfect",
-      "text": "Halftime, Bills 10–6. If it ended here, Devin goes 15–0 and nobody else gets a say. Andy R is the last paid sheet with a pulse: he needs the Vikings to win the second half by five or more and the total to reach 47, which means 31 more points in two quarters. Land on exactly 46 and they split; anything under, it's Devin's either way.\n\nThom holds Minnesota too, playing free, so his ceiling is a good story. The house went 1–0 on its Lock, Seattle over Arizona 17–3, and is otherwise one more Bills fan rooting for Devin."
-    },
-    {
-      "week": 9,
       "at": "2026-11-10T05:24:15.383603+00:00",
       "head": "Six minutes left, Devin's hand on the gavel",
       "text": "Bills 20–6 with 6:17 left in the fourth. If it ended now, Devin goes 15–0 and takes the week outright and pushes her season to 65–22. Andy R's only door: Minnesota wins, and the two teams pile on 21 more points while it happens so the total reaches 47. Land on 46 exactly and they split.\n\nThom has Minnesota too, playing free, so his payoff is a story. Kaylani & Luka, Tom and Walczyk finish 14–1 on a Bills win and get nothing for it but the view from second."
@@ -15103,6 +15209,12 @@
       "at": "2026-11-12T13:12:22.832296+00:00",
       "head": "Dan climbs in with the morning coffee",
       "text": "Dan filed at 8:10 this morning and makes it five real sheets. He's the hottest hand nobody is talking about: 20th in Week 7, 12th in Week 8, sixth last week at 13–2, his best week of the season. That puts him at 56–31, nine games behind Devin's 65–22, on a climb that only points one way.\n\nEverybody else has until tonight's kickoff, Commanders at Giants at 8:15. Tom, Ariel and Kaylani & Luka are still on the bench."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-12T18:09:09.192389+00:00",
+      "head": "Four sheets in four minutes at lunch",
+      "text": "Nate V, B-rad, Leah and Tom all filed between 1:00 and 1:03 this afternoon, four sheets in four minutes, which is either a lunch break or a group text nobody invited the commissioner to. That makes nine real sheets. Leah leads B-rad 3–2 head to head, and B-rad has finished bottom three two weeks running, so he has something to prove. Tom walks in top three two weeks running and third on the season at 61–26.\n\nKickoff is tonight, Commanders at Giants at 8:15. Ariel and Kaylani & Luka are still out."
     }
   ],
   "rivals": [
