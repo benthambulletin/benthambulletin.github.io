@@ -14757,6 +14757,26 @@
       ],
       "players": [
         {
+          "name": "Andy R",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T21:22:26+00:00",
+          "firstAt": "2026-11-12T21:22:26+00:00",
+          "free": false,
+          "paypal": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Ariel",
           "house": false,
           "correct": 0,
@@ -14828,6 +14848,26 @@
           "sheet": {},
           "filedAt": "2026-11-12T13:10:03+00:00",
           "firstAt": "2026-11-12T13:10:03+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Derek",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T21:44:33+00:00",
+          "firstAt": "2026-11-12T21:44:33+00:00",
           "free": false,
           "paypal": false,
           "rank": 1,
@@ -14968,6 +15008,26 @@
           "sheet": {},
           "filedAt": "2026-11-12T18:00:32+00:00",
           "firstAt": "2026-11-12T18:00:32+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Ryan Holovics",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T21:22:21+00:00",
+          "firstAt": "2026-11-12T21:22:21+00:00",
           "free": false,
           "paypal": false,
           "rank": 1,
@@ -15125,12 +15185,28 @@
           "who": "Mike Sombloski",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1d1a476389b462",
+          "at": "2026-11-12T21:22:58Z",
+          "amt": "5.00",
+          "who": "Ryan Holovics",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1d1b50d9119cdc",
+          "at": "2026-11-12T21:41:05Z",
+          "amt": "5.00",
+          "who": "Derek",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 60.0,
-      "paidN": 12,
+      "pot": 70.0,
+      "paidN": 14,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -15192,8 +15268,8 @@
       "outAtLastRun": [],
       "threads": {},
       "columnHead": "Ariel promises violence; Wendy makes eleven",
-      "column": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nMrs. Sombloski and Kaylani & Luka filed since, which makes thirteen real sheets. Kickoff is tonight, Commanders at Giants at 8:15.",
-      "columnN": 13,
+      "column": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nSince then Mrs. Sombloski, Kaylani & Luka, Ryan, Andy R and Derek have filed, and Ryan is back after two straight wins earlier this season. That's sixteen real sheets. Kickoff is tonight, Commanders at Giants at 8:15.",
+      "columnN": 16,
       "face": {
         "photo": "/pool/faces/w10.jpg",
         "who": "Kaylani & Luka",
@@ -15203,7 +15279,7 @@
       }
     }
   },
-  "updated": "2026-11-12T21:09:11.509397+00:00",
+  "updated": "2026-11-12T22:05:13.000737+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -15249,7 +15325,8 @@
     "aOJ5WNv": "Andy R",
     "7X74JkP": "Andy R",
     "0VRypNZ": "Josh",
-    "q517Rzk": "Andy R"
+    "q517Rzk": "Andy R",
+    "EqOV6eq": "Andy R"
   },
   "people": {
     "603444b89dab4f0e": "Thom",
