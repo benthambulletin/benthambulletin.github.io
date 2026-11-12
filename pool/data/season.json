@@ -14813,7 +14813,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -14891,12 +14891,18 @@
           "who": "Dan",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "manual-w10-devin",
+          "amt": "5.00",
+          "who": "Devin",
+          "status": "manual"
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 10.0,
-      "paidN": 2,
+      "pot": 15.0,
+      "paidN": 3,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -14969,7 +14975,7 @@
       }
     }
   },
-  "updated": "2026-11-12T17:09:05.841522+00:00",
+  "updated": "2026-11-12T17:55:52.894511+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
