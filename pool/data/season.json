@@ -14797,6 +14797,26 @@
           "badges": []
         },
         {
+          "name": "Arod",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T22:23:33+00:00",
+          "firstAt": "2026-11-12T22:23:33+00:00",
+          "free": false,
+          "paypal": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "B-rad",
           "house": false,
           "correct": 0,
@@ -15274,8 +15294,8 @@
       "outAtLastRun": [],
       "threads": {},
       "columnHead": "Ariel promises violence; Wendy makes eleven",
-      "column": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nSince then Mrs. Sombloski, Kaylani & Luka, Ryan, Andy R and Derek have filed, and Ryan is back after two straight wins earlier this season. That's sixteen real sheets. Kickoff is tonight, Commanders at Giants at 8:15.",
-      "columnN": 16,
+      "column": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nSince then Mrs. Sombloski, Kaylani & Luka, Ryan, Andy R, Derek and Arod have filed, and Ryan is back after two straight wins earlier this season. That's seventeen real sheets. Kickoff is tonight, Commanders at Giants at 8:15.",
+      "columnN": 17,
       "face": {
         "photo": "/pool/faces/w10.jpg",
         "who": "Kaylani & Luka",
@@ -15285,7 +15305,7 @@
       }
     }
   },
-  "updated": "2026-11-12T22:09:47.856445+00:00",
+  "updated": "2026-11-12T22:39:30.905469+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
