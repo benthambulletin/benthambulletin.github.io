@@ -14777,6 +14777,26 @@
           "badges": []
         },
         {
+          "name": "Dan",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T13:10:03+00:00",
+          "firstAt": "2026-11-12T13:10:03+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Devin",
           "house": false,
           "correct": 0,
@@ -14928,9 +14948,9 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Mike Sombloski files first in his house",
-      "column": "Mike Sombloski filed at 8:44 Wednesday night and makes it four real sheets, alongside Devin, Thom and the commissioner. He walks in 4–2 against Mrs. Sombloski head to head and 3–1 against Ariel, the rare player in this pool with a winning record against both of his rivals.\n\nMrs. Sombloski hasn't filed, and she has finished bottom three two weeks running, so the household standings are getting lopsided. Sheets are due at Thursday's kickoff, Commanders at Giants.",
-      "columnN": 4,
+      "columnHead": "Dan climbs in with the morning coffee",
+      "column": "Dan filed at 8:10 this morning and makes it five real sheets. He's the hottest hand nobody is talking about: 20th in Week 7, 12th in Week 8, sixth last week at 13–2, his best week of the season. That puts him at 56–31, nine games behind Devin's 65–22, on a climb that only points one way.\n\nEverybody else has until tonight's kickoff, Commanders at Giants at 8:15. Tom, Ariel and Kaylani & Luka are still on the bench.",
+      "columnN": 5,
       "face": {
         "photo": "/pool/faces/w10.jpg",
         "who": "Kaylani & Luka",
@@ -14940,7 +14960,7 @@
       }
     }
   },
-  "updated": "2026-11-12T04:08:26.774357+00:00",
+  "updated": "2026-11-12T13:12:22.832296+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -15023,12 +15043,6 @@
   "columnLog": [
     {
       "week": 9,
-      "at": "2026-11-10T03:09:39.490915+00:00",
-      "head": "Bills up three, Devin's perfect week holding",
-      "text": "Bills 3–0 early in the second quarter. If it ended now, Devin goes 15–0 and takes the week outright, no tiebreaker needed, after finishing top three the last two weeks. Andy R is the only one who can still catch her: he needs Minnesota to win and the two teams to combine for 47 or more. At exactly 46 they split; at 45 or fewer it's Devin's either way.\n\nSo far the scoreboard is helping her twice, since three total points is a long way from 47. Thom has the Vikings too, playing free, for honor only. The house's Lock, Seattle at home over Arizona, already cashed; the rest of the house is just watching Devin."
-    },
-    {
-      "week": 9,
       "at": "2026-11-10T03:10:07.617499+00:00",
       "head": "Halftime, and Devin is thirty minutes from perfect",
       "text": "Halftime, Bills 10–6. If it ended here, Devin goes 15–0 and nobody else gets a say. Andy R is the last paid sheet with a pulse: he needs the Vikings to win the second half by five or more and the total to reach 47, which means 31 more points in two quarters. Land on exactly 46 and they split; anything under, it's Devin's either way.\n\nThom holds Minnesota too, playing free, so his ceiling is a good story. The house went 1–0 on its Lock, Seattle over Arizona 17–3, and is otherwise one more Bills fan rooting for Devin."
@@ -15068,6 +15082,12 @@
       "at": "2026-11-12T03:08:30.962569+00:00",
       "head": "Mike Sombloski files first in his house",
       "text": "Mike Sombloski filed at 8:44 Wednesday night and makes it four real sheets, alongside Devin, Thom and the commissioner. He walks in 4–2 against Mrs. Sombloski head to head and 3–1 against Ariel, the rare player in this pool with a winning record against both of his rivals.\n\nMrs. Sombloski hasn't filed, and she has finished bottom three two weeks running, so the household standings are getting lopsided. Sheets are due at Thursday's kickoff, Commanders at Giants."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-12T13:12:22.832296+00:00",
+      "head": "Dan climbs in with the morning coffee",
+      "text": "Dan filed at 8:10 this morning and makes it five real sheets. He's the hottest hand nobody is talking about: 20th in Week 7, 12th in Week 8, sixth last week at 13–2, his best week of the season. That puts him at 56–31, nine games behind Devin's 65–22, on a climb that only points one way.\n\nEverybody else has until tonight's kickoff, Commanders at Giants at 8:15. Tom, Ariel and Kaylani & Luka are still on the bench."
     }
   ],
   "rivals": [
