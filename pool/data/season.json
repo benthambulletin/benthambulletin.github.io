@@ -14773,7 +14773,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -15115,6 +15115,12 @@
           "status": "manual"
         },
         {
+          "id": "manual-w10-andyr",
+          "amt": "5.00",
+          "who": "Andy R",
+          "status": "manual"
+        },
+        {
           "id": "1a1cfe25592da2ad",
           "at": "2026-11-12T13:11:18Z",
           "amt": "5.00",
@@ -15205,8 +15211,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 70.0,
-      "paidN": 14,
+      "pot": 75.0,
+      "paidN": 15,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -15279,7 +15285,7 @@
       }
     }
   },
-  "updated": "2026-11-12T22:05:13.000737+00:00",
+  "updated": "2026-11-12T22:05:59.338288+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -15363,12 +15369,6 @@
   "columnLog": [
     {
       "week": 10,
-      "at": "2026-11-10T14:12:01.158010+00:00",
-      "head": "The champ and the commissioner, six minutes apart",
-      "text": "Devin filed at 8:30 this morning, fresh off a perfect week, and the commissioner followed six minutes later, which is either a show of nerve or a man who can't stand being second on his own board. Garret also leads Kaylani & Luka 3–2 head to head this season, so the household rivalry is officially live and the other half of it hasn't filed.\n\nEveryone else is still thinking. The house's Lock is Jacksonville over Tennessee; sheets, and the five bucks, are due at Thursday's kickoff, Commanders at Giants."
-    },
-    {
-      "week": 10,
       "at": "2026-11-10T22:15:04.969386+00:00",
       "head": "Thom makes three; Tom is still out",
       "text": "Thom filed at 3:33 this afternoon and makes it three real sheets, alongside Devin and the commissioner. Devin brings the best season in the room, 65–22, and three straight top-three finishes into it, which makes her the sheet everyone else is quietly playing against.\n\nThe chaser, Tom at 61–26, hasn't filed. Neither has Ariel, who is 0–6 against Tom head to head and running out of Sundays to fix that. Sheets are due at Thursday's kickoff, Commanders at Giants."
@@ -15408,6 +15408,12 @@
       "at": "2026-11-12T19:09:51.883356+00:00",
       "head": "Ariel promises violence; Wendy makes eleven",
       "text": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nMrs. Sombloski and Kaylani & Luka filed since, which makes thirteen real sheets. Kickoff is tonight, Commanders at Giants at 8:15."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-12T22:05:59.338288+00:00",
+      "head": "Ariel promises violence; Wendy makes eleven",
+      "text": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nSince then Mrs. Sombloski, Kaylani & Luka, Ryan, Andy R and Derek have filed, and Ryan is back after two straight wins earlier this season. That's sixteen real sheets. Kickoff is tonight, Commanders at Giants at 8:15."
     }
   ],
   "rivals": [
