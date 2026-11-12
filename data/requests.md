@@ -52,6 +52,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Fri Nov 13 (Garret, Thu 8:34 a.m.: "The Sports Desk might want to peep UB football. Having a nice season. For tomorrow").** Run a UB Bulls item in The Gridiron as its own wire item with a headline: record, the win streak and bowl eligibility (WIVB and WGRZ, Nov 12: five straight wins, bowl eligible), what decided the last game, and the next game with day and time. Pull scores and the record with `fetch_sports_data` (league ncaafb, team Buffalo) and game_stats on the last game; use news.json for the rest. Explain "bowl eligible" in the same sentence (six wins earns a postseason bowl game). If it lands well, keep UB in the Gridiron on days it has real news (game results, bowl announcement); ask Garret before making it daily.
+
 
 - **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
 
