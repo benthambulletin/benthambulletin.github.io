@@ -14913,7 +14913,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -15069,12 +15069,28 @@
           "who": "Wendy",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1d102d9e763272",
+          "at": "2026-11-12T18:26:26Z",
+          "amt": "5.00",
+          "who": "Mrs. Sombloski",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1d102d9e763272~1",
+          "at": "2026-11-12T18:26:26Z",
+          "amt": "5.00",
+          "who": "Mike Sombloski",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 45.0,
-      "paidN": 9,
+      "pot": 50.0,
+      "paidN": 10,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -15147,7 +15163,7 @@
       }
     }
   },
-  "updated": "2026-11-12T18:22:12.454819+00:00",
+  "updated": "2026-11-12T18:27:08.763718+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -15229,12 +15245,6 @@
   ],
   "columnLog": [
     {
-      "week": 9,
-      "at": "2026-11-10T05:24:15.383603+00:00",
-      "head": "Six minutes left, Devin's hand on the gavel",
-      "text": "Bills 20–6 with 6:17 left in the fourth. If it ended now, Devin goes 15–0 and takes the week outright and pushes her season to 65–22. Andy R's only door: Minnesota wins, and the two teams pile on 21 more points while it happens so the total reaches 47. Land on 46 exactly and they split.\n\nThom has Minnesota too, playing free, so his payoff is a story. Kaylani & Luka, Tom and Walczyk finish 14–1 on a Bills win and get nothing for it but the view from second."
-    },
-    {
       "week": 10,
       "at": "2026-11-10T13:13:44.454229+00:00",
       "head": "Devin's perfect sheet is the one to beat",
@@ -15275,6 +15285,12 @@
       "at": "2026-11-12T18:09:09.192389+00:00",
       "head": "Four sheets in four minutes at lunch",
       "text": "Nate V, B-rad, Leah and Tom all filed between 1:00 and 1:03 this afternoon, four sheets in four minutes, which is either a lunch break or a group text nobody invited the commissioner to. That makes nine real sheets. Leah leads B-rad 3–2 head to head, and B-rad has finished bottom three two weeks running, so he has something to prove. Tom walks in top three two weeks running and third on the season at 61–26.\n\nKickoff is tonight, Commanders at Giants at 8:15. Ariel and Kaylani & Luka are still out."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-12T18:27:08.763718+00:00",
+      "head": "Ariel promises violence; Wendy makes eleven",
+      "text": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nThat's eleven real sheets. Kickoff is tonight, Commanders at Giants at 8:15, and Kaylani & Luka are still out."
     }
   ],
   "rivals": [
