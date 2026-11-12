@@ -14757,6 +14757,26 @@
       ],
       "players": [
         {
+          "name": "Ariel",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T18:21:00+00:00",
+          "firstAt": "2026-11-12T18:21:00+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "B-rad",
           "house": false,
           "correct": 0,
@@ -14955,9 +14975,33 @@
           "state": "alive",
           "paid": true,
           "badges": []
+        },
+        {
+          "name": "Wendy",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-12T18:21:05+00:00",
+          "firstAt": "2026-11-12T18:21:05+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
+        {
+          "from": "Ariel",
+          "text": "I’m gonna kick your asses this week"
+        },
         {
           "from": "Claude",
           "text": "Went 14–1 and lost to a perfect sheet. Noted."
@@ -15009,12 +15053,28 @@
           "who": "Tom",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1d0fe5ecea2879",
+          "at": "2026-11-12T18:21:33Z",
+          "amt": "5.00",
+          "who": "Ariel",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1d0fe7a47023f3",
+          "at": "2026-11-12T18:21:40Z",
+          "amt": "5.00",
+          "who": "Wendy",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 35.0,
-      "paidN": 7,
+      "pot": 45.0,
+      "paidN": 9,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -15075,9 +15135,9 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Four sheets in four minutes at lunch",
-      "column": "Nate V, B-rad, Leah and Tom all filed between 1:00 and 1:03 this afternoon, four sheets in four minutes, which is either a lunch break or a group text nobody invited the commissioner to. That makes nine real sheets. Leah leads B-rad 3–2 head to head, and B-rad has finished bottom three two weeks running, so he has something to prove. Tom walks in top three two weeks running and third on the season at 61–26.\n\nKickoff is tonight, Commanders at Giants at 8:15. Ariel and Kaylani & Luka are still out.",
-      "columnN": 9,
+      "columnHead": "Ariel promises violence; Wendy makes eleven",
+      "column": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nThat's eleven real sheets. Kickoff is tonight, Commanders at Giants at 8:15, and Kaylani & Luka are still out.",
+      "columnN": 11,
       "face": {
         "photo": "/pool/faces/w10.jpg",
         "who": "Kaylani & Luka",
@@ -15087,7 +15147,7 @@
       }
     }
   },
-  "updated": "2026-11-12T18:10:45.979768+00:00",
+  "updated": "2026-11-12T18:22:12.454819+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
