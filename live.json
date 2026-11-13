@@ -1,13 +1,15 @@
 {
- "updated": "2026-11-13T04:18:29Z",
+ "updated": "2026-11-13T04:20:30Z",
  "week": 10,
  "games": {
   "0": {
-   "state": "in",
+   "state": "post",
    "away": 24,
    "home": 21,
-   "detail": "0:25 - 4th",
-   "line": "Commanders 24–21 · 0:25 - 4th"
+   "detail": "Final",
+   "winner": "Commanders",
+   "score": "24–21",
+   "line": "Final · Commanders 24–21"
   }
  }
 }
