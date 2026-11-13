@@ -14570,7 +14570,7 @@
       "rollOut": 0
     },
     "10": {
-      "status": "pre",
+      "status": "live",
       "games": [
         {
           "away": "Commanders",
@@ -14578,12 +14578,38 @@
           "kickoff": "2026-11-13T01:15:00Z",
           "when": "Thu 8:15 PM",
           "tv": "Prime Video",
-          "status": "sealed",
+          "status": "live",
           "fav": "Giants",
           "line": "Giants −1.5",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Commanders": [
+              "Garret",
+              "Nate V",
+              "B-rad",
+              "Leah",
+              "Arod",
+              "Josh"
+            ],
+            "Giants": [
+              "Devin",
+              "Thom",
+              "Mike Sombloski",
+              "Dan",
+              "Tom",
+              "Ariel",
+              "Wendy",
+              "Mrs. Sombloski",
+              "Kaylani & Luka",
+              "Ryan Holovics",
+              "Andy R",
+              "Derek",
+              "Walczyk",
+              "Melissa",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Patriots",
@@ -14765,7 +14791,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T21:22:26+00:00",
           "firstAt": "2026-11-12T21:22:26+00:00",
           "free": false,
@@ -14785,7 +14813,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T18:21:00+00:00",
           "firstAt": "2026-11-12T18:21:00+00:00",
           "free": false,
@@ -14805,7 +14835,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Commanders"
+          },
           "filedAt": "2026-11-12T22:23:33+00:00",
           "firstAt": "2026-11-12T22:23:33+00:00",
           "free": false,
@@ -14813,7 +14845,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -14825,7 +14857,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Commanders"
+          },
           "filedAt": "2026-11-12T18:01:22+00:00",
           "firstAt": "2026-11-12T18:01:22+00:00",
           "free": false,
@@ -14845,7 +14879,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-10T11:08:30+00:00",
           "firstAt": "2026-11-10T11:08:30+00:00",
           "free": false,
@@ -14865,7 +14901,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T13:10:03+00:00",
           "firstAt": "2026-11-12T13:10:03+00:00",
           "free": false,
@@ -14885,7 +14923,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T21:44:33+00:00",
           "firstAt": "2026-11-12T21:44:33+00:00",
           "free": false,
@@ -14905,7 +14945,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-10T13:30:40+00:00",
           "firstAt": "2026-11-10T13:30:40+00:00",
           "free": false,
@@ -14925,7 +14967,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Commanders"
+          },
           "filedAt": "2026-11-10T13:36:41+00:00",
           "firstAt": "2026-11-10T13:36:41+00:00",
           "free": false,
@@ -14945,7 +14989,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Commanders"
+          },
           "filedAt": "2026-11-13T01:09:31+00:00",
           "firstAt": "2026-11-13T01:09:31+00:00",
           "free": false,
@@ -14970,7 +15016,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T18:39:53+00:00",
           "firstAt": "2026-11-12T18:39:53+00:00",
           "free": false,
@@ -14990,7 +15038,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Commanders"
+          },
           "filedAt": "2026-11-12T18:02:25+00:00",
           "firstAt": "2026-11-12T18:02:25+00:00",
           "free": false,
@@ -15010,7 +15060,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-13T00:18:39+00:00",
           "firstAt": "2026-11-13T00:18:39+00:00",
           "free": false,
@@ -15035,7 +15087,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T01:44:34+00:00",
           "firstAt": "2026-11-12T01:44:34+00:00",
           "free": false,
@@ -15055,7 +15109,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T18:28:22+00:00",
           "firstAt": "2026-11-12T18:28:22+00:00",
           "free": false,
@@ -15075,7 +15131,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Commanders"
+          },
           "filedAt": "2026-11-12T18:00:32+00:00",
           "firstAt": "2026-11-12T18:00:32+00:00",
           "free": false,
@@ -15095,7 +15153,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T21:22:21+00:00",
           "firstAt": "2026-11-12T21:22:21+00:00",
           "free": false,
@@ -15115,7 +15175,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-10T20:33:44+00:00",
           "firstAt": "2026-11-10T20:33:44+00:00",
           "free": true,
@@ -15135,7 +15197,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T18:03:39+00:00",
           "firstAt": "2026-11-12T18:03:39+00:00",
           "free": false,
@@ -15155,7 +15219,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T22:53:38+00:00",
           "firstAt": "2026-11-12T22:53:38+00:00",
           "free": false,
@@ -15175,7 +15241,9 @@
           "remaining": 14,
           "max": 14,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Giants"
+          },
           "filedAt": "2026-11-12T18:21:05+00:00",
           "firstAt": "2026-11-12T18:21:05+00:00",
           "free": false,
@@ -15208,6 +15276,12 @@
           "id": "manual-w10-andyr",
           "amt": "5.00",
           "who": "Andy R",
+          "status": "manual"
+        },
+        {
+          "id": "manual-w10-arod",
+          "amt": "5.00",
+          "who": "Arod",
           "status": "manual"
         },
         {
@@ -15325,8 +15399,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 90.0,
-      "paidN": 18,
+      "pot": 95.0,
+      "paidN": 19,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -15371,7 +15445,21 @@
       "namesForm": true,
       "asks": [],
       "stats": {
-        "games": {},
+        "games": {
+          "0": {
+            "away": 6,
+            "home": 14,
+            "minority": "Commanders",
+            "minorityWho": [
+              "Garret",
+              "Nate V",
+              "B-rad",
+              "Leah",
+              "Arod",
+              "Josh"
+            ]
+          }
+        },
         "upsets": 0,
         "decided": 0,
         "best": null,
@@ -15379,7 +15467,35 @@
         "bills": null,
         "jets": null
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 0,
+          "away": [
+            "Garret",
+            "Nate V",
+            "B-rad",
+            "Leah",
+            "Arod",
+            "Josh"
+          ],
+          "home": [
+            "Devin",
+            "Thom",
+            "Mike Sombloski",
+            "Dan",
+            "Tom",
+            "Ariel",
+            "Wendy",
+            "Mrs. Sombloski",
+            "Kaylani & Luka",
+            "Ryan Holovics",
+            "Andy R",
+            "Derek",
+            "Walczyk",
+            "Melissa"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -15399,7 +15515,7 @@
       }
     }
   },
-  "updated": "2026-11-13T01:14:31.836520+00:00",
+  "updated": "2026-11-13T01:16:16.583937+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
