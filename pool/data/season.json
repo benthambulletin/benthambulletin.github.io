@@ -15113,7 +15113,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -15247,12 +15247,20 @@
           "who": "Derek",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1d229623710cb7",
+          "at": "2026-11-12T23:48:09Z",
+          "amt": "5.00",
+          "who": "Walczyk",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 75.0,
-      "paidN": 15,
+      "pot": 80.0,
+      "paidN": 16,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -15325,7 +15333,7 @@
       }
     }
   },
-  "updated": "2026-11-12T23:11:06.169380+00:00",
+  "updated": "2026-11-13T00:09:53.407913+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -15409,12 +15417,6 @@
   "columnLog": [
     {
       "week": 10,
-      "at": "2026-11-11T14:10:46.680085+00:00",
-      "head": "The commissioner's real rival hasn't filed",
-      "text": "Day two, still three sheets: Devin, Thom and the commissioner. Garret's real problem this week isn't the champ. He leads Kaylani & Luka 3–2 head to head, but they've finished top three two weeks running and he hasn't, and a one-game lead that thin is a rumor, not a cushion.\n\nTheir sheet isn't in yet. Sheets are due at Thursday's kickoff, Commanders at Giants."
-    },
-    {
-      "week": 10,
       "at": "2026-11-12T03:08:30.962569+00:00",
       "head": "Mike Sombloski files first in his house",
       "text": "Mike Sombloski filed at 8:44 Wednesday night and makes it four real sheets, alongside Devin, Thom and the commissioner. He walks in 4–2 against Mrs. Sombloski head to head and 3–1 against Ariel, the rare player in this pool with a winning record against both of his rivals.\n\nMrs. Sombloski hasn't filed, and she has finished bottom three two weeks running, so the household standings are getting lopsided. Sheets are due at Thursday's kickoff, Commanders at Giants."
@@ -15454,6 +15456,12 @@
       "at": "2026-11-12T23:11:06.169380+00:00",
       "head": "Ariel promises violence; Wendy makes eleven",
       "text": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nSince then Mrs. Sombloski, Kaylani & Luka, Ryan, Andy R, Derek and Arod have filed, and Ryan is back after two straight wins earlier this season. That's seventeen real sheets. Kickoff is tonight, Commanders at Giants at 8:15."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-13T00:09:53.407913+00:00",
+      "head": "Walczyk beats the buzzer; eighteen sheets in",
+      "text": "Walczyk filed at 5:53 tonight, two hours and change before kickoff, which in this pool counts as early for somebody. Arod beat her by half an hour; Derek got his in at 4:44. That's eighteen real sheets.\n\nThe one to chase is Devin: last week's champ, top three three weeks running, and she filed Tuesday morning like she had somewhere better to be. Leah leads B-rad 3–2 head to head, and B-rad would like a word. Commanders at Giants, 8:15."
     }
   ],
   "rivals": [
