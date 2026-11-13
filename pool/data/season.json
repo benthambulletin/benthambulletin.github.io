@@ -14937,6 +14937,31 @@
           "badges": []
         },
         {
+          "name": "Josh",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 14,
+          "max": 14,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-13T01:09:31+00:00",
+          "firstAt": "2026-11-13T01:09:31+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
+        },
+        {
           "name": "Kaylani & Luka",
           "house": false,
           "correct": 0,
@@ -15288,12 +15313,20 @@
           "who": "Melissa",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1d275e609b47f5",
+          "at": "2026-11-13T01:11:44Z",
+          "amt": "5.00",
+          "who": "Josh",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-13T01:15:00Z",
-      "pot": 85.0,
-      "paidN": 17,
+      "pot": 90.0,
+      "paidN": 18,
       "opensAt": "2026-11-10T11:08:30Z",
       "housePicks": {
         "trash": "Went 14–1 and lost to a perfect sheet. Noted.",
@@ -15355,8 +15388,8 @@
       "outAtLastRun": [],
       "threads": {},
       "columnHead": "Walczyk beats the buzzer; eighteen sheets in",
-      "column": "Walczyk filed at 5:53 tonight, two hours and change before kickoff, which in this pool counts as early for somebody. Arod beat her by half an hour; Derek got his in at 4:44. Melissa slid in at 7:18. That's nineteen real sheets.\n\nThe one to chase is Devin: last week's champ, top three three weeks running, and she filed Tuesday morning like she had somewhere better to be. Leah leads B-rad 3–2 head to head, and B-rad would like a word. Commanders at Giants, 8:15.",
-      "columnN": 19,
+      "column": "Walczyk filed at 5:53 tonight, two hours and change before kickoff, which in this pool counts as early for somebody. Arod beat her by half an hour; Derek got his in at 4:44. Melissa slid in at 7:18, and Josh beat the buzzer at 8:09. That's twenty real sheets.\n\nThe one to chase is Devin: last week's champ, top three three weeks running, and she filed Tuesday morning like she had somewhere better to be. Leah leads B-rad 3–2 head to head, and B-rad would like a word. Commanders at Giants, 8:15.",
+      "columnN": 20,
       "face": {
         "photo": "/pool/faces/w10.jpg",
         "who": "Kaylani & Luka",
@@ -15366,7 +15399,7 @@
       }
     }
   },
-  "updated": "2026-11-13T01:09:35.082911+00:00",
+  "updated": "2026-11-13T01:14:07.104840+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
