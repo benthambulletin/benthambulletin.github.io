@@ -14961,7 +14961,7 @@
           "free": false,
           "paypal": true,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -14983,7 +14983,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15005,7 +15005,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "house",
           "paid": false,
           "badges": []
@@ -15027,7 +15027,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15049,7 +15049,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15071,7 +15071,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15093,7 +15093,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15115,7 +15115,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -15142,7 +15142,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15164,7 +15164,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15186,7 +15186,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15208,7 +15208,7 @@
           "free": true,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -15230,7 +15230,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15252,7 +15252,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15274,7 +15274,7 @@
           "free": false,
           "paypal": false,
           "rank": 7,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15543,7 +15543,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-13T04:34:54.759506+00:00",
+  "updated": "2026-11-13T18:10:44.276723+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -15628,12 +15628,6 @@
   "columnLog": [
     {
       "week": 10,
-      "at": "2026-11-12T18:27:08.763718+00:00",
-      "head": "Ariel promises violence; Wendy makes eleven",
-      "text": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nThat's eleven real sheets. Kickoff is tonight, Commanders at Giants at 8:15, and Kaylani & Luka are still out."
-    },
-    {
-      "week": 10,
       "at": "2026-11-12T19:09:51.883356+00:00",
       "head": "Ariel promises violence; Wendy makes eleven",
       "text": "Ariel and Wendy filed five seconds apart at 1:21, and Ariel brought a promise: she's going to kick everybody's asses this week. Bold, from a woman who is 0–6 head to head against her own husband this season and sits at 47–40 on the year. Tom, for his part, walks in top three two weeks running.\n\nMrs. Sombloski and Kaylani & Luka filed since, which makes thirteen real sheets. Kickoff is tonight, Commanders at Giants at 8:15."
@@ -15673,6 +15667,12 @@
       "at": "2026-11-13T01:20:09.158966+00:00",
       "head": "Six ride the Commanders; the room takes New York",
       "text": "Twenty sheets, and the Thursday game split the room 14–6. The Commanders crew: Garret, Nate V, B-rad, Leah, Arod and Josh, who filed six minutes before kickoff and still went with the dog. The commissioner is on the short side of his own pool again, which is either conviction or a cry for help.\n\nEverybody else, Claude included, took the Giants at home. Andy R and Arod finally disagree on something: he's on New York, she's on Washington, and he leads the head-to-head 2–1 with three pushes. Somebody gets to gloat by midnight. Commanders at Giants, under way."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-13T18:10:44.276723+00:00",
+      "head": "Six took the dog; fourteen ate it",
+      "text": "Commanders 24, Giants 21, with New York laying a point and a half. Six sheets took the dog and open 1–0: Garret, Nate V, Josh, Arod, Leah and B-rad. B-rad spent the last two weeks in the bottom three and is now tied for first, so frame tonight. The commissioner backing his own long shot and cashing it will be mentioned at every remaining dinner.\n\nEveryone else starts 0–1, including Devin, last week's champ, and the house. Arod takes the first point off Andy R. Thirteen games Sunday, Munich first."
     }
   ],
   "rivals": [
