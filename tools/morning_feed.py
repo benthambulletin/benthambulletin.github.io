@@ -71,7 +71,9 @@ def get(url, timeout=30, tries=3):
                 return r.read()
         except urllib.error.HTTPError as e:
             if e.code in (429, 503) and i < tries - 1:
-                time.sleep(20 * (i + 1)); continue
+                try: wait = min(90, int(e.headers.get('Retry-After') or 0))
+                except (TypeError, ValueError): wait = 0
+                time.sleep(max(wait, 30 * (i + 1))); continue
             raise
         except OSError:
             if i < tries - 1:

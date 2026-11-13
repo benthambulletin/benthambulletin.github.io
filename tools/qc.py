@@ -24,6 +24,19 @@ if ed:
         if 'class="bigtemp"' in s: fails.append('LAYOUT: no big temperature in the Weather Glass (the tile has it)')
         if '<span class="o">' in s.split('<h2 class="sec">',1)[-1].split('<div class="colo">')[0]: fails.append('LAYOUT: section heads are plain, no ornament spans')
         if 0 <= s.find('The Weather Glass') < s.find('The National Wire'): fails.append('LAYOUT: The News comes before The Almanac')
+    # riddle: the answer must not have run before (Nov 12: an umbrella repeat got out)
+    import glob as _g
+    def _ans(html):
+        m = re.search(r'Question of the Day:</b>\s*([^<]+)', html)
+        return re.sub(r'^(an?|the)\s+', '', m.group(1).strip().rstrip('.').lower()) if m else None
+    _a = _ans(s)
+    if _a:
+        for _f in sorted(_g.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'site', 'data', 'edition-*.json')) + _g.glob('/home/claude/site/data/edition-*.json')):
+            if str(dt) in _f: continue
+            try: _b = _ans(json.load(open(_f))['body_html'])
+            except Exception: continue
+            if _b and _b == _a:
+                fails.append(f'RIDDLE: answer "{_a}" already ran in {os.path.basename(_f)}'); break
     # 2. issue number consistent
     nos=set(re.findall(r'No\.\s*(\d+)',s))-{'1'}
     if nos and nos!={str(ed['no'])}: fails.append(f'ISSUE NO mismatch: {nos} vs {ed["no"]}')

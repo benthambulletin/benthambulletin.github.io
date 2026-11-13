@@ -348,6 +348,7 @@ def shell(title, body, og_image=None, desc="A daily almanac for the family", too
     og = f'<meta property="og:image" content="https://benthambulletin.github.io{og_image}">' if og_image else ''
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
 <title>{title}</title>
 <meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">{og}
 <meta property="og:type" content="article">

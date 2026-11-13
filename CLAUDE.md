@@ -30,6 +30,14 @@ When a photo arrives in chat **before 6:59 a.m.**, crop it, save it to `spool/ne
 
 Photos from other sources (e.g. ESPN, a police department) get credited in the caption. **Never generate images of real people.**
 
+## Keeping it running (Garret, Nov 12: "do them all")
+
+- **Not indexed.** Every paper page carries `<meta name="robots" content="noindex,nofollow">` (in `tools/site.py`'s page shell; all existing pages patched Nov 12). Never remove it. The site is still public to anyone with the link; it just asks search engines to stay out.
+- **Morning feed.** GitHub's own schedule for `morning.yml` fires hours late, so a scheduled task ("Bulletin: morning feed kick") dispatches it before the build. The build still checks freshness and dispatches again if needed.
+- **Watchdog.** A separate scheduled task ("Bulletin watchdog") checks after the build that today's edition is on origin/main and sends Garret a push notification if it is not. It runs in its own fresh session so it works even if this session's chain breaks. If the build or send time moves, move both tasks with it.
+- **Riddles.** qc.py fails the build when the Question of the Day's answer has run in any earlier edition.
+- **Raise things.** Garret, Nov 12: he was surprised the earlier-delivery idea never came from the editor. Flag gaps in how the paper is delivered, read and kept running, not just what is in it.
+
 ## Lessons from the runs
 
 - **Sep 27:** the 6:59 run did not publish, and the hand-built paper missed Friday night's North Tonawanda car-show crash because local research only looked at Saturday. **Home Wire looks back 48 hours**, and North Tonawanda/Tonawanda/Niagara County get searched by name on WKBW, WGRZ and WIVB every morning.
