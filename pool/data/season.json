@@ -14609,7 +14609,9 @@
               "Melissa",
               "Claude"
             ]
-          }
+          },
+          "live": "Commanders 3–0 · 2nd qtr",
+          "liveAt": "2026-11-13T02:08:59Z"
         },
         {
           "away": "Patriots",
@@ -15515,7 +15517,7 @@
       }
     }
   },
-  "updated": "2026-11-13T01:20:09.158966+00:00",
+  "updated": "2026-11-13T02:09:52.400776+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
