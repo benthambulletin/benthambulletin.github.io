@@ -189,7 +189,7 @@ footer p{margin:0;max-width:65ch}
   <section class="how" aria-label="How it works">
     <p class="one">Paste a sale link and we'll tell you if it's a real deal or a shit one.</p>
     <ol>
-      <li><span>Copy the link to the deal. For Amazon, add the product name.</span></li>
+      <li><span>Copy the link to the deal. For Amazon, also take a screenshot.</span></li>
       <li><span>Paste it below. Tap Submit.</span></li>
       <li><span>Come back when the clock below hits zero.</span></li>
     </ol>
@@ -306,7 +306,7 @@ footer p{margin:0;max-width:65ch}
     }
     function R(v, headline, reasons, instead){ return {verdict:v, headline:headline, reasons:reasons, instead:instead || null, links: v === "buy" ? [] : links}; }
 
-    if(real.length < 2 && /(^|\.)(a\.co|amzn\.to|amzn\.com)$/.test(host)) return {verdict:"unknown", headline:"Amazon hides the product in this link.", reasons:["Tap below to see its price history yourself.", "For our verdict, paste it again with the product's name."], instead:null, links:[{t:"See its Amazon price history", u:"https://camelcamelcamel.com/search?sq=" + encodeURIComponent((raw.match(/https?:\/\/\S+/) || [""])[0])}]};
+    if(real.length < 2 && /(^|\.)(a\.co|amzn\.to|amzn\.com)$/.test(host)) return {verdict:"unknown", headline:"Amazon hides the product in this link.", reasons:["Tap below to see its price history yourself.", "For our verdict, add a screenshot of the item next time."], instead:null, links:[{t:"See its Amazon price history", u:"https://camelcamelcamel.com/search?sq=" + encodeURIComponent((raw.match(/https?:\/\/\S+/) || [""])[0])}]};
     if(real.length < 2) return {verdict:"unknown", headline:"Can't tell from this link. The full check will open it.", reasons:[], instead:null, links:[]};
 
     // 1. Is it something tracked on this page?
@@ -448,7 +448,7 @@ footer p{margin:0;max-width:65ch}
     var list = document.getElementById("board"); list.textContent = "";
     var done = {}; board.forEach(function(x){ done[key(x.link)] = 1; if(x.pasted) done[key(x.pasted)] = 1; });
     var waiting = mine.filter(function(m){ return !done[key(m.link)] && !quiet[key(m.link)]; });
-    waiting.forEach(function(m){ var sk = skipped[key(m.link)]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", link:m.link, headline: sk ? "Yours. We couldn't check this one. Paste it again with the product's name." : "Yours. In line for the next check."})); });
+    waiting.forEach(function(m){ var sk = skipped[key(m.link)]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", link:m.link, headline: sk ? "Yours. We couldn't check this one. Paste it again with a screenshot of the item." : "Yours. In line for the next check."})); });
     board.forEach(function(x){ list.appendChild(boardCard(x)); });
     if(!waiting.length && !board.length) list.appendChild(el("p", "empty", "Nobody's gone yet. Paste the first one."));
     document.getElementById("board-n").textContent = board.length + (board.length === 1 ? " deal checked" : " deals checked");
