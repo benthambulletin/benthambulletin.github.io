@@ -52,6 +52,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Tue Dec 1 (Garret, Nov 14, 8:01 a.m.: "Hold off til 12/1/26").** Switch to the winter scheme in this edition, not earlier: shades and snowflake ornaments as listed under Design in CLAUDE.md (mock shown Nov 14). Change `tools/site.py` :root and the surround, the ornaments in the masthead and colophon, and the hardcoded chart colors. Send Garret a screenshot with the link that morning.
+
 
 
 
