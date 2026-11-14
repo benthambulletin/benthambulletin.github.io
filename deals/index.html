@@ -189,8 +189,8 @@ footer p{margin:0;max-width:65ch}
   <section class="how" aria-label="How it works">
     <p class="one">Paste a sale link and we'll tell you if it's a real deal or a shit one.</p>
     <ol>
-      <li><span>Copy the link to the deal. For Amazon, also take a screenshot.</span></li>
-      <li><span>Paste it below. Tap Submit.</span></li>
+      <li><span>Copy the link to the deal. For Amazon, take a screenshot instead.</span></li>
+      <li><span>Paste the link or add the screenshot below. Tap Submit.</span></li>
       <li><span>Come back when the clock below hits zero.</span></li>
     </ol>
   </section>
@@ -306,7 +306,7 @@ footer p{margin:0;max-width:65ch}
     }
     function R(v, headline, reasons, instead){ return {verdict:v, headline:headline, reasons:reasons, instead:instead || null, links: v === "buy" ? [] : links}; }
 
-    if(real.length < 2 && /(^|\.)(a\.co|amzn\.to|amzn\.com)$/.test(host)) return {verdict:"unknown", headline:"Amazon hides the product in this link.", reasons:["Tap below to see its price history yourself.", "For our verdict, add a screenshot of the item next time."], instead:null, links:[{t:"See its Amazon price history", u:"https://camelcamelcamel.com/search?sq=" + encodeURIComponent((raw.match(/https?:\/\/\S+/) || [""])[0])}]};
+    if(real.length < 2 && /(^|\.)(a\.co|amzn\.to|amzn\.com)$/.test(host)) return {verdict:"unknown", headline:"Amazon hides the product in this link.", reasons:["Tap below to see its price history yourself.", "For our verdict, send a screenshot of the item instead."], instead:null, links:[{t:"See its Amazon price history", u:"https://camelcamelcamel.com/search?sq=" + encodeURIComponent((raw.match(/https?:\/\/\S+/) || [""])[0])}]};
     if(real.length < 2) return {verdict:"unknown", headline:"Can't tell from this link. The full check will open it.", reasons:[], instead:null, links:[]};
 
     // 1. Is it something tracked on this page?
@@ -471,14 +471,15 @@ footer p{margin:0;max-width:65ch}
       (p.fields || []).forEach(function(f){ var a = f && f.answer; var v = a && (a.value != null ? a.value : a.raw); if(!link && typeof v === "string") link = v; });
     }catch(err){}
     link = link.trim().slice(0, 2000);
-    var url = (link.match(/https?:\/\/\S+/) || [])[0];
-    if(link && !url){
-      showQuick({verdict:"unknown", headline:"No link in that paste. Copy the link itself and paste again.", reasons:[], instead:null, links:[]});
-    } else if(url){
+    var url = (link.match(/https?:\/\/\S+/) || [])[0], hasShot = false;
+    try{ (JSON.parse(e.data).payload.fields || []).forEach(function(f){ var a = f && f.answer, v = a && (a.value != null ? a.value : a.raw); if(v && typeof v === "object") hasShot = true; }); }catch(err){}
+    if(url){
       mine.unshift({link: url, t: Date.now()}); saveMine(); renderBoard();
       showQuick(judge(link, null, null));
+    } else if(hasShot || !link){
+      showQuick({verdict:"pending", headline:"Got it. The verdict lands in the log after the next check.", reasons:[], instead:null, links:[]});
     } else {
-      showQuick({verdict:"unknown", headline:"Got your link. The full check is in line.", reasons:[], instead:null, links:[]});
+      showQuick({verdict:"unknown", headline:"No link in that paste. Copy the link itself and paste again.", reasons:[], instead:null, links:[]});
     }
   });
 })();
