@@ -381,8 +381,7 @@ footer p{margin:0;max-width:65ch}
       if(!fmt){ T.textContent = ""; L.textContent = "Checks run every hour, 6 a.m. to midnight Eastern."; return; }
       var p = {}; fmt.formatToParts(new Date()).forEach(function(x){ p[x.type] = parseInt(x.value, 10); });
       var sod = (p.hour % 24) * 3600 + p.minute * 60 + p.second, left = null, overnight = false;
-      var half = p.month === 11 && p.day >= 23;
-      for(var H = 6; H <= 23 && left == null; H++){ [210, 2010].forEach(function(o, k){ var s = H * 3600 + o; if(left == null && (k === 0 || half) && s > sod) left = s - sod; }); }
+      for(var H = 6; H <= 23; H++){ var s = H * 3600 + 210; if(s > sod){ left = s - sod; break; } }
       if(left == null){ left = 86400 - sod + 6 * 3600 + 210; overnight = true; }
       var over = p.year > 2026 || p.month === 12 || (p.month === 11 && p.day === 30 && overnight);
       if(over){ L.textContent = "Black Friday checks have ended."; T.textContent = ""; N.textContent = "The log below stays up."; return; }
