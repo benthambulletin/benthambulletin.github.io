@@ -113,6 +113,11 @@ footer p{margin:0;max-width:65ch}
 .mast-txt{display:flex;flex-direction:column;gap:6px;min-width:0;justify-self:stretch}
 .art{width:min(100%,360px);height:auto;display:block}
 [hidden]{display:none !important}
+.how .one{font-size:17px;font-weight:700;color:var(--ink)}
+.how li{align-items:center}
+.under{margin:-10px 4px 0;font-size:14px;color:var(--muted)}
+.better{display:inline-block;margin-top:8px;background:var(--good);color:#fff;font-weight:800;font-size:14px;text-decoration:none;padding:8px 14px;border-radius:999px}
+.instead .better{display:table}
 .head{display:flex;gap:12px;align-items:center}
 .headtx{display:flex;flex-direction:column;gap:6px;min-width:0}
 .thumb{width:72px;height:72px;flex:none;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:10px}
@@ -168,27 +173,24 @@ footer p{margin:0;max-width:65ch}
     </div>
   </header>
 
-  <section class="how" aria-labelledby="how-h">
-    <h2>What this does</h2>
-    <p>Stores mark things "50% off" that were never full price. The Porta Potty checks a deal for you before you buy, so the shit ones end up here and not in your cart. You paste the link. It finds the real sale price, looks up what the item actually sold for this year, and tells you plainly whether to buy it, wait, or skip it for something better.</p>
-    <h2 id="how-h">How to use it</h2>
+  <section class="how" aria-label="How it works">
+    <p class="one">Paste a sale link and we'll tell you if it's a real deal or a shit one.</p>
     <ol>
-      <li><span><b>Copy the link to the deal.</b>From Amazon, Walmart, Best Buy, Target, anywhere. In most apps: Share, then Copy link.</span></li>
-      <li><span><b>Paste it in the red box and tap Submit.</b>That's all you type. No prices, no sign-in.</span></li>
-      <li><span><b>Get a quick sniff test right away.</b>The page reads the product from the link and flags the obvious traps on the spot.</span></li>
-      <li><span><b>Come back within the hour for the full check.</b>It looks up today's sale price, what the item sold for earlier this year, and whether it's a stripped-down Black Friday model. The verdict lands in the log below.</span></li>
+      <li><span>Copy the link to the deal.</span></li>
+      <li><span>Paste it below. Tap Submit.</span></li>
+      <li><span>Come back in about an hour for the verdict.</span></li>
     </ol>
-    <p>Every verdict is one of three: <b>Legit deal</b>, <b>Wait</b> or <b>Shit deal</b>. A Wait or a Shit deal always comes with what to do instead. Everyone who has this page sees the same log, so check it before you paste. Someone may have asked already.</p>
   </section>
 
   <section class="pastebox" aria-label="Paste a deal link">
     <iframe data-tally-src="https://tally.so/embed/OQ4NLk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" height="170" title="Paste a deal link"></iframe>
   </section>
+  <p class="under">Your verdict shows up in the log below. Everyone with this page can see it.</p>
 
   <section class="checker" id="quick" hidden aria-live="polite">
     <h2>Quick sniff test</h2>
     <div id="chk-result"></div>
-    <p class="note">This is the instant sniff from the link alone. The full check, with the real price and its history, will be in the log within the hour.</p>
+    <p class="note">Just a first guess from the link. The real verdict lands below in about an hour.</p>
   </section>
 
   <section class="sec" aria-labelledby="board-h">
@@ -197,8 +199,7 @@ footer p{margin:0;max-width:65ch}
   </section>
 
   <footer>
-    <p><strong>What it can't do.</strong> Some stores block automated visits, so now and then the check has to work from the product name instead of the live page. It says so when that happens. Prices move by the hour: confirm at checkout.</p>
-    <p>Links you paste appear in the log for everyone who has this page. Don't paste anything private. No affiliate links, no commissions.</p>
+    <p>Prices change fast, so check the price at checkout. Some stores block us, and the verdict will say so.</p>
   </footer>
 </div>
 
@@ -207,7 +208,8 @@ footer p{margin:0;max-width:65ch}
 (function(){
   var DATA = window.DEALS || {deals:[]};
   var deals = Array.isArray(DATA.deals) ? DATA.deals : [];
-  var LABEL = {buy:"Legit deal", wait:"Wait", shit:"\uD83D\uDCA9 Shit deal", unknown:"Full check coming", pending:"In line"};
+  var LABEL = {buy:"Legit deal", wait:"Wait", shit:"\uD83D\uDCA9 Shit deal", unknown:"Couldn't tell", pending:"In line"};
+  var SNIFF = {buy:"Smells fine", wait:"Smells iffy", shit:"Smells like shit", unknown:"No smell yet", pending:"No smell yet"};
 
   function el(tag, cls, text){ var n = document.createElement(tag); if(cls) n.className = cls; if(text != null) n.textContent = text; return n; }
   function money(n){ return "$" + Number(n).toLocaleString("en-US", {minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2}); }
@@ -288,7 +290,7 @@ footer p{margin:0;max-width:65ch}
     }
     function R(v, headline, reasons, instead){ return {verdict:v, headline:headline, reasons:reasons, instead:instead || null, links: v === "buy" ? [] : links}; }
 
-    if(real.length < 2) return {verdict:"unknown", headline:"That link doesn't name the product, so there's no quick read.", reasons:["The full check will open the link and read the page."], instead:null, links:[]};
+    if(real.length < 2) return {verdict:"unknown", headline:"Can't tell from this link. The full check will open it.", reasons:[], instead:null, links:[]};
 
     // 1. Is it something tracked on this page?
     var d = matchFeed(squashed);
@@ -304,7 +306,7 @@ footer p{margin:0;max-width:65ch}
         if(price != null && gap < -d.price * 0.08) return R("buy", "That beats the going price by " + money(Math.round(-gap)) + ". Take it.", ["It has been sitting at " + money(d.price) + "."]);
         return R("wait", "Fine product. Not a deal yet.", [d.why], d.instead);
       }
-      return R("shit", "Already in the hall of shame.", [d.why], d.instead);
+      return R("shit", "Already flushed. It's a shit deal.", [d.why], d.instead);
     }
 
     // 2. Known tricks
@@ -327,7 +329,7 @@ footer p{margin:0;max-width:65ch}
     // 3. No-name brand
     if(!brand){
       if(pct != null && pct >= 0.4) return R("shit", "No-name brand with a huge discount. Walk away.", ["The 'was' price is whatever the seller typed in.", "Reviews on unknown brands are easy to pad."], pick || "The cheapest model from a brand you've heard of. It will outlast this.");
-      return R("unknown", "Brand I don't recognise. Treat the discount as fake.", ["Unknown brands set their own 'list price'.", "Check that reviews mention this exact product."], pick);
+      return R("unknown", "Can't tell much from the link. The full check will.", ["It opens the link and finds the real price."], null);
     }
 
     // 4. The math
@@ -345,7 +347,7 @@ footer p{margin:0;max-width:65ch}
     var out = document.getElementById("chk-result"); out.textContent = "";
     var v = r.verdict, box = el("div", "tag " + (v === "unknown" ? "wait" : v));
     box.style.border = "0"; box.style.padding = "0"; box.style.background = "transparent"; box.style.borderRadius = "0";
-    var top = el("div", "top"); top.appendChild(stamp(v)); box.appendChild(top);
+    var top = el("div", "top"); top.appendChild(el("span", "stamp", SNIFF[v] || SNIFF.unknown)); box.appendChild(top);
     box.appendChild(el("h3", "name", r.headline));
     if(r.reasons && r.reasons.length){ var ul = el("ul"); ul.style.margin = "0"; ul.style.paddingLeft = "18px"; r.reasons.forEach(function(x){ if(x) ul.appendChild(el("li", null, x)); }); box.appendChild(ul); }
     if(r.instead){ var i = el("p", "instead"); i.appendChild(el("b", null, v === "shit" ? "Buy this instead" : "What to do")); i.appendChild(document.createTextNode(r.instead)); box.appendChild(i); }
@@ -380,7 +382,11 @@ footer p{margin:0;max-width:65ch}
     }
     if(x.headline) a.appendChild(el("p", "why", x.headline));
     if(Array.isArray(x.reasons) && x.reasons.length){ var ul = el("ul"); ul.style.margin = "0"; ul.style.paddingLeft = "18px"; ul.style.fontSize = "15px"; x.reasons.slice(0, 4).forEach(function(r){ ul.appendChild(el("li", null, String(r))); }); a.appendChild(ul); }
-    if(x.instead){ var i = el("p", "instead"); i.appendChild(el("b", null, v === "shit" ? "Buy this instead" : "What to do")); i.appendChild(document.createTextNode(String(x.instead))); a.appendChild(i); }
+    if(x.instead){
+      var i = el("p", "instead"); i.appendChild(el("b", null, v === "shit" ? "Buy this instead" : "What to do")); i.appendChild(document.createTextNode(String(x.instead)));
+      var bl = safeUrl(x.instead_link); if(bl){ var bb = el("a", "better", "See the better one"); bb.href = bl; bb.rel = "noopener nofollow"; bb.target = "_blank"; i.appendChild(bb); }
+      a.appendChild(i);
+    }
     var meta = el("div", "meta");
     if(x.checked) meta.appendChild(el("span", null, "Checked " + when(x.checked)));
     var u = safeUrl(x.link); if(u){ var l = el("a", null, "Open the deal"); l.href = u; l.rel = "noopener nofollow"; l.target = "_blank"; meta.appendChild(l); }
@@ -391,7 +397,7 @@ footer p{margin:0;max-width:65ch}
     var list = document.getElementById("board"); list.textContent = "";
     var done = {}; board.forEach(function(x){ done[key(x.link)] = 1; if(x.pasted) done[key(x.pasted)] = 1; });
     var waiting = mine.filter(function(m){ return !done[key(m.link)]; });
-    waiting.forEach(function(m){ list.appendChild(boardCard({verdict:"pending", link:m.link, headline:"Yours. The full check runs every hour, 6 a.m. to midnight Eastern."})); });
+    waiting.forEach(function(m){ list.appendChild(boardCard({verdict:"pending", link:m.link, headline:"Yours. In line. Checks run hourly, 6 a.m. to midnight."})); });
     board.forEach(function(x){ list.appendChild(boardCard(x)); });
     if(!waiting.length && !board.length) list.appendChild(el("p", "empty", "Nobody's gone yet. Paste the first one."));
     document.getElementById("board-n").textContent = board.length + (board.length === 1 ? " deal checked" : " deals checked");
@@ -400,7 +406,7 @@ footer p{margin:0;max-width:65ch}
     fetch("board.json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
       if(j && Array.isArray(j.items)) board = j.items.slice().sort(function(a, b){ return (Date.parse(b.checked) || 0) - (Date.parse(a.checked) || 0); });
       renderBoard();
-    }).catch(function(){ renderBoard(); document.getElementById("board-n").textContent = "The log didn't load. Pull to refresh."; });
+    }).catch(function(){ renderBoard(); document.getElementById("board-n").textContent = "The log didn't load. Reload the page."; });
   }
   renderBoard(); loadBoard(); setInterval(loadBoard, 5 * 60 * 1000);
 
