@@ -393,7 +393,7 @@ footer p{margin:0;max-width:65ch}
   });
 
   /* ---------- the board ---------- */
-  var board = [], mine = [];
+  var board = [], mine = [], skipped = {};
   try{ mine = JSON.parse(localStorage.getItem("sifter-mine") || "[]").filter(function(m){ return m && m.link && Date.now() - m.t < 864e5; }); }catch(e){}
   function saveMine(){ try{ localStorage.setItem("sifter-mine", JSON.stringify(mine.slice(0, 20))); }catch(e){} }
 
@@ -433,13 +433,14 @@ footer p{margin:0;max-width:65ch}
     var list = document.getElementById("board"); list.textContent = "";
     var done = {}; board.forEach(function(x){ done[key(x.link)] = 1; if(x.pasted) done[key(x.pasted)] = 1; });
     var waiting = mine.filter(function(m){ return !done[key(m.link)]; });
-    waiting.forEach(function(m){ list.appendChild(boardCard({verdict:"pending", link:m.link, headline:"Yours. In line for the next check."})); });
+    waiting.forEach(function(m){ var sk = skipped[key(m.link)]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", link:m.link, headline: sk ? "Yours. We couldn't check this one. Try the product's own link." : "Yours. In line for the next check."})); });
     board.forEach(function(x){ list.appendChild(boardCard(x)); });
     if(!waiting.length && !board.length) list.appendChild(el("p", "empty", "Nobody's gone yet. Paste the first one."));
     document.getElementById("board-n").textContent = board.length + (board.length === 1 ? " deal checked" : " deals checked");
   }
   function loadBoard(){
     fetch("board.json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
+      if(j && Array.isArray(j.skipped)){ skipped = {}; j.skipped.forEach(function(s){ if(s && s.link) skipped[key(s.link)] = 1; }); }
       if(j && Array.isArray(j.items)) board = j.items.slice().sort(function(a, b){ return (Date.parse(b.checked) || 0) - (Date.parse(a.checked) || 0); });
       renderBoard();
     }).catch(function(){ renderBoard(); document.getElementById("board-n").textContent = "The log didn't load. Reload the page."; });
@@ -455,8 +456,11 @@ footer p{margin:0;max-width:65ch}
       (p.fields || []).forEach(function(f){ var a = f && f.answer; var v = a && (a.value != null ? a.value : a.raw); if(!link && typeof v === "string") link = v; });
     }catch(err){}
     link = link.trim().slice(0, 2000);
-    if(link){
-      mine.unshift({link: (link.match(/https?:\/\/\S+/) || [link])[0], t: Date.now()}); saveMine(); renderBoard();
+    var url = (link.match(/https?:\/\/\S+/) || [])[0];
+    if(link && !url){
+      showQuick({verdict:"unknown", headline:"No link in that paste. Copy the link itself and paste again.", reasons:[], instead:null, links:[]});
+    } else if(url){
+      mine.unshift({link: url, t: Date.now()}); saveMine(); renderBoard();
       showQuick(judge(link, null, null));
     } else {
       showQuick({verdict:"unknown", headline:"Got your link. The full check is in line.", reasons:[], instead:null, links:[]});
