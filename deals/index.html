@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>The Deal Sifter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: one calm column. An evergreen masthead under a string of lights, then plain white cards with a colored verdict pill. */
+:root{
+  --paper:#F4F7F5; --card:#FFFFFF; --ink:#17302A; --muted:#5B6B66; --line:#D5DEDA;
+  --pine:#14513A; --on-pine:#F7FAF8; --gold:#E9B949; --on-gold:#2A2208;
+  --bad:#B3202A; --good:#1B6B45; --wait:#8A6200;
+  --display:"Mountains of Christmas","Georgia",serif;
+  --body:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1F1A; --card:#173029; --ink:#EEF3EF; --muted:#9DB0A8; --line:#2B463D;
+    --pine:#0B3B2A; --bad:#FF8A8A; --good:#6FD39B; --wait:#F0C465; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1F1A; --card:#173029; --ink:#EEF3EF; --muted:#9DB0A8; --line:#2B463D;
+  --pine:#0B3B2A; --bad:#FF8A8A; --good:#6FD39B; --wait:#F0C465; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:640px;margin:0 auto;padding:16px 16px 56px;display:flex;flex-direction:column;gap:20px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* masthead */
+.mast{background:var(--pine);color:var(--on-pine);border-radius:16px;padding:30px 20px 20px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden}
+.mast::before{content:"";position:absolute;left:0;right:0;top:9px;height:10px;
+  background:radial-gradient(circle,#E5484D 0 4px,transparent 4.5px) 0 0/66px 10px repeat-x,
+             radial-gradient(circle,#E9B949 0 4px,transparent 4.5px) 22px 0/66px 10px repeat-x,
+             radial-gradient(circle,#F7FAF8 0 4px,transparent 4.5px) 44px 0/66px 10px repeat-x}
+.kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;opacity:.95}
+.kicker .count{background:var(--gold);color:var(--on-gold);padding:3px 10px;border-radius:999px;font-weight:800}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(44px,13vw,68px);line-height:1;margin:0;text-wrap:balance}
+.lede{margin:0;max-width:52ch;font-size:16px}
+.tally{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;font-variant-numeric:tabular-nums;border-top:1px solid rgba(255,255,255,.22);padding-top:10px}
+.tally b{font-weight:800;color:var(--gold)}
+
+/* checker */
+.checker{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px}
+h2{font-family:var(--display);font-weight:700;font-size:28px;line-height:1.1;margin:0}
+.checker p{margin:0;color:var(--muted);font-size:14.5px}
+label{font-size:13px;font-weight:700;display:block;margin-bottom:4px}
+textarea,input[type=text]{width:100%;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:10px 12px;border-radius:10px}
+textarea{min-height:72px;resize:vertical}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.row .price{flex:1 1 120px}
+button{font:inherit;cursor:pointer}
+.go{flex:1 1 170px;background:var(--bad);color:#fff;border:0;border-radius:10px;font-weight:800;font-size:16px;padding:11px 14px}
+:root[data-theme="dark"] .go{background:#B3202A}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .go{background:#B3202A}}
+.go:disabled{opacity:.6;cursor:default}
+.result{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-direction:column;gap:8px}
+.result[hidden]{display:none}
+.result h3{font-size:17px;font-weight:700;margin:0}
+.result ul{margin:0;padding-left:18px;font-size:15px}
+.note{font-size:13px;color:var(--muted);margin:0}
+
+/* sections and cards */
+.sec{display:flex;flex-direction:column;gap:10px}
+.sec[hidden]{display:none}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.sec-head span{font-size:13px;color:var(--muted)}
+.list{display:flex;flex-direction:column;gap:10px}
+.tag{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.tag.buy{--v:var(--good)} .tag.wait{--v:var(--wait)} .tag.shit{--v:var(--bad)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.stamp{font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--v);border:1.5px solid var(--v);border-radius:999px;padding:2px 10px}
+.cat{font-size:12.5px;color:var(--muted)}
+.name{font-size:17px;font-weight:700;margin:0;line-height:1.3}
+.money{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font-variant-numeric:tabular-nums}
+.now{font-size:24px;font-weight:800;line-height:1.1}
+.now.txt{font-size:16px}
+.was{color:var(--muted);text-decoration:line-through;font-size:15px}
+.off{font-size:13px;color:var(--v);font-weight:700}
+.store{font-size:13px;color:var(--muted)}
+.why{margin:0;font-size:15px}
+.instead{margin:0;font-size:15px;background:var(--paper);padding:9px 12px;border-radius:10px}
+.instead b{font-size:12px;text-transform:uppercase;letter-spacing:.05em;display:block;color:var(--good)}
+.meta{display:flex;flex-wrap:wrap;gap:2px 12px;font-size:12.5px;color:var(--muted)}
+.empty{color:var(--muted);font-size:15px;margin:0}
+
+footer{border-top:1px solid var(--line);padding-top:14px;font-size:13.5px;color:var(--muted);display:flex;flex-direction:column;gap:8px}
+footer p{margin:0;max-width:65ch}
+.links{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;font-weight:700}
+.opt{font-weight:400;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div class="kicker"><span class="count" id="countdown">Black Friday 2026</span><span id="updated">Loading</span></div>
+    <h1>The Deal Sifter</h1>
+    <p class="lede">Paste a Black Friday deal. Find out if it's a shit deal, and what to buy instead.</p>
+  </header>
+
+  <section class="checker" aria-labelledby="chk-h">
+    <h2 id="chk-h">Paste it. Get a verdict.</h2>
+    <form id="chk-form">
+      <div>
+        <label for="chk-deal">Link or product name</label>
+        <textarea id="chk-deal" placeholder="Paste the link, or type it: Samsung 70-inch Crystal UHD TV" required></textarea>
+      </div>
+      <div class="row" style="margin-top:10px">
+        <div class="price">
+          <label for="chk-price">Sale price</label>
+          <input type="text" id="chk-price" inputmode="decimal" placeholder="$399">
+        </div>
+        <div class="price">
+          <label for="chk-was">"Was" price <span class="opt">(optional)</span></label>
+          <input type="text" id="chk-was" inputmode="decimal" placeholder="$799">
+        </div>
+        <button class="go" id="chk-go" type="submit">Judge it</button>
+      </div>
+    </form>
+    <div class="result" id="chk-result" hidden aria-live="polite"></div>
+  </section>
+
+  <section class="sec" id="sec-buy"><div class="sec-head"><h2>Real deals right now</h2><span id="n-buy"></span></div><div class="list" id="list-buy"></div></section>
+  <section class="sec" id="sec-wait"><div class="sec-head"><h2>Wait on these</h2><span id="n-wait"></span></div><div class="list" id="list-wait"></div></section>
+  <section class="sec" id="sec-shit"><div class="sec-head"><h2>Hall of shame</h2><span id="n-shit"></span></div><div class="list" id="list-shit"></div></section>
+
+  <footer>
+    <p><strong>How the verdict works.</strong> The checker compares what you paste with the deals tracked on this page and a set of known Black Friday tricks: doorbuster TV sizes, store-brand sets, outlet pricing, no-name brands and discounts that are too big to be real. It can't open the link or look up live prices. When it can't prove a deal is good, it says so and gives you a one-tap price check.</p>
+    <p>Prices on this page come from published deal coverage, checked on the date on each card. Confirm at checkout. No affiliate links.</p>
+    <p id="stat"></p>
+  </footer>
+</div>
+
+<script src="deals.js?v=1"></script>
+<script>
+(function(){
+  var DATA = window.DEALS || {deals:[]};
+  var deals = Array.isArray(DATA.deals) ? DATA.deals : [];
+  var LABEL = {buy:"Legit deal", wait:"Wait", shit:"Shit deal", unknown:"Not proven"};
+
+  function el(tag, cls, text){ var n = document.createElement(tag); if(cls) n.className = cls; if(text != null) n.textContent = text; return n; }
+  function money(n){ return "$" + Number(n).toLocaleString("en-US", {minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2}); }
+  function day(iso){ var d = new Date(iso + (iso.length === 10 ? "T12:00:00" : "")); return isNaN(d) ? iso : d.toLocaleDateString("en-US", {month:"short", day:"numeric"}); }
+  function stamp(v){ return el("span", "stamp", LABEL[v] || v); }
+
+  (function(){
+    var bf = new Date(2026, 10, 27), now = new Date();
+    var d = Math.round((bf - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 864e5), t;
+    if(d > 1) t = d + " days to Black Friday";
+    else if(d === 1) t = "Black Friday is tomorrow";
+    else if(d === 0) t = "Black Friday is today";
+    else if(d >= -3) t = "Cyber Monday is Nov 30";
+    else t = "Black Friday 2026 is over";
+    document.getElementById("countdown").textContent = t;
+    var u = DATA.updated ? new Date(DATA.updated) : null;
+    document.getElementById("updated").textContent = u && !isNaN(u)
+      ? "Prices updated " + u.toLocaleString("en-US", {weekday:"short", month:"short", day:"numeric", hour:"numeric", minute:"2-digit"}) : "Deal list not loaded";
+    if(DATA.stat && DATA.stat.text){
+      var st = document.getElementById("stat"); st.textContent = DATA.stat.text + " ";
+      if(DATA.stat.source){ var a = el("a", null, DATA.stat.source.name); a.href = DATA.stat.source.url; a.rel = "noopener"; st.appendChild(a); }
+    }
+  })();
+
+  function card(x){
+    var a = el("article", "tag " + x.verdict);
+    var top = el("div", "top"); top.appendChild(stamp(x.verdict));
+    top.appendChild(el("span", "cat", (x.kind === "trap" ? "Trap · " : "") + (x.cat || "")));
+    a.appendChild(top);
+    a.appendChild(el("h3", "name", x.name));
+    var m = el("div", "money");
+    if(x.price != null){
+      m.appendChild(el("span", "now", money(x.price)));
+      if(x.was){ m.appendChild(el("span", "was", money(x.was))); m.appendChild(el("span", "off", (x.verdict === "buy" ? "" : "claims ") + Math.round((1 - x.price / x.was) * 100) + "% off")); }
+    } else if(x.priceText){ m.appendChild(el("span", "now txt", x.priceText)); }
+    if(x.store) m.appendChild(el("span", "store", x.store));
+    a.appendChild(m);
+    if(x.why) a.appendChild(el("p", "why", x.why));
+    if(x.instead){ var i = el("p", "instead"); i.appendChild(el("b", null, x.verdict === "wait" ? "What to do" : "Buy this instead")); i.appendChild(document.createTextNode(x.instead)); a.appendChild(i); }
+    var meta = el("div", "meta");
+    if(x.checked) meta.appendChild(el("span", null, "Checked " + day(x.checked)));
+    if(x.confidence) meta.appendChild(el("span", null, "Confidence: " + x.confidence));
+    if(x.source && x.source.url){ var s = el("span", null, "Source: "); var l = el("a", null, x.source.name || "link"); l.href = x.source.url; l.rel = "noopener"; s.appendChild(l); meta.appendChild(s); }
+    a.appendChild(meta);
+    return a;
+  }
+  ["buy","wait","shit"].forEach(function(v){
+    var list = document.getElementById("list-" + v), rows = deals.filter(function(x){ return x.verdict === v; });
+    rows.forEach(function(x){ list.appendChild(card(x)); });
+    if(!rows.length) list.appendChild(el("p", "empty", deals.length ? "Nothing here yet." : "The deal list didn't load. Reload the page."));
+    document.getElementById("n-" + v).textContent = rows.length + (rows.length === 1 ? " item" : " items");
+  });
+
+  /* ---------- the checker: runs in the page, no account, no network ---------- */
+  var STOP = {inch:1,tv:1,"with":1,the:1,and:1,or:1,kit:1,set:1,of:1,gen:1,"for":1,a:1};
+  var URLWORDS = {amazon:1,walmart:1,target:1,bestbuy:1,lowes:1,homedepot:1,costco:1,com:1,www:1,http:1,https:1,html:1,htm:1,product:1,products:1,site:1,ref:1,shop:1,item:1,the:1,and:1,"for":1,"with":1,skuid:1,deal:1,deals:1,sale:1,black:1,friday:1};
+  var BRANDS = ["lg","samsung","sony","tcl","hisense","vizio","roku","apple","airpods","ipad","macbook","bose","jbl","sonos","beats","anker","soundcore","ninja","kitchenaid","cuisinart","instant pot","keurig","nespresso","breville","vitamix","oxo","lodge","le creuset","all-clad","allclad","philips","dewalt","milwaukee","makita","bosch","craftsman","ryobi","skil","black decker","kobalt","ridgid","klein","lego","barbie","hot wheels","fisher price","fisherprice","melissa","vtech","nerf","play doh","playdoh","hasbro","mattel","nintendo","playstation","xbox","dyson","shark","irobot","roomba","eufy","bissell","ring","blink","echo","kindle","fire tv","nest","pixel","garmin","fitbit","yeti","stanley","weber","traeger","hp","dell","lenovo","asus","acer","microsoft","surface","logitech","gopro","canon","nikon","levi","carhartt","hoka","nike","adidas","ugg","north face","patagonia"];
+  var HOUSE_TV = ["onn","insignia","element","sceptre","westinghouse"];
+  var CATS = [
+    ["TVs", /\b(tv|tvs|television|oled|qled|uhd|mini led|smart tv)\b/],
+    ["Kitchen", /\b(air fryer|blender|mixer|espresso|coffee|skillet|cookware|instant pot|toaster|dutch oven|knife|knives|griddle|pressure cooker)\b/],
+    ["Tools", /\b(drill|impact|saw|wrench|ratchet|sander|router|tool|tools|socket|pliers)\b/],
+    ["Toys", /\b(lego|toy|toys|doll|playset|nerf|barbie|puzzle)\b/],
+    ["Smart home", /\b(doorbell|camera|cam|thermostat|smart plug|floodlight|echo)\b/],
+    ["Audio", /\b(speaker|headphones|earbuds|soundbar|airpods)\b/]
+  ];
+  function num(s){ var n = parseFloat(String(s || "").replace(/[^0-9.]/g, "")); return isFinite(n) && n > 0 ? n : null; }
+  function has(words, phrase){ return (" " + words + " ").indexOf(" " + phrase + " ") >= 0; }
+  function pickFor(cat, words, price){
+    var p = deals.filter(function(d){
+      if(!(d.verdict === "buy" && d.kind === "deal" && d.cat === cat && d.price != null)) return false;
+      if(price != null && d.price > price * (cat === "TVs" ? 1.6 : 2)) return false;
+      if(cat === "TVs") return true;
+      return d.name.toLowerCase().replace(/[^a-z]+/g, " ").split(" ").some(function(w){ return w.length >= 5 && has(words, w); });
+    })[0];
+    return p ? p.name + " at " + money(p.price) + (p.store && p.store !== "See source" ? " (" + p.store + ")" : "") + ". It's on the real-deals list below." : null;
+  }
+  function matchFeed(squashed){
+    var best = null, bestScore = 0;
+    deals.forEach(function(d){
+      if(d.kind !== "deal") return;
+      var toks = d.name.toLowerCase().replace(/[^a-z0-9]+/g, " ").split(" ").filter(function(w){ return w && !STOP[w]; });
+      var digit = toks.filter(function(w){ return /\d/.test(w) && w.length >= 2; });
+      var alpha = toks.filter(function(w){ return !/\d/.test(w) && w.length >= 2; });
+      if(!digit.every(function(k){ return squashed.indexOf(k) >= 0; })) return;
+      var hits = alpha.filter(function(k){ return squashed.indexOf(k) >= 0; }).length;
+      var share = alpha.length ? hits / alpha.length : 1;
+      var ok = digit.length ? (hits >= 1 && share >= 0.4) : (hits >= 2 && share >= 0.75);
+      var score = (digit.length * 2 + hits) * share;
+      if(ok && score > bestScore){ best = d; bestScore = score; }
+    });
+    return best;
+  }
+
+  function judge(raw, price, was){
+    var text = raw; try{ text = decodeURIComponent(raw); }catch(e){}
+    text = text.toLowerCase();
+    var hostM = text.match(/https?:\/\/([^\/\s]+)/), host = hostM ? hostM[1] : "";
+    var inText = text.match(/\$\s?([0-9][0-9,]*(?:\.[0-9]{1,2})?)/);
+    if(price == null && inText) price = num(inText[1]);
+    text = text.replace(/\$\s?[0-9][0-9,]*(?:\.[0-9]{1,2})?/g, " ").replace(/(\d)\s?(?:"|”|''|-inch|-in\b)/g, "$1 inch ");
+    var words = text.replace(/https?:\/\/(www\.)?/g, " ").replace(/[^a-z0-9]+/g, " ").trim();
+    var squashed = words.replace(/ /g, "");
+    var real = words.split(" ").filter(function(w){ return /^[a-z]{3,}$/.test(w) && !URLWORDS[w]; });
+    var pct = (price != null && was != null && was > price) ? 1 - price / was : null;
+    var q = real.slice(0, 8).join(" ");
+    var links = [];
+    if(q){
+      links.push({t:"Compare prices", u:"https://www.google.com/search?tbm=shop&q=" + encodeURIComponent(q)});
+      if(!host || host.indexOf("amazon") >= 0) links.push({t:"Amazon price history", u:"https://camelcamelcamel.com/search?sq=" + encodeURIComponent(q)});
+    }
+    function R(v, headline, reasons, instead){ return {verdict:v, headline:headline, reasons:reasons, instead:instead || null, links: v === "buy" ? [] : links}; }
+
+    if(real.length < 2) return {verdict:"unknown", headline:"Can't read the product from that link.", reasons:["Some links are just an ID number. Type the brand and product name, plus the price."], instead:null, links:[]};
+
+    // 1. Is it something tracked on this page?
+    var d = matchFeed(squashed);
+    if(d && d.price != null){
+      var gap = price != null ? price - d.price : 0;
+      if(d.verdict === "buy"){
+        if(price == null) return R("buy", "This one is real, if you pay " + money(d.price) + " or less.", [d.why, "Tracked at " + money(d.price) + (d.store ? " at " + d.store : "") + "."]);
+        if(gap <= d.price * 0.03) return R("buy", "Legit. That's the real low price.", [d.why]);
+        return R("shit", "Right product, wrong price. You'd overpay by " + money(Math.round(gap)) + ".", ["It's " + money(d.price) + (d.store ? " at " + d.store : " elsewhere") + " right now."], "The same " + d.name + " for " + money(d.price) + (d.store ? " at " + d.store : "") + ".");
+      }
+      if(d.verdict === "wait"){
+        if(price != null && gap > d.price * 0.03) return R("shit", "It's cheaper elsewhere, and even that price isn't a deal.", ["Going price is " + money(d.price) + (d.store ? " at " + d.store : "") + ".", d.why], d.instead);
+        if(price != null && gap < -d.price * 0.08) return R("buy", "That beats the going price by " + money(Math.round(-gap)) + ". Take it.", ["It has been sitting at " + money(d.price) + "."]);
+        return R("wait", "Fine product. Not a deal yet.", [d.why], d.instead);
+      }
+      return R("shit", "Already in the hall of shame.", [d.why], d.instead);
+    }
+
+    // 2. Known tricks
+    var cat = null; CATS.forEach(function(c){ if(!cat && c[1].test(words)) cat = c[0]; });
+    var pick = cat ? pickFor(cat, words, price) : null;
+    var brand = null; BRANDS.forEach(function(b){ if(!brand && has(words, b)) brand = b; });
+
+    if(cat === "TVs"){
+      var sz = words.match(/(?:^| )(\d{2,3}) ?(?:inch|in|class)(?: |$)/) || words.match(/(?:^| )[a-z]{0,4}(43|50|55|58|60|65|70|75|85)[a-z]{1,2}\d{3,4}[a-z]*(?: |$)/);
+      var size = sz ? parseInt(sz[1], 10) : null;
+      if(size === 60 || size === 70 || size === 58) return R("shit", "A " + size + "-inch TV is a classic doorbuster trap.", ["Good TV lines come in 55, 65, 75 and 85 inches.", "A " + size + " is almost always the brand's bottom-tier panel with a big number on the box."], pick || "A 55 or 65-inch from a line that has real reviews. The 55 often costs about the same.");
+      var hb = null; HOUSE_TV.forEach(function(b){ if(!hb && has(words, b)) hb = b; });
+      if(hb) return R("wait", "Cheap TV at a cheap price. That's not a deal.", ["Store-brand sets sell near this price all year.", "Fine for a spare room. Dim and slow for a main TV."], pick || "A TCL or Hisense Mini LED in the same size, which reviewers rate far higher for a little more.");
+    }
+    if(/\bmattress\b/.test(words)) return R("shit", "Mattresses are on sale every week of the year.", ["The Black Friday price is the same price you'd get in March.", "The percentage off means nothing. Only the final price does."], "Buy when you need one, and compare final prices across brands.");
+    if(/outlet|factory store/.test(text)) return R("shit", "Outlet 'was' prices are reference prices, not real ones.", ["Outlet stores run discounts like this all year, so this is close to the normal price."], "Buy it only if you'd pay this price with no discount shown.");
+    if(/\b(watch|watches|necklace|bracelet|earrings|jewelry|diamond)\b/.test(words) && !/\b(apple|galaxy|garmin|fitbit|smartwatch|pixel)\b/.test(words) && (pct == null || pct >= 0.4))
+      return R("shit", "Watch and jewelry discounts are cut from inflated list prices.", ["The crossed-out price is a number it never sold at."], "Pick the piece you want first, then check what it cost over the last 90 days.");
+
+    // 3. No-name brand
+    if(!brand){
+      if(pct != null && pct >= 0.4) return R("shit", "No-name brand with a huge discount. Walk away.", ["The 'was' price is whatever the seller typed in.", "Reviews on unknown brands are easy to pad."], pick || "The cheapest model from a brand you've heard of. It will outlast this.");
+      return R("unknown", "Brand I don't recognise. Treat the discount as fake.", ["Unknown brands set their own 'list price'.", "Check that reviews mention this exact product."], pick);
+    }
+
+    // 4. The math
+    if(pct != null){
+      var off = Math.round(pct * 100);
+      if(pct >= 0.6) return R("wait", off + "% off is too good. That 'was' price is doing the work.", ["Real Black Friday cuts on name brands run 20% to 45%.", "A discount this size is usually measured against a launch price nobody pays."], pick || "Check what it actually sold for last month before you buy.");
+      if(pct < 0.1) return R("shit", "That's " + money(Math.round(was - price)) + " off. It's not a sale.", ["Under 10% is normal week-to-week price movement."], pick || "Wait. Real Black Friday cuts on this kind of product run 20% or more.");
+      if(pct < 0.2) return R("wait", off + "% off is an ordinary sale, not a Black Friday price.", ["You can get this discount most months of the year."], pick || "Hold out for 25% or more, or buy now only if you need it this week.");
+      return R("unknown", off + "% off a real brand could be legit. It isn't proven.", ["The discount size is believable.", "What matters is whether it sold for less earlier this year."], null);
+    }
+    return R("unknown", "No proof this is a deal. Assume it isn't until you check.", ["Add the sale price and the 'was' price for a sharper verdict."], pick ? "A tracked alternative: " + pick : null);
+  }
+
+  var form = document.getElementById("chk-form"), out = document.getElementById("chk-result");
+  function show(r){
+    out.hidden = false; out.textContent = "";
+    var v = r.verdict, box = el("div", "tag " + (v === "unknown" ? "wait" : v));
+    box.style.border = "0"; box.style.padding = "0"; box.style.background = "transparent"; box.style.borderRadius = "0";
+    var top = el("div", "top"); top.appendChild(stamp(v)); box.appendChild(top);
+    box.appendChild(el("h3", null, r.headline));
+    if(r.reasons && r.reasons.length){ var ul = el("ul"); r.reasons.forEach(function(x){ if(x) ul.appendChild(el("li", null, x)); }); box.appendChild(ul); }
+    if(r.instead){ var i = el("p", "instead"); i.appendChild(el("b", null, v === "shit" ? "Buy this instead" : "What to do")); i.appendChild(document.createTextNode(r.instead)); box.appendChild(i); }
+    if(r.links && r.links.length){ var l = el("div", "links"); r.links.forEach(function(k){ var a = el("a", null, k.t); a.href = k.u; a.rel = "noopener"; l.appendChild(a); }); box.appendChild(l); }
+    out.appendChild(box);
+  }
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var raw = document.getElementById("chk-deal").value.trim().slice(0, 2000);
+    if(!raw){ out.hidden = false; out.textContent = ""; out.appendChild(el("p", "note", "Paste a link or type a product name first.")); return; }
+    show(judge(raw, num(document.getElementById("chk-price").value), num(document.getElementById("chk-was").value)));
+  });
+  window.__judge = judge;
+})();
+</script>
+</body>
+</html>
