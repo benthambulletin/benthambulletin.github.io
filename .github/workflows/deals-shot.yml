@@ -1,0 +1,63 @@
+name: Porta Potty screenshot
+
+# A shopper can attach a screenshot of an item (needed for Amazon, whose links
+# can't be opened). Screenshots can show a name or delivery address, so nothing
+# readable ever lands in this public repo: the image is encrypted with a
+# one-time public key sent by the checking session, committed to deals/inbox/,
+# decrypted there, and removed. Not part of the paper.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: 'Submission id (letters, digits, - and _)'
+        required: true
+      url:
+        description: 'https URL of the uploaded screenshot'
+        required: true
+      pub:
+        description: 'One-time RSA public key, PEM, base64 on one line'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deals-image
+  cancel-in-progress: false
+
+jobs:
+  shot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch, shrink, encrypt
+        env:
+          ID: ${{ inputs.id }}
+          URL: ${{ inputs.url }}
+          PUB: ${{ inputs.pub }}
+        run: |
+          case "$ID" in *[!A-Za-z0-9_-]*|"") echo "bad id"; exit 1;; esac
+          case "$URL" in https://*) ;; *) echo "bad url"; exit 1;; esac
+          sudo apt-get install -y -q imagemagick >/dev/null 2>&1 || true
+          curl -fsSL -m 40 --max-filesize 25000000 -o /tmp/in "$URL"
+          file --mime-type -b /tmp/in | grep -q '^image/' || { echo "not an image"; exit 1; }
+          convert "/tmp/in[0]" -auto-orient -resize '1400x1400>' -strip -quality 80 /tmp/shot.jpg
+          echo "$PUB" | base64 -d > /tmp/pub.pem
+          openssl rand -hex 32 > /tmp/k
+          mkdir -p deals/inbox
+          openssl enc -aes-256-cbc -pbkdf2 -in /tmp/shot.jpg -out "deals/inbox/$ID.enc" -pass file:/tmp/k
+          openssl pkeyutl -encrypt -pubin -inkey /tmp/pub.pem -pkeyopt rsa_padding_mode:oaep -in /tmp/k -out "deals/inbox/$ID.key"
+          rm -f /tmp/in /tmp/shot.jpg /tmp/k
+      - name: Commit
+        env:
+          ID: ${{ inputs.id }}
+        run: |
+          git config user.name "Porta Potty screenshot"
+          git config user.email "noreply@anthropic.com"
+          git add deals/inbox
+          git commit -m "Porta Potty: screenshot for $ID (encrypted)" || exit 1
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 15
+          done
+          exit 1
