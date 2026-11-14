@@ -113,6 +113,10 @@ footer p{margin:0;max-width:65ch}
 .mast-txt{display:flex;flex-direction:column;gap:6px;min-width:0;justify-self:stretch}
 .art{width:min(100%,360px);height:auto;display:block}
 [hidden]{display:none !important}
+.clock{display:flex;align-items:baseline;justify-content:space-between;gap:12px;background:var(--pine);color:var(--on-pine);border-radius:14px;padding:12px 16px;margin-top:-8px}
+.clock-l{font-size:15px;font-weight:700}
+.clock-t{font-size:30px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--gold);line-height:1}
+.under{margin-top:-10px}
 .how .one{font-size:17px;font-weight:700;color:var(--ink)}
 .how li{align-items:center}
 .under{margin:-10px 4px 0;font-size:14px;color:var(--muted)}
@@ -178,19 +182,20 @@ footer p{margin:0;max-width:65ch}
     <ol>
       <li><span>Copy the link to the deal. Extra words are fine.</span></li>
       <li><span>Paste it below. Tap Submit.</span></li>
-      <li><span>Come back in about an hour for the verdict.</span></li>
+      <li><span>Come back when the clock below hits zero.</span></li>
     </ol>
   </section>
 
   <section class="pastebox" aria-label="Paste a deal link">
     <iframe data-tally-src="https://tally.so/embed/OQ4NLk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" height="170" title="Paste a deal link"></iframe>
   </section>
-  <p class="under">Your verdict shows up in the log below. Everyone with this page can see it.</p>
+  <div class="clock" aria-live="off"><span class="clock-l" id="clock-l">Next check starts in</span><span class="clock-t" id="clock-t">--:--</span></div>
+  <p class="under" id="clock-n">Your verdict lands in the log about 10 minutes after that. Everyone with this page can see it.</p>
 
   <section class="checker" id="quick" hidden aria-live="polite">
     <h2>Quick sniff test</h2>
     <div id="chk-result"></div>
-    <p class="note">Just a first guess from the link. The real verdict lands below in about an hour.</p>
+    <p class="note">Just a first guess from the link. The real verdict lands in the log after the next check.</p>
   </section>
 
   <section class="sec" aria-labelledby="board-h">
@@ -356,6 +361,25 @@ footer p{margin:0;max-width:65ch}
     document.getElementById("quick").hidden = false;
   }
 
+  /* ---------- countdown to the next hourly check (6:03 a.m. to 11:03 p.m. Eastern, through Nov 30) ---------- */
+  (function(){
+    var T = document.getElementById("clock-t"), L = document.getElementById("clock-l"), N = document.getElementById("clock-n");
+    var fmt; try{ fmt = new Intl.DateTimeFormat("en-US", {timeZone:"America/New_York", hour12:false, year:"numeric", month:"numeric", day:"numeric", hour:"numeric", minute:"numeric", second:"numeric"}); }catch(e){}
+    function tick(){
+      if(!fmt){ T.textContent = ""; L.textContent = "Checks run every hour, 6 a.m. to midnight Eastern."; return; }
+      var p = {}; fmt.formatToParts(new Date()).forEach(function(x){ p[x.type] = parseInt(x.value, 10); });
+      var sod = (p.hour % 24) * 3600 + p.minute * 60 + p.second, left = null, overnight = false;
+      for(var H = 6; H <= 23; H++){ var s = H * 3600 + 210; if(s > sod){ left = s - sod; break; } }
+      if(left == null){ left = 86400 - sod + 6 * 3600 + 210; overnight = true; }
+      var over = p.year > 2026 || p.month === 12 || (p.month === 11 && p.day === 30 && overnight);
+      if(over){ L.textContent = "Black Friday checks have ended."; T.textContent = ""; N.textContent = "The log below stays up."; return; }
+      var h = Math.floor(left / 3600), m = Math.floor(left % 3600 / 60), s2 = left % 60;
+      T.textContent = (h ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (s2 < 10 ? "0" : "") + s2;
+      L.textContent = (sod < 6 * 3600 + 210 || overnight) ? "Checks pause overnight. Next one in" : "Next check starts in";
+    }
+    tick(); setInterval(tick, 1000);
+  })();
+
   /* ---------- the board ---------- */
   var board = [], mine = [];
   try{ mine = JSON.parse(localStorage.getItem("sifter-mine") || "[]").filter(function(m){ return m && m.link && Date.now() - m.t < 864e5; }); }catch(e){}
@@ -397,7 +421,7 @@ footer p{margin:0;max-width:65ch}
     var list = document.getElementById("board"); list.textContent = "";
     var done = {}; board.forEach(function(x){ done[key(x.link)] = 1; if(x.pasted) done[key(x.pasted)] = 1; });
     var waiting = mine.filter(function(m){ return !done[key(m.link)]; });
-    waiting.forEach(function(m){ list.appendChild(boardCard({verdict:"pending", link:m.link, headline:"Yours. In line. Checks run hourly, 6 a.m. to midnight."})); });
+    waiting.forEach(function(m){ list.appendChild(boardCard({verdict:"pending", link:m.link, headline:"Yours. In line for the next check."})); });
     board.forEach(function(x){ list.appendChild(boardCard(x)); });
     if(!waiting.length && !board.length) list.appendChild(el("p", "empty", "Nobody's gone yet. Paste the first one."));
     document.getElementById("board-n").textContent = board.length + (board.length === 1 ? " deal checked" : " deals checked");
