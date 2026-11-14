@@ -393,7 +393,7 @@ footer p{margin:0;max-width:65ch}
   });
 
   /* ---------- the board ---------- */
-  var board = [], mine = [], skipped = {};
+  var board = [], mine = [], skipped = {}, quiet = {};
   try{ mine = JSON.parse(localStorage.getItem("sifter-mine") || "[]").filter(function(m){ return m && m.link && Date.now() - m.t < 864e5; }); }catch(e){}
   function saveMine(){ try{ localStorage.setItem("sifter-mine", JSON.stringify(mine.slice(0, 20))); }catch(e){} }
 
@@ -432,7 +432,7 @@ footer p{margin:0;max-width:65ch}
   function renderBoard(){
     var list = document.getElementById("board"); list.textContent = "";
     var done = {}; board.forEach(function(x){ done[key(x.link)] = 1; if(x.pasted) done[key(x.pasted)] = 1; });
-    var waiting = mine.filter(function(m){ return !done[key(m.link)]; });
+    var waiting = mine.filter(function(m){ return !done[key(m.link)] && !quiet[key(m.link)]; });
     waiting.forEach(function(m){ var sk = skipped[key(m.link)]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", link:m.link, headline: sk ? "Yours. We couldn't check this one. Try the product's own link." : "Yours. In line for the next check."})); });
     board.forEach(function(x){ list.appendChild(boardCard(x)); });
     if(!waiting.length && !board.length) list.appendChild(el("p", "empty", "Nobody's gone yet. Paste the first one."));
@@ -440,7 +440,7 @@ footer p{margin:0;max-width:65ch}
   }
   function loadBoard(){
     fetch("board.json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
-      if(j && Array.isArray(j.skipped)){ skipped = {}; j.skipped.forEach(function(s){ if(s && s.link) skipped[key(s.link)] = 1; }); }
+      if(j && Array.isArray(j.skipped)){ skipped = {}; quiet = {}; j.skipped.forEach(function(s){ if(s && s.link){ if(s.quiet) quiet[key(s.link)] = 1; else skipped[key(s.link)] = 1; } }); }
       if(j && Array.isArray(j.items)) board = j.items.slice().sort(function(a, b){ return (Date.parse(b.checked) || 0) - (Date.parse(a.checked) || 0); });
       renderBoard();
     }).catch(function(){ renderBoard(); document.getElementById("board-n").textContent = "The log didn't load. Reload the page."; });
