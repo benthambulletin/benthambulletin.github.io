@@ -109,6 +109,9 @@ footer p{margin:0;max-width:65ch}
 .mast-txt{display:flex;flex-direction:column;gap:10px;min-width:0}
 .art{width:clamp(130px,40vw,190px);height:auto;display:block}
 [hidden]{display:none !important}
+.head{display:flex;gap:12px;align-items:center}
+.headtx{display:flex;flex-direction:column;gap:6px;min-width:0}
+.thumb{width:72px;height:72px;flex:none;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:10px}
 .mast h1{font-size:clamp(38px,11vw,62px)}
 </style>
 </head>
@@ -357,11 +360,15 @@ footer p{margin:0;max-width:65ch}
     var v = LABEL[x.verdict] ? x.verdict : "unknown";
     var a = el("article", "tag " + (v === "unknown" || v === "pending" ? "wait" : v) + (v === "pending" ? " pending" : ""));
     var top = el("div", "top"); top.appendChild(stamp(v)); top.appendChild(el("span", "cat", x.store || host(x.link))); a.appendChild(top);
-    a.appendChild(el("h3", "name", x.product || host(x.link) || "A pasted deal"));
+    var hd = el("div", "head"), tx = el("div", "headtx");
+    var iu = safeUrl(x.image);
+    if(iu){ var im = document.createElement("img"); im.className = "thumb"; im.alt = ""; im.loading = "lazy"; im.referrerPolicy = "no-referrer"; im.onerror = function(){ im.remove(); }; im.src = iu; hd.appendChild(im); }
+    hd.appendChild(tx); a.appendChild(hd);
+    tx.appendChild(el("h3", "name", x.product || host(x.link) || "A pasted deal"));
     if(x.price != null){
       var m = el("div", "money"); m.appendChild(el("span", "now", money(x.price)));
       if(x.was && x.was > x.price){ m.appendChild(el("span", "was", money(x.was))); m.appendChild(el("span", "off", (v === "buy" ? "" : "claims ") + Math.round((1 - x.price / x.was) * 100) + "% off")); }
-      a.appendChild(m);
+      tx.appendChild(m);
     }
     if(x.headline) a.appendChild(el("p", "why", x.headline));
     if(Array.isArray(x.reasons) && x.reasons.length){ var ul = el("ul"); ul.style.margin = "0"; ul.style.paddingLeft = "18px"; ul.style.fontSize = "15px"; x.reasons.slice(0, 4).forEach(function(r){ ul.appendChild(el("li", null, String(r))); }); a.appendChild(ul); }
@@ -383,7 +390,7 @@ footer p{margin:0;max-width:65ch}
   }
   function loadBoard(){
     fetch("board.json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
-      if(j && Array.isArray(j.items)) board = j.items;
+      if(j && Array.isArray(j.items)) board = j.items.slice().sort(function(a, b){ return (Date.parse(b.checked) || 0) - (Date.parse(a.checked) || 0); });
       renderBoard();
     }).catch(function(){ renderBoard(); document.getElementById("board-n").textContent = "The log didn't load. Pull to refresh."; });
   }
