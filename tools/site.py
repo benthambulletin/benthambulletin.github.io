@@ -407,13 +407,15 @@ function nyDate(){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'nume
 function nyMin(d){var p=new Intl.DateTimeFormat('en-GB',{timeZone:TZ,hour:'2-digit',minute:'2-digit',hour12:false}).format(d||new Date()).split(':');return((+p[0])%24)*60+(+p[1])}
 function clock(m){var h=Math.floor(m/60),mm=m%60,ap=h<12?'a.m.':'p.m.';h=h%12||12;return h+':'+(mm<10?'0':'')+mm+' '+ap}
 if(nyDate()!==D)return;
-var NS='http://www.w3.org/2000/svg';
+var NS='http://www.w3.org/2000/svg',CALM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
 function sun(){var s=document.querySelector('.sunarc');if(!s)return;var r=+s.getAttribute('data-rise'),e=+s.getAttribute('data-set'),m=nyMin(),t=(m-r)/(e-r);
- var c=s.querySelector('.sun'),clip=s.querySelector('#sunsofar rect'),lab=s.querySelector('.sunlab');s.removeAttribute('hidden');
+ var c=s.querySelector('.sun'),hl=s.querySelector('.sunhalo'),clip=s.querySelector('#sunsofar rect'),lab=s.querySelector('.sunlab');s.removeAttribute('hidden');
+ function put(t){var x=(1-t)*(1-t)*30+2*t*(1-t)*160+t*t*290,y=(1-t)*(1-t)*100+2*t*(1-t)*(-40)+t*t*100;c.setAttribute('cx',x.toFixed(1));c.setAttribute('cy',y.toFixed(1));if(hl){hl.setAttribute('cx',x.toFixed(1));hl.setAttribute('cy',y.toFixed(1))}clip.setAttribute('width',x.toFixed(1))}
+ if(t<0||t>1){if(hl)hl.setAttribute('visibility','hidden')}
  if(t<0){c.setAttribute('visibility','hidden');clip.setAttribute('width',0);lab.textContent='SUNRISE AT '+clock(r).toUpperCase();return}
  if(t>1){c.setAttribute('visibility','hidden');clip.setAttribute('width',320);lab.textContent='THE SUN IS DOWN';return}
- var x=(1-t)*(1-t)*30+2*t*(1-t)*160+t*t*290,y=(1-t)*(1-t)*100+2*t*(1-t)*(-40)+t*t*100;
- c.setAttribute('visibility','visible');c.setAttribute('cx',x.toFixed(1));c.setAttribute('cy',y.toFixed(1));clip.setAttribute('width',x.toFixed(1));
+ c.setAttribute('visibility','visible');if(hl&&!CALM)hl.setAttribute('visibility','visible');
+ if(!s._glid&&!CALM&&window.requestAnimationFrame){s._glid=1;var t0=performance.now();(function step(now){var k=Math.min(1,(now-t0)/2200);k=1-Math.pow(1-k,3);put(t*k);if(k<1)requestAnimationFrame(step)})(t0)}else put(t);
  var left=e-m;lab.textContent=(left>=60?Math.floor(left/60)+' H ':'')+(left%60)+' M OF DAYLIGHT LEFT'}
 function curve(){var s=document.querySelector('svg[data-start]');if(!s)return;var pl=s.querySelector('polyline');if(!pl)return;
  var pts=pl.getAttribute('points').trim().split(/\s+/).map(function(p){return p.split(',').map(Number)}),st=+s.getAttribute('data-start')*60;
@@ -421,7 +423,9 @@ function curve(){var s=document.querySelector('svg[data-start]');if(!s)return;va
  var tx=s.querySelectorAll('text');for(var k=0;k<tx.length;k++)if(tx[k].textContent==='now')tx[k].textContent=clock(st).replace(':00','');
  if(i<0||i>pts.length-1)return;var a=Math.floor(i),b=Math.min(pts.length-1,a+1),f=i-a,x=pts[a][0]+(pts[b][0]-pts[a][0])*f,y=pts[a][1]+(pts[b][1]-pts[a][1])*f;
  var c=document.createElementNS(NS,'circle');c.setAttribute('class','nowmark');c.setAttribute('cx',x.toFixed(1));c.setAttribute('cy',y.toFixed(1));c.setAttribute('r',5);c.setAttribute('fill','none');c.setAttribute('stroke','#c8302f');c.setAttribute('stroke-width',2);s.appendChild(c);
- var t=document.createElementNS(NS,'text');t.setAttribute('class','nowmark');t.setAttribute('x',Math.max(18,Math.min(302,x)).toFixed(1));t.setAttribute('y',(y>34?y-9:y+19).toFixed(1));t.setAttribute('text-anchor','middle');t.setAttribute('font-family','Archivo,Arial');t.setAttribute('font-size','9');t.setAttribute('font-weight','800');t.setAttribute('fill','#c8302f');t.textContent='NOW';s.appendChild(t)}
+ if(!CALM){var pr=document.createElementNS(NS,'circle');pr.setAttribute('class','nowmark');pr.setAttribute('cx',x.toFixed(1));pr.setAttribute('cy',y.toFixed(1));pr.setAttribute('r',5);pr.setAttribute('fill','none');pr.setAttribute('stroke','#c8302f');pr.setAttribute('stroke-width','1.5');pr.innerHTML='<animate attributeName="r" values="5;14" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="1.8s" repeatCount="indefinite"/>';s.appendChild(pr);
+  if(!s._drawn&&pl.getTotalLength){s._drawn=1;var L=pl.getTotalLength();pl.style.strokeDasharray=L;pl.style.strokeDashoffset=L;pl.getBoundingClientRect();pl.style.transition='stroke-dashoffset 1.6s ease-out';pl.style.strokeDashoffset=0}}
+ var t=document.createElementNS(NS,'text');t.setAttribute('class','nowmark');t.setAttribute('x',Math.max(18,Math.min(302,x)).toFixed(1));t.setAttribute('y',(s.viewBox.baseVal.height>100?y+17:(y>34?y-9:y+19)).toFixed(1));t.setAttribute('stroke','#f8eedb');t.setAttribute('stroke-width','3');t.setAttribute('paint-order','stroke');t.setAttribute('text-anchor','middle');t.setAttribute('font-family','Archivo,Arial');t.setAttribute('font-size','9');t.setAttribute('font-weight','800');t.setAttribute('fill','#c8302f');t.textContent='NOW';s.appendChild(t)}
 function obs(){var n=document.querySelector('.nowline');if(!n||!window.fetch)return;
  fetch('https://api.weather.gov/stations/KIAG/observations/latest',{headers:{Accept:'application/geo+json'}}).then(function(r){return r.ok?r.json():null}).then(function(j){
   if(!j||!j.properties)return;var p=j.properties,v=p.temperature&&p.temperature.value,ts=Date.parse(p.timestamp);
@@ -450,6 +454,7 @@ def add_live(body, date):
                '<path d="M30 100 Q160 -40 290 100" fill="none" stroke="#d3b88f" stroke-width="2" stroke-dasharray="3 5"/>'
                '<path d="M30 100 Q160 -40 290 100" fill="none" stroke="#cf6f1a" stroke-width="3" clip-path="url(#sunsofar)"/>'
                '<line x1="14" y1="100" x2="306" y2="100" stroke="#24170c" stroke-width="1.5"/>'
+               '<circle class="sunhalo" cx="30" cy="100" r="9" fill="#e8b100" visibility="hidden"><animate attributeName="r" values="9;19" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;0" dur="2.4s" repeatCount="indefinite"/></circle>'
                '<circle class="sun" cx="30" cy="100" r="9" fill="#e8b100" stroke="#cf6f1a" stroke-width="2" visibility="hidden"/>'
                f'<text x="30" y="114" text-anchor="middle" font-family="Archivo,Arial" font-size="10" fill="#24170c">{mr.group(1)}:{mr.group(2)}</text>'
                f'<text x="290" y="114" text-anchor="middle" font-family="Archivo,Arial" font-size="10" fill="#24170c">{ms.group(1)}:{ms.group(2)}</text>'

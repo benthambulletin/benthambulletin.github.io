@@ -102,7 +102,7 @@ def forecasts():
             if town == "North Tonawanda":
                 try:
                     hr = json.loads(get(pt["forecastHourly"]))["properties"]["periods"][:24]
-                    t["hourly"] = [{"start": h["startTime"], "temp": h["temperature"], "short": h["shortForecast"]} for h in hr]
+                    t["hourly"] = [{"start": h["startTime"], "temp": h["temperature"], "short": h["shortForecast"], "pop": (h.get("probabilityOfPrecipitation") or {}).get("value")} for h in hr]
                 except Exception as e:
                     out["errors"].append(f"hourly: {e}")
             out["towns"][town] = t
