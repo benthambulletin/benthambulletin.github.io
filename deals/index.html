@@ -128,13 +128,10 @@ footer p{margin:0;max-width:65ch}
     <div class="result" id="chk-result" hidden aria-live="polite"></div>
   </section>
 
-  <section class="sec" id="sec-buy"><div class="sec-head"><h2>Real deals right now</h2><span id="n-buy"></span></div><div class="list" id="list-buy"></div></section>
-  <section class="sec" id="sec-wait"><div class="sec-head"><h2>Wait on these</h2><span id="n-wait"></span></div><div class="list" id="list-wait"></div></section>
-  <section class="sec" id="sec-shit"><div class="sec-head"><h2>Hall of shame</h2><span id="n-shit"></span></div><div class="list" id="list-shit"></div></section>
 
   <footer>
-    <p><strong>How the verdict works.</strong> The checker compares what you paste with the deals tracked on this page and a set of known Black Friday tricks: doorbuster TV sizes, store-brand sets, outlet pricing, no-name brands and discounts that are too big to be real. It can't open the link or look up live prices. When it can't prove a deal is good, it says so and gives you a one-tap price check.</p>
-    <p>Prices on this page come from published deal coverage, checked on the date on each card. Confirm at checkout. No affiliate links.</p>
+    <p><strong>How the verdict works.</strong> The checker compares what you paste with a list of real deals, refreshed daily, and a set of known Black Friday tricks: doorbuster TV sizes, store-brand sets, outlet pricing, no-name brands and discounts that are too big to be real. It can't open the link or look up live prices. When it can't prove a deal is good, it says so and gives you a one-tap price check.</p>
+    <p>Its prices come from published deal coverage. Confirm at checkout. No affiliate links.</p>
     <p id="stat"></p>
   </footer>
 </div>
@@ -191,13 +188,6 @@ footer p{margin:0;max-width:65ch}
     a.appendChild(meta);
     return a;
   }
-  ["buy","wait","shit"].forEach(function(v){
-    var list = document.getElementById("list-" + v), rows = deals.filter(function(x){ return x.verdict === v; });
-    rows.forEach(function(x){ list.appendChild(card(x)); });
-    if(!rows.length) list.appendChild(el("p", "empty", deals.length ? "Nothing here yet." : "The deal list didn't load. Reload the page."));
-    document.getElementById("n-" + v).textContent = rows.length + (rows.length === 1 ? " item" : " items");
-  });
-
   /* ---------- the checker: runs in the page, no account, no network ---------- */
   var STOP = {inch:1,tv:1,"with":1,the:1,and:1,or:1,kit:1,set:1,of:1,gen:1,"for":1,a:1};
   var URLWORDS = {amazon:1,walmart:1,target:1,bestbuy:1,lowes:1,homedepot:1,costco:1,com:1,www:1,http:1,https:1,html:1,htm:1,product:1,products:1,site:1,ref:1,shop:1,item:1,the:1,and:1,"for":1,"with":1,skuid:1,deal:1,deals:1,sale:1,black:1,friday:1};
@@ -220,7 +210,7 @@ footer p{margin:0;max-width:65ch}
       if(cat === "TVs") return true;
       return d.name.toLowerCase().replace(/[^a-z]+/g, " ").split(" ").some(function(w){ return w.length >= 5 && has(words, w); });
     })[0];
-    return p ? p.name + " at " + money(p.price) + (p.store && p.store !== "See source" ? " (" + p.store + ")" : "") + ". It's on the real-deals list below." : null;
+    return p ? p.name + " at " + money(p.price) + (p.store && p.store !== "See source" ? " (" + p.store + ")" : "") + "." : null;
   }
   function matchFeed(squashed){
     var best = null, bestScore = 0;
