@@ -1,0 +1,63 @@
+name: Porta Potty item image
+
+# Saves a small copy of a product photo into deals/img/<id>.jpg for the
+# Porta Potty log (/deals/). Tries each candidate URL in order until one
+# returns a real image. Not part of the paper.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: 'Log item id (letters, digits, - and _)'
+        required: true
+      urls:
+        description: 'Candidate image URLs, separated by spaces, best first'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deals-image
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and shrink
+        env:
+          ID: ${{ inputs.id }}
+          URLS: ${{ inputs.urls }}
+        run: |
+          case "$ID" in *[!A-Za-z0-9_-]*|"") echo "bad id"; exit 1;; esac
+          sudo apt-get install -y -q imagemagick >/dev/null 2>&1 || true
+          mkdir -p deals/img
+          ok=""
+          for u in $URLS; do
+            case "$u" in https://*) ;; *) continue;; esac
+            if curl -fsSL -m 25 --max-filesize 15000000 \
+                 -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36" \
+                 -H "Accept: image/avif,image/webp,image/*,*/*;q=0.8" -o /tmp/in "$u" \
+               && file --mime-type -b /tmp/in | grep -q '^image/'; then
+              if convert "/tmp/in[0]" -auto-orient -resize '240x240>' -background white -flatten -strip -quality 82 "deals/img/$ID.jpg"; then
+                ok="$u"; break
+              fi
+            fi
+            echo "no good: $u"
+          done
+          [ -n "$ok" ] || { echo "no candidate worked"; exit 1; }
+          echo "saved from $ok"; file "deals/img/$ID.jpg"
+      - name: Commit
+        env:
+          ID: ${{ inputs.id }}
+        run: |
+          git config user.name "Porta Potty image"
+          git config user.email "noreply@anthropic.com"
+          git add deals/img
+          git commit -m "Porta Potty: image for $ID" || exit 0
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 15
+          done
+          exit 1
