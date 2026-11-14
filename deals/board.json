@@ -1,6 +1,25 @@
 {
- "updated": "2026-11-14T12:08:00-05:00",
+ "updated": "2026-11-14T12:46:00-05:00",
  "items": [
+  {
+   "id": "jeRaqvJ",
+   "pasted": null,
+   "link": null,
+   "product": "A Walmart item, but the link was missing",
+   "store": "Walmart",
+   "image": null,
+   "image_src": null,
+   "price": null,
+   "was": null,
+   "verdict": "unknown",
+   "headline": "No link came through, only the words. Paste it again.",
+   "reasons": [
+    "The paste box cut off everything after the first line. That's fixed now."
+   ],
+   "instead": null,
+   "instead_link": null,
+   "checked": "2026-11-14T12:46:00-05:00"
+  },
   {
    "id": "QoZKzjp",
    "pasted": "https://www.walmart.com/ip/16620924202?sid=FD514A05-08F4-467D-8E3E-D1E9BAEC517B",
