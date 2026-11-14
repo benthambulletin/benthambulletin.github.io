@@ -179,7 +179,7 @@ An occasional signed feature where the paper makes a real prediction and lives w
 
 **`/home-base/` is Garret and Kaylani's family board, run by Hearth (`home-base/CLAUDE.md`), not part of the paper:** never link it, never edit it during an edition run.
 
-**`/deals/` is The Deal Sifter (Garret, Nov 14), a Black Friday deal checker for family and friends, not part of the paper:** never link it from the paper, never edit it during an edition run, never remove its `noindex`. Its own scheduled tasks rewrite `deals/deals.js`.
+**`/deals/` is The Porta Potty (Garret, Nov 14; first called The Deal Sifter), a Black Friday deal checker for family and friends, not part of the paper:** never link it from the paper, never edit it during an edition run, never remove its `noindex`. Its own scheduled tasks (named "Deal Sifter …") rewrite `deals/deals.js` and `deals/board.json`.
 
 **No analytics, by decision.** Don't add a counter or suggest one.
 
