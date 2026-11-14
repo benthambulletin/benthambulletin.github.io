@@ -113,6 +113,13 @@ footer p{margin:0;max-width:65ch}
 .mast-txt{display:flex;flex-direction:column;gap:6px;min-width:0;justify-self:stretch}
 .art{width:min(100%,360px);height:auto;display:block}
 [hidden]{display:none !important}
+.list .tag{overflow:hidden}
+.vb{margin:-14px -14px 2px;padding:12px 14px;display:flex;align-items:center;gap:12px;color:#fff}
+.vb .e{font-size:34px;line-height:1}
+.vb .t{font-weight:900;font-size:24px;letter-spacing:.03em;text-transform:uppercase;line-height:1}
+.vb .s{display:block;margin-top:4px;font-size:13px;font-weight:700;letter-spacing:0;text-transform:none}
+.vb.shit{background:#6B3F1D} .vb.buy{background:#1B6B45} .vb.wait{background:#E9B949;color:#2A2208} .vb.unknown{background:#5B6B66}
+.list .tag.shit{border:2px solid #6B3F1D} .list .tag.buy{border:2px solid #1B6B45} .list .tag.wait{border:2px solid #C99A2E}
 .again{align-self:flex-start;margin-top:-10px;background:var(--card);color:var(--bad);border:1.5px solid var(--bad);border-radius:999px;font:inherit;font-weight:800;font-size:14px;padding:8px 14px;cursor:pointer}
 .clock{margin-top:0}
 .clock{display:flex;align-items:baseline;justify-content:space-between;gap:12px;background:var(--pine);color:var(--on-pine);border-radius:14px;padding:12px 16px;margin-top:-8px}
@@ -400,7 +407,13 @@ footer p{margin:0;max-width:65ch}
   function boardCard(x){
     var v = LABEL[x.verdict] ? x.verdict : "unknown";
     var a = el("article", "tag " + (v === "unknown" || v === "pending" ? "wait" : v) + (v === "pending" ? " pending" : ""));
-    var top = el("div", "top"); top.appendChild(stamp(v)); top.appendChild(el("span", "cat", x.store || host(x.link))); a.appendChild(top);
+    if(v === "pending"){ var top = el("div", "top"); top.appendChild(stamp(v)); top.appendChild(el("span", "cat", x.store || host(x.link))); a.appendChild(top); }
+    else {
+      var VB = {shit:["\uD83D\uDCA9", "Shit deal", "Flush it."], buy:["\uD83C\uDF81", "Legit deal", "Buy it."], wait:["\u23F3", "Wait", "Not yet."], unknown:["\u2753", "Couldn't tell", "Check it yourself."]}[v];
+      var vb = el("div", "vb " + v); vb.appendChild(el("span", "e", VB[0]));
+      var vt = el("span", "t", VB[1]); vt.appendChild(el("span", "s", VB[2])); vb.appendChild(vt); a.appendChild(vb);
+      a.appendChild(el("span", "cat", x.store || host(x.link)));
+    }
     var hd = el("div", "head"), tx = el("div", "headtx");
     var srcs = [x.image, x.image_src].filter(function(u){ return typeof u === "string" && (/^https:\/\//i.test(u) || /^img\/[A-Za-z0-9_-]+\.jpg$/.test(u)); });
     var ph = el("div", "thumb ph"); ph.innerHTML = '<svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true"><rect x="8" y="20" width="32" height="20" rx="2" fill="#E5484D"/><rect x="6" y="14" width="36" height="8" rx="2" fill="#C73A3F"/><rect x="21" y="14" width="6" height="26" fill="#E9B949"/><path d="M24 14c-6-9-14-3-7 0zM24 14c6-9 14-3 7 0z" fill="#E9B949"/></svg>';
@@ -413,7 +426,7 @@ footer p{margin:0;max-width:65ch}
     tx.appendChild(el("h3", "name", x.product || host(x.link) || "A pasted deal"));
     if(x.price != null){
       var m = el("div", "money"); m.appendChild(el("span", "now", money(x.price)));
-      if(x.was && x.was > x.price){ m.appendChild(el("span", "was", money(x.was))); m.appendChild(el("span", "off", (v === "buy" ? "" : "claims ") + Math.round((1 - x.price / x.was) * 100) + "% off")); }
+      if(x.was && x.was > x.price){ m.appendChild(el("span", "was", money(x.was))); m.appendChild(el("span", "off", "claims " + Math.round((1 - x.price / x.was) * 100) + "% off")); }
       tx.appendChild(m);
     }
     if(x.headline) a.appendChild(el("p", "why", x.headline));
