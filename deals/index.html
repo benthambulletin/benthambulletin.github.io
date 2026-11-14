@@ -107,7 +107,7 @@ footer p{margin:0;max-width:65ch}
 .pending .stamp{border-style:dashed}
 .mast-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}
 .mast-txt{display:flex;flex-direction:column;gap:10px;min-width:0}
-.art{width:clamp(120px,36vw,170px);height:auto;display:block}
+.art{width:clamp(130px,40vw,190px);height:auto;display:block}
 [hidden]{display:none !important}
 .mast h1{font-size:clamp(38px,11vw,62px)}
 </style>
@@ -122,25 +122,42 @@ footer p{margin:0;max-width:65ch}
         <h1>The Porta Potty</h1>
         <p class="lede">Where shit deals go. Paste a Black Friday deal and find out if it stinks, and what to buy instead.</p>
       </div>
-      <svg class="art" viewBox="0 0 200 170" role="img" aria-label="A porta potty with a wreath and a poop wearing a Santa hat">
-        <ellipse cx="100" cy="159" rx="96" ry="7" fill="#F7FAF8" opacity=".28"/>
-        <rect x="20" y="42" width="80" height="114" rx="6" fill="#23875F" stroke="#F7FAF8" stroke-width="2"/>
-        <path d="M12 46 Q60 16 108 46 Z" fill="#F7FAF8"/>
-        <rect x="32" y="58" width="56" height="92" rx="4" fill="#17634A" stroke="#0E3F2E" stroke-width="2"/>
-        <circle cx="60" cy="76" r="9" fill="#E9B949"/><circle cx="64.5" cy="73.5" r="8" fill="#17634A"/>
-        <circle cx="60" cy="112" r="12" fill="none" stroke="#3DB87C" stroke-width="5"/>
-        <circle cx="60" cy="124" r="3.5" fill="#E5484D"/>
-        <rect x="80" y="104" width="4" height="13" rx="2" fill="#E9B949"/>
-        <g><circle cx="22" cy="44" r="3" fill="#E5484D"/><circle cx="38" cy="36" r="3" fill="#E9B949"/><circle cx="60" cy="33" r="3" fill="#E5484D"/><circle cx="82" cy="36" r="3" fill="#E9B949"/><circle cx="98" cy="44" r="3" fill="#E5484D"/></g>
-        <ellipse cx="155" cy="147" rx="32" ry="12" fill="#7A4B2A"/>
-        <ellipse cx="155" cy="131" rx="24" ry="11" fill="#8A5630"/>
-        <ellipse cx="155" cy="117" rx="16" ry="9" fill="#7A4B2A"/>
-        <circle cx="148" cy="131" r="4.2" fill="#F7FAF8"/><circle cx="162" cy="131" r="4.2" fill="#F7FAF8"/>
-        <circle cx="149" cy="132" r="2" fill="#2A1A0E"/><circle cx="161" cy="132" r="2" fill="#2A1A0E"/>
-        <path d="M147 141 Q155 148 163 141" fill="none" stroke="#F7FAF8" stroke-width="2.2" stroke-linecap="round"/>
-        <path d="M140 111 Q150 78 174 97 L170 113 Z" fill="#E5484D"/>
-        <rect x="136" y="106" width="38" height="9" rx="4.5" fill="#F7FAF8"/>
-        <circle cx="175" cy="97" r="5.5" fill="#F7FAF8"/>
+      <svg class="art" viewBox="0 0 210 172" role="img" aria-label="A blue porta potty with a wreath on the door, next to a poop wearing a Santa hat">
+        <ellipse cx="105" cy="161" rx="100" ry="7" fill="#F7FAF8" opacity=".28"/>
+        <!-- vent pipe -->
+        <rect x="98" y="6" width="7" height="34" fill="#C9D2D6"/><rect x="95" y="3" width="13" height="6" rx="2" fill="#E3E9EC"/>
+        <!-- side panel -->
+        <path d="M100 44 L118 36 L118 146 L100 154 Z" fill="#1E5C9E"/>
+        <path d="M104 52 l10 -4 M104 58 l10 -4 M104 64 l10 -4" stroke="#143F6E" stroke-width="2" stroke-linecap="round"/>
+        <!-- front -->
+        <rect x="26" y="40" width="74" height="114" fill="#2F7FD1"/>
+        <!-- white roof with overhang -->
+        <path d="M20 42 Q20 28 34 26 L92 26 Q104 26 106 34 L122 28 L122 36 L106 44 L20 44 Z" fill="#F7FAF8"/>
+        <path d="M106 34 L122 28 L122 36 L106 44 Z" fill="#D6DEE2"/>
+        <!-- door -->
+        <rect x="34" y="52" width="58" height="98" rx="3" fill="#4496E8" stroke="#1E5C9E" stroke-width="2"/>
+        <path d="M42 60 h42 M42 65 h42 M42 70 h42" stroke="#1E5C9E" stroke-width="2" stroke-linecap="round"/>
+        <!-- restroom sign -->
+        <rect x="52" y="78" width="22" height="26" rx="3" fill="#F7FAF8"/>
+        <circle cx="63" cy="85" r="3.2" fill="#1E5C9E"/><rect x="58.5" y="89.5" width="9" height="11" rx="2.5" fill="#1E5C9E"/>
+        <!-- occupied latch and handle -->
+        <rect x="79" y="106" width="9" height="18" rx="2" fill="#F7FAF8"/><circle cx="83.5" cy="111" r="2.6" fill="#E5484D"/><rect x="82" y="116" width="3" height="6" rx="1.5" fill="#22303A"/>
+        <!-- wreath -->
+        <circle cx="60" cy="126" r="10" fill="none" stroke="#3DB87C" stroke-width="5"/><circle cx="60" cy="136" r="3.2" fill="#E5484D"/>
+        <!-- lights along the roof -->
+        <circle cx="26" cy="46" r="3" fill="#E5484D"/><circle cx="44" cy="48" r="3" fill="#E9B949"/><circle cx="63" cy="48" r="3" fill="#E5484D"/><circle cx="82" cy="48" r="3" fill="#E9B949"/><circle cx="99" cy="46" r="3" fill="#E5484D"/>
+        <!-- skids -->
+        <rect x="20" y="152" width="84" height="7" rx="2" fill="#22303A"/><path d="M104 152 L122 144 L122 150 L104 159 Z" fill="#17222A"/>
+        <!-- poop in a Santa hat -->
+        <ellipse cx="166" cy="149" rx="32" ry="12" fill="#7A4B2A"/>
+        <ellipse cx="166" cy="133" rx="24" ry="11" fill="#8A5630"/>
+        <ellipse cx="166" cy="119" rx="16" ry="9" fill="#7A4B2A"/>
+        <circle cx="159" cy="133" r="4.2" fill="#F7FAF8"/><circle cx="173" cy="133" r="4.2" fill="#F7FAF8"/>
+        <circle cx="160" cy="134" r="2" fill="#2A1A0E"/><circle cx="172" cy="134" r="2" fill="#2A1A0E"/>
+        <path d="M158 143 Q166 150 174 143" fill="none" stroke="#F7FAF8" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M151 113 Q161 80 185 99 L181 115 Z" fill="#E5484D"/>
+        <rect x="147" y="108" width="38" height="9" rx="4.5" fill="#F7FAF8"/>
+        <circle cx="186" cy="99" r="5.5" fill="#F7FAF8"/>
       </svg>
     </div>
   </header>
