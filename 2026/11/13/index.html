@@ -4,7 +4,7 @@
 <title>The Bentham Bulletin · No. 142 · Friday, November 13, 2026</title>
 <meta property="og:title" content="The Bentham Bulletin · No. 142 · Friday, November 13, 2026"><meta property="og:description" content="Microsoft outage · Reader poll: 6 a.m. or 8 a.m.? · UB is bowl eligible"><meta property="og:image" content="https://benthambulletin.github.io/2026/11/13/plate.jpg">
 <meta property="og:type" content="article">
-<link rel="stylesheet" href="/assets/style.css?v=4f54b9d0">
+<link rel="stylesheet" href="/assets/style.css?v=e1c84176">
 <link rel="icon" href="/assets/favicon.svg">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -53,6 +53,7 @@
 <div class="wire"><div><h3>UB Bulls: Five Straight, and Bowl Eligible</h3><p>The University at Buffalo beat Ball State 28&ndash;7 on Wednesday night for its fifth win in a row. It was the Bulls' sixth win, which makes them bowl eligible, meaning they have the six wins a team needs to be invited to a postseason bowl game, WGRZ reports. They did it on the ground: 302 rushing yards on 52 carries and three rushing touchdowns, one a 67-yard run in the fourth quarter. Ball State's only points came on a blocked punt, and it missed three field goals. Central Michigan visits Wednesday night.</p></div></div>
 <div class="part"><span>The Almanac</span></div>
 <h2 class="sec">The Weather Glass</h2>
+<div class="nowline" hidden><span class="dot"></span><span class="livetag">Right now</span><b></b><span class="nowtxt"></span></div>
 <p class="wlede">Light snow at the Rochester airport at dawn; raw, with rain and snow showers on and off</p>
 <div class="wxrow">
   <div class="wxc"><div class="k">Tonight</div><div class="v">32&deg;</div><div class="s">showers</div></div>
@@ -87,6 +88,7 @@
   <div class="wxc"><div class="k">Sunrise</div><div class="v">7:05</div><div class="s">a.m.</div></div>
   <div class="wxc"><div class="k">Daylight</div><div class="v">9h 49m</div><div class="s">2 min less</div></div>
 </div>
+<svg class="sunarc" hidden data-rise="425" data-set="1013" viewBox="0 0 320 118" role="img" aria-label="Where the sun is now between sunrise and sunset"><defs><clipPath id="sunsofar"><rect x="0" y="0" width="0" height="118"/></clipPath></defs><path d="M30 100 Q160 -40 290 100" fill="none" stroke="#d3b88f" stroke-width="2" stroke-dasharray="3 5"/><path d="M30 100 Q160 -40 290 100" fill="none" stroke="#cf6f1a" stroke-width="3" clip-path="url(#sunsofar)"/><line x1="14" y1="100" x2="306" y2="100" stroke="#24170c" stroke-width="1.5"/><circle class="sun" cx="30" cy="100" r="9" fill="#e8b100" stroke="#cf6f1a" stroke-width="2" visibility="hidden"/><text x="30" y="114" text-anchor="middle" font-family="Archivo,Arial" font-size="10" fill="#24170c">7:05</text><text x="290" y="114" text-anchor="middle" font-family="Archivo,Arial" font-size="10" fill="#24170c">4:53</text><text class="sunlab" x="160" y="90" text-anchor="middle" font-family="Archivo,Arial" font-size="9.5" letter-spacing="1.3" fill="#2f5e3e" font-weight="800"></text></svg>
 <p class="skynote"><b>Tonight:</b> a 17 percent crescent in Sagittarius sets at 7:56, if the clouds part. Saturn is highest in the south around 9. Eleven days to the full Beaver Moon.</p>
 <div class="touch-head">The Stars &middot; for fun</div>
 <div class="stars slim">
@@ -113,6 +115,36 @@
 <div class="colo"><div class="s">Forecast, lake temperatures and radar per NWS Buffalo &middot; Niagara Falls, Dunkirk and Rochester stations &middot; normals from NOAA &middot; sky computed for 14120 &middot; headlines via CBS, the BBC, PBS, WXXI, the Dunkirk <i>Observer</i>, WKBW, WGRZ, Rolling Stone, Deadline, Buffalo Rumblings, Gang Green Nation &middot; scores and stats via Sportradar</div>
 <div class="ask"><a href="https://tally.so/r/rjxDpl">Send something to the paper</a> &middot; <a href="https://tally.so/r/obWNYP">Log a migraine</a></div>
 <div class="sig">&mdash; G.</div><div class="orn">&#127809; &#127810; &#127809;</div></div>
+<script>(function(){
+var D='2026-11-13',TZ='America/New_York';
+function nyDate(){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
+function nyMin(d){var p=new Intl.DateTimeFormat('en-GB',{timeZone:TZ,hour:'2-digit',minute:'2-digit',hour12:false}).format(d||new Date()).split(':');return((+p[0])%24)*60+(+p[1])}
+function clock(m){var h=Math.floor(m/60),mm=m%60,ap=h<12?'a.m.':'p.m.';h=h%12||12;return h+':'+(mm<10?'0':'')+mm+' '+ap}
+if(nyDate()!==D)return;
+var NS='http://www.w3.org/2000/svg';
+function sun(){var s=document.querySelector('.sunarc');if(!s)return;var r=+s.getAttribute('data-rise'),e=+s.getAttribute('data-set'),m=nyMin(),t=(m-r)/(e-r);
+ var c=s.querySelector('.sun'),clip=s.querySelector('#sunsofar rect'),lab=s.querySelector('.sunlab');s.removeAttribute('hidden');
+ if(t<0){c.setAttribute('visibility','hidden');clip.setAttribute('width',0);lab.textContent='SUNRISE AT '+clock(r).toUpperCase();return}
+ if(t>1){c.setAttribute('visibility','hidden');clip.setAttribute('width',320);lab.textContent='THE SUN IS DOWN';return}
+ var x=(1-t)*(1-t)*30+2*t*(1-t)*160+t*t*290,y=(1-t)*(1-t)*100+2*t*(1-t)*(-40)+t*t*100;
+ c.setAttribute('visibility','visible');c.setAttribute('cx',x.toFixed(1));c.setAttribute('cy',y.toFixed(1));clip.setAttribute('width',x.toFixed(1));
+ var left=e-m;lab.textContent=(left>=60?Math.floor(left/60)+' H ':'')+(left%60)+' M OF DAYLIGHT LEFT'}
+function curve(){var s=document.querySelector('svg[data-start]');if(!s)return;var pl=s.querySelector('polyline');if(!pl)return;
+ var pts=pl.getAttribute('points').trim().split(/\s+/).map(function(p){return p.split(',').map(Number)}),st=+s.getAttribute('data-start')*60;
+ var i=(nyMin()-st)/60;var old=s.querySelectorAll('.nowmark');for(var k=0;k<old.length;k++)old[k].remove();
+ var tx=s.querySelectorAll('text');for(var k=0;k<tx.length;k++)if(tx[k].textContent==='now')tx[k].textContent=clock(st).replace(':00','');
+ if(i<0||i>pts.length-1)return;var a=Math.floor(i),b=Math.min(pts.length-1,a+1),f=i-a,x=pts[a][0]+(pts[b][0]-pts[a][0])*f,y=pts[a][1]+(pts[b][1]-pts[a][1])*f;
+ var c=document.createElementNS(NS,'circle');c.setAttribute('class','nowmark');c.setAttribute('cx',x.toFixed(1));c.setAttribute('cy',y.toFixed(1));c.setAttribute('r',5);c.setAttribute('fill','none');c.setAttribute('stroke','#c8302f');c.setAttribute('stroke-width',2);s.appendChild(c);
+ var t=document.createElementNS(NS,'text');t.setAttribute('class','nowmark');t.setAttribute('x',Math.max(18,Math.min(302,x)).toFixed(1));t.setAttribute('y',(y>34?y-9:y+19).toFixed(1));t.setAttribute('text-anchor','middle');t.setAttribute('font-family','Archivo,Arial');t.setAttribute('font-size','9');t.setAttribute('font-weight','800');t.setAttribute('fill','#c8302f');t.textContent='NOW';s.appendChild(t)}
+function obs(){var n=document.querySelector('.nowline');if(!n||!window.fetch)return;
+ fetch('https://api.weather.gov/stations/KIAG/observations/latest',{headers:{Accept:'application/geo+json'}}).then(function(r){return r.ok?r.json():null}).then(function(j){
+  if(!j||!j.properties)return;var p=j.properties,v=p.temperature&&p.temperature.value,ts=Date.parse(p.timestamp);
+  if(v===null||v===undefined||isNaN(ts)||(Date.now()-ts)>100*60000){n.hidden=true;return}
+  n.querySelector('b').innerHTML=Math.round(v*9/5+32)+'&deg;';
+  n.querySelector('.nowtxt').textContent=((p.textDescription||'').toLowerCase()+(p.textDescription?', ':'')+'as of '+clock(nyMin(new Date(ts))));n.hidden=false}).catch(function(){})}
+function tick(){if(nyDate()!==D)return;sun();curve()}
+tick();obs();setInterval(tick,60000);setInterval(obs,600000);
+})();</script>
 <div class="nav"><a href="/2026/11/12/">&larr; Thursday</a><a href="/album/">Album</a><a href="/archive/">Archive</a><span></span></div>
 </div><script>
 (function(){

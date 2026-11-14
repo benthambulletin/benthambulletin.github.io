@@ -235,3 +235,12 @@ html.big .tools button{font-size:.62rem}
 .ledger,.ledger .big,.ledger .cap{text-align:left}
 .radar{margin:.2rem 0 .8rem}
 .dateline{font-size:clamp(.8rem,3.7vw,1.1rem);letter-spacing:.1em}
+/* Nov 13 (Garret: "add motion ... like the radar"): live pieces, shown only on the edition's own day */
+.dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--red);animation:pulse 1.6s ease-in-out infinite;flex:none;display:inline-block}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}}
+.livetag{font-family:'Archivo',Arial,sans-serif;font-size:.62rem;letter-spacing:.14em;font-weight:800;color:var(--red);text-transform:uppercase;white-space:nowrap;font-style:normal}
+.nowline{display:flex;align-items:center;gap:.5rem;margin:0 0 .5rem;font-family:'LOI';font-style:italic;font-size:.95rem;color:var(--soft)}
+.nowline b{font-family:'PF';font-style:normal;font-size:1.5rem;color:var(--ink)}
+.nowline[hidden],.sunarc[hidden]{display:none}
+.sunarc{display:block;width:100%;max-width:420px;height:auto;margin:.5rem auto .6rem}

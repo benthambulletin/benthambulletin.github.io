@@ -37,6 +37,8 @@ if ed:
             except Exception: continue
             if _b and _b == _a:
                 fails.append(f'RIDDLE: answer "{_a}" already ran in {os.path.basename(_f)}'); break
+    if str(dt) >= '2026-11-14' and 'Next 24 hours' in s and not re.search(r'<svg[^>]*data-start="\d{1,2}"', s):
+        fails.append('LIVE: the 24-hour curve svg needs data-start="<hour of its first point, 0-23>" for the NOW marker')
     # 2. issue number consistent
     nos=set(re.findall(r'No\.\s*(\d+)',s))-{'1'}
     if nos and nos!={str(ed['no'])}: fails.append(f'ISSUE NO mismatch: {nos} vs {ed["no"]}')

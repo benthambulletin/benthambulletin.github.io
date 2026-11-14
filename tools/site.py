@@ -2,7 +2,7 @@
 Usage: python3 site.py <edition.json>   (see EDITION below for schema)
 Writes into ./site/: index.html, YYYY/MM/DD/index.html, archive/index.html, issues.json
 """
-import json, os, sys, shutil, datetime
+import json, os, sys, shutil, datetime, re
 
 SITE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'site')
 
@@ -243,6 +243,15 @@ html.big .tools button{font-size:.62rem}
 .ledger,.ledger .big,.ledger .cap{text-align:left}
 .radar{margin:.2rem 0 .8rem}
 .dateline{font-size:clamp(.8rem,3.7vw,1.1rem);letter-spacing:.1em}
+/* Nov 13 (Garret: "add motion ... like the radar"): live pieces, shown only on the edition's own day */
+.dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--red);animation:pulse 1.6s ease-in-out infinite;flex:none;display:inline-block}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}}
+.livetag{font-family:'Archivo',Arial,sans-serif;font-size:.62rem;letter-spacing:.14em;font-weight:800;color:var(--red);text-transform:uppercase;white-space:nowrap;font-style:normal}
+.nowline{display:flex;align-items:center;gap:.5rem;margin:0 0 .5rem;font-family:'LOI';font-style:italic;font-size:.95rem;color:var(--soft)}
+.nowline b{font-family:'PF';font-style:normal;font-size:1.5rem;color:var(--ink)}
+.nowline[hidden],.sunarc[hidden]{display:none}
+.sunarc{display:block;width:100%;max-width:420px;height:auto;margin:.5rem auto .6rem}
 """
 
 import hashlib
@@ -392,6 +401,65 @@ def add_radar(body):
     return body[:j] + RADAR + body[j:]
 
 
+LIVE_JS = r"""<script>(function(){
+var D='__DATE__',TZ='America/New_York';
+function nyDate(){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
+function nyMin(d){var p=new Intl.DateTimeFormat('en-GB',{timeZone:TZ,hour:'2-digit',minute:'2-digit',hour12:false}).format(d||new Date()).split(':');return((+p[0])%24)*60+(+p[1])}
+function clock(m){var h=Math.floor(m/60),mm=m%60,ap=h<12?'a.m.':'p.m.';h=h%12||12;return h+':'+(mm<10?'0':'')+mm+' '+ap}
+if(nyDate()!==D)return;
+var NS='http://www.w3.org/2000/svg';
+function sun(){var s=document.querySelector('.sunarc');if(!s)return;var r=+s.getAttribute('data-rise'),e=+s.getAttribute('data-set'),m=nyMin(),t=(m-r)/(e-r);
+ var c=s.querySelector('.sun'),clip=s.querySelector('#sunsofar rect'),lab=s.querySelector('.sunlab');s.removeAttribute('hidden');
+ if(t<0){c.setAttribute('visibility','hidden');clip.setAttribute('width',0);lab.textContent='SUNRISE AT '+clock(r).toUpperCase();return}
+ if(t>1){c.setAttribute('visibility','hidden');clip.setAttribute('width',320);lab.textContent='THE SUN IS DOWN';return}
+ var x=(1-t)*(1-t)*30+2*t*(1-t)*160+t*t*290,y=(1-t)*(1-t)*100+2*t*(1-t)*(-40)+t*t*100;
+ c.setAttribute('visibility','visible');c.setAttribute('cx',x.toFixed(1));c.setAttribute('cy',y.toFixed(1));clip.setAttribute('width',x.toFixed(1));
+ var left=e-m;lab.textContent=(left>=60?Math.floor(left/60)+' H ':'')+(left%60)+' M OF DAYLIGHT LEFT'}
+function curve(){var s=document.querySelector('svg[data-start]');if(!s)return;var pl=s.querySelector('polyline');if(!pl)return;
+ var pts=pl.getAttribute('points').trim().split(/\s+/).map(function(p){return p.split(',').map(Number)}),st=+s.getAttribute('data-start')*60;
+ var i=(nyMin()-st)/60;var old=s.querySelectorAll('.nowmark');for(var k=0;k<old.length;k++)old[k].remove();
+ var tx=s.querySelectorAll('text');for(var k=0;k<tx.length;k++)if(tx[k].textContent==='now')tx[k].textContent=clock(st).replace(':00','');
+ if(i<0||i>pts.length-1)return;var a=Math.floor(i),b=Math.min(pts.length-1,a+1),f=i-a,x=pts[a][0]+(pts[b][0]-pts[a][0])*f,y=pts[a][1]+(pts[b][1]-pts[a][1])*f;
+ var c=document.createElementNS(NS,'circle');c.setAttribute('class','nowmark');c.setAttribute('cx',x.toFixed(1));c.setAttribute('cy',y.toFixed(1));c.setAttribute('r',5);c.setAttribute('fill','none');c.setAttribute('stroke','#c8302f');c.setAttribute('stroke-width',2);s.appendChild(c);
+ var t=document.createElementNS(NS,'text');t.setAttribute('class','nowmark');t.setAttribute('x',Math.max(18,Math.min(302,x)).toFixed(1));t.setAttribute('y',(y>34?y-9:y+19).toFixed(1));t.setAttribute('text-anchor','middle');t.setAttribute('font-family','Archivo,Arial');t.setAttribute('font-size','9');t.setAttribute('font-weight','800');t.setAttribute('fill','#c8302f');t.textContent='NOW';s.appendChild(t)}
+function obs(){var n=document.querySelector('.nowline');if(!n||!window.fetch)return;
+ fetch('https://api.weather.gov/stations/KIAG/observations/latest',{headers:{Accept:'application/geo+json'}}).then(function(r){return r.ok?r.json():null}).then(function(j){
+  if(!j||!j.properties)return;var p=j.properties,v=p.temperature&&p.temperature.value,ts=Date.parse(p.timestamp);
+  if(v===null||v===undefined||isNaN(ts)||(Date.now()-ts)>100*60000){n.hidden=true;return}
+  n.querySelector('b').innerHTML=Math.round(v*9/5+32)+'&deg;';
+  n.querySelector('.nowtxt').textContent=((p.textDescription||'').toLowerCase()+(p.textDescription?', ':'')+'as of '+clock(nyMin(new Date(ts))));n.hidden=false}).catch(function(){})}
+function tick(){if(nyDate()!==D)return;sun();curve()}
+tick();obs();setInterval(tick,60000);setInterval(obs,600000);
+})();</script>
+"""
+
+
+def add_live(body, date):
+    """Nov 13 (Garret): live pieces that move through the day, on the edition's own date only:
+    a 'right now' reading on top of the Weather Glass, a sun arc in the Almanac Sky, and a NOW ring on the
+    24-hour curve (needs data-start="<hour 0-23>" on the sparkline svg). Everything stays hidden if it can't load."""
+    out = body
+    if '<p class="wlede">' in out and 'class="nowline"' not in out:
+        out = out.replace('<p class="wlede">', '<div class="nowline" hidden><span class="dot"></span><span class="livetag">Right now</span><b></b><span class="nowtxt"></span></div>\n<p class="wlede">', 1)
+    mr = re.search(r'<div class="k">Sunrise</div><div class="v">(\d+):(\d\d)</div>', out)
+    ms = re.search(r'<div class="v">(\d+):(\d\d)</div><div class="k">Sunset</div>', out)
+    if mr and ms and '<p class="skynote">' in out and 'class="sunarc"' not in out:
+        rise = int(mr.group(1)) * 60 + int(mr.group(2)); sset = (int(ms.group(1)) % 12 + 12) * 60 + int(ms.group(2))
+        arc = (f'<svg class="sunarc" hidden data-rise="{rise}" data-set="{sset}" viewBox="0 0 320 118" role="img" aria-label="Where the sun is now between sunrise and sunset">'
+               '<defs><clipPath id="sunsofar"><rect x="0" y="0" width="0" height="118"/></clipPath></defs>'
+               '<path d="M30 100 Q160 -40 290 100" fill="none" stroke="#d3b88f" stroke-width="2" stroke-dasharray="3 5"/>'
+               '<path d="M30 100 Q160 -40 290 100" fill="none" stroke="#cf6f1a" stroke-width="3" clip-path="url(#sunsofar)"/>'
+               '<line x1="14" y1="100" x2="306" y2="100" stroke="#24170c" stroke-width="1.5"/>'
+               '<circle class="sun" cx="30" cy="100" r="9" fill="#e8b100" stroke="#cf6f1a" stroke-width="2" visibility="hidden"/>'
+               f'<text x="30" y="114" text-anchor="middle" font-family="Archivo,Arial" font-size="10" fill="#24170c">{mr.group(1)}:{mr.group(2)}</text>'
+               f'<text x="290" y="114" text-anchor="middle" font-family="Archivo,Arial" font-size="10" fill="#24170c">{ms.group(1)}:{ms.group(2)}</text>'
+               '<text class="sunlab" x="160" y="90" text-anchor="middle" font-family="Archivo,Arial" font-size="9.5" letter-spacing="1.3" fill="#2f5e3e" font-weight="800"></text></svg>\n')
+        out = out.replace('<p class="skynote">', arc + '<p class="skynote">', 1)
+    if out != body or 'data-start=' in out:
+        out += LIVE_JS.replace('__DATE__', date)
+    return out
+
+
 def riddle_reveal(body):
     """Nov 6: the riddle answer hides behind a tap instead of sitting below the fold."""
     import re as _re
@@ -474,7 +542,7 @@ def build(edition):
     nav += '<a href="/album/">Album</a><a href="/archive/">Archive</a>'
     nav += f'<a href="/{newer["slug"]}/">{dname(newer)} &rarr;</a>' if newer else '<span></span>'  # Nov 9: no 'Today' link on today's paper
     nav += '</div>'
-    edition = dict(edition); edition['body_html'] = add_radar(riddle_reveal(edition['body_html']))  # Nov 9: Garret dropped the 'Inside' jump links
+    edition = dict(edition); edition['body_html'] = add_live(add_radar(riddle_reveal(edition['body_html'])), edition['date'])  # Nov 9: Garret dropped the 'Inside' jump links
     if edition.get('plate_path'):
         pv = hashlib.md5(open(edition['plate_path'],'rb').read()).hexdigest()[:8]
         body = edition['body_html'].replace('__PLATE__', plate_rel+'?v='+pv) + nav
