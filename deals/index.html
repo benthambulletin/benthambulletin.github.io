@@ -113,6 +113,8 @@ footer p{margin:0;max-width:65ch}
 .mast-txt{display:flex;flex-direction:column;gap:6px;min-width:0;justify-self:stretch}
 .art{width:min(100%,360px);height:auto;display:block}
 [hidden]{display:none !important}
+.again{align-self:flex-start;margin-top:-10px;background:var(--card);color:var(--bad);border:1.5px solid var(--bad);border-radius:999px;font:inherit;font-weight:800;font-size:14px;padding:8px 14px;cursor:pointer}
+.clock{margin-top:0}
 .clock{display:flex;align-items:baseline;justify-content:space-between;gap:12px;background:var(--pine);color:var(--on-pine);border-radius:14px;padding:12px 16px;margin-top:-8px}
 .clock-l{font-size:15px;font-weight:700}
 .clock-t{font-size:30px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--gold);line-height:1}
@@ -189,6 +191,7 @@ footer p{margin:0;max-width:65ch}
   <section class="pastebox" aria-label="Paste a deal link">
     <iframe data-tally-src="https://tally.so/embed/OQ4NLk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" height="170" title="Paste a deal link"></iframe>
   </section>
+  <button class="again" id="again" type="button">Paste another deal</button>
   <div class="clock" aria-live="off"><span class="clock-l" id="clock-l">Next check starts in</span><span class="clock-t" id="clock-t">--:--</span></div>
   <p class="under" id="clock-n">Your verdict lands in the log about 10 minutes after that. Everyone with this page can see it.</p>
 
@@ -379,6 +382,15 @@ footer p{margin:0;max-width:65ch}
     }
     tick(); setInterval(tick, 1000);
   })();
+
+  /* ---------- paste another: reload the form so it is empty again ---------- */
+  document.getElementById("again").addEventListener("click", function(){
+    var f = document.querySelector(".pastebox iframe"); if(!f) return;
+    var base = (f.getAttribute("data-tally-src") || f.src).split("&t=")[0];
+    f.src = base + "&t=" + Date.now();
+    document.getElementById("quick").hidden = true;
+    f.scrollIntoView({block:"center"});
+  });
 
   /* ---------- the board ---------- */
   var board = [], mine = [];
