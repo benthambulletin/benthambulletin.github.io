@@ -301,11 +301,12 @@ footer p{margin:0;max-width:65ch}
     var links = [];
     if(q){
       links.push({t:"Compare prices", u:"https://www.google.com/search?tbm=shop&q=" + encodeURIComponent(q)});
-      if(!host || host.indexOf("amazon") >= 0) links.push({t:"Amazon price history", u:"https://camelcamelcamel.com/search?sq=" + encodeURIComponent(q)});
+      var isAmz = /amazon\.|(^|\.)a\.co$|amzn\./.test(host);
+      if(!host || isAmz) links.push({t:"Amazon price history", u:"https://camelcamelcamel.com/search?sq=" + encodeURIComponent(isAmz ? (raw.match(/https?:\/\/\S+/) || [q])[0] : q)});
     }
     function R(v, headline, reasons, instead){ return {verdict:v, headline:headline, reasons:reasons, instead:instead || null, links: v === "buy" ? [] : links}; }
 
-    if(real.length < 2 && /(^|\.)(a\.co|amzn\.to|amzn\.com)$/.test(host)) return {verdict:"unknown", headline:"Amazon short links hide the product. Paste it again with the product's name.", reasons:[], instead:null, links:[]};
+    if(real.length < 2 && /(^|\.)(a\.co|amzn\.to|amzn\.com)$/.test(host)) return {verdict:"unknown", headline:"Amazon hides the product in this link.", reasons:["Tap below to see its price history yourself.", "For our verdict, paste it again with the product's name."], instead:null, links:[{t:"See its Amazon price history", u:"https://camelcamelcamel.com/search?sq=" + encodeURIComponent((raw.match(/https?:\/\/\S+/) || [""])[0])}]};
     if(real.length < 2) return {verdict:"unknown", headline:"Can't tell from this link. The full check will open it.", reasons:[], instead:null, links:[]};
 
     // 1. Is it something tracked on this page?
