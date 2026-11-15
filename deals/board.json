@@ -1,6 +1,26 @@
 {
- "updated": "2026-11-14T18:58:00-05:00",
+ "updated": "2026-11-14T20:11:55-05:00",
  "items": [
+  {
+   "id": "rD456xM",
+   "pasted": "https://www.walmart.com/ip/3426847139",
+   "link": "https://www.walmart.com/ip/3426847139",
+   "product": "Stanley Jr. kids toy leaf blower (RP047-SY)",
+   "store": "Walmart",
+   "image": "img/rD456xM.jpg",
+   "image_src": "https://i5.walmartimages.com/seo/STANLEY-Jr-Kids-Leaf-Blower-Battery-Operated-Toy-Leaf-Blower-Kids-Fun-Pretend-Play-Tool-Outdoor-Adventures-Safe-Realistic-Design-Perfect-Gift-Little_19f5373e-8ffc-4d1c-9c0e-81069fe18d08.d9c70f6cd1e7d7db53019bf4b57ad9a1.jpeg",
+   "price": 23.99,
+   "was": 29.99,
+   "verdict": "buy",
+   "headline": "Fair price. $23.99 is the cheapest we found today.",
+   "reasons": [
+    "$26.99 to $33.99 at three other stores today.",
+    "No price history found, so can't call it a year low."
+   ],
+   "instead": null,
+   "instead_link": null,
+   "checked": "2026-11-14T20:11:55-05:00"
+  },
   {
    "id": "VpeLa5M",
    "pasted": "https://www.walmart.com/ip/18200554428",
@@ -68,10 +88,5 @@
    "quiet": true
   }
  ],
- "claimed": [
-  {
-   "id": "rD456xM",
-   "at": "2026-11-14T20:04:41-05:00"
-  }
- ]
+ "claimed": []
 }
