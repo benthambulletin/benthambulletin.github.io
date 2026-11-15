@@ -108,6 +108,17 @@
    "quiet": true
   }
  ],
- "claimed": [],
+ "claimed": [
+  {
+   "id": "e5JMzgQ",
+   "link": null,
+   "at": "2026-11-14T21:49:40-05:00"
+  },
+  {
+   "id": "5X7bOB6",
+   "link": "https://www.samsclub.com/ip/20080772540",
+   "at": "2026-11-14T21:49:40-05:00"
+  }
+ ],
  "queued": []
 }
