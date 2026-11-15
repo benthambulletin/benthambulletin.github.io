@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T20:12:07Z",
+ "updated": "2026-11-15T20:14:09Z",
  "week": 10,
  "games": {
   "1": {
@@ -15,8 +15,8 @@
    "state": "in",
    "away": 10,
    "home": 7,
-   "detail": "2:30 - 3rd",
-   "line": "Panthers 10–7 · 2:30 - 3rd"
+   "detail": "2:18 - 3rd",
+   "line": "Panthers 10–7 · 2:18 - 3rd"
   },
   "3": {
    "state": "in",
@@ -29,8 +29,8 @@
    "state": "in",
    "away": 17,
    "home": 17,
-   "detail": "3:32 - 3rd",
-   "line": "Tied 17–17 · 3:32 - 3rd"
+   "detail": "1:41 - 3rd",
+   "line": "Tied 17–17 · 1:41 - 3rd"
   },
   "5": {
    "state": "in",
@@ -43,22 +43,22 @@
    "state": "in",
    "away": 21,
    "home": 3,
-   "detail": "1:53 - 3rd",
-   "line": "Chiefs 21–3 · 1:53 - 3rd"
+   "detail": "15:00 - 4th",
+   "line": "Chiefs 21–3 · 15:00 - 4th"
   },
   "7": {
    "state": "in",
    "away": 16,
    "home": 21,
-   "detail": "6:48 - 3rd",
-   "line": "Colts 21–16 · 6:48 - 3rd"
+   "detail": "5:00 - 3rd",
+   "line": "Colts 21–16 · 5:00 - 3rd"
   },
   "8": {
    "state": "in",
    "away": 20,
    "home": 7,
-   "detail": "3:57 - 3rd",
-   "line": "Vikings 20–7 · 3:57 - 3rd"
+   "detail": "2:32 - 3rd",
+   "line": "Vikings 20–7 · 2:32 - 3rd"
   },
   "9": {
    "state": "pre",
