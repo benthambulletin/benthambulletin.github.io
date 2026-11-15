@@ -118,6 +118,15 @@ footer p{margin:0;max-width:65ch}
 .missed{margin:0;font-size:14px;color:var(--muted);background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:8px 12px}
 .list .tag.stale .vb{filter:grayscale(1);opacity:.8}
 .list .tag{overflow:hidden}
+.day{border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.day summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;font-weight:700;min-height:44px}
+.day summary::-webkit-details-marker{display:none}
+.day summary span{font-size:13px;font-weight:400;color:var(--muted);margin-left:auto}
+.day summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .15s;flex:none;margin:-4px 4px 0 0}
+.day[open] summary::after{transform:rotate(-135deg);margin-top:4px}
+.day[open] summary{border-bottom:1px solid var(--line)}
+.day > .list{padding:10px}
+@media (prefers-reduced-motion: reduce){.day summary::after{transition:none}}
 .vb{margin:-14px -14px 2px;padding:12px 14px;display:flex;align-items:center;gap:12px;color:#fff}
 .vb .e{font-size:34px;line-height:1}
 .vb .t{font-weight:900;font-size:24px;letter-spacing:.03em;text-transform:uppercase;line-height:1}
@@ -453,6 +462,9 @@ footer p{margin:0;max-width:65ch}
   try{ mine = JSON.parse(localStorage.getItem("sifter-mine") || "[]").filter(function(m){ return m && (m.link || m.shot) && Date.now() - m.t < 864e5; }); }catch(e){}
   function saveMine(){ try{ localStorage.setItem("sifter-mine", JSON.stringify(mine.slice(0, 20))); }catch(e){} }
 
+  var openDays = {};
+  function dayKey(iso){ var d = new Date(iso); if(isNaN(d)) return "unknown"; try{ return d.toLocaleDateString("en-CA", {timeZone:"America/New_York"}); }catch(e){ return d.toDateString(); } }
+  function dayName(iso){ var d = new Date(iso); if(isNaN(d)) return "Earlier"; try{ return d.toLocaleDateString("en-US", {timeZone:"America/New_York", weekday:"long", month:"short", day:"numeric"}); }catch(e){ return d.toDateString(); } }
   function boardCard(x){
     var v = LABEL[x.verdict] ? x.verdict : "unknown";
     var a = el("article", "tag " + (v === "unknown" || v === "pending" ? "wait" : v) + (v === "pending" ? " pending" : ""));
@@ -526,7 +538,19 @@ footer p{margin:0;max-width:65ch}
     });
     var ms = document.getElementById("missed");
     if(missed){ ms.hidden = false; ms.textContent = "Couldn't read " + missed + (missed === 1 ? " paste" : " pastes") + " in the last day. Try again with a screenshot that shows the name and price."; } else ms.hidden = true;
-    board.forEach(function(x){ list.appendChild(boardCard(x)); });
+    /* Newest day stays open; each older day folds into its own drop-down. */
+    var days = [], byDay = {};
+    board.forEach(function(x){ var k = dayKey(x.checked); if(!byDay[k]){ byDay[k] = []; days.push(k); } byDay[k].push(x); });
+    days.forEach(function(k, i){
+      if(i === 0){ byDay[k].forEach(function(x){ list.appendChild(boardCard(x)); }); return; }
+      var d = el("details", "day"); d.open = !!openDays[k];
+      d.addEventListener("toggle", function(){ openDays[k] = d.open; });
+      var n = byDay[k].length, sm = el("summary", null, dayName(byDay[k][0].checked));
+      sm.appendChild(el("span", null, n + (n === 1 ? " deal" : " deals")));
+      d.appendChild(sm);
+      var box = el("div", "list"); byDay[k].forEach(function(x){ box.appendChild(boardCard(x)); }); d.appendChild(box);
+      list.appendChild(d);
+    });
     if(!waiting.length && !nowChecking.length && !inLine.length && !board.length) list.appendChild(el("p", "empty", "Nobody's gone yet. Paste the first one."));
     document.getElementById("board-n").textContent = board.length + (board.length === 1 ? " deal checked" : " deals checked");
   }

@@ -11,13 +11,13 @@
    "image_src": "https://i5.samsclubimages.com/asr/7d5eb990-3870-48ce-8ccb-29ffe9b40e3e.2c483de534ad20d658b7c4e814b074e1.jpeg",
    "price": 79.98,
    "was": 99.98,
-   "verdict": "buy",
-   "headline": "Fair price. $79.98 is the cheapest we found, if you have a membership.",
+   "verdict": "wait",
+   "headline": "Wait. It was $69.98 at Sam's Club last weekend, $10 less.",
    "reasons": [
-    "$118.88 and up at the other sellers we found.",
-    "No price history or reviews found, so can't call it a low."
+    "$69.98 in the Nov. 6-8 doorbuster sale; $79.98 now.",
+    "4.5 stars, but only 13 ratings, and a no-name brand."
    ],
-   "instead": null,
+   "instead": "Wait for $69.98 again; Sam's Club's Black Friday sale runs Nov. 26-29.",
    "instead_link": null,
    "checked": "2026-11-14T21:56:22-05:00"
   },
@@ -32,10 +32,10 @@
    "price": 399.99,
    "was": 479.46,
    "verdict": "buy",
-   "headline": "Real discount on a basic laptop. Lowest price we found this year.",
+   "headline": "Fair price on a basic 8GB laptop, but get the 512GB version.",
    "reasons": [
-    "$419.99 in October and $439.99 in August, per one deal tracker.",
-    "8GB of memory: fine for web and email, not much more."
+    "$399.99 is its Amazon low since August, per one deal tracker.",
+    "512GB version is also $399.99 on Amazon; skip the 256GB one."
    ],
    "instead": null,
    "instead_link": null,
@@ -74,7 +74,7 @@
    "verdict": "buy",
    "headline": "Fair price. $23.99 is the cheapest we found today.",
    "reasons": [
-    "$26.99 to $33.99 at three other stores today.",
+    "$26.99 at CPO Outlets, $29.99 on Stanley Jr.'s own site.",
     "No price history found, so can't call it a year low."
    ],
    "instead": null,
@@ -92,9 +92,9 @@
    "price": 298,
    "was": 349.99,
    "verdict": "buy",
-   "headline": "Real deal. $298 is the lowest this TV has been.",
+   "headline": "Real deal. $298 ties the lowest this TV has been.",
    "reasons": [
-    "$448 in April and $348 all summer at Walmart.",
+    "$448 regular price; $348 at Walmart in July.",
     "Entry-level Samsung: 60Hz, fine for streaming, not a showpiece."
    ],
    "instead": null,
@@ -112,7 +112,7 @@
    "verdict": "shit",
    "headline": "The $210 off isn't real. It's a $300 truck selling for $290.",
    "reasons": [
-    "Same truck, same seller, is $300 to $310 on other Walmart pages.",
+    "Same truck is $306.79 to $309.99 on two other Walmart pages.",
     "Only 12 ratings, and no price history to check."
    ],
    "instead": "Funride 4WD 24V dump truck: twice the motor power, $232.99 in black.",
