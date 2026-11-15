@@ -15117,12 +15117,38 @@
           "kickoff": "2026-11-15T21:25:00Z",
           "when": "Sun 4:25 PM",
           "tv": "FOX",
-          "status": "sealed",
+          "status": "live",
           "fav": "49ers",
           "line": "49ers −3.5",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "49ers": [
+              "Devin",
+              "Garret",
+              "Thom",
+              "Mike Sombloski",
+              "Nate V",
+              "B-rad",
+              "Leah",
+              "Tom",
+              "Ariel",
+              "Wendy",
+              "Mrs. Sombloski",
+              "Kaylani & Luka",
+              "Ryan Holovics",
+              "Andy R",
+              "Derek",
+              "Arod",
+              "Walczyk",
+              "Melissa",
+              "Josh",
+              "Claude"
+            ],
+            "Cowboys": [
+              "Dan"
+            ]
+          }
         },
         {
           "away": "Steelers",
@@ -15172,7 +15198,8 @@
             "7": "Dolphins",
             "8": "Vikings",
             "9": "Rams",
-            "10": "Raiders"
+            "10": "Raiders",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T18:01:22+00:00",
           "firstAt": "2026-11-12T18:01:22+00:00",
@@ -15209,7 +15236,8 @@
             "7": "Colts",
             "8": "Vikings",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-13T01:09:31+00:00",
           "firstAt": "2026-11-13T01:09:31+00:00",
@@ -15250,14 +15278,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-10T13:36:41+00:00",
           "firstAt": "2026-11-10T13:36:41+00:00",
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15282,14 +15311,15 @@
             "7": "Dolphins",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T18:02:25+00:00",
           "firstAt": "2026-11-12T18:02:25+00:00",
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15314,14 +15344,15 @@
             "7": "Colts",
             "8": "Vikings",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T18:28:22+00:00",
           "firstAt": "2026-11-12T18:28:22+00:00",
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": 3,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15346,14 +15377,15 @@
             "7": "Dolphins",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T18:00:32+00:00",
           "firstAt": "2026-11-12T18:00:32+00:00",
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15378,14 +15410,15 @@
             "7": "Colts",
             "8": "Vikings",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-10T20:33:44+00:00",
           "firstAt": "2026-11-10T20:33:44+00:00",
           "free": true,
           "paypal": false,
           "rank": 3,
-          "delta": 3,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -15410,14 +15443,15 @@
             "7": "Colts",
             "8": "Vikings",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T18:21:00+00:00",
           "firstAt": "2026-11-12T18:21:00+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": 10,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15442,14 +15476,15 @@
             "7": "Dolphins",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T22:23:33+00:00",
           "firstAt": "2026-11-12T22:23:33+00:00",
           "free": false,
           "paypal": true,
           "rank": 8,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15474,14 +15509,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-10T11:08:30+00:00",
           "firstAt": "2026-11-10T11:08:30+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -2,
+          "delta": 0,
           "state": "house",
           "paid": false,
           "badges": []
@@ -15506,14 +15542,15 @@
             "7": "Dolphins",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "Cowboys"
           },
           "filedAt": "2026-11-12T13:10:03+00:00",
           "firstAt": "2026-11-12T13:10:03+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15538,14 +15575,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T21:44:33+00:00",
           "firstAt": "2026-11-12T21:44:33+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15570,14 +15608,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-10T13:30:40+00:00",
           "firstAt": "2026-11-10T13:30:40+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15602,14 +15641,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T18:39:53+00:00",
           "firstAt": "2026-11-12T18:39:53+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15634,14 +15674,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Raiders"
+            "10": "Raiders",
+            "11": "49ers"
           },
           "filedAt": "2026-11-13T00:18:39+00:00",
           "firstAt": "2026-11-13T00:18:39+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -15671,14 +15712,15 @@
             "7": "Colts",
             "8": "Vikings",
             "9": "Cardinals",
-            "10": "Raiders"
+            "10": "Raiders",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T01:44:34+00:00",
           "firstAt": "2026-11-12T01:44:34+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": 10,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15703,14 +15745,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T21:22:21+00:00",
           "firstAt": "2026-11-12T21:22:21+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15735,14 +15778,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T18:03:39+00:00",
           "firstAt": "2026-11-12T18:03:39+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15767,14 +15811,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T18:21:05+00:00",
           "firstAt": "2026-11-12T18:21:05+00:00",
           "free": false,
           "paypal": false,
           "rank": 8,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -15799,14 +15844,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T22:53:38+00:00",
           "firstAt": "2026-11-12T22:53:38+00:00",
           "free": false,
           "paypal": false,
           "rank": 20,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -15836,14 +15882,15 @@
             "7": "Colts",
             "8": "Packers",
             "9": "Rams",
-            "10": "Seahawks"
+            "10": "Seahawks",
+            "11": "49ers"
           },
           "filedAt": "2026-11-12T21:22:26+00:00",
           "firstAt": "2026-11-12T21:22:26+00:00",
           "free": false,
           "paypal": true,
           "rank": 21,
-          "delta": -3,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -16191,6 +16238,14 @@
               "B-rad",
               "Melissa"
             ]
+          },
+          "11": {
+            "away": 19,
+            "home": 1,
+            "minority": "Cowboys",
+            "minorityWho": [
+              "Dan"
+            ]
           }
         },
         "upsets": 2,
@@ -16375,7 +16430,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-15T21:11:56.599781+00:00",
+  "updated": "2026-11-15T21:29:41.371375+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
