@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T18:59:03Z",
+ "updated": "2026-11-15T19:01:05Z",
  "week": 10,
  "games": {
   "1": {
@@ -13,24 +13,24 @@
   },
   "2": {
    "state": "in",
-   "away": 0,
+   "away": 6,
    "home": 0,
-   "detail": "7:17 - 2nd",
-   "line": "Tied 0–0 · 7:17 - 2nd"
+   "detail": "6:43 - 2nd",
+   "line": "Panthers 6–0 · 6:43 - 2nd"
   },
   "3": {
    "state": "in",
-   "away": 7,
+   "away": 10,
    "home": 3,
-   "detail": "7:05 - 2nd",
-   "line": "Bills 7–3 · 7:05 - 2nd"
+   "detail": "6:53 - 2nd",
+   "line": "Bills 10–3 · 6:53 - 2nd"
   },
   "4": {
    "state": "in",
    "away": 17,
    "home": 3,
-   "detail": "8:14 - 2nd",
-   "line": "Texans 17–3 · 8:14 - 2nd"
+   "detail": "7:25 - 2nd",
+   "line": "Texans 17–3 · 7:25 - 2nd"
   },
   "5": {
    "state": "in",
@@ -50,15 +50,15 @@
    "state": "in",
    "away": 7,
    "home": 7,
-   "detail": "10:30 - 2nd",
-   "line": "Tied 7–7 · 10:30 - 2nd"
+   "detail": "9:54 - 2nd",
+   "line": "Tied 7–7 · 9:54 - 2nd"
   },
   "8": {
    "state": "in",
    "away": 10,
    "home": 0,
-   "detail": "10:18 - 2nd",
-   "line": "Vikings 10–0 · 10:18 - 2nd"
+   "detail": "9:26 - 2nd",
+   "line": "Vikings 10–0 · 9:26 - 2nd"
   },
   "9": {
    "state": "pre",
