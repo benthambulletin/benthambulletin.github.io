@@ -52,6 +52,9 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Sun Nov 15 (Garret, Sat 9:42 p.m.: "Want to run the survey one more day?").** Run the reader poll once more Sunday as a full item right after the lead (this replaces the planned one-line reminder): new wording, "6 a.m." and "8 a.m." written out, about when the paper is sent, link https://tally.so/r/5XjVlv, ten seconds. Say how many votes are in (three as of Saturday night; re-fetch the form) and that it is close, without naming anyone or how they voted. Say this is the last call: the poll closes Sunday night.
+- **Mon Nov 16.** Print the poll's final count (numbers only, no names) and give Garret the names and votes in chat at the 7:20 check. The delivery time does not change until Garret decides.
+
 - **Tue Dec 1 (Garret, Nov 14, 8:01 a.m.: "Hold off til 12/1/26").** Switch to the winter scheme in this edition, not earlier: shades and snowflake ornaments as listed under Design in CLAUDE.md (mock shown Nov 14). Change `tools/site.py` :root and the surround, the ornaments in the masthead and colophon, and the hardcoded chart colors. Send Garret a screenshot with the link that morning.
 
 
