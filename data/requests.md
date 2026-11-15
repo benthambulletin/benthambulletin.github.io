@@ -52,7 +52,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
-- **Mon Nov 16 (updated by Garret, Sun 9:45 a.m.: "Last call should be today. I don't want this running anymore").** The poll ended Sunday. Monday gets ONE short line with the final count (numbers only, no names; add Garret's 6 a.m. vote to the form's total), no link, no ask, and the poll never runs again after that. Give Garret the names and votes in chat at the 7:20 check. Garret says it is looking like a move to 6 a.m. and he will confirm; do NOT change the build, feed-kick, watchdog or check times until he says go.
+- **Mon Nov 16 (updated by Garret, Sun 9:45 a.m.: "Last call should be today. I don't want this running anymore").** The poll ended Sunday. Monday gets ONE short line with the final count (numbers only, no names; add Garret's 6 a.m. vote to the form's total), no link, no ask, and the poll never runs again after that. Give Garret the names and votes in chat at the 7:20 check. Garret decided Sun 9:49 a.m. ("I think it's safe to say that's the answer"): the paper moves to 6 a.m. from Monday Nov 16; times are in CLAUDE.md. Monday's count line says the paper now comes at 6.
 
 - **Tue Dec 1 (Garret, Nov 14, 8:01 a.m.: "Hold off til 12/1/26").** Switch to the winter scheme in this edition, not earlier: shades and snowflake ornaments as listed under Design in CLAUDE.md (mock shown Nov 14). Change `tools/site.py` :root and the surround, the ornaments in the masthead and colophon, and the hardcoded chart colors. Send Garret a screenshot with the link that morning.
 

@@ -560,6 +560,9 @@ def build(edition):
     newest = issues[0]
     if newest['date'] == edition['date']:
         open(os.path.join(SITE,'index.html'),'w').write(html)
+        # status files for the automatic 6 a.m. text (Garret's iPhone Shortcut reads these; Nov 15)
+        open(os.path.join(SITE,'today.txt'),'w').write(edition['date'])
+        open(os.path.join(SITE,'link.txt'),'w').write('https://benthambulletin.github.io/?%s' % edition['no'])
     # archive
     def _thumb(i):
         return f'<img src="{i["plate"]}" alt="">' if i.get('plate') else ''
