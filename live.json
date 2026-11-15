@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T21:13:06Z",
+ "updated": "2026-11-15T21:15:07Z",
  "week": 10,
  "games": {
   "1": {
@@ -30,18 +30,22 @@
    "line": "Final · Bills 31–12"
   },
   "4": {
-   "state": "in",
+   "state": "post",
    "away": 24,
    "home": 27,
-   "detail": "0:10 - 4th",
-   "line": "Browns 27–24 · 0:10 - 4th"
+   "detail": "Final",
+   "winner": "Browns",
+   "score": "27–24",
+   "line": "Final · Browns 27–24"
   },
   "5": {
-   "state": "in",
+   "state": "post",
    "away": 40,
    "home": 23,
-   "detail": "0:03 - 4th",
-   "line": "Jaguars 40–23 · 0:03 - 4th"
+   "detail": "Final",
+   "winner": "Jaguars",
+   "score": "40–23",
+   "line": "Final · Jaguars 40–23"
   },
   "6": {
    "state": "post",
@@ -56,8 +60,8 @@
    "state": "in",
    "away": 22,
    "home": 24,
-   "detail": "1:41 - 4th",
-   "line": "Colts 24–22 · 1:41 - 4th"
+   "detail": "1:18 - 4th",
+   "line": "Colts 24–22 · 1:18 - 4th"
   },
   "8": {
    "state": "post",
@@ -71,16 +75,16 @@
   "9": {
    "state": "in",
    "away": 0,
-   "home": 0,
-   "detail": "11:29 - 1st",
-   "line": "Tied 0–0 · 11:29 - 1st"
+   "home": 3,
+   "detail": "10:48 - 1st",
+   "line": "Cardinals 3–0 · 10:48 - 1st"
   },
   "10": {
    "state": "in",
    "away": 0,
    "home": 0,
-   "detail": "11:20 - 1st",
-   "line": "Tied 0–0 · 11:20 - 1st"
+   "detail": "10:36 - 1st",
+   "line": "Tied 0–0 · 10:36 - 1st"
   },
   "11": {
    "state": "pre",
