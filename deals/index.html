@@ -390,14 +390,12 @@ footer p{margin:0;max-width:65ch}
     function tick(){
       if(!fmt){ T.textContent = ""; L.textContent = "Checks run every hour, 6 a.m. to midnight Eastern."; return; }
       var p = {}; fmt.formatToParts(new Date()).forEach(function(x){ p[x.type] = parseInt(x.value, 10); });
-      var sod = (p.hour % 24) * 3600 + p.minute * 60 + p.second, left = null, overnight = false;
-      for(var H = 6; H <= 23; H++){ var s = H * 3600 + 210; if(s > sod){ left = s - sod; break; } }
-      if(left == null){ left = 86400 - sod + 6 * 3600 + 210; overnight = true; }
-      var over = p.year > 2026 || p.month === 12 || (p.month === 11 && p.day === 30 && overnight);
+      var sod = (p.hour % 24) * 3600 + p.minute * 60 + p.second, left = waitFrom(p.month, p.day, sod), overnight = left > 4000;
+      var over = p.year > 2026 || p.month === 12 || (p.month === 11 && p.day === 30 && sod >= 23 * 3600 + 2010);
       if(over){ L.textContent = "The Porta Potty is closed for the season."; T.textContent = ""; N.textContent = "The log below stays up."; ["again"].forEach(function(id){ var n = document.getElementById(id); if(n) n.hidden = true; }); var pb = document.querySelector(".pastebox"); if(pb) pb.hidden = true; return; }
       var h = Math.floor(left / 3600), m = Math.floor(left % 3600 / 60), s2 = left % 60;
       T.textContent = (h ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (s2 < 10 ? "0" : "") + s2;
-      L.textContent = (sod < 6 * 3600 + 210 || overnight) ? "No flushing overnight. Next one in" : "Next flush in";
+      L.textContent = overnight ? "No flushing overnight. Next one in" : "Next flush in";
     }
     tick(); setInterval(tick, 1000);
   })();
@@ -413,13 +411,23 @@ footer p{margin:0;max-width:65ch}
 
   /* ---------- the board ---------- */
   var board = [], mine = [], skipped = {}, quiet = {}, missed = 0;
+  /* Check times, Eastern: hourly 6:03 a.m. to 11:03 p.m.; also on the half hour Nov 25-30; also midnight to 5 a.m. on Nov 27. */
+  function slotsFor(mo, d){
+    var a = [], H;
+    if(mo === 11 && d === 27) for(H = 0; H <= 5; H++) a.push(H * 3600 + 210);
+    for(H = 6; H <= 23; H++){ a.push(H * 3600 + 210); if(mo === 11 && d >= 25 && d <= 30) a.push(H * 3600 + 2010); }
+    return a;
+  }
+  function waitFrom(mo, d, sod){
+    var a = slotsFor(mo, d);
+    for(var i = 0; i < a.length; i++) if(a[i] > sod) return a[i] - sod;
+    return 86400 - sod + slotsFor(mo, d + 1)[0];
+  }
   function eta(t){
     try{
-      var f = new Intl.DateTimeFormat("en-US", {timeZone:"America/New_York", hour12:false, hour:"numeric", minute:"numeric", second:"numeric"}), q = {};
+      var f = new Intl.DateTimeFormat("en-US", {timeZone:"America/New_York", hour12:false, month:"numeric", day:"numeric", hour:"numeric", minute:"numeric", second:"numeric"}), q = {};
       f.formatToParts(new Date(t)).forEach(function(x){ q[x.type] = parseInt(x.value, 10); });
-      var sod = (q.hour % 24) * 3600 + q.minute * 60 + q.second, wait = null;
-      for(var H = 6; H <= 23; H++){ var s = H * 3600 + 210; if(s > sod){ wait = s - sod; break; } }
-      if(wait == null) wait = 86400 - sod + 6 * 3600 + 210;
+      var sod = (q.hour % 24) * 3600 + q.minute * 60 + q.second, wait = waitFrom(q.month, q.day, sod);
       return new Date(t + (wait + 600) * 1000).toLocaleTimeString("en-US", {hour:"numeric", minute:"2-digit"});
     }catch(e){ return "the next check"; }
   }
