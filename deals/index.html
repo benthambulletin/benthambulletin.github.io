@@ -411,11 +411,11 @@ footer p{margin:0;max-width:65ch}
 
   /* ---------- the board ---------- */
   var board = [], mine = [], skipped = {}, quiet = {}, missed = 0, claimed = [], queued = [], skipId = {}, quietId = {};
-  /* Check times, Eastern, 6 a.m. to 11 p.m.: :03 and :48 past each hour; also :33 on Nov 25-30; also hourly midnight to 5 a.m. on Nov 27. */
+  /* Check times, Eastern, 6 a.m. to 11 p.m.: :03, :18, :33 and :48 past each hour; also hourly midnight to 5 a.m. on Nov 27. */
   function slotsFor(mo, d){
     var a = [], H;
     if(mo === 11 && d === 27) for(H = 0; H <= 5; H++) a.push(H * 3600 + 210);
-    for(H = 6; H <= 23; H++){ a.push(H * 3600 + 210); if(mo === 11 && d >= 25 && d <= 30) a.push(H * 3600 + 1980); a.push(H * 3600 + 2880); }
+    for(H = 6; H <= 23; H++){ a.push(H * 3600 + 210, H * 3600 + 1080, H * 3600 + 1980, H * 3600 + 2880); }
     return a;
   }
   function waitFrom(mo, d, sod){
