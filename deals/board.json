@@ -19,7 +19,39 @@
    ],
    "instead": "Wait for $69.98 again; Sam's Club's Black Friday sale runs Nov. 26-29.",
    "instead_link": null,
-   "checked": "2026-11-14T21:56:22-05:00"
+   "checked": "2026-11-14T21:56:22-05:00",
+   "corrected": "2026-11-14T22:08:26-05:00",
+   "reviewed": true,
+   "evidence": [
+    {
+     "what": "Sam's Club product page, $79.98, was $99.98",
+     "url": "https://www.samsclub.com/ip/20080772540",
+     "date": "2026-11-14",
+     "price": 79.98,
+     "kind": "today"
+    },
+    {
+     "what": "Sam's Club doorbuster Nov. 6-8, $69.98",
+     "url": "https://thefreebieguy.com/sams-club-weekend-doorbusters/",
+     "date": "2026-11-06",
+     "price": 69.98,
+     "kind": "history"
+    },
+    {
+     "what": "Same doorbuster, $30 off through Nov. 8",
+     "url": "https://www.freestufffinder.com/sams-club-doorbusters/",
+     "date": "2026-11-07",
+     "price": 69.98,
+     "kind": "history"
+    },
+    {
+     "what": "4.5 stars from 13 ratings on the store page",
+     "url": "https://www.samsclub.com/ip/20080772540",
+     "date": "2026-11-14",
+     "price": null,
+     "kind": "product"
+    }
+   ]
   },
   {
    "id": "e5JMzgQ",
@@ -39,7 +71,38 @@
    ],
    "instead": null,
    "instead_link": null,
-   "checked": "2026-11-14T21:55:22-05:00"
+   "checked": "2026-11-14T21:55:22-05:00",
+   "reviewed": true,
+   "evidence": [
+    {
+     "what": "Amazon price, from the shopper's screenshot",
+     "url": null,
+     "date": "2026-11-14",
+     "price": 399.99,
+     "kind": "today"
+    },
+    {
+     "what": "Amazon Prime Big Deal price, per Dealigg",
+     "url": "https://www.dealigg.com/story-15-6-Dell-FHD-Laptop-Core-3-100U-8GB-RAM-256GB-SSD-LDC15250-3758BLK-PUS",
+     "date": "2026-10-06",
+     "price": 419.99,
+     "kind": "history"
+    },
+    {
+     "what": "Amazon price in August, per Dealigg",
+     "url": "https://www.dealigg.com/story-15-6-Dell-FHD-Laptop-Core-3-100U-8GB-RAM-256GB-SSD-LDC15250-3758BLK-PUS",
+     "date": "2026-08-22",
+     "price": 439.99,
+     "kind": "history"
+    },
+    {
+     "what": "512GB version, Amazon, $399.99, per TechRadar",
+     "url": "https://www.techradar.com/live/news/early-black-friday-sales-us-amazon-best-buy-walmart-live",
+     "date": "2026-11-13",
+     "price": 399.99,
+     "kind": "other-store"
+    }
+   ]
   },
   {
    "id": "jeRZWKa",
@@ -71,15 +134,17 @@
    "image_src": "https://i5.walmartimages.com/seo/STANLEY-Jr-Kids-Leaf-Blower-Battery-Operated-Toy-Leaf-Blower-Kids-Fun-Pretend-Play-Tool-Outdoor-Adventures-Safe-Realistic-Design-Perfect-Gift-Little_19f5373e-8ffc-4d1c-9c0e-81069fe18d08.d9c70f6cd1e7d7db53019bf4b57ad9a1.jpeg",
    "price": 23.99,
    "was": 29.99,
-   "verdict": "buy",
-   "headline": "Fair price. $23.99 is the cheapest we found today.",
+   "verdict": "wait",
+   "headline": "Cheapest we found today, but no proof it's a low.",
    "reasons": [
     "$26.99 at CPO Outlets, $29.99 on Stanley Jr.'s own site.",
-    "No price history found, so can't call it a year low."
+    "No dated earlier price found, so can't call it a deal."
    ],
-   "instead": null,
+   "instead": "Need it now? Fine at $23.99. Otherwise check again Black Friday week.",
    "instead_link": null,
-   "checked": "2026-11-14T20:11:55-05:00"
+   "checked": "2026-11-14T20:11:55-05:00",
+   "corrected": "2026-11-14T22:08:26-05:00",
+   "reviewed": true
   },
   {
    "id": "VpeLa5M",
