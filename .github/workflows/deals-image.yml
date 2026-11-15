@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: deals-image
+  group: deals-image-${{ inputs.id }}
   cancel-in-progress: false
 
 jobs:
