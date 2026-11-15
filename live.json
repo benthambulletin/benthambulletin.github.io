@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T23:49:09Z",
+ "updated": "2026-11-15T23:51:11Z",
  "week": 10,
  "games": {
   "1": {
@@ -75,11 +75,13 @@
    "line": "Final · Vikings 30–10"
   },
   "9": {
-   "state": "in",
+   "state": "post",
    "away": 34,
    "home": 6,
-   "detail": "2:00 - 4th",
-   "line": "Rams 34–6 · 2:00 - 4th"
+   "detail": "Final",
+   "winner": "Rams",
+   "score": "34–6",
+   "line": "Final · Rams 34–6"
   },
   "10": {
    "state": "in",
@@ -92,8 +94,8 @@
    "state": "in",
    "away": 31,
    "home": 19,
-   "detail": "15:00 - 4th",
-   "line": "49ers 31–19 · 15:00 - 4th"
+   "detail": "12:15 - 4th",
+   "line": "49ers 31–19 · 12:15 - 4th"
   },
   "12": {
    "state": "pre",
