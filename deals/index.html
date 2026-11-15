@@ -497,7 +497,7 @@ footer p{margin:0;max-width:65ch}
     var nowChecking = claimed.filter(function(c){ var k = c.link ? key(c.link) : ""; return !(k && (done[k] || shown[k])); });
     nowChecking.forEach(function(c){
       var by = new Date(Date.parse(c.at) + 6e5).toLocaleTimeString("en-US", {hour:"numeric", minute:"2-digit"});
-      list.appendChild(boardCard({verdict:"pending", checking:true, link:c.link || "", store: c.link ? shop(c.link) : "Screenshot", product: c.link ? (nameOf("", c.link) || ("A " + shop(c.link) + " link")) : "A pasted deal", headline:"Being checked right now. The verdict shows here by about " + by + "."}));
+      list.appendChild(boardCard({verdict:"pending", checking:true, link:c.link || "", store: c.link ? shop(c.link) : "In the stall", product: c.link ? (nameOf("", c.link) || ("A " + shop(c.link) + " link")) : "A pasted deal", headline:"Being checked right now. The verdict shows here by about " + by + "."}));
     });
     var ms = document.getElementById("missed");
     if(missed){ ms.hidden = false; ms.textContent = "Couldn't read " + missed + (missed === 1 ? " paste" : " pastes") + " in the last day. Try again with a screenshot that shows the name and price."; } else ms.hidden = true;
