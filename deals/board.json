@@ -2,46 +2,6 @@
  "updated": "2026-11-14T18:58:00-05:00",
  "items": [
   {
-   "id": "VpeGQ5v",
-   "pasted": null,
-   "link": null,
-   "product": "WEN PL1326 13-inch spiral benchtop thickness planer",
-   "store": "Amazon",
-   "image": "img/VpeGQ5v.jpg",
-   "image_src": "https://wenproducts.com/cdn/shop/products/PL1326.main_856fe28a-4895-4dd6-87b6-6cf22d76ca38_700x700.jpg?v=1659717627",
-   "price": 417,
-   "was": null,
-   "verdict": "wait",
-   "headline": "Good planer, ordinary price. $417 is what it always costs.",
-   "reasons": [
-    "$418 at Walmart and Home Depot right now.",
-    "It has dropped to $397 at Amazon and Walmart before."
-   ],
-   "instead": "Hold for $397 or less. It has been there, and tool sales are coming.",
-   "instead_link": null,
-   "checked": "2026-11-14T18:58:00-05:00"
-  },
-  {
-   "id": "GeGxVgQ",
-   "pasted": "https://www.walmart.com/ip/10077903673?sid=A121862F-0EFD-48F9-8E94-798BB3D4D86E",
-   "link": "https://www.walmart.com/ip/10077903673",
-   "product": "Funride 4WD 24V 2-seater ride-on dump truck, black",
-   "store": "Walmart (sold by Funride)",
-   "image": "img/GeGxVgQ.jpg",
-   "image_src": "https://i5.walmartimages.com/seo/24V-Kids-Ride-Dump-Truck-Remote-Control-2-Seater-Powered-4-Wheeler-UTV-Toys-2x200W-Ride-Tractor-Car-w-Electric-Dump-Bed-Shovel-Bluetooth-Music-Green_900777fb-b30b-466e-8bf3-22ff23e0a529.aecab42b83ceb5a2577edfb01bce89ca.jpeg?odnHeight=200&odnWidth=200&odnBg=FFFFFF",
-   "price": 232.99,
-   "was": 459.99,
-   "verdict": "buy",
-   "headline": "Real deal, just smaller than it looks. About $30 to $45 off.",
-   "reasons": [
-    "$260 to $280 on other Walmart pages today. The $460 is made up.",
-    "Four 200W motors, four-wheel drive, 4.0 stars from 121 ratings."
-   ],
-   "instead": null,
-   "instead_link": null,
-   "checked": "2026-11-14T12:58:00-05:00"
-  },
-  {
    "id": "VpeLa5M",
    "pasted": "https://www.walmart.com/ip/18200554428?sid=C1F8BF88-2AB6-4F81-8CD5-02720A9AC29D",
    "link": "https://www.walmart.com/ip/18200554428",
@@ -95,6 +55,16 @@
   {
    "id": "QoZK9A1",
    "link": "https://a.co/d/0do9agzS"
+  },
+  {
+   "id": "VpeGQ5v",
+   "link": null,
+   "quiet": true
+  },
+  {
+   "id": "GeGxVgQ",
+   "link": "https://www.walmart.com/ip/10077903673",
+   "quiet": true
   }
  ]
 }
