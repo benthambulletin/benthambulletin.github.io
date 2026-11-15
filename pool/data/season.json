@@ -14673,7 +14673,9 @@
               "Josh",
               "Claude"
             ]
-          }
+          },
+          "live": "Lions 7–3 · 1st qtr",
+          "liveAt": "2026-11-15T15:09:39Z"
         },
         {
           "away": "Panthers",
@@ -15630,7 +15632,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-15T14:34:36.633889+00:00",
+  "updated": "2026-11-15T15:10:40.162877+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
