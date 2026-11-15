@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T20:58:54Z",
+ "updated": "2026-11-15T21:00:56Z",
  "week": 10,
  "games": {
   "1": {
@@ -22,43 +22,45 @@
    "state": "in",
    "away": 31,
    "home": 12,
-   "detail": "2:33 - 4th",
-   "line": "Bills 31–12 · 2:33 - 4th"
+   "detail": "2:30 - 4th",
+   "line": "Bills 31–12 · 2:30 - 4th"
   },
   "4": {
    "state": "in",
    "away": 24,
    "home": 20,
-   "detail": "1:49 - 4th",
-   "line": "Texans 24–20 · 1:49 - 4th"
+   "detail": "1:18 - 4th",
+   "line": "Texans 24–20 · 1:18 - 4th"
   },
   "5": {
    "state": "in",
    "away": 33,
    "home": 23,
-   "detail": "4:31 - 4th",
-   "line": "Jaguars 33–23 · 4:31 - 4th"
+   "detail": "3:05 - 4th",
+   "line": "Jaguars 33–23 · 3:05 - 4th"
   },
   "6": {
    "state": "in",
    "away": 35,
    "home": 13,
-   "detail": "3:35 - 4th",
-   "line": "Chiefs 35–13 · 3:35 - 4th"
+   "detail": "2:47 - 4th",
+   "line": "Chiefs 35–13 · 2:47 - 4th"
   },
   "7": {
    "state": "in",
    "away": 22,
    "home": 24,
-   "detail": "6:12 - 4th",
-   "line": "Colts 24–22 · 6:12 - 4th"
+   "detail": "5:03 - 4th",
+   "line": "Colts 24–22 · 5:03 - 4th"
   },
   "8": {
-   "state": "in",
+   "state": "post",
    "away": 30,
    "home": 10,
-   "detail": "0:28 - 4th",
-   "line": "Vikings 30–10 · 0:28 - 4th"
+   "detail": "Final",
+   "winner": "Vikings",
+   "score": "30–10",
+   "line": "Final · Vikings 30–10"
   },
   "9": {
    "state": "pre",
