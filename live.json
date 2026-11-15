@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T22:34:09Z",
+ "updated": "2026-11-15T22:36:11Z",
  "week": 10,
  "games": {
   "1": {
@@ -85,15 +85,15 @@
    "state": "in",
    "away": 7,
    "home": 10,
-   "detail": "Halftime",
-   "line": "Raiders 10–7 · Halftime"
+   "detail": "14:54 - 3rd",
+   "line": "Raiders 10–7 · 14:54 - 3rd"
   },
   "11": {
    "state": "in",
-   "away": 10,
+   "away": 17,
    "home": 16,
-   "detail": "4:04 - 2nd",
-   "line": "Cowboys 16–10 · 4:04 - 2nd"
+   "detail": "2:26 - 2nd",
+   "line": "49ers 17–16 · 2:26 - 2nd"
   },
   "12": {
    "state": "pre",
