@@ -51,7 +51,8 @@
      "price": null,
      "kind": "product"
     }
-   ]
+   ],
+   "target": 69.98
   },
   {
    "id": "e5JMzgQ",
@@ -122,7 +123,31 @@
    ],
    "instead": "Buy it whenever you need it; under $4 would be an actual sale.",
    "instead_link": null,
-   "checked": "2026-11-14T20:35:15-05:00"
+   "checked": "2026-11-14T20:35:15-05:00",
+   "evidence": [
+    {
+     "what": "Amazon price, from the shopper's screenshot",
+     "url": null,
+     "date": "2026-11-14",
+     "price": 4.99,
+     "kind": "today"
+    },
+    {
+     "what": "Publisher's list price, $4.99",
+     "url": "https://www.penguinrandomhouseretail.com/book/?isbn=9780593658338",
+     "date": null,
+     "price": 4.99,
+     "kind": "product"
+    },
+    {
+     "what": "Barnes & Noble, $5.24",
+     "url": null,
+     "date": "2026-11-14",
+     "price": 5.24,
+     "kind": "other-store"
+    }
+   ],
+   "reviewed": true
   },
   {
    "id": "rD456xM",
@@ -144,7 +169,30 @@
    "instead_link": null,
    "checked": "2026-11-14T20:11:55-05:00",
    "corrected": "2026-11-14T22:08:26-05:00",
-   "reviewed": true
+   "reviewed": true,
+   "evidence": [
+    {
+     "what": "Walmart product page, $23.99, was $29.99",
+     "url": "https://www.walmart.com/ip/3426847139",
+     "date": "2026-11-14",
+     "price": 23.99,
+     "kind": "today"
+    },
+    {
+     "what": "CPO Outlets, $26.99",
+     "url": null,
+     "date": "2026-11-14",
+     "price": 26.99,
+     "kind": "other-store"
+    },
+    {
+     "what": "Stanley Jr.'s own site, $29.99",
+     "url": "https://stanleyjr.com",
+     "date": "2026-11-14",
+     "price": 29.99,
+     "kind": "other-store"
+    }
+   ]
   },
   {
    "id": "VpeLa5M",
@@ -229,7 +277,38 @@
    "checked": "2026-11-14T12:08:00-05:00",
    "image": "img/QoZKzjp.jpg",
    "image_src": "https://i5.walmartimages.com/seo/East-doll-24V-Ride-Dump-Truck-Licensed-Caterpillar-24-Volt-Ride-Toy-Big-Kids-24V-Power-Ride-Ons-400W-Powerful-Wheels-Boys-Girls-2-Seater-Ride-UTV-Car_6c386c26-6caf-4763-bfc9-c5577fad75d7.bf838db986d5747215ceb208633337e5.jpeg?odnHeight=200&odnWidth=200&odnBg=FFFFFF",
-   "instead_link": "https://www.walmart.com/ip/10077903673"
+   "instead_link": "https://www.walmart.com/ip/10077903673",
+   "evidence": [
+    {
+     "what": "Walmart product page, $289.99, was $499.99",
+     "url": "https://www.walmart.com/ip/16620924202",
+     "date": "2026-11-14",
+     "price": 289.99,
+     "kind": "today"
+    },
+    {
+     "what": "Same truck, same seller, another Walmart page, $309.99",
+     "url": "https://www.walmart.com/ip/20227809427",
+     "date": "2026-11-14",
+     "price": 309.99,
+     "kind": "other-store"
+    },
+    {
+     "what": "Same truck, another brand name, Walmart, $306.79",
+     "url": "https://www.walmart.com/ip/15295573323",
+     "date": "2026-11-14",
+     "price": 306.79,
+     "kind": "other-store"
+    },
+    {
+     "what": "Funride 800W truck, Walmart, $232.99",
+     "url": "https://www.walmart.com/ip/10077903673",
+     "date": "2026-11-14",
+     "price": 232.99,
+     "kind": "other-store"
+    }
+   ],
+   "reviewed": true
   }
  ],
  "skipped": [

@@ -26,7 +26,7 @@ for i in items:
     if v not in ("buy", "wait", "shit"): e("verdict must be buy, wait or shit")
     if words(i.get("headline")) == 0 or words(i.get("headline")) > 14: e("headline must be 1 to 14 words")
     rs = i.get("reasons") or []
-    if not 1 <= len(rs) <= 2: e("needs 1 or 2 reasons")
+    if not 1 <= len(rs) <= 3: e("needs 1 to 3 reasons")
     for r in rs:
         if words(r) > 12: e(f"reason over 12 words: {r}")
     if words(i.get("instead")) > 18: e("instead over 18 words")
@@ -44,13 +44,14 @@ for i in items:
         if i.get(k) is not None and not isinstance(i[k], (int, float)): e(f"{k} must be a number or null")
     text = " ".join([str(i.get("headline") or ""), str(i.get("instead") or "")] + [str(r) for r in rs]).lower()
     if re.search(r"\b(fake|scam|scams|fraud|lie|lies|lying)\b", text): e("never call a discount fake, a scam or a lie")
+    if i.get("target") is not None and (v != "wait" or not isinstance(i["target"], (int, float)) or (isinstance(i.get("price"), (int, float)) and i["target"] >= i["price"])): e("target is for a wait, a number below today's price")
     if i.get("id") not in strict: continue
     if i.get("price") is None: e("no price: skip it instead")
     if i.get("reviewed") not in (True, "self"): e("no independent second check recorded (reviewed)")
     ev = i.get("evidence") or []
     if not 2 <= len(ev) <= 6: e("needs 2 to 6 evidence entries")
     for x in ev:
-        if x.get("kind") not in ("today", "history", "other-store", "last-year", "product"): e("evidence kind is wrong")
+        if x.get("kind") not in ("today", "history", "other-store", "last-year", "product", "sale-dates"): e("evidence kind is wrong")
         if words(x.get("what")) == 0 or words(x.get("what")) > 12: e("evidence 'what' must be 1 to 12 words")
         if x.get("url") and not str(x["url"]).startswith("http"): e("evidence url must be http(s) or null")
         if x.get("date") and not re.match(r"\d{4}-\d{2}-\d{2}$", str(x["date"])): e("evidence date must be YYYY-MM-DD")

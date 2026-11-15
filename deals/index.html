@@ -119,6 +119,14 @@ footer p{margin:0;max-width:65ch}
 .list .tag.stale .vb{filter:grayscale(1);opacity:.8}
 .list .tag{overflow:hidden}
 .meta .fixed{display:block;font-weight:700;color:var(--ink)}
+.rc{font-size:14px;color:var(--muted)}
+.rc summary{cursor:pointer;min-height:32px;display:flex;align-items:center;gap:6px;font-weight:600;list-style:none}
+.rc summary::-webkit-details-marker{display:none}
+.rc summary::before{content:"+";font-weight:800;width:14px;text-align:center}
+.rc[open] summary::before{content:"\2212"}
+.rc ul{margin:2px 0 4px;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.rc a{color:inherit;text-decoration:underline;overflow-wrap:anywhere}
+.rc li span{white-space:nowrap;opacity:.85}
 .day{border:1px solid var(--line);border-radius:14px;background:var(--card)}
 .day summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;font-weight:700;min-height:44px}
 .day summary::-webkit-details-marker{display:none}
@@ -211,7 +219,7 @@ footer p{margin:0;max-width:65ch}
   </section>
   <button class="again" id="again" type="button">Paste another deal</button>
   <div class="clock" aria-live="off"><span class="clock-l" id="clock-l">Next flush in</span><span class="clock-t" id="clock-t">--:--</span></div>
-  <p class="under" id="clock-n">Verdicts land in the log about 15 minutes after the flush. Every one gets a second, independent check first. Everyone with this page can see it.</p>
+  <p class="under" id="clock-n">Verdicts land in the log about 15 minutes after the flush. Every one gets a second, independent check first, and shows its receipts. Everyone with this page can see it.</p>
 
   <section class="checker" id="quick" hidden aria-live="polite">
     <h2>Quick sniff test</h2>
@@ -497,6 +505,18 @@ footer p{margin:0;max-width:65ch}
       var i = el("p", "instead"); i.appendChild(el("b", null, v === "shit" ? "Buy this instead" : "What to do")); i.appendChild(document.createTextNode(String(x.instead)));
       var bl = safeUrl(x.instead_link); if(bl){ var bb = el("a", "better", "See the better one"); bb.href = bl; bb.rel = "noopener nofollow"; bb.target = "_blank"; i.appendChild(bb); }
       a.appendChild(i);
+    }
+    var ev = (Array.isArray(x.evidence) ? x.evidence : []).filter(function(r){ return r && r.what; });
+    if(ev.length){
+      var rc = el("details", "rc"); rc.appendChild(el("summary", null, "Receipts (" + ev.length + ")"));
+      var rl = el("ul");
+      ev.slice(0, 6).forEach(function(r){
+        var li = el("li"), ru = safeUrl(r.url), dt = /^\d{4}-\d{2}-\d{2}$/.test(r.date || "") ? new Date(r.date + "T12:00:00").toLocaleDateString("en-US", {month:"short", day:"numeric"}) : "";
+        if(ru){ var ra = el("a", null, String(r.what)); ra.href = ru; ra.rel = "noopener nofollow"; ra.target = "_blank"; li.appendChild(ra); } else li.appendChild(document.createTextNode(String(r.what)));
+        if(dt) li.appendChild(el("span", null, " " + dt));
+        rl.appendChild(li);
+      });
+      rc.appendChild(rl); a.appendChild(rc);
     }
     var meta = el("div", "meta");
     if(x.corrected && !isNaN(Date.parse(x.corrected))){ var cf = el("span", "fixed", "Verdict changed " + when(x.corrected) + " after a second check."); meta.appendChild(cf); }
