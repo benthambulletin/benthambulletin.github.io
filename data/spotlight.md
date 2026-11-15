@@ -8,7 +8,8 @@ Upcoming Sunday Spotlight topics, in order. Garret approves, strikes or reorders
 - [x] **Sun Oct 25 — Spotting an AI scam.** (No. 123) Look-alike shopping sites, voice-clone calls, fake texts: what they look like now and the three checks that catch them. (Birthday edition; keep it short.)
 - [x] **Sun Nov 1 — Why we change the clocks tonight.** (No. 130: ran as the month in migraine per the monthly rule, with a short clocks note.) Daylight saving ends at 2 a.m.; where it came from, whether it saves anything, and where the push to end it stands.
 - [x] **Sun Nov 8 — How the NASCAR Chase ends.** (No. 137) Finale day at Homestead: the format, the math, who can still win.
-- [ ] **Sun Nov 15 — This winter's heating bill.** National Grid and NYSEG rates, what's changed, and the cheapest things that actually lower a bill.
+- [ ] **Sun Nov 22 — What Thanksgiving dinner costs this year, and why.** Named in No. 144's Week Ahead. The Farm Bureau's annual survey, grocery prices, turkey supply; what's cheaper and what isn't.
+- [x] **Sun Nov 15 — This winter's heating bill.** (No. 144) National Grid and NYSEG rates, what's changed, and the cheapest things that actually lower a bill.
 
 ## Done
 
