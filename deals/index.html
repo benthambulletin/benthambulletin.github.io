@@ -410,7 +410,7 @@ footer p{margin:0;max-width:65ch}
   });
 
   /* ---------- the board ---------- */
-  var board = [], mine = [], skipped = {}, quiet = {}, missed = 0, claimed = [];
+  var board = [], mine = [], skipped = {}, quiet = {}, missed = 0, claimed = [], skipId = {}, quietId = {};
   /* Check times, Eastern, 6 a.m. to 11 p.m.: :03 and :48 past each hour; also :33 on Nov 25-30; also hourly midnight to 5 a.m. on Nov 27. */
   function slotsFor(mo, d){
     var a = [], H;
@@ -431,6 +431,13 @@ footer p{margin:0;max-width:65ch}
       return new Date(t + (wait + (add == null ? 600 : add)) * 1000).toLocaleTimeString("en-US", {hour:"numeric", minute:"2-digit"});
     }catch(e){ return "the next check"; }
   }
+  function dueMs(t){
+    try{
+      var f = new Intl.DateTimeFormat("en-US", {timeZone:"America/New_York", hour12:false, month:"numeric", day:"numeric", hour:"numeric", minute:"numeric", second:"numeric"}), q = {};
+      f.formatToParts(new Date(t)).forEach(function(x){ q[x.type] = parseInt(x.value, 10); });
+      return t + (waitFrom(q.month, q.day, (q.hour % 24) * 3600 + q.minute * 60 + q.second) + 600) * 1000;
+    }catch(e){ return t + 4200e3; }
+  }
   /* What to call a paste before it has been checked: the words pasted with the link, else the words in the link, else the store. */
   function shop(u){ if(/(^|\.)(a\.co|amzn\.to|amzn\.com)$/.test(host(u))) return "Amazon"; var h = host(u).replace(/^www\./, "").split("."); var s = h.length > 1 ? h[h.length - 2] : (h[0] || ""); return s ? s.charAt(0).toUpperCase() + s.slice(1) : "store"; }
   function nameOf(text, u){
@@ -443,7 +450,7 @@ footer p{margin:0;max-width:65ch}
     }
     return best.length >= 8 ? best.slice(0, 80) : "";
   }
-  try{ mine = JSON.parse(localStorage.getItem("sifter-mine") || "[]").filter(function(m){ return m && m.link && Date.now() - m.t < 864e5; }); }catch(e){}
+  try{ mine = JSON.parse(localStorage.getItem("sifter-mine") || "[]").filter(function(m){ return m && (m.link || m.shot) && Date.now() - m.t < 864e5; }); }catch(e){}
   function saveMine(){ try{ localStorage.setItem("sifter-mine", JSON.stringify(mine.slice(0, 20))); }catch(e){} }
 
   function boardCard(x){
@@ -489,12 +496,23 @@ footer p{margin:0;max-width:65ch}
   function renderBoard(){
     var list = document.getElementById("board"); list.textContent = "";
     var done = {}; board.forEach(function(x){ done[key(x.link)] = 1; if(x.pasted) done[key(x.pasted)] = 1; });
-    var waiting = mine.filter(function(m){ return /^https?:\/\//i.test(m.link || "") && !done[key(m.link)] && !quiet[key(m.link)]; });
-    waiting.forEach(function(m){ var sk = skipped[key(m.link)], cl = claimed.filter(function(c){ return c.link && key(c.link) === key(m.link); })[0]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", checking: !sk && !!cl, link:m.link, headline: sk ? "Yours. We couldn't check this one. Paste it again with a screenshot of the item." : "Only you see this for now. It gets checked at the " + eta(m.t, 0) + " flush, and the verdict shows here by about " + eta(m.t) + ".", product: m.name || nameOf("", m.link) || ("Your " + shop(m.link) + " link"), store: shop(m.link)})); });
+    var doneId = {}; board.forEach(function(x){ if(x.id) doneId[x.id] = 1; });
+    var waiting = mine.filter(function(m){
+      if(m.sid && (doneId[m.sid] || quietId[m.sid])) return false;
+      if(m.shot) return (m.sid && skipId[m.sid]) || Date.now() < dueMs(m.t) + 30 * 6e4;
+      return /^https?:\/\//i.test(m.link || "") && !done[key(m.link)] && !quiet[key(m.link)];
+    });
+    waiting.forEach(function(m){
+      var sk = m.shot ? (m.sid && skipId[m.sid]) : skipped[key(m.link)];
+      var cl = claimed.filter(function(c){ return (m.sid && c.id === m.sid) || (m.link && c.link && key(c.link) === key(m.link)); })[0];
+      list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", checking: !sk && !!cl, link: m.link || "",
+        headline: sk ? "Yours. We couldn't check this one. Paste it again with a screenshot that shows the name and price." : "Only you see this for now. It gets checked at the " + eta(m.t, 0) + " flush, and the verdict shows here by about " + eta(m.t) + ".",
+        product: m.shot ? "Your screenshot" : (m.name || nameOf("", m.link) || ("Your " + shop(m.link) + " link")), store: m.shot ? "Screenshot" : shop(m.link)}));
+    });
     /* Pastes a check has picked up: everyone sees these, so the queue is visible on any phone. */
-    var mineKeys = {}, shown = {}; mine.forEach(function(m){ mineKeys[key(m.link)] = 1; });
-    waiting.forEach(function(m){ shown[key(m.link)] = 1; });
-    var nowChecking = claimed.filter(function(c){ var k = c.link ? key(c.link) : ""; return !(k && (done[k] || shown[k])); });
+    var shown = {}, shownId = {};
+    waiting.forEach(function(m){ if(m.link) shown[key(m.link)] = 1; if(m.sid) shownId[m.sid] = 1; });
+    var nowChecking = claimed.filter(function(c){ var k = c.link ? key(c.link) : ""; return !(k && (done[k] || shown[k])) && !(c.id && (doneId[c.id] || shownId[c.id])); });
     nowChecking.forEach(function(c){
       var by = new Date(Date.parse(c.at) + 6e5).toLocaleTimeString("en-US", {hour:"numeric", minute:"2-digit"});
       list.appendChild(boardCard({verdict:"pending", checking:true, link:c.link || "", store: c.link ? shop(c.link) : "In the stall", product: c.link ? (nameOf("", c.link) || ("A " + shop(c.link) + " link")) : "A pasted deal", headline:"Being checked right now. The verdict shows here by about " + by + "."}));
@@ -507,7 +525,7 @@ footer p{margin:0;max-width:65ch}
   }
   function loadBoard(){
     fetch("board.json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
-      if(j && Array.isArray(j.skipped)){ skipped = {}; quiet = {}; missed = 0; j.skipped.forEach(function(s){ if(!s) return; if(!s.quiet && s.at && Date.now() - Date.parse(s.at) < 864e5) missed++; if(s.link){ if(s.quiet) quiet[key(s.link)] = 1; else skipped[key(s.link)] = 1; } }); }
+      if(j && Array.isArray(j.skipped)){ skipped = {}; quiet = {}; skipId = {}; quietId = {}; missed = 0; j.skipped.forEach(function(s){ if(!s) return; if(s.id){ if(s.quiet) quietId[s.id] = 1; else skipId[s.id] = 1; } if(!s.quiet && s.at && Date.now() - Date.parse(s.at) < 864e5) missed++; if(s.link){ if(s.quiet) quiet[key(s.link)] = 1; else skipped[key(s.link)] = 1; } }); }
       claimed = (j && Array.isArray(j.claimed) ? j.claimed : []).filter(function(c){ return c && c.at && Date.now() - Date.parse(c.at) < 40 * 6e4 && (!c.link || /^https?:\/\//i.test(c.link)); });
       if(j && Array.isArray(j.items)) board = j.items.slice().sort(function(a, b){ return (Date.parse(b.checked) || 0) - (Date.parse(a.checked) || 0); });
       renderBoard();
@@ -518,20 +536,22 @@ footer p{margin:0;max-width:65ch}
   /* ---------- a link was submitted in the red box ---------- */
   window.addEventListener("message", function(e){
     if(e.origin !== "https://tally.so" || typeof e.data !== "string" || e.data.indexOf("Tally.FormSubmitted") < 0) return;
-    var link = "";
+    var link = "", sid = "";
     try{
       var p = JSON.parse(e.data).payload || {};
+      sid = String(p.id || p.responseId || p.submissionId || "").slice(0, 40);
       (p.fields || []).forEach(function(f){ var a = f && f.answer; var v = a && (a.value != null ? a.value : a.raw); if(!link && typeof v === "string") link = v; });
     }catch(err){}
     link = link.trim().slice(0, 2000);
     var url = (link.match(/https?:\/\/\S+/) || [])[0], hasShot = false;
     try{ (JSON.parse(e.data).payload.fields || []).forEach(function(f){ var a = f && f.answer, v = a && (a.value != null ? a.value : a.raw); if(v && typeof v === "object") hasShot = true; }); }catch(err){}
     if(url){
-      mine.unshift({link: url, t: Date.now(), name: nameOf(link, url)}); saveMine(); renderBoard();
+      mine.unshift({link: url, t: Date.now(), name: nameOf(link, url), sid: sid}); saveMine(); renderBoard();
       var jr = judge(link, null, null);
       if(jr.verdict === "buy" || jr.verdict === "wait" || jr.verdict === "shit" || /^Amazon hides/.test(jr.headline)) showQuick(jr);
       else showQuick({verdict:"pending", headline:"Got it. Your verdict lands in the log by about " + eta(Date.now()) + ".", reasons:[], instead:null, links:[]});
     } else if(hasShot || !link){
+      if(hasShot){ mine.unshift({shot: true, t: Date.now(), sid: sid}); saveMine(); renderBoard(); }
       showQuick({verdict:"pending", headline:"Got it. Your verdict lands in the log by about " + eta(Date.now()) + ".", reasons:[], instead:null, links:[]});
     } else {
       showQuick({verdict:"unknown", headline:"No link in that paste. Copy the link itself and paste again.", reasons:[], instead:null, links:[]});
