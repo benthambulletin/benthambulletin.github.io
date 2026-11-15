@@ -233,7 +233,7 @@ footer p{margin:0;max-width:65ch}
 (function(){
   var DATA = window.DEALS || {deals:[]};
   var deals = Array.isArray(DATA.deals) ? DATA.deals : [];
-  var LABEL = {buy:"Legit deal", wait:"Wait", shit:"\uD83D\uDCA9 Shit deal", unknown:"Couldn't tell", pending:"In line"};
+  var LABEL = {buy:"Legit deal", wait:"Wait", shit:"\uD83D\uDCA9 Shit deal", unknown:"Couldn't tell", pending:"Waiting to be checked"};
   var SNIFF = {buy:"Smells fine", wait:"Smells iffy", shit:"Smells like shit", unknown:"No smell yet", pending:"In line"};
 
   function el(tag, cls, text){ var n = document.createElement(tag); if(cls) n.className = cls; if(text != null) n.textContent = text; return n; }
@@ -423,13 +423,25 @@ footer p{margin:0;max-width:65ch}
     for(var i = 0; i < a.length; i++) if(a[i] > sod) return a[i] - sod;
     return 86400 - sod + slotsFor(mo, d + 1)[0];
   }
-  function eta(t){
+  function eta(t, add){
     try{
       var f = new Intl.DateTimeFormat("en-US", {timeZone:"America/New_York", hour12:false, month:"numeric", day:"numeric", hour:"numeric", minute:"numeric", second:"numeric"}), q = {};
       f.formatToParts(new Date(t)).forEach(function(x){ q[x.type] = parseInt(x.value, 10); });
       var sod = (q.hour % 24) * 3600 + q.minute * 60 + q.second, wait = waitFrom(q.month, q.day, sod);
-      return new Date(t + (wait + 600) * 1000).toLocaleTimeString("en-US", {hour:"numeric", minute:"2-digit"});
+      return new Date(t + (wait + (add == null ? 600 : add)) * 1000).toLocaleTimeString("en-US", {hour:"numeric", minute:"2-digit"});
     }catch(e){ return "the next check"; }
+  }
+  /* What to call a paste before it has been checked: the words pasted with the link, else the words in the link, else the store. */
+  function shop(u){ var h = host(u).replace(/^www\./, "").split("."); var s = h.length > 1 ? h[h.length - 2] : (h[0] || ""); return s ? s.charAt(0).toUpperCase() + s.slice(1) : "store"; }
+  function nameOf(text, u){
+    var best = "";
+    String(text || "").replace(/https?:\/\/\S+/g, "\n").split(/\n/).forEach(function(l){ l = l.replace(/\s+/g, " ").trim(); if(l.length > best.length) best = l; });
+    if(best.length < 8){
+      best = "";
+      try{ new URL(u).pathname.split("/").forEach(function(s){ s = decodeURIComponent(s); if(/[a-z]/i.test(s) && /-/.test(s) && s.length > best.length) best = s; }); }catch(e){}
+      best = best.replace(/[-_]+/g, " ").trim();
+    }
+    return best.length >= 8 ? best.slice(0, 80) : "";
   }
   try{ mine = JSON.parse(localStorage.getItem("sifter-mine") || "[]").filter(function(m){ return m && m.link && Date.now() - m.t < 864e5; }); }catch(e){}
   function saveMine(){ try{ localStorage.setItem("sifter-mine", JSON.stringify(mine.slice(0, 20))); }catch(e){} }
@@ -478,7 +490,7 @@ footer p{margin:0;max-width:65ch}
     var list = document.getElementById("board"); list.textContent = "";
     var done = {}; board.forEach(function(x){ done[key(x.link)] = 1; if(x.pasted) done[key(x.pasted)] = 1; });
     var waiting = mine.filter(function(m){ return /^https?:\/\//i.test(m.link || "") && !done[key(m.link)] && !quiet[key(m.link)]; });
-    waiting.forEach(function(m){ var sk = skipped[key(m.link)]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", link:m.link, headline: sk ? "Yours. We couldn't check this one. Paste it again with a screenshot of the item." : "Yours. In line. Verdict by about " + eta(m.t) + "."})); });
+    waiting.forEach(function(m){ var sk = skipped[key(m.link)]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", link:m.link, headline: sk ? "Yours. We couldn't check this one. Paste it again with a screenshot of the item." : "Only you see this for now. It gets checked at the " + eta(m.t, 0) + " flush, and the verdict shows here by about " + eta(m.t) + ".", product: m.name || nameOf("", m.link) || ("Your " + shop(m.link) + " link"), store: shop(m.link)})); });
     var ms = document.getElementById("missed");
     if(missed){ ms.hidden = false; ms.textContent = "Couldn't read " + missed + (missed === 1 ? " paste" : " pastes") + " in the last day. Try again with a screenshot that shows the name and price."; } else ms.hidden = true;
     board.forEach(function(x){ list.appendChild(boardCard(x)); });
@@ -506,7 +518,7 @@ footer p{margin:0;max-width:65ch}
     var url = (link.match(/https?:\/\/\S+/) || [])[0], hasShot = false;
     try{ (JSON.parse(e.data).payload.fields || []).forEach(function(f){ var a = f && f.answer, v = a && (a.value != null ? a.value : a.raw); if(v && typeof v === "object") hasShot = true; }); }catch(err){}
     if(url){
-      mine.unshift({link: url, t: Date.now()}); saveMine(); renderBoard();
+      mine.unshift({link: url, t: Date.now(), name: nameOf(link, url)}); saveMine(); renderBoard();
       var jr = judge(link, null, null);
       if(jr.verdict === "buy" || jr.verdict === "wait" || jr.verdict === "shit" || /^Amazon hides/.test(jr.headline)) showQuick(jr);
       else showQuick({verdict:"pending", headline:"Got it. Your verdict lands in the log by about " + eta(Date.now()) + ".", reasons:[], instead:null, links:[]});
