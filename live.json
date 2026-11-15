@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T20:08:04Z",
+ "updated": "2026-11-15T20:10:06Z",
  "week": 10,
  "games": {
   "1": {
@@ -13,52 +13,52 @@
   },
   "2": {
    "state": "in",
-   "away": 7,
+   "away": 10,
    "home": 7,
-   "detail": "3:14 - 3rd",
-   "line": "Tied 7–7 · 3:14 - 3rd"
+   "detail": "2:30 - 3rd",
+   "line": "Panthers 10–7 · 2:30 - 3rd"
   },
   "3": {
    "state": "in",
    "away": 17,
    "home": 9,
-   "detail": "7:14 - 3rd",
-   "line": "Bills 17–9 · 7:14 - 3rd"
+   "detail": "5:09 - 3rd",
+   "line": "Bills 17–9 · 5:09 - 3rd"
   },
   "4": {
    "state": "in",
    "away": 17,
    "home": 17,
-   "detail": "6:19 - 3rd",
-   "line": "Tied 17–17 · 6:19 - 3rd"
+   "detail": "5:03 - 3rd",
+   "line": "Tied 17–17 · 5:03 - 3rd"
   },
   "5": {
    "state": "in",
    "away": 16,
    "home": 13,
-   "detail": "8:56 - 3rd",
-   "line": "Jaguars 16–13 · 8:56 - 3rd"
+   "detail": "7:18 - 3rd",
+   "line": "Jaguars 16–13 · 7:18 - 3rd"
   },
   "6": {
    "state": "in",
    "away": 21,
    "home": 3,
-   "detail": "5:02 - 3rd",
-   "line": "Chiefs 21–3 · 5:02 - 3rd"
+   "detail": "3:32 - 3rd",
+   "line": "Chiefs 21–3 · 3:32 - 3rd"
   },
   "7": {
    "state": "in",
    "away": 16,
    "home": 21,
-   "detail": "8:52 - 3rd",
-   "line": "Colts 21–16 · 8:52 - 3rd"
+   "detail": "8:42 - 3rd",
+   "line": "Colts 21–16 · 8:42 - 3rd"
   },
   "8": {
    "state": "in",
    "away": 20,
    "home": 7,
-   "detail": "5:27 - 3rd",
-   "line": "Vikings 20–7 · 5:27 - 3rd"
+   "detail": "3:57 - 3rd",
+   "line": "Vikings 20–7 · 3:57 - 3rd"
   },
   "9": {
    "state": "pre",
