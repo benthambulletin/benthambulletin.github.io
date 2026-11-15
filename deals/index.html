@@ -112,6 +112,11 @@ footer p{margin:0;max-width:65ch}
 .mast-txt{display:flex;flex-direction:column;gap:6px;min-width:0;justify-self:stretch}
 .art{width:min(100%,360px);height:auto;display:block}
 [hidden]{display:none !important}
+.one{margin:0 4px;font-size:17px;font-weight:700;color:var(--ink)}
+.cat,.meta{font-size:14px}
+.open{align-self:flex-start;display:inline-block;border:1.5px solid var(--ink);border-radius:999px;padding:7px 14px;font-weight:800;font-size:14px;text-decoration:none;color:var(--ink)}
+.missed{margin:0;font-size:14px;color:var(--muted);background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:8px 12px}
+.list .tag.stale .vb{filter:grayscale(1);opacity:.8}
 .list .tag{overflow:hidden}
 .vb{margin:-14px -14px 2px;padding:12px 14px;display:flex;align-items:center;gap:12px;color:#fff}
 .vb .e{font-size:34px;line-height:1}
@@ -135,6 +140,10 @@ footer p{margin:0;max-width:65ch}
 .thumb{width:72px;height:72px;flex:none;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:10px}
 .thumb.ph{display:grid;place-items:center}
 .mast h1{font-size:clamp(38px,11vw,62px)}
+.vb.shit{background:#4A2A12;border-bottom:5px solid #C8201A}
+.vb.shit .e{font-size:48px}
+.vb.shit .t{font-size:30px}
+.list .tag.shit{border:3px solid #C8201A}
 </style>
 </head>
 <body>
@@ -185,30 +194,32 @@ footer p{margin:0;max-width:65ch}
     </div>
   </header>
 
-  <section class="how" aria-label="How it works">
-    <p class="one">Paste a sale link and we'll tell you if it's a real deal or a shit one.</p>
-    <ol>
-      <li><span>Copy the link to the deal. <b>Amazon:</b> take a screenshot that shows the product name and the price.</span></li>
-      <li><span>Paste the link or add the screenshot below. Tap Submit.</span></li>
-      <li><span>Come back when the clock below hits zero.</span></li>
-    </ol>
-  </section>
+  <p class="one">Paste a sale link and we'll tell you if it's a real deal or a shit one.</p>
 
   <section class="pastebox" aria-label="Paste a deal link">
-    <iframe data-tally-src="https://tally.so/embed/OQ4NLk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" height="170" title="Paste a deal link"></iframe>
+    <iframe data-tally-src="https://tally.so/embed/OQ4NLk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" height="170" title="Paste a deal link"></iframe>
   </section>
   <button class="again" id="again" type="button">Paste another deal</button>
-  <div class="clock" aria-live="off"><span class="clock-l" id="clock-l">Next check starts in</span><span class="clock-t" id="clock-t">--:--</span></div>
-  <p class="under" id="clock-n">Your verdict lands in the log about 10 minutes after that. Everyone with this page can see it.</p>
+  <div class="clock" aria-live="off"><span class="clock-l" id="clock-l">Next flush in</span><span class="clock-t" id="clock-t">--:--</span></div>
+  <p class="under" id="clock-n">Verdicts land in the log about 10 minutes after the flush. Everyone with this page can see it.</p>
 
   <section class="checker" id="quick" hidden aria-live="polite">
     <h2>Quick sniff test</h2>
     <div id="chk-result"></div>
-    <p class="note">Just a first guess from the link. The real verdict lands in the log after the next check.</p>
+    <p class="note">The real verdict lands in the log after the next flush.</p>
+  </section>
+
+  <section class="how" aria-label="How it works">
+    <ol>
+      <li><span>Copy the link to the deal and paste it in the red box.</span></li>
+      <li><span>Amazon: add a screenshot that shows the product name and price.</span></li>
+      <li><span>Tap Submit. Come back about 10 minutes after the next flush.</span></li>
+    </ol>
   </section>
 
   <section class="sec" aria-labelledby="board-h">
     <div class="sec-head"><h2 id="board-h">The log</h2><span id="board-n">Loading</span></div>
+    <p class="missed" id="missed" hidden></p>
     <div class="list" id="board"></div>
   </section>
 
@@ -223,11 +234,11 @@ footer p{margin:0;max-width:65ch}
   var DATA = window.DEALS || {deals:[]};
   var deals = Array.isArray(DATA.deals) ? DATA.deals : [];
   var LABEL = {buy:"Legit deal", wait:"Wait", shit:"\uD83D\uDCA9 Shit deal", unknown:"Couldn't tell", pending:"In line"};
-  var SNIFF = {buy:"Smells fine", wait:"Smells iffy", shit:"Smells like shit", unknown:"No smell yet", pending:"No smell yet"};
+  var SNIFF = {buy:"Smells fine", wait:"Smells iffy", shit:"Smells like shit", unknown:"No smell yet", pending:"In line"};
 
   function el(tag, cls, text){ var n = document.createElement(tag); if(cls) n.className = cls; if(text != null) n.textContent = text; return n; }
   function money(n){ return "$" + Number(n).toLocaleString("en-US", {minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2}); }
-  function when(iso){ var d = new Date(iso); return isNaN(d) ? "" : d.toLocaleString("en-US", {weekday:"short", hour:"numeric", minute:"2-digit"}); }
+  function when(iso){ var d = new Date(iso); return isNaN(d) ? "" : d.toLocaleString("en-US", {weekday:"short", month:"short", day:"numeric", hour:"numeric", minute:"2-digit"}); }
   function stamp(v){ return el("span", "stamp", LABEL[v] || v); }
   function safeUrl(u){ return /^https?:\/\//i.test(u || "") ? u : null; }
   function host(u){ try{ return new URL(u).hostname.replace(/^www\./, ""); }catch(e){ return ""; } }
@@ -383,10 +394,10 @@ footer p{margin:0;max-width:65ch}
       for(var H = 6; H <= 23; H++){ var s = H * 3600 + 210; if(s > sod){ left = s - sod; break; } }
       if(left == null){ left = 86400 - sod + 6 * 3600 + 210; overnight = true; }
       var over = p.year > 2026 || p.month === 12 || (p.month === 11 && p.day === 30 && overnight);
-      if(over){ L.textContent = "Black Friday checks have ended."; T.textContent = ""; N.textContent = "The log below stays up."; return; }
+      if(over){ L.textContent = "The Porta Potty is closed for the season."; T.textContent = ""; N.textContent = "The log below stays up."; ["again"].forEach(function(id){ var n = document.getElementById(id); if(n) n.hidden = true; }); var pb = document.querySelector(".pastebox"); if(pb) pb.hidden = true; return; }
       var h = Math.floor(left / 3600), m = Math.floor(left % 3600 / 60), s2 = left % 60;
       T.textContent = (h ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (s2 < 10 ? "0" : "") + s2;
-      L.textContent = (sod < 6 * 3600 + 210 || overnight) ? "Checks pause overnight. Next one in" : "Next check starts in";
+      L.textContent = (sod < 6 * 3600 + 210 || overnight) ? "No flushing overnight. Next one in" : "Next flush in";
     }
     tick(); setInterval(tick, 1000);
   })();
@@ -401,7 +412,17 @@ footer p{margin:0;max-width:65ch}
   });
 
   /* ---------- the board ---------- */
-  var board = [], mine = [], skipped = {}, quiet = {};
+  var board = [], mine = [], skipped = {}, quiet = {}, missed = 0;
+  function eta(t){
+    try{
+      var f = new Intl.DateTimeFormat("en-US", {timeZone:"America/New_York", hour12:false, hour:"numeric", minute:"numeric", second:"numeric"}), q = {};
+      f.formatToParts(new Date(t)).forEach(function(x){ q[x.type] = parseInt(x.value, 10); });
+      var sod = (q.hour % 24) * 3600 + q.minute * 60 + q.second, wait = null;
+      for(var H = 6; H <= 23; H++){ var s = H * 3600 + 210; if(s > sod){ wait = s - sod; break; } }
+      if(wait == null) wait = 86400 - sod + 6 * 3600 + 210;
+      return new Date(t + (wait + 600) * 1000).toLocaleTimeString("en-US", {hour:"numeric", minute:"2-digit"});
+    }catch(e){ return "the next check"; }
+  }
   try{ mine = JSON.parse(localStorage.getItem("sifter-mine") || "[]").filter(function(m){ return m && m.link && Date.now() - m.t < 864e5; }); }catch(e){}
   function saveMine(){ try{ localStorage.setItem("sifter-mine", JSON.stringify(mine.slice(0, 20))); }catch(e){} }
 
@@ -438,8 +459,10 @@ footer p{margin:0;max-width:65ch}
       a.appendChild(i);
     }
     var meta = el("div", "meta");
-    if(x.checked) meta.appendChild(el("span", null, "Checked " + when(x.checked)));
-    var u = safeUrl(x.link); if(u){ var l = el("a", null, "Open the deal"); l.href = u; l.rel = "noopener nofollow"; l.target = "_blank"; meta.appendChild(l); }
+    var u = safeUrl(x.link); if(u){ var l = el("a", "open", "Open the deal"); l.href = u; l.rel = "noopener nofollow"; l.target = "_blank"; a.appendChild(l); }
+    var age = x.checked ? (Date.now() - Date.parse(x.checked)) / 864e5 : 0;
+    if(age >= 1){ a.className += " stale"; var dd = Math.floor(age); meta.appendChild(el("span", null, "Checked " + dd + (dd === 1 ? " day" : " days") + " ago. The price may have changed.")); }
+    else if(x.checked) meta.appendChild(el("span", null, "Checked " + when(x.checked)));
     a.appendChild(meta);
     return a;
   }
@@ -447,14 +470,16 @@ footer p{margin:0;max-width:65ch}
     var list = document.getElementById("board"); list.textContent = "";
     var done = {}; board.forEach(function(x){ done[key(x.link)] = 1; if(x.pasted) done[key(x.pasted)] = 1; });
     var waiting = mine.filter(function(m){ return /^https?:\/\//i.test(m.link || "") && !done[key(m.link)] && !quiet[key(m.link)]; });
-    waiting.forEach(function(m){ var sk = skipped[key(m.link)]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", link:m.link, headline: sk ? "Yours. We couldn't check this one. Paste it again with a screenshot of the item." : "Yours. In line for the next check."})); });
+    waiting.forEach(function(m){ var sk = skipped[key(m.link)]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", link:m.link, headline: sk ? "Yours. We couldn't check this one. Paste it again with a screenshot of the item." : "Yours. In line. Verdict by about " + eta(m.t) + "."})); });
+    var ms = document.getElementById("missed");
+    if(missed){ ms.hidden = false; ms.textContent = "Couldn't read " + missed + (missed === 1 ? " paste" : " pastes") + " in the last day. Try again with a screenshot that shows the name and price."; } else ms.hidden = true;
     board.forEach(function(x){ list.appendChild(boardCard(x)); });
     if(!waiting.length && !board.length) list.appendChild(el("p", "empty", "Nobody's gone yet. Paste the first one."));
     document.getElementById("board-n").textContent = board.length + (board.length === 1 ? " deal checked" : " deals checked");
   }
   function loadBoard(){
     fetch("board.json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
-      if(j && Array.isArray(j.skipped)){ skipped = {}; quiet = {}; j.skipped.forEach(function(s){ if(s && s.link){ if(s.quiet) quiet[key(s.link)] = 1; else skipped[key(s.link)] = 1; } }); }
+      if(j && Array.isArray(j.skipped)){ skipped = {}; quiet = {}; missed = 0; j.skipped.forEach(function(s){ if(!s) return; if(!s.quiet && s.at && Date.now() - Date.parse(s.at) < 864e5) missed++; if(s.link){ if(s.quiet) quiet[key(s.link)] = 1; else skipped[key(s.link)] = 1; } }); }
       if(j && Array.isArray(j.items)) board = j.items.slice().sort(function(a, b){ return (Date.parse(b.checked) || 0) - (Date.parse(a.checked) || 0); });
       renderBoard();
     }).catch(function(){ renderBoard(); document.getElementById("board-n").textContent = "The log didn't load. Reload the page."; });
@@ -474,9 +499,11 @@ footer p{margin:0;max-width:65ch}
     try{ (JSON.parse(e.data).payload.fields || []).forEach(function(f){ var a = f && f.answer, v = a && (a.value != null ? a.value : a.raw); if(v && typeof v === "object") hasShot = true; }); }catch(err){}
     if(url){
       mine.unshift({link: url, t: Date.now()}); saveMine(); renderBoard();
-      showQuick(judge(link, null, null));
+      var jr = judge(link, null, null);
+      if(jr.verdict === "buy" || jr.verdict === "wait" || jr.verdict === "shit" || /^Amazon hides/.test(jr.headline)) showQuick(jr);
+      else showQuick({verdict:"pending", headline:"Got it. Your verdict lands in the log by about " + eta(Date.now()) + ".", reasons:[], instead:null, links:[]});
     } else if(hasShot || !link){
-      showQuick({verdict:"pending", headline:"Got it. The verdict lands in the log after the next check.", reasons:[], instead:null, links:[]});
+      showQuick({verdict:"pending", headline:"Got it. Your verdict lands in the log by about " + eta(Date.now()) + ".", reasons:[], instead:null, links:[]});
     } else {
       showQuick({verdict:"unknown", headline:"No link in that paste. Copy the link itself and paste again.", reasons:[], instead:null, links:[]});
     }
