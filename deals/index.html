@@ -233,7 +233,7 @@ footer p{margin:0;max-width:65ch}
 (function(){
   var DATA = window.DEALS || {deals:[]};
   var deals = Array.isArray(DATA.deals) ? DATA.deals : [];
-  var LABEL = {buy:"Legit deal", wait:"Wait", shit:"\uD83D\uDCA9 Shit deal", unknown:"Couldn't tell", pending:"Waiting to be checked"};
+  var LABEL = {buy:"Legit deal", wait:"Wait", shit:"\uD83D\uDCA9 Shit deal", unknown:"Couldn't tell", pending:"Waiting to be checked", checking:"Being checked now"};
   var SNIFF = {buy:"Smells fine", wait:"Smells iffy", shit:"Smells like shit", unknown:"No smell yet", pending:"In line"};
 
   function el(tag, cls, text){ var n = document.createElement(tag); if(cls) n.className = cls; if(text != null) n.textContent = text; return n; }
@@ -410,7 +410,7 @@ footer p{margin:0;max-width:65ch}
   });
 
   /* ---------- the board ---------- */
-  var board = [], mine = [], skipped = {}, quiet = {}, missed = 0;
+  var board = [], mine = [], skipped = {}, quiet = {}, missed = 0, claimed = [];
   /* Check times, Eastern: hourly 6:03 a.m. to 11:03 p.m.; also on the half hour Nov 25-30; also midnight to 5 a.m. on Nov 27. */
   function slotsFor(mo, d){
     var a = [], H;
@@ -449,7 +449,7 @@ footer p{margin:0;max-width:65ch}
   function boardCard(x){
     var v = LABEL[x.verdict] ? x.verdict : "unknown";
     var a = el("article", "tag " + (v === "unknown" || v === "pending" ? "wait" : v) + (v === "pending" ? " pending" : ""));
-    if(v === "pending"){ var top = el("div", "top"); top.appendChild(stamp(v)); top.appendChild(el("span", "cat", x.store || host(x.link))); a.appendChild(top); }
+    if(v === "pending"){ var top = el("div", "top"); top.appendChild(stamp(x.checking ? "checking" : v)); top.appendChild(el("span", "cat", x.store || host(x.link))); a.appendChild(top); }
     else {
       var VB = {shit:["\uD83D\uDCA9", "Shit deal", "Flush it."], buy:["\uD83C\uDF81", "Legit deal", "Buy it."], wait:["\u23F3", "Wait", "Not yet."], unknown:["\u2753", "Couldn't tell", "Check it yourself."]}[v];
       var vb = el("div", "vb " + v); vb.appendChild(el("span", "e", VB[0]));
@@ -490,16 +490,25 @@ footer p{margin:0;max-width:65ch}
     var list = document.getElementById("board"); list.textContent = "";
     var done = {}; board.forEach(function(x){ done[key(x.link)] = 1; if(x.pasted) done[key(x.pasted)] = 1; });
     var waiting = mine.filter(function(m){ return /^https?:\/\//i.test(m.link || "") && !done[key(m.link)] && !quiet[key(m.link)]; });
-    waiting.forEach(function(m){ var sk = skipped[key(m.link)]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", link:m.link, headline: sk ? "Yours. We couldn't check this one. Paste it again with a screenshot of the item." : "Only you see this for now. It gets checked at the " + eta(m.t, 0) + " flush, and the verdict shows here by about " + eta(m.t) + ".", product: m.name || nameOf("", m.link) || ("Your " + shop(m.link) + " link"), store: shop(m.link)})); });
+    waiting.forEach(function(m){ var sk = skipped[key(m.link)], cl = claimed.filter(function(c){ return c.link && key(c.link) === key(m.link); })[0]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", checking: !sk && !!cl, link:m.link, headline: sk ? "Yours. We couldn't check this one. Paste it again with a screenshot of the item." : "Only you see this for now. It gets checked at the " + eta(m.t, 0) + " flush, and the verdict shows here by about " + eta(m.t) + ".", product: m.name || nameOf("", m.link) || ("Your " + shop(m.link) + " link"), store: shop(m.link)})); });
+    /* Pastes a check has picked up: everyone sees these, so the queue is visible on any phone. */
+    var mineKeys = {}, shown = {}; mine.forEach(function(m){ mineKeys[key(m.link)] = 1; });
+    waiting.forEach(function(m){ shown[key(m.link)] = 1; });
+    var nowChecking = claimed.filter(function(c){ var k = c.link ? key(c.link) : ""; return !(k && (done[k] || shown[k])); });
+    nowChecking.forEach(function(c){
+      var by = new Date(Date.parse(c.at) + 6e5).toLocaleTimeString("en-US", {hour:"numeric", minute:"2-digit"});
+      list.appendChild(boardCard({verdict:"pending", checking:true, link:c.link || "", store: c.link ? shop(c.link) : "Screenshot", product: c.link ? (nameOf("", c.link) || ("A " + shop(c.link) + " link")) : "A pasted deal", headline:"Being checked right now. The verdict shows here by about " + by + "."}));
+    });
     var ms = document.getElementById("missed");
     if(missed){ ms.hidden = false; ms.textContent = "Couldn't read " + missed + (missed === 1 ? " paste" : " pastes") + " in the last day. Try again with a screenshot that shows the name and price."; } else ms.hidden = true;
     board.forEach(function(x){ list.appendChild(boardCard(x)); });
-    if(!waiting.length && !board.length) list.appendChild(el("p", "empty", "Nobody's gone yet. Paste the first one."));
+    if(!waiting.length && !nowChecking.length && !board.length) list.appendChild(el("p", "empty", "Nobody's gone yet. Paste the first one."));
     document.getElementById("board-n").textContent = board.length + (board.length === 1 ? " deal checked" : " deals checked");
   }
   function loadBoard(){
     fetch("board.json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
       if(j && Array.isArray(j.skipped)){ skipped = {}; quiet = {}; missed = 0; j.skipped.forEach(function(s){ if(!s) return; if(!s.quiet && s.at && Date.now() - Date.parse(s.at) < 864e5) missed++; if(s.link){ if(s.quiet) quiet[key(s.link)] = 1; else skipped[key(s.link)] = 1; } }); }
+      claimed = (j && Array.isArray(j.claimed) ? j.claimed : []).filter(function(c){ return c && c.at && Date.now() - Date.parse(c.at) < 40 * 6e4 && (!c.link || /^https?:\/\//i.test(c.link)); });
       if(j && Array.isArray(j.items)) board = j.items.slice().sort(function(a, b){ return (Date.parse(b.checked) || 0) - (Date.parse(a.checked) || 0); });
       renderBoard();
     }).catch(function(){ renderBoard(); document.getElementById("board-n").textContent = "The log didn't load. Reload the page."; });
