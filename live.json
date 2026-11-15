@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T22:28:04Z",
+ "updated": "2026-11-15T22:30:06Z",
  "week": 10,
  "games": {
   "1": {
@@ -76,10 +76,10 @@
   },
   "9": {
    "state": "in",
-   "away": 10,
+   "away": 16,
    "home": 6,
-   "detail": "0:31 - 2nd",
-   "line": "Rams 10–6 · 0:31 - 2nd"
+   "detail": "0:13 - 2nd",
+   "line": "Rams 16–6 · 0:13 - 2nd"
   },
   "10": {
    "state": "in",
@@ -91,9 +91,9 @@
   "11": {
    "state": "in",
    "away": 10,
-   "home": 10,
-   "detail": "4:58 - 2nd",
-   "line": "Tied 10–10 · 4:58 - 2nd"
+   "home": 16,
+   "detail": "4:08 - 2nd",
+   "line": "Cowboys 16–10 · 4:08 - 2nd"
   },
   "12": {
    "state": "pre",
