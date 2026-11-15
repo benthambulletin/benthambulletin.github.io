@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T20:20:24Z",
+ "updated": "2026-11-15T20:22:25Z",
  "week": 10,
  "games": {
   "1": {
@@ -22,15 +22,15 @@
    "state": "in",
    "away": 24,
    "home": 12,
-   "detail": "3:00 - 3rd",
-   "line": "Bills 24–12 · 3:00 - 3rd"
+   "detail": "1:21 - 3rd",
+   "line": "Bills 24–12 · 1:21 - 3rd"
   },
   "4": {
    "state": "in",
    "away": 17,
    "home": 20,
-   "detail": "15:00 - 4th",
-   "line": "Browns 20–17 · 15:00 - 4th"
+   "detail": "14:57 - 4th",
+   "line": "Browns 20–17 · 14:57 - 4th"
   },
   "5": {
    "state": "in",
@@ -43,22 +43,22 @@
    "state": "in",
    "away": 21,
    "home": 3,
-   "detail": "13:50 - 4th",
-   "line": "Chiefs 21–3 · 13:50 - 4th"
+   "detail": "13:42 - 4th",
+   "line": "Chiefs 21–3 · 13:42 - 4th"
   },
   "7": {
    "state": "in",
    "away": 16,
    "home": 24,
-   "detail": "2:47 - 3rd",
-   "line": "Colts 24–16 · 2:47 - 3rd"
+   "detail": "2:36 - 3rd",
+   "line": "Colts 24–16 · 2:36 - 3rd"
   },
   "8": {
    "state": "in",
    "away": 20,
    "home": 10,
-   "detail": "0:19 - 3rd",
-   "line": "Vikings 20–10 · 0:19 - 3rd"
+   "detail": "End of 3rd",
+   "line": "Vikings 20–10 · End of 3rd"
   },
   "9": {
    "state": "pre",
