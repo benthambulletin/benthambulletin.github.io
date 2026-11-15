@@ -164,7 +164,52 @@
    ],
    "instead": null,
    "instead_link": null,
-   "checked": "2026-11-14T12:55:00-05:00"
+   "checked": "2026-11-14T12:55:00-05:00",
+   "reviewed": true,
+   "evidence": [
+    {
+     "what": "Walmart product page, $298, was $349.99",
+     "url": "https://www.walmart.com/ip/18200554428",
+     "date": "2026-11-14",
+     "price": 298,
+     "kind": "today"
+    },
+    {
+     "what": "Walmart, $348, per The Inventory",
+     "url": "https://theinventory.com/samsung-55-inch-mini-led-4k-tv-348-walmart-deal",
+     "date": "2026-07-21",
+     "price": 348,
+     "kind": "history"
+    },
+    {
+     "what": "Amazon, $298, per DealNews (since expired)",
+     "url": "https://www.dealnews.com/products/Samsung/Samsung-M70-H-55-4-K-Mini-LED-Smart-TV/507673.html",
+     "date": "2026-10-20",
+     "price": 298,
+     "kind": "history"
+    },
+    {
+     "what": "Sam's Club, sibling model, $297.99 for members",
+     "url": "https://www.dealtikka.com/samsung-55-class-m70h-series-mini-led-4k-uhd-smart-tv-297-99/",
+     "date": "2026-11-04",
+     "price": 297.99,
+     "kind": "other-store"
+    },
+    {
+     "what": "Best Buy, sibling model, $299.99",
+     "url": "https://slickdeals.net/f/20282382-55-samsung-m70h-series-mini-led-4k-uhd-smart-tizen-tv-2026-300-free-s-h",
+     "date": "2026-11-09",
+     "price": 299.99,
+     "kind": "other-store"
+    },
+    {
+     "what": "Target lists this TV at $399.99 (undated)",
+     "url": "https://www.dealtikka.com/samsung-55-class-m70h-series-mini-led-4k-uhd-smart-tv-297-99/",
+     "date": null,
+     "price": 399.99,
+     "kind": "other-store"
+    }
+   ]
   },
   {
    "id": "QoZKzjp",
