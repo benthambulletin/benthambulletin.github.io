@@ -435,7 +435,7 @@ footer p{margin:0;max-width:65ch}
   function shop(u){ if(/(^|\.)(a\.co|amzn\.to|amzn\.com)$/.test(host(u))) return "Amazon"; var h = host(u).replace(/^www\./, "").split("."); var s = h.length > 1 ? h[h.length - 2] : (h[0] || ""); return s ? s.charAt(0).toUpperCase() + s.slice(1) : "store"; }
   function nameOf(text, u){
     var best = "";
-    String(text || "").replace(/https?:\/\/\S+/g, "\n").split(/\n/).forEach(function(l){ l = l.replace(/\s+/g, " ").trim(); if(l.length > best.length) best = l; });
+    String(text || "").replace(/https?:\/\/\S+/g, "\n").split(/\n/).forEach(function(l){ l = l.replace(/\s+/g, " ").trim(); if(/\b(this|an?) (item|deal|product)\b|take a look|check (this|it) out|found this/i.test(l)) return; if(l.length > best.length) best = l; });
     if(best.length < 8){
       best = "";
       try{ new URL(u).pathname.split("/").forEach(function(s){ s = decodeURIComponent(s); if(/[a-z]/i.test(s) && /-/.test(s) && s.length > best.length) best = s; }); }catch(e){}
