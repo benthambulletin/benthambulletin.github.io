@@ -447,7 +447,7 @@ footer p{margin:0;max-width:65ch}
   function renderBoard(){
     var list = document.getElementById("board"); list.textContent = "";
     var done = {}; board.forEach(function(x){ done[key(x.link)] = 1; if(x.pasted) done[key(x.pasted)] = 1; });
-    var waiting = mine.filter(function(m){ return !done[key(m.link)] && !quiet[key(m.link)]; });
+    var waiting = mine.filter(function(m){ return /^https?:\/\//i.test(m.link || "") && !done[key(m.link)] && !quiet[key(m.link)]; });
     waiting.forEach(function(m){ var sk = skipped[key(m.link)]; list.appendChild(boardCard({verdict: sk ? "unknown" : "pending", link:m.link, headline: sk ? "Yours. We couldn't check this one. Paste it again with a screenshot of the item." : "Yours. In line for the next check."})); });
     board.forEach(function(x){ list.appendChild(boardCard(x)); });
     if(!waiting.length && !board.length) list.appendChild(el("p", "empty", "Nobody's gone yet. Paste the first one."));
