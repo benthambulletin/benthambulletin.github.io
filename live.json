@@ -1,13 +1,15 @@
 {
- "updated": "2026-11-15T17:35:48Z",
+ "updated": "2026-11-15T17:37:50Z",
  "week": 10,
  "games": {
   "1": {
-   "state": "in",
+   "state": "post",
    "away": 10,
    "home": 35,
-   "detail": "2:00 - 4th",
-   "line": "Lions 35–10 · 2:00 - 4th"
+   "detail": "Final",
+   "winner": "Lions",
+   "score": "35–10",
+   "line": "Final · Lions 35–10"
   },
   "2": {
    "state": "pre",
