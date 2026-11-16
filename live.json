@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T02:43:39Z",
+ "updated": "2026-11-16T02:45:40Z",
  "week": 10,
  "games": {
   "1": {
@@ -103,10 +103,10 @@
   },
   "12": {
    "state": "in",
-   "away": 0,
+   "away": 3,
    "home": 17,
-   "detail": "1:29 - 2nd",
-   "line": "Bengals 17–0 · 1:29 - 2nd"
+   "detail": "1:25 - 2nd",
+   "line": "Bengals 17–3 · 1:25 - 2nd"
   }
  }
 }
