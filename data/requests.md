@@ -52,7 +52,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
-- **Mon Nov 16 (updated by Garret, Sun 9:45 a.m.: "Last call should be today. I don't want this running anymore").** The poll ended Sunday. Monday gets ONE short line with the final count (numbers only, no names; add Garret's 6 a.m. vote to the form's total), no link, no ask, and the poll never runs again after that. Give Garret the names and votes in chat at the 7:20 check. Garret decided Sun 9:49 a.m. ("I think it's safe to say that's the answer"): the paper moves to 6 a.m. from Monday Nov 16; times are in CLAUDE.md. Monday's count line says the paper now comes at 6.
+- **Sun Nov 22 — Sunday Question answer (family form, id OQ2X78A, Sun Nov 15).** Gregg: "How in the heck can anyone pick just one 'most favorite' dish at Thanksgiving?? I'm finding it quite impossible 🤷" Run it under his name with any other answers to the Thanksgiving-dish question.
+
 
 - **Tue Dec 1 (Garret, Nov 14, 8:01 a.m.: "Hold off til 12/1/26").** Switch to the winter scheme in this edition, not earlier: shades and snowflake ornaments as listed under Design in CLAUDE.md (mock shown Nov 14). Change `tools/site.py` :root and the surround, the ornaments in the masthead and colophon, and the hardcoded chart colors. Send Garret a screenshot with the link that morning.
 
@@ -66,6 +67,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
 
 ## Done
+
+- **Mon Nov 16 (updated by Garret, Sun 9:45 a.m.: "Last call should be today. I don't want this running anymore").** The poll ended Sunday. Monday gets ONE short line with the final count (numbers only, no names; add Garret's 6 a.m. vote to the form's total), no link, no ask, and the poll never runs again after that. Give Garret the names and votes in chat at the 7:20 check. Garret decided Sun 9:49 a.m. ("I think it's safe to say that's the answer"): the paper moves to 6 a.m. from Monday Nov 16; times are in CLAUDE.md. Monday's count line says the paper now comes at 6. — ran in No. 145.
 
 - **Sun Nov 15 (Garret, Sat 9:42 p.m.: "Want to run the survey one more day?").** Run the reader poll once more Sunday as a full item right after the lead (this replaces the planned one-line reminder): new wording, "6 a.m." and "8 a.m." written out, about when the paper is sent, link https://tally.so/r/5XjVlv, ten seconds. **Garret voted 6 a.m. in chat (Sat 9:44 p.m.); his vote is not on the form, so add one for 6 a.m. to whatever the form shows, unless a Garret entry appears there.** Say how many votes are in (four as of Saturday night counting his: two for 6 a.m., one for 8 a.m., one either; re-fetch the form) and that it is close, without naming anyone or how they voted. Say this is the last call: the poll closes Sunday night. — ran in No. 144.
 
