@@ -40,3 +40,8 @@ Return a numbered list of problems. Each one gets the exact sentence, what is wr
 
 **Look**
 - Read every slice. Cover photo present if one was sent, caption reads right, nothing cut off, no stacked rules, no blank or doubled section, nothing overlapping.
+
+## The cover (added Nov 16)
+
+Look at the cover image itself, as a reader opening the paper would. Fail it if it is mostly empty space, a doodle, a chart or diagram, a drawing of any kind, or a photo that does not plainly show what the caption says. A non-family cover must be a real photo or official rendering from `cover.yml`, labeled "The Cover" (not "Plate I · The Family Album"), with a caption that says what it is and credits the source and, for Wikimedia Commons, the license. No identifiable person as the subject, no logos, and nothing that implies a file photo was taken at today's event.
+
