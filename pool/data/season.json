@@ -15377,7 +15377,9 @@
               "Josh",
               "Claude"
             ]
-          }
+          },
+          "live": "Bengals 10–0 · 2nd qtr",
+          "liveAt": "2026-11-16T02:09:11Z"
         },
         {
           "away": "Chargers",
@@ -16718,7 +16720,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-16T01:25:04.813312+00:00",
+  "updated": "2026-11-16T02:09:36.304900+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
