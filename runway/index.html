@@ -110,6 +110,7 @@ td.n{text-align:right;font-family:var(--mono)}
   <div class="actions">
     <a class="btn" href="https://tally.so/r/obWNYP?who=Garret" target="_blank" rel="noopener">Log a migraine</a>
     <a class="btn alt" href="https://tally.so/r/Zj4dpo" target="_blank" rel="noopener">Evening check-in</a>
+    <a class="btn alt" href="https://tally.so/r/LDKWQz?who=Garret" target="_blank" rel="noopener">It's over</a>
     <a class="btn alt" href="https://tally.so/r/Z9jVLy" target="_blank" rel="noopener">Ask / comment</a>
   </div>
 
@@ -210,7 +211,10 @@ td.n{text-align:right;font-family:var(--mono)}
     try{g=await getJSON("garmin-summary.json");}catch(e){errs.push("watch summary");}
     try{daily=await getCSV("garmin-daily.csv");}catch(e){errs.push("watch history");}
     try{const m=await getJSON("migraines.json");let an={ends:{},continuations:{}};try{an=await getJSON("attack-notes.json");}catch(e){}
-      attacks=(Array.isArray(m)?m:m.entries||[]).filter(e=>!(an.continuations||{})[e.who+" "+e.date]).map(e=>({who:e.who,date:e.date,time:e.time||"",woke:e.woke,ended:(an.ends||{})[e.who+" "+e.date]||e.ended||""}));}
+      const raw=(Array.isArray(m)?m:m.entries||[]), cont=an.continuations||{};
+      const stamp=e=>new Date(e.date+"T"+((e.time||"00:00").slice(0,5))+":00").getTime();
+      attacks=raw.filter(e=>!cont[e.who+" "+e.date]).map(e=>{let last=stamp(e);raw.forEach(x=>{if(cont[x.who+" "+x.date]===e.date&&x.who===e.who)last=Math.max(last,stamp(x));});
+        return {who:e.who,date:e.date,time:e.time||"",woke:e.woke,ended:(an.ends||{})[e.who+" "+e.date]||e.ended||"",last};});}
     catch(e){try{const h=await getCSV("migraines-history.csv");attacks=h.map(e=>({who:e.person,date:e.date,time:e.time_local,woke:e.woke_from_sleep==="y"}));}catch(e2){errs.push("attack log");}}
     try{rlog=await getJSON("runway-log.json");}catch(e){}
     let qa=[];try{qa=await getJSON("runway-qa.json");}catch(e){}
@@ -283,10 +287,10 @@ td.n{text-align:right;font-family:var(--mono)}
 
     // in an attack: the score answers "will one start", so pause it while one is logged today or yesterday
     // open attack = started in the last 3 days with no end logged; an attack that ended counts as over
-    const open=mine.filter(x=>!x.ended&&dayDiff(today,D(x.date))<=2); const inAtt=open.length>0;
+    const open=mine.filter(x=>!x.ended&&x.last&&Date.now()-x.last<24*3600*1000); const inAtt=open.length>0;
     if(inAtt){const a=open[0];
       rk.className="risk bad"; $("r-score").textContent="–"; $("r-meter").innerHTML="";
-      $("r-txt").innerHTML=`<b>In an attack</b> (logged ${nice(D(a.date))}${a.time?" "+a.time:""}). The score only predicts whether one will start, so it's paused until you log that it's over (Ask / comment: \"it broke at noon\").`+$("r-txt").innerHTML.replace(/^[\s\S]*?(?=<div class="board">)/,"");
+      $("r-txt").innerHTML=`<b>In an attack</b> (logged ${nice(D(a.date))}${a.time?" "+a.time:""}). The score only predicts whether one will start, so it's paused until you tap <a href=\"https://tally.so/r/LDKWQz?who=Garret\" target=\"_blank\" rel=\"noopener\"><b>It's over</b></a>. If you forget, it clears itself 24 hours after the last entry.`+$("r-txt").innerHTML.replace(/^[\s\S]*?(?=<div class="board">)/,"");
       st.className="pill bad"; st.textContent="In an attack";
       $("today").innerHTML=`<b>Today:</b> rest, fluids, dark room if it helps. Log how it ends — whether the treatment worked is the useful part.`;
       $("plan").hidden=true;}
