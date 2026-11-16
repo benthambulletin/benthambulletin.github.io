@@ -1,6 +1,58 @@
 {
- "updated": "2026-11-15T15:34:36-05:00",
+ "updated": "2026-11-15T21:59:01-05:00",
  "items": [
+  {
+   "id": "1We7WPW",
+   "pasted": null,
+   "link": null,
+   "product": "New Balance men's graphic tee, Electric Purple Linear Lines, L",
+   "store": "Amazon",
+   "image": "img/1We7WPW.jpg",
+   "image_src": "https://imgcache.dealmoon.com/thumbimg.dealmoon.com/us2607/dealmoon/dab/4ac/d2f/fc028c8fb51f086c0b7161cx500x500x9.jpeg_600_0_3_4ff6.jpeg",
+   "price": 10.74,
+   "was": 30,
+   "verdict": "wait",
+   "headline": "Cheapest we found today, but no proof it's a low.",
+   "reasons": [
+    "No dated earlier price found for this shirt anywhere.",
+    "$9.28 for the Medusa Green color on the same listing.",
+    "Amazon's Black Friday sale starts Nov. 19."
+   ],
+   "instead": "Need it now? Fine at $10.74. Otherwise check again when Amazon's sale starts Nov. 19.",
+   "instead_link": null,
+   "checked": "2026-11-15T21:59:01-05:00",
+   "evidence": [
+    {
+     "what": "Amazon app, size L, $10.74, from the shopper's screenshot",
+     "url": null,
+     "date": "2026-11-15",
+     "price": 10.74,
+     "kind": "today"
+    },
+    {
+     "what": "Same listing, Medusa Green, $9.28, from the shopper's screenshot",
+     "url": null,
+     "date": "2026-11-15",
+     "price": 9.28,
+     "kind": "product"
+    },
+    {
+     "what": "Amazon's Black Friday sale begins Nov. 19",
+     "url": "https://9to5toys.com/2026/11/10/amazon-black-friday-2026-officially-announced/",
+     "date": "2026-11-10",
+     "price": null,
+     "kind": "sale-dates"
+    },
+    {
+     "what": "Sibling New Balance cotton tee from $7 at Amazon, Oct. 2025",
+     "url": "https://www.tomsguide.com/wellness/fitness/new-balance-amazon-sale-is-live-from-usd6-15-early-black-friday-deals-id-shop-asap",
+     "date": "2025-10-28",
+     "price": 7,
+     "kind": "last-year"
+    }
+   ],
+   "reviewed": true
+  },
   {
    "id": "LDrK6ez",
    "pasted": "https://www.samsclub.com/ip/best-ride-on-cars-polaris-rzr-xp-1000-utv-12v-ride-on/20144814698",
@@ -394,13 +446,7 @@
    "at": "2026-11-15T15:34:36-05:00"
   }
  ],
- "claimed": [
-  {
-   "id": "1We7WPW",
-   "link": null,
-   "at": "2026-11-15T21:54:38-05:00"
-  }
- ],
+ "claimed": [],
  "queued": [],
  "rechecked": "2026-11-15"
 }
