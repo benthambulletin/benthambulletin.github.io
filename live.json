@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T04:24:57Z",
+ "updated": "2026-11-16T04:26:59Z",
  "week": 10,
  "games": {
   "1": {
@@ -102,11 +102,13 @@
    "line": "Final · 49ers 46–40"
   },
   "12": {
-   "state": "in",
+   "state": "post",
    "away": 18,
    "home": 38,
-   "detail": "0:20 - 4th",
-   "line": "Bengals 38–18 · 0:20 - 4th"
+   "detail": "Final",
+   "winner": "Bengals",
+   "score": "38–18",
+   "line": "Final · Bengals 38–18"
   }
  }
 }
