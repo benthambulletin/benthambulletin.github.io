@@ -15350,7 +15350,6 @@
           "fav": "Bengals",
           "line": "Bengals −3.5",
           "hits": [
-            "Devin",
             "Garret",
             "Thom",
             "Mike Sombloski",
@@ -15369,6 +15368,7 @@
             "Claude"
           ],
           "misses": [
+            "Devin",
             "Dan",
             "Nate V",
             "B-rad",
@@ -15376,13 +15376,13 @@
           ],
           "sides": {
             "Steelers": [
+              "Devin",
               "Dan",
               "Nate V",
               "B-rad",
               "Ariel"
             ],
             "Bengals": [
-              "Devin",
               "Garret",
               "Thom",
               "Mike Sombloski",
@@ -15964,45 +15964,6 @@
           ]
         },
         {
-          "name": "Devin",
-          "house": false,
-          "correct": 9,
-          "missed": 4,
-          "void": 0,
-          "remaining": 1,
-          "max": 10,
-          "tb": null,
-          "sheet": {
-            "0": "Giants",
-            "1": "Lions",
-            "2": "Saints",
-            "3": "Bills",
-            "4": "Texans",
-            "5": "Jaguars",
-            "6": "Chiefs",
-            "7": "Colts",
-            "8": "Packers",
-            "9": "Rams",
-            "10": "Seahawks",
-            "11": "49ers",
-            "12": "Bengals"
-          },
-          "filedAt": "2026-11-10T13:30:40+00:00",
-          "firstAt": "2026-11-10T13:30:40+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 12,
-          "delta": 0,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            }
-          ]
-        },
-        {
           "name": "Kaylani & Luka",
           "house": false,
           "correct": 9,
@@ -16069,8 +16030,51 @@
           "firstAt": "2026-11-12T18:01:22+00:00",
           "free": false,
           "paypal": false,
-          "rank": 17,
-          "delta": 0,
+          "rank": 16,
+          "delta": 1,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "coin",
+              "note": "behind Claude, 8–9"
+            },
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
+          "name": "Devin",
+          "house": false,
+          "correct": 8,
+          "missed": 5,
+          "void": 0,
+          "remaining": 1,
+          "max": 9,
+          "tb": null,
+          "sheet": {
+            "0": "Giants",
+            "1": "Lions",
+            "2": "Saints",
+            "3": "Bills",
+            "4": "Texans",
+            "5": "Jaguars",
+            "6": "Chiefs",
+            "7": "Colts",
+            "8": "Packers",
+            "9": "Rams",
+            "10": "Seahawks",
+            "11": "49ers",
+            "12": "Steelers"
+          },
+          "filedAt": "2026-11-10T13:30:40+00:00",
+          "firstAt": "2026-11-10T13:30:40+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 16,
+          "delta": -4,
           "state": "out",
           "paid": true,
           "badges": [
@@ -16112,8 +16116,8 @@
           "firstAt": "2026-11-12T22:53:38+00:00",
           "free": false,
           "paypal": false,
-          "rank": 17,
-          "delta": 0,
+          "rank": 16,
+          "delta": 1,
           "state": "out",
           "paid": true,
           "badges": [
@@ -16636,10 +16640,11 @@
             "rightN": 19
           },
           "12": {
-            "away": 4,
-            "home": 16,
+            "away": 5,
+            "home": 15,
             "minority": "Steelers",
             "minorityWho": [
+              "Devin",
               "Dan",
               "Nate V",
               "B-rad",
@@ -16647,7 +16652,7 @@
             ],
             "upset": false,
             "roomUpset": false,
-            "rightN": 16
+            "rightN": 15
           }
         },
         "upsets": 3,
@@ -16736,9 +16741,9 @@
         "Wendy",
         "Ariel",
         "Derek",
-        "Devin",
         "Kaylani & Luka",
         "B-rad",
+        "Devin",
         "Walczyk",
         "Andy R",
         "Dan",
@@ -16758,7 +16763,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-16T21:09:21.125015+00:00",
+  "updated": "2026-11-16T22:09:14.350452+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
