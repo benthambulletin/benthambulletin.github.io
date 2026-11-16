@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T00:45:54Z",
+ "updated": "2026-11-16T00:47:56Z",
  "week": 10,
  "games": {
   "1": {
@@ -93,11 +93,13 @@
    "line": "Final · Seahawks 21–13"
   },
   "11": {
-   "state": "in",
+   "state": "post",
    "away": 46,
    "home": 40,
-   "detail": "0:09 - 4th",
-   "line": "49ers 46–40 · 0:09 - 4th"
+   "detail": "Final",
+   "winner": "49ers",
+   "score": "46–40",
+   "line": "Final · 49ers 46–40"
   },
   "12": {
    "state": "pre",
