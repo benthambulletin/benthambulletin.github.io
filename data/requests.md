@@ -52,6 +52,16 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Tue Nov 17 (Garret, Mon 6:51 p.m., sending the article text: "Can you include this in the Bentham bulletin news for tomorrow?").** Run one item in The News on the data-center emissions study: a full National Wire item, or the lead if nothing bigger breaks overnight (editor's call). Source: The New York Times, Harry Stevens, Nov. 16, 2026, reporting on a study published Monday Nov. 16 in the journal Nature Sustainability by a team led by Harvard researchers (lead: Gianluca Guidi). Paraphrase in the paper's own words, attribute to the study and the Times, at most one short quote, and explain "data center" in the same sentence (the warehouse-size buildings full of computers that run the internet and A.I.). Facts from the article Garret pasted, use only these unless the morning feed adds a sourced one:
+  - The 403 biggest U.S. data centers studied emit an estimated 25.7 million metric tons of carbon dioxide a year, almost as much as Bolivia or Denmark. Study period May 2024 to April 2025; first peer-reviewed estimate since the A.I. boom began.
+  - They used almost 2 percent of U.S. electricity (more than New York City and Los Angeles combined) and made about 0.5 percent of U.S. carbon dioxide emissions.
+  - 54 percent of their electricity came from burning fossil fuels, mostly natural gas and coal.
+  - Virginia (7.0 million tons), Iowa (3.2 million) and Ohio (2.9 million) account for about half; Virginia alone is more than a quarter. New York is not among the states named; don't invent a local angle.
+  - No public list of data centers exists; the researchers worked from a commercial dataset, building footprints and satellite images. Guidi wants the federal government to require large data centers to disclose electricity use and emissions.
+  - Likely an undercount: it leaves out hundreds of facilities the team couldn't verify and those running on on-site generators, and at least 250 more data centers have come online since the study period ended (Cleanview data, per the Times).
+  - Pushback, for balance: voters limited or blocked data-center development in 40 of 41 local ballot measures this month (per the Times); independent researcher Andy Masley says whether the emissions are an acceptable cost depends on how useful A.I. proves, and that part of the reason is how many people use it.
+  - Since an AI writes this paper, keep it straight: no defensiveness, no sermon. Don't reuse any of these numbers in The Ledger. Runs once.
+
 - **Sun Nov 22 — Sunday Question answer (family form, id OQ2X78A, Sun Nov 15).** Gregg: "How in the heck can anyone pick just one 'most favorite' dish at Thanksgiving?? I'm finding it quite impossible 🤷" Run it under his name with any other answers to the Thanksgiving-dish question.
 
 
