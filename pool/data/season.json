@@ -15530,7 +15530,7 @@
           "free": false,
           "paypal": true,
           "rank": 3,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -15569,7 +15569,7 @@
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -15608,7 +15608,7 @@
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -15647,7 +15647,7 @@
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -15690,7 +15690,7 @@
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -15729,7 +15729,7 @@
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -15768,7 +15768,7 @@
           "free": true,
           "paypal": false,
           "rank": 3,
-          "delta": 1,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -15802,7 +15802,7 @@
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -15841,7 +15841,7 @@
           "free": false,
           "paypal": false,
           "rank": 3,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -15880,7 +15880,7 @@
           "free": false,
           "paypal": false,
           "rank": 12,
-          "delta": -8,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -15919,7 +15919,7 @@
           "free": false,
           "paypal": false,
           "rank": 12,
-          "delta": 1,
+          "delta": 0,
           "state": "house",
           "paid": false,
           "badges": []
@@ -15953,7 +15953,7 @@
           "free": false,
           "paypal": false,
           "rank": 12,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -15992,7 +15992,7 @@
           "free": false,
           "paypal": false,
           "rank": 12,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -16031,7 +16031,7 @@
           "free": false,
           "paypal": false,
           "rank": 12,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -16070,7 +16070,7 @@
           "free": false,
           "paypal": false,
           "rank": 17,
-          "delta": -4,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -16113,7 +16113,7 @@
           "free": false,
           "paypal": false,
           "rank": 17,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -16156,7 +16156,7 @@
           "free": false,
           "paypal": true,
           "rank": 19,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -16207,7 +16207,7 @@
           "free": false,
           "paypal": false,
           "rank": 19,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -16254,7 +16254,7 @@
           "free": false,
           "paypal": false,
           "rank": 19,
-          "delta": 1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -16745,8 +16745,8 @@
         "Mike Sombloski"
       ],
       "threads": {},
-      "columnHead": "Cincinnati buries the Steelers and four sheets",
-      "column": "Bengals 38, Steelers 18, and the four who backed Pittsburgh paid for it: Ariel, B-rad, Nate V and Dan. Nate V’s drop leaves Mrs. Sombloski alone in second at 11–2, two weeks after back-to-back finishes in the bottom three. Ariel and Claude share 9–4 and a long night.\n\nJosh is 13–0 and the week is his; all Monday decides is whether he finishes perfect. Nine sheets sit at 10–3 fighting over third. Chargers at Ravens stays sealed until kickoff.",
+      "columnHead": "Devin's run teeters; B-rad eyes a three-peat",
+      "column": "Devin's three straight weeks in the top three are on life support: she sits 9–4 in a five-way knot with Claude, Ariel, Derek and Kaylani & Luka. Ariel goes into Monday a game behind Tom, the man she has lost to six weeks running.\n\nDown below, Andy R, Dan and Mike Sombloski share 7–6, and B-rad at 8–5 is one bad night from a third straight week in the bottom three. Josh already owns the money; Chargers at Ravens tonight is just for the record books.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w10.jpg",
@@ -16758,7 +16758,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-16T04:49:54.344928+00:00",
+  "updated": "2026-11-16T13:13:33.661323+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -16843,18 +16843,6 @@
   "columnLog": [
     {
       "week": 10,
-      "at": "2026-11-13T01:09:35.082911+00:00",
-      "head": "Walczyk beats the buzzer; eighteen sheets in",
-      "text": "Walczyk filed at 5:53 tonight, two hours and change before kickoff, which in this pool counts as early for somebody. Arod beat her by half an hour; Derek got his in at 4:44. Melissa slid in at 7:18. That's nineteen real sheets.\n\nThe one to chase is Devin: last week's champ, top three three weeks running, and she filed Tuesday morning like she had somewhere better to be. Leah leads B-rad 3–2 head to head, and B-rad would like a word. Commanders at Giants, 8:15."
-    },
-    {
-      "week": 10,
-      "at": "2026-11-13T01:14:31.836520+00:00",
-      "head": "Walczyk beats the buzzer; eighteen sheets in",
-      "text": "Walczyk filed at 5:53 tonight, two hours and change before kickoff, which in this pool counts as early for somebody. Arod beat her by half an hour; Derek got his in at 4:44. Melissa slid in at 7:18, and Josh beat the buzzer at 8:09. That's twenty real sheets.\n\nThe one to chase is Devin: last week's champ, top three three weeks running, and she filed Tuesday morning like she had somewhere better to be. Leah leads B-rad 3–2 head to head, and B-rad would like a word. Commanders at Giants, 8:15."
-    },
-    {
-      "week": 10,
       "at": "2026-11-13T01:20:09.158966+00:00",
       "head": "Six ride the Commanders; the room takes New York",
       "text": "Twenty sheets, and the Thursday game split the room 14–6. The Commanders crew: Garret, Nate V, B-rad, Leah, Arod and Josh, who filed six minutes before kickoff and still went with the dog. The commissioner is on the short side of his own pool again, which is either conviction or a cry for help.\n\nEverybody else, Claude included, took the Giants at home. Andy R and Arod finally disagree on something: he's on New York, she's on Washington, and he leads the head-to-head 2–1 with three pushes. Somebody gets to gloat by midnight. Commanders at Giants, under way."
@@ -16888,6 +16876,18 @@
       "at": "2026-11-16T00:52:34.640222+00:00",
       "head": "Josh 12–0, and nobody can pass him",
       "text": "The late window punished every lone wolf. Mike Sombloski rode the Cardinals alone and got 34–6. Mike, B-rad and Melissa took the Raiders and lost 21–13. Dan stood alone on the Cowboys through 86 points of nonsense before San Francisco won 46–40. Josh is 12–0 with two to play, and the math says nobody passes him. Mrs. Sombloski and Nate V sit two back at 10–2; everyone else is out.\n\nIn the Sombloski house it's Mrs. 10–2, Mike 6–6, tied for last with Andy R. Steelers at Bengals kicks off at 8:20, the Chargers and Ravens close it Monday, and both stay sealed until kickoff."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-16T13:12:59.370757+00:00",
+      "head": "Cincinnati buries the Steelers and four sheets",
+      "text": "Bengals 38, Steelers 18, and the four who backed Pittsburgh paid for it: Ariel, B-rad, Nate V and Dan. Nate V’s drop leaves Mrs. Sombloski alone in second at 11–2, two weeks after back-to-back finishes in the bottom three. Ariel and Claude share 9–4 and a long night.\n\nJosh is 13–0 and the week is his; all Monday decides is whether he finishes perfect. Nine sheets sit at 10–3 fighting over third. Chargers at Ravens stays sealed until kickoff."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-16T13:13:33.661323+00:00",
+      "head": "Devin's run teeters; B-rad eyes a three-peat",
+      "text": "Devin's three straight weeks in the top three are on life support: she sits 9–4 in a five-way knot with Claude, Ariel, Derek and Kaylani & Luka. Ariel goes into Monday a game behind Tom, the man she has lost to six weeks running.\n\nDown below, Andy R, Dan and Mike Sombloski share 7–6, and B-rad at 8–5 is one bad night from a third straight week in the bottom three. Josh already owns the money; Chargers at Ravens tonight is just for the record books."
     }
   ],
   "rivals": [
