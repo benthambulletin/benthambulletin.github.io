@@ -1,0 +1,43 @@
+name: Cover photo candidates
+
+# Finds real, freely usable photos for the day's cover when the family hasn't sent one
+# (Garret, Nov 16: no drawn covers). The build session dispatches this with search phrases
+# for the lead story; candidates land in spool/cover/ with their credits.
+on:
+  workflow_dispatch:
+    inputs:
+      queries:
+        description: 'JSON list of search phrases, most specific first'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pressure-log
+  cancel-in-progress: false
+
+jobs:
+  cover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch candidates
+        env:
+          QUERIES: ${{ inputs.queries }}
+        run: |
+          pip install --quiet pillow
+          rm -rf spool/cover
+          python3 tools/cover_fetch.py
+      - name: Commit
+        run: |
+          git config user.name "Cover photos"
+          git config user.email "noreply@anthropic.com"
+          git add -A spool/cover
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "Cover candidates: $(date -u +'%Y-%m-%d %H:%MZ')"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 15
+          done
+          exit 1
