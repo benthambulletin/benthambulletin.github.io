@@ -15346,12 +15346,38 @@
           "kickoff": "2026-11-16T01:20:00Z",
           "when": "Sun 8:20 PM",
           "tv": "NBC",
-          "status": "sealed",
+          "status": "live",
           "fav": "Bengals",
           "line": "Bengals −3.5",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Steelers": [
+              "Dan",
+              "Nate V",
+              "B-rad",
+              "Ariel"
+            ],
+            "Bengals": [
+              "Devin",
+              "Garret",
+              "Thom",
+              "Mike Sombloski",
+              "Leah",
+              "Tom",
+              "Wendy",
+              "Mrs. Sombloski",
+              "Kaylani & Luka",
+              "Ryan Holovics",
+              "Andy R",
+              "Derek",
+              "Arod",
+              "Walczyk",
+              "Melissa",
+              "Josh",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Chargers",
@@ -15389,7 +15415,8 @@
             "8": "Vikings",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-13T01:09:31+00:00",
           "firstAt": "2026-11-13T01:09:31+00:00",
@@ -15431,7 +15458,8 @@
             "8": "Vikings",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T18:28:22+00:00",
           "firstAt": "2026-11-12T18:28:22+00:00",
@@ -15464,7 +15492,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Steelers"
           },
           "filedAt": "2026-11-12T18:00:32+00:00",
           "firstAt": "2026-11-12T18:00:32+00:00",
@@ -15497,7 +15526,8 @@
             "8": "Vikings",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Steelers"
           },
           "filedAt": "2026-11-12T18:21:00+00:00",
           "firstAt": "2026-11-12T18:21:00+00:00",
@@ -15535,7 +15565,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T22:23:33+00:00",
           "firstAt": "2026-11-12T22:23:33+00:00",
@@ -15573,7 +15604,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-10T13:36:41+00:00",
           "firstAt": "2026-11-10T13:36:41+00:00",
@@ -15611,7 +15643,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T18:02:25+00:00",
           "firstAt": "2026-11-12T18:02:25+00:00",
@@ -15649,7 +15682,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Raiders",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-13T00:18:39+00:00",
           "firstAt": "2026-11-13T00:18:39+00:00",
@@ -15691,7 +15725,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T21:22:21+00:00",
           "firstAt": "2026-11-12T21:22:21+00:00",
@@ -15729,7 +15764,8 @@
             "8": "Vikings",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-10T20:33:44+00:00",
           "firstAt": "2026-11-10T20:33:44+00:00",
@@ -15762,7 +15798,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T18:03:39+00:00",
           "firstAt": "2026-11-12T18:03:39+00:00",
@@ -15800,7 +15837,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T18:21:05+00:00",
           "firstAt": "2026-11-12T18:21:05+00:00",
@@ -15838,7 +15876,8 @@
             "8": "Vikings",
             "9": "Rams",
             "10": "Raiders",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Steelers"
           },
           "filedAt": "2026-11-12T18:01:22+00:00",
           "firstAt": "2026-11-12T18:01:22+00:00",
@@ -15876,7 +15915,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-10T11:08:30+00:00",
           "firstAt": "2026-11-10T11:08:30+00:00",
@@ -15909,7 +15949,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T21:44:33+00:00",
           "firstAt": "2026-11-12T21:44:33+00:00",
@@ -15947,7 +15988,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-10T13:30:40+00:00",
           "firstAt": "2026-11-10T13:30:40+00:00",
@@ -15985,7 +16027,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T18:39:53+00:00",
           "firstAt": "2026-11-12T18:39:53+00:00",
@@ -16023,7 +16066,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "Cowboys"
+            "11": "Cowboys",
+            "12": "Steelers"
           },
           "filedAt": "2026-11-12T13:10:03+00:00",
           "firstAt": "2026-11-12T13:10:03+00:00",
@@ -16065,7 +16109,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T22:53:38+00:00",
           "firstAt": "2026-11-12T22:53:38+00:00",
@@ -16107,7 +16152,8 @@
             "8": "Packers",
             "9": "Rams",
             "10": "Seahawks",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T21:22:26+00:00",
           "firstAt": "2026-11-12T21:22:26+00:00",
@@ -16157,7 +16203,8 @@
             "8": "Vikings",
             "9": "Cardinals",
             "10": "Raiders",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-12T01:44:34+00:00",
           "firstAt": "2026-11-12T01:44:34+00:00",
@@ -16544,6 +16591,17 @@
             "upset": false,
             "roomUpset": false,
             "rightN": 19
+          },
+          "12": {
+            "away": 4,
+            "home": 16,
+            "minority": "Steelers",
+            "minorityWho": [
+              "Dan",
+              "Nate V",
+              "B-rad",
+              "Ariel"
+            ]
           }
         },
         "upsets": 3,
@@ -16585,7 +16643,19 @@
           "won": false
         }
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 12,
+          "away": [
+            "Nate V"
+          ],
+          "home": [
+            "Thom",
+            "Mrs. Sombloski",
+            "Josh"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -16648,7 +16718,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-16T01:08:44.274958+00:00",
+  "updated": "2026-11-16T01:25:04.813312+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
