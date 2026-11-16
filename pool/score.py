@@ -311,6 +311,11 @@ def main():
         for k, v in aliases.items(): known[k] = v
         for p in real: known[p["name"].lower()] = p["name"]
         if venmo is not None: record_payments(season, wk, venmo, known)
+        # dues Garret held back from a payout (Nov 16): season.heldDues = {"<week>": [pool names]} → a manual row that week
+        for nm in season.get("heldDues", {}).get(str(season["currentWeek"]), []):
+            rid = f"manual-w{season['currentWeek']}-{nm.lower().replace(' ', '')}"
+            if not any(r.get("id") == rid for r in wk.setdefault("payments", [])):
+                wk["payments"].append({"id": rid, "amt": "5.00", "who": nm, "status": "manual"})
         canon = lambda nm: aliases.get(str(nm or "").strip().lower(), str(nm or "").strip()).lower()
         paid = {canon(x["who"]) for x in wk.get("payments", []) if x["status"] in ("ok", "manual")}
         # season.autoPaid: the commissioner's own sheet (his Venmo is the pot) counts as paid the moment he files

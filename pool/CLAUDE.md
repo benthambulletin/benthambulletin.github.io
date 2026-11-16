@@ -248,6 +248,9 @@ https://benthambulletin.github.io/pool/"
 - Paid = a Venmo row with status `ok`, a `manual` row, or `season.autoPaid`: **Garret and Kaylani & Luka are paid
   automatically the moment they file** (Garret pays for both). `season.covers`: **Mrs. Sombloski pays $10 for herself and Mike Sombloski** —
   a $10 payment from her books $5 to each. (Tom pays only for himself; Thom plays free — Garret, Oct 7.) **Leah pays $10 for herself and B-rad** (`covers`, Oct 15). She files as "Missy" (alias set Oct 7). Cash or PayPal: add a `manual` row (`{"id": "manual-w<N>-<name>", "amt": "5.00", "who": <pool name>, "status": "manual"}`) only when Garret says so in chat (Arod and Andy R paid by PayPal in Week 5).
+  **Held dues (Nov 16):** when Garret pays a winner and keeps $5 back for next week ("kept $5, mark him paid when he
+  submits"), add the name to `season.heldDues["<next week>"]`; score.py adds that week's manual row itself, and it counts
+  once the player files (Josh, Week 11).
   **PayPal on the form (Nov 7):** the sheet now offers "Paid $5 on PayPal". score.py prints `PAYPAL CLAIM: <name>` for each
   such sheet not yet paid; put one line per claim in the run's message to Garret (8:07 digest, roll call, Thursday final:
   "PayPal claims: Andy R, Arod — confirm?"). His "yes"/"confirmed" adds the manual rows. The claim alone never makes anyone paid.
