@@ -14570,7 +14570,7 @@
       "rollOut": 0
     },
     "10": {
-      "status": "live",
+      "status": "final",
       "games": [
         {
           "away": "Commanders",
@@ -15410,11 +15410,34 @@
           "kickoff": "2026-11-17T01:15:00Z",
           "when": "Mon 8:15 PM",
           "tv": "ESPN",
-          "status": "live",
+          "status": "final",
           "fav": "Ravens",
           "line": "Ravens −4.5 (Lamar Jackson out)",
-          "hits": [],
-          "misses": [],
+          "hits": [
+            "Mike Sombloski",
+            "Wendy",
+            "Mrs. Sombloski",
+            "Andy R",
+            "Arod",
+            "Josh"
+          ],
+          "misses": [
+            "Devin",
+            "Garret",
+            "Thom",
+            "Dan",
+            "Nate V",
+            "B-rad",
+            "Leah",
+            "Tom",
+            "Ariel",
+            "Kaylani & Luka",
+            "Ryan Holovics",
+            "Derek",
+            "Walczyk",
+            "Melissa",
+            "Claude"
+          ],
           "sides": {
             "Chargers": [
               "Mike Sombloski",
@@ -15442,18 +15465,18 @@
               "Claude"
             ]
           },
-          "live": "Chargers 23–20 · 4th qtr",
-          "liveAt": "2026-11-17T04:06:38Z"
+          "winner": "Chargers",
+          "score": "23–20"
         }
       ],
       "players": [
         {
           "name": "Josh",
           "house": false,
-          "correct": 13,
+          "correct": 14,
           "missed": 0,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 14,
           "tb": 48,
           "sheet": {
@@ -15487,17 +15510,17 @@
             },
             {
               "id": "crown",
-              "note": "leading the week"
+              "note": "won the week"
             }
           ]
         },
         {
           "name": "Mrs. Sombloski",
           "house": false,
-          "correct": 11,
+          "correct": 12,
           "missed": 2,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 12,
           "tb": 44,
           "sheet": {
@@ -15534,10 +15557,10 @@
         {
           "name": "Arod",
           "house": false,
-          "correct": 10,
+          "correct": 11,
           "missed": 3,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 11,
           "tb": 21,
           "sheet": {
@@ -15572,291 +15595,12 @@
           ]
         },
         {
-          "name": "Garret",
-          "house": false,
-          "correct": 10,
-          "missed": 3,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": 38,
-          "sheet": {
-            "0": "Commanders",
-            "1": "Lions",
-            "2": "Saints",
-            "3": "Bills",
-            "4": "Texans",
-            "5": "Jaguars",
-            "6": "Chiefs",
-            "7": "Colts",
-            "8": "Packers",
-            "9": "Rams",
-            "10": "Seahawks",
-            "11": "49ers",
-            "12": "Bengals",
-            "13": "Ravens"
-          },
-          "filedAt": "2026-11-10T13:36:41+00:00",
-          "firstAt": "2026-11-10T13:36:41+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 3,
-          "delta": 0,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            }
-          ]
-        },
-        {
-          "name": "Leah",
-          "house": false,
-          "correct": 10,
-          "missed": 3,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": 37,
-          "sheet": {
-            "0": "Commanders",
-            "1": "Lions",
-            "2": "Panthers",
-            "3": "Bills",
-            "4": "Browns",
-            "5": "Titans",
-            "6": "Chiefs",
-            "7": "Dolphins",
-            "8": "Packers",
-            "9": "Rams",
-            "10": "Seahawks",
-            "11": "49ers",
-            "12": "Bengals",
-            "13": "Ravens"
-          },
-          "filedAt": "2026-11-12T18:02:25+00:00",
-          "firstAt": "2026-11-12T18:02:25+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 3,
-          "delta": 0,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            }
-          ]
-        },
-        {
-          "name": "Melissa",
-          "house": false,
-          "correct": 10,
-          "missed": 3,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": 37,
-          "sheet": {
-            "0": "Giants",
-            "1": "Lions",
-            "2": "Panthers",
-            "3": "Bills",
-            "4": "Browns",
-            "5": "Jaguars",
-            "6": "Chiefs",
-            "7": "Colts",
-            "8": "Packers",
-            "9": "Rams",
-            "10": "Raiders",
-            "11": "49ers",
-            "12": "Bengals",
-            "13": "Ravens"
-          },
-          "filedAt": "2026-11-13T00:18:39+00:00",
-          "firstAt": "2026-11-13T00:18:39+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 3,
-          "delta": 0,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            },
-            {
-              "id": "buzzer",
-              "note": "filed inside the last hour before Thursday kickoff"
-            }
-          ]
-        },
-        {
-          "name": "Nate V",
-          "house": false,
-          "correct": 10,
-          "missed": 3,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": 54,
-          "sheet": {
-            "0": "Commanders",
-            "1": "Lions",
-            "2": "Panthers",
-            "3": "Bills",
-            "4": "Browns",
-            "5": "Jaguars",
-            "6": "Chiefs",
-            "7": "Dolphins",
-            "8": "Packers",
-            "9": "Rams",
-            "10": "Seahawks",
-            "11": "49ers",
-            "12": "Steelers",
-            "13": "Ravens"
-          },
-          "filedAt": "2026-11-12T18:00:32+00:00",
-          "firstAt": "2026-11-12T18:00:32+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 3,
-          "delta": 0,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            }
-          ]
-        },
-        {
-          "name": "Ryan Holovics",
-          "house": false,
-          "correct": 10,
-          "missed": 3,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": 38,
-          "sheet": {
-            "0": "Giants",
-            "1": "Lions",
-            "2": "Panthers",
-            "3": "Bills",
-            "4": "Browns",
-            "5": "Jaguars",
-            "6": "Falcons",
-            "7": "Colts",
-            "8": "Packers",
-            "9": "Rams",
-            "10": "Seahawks",
-            "11": "49ers",
-            "12": "Bengals",
-            "13": "Ravens"
-          },
-          "filedAt": "2026-11-12T21:22:21+00:00",
-          "firstAt": "2026-11-12T21:22:21+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 3,
-          "delta": 0,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            }
-          ]
-        },
-        {
-          "name": "Thom",
-          "house": false,
-          "correct": 10,
-          "missed": 3,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": 45,
-          "sheet": {
-            "0": "Giants",
-            "1": "Lions",
-            "2": "Saints",
-            "3": "Bills",
-            "4": "Texans",
-            "5": "Jaguars",
-            "6": "Chiefs",
-            "7": "Colts",
-            "8": "Vikings",
-            "9": "Rams",
-            "10": "Seahawks",
-            "11": "49ers",
-            "12": "Bengals",
-            "13": "Ravens"
-          },
-          "filedAt": "2026-11-10T20:33:44+00:00",
-          "firstAt": "2026-11-10T20:33:44+00:00",
-          "free": true,
-          "paypal": false,
-          "rank": 3,
-          "delta": 0,
-          "state": "alive",
-          "paid": false,
-          "badges": []
-        },
-        {
-          "name": "Tom",
-          "house": false,
-          "correct": 10,
-          "missed": 3,
-          "void": 0,
-          "remaining": 1,
-          "max": 11,
-          "tb": 41,
-          "sheet": {
-            "0": "Giants",
-            "1": "Lions",
-            "2": "Saints",
-            "3": "Bills",
-            "4": "Browns",
-            "5": "Jaguars",
-            "6": "Chiefs",
-            "7": "Colts",
-            "8": "Packers",
-            "9": "Rams",
-            "10": "Seahawks",
-            "11": "49ers",
-            "12": "Bengals",
-            "13": "Ravens"
-          },
-          "filedAt": "2026-11-12T18:03:39+00:00",
-          "firstAt": "2026-11-12T18:03:39+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 3,
-          "delta": 0,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            }
-          ]
-        },
-        {
           "name": "Wendy",
           "house": false,
-          "correct": 10,
+          "correct": 11,
           "missed": 3,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 11,
           "tb": 28,
           "sheet": {
@@ -15891,13 +15635,292 @@
           ]
         },
         {
+          "name": "Garret",
+          "house": false,
+          "correct": 10,
+          "missed": 4,
+          "void": 0,
+          "remaining": 0,
+          "max": 10,
+          "tb": 38,
+          "sheet": {
+            "0": "Commanders",
+            "1": "Lions",
+            "2": "Saints",
+            "3": "Bills",
+            "4": "Texans",
+            "5": "Jaguars",
+            "6": "Chiefs",
+            "7": "Colts",
+            "8": "Packers",
+            "9": "Rams",
+            "10": "Seahawks",
+            "11": "49ers",
+            "12": "Bengals",
+            "13": "Ravens"
+          },
+          "filedAt": "2026-11-10T13:36:41+00:00",
+          "firstAt": "2026-11-10T13:36:41+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 5,
+          "delta": 0,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
+          "name": "Leah",
+          "house": false,
+          "correct": 10,
+          "missed": 4,
+          "void": 0,
+          "remaining": 0,
+          "max": 10,
+          "tb": 37,
+          "sheet": {
+            "0": "Commanders",
+            "1": "Lions",
+            "2": "Panthers",
+            "3": "Bills",
+            "4": "Browns",
+            "5": "Titans",
+            "6": "Chiefs",
+            "7": "Dolphins",
+            "8": "Packers",
+            "9": "Rams",
+            "10": "Seahawks",
+            "11": "49ers",
+            "12": "Bengals",
+            "13": "Ravens"
+          },
+          "filedAt": "2026-11-12T18:02:25+00:00",
+          "firstAt": "2026-11-12T18:02:25+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 5,
+          "delta": 0,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
+          "name": "Melissa",
+          "house": false,
+          "correct": 10,
+          "missed": 4,
+          "void": 0,
+          "remaining": 0,
+          "max": 10,
+          "tb": 37,
+          "sheet": {
+            "0": "Giants",
+            "1": "Lions",
+            "2": "Panthers",
+            "3": "Bills",
+            "4": "Browns",
+            "5": "Jaguars",
+            "6": "Chiefs",
+            "7": "Colts",
+            "8": "Packers",
+            "9": "Rams",
+            "10": "Raiders",
+            "11": "49ers",
+            "12": "Bengals",
+            "13": "Ravens"
+          },
+          "filedAt": "2026-11-13T00:18:39+00:00",
+          "firstAt": "2026-11-13T00:18:39+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 5,
+          "delta": 0,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            },
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
+        },
+        {
+          "name": "Nate V",
+          "house": false,
+          "correct": 10,
+          "missed": 4,
+          "void": 0,
+          "remaining": 0,
+          "max": 10,
+          "tb": 54,
+          "sheet": {
+            "0": "Commanders",
+            "1": "Lions",
+            "2": "Panthers",
+            "3": "Bills",
+            "4": "Browns",
+            "5": "Jaguars",
+            "6": "Chiefs",
+            "7": "Dolphins",
+            "8": "Packers",
+            "9": "Rams",
+            "10": "Seahawks",
+            "11": "49ers",
+            "12": "Steelers",
+            "13": "Ravens"
+          },
+          "filedAt": "2026-11-12T18:00:32+00:00",
+          "firstAt": "2026-11-12T18:00:32+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 5,
+          "delta": 0,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
+          "name": "Ryan Holovics",
+          "house": false,
+          "correct": 10,
+          "missed": 4,
+          "void": 0,
+          "remaining": 0,
+          "max": 10,
+          "tb": 38,
+          "sheet": {
+            "0": "Giants",
+            "1": "Lions",
+            "2": "Panthers",
+            "3": "Bills",
+            "4": "Browns",
+            "5": "Jaguars",
+            "6": "Falcons",
+            "7": "Colts",
+            "8": "Packers",
+            "9": "Rams",
+            "10": "Seahawks",
+            "11": "49ers",
+            "12": "Bengals",
+            "13": "Ravens"
+          },
+          "filedAt": "2026-11-12T21:22:21+00:00",
+          "firstAt": "2026-11-12T21:22:21+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 5,
+          "delta": 0,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
+          "name": "Thom",
+          "house": false,
+          "correct": 10,
+          "missed": 4,
+          "void": 0,
+          "remaining": 0,
+          "max": 10,
+          "tb": 45,
+          "sheet": {
+            "0": "Giants",
+            "1": "Lions",
+            "2": "Saints",
+            "3": "Bills",
+            "4": "Texans",
+            "5": "Jaguars",
+            "6": "Chiefs",
+            "7": "Colts",
+            "8": "Vikings",
+            "9": "Rams",
+            "10": "Seahawks",
+            "11": "49ers",
+            "12": "Bengals",
+            "13": "Ravens"
+          },
+          "filedAt": "2026-11-10T20:33:44+00:00",
+          "firstAt": "2026-11-10T20:33:44+00:00",
+          "free": true,
+          "paypal": false,
+          "rank": 5,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Tom",
+          "house": false,
+          "correct": 10,
+          "missed": 4,
+          "void": 0,
+          "remaining": 0,
+          "max": 10,
+          "tb": 41,
+          "sheet": {
+            "0": "Giants",
+            "1": "Lions",
+            "2": "Saints",
+            "3": "Bills",
+            "4": "Browns",
+            "5": "Jaguars",
+            "6": "Chiefs",
+            "7": "Colts",
+            "8": "Packers",
+            "9": "Rams",
+            "10": "Seahawks",
+            "11": "49ers",
+            "12": "Bengals",
+            "13": "Ravens"
+          },
+          "filedAt": "2026-11-12T18:03:39+00:00",
+          "firstAt": "2026-11-12T18:03:39+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 5,
+          "delta": 0,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
           "name": "Ariel",
           "house": false,
           "correct": 9,
-          "missed": 4,
+          "missed": 5,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 40,
           "sheet": {
             "0": "Giants",
@@ -15934,10 +15957,10 @@
           "name": "Claude",
           "house": true,
           "correct": 9,
-          "missed": 4,
+          "missed": 5,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 40,
           "sheet": {
             "0": "Giants",
@@ -15969,10 +15992,10 @@
           "name": "Derek",
           "house": false,
           "correct": 9,
-          "missed": 4,
+          "missed": 5,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 48,
           "sheet": {
             "0": "Giants",
@@ -16009,10 +16032,10 @@
           "name": "Devin",
           "house": false,
           "correct": 9,
-          "missed": 4,
+          "missed": 5,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 38,
           "sheet": {
             "0": "Giants",
@@ -16049,10 +16072,10 @@
           "name": "Kaylani & Luka",
           "house": false,
           "correct": 9,
-          "missed": 4,
+          "missed": 5,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 40,
           "sheet": {
             "0": "Giants",
@@ -16086,13 +16109,61 @@
           ]
         },
         {
+          "name": "Andy R",
+          "house": false,
+          "correct": 8,
+          "missed": 6,
+          "void": 0,
+          "remaining": 0,
+          "max": 8,
+          "tb": 41,
+          "sheet": {
+            "0": "Giants",
+            "1": "Patriots",
+            "2": "Saints",
+            "3": "Jets",
+            "4": "Texans",
+            "5": "Jaguars",
+            "6": "Chiefs",
+            "7": "Colts",
+            "8": "Packers",
+            "9": "Rams",
+            "10": "Seahawks",
+            "11": "49ers",
+            "12": "Bengals",
+            "13": "Chargers"
+          },
+          "filedAt": "2026-11-12T21:22:26+00:00",
+          "firstAt": "2026-11-12T21:22:26+00:00",
+          "free": false,
+          "paypal": true,
+          "rank": 17,
+          "delta": 0,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "homer",
+              "note": "took the Jets, who lost"
+            },
+            {
+              "id": "coin",
+              "note": "behind Claude, 8–9"
+            },
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
           "name": "B-rad",
           "house": false,
           "correct": 8,
-          "missed": 5,
+          "missed": 6,
           "void": 0,
-          "remaining": 1,
-          "max": 9,
+          "remaining": 0,
+          "max": 8,
           "tb": 50,
           "sheet": {
             "0": "Commanders",
@@ -16130,13 +16201,57 @@
           ]
         },
         {
+          "name": "Mike Sombloski",
+          "house": false,
+          "correct": 8,
+          "missed": 6,
+          "void": 0,
+          "remaining": 0,
+          "max": 8,
+          "tb": 34,
+          "sheet": {
+            "0": "Giants",
+            "1": "Patriots",
+            "2": "Saints",
+            "3": "Bills",
+            "4": "Texans",
+            "5": "Jaguars",
+            "6": "Chiefs",
+            "7": "Colts",
+            "8": "Vikings",
+            "9": "Cardinals",
+            "10": "Raiders",
+            "11": "49ers",
+            "12": "Bengals",
+            "13": "Chargers"
+          },
+          "filedAt": "2026-11-12T01:44:34+00:00",
+          "firstAt": "2026-11-12T01:44:34+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 17,
+          "delta": 0,
+          "state": "out",
+          "paid": true,
+          "badges": [
+            {
+              "id": "coin",
+              "note": "behind Claude, 8–9"
+            },
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
+        },
+        {
           "name": "Walczyk",
           "house": false,
           "correct": 8,
-          "missed": 5,
+          "missed": 6,
           "void": 0,
-          "remaining": 1,
-          "max": 9,
+          "remaining": 0,
+          "max": 8,
           "tb": 56,
           "sheet": {
             "0": "Giants",
@@ -16174,65 +16289,13 @@
           ]
         },
         {
-          "name": "Andy R",
-          "house": false,
-          "correct": 7,
-          "missed": 6,
-          "void": 0,
-          "remaining": 1,
-          "max": 8,
-          "tb": 41,
-          "sheet": {
-            "0": "Giants",
-            "1": "Patriots",
-            "2": "Saints",
-            "3": "Jets",
-            "4": "Texans",
-            "5": "Jaguars",
-            "6": "Chiefs",
-            "7": "Colts",
-            "8": "Packers",
-            "9": "Rams",
-            "10": "Seahawks",
-            "11": "49ers",
-            "12": "Bengals",
-            "13": "Chargers"
-          },
-          "filedAt": "2026-11-12T21:22:26+00:00",
-          "firstAt": "2026-11-12T21:22:26+00:00",
-          "free": false,
-          "paypal": true,
-          "rank": 19,
-          "delta": 0,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "homer",
-              "note": "took the Jets, who lost"
-            },
-            {
-              "id": "coin",
-              "note": "behind Claude, 7–9"
-            },
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            },
-            {
-              "id": "cellar",
-              "note": "last place this week"
-            }
-          ]
-        },
-        {
           "name": "Dan",
           "house": false,
           "correct": 7,
-          "missed": 6,
+          "missed": 7,
           "void": 0,
-          "remaining": 1,
-          "max": 8,
+          "remaining": 0,
+          "max": 7,
           "tb": 43,
           "sheet": {
             "0": "Giants",
@@ -16254,55 +16317,7 @@
           "firstAt": "2026-11-12T13:10:03+00:00",
           "free": false,
           "paypal": false,
-          "rank": 19,
-          "delta": 0,
-          "state": "out",
-          "paid": true,
-          "badges": [
-            {
-              "id": "coin",
-              "note": "behind Claude, 7–9"
-            },
-            {
-              "id": "dead",
-              "note": "mathematically out"
-            },
-            {
-              "id": "cellar",
-              "note": "last place this week"
-            }
-          ]
-        },
-        {
-          "name": "Mike Sombloski",
-          "house": false,
-          "correct": 7,
-          "missed": 6,
-          "void": 0,
-          "remaining": 1,
-          "max": 8,
-          "tb": 34,
-          "sheet": {
-            "0": "Giants",
-            "1": "Patriots",
-            "2": "Saints",
-            "3": "Bills",
-            "4": "Texans",
-            "5": "Jaguars",
-            "6": "Chiefs",
-            "7": "Colts",
-            "8": "Vikings",
-            "9": "Cardinals",
-            "10": "Raiders",
-            "11": "49ers",
-            "12": "Bengals",
-            "13": "Chargers"
-          },
-          "filedAt": "2026-11-12T01:44:34+00:00",
-          "firstAt": "2026-11-12T01:44:34+00:00",
-          "free": false,
-          "paypal": false,
-          "rank": 19,
+          "rank": 21,
           "delta": 0,
           "state": "out",
           "paid": true,
@@ -16710,11 +16725,14 @@
               "Andy R",
               "Arod",
               "Josh"
-            ]
+            ],
+            "upset": true,
+            "roomUpset": true,
+            "rightN": 6
           }
         },
-        "upsets": 3,
-        "decided": 13,
+        "upsets": 4,
+        "decided": 14,
         "best": {
           "game": 0,
           "n": 6,
@@ -16752,19 +16770,11 @@
           "won": false
         }
       },
-      "decides": [
-        {
-          "game": 13,
-          "away": [
-            "Josh"
-          ],
-          "home": [
-            "Thom"
-          ]
-        }
+      "decides": [],
+      "weekWinners": [
+        "Josh"
       ],
-      "weekWinners": [],
-      "weekPayout": 0,
+      "weekPayout": 95.0,
       "tbUsed": false,
       "updates": [
         {
@@ -16794,32 +16804,40 @@
         {
           "at": "2026-11-16T04:49:54.344928+00:00",
           "note": "13 of 14 final. Josh leads at 13–0. Out of it: Mrs. Sombloski, Nate V. Josh has clinched."
+        },
+        {
+          "at": "2026-11-17T05:23:19.513903+00:00",
+          "note": "Final: Josh takes Week 10."
+        },
+        {
+          "at": "2026-11-17T05:23:54.184441+00:00",
+          "note": "Final: Josh takes Week 10."
         }
       ],
-      "decidedAtLastRun": 13,
+      "decidedAtLastRun": 14,
       "outAtLastRun": [
         "Mrs. Sombloski",
         "Arod",
+        "Wendy",
         "Garret",
         "Leah",
         "Melissa",
         "Nate V",
         "Ryan Holovics",
         "Tom",
-        "Wendy",
         "Ariel",
         "Derek",
         "Devin",
         "Kaylani & Luka",
-        "B-rad",
-        "Walczyk",
         "Andy R",
-        "Dan",
-        "Mike Sombloski"
+        "B-rad",
+        "Mike Sombloski",
+        "Walczyk",
+        "Dan"
       ],
       "threads": {},
-      "columnHead": "Three minutes from 14–0, and a cellar fight",
-      "column": "Chargers 23–20, 3:20 left in the fourth. Hold on and Josh goes 14–0, with Mrs. Sombloski alone in second at 12–2 and Wendy and Arod at 11–3. Baltimore ties it or goes ahead and Josh is merely 13–1, which is still the money and still the photo.\n\nThe real fight is in the basement. A Chargers win lifts Andy R and Mike Sombloski to 8–6 and leaves Dan alone at the bottom at 7–7. A Baltimore drive drops Andy R and Mike to 7–7 together, and Dan climbs out without lifting a finger.",
+      "columnHead": "Josh goes 14–0, Dan finds the floor",
+      "column": "Chargers 23–20, final, and Josh is perfect: 14–0, $95 and the mugshot pick. He didn't get there playing it safe. All four underdogs that won this week, the Commanders, Browns, Vikings and Chargers, were on his sheet, and nobody else had all four. Mrs. Sombloski came closest at 12–2, which is a lot of good football for zero dollars.\n\nThe collapse belongs to Dan, 7–7 and alone at the bottom once Baltimore never got the tying points. He had the Cowboys in a 46–40 shootout and the Steelers in a 38–18 beating. Dumbest pick of the week: Mike Sombloski, the only sheet in the building on the Cardinals, who lost 34–6 at home. Andy R, the lone Jets believer, gets a mention for loyalty. Ariel promised to kick everyone's asses and finished 9–5, tied with the robot. The robot's Lock, Jaguars over Titans, came in 40–23.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w10.jpg",
@@ -16828,10 +16846,12 @@
         "week": 9,
         "line": ""
       },
-      "thuDone": true
+      "thuDone": true,
+      "tiebreakTotal": 43,
+      "rollOut": 0
     }
   },
-  "updated": "2026-11-17T04:10:47.282957+00:00",
+  "updated": "2026-11-17T05:23:54.184441+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -16916,12 +16936,6 @@
   "columnLog": [
     {
       "week": 10,
-      "at": "2026-11-16T13:12:59.370757+00:00",
-      "head": "Cincinnati buries the Steelers and four sheets",
-      "text": "Bengals 38, Steelers 18, and the four who backed Pittsburgh paid for it: Ariel, B-rad, Nate V and Dan. Nate V’s drop leaves Mrs. Sombloski alone in second at 11–2, two weeks after back-to-back finishes in the bottom three. Ariel and Claude share 9–4 and a long night.\n\nJosh is 13–0 and the week is his; all Monday decides is whether he finishes perfect. Nine sheets sit at 10–3 fighting over third. Chargers at Ravens stays sealed until kickoff."
-    },
-    {
-      "week": 10,
       "at": "2026-11-16T13:13:33.661323+00:00",
       "head": "Devin's run teeters; B-rad eyes a three-peat",
       "text": "Devin's three straight weeks in the top three are on life support: she sits 9–4 in a five-way knot with Claude, Ariel, Derek and Kaylani & Luka. Ariel goes into Monday a game behind Tom, the man she has lost to six weeks running.\n\nDown below, Andy R, Dan and Mike Sombloski share 7–6, and B-rad at 8–5 is one bad night from a third straight week in the bottom three. Josh already owns the money; Chargers at Ravens tonight is just for the record books."
@@ -16961,6 +16975,12 @@
       "at": "2026-11-17T04:10:47.282957+00:00",
       "head": "Three minutes from 14–0, and a cellar fight",
       "text": "Chargers 23–20, 3:20 left in the fourth. Hold on and Josh goes 14–0, with Mrs. Sombloski alone in second at 12–2 and Wendy and Arod at 11–3. Baltimore ties it or goes ahead and Josh is merely 13–1, which is still the money and still the photo.\n\nThe real fight is in the basement. A Chargers win lifts Andy R and Mike Sombloski to 8–6 and leaves Dan alone at the bottom at 7–7. A Baltimore drive drops Andy R and Mike to 7–7 together, and Dan climbs out without lifting a finger."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-17T05:23:54.184441+00:00",
+      "head": "Josh goes 14–0, Dan finds the floor",
+      "text": "Chargers 23–20, final, and Josh is perfect: 14–0, $95 and the mugshot pick. He didn't get there playing it safe. All four underdogs that won this week, the Commanders, Browns, Vikings and Chargers, were on his sheet, and nobody else had all four. Mrs. Sombloski came closest at 12–2, which is a lot of good football for zero dollars.\n\nThe collapse belongs to Dan, 7–7 and alone at the bottom once Baltimore never got the tying points. He had the Cowboys in a 46–40 shootout and the Steelers in a 38–18 beating. Dumbest pick of the week: Mike Sombloski, the only sheet in the building on the Cardinals, who lost 34–6 at home. Andy R, the lone Jets believer, gets a mention for loyalty. Ariel promised to kick everyone's asses and finished 9–5, tied with the robot. The robot's Lock, Jaguars over Titans, came in 40–23."
     }
   ],
   "rivals": [
