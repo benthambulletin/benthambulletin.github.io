@@ -23,8 +23,7 @@
         "GBrdRL",
         "OBA57Y",
         "V1Z5zM",
-        "EbPQxB",
-        "rrlAo2"
+        "EbPQxB"
       ],
       "paid": "vxRvBA",
       "fullName": "OBA57a",
@@ -52,7 +51,7 @@
     "missy verhague": "Mrs. Sombloski",
     "sigma mikey skibidi sombloski": "Mike Sombloski"
   },
-  "currentWeek": 10,
+  "currentWeek": 11,
   "weeks": {
     "4": {
       "status": "final",
@@ -16849,6 +16848,194 @@
       "thuDone": true,
       "tiebreakTotal": 43,
       "rollOut": 0
+    },
+    "11": {
+      "status": "pre",
+      "games": [
+        {
+          "away": "Colts",
+          "home": "Texans",
+          "kickoff": "2026-11-20T01:15:00Z",
+          "when": "Thu 8:15 PM",
+          "tv": "Prime Video",
+          "status": "sealed",
+          "fav": "Texans",
+          "line": "Texans −10"
+        },
+        {
+          "away": "Dolphins",
+          "home": "Bills",
+          "kickoff": "2026-11-22T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "status": "sealed",
+          "fav": "Bills",
+          "line": "Bills −16.5"
+        },
+        {
+          "away": "Ravens",
+          "home": "Panthers",
+          "kickoff": "2026-11-22T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "Panthers",
+          "line": "Panthers −2.5 (Ravens on a short week)"
+        },
+        {
+          "away": "Saints",
+          "home": "Bears",
+          "kickoff": "2026-11-22T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "Bears",
+          "line": "Bears −10"
+        },
+        {
+          "away": "Titans",
+          "home": "Cowboys",
+          "kickoff": "2026-11-22T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "Cowboys",
+          "line": "Cowboys −7.5"
+        },
+        {
+          "away": "Buccaneers",
+          "home": "Lions",
+          "kickoff": "2026-11-22T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "status": "sealed",
+          "fav": "Lions",
+          "line": "Lions −5.5 (Hutchinson out)"
+        },
+        {
+          "away": "Cardinals",
+          "home": "Chiefs",
+          "kickoff": "2026-11-22T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "status": "sealed",
+          "fav": "Chiefs",
+          "line": "Chiefs −16.5"
+        },
+        {
+          "away": "Steelers",
+          "home": "Eagles",
+          "kickoff": "2026-11-22T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "tv": "CBS",
+          "status": "sealed",
+          "fav": "Steelers",
+          "line": "Steelers −4.5"
+        },
+        {
+          "away": "Jets",
+          "home": "Chargers",
+          "kickoff": "2026-11-22T21:05:00Z",
+          "when": "Sun 4:05 PM",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "Chargers",
+          "line": "Chargers −3 (Geno Smith hurt)"
+        },
+        {
+          "away": "Raiders",
+          "home": "Broncos",
+          "kickoff": "2026-11-22T21:25:00Z",
+          "when": "Sun 4:25 PM",
+          "tv": "CBS",
+          "status": "sealed",
+          "fav": "Broncos",
+          "line": "Broncos −9.5"
+        },
+        {
+          "away": "Jaguars",
+          "home": "Giants",
+          "kickoff": "2026-11-22T21:25:00Z",
+          "when": "Sun 4:25 PM",
+          "tv": "CBS",
+          "status": "sealed",
+          "fav": "Jaguars",
+          "line": "Jaguars −6.5"
+        },
+        {
+          "away": "Vikings",
+          "home": "49ers",
+          "kickoff": "2026-11-23T01:20:00Z",
+          "when": "Sun 8:20 PM · Mexico City",
+          "tv": "NBC",
+          "status": "sealed",
+          "fav": "49ers",
+          "line": "49ers −3 (Mexico City)"
+        },
+        {
+          "away": "Bengals",
+          "home": "Commanders",
+          "kickoff": "2026-11-24T01:15:00Z",
+          "when": "Mon 8:15 PM",
+          "tv": "ESPN",
+          "status": "sealed",
+          "fav": "Bengals",
+          "line": "Bengals −3.5"
+        }
+      ],
+      "players": [],
+      "trash": [],
+      "payments": [],
+      "buyIn": 5,
+      "payBy": "2026-11-20T01:15:00Z",
+      "pot": 0,
+      "paidN": 0,
+      "opensAt": "2026-11-17T09:06:27Z",
+      "housePicks": {
+        "trash": "Nine and five last week. The spreadsheet has been spoken to.",
+        "picks": {
+          "0": "Texans",
+          "1": "Bills",
+          "2": "Panthers",
+          "3": "Bears",
+          "4": "Cowboys",
+          "5": "Lions",
+          "6": "Chiefs",
+          "7": "Steelers",
+          "8": "Chargers",
+          "9": "Broncos",
+          "10": "Jaguars",
+          "11": "49ers",
+          "12": "Bengals"
+        },
+        "why": {
+          "0": "Texans favored by ten; Colts are 3–7.",
+          "1": "Bills 16.5-point favorites at home.",
+          "2": "Ravens on a short week after Monday night.",
+          "3": "Bears 7–2 and rested off a bye.",
+          "4": "Cowboys by a touchdown-plus at home.",
+          "5": "Lions at home, even without Hutchinson.",
+          "6": "Mahomes just threw five touchdowns. Chiefs by 16.5 at home.",
+          "7": "Steelers 6–2; Eagles 2–7.",
+          "8": "Chargers at home; Jets' quarterback is banged up.",
+          "9": "Broncos rested and unbeaten against the number at home.",
+          "10": "Jaguars by six and a half on the road.",
+          "11": "49ers by a field goal in Mexico City.",
+          "12": "Bengals have won five straight."
+        },
+        "lock": "6",
+        "lockWhy": "Chiefs at home by 16.5, Mahomes off a five-touchdown game; not a division game. Risk checked: Kelce's knock."
+      },
+      "bot": true,
+      "botPaid": true,
+      "rollIn": 0,
+      "namesForm": true,
+      "asks": [],
+      "face": {
+        "photo": "/pool/faces/w11.jpg",
+        "who": "Mike Sombloski",
+        "by": "Josh",
+        "week": 10,
+        "line": ""
+      }
     }
   },
   "updated": "2026-11-17T05:23:54.184441+00:00",
@@ -17017,15 +17204,5 @@
     "11": [
       "Josh"
     ]
-  },
-  "pendingFace": {
-    "forWeek": 11,
-    "face": {
-      "photo": "/pool/faces/w11.jpg",
-      "who": "Mike Sombloski",
-      "by": "Josh",
-      "week": 10,
-      "line": ""
-    }
   }
 }
