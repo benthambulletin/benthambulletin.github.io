@@ -213,7 +213,10 @@ game, just send the message.
 5. Odd kickoffs (not Thu 8:15, Sun 9:30/1:00/4:05/4:25/8:20, Mon 8:15): create a one-off kickoff-lock task at
    kickoff + 2 minutes per game (copy the kickoff-lock prompt from list_triggers), named "Sunday Tax — kickoff lock
    (Week N, <Away> at <Home>)".
-6. If `pool/data/notice.json` exists, delete it (a ruling lasts its own week only — Garret, Oct 11).
+6. If `season.pendingFace.forWeek` is this week, move its `face` into `weeks.N.face` and delete `pendingFace` (a mugshot
+   Garret sent before the week existed — Nov 16), and name the person in the form's This week line. If the winner it
+   credits (`by`) didn't actually win the week, keep the photo off and ask Garret.
+6b. If `pool/data/notice.json` exists, delete it (a ruling lasts its own week only — Garret, Oct 11).
 7. Land as "Pool: Week N slate". Board check.
 **Names (from Week 6):** score.py keys each player by full name (stored only as a hash in `season.people`) and shows
 their Board name via `displayNames`. It prints `LINKED NEW:`/`LINKED CHECK:` the first time a full name is seen —

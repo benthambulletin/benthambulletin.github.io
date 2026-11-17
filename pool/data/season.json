@@ -16997,5 +16997,15 @@
     "11": [
       "Josh"
     ]
+  },
+  "pendingFace": {
+    "forWeek": 11,
+    "face": {
+      "photo": "/pool/faces/w11.jpg",
+      "who": "Mike Sombloski",
+      "by": "Josh",
+      "week": 10,
+      "line": ""
+    }
   }
 }
