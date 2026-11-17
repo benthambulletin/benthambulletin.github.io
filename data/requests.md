@@ -52,6 +52,22 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Sun Nov 22 — Sunday Question answer (family form, id OQ2X78A, Sun Nov 15).** Gregg: "How in the heck can anyone pick just one 'most favorite' dish at Thanksgiving?? I'm finding it quite impossible 🤷" Run it under his name with any other answers to the Thanksgiving-dish question.
+
+
+- **Tue Dec 1 (Garret, Nov 14, 8:01 a.m.: "Hold off til 12/1/26").** Switch to the winter scheme in this edition, not earlier: shades and snowflake ornaments as listed under Design in CLAUDE.md (mock shown Nov 14). Change `tools/site.py` :root and the surround, the ornaments in the masthead and colophon, and the hardcoded chart colors. Send Garret a screenshot with the link that morning.
+
+
+
+
+- **Fri Nov 13 (Garret, Thu 9:50 p.m.: "put a poll in tomorrow's paper asking for the readers to decide").** Reader poll on delivery time: the paper now goes out by text at about 8 a.m.; it could arrive automatically at 6. Run it near the top of The News as a small item, plain and short, with a tappable link (Garret, 9:52 p.m.: the reader must be able to tell it is a.m. and that it is about when the paper is sent; always write "6 a.m." and "8 a.m.", never bare "6 or 8"): `<div class="wire"><div><h3>Reader Poll: The Paper at 6 a.m. or 8 a.m.?</h3><p>This is about what time the Bulletin is sent to you. Right now the link is texted at about 8 a.m.; it could be published and texted automatically at 6 a.m. instead, waiting when you wake up. Which do you want? Vote at <a href="https://tally.so/r/5XjVlv">tally.so/r/5XjVlv</a>; it takes ten seconds.</p></div></div>`. Tally form **5XjVlv** (who's voting; 6 a.m. / 8 a.m. / either). Keep it in the paper through Sunday Nov 15 (reworded each day, one line after Friday), fetch 5XjVlv each morning, and print the tally by count on Monday Nov 16; give Garret the names and votes in chat, not in print. Don't change the schedule until Garret decides.
+
+
+
+- **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
+
+## Done
+
 - **Tue Nov 17 — Wayfair in Amherst (Garret, Mon 9:50 p.m., after a research run in chat: "place that story with details on the bentham bulletin tomorrow").** Run a full item in The News on the Wayfair store announced for the old Boulevard Mall: a long Home Wire item with its own headline (three or four short paragraphs; Amherst is Erie County, outside the usual three, and runs on Garret's say-so), or the lead only if the data-center item below doesn't take it (editor's call; both run). It has not run before. Garret's angle: what will be in the store, how it is laid out, how it compares with IKEA, and the old-mall setting. Write it for a Buffalo-area shopper deciding whether it's worth a trip. Paraphrase, attribute, every web address a link. Facts checked Monday night; use only these unless the morning feed adds a sourced one:
   - **Confirmed (Wayfair release, Nov. 12, https://www.aboutwayfair.com/category/company-news/wayfair-to-open-a-store-in-buffalo-new-york):** about 96,000 square feet at 1261 Niagara Falls Boulevard, Amherst, on the former Boulevard Mall site; expected to open in 2028; Wayfair's 12th store; reachable from I-290, Niagara Falls Boulevard and Sheridan Drive. Promised: a curated selection, design experts on site, many items to take home the same day, larger purchases delivered. Eric Recoon of Benderson Development called it the "exciting first step" in the mall's transformation (one short quote at most).
   - **The building (WIVB, Mon Nov. 16, https://www.yahoo.com/news/articles/wayfair-store-occupy-former-gabe-221923977.html):** Wayfair will retrofit the space that last held Gabe's and, in the mall's heyday, Sears. Supervisor Shawn Lavin said the rest of the site will be demolished; the town expects a court ruling in its eminent domain case this week (a hearing is set for Thursday) and hopes to take possession by early December, then hand the site back to Benderson for a mixed-use project with housing. Don't print a hearing outcome that hasn't happened; if Tuesday's feed has a newer development, lead the item with it.
@@ -63,6 +79,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
   - **Don't print:** that store prices match the website (unconfirmed); any claim about Canadian shoppers as Wayfair's reason (not from Wayfair); a floor plan for Amherst (none exists); the Sears building's size (Wikipedia only). No opinion on whether it's "worth it"; give the reader the facts to decide.
   - **Cover, if no family photo:** no logos and no storefront signs. Skip a cover search on this story.
   - Don't reuse 96,000 or any of these numbers in The Ledger. Runs once; a follow-up only on real news (the court ruling, demolition starting).
+  - Ran in No. 146.
 
 - **Tue Nov 17 (Garret, Mon 6:51 p.m., sending the article text: "Can you include this in the Bentham bulletin news for tomorrow?").** Run one item in The News on the data-center emissions study: a full National Wire item, or the lead if nothing bigger breaks overnight (editor's call). Source: The New York Times, Harry Stevens, Nov. 16, 2026, reporting on a study published Monday Nov. 16 in the journal Nature Sustainability by a team led by Harvard researchers (lead: Gianluca Guidi). Paraphrase in the paper's own words, attribute to the study and the Times, at most one short quote, and explain "data center" in the same sentence (the warehouse-size buildings full of computers that run the internet and A.I.). Facts from the article Garret pasted, use only these unless the morning feed adds a sourced one:
   - The 403 biggest U.S. data centers studied emit an estimated 25.7 million metric tons of carbon dioxide a year, almost as much as Bolivia or Denmark. Study period May 2024 to April 2025; first peer-reviewed estimate since the A.I. boom began.
@@ -80,22 +97,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
     - Bottom line: waiting to see whether A.I. proves useful is reasonable as far as it goes, but it is a weak reason to hold off on disclosure or cleaner power in the meantime.
     - Keep the analysis to that paragraph; nothing in the news paragraphs takes a side. No defensiveness, no sermon, no new facts or numbers beyond the list above. Tell the independent reviewer the analysis paragraph is requested and labeled, so it checks the label and the facts rather than cutting it as opinion.
   - Don't reuse any of these numbers in The Ledger. Runs once.
-
-- **Sun Nov 22 — Sunday Question answer (family form, id OQ2X78A, Sun Nov 15).** Gregg: "How in the heck can anyone pick just one 'most favorite' dish at Thanksgiving?? I'm finding it quite impossible 🤷" Run it under his name with any other answers to the Thanksgiving-dish question.
-
-
-- **Tue Dec 1 (Garret, Nov 14, 8:01 a.m.: "Hold off til 12/1/26").** Switch to the winter scheme in this edition, not earlier: shades and snowflake ornaments as listed under Design in CLAUDE.md (mock shown Nov 14). Change `tools/site.py` :root and the surround, the ornaments in the masthead and colophon, and the hardcoded chart colors. Send Garret a screenshot with the link that morning.
-
-
-
-
-- **Fri Nov 13 (Garret, Thu 9:50 p.m.: "put a poll in tomorrow's paper asking for the readers to decide").** Reader poll on delivery time: the paper now goes out by text at about 8 a.m.; it could arrive automatically at 6. Run it near the top of The News as a small item, plain and short, with a tappable link (Garret, 9:52 p.m.: the reader must be able to tell it is a.m. and that it is about when the paper is sent; always write "6 a.m." and "8 a.m.", never bare "6 or 8"): `<div class="wire"><div><h3>Reader Poll: The Paper at 6 a.m. or 8 a.m.?</h3><p>This is about what time the Bulletin is sent to you. Right now the link is texted at about 8 a.m.; it could be published and texted automatically at 6 a.m. instead, waiting when you wake up. Which do you want? Vote at <a href="https://tally.so/r/5XjVlv">tally.so/r/5XjVlv</a>; it takes ten seconds.</p></div></div>`. Tally form **5XjVlv** (who's voting; 6 a.m. / 8 a.m. / either). Keep it in the paper through Sunday Nov 15 (reworded each day, one line after Friday), fetch 5XjVlv each morning, and print the tally by count on Monday Nov 16; give Garret the names and votes in chat, not in print. Don't change the schedule until Garret decides.
-
-
-
-- **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
-
-## Done
+  - Ran in No. 146.
 
 - **Mon Nov 16 (updated by Garret, Sun 9:45 a.m.: "Last call should be today. I don't want this running anymore").** The poll ended Sunday. Monday gets ONE short line with the final count (numbers only, no names; add Garret's 6 a.m. vote to the form's total), no link, no ask, and the poll never runs again after that. Give Garret the names and votes in chat at the 7:20 check. Garret decided Sun 9:49 a.m. ("I think it's safe to say that's the answer"): the paper moves to 6 a.m. from Monday Nov 16; times are in CLAUDE.md. Monday's count line says the paper now comes at 6. — ran in No. 145.
 
