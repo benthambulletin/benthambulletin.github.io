@@ -1,13 +1,15 @@
 {
- "updated": "2026-11-17T04:22:51Z",
+ "updated": "2026-11-17T04:24:53Z",
  "week": 10,
  "games": {
   "13": {
-   "state": "in",
+   "state": "post",
    "away": 23,
    "home": 20,
-   "detail": "0:11 - 4th",
-   "line": "Chargers 23–20 · 0:11 - 4th"
+   "detail": "Final",
+   "winner": "Chargers",
+   "score": "23–20",
+   "line": "Final · Chargers 23–20"
   }
  }
 }
