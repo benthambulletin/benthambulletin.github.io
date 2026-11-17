@@ -15410,12 +15410,38 @@
           "kickoff": "2026-11-17T01:15:00Z",
           "when": "Mon 8:15 PM",
           "tv": "ESPN",
-          "status": "sealed",
+          "status": "live",
           "fav": "Ravens",
-          "line": "Ravens −5.5 (Lamar Jackson out)",
+          "line": "Ravens −4.5 (Lamar Jackson out)",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Chargers": [
+              "Mike Sombloski",
+              "Wendy",
+              "Mrs. Sombloski",
+              "Andy R",
+              "Arod",
+              "Josh"
+            ],
+            "Ravens": [
+              "Devin",
+              "Garret",
+              "Thom",
+              "Dan",
+              "Nate V",
+              "B-rad",
+              "Leah",
+              "Tom",
+              "Ariel",
+              "Kaylani & Luka",
+              "Ryan Holovics",
+              "Derek",
+              "Walczyk",
+              "Melissa",
+              "Claude"
+            ]
+          }
         }
       ],
       "players": [
@@ -15427,7 +15453,7 @@
           "void": 0,
           "remaining": 1,
           "max": 14,
-          "tb": null,
+          "tb": 48,
           "sheet": {
             "0": "Commanders",
             "1": "Lions",
@@ -15441,7 +15467,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Chargers"
           },
           "filedAt": "2026-11-13T01:09:31+00:00",
           "firstAt": "2026-11-13T01:09:31+00:00",
@@ -15470,7 +15497,7 @@
           "void": 0,
           "remaining": 1,
           "max": 12,
-          "tb": null,
+          "tb": 44,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -15484,7 +15511,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Chargers"
           },
           "filedAt": "2026-11-12T18:28:22+00:00",
           "firstAt": "2026-11-12T18:28:22+00:00",
@@ -15509,7 +15537,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 21,
           "sheet": {
             "0": "Commanders",
             "1": "Patriots",
@@ -15523,7 +15551,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Chargers"
           },
           "filedAt": "2026-11-12T22:23:33+00:00",
           "firstAt": "2026-11-12T22:23:33+00:00",
@@ -15548,7 +15577,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 38,
           "sheet": {
             "0": "Commanders",
             "1": "Lions",
@@ -15562,7 +15591,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-10T13:36:41+00:00",
           "firstAt": "2026-11-10T13:36:41+00:00",
@@ -15587,7 +15617,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 37,
           "sheet": {
             "0": "Commanders",
             "1": "Lions",
@@ -15601,7 +15631,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-12T18:02:25+00:00",
           "firstAt": "2026-11-12T18:02:25+00:00",
@@ -15626,7 +15657,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 37,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -15640,7 +15671,8 @@
             "9": "Rams",
             "10": "Raiders",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-13T00:18:39+00:00",
           "firstAt": "2026-11-13T00:18:39+00:00",
@@ -15669,7 +15701,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 54,
           "sheet": {
             "0": "Commanders",
             "1": "Lions",
@@ -15683,7 +15715,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Steelers"
+            "12": "Steelers",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-12T18:00:32+00:00",
           "firstAt": "2026-11-12T18:00:32+00:00",
@@ -15708,7 +15741,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 38,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -15722,7 +15755,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-12T21:22:21+00:00",
           "firstAt": "2026-11-12T21:22:21+00:00",
@@ -15747,7 +15781,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -15761,7 +15795,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-10T20:33:44+00:00",
           "firstAt": "2026-11-10T20:33:44+00:00",
@@ -15781,7 +15816,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 41,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -15795,7 +15830,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-12T18:03:39+00:00",
           "firstAt": "2026-11-12T18:03:39+00:00",
@@ -15820,7 +15856,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 28,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -15834,7 +15870,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Chargers"
           },
           "filedAt": "2026-11-12T18:21:05+00:00",
           "firstAt": "2026-11-12T18:21:05+00:00",
@@ -15859,7 +15896,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 40,
           "sheet": {
             "0": "Giants",
             "1": "Patriots",
@@ -15873,7 +15910,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Steelers"
+            "12": "Steelers",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-12T18:21:00+00:00",
           "firstAt": "2026-11-12T18:21:00+00:00",
@@ -15898,7 +15936,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 40,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -15912,7 +15950,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-10T11:08:30+00:00",
           "firstAt": "2026-11-10T11:08:30+00:00",
@@ -15932,7 +15971,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 48,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -15946,7 +15985,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-12T21:44:33+00:00",
           "firstAt": "2026-11-12T21:44:33+00:00",
@@ -15971,7 +16011,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 38,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -15985,7 +16025,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-10T13:30:40+00:00",
           "firstAt": "2026-11-10T13:30:40+00:00",
@@ -16010,7 +16051,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 40,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -16024,7 +16065,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-12T18:39:53+00:00",
           "firstAt": "2026-11-12T18:39:53+00:00",
@@ -16049,7 +16091,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 50,
           "sheet": {
             "0": "Commanders",
             "1": "Lions",
@@ -16063,7 +16105,8 @@
             "9": "Rams",
             "10": "Raiders",
             "11": "49ers",
-            "12": "Steelers"
+            "12": "Steelers",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-12T18:01:22+00:00",
           "firstAt": "2026-11-12T18:01:22+00:00",
@@ -16092,7 +16135,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 56,
           "sheet": {
             "0": "Giants",
             "1": "Patriots",
@@ -16106,7 +16149,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-12T22:53:38+00:00",
           "firstAt": "2026-11-12T22:53:38+00:00",
@@ -16135,7 +16179,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 41,
           "sheet": {
             "0": "Giants",
             "1": "Patriots",
@@ -16149,7 +16193,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Chargers"
           },
           "filedAt": "2026-11-12T21:22:26+00:00",
           "firstAt": "2026-11-12T21:22:26+00:00",
@@ -16186,7 +16231,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 43,
           "sheet": {
             "0": "Giants",
             "1": "Lions",
@@ -16200,7 +16245,8 @@
             "9": "Rams",
             "10": "Seahawks",
             "11": "Cowboys",
-            "12": "Steelers"
+            "12": "Steelers",
+            "13": "Ravens"
           },
           "filedAt": "2026-11-12T13:10:03+00:00",
           "firstAt": "2026-11-12T13:10:03+00:00",
@@ -16233,7 +16279,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 34,
           "sheet": {
             "0": "Giants",
             "1": "Patriots",
@@ -16247,7 +16293,8 @@
             "9": "Cardinals",
             "10": "Raiders",
             "11": "49ers",
-            "12": "Bengals"
+            "12": "Bengals",
+            "13": "Chargers"
           },
           "filedAt": "2026-11-12T01:44:34+00:00",
           "firstAt": "2026-11-12T01:44:34+00:00",
@@ -16455,7 +16502,8 @@
           "13": "Chargers 0–8. Ravens rested, Brissett starting."
         },
         "lock": "5",
-        "lockWhy": "Jaguars rested, 6–2 and rolling; Titans 1–7. Division game, but a 10-point edge."
+        "lockWhy": "Jaguars rested, 6–2 and rolling; Titans 1–7. Division game, but a 10-point edge.",
+        "tb": 40
       },
       "bot": true,
       "botPaid": true,
@@ -16648,6 +16696,19 @@
             "upset": false,
             "roomUpset": false,
             "rightN": 16
+          },
+          "13": {
+            "away": 6,
+            "home": 14,
+            "minority": "Chargers",
+            "minorityWho": [
+              "Mike Sombloski",
+              "Wendy",
+              "Mrs. Sombloski",
+              "Andy R",
+              "Arod",
+              "Josh"
+            ]
           }
         },
         "upsets": 3,
@@ -16689,7 +16750,17 @@
           "won": false
         }
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 13,
+          "away": [
+            "Josh"
+          ],
+          "home": [
+            "Thom"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -16745,8 +16816,8 @@
         "Mike Sombloski"
       ],
       "threads": {},
-      "columnHead": "Devin's run teeters; B-rad eyes a three-peat",
-      "column": "Devin's three straight weeks in the top three are on life support: she sits 9–4 in a five-way knot with Claude, Ariel, Derek and Kaylani & Luka. Ariel goes into Monday a game behind Tom, the man she has lost to six weeks running.\n\nDown below, Andy R, Dan and Mike Sombloski share 7–6, and B-rad at 8–5 is one bad night from a third straight week in the bottom three. Josh already owns the money; Chargers at Ravens tonight is just for the record books.",
+      "columnHead": "Josh needs the Chargers to go 14–0",
+      "column": "Josh banked the money Sunday; tonight is about the frame. He's 13–0 with the Chargers, an 0–8 team getting 4.5 in Baltimore, so a Los Angeles win makes it two perfect sheets in two weeks. He was also the only one to have all three underdogs that won: Commanders, Browns, Vikings.\n\nFourteen of you took the Ravens. Mike Sombloski, Wendy, Mrs. Sombloski, Andy R and Arod ride with Josh. A Chargers upset puts Mrs. Sombloski alone at 12–2 with Wendy and Arod next at 11–3; a Ravens win drags seven sheets up to 11–3 beside her. Claude's tiebreaker is the closing total, 40. Josh says 48, Arod 21, Walczyk 56.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w10.jpg",
@@ -16758,7 +16829,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-17T01:09:35.116510+00:00",
+  "updated": "2026-11-17T01:20:13.984220+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
