@@ -15442,8 +15442,8 @@
               "Claude"
             ]
           },
-          "live": "Chargers 17–10 · 3rd qtr",
-          "liveAt": "2026-11-17T03:07:48Z"
+          "live": "Chargers 23–20 · 4th qtr",
+          "liveAt": "2026-11-17T04:06:38Z"
         }
       ],
       "players": [
@@ -16818,8 +16818,8 @@
         "Mike Sombloski"
       ],
       "threads": {},
-      "columnHead": "Josh, three dogs deep and one game from perfect",
-      "column": "Chargers 17–10, 11 minutes left in the third. If it ends here, Josh finishes 14–0 and his 48 on the tiebreaker never comes up. He got this far by taking all three underdogs that won: the Commanders, the Browns and the Vikings.\n\nA Chargers win also leaves Mrs. Sombloski alone in second at 12–2. A Baltimore comeback drops her into an eight-way pileup at 11–3 with Garret, Leah, Melissa, Nate V, Ryan Holovics, Thom and Tom, which is a lot of people pulling for the Ravens just to share a podium.",
+      "columnHead": "Three minutes from 14–0, and a cellar fight",
+      "column": "Chargers 23–20, 3:20 left in the fourth. Hold on and Josh goes 14–0, with Mrs. Sombloski alone in second at 12–2 and Wendy and Arod at 11–3. Baltimore ties it or goes ahead and Josh is merely 13–1, which is still the money and still the photo.\n\nThe real fight is in the basement. A Chargers win lifts Andy R and Mike Sombloski to 8–6 and leaves Dan alone at the bottom at 7–7. A Baltimore drive drops Andy R and Mike to 7–7 together, and Dan climbs out without lifting a finger.",
       "columnN": 20,
       "face": {
         "photo": "/pool/faces/w10.jpg",
@@ -16831,7 +16831,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-17T03:10:06.449471+00:00",
+  "updated": "2026-11-17T04:10:47.282957+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -16916,12 +16916,6 @@
   "columnLog": [
     {
       "week": 10,
-      "at": "2026-11-16T00:52:34.640222+00:00",
-      "head": "Josh 12–0, and nobody can pass him",
-      "text": "The late window punished every lone wolf. Mike Sombloski rode the Cardinals alone and got 34–6. Mike, B-rad and Melissa took the Raiders and lost 21–13. Dan stood alone on the Cowboys through 86 points of nonsense before San Francisco won 46–40. Josh is 12–0 with two to play, and the math says nobody passes him. Mrs. Sombloski and Nate V sit two back at 10–2; everyone else is out.\n\nIn the Sombloski house it's Mrs. 10–2, Mike 6–6, tied for last with Andy R. Steelers at Bengals kicks off at 8:20, the Chargers and Ravens close it Monday, and both stay sealed until kickoff."
-    },
-    {
-      "week": 10,
       "at": "2026-11-16T13:12:59.370757+00:00",
       "head": "Cincinnati buries the Steelers and four sheets",
       "text": "Bengals 38, Steelers 18, and the four who backed Pittsburgh paid for it: Ariel, B-rad, Nate V and Dan. Nate V’s drop leaves Mrs. Sombloski alone in second at 11–2, two weeks after back-to-back finishes in the bottom three. Ariel and Claude share 9–4 and a long night.\n\nJosh is 13–0 and the week is his; all Monday decides is whether he finishes perfect. Nine sheets sit at 10–3 fighting over third. Chargers at Ravens stays sealed until kickoff."
@@ -16961,6 +16955,12 @@
       "at": "2026-11-17T03:10:06.449471+00:00",
       "head": "Josh, three dogs deep and one game from perfect",
       "text": "Chargers 17–10, 11 minutes left in the third. If it ends here, Josh finishes 14–0 and his 48 on the tiebreaker never comes up. He got this far by taking all three underdogs that won: the Commanders, the Browns and the Vikings.\n\nA Chargers win also leaves Mrs. Sombloski alone in second at 12–2. A Baltimore comeback drops her into an eight-way pileup at 11–3 with Garret, Leah, Melissa, Nate V, Ryan Holovics, Thom and Tom, which is a lot of people pulling for the Ravens just to share a podium."
+    },
+    {
+      "week": 10,
+      "at": "2026-11-17T04:10:47.282957+00:00",
+      "head": "Three minutes from 14–0, and a cellar fight",
+      "text": "Chargers 23–20, 3:20 left in the fourth. Hold on and Josh goes 14–0, with Mrs. Sombloski alone in second at 12–2 and Wendy and Arod at 11–3. Baltimore ties it or goes ahead and Josh is merely 13–1, which is still the money and still the photo.\n\nThe real fight is in the basement. A Chargers win lifts Andy R and Mike Sombloski to 8–6 and leaves Dan alone at the bottom at 7–7. A Baltimore drive drops Andy R and Mike to 7–7 together, and Dan climbs out without lifting a finger."
     }
   ],
   "rivals": [
