@@ -44,14 +44,16 @@ def commons(q, n=4):
     u = ('https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=20'
          '&gsrsearch=' + urllib.parse.quote('filetype:bitmap ' + q) + '&prop=imageinfo&iiprop=url|size|extmetadata&iiurlwidth=1600')
     try:
-        pages = sorted(get(u).get('query', {}).get('pages', {}).values(), key=lambda p: p.get('index', 99))
+        resp = get(u); pages = sorted(resp.get('query', {}).get('pages', {}).values(), key=lambda p: p.get('index', 99))
+        print('commons', repr(q), 'pages', len(pages), 'keys', list(resp.keys()), str(resp.get('error') or resp.get('warnings') or '')[:300])
     except Exception as e:
         print('commons search failed', q, e); return out
     for p in pages:
         if len(out) >= n: break
         ii = (p.get('imageinfo') or [{}])[0]; m = ii.get('extmetadata', {})
         lic = strip(m.get('LicenseShortName', {}).get('value'))
-        if not OKLIC.match(lic) or ii.get('width', 0) < 1000 or ii.get('width', 0) < ii.get('height', 1) * 1.15: continue
+        if not OKLIC.match(lic) or ii.get('width', 0) < 1000 or ii.get('width', 0) < ii.get('height', 1) * 1.15:
+            print('  skip', p.get('title', '')[:50], '|', lic, '|', ii.get('width'), ii.get('height')); continue
         if not re.search(r'\.jpe?g$', ii.get('url', ''), re.I): continue
         artist = strip(m.get('Artist', {}).get('value'))[:80] or strip(m.get('Credit', {}).get('value'))[:80] or 'Wikimedia Commons'
         out.append(dict(url=ii.get('thumburl') or ii['url'], source='Wikimedia Commons', title=p['title'].replace('File:', '')[:140],
