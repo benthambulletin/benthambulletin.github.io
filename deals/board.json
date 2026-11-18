@@ -1,6 +1,73 @@
 {
- "updated": "2026-11-17T21:00:13-05:00",
+ "updated": "2026-11-17T21:52:16-05:00",
  "items": [
+  {
+   "id": "5X7VXDE",
+   "pasted": "https://www.homedepot.com/p/RYOBI-65-Laser-Distance-Measurer-ELDM65/325165930",
+   "link": "https://www.homedepot.com/p/RYOBI-65-Laser-Distance-Measurer-ELDM65/325165930",
+   "product": "Ryobi 65 ft. Laser Distance Measurer ELDM65",
+   "store": "Home Depot",
+   "image": "img/5X7VXDE.jpg",
+   "image_src": "https://images.thdstatic.com/productImages/0e9813ef-e6f9-48fb-86ee-b676eec4f51e/svn/ryobi-laser-distance-measurer-eldm65-64_1000.jpg",
+   "price": 34.97,
+   "was": 44.97,
+   "verdict": "wait",
+   "headline": "Wait: Home Depot had it at $29.97 three times this year.",
+   "reasons": [
+    "$29.97 on May 24, June 26 and Sept. 1, per Slickdeals.",
+    "$29.97 last Black Friday too; today's $34.97 is $5 more.",
+    "4.4 stars, 86 ratings; real Ryobi tool, limit 10 per order."
+   ],
+   "instead": "Need it now? Fine at $34.97. Otherwise wait for $29.97; doorbusters Nov. 27, Cyber deals Nov. 30.",
+   "instead_link": null,
+   "target": 29.97,
+   "checked": "2026-11-17T21:52:16-05:00",
+   "evidence": [
+    {
+     "what": "Home Depot today, $34.97 (crossed-out $44.97), 4.4 stars",
+     "url": "https://www.homedepot.com/p/RYOBI-65-Laser-Distance-Measurer-ELDM65/325165930",
+     "date": "2026-11-17",
+     "price": 34.97,
+     "kind": "today"
+    },
+    {
+     "what": "Home Depot Sept. 1, $29.97 shipped (Slickdeals)",
+     "url": "https://slickdeals.net/f/19954929-65-ryobi-laser-distance-measurer-29-97-free-shipping",
+     "date": "2026-09-01",
+     "price": 29.97,
+     "kind": "history"
+    },
+    {
+     "what": "Home Depot June 26, $29.97 shipped (Slickdeals)",
+     "url": "https://slickdeals.net/f/19688805-ryobi-65-laser-distance-measurer-29-97-fs-home-depot",
+     "date": "2026-06-26",
+     "price": 29.97,
+     "kind": "history"
+    },
+    {
+     "what": "Home Depot May 24, $29.97 shipped (Slickdeals)",
+     "url": "https://slickdeals.net/f/19555392-ryobi-65-laser-distance-measurer-29-97-fs-home-depot",
+     "date": "2026-05-24",
+     "price": 29.97,
+     "kind": "history"
+    },
+    {
+     "what": "Home Depot Black Friday pricing, Nov. 8, 2025: $29.97 (Bob Vila)",
+     "url": "https://www.bobvila.com/reviews/ryobi-deals-under-75-nov-2025/",
+     "date": "2025-11-08",
+     "price": 29.97,
+     "kind": "last-year"
+    },
+    {
+     "what": "Home Depot sale to Nov. 25; doorbusters Nov. 27; Cyber Nov. 30",
+     "url": "https://9to5toys.com/2026/10/29/official-home-depot-2026-black-friday-ad-deals/",
+     "date": "2026-10-29",
+     "price": null,
+     "kind": "sale-dates"
+    }
+   ],
+   "reviewed": true
+  },
   {
    "id": "VpeD7Xv",
    "pasted": "https://artuvate.co/products/fisiorest",
@@ -513,13 +580,7 @@
    "at": "2026-11-15T15:34:36-05:00"
   }
  ],
- "claimed": [
-  {
-   "id": "5X7VXDE",
-   "link": "https://www.homedepot.com/p/RYOBI-65-Laser-Distance-Measurer-ELDM65/325165930",
-   "at": "2026-11-17T21:48:45-05:00"
-  }
- ],
+ "claimed": [],
  "queued": [],
  "rechecked": "2026-11-17"
 }
