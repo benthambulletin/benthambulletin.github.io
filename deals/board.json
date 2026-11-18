@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T20:38:36-05:00",
+ "updated": "2026-11-17T21:00:13-05:00",
  "items": [
   {
    "id": "VpeD7Xv",
@@ -11,47 +11,62 @@
    "image_src": "https://artuvate.co/cdn/shop/files/FisioRest_1_e145564d-9a09-49c5-a910-adc0c9a53407_1.webp?v=1786356736",
    "price": 89,
    "was": 199,
-   "verdict": "wait",
-   "headline": "Cheapest we found today, but no proof it's a low.",
+   "verdict": "shit",
+   "headline": "Skip it: $89 looks like its everyday price, and buyers report refund trouble.",
    "reasons": [
-    "No dated lower price found; one review site lists $89-$99.",
-    "4.2 stars from 1,359 Trustpilot reviews; some report a burning-plastic smell.",
-    "Hong Kong seller; ships in 3-9 business days; some report refund trouble."
+    "$89-$99 is its listed price per one review site; no $199 found.",
+    "Trustpilot 4.2 stars, but some buyers report dead units, return fees.",
+    "Hong Kong seller; returns cost $15 plus shipping, per its policy."
    ],
-   "instead": "Need it now? Fine at $89. Otherwise check again Black Friday week.",
+   "instead": "Neck pain? See a doctor or PT first. Want one anyway? Buy where returns are free.",
    "instead_link": null,
    "checked": "2026-11-17T20:38:36-05:00",
    "evidence": [
     {
-     "what": "Artuvate's own site, FisioRest 2nd Gen, $89 (list $199)",
+     "what": "Artuvate's own site, FisioRest 2nd Gen, $89 (crossed-out $199)",
      "url": "https://artuvate.co/products/fisiorest",
      "date": "2026-11-17",
      "price": 89,
      "kind": "today"
     },
     {
-     "what": "Amazon price $89.99, per one review site, Nov. 15",
+     "what": "Review site lists FisioRest at $89-$99, Amazon $89.99",
      "url": "https://wetried.it/fisiorest-review/",
      "date": "2026-11-15",
      "price": 89.99,
      "kind": "other-store"
     },
     {
-     "what": "Trustpilot: 4.2 stars from 1,359 reviews of Artuvate",
-     "url": "https://www.trustpilot.com/review/artuvate.co",
+     "what": "Artuvate catalog: 13 of 16 products show a crossed-out price",
+     "url": "https://artuvate.co/collections/all",
      "date": "2026-11-17",
      "price": null,
      "kind": "product"
     },
     {
-     "what": "Trustpilot reviews, Sept. 2026: refunds refused despite 365-day promise",
-     "url": "https://www.trustpilot.com/review/artuvate.co?page=10",
-     "date": "2026-09-23",
+     "what": "Artuvate refund policy: $15 fee, buyer pays return shipping",
+     "url": "https://artuvate.co/policies/refund-policy",
+     "date": "2026-11-17",
+     "price": null,
+     "kind": "product"
+    },
+    {
+     "what": "Trustpilot 1-star reviews: dead on arrival, restocking fee, refund disputes",
+     "url": "https://www.trustpilot.com/review/artuvate.co?stars=1",
+     "date": "2026-08-25",
+     "price": null,
+     "kind": "product"
+    },
+    {
+     "what": "Complaint site, Nov. 17: burning-wire smell, buyer charged for return",
+     "url": "https://www.pissedconsumer.com/artuvate/RT-F.html",
+     "date": "2026-11-17",
      "price": null,
      "kind": "product"
     }
    ],
-   "reviewed": true
+   "reviewed": true,
+   "corrected": "2026-11-17T21:00:13-05:00"
   },
   {
    "id": "1We7WPW",
