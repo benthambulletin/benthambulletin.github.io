@@ -513,7 +513,13 @@
    "at": "2026-11-15T15:34:36-05:00"
   }
  ],
- "claimed": [],
+ "claimed": [
+  {
+   "id": "5X7VXDE",
+   "link": "https://www.homedepot.com/p/RYOBI-65-Laser-Distance-Measurer-ELDM65/325165930",
+   "at": "2026-11-17T21:48:45-05:00"
+  }
+ ],
  "queued": [],
  "rechecked": "2026-11-17"
 }
