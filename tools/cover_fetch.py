@@ -54,7 +54,7 @@ def commons(q, n=4):
         lic = strip(m.get('LicenseShortName', {}).get('value'))
         if not OKLIC.match(lic) or ii.get('width', 0) < 1000 or ii.get('width', 0) < ii.get('height', 1) * 1.15:
             print('  skip', p.get('title', '')[:50], '|', lic, '|', ii.get('width'), ii.get('height')); continue
-        if not re.search(r'\.jpe?g$', ii.get('url', ''), re.I):
+        if not re.search(r'\.jpe?g$', ii.get('url', '').split('?')[0], re.I):   # Commons URLs carry a ?utm_ query string
             print('  not jpg', ii.get('url', '')[-40:]); continue
         artist = strip(m.get('Artist', {}).get('value'))[:80] or strip(m.get('Credit', {}).get('value'))[:80] or 'Wikimedia Commons'
         out.append(dict(url=ii.get('thumburl') or ii['url'], source='Wikimedia Commons', title=p['title'].replace('File:', '')[:140],
