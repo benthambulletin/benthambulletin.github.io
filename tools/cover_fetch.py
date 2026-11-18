@@ -54,7 +54,8 @@ def commons(q, n=4):
         lic = strip(m.get('LicenseShortName', {}).get('value'))
         if not OKLIC.match(lic) or ii.get('width', 0) < 1000 or ii.get('width', 0) < ii.get('height', 1) * 1.15:
             print('  skip', p.get('title', '')[:50], '|', lic, '|', ii.get('width'), ii.get('height')); continue
-        if not re.search(r'\.jpe?g$', ii.get('url', ''), re.I): continue
+        if not re.search(r'\.jpe?g$', ii.get('url', ''), re.I):
+            print('  not jpg', ii.get('url', '')[-40:]); continue
         artist = strip(m.get('Artist', {}).get('value'))[:80] or strip(m.get('Credit', {}).get('value'))[:80] or 'Wikimedia Commons'
         out.append(dict(url=ii.get('thumburl') or ii['url'], source='Wikimedia Commons', title=p['title'].replace('File:', '')[:140],
                         desc=strip(m.get('ImageDescription', {}).get('value'))[:300], credit=artist, license=lic,
@@ -62,14 +63,16 @@ def commons(q, n=4):
     return out
 queries = json.loads(os.environ['QUERIES']); cands = []; seen = set()
 for q in queries:
-    for c in nasa(q) + commons(q):
+    found = nasa(q) + commons(q); print('query', repr(q), 'found', len(found), [c['source'][:4] + ':' + c['url'][-40:] for c in found])
+    for c in found:
         if c['url'] in seen or len(cands) >= 8: continue
         seen.add(c['url'])
         try:
             im = Image.open(io.BytesIO(get(c['url'], raw=True))).convert('RGB')
         except Exception as e:
             print('download failed', c['url'], e); continue
-        if im.width < 1000 or im.width < im.height * 1.15: continue
+        if im.width < 1000 or im.width < im.height * 1.15:
+            print('  too small or not landscape', im.size, c['url'][-50:]); continue
         if im.width > 1600: im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
         c['file'] = f'c{len(cands)+1}.jpg'; c['w'], c['h'] = im.size; c['query'] = q
         im.save(os.path.join(OUT, c['file']), quality=88); cands.append(c); print('saved', c['file'], c['source'], c['title'])
