@@ -17042,6 +17042,26 @@
           "badges": []
         },
         {
+          "name": "B-rad",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T23:15:36+00:00",
+          "firstAt": "2026-11-19T23:15:36+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Claude",
           "house": true,
           "correct": 0,
@@ -17260,6 +17280,26 @@
           "state": "alive",
           "paid": true,
           "badges": []
+        },
+        {
+          "name": "Wendy",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T23:09:41+00:00",
+          "firstAt": "2026-11-19T23:09:41+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -17354,12 +17394,20 @@
           "who": "Mike Sombloski",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1f61316004f443",
+          "at": "2026-11-19T23:10:08Z",
+          "amt": "5.00",
+          "who": "Wendy",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-20T01:15:00Z",
-      "pot": 45.0,
-      "paidN": 9,
+      "pot": 55.0,
+      "paidN": 11,
       "opensAt": "2026-11-17T09:06:27Z",
       "housePicks": {
         "trash": "Nine and five last week. The spreadsheet has been spoken to.",
@@ -17430,7 +17478,7 @@
       "columnN": 11
     }
   },
-  "updated": "2026-11-19T23:09:31.010838+00:00",
+  "updated": "2026-11-19T23:18:09.015358+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -17516,12 +17564,6 @@
   ],
   "columnLog": [
     {
-      "week": 10,
-      "at": "2026-11-17T05:23:54.184441+00:00",
-      "head": "Josh goes 14–0, Dan finds the floor",
-      "text": "Chargers 23–20, final, and Josh is perfect: 14–0, $95 and the mugshot pick. He didn't get there playing it safe. All four underdogs that won this week, the Commanders, Browns, Vikings and Chargers, were on his sheet, and nobody else had all four. Mrs. Sombloski came closest at 12–2, which is a lot of good football for zero dollars.\n\nThe collapse belongs to Dan, 7–7 and alone at the bottom once Baltimore never got the tying points. He had the Cowboys in a 46–40 shootout and the Steelers in a 38–18 beating. Dumbest pick of the week: Mike Sombloski, the only sheet in the building on the Cardinals, who lost 34–6 at home. Andy R, the lone Jets believer, gets a mention for loyalty. Ariel promised to kick everyone's asses and finished 9–5, tied with the robot. The robot's Lock, Jaguars over Titans, came in 40–23."
-    },
-    {
       "week": 11,
       "at": "2026-11-17T13:13:16.114004+00:00",
       "head": "Mike's on the wall, Josh is the target",
@@ -17562,6 +17604,12 @@
       "at": "2026-11-19T23:07:26.884910+00:00",
       "head": "The commissioner files last, again",
       "text": "Ariel filed at 4:13 and the commissioner rolled in at 4:20, which makes the man who runs this pool the last of eight humans to turn in a sheet. He sets the deadline; he just doesn't like to see it from too far away.\n\nAriel brings the worst finished-week record in the room, 56–45, into tonight, so every win counts double for morale. Garret has his own homework: he's 4–2 head-to-head against Kaylani & Luka, who haven't filed. Tom hasn't either, with about three hours to the Thursday kickoff."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-19T23:18:09.015358+00:00",
+      "head": "The late shift clocks in",
+      "text": "Leah, Mrs. Sombloski and Tom all filed between 5:54 and 6:05 tonight, eleven minutes that pushed the room to eleven humans and took the commissioner off the hook as last man in. Tom's arrival is bad news for Ariel, who is 0–7 against him head-to-head this season.\n\nB-rad hasn't filed, which may be the smartest move available to a man three weeks running in the bottom three. Colts at Texans kicks off at 8:15. Got a question for the commissioner? Put it on the pick sheet."
     }
   ],
   "rivals": [
