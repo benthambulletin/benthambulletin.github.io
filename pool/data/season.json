@@ -17142,6 +17142,46 @@
           "badges": []
         },
         {
+          "name": "Leah",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T22:54:07+00:00",
+          "firstAt": "2026-11-19T22:54:07+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Mrs. Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T22:59:02+00:00",
+          "firstAt": "2026-11-19T22:59:02+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Nate V",
           "house": false,
           "correct": 0,
@@ -17162,7 +17202,7 @@
           "badges": []
         },
         {
-          "name": "Ryan",
+          "name": "Ryan Holovics",
           "house": false,
           "correct": 0,
           "missed": 0,
@@ -17199,6 +17239,26 @@
           "delta": 0,
           "state": "alive",
           "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Tom",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T23:05:09+00:00",
+          "firstAt": "2026-11-19T23:05:09+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
           "badges": []
         }
       ],
@@ -17254,12 +17314,52 @@
           "who": "Ariel",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1f605969414555",
+          "at": "2026-11-19T22:55:23Z",
+          "amt": "5.00",
+          "who": "Leah",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1f605969414555~1",
+          "at": "2026-11-19T22:55:23Z",
+          "amt": "5.00",
+          "who": "B-rad",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1f60f5b0ddad7c",
+          "at": "2026-11-19T23:06:03Z",
+          "amt": "5.00",
+          "who": "Tom",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1f60fb45b25992",
+          "at": "2026-11-19T23:06:26Z",
+          "amt": "5.00",
+          "who": "Mrs. Sombloski",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1f60fb45b25992~1",
+          "at": "2026-11-19T23:06:26Z",
+          "amt": "5.00",
+          "who": "Mike Sombloski",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-20T01:15:00Z",
-      "pot": 30.0,
-      "paidN": 6,
+      "pot": 45.0,
+      "paidN": 9,
       "opensAt": "2026-11-17T09:06:27Z",
       "housePicks": {
         "trash": "Nine and five last week. The spreadsheet has been spoken to.",
@@ -17330,7 +17430,7 @@
       "columnN": 8
     }
   },
-  "updated": "2026-11-19T22:08:54.700274+00:00",
+  "updated": "2026-11-19T23:07:26.884910+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -17378,7 +17478,8 @@
     "0VRypNZ": "Josh",
     "q517Rzk": "Andy R",
     "EqOV6eq": "Andy R",
-    "o9j8k5x": "Josh"
+    "o9j8k5x": "Josh",
+    "vXZlMvD": "Ryan Holovics"
   },
   "people": {
     "603444b89dab4f0e": "Thom",
@@ -17408,18 +17509,12 @@
     "981a33ebb14fea4a": "Andy R",
     "7e38faf5b4e19850": "Kara",
     "386a85d8c88778b0": "Josh",
-    "e0e3a2b6471d044a": "Ryan"
+    "e0e3a2b6471d044a": "Ryan Holovics"
   },
   "keepNames": [
     "Kaylani & Luka"
   ],
   "columnLog": [
-    {
-      "week": 10,
-      "at": "2026-11-17T04:10:47.282957+00:00",
-      "head": "Three minutes from 14–0, and a cellar fight",
-      "text": "Chargers 23–20, 3:20 left in the fourth. Hold on and Josh goes 14–0, with Mrs. Sombloski alone in second at 12–2 and Wendy and Arod at 11–3. Baltimore ties it or goes ahead and Josh is merely 13–1, which is still the money and still the photo.\n\nThe real fight is in the basement. A Chargers win lifts Andy R and Mike Sombloski to 8–6 and leaves Dan alone at the bottom at 7–7. A Baltimore drive drops Andy R and Mike to 7–7 together, and Dan climbs out without lifting a finger."
-    },
     {
       "week": 10,
       "at": "2026-11-17T05:23:54.184441+00:00",
@@ -17461,6 +17556,12 @@
       "at": "2026-11-19T21:09:03.142585+00:00",
       "head": "The four o'clock stampede",
       "text": "Dan, Devin, Josh and Ryan all filed between 3:52 and 4:05 this afternoon, a thirteen-minute rush that took the room from two humans to six. Josh is the one with a target on him: he's the champ coming off a perfect 14–0, and perfect weeks have a way of getting humbled by Sunday dinner.\n\nStill missing with four hours to kickoff: Tom and Ariel, whose head-to-head stands at 7–0, Tom. Ariel can't lose ground on an empty sheet, but can't make any up either."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-19T23:07:26.884910+00:00",
+      "head": "The commissioner files last, again",
+      "text": "Ariel filed at 4:13 and the commissioner rolled in at 4:20, which makes the man who runs this pool the last of eight humans to turn in a sheet. He sets the deadline; he just doesn't like to see it from too far away.\n\nAriel brings the worst finished-week record in the room, 56–45, into tonight, so every win counts double for morale. Garret has his own homework: he's 4–2 head-to-head against Kaylani & Luka, who haven't filed. Tom hasn't either, with about three hours to the Thursday kickoff."
     }
   ],
   "rivals": [
