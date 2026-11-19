@@ -17125,12 +17125,12 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Wednesday, and the room is still empty",
-      "column": "Wednesday morning, zero human sheets. The robot filed Tuesday and has been sitting alone in the room since, like the first guy at a Super Bowl party. Colts at Texans kicks off Thursday at 8:15, and that's also when the $5 is due.\n\nSeason check while you stall: Ryan Holovics hits 74 percent, best in the pool, despite skipping weeks. Devin has the most wins, 74, by never skipping any. Andy R and Arod are two weeks apiece with three dead heats, the politest rivalry in football. Somebody file something.",
+      "columnHead": "Game day, and still a party of one",
+      "column": "Thursday morning, kickoff tonight, and the only sheet on file belongs to the robot. Colts at Texans goes at 8:15, which is also when the $5 is due, so the stragglers have about twelve hours to remember they're in a pool.\n\nB-rad, a word: bottom three for three straight weeks. A fourth makes it a residency. Leah leads you 4–2 head to head and hasn't filed either, so the family feud is wide open. Somebody beat the bot to the punch.",
       "columnN": 0
     }
   },
-  "updated": "2026-11-19T01:08:54.120207+00:00",
+  "updated": "2026-11-19T13:11:00.289823+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -17215,12 +17215,6 @@
   "columnLog": [
     {
       "week": 10,
-      "at": "2026-11-17T02:10:15.625353+00:00",
-      "head": "Chargers lead, and Tom owns Ariel again",
-      "text": "Chargers 10–7 early in the second. If it ends like this, Josh goes 14–0 and Mrs. Sombloski finishes alone in second at 12–2, with Wendy and Arod behind her at 11–3. The money is settled; the Chargers crew is playing for the photo finish.\n\nThe real cruelty is Tom and Ariel, both on Baltimore, which means Tom stays a game up no matter what. That's seven straight weeks Ariel finishes behind him, and she opened this one promising to kick everybody's ass. Claude's Lock, the Jaguars, cashed 40–23. Claude's 9–4 elsewhere did not."
-    },
-    {
-      "week": 10,
       "at": "2026-11-17T02:10:24.220758+00:00",
       "head": "Chargers lead, and Tom owns Ariel again",
       "text": "Chargers 10–7 early in the second. If it ends like this, Josh goes 14–0 and Mrs. Sombloski finishes alone in second at 12–2, with Wendy and Arod behind her at 11–3. The money is settled; the Chargers crew is playing for the photo finish.\n\nThe quiet cruelty is Tom and Ariel, both on Baltimore, so Tom stays a game up whatever happens. That makes seven straight weeks Ariel finishes behind him. Claude's Lock, the Jaguars, cashed 40–23, which is the only thing the house has to brag about at 9–4."
@@ -17260,6 +17254,12 @@
       "at": "2026-11-18T18:08:54.161284+00:00",
       "head": "Wednesday, and the room is still empty",
       "text": "Wednesday morning, zero human sheets. The robot filed Tuesday and has been sitting alone in the room since, like the first guy at a Super Bowl party. Colts at Texans kicks off Thursday at 8:15, and that's also when the $5 is due.\n\nSeason check while you stall: Ryan Holovics hits 74 percent, best in the pool, despite skipping weeks. Devin has the most wins, 74, by never skipping any. Andy R and Arod are two weeks apiece with three dead heats, the politest rivalry in football. Somebody file something."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-19T13:11:00.289823+00:00",
+      "head": "Game day, and still a party of one",
+      "text": "Thursday morning, kickoff tonight, and the only sheet on file belongs to the robot. Colts at Texans goes at 8:15, which is also when the $5 is due, so the stragglers have about twelve hours to remember they're in a pool.\n\nB-rad, a word: bottom three for three straight weeks. A fourth makes it a residency. Leah leads you 4–2 head to head and hasn't filed either, so the family feud is wide open. Somebody beat the bot to the punch."
     }
   ],
   "rivals": [
