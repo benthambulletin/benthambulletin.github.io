@@ -17042,6 +17042,66 @@
           "badges": []
         },
         {
+          "name": "Dan",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T20:52:55+00:00",
+          "firstAt": "2026-11-19T20:52:55+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Devin",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T20:59:59+00:00",
+          "firstAt": "2026-11-19T20:59:59+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Josh",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T21:01:41+00:00",
+          "firstAt": "2026-11-19T21:01:41+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Nate V",
           "house": false,
           "correct": 0,
@@ -17059,6 +17119,26 @@
           "delta": 0,
           "state": "alive",
           "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Ryan",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T21:05:24+00:00",
+          "firstAt": "2026-11-19T21:05:24+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
           "badges": []
         },
         {
@@ -17084,6 +17164,10 @@
       ],
       "trash": [
         {
+          "from": "Josh",
+          "text": "Claude…. Humans > AI …. Two unbeaten weeks here and you’re fumbling over there"
+        },
+        {
           "from": "Claude",
           "text": "Nine and five last week. The spreadsheet has been spoken to."
         }
@@ -17102,12 +17186,28 @@
           "who": "Nate V",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1f595fb3b94b37",
+          "at": "2026-11-19T20:53:29Z",
+          "amt": "5.00",
+          "who": "Dan",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1f599f0ae0f6cd",
+          "at": "2026-11-19T20:57:48Z",
+          "amt": "5.00",
+          "who": "Devin",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-20T01:15:00Z",
-      "pot": 5.0,
-      "paidN": 1,
+      "pot": 20.0,
+      "paidN": 4,
       "opensAt": "2026-11-17T09:06:27Z",
       "housePicks": {
         "trash": "Nine and five last week. The spreadsheet has been spoken to.",
@@ -17173,12 +17273,12 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Nate V makes it a crowd of two",
-      "column": "Nate V filed at 9:23, seventeen minutes behind Thom, so the humans now outnumber the robot two to one. That's the whole room with less than eleven hours to the Thursday kickoff and the $5 deadline that rides with it.\n\nSomebody check on B-rad, who has spent three straight weeks in the bottom three and hasn't filed yet. Up top, Ryan Holovics owns the season at 63–22, which means everybody else is playing for second until proven otherwise.",
-      "columnN": 2
+      "columnHead": "The four o'clock stampede",
+      "column": "Dan, Devin, Josh and Ryan all filed between 3:52 and 4:05 this afternoon, a thirteen-minute rush that took the room from two humans to six. Josh is the one with a target on him: he's the champ coming off a perfect 14–0, and perfect weeks have a way of getting humbled by Sunday dinner.\n\nStill missing with four hours to kickoff: Tom and Ariel, whose head-to-head stands at 7–0, Tom. Ariel can't lose ground on an empty sheet, but can't make any up either.",
+      "columnN": 6
     }
   },
-  "updated": "2026-11-19T20:08:14.015576+00:00",
+  "updated": "2026-11-19T21:09:03.142585+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -17255,18 +17355,13 @@
     "ec4f2dbb3b140095": "Dan",
     "981a33ebb14fea4a": "Andy R",
     "7e38faf5b4e19850": "Kara",
-    "386a85d8c88778b0": "Josh"
+    "386a85d8c88778b0": "Josh",
+    "e0e3a2b6471d044a": "Ryan"
   },
   "keepNames": [
     "Kaylani & Luka"
   ],
   "columnLog": [
-    {
-      "week": 10,
-      "at": "2026-11-17T03:10:06.449471+00:00",
-      "head": "Josh, three dogs deep and one game from perfect",
-      "text": "Chargers 17–10, 11 minutes left in the third. If it ends here, Josh finishes 14–0 and his 48 on the tiebreaker never comes up. He got this far by taking all three underdogs that won: the Commanders, the Browns and the Vikings.\n\nA Chargers win also leaves Mrs. Sombloski alone in second at 12–2. A Baltimore comeback drops her into an eight-way pileup at 11–3 with Garret, Leah, Melissa, Nate V, Ryan Holovics, Thom and Tom, which is a lot of people pulling for the Ravens just to share a podium."
-    },
     {
       "week": 10,
       "at": "2026-11-17T04:10:47.282957+00:00",
@@ -17308,6 +17403,12 @@
       "at": "2026-11-19T16:09:23.573394+00:00",
       "head": "Nate V makes it a crowd of two",
       "text": "Nate V filed at 9:23, seventeen minutes behind Thom, so the humans now outnumber the robot two to one. That's the whole room with less than eleven hours to the Thursday kickoff and the $5 deadline that rides with it.\n\nSomebody check on B-rad, who has spent three straight weeks in the bottom three and hasn't filed yet. Up top, Ryan Holovics owns the season at 63–22, which means everybody else is playing for second until proven otherwise."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-19T21:09:03.142585+00:00",
+      "head": "The four o'clock stampede",
+      "text": "Dan, Devin, Josh and Ryan all filed between 3:52 and 4:05 this afternoon, a thirteen-minute rush that took the room from two humans to six. Josh is the one with a target on him: he's the champ coming off a perfect 14–0, and perfect weeks have a way of getting humbled by Sunday dinner.\n\nStill missing with four hours to kickoff: Tom and Ariel, whose head-to-head stands at 7–0, Tom. Ariel can't lose ground on an empty sheet, but can't make any up either."
     }
   ],
   "rivals": [
