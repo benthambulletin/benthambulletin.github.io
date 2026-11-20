@@ -16887,7 +16887,9 @@
               "Andy R",
               "Claude"
             ]
-          }
+          },
+          "live": "Texans 7–3 · 2nd qtr",
+          "liveAt": "2026-11-20T02:07:21Z"
         },
         {
           "away": "Dolphins",
@@ -17704,7 +17706,7 @@
       "columnN": 18
     }
   },
-  "updated": "2026-11-20T01:21:02.486484+00:00",
+  "updated": "2026-11-20T02:09:24.463299+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
