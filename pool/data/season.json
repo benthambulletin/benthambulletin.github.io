@@ -16850,7 +16850,7 @@
       "rollOut": 0
     },
     "11": {
-      "status": "pre",
+      "status": "live",
       "games": [
         {
           "away": "Colts",
@@ -16858,12 +16858,36 @@
           "kickoff": "2026-11-20T01:15:00Z",
           "when": "Thu 8:15 PM",
           "tv": "Prime Video",
-          "status": "sealed",
+          "status": "live",
           "fav": "Texans",
-          "line": "Texans −10",
+          "line": "Texans −12.5",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Colts": [
+              "Thom",
+              "Leah",
+              "Melissa",
+              "Mike Sombloski"
+            ],
+            "Texans": [
+              "Nate V",
+              "Dan",
+              "Devin",
+              "Josh",
+              "Ryan Holovics",
+              "Ariel",
+              "Garret",
+              "Mrs. Sombloski",
+              "Tom",
+              "Wendy",
+              "B-rad",
+              "Derek",
+              "Arod",
+              "Andy R",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Dolphins",
@@ -17030,7 +17054,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-20T00:38:55+00:00",
           "firstAt": "2026-11-20T00:38:55+00:00",
           "free": false,
@@ -17055,7 +17081,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T21:13:12+00:00",
           "firstAt": "2026-11-19T21:13:12+00:00",
           "free": false,
@@ -17075,7 +17103,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T23:58:14+00:00",
           "firstAt": "2026-11-19T23:58:14+00:00",
           "free": false,
@@ -17095,7 +17125,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T23:15:36+00:00",
           "firstAt": "2026-11-19T23:15:36+00:00",
           "free": false,
@@ -17115,7 +17147,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-17T09:06:27+00:00",
           "firstAt": "2026-11-17T09:06:27+00:00",
           "free": false,
@@ -17135,7 +17169,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T20:52:55+00:00",
           "firstAt": "2026-11-19T20:52:55+00:00",
           "free": false,
@@ -17155,7 +17191,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T23:57:36+00:00",
           "firstAt": "2026-11-19T23:57:36+00:00",
           "free": false,
@@ -17175,7 +17213,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T20:59:59+00:00",
           "firstAt": "2026-11-19T20:59:59+00:00",
           "free": false,
@@ -17195,7 +17235,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T21:20:48+00:00",
           "firstAt": "2026-11-19T21:20:48+00:00",
           "free": false,
@@ -17215,7 +17257,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T21:01:41+00:00",
           "firstAt": "2026-11-19T21:01:41+00:00",
           "free": false,
@@ -17235,7 +17279,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Colts"
+          },
           "filedAt": "2026-11-19T22:54:07+00:00",
           "firstAt": "2026-11-19T22:54:07+00:00",
           "free": false,
@@ -17255,7 +17301,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Colts"
+          },
           "filedAt": "2026-11-19T23:31:39+00:00",
           "firstAt": "2026-11-19T23:31:39+00:00",
           "free": false,
@@ -17275,7 +17323,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Colts"
+          },
           "filedAt": "2026-11-20T01:04:50+00:00",
           "firstAt": "2026-11-20T01:04:50+00:00",
           "free": false,
@@ -17300,7 +17350,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T22:59:02+00:00",
           "firstAt": "2026-11-19T22:59:02+00:00",
           "free": false,
@@ -17320,7 +17372,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T14:23:02+00:00",
           "firstAt": "2026-11-19T14:23:02+00:00",
           "free": false,
@@ -17340,7 +17394,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T21:05:24+00:00",
           "firstAt": "2026-11-19T21:05:24+00:00",
           "free": false,
@@ -17360,7 +17416,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Colts"
+          },
           "filedAt": "2026-11-19T14:06:19+00:00",
           "firstAt": "2026-11-19T14:06:19+00:00",
           "free": true,
@@ -17380,7 +17438,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T23:05:09+00:00",
           "firstAt": "2026-11-19T23:05:09+00:00",
           "free": false,
@@ -17400,7 +17460,9 @@
           "remaining": 13,
           "max": 13,
           "tb": null,
-          "sheet": {},
+          "sheet": {
+            "0": "Texans"
+          },
           "filedAt": "2026-11-19T23:09:41+00:00",
           "firstAt": "2026-11-19T23:09:41+00:00",
           "free": false,
@@ -17583,7 +17645,19 @@
         "line": ""
       },
       "stats": {
-        "games": {},
+        "games": {
+          "0": {
+            "away": 4,
+            "home": 14,
+            "minority": "Colts",
+            "minorityWho": [
+              "Thom",
+              "Leah",
+              "Melissa",
+              "Mike Sombloski"
+            ]
+          }
+        },
         "upsets": 0,
         "decided": 0,
         "best": null,
@@ -17591,7 +17665,33 @@
         "bills": null,
         "jets": null
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 0,
+          "away": [
+            "Thom",
+            "Leah",
+            "Melissa",
+            "Mike Sombloski"
+          ],
+          "home": [
+            "Nate V",
+            "Dan",
+            "Devin",
+            "Josh",
+            "Ryan Holovics",
+            "Ariel",
+            "Garret",
+            "Mrs. Sombloski",
+            "Tom",
+            "Wendy",
+            "B-rad",
+            "Derek",
+            "Arod",
+            "Andy R"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -17599,12 +17699,12 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Mike Sombloski beats the buzzer by eleven",
-      "column": "Mike Sombloski filed at 8:04, eleven minutes before the Colts and Texans kick off, which is either nerves of steel or a man who forgot what day it was. He leads Mrs. Sombloski 4–3 head-to-head this season, and she filed an hour ahead of him like someone who knew it.\n\nAndy R slid in at 7:38, so Arod has her sparring partner back: 2–2 head-to-head, three weeks dead even. Eighteen humans are in. Got a question for the commissioner? Put it on the pick sheet.",
+      "columnHead": "Four brave souls and a 12.5-point hole",
+      "column": "Fourteen humans and the robot took the Texans, who were laying 12.5 points at kickoff. Four went the other way: Thom, Leah, Melissa and Mike Sombloski. If Indianapolis wins outright, those four start the week a game up on the entire room; if not, they start it in a hole.\n\nThe rivalries split down the middle. Leah took the Colts and B-rad took the Texans, and she already leads him 4–2 this season. Mike is on Indianapolis, Mrs. Sombloski on Houston. Josh aimed his trash talk at Claude, which picked Houston like nearly everybody else, so he'll have to beat it on Sunday. Got a question for the commissioner? Put it on the pick sheet.",
       "columnN": 18
     }
   },
-  "updated": "2026-11-20T01:08:42.229878+00:00",
+  "updated": "2026-11-20T01:21:02.486484+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -17690,18 +17790,6 @@
   "columnLog": [
     {
       "week": 11,
-      "at": "2026-11-18T18:08:54.161284+00:00",
-      "head": "Wednesday, and the room is still empty",
-      "text": "Wednesday morning, zero human sheets. The robot filed Tuesday and has been sitting alone in the room since, like the first guy at a Super Bowl party. Colts at Texans kicks off Thursday at 8:15, and that's also when the $5 is due.\n\nSeason check while you stall: Ryan Holovics hits 74 percent, best in the pool, despite skipping weeks. Devin has the most wins, 74, by never skipping any. Andy R and Arod are two weeks apiece with three dead heats, the politest rivalry in football. Somebody file something."
-    },
-    {
-      "week": 11,
-      "at": "2026-11-19T13:11:00.289823+00:00",
-      "head": "Game day, and still a party of one",
-      "text": "Thursday morning, kickoff tonight, and the only sheet on file belongs to the robot. Colts at Texans goes at 8:15, which is also when the $5 is due, so the stragglers have about twelve hours to remember they're in a pool.\n\nB-rad, a word: bottom three for three straight weeks. A fourth makes it a residency. Leah leads you 4–2 head to head and hasn't filed either, so the family feud is wide open. Somebody beat the bot to the punch."
-    },
-    {
-      "week": 11,
       "at": "2026-11-19T15:09:14.823824+00:00",
       "head": "Thom breaks the seal on the room",
       "text": "The first human sheet of Week 11 is in, and it belongs to Thom, who filed at 9:06 this morning and ended the robot's two-day solo act. Everybody else has until 8:15 tonight, when Colts at Texans kicks off and the $5 comes due.\n\nA season note for the late crowd: Ariel is 0–7 head to head against Tom. Seven meetings, zero wins. Neither has filed yet, so tonight is the night to start a comeback, or to make it eight."
@@ -17735,6 +17823,18 @@
       "at": "2026-11-20T00:08:45.621418+00:00",
       "head": "B-rad shows up after all",
       "text": "Five more sheets landed between 6:09 and 6:58 tonight, Wendy first, Derek and Arod a minute apart at the buzzer, and the room is now sixteen humans deep. The headline is B-rad, who filed at 6:15 after three straight weeks in the bottom three, a man returning to the scene. Leah leads him 4–2 head-to-head this season, and she filed twenty-one minutes ahead of him.\n\nAndy R hasn't filed, which leaves Arod without a sparring partner. Colts at Texans kicks off at 8:15. Got a question for the commissioner? Put it on the pick sheet."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-20T01:20:41.618447+00:00",
+      "head": "Mike Sombloski beats the buzzer by eleven",
+      "text": "Mike Sombloski filed at 8:04, eleven minutes before the Colts and Texans kick off, which is either nerves of steel or a man who forgot what day it was. He leads Mrs. Sombloski 4–3 head-to-head this season, and she filed an hour ahead of him like someone who knew it.\n\nAndy R slid in at 7:38, so Arod has her sparring partner back: 2–2 head-to-head, three weeks dead even. Eighteen humans are in. Got a question for the commissioner? Put it on the pick sheet."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-20T01:21:02.486484+00:00",
+      "head": "Four brave souls and a 12.5-point hole",
+      "text": "Fourteen humans and the robot took the Texans, who were laying 12.5 points at kickoff. Four went the other way: Thom, Leah, Melissa and Mike Sombloski. If Indianapolis wins outright, those four start the week a game up on the entire room; if not, they start it in a hole.\n\nThe rivalries split down the middle. Leah took the Colts and B-rad took the Texans, and she already leads him 4–2 this season. Mike is on Indianapolis, Mrs. Sombloski on Houston. Josh aimed his trash talk at Claude, which picked Houston like nearly everybody else, so he'll have to beat it on Sunday. Got a question for the commissioner? Put it on the pick sheet."
     }
   ],
   "rivals": [
