@@ -17420,7 +17420,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17442,7 +17442,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17464,7 +17464,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -17491,7 +17491,7 @@
           "free": true,
           "paypal": false,
           "rank": 16,
-          "delta": -15,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -17742,12 +17742,13 @@
       "decidedAtLastRun": 1,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Four brave souls and a 12.5-point hole",
-      "column": "Fourteen humans and the robot took the Texans, who were laying 12.5 points at kickoff. Four went the other way: Thom, Leah, Melissa and Mike Sombloski. If Indianapolis wins outright, those four start the week a game up on the entire room; if not, they start it in a hole.\n\nThe rivalries split down the middle. Leah took the Colts and B-rad took the Texans, and she already leads him 4–2 this season. Mike is on Indianapolis, Mrs. Sombloski on Houston. Josh aimed his trash talk at Claude, which picked Houston like nearly everybody else, so he'll have to beat it on Sunday. Got a question for the commissioner? Put it on the pick sheet.",
-      "columnN": 18
+      "columnHead": "Houston 26, the Brave Four 3",
+      "column": "The Texans won 26–3 and the Colts never showed up, which is bad news for Thom, Leah, Melissa and Mike Sombloski, the only four who believed. They open Week 11 at 0–1, alone at the bottom of a nineteen-sheet board. Everybody else, the robot included, sits in a fifteen-way tie at 1–0.\n\nBest news in that pile: B-rad, three straight weeks in the bottom three, is tied for first and a game up on Leah. Enjoy it, B-rad. It lasts until Sunday at 1. Got a question for the commissioner? Put it on the pick sheet.",
+      "columnN": 18,
+      "thuDone": true
     }
   },
-  "updated": "2026-11-20T04:09:29.930219+00:00",
+  "updated": "2026-11-20T04:35:22.288125+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -17833,12 +17834,6 @@
   "columnLog": [
     {
       "week": 11,
-      "at": "2026-11-19T15:09:14.823824+00:00",
-      "head": "Thom breaks the seal on the room",
-      "text": "The first human sheet of Week 11 is in, and it belongs to Thom, who filed at 9:06 this morning and ended the robot's two-day solo act. Everybody else has until 8:15 tonight, when Colts at Texans kicks off and the $5 comes due.\n\nA season note for the late crowd: Ariel is 0–7 head to head against Tom. Seven meetings, zero wins. Neither has filed yet, so tonight is the night to start a comeback, or to make it eight."
-    },
-    {
-      "week": 11,
       "at": "2026-11-19T16:09:23.573394+00:00",
       "head": "Nate V makes it a crowd of two",
       "text": "Nate V filed at 9:23, seventeen minutes behind Thom, so the humans now outnumber the robot two to one. That's the whole room with less than eleven hours to the Thursday kickoff and the $5 deadline that rides with it.\n\nSomebody check on B-rad, who has spent three straight weeks in the bottom three and hasn't filed yet. Up top, Ryan Holovics owns the season at 63–22, which means everybody else is playing for second until proven otherwise."
@@ -17878,6 +17873,12 @@
       "at": "2026-11-20T01:21:02.486484+00:00",
       "head": "Four brave souls and a 12.5-point hole",
       "text": "Fourteen humans and the robot took the Texans, who were laying 12.5 points at kickoff. Four went the other way: Thom, Leah, Melissa and Mike Sombloski. If Indianapolis wins outright, those four start the week a game up on the entire room; if not, they start it in a hole.\n\nThe rivalries split down the middle. Leah took the Colts and B-rad took the Texans, and she already leads him 4–2 this season. Mike is on Indianapolis, Mrs. Sombloski on Houston. Josh aimed his trash talk at Claude, which picked Houston like nearly everybody else, so he'll have to beat it on Sunday. Got a question for the commissioner? Put it on the pick sheet."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-20T04:35:22.288125+00:00",
+      "head": "Houston 26, the Brave Four 3",
+      "text": "The Texans won 26–3 and the Colts never showed up, which is bad news for Thom, Leah, Melissa and Mike Sombloski, the only four who believed. They open Week 11 at 0–1, alone at the bottom of a nineteen-sheet board. Everybody else, the robot included, sits in a fifteen-way tie at 1–0.\n\nBest news in that pile: B-rad, three straight weeks in the bottom three, is tied for first and a game up on Leah. Enjoy it, B-rad. It lasts until Sunday at 1. Got a question for the commissioner? Put it on the pick sheet."
     }
   ],
   "rivals": [
