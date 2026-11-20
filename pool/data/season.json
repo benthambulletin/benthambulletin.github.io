@@ -17613,6 +17613,14 @@
           "who": "Derek",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1f7828dbf8a909",
+          "at": "2026-11-20T05:51:29Z",
+          "amt": "5.00",
+          "who": "Ryan Holovics",
+          "status": "late",
+          "told": null
         }
       ],
       "buyIn": 5,
@@ -17742,13 +17750,13 @@
       "decidedAtLastRun": 1,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Houston 26, the Brave Four 3",
-      "column": "The Texans won 26–3 and the Colts never showed up, which is bad news for Thom, Leah, Melissa and Mike Sombloski, the only four who believed. They open Week 11 at 0–1, alone at the bottom of a nineteen-sheet board. Everybody else, the robot included, sits in a fifteen-way tie at 1–0.\n\nBest news in that pile: B-rad, three straight weeks in the bottom three, is tied for first and a game up on Leah. Enjoy it, B-rad. It lasts until Sunday at 1. Got a question for the commissioner? Put it on the pick sheet.",
+      "columnHead": "Ariel versus Tom, and history",
+      "column": "Fifteen sheets sit at 1–0 after Houston's 26–3, which means Ariel and Tom are dead even. Enjoy the view, Ariel. Tom has finished ahead of you in all seven weeks you've both played, a head-to-head record of 7–0 that reads less like a rivalry and more like a restraining order.\n\nIn the basement, Thom, Leah, Melissa and Mike Sombloski are 0–1 and already need help. Seven games kick off Sunday at 1, and that's where this week stops being a coin flip. Got a question for the commissioner? Put it on the pick sheet.",
       "columnN": 18,
       "thuDone": true
     }
   },
-  "updated": "2026-11-20T04:35:22.288125+00:00",
+  "updated": "2026-11-20T13:14:24.262087+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -17834,12 +17842,6 @@
   "columnLog": [
     {
       "week": 11,
-      "at": "2026-11-19T16:09:23.573394+00:00",
-      "head": "Nate V makes it a crowd of two",
-      "text": "Nate V filed at 9:23, seventeen minutes behind Thom, so the humans now outnumber the robot two to one. That's the whole room with less than eleven hours to the Thursday kickoff and the $5 deadline that rides with it.\n\nSomebody check on B-rad, who has spent three straight weeks in the bottom three and hasn't filed yet. Up top, Ryan Holovics owns the season at 63–22, which means everybody else is playing for second until proven otherwise."
-    },
-    {
-      "week": 11,
       "at": "2026-11-19T21:09:03.142585+00:00",
       "head": "The four o'clock stampede",
       "text": "Dan, Devin, Josh and Ryan all filed between 3:52 and 4:05 this afternoon, a thirteen-minute rush that took the room from two humans to six. Josh is the one with a target on him: he's the champ coming off a perfect 14–0, and perfect weeks have a way of getting humbled by Sunday dinner.\n\nStill missing with four hours to kickoff: Tom and Ariel, whose head-to-head stands at 7–0, Tom. Ariel can't lose ground on an empty sheet, but can't make any up either."
@@ -17879,6 +17881,12 @@
       "at": "2026-11-20T04:35:22.288125+00:00",
       "head": "Houston 26, the Brave Four 3",
       "text": "The Texans won 26–3 and the Colts never showed up, which is bad news for Thom, Leah, Melissa and Mike Sombloski, the only four who believed. They open Week 11 at 0–1, alone at the bottom of a nineteen-sheet board. Everybody else, the robot included, sits in a fifteen-way tie at 1–0.\n\nBest news in that pile: B-rad, three straight weeks in the bottom three, is tied for first and a game up on Leah. Enjoy it, B-rad. It lasts until Sunday at 1. Got a question for the commissioner? Put it on the pick sheet."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-20T13:14:24.262087+00:00",
+      "head": "Ariel versus Tom, and history",
+      "text": "Fifteen sheets sit at 1–0 after Houston's 26–3, which means Ariel and Tom are dead even. Enjoy the view, Ariel. Tom has finished ahead of you in all seven weeks you've both played, a head-to-head record of 7–0 that reads less like a rivalry and more like a restraining order.\n\nIn the basement, Thom, Leah, Melissa and Mike Sombloski are 0–1 and already need help. Seven games kick off Sunday at 1, and that's where this week stops being a coin flip. Got a question for the commissioner? Put it on the pick sheet."
     }
   ],
   "rivals": [
