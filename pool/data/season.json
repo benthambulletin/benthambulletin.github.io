@@ -17022,6 +17022,31 @@
       ],
       "players": [
         {
+          "name": "Andy R",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-20T00:38:55+00:00",
+          "firstAt": "2026-11-20T00:38:55+00:00",
+          "free": false,
+          "paypal": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": [
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
+        },
+        {
           "name": "Ariel",
           "house": false,
           "correct": 0,
@@ -17240,6 +17265,31 @@
           "state": "alive",
           "paid": true,
           "badges": []
+        },
+        {
+          "name": "Mike Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-20T01:04:50+00:00",
+          "firstAt": "2026-11-20T01:04:50+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
         },
         {
           "name": "Mrs. Sombloski",
@@ -17482,8 +17532,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-11-20T01:15:00Z",
-      "pot": 65.0,
-      "paidN": 13,
+      "pot": 70.0,
+      "paidN": 14,
       "opensAt": "2026-11-17T09:06:27Z",
       "housePicks": {
         "trash": "Nine and five last week. The spreadsheet has been spoken to.",
@@ -17549,12 +17599,12 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "B-rad shows up after all",
-      "column": "Five more sheets landed between 6:09 and 6:58 tonight, Wendy first, Derek and Arod a minute apart at the buzzer, and the room is now sixteen humans deep. The headline is B-rad, who filed at 6:15 after three straight weeks in the bottom three, a man returning to the scene. Leah leads him 4–2 head-to-head this season, and she filed twenty-one minutes ahead of him.\n\nAndy R hasn't filed, which leaves Arod without a sparring partner. Colts at Texans kicks off at 8:15. Got a question for the commissioner? Put it on the pick sheet.",
-      "columnN": 16
+      "columnHead": "Mike Sombloski beats the buzzer by eleven",
+      "column": "Mike Sombloski filed at 8:04, eleven minutes before the Colts and Texans kick off, which is either nerves of steel or a man who forgot what day it was. He leads Mrs. Sombloski 4–3 head-to-head this season, and she filed an hour ahead of him like someone who knew it.\n\nAndy R slid in at 7:38, so Arod has her sparring partner back: 2–2 head-to-head, three weeks dead even. Eighteen humans are in. Got a question for the commissioner? Put it on the pick sheet.",
+      "columnN": 18
     }
   },
-  "updated": "2026-11-20T00:08:45.621418+00:00",
+  "updated": "2026-11-20T01:08:42.229878+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -17584,7 +17634,6 @@
     ]
   },
   "displayNames": {
-    "Andy R": "Andy",
     "Ryan Holovics": "Ryan",
     "Andy R.": "Andy",
     "Walczyk": "Walczyk and Timbit"
