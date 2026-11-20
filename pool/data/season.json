@@ -17042,6 +17042,26 @@
           "badges": []
         },
         {
+          "name": "Arod",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T23:58:14+00:00",
+          "firstAt": "2026-11-19T23:58:14+00:00",
+          "free": false,
+          "paypal": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "B-rad",
           "house": false,
           "correct": 0,
@@ -17093,6 +17113,26 @@
           "sheet": {},
           "filedAt": "2026-11-19T20:52:55+00:00",
           "firstAt": "2026-11-19T20:52:55+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Derek",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T23:57:36+00:00",
+          "firstAt": "2026-11-19T23:57:36+00:00",
           "free": false,
           "paypal": false,
           "rank": 1,
@@ -17173,6 +17213,26 @@
           "sheet": {},
           "filedAt": "2026-11-19T22:54:07+00:00",
           "firstAt": "2026-11-19T22:54:07+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Melissa",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 13,
+          "max": 13,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-19T23:31:39+00:00",
+          "firstAt": "2026-11-19T23:31:39+00:00",
           "free": false,
           "paypal": false,
           "rank": 1,
@@ -17402,12 +17462,28 @@
           "who": "Wendy",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a1f6274d749bf2e",
+          "at": "2026-11-19T23:32:12Z",
+          "amt": "5.00",
+          "who": "Melissa",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a1f64300cd5a972",
+          "at": "2026-11-20T00:02:28Z",
+          "amt": "5.00",
+          "who": "Derek",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-20T01:15:00Z",
-      "pot": 55.0,
-      "paidN": 11,
+      "pot": 65.0,
+      "paidN": 13,
       "opensAt": "2026-11-17T09:06:27Z",
       "housePicks": {
         "trash": "Nine and five last week. The spreadsheet has been spoken to.",
@@ -17473,12 +17549,12 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "The late shift clocks in",
-      "column": "Leah, Mrs. Sombloski and Tom all filed between 5:54 and 6:05 tonight, eleven minutes that pushed the room to eleven humans and took the commissioner off the hook as last man in. Tom's arrival is bad news for Ariel, who is 0–7 against him head-to-head this season.\n\nB-rad hasn't filed, which may be the smartest move available to a man three weeks running in the bottom three. Colts at Texans kicks off at 8:15. Got a question for the commissioner? Put it on the pick sheet.",
-      "columnN": 11
+      "columnHead": "B-rad shows up after all",
+      "column": "Five more sheets landed between 6:09 and 6:58 tonight, Wendy first, Derek and Arod a minute apart at the buzzer, and the room is now sixteen humans deep. The headline is B-rad, who filed at 6:15 after three straight weeks in the bottom three, a man returning to the scene. Leah leads him 4–2 head-to-head this season, and she filed twenty-one minutes ahead of him.\n\nAndy R hasn't filed, which leaves Arod without a sparring partner. Colts at Texans kicks off at 8:15. Got a question for the commissioner? Put it on the pick sheet.",
+      "columnN": 16
     }
   },
-  "updated": "2026-11-19T23:18:09.015358+00:00",
+  "updated": "2026-11-20T00:08:45.621418+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -17565,12 +17641,6 @@
   "columnLog": [
     {
       "week": 11,
-      "at": "2026-11-17T13:13:16.114004+00:00",
-      "head": "Mike's on the wall, Josh is the target",
-      "text": "Week 11 is open and the wall has a new tenant: Mike Sombloski, hung there by Josh, who earned the right by going 14–0. Every sheet this week gets measured against a perfect week, which is a lovely problem for Josh and nobody else.\n\nNobody's filed yet. B-rad has finished in the bottom three three weeks running, so an early sheet is his cleanest fresh start. The robot's Lock is the Chiefs over the Cardinals. Kaylani & Luka still trail the commissioner 4–2 head to head. Got a question for the commissioner? Ask it on the pick sheet."
-    },
-    {
-      "week": 11,
       "at": "2026-11-18T18:08:54.161284+00:00",
       "head": "Wednesday, and the room is still empty",
       "text": "Wednesday morning, zero human sheets. The robot filed Tuesday and has been sitting alone in the room since, like the first guy at a Super Bowl party. Colts at Texans kicks off Thursday at 8:15, and that's also when the $5 is due.\n\nSeason check while you stall: Ryan Holovics hits 74 percent, best in the pool, despite skipping weeks. Devin has the most wins, 74, by never skipping any. Andy R and Arod are two weeks apiece with three dead heats, the politest rivalry in football. Somebody file something."
@@ -17610,6 +17680,12 @@
       "at": "2026-11-19T23:18:09.015358+00:00",
       "head": "The late shift clocks in",
       "text": "Leah, Mrs. Sombloski and Tom all filed between 5:54 and 6:05 tonight, eleven minutes that pushed the room to eleven humans and took the commissioner off the hook as last man in. Tom's arrival is bad news for Ariel, who is 0–7 against him head-to-head this season.\n\nB-rad hasn't filed, which may be the smartest move available to a man three weeks running in the bottom three. Colts at Texans kicks off at 8:15. Got a question for the commissioner? Put it on the pick sheet."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-20T00:08:45.621418+00:00",
+      "head": "B-rad shows up after all",
+      "text": "Five more sheets landed between 6:09 and 6:58 tonight, Wendy first, Derek and Arod a minute apart at the buzzer, and the room is now sixteen humans deep. The headline is B-rad, who filed at 6:15 after three straight weeks in the bottom three, a man returning to the scene. Leah leads him 4–2 head-to-head this season, and she filed twenty-one minutes ahead of him.\n\nAndy R hasn't filed, which leaves Arod without a sparring partner. Colts at Texans kicks off at 8:15. Got a question for the commissioner? Put it on the pick sheet."
     }
   ],
   "rivals": [
