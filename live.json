@@ -1,13 +1,15 @@
 {
- "updated": "2026-11-20T04:04:55Z",
+ "updated": "2026-11-20T04:06:57Z",
  "week": 11,
  "games": {
   "0": {
-   "state": "in",
+   "state": "post",
    "away": 3,
    "home": 26,
-   "detail": "2:00 - 4th",
-   "line": "Texans 26–3 · 2:00 - 4th"
+   "detail": "Final",
+   "winner": "Texans",
+   "score": "26–3",
+   "line": "Final · Texans 26–3"
   }
  }
 }
