@@ -238,6 +238,7 @@ html.big .tools button{font-size:.62rem}
 .towns+.line,.towns+p,.towns+div:not(.towns):not(.strip5){border-top:1px solid var(--rule);padding-top:.5rem}
 .strip5{border-bottom:1px solid var(--rule);margin-bottom:.8rem}
 .wxc .k,.town .n,.strip5 .d,.calrow .cd,.wire.lead .kick,.stars.slim .sgn,.lbl.t,.ledger .cap{color:var(--teal);font-size:.62rem;letter-spacing:.14em;font-weight:800}
+.towns:not(.lakes) .town .n{min-height:2.7em;display:flex;align-items:center;justify-content:center}
 .touch-head{text-align:left;margin-top:.9rem}
 .wxrow+.skynote{margin-top:0}
 .ledger,.ledger .big,.ledger .cap{text-align:left}

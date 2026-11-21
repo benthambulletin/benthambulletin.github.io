@@ -47,6 +47,7 @@ Photos from other sources (e.g. ESPN, a police department) get credited in the c
 - **Sep 27:** the 6:59 run did not publish, and the hand-built paper missed Friday night's North Tonawanda car-show crash because local research only looked at Saturday. **Home Wire looks back 48 hours**, and North Tonawanda/Tonawanda/Niagara County get searched by name on WKBW, WGRZ and WIVB every morning.
 - **Never state a time or a number you did not look up.** Check `git log` for times; cut any clause without a source.
 - **Oct 4:** the dawn strip once used 3 a.m. temperatures. Dawn temps come from `forecast.json` → `towns[*].observation` (temp_f, text, ~6:45 a.m.).
+- **Nov 21:** Dunkirk's airport station (KDKK) reported sky but no temperature all morning, and the paper ran a dash; Garret asked for a number. When a town's observation has `temp_f` null, the cell runs that town's own NWS forecast low for the morning (the Overnight period), with the small line reading "forecast low" above the high. Never a dash, never another city's reading passed off as the town's.
 - **Week of Oct 13–21:** reviewers caught a backwards moon icon (waxing = lit on the **right**), "first frost" claims a prior edition contradicted, kickoff times without a source, and repeats from yesterday's paper reworded. Check each.
 
 ## Morning inputs
