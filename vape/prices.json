@@ -3,7 +3,8 @@
   "call": "Hold. Best Arizer from a store you trust is $153.99 at Planet of the Vapes; Arizer direct is full price.",
   "tone": "hold",
   "notes": [
-    "First check, done by hand on Nov 21. Most prices came from store listings, not the product page; the daily checks read the product pages."
+    "First check, done by hand on Nov 21. Most prices came from store listings, not the product page; the daily checks read the product pages.",
+    "Now also watching PAX Four and the new PAX Mini for a clearance-level deal."
   ],
   "devices": [
     {
@@ -11,28 +12,122 @@
       "name": "Arizer Solo 2 MAX",
       "role": "Your pick: taste and easy cleaning",
       "stores": [
-        {"store": "Arizer direct", "price": 219.99, "baseline": 219.99, "status": "product page", "url": "https://arizer.com", "note": "No sale shown. Free US shipping over $150."},
-        {"store": "Planet of the Vapes", "price": 153.99, "baseline": 153.99, "status": "listing only", "url": "https://www.planetofthevapes.com/collections/black-friday-cyber-monday-sale", "note": "Sale runs Nov 13 to Dec 13."},
-        {"store": "TVape", "price": 131.99, "baseline": 131.99, "status": "listing only", "url": "https://tvape.com", "note": "Reference only."},
-        {"store": "Tools420", "price": 134.50, "baseline": 134.50, "status": "listing only", "url": "https://tools420.com/product/arizer-solo-2-max/", "note": "Reference only."}
+        {
+          "store": "Arizer direct",
+          "price": 219.99,
+          "baseline": 219.99,
+          "status": "product page",
+          "url": "https://arizer.com",
+          "note": "No sale shown. Free US shipping over $150."
+        },
+        {
+          "store": "Planet of the Vapes",
+          "price": 153.99,
+          "baseline": 153.99,
+          "status": "listing only",
+          "url": "https://www.planetofthevapes.com/collections/black-friday-cyber-monday-sale",
+          "note": "Sale runs Nov 13 to Dec 13."
+        },
+        {
+          "store": "TVape",
+          "price": 131.99,
+          "baseline": 131.99,
+          "status": "listing only",
+          "url": "https://tvape.com",
+          "note": "Reference only."
+        },
+        {
+          "store": "Tools420",
+          "price": 134.5,
+          "baseline": 134.5,
+          "status": "listing only",
+          "url": "https://tools420.com/product/arizer-solo-2-max/",
+          "note": "Reference only."
+        }
       ]
     },
     {
       "id": "pax",
       "name": "PAX Plus",
-      "role": "The comparison: bigger bowl, one button",
+      "role": "Discontinued: leftover stock. Watching for a clearance price.",
       "stores": [
-        {"store": "PAX direct", "price": 125.00, "baseline": 125.00, "status": "listing only", "url": "https://www.pax.com/vapes/pax-plus-complete-kit", "note": "Complete Kit."},
-        {"store": "TVape", "price": 99.99, "baseline": 99.99, "status": "listing only", "url": "https://tvape.com/pax-2-vaporizer.html", "note": "Reference only."}
+        {
+          "store": "PAX direct",
+          "price": 125.0,
+          "baseline": 125.0,
+          "status": "listing only",
+          "url": "https://www.pax.com/vapes/pax-plus-complete-kit",
+          "note": "Complete Kit."
+        },
+        {
+          "store": "TVape",
+          "price": 99.99,
+          "baseline": 99.99,
+          "status": "listing only",
+          "url": "https://tvape.com/pax-2-vaporizer.html",
+          "note": "Reference only."
+        }
+      ]
+    },
+    {
+      "id": "pax-four",
+      "name": "PAX Four",
+      "role": "Newest PAX: hybrid heat like the Arizer, 0.3 g bowl",
+      "stores": [
+        {
+          "store": "PAX direct",
+          "price": 250.0,
+          "baseline": 250.0,
+          "status": "listing only",
+          "url": "https://www.pax.com",
+          "note": "List price per reviews; first automatic check will confirm."
+        },
+        {
+          "store": "Planet of the Vapes",
+          "price": 225.0,
+          "baseline": 225.0,
+          "status": "listing only",
+          "url": "https://www.planetofthevapes.com/products/pax-four-vaporizer",
+          "note": "Seen Nov 20."
+        }
+      ]
+    },
+    {
+      "id": "pax-mini-new",
+      "name": "New PAX Mini",
+      "role": "Current replacement for the Plus: same-size bowl, same heating as your Mini",
+      "stores": [
+        {
+          "store": "PAX direct",
+          "price": 150.0,
+          "baseline": 150.0,
+          "status": "listing only",
+          "url": "https://www.pax.com",
+          "note": "List price per reviews; first automatic check will confirm."
+        }
       ]
     }
   ],
   "venmo": [
-    {"store": "Arizer direct", "status": "Not listed. Footer shows Visa, Mastercard and PayPal."},
-    {"store": "Planet of the Vapes", "status": "Unconfirmed."},
-    {"store": "PAX direct", "status": "Unconfirmed."}
+    {
+      "store": "Arizer direct",
+      "status": "Not listed. Footer shows Visa, Mastercard and PayPal."
+    },
+    {
+      "store": "Planet of the Vapes",
+      "status": "Unconfirmed."
+    },
+    {
+      "store": "PAX direct",
+      "status": "Unconfirmed."
+    }
   ],
   "history": [
-    {"date": "2026-11-21", "arizer_direct": 219.99, "arizer_potv": 153.99, "pax_direct": 125.00}
+    {
+      "date": "2026-11-21",
+      "arizer_direct": 219.99,
+      "arizer_potv": 153.99,
+      "pax_direct": 125.0
+    }
   ]
 }
