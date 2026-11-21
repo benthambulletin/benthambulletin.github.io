@@ -1,10 +1,9 @@
 {
-  "updated": "2026-11-21T08:30:00-05:00",
-  "call": "Hold. Best Arizer from a store you trust is $153.99 at Planet of the Vapes; Arizer direct is full price.",
+  "updated": "2026-11-21T12:55:00-05:00",
+  "call": "Hold. Best Arizer from a store you trust is $153.99 at Planet of the Vapes. PAX\u2019s Black Friday sale is live but not at killer prices yet.",
   "tone": "hold",
   "notes": [
-    "First check, done by hand on Nov 21. Most prices came from store listings, not the product page; the daily checks read the product pages.",
-    "Now also watching PAX Four and the new PAX Mini for a clearance-level deal."
+    "PAX started a 20% Black Friday sale: PAX Four $180, new Mini $120. The PAX Plus looks sold out at PAX."
   ],
   "devices": [
     {
@@ -18,15 +17,15 @@
           "baseline": 219.99,
           "status": "product page",
           "url": "https://arizer.com",
-          "note": "No sale shown. Free US shipping over $150."
+          "note": "No sale or code shown. Free US shipping over $150."
         },
         {
           "store": "Planet of the Vapes",
           "price": 153.99,
           "baseline": 153.99,
-          "status": "listing only",
+          "status": "product page",
           "url": "https://www.planetofthevapes.com/collections/black-friday-cyber-monday-sale",
-          "note": "Sale runs Nov 13 to Dec 13."
+          "note": "Regular $199.99. In stock. Sale runs to Dec 13; includes a $15 gift card for later."
         },
         {
           "store": "TVape",
@@ -53,11 +52,11 @@
       "stores": [
         {
           "store": "PAX direct",
-          "price": 125.0,
+          "price": 150.0,
           "baseline": 125.0,
-          "status": "listing only",
+          "status": "out of stock",
           "url": "https://www.pax.com/vapes/pax-plus-complete-kit",
-          "note": "Complete Kit."
+          "note": "Complete Kit now shows $150 with a Notify Me button: likely sold out. No Black Friday discount on the Plus."
         },
         {
           "store": "TVape",
@@ -76,19 +75,19 @@
       "stores": [
         {
           "store": "PAX direct",
-          "price": 250.0,
+          "price": 180.0,
           "baseline": 250.0,
-          "status": "listing only",
+          "status": "product page",
           "url": "https://www.pax.com",
-          "note": "List price per reviews; first automatic check will confirm."
+          "note": "Black Friday 20% off ($225 crossed out). Free mouthpiece."
         },
         {
           "store": "Planet of the Vapes",
-          "price": 225.0,
+          "price": 200.0,
           "baseline": 225.0,
-          "status": "listing only",
+          "status": "product page",
           "url": "https://www.planetofthevapes.com/products/pax-four-vaporizer",
-          "note": "Seen Nov 20."
+          "note": "Regular $225. In stock."
         }
       ]
     },
@@ -99,11 +98,11 @@
       "stores": [
         {
           "store": "PAX direct",
-          "price": 150.0,
+          "price": 120.0,
           "baseline": 150.0,
-          "status": "listing only",
+          "status": "product page",
           "url": "https://www.pax.com",
-          "note": "List price per reviews; first automatic check will confirm."
+          "note": "Black Friday 20% off ($150 crossed out). Free mouthpiece."
         }
       ]
     }
@@ -127,7 +126,7 @@
       "date": "2026-11-21",
       "arizer_direct": 219.99,
       "arizer_potv": 153.99,
-      "pax_direct": 125.0
+      "pax_direct": null
     }
   ]
 }
