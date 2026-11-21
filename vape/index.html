@@ -41,6 +41,11 @@ h2{font-size:22px;font-weight:800;margin:0}
 .photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 16px}
 .photos figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .photos img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:0 0 16px}
+.box h3{font-size:16px;font-weight:800;margin:0 0 6px}
+.box ul{margin:0;padding-left:20px}
+.box li{margin:2px 0}
+.box .small{margin-top:8px}
 .photos figcaption{font-size:13px;color:#5d5450;padding:6px 10px;background:#fff}
 @media(max-width:600px){.photos{grid-template-columns:minmax(0,1fr)}}
 table{border-collapse:collapse;width:100%;margin-top:10px;font-size:15px}
@@ -75,6 +80,16 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const money = n => (typeof n === 'number') ? '$' + n.toFixed(2) : '—';
   const safeUrl = u => /^https?:\/\//.test(u || '') ? u : null;
+  const BOX = {
+    arizer: {
+      items: ['Solo 2 MAX vaporizer', 'One 110 mm glass stem (the bowl and mouthpiece) with cap', 'Frosted 14 mm water pipe adapter with cap (for a bong or bubbler)', 'Two plastic travel tubes', 'USB-C charger', 'Stirring tool', 'Owner\u2019s manual'],
+      note: 'Only one glass stem. Spare stems let you pre-load bowls; not priced yet.'
+    },
+    pax: {
+      items: ['PAX Plus vaporizer', 'Mouthpieces', 'Wire cleaning brush', 'USB charge cable', 'Concentrate insert', 'Half-pack oven lid (for smaller bowls)', 'Rounded multi-tool', 'Three oven screens'],
+      note: 'This is the Complete Kit, the $125 one. The last four items are the extras PAX says are worth $95.'
+    }
+  };
   const PHOTOS = {
     arizer: [
       {src: 'https://arizer.ca/wp-content/uploads/sites/2/2025/10/004-Carbon-Black_Solo-II-MAX-1-600x450.jpg', cap: 'Solo 2 MAX, carbon black. Photo: Arizer'},
@@ -108,6 +123,7 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
       const best = priced.length ? Math.min(...priced.map(s => s.price)) : null;
       return `<section class="band" id="dev-${esc(dev.id)}"><div class="dev">
         <h2>${esc(dev.name)}</h2><p class="role">${esc(dev.role)}</p>
+        ${BOX[dev.id] ? `<div class="box"><h3>What comes in the box</h3><ul>${BOX[dev.id].items.map(i => `<li>${esc(i)}</li>`).join('')}</ul><div class="small">${esc(BOX[dev.id].note)}</div></div>` : ''}
         ${(PHOTOS[dev.id] || []).length ? `<div class="photos">${PHOTOS[dev.id].map(ph => `<figure><img src="${esc(ph.src)}" alt="${esc(ph.cap)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"><figcaption>${esc(ph.cap)}</figcaption></figure>`).join('')}</div>` : ''}
         <div class="tags">${(dev.stores || []).map(s => {
           const url = safeUrl(s.url);
