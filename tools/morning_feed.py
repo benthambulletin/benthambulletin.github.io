@@ -277,12 +277,33 @@ def news(hours=48):
     return out
 
 
+def market():
+    """S&P 500 daily closes for the last year (FRED series SP500), for a chart
+    in the paper when the market is the story. Never fatal."""
+    try:
+        start = (datetime.now(timezone.utc) - timedelta(days=370)).strftime("%Y-%m-%d")
+        raw = get("https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=" + start, timeout=40).decode()
+        rows = []
+        for line in raw.splitlines()[1:]:
+            d, _, v = line.partition(",")
+            try: rows.append([d.strip(), round(float(v), 2)])
+            except ValueError: pass
+        if len(rows) > 50:
+            (ROOT / "data" / "market.json").write_text(json.dumps({
+                "series": "S&P 500 daily close", "source": "S&P Dow Jones Indices via FRED, Federal Reserve Bank of St. Louis",
+                "fetched_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "last": rows[-1], "closes": rows}))
+            print("market ok", rows[-1])
+    except Exception as e:
+        print("market failed:", e)
+
+
 if __name__ == "__main__":
     (ROOT / "data").mkdir(exist_ok=True)
     fc = forecasts()
     travel_forecasts(fc)
     lakes(fc)
     normals()
+    market()
     (ROOT / "data" / "forecast.json").write_text(json.dumps(fc, indent=1))
     (ROOT / "data" / "news.json").write_text(json.dumps(news(), indent=1))
     print("ok")

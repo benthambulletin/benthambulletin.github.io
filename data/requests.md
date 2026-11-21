@@ -52,6 +52,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Sat Nov 21 (Garret, Fri 8:11 p.m.: "put the stock market graph in with a story on the market tomorrow and put Luka's jump on the front").** Two things. (1) The cover is waiting in `spool/next/` (four frames of Luka jumping into the leaf pile, from his video); use it as Plate I. (2) Run a story on the stock market's fall (he sent a New York Times screenshot: the S&P 500 closed Friday more than 10 percent below its recent high, which Wall Street calls a correction, as worries about A.I. spending grew). Write it from news.json bodies only, explain "correction" and "S&P 500" in plain words, say what it means for a family with a 401(k) without giving advice, and put the paper's own chart inside the story: `cp site/tools/market_chart.py .; from market_chart import market_chart; market_chart(json.load(open('site/data/market.json')), year=2026)`. Never the Times image. Check `market.json` `last` is Friday Nov 20; if the feed has not caught up, dispatch morning.yml again, and if it still ends earlier, say in the chart line which day it ends. Add "FRED" to the sources line.
+
 - **Sun Nov 22 — Sunday Question answer (family form, id OQ2X78A, Sun Nov 15).** Gregg: "How in the heck can anyone pick just one 'most favorite' dish at Thanksgiving?? I'm finding it quite impossible 🤷" Run it under his name with any other answers to the Thanksgiving-dish question.
 
 
