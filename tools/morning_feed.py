@@ -298,12 +298,14 @@ def market():
 
 
 if __name__ == "__main__":
+    import sys
+    if "--market" in sys.argv:   # one-off, only when Garret asks for a market chart
+        market(); sys.exit(0)
     (ROOT / "data").mkdir(exist_ok=True)
     fc = forecasts()
     travel_forecasts(fc)
     lakes(fc)
     normals()
-    market()
     (ROOT / "data" / "forecast.json").write_text(json.dumps(fc, indent=1))
     (ROOT / "data" / "news.json").write_text(json.dumps(news(), indent=1))
     print("ok")
