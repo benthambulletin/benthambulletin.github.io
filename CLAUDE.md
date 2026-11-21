@@ -185,6 +185,8 @@ An occasional signed feature where the paper makes a real prediction and lives w
 
 **`/deals/` is The Porta Potty (Garret, Nov 14; first called The Deal Sifter), a Black Friday deal checker for family and friends, not part of the paper:** never link it from the paper, never edit it during an edition run, never remove its `noindex`. Its own scheduled tasks (named "Deal Sifter …") rewrite `deals/deals.js` and `deals/board.json`.
 
+**`/vape/` is Garret's Vape Price Watch (Nov 21), a Black Friday price page for the Arizer Solo 2 MAX vs the PAX Plus, not part of the paper:** never link it from the paper, never edit it during an edition run, never remove its `noindex`. Its scheduled task ("Vape price watch …") rewrites `vape/prices.json` only.
+
 **No analytics, by decision.** Don't add a counter or suggest one.
 
 ## Design
