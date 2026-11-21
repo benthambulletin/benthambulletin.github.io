@@ -5201,5 +5201,15 @@
   "wake_dev_min": 36,
   "bb_high": 89,
   "stress_yday": 28.0
+ },
+ {
+  "date": "2026-11-21",
+  "score": 1,
+  "flags": [
+   "woke a bit early"
+  ],
+  "wake_dev_min": -16,
+  "bb_high": 81,
+  "stress_yday": 34.0
  }
 ]
