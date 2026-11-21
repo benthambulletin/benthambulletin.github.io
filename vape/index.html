@@ -38,8 +38,11 @@ h2{font-size:22px;font-weight:800;margin:0}
 .small{font-size:13px;color:var(--soft);margin-top:6px}
 .pill{display:inline-block;font-size:12px;padding:1px 8px;border-radius:99px;border:1px solid var(--line);color:var(--soft);margin-top:6px}
 .bestmark{position:absolute;top:12px;right:14px;font-size:12px;font-weight:600;color:var(--teal)}
-ul.venmo{list-style:none;padding:0;margin:10px 0 0}
-ul.venmo li{padding:8px 0;border-bottom:1px solid var(--line)}
+.photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 16px}
+.photos figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.photos img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff}
+.photos figcaption{font-size:13px;color:#5d5450;padding:6px 10px;background:#fff}
+@media(max-width:600px){.photos{grid-template-columns:minmax(0,1fr)}}
 table{border-collapse:collapse;width:100%;margin-top:10px;font-size:15px}
 th,td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
 th:first-child,td:first-child{text-align:left}
@@ -61,10 +64,6 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
     <button type="button" id="reload">Reload prices</button>
   </section>
   <div id="devices"></div>
-  <section class="band" id="venmo-sec">
-    <h2>Venmo</h2>
-    <ul class="venmo" id="venmo"></ul>
-  </section>
   <section class="band" id="history-sec">
     <h2>Price history</h2>
     <div class="scroll"><table id="history"><thead><tr><th>Date</th><th>Arizer direct</th><th>Arizer at POTV</th><th>PAX direct</th></tr></thead><tbody></tbody></table></div>
@@ -77,6 +76,16 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const money = n => (typeof n === 'number') ? '$' + n.toFixed(2) : '—';
   const safeUrl = u => /^https?:\/\//.test(u || '') ? u : null;
+  const PHOTOS = {
+    arizer: [
+      {src: 'https://arizer.ca/wp-content/uploads/sites/2/2025/10/004-Carbon-Black_Solo-II-MAX-1-600x450.jpg', cap: 'Solo 2 MAX, carbon black. Photo: Arizer'},
+      {src: 'https://arizer.ca/wp-content/uploads/sites/2/2025/10/Solo-II-MAX_What_s-Included-Carbon-Black-WB-600x450.jpg', cap: 'What comes in the box. Photo: Arizer'}
+    ],
+    pax: [
+      {src: 'https://cdn.shopify.com/s/files/1/0027/6417/7523/products/PAXPLUS.ONYX.FLATLAY_0105.png?v=1762219764&width=600&height=450&crop=center', cap: 'PAX Plus, onyx. Photo: PAX'},
+      {src: 'https://cdn.shopify.com/s/files/1/0027/6417/7523/products/PAXPLUS.BLACK.DEVICE.TOP_1436_DEVICE_OVEN_CONCENTRATE.png?v=1762219925&width=600', cap: 'The oven end. Photo: PAX'}
+    ]
+  };
 
   function delta(p, b) {
     if (typeof p !== 'number' || typeof b !== 'number') return '<span class="delta flat">No baseline</span>';
@@ -100,6 +109,7 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
       const best = priced.length ? Math.min(...priced.map(s => s.price)) : null;
       return `<section class="band" id="dev-${esc(dev.id)}"><div class="dev">
         <h2>${esc(dev.name)}</h2><p class="role">${esc(dev.role)}</p>
+        ${(PHOTOS[dev.id] || []).length ? `<div class="photos">${PHOTOS[dev.id].map(ph => `<figure><img src="${esc(ph.src)}" alt="${esc(ph.cap)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"><figcaption>${esc(ph.cap)}</figcaption></figure>`).join('')}</div>` : ''}
         <div class="tags">${(dev.stores || []).map(s => {
           const url = safeUrl(s.url);
           const isBest = s.price === best;
@@ -114,7 +124,6 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
         }).join('')}</div></div></section>`;
     }).join('');
 
-    $('venmo').innerHTML = (data.venmo || []).map(v => `<li><b>${esc(v.store)}:</b> ${esc(v.status)}</li>`).join('');
 
     const rows = (data.history || []).slice().reverse();
     $('history').querySelector('tbody').innerHTML = rows.map(h =>
