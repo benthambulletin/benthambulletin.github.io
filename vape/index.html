@@ -8,96 +8,96 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-/* VOICE: plain, blunt shopping note — one answer, then the numbers.
-   IDEA: a shelf price tag; each store is a tag with the price large.
-   PICTURE: the verdict banner and the two rows of tags.
-   COLOUR and TYPE: pale pink ground, ink, teal for drops, claret for rises; Libre Franklin.
-   LAYOUT: verdict top, one band per device, Venmo, history. */
+/* VOICE: one answer first, details folded away.
+   IDEA: a shelf price tag for the pick, a short watch list for the rest.
+   PICTURE: the verdict banner and the Arizer tag.
+   COLOUR and TYPE: pale pink ground, ink, teal for good news, claret for rises; Libre Franklin.
+   LAYOUT: call, pick, PAX watch table, then collapsible details. */
 :root{color-scheme:light dark;--bg:light-dark(#ffe3dc,#1c1512);--card:light-dark(#fff6f3,#2a201c);--ink:light-dark(#1a1817,#f3ece8);--soft:light-dark(#5d5450,#b9aca6);--line:light-dark(#e9c9bf,#43362f);--teal:light-dark(#0d7680,#4fb3bb);--claret:light-dark(#990f3d,#e0607f)}
 :root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
 *{box-sizing:border-box;min-width:0}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Libre Franklin",system-ui,sans-serif;overflow-x:clip}
-.band{padding:clamp(20px,4vw,48px) max(5vw,16px);max-width:1100px;margin:0 auto}
-h1{font-size:clamp(30px,5vw,44px);line-height:1.05;font-weight:800;margin:0 0 6px;text-wrap:balance}
-h2{font-size:22px;font-weight:800;margin:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Libre Franklin",system-ui,sans-serif;overflow-x:clip}
+main{max-width:760px;margin:0 auto;padding:20px max(4vw,14px) 40px}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.05;font-weight:800;margin:0 0 4px}
+h2{font-size:20px;font-weight:800;margin:28px 0 10px}
 .meta{color:var(--soft);font-size:14px;margin:0}
-.verdict{margin-top:20px;padding:20px 22px;border-radius:14px;background:var(--ink);color:var(--bg);font-size:clamp(19px,2.6vw,24px);font-weight:600;line-height:1.3}
+.verdict{margin-top:14px;padding:16px 18px;border-radius:14px;background:var(--ink);color:var(--bg);font-size:19px;font-weight:600;line-height:1.3}
 .verdict.buy{background:var(--teal);color:#fff}
-.verdict b{display:block;font-size:14px;font-weight:600;opacity:.8;margin-bottom:4px}
-.notes{margin:12px 0 0;padding-left:18px;color:var(--soft);font-size:14px}
-.dev{border-top:2px solid var(--ink);padding-top:16px}
-.role{color:var(--soft);margin:2px 0 14px;font-size:15px}
-.tags{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
-.tag{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;position:relative}
-.tag.best{border:2px solid var(--teal)}
-.tag .st{font-weight:600}
-.tag .st a{color:inherit}
-.price{font-size:34px;font-weight:800;line-height:1.1;margin:6px 0 2px;white-space:nowrap}
-.delta{font-size:14px;font-weight:600;white-space:nowrap}
-.down{color:var(--teal)}.up{color:var(--claret)}.flat{color:var(--soft)}
-.small{font-size:13px;color:var(--soft);margin-top:6px}
-.pill{display:inline-block;font-size:12px;padding:1px 8px;border-radius:99px;border:1px solid var(--line);color:var(--soft);margin-top:6px}
-.bestmark{position:absolute;top:12px;right:14px;font-size:12px;font-weight:600;color:var(--teal)}
-.photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 16px}
-.photos figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.photos img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff}
-.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:0 0 16px}
-.box h3{font-size:16px;font-weight:800;margin:0 0 6px}
-.box ul{margin:0;padding-left:20px}
-.box li{margin:2px 0}
-.box .small{margin-top:8px}
-.sizes{display:flex;align-items:flex-end;justify-content:space-around;gap:10px;padding:22px 8px 8px;background:var(--card);border:1px solid var(--line);border-radius:12px;margin-top:12px}
-.dv{display:flex;flex-direction:column;align-items:center;flex:1}
-.body{background:var(--ink);border-radius:9px;position:relative}
-.body.az{background:#2d3a44}
-.stem{width:10px;border:2px dashed var(--soft);border-bottom:0;border-radius:4px 4px 0 0;height:34px;margin:0 auto}
-.dv .lbl{font-size:13px;font-weight:600;margin-top:8px;text-align:center;line-height:1.2;min-height:3.6em;display:flex;align-items:flex-start;justify-content:center}
-.dv .dim{font-size:12px;color:var(--soft);text-align:center;white-space:nowrap}
-.photos figcaption{font-size:13px;color:#5d5450;padding:6px 10px;background:#fff}
-@media(max-width:600px){.photos{grid-template-columns:minmax(0,1fr)}}
-table{border-collapse:collapse;width:100%;margin-top:10px;font-size:15px}
-th,td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
-th:first-child,td:first-child{text-align:left}
-th{font-weight:600;color:var(--soft)}
+.verdict b{display:block;font-size:13px;font-weight:600;opacity:.75;margin-bottom:2px}
+.notes{margin:8px 0 0;color:var(--soft);font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.pick{display:grid;grid-template-columns:120px minmax(0,1fr);gap:14px;align-items:center}
+.pick img{width:120px;height:90px;object-fit:contain;background:#fff;border-radius:10px;border:1px solid var(--line)}
+.pick .nm{font-weight:800;font-size:18px}
+.pick .why{color:var(--soft);font-size:14px}
+.big{font-size:38px;font-weight:800;line-height:1.05;margin-top:4px;white-space:nowrap}
+.big small{display:block;font-size:14px;font-weight:600;color:var(--soft);margin-top:2px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left;white-space:normal}
+th{font-weight:600;color:var(--soft);font-size:13px}
+td a{color:inherit}
+.ref td{color:var(--soft)}
+.down{color:var(--teal);font-weight:600}.up{color:var(--claret);font-weight:600}.flat{color:var(--soft)}
+.hit{color:var(--teal);font-weight:800}
 .scroll{overflow-x:auto}
-button{font:inherit;font-weight:600;min-height:44px;padding:0 18px;border-radius:10px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;margin-top:14px}
-button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.small{font-size:13px;color:var(--soft);margin:8px 0 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:0 16px}
+summary{cursor:pointer;font-weight:700;min-height:48px;display:flex;align-items:center;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";margin-left:auto;font-size:22px;color:var(--soft)}
+details[open] summary::after{content:"\2212"}
+details>div{padding:0 0 16px}
+details h3{font-size:15px;margin:12px 0 4px}
+details ul{margin:0;padding-left:20px}
+details p{margin:6px 0}
+.sizes{display:flex;align-items:flex-end;justify-content:space-around;gap:8px;padding:18px 4px 4px}
+.dv{display:flex;flex-direction:column;align-items:center;flex:1}
+.body{background:var(--ink);border-radius:8px}
+.body.az{background:#2d3a44}
+.stem{width:9px;border:2px dashed var(--soft);border-bottom:0;border-radius:4px 4px 0 0;height:30px;margin:0 auto}
+.dv .lbl{font-size:12px;font-weight:600;margin-top:6px;text-align:center;line-height:1.2;min-height:3.6em}
+.photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
+.photos img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;border-radius:10px;border:1px solid var(--line)}
 .err{color:var(--claret);font-weight:600}
-@media(max-width:600px){.price{font-size:30px}table{font-size:13px}}
+@media(max-width:600px){.pick{grid-template-columns:90px minmax(0,1fr)}.pick img{width:90px;height:68px}.big{font-size:32px}table{font-size:14px}}
 </style>
 </head>
 <body>
 <main>
-  <section class="band" id="top">
-    <h1>Arizer or PAX: today's prices</h1>
-    <p class="meta" id="updated">Loading the latest check…</p>
-    <div class="verdict" id="verdict"><b>The call</b><span id="call">…</span></div>
-    <ul class="notes" id="notes"></ul>
-  </section>
-  <div id="devices"></div>
-  <section class="band" id="sizes">
-    <h2>Size compared with your Mini</h2>
-    <p class="role">Drawn to scale, front view.</p>
+  <h1>Vape Price Watch</h1>
+  <p class="meta" id="updated">Loading the latest check…</p>
+  <div class="verdict" id="verdict"><b>The call</b><span id="call">…</span></div>
+  <p class="notes" id="notes"></p>
+
+  <h2>Your pick</h2>
+  <div class="card" id="pick"></div>
+
+  <h2>PAX watch</h2>
+  <div class="card">
+    <div class="scroll"><table><thead><tr><th>Model</th><th>Best price</th><th>Killer deal at</th></tr></thead><tbody id="paxrows"></tbody></table></div>
+    <p class="small">Prices from PAX direct and Planet of the Vapes only. A killer deal turns the call above and sends you a notification.</p>
+  </div>
+
+  <h2>Details</h2>
+  <details><summary>Every store's price</summary><div id="allprices"></div></details>
+  <details><summary>What comes in the box</summary><div id="box"></div></details>
+  <details><summary>Size compared with your Mini</summary><div>
     <div class="sizes" id="sizebox"></div>
-    <div class="scroll"><table><thead><tr><th>Device</th><th>Bowl</th><th>Height</th><th>Width</th><th>Thick</th><th>Weight</th></tr></thead><tbody id="sizetable"></tbody></table></div>
-    <p class="small">The new PAX Mini is the same body as yours with twice the bowl. The Arizer's height doesn't count the glass stem, which sticks out the top. Sizes are from retailer and review spec sheets.</p>
-  </section>
-  <section class="band" id="before">
-    <h2>Before you buy</h2>
-    <div class="box" style="margin-top:10px">
-      <h3>Arizer coupon code</h3>
-      <p style="margin:0">VAPEWIZ20 is listed as 20% off at arizer.com. If it works, the Solo 2 MAX drops from $219.99 to about $176. Not tested: type it in the cart and see if the price changes.</p>
-    </div>
-    <div class="box">
-      <h3>Planet of the Vapes returns</h3>
-      <p style="margin:0">14 days from delivery, even if used, as long as it works and is cleaned. Exchange or store credit is free. A refund costs $10 shipping plus a $10 restocking fee. Two returns per customer.</p>
-    </div>
-  </section>
-  <section class="band" id="history-sec">
-    <h2>Price history</h2>
-    <div class="scroll"><table id="history"><thead><tr><th>Date</th><th>Arizer direct</th><th>Arizer at POTV</th><th>PAX direct</th></tr></thead><tbody></tbody></table></div>
-    <p class="small">Prices are checked automatically at about 7:22 a.m., 12:22 p.m. and 6:22 p.m. through Cyber Monday. Refreshing shows the most recent check, not a live price. "Listing only" means the price came from a store listing, not the product page: confirm in the cart.</p>
-  </section>
+    <div class="scroll"><table><thead><tr><th>Device</th><th>Bowl</th><th>Height</th><th>Width</th><th>Weight</th></tr></thead><tbody id="sizetable"></tbody></table></div>
+    <p class="small">Drawn to scale. The new PAX Mini is the same body as yours with twice the bowl. The Arizer's height doesn't count the glass stem sticking out the top.</p>
+  </div></details>
+  <details><summary>Coupon code and returns</summary><div>
+    <h3>Arizer coupon code</h3>
+    <p>VAPEWIZ20 is listed as 20% off at arizer.com: $219.99 would drop to about $176. Untested. Add it to the cart and type the code; nothing is bought until you pay.</p>
+    <h3>Planet of the Vapes returns</h3>
+    <p>14 days from delivery, even if used, as long as it works and is cleaned. Exchange or store credit is free; a refund costs $10 shipping plus a $10 restocking fee. Two returns per customer.</p>
+  </div></details>
+  <details><summary>Price history</summary><div>
+    <div class="scroll"><table><thead><tr><th>Date</th><th>Arizer direct</th><th>Arizer at POTV</th><th>PAX Plus</th></tr></thead><tbody id="history"></tbody></table></div>
+  </div></details>
+
+  <p class="small">Checked automatically at about 7:22 a.m., 12:22 p.m. and 6:22 p.m. through Cyber Monday. Refreshing shows the latest check, not a live price. "Listing" means the price came from a store listing, not the product page: confirm in the cart.</p>
 </main>
 <script>
 {
@@ -105,50 +105,39 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const money = n => (typeof n === 'number') ? '$' + n.toFixed(2) : '—';
   const safeUrl = u => /^https?:\/\//.test(u || '') ? u : null;
+  const TRUSTED = ['Arizer direct', 'Planet of the Vapes', 'PAX direct'];
+  const KILLER = {'pax-four': 160, 'pax-mini-new': 100, 'pax': 90};
+  const ORDER = ['pax-four', 'pax-mini-new', 'pax'];
+
   const BOX = {
-    arizer: {
-      items: ['Solo 2 MAX vaporizer', 'One 110 mm glass stem (the bowl and mouthpiece) with cap', 'Frosted 14 mm water pipe adapter with cap (for a bong or bubbler)', 'Two plastic travel tubes', 'USB-C charger', 'Stirring tool', 'Owner\u2019s manual'],
-      note: 'Only one glass stem. Spare 110 mm stems are $9.95 each at Planet of the Vapes: load two or three ahead of time and swap one in when a bowl is done.'
-    },
-    pax: {
-      items: ['PAX Plus vaporizer', 'Mouthpieces', 'Wire cleaning brush', 'USB charge cable', 'Concentrate insert', 'Half-pack oven lid (for smaller bowls)', 'Rounded multi-tool', 'Three oven screens'],
-      note: 'This is the Complete Kit, the $125 one. The last four items are the extras PAX says are worth $95. The PAX Plus is discontinued: this is leftover stock, which is why it is cheap.'
-    }
+    arizer: ['Solo 2 MAX vaporizer', 'One 110 mm glass stem (bowl and mouthpiece) with cap', 'Frosted 14 mm water pipe adapter with cap (for a bong or bubbler)', 'Two plastic travel tubes', 'USB-C charger', 'Stirring tool', 'Owner’s manual'],
+    pax: ['PAX Plus vaporizer', 'Mouthpieces', 'Wire cleaning brush', 'USB charge cable', 'Concentrate insert', 'Half-pack oven lid', 'Rounded multi-tool', 'Three oven screens']
+  };
+  const BOXNOTE = {
+    arizer: 'Only one stem. Spares are $9.95 each at Planet of the Vapes: load two or three ahead and swap one in when a bowl is done.',
+    pax: 'Complete Kit ($125). The PAX Plus is discontinued; this is leftover stock.'
+  };
+  const PHOTOS = {
+    arizer: ['https://arizer.ca/wp-content/uploads/sites/2/2025/10/004-Carbon-Black_Solo-II-MAX-1-600x450.jpg', 'https://arizer.ca/wp-content/uploads/sites/2/2025/10/Solo-II-MAX_What_s-Included-Carbon-Black-WB-600x450.jpg'],
+    pax: ['https://cdn.shopify.com/s/files/1/0027/6417/7523/products/PAXPLUS.ONYX.FLATLAY_0105.png?v=1762219764&width=600&height=450&crop=center']
   };
   const SIZES = [
-    {name: 'Your PAX Mini', h: 3.65, w: 1.2, d: 0.86, g: 90, bowl: 'about 0.25 g'},
-    {name: 'New PAX Mini', h: 3.66, w: 1.21, d: 0.85, g: 89, bowl: 'up to 0.5 g'},
-    {name: 'PAX Plus', h: 3.9, w: 1.2, d: 0.86, g: 95, bowl: 'up to 0.5 g'},
-    {name: 'PAX Four', h: 4.25, w: 1.42, d: 1.06, g: 125, bowl: '0.3 g'},
-    {name: 'Arizer Solo 2 MAX', h: 4.5, w: 1.75, d: 1.38, g: 210, bowl: 'about 0.15 g a stem', az: true}
+    {name: 'Your PAX Mini', h: 3.65, w: 1.2, g: 90, bowl: '~0.25 g'},
+    {name: 'New PAX Mini', h: 3.66, w: 1.21, g: 89, bowl: 'up to 0.5 g'},
+    {name: 'PAX Plus', h: 3.9, w: 1.2, g: 95, bowl: 'up to 0.5 g'},
+    {name: 'PAX Four', h: 4.25, w: 1.42, g: 125, bowl: '0.3 g'},
+    {name: 'Arizer Solo 2 MAX', h: 4.5, w: 1.75, g: 210, bowl: '~0.15 g a stem', az: true}
   ];
-  function drawSizes() {
-    const box = $('sizebox');
-    const ppi = Math.max(26, Math.min(44, (box.clientWidth - 70) / 9));
-    box.innerHTML = SIZES.map(d => `<div class="dv">${d.az ? '<div class="stem" title="glass stem"></div>' : ''}<div class="body${d.az ? ' az' : ''}" style="width:${(d.w*ppi).toFixed(0)}px;height:${(d.h*ppi).toFixed(0)}px"></div><div class="lbl">${esc(d.name)}</div><div class="dim">${d.h}" tall</div></div>`).join('');
-    $('sizetable').innerHTML = SIZES.map(d => `<tr><td>${esc(d.name)}</td><td>${esc(d.bowl)}</td><td>${d.h} in</td><td>${d.w} in</td><td>${d.d} in</td><td>${d.g} g</td></tr>`).join('');
-  }
-  drawSizes();
-  { const ro = new ResizeObserver(drawSizes); ro.observe($('sizebox')); }
-  const PHOTOS = {
-    arizer: [
-      {src: 'https://arizer.ca/wp-content/uploads/sites/2/2025/10/004-Carbon-Black_Solo-II-MAX-1-600x450.jpg', cap: 'Solo 2 MAX, carbon black. Photo: Arizer'},
-      {src: 'https://arizer.ca/wp-content/uploads/sites/2/2025/10/Solo-II-MAX_What_s-Included-Carbon-Black-WB-600x450.jpg', cap: 'What comes in the box. Photo: Arizer'}
-    ],
-    pax: [
-      {src: 'https://cdn.shopify.com/s/files/1/0027/6417/7523/products/PAXPLUS.ONYX.FLATLAY_0105.png?v=1762219764&width=600&height=450&crop=center', cap: 'PAX Plus, onyx. Photo: PAX'},
-      {src: 'https://cdn.shopify.com/s/files/1/0027/6417/7523/products/PAXPLUS.BLACK.DEVICE.TOP_1436_DEVICE_OVEN_CONCENTRATE.png?v=1762219925&width=600', cap: 'The oven end. Photo: PAX'}
-    ]
-  };
+  const img = (src, alt) => `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`;
 
-  function delta(p, b) {
-    if (typeof p !== 'number' || typeof b !== 'number') return '<span class="delta flat">No baseline</span>';
+  function change(p, b) {
+    if (typeof p !== 'number' || typeof b !== 'number') return '<span class="flat">—</span>';
     const d = Math.round((p - b) * 100) / 100;
-    if (d === 0) return '<span class="delta flat">Same as Nov 21</span>';
-    return d < 0
-      ? `<span class="delta down">▼ $${Math.abs(d).toFixed(2)} since Nov 21</span>`
-      : `<span class="delta up">▲ $${d.toFixed(2)} since Nov 21</span>`;
+    if (d === 0) return '<span class="flat">no change</span>';
+    return d < 0 ? `<span class="down">▼ $${Math.abs(d).toFixed(2)}</span>` : `<span class="up">▲ $${d.toFixed(2)}</span>`;
   }
+  const trusted = dev => (dev.stores || []).filter(s => TRUSTED.includes(s.store) && typeof s.price === 'number' && s.status !== 'out of stock');
+  const best = dev => trusted(dev).sort((a, b) => a.price - b.price)[0];
 
   function render(data) {
     const when = new Date(data.updated);
@@ -156,46 +145,52 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
       'Last checked ' + when.toLocaleString('en-US', {weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit', timeZone:'America/New_York'}) + ' ET';
     $('call').textContent = data.call || '';
     $('verdict').className = 'verdict' + (data.tone === 'buy' ? ' buy' : '');
-    $('notes').innerHTML = (data.notes || []).map(n => `<li>${esc(n)}</li>`).join('');
+    $('notes').textContent = (data.notes || []).slice(-1).join(' ');
 
-    $('devices').innerHTML = (data.devices || []).map(dev => {
-      const priced = (dev.stores || []).filter(s => typeof s.price === 'number' && s.status !== 'out of stock');
-      const best = priced.length ? Math.min(...priced.map(s => s.price)) : null;
-      return `<section class="band" id="dev-${esc(dev.id)}"><div class="dev">
-        <h2>${esc(dev.name)}</h2><p class="role">${esc(dev.role)}</p>
-        ${BOX[dev.id] ? `<div class="box"><h3>What comes in the box</h3><ul>${BOX[dev.id].items.map(i => `<li>${esc(i)}</li>`).join('')}</ul><div class="small">${esc(BOX[dev.id].note)}</div></div>` : ''}
-        ${(PHOTOS[dev.id] || []).length ? `<div class="photos">${PHOTOS[dev.id].map(ph => `<figure><img src="${esc(ph.src)}" alt="${esc(ph.cap)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"><figcaption>${esc(ph.cap)}</figcaption></figure>`).join('')}</div>` : ''}
-        <div class="tags">${(dev.stores || []).map(s => {
-          const url = safeUrl(s.url);
-          const isBest = s.price === best;
-          return `<div class="tag${isBest ? ' best' : ''}">
-            ${isBest ? '<span class="bestmark">Lowest</span>' : ''}
-            <div class="st">${url ? `<a href="${esc(url)}">${esc(s.store)}</a>` : esc(s.store)}</div>
-            <div class="price">${s.status === 'out of stock' ? 'Out of stock' : money(s.price)}</div>
-            ${delta(s.price, s.baseline)}
-            <div><span class="pill">${esc(s.status)}</span></div>
-            ${s.note ? `<div class="small">${esc(s.note)}</div>` : ''}
-          </div>`;
-        }).join('')}</div></div></section>`;
+    const devs = {};
+    (data.devices || []).forEach(d => devs[d.id] = d);
+
+    const az = devs.arizer;
+    if (az) {
+      const b = best(az);
+      const rows = trusted(az).map(s => `<tr><td>${safeUrl(s.url) ? `<a href="${esc(s.url)}">${esc(s.store)}</a>` : esc(s.store)}</td><td>${money(s.price)}</td><td>${change(s.price, s.baseline)}</td></tr>`).join('');
+      $('pick').innerHTML = `<div class="pick">${img(PHOTOS.arizer[0], 'Arizer Solo 2 MAX')}<div>
+          <div class="nm">${esc(az.name)}</div><div class="why">Best taste, easiest to clean.</div>
+          <div class="big">${b ? money(b.price) : '—'}<small>${b ? esc(b.store) : ''}</small></div></div></div>
+        <div class="scroll" style="margin-top:12px"><table><thead><tr><th>Store</th><th>Price</th><th>Since Nov 21</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
+
+    $('paxrows').innerHTML = ORDER.filter(id => devs[id]).map(id => {
+      const d = devs[id], b = best(d), k = KILLER[id];
+      const hit = b && b.price <= k;
+      return `<tr><td>${esc(d.name)}${id === 'pax' ? ' <span class="flat">(discontinued)</span>' : ''}</td>
+        <td class="${hit ? 'hit' : ''}">${b ? money(b.price) : '—'}${b ? `<div class="flat" style="font-size:12px">${esc(b.store)}</div>` : ''}</td>
+        <td>${hit ? '<span class="hit">Now!</span>' : '$' + k + ' or less'}</td></tr>`;
     }).join('');
 
+    $('allprices').innerHTML = (data.devices || []).map(d => `<h3>${esc(d.name)}</h3><div class="scroll"><table><tbody>${(d.stores || []).map(s =>
+      `<tr class="${TRUSTED.includes(s.store) ? '' : 'ref'}"><td>${safeUrl(s.url) ? `<a href="${esc(s.url)}">${esc(s.store)}</a>` : esc(s.store)}${TRUSTED.includes(s.store) ? '' : ' (reference)'}<div class="flat" style="font-size:12px;white-space:normal">${esc(s.status)}${s.note ? ' · ' + esc(s.note) : ''}</div></td><td>${s.status === 'out of stock' ? 'Out' : money(s.price)}</td><td>${change(s.price, s.baseline)}</td></tr>`).join('')}</tbody></table></div>`).join('');
 
-    const rows = (data.history || []).slice().reverse();
-    $('history').querySelector('tbody').innerHTML = rows.map(h =>
+    $('history').innerHTML = (data.history || []).slice().reverse().map(h =>
       `<tr><td>${esc(h.date)}</td><td>${money(h.arizer_direct)}</td><td>${money(h.arizer_potv)}</td><td>${money(h.pax_direct)}</td></tr>`).join('');
   }
 
-  async function load() {
-    try {
-      const r = await fetch('prices.json?t=' + Date.now(), {cache: 'no-store'});
-      if (!r.ok) throw new Error(r.status);
-      render(await r.json());
-    } catch (e) {
-      $('updated').innerHTML = '<span class="err">Could not load the latest prices. Try reloading.</span>';
-    }
-  }
+  $('box').innerHTML = ['arizer', 'pax'].map(id => `<h3>${id === 'arizer' ? 'Arizer Solo 2 MAX' : 'PAX Plus Complete Kit'}</h3>
+    <ul>${BOX[id].map(i => `<li>${esc(i)}</li>`).join('')}</ul><p class="small">${esc(BOXNOTE[id])}</p>
+    <div class="photos">${(PHOTOS[id] || []).map(u => img(u, 'Photo: ' + (id === 'arizer' ? 'Arizer' : 'PAX'))).join('')}</div>`).join('');
 
-  load();
+  function drawSizes() {
+    const box = $('sizebox');
+    const ppi = Math.max(22, Math.min(40, (box.clientWidth - 70) / 9));
+    box.innerHTML = SIZES.map(d => `<div class="dv">${d.az ? '<div class="stem"></div>' : ''}<div class="body${d.az ? ' az' : ''}" style="width:${(d.w*ppi).toFixed(0)}px;height:${(d.h*ppi).toFixed(0)}px"></div><div class="lbl">${esc(d.name)}</div></div>`).join('');
+  }
+  $('sizetable').innerHTML = SIZES.map(d => `<tr><td>${esc(d.name)}</td><td>${esc(d.bowl)}</td><td>${d.h} in</td><td>${d.w} in</td><td>${d.g} g</td></tr>`).join('');
+  { const ro = new ResizeObserver(drawSizes); ro.observe($('sizebox')); }
+
+  fetch('prices.json?t=' + Date.now(), {cache: 'no-store'})
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(render)
+    .catch(() => { $('updated').innerHTML = '<span class="err">Could not load the latest prices. Refresh to try again.</span>'; });
 }
 </script>
 </body>
