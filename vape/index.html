@@ -61,7 +61,6 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
     <p class="meta" id="updated">Loading the latest check…</p>
     <div class="verdict" id="verdict"><b>The call</b><span id="call">…</span></div>
     <ul class="notes" id="notes"></ul>
-    <button type="button" id="reload">Reload prices</button>
   </section>
   <div id="devices"></div>
   <section class="band" id="history-sec">
@@ -140,7 +139,6 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
     }
   }
 
-  $('reload').addEventListener('click', load);
   load();
 }
 </script>
