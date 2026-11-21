@@ -25,8 +25,8 @@ def market_chart(m, year=None, label="S&amp;P 500, daily close"):
         o.append('<text x="%d" y="%.1f" font-family="Archivo,Arial,sans-serif" font-size="13" fill="#664a2c" text-anchor="end">%s</text>' % (L - 6, Y(g) + 4, format(g, ",")))
     mon = d0.replace(day=1)
     while mon <= d1:
-        if mon >= d0 and mon.month % 2 == 1:
-            o.append('<text x="%.1f" y="%d" font-family="Archivo,Arial,sans-serif" font-size="13" fill="#664a2c">%s</text>' % (X(mon), H - 8, mon.strftime("%b")))
+        if mon.month % 2 == 1:
+            o.append('<text x="%.1f" y="%d" font-family="Archivo,Arial,sans-serif" font-size="13" fill="#664a2c">%s</text>' % (max(X(mon), L), H - 8, mon.strftime("%b")))
         mon = (mon.replace(day=28) + datetime.timedelta(days=4)).replace(day=1)
     pts = " ".join("%.1f,%.1f" % (X(d), Y(v)) for d, v in rows)
     o.append('<polyline points="%s" fill="none" stroke="#2f5e3e" stroke-width="2.5" stroke-linejoin="round"/>' % pts)
