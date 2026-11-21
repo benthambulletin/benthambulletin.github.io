@@ -92,11 +92,26 @@ def forecasts():
                               "pop": (p.get("probabilityOfPrecipitation") or {}).get("value"),
                               "short": p["shortForecast"], "detail": p["detailedForecast"]} for p in fc["periods"][:10]]}
             try:
-                st = json.loads(get(pt["observationStations"]))["features"][0]["properties"]["stationIdentifier"]
+                feats = json.loads(get(pt["observationStations"]))["features"]
+                st = feats[0]["properties"]["stationIdentifier"]
                 ob = json.loads(get(f"https://api.weather.gov/stations/{st}/observations/latest"))["properties"]
                 c = (ob.get("temperature") or {}).get("value")
                 t["observation"] = {"station": st, "time": ob.get("timestamp"), "text": ob.get("textDescription"),
                                     "temp_f": None if c is None else round(c * 9 / 5 + 32)}
+                if c is None:
+                    # The town's own station has no thermometer reading (Dunkirk, Nov 21): take the
+                    # nearest station that does, and say which one, so the paper can name it.
+                    for ft in feats[1:6]:
+                        try:
+                            s2 = ft["properties"]["stationIdentifier"]
+                            o2 = json.loads(get(f"https://api.weather.gov/stations/{s2}/observations/latest"))["properties"]
+                            c2 = (o2.get("temperature") or {}).get("value")
+                            if c2 is not None:
+                                t["observation"]["fallback"] = {"station": s2, "name": ft["properties"].get("name"),
+                                    "time": o2.get("timestamp"), "text": o2.get("textDescription"), "temp_f": round(c2 * 9 / 5 + 32)}
+                                break
+                        except Exception:
+                            continue
             except Exception as e:
                 out["errors"].append(f"{town} observation: {e}")
             if town == "North Tonawanda":
