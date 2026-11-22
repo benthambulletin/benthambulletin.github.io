@@ -217,11 +217,80 @@ def snow():
                     got["normal_in"] = nm
                     got["normal_from"] = {"BUF": "Buffalo airport", "ROC": "Rochester airport"}[fb]
             out["places"][place] = got or {"error": "no nearby station reporting snow daily"}
+            try:   # NWS forecast snowfall, next 48 hours (Garret, Nov 21)
+                pt2 = json.loads(get(f"https://api.weather.gov/points/{lat:.4f},{lon:.4f}"))["properties"]
+                grid = json.loads(get(pt2["forecastGridData"]))["properties"]
+                now_u = datetime.now(timezone.utc); tot = 0.0
+                for v in grid.get("snowfallAmount", {}).get("values", []):
+                    t0 = datetime.fromisoformat(v["validTime"].split("/")[0])
+                    if now_u - timedelta(hours=3) <= t0 < now_u + timedelta(hours=48) and v.get("value"):
+                        tot += v["value"]
+                out["places"][place]["fcst_48h_in"] = round(tot / 25.4, 1)
+            except Exception as e:
+                out["places"][place]["fcst_error"] = str(e)[:120]
             print("snow", place, out["places"][place])
         except Exception as e:
             out["places"][place] = {"error": str(e)[:200]}
             print("snow failed", place, e)
     (ROOT / "data" / "snow.json").write_text(json.dumps(out, indent=1))
+
+
+def climate_day():
+    """Records for the date, this date last year, and Lake Erie ice cover (Garret, Nov 21: "Do them all").
+    Writes data/climate.json. Records and last year from ACIS (NOAA Regional Climate Centers) for the
+    Buffalo airport (long record, used for North Tonawanda) and the Rochester airport (Scottsville).
+    Ice cover from NOAA GLERL. Never fatal."""
+    def acis(params):
+        req = urllib.request.Request("https://data.rcc-acis.org/StnData", data=json.dumps(params).encode(),
+                                     headers={**UA, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read())
+    def num(v):
+        if v == "T": return 0.0
+        try: return float(v)
+        except (TypeError, ValueError): return None
+    now = datetime.now(timezone.utc) - timedelta(hours=5)
+    md = now.strftime("%m-%d")
+    out = {"generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "date": now.strftime("%Y-%m-%d"),
+           "source": "ACIS, NOAA Regional Climate Centers; ice cover NOAA GLERL", "stations": {}}
+    for sid, label in (("BUF", "Buffalo airport"), ("ROC", "Rochester airport")):
+        try:
+            d = acis({"sid": sid, "sdate": f"1870-{md}", "edate": now.strftime("%Y-%m-%d"),
+                      "elems": [{"name": n, "interval": [1, 0, 0]} for n in ("maxt", "mint", "pcpn", "snow")]})
+            rows = [r for r in d.get("data", []) if r[0][5:] == md]
+            hi = [(num(r[1]), r[0][:4]) for r in rows if num(r[1]) is not None and r[0][:4] != now.strftime("%Y")]
+            lo = [(num(r[2]), r[0][:4]) for r in rows if num(r[2]) is not None and r[0][:4] != now.strftime("%Y")]
+            st = {"name": label, "since": rows[0][0][:4] if rows else None}
+            if hi:
+                m = max(v for v, _ in hi); st["record_high"] = {"f": int(m), "years": [y for v, y in hi if v == m]}
+            if lo:
+                m = min(v for v, _ in lo); st["record_low"] = {"f": int(m), "years": [y for v, y in lo if v == m]}
+            ly = str(now.year - 1)
+            r = next((r for r in rows if r[0][:4] == ly), None)
+            if r:
+                st["last_year"] = {"date": r[0], "high": num(r[1]), "low": num(r[2]), "precip_in": num(r[3]),
+                                   "snow_in": num(r[4]), "trace_precip": r[3] == "T", "trace_snow": r[4] == "T"}
+            out["stations"][sid] = st
+            print("climate", sid, st)
+        except Exception as e:
+            out["stations"][sid] = {"error": str(e)[:200]}; print("climate failed", sid, e)
+    # Lake Erie ice cover (GLERL daily Great Lakes ice percentages; the season file is named for its two years)
+    y0 = now.year if now.month >= 7 else now.year - 1
+    for url in (f"https://coastwatch.glerl.noaa.gov/statistic/ice/dat/g{y0}_{y0+1}_ice.dat",
+                f"https://coastwatch.glerl.noaa.gov/statistic/ice/dat/g{y0}_{y0 + 1}_ice.txt"):
+        try:
+            raw = get(url, timeout=30).decode(errors="replace")
+            lines = [l.split() for l in raw.splitlines() if l.strip() and l.split()[0].isdigit()]
+            if lines:
+                last = lines[-1]
+                out["erie_ice"] = {"row": last, "url": url, "note": "columns per GLERL header; Erie is the 6th field (year, day, Superior, Michigan, Huron, Erie, Ontario, St. Clair, total)",
+                                   "header": [l for l in raw.splitlines()[:6]]}
+                try: out["erie_ice"]["pct"] = float(last[5]); out["erie_ice"]["year_day"] = [last[0], last[1]]
+                except (IndexError, ValueError): pass
+                print("ice", url, last); break
+        except Exception as e:
+            out["erie_ice"] = {"error": str(e)[:200], "url": url}; print("ice failed", url, e)
+    (ROOT / "data" / "climate.json").write_text(json.dumps(out, indent=1))
 
 
 def normals():
@@ -430,6 +499,7 @@ if __name__ == "__main__":
     lakes(fc)
     normals()
     snow()
+    climate_day()
     market()
     (ROOT / "data" / "forecast.json").write_text(json.dumps(fc, indent=1))
     (ROOT / "data" / "news.json").write_text(json.dumps(news(), indent=1))
