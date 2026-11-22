@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-22T19:58:58Z",
+ "updated": "2026-11-22T20:01:00Z",
  "week": 11,
  "games": {
   "1": {
    "state": "in",
    "away": 9,
    "home": 20,
-   "detail": "11:42 - 3rd",
-   "line": "Bills 20–9 · 11:42 - 3rd"
+   "detail": "10:14 - 3rd",
+   "line": "Bills 20–9 · 10:14 - 3rd"
   },
   "2": {
    "state": "in",
    "away": 26,
    "home": 22,
-   "detail": "13:20 - 3rd",
-   "line": "Ravens 26–22 · 13:20 - 3rd"
+   "detail": "12:08 - 3rd",
+   "line": "Ravens 26–22 · 12:08 - 3rd"
   },
   "3": {
    "state": "in",
@@ -27,8 +27,8 @@
    "state": "in",
    "away": 16,
    "home": 34,
-   "detail": "8:53 - 3rd",
-   "line": "Cowboys 34–16 · 8:53 - 3rd"
+   "detail": "7:49 - 3rd",
+   "line": "Cowboys 34–16 · 7:49 - 3rd"
   },
   "5": {
    "state": "in",
@@ -41,15 +41,15 @@
    "state": "in",
    "away": 7,
    "home": 27,
-   "detail": "3:23 - 3rd",
-   "line": "Chiefs 27–7 · 3:23 - 3rd"
+   "detail": "3:05 - 3rd",
+   "line": "Chiefs 27–7 · 3:05 - 3rd"
   },
   "7": {
    "state": "in",
    "away": 6,
-   "home": 13,
-   "detail": "9:18 - 3rd",
-   "line": "Eagles 13–6 · 9:18 - 3rd"
+   "home": 16,
+   "detail": "8:33 - 3rd",
+   "line": "Eagles 16–6 · 8:33 - 3rd"
   },
   "8": {
    "state": "pre",
