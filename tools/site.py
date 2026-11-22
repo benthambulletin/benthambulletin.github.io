@@ -574,6 +574,9 @@ def build(edition):
         # status files for the automatic 6 a.m. text (Garret's iPhone Shortcut reads these; Nov 15)
         open(os.path.join(SITE,'today.txt'),'w').write(edition['date'])
         open(os.path.join(SITE,'link.txt'),'w').write('https://benthambulletin.github.io/?%s' % edition['no'])
+        # one-line teaser of the lead for the family text (Garret, Nov 21): the first headline segment
+        _lead = re.split(r'\s*\u00b7\s*|\s*&middot;\s*', edition.get('headline') or '')[0].strip()
+        open(os.path.join(SITE,'teaser.txt'),'w').write(('Today: ' + _lead[0].upper() + _lead[1:]) if _lead else '')
     # archive
     def _thumb(i):
         return f'<img src="{i["plate"]}" alt="">' if i.get('plate') else ''

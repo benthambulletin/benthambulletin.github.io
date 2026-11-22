@@ -58,6 +58,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Thu Nov 26 — Turkey Trot (Garret is running it; Nov 21: "yes").** The 131st YMCA Buffalo Niagara Turkey Trot, 9:00 a.m. sharp, starting on Franklin between West Chippewa and West Tupper; new single-lap 8K course, start and finish at the Buffalo Convention Center (finish at Franklin and West Eagle), per ymcabn.org (checked Nov 21; recheck the start time that week). In Thursday's Weather Glass, a line: `<div class="line"><span class="lbl t">Turkey Trot</span> 9 a.m. start downtown: ...</div>` with the NWS hourly temperature, wind and sky for 9 a.m. (Buffalo, from the North Tonawanda hourly or a downtown point forecast) and a short good-luck line to Garret in Family Today, in Margo's voice.
+
 
 - **Sun Nov 22 — Thanksgiving cost graphic in the Spotlight (Garret, Sat 9:05 p.m.: "make a really cool chart graphic detailing the increase in meal costs"; preview sent).** Paste `data/spotlight/thanksgiving-2026.html` as-is into the Sunday Spotlight on what Thanksgiving dinner costs, right after its first paragraph (built by `tools/thanksgiving_chart.py`; every figure in that script's docstring, checked Saturday night against the Farm Bureau's releases). Write the Spotlight's text from the same figures (and the AFBF economist's reasons: diesel, farm labor, turkey supply) so text and graphic agree; don't repeat every item price in prose. Add "American Farm Bureau Federation" to the sources line.
 
