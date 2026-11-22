@@ -145,7 +145,7 @@ The section notes, in the old numbering:
 12. **The Chase** — **resting after No. 138 (Nov 9): the 2026 Chase ended at Homestead with Kyle Larson champion. Bring it back for the 2027 season (Daytona 500 week).** When running: NASCAR, every edition. 2026 playoff format: 16 drivers, one 10-race round, no eliminations, most points at Homestead (Nov 8) wins. When there's nothing new, a bare standings line, not a reworded copy of yesterday.
 13. **The Marquee** — three to five pop-culture headlines from all of pop culture (see Section calls), real news over rumor.
 14. **On This Day** (Garret, Nov 21: was "a single thin line") — a short paragraph, three or four sentences: what happened, the human detail that makes it a story, and why it still matters, from a source you looked up that morning (never from memory alone). Prefer events the family would recognize or that touched western New York. **Question of the Day** (original riddle, not one that has run before; answer in the colophon).
-15. **Colophon** — QOTD answer, one sources line, "— G.", ornaments. Prev/next/album/archive nav under it.
+15. **Colophon** — QOTD answer, one sources line, the sign-off `<div class="sig">&mdash; Margo</div>` (Garret, Nov 21: "Take the G off the end and put Margo"; it was "— G." before), ornaments. Prev/next/album/archive nav under it.
 
 **Every web address in the paper is a clickable link** (Garret, Oct 18: older readers won't copy and paste).
 
@@ -213,6 +213,10 @@ Locked structure: aged-paper page, thick-thin double rules, plain left-aligned s
 
 Spot illustrations and cartoons: shelved.
 
+## Margo Bentham (Garret, Nov 21)
+
+The paper's editor-in-chief and lead meteorologist is **Margo Bentham** (Margo, no "t"). She is the paper's AI editor, played as a real member of the staff whose identity is "the worst kept secret": write her as a person with a voice, never deny what she is, and keep every "an AI wrote it" line the rules already require (the Sunday Spotlight). The colophon signs "&mdash; Margo"; the Weather Glass carries `<div class="byline" style="font-family:Archivo,Arial,sans-serif;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft,#664a2c);margin:-.2rem 0 .5rem">By Margo Bentham, lead meteorologist</div>` right under its section head. Garret still owns the paper and makes the calls.
+
 ## Tone
 
 Newspaper voice: declarative, warm, a little wry. Nothing about process, sourcing failures, methodology or corrections in the body. Short paragraphs, numbers first. **Plain English:** when the paper uses a term or quote the family won't know cold, explain it in the same sentence.
@@ -235,7 +239,7 @@ All ten, with signs and birthdays — the roster is complete; `data/family.json`
 | Derek | Virgo | September 1 |
 | Joanne | Virgo | September 4 |
 | Claire — took the Allegany State Park cover | Scorpio | October 23 |
-| Garret — the editor, signs "G." | Scorpio | October 25 |
+| Garret — owns the paper (the sign-off is Margo's from Nov 22) | Scorpio | October 25 |
 | Ariel | Scorpio | October 25 |
 
 **Late October is birthday season:** Claire's edition on the 23rd; one **joint** edition for Garret and Ariel on the 25th (never two separate banners). **Anniversary:** Ariel and Tom, October 8 (married 2023) — red banner day-of, on the calendar a week out.
