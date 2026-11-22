@@ -5,6 +5,12 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Standing
 
+- **Market watch (Garret, Sat Nov 21, 9:16 p.m.: "keep tabs on the market, especially if it's a correction or bear").** Every build: dispatch `market.yml` early (it takes about a minute), pull, and from `data/market.json` take the latest S&P 500 close and its peak over the past year (check the date of `last`; FRED runs a day or two behind, so also read the market stories in news.json for the latest close and say which day each number is from). Then, by the drop from the peak:
+  - **Under 10%:** nothing in print unless there is a real market story that day.
+  - **10% to 20% (a correction):** one short National Wire line with the close, how far below the peak, and the day, in plain words ("The S&P 500 closed Friday at 6,910, about 12% below its October high; Wall Street calls a drop of 10% a correction."). Not the lead unless it's the day's biggest story; no chart.
+  - **20% or more (a bear market), or the day it crosses 10% or 20%:** a full item, and the lead if nothing bigger happened, with the paper's chart (`tools/market_chart.py`).
+  Explain the terms every time; no advice. Keep `data/market.json` in the repo (this replaces the Nov 21 "remove it after" note).
+
 - **No more Dana White (Garret, Nov 10: "I don't give a f--- about Dana White. That's 3 days in a row").** The story is dead; don't run it again in any form. **And no story runs more than two days, ever:** a follow-up ("Update:") is allowed once, the next day, only for something the family would bring up themselves (a verdict, a death, a storm, a Bills result). A celebrity or political sideshow never gets a second day. When in doubt, drop it.
 - **Jets: go gentle**, for Tommy's sake. Report the game honestly, no pile-on. Bills and Jets stay even in space.
 - **Next Jets and Bills games** go on the Family Today calendar.
