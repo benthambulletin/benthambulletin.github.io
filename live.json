@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-22T20:09:07Z",
+ "updated": "2026-11-22T20:11:09Z",
  "week": 11,
  "games": {
   "1": {
    "state": "in",
    "away": 9,
    "home": 20,
-   "detail": "6:10 - 3rd",
-   "line": "Bills 20–9 · 6:10 - 3rd"
+   "detail": "5:58 - 3rd",
+   "line": "Bills 20–9 · 5:58 - 3rd"
   },
   "2": {
    "state": "in",
@@ -20,15 +20,15 @@
    "state": "in",
    "away": 10,
    "home": 19,
-   "detail": "1:48 - 3rd",
-   "line": "Bears 19–10 · 1:48 - 3rd"
+   "detail": "1:27 - 3rd",
+   "line": "Bears 19–10 · 1:27 - 3rd"
   },
   "4": {
    "state": "in",
    "away": 23,
    "home": 34,
-   "detail": "4:43 - 3rd",
-   "line": "Cowboys 34–23 · 4:43 - 3rd"
+   "detail": "4:23 - 3rd",
+   "line": "Cowboys 34–23 · 4:23 - 3rd"
   },
   "5": {
    "state": "in",
@@ -40,9 +40,9 @@
   "6": {
    "state": "in",
    "away": 7,
-   "home": 27,
+   "home": 33,
    "detail": "15:00 - 4th",
-   "line": "Chiefs 27–7 · 15:00 - 4th"
+   "line": "Chiefs 33–7 · 15:00 - 4th"
   },
   "7": {
    "state": "in",
