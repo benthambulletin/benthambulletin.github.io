@@ -17300,9 +17300,7 @@
               "Andy R",
               "Claude"
             ]
-          },
-          "live": "Tied 0–0 · 1st qtr",
-          "liveAt": "2026-11-22T21:08:03Z"
+          }
         },
         {
           "away": "Raiders",
@@ -17358,6 +17356,41 @@
         }
       ],
       "players": [
+        {
+          "name": "Andy R",
+          "house": false,
+          "correct": 1,
+          "missed": 0,
+          "void": 0,
+          "remaining": 12,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Texans",
+            "1": "Dolphins",
+            "2": "Panthers",
+            "3": "Bears",
+            "4": "Cowboys",
+            "5": "Lions",
+            "6": "Chiefs",
+            "7": "Steelers",
+            "8": "Chargers"
+          },
+          "filedAt": "2026-11-20T00:38:55+00:00",
+          "firstAt": "2026-11-20T00:38:55+00:00",
+          "free": false,
+          "paypal": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": [
+            {
+              "id": "buzzer",
+              "note": "filed inside the last hour before Thursday kickoff"
+            }
+          ]
+        },
         {
           "name": "Ariel",
           "house": false,
@@ -17421,12 +17454,37 @@
           "delta": 0,
           "state": "alive",
           "paid": true,
-          "badges": [
-            {
-              "id": "crown",
-              "note": "leading the week"
-            }
-          ]
+          "badges": []
+        },
+        {
+          "name": "B-rad",
+          "house": false,
+          "correct": 1,
+          "missed": 0,
+          "void": 0,
+          "remaining": 12,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Texans",
+            "1": "Bills",
+            "2": "Ravens",
+            "3": "Bears",
+            "4": "Titans",
+            "5": "Buccaneers",
+            "6": "Chiefs",
+            "7": "Steelers",
+            "8": "Chargers"
+          },
+          "filedAt": "2026-11-19T23:15:36+00:00",
+          "firstAt": "2026-11-19T23:15:36+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         },
         {
           "name": "Claude",
@@ -17631,12 +17689,37 @@
           "delta": 0,
           "state": "alive",
           "paid": true,
-          "badges": [
-            {
-              "id": "crown",
-              "note": "leading the week"
-            }
-          ]
+          "badges": []
+        },
+        {
+          "name": "Mrs. Sombloski",
+          "house": false,
+          "correct": 1,
+          "missed": 0,
+          "void": 0,
+          "remaining": 12,
+          "max": 13,
+          "tb": null,
+          "sheet": {
+            "0": "Texans",
+            "1": "Bills",
+            "2": "Panthers",
+            "3": "Bears",
+            "4": "Titans",
+            "5": "Lions",
+            "6": "Chiefs",
+            "7": "Eagles",
+            "8": "Chargers"
+          },
+          "filedAt": "2026-11-19T22:59:02+00:00",
+          "firstAt": "2026-11-19T22:59:02+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         },
         {
           "name": "Nate V",
@@ -17788,22 +17871,82 @@
           "max": 12,
           "tb": null,
           "sheet": {
-            "0": "Texans",
-            "1": "Dolphins",
+            "0": "Colts",
+            "1": "Bills",
+            "2": "Panthers",
+            "3": "Saints",
+            "4": "Titans",
+            "5": "Lions",
+            "6": "Chiefs",
+            "7": "Eagles",
+            "8": "Chargers"
+          },
+          "filedAt": "2026-11-19T22:54:07+00:00",
+          "firstAt": "2026-11-19T22:54:07+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 16,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Melissa",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 12,
+          "max": 12,
+          "tb": null,
+          "sheet": {
+            "0": "Colts",
+            "1": "Bills",
             "2": "Panthers",
             "3": "Bears",
             "4": "Cowboys",
             "5": "Lions",
             "6": "Chiefs",
             "7": "Steelers",
-            "8": "Chargers"
+            "8": "Jets"
           },
           "filedAt": "2026-11-20T00:38:55+00:00",
           "firstAt": "2026-11-20T00:38:55+00:00",
           "free": false,
-          "paypal": true,
-          "rank": 13,
-          "delta": -12,
+          "paypal": false,
+          "rank": 16,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Mike Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 1,
+          "void": 0,
+          "remaining": 12,
+          "max": 12,
+          "tb": null,
+          "sheet": {
+            "0": "Colts",
+            "1": "Bills",
+            "2": "Panthers",
+            "3": "Bears",
+            "4": "Cowboys",
+            "5": "Lions",
+            "6": "Chiefs",
+            "7": "Steelers",
+            "8": "Jets"
+          },
+          "filedAt": "2026-11-20T01:04:50+00:00",
+          "firstAt": "2026-11-20T01:04:50+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 16,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -18511,7 +18654,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-22T21:09:59.470860+00:00",
+  "updated": "2026-11-22T21:10:08.590941+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
