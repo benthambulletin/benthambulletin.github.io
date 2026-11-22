@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-21T12:55:00-05:00",
+  "updated": "2026-11-22T07:24:00-05:00",
   "call": "Hold. Best Arizer from a store you trust is $153.99 at Planet of the Vapes. PAX\u2019s Black Friday sale is live but not at killer prices yet.",
   "tone": "hold",
   "notes": [
-    "PAX started a 20% Black Friday sale: PAX Four $180, new Mini $120. The PAX Plus looks sold out at PAX."
+    "No change overnight. PAX\u2019s 20% Black Friday sale still on: Four $180, new Mini $120."
   ],
   "devices": [
     {
@@ -33,7 +33,7 @@
           "baseline": 131.99,
           "status": "listing only",
           "url": "https://tvape.com",
-          "note": "Reference only."
+          "note": "Reference only. Not re-confirmed Nov 22."
         },
         {
           "store": "Tools420",
@@ -41,7 +41,7 @@
           "baseline": 134.5,
           "status": "listing only",
           "url": "https://tools420.com/product/arizer-solo-2-max/",
-          "note": "Reference only."
+          "note": "Reference only. Not re-confirmed Nov 22."
         }
       ]
     },
@@ -64,7 +64,7 @@
           "baseline": 99.99,
           "status": "listing only",
           "url": "https://tvape.com/pax-2-vaporizer.html",
-          "note": "Reference only."
+          "note": "Reference only. Not re-confirmed Nov 22."
         }
       ]
     },
@@ -124,6 +124,12 @@
   "history": [
     {
       "date": "2026-11-21",
+      "arizer_direct": 219.99,
+      "arizer_potv": 153.99,
+      "pax_direct": null
+    },
+    {
+      "date": "2026-11-22",
       "arizer_direct": 219.99,
       "arizer_potv": 153.99,
       "pax_direct": null
