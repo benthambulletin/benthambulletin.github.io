@@ -36,5 +36,5 @@ def market_chart(m, year=None, label="S&amp;P 500, daily close"):
     o.append('<circle cx="%.1f" cy="%.1f" r="5" fill="#9c3216"/>' % (X(ld), Y(lv)))
     o.append('<text x="%.1f" y="%.1f" font-family="Archivo,Arial,sans-serif" font-size="14" font-weight="700" fill="#9c3216">%s</text>' % (X(ld) + 9, Y(lv) + 5, format(round(lv), ",")))
     o.append("</svg>")
-    cap = '<div class="line"><span class="lbl t">%s</span> through %s. Data: S&amp;P Dow Jones Indices.</div>' % (label, ld.strftime("%A, %b. ") + str(ld.day))
+    cap = '<div class="line"><span class="lbl t">%s</span> through %s. Data: %s.</div>' % (label, ld.strftime("%A, %b. ") + str(ld.day), (m.get("source") or "Yahoo Finance").split(",")[0])
     return "".join(o) + cap
