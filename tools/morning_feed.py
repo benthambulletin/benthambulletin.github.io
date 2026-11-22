@@ -370,28 +370,59 @@ def news(hours=48):
 
 
 def market():
-    """S&P 500 daily closes for the last year (FRED series SP500), for a chart
-    in the paper when the market is the story. Never fatal."""
+    """S&P 500 daily closes for the last year, for The Market (daily from Nov 22, Garret).
+    Same-day sources first (Yahoo Finance chart data, then Stooq), FRED as the fallback
+    (FRED runs a day or two behind). Each close is kept with its date. Never fatal."""
+    rows, source = [], None
     try:
-        start = (datetime.now(timezone.utc) - timedelta(days=370)).strftime("%Y-%m-%d")
-        raw = get("https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=" + start, timeout=40).decode()
-        rows = []
-        for line in raw.splitlines()[1:]:
-            d, _, v = line.partition(",")
-            try: rows.append([d.strip(), round(float(v), 2)])
-            except ValueError: pass
-        if len(rows) > 50:
-            (ROOT / "data" / "market.json").write_text(json.dumps({
-                "series": "S&P 500 daily close", "source": "S&P Dow Jones Indices via FRED, Federal Reserve Bank of St. Louis",
-                "fetched_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "last": rows[-1], "closes": rows}))
-            print("market ok", rows[-1])
+        d = json.loads(get("https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1y&interval=1d", timeout=30))
+        r = d["chart"]["result"][0]
+        for t, c in zip(r["timestamp"], r["indicators"]["quote"][0]["close"]):
+            if c is not None:
+                rows.append([(datetime.fromtimestamp(t, timezone.utc) - timedelta(hours=5)).strftime("%Y-%m-%d"), round(c, 2)])
+        source = "Yahoo Finance"
     except Exception as e:
-        print("market failed:", e)
+        print("market yahoo failed:", e); rows = []
+    if len(rows) < 50:
+        try:
+            raw = get("https://stooq.com/q/d/l/?s=%5Espx&i=d", timeout=30).decode()
+            start = (datetime.now(timezone.utc) - timedelta(days=370)).strftime("%Y-%m-%d")
+            rows = []
+            for line in raw.splitlines()[1:]:
+                f = line.split(",")
+                if len(f) >= 5 and f[0] >= start:
+                    try: rows.append([f[0], round(float(f[4]), 2)])
+                    except ValueError: pass
+            source = "Stooq"
+        except Exception as e:
+            print("market stooq failed:", e); rows = []
+    if len(rows) < 50:
+        try:
+            start = (datetime.now(timezone.utc) - timedelta(days=370)).strftime("%Y-%m-%d")
+            raw = get("https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=" + start, timeout=40).decode()
+            rows = []
+            for line in raw.splitlines()[1:]:
+                dd, _, v = line.partition(",")
+                try: rows.append([dd.strip(), round(float(v), 2)])
+                except ValueError: pass
+            source = "FRED, Federal Reserve Bank of St. Louis"
+        except Exception as e:
+            print("market fred failed:", e); rows = []
+    # one row per day, in order
+    seen = {}
+    for dd, v in rows: seen[dd] = v
+    rows = sorted(seen.items())
+    if len(rows) > 50:
+        (ROOT / "data" / "market.json").write_text(json.dumps({
+            "series": "S&P 500 daily close", "source": source,
+            "fetched_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "last": list(rows[-1]),
+            "closes": [list(r) for r in rows]}))
+        print("market ok", source, rows[-1])
 
 
 if __name__ == "__main__":
     import sys
-    if "--market" in sys.argv:   # one-off, only when Garret asks for a market chart
+    if "--market" in sys.argv:   # market data alone (market.yml)
         market(); sys.exit(0)
     (ROOT / "data").mkdir(exist_ok=True)
     fc = forecasts()
@@ -399,6 +430,7 @@ if __name__ == "__main__":
     lakes(fc)
     normals()
     snow()
+    market()
     (ROOT / "data" / "forecast.json").write_text(json.dumps(fc, indent=1))
     (ROOT / "data" / "news.json").write_text(json.dumps(news(), indent=1))
     print("ok")
