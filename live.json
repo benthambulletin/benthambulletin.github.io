@@ -1,41 +1,41 @@
 {
- "updated": "2026-11-22T20:53:50Z",
+ "updated": "2026-11-22T20:55:52Z",
  "week": 11,
  "games": {
   "1": {
    "state": "in",
    "away": 9,
-   "home": 23,
-   "detail": "2:00 - 4th",
-   "line": "Bills 23–9 · 2:00 - 4th"
+   "home": 26,
+   "detail": "1:57 - 4th",
+   "line": "Bills 26–9 · 1:57 - 4th"
   },
   "2": {
    "state": "in",
-   "away": 26,
+   "away": 33,
    "home": 32,
-   "detail": "7:20 - 4th",
-   "line": "Panthers 32–26 · 7:20 - 4th"
+   "detail": "6:32 - 4th",
+   "line": "Ravens 33–32 · 6:32 - 4th"
   },
   "3": {
    "state": "in",
    "away": 10,
    "home": 21,
-   "detail": "4:33 - 4th",
-   "line": "Bears 21–10 · 4:33 - 4th"
+   "detail": "3:16 - 4th",
+   "line": "Bears 21–10 · 3:16 - 4th"
   },
   "4": {
    "state": "in",
    "away": 23,
    "home": 51,
-   "detail": "3:06 - 4th",
-   "line": "Cowboys 51–23 · 3:06 - 4th"
+   "detail": "2:00 - 4th",
+   "line": "Cowboys 51–23 · 2:00 - 4th"
   },
   "5": {
    "state": "in",
    "away": 14,
    "home": 24,
-   "detail": "2:52 - 4th",
-   "line": "Lions 24–14 · 2:52 - 4th"
+   "detail": "2:00 - 4th",
+   "line": "Lions 24–14 · 2:00 - 4th"
   },
   "6": {
    "state": "post",
