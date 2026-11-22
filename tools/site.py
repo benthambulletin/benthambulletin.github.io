@@ -573,10 +573,12 @@ def build(edition):
         open(os.path.join(SITE,'index.html'),'w').write(html)
         # status files for the automatic 6 a.m. text (Garret's iPhone Shortcut reads these; Nov 15)
         open(os.path.join(SITE,'today.txt'),'w').write(edition['date'])
-        open(os.path.join(SITE,'link.txt'),'w').write('https://benthambulletin.github.io/?%s' % edition['no'])
-        # one-line teaser of the lead for the family text (Garret, Nov 21): the first headline segment
+        # one-line teaser of the lead for the family text (Garret, Nov 21), put straight into link.txt above
+        # the link so his Shortcut sends it with no changes on his end
         _lead = re.split(r'\s*\u00b7\s*|\s*&middot;\s*', edition.get('headline') or '')[0].strip()
-        open(os.path.join(SITE,'teaser.txt'),'w').write(('Today: ' + _lead[0].upper() + _lead[1:]) if _lead else '')
+        _teaser = ('Today: ' + _lead[0].upper() + _lead[1:]) if _lead else ''
+        open(os.path.join(SITE,'teaser.txt'),'w').write(_teaser)
+        open(os.path.join(SITE,'link.txt'),'w').write((_teaser + '\n' if _teaser else '') + 'https://benthambulletin.github.io/?%s' % edition['no'])
     # archive
     def _thumb(i):
         return f'<img src="{i["plate"]}" alt="">' if i.get('plate') else ''
