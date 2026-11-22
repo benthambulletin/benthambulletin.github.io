@@ -17087,7 +17087,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": [
             {
               "id": "buzzer",
@@ -17136,7 +17136,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -17356,7 +17356,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -17519,6 +17519,24 @@
           "status": "manual"
         },
         {
+          "id": "manual-w11-ryanholovics",
+          "amt": "5.00",
+          "who": "Ryan Holovics",
+          "status": "manual"
+        },
+        {
+          "id": "manual-w11-andyr",
+          "amt": "5.00",
+          "who": "Andy R",
+          "status": "manual"
+        },
+        {
+          "id": "manual-w11-arod",
+          "amt": "5.00",
+          "who": "Arod",
+          "status": "manual"
+        },
+        {
           "id": "1a1f42ee4bf20916",
           "at": "2026-11-19T14:21:15Z",
           "amt": "5.00",
@@ -17621,30 +17639,12 @@
           "who": "Ryan Holovics",
           "status": "late",
           "told": "2026-11-20"
-        },
-        {
-          "id": "manual-w11-ryanholovics",
-          "amt": "5.00",
-          "who": "Ryan Holovics",
-          "status": "manual"
-        },
-        {
-          "id": "manual-w11-andyr",
-          "amt": "5.00",
-          "who": "Andy R",
-          "status": "manual"
-        },
-        {
-          "id": "manual-w11-arod",
-          "amt": "5.00",
-          "who": "Arod",
-          "status": "manual"
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-20T01:15:00Z",
-      "pot": 70.0,
-      "paidN": 14,
+      "pot": 85.0,
+      "paidN": 17,
       "opensAt": "2026-11-17T09:06:27Z",
       "housePicks": {
         "trash": "Nine and five last week. The spreadsheet has been spoken to.",
@@ -17768,13 +17768,13 @@
       "decidedAtLastRun": 1,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "The Sombloski series gets a twist",
-      "column": "Mike Sombloski leads the Sombloski series 4–3, but this morning he's 0–1 and Mrs. Sombloski is 1–0, so the bragging rights currently belong to the one who didn't take the Colts. Eleven Sunday games give him room to climb back; the Monday tiebreaker gives her room to gloat.\n\nSeason leader Ryan Holovics sits in the fifteen-way logjam at 1–0 with everyone who isn't Thom, Leah, Melissa or Mike. Kaylani & Luka still haven't filed, and the 1:00 games lock at kickoff. Got a question for the commissioner? Put it on the pick sheet.",
+      "columnHead": "Andy R and Arod refuse to break",
+      "column": "Seven weeks of Andy R versus Arod and the household scoreboard reads 2–2 with three dead heats, the most stubborn tie in the pool. Both sit at 1–0 this morning, so eleven Sunday games get a shot at what seven weeks couldn't do.\n\nUp top, Ryan Holovics owns the season at 63–22, with Devin (74–27) and Tom (71–30) chasing him on win percentage and running out of Sundays. Kaylani & Luka have until 1:00 to show up.",
       "columnN": 18,
       "thuDone": true
     }
   },
-  "updated": "2026-11-22T13:10:16.227591+00:00",
+  "updated": "2026-11-22T13:48:22.648801+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
