@@ -147,6 +147,83 @@ def lakes(out):
 NORMAL_STATIONS = {"North Tonawanda": "USW00014733", "Scottsville": "USW00014768"}  # Buffalo and Rochester airports
 
 
+SNOW_PLACES = {"North Tonawanda": (43.0387, -78.8642), "Orchard Park": (42.7676, -78.7439),
+               "Dunkirk": (42.4795, -79.3339), "Scottsville": (43.0259, -77.7453)}
+SNOW_NORMAL_FALLBACK = {"North Tonawanda": "BUF", "Orchard Park": "BUF", "Dunkirk": "BUF", "Scottsville": "ROC"}
+
+
+def snow():
+    """Season-to-date snowfall (since Jul 1) for the four places Garret asked for (Nov 21), from the
+    nearest station that reports snow daily, via ACIS (NOAA Regional Climate Centers). Writes
+    data/snow.json. Normal-to-date comes from that station's 1991-2020 normals when it has them,
+    otherwise from the nearest airport (named in normal_from). Never fatal."""
+    import math
+    def acis(path, params):
+        req = urllib.request.Request("https://data.rcc-acis.org/" + path, data=json.dumps(params).encode(),
+                                     headers={**UA, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=40) as r:
+            return json.loads(r.read())
+    def num(v):
+        if v in ("T",): return 0.0
+        try: return float(v)
+        except (TypeError, ValueError): return None
+    now = datetime.now(timezone.utc) - timedelta(hours=5)
+    end = (now - timedelta(days=0)).strftime("%Y-%m-%d")
+    yr = now.year if now.month >= 7 else now.year - 1
+    start = f"{yr}-07-01"
+    out = {"generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "season_start": start,
+           "source": "ACIS, NOAA Regional Climate Centers", "places": {}}
+    def season_normal(sid):
+        try:
+            d = acis("StnData", {"sid": sid, "sdate": start, "edate": end, "elems": [{"name": "snow", "normal": "1"}]})
+            vals = [num(r[1]) for r in d.get("data", [])]
+            vals = [v for v in vals if v is not None]
+            return round(sum(vals), 1) if len(vals) > 20 else None
+        except Exception:
+            return None
+    for place, (lat, lon) in SNOW_PLACES.items():
+        try:
+            meta = acis("StnMeta", {"bbox": [lon - 0.25, lat - 0.2, lon + 0.25, lat + 0.2], "elems": "snow",
+                                    "sdate": start, "edate": end, "meta": ["name", "ll", "sids", "uid"]})
+            cands = []
+            for m in meta.get("meta", []):
+                if not m.get("ll"): continue
+                dx = (m["ll"][0] - lon) * 69 * math.cos(math.radians(lat)); dy = (m["ll"][1] - lat) * 69
+                cands.append((math.hypot(dx, dy), m))
+            cands.sort(key=lambda c: c[0])
+            got = None
+            for dist, m in cands[:12]:
+                d = acis("StnData", {"uid": m["uid"], "sdate": start, "edate": end, "elems": [{"name": "snow"}]})
+                rows = d.get("data", [])
+                vals = [(r[0], num(r[1])) for r in rows]
+                have = [v for _, v in vals if v is not None]
+                recent = [dt for dt, v in vals[-4:] if v is not None]
+                if not recent or len(have) < 0.6 * len(vals): continue   # must report most days and in the last 4
+                last_day = recent[-1]
+                got = {"station": m["name"].title(), "dist_mi": round(dist, 1), "last_date": last_day,
+                       "season_in": round(sum(have), 1),
+                       "last_day_in": next(v for dt, v in vals if dt == last_day),
+                       "days_reported": len(have), "days_in_season": len(vals)}
+                sids = [x.split()[0] for x in m.get("sids", [])]
+                for sid in sids:
+                    nm = season_normal(sid)
+                    if nm is not None:
+                        got["normal_in"] = nm; got["normal_from"] = got["station"]; break
+                break
+            if got and "normal_in" not in got:
+                fb = SNOW_NORMAL_FALLBACK[place]
+                nm = season_normal(fb)
+                if nm is not None:
+                    got["normal_in"] = nm
+                    got["normal_from"] = {"BUF": "Buffalo airport", "ROC": "Rochester airport"}[fb]
+            out["places"][place] = got or {"error": "no nearby station reporting snow daily"}
+            print("snow", place, out["places"][place])
+        except Exception as e:
+            out["places"][place] = {"error": str(e)[:200]}
+            print("snow failed", place, e)
+    (ROOT / "data" / "snow.json").write_text(json.dumps(out, indent=1))
+
+
 def normals():
     """30-year (1991-2020) daily normal highs and lows from NOAA NCEI, fetched once into data/normals.json."""
     path = ROOT / "data" / "normals.json"
@@ -321,6 +398,7 @@ if __name__ == "__main__":
     travel_forecasts(fc)
     lakes(fc)
     normals()
+    snow()
     (ROOT / "data" / "forecast.json").write_text(json.dumps(fc, indent=1))
     (ROOT / "data" / "news.json").write_text(json.dumps(news(), indent=1))
     print("ok")
