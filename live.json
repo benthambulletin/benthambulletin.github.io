@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T21:10:05Z",
+ "updated": "2026-11-22T21:12:06Z",
  "week": 11,
  "games": {
   "1": {
@@ -14,9 +14,9 @@
   "2": {
    "state": "in",
    "away": 33,
-   "home": 32,
-   "detail": "1:51 - 4th",
-   "line": "Ravens 33–32 · 1:51 - 4th"
+   "home": 35,
+   "detail": "1:44 - 4th",
+   "line": "Panthers 35–33 · 1:44 - 4th"
   },
   "3": {
    "state": "post",
@@ -55,18 +55,20 @@
    "line": "Final · Chiefs 34–7"
   },
   "7": {
-   "state": "in",
+   "state": "post",
    "away": 16,
    "home": 19,
-   "detail": "0:26 - 4th",
-   "line": "Eagles 19–16 · 0:26 - 4th"
+   "detail": "Final",
+   "winner": "Eagles",
+   "score": "19–16",
+   "line": "Final · Eagles 19–16"
   },
   "8": {
    "state": "in",
-   "away": 0,
+   "away": 3,
    "home": 0,
-   "detail": "11:59 - 1st",
-   "line": "Tied 0–0 · 11:59 - 1st"
+   "detail": "11:08 - 1st",
+   "line": "Jets 3–0 · 11:08 - 1st"
   },
   "9": {
    "state": "pre",
