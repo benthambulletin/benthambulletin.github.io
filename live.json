@@ -1,34 +1,34 @@
 {
- "updated": "2026-11-22T19:22:25Z",
+ "updated": "2026-11-22T19:24:26Z",
  "week": 11,
  "games": {
   "1": {
    "state": "in",
    "away": 3,
    "home": 20,
-   "detail": "1:29 - 2nd",
-   "line": "Bills 20–3 · 1:29 - 2nd"
+   "detail": "1:24 - 2nd",
+   "line": "Bills 20–3 · 1:24 - 2nd"
   },
   "2": {
    "state": "in",
-   "away": 19,
+   "away": 26,
    "home": 22,
-   "detail": "3:08 - 2nd",
-   "line": "Panthers 22–19 · 3:08 - 2nd"
+   "detail": "2:22 - 2nd",
+   "line": "Ravens 26–22 · 2:22 - 2nd"
   },
   "3": {
    "state": "in",
    "away": 7,
    "home": 16,
-   "detail": "1:14 - 2nd",
-   "line": "Bears 16–7 · 1:14 - 2nd"
+   "detail": "0:54 - 2nd",
+   "line": "Bears 16–7 · 0:54 - 2nd"
   },
   "4": {
    "state": "in",
    "away": 6,
    "home": 27,
-   "detail": "2:00 - 2nd",
-   "line": "Cowboys 27–6 · 2:00 - 2nd"
+   "detail": "1:47 - 2nd",
+   "line": "Cowboys 27–6 · 1:47 - 2nd"
   },
   "5": {
    "state": "in",
@@ -40,9 +40,9 @@
   "6": {
    "state": "in",
    "away": 7,
-   "home": 24,
-   "detail": "0:11 - 2nd",
-   "line": "Chiefs 24–7 · 0:11 - 2nd"
+   "home": 27,
+   "detail": "Halftime",
+   "line": "Chiefs 27–7 · Halftime"
   },
   "7": {
    "state": "in",
