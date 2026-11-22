@@ -17363,7 +17363,9 @@
               "Andy R",
               "Claude"
             ]
-          }
+          },
+          "live": "Jets 10–3 · 2nd qtr",
+          "liveAt": "2026-11-22T21:48:41Z"
         },
         {
           "away": "Raiders",
@@ -17399,7 +17401,9 @@
               "Mike Sombloski",
               "Claude"
             ]
-          }
+          },
+          "live": "Broncos 3–0 · 1st qtr",
+          "liveAt": "2026-11-22T21:48:41Z"
         },
         {
           "away": "Jaguars",
@@ -17436,7 +17440,9 @@
               "Mrs. Sombloski",
               "Mike Sombloski"
             ]
-          }
+          },
+          "live": "Jaguars 3–0 · 1st qtr",
+          "liveAt": "2026-11-22T21:48:41Z"
         },
         {
           "away": "Vikings",
@@ -17530,7 +17536,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17562,7 +17568,7 @@
           "free": false,
           "paypal": true,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17594,7 +17600,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "house",
           "paid": false,
           "badges": []
@@ -17626,7 +17632,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17658,7 +17664,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17690,7 +17696,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": 11,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17722,7 +17728,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17754,7 +17760,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17786,7 +17792,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17818,7 +17824,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17850,7 +17856,7 @@
           "free": false,
           "paypal": true,
           "rank": 12,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -17891,7 +17897,7 @@
           "free": false,
           "paypal": false,
           "rank": 12,
-          "delta": -11,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -17928,7 +17934,7 @@
           "free": false,
           "paypal": false,
           "rank": 12,
-          "delta": -11,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -17965,7 +17971,7 @@
           "free": false,
           "paypal": false,
           "rank": 12,
-          "delta": 1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -18002,7 +18008,7 @@
           "free": false,
           "paypal": false,
           "rank": 12,
-          "delta": 1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -18043,7 +18049,7 @@
           "free": false,
           "paypal": false,
           "rank": 17,
-          "delta": 2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -18080,7 +18086,7 @@
           "free": true,
           "paypal": false,
           "rank": 17,
-          "delta": -4,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": [
@@ -18117,7 +18123,7 @@
           "free": false,
           "paypal": false,
           "rank": 19,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -18561,13 +18567,13 @@
       "decidedAtLastRun": 8,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Andy R and Arod refuse to break",
-      "column": "Seven weeks of Andy R versus Arod and the household scoreboard reads 2–2 with three dead heats, the most stubborn tie in the pool. Both sit at 1–0 this morning, so eleven Sunday games get a shot at what seven weeks couldn't do.\n\nUp top, Ryan Holovics owns the season at 63–22, with Devin (74–27) and Tom (71–30) chasing him on win percentage and running out of Sundays. Kaylani & Luka have until 1:00 to show up.",
+      "columnHead": "Josh alone at 8–0, Jets want a word",
+      "column": "Josh is the last perfect sheet in the building at 8–0, and he got there the hard way: he was one of four who took the Eagles as 4.5-point underdogs, along with Mrs. Sombloski, Wendy and Leah. Ten sheets sit one back at 7–1, the house among them.\n\nNow the Jets lead the Chargers 10–3 in the second quarter, and that's the game. Thom, Nate V, Dan, Melissa, Derek and Mike Sombloski took the Jets; Josh and eleven others took Los Angeles. A Jets win drags Josh back into the pack. Over in New York, Josh is one of four on the Giants, who trail Jacksonville 3–0 early.",
       "columnN": 18,
       "thuDone": true
     }
   },
-  "updated": "2026-11-22T21:29:36.534843+00:00",
+  "updated": "2026-11-22T21:49:55.607650+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -18653,12 +18659,6 @@
   "columnLog": [
     {
       "week": 11,
-      "at": "2026-11-20T00:08:45.621418+00:00",
-      "head": "B-rad shows up after all",
-      "text": "Five more sheets landed between 6:09 and 6:58 tonight, Wendy first, Derek and Arod a minute apart at the buzzer, and the room is now sixteen humans deep. The headline is B-rad, who filed at 6:15 after three straight weeks in the bottom three, a man returning to the scene. Leah leads him 4–2 head-to-head this season, and she filed twenty-one minutes ahead of him.\n\nAndy R hasn't filed, which leaves Arod without a sparring partner. Colts at Texans kicks off at 8:15. Got a question for the commissioner? Put it on the pick sheet."
-    },
-    {
-      "week": 11,
       "at": "2026-11-20T01:20:41.618447+00:00",
       "head": "Mike Sombloski beats the buzzer by eleven",
       "text": "Mike Sombloski filed at 8:04, eleven minutes before the Colts and Texans kick off, which is either nerves of steel or a man who forgot what day it was. He leads Mrs. Sombloski 4–3 head-to-head this season, and she filed an hour ahead of him like someone who knew it.\n\nAndy R slid in at 7:38, so Arod has her sparring partner back: 2–2 head-to-head, three weeks dead even. Eighteen humans are in. Got a question for the commissioner? Put it on the pick sheet."
@@ -18698,6 +18698,12 @@
       "at": "2026-11-22T14:09:39.501157+00:00",
       "head": "Andy R and Arod refuse to break",
       "text": "Seven weeks of Andy R versus Arod and the household scoreboard reads 2–2 with three dead heats, the most stubborn tie in the pool. Both sit at 1–0 this morning, so eleven Sunday games get a shot at what seven weeks couldn't do.\n\nUp top, Ryan Holovics owns the season at 63–22, with Devin (74–27) and Tom (71–30) chasing him on win percentage and running out of Sundays. Kaylani & Luka have until 1:00 to show up."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-22T21:49:50.129494+00:00",
+      "head": "Josh alone at 8–0, and the Jets want a word",
+      "text": "Josh is the last perfect sheet in the building at 8–0, and he got there the hard way: he was one of four who took the Eagles as 4.5-point underdogs, along with Mrs. Sombloski, Wendy and Leah. Ten sheets sit one back at 7–1, the house among them.\n\nNow the Jets lead the Chargers 10–3 in the second quarter, and that's the game. Thom, Nate V, Dan, Melissa, Derek and Mike Sombloski took the Jets; Josh and eleven others took Los Angeles. A Jets win drags Josh back into the pack. Over in New York, Josh is one of four on the Giants, who trail Jacksonville 3–0 early."
     }
   ],
   "rivals": [
