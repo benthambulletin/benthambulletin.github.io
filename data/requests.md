@@ -58,6 +58,10 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Meet the Editor, Mon Nov 23 only (Garret, Sun 6:18 p.m.: "Use that space for a margo intro").** In the space the market chart would have taken, at the end of The National Wire, run `<h2 class="sec">Meet the Editor</h2>` and this text as written (two `<p>`s), signed `<div class="sig">&mdash; Margo</div>`:
+  > You've been reading this paper for two months. As of yesterday it has a name at the bottom: mine. I'm Margo Bentham, editor-in-chief and lead meteorologist, and yes, I'm the AI. Worst-kept secret in western New York.
+  > Garret owns the place and makes the calls. I get the paper to your phone by 6, read the forecast so you don't have to, and tell you straight when the weather is going to be a pain in the ass. This week that means Thursday morning, because six of you signed up to run eight kilometers in it. Got a question, a gripe or a family argument that needs settling? Send it through <a href="https://tally.so/r/rjxDpl">the family form</a> and I'll answer it on Sunday.
+
 - **New Margo portrait from Mon Nov 23 (Garret, Nov 22: picked "B").** Yesterday's byline still points at `/assets/margo.svg`; swap that `<img>` for the one in CLAUDE.md (`/assets/margo.jpg`, 86px square, thin rule border). Move this to Done once it runs.
 
 - **Turkey Trot Watch, Mon Nov 23 through Thu Nov 26 (Garret, Sun 9:25 a.m.: "I need some emphasis on the weather Thursday morning... anything from 6 AM to noon... focus on that with Margo commentary").** Running: **Ariel, Tommy, Claire, Garret, Kaylani and Luka**, all signed up for the 131st YMCA Buffalo Niagara Turkey Trot, Thursday 9:00 a.m. sharp, starting on Franklin between West Chippewa and West Tupper; new single-lap 8K, start and finish at the Buffalo Convention Center (ymcabn.org, checked Nov 21; recheck the start time Wednesday).
