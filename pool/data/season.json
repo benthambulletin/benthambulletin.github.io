@@ -17364,8 +17364,8 @@
               "Claude"
             ]
           },
-          "live": "Jets 17–3 · 2nd qtr",
-          "liveAt": "2026-11-22T22:06:58Z"
+          "live": "Jets 20–10 · 4th qtr",
+          "liveAt": "2026-11-22T23:07:55Z"
         },
         {
           "away": "Raiders",
@@ -17402,8 +17402,8 @@
               "Claude"
             ]
           },
-          "live": "Broncos 10–0 · 2nd qtr",
-          "liveAt": "2026-11-22T22:06:58Z"
+          "live": "Halftime · Broncos 17–10",
+          "liveAt": "2026-11-22T23:07:55Z"
         },
         {
           "away": "Jaguars",
@@ -17441,8 +17441,8 @@
               "Mike Sombloski"
             ]
           },
-          "live": "Tied 3–3 · 1st qtr",
-          "liveAt": "2026-11-22T22:06:58Z"
+          "live": "Halftime · Giants 20–6",
+          "liveAt": "2026-11-22T23:07:55Z"
         },
         {
           "away": "Vikings",
@@ -18566,14 +18566,23 @@
       ],
       "decidedAtLastRun": 8,
       "outAtLastRun": [],
-      "threads": {},
+      "threads": {
+        "Ariel": [
+          {
+            "id": "6DgkxQJ",
+            "from": "Mrs. Sombloski",
+            "text": "Agreed 😀",
+            "at": "2026-11-22T22:53:11.000Z"
+          }
+        ]
+      },
       "columnHead": "Josh alone at 8–0, Jets want a word",
       "column": "Josh is the last perfect sheet in the building at 8–0, and he got there the hard way: he was one of four who took the Eagles as 4.5-point underdogs, along with Mrs. Sombloski, Wendy and Leah. Ten sheets sit one back at 7–1, the house among them.\n\nNow the Jets lead the Chargers 10–3 in the second quarter, and that's the game. Thom, Nate V, Dan, Melissa, Derek and Mike Sombloski took the Jets; Josh and eleven others took Los Angeles. A Jets win drags Josh back into the pack. Over in New York, Josh is one of four on the Giants, who trail Jacksonville 3–0 early.",
       "columnN": 18,
       "thuDone": true
     }
   },
-  "updated": "2026-11-22T22:09:06.958889+00:00",
+  "updated": "2026-11-22T23:10:15.441451+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
