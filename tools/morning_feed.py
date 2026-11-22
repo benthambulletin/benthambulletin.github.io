@@ -300,6 +300,28 @@ def climate_day():
     (ROOT / "data" / "climate.json").write_text(json.dumps(out, indent=1))
 
 
+def alerts():
+    """Active NWS watches, warnings and advisories for the four places (Garret, Nov 21: winter storms).
+    Writes data/alerts.json. Never fatal."""
+    places = {"North Tonawanda": (43.0387, -78.8642), "Orchard Park": (42.7676, -78.7439),
+              "Dunkirk": (42.4795, -79.3339), "Scottsville": (43.0259, -77.7453)}
+    out = {"generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "source": "National Weather Service", "alerts": {}}
+    for place, (lat, lon) in places.items():
+        try:
+            d = json.loads(get(f"https://api.weather.gov/alerts/active?point={lat},{lon}", timeout=30))
+            for f in d.get("features", []):
+                p = f.get("properties", {})
+                a = out["alerts"].setdefault(p.get("id") or f.get("id"), {
+                    "event": p.get("event"), "headline": p.get("headline"), "severity": p.get("severity"),
+                    "onset": p.get("onset"), "ends": p.get("ends") or p.get("expires"), "sender": p.get("senderName"),
+                    "description": (p.get("description") or "")[:1200], "instruction": (p.get("instruction") or "")[:400], "places": []})
+                if place not in a["places"]: a["places"].append(place)
+        except Exception as e:
+            out.setdefault("errors", []).append(f"{place}: {str(e)[:150]}")
+    print("alerts", [(a["event"], a["places"]) for a in out["alerts"].values()])
+    (ROOT / "data" / "alerts.json").write_text(json.dumps(out, indent=1))
+
+
 def normals():
     """30-year (1991-2020) daily normal highs and lows from NOAA NCEI, fetched once into data/normals.json."""
     path = ROOT / "data" / "normals.json"
@@ -505,6 +527,7 @@ if __name__ == "__main__":
     travel_forecasts(fc)
     lakes(fc)
     normals()
+    alerts()
     snow()
     climate_day()
     market()

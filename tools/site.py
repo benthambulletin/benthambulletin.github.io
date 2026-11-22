@@ -433,8 +433,16 @@ function obs(){var n=document.querySelector('.nowline');if(!n||!window.fetch)ret
   if(v===null||v===undefined||isNaN(ts)||(Date.now()-ts)>100*60000){n.hidden=true;return}
   n.querySelector('b').innerHTML=Math.round(v*9/5+32)+'&deg;';
   n.querySelector('.nowtxt').textContent=((p.textDescription||'').toLowerCase()+(p.textDescription?', ':'')+'as of '+clock(nyMin(new Date(ts))));n.hidden=false}).catch(function(){})}
+function alerts(){var box=document.querySelector('.livealert');if(!box||!window.fetch||!window.Promise)return;
+ var P=[['North Tonawanda','43.0387,-78.8642'],['Orchard Park','42.7676,-78.7439'],['Dunkirk','42.4795,-79.3339'],['Scottsville','43.0259,-77.7453']];
+ Promise.all(P.map(function(q){return fetch('https://api.weather.gov/alerts/active?point='+q[1],{headers:{Accept:'application/geo+json'}}).then(function(r){return r.ok?r.json():null}).then(function(j){return [q[0],j]}).catch(function(){return [q[0],null]})})).then(function(res){
+  var by={},order=[];res.forEach(function(x){var j=x[1];if(!j||!j.features)return;j.features.forEach(function(f){var p=f.properties||{};if(!/Warning|Watch|Advisory/.test(p.event||''))return;
+   var k=p.event+'|'+(p.ends||p.expires||'');if(!by[k]){by[k]={ev:p.event,end:p.ends||p.expires,towns:[]};order.push(k)}if(by[k].towns.indexOf(x[0])<0)by[k].towns.push(x[0])})});
+  if(!order.length){box.hidden=true;return}
+  function when(t){if(!t)return'';var d=new Date(t);return' until '+new Intl.DateTimeFormat('en-US',{timeZone:TZ,weekday:'short',hour:'numeric',minute:'2-digit'}).format(d).replace(':00','').replace(' AM',' a.m.').replace(' PM',' p.m.')}
+  box.innerHTML=order.map(function(k){var a=by[k];var w=when(a.end).replace(' 12 a.m.',' midnight').replace(' 12 p.m.',' noon');return '<b>'+a.ev+'</b> for '+a.towns.join(', ')+w+(/\.$/.test(w)?'':'.')}).join('<br>')+' <span style="opacity:.85">From the National Weather Service, live.</span>';box.hidden=false}).catch(function(){})}
 function tick(){if(nyDate()!==D)return;sun();curve()}
-tick();obs();setInterval(tick,60000);setInterval(obs,600000);
+tick();obs();alerts();setInterval(tick,60000);setInterval(obs,600000);setInterval(alerts,600000);
 })();</script>
 """
 
@@ -461,6 +469,8 @@ def add_live(body, date):
                f'<text x="290" y="114" text-anchor="middle" font-family="Archivo,Arial" font-size="10" fill="#24170c">{ms.group(1)}:{ms.group(2)}</text>'
                '<text class="sunlab" x="160" y="90" text-anchor="middle" font-family="Archivo,Arial" font-size="9.5" letter-spacing="1.3" fill="#2f5e3e" font-weight="800"></text></svg>\n')
         out = out.replace('<p class="skynote">', arc + '<p class="skynote">', 1)
+    if '<div class="part">' in out and 'class="alert livealert"' not in out:   # Nov 21: live NWS warnings for the four towns
+        out = out.replace('<div class="part">', '<div class="alert livealert" hidden></div>\n<div class="part">', 1)
     if out != body or 'data-start=' in out:
         out += LIVE_JS.replace('__DATE__', date)
     return out
