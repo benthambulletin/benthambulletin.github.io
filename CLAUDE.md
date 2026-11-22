@@ -49,6 +49,13 @@ Photos from other sources (e.g. ESPN, a police department) get credited in the c
 - **Never state a time or a number you did not look up.** Check `git log` for times; cut any clause without a source.
 - **Oct 4:** the dawn strip once used 3 a.m. temperatures. Dawn temps come from `forecast.json` → `towns[*].observation` (temp_f, text, ~6:45 a.m.).
 - **Nov 21:** Dunkirk's airport station (KDKK) reported sky but no temperature all morning, and the paper ran a dash; Garret asked for a number. When a town's observation has `temp_f` null, the cell runs that town's own NWS forecast low for the morning (the Overnight period), with the small line reading "forecast low" above the high. Never a dash, never another city's reading passed off as the town's.
+- **Nov 21, Garret: "What else could you be doing better... Do them all."** Standing fixes:
+  - **Tighter first drafts.** Before the review, check every quote word for word against its `body` and every attribution against the item's `source`; use the source's own verb strength ("said", not "admitted"). qc.py now warns on any quote of 25+ characters it can't find in news.json and on a Home Wire with no Niagara County item when the feed has one. Treat each warning as a fix or a deliberate call noted in the qc file.
+  - **Fix it before he sees it.** A gap (a dash for a missing number), a weak photo, a section that reads thin: fix it or hold it. Don't ship it and don't send him something you can see is poor; tell him only when a decision is his.
+  - **Do the editorial work unasked; ask before new machinery.** Features, graphics, covers and prep are the job. New feeds, workflows, scheduled tasks or pages need his OK first.
+  - **Short, plain messages.** One idea per line, no process talk.
+  - **Niagara first.** North Tonawanda, Tonawanda, Lockport and Niagara County get a real look every morning (Niagara Gazette and Lockport Journal are in the feed); run a Niagara item whenever there is a solid one.
+  - **Children's photos on public pages.** No shirtless or undressed child in a published cover: crop to head and shoulders, or don't run it. (Covers from Sep 14, Oct 24 and Nov 19 were re-cropped Nov 21.) Photos never sit in the repo under names; files are named by date or id.
 - **Week of Oct 13–21:** reviewers caught a backwards moon icon (waxing = lit on the **right**), "first frost" claims a prior edition contradicted, kickoff times without a source, and repeats from yesterday's paper reworded. Check each.
 
 ## Morning inputs

@@ -24,6 +24,26 @@ if ed:
         if 'class="bigtemp"' in s: fails.append('LAYOUT: no big temperature in the Weather Glass (the tile has it)')
         if '<span class="o">' in s.split('<h2 class="sec">',1)[-1].split('<div class="colo">')[0]: fails.append('LAYOUT: section heads are plain, no ornament spans')
         if 0 <= s.find('The Weather Glass') < s.find('The National Wire'): fails.append('LAYOUT: The News comes before The Almanac')
+    # Nov 21 (Garret: "do them all"): quotes and Niagara coverage, checked against the morning feed. Warnings only.
+    try:
+        _news = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'news.json')) if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'news.json')) else open('site/data/news.json'))
+        _norm = lambda t: re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', t).replace('&#8217;', "'").replace('&rsquo;', "'").replace('\u2019', "'").replace('\u2018', "'").replace('&amp;', '&').replace('\u201c', '"').replace('\u201d', '"')).lower().strip()
+        _bodies = _norm(' '.join((it.get('body') or '') + ' ' + it.get('title', '') for sec in _news['sections'].values() for it in sec))
+        _fam = s.split('From the Group Chat', 1)[-1][:600] if 'From the Group Chat' in s else ''
+        for q in [q for para in re.findall(r'<p[^>]*>(.*?)</p>|<div class="pull">(.*?)<br>', s, re.S) for t in para for q in re.findall(r'"([^"\n]+?)"', re.sub(r'<[^>]+>', '', t).replace('&quot;', '"').replace('\u201c', '"').replace('\u201d', '"'))]:
+            if len(q) < 25: continue
+            frag = _norm(q).strip(' .,')
+            if frag[:40] and frag[:40] in _norm(_fam): continue
+            _parts = [x.strip(' .,') for x in re.split(r'\.\.\.|\u2026', frag) if len(x.strip(' .,')) >= 10]
+            if not all(x[:40] in _bodies for x in _parts):
+                warns.append(f'QUOTE NOT IN FEED (check it word for word against the source): "{q[:70]}"')
+        _hw = s[s.find('The Home Wire'):s.find('<h2', s.find('The Home Wire') + 20)]
+        if not re.search(r'Niagara|Tonawanda|Lockport|Lewiston|Wheatfield', _hw):
+            _cut = (datetime.datetime.combine(dt, datetime.time(10)) - datetime.timedelta(hours=48)).isoformat()
+            _hits = [it['title'] for it in _news['sections'].get('local', []) if it.get('published', '') >= _cut and re.search(r'Niagara|Tonawanda|Lockport|Lewiston|Wheatfield', it['title'] + ' ' + (it.get('body') or '')[:600])]
+            if _hits: warns.append(f'NIAGARA: no Niagara County item in the Home Wire, but the feed has {len(_hits)}: ' + ' | '.join(h[:60] for h in _hits[:4]))
+    except Exception as _e:
+        warns.append(f'feed checks skipped: {_e}')
     # riddle: the answer must not have run before (Nov 12: an umbrella repeat got out)
     import glob as _g
     def _ans(html):
