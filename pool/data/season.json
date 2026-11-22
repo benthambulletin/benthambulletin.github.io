@@ -17750,13 +17750,13 @@
       "decidedAtLastRun": 1,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "B-rad climbs out, Leah slides in",
-      "column": "B-rad has finished in the bottom three three weeks running, and this morning he's 1–0 and looking down at Leah, who's 0–1 and has beaten him in four of the seven weeks they've both played. He gets two days of the view before twelve games decide whether it lasts.\n\nAndy R and Arod are 2–2 head to head with three weeks dead even, and both opened 1–0, so somebody's bragging rights end Monday. Kaylani & Luka still haven't filed; Sunday's games stay open until each kicks off. Got a question for the commissioner? Put it on the pick sheet.",
+      "columnHead": "The Sombloski series gets a twist",
+      "column": "Mike Sombloski leads the Sombloski series 4–3, but this morning he's 0–1 and Mrs. Sombloski is 1–0, so the bragging rights currently belong to the one who didn't take the Colts. Eleven Sunday games give him room to climb back; the Monday tiebreaker gives her room to gloat.\n\nSeason leader Ryan Holovics sits in the fifteen-way logjam at 1–0 with everyone who isn't Thom, Leah, Melissa or Mike. Kaylani & Luka still haven't filed, and the 1:00 games lock at kickoff. Got a question for the commissioner? Put it on the pick sheet.",
       "columnN": 18,
       "thuDone": true
     }
   },
-  "updated": "2026-11-22T01:10:19.309501+00:00",
+  "updated": "2026-11-22T13:10:16.227591+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -17842,12 +17842,6 @@
   "columnLog": [
     {
       "week": 11,
-      "at": "2026-11-19T23:07:26.884910+00:00",
-      "head": "The commissioner files last, again",
-      "text": "Ariel filed at 4:13 and the commissioner rolled in at 4:20, which makes the man who runs this pool the last of eight humans to turn in a sheet. He sets the deadline; he just doesn't like to see it from too far away.\n\nAriel brings the worst finished-week record in the room, 56–45, into tonight, so every win counts double for morale. Garret has his own homework: he's 4–2 head-to-head against Kaylani & Luka, who haven't filed. Tom hasn't either, with about three hours to the Thursday kickoff."
-    },
-    {
-      "week": 11,
       "at": "2026-11-19T23:18:09.015358+00:00",
       "head": "The late shift clocks in",
       "text": "Leah, Mrs. Sombloski and Tom all filed between 5:54 and 6:05 tonight, eleven minutes that pushed the room to eleven humans and took the commissioner off the hook as last man in. Tom's arrival is bad news for Ariel, who is 0–7 against him head-to-head this season.\n\nB-rad hasn't filed, which may be the smartest move available to a man three weeks running in the bottom three. Colts at Texans kicks off at 8:15. Got a question for the commissioner? Put it on the pick sheet."
@@ -17887,6 +17881,12 @@
       "at": "2026-11-21T18:10:11.848460+00:00",
       "head": "B-rad climbs out, Leah slides in",
       "text": "B-rad has finished in the bottom three three weeks running, and this morning he's 1–0 and looking down at Leah, who's 0–1 and has beaten him in four of the seven weeks they've both played. He gets two days of the view before twelve games decide whether it lasts.\n\nAndy R and Arod are 2–2 head to head with three weeks dead even, and both opened 1–0, so somebody's bragging rights end Monday. Kaylani & Luka still haven't filed; Sunday's games stay open until each kicks off. Got a question for the commissioner? Put it on the pick sheet."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-22T13:10:16.227591+00:00",
+      "head": "The Sombloski series gets a twist",
+      "text": "Mike Sombloski leads the Sombloski series 4–3, but this morning he's 0–1 and Mrs. Sombloski is 1–0, so the bragging rights currently belong to the one who didn't take the Colts. Eleven Sunday games give him room to climb back; the Monday tiebreaker gives her room to gloat.\n\nSeason leader Ryan Holovics sits in the fifteen-way logjam at 1–0 with everyone who isn't Thom, Leah, Melissa or Mike. Kaylani & Luka still haven't filed, and the 1:00 games lock at kickoff. Got a question for the commissioner? Put it on the pick sheet."
     }
   ],
   "rivals": [
