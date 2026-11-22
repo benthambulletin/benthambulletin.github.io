@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T19:44:45Z",
+ "updated": "2026-11-22T19:46:47Z",
  "week": 11,
  "games": {
   "1": {
@@ -20,15 +20,15 @@
    "state": "in",
    "away": 10,
    "home": 16,
-   "detail": "Halftime",
-   "line": "Bears 16–10 · Halftime"
+   "detail": "15:00 - 3rd",
+   "line": "Bears 16–10 · 15:00 - 3rd"
   },
   "4": {
    "state": "in",
-   "away": 9,
+   "away": 16,
    "home": 27,
-   "detail": "13:18 - 3rd",
-   "line": "Cowboys 27–9 · 13:18 - 3rd"
+   "detail": "13:08 - 3rd",
+   "line": "Cowboys 27–16 · 13:08 - 3rd"
   },
   "5": {
    "state": "in",
@@ -41,15 +41,15 @@
    "state": "in",
    "away": 7,
    "home": 27,
-   "detail": "11:08 - 3rd",
-   "line": "Chiefs 27–7 · 11:08 - 3rd"
+   "detail": "9:06 - 3rd",
+   "line": "Chiefs 27–7 · 9:06 - 3rd"
   },
   "7": {
    "state": "in",
    "away": 6,
    "home": 13,
-   "detail": "13:00 - 3rd",
-   "line": "Eagles 13–6 · 13:00 - 3rd"
+   "detail": "12:52 - 3rd",
+   "line": "Eagles 13–6 · 12:52 - 3rd"
   },
   "8": {
    "state": "pre",
