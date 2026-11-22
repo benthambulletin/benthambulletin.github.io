@@ -1,0 +1,57 @@
+{
+ "generated_utc": "2026-11-22T02:51Z",
+ "date": "2026-11-21",
+ "source": "ACIS, NOAA Regional Climate Centers; ice cover NOAA GLERL",
+ "stations": {
+  "BUF": {
+   "name": "Buffalo airport",
+   "since": "1870",
+   "record_high": {
+    "f": 67,
+    "years": [
+     "1946"
+    ]
+   },
+   "record_low": {
+    "f": 13,
+    "years": [
+     "1987"
+    ]
+   },
+   "last_year": {
+    "date": "2025-11-21",
+    "high": 50.0,
+    "low": 39.0,
+    "precip_in": 0.02,
+    "snow_in": 0.0,
+    "trace_precip": false,
+    "trace_snow": false
+   }
+  },
+  "ROC": {
+   "name": "Rochester airport",
+   "since": "1870",
+   "record_high": {
+    "f": 71,
+    "years": [
+     "1930"
+    ]
+   },
+   "record_low": {
+    "f": 11,
+    "years": [
+     "1987"
+    ]
+   },
+   "last_year": {
+    "date": "2025-11-21",
+    "high": 50.0,
+    "low": 34.0,
+    "precip_in": 0.0,
+    "snow_in": 0.0,
+    "trace_precip": true,
+    "trace_snow": false
+   }
+  }
+ }
+}

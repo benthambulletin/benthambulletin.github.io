@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-22T02:30Z",
+ "generated_utc": "2026-11-22T02:51Z",
  "season_start": "2026-07-01",
  "source": "ACIS, NOAA Regional Climate Centers",
  "places": {
@@ -12,7 +12,8 @@
    "days_reported": 144,
    "days_in_season": 144,
    "normal_in": 3.6,
-   "normal_from": "North Tonawanda"
+   "normal_from": "North Tonawanda",
+   "fcst_48h_in": 0.0
   },
   "Orchard Park": {
    "station": "Hamburg 2.0 N",
@@ -23,7 +24,8 @@
    "days_reported": 94,
    "days_in_season": 144,
    "normal_in": 5.1,
-   "normal_from": "Buffalo airport"
+   "normal_from": "Buffalo airport",
+   "fcst_48h_in": 0.0
   },
   "Dunkirk": {
    "station": "Dunkirk",
@@ -34,7 +36,8 @@
    "days_reported": 144,
    "days_in_season": 144,
    "normal_in": 5.1,
-   "normal_from": "Buffalo airport"
+   "normal_from": "Buffalo airport",
+   "fcst_48h_in": 0.0
   },
   "Scottsville": {
    "station": "Scottsville 0.4 Nw",
@@ -45,7 +48,8 @@
    "days_reported": 140,
    "days_in_season": 144,
    "normal_in": 4.5,
-   "normal_from": "Rochester airport"
+   "normal_from": "Rochester airport",
+   "fcst_48h_in": 0.0
   }
  }
 }
