@@ -1,13 +1,13 @@
 {
- "generated_utc": "2026-11-22T13:04Z",
+ "generated_utc": "2026-11-22T14:04Z",
  "night_ending": "2026-11-22",
  "last_night": {
   "sleep_h": "9.05",
   "bedtime": "10:26 PM",
   "wake": "7:42 AM",
   "sleep_score": "",
-  "deep_h": "1.35",
-  "rem_h": "2.02",
+  "deep_h": "1.42",
+  "rem_h": "1.97",
   "awake_h": "0.22",
   "bb_high": "92",
   "bb_low": "22",
@@ -15,9 +15,9 @@
   "rhr": "47",
   "hrv": "",
   "resp": "13.0",
-  "steps": "293",
+  "steps": "362",
   "step_goal": "7880",
-  "active_kcal": "9",
+  "active_kcal": "15",
   "intensity_min": "0"
  },
  "score": 0,
