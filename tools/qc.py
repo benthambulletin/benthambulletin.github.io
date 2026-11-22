@@ -16,6 +16,7 @@ if ed:
               'On This Day','Question of the Day']
     if dt.weekday()==6: REQUIRED=[x for x in REQUIRED if x not in('The Marquee',)]
     if str(dt) > '2026-11-09' and str(dt) < '2027-02-01': REQUIRED.remove('The Chase')  # Chase rests between seasons (Nov 9)
+    if str(dt) >= '2026-11-22': REQUIRED.remove('The Ledger')  # Ledger runs only on strong-number days (Nov 21)
     for sec in REQUIRED:
         if sec not in s: fails.append(f'MISSING SECTION: {sec}')
     if str(dt) >= '2026-11-10' and 'class="towns lakes"' not in s: fails.append('MISSING: lake row under the towns (Garret, Nov 9)')
