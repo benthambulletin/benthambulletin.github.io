@@ -1,27 +1,27 @@
 {
- "updated": "2026-11-22T21:01:57Z",
+ "updated": "2026-11-22T21:03:59Z",
  "week": 11,
  "games": {
   "1": {
    "state": "in",
    "away": 9,
    "home": 26,
-   "detail": "0:42 - 4th",
-   "line": "Bills 26–9 · 0:42 - 4th"
+   "detail": "0:30 - 4th",
+   "line": "Bills 26–9 · 0:30 - 4th"
   },
   "2": {
    "state": "in",
    "away": 33,
    "home": 32,
-   "detail": "4:43 - 4th",
-   "line": "Ravens 33–32 · 4:43 - 4th"
+   "detail": "2:49 - 4th",
+   "line": "Ravens 33–32 · 2:49 - 4th"
   },
   "3": {
    "state": "in",
-   "away": 10,
+   "away": 13,
    "home": 21,
-   "detail": "1:20 - 4th",
-   "line": "Bears 21–10 · 1:20 - 4th"
+   "detail": "1:10 - 4th",
+   "line": "Bears 21–13 · 1:10 - 4th"
   },
   "4": {
    "state": "in",
@@ -34,8 +34,8 @@
    "state": "in",
    "away": 14,
    "home": 31,
-   "detail": "1:06 - 4th",
-   "line": "Lions 31–14 · 1:06 - 4th"
+   "detail": "0:30 - 4th",
+   "line": "Lions 31–14 · 0:30 - 4th"
   },
   "6": {
    "state": "post",
@@ -48,10 +48,10 @@
   },
   "7": {
    "state": "in",
-   "away": 15,
+   "away": 16,
    "home": 19,
    "detail": "1:21 - 4th",
-   "line": "Eagles 19–15 · 1:21 - 4th"
+   "line": "Eagles 19–16 · 1:21 - 4th"
   },
   "8": {
    "state": "pre",
