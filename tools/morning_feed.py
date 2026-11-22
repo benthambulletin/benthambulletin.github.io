@@ -274,22 +274,27 @@ def climate_day():
             print("climate", sid, st)
         except Exception as e:
             out["stations"][sid] = {"error": str(e)[:200]}; print("climate failed", sid, e)
-    # Lake Erie ice cover (GLERL daily Great Lakes ice percentages; the season file is named for its two years)
-    y0 = now.year if now.month >= 7 else now.year - 1
-    for url in (f"https://coastwatch.glerl.noaa.gov/statistic/ice/dat/g{y0}_{y0+1}_ice.dat",
-                f"https://coastwatch.glerl.noaa.gov/statistic/ice/dat/g{y0}_{y0 + 1}_ice.txt"):
-        try:
-            raw = get(url, timeout=30).decode(errors="replace")
-            lines = [l.split() for l in raw.splitlines() if l.strip() and l.split()[0].isdigit()]
-            if lines:
-                last = lines[-1]
-                out["erie_ice"] = {"row": last, "url": url, "note": "columns per GLERL header; Erie is the 6th field (year, day, Superior, Michigan, Huron, Erie, Ontario, St. Clair, total)",
-                                   "header": [l for l in raw.splitlines()[:6]]}
-                try: out["erie_ice"]["pct"] = float(last[5]); out["erie_ice"]["year_day"] = [last[0], last[1]]
-                except (IndexError, ValueError): pass
-                print("ice", url, last); break
-        except Exception as e:
-            out["erie_ice"] = {"error": str(e)[:200], "url": url}; print("ice failed", url, e)
+    # Lake Erie ice cover: GLERL daily per-lake files (columns = ice years, named for the January year;
+    # rows = days; NA = not recorded). Find the Erie file in the directory listing.
+    base = "https://www.glerl.noaa.gov/data/ice/glicd/daily/"
+    try:
+        listing = get(base, timeout=30).decode(errors="replace")
+        files = sorted(set(re.findall(r'href="([^"?/]+\.(?:txt|csv|dat))"', listing)))
+        print("ice files", files[:40])
+        erie = [f for f in files if re.search(r"eri", f, re.I)]
+        ice = {"files": files[:40]}
+        if erie:
+            raw = get(base + erie[0], timeout=30).decode(errors="replace")
+            rows = [re.split(r"[\s,]+", l.strip()) for l in raw.splitlines() if l.strip()]
+            head = rows[0]; iy = str(now.year + 1 if now.month >= 7 else now.year)
+            ice.update({"file": erie[0], "header": head[:6] + ["..."] + head[-3:], "ice_year": iy})
+            if iy in head:
+                c = head.index(iy); vals = [(r[0], r[c]) for r in rows[1:] if len(r) > c and r[c] not in ("NA", "")]
+                if vals: ice["last"] = {"row": vals[-1][0], "pct": float(vals[-1][1])}
+            print("ice", ice.get("file"), ice.get("header"), ice.get("last"))
+        out["erie_ice"] = ice
+    except Exception as e:
+        out["erie_ice"] = {"error": str(e)[:200]}; print("ice failed", e)
     (ROOT / "data" / "climate.json").write_text(json.dumps(out, indent=1))
 
 
