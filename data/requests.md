@@ -52,6 +52,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Sun Nov 22 — Thanksgiving cost graphic in the Spotlight (Garret, Sat 9:05 p.m.: "make a really cool chart graphic detailing the increase in meal costs"; preview sent).** Paste `data/spotlight/thanksgiving-2026.html` as-is into the Sunday Spotlight on what Thanksgiving dinner costs, right after its first paragraph (built by `tools/thanksgiving_chart.py`; every figure in that script's docstring, checked Saturday night against the Farm Bureau's releases). Write the Spotlight's text from the same figures (and the AFBF economist's reasons: diesel, farm labor, turkey supply) so text and graphic agree; don't repeat every item price in prose. Add "American Farm Bureau Federation" to the sources line.
+
 
 - **Sun Nov 22 — Sunday Question answer (family form, id OQ2X78A, Sun Nov 15).** Gregg: "How in the heck can anyone pick just one 'most favorite' dish at Thanksgiving?? I'm finding it quite impossible 🤷" Run it under his name with any other answers to the Thanksgiving-dish question.
 
