@@ -56,8 +56,6 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
-- **Thanksgiving week (Nov 21 plan, Garret: "do them" for the editorial upgrades).** Mon Nov 23 through Wed Nov 25, Family Today carries one line asking everyone what they're bringing and where they'll be Thursday, with the form link <a href="https://tally.so/r/rjxDpl">tally.so/r/rjxDpl</a>. Thu Nov 26's edition runs a Thanksgiving Table box in Family Today: each answer under the sender's name (who's bringing what, who's where), plus the Bills–Chiefs kickoff (8:20) and the day's weather for the three towns. Only what people actually sent; if nobody sends anything, skip the box rather than fill it.
-- **Tue Nov 24 and every Tuesday after: Sunday Tax standings chart.** In the Sunday Tax item, a small horizontal bar chart of each player's season wins from `pool/data/season.json` (read only), leader first, the week's winner and pot named in the line above it. Paper palette, phone width, inline SVG, previewed before the build.
 
 - **Sun Nov 22 — Thanksgiving cost graphic in the Spotlight (Garret, Sat 9:05 p.m.: "make a really cool chart graphic detailing the increase in meal costs"; preview sent).** Paste `data/spotlight/thanksgiving-2026.html` as-is into the Sunday Spotlight on what Thanksgiving dinner costs, right after its first paragraph (built by `tools/thanksgiving_chart.py`; every figure in that script's docstring, checked Saturday night against the Farm Bureau's releases). Write the Spotlight's text from the same figures (and the AFBF economist's reasons: diesel, farm labor, turkey supply) so text and graphic agree; don't repeat every item price in prose. Add "American Farm Bureau Federation" to the sources line.
 
