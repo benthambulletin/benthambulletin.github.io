@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-22T02:53Z",
+ "generated_utc": "2026-11-22T03:08Z",
  "date": "2026-11-21",
  "source": "ACIS, NOAA Regional Climate Centers; ice cover NOAA GLERL",
  "stations": {
@@ -77,6 +77,12 @@
    "2025",
    "2026"
   ],
-  "ice_year": "2027"
+  "ice_year": "2027",
+  "sample_row": [
+   "Jun-04",
+   "NA",
+   "NA",
+   "NA"
+  ]
  }
 }
