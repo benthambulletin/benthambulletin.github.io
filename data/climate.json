@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-22T02:51Z",
+ "generated_utc": "2026-11-22T02:53Z",
  "date": "2026-11-21",
  "source": "ACIS, NOAA Regional Climate Centers; ice cover NOAA GLERL",
  "stations": {
@@ -53,5 +53,30 @@
     "trace_snow": false
    }
   }
+ },
+ "erie_ice": {
+  "files": [
+   "README.txt",
+   "bas.txt",
+   "eri.txt",
+   "hur.txt",
+   "mic.txt",
+   "ont.txt",
+   "sup.txt"
+  ],
+  "file": "eri.txt",
+  "header": [
+   "1973",
+   "1974",
+   "1975",
+   "1976",
+   "1977",
+   "1978",
+   "...",
+   "2024",
+   "2025",
+   "2026"
+  ],
+  "ice_year": "2027"
  }
 }
