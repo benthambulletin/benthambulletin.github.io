@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-23T01:31Z",
+ "generated_utc": "2026-11-23T10:22Z",
  "season_start": "2026-07-01",
  "source": "ACIS, NOAA Regional Climate Centers",
  "places": {
@@ -10,8 +10,8 @@
    "season_in": 0.0,
    "last_day_in": 0.0,
    "days_reported": 145,
-   "days_in_season": 145,
-   "normal_in": 3.9,
+   "days_in_season": 146,
+   "normal_in": 4.2,
    "normal_from": "North Tonawanda",
    "fcst_48h_in": 0.0
   },
@@ -22,8 +22,8 @@
    "season_in": 0.0,
    "last_day_in": 0.0,
    "days_reported": 95,
-   "days_in_season": 145,
-   "normal_in": 5.4,
+   "days_in_season": 146,
+   "normal_in": 5.7,
    "normal_from": "Buffalo airport",
    "fcst_48h_in": 0.0
   },
@@ -34,8 +34,8 @@
    "season_in": 0.0,
    "last_day_in": 0.0,
    "days_reported": 145,
-   "days_in_season": 145,
-   "normal_in": 5.4,
+   "days_in_season": 146,
+   "normal_in": 5.7,
    "normal_from": "Buffalo airport",
    "fcst_48h_in": 0.0
   },
@@ -46,10 +46,10 @@
    "season_in": 0.0,
    "last_day_in": 0.0,
    "days_reported": 141,
-   "days_in_season": 145,
-   "normal_in": 4.8,
+   "days_in_season": 146,
+   "normal_in": 5.2,
    "normal_from": "Rochester airport",
-   "fcst_48h_in": 0.0
+   "fcst_48h_in": 0.2
   }
  }
 }
