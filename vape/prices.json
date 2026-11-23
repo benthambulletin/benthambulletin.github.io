@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-22T18:23:00-05:00",
+  "updated": "2026-11-23T07:24:00-05:00",
   "call": "Hold. Best Arizer from a store you trust is $153.99 at Planet of the Vapes. PAX\u2019s Black Friday sale is live but not at killer prices yet.",
   "tone": "hold",
   "notes": [
-    "Planet of the Vapes unchanged at $153.99. Arizer and PAX prices carried from midday."
+    "Planet of the Vapes unchanged: Arizer $153.99, PAX Four $200."
   ],
   "devices": [
     {
@@ -17,7 +17,7 @@
           "baseline": 219.99,
           "status": "product page",
           "url": "https://arizer.com",
-          "note": "No sale or code shown. Free US shipping over $150. Not re-confirmed Nov 22 evening."
+          "note": "No sale or code shown. Free US shipping over $150. Not re-confirmed Nov 23 morning."
         },
         {
           "store": "Planet of the Vapes",
@@ -29,11 +29,11 @@
         },
         {
           "store": "TVape",
-          "price": 131.99,
+          "price": 134.99,
           "baseline": 131.99,
           "status": "listing only",
           "url": "https://tvape.com",
-          "note": "Reference only. Not re-confirmed Nov 22."
+          "note": "Reference only. Seen in search Nov 23."
         },
         {
           "store": "Tools420",
@@ -41,7 +41,7 @@
           "baseline": 134.5,
           "status": "listing only",
           "url": "https://tools420.com/product/arizer-solo-2-max/",
-          "note": "Reference only. Not re-confirmed Nov 22."
+          "note": "Reference only."
         }
       ]
     },
@@ -56,7 +56,7 @@
           "baseline": 125.0,
           "status": "out of stock",
           "url": "https://www.pax.com/vapes/pax-plus-complete-kit",
-          "note": "Complete Kit now shows $150 with a Notify Me button: likely sold out. No Black Friday discount on the Plus. Not re-confirmed Nov 22 evening."
+          "note": "Complete Kit now shows $150 with a Notify Me button: likely sold out. No Black Friday discount on the Plus. Not re-confirmed Nov 23 morning."
         },
         {
           "store": "TVape",
@@ -64,7 +64,7 @@
           "baseline": 99.99,
           "status": "listing only",
           "url": "https://tvape.com/pax-2-vaporizer.html",
-          "note": "Reference only. Not re-confirmed Nov 22."
+          "note": "Reference only."
         }
       ]
     },
@@ -79,7 +79,7 @@
           "baseline": 250.0,
           "status": "product page",
           "url": "https://www.pax.com",
-          "note": "Black Friday 20% off ($225 crossed out). Free mouthpiece. Not re-confirmed Nov 22 evening."
+          "note": "Black Friday 20% off ($225 crossed out). Free mouthpiece. Not re-confirmed Nov 23 morning."
         },
         {
           "store": "Planet of the Vapes",
@@ -102,7 +102,7 @@
           "baseline": 150.0,
           "status": "product page",
           "url": "https://www.pax.com",
-          "note": "Black Friday 20% off ($150 crossed out). Free mouthpiece. Not re-confirmed Nov 22 evening."
+          "note": "Black Friday 20% off ($150 crossed out). Free mouthpiece. Not re-confirmed Nov 23 morning."
         }
       ]
     }
@@ -130,6 +130,12 @@
     },
     {
       "date": "2026-11-22",
+      "arizer_direct": 219.99,
+      "arizer_potv": 153.99,
+      "pax_direct": null
+    },
+    {
+      "date": "2026-11-23",
       "arizer_direct": 219.99,
       "arizer_potv": 153.99,
       "pax_direct": null
