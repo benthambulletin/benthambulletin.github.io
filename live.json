@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T00:45:33Z",
+ "updated": "2026-11-23T00:47:35Z",
  "week": 11,
  "games": {
   "1": {
@@ -75,18 +75,20 @@
    "line": "Final · Jets 27–24"
   },
   "9": {
-   "state": "in",
+   "state": "post",
    "away": 24,
    "home": 38,
-   "detail": "0:36 - 4th",
-   "line": "Broncos 38–24 · 0:36 - 4th"
+   "detail": "Final",
+   "winner": "Broncos",
+   "score": "38–24",
+   "line": "Final · Broncos 38–24"
   },
   "10": {
    "state": "in",
    "away": 18,
    "home": 23,
-   "detail": "3:40 - 4th",
-   "line": "Giants 23–18 · 3:40 - 4th"
+   "detail": "3:02 - 4th",
+   "line": "Giants 23–18 · 3:02 - 4th"
   },
   "11": {
    "state": "pre",
