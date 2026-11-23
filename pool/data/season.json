@@ -17541,7 +17541,9 @@
               "Andy R",
               "Claude"
             ]
-          }
+          },
+          "live": "49ers 13–7 · 2nd qtr",
+          "liveAt": "2026-11-23T02:06:49Z"
         },
         {
           "away": "Bengals",
@@ -18693,7 +18695,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-23T01:24:32.234237+00:00",
+  "updated": "2026-11-23T02:10:06.096004+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
