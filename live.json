@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T04:24:57Z",
+ "updated": "2026-11-23T04:26:59Z",
  "week": 11,
  "games": {
   "1": {
@@ -93,11 +93,13 @@
    "line": "Final · Giants 23–18"
   },
   "11": {
-   "state": "in",
+   "state": "post",
    "away": 10,
    "home": 35,
-   "detail": "1:05 - 4th",
-   "line": "49ers 35–10 · 1:05 - 4th"
+   "detail": "Final",
+   "winner": "49ers",
+   "score": "35–10",
+   "line": "Final · 49ers 35–10"
   }
  }
 }
