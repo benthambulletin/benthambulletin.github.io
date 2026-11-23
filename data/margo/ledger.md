@@ -9,3 +9,4 @@ Format: `- YYYY-MM-DD · Name · what they said (short) · where it ran`
 - 2026-11-22 · Kara · bringing "scrimps" · group chat via Garret
 - 2026-11-22 · Leah · bringing a salad · group chat via Garret
 - 2026-11-22 · Kaylani · bringing dinner rolls · Garret
+- 2026-11-23 · Margo · introduced herself in No. 152 (Gregg's aunt; the 1985 broadcast) · Meet the Editor
