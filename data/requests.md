@@ -58,6 +58,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Thanksgiving at Derek's (Garret, Sun 7:32 p.m.).** Derek is hosting Thursday Nov 26: appetizers at 1, dinner at 3 p.m. Put it in Coming Up from Monday through Thursday ("Thursday · Thanksgiving at Derek's: appetizers 1, dinner 3"), and in Thursday's paper as the day's family line. Margo can rib whoever she likes about it.
+
 - **Ask Margo link from Mon Nov 23.** Every byline (Weather Glass and Meet the Editor) uses the CLAUDE.md markup with the "Ask Margo →" link to https://tally.so/r/EqxJpo.
 
 - **Thursday Nov 26 cover (Garret, Sun 7:08 p.m.: "For thursday am").** A family photo from the 2019 Turkey Trot (the 124th) waits in `spool/thursday/` (`plate.jpg`, already cropped, bib print blurred; `caption.txt`). Run it as Plate I · The Family Album on Thursday only, and `git rm -r spool/thursday` in that commit. Don't use it before Thursday. **Briar (Garret, Sun 7:13 p.m.):** Garret's niece Briar, in braids with bib 9659, died a few weeks after this race; "this one is very important." Caption as written in `caption.txt` (Garret OK'd her name in print and "It's always for her"). Family Today carries one plain line remembering her, no jokes. Margo stays fully herself Thursday, profanity and all (Garret, 7:17 p.m.: "Please dont soften margo... She should still be her"); just no jokes at Briar's expense. The reviewer gets this note.
