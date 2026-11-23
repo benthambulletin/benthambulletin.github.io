@@ -9,4 +9,3 @@ Format: `- YYYY-MM-DD · Name · what they said (short) · where it ran`
 - 2026-11-22 · Kara · bringing "scrimps" · group chat via Garret
 - 2026-11-22 · Leah · bringing a salad · group chat via Garret
 - 2026-11-22 · Kaylani · bringing dinner rolls · Garret
-- 2026-11-22 · Garret · told Margo to be "spicy as fuck" and that "most of you don't read this anyway" made the intro · chat
