@@ -62,6 +62,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Mon Nov 23 prep notes (8:30 p.m. Sunday).** No NWS alerts for the four towns (alerts.json 01:31Z). Thanksgiving Day for North Tonawanda moved from "a chance of rain and snow showers after 7am, 50%, high near 43" (feed 17:45Z Sunday) to "rain and snow likely after 7am, 60%, high near 44" (feed 01:31Z Monday): use that shift in the first Turkey Trot Watch, rechecked against the morning feed and the downtown point. Finals for MMQB: Bills 26, Dolphins 9; Jets 27, Chargers 24 (Sportradar, closed); verify records with game_stats before printing.
+
 - **Thanksgiving at Derek's (Garret, Sun 7:32 p.m.).** Derek is hosting Thursday Nov 26: appetizers at 1, dinner at 3 p.m. Put it in Coming Up from Monday through Thursday ("Thursday · Thanksgiving at Derek's: appetizers 1, dinner 3"), and in Thursday's paper as the day's family line. Margo can rib whoever she likes about it. **The menu (group chat, Sun Nov 22, via Garret):** Derek: turkey, mashed potatoes, green beans, stuffed shells. Donna: stuffing. Kara: "scrimps" (her spelling; shrimp). Leah: salad. Melissa: pies. Joanne: "several appetizers," including "a couple big pans" of stuffed mushrooms after Derek asked for "lots." Kaylani: dinner rolls. Run it Thursday as a short "Who's bringing what" list; Margo can work it over (Wednesday or Thursday) in her voice.
 
 - **Ask Margo link from Mon Nov 23.** Every byline (Weather Glass and Meet the Editor) uses the CLAUDE.md markup with the "Ask Margo →" link to https://tally.so/r/EqxJpo.
