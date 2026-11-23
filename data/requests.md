@@ -7,7 +7,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 - **Margo Bentham from Sun Nov 22 (Garret, Nov 21).** Sign-off `&mdash; Margo` replaces `&mdash; G.` in the colophon (`R('<div class="sig">&mdash; G.</div>', '<div class="sig">&mdash; Margo</div>')` in the first build), and the Weather Glass byline per CLAUDE.md "Margo Bentham".
 
-- **From Margo's Desk, every Wednesday from Nov 25 (Garret, Nov 22: "Love it").** Weekly Margo column at the end of The News; rules in CLAUDE.md "From Margo's Desk". The Tuesday night-before prep picks the topic and drafts it.
+- **From Margo's Desk, every Wednesday from Nov 25 (Garret, Nov 22: "Love it").** Weekly Margo column at the end of The News; rules in CLAUDE.md "From Margo's Desk". **Only with Garret's OK:** the Tuesday prep sends him the draft; no yes by the 5:35 build, no column.
 
 - **Get more of the family writing in (Nov 21; only Gregg has used the form lately).** Every Wednesday, one sentence in Family Today inviting a specific person or two by name (rotate through the ten; never the same name two weeks running) to send something through the form, with the link: <a href="https://tally.so/r/rjxDpl">tally.so/r/rjxDpl</a>. The Sunday Question always ends with the same link. Thank anyone whose entry runs, by name, in that line.
 
