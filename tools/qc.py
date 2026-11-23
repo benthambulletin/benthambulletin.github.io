@@ -43,6 +43,36 @@ if ed:
             _cut = (datetime.datetime.combine(dt, datetime.time(10)) - datetime.timedelta(hours=48)).isoformat()
             _hits = [it['title'] for it in _news['sections'].get('local', []) if it.get('published', '') >= _cut and re.search(r'Niagara|Tonawanda|Lockport|Lewiston|Wheatfield', it['title'] + ' ' + (it.get('body') or '')[:600])]
             if _hits: warns.append(f'NIAGARA: no Niagara County item in the Home Wire, but the feed has {len(_hits)}: ' + ' | '.join(h[:60] for h in _hits[:4]))
+        # Nov 22 (Garret: "Level up"): the reviewer's repeat finds, caught before the review. Warnings only.
+        _newshalf = s.split('<div class="part"><span>The Almanac', 1)[0]
+        _wirep = [re.sub(r'<[^>]+>', ' ', t) for t in re.findall(r'<div class="wire[^"]*"><div>(.*?)</div></div>', _newshalf, re.S)]
+        _wiretxt = ' '.join(_wirep)
+        # numbers in the news half that no feed item carries
+        _feedtxt = _bodies
+        for _n in sorted(set(re.findall(r'\$?\d[\d,.]*\d%?|\$\d+%?|\d+%', _wiretxt))):
+            _bare = _n.strip('$%').rstrip('.,')
+            if len(_bare.replace(',', '').replace('.', '')) < 2 or re.fullmatch(r'(19|20)\d\d', _bare): continue
+            if _bare not in _feedtxt and _bare.replace(',', '') not in _feedtxt:
+                warns.append(f'NUMBER NOT IN FEED (source it or cut it): {_n}')
+        # verbs stronger than the source
+        for _v in ('admitted','admits','slammed','blasted','vowed','insisted','conceded','confessed','lashed','ripped','doubled down','refused','denied','confirmed','warned','claimed','begged','furious','outraged','stunned','shocked','historic','unprecedented','record-breaking'):
+            if re.search(r'\b'+_v+r'\b', _wiretxt, re.I) and _v not in _bodies:
+                warns.append(f'STRONG WORD NOT IN FEED (use the source\'s own word): "{_v}"')
+        # subjects that ran in the last three editions
+        _stop = set('The A An And Of In On At To For With From By After Before Over Into New Bills Jets Week Sunday Monday Tuesday Wednesday Thursday Friday Saturday Update Buffalo York Says Said Niagara Falls North Tonawanda Rochester Dunkirk Lockport Scottsville Erie Lake County Orchard Park Western'.split())
+        def _keys(h): return {w for w in re.findall(r"\b[A-Z][a-z'A-Z]{2,}\b", re.sub(r'<[^>]+>', '', h)) if w not in _stop}
+        _today = [(re.sub(r'<[^>]+>', '', h).strip(), _keys(h)) for h in re.findall(r'<h3>(.*?)</h3>', _newshalf, re.S)]
+        for _k in range(1, 4):
+            _pf = f'edition-{(dt - datetime.timedelta(days=_k)).isoformat()}.json'
+            _pp = _pf if os.path.exists(_pf) else os.path.join('site', 'data', _pf)
+            if not os.path.exists(_pp): continue
+            _ph = re.findall(r'<h3>(.*?)</h3>', json.load(open(_pp))['body_html'], re.S)
+            for _h, _ks in _today:
+                if _h.startswith('Update') or 'Sunday Tax' in _h: continue
+                for _o in _ph:
+                    _shared = _ks & _keys(_o)
+                    if len(_shared) >= 2:
+                        warns.append(f'RAN {_k} DAY(S) AGO? "{_h[:50]}" ~ "{re.sub("<[^>]+>","",_o)[:50]}" (shared: {", ".join(sorted(_shared))}). Label it Update with new facts, or cut it.'); break
     except Exception as _e:
         warns.append(f'feed checks skipped: {_e}')
     # riddle: the answer must not have run before (Nov 12: an umbrella repeat got out)
