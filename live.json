@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T00:21:12Z",
+ "updated": "2026-11-23T00:23:14Z",
  "week": 11,
  "games": {
   "1": {
@@ -76,17 +76,17 @@
   },
   "9": {
    "state": "in",
-   "away": 17,
+   "away": 24,
    "home": 31,
-   "detail": "4:33 - 4th",
-   "line": "Broncos 31–17 · 4:33 - 4th"
+   "detail": "4:29 - 4th",
+   "line": "Broncos 31–24 · 4:29 - 4th"
   },
   "10": {
    "state": "in",
    "away": 9,
    "home": 23,
-   "detail": "9:57 - 4th",
-   "line": "Giants 23–9 · 9:57 - 4th"
+   "detail": "9:26 - 4th",
+   "line": "Giants 23–9 · 9:26 - 4th"
   },
   "11": {
    "state": "pre",
