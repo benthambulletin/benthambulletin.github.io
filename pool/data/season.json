@@ -17512,12 +17512,36 @@
           "kickoff": "2026-11-23T01:20:00Z",
           "when": "Sun 8:20 PM · Mexico City",
           "tv": "NBC",
-          "status": "sealed",
+          "status": "live",
           "fav": "49ers",
           "line": "49ers −3 (Mexico City)",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Vikings": [
+              "Thom",
+              "Dan",
+              "B-rad",
+              "Mike Sombloski"
+            ],
+            "49ers": [
+              "Nate V",
+              "Devin",
+              "Josh",
+              "Ryan Holovics",
+              "Ariel",
+              "Garret",
+              "Leah",
+              "Mrs. Sombloski",
+              "Tom",
+              "Wendy",
+              "Melissa",
+              "Derek",
+              "Arod",
+              "Andy R",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Bengals",
@@ -17554,7 +17578,8 @@
             "7": "Eagles",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Giants"
+            "10": "Giants",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T21:01:41+00:00",
           "firstAt": "2026-11-19T21:01:41+00:00",
@@ -17591,7 +17616,8 @@
             "7": "Steelers",
             "8": "Jets",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T23:57:36+00:00",
           "firstAt": "2026-11-19T23:57:36+00:00",
@@ -17623,7 +17649,8 @@
             "7": "Steelers",
             "8": "Jets",
             "9": "Broncos",
-            "10": "Giants"
+            "10": "Giants",
+            "11": "Vikings"
           },
           "filedAt": "2026-11-20T01:04:50+00:00",
           "firstAt": "2026-11-20T01:04:50+00:00",
@@ -17660,7 +17687,8 @@
             "7": "Eagles",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Giants"
+            "10": "Giants",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T22:59:02+00:00",
           "firstAt": "2026-11-19T22:59:02+00:00",
@@ -17692,7 +17720,8 @@
             "7": "Steelers",
             "8": "Jets",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T14:23:02+00:00",
           "firstAt": "2026-11-19T14:23:02+00:00",
@@ -17724,7 +17753,8 @@
             "7": "Steelers",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T21:13:12+00:00",
           "firstAt": "2026-11-19T21:13:12+00:00",
@@ -17756,7 +17786,8 @@
             "7": "Steelers",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T23:58:14+00:00",
           "firstAt": "2026-11-19T23:58:14+00:00",
@@ -17788,7 +17819,8 @@
             "7": "Steelers",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-17T09:06:27+00:00",
           "firstAt": "2026-11-17T09:06:27+00:00",
@@ -17820,7 +17852,8 @@
             "7": "Steelers",
             "8": "Jets",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "Vikings"
           },
           "filedAt": "2026-11-19T20:52:55+00:00",
           "firstAt": "2026-11-19T20:52:55+00:00",
@@ -17852,7 +17885,8 @@
             "7": "Steelers",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T21:20:48+00:00",
           "firstAt": "2026-11-19T21:20:48+00:00",
@@ -17884,7 +17918,8 @@
             "7": "Steelers",
             "8": "Jets",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T23:31:39+00:00",
           "firstAt": "2026-11-19T23:31:39+00:00",
@@ -17916,7 +17951,8 @@
             "7": "Steelers",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T21:05:24+00:00",
           "firstAt": "2026-11-19T21:05:24+00:00",
@@ -17948,7 +17984,8 @@
             "7": "Steelers",
             "8": "Jets",
             "9": "Broncos",
-            "10": "Giants"
+            "10": "Giants",
+            "11": "Vikings"
           },
           "filedAt": "2026-11-19T14:06:19+00:00",
           "firstAt": "2026-11-19T14:06:19+00:00",
@@ -17980,7 +18017,8 @@
             "7": "Steelers",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T23:05:09+00:00",
           "firstAt": "2026-11-19T23:05:09+00:00",
@@ -18012,7 +18050,8 @@
             "7": "Eagles",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T23:09:41+00:00",
           "firstAt": "2026-11-19T23:09:41+00:00",
@@ -18044,7 +18083,8 @@
             "7": "Steelers",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-20T00:38:55+00:00",
           "firstAt": "2026-11-20T00:38:55+00:00",
@@ -18089,7 +18129,8 @@
             "7": "Steelers",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T20:59:59+00:00",
           "firstAt": "2026-11-19T20:59:59+00:00",
@@ -18130,7 +18171,8 @@
             "7": "Eagles",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "49ers"
           },
           "filedAt": "2026-11-19T22:54:07+00:00",
           "firstAt": "2026-11-19T22:54:07+00:00",
@@ -18171,7 +18213,8 @@
             "7": "Steelers",
             "8": "Chargers",
             "9": "Broncos",
-            "10": "Jaguars"
+            "10": "Jaguars",
+            "11": "Vikings"
           },
           "filedAt": "2026-11-19T23:15:36+00:00",
           "firstAt": "2026-11-19T23:15:36+00:00",
@@ -18531,6 +18574,17 @@
             "upset": true,
             "roomUpset": true,
             "rightN": 4
+          },
+          "11": {
+            "away": 4,
+            "home": 14,
+            "minority": "Vikings",
+            "minorityWho": [
+              "Thom",
+              "Dan",
+              "B-rad",
+              "Mike Sombloski"
+            ]
           }
         },
         "upsets": 3,
@@ -18568,7 +18622,29 @@
           "won": true
         }
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 11,
+          "away": [
+            "Thom",
+            "Dan",
+            "Mike Sombloski"
+          ],
+          "home": [
+            "Nate V",
+            "Josh",
+            "Ryan Holovics",
+            "Ariel",
+            "Garret",
+            "Mrs. Sombloski",
+            "Tom",
+            "Wendy",
+            "Melissa",
+            "Derek",
+            "Arod"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -18617,7 +18693,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-23T01:09:25.654324+00:00",
+  "updated": "2026-11-23T01:24:32.234237+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
