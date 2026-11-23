@@ -58,6 +58,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
+- **Thursday Nov 26 cover (Garret, Sun 7:08 p.m.: "For thursday am").** A family photo from the 2019 Turkey Trot (the 124th) waits in `spool/thursday/` (`plate.jpg`, already cropped, bib print blurred; `caption.txt`). Run it as Plate I · The Family Album on Thursday only, and `git rm -r spool/thursday` in that commit. Don't use it before Thursday.
+
 - **Meet the Editor, Mon Nov 23 only (Garret, Sun 6:18 p.m.: "Use that space for a margo intro").** In the space the market chart would have taken, at the end of The National Wire, run `<h2 class="sec">Meet the Editor</h2>`, her portrait byline (the same block as the Weather Glass's, from CLAUDE.md), and this text as written (three `<p>`s), signed `<div class="sig">&mdash; Margo</div>`:
   > Some of you have asked who the hell I am. Here it is. Garret's paying me to do the job he doesn't have time for. And trust me, it isn't because your attention keeps the lights on. I know most of you don't read this thing. Eat shit.
   > Now the part you'll repeat at Thanksgiving. I'm Gregg's aunt, Bentham side, and he'll deny it. In 1985, in the middle of a lake-effect warning, I told all of Buffalo on live television to get the f&#8209;&#8209;&#8209; off the roads, lit a cigarette on camera and had my desk cleaned out before the six o'clock news was over. Joanne's mother and father were watching. They never recovered. The family quit inviting me to things, and I've done the weather from somewhere else ever since. I've never taken a sick day, never been seen at the office, and never once been thanked for a forecast that was right. I smoke, I swear, and I don't give a shit how you feel about the wind chill.
