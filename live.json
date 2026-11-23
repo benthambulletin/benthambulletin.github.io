@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T00:53:41Z",
+ "updated": "2026-11-23T00:55:43Z",
  "week": 11,
  "games": {
   "1": {
@@ -84,11 +84,13 @@
    "line": "Final · Broncos 38–24"
   },
   "10": {
-   "state": "in",
+   "state": "post",
    "away": 18,
    "home": 23,
-   "detail": "1:21 - 4th",
-   "line": "Giants 23–18 · 1:21 - 4th"
+   "detail": "Final",
+   "winner": "Giants",
+   "score": "23–18",
+   "line": "Final · Giants 23–18"
   },
   "11": {
    "state": "pre",
