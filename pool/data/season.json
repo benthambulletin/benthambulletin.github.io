@@ -17598,7 +17598,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17630,7 +17630,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": 2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -17667,7 +17667,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": 2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17699,7 +17699,7 @@
           "free": false,
           "paypal": false,
           "rank": 2,
-          "delta": -1,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17731,7 +17731,7 @@
           "free": false,
           "paypal": false,
           "rank": 6,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17763,7 +17763,7 @@
           "free": false,
           "paypal": true,
           "rank": 6,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17795,7 +17795,7 @@
           "free": false,
           "paypal": false,
           "rank": 6,
-          "delta": -2,
+          "delta": 0,
           "state": "house",
           "paid": false,
           "badges": []
@@ -17827,7 +17827,7 @@
           "free": false,
           "paypal": false,
           "rank": 6,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17859,7 +17859,7 @@
           "free": false,
           "paypal": false,
           "rank": 6,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17891,7 +17891,7 @@
           "free": false,
           "paypal": false,
           "rank": 6,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17923,7 +17923,7 @@
           "free": false,
           "paypal": false,
           "rank": 6,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -17955,7 +17955,7 @@
           "free": true,
           "paypal": false,
           "rank": 6,
-          "delta": 9,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -17987,7 +17987,7 @@
           "free": false,
           "paypal": false,
           "rank": 6,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -18019,7 +18019,7 @@
           "free": false,
           "paypal": false,
           "rank": 6,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -18051,7 +18051,7 @@
           "free": false,
           "paypal": true,
           "rank": 16,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -18096,7 +18096,7 @@
           "free": false,
           "paypal": false,
           "rank": 16,
-          "delta": -1,
+          "delta": 0,
           "state": "out",
           "paid": true,
           "badges": [
@@ -18617,7 +18617,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-23T00:59:42.694784+00:00",
+  "updated": "2026-11-23T01:09:25.654324+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -18703,12 +18703,6 @@
   "columnLog": [
     {
       "week": 11,
-      "at": "2026-11-20T01:20:41.618447+00:00",
-      "head": "Mike Sombloski beats the buzzer by eleven",
-      "text": "Mike Sombloski filed at 8:04, eleven minutes before the Colts and Texans kick off, which is either nerves of steel or a man who forgot what day it was. He leads Mrs. Sombloski 4–3 head-to-head this season, and she filed an hour ahead of him like someone who knew it.\n\nAndy R slid in at 7:38, so Arod has her sparring partner back: 2–2 head-to-head, three weeks dead even. Eighteen humans are in. Got a question for the commissioner? Put it on the pick sheet."
-    },
-    {
-      "week": 11,
       "at": "2026-11-20T01:21:02.486484+00:00",
       "head": "Four brave souls and a 12.5-point hole",
       "text": "Fourteen humans and the robot took the Texans, who were laying 12.5 points at kickoff. Four went the other way: Thom, Leah, Melissa and Mike Sombloski. If Indianapolis wins outright, those four start the week a game up on the entire room; if not, they start it in a hole.\n\nThe rivalries split down the middle. Leah took the Colts and B-rad took the Texans, and she already leads him 4–2 this season. Mike is on Indianapolis, Mrs. Sombloski on Houston. Josh aimed his trash talk at Claude, which picked Houston like nearly everybody else, so he'll have to beat it on Sunday. Got a question for the commissioner? Put it on the pick sheet."
@@ -18748,6 +18742,12 @@
       "at": "2026-11-22T21:49:50.129494+00:00",
       "head": "Josh alone at 8–0, and the Jets want a word",
       "text": "Josh is the last perfect sheet in the building at 8–0, and he got there the hard way: he was one of four who took the Eagles as 4.5-point underdogs, along with Mrs. Sombloski, Wendy and Leah. Ten sheets sit one back at 7–1, the house among them.\n\nNow the Jets lead the Chargers 10–3 in the second quarter, and that's the game. Thom, Nate V, Dan, Melissa, Derek and Mike Sombloski took the Jets; Josh and eleven others took Los Angeles. A Jets win drags Josh back into the pack. Over in New York, Josh is one of four on the Giants, who trail Jacksonville 3–0 early."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-23T01:09:19.907702+00:00",
+      "head": "Josh bleeds once, still leads by one",
+      "text": "The Jets finally cost Josh something, 27–24 over the Chargers, but he's still alone at 10–1 after riding the Giants, 6.5-point underdogs, past Jacksonville 23–18. Mike Sombloski hit both of those dogs and climbed from 0–1 Thursday night to 9–2, level with Derek, Mrs. Sombloski and Nate V.\n\nAndy R, Devin, Leah and B-rad are out. Ten sheets at 8–3, the house included, need a sweep and two Josh losses just to tie him. Two left: Vikings at 49ers tonight in Mexico City, Bengals at Commanders Monday. Josh wins both, it's over. Splits them, any 9–2 sheet that sweeps catches him and the Monday tiebreaker decides it. Sides stay sealed until kickoff."
     }
   ],
   "rivals": [
