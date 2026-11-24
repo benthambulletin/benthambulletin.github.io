@@ -17,4 +17,4 @@ Wednesday column. Pitch Monday night, draft Tuesday night, runs Wednesday only w
 - Case against: every country gets a veto, so one oil producer can gut the text; emissions have kept climbing through 30 of them.
 - Sources: BBC via the paper's Nov 23 feed; NPR on COP30's similar ending, https://www.npr.org/2025/11/22/nx-s1-5615207/u-n-climate-talks-end-cop30-brazil
 
-Garret's pick: (waiting)
+Garret's pick (Mon 9:00 p.m.): **Option 1**, "your angle is spot on": spend the majority fast on prices, health costs and housing, not two years of hearings. Draft due Tuesday night for his yes.
