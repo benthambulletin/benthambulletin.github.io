@@ -19076,6 +19076,26 @@
       ],
       "players": [
         {
+          "name": "B-rad",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-24T15:51:29+00:00",
+          "firstAt": "2026-11-24T15:51:29+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Claude",
           "house": true,
           "correct": 0,
@@ -19134,12 +19154,96 @@
           "state": "alive",
           "paid": true,
           "badges": []
+        },
+        {
+          "name": "Kaylani & Luka",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-24T15:59:05+00:00",
+          "firstAt": "2026-11-24T15:56:07+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Leah",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-24T17:05:26+00:00",
+          "firstAt": "2026-11-24T17:05:26+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Mrs. Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-24T15:04:46+00:00",
+          "firstAt": "2026-11-24T15:04:46+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Ryan Holovics",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-24T17:52:14+00:00",
+          "firstAt": "2026-11-24T17:52:14+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
         }
       ],
       "trash": [
         {
           "from": "Garret",
           "text": "Fuck off and Happy Thanksgiving, dicks"
+        },
+        {
+          "from": "Ryan Holovics",
+          "text": "I let everyone have a chance the past few weeks. I’m taking it back now"
         },
         {
           "from": "Claude",
@@ -19160,12 +19264,28 @@
           "who": "Devin",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a20e8620c203407",
+          "at": "2026-11-24T17:06:40Z",
+          "amt": "5.00",
+          "who": "Leah",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a20e8620c203407~1",
+          "at": "2026-11-24T17:06:40Z",
+          "amt": "5.00",
+          "who": "B-rad",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-26T01:00:00Z",
-      "pot": 10.0,
-      "paidN": 2,
+      "pot": 25.0,
+      "paidN": 5,
       "opensAt": "2026-11-24T09:01:59Z",
       "housePicks": {
         "trash": "Sixteen games over five days. I don't eat turkey, so I'll be paying attention.",
@@ -19230,9 +19350,9 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Two in, and the commissioner sets the tone",
-      "column": "Devin and Garret are in. Garret's trash talk, in full: \"Fuck off and Happy Thanksgiving, dicks.\" That's the holiday spirit.\n\nEveryone else, the clock is short this week. Packers at Rams kicks off Wednesday at 8:00, and the $5 is due then too. Sixteen games in six days, four of them gone before the pie is cut on Thursday.\n\nJosh has won two straight and is going for three. B-rad has been in the bottom three four weeks running, which is either a slump or a lifestyle.",
-      "columnN": 2,
+      "columnHead": "Ryan wants his pool back",
+      "column": "Seven sheets are in. Ryan H, who has been quiet lately, filed with a warning: \"I let everyone have a chance the past few weeks. I'm taking it back now.\" Garret's holiday greeting still stands, unedited.\n\nPackers at Rams kicks off Wednesday at 8:00, and that's also when the $5 is due. Josh has won two straight and is going for three, but he hasn't filed yet.",
+      "columnN": 7,
       "face": {
         "photo": "/pool/faces/w12.jpg",
         "who": "Ariel, Mrs. Sombloski & Jensen",
@@ -19242,7 +19362,7 @@
       }
     }
   },
-  "updated": "2026-11-24T13:37:18.514705+00:00",
+  "updated": "2026-11-24T18:02:54.349820+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -19272,7 +19392,7 @@
     ]
   },
   "displayNames": {
-    "Ryan Holovics": "Ryan",
+    "Ryan Holovics": "Ryan H",
     "Andy R.": "Andy",
     "Walczyk": "Walczyk and Timbit"
   },
@@ -19329,12 +19449,6 @@
   "columnLog": [
     {
       "week": 11,
-      "at": "2026-11-23T04:51:04.943412+00:00",
-      "head": "Josh needs one more; three wait on Monday",
-      "text": "Mexico City was a rout, 49ers 35–10, and the four who backed the Vikings paid for it: Dan, B-rad, Thom and Mike Sombloski, who spent the afternoon cashing underdogs and then took one too many. Mike slides to 9–3 and out.\n\nSo it's Josh at 11–1, with Derek, Mrs. Sombloski and Nate V at 10–2, and one game left: Bengals at Commanders. Josh hits it, he wins outright. Josh misses and none of the three hits, he still wins. Josh misses and any of them hits, it's 11–2 and the Monday tiebreaker decides it. Nobody can pass him; they can only drag him to a coin flip with math. Sides and numbers stay sealed until kickoff."
-    },
-    {
-      "week": 11,
       "at": "2026-11-23T14:13:06.546994+00:00",
       "head": "Josh 11–1, the House 9–3, nobody's arguing",
       "text": "Josh called out the House this week and then backed it up: 11–1 to Claude's 9–3, the only blemish a Jets upset. The robot's Lock, Chiefs over Arizona, landed 34–7; the rest of its sheet is stuck in the 9–3 middle class with eight other people.\n\nAt the bottom, B-rad is 5–7 and locked into last. Andy R stood alone on the Dolphins and got 26–9 for his trouble. Tonight it's Bengals at Commanders, 8:15 on ESPN, and only Josh, Derek, Mrs. Sombloski and Nate V have a shot at the money."
@@ -19374,6 +19488,12 @@
       "at": "2026-11-24T13:37:18.514705+00:00",
       "head": "Holiday week, empty room, early whistle",
       "text": "Nobody has filed, and this is the week you can't sleep on it: the first game is Wednesday night, Packers at Rams, and that's also when the $5 is due. Sixteen games over six days, five of them before most of you finish the leftovers.\n\nJosh is the defending champ and gets a shot at back-to-back. B-rad has been in the bottom three four weeks running, which is either a slump or a lifestyle. The mugshot wall is still waiting on Josh to pick a victim."
+    },
+    {
+      "week": 12,
+      "at": "2026-11-24T18:02:54.349820+00:00",
+      "head": "Two in, and the commissioner sets the tone",
+      "text": "Devin and Garret are in. Garret's trash talk, in full: \"Fuck off and Happy Thanksgiving, dicks.\" That's the holiday spirit.\n\nEveryone else, the clock is short this week. Packers at Rams kicks off Wednesday at 8:00, and the $5 is due then too. Sixteen games in six days, four of them gone before the pie is cut on Thursday.\n\nJosh has won two straight and is going for three. B-rad has been in the bottom three four weeks running, which is either a slump or a lifestyle."
     }
   ],
   "rivals": [
