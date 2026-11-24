@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-24T12:27:00-05:00",
+  "updated": "2026-11-24T18:24:00-05:00",
   "call": "Hold. Best Arizer from a store you trust is $153.99 at Planet of the Vapes. PAX\u2019s Black Friday sale is live but not at killer prices yet.",
   "tone": "hold",
   "notes": [
-    "Planet of the Vapes re-checked: Arizer $153.99, PAX Four $200. PAX and Arizer direct carried from earlier."
+    "Planet of the Vapes unchanged: Arizer $153.99, PAX Four $200."
   ],
   "devices": [
     {
@@ -17,7 +17,7 @@
           "baseline": 219.99,
           "status": "product page",
           "url": "https://arizer.com",
-          "note": "No sale or code shown. Free US shipping over $150. Not re-confirmed Nov 24 midday."
+          "note": "No sale or code shown. Free US shipping over $150. Not re-confirmed Nov 24 evening."
         },
         {
           "store": "Planet of the Vapes",
@@ -56,7 +56,7 @@
           "baseline": 125.0,
           "status": "out of stock",
           "url": "https://www.pax.com/vapes/pax-plus-complete-kit",
-          "note": "Complete Kit now shows $150 with a Notify Me button: likely sold out. No Black Friday discount on the Plus. Not re-confirmed Nov 24 midday."
+          "note": "Complete Kit now shows $150 with a Notify Me button: likely sold out. No Black Friday discount on the Plus. Not re-confirmed Nov 24 evening."
         },
         {
           "store": "TVape",
@@ -79,7 +79,7 @@
           "baseline": 250.0,
           "status": "product page",
           "url": "https://www.pax.com",
-          "note": "Black Friday 20% off ($225 crossed out). Free mouthpiece. Not re-confirmed Nov 24 midday."
+          "note": "Black Friday 20% off ($225 crossed out). Free mouthpiece. Not re-confirmed Nov 24 evening."
         },
         {
           "store": "Planet of the Vapes",
@@ -102,7 +102,7 @@
           "baseline": 150.0,
           "status": "product page",
           "url": "https://www.pax.com",
-          "note": "Black Friday 20% off ($150 crossed out). Free mouthpiece. Not re-confirmed Nov 24 midday."
+          "note": "Black Friday 20% off ($150 crossed out). Free mouthpiece. Not re-confirmed Nov 24 evening."
         }
       ]
     }
