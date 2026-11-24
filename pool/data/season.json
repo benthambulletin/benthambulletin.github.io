@@ -16850,7 +16850,7 @@
       "rollOut": 0
     },
     "11": {
-      "status": "live",
+      "status": "final",
       "games": [
         {
           "away": "Colts",
@@ -17572,11 +17572,32 @@
           "kickoff": "2026-11-24T01:15:00Z",
           "when": "Mon 8:15 PM",
           "tv": "ESPN",
-          "status": "live",
+          "status": "final",
           "fav": "Bengals",
           "line": "Bengals −6",
-          "hits": [],
-          "misses": [],
+          "hits": [
+            "B-rad"
+          ],
+          "misses": [
+            "Thom",
+            "Nate V",
+            "Dan",
+            "Devin",
+            "Josh",
+            "Ryan Holovics",
+            "Ariel",
+            "Garret",
+            "Leah",
+            "Mrs. Sombloski",
+            "Tom",
+            "Wendy",
+            "Melissa",
+            "Derek",
+            "Arod",
+            "Andy R",
+            "Mike Sombloski",
+            "Claude"
+          ],
           "sides": {
             "Bengals": [
               "Thom",
@@ -17602,8 +17623,8 @@
               "B-rad"
             ]
           },
-          "live": "Commanders 19–17 · 4th qtr",
-          "liveAt": "2026-11-24T04:06:54Z"
+          "winner": "Commanders",
+          "score": "22–20"
         }
       ],
       "players": [
@@ -17611,10 +17632,10 @@
           "name": "Josh",
           "house": false,
           "correct": 11,
-          "missed": 1,
+          "missed": 2,
           "void": 0,
-          "remaining": 1,
-          "max": 12,
+          "remaining": 0,
+          "max": 11,
           "tb": 66,
           "sheet": {
             "0": "Texans",
@@ -17637,12 +17658,12 @@
           "paypal": false,
           "rank": 1,
           "delta": 0,
-          "state": "alive",
+          "state": "clinched",
           "paid": true,
           "badges": [
             {
               "id": "crown",
-              "note": "leading the week"
+              "note": "won the week"
             }
           ]
         },
@@ -17650,10 +17671,10 @@
           "name": "Derek",
           "house": false,
           "correct": 10,
-          "missed": 2,
+          "missed": 3,
           "void": 0,
-          "remaining": 1,
-          "max": 11,
+          "remaining": 0,
+          "max": 10,
           "tb": 48,
           "sheet": {
             "0": "Texans",
@@ -17676,18 +17697,23 @@
           "paypal": false,
           "rank": 2,
           "delta": 0,
-          "state": "alive",
+          "state": "out",
           "paid": true,
-          "badges": []
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
         },
         {
           "name": "Mrs. Sombloski",
           "house": false,
           "correct": 10,
-          "missed": 2,
+          "missed": 3,
           "void": 0,
-          "remaining": 1,
-          "max": 11,
+          "remaining": 0,
+          "max": 10,
           "tb": 44,
           "sheet": {
             "0": "Texans",
@@ -17710,18 +17736,23 @@
           "paypal": false,
           "rank": 2,
           "delta": 0,
-          "state": "alive",
+          "state": "out",
           "paid": true,
-          "badges": []
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
         },
         {
           "name": "Nate V",
           "house": false,
           "correct": 10,
-          "missed": 2,
+          "missed": 3,
           "void": 0,
-          "remaining": 1,
-          "max": 11,
+          "remaining": 0,
+          "max": 10,
           "tb": 69,
           "sheet": {
             "0": "Texans",
@@ -17744,18 +17775,23 @@
           "paypal": false,
           "rank": 2,
           "delta": 0,
-          "state": "alive",
+          "state": "out",
           "paid": true,
-          "badges": []
+          "badges": [
+            {
+              "id": "dead",
+              "note": "mathematically out"
+            }
+          ]
         },
         {
           "name": "Ariel",
           "house": false,
           "correct": 9,
-          "missed": 3,
+          "missed": 4,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 40,
           "sheet": {
             "0": "Texans",
@@ -17791,10 +17827,10 @@
           "name": "Arod",
           "house": false,
           "correct": 9,
-          "missed": 3,
+          "missed": 4,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 42,
           "sheet": {
             "0": "Texans",
@@ -17830,10 +17866,10 @@
           "name": "Claude",
           "house": true,
           "correct": 9,
-          "missed": 3,
+          "missed": 4,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 55,
           "sheet": {
             "0": "Texans",
@@ -17864,10 +17900,10 @@
           "name": "Garret",
           "house": false,
           "correct": 9,
-          "missed": 3,
+          "missed": 4,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 61,
           "sheet": {
             "0": "Texans",
@@ -17903,10 +17939,10 @@
           "name": "Melissa",
           "house": false,
           "correct": 9,
-          "missed": 3,
+          "missed": 4,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 37,
           "sheet": {
             "0": "Colts",
@@ -17942,10 +17978,10 @@
           "name": "Mike Sombloski",
           "house": false,
           "correct": 9,
-          "missed": 3,
+          "missed": 4,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 36,
           "sheet": {
             "0": "Colts",
@@ -17985,10 +18021,10 @@
           "name": "Ryan Holovics",
           "house": false,
           "correct": 9,
-          "missed": 3,
+          "missed": 4,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 51,
           "sheet": {
             "0": "Texans",
@@ -18024,10 +18060,10 @@
           "name": "Tom",
           "house": false,
           "correct": 9,
-          "missed": 3,
+          "missed": 4,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 55,
           "sheet": {
             "0": "Texans",
@@ -18063,10 +18099,10 @@
           "name": "Wendy",
           "house": false,
           "correct": 9,
-          "missed": 3,
+          "missed": 4,
           "void": 0,
-          "remaining": 1,
-          "max": 10,
+          "remaining": 0,
+          "max": 9,
           "tb": 42,
           "sheet": {
             "0": "Texans",
@@ -18102,10 +18138,10 @@
           "name": "Andy R",
           "house": false,
           "correct": 8,
-          "missed": 4,
+          "missed": 5,
           "void": 0,
-          "remaining": 1,
-          "max": 9,
+          "remaining": 0,
+          "max": 8,
           "tb": 58,
           "sheet": {
             "0": "Texans",
@@ -18149,10 +18185,10 @@
           "name": "Dan",
           "house": false,
           "correct": 8,
-          "missed": 4,
+          "missed": 5,
           "void": 0,
-          "remaining": 1,
-          "max": 9,
+          "remaining": 0,
+          "max": 8,
           "tb": 42,
           "sheet": {
             "0": "Texans",
@@ -18192,10 +18228,10 @@
           "name": "Devin",
           "house": false,
           "correct": 8,
-          "missed": 4,
+          "missed": 5,
           "void": 0,
-          "remaining": 1,
-          "max": 9,
+          "remaining": 0,
+          "max": 8,
           "tb": 54,
           "sheet": {
             "0": "Texans",
@@ -18235,10 +18271,10 @@
           "name": "Thom",
           "house": false,
           "correct": 8,
-          "missed": 4,
+          "missed": 5,
           "void": 0,
-          "remaining": 1,
-          "max": 9,
+          "remaining": 0,
+          "max": 8,
           "tb": 45,
           "sheet": {
             "0": "Colts",
@@ -18274,10 +18310,10 @@
           "name": "Leah",
           "house": false,
           "correct": 7,
-          "missed": 5,
+          "missed": 6,
           "void": 0,
-          "remaining": 1,
-          "max": 8,
+          "remaining": 0,
+          "max": 7,
           "tb": 52,
           "sheet": {
             "0": "Colts",
@@ -18316,10 +18352,10 @@
         {
           "name": "B-rad",
           "house": false,
-          "correct": 5,
+          "correct": 6,
           "missed": 7,
           "void": 0,
-          "remaining": 1,
+          "remaining": 0,
           "max": 6,
           "tb": 36,
           "sheet": {
@@ -18347,8 +18383,12 @@
           "paid": true,
           "badges": [
             {
+              "id": "wolf",
+              "note": "only one with the Commanders"
+            },
+            {
               "id": "coin",
-              "note": "behind Claude, 5–9"
+              "note": "behind Claude, 6–9"
             },
             {
               "id": "dead",
@@ -18717,29 +18757,26 @@
             "minority": "Commanders",
             "minorityWho": [
               "B-rad"
-            ]
+            ],
+            "upset": true,
+            "roomUpset": true,
+            "rightN": 1
           }
         },
-        "upsets": 3,
-        "decided": 12,
+        "upsets": 4,
+        "decided": 13,
         "best": {
-          "game": 7,
-          "n": 4,
+          "game": 12,
+          "n": 1,
           "who": [
-            "Josh",
-            "Leah",
-            "Mrs. Sombloski",
-            "Wendy"
+            "B-rad"
           ]
         },
         "worst": {
-          "game": 7,
-          "n": 4,
+          "game": 12,
+          "n": 1,
           "who": [
-            "Josh",
-            "Leah",
-            "Mrs. Sombloski",
-            "Wendy"
+            "B-rad"
           ]
         },
         "bills": {
@@ -18756,8 +18793,10 @@
         }
       },
       "decides": [],
-      "weekWinners": [],
-      "weekPayout": 0,
+      "weekWinners": [
+        "Josh"
+      ],
+      "weekPayout": 85.0,
       "tbUsed": false,
       "updates": [
         {
@@ -18783,10 +18822,21 @@
         {
           "at": "2026-11-23T04:50:38.488918+00:00",
           "note": "12 of 13 final. Josh leads at 11–1. Out of it: Ariel, Arod, Garret, Melissa, Mike Sombloski, Ryan Holovics, Tom, Wendy, Dan."
+        },
+        {
+          "at": "2026-11-24T05:23:36.982073+00:00",
+          "note": "Final: Josh takes Week 11."
+        },
+        {
+          "at": "2026-11-24T05:24:10.338562+00:00",
+          "note": "Final: Josh takes Week 11."
         }
       ],
-      "decidedAtLastRun": 12,
+      "decidedAtLastRun": 13,
       "outAtLastRun": [
+        "Derek",
+        "Mrs. Sombloski",
+        "Nate V",
         "Ariel",
         "Arod",
         "Garret",
@@ -18811,13 +18861,15 @@
           }
         ]
       },
-      "columnHead": "Two minutes left, and B-rad's finally right",
-      "column": "Commanders 19–17 with two minutes left in the fourth. If it ended now, Josh wins the week at 11–2 and the pot is his; if the Bengals steal it, he goes 12–1. Nobody can catch him: Derek, Mrs. Sombloski and Nate V are on the same Bengals, so they finish one back either way.\n\nThe only sheet in the room on Washington belongs to B-rad, three weeks running in the bottom three and two minutes from being right about something. Hold on and he climbs to 6–7, one behind Leah. The House, on the Bengals, sits at 9–3; its Lock, Chiefs over Arizona, already cashed.",
+      "columnHead": "Josh takes the pot; Washington takes the room",
+      "column": "Josh called out the House on Thursday and finished the job Monday: 11–2, two clear of Claude's 9–4, and $85 for his trouble. Derek, Mrs. Sombloski and Nate V tied for second at 10–3, which pays exactly what last pays.\n\nThe collapse came in Landover. Eighteen of nineteen sheets took the Bengals giving six, Washington won 22–20, and the whole room went down together except B-rad, who was right and still finished last at 6–7. Dumbest pick of the week: Andy R, who took the Dolphins in Orchard Park. The Bills won 26–9. Arod, Wendy and Dan all nailed the Monday total at 42 on the dot and got nothing for it; Josh guessed 66 and got $85. The House's Lock cashed; the rest of its sheet didn't keep up. Josh picks next week's mugshot.",
       "columnN": 18,
-      "thuDone": true
+      "thuDone": true,
+      "tiebreakTotal": 42,
+      "rollOut": 0
     }
   },
-  "updated": "2026-11-24T04:10:26.966070+00:00",
+  "updated": "2026-11-24T05:24:10.338562+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -18903,12 +18955,6 @@
   "columnLog": [
     {
       "week": 11,
-      "at": "2026-11-22T21:49:50.129494+00:00",
-      "head": "Josh alone at 8–0, and the Jets want a word",
-      "text": "Josh is the last perfect sheet in the building at 8–0, and he got there the hard way: he was one of four who took the Eagles as 4.5-point underdogs, along with Mrs. Sombloski, Wendy and Leah. Ten sheets sit one back at 7–1, the house among them.\n\nNow the Jets lead the Chargers 10–3 in the second quarter, and that's the game. Thom, Nate V, Dan, Melissa, Derek and Mike Sombloski took the Jets; Josh and eleven others took Los Angeles. A Jets win drags Josh back into the pack. Over in New York, Josh is one of four on the Giants, who trail Jacksonville 3–0 early."
-    },
-    {
-      "week": 11,
       "at": "2026-11-23T01:09:19.907702+00:00",
       "head": "Josh bleeds once, still leads by one",
       "text": "The Jets finally cost Josh something, 27–24 over the Chargers, but he's still alone at 10–1 after riding the Giants, 6.5-point underdogs, past Jacksonville 23–18. Mike Sombloski hit both of those dogs and climbed from 0–1 Thursday night to 9–2, level with Derek, Mrs. Sombloski and Nate V.\n\nAndy R, Devin, Leah and B-rad are out. Ten sheets at 8–3, the house included, need a sweep and two Josh losses just to tie him. Two left: Vikings at 49ers tonight in Mexico City, Bengals at Commanders Monday. Josh wins both, it's over. Splits them, any 9–2 sheet that sweeps catches him and the Monday tiebreaker decides it. Sides stay sealed until kickoff."
@@ -18948,6 +18994,12 @@
       "at": "2026-11-24T04:10:26.966070+00:00",
       "head": "Two minutes left, and B-rad's finally right",
       "text": "Commanders 19–17 with two minutes left in the fourth. If it ended now, Josh wins the week at 11–2 and the pot is his; if the Bengals steal it, he goes 12–1. Nobody can catch him: Derek, Mrs. Sombloski and Nate V are on the same Bengals, so they finish one back either way.\n\nThe only sheet in the room on Washington belongs to B-rad, three weeks running in the bottom three and two minutes from being right about something. Hold on and he climbs to 6–7, one behind Leah. The House, on the Bengals, sits at 9–3; its Lock, Chiefs over Arizona, already cashed."
+    },
+    {
+      "week": 11,
+      "at": "2026-11-24T05:24:10.338562+00:00",
+      "head": "Josh takes the pot; Washington takes the room",
+      "text": "Josh called out the House on Thursday and finished the job Monday: 11–2, two clear of Claude's 9–4, and $85 for his trouble. Derek, Mrs. Sombloski and Nate V tied for second at 10–3, which pays exactly what last pays.\n\nThe collapse came in Landover. Eighteen of nineteen sheets took the Bengals giving six, Washington won 22–20, and the whole room went down together except B-rad, who was right and still finished last at 6–7. Dumbest pick of the week: Andy R, who took the Dolphins in Orchard Park. The Bills won 26–9. Arod, Wendy and Dan all nailed the Monday total at 42 on the dot and got nothing for it; Josh guessed 66 and got $85. The House's Lock cashed; the rest of its sheet didn't keep up. Josh picks next week's mugshot."
     }
   ],
   "rivals": [
