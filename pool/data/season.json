@@ -19234,6 +19234,26 @@
           "state": "alive",
           "paid": false,
           "badges": []
+        },
+        {
+          "name": "Wendy",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-24T18:08:41+00:00",
+          "firstAt": "2026-11-24T18:08:41+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
@@ -19280,12 +19300,20 @@
           "who": "B-rad",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a20ebf590ffde71",
+          "at": "2026-11-24T18:08:00Z",
+          "amt": "5.00",
+          "who": "Wendy",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-26T01:00:00Z",
-      "pot": 25.0,
-      "paidN": 5,
+      "pot": 30.0,
+      "paidN": 6,
       "opensAt": "2026-11-24T09:01:59Z",
       "housePicks": {
         "trash": "Sixteen games over five days. I don't eat turkey, so I'll be paying attention.",
@@ -19351,8 +19379,8 @@
       "outAtLastRun": [],
       "threads": {},
       "columnHead": "Ryan wants his pool back",
-      "column": "Seven sheets are in. Ryan H, who has been quiet lately, filed with a warning: \"I let everyone have a chance the past few weeks. I'm taking it back now.\" Garret's holiday greeting still stands, unedited.\n\nPackers at Rams kicks off Wednesday at 8:00, and that's also when the $5 is due. Josh has won two straight and is going for three, but he hasn't filed yet.",
-      "columnN": 7,
+      "column": "Eight sheets are in, Wendy's the latest. Ryan H, who has been quiet lately, filed with a warning: \"I let everyone have a chance the past few weeks. I'm taking it back now.\" Garret's holiday greeting still stands, unedited.\n\nPackers at Rams kicks off Wednesday at 8:00, and that's also when the $5 is due. Josh has won two straight and is going for three, but he hasn't filed yet.",
+      "columnN": 8,
       "face": {
         "photo": "/pool/faces/w12.jpg",
         "who": "Ariel, Mrs. Sombloski & Jensen",
@@ -19362,7 +19390,7 @@
       }
     }
   },
-  "updated": "2026-11-24T18:09:01.739741+00:00",
+  "updated": "2026-11-24T20:10:41.810801+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
