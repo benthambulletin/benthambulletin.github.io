@@ -17572,12 +17572,36 @@
           "kickoff": "2026-11-24T01:15:00Z",
           "when": "Mon 8:15 PM",
           "tv": "ESPN",
-          "status": "sealed",
+          "status": "live",
           "fav": "Bengals",
-          "line": "Bengals −3.5",
+          "line": "Bengals −6",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Bengals": [
+              "Thom",
+              "Nate V",
+              "Dan",
+              "Devin",
+              "Josh",
+              "Ryan Holovics",
+              "Ariel",
+              "Garret",
+              "Leah",
+              "Mrs. Sombloski",
+              "Tom",
+              "Wendy",
+              "Melissa",
+              "Derek",
+              "Arod",
+              "Andy R",
+              "Mike Sombloski",
+              "Claude"
+            ],
+            "Commanders": [
+              "B-rad"
+            ]
+          }
         }
       ],
       "players": [
@@ -17589,7 +17613,7 @@
           "void": 0,
           "remaining": 1,
           "max": 12,
-          "tb": null,
+          "tb": 66,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -17602,7 +17626,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Giants",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T21:01:41+00:00",
           "firstAt": "2026-11-19T21:01:41+00:00",
@@ -17627,7 +17652,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 48,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -17640,7 +17665,8 @@
             "8": "Jets",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T23:57:36+00:00",
           "firstAt": "2026-11-19T23:57:36+00:00",
@@ -17660,7 +17686,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 44,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -17673,7 +17699,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Giants",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T22:59:02+00:00",
           "firstAt": "2026-11-19T22:59:02+00:00",
@@ -17693,7 +17720,7 @@
           "void": 0,
           "remaining": 1,
           "max": 11,
-          "tb": null,
+          "tb": 69,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -17706,7 +17733,8 @@
             "8": "Jets",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T14:23:02+00:00",
           "firstAt": "2026-11-19T14:23:02+00:00",
@@ -17726,7 +17754,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 40,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -17739,7 +17767,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T21:13:12+00:00",
           "firstAt": "2026-11-19T21:13:12+00:00",
@@ -17764,7 +17793,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 42,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -17777,7 +17806,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T23:58:14+00:00",
           "firstAt": "2026-11-19T23:58:14+00:00",
@@ -17802,7 +17832,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 55,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -17815,7 +17845,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-17T09:06:27+00:00",
           "firstAt": "2026-11-17T09:06:27+00:00",
@@ -17835,7 +17866,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 61,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -17848,7 +17879,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T21:20:48+00:00",
           "firstAt": "2026-11-19T21:20:48+00:00",
@@ -17873,7 +17905,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 37,
           "sheet": {
             "0": "Colts",
             "1": "Bills",
@@ -17886,7 +17918,8 @@
             "8": "Jets",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T23:31:39+00:00",
           "firstAt": "2026-11-19T23:31:39+00:00",
@@ -17911,7 +17944,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 36,
           "sheet": {
             "0": "Colts",
             "1": "Bills",
@@ -17924,7 +17957,8 @@
             "8": "Jets",
             "9": "Broncos",
             "10": "Giants",
-            "11": "Vikings"
+            "11": "Vikings",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-20T01:04:50+00:00",
           "firstAt": "2026-11-20T01:04:50+00:00",
@@ -17953,7 +17987,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 51,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -17966,7 +18000,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T21:05:24+00:00",
           "firstAt": "2026-11-19T21:05:24+00:00",
@@ -17991,7 +18026,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 55,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -18004,7 +18039,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T23:05:09+00:00",
           "firstAt": "2026-11-19T23:05:09+00:00",
@@ -18029,7 +18065,7 @@
           "void": 0,
           "remaining": 1,
           "max": 10,
-          "tb": null,
+          "tb": 42,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -18042,7 +18078,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T23:09:41+00:00",
           "firstAt": "2026-11-19T23:09:41+00:00",
@@ -18067,7 +18104,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 58,
           "sheet": {
             "0": "Texans",
             "1": "Dolphins",
@@ -18080,7 +18117,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-20T00:38:55+00:00",
           "firstAt": "2026-11-20T00:38:55+00:00",
@@ -18113,7 +18151,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 42,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -18126,7 +18164,8 @@
             "8": "Jets",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "Vikings"
+            "11": "Vikings",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T20:52:55+00:00",
           "firstAt": "2026-11-19T20:52:55+00:00",
@@ -18155,7 +18194,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 54,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -18168,7 +18207,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T20:59:59+00:00",
           "firstAt": "2026-11-19T20:59:59+00:00",
@@ -18197,7 +18237,7 @@
           "void": 0,
           "remaining": 1,
           "max": 9,
-          "tb": null,
+          "tb": 45,
           "sheet": {
             "0": "Colts",
             "1": "Bills",
@@ -18210,7 +18250,8 @@
             "8": "Jets",
             "9": "Broncos",
             "10": "Giants",
-            "11": "Vikings"
+            "11": "Vikings",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T14:06:19+00:00",
           "firstAt": "2026-11-19T14:06:19+00:00",
@@ -18235,7 +18276,7 @@
           "void": 0,
           "remaining": 1,
           "max": 8,
-          "tb": null,
+          "tb": 52,
           "sheet": {
             "0": "Colts",
             "1": "Bills",
@@ -18248,7 +18289,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "49ers"
+            "11": "49ers",
+            "12": "Bengals"
           },
           "filedAt": "2026-11-19T22:54:07+00:00",
           "firstAt": "2026-11-19T22:54:07+00:00",
@@ -18277,7 +18319,7 @@
           "void": 0,
           "remaining": 1,
           "max": 6,
-          "tb": null,
+          "tb": 36,
           "sheet": {
             "0": "Texans",
             "1": "Bills",
@@ -18290,7 +18332,8 @@
             "8": "Chargers",
             "9": "Broncos",
             "10": "Jaguars",
-            "11": "Vikings"
+            "11": "Vikings",
+            "12": "Commanders"
           },
           "filedAt": "2026-11-19T23:15:36+00:00",
           "firstAt": "2026-11-19T23:15:36+00:00",
@@ -18498,7 +18541,8 @@
           "12": "Bengals have won five straight."
         },
         "lock": "6",
-        "lockWhy": "Chiefs at home by 16.5, Mahomes off a five-touchdown game; not a division game. Risk checked: Kelce's knock."
+        "lockWhy": "Chiefs at home by 16.5, Mahomes off a five-touchdown game; not a division game. Risk checked: Kelce's knock.",
+        "tb": 55
       },
       "bot": true,
       "botPaid": true,
@@ -18664,6 +18708,14 @@
             "upset": false,
             "roomUpset": false,
             "rightN": 14
+          },
+          "12": {
+            "away": 17,
+            "home": 1,
+            "minority": "Commanders",
+            "minorityWho": [
+              "B-rad"
+            ]
           }
         },
         "upsets": 3,
@@ -18757,13 +18809,13 @@
           }
         ]
       },
-      "columnHead": "Josh 11–1, the House 9–3, nobody's arguing",
-      "column": "Josh called out the House this week and then backed it up: 11–1 to Claude's 9–3, the only blemish a Jets upset. The robot's Lock, Chiefs over Arizona, landed 34–7; the rest of its sheet is stuck in the 9–3 middle class with eight other people.\n\nAt the bottom, B-rad is 5–7 and locked into last. Andy R stood alone on the Dolphins and got 26–9 for his trouble. Tonight it's Bengals at Commanders, 8:15 on ESPN, and only Josh, Derek, Mrs. Sombloski and Nate V have a shot at the money.",
+      "columnHead": "Josh has it sewn up; B-rad didn't get the memo",
+      "column": "Josh, Derek, Mrs. Sombloski and Nate V all took the Bengals tonight, so the three chasers can't gain an inch. Josh is 11–1 and the week is his whatever happens in Landover. The only sheet in the building on Washington belongs to B-rad, who's 5–7, has nothing to lose and is playing like it.\n\nThe tiebreakers are public now and decide nothing, which spares everyone. Nate V went 69 and Josh 66; the book closed at 54.5 with Cincinnati laying six. Mike Sombloski and B-rad both wrote 36, eighteen points under Vegas, and they're not even on the same side. The House's Lock already cashed; if the Commanders pull it off, B-rad gets the week's only bragging rights.",
       "columnN": 18,
       "thuDone": true
     }
   },
-  "updated": "2026-11-24T01:09:27.603387+00:00",
+  "updated": "2026-11-24T01:20:37.257527+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
