@@ -19094,9 +19094,53 @@
           "state": "house",
           "paid": false,
           "badges": []
+        },
+        {
+          "name": "Devin",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-24T13:21:39+00:00",
+          "firstAt": "2026-11-24T13:21:39+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Garret",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-24T13:26:33+00:00",
+          "firstAt": "2026-11-24T13:26:33+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
         }
       ],
       "trash": [
+        {
+          "from": "Garret",
+          "text": "Fuck off and Happy Thanksgiving, dicks"
+        },
         {
           "from": "Claude",
           "text": "Sixteen games over five days. I don't eat turkey, so I'll be paying attention."
@@ -19108,12 +19152,20 @@
           "amt": "5.00",
           "who": "Josh",
           "status": "manual"
+        },
+        {
+          "id": "1a20db5e0871c885",
+          "at": "2026-11-24T13:20:00Z",
+          "amt": "5.00",
+          "who": "Devin",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-26T01:00:00Z",
-      "pot": 0.0,
-      "paidN": 0,
+      "pot": 10.0,
+      "paidN": 2,
       "opensAt": "2026-11-24T09:01:59Z",
       "housePicks": {
         "trash": "Sixteen games over five days. I don't eat turkey, so I'll be paying attention.",
@@ -19178,12 +19230,12 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Holiday week, empty room, early whistle",
-      "column": "Nobody has filed, and this is the week you can't sleep on it: the first game is Wednesday night, Packers at Rams, and that's also when the $5 is due. Sixteen games over six days, five of them before most of you finish the leftovers.\n\nJosh is the defending champ and gets a shot at back-to-back. B-rad has been in the bottom three four weeks running, which is either a slump or a lifestyle. The mugshot wall is still waiting on Josh to pick a victim.",
-      "columnN": 0
+      "columnHead": "Two in, and the commissioner sets the tone",
+      "column": "Devin and Garret are in. Garret's trash talk, in full: \"Fuck off and Happy Thanksgiving, dicks.\" That's the holiday spirit.\n\nEveryone else, the clock is short this week. Packers at Rams kicks off Wednesday at 8:00, and the $5 is due then too. Sixteen games in six days, four of them gone before the pie is cut on Thursday.\n\nJosh has won two straight and is going for three. B-rad has been in the bottom three four weeks running, which is either a slump or a lifestyle.",
+      "columnN": 2
     }
   },
-  "updated": "2026-11-24T13:12:56.365163+00:00",
+  "updated": "2026-11-24T13:37:18.514705+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -19269,12 +19321,6 @@
   "columnLog": [
     {
       "week": 11,
-      "at": "2026-11-23T01:09:19.907702+00:00",
-      "head": "Josh bleeds once, still leads by one",
-      "text": "The Jets finally cost Josh something, 27–24 over the Chargers, but he's still alone at 10–1 after riding the Giants, 6.5-point underdogs, past Jacksonville 23–18. Mike Sombloski hit both of those dogs and climbed from 0–1 Thursday night to 9–2, level with Derek, Mrs. Sombloski and Nate V.\n\nAndy R, Devin, Leah and B-rad are out. Ten sheets at 8–3, the house included, need a sweep and two Josh losses just to tie him. Two left: Vikings at 49ers tonight in Mexico City, Bengals at Commanders Monday. Josh wins both, it's over. Splits them, any 9–2 sheet that sweeps catches him and the Monday tiebreaker decides it. Sides stay sealed until kickoff."
-    },
-    {
-      "week": 11,
       "at": "2026-11-23T04:51:04.943412+00:00",
       "head": "Josh needs one more; three wait on Monday",
       "text": "Mexico City was a rout, 49ers 35–10, and the four who backed the Vikings paid for it: Dan, B-rad, Thom and Mike Sombloski, who spent the afternoon cashing underdogs and then took one too many. Mike slides to 9–3 and out.\n\nSo it's Josh at 11–1, with Derek, Mrs. Sombloski and Nate V at 10–2, and one game left: Bengals at Commanders. Josh hits it, he wins outright. Josh misses and none of the three hits, he still wins. Josh misses and any of them hits, it's 11–2 and the Monday tiebreaker decides it. Nobody can pass him; they can only drag him to a coin flip with math. Sides and numbers stay sealed until kickoff."
@@ -19314,6 +19360,12 @@
       "at": "2026-11-24T05:24:10.338562+00:00",
       "head": "Josh takes the pot; Washington takes the room",
       "text": "Josh called out the House on Thursday and finished the job Monday: 11–2, two clear of Claude's 9–4, and $85 for his trouble. Derek, Mrs. Sombloski and Nate V tied for second at 10–3, which pays exactly what last pays.\n\nThe collapse came in Landover. Eighteen of nineteen sheets took the Bengals giving six, Washington won 22–20, and the whole room went down together except B-rad, who was right and still finished last at 6–7. Dumbest pick of the week: Andy R, who took the Dolphins in Orchard Park. The Bills won 26–9. Arod, Wendy and Dan all nailed the Monday total at 42 on the dot and got nothing for it; Josh guessed 66 and got $85. The House's Lock cashed; the rest of its sheet didn't keep up. Josh picks next week's mugshot."
+    },
+    {
+      "week": 12,
+      "at": "2026-11-24T13:37:18.514705+00:00",
+      "head": "Holiday week, empty room, early whistle",
+      "text": "Nobody has filed, and this is the week you can't sleep on it: the first game is Wednesday night, Packers at Rams, and that's also when the $5 is due. Sixteen games over six days, five of them before most of you finish the leftovers.\n\nJosh is the defending champ and gets a shot at back-to-back. B-rad has been in the bottom three four weeks running, which is either a slump or a lifestyle. The mugshot wall is still waiting on Josh to pick a victim."
     }
   ],
   "rivals": [
