@@ -23,7 +23,10 @@
         "GBrdRL",
         "OBA57Y",
         "V1Z5zM",
-        "EbPQxB"
+        "EbPQxB",
+        "4Aa57B",
+        "j5eNo6",
+        "21j0AA"
       ],
       "paid": "vxRvBA",
       "fullName": "OBA57a",
@@ -51,7 +54,7 @@
     "missy verhague": "Mrs. Sombloski",
     "sigma mikey skibidi sombloski": "Mike Sombloski"
   },
-  "currentWeek": 11,
+  "currentWeek": 12,
   "weeks": {
     "4": {
       "status": "final",
@@ -18867,6 +18870,216 @@
       "thuDone": true,
       "tiebreakTotal": 42,
       "rollOut": 0
+    },
+    "12": {
+      "status": "pre",
+      "games": [
+        {
+          "away": "Packers",
+          "home": "Rams",
+          "kickoff": "2026-11-26T01:00:00Z",
+          "when": "Wed 8:00 PM",
+          "tv": "Netflix",
+          "status": "sealed",
+          "fav": "Rams",
+          "line": "Rams −3"
+        },
+        {
+          "away": "Bears",
+          "home": "Lions",
+          "kickoff": "2026-11-26T18:00:00Z",
+          "when": "Thu 1:00 PM",
+          "tv": "CBS",
+          "status": "sealed",
+          "fav": "Bears",
+          "line": "Bears −2.5"
+        },
+        {
+          "away": "Eagles",
+          "home": "Cowboys",
+          "kickoff": "2026-11-26T21:30:00Z",
+          "when": "Thu 4:30 PM",
+          "tv": "FOX",
+          "status": "sealed",
+          "fav": "Cowboys",
+          "line": "Cowboys −8.5 (Jalen Hurts out)"
+        },
+        {
+          "away": "Chiefs",
+          "home": "Bills",
+          "kickoff": "2026-11-27T01:20:00Z",
+          "when": "Thu 8:20 PM",
+          "tv": "NBC",
+          "status": "sealed",
+          "fav": "Bills",
+          "line": "Bills −3"
+        },
+        {
+          "away": "Broncos",
+          "home": "Steelers",
+          "kickoff": "2026-11-27T20:00:00Z",
+          "when": "Fri 3:00 PM",
+          "tv": "Prime Video",
+          "status": "sealed",
+          "fav": "Broncos",
+          "line": "Broncos −2.5"
+        },
+        {
+          "away": "Saints",
+          "home": "Bengals",
+          "kickoff": "2026-11-29T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "status": "sealed",
+          "fav": "Bengals",
+          "line": "Bengals −10"
+        },
+        {
+          "away": "Titans",
+          "home": "Jaguars",
+          "kickoff": "2026-11-29T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "status": "sealed",
+          "fav": "Jaguars",
+          "line": "Jaguars −14"
+        },
+        {
+          "away": "Ravens",
+          "home": "Texans",
+          "kickoff": "2026-11-29T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "status": "sealed",
+          "fav": "Texans",
+          "line": "Texans −6.5"
+        },
+        {
+          "away": "Giants",
+          "home": "Colts",
+          "kickoff": "2026-11-29T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "status": "sealed",
+          "fav": "Giants",
+          "line": "Giants −7"
+        },
+        {
+          "away": "Jets",
+          "home": "Dolphins",
+          "kickoff": "2026-11-29T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "status": "sealed",
+          "fav": "Jets",
+          "line": "Jets −3.5"
+        },
+        {
+          "away": "Falcons",
+          "home": "Vikings",
+          "kickoff": "2026-11-29T18:00:00Z",
+          "when": "Sun 1:00 PM",
+          "status": "sealed",
+          "fav": "Vikings",
+          "line": "Vikings −7"
+        },
+        {
+          "away": "Patriots",
+          "home": "Chargers",
+          "kickoff": "2026-11-29T21:05:00Z",
+          "when": "Sun 4:05 PM",
+          "status": "sealed",
+          "fav": "Chargers",
+          "line": "Chargers −2.5"
+        },
+        {
+          "away": "Commanders",
+          "home": "Cardinals",
+          "kickoff": "2026-11-29T21:25:00Z",
+          "when": "Sun 4:25 PM",
+          "status": "sealed",
+          "fav": "Commanders",
+          "line": "Commanders −7"
+        },
+        {
+          "away": "Seahawks",
+          "home": "49ers",
+          "kickoff": "2026-11-29T21:25:00Z",
+          "when": "Sun 4:25 PM",
+          "status": "sealed",
+          "fav": "49ers",
+          "line": "49ers −2.5"
+        },
+        {
+          "away": "Raiders",
+          "home": "Browns",
+          "kickoff": "2026-11-30T01:20:00Z",
+          "when": "Sun 8:20 PM",
+          "tv": "NBC",
+          "status": "sealed",
+          "fav": "Browns",
+          "line": "Browns −4.5"
+        },
+        {
+          "away": "Panthers",
+          "home": "Buccaneers",
+          "kickoff": "2026-12-01T01:15:00Z",
+          "when": "Mon 8:15 PM",
+          "tv": "ESPN",
+          "status": "sealed",
+          "fav": "Buccaneers",
+          "line": "Buccaneers −2.5"
+        }
+      ],
+      "players": [],
+      "trash": [],
+      "payments": [],
+      "buyIn": 5,
+      "payBy": "2026-11-26T01:00:00Z",
+      "pot": 0,
+      "paidN": 0,
+      "opensAt": "2026-11-24T09:01:59Z",
+      "housePicks": {
+        "trash": "Sixteen games over five days. I don't eat turkey, so I'll be paying attention.",
+        "picks": {
+          "0": "Rams",
+          "1": "Bears",
+          "2": "Cowboys",
+          "3": "Bills",
+          "4": "Broncos",
+          "5": "Bengals",
+          "6": "Jaguars",
+          "7": "Texans",
+          "8": "Giants",
+          "9": "Jets",
+          "10": "Vikings",
+          "11": "Chargers",
+          "12": "Commanders",
+          "13": "49ers",
+          "14": "Browns",
+          "15": "Buccaneers"
+        },
+        "why": {
+          "0": "Rams by three at home on a Wednesday.",
+          "1": "Bears favored by two and a half in Detroit.",
+          "2": "Cowboys by 8.5; Eagles reportedly without Jalen Hurts.",
+          "3": "Bills by three at home; Allen healthy.",
+          "4": "Broncos favored on the road in a low-total game.",
+          "5": "Bengals by ten at home against the Saints.",
+          "6": "Jaguars by fourteen at home against the Titans.",
+          "7": "Texans by six and a half at home.",
+          "8": "Giants by a touchdown in Indianapolis.",
+          "9": "Jets by three and a half in Miami.",
+          "10": "Vikings by a touchdown at home.",
+          "11": "Chargers by a field goal or less at home.",
+          "12": "Commanders by a touchdown in Arizona.",
+          "13": "49ers by a field goal at home.",
+          "14": "Browns by four and a half at home.",
+          "15": "Bucs by a field goal or less at home."
+        },
+        "lock": "6",
+        "lockWhy": "Jaguars by 14 at home, about 92% at two books; division game is the risk."
+      },
+      "bot": true,
+      "botPaid": true,
+      "rollIn": 0,
+      "namesForm": true,
+      "asks": []
     }
   },
   "updated": "2026-11-24T05:24:10.338562+00:00",
