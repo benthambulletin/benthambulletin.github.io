@@ -355,7 +355,23 @@ def place_tools(body, t):
 
 def shell(title, body, og_image=None, desc="A daily almanac for the family", tools=False, audio=None, date=None):
     CSSV = hashlib.md5(CSS.encode()).hexdigest()[:8]
-    og = f'<meta property="og:image" content="https://benthambulletin.github.io{og_image}">' if og_image else ''
+    og = ''
+    if og_image:
+        # Nov 24 (Garret: the family text doesn't always show the cover): give link previews the image's
+        # size and type and ask for the large card, so iMessage's preview fetcher doesn't drop it.
+        og = f'<meta property="og:image" content="https://benthambulletin.github.io{og_image}"><meta property="og:image:secure_url" content="https://benthambulletin.github.io{og_image}"><meta property="og:image:type" content="image/jpeg">'
+        try:
+            from PIL import Image as _I
+            _here = os.path.dirname(os.path.abspath(__file__))
+            for _root in (os.getcwd(), os.path.join(_here, '..'), os.path.join(os.getcwd(), 'site')):
+                _f = os.path.join(_root, og_image.split('?')[0].lstrip('/'))
+                if os.path.exists(_f):
+                    _w, _h = _I.open(_f).size
+                    og += f'<meta property="og:image:width" content="{_w}"><meta property="og:image:height" content="{_h}">'
+                    break
+        except Exception:
+            pass
+        og += f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://benthambulletin.github.io{og_image}">'
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
