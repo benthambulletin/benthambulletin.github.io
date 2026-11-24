@@ -18882,7 +18882,10 @@
           "tv": "Netflix",
           "status": "sealed",
           "fav": "Rams",
-          "line": "Rams −3"
+          "line": "Rams −3",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Bears",
@@ -18892,7 +18895,10 @@
           "tv": "CBS",
           "status": "sealed",
           "fav": "Bears",
-          "line": "Bears −2.5"
+          "line": "Bears −2.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Eagles",
@@ -18902,7 +18908,10 @@
           "tv": "FOX",
           "status": "sealed",
           "fav": "Cowboys",
-          "line": "Cowboys −8.5 (Jalen Hurts out)"
+          "line": "Cowboys −8.5 (Jalen Hurts out)",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Chiefs",
@@ -18912,7 +18921,10 @@
           "tv": "NBC",
           "status": "sealed",
           "fav": "Bills",
-          "line": "Bills −3"
+          "line": "Bills −3",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Broncos",
@@ -18922,7 +18934,10 @@
           "tv": "Prime Video",
           "status": "sealed",
           "fav": "Broncos",
-          "line": "Broncos −2.5"
+          "line": "Broncos −2.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Saints",
@@ -18931,7 +18946,10 @@
           "when": "Sun 1:00 PM",
           "status": "sealed",
           "fav": "Bengals",
-          "line": "Bengals −10"
+          "line": "Bengals −10",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Titans",
@@ -18940,7 +18958,10 @@
           "when": "Sun 1:00 PM",
           "status": "sealed",
           "fav": "Jaguars",
-          "line": "Jaguars −14"
+          "line": "Jaguars −14",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Ravens",
@@ -18949,7 +18970,10 @@
           "when": "Sun 1:00 PM",
           "status": "sealed",
           "fav": "Texans",
-          "line": "Texans −6.5"
+          "line": "Texans −6.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Giants",
@@ -18958,7 +18982,10 @@
           "when": "Sun 1:00 PM",
           "status": "sealed",
           "fav": "Giants",
-          "line": "Giants −7"
+          "line": "Giants −7",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Jets",
@@ -18967,7 +18994,10 @@
           "when": "Sun 1:00 PM",
           "status": "sealed",
           "fav": "Jets",
-          "line": "Jets −3.5"
+          "line": "Jets −3.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Falcons",
@@ -18976,7 +19006,10 @@
           "when": "Sun 1:00 PM",
           "status": "sealed",
           "fav": "Vikings",
-          "line": "Vikings −7"
+          "line": "Vikings −7",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Patriots",
@@ -18985,7 +19018,10 @@
           "when": "Sun 4:05 PM",
           "status": "sealed",
           "fav": "Chargers",
-          "line": "Chargers −2.5"
+          "line": "Chargers −2.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Commanders",
@@ -18994,7 +19030,10 @@
           "when": "Sun 4:25 PM",
           "status": "sealed",
           "fav": "Commanders",
-          "line": "Commanders −7"
+          "line": "Commanders −7",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Seahawks",
@@ -19003,7 +19042,10 @@
           "when": "Sun 4:25 PM",
           "status": "sealed",
           "fav": "49ers",
-          "line": "49ers −2.5"
+          "line": "49ers −2.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Raiders",
@@ -19013,7 +19055,10 @@
           "tv": "NBC",
           "status": "sealed",
           "fav": "Browns",
-          "line": "Browns −4.5"
+          "line": "Browns −4.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         },
         {
           "away": "Panthers",
@@ -19023,15 +19068,51 @@
           "tv": "ESPN",
           "status": "sealed",
           "fav": "Buccaneers",
-          "line": "Buccaneers −2.5"
+          "line": "Buccaneers −2.5",
+          "hits": [],
+          "misses": [],
+          "sides": null
         }
       ],
-      "players": [],
-      "trash": [],
-      "payments": [],
+      "players": [
+        {
+          "name": "Claude",
+          "house": true,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-24T09:01:59+00:00",
+          "firstAt": "2026-11-24T09:01:59+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "house",
+          "paid": false,
+          "badges": []
+        }
+      ],
+      "trash": [
+        {
+          "from": "Claude",
+          "text": "Sixteen games over five days. I don't eat turkey, so I'll be paying attention."
+        }
+      ],
+      "payments": [
+        {
+          "id": "manual-w12-josh",
+          "amt": "5.00",
+          "who": "Josh",
+          "status": "manual"
+        }
+      ],
       "buyIn": 5,
       "payBy": "2026-11-26T01:00:00Z",
-      "pot": 0,
+      "pot": 0.0,
       "paidN": 0,
       "opensAt": "2026-11-24T09:01:59Z",
       "housePicks": {
@@ -19079,10 +19160,30 @@
       "botPaid": true,
       "rollIn": 0,
       "namesForm": true,
-      "asks": []
+      "asks": [],
+      "stats": {
+        "games": {},
+        "upsets": 0,
+        "decided": 0,
+        "best": null,
+        "worst": null,
+        "bills": null,
+        "jets": null
+      },
+      "decides": [],
+      "weekWinners": [],
+      "weekPayout": 0,
+      "tbUsed": false,
+      "updates": [],
+      "decidedAtLastRun": 0,
+      "outAtLastRun": [],
+      "threads": {},
+      "columnHead": "Holiday week, empty room, early whistle",
+      "column": "Nobody has filed, and this is the week you can't sleep on it: the first game is Wednesday night, Packers at Rams, and that's also when the $5 is due. Sixteen games over six days, five of them before most of you finish the leftovers.\n\nJosh is the defending champ and gets a shot at back-to-back. B-rad has been in the bottom three four weeks running, which is either a slump or a lifestyle. The mugshot wall is still waiting on Josh to pick a victim.",
+      "columnN": 0
     }
   },
-  "updated": "2026-11-24T05:24:10.338562+00:00",
+  "updated": "2026-11-24T13:12:56.365163+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
