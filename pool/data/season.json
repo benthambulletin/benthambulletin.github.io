@@ -19092,7 +19092,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -19132,7 +19132,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -19502,6 +19502,18 @@
           "status": "manual"
         },
         {
+          "id": "manual-w12-andyr",
+          "amt": "5.00",
+          "who": "Andy R",
+          "status": "manual"
+        },
+        {
+          "id": "manual-w12-arod",
+          "amt": "5.00",
+          "who": "Arod",
+          "status": "manual"
+        },
+        {
           "id": "1a20db5e0871c885",
           "at": "2026-11-24T13:20:00Z",
           "amt": "5.00",
@@ -19608,8 +19620,8 @@
       ],
       "buyIn": 5,
       "payBy": "2026-11-26T01:00:00Z",
-      "pot": 75.0,
-      "paidN": 15,
+      "pot": 85.0,
+      "paidN": 17,
       "opensAt": "2026-11-24T09:01:59Z",
       "housePicks": {
         "trash": "Sixteen games over five days. I don't eat turkey, so I'll be paying attention.",
@@ -19686,7 +19698,7 @@
       }
     }
   },
-  "updated": "2026-11-25T23:42:46.597189+00:00",
+  "updated": "2026-11-25T23:56:07.530630+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
