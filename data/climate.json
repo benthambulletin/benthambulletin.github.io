@@ -1,6 +1,6 @@
 {
- "generated_utc": "2026-11-25T01:31Z",
- "date": "2026-11-24",
+ "generated_utc": "2026-11-25T10:22Z",
+ "date": "2026-11-25",
  "source": "ACIS, NOAA Regional Climate Centers; ice cover NOAA GLERL",
  "stations": {
   "BUF": {
@@ -9,8 +9,7 @@
    "record_high": {
     "f": 65,
     "years": [
-     "2001",
-     "2014"
+     "2001"
     ]
    },
    "record_low": {
@@ -20,10 +19,10 @@
     ]
    },
    "last_year": {
-    "date": "2025-11-24",
-    "high": 47.0,
-    "low": 30.0,
-    "precip_in": 0.0,
+    "date": "2025-11-25",
+    "high": 54.0,
+    "low": 41.0,
+    "precip_in": 0.26,
     "snow_in": 0.0,
     "trace_precip": false,
     "trace_snow": false
@@ -33,22 +32,22 @@
    "name": "Rochester airport",
    "since": "1870",
    "record_high": {
-    "f": 71,
+    "f": 65,
     "years": [
-     "1931"
+     "2001"
     ]
    },
    "record_low": {
-    "f": 9,
+    "f": 11,
     "years": [
-     "2000"
+     "1938"
     ]
    },
    "last_year": {
-    "date": "2025-11-24",
-    "high": 48.0,
-    "low": 35.0,
-    "precip_in": 0.0,
+    "date": "2025-11-25",
+    "high": 54.0,
+    "low": 37.0,
+    "precip_in": 0.2,
     "snow_in": 0.0,
     "trace_precip": false,
     "trace_snow": false
