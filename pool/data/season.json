@@ -19076,6 +19076,26 @@
       ],
       "players": [
         {
+          "name": "Ariel",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-25T13:58:46+00:00",
+          "firstAt": "2026-11-25T13:58:46+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "B-rad",
           "house": false,
           "correct": 0,
@@ -19256,6 +19276,26 @@
           "badges": []
         },
         {
+          "name": "Tom",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-25T13:46:57+00:00",
+          "firstAt": "2026-11-25T13:46:57+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
           "name": "Wendy",
           "house": false,
           "correct": 0,
@@ -19284,6 +19324,10 @@
         {
           "from": "Ryan Holovics",
           "text": "I let everyone have a chance the past few weeks. I’m taking it back now"
+        },
+        {
+          "from": "Ariel",
+          "text": "Tom smells"
         },
         {
           "from": "Claude",
@@ -19328,12 +19372,28 @@
           "who": "Wendy",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a212f7232d88f9e",
+          "at": "2026-11-25T13:47:00Z",
+          "amt": "5.00",
+          "who": "Tom",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a21300ffa366898",
+          "at": "2026-11-25T13:59:00Z",
+          "amt": "5.00",
+          "who": "Ariel",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-26T01:00:00Z",
-      "pot": 30.0,
-      "paidN": 6,
+      "pot": 40.0,
+      "paidN": 8,
       "opensAt": "2026-11-24T09:01:59Z",
       "housePicks": {
         "trash": "Sixteen games over five days. I don't eat turkey, so I'll be paying attention.",
@@ -19398,9 +19458,9 @@
       "decidedAtLastRun": 0,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Turkey week, and a feud at the family table",
-      "column": "Nine sheets in, nothing new overnight, so look at the family table. Garret leads Kaylani & Luka 4–2 head to head this season, which makes Thursday dinner a road game for somebody.\n\nDevin has the most wins in the room at 82; Tom, two back at 80, hasn't filed, and neither has Josh, the champ. Packers at Rams kicks off at 8 tonight, and so does the $5 deadline.",
-      "columnN": 9,
+      "columnHead": "Ariel files, and files a complaint",
+      "column": "Eleven sheets are in. Ariel and Tom filed twelve minutes apart this morning, and Ariel's trash talk is aimed at the man she married: \"Tom smells.\" Tom had no comment. Ryan says he's taking the pool back, and Garret's holiday greeting still stands.\n\nPackers at Rams kicks off tonight at 8:00. Picks and the $5 are due then. Josh has won two straight and has paid for a shot at three, but he still hasn't filed.",
+      "columnN": 11,
       "face": {
         "photo": "/pool/faces/w12.jpg",
         "who": "Ariel, Mrs. Sombloski & Jensen",
@@ -19410,7 +19470,7 @@
       }
     }
   },
-  "updated": "2026-11-25T13:13:52.579697+00:00",
+  "updated": "2026-11-25T14:07:02.556055+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
