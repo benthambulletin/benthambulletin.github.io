@@ -18,3 +18,11 @@ Wednesday column. Pitch Monday night, draft Tuesday night, runs Wednesday only w
 - Sources: BBC via the paper's Nov 23 feed; NPR on COP30's similar ending, https://www.npr.org/2025/11/22/nx-s1-5615207/u-n-climate-talks-end-cop30-brazil
 
 Garret's pick (Mon 9:00 p.m.): **Option 1**, "your angle is spot on": spend the majority fast on prices, health costs and housing, not two years of hearings. Draft due Tuesday night for his yes.
+
+### Draft (sent Tue Nov 24, 8:30 p.m.) — runs Wed only with Garret's yes
+
+Headline: Don't Blow It
+
+Democrats just won the House by the biggest margin either party has managed in 50 years: 56 percent of the vote to 42, 46 seats flipped, and as many as 260 seats when the counting's done, NPR reports. Congratulations. Now don't f&#8209;&#8209;&#8209; it up. The temptation is going to be two years of hearings, subpoenas and cable-news clips, and I get it: there's plenty to look at, and oversight is the House's job. But nobody in North Tonawanda feels a subpoena at the checkout line. Pass something on prices, health costs and housing in the first hundred days, make somebody say no to it on the record, and then investigate to your heart's content. Democrats won the House in 2006 and again in 2018, and lost it four years later both times. The voters handed you a majority, not a hall pass.
+
+Sources: NPR via OPB, Nov 19, https://www.opb.org/article/2026/11/19/democrats-house-win-was-the-largest-in-50-years/ (vote share, seats flipped, possible 260, largest since 1991–93); House control 2006→2010 and 2018→2022 are the historical record.
