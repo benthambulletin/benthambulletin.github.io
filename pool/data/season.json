@@ -19316,6 +19316,26 @@
           "badges": []
         },
         {
+          "name": "Mike Sombloski",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-25T22:57:43+00:00",
+          "firstAt": "2026-11-25T22:57:43+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Mrs. Sombloski",
           "house": false,
           "correct": 0,
@@ -19650,7 +19670,7 @@
       }
     }
   },
-  "updated": "2026-11-25T22:01:00.692556+00:00",
+  "updated": "2026-11-25T23:10:13.884943+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -19741,12 +19761,6 @@
   "columnLog": [
     {
       "week": 12,
-      "at": "2026-11-24T13:37:18.514705+00:00",
-      "head": "Holiday week, empty room, early whistle",
-      "text": "Nobody has filed, and this is the week you can't sleep on it: the first game is Wednesday night, Packers at Rams, and that's also when the $5 is due. Sixteen games over six days, five of them before most of you finish the leftovers.\n\nJosh is the defending champ and gets a shot at back-to-back. B-rad has been in the bottom three four weeks running, which is either a slump or a lifestyle. The mugshot wall is still waiting on Josh to pick a victim."
-    },
-    {
-      "week": 12,
       "at": "2026-11-24T18:02:54.349820+00:00",
       "head": "Two in, and the commissioner sets the tone",
       "text": "Devin and Garret are in. Garret's trash talk, in full: \"Fuck off and Happy Thanksgiving, dicks.\" That's the holiday spirit.\n\nEveryone else, the clock is short this week. Packers at Rams kicks off Wednesday at 8:00, and the $5 is due then too. Sixteen games in six days, four of them gone before the pie is cut on Thursday.\n\nJosh has won two straight and is going for three. B-rad has been in the bottom three four weeks running, which is either a slump or a lifestyle."
@@ -19786,6 +19800,12 @@
       "at": "2026-11-25T18:10:26.871163+00:00",
       "head": "Ariel files, and files a complaint",
       "text": "Thirteen sheets are in, with Melissa and Walczyk the latest. Ariel and Tom filed twelve minutes apart this morning, and Ariel's trash talk is aimed at the man she married: \"Tom smells.\" Tom had no comment. Ryan says he's taking the pool back, and Garret's holiday greeting still stands.\n\nPackers at Rams kicks off tonight at 8:00. Picks and the $5 are due then. Josh has won two straight and has paid for a shot at three, but he still hasn't filed."
+    },
+    {
+      "week": 12,
+      "at": "2026-11-25T23:10:13.884943+00:00",
+      "head": "Ariel files, and files a complaint",
+      "text": "Eighteen sheets are in, with Andy R, Arod, Dan, Derek and Nate V filing this afternoon. Ariel and Tom filed twelve minutes apart this morning, and Ariel's trash talk is aimed at the man she married: \"Tom smells.\" Tom had no comment. Ryan says he's taking the pool back, and Garret's holiday greeting still stands.\n\nPackers at Rams kicks off tonight at 8:00. Picks and the $5 are due then. Josh has won two straight and has paid for a shot at three, but he still hasn't filed."
     }
   ],
   "rivals": [
