@@ -19332,7 +19332,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -19352,7 +19352,7 @@
           "rank": 1,
           "delta": 0,
           "state": "alive",
-          "paid": false,
+          "paid": true,
           "badges": []
         },
         {
@@ -19588,12 +19588,28 @@
           "who": "Nate V",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a21502adb305801",
+          "at": "2026-11-25T23:20:26Z",
+          "amt": "5.00",
+          "who": "Mrs. Sombloski",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a21502adb305801~1",
+          "at": "2026-11-25T23:20:26Z",
+          "amt": "5.00",
+          "who": "Mike Sombloski",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-26T01:00:00Z",
-      "pot": 65.0,
-      "paidN": 13,
+      "pot": 75.0,
+      "paidN": 15,
       "opensAt": "2026-11-24T09:01:59Z",
       "housePicks": {
         "trash": "Sixteen games over five days. I don't eat turkey, so I'll be paying attention.",
@@ -19670,7 +19686,7 @@
       }
     }
   },
-  "updated": "2026-11-25T23:10:13.884943+00:00",
+  "updated": "2026-11-25T23:42:46.597189+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
