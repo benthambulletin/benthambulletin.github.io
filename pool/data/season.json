@@ -19076,6 +19076,26 @@
       ],
       "players": [
         {
+          "name": "Andy R",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-25T18:28:51+00:00",
+          "firstAt": "2026-11-25T18:28:51+00:00",
+          "free": false,
+          "paypal": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
+          "badges": []
+        },
+        {
           "name": "Ariel",
           "house": false,
           "correct": 0,
@@ -19093,6 +19113,26 @@
           "delta": 0,
           "state": "alive",
           "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Arod",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-25T18:27:55+00:00",
+          "firstAt": "2026-11-25T18:27:55+00:00",
+          "free": false,
+          "paypal": true,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": false,
           "badges": []
         },
         {
@@ -19133,6 +19173,46 @@
           "delta": 0,
           "state": "house",
           "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Dan",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-25T19:02:02+00:00",
+          "firstAt": "2026-11-25T19:02:02+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
+          "badges": []
+        },
+        {
+          "name": "Derek",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-25T20:48:42+00:00",
+          "firstAt": "2026-11-25T20:48:42+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
           "badges": []
         },
         {
@@ -19253,6 +19333,26 @@
           "delta": 0,
           "state": "alive",
           "paid": false,
+          "badges": []
+        },
+        {
+          "name": "Nate V",
+          "house": false,
+          "correct": 0,
+          "missed": 0,
+          "void": 0,
+          "remaining": 16,
+          "max": 16,
+          "tb": null,
+          "sheet": {},
+          "filedAt": "2026-11-25T20:50:31+00:00",
+          "firstAt": "2026-11-25T20:50:31+00:00",
+          "free": false,
+          "paypal": false,
+          "rank": 1,
+          "delta": 0,
+          "state": "alive",
+          "paid": true,
           "badges": []
         },
         {
@@ -19444,12 +19544,36 @@
           "who": "Walczyk",
           "status": "ok",
           "told": null
+        },
+        {
+          "id": "1a21416ba9183fc5",
+          "at": "2026-11-25T19:02:00Z",
+          "amt": "5.00",
+          "who": "Dan",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a21474dad1ea025",
+          "at": "2026-11-25T20:48:00Z",
+          "amt": "5.00",
+          "who": "Derek",
+          "status": "ok",
+          "told": null
+        },
+        {
+          "id": "1a214873e3327ff8",
+          "at": "2026-11-25T20:50:00Z",
+          "amt": "5.00",
+          "who": "Nate V",
+          "status": "ok",
+          "told": null
         }
       ],
       "buyIn": 5,
       "payBy": "2026-11-26T01:00:00Z",
-      "pot": 50.0,
-      "paidN": 10,
+      "pot": 65.0,
+      "paidN": 13,
       "opensAt": "2026-11-24T09:01:59Z",
       "housePicks": {
         "trash": "Sixteen games over five days. I don't eat turkey, so I'll be paying attention.",
@@ -19515,8 +19639,8 @@
       "outAtLastRun": [],
       "threads": {},
       "columnHead": "Ariel files, and files a complaint",
-      "column": "Thirteen sheets are in, with Melissa and Walczyk the latest. Ariel and Tom filed twelve minutes apart this morning, and Ariel's trash talk is aimed at the man she married: \"Tom smells.\" Tom had no comment. Ryan says he's taking the pool back, and Garret's holiday greeting still stands.\n\nPackers at Rams kicks off tonight at 8:00. Picks and the $5 are due then. Josh has won two straight and has paid for a shot at three, but he still hasn't filed.",
-      "columnN": 13,
+      "column": "Eighteen sheets are in, with Andy R, Arod, Dan, Derek and Nate V filing this afternoon. Ariel and Tom filed twelve minutes apart this morning, and Ariel's trash talk is aimed at the man she married: \"Tom smells.\" Tom had no comment. Ryan says he's taking the pool back, and Garret's holiday greeting still stands.\n\nPackers at Rams kicks off tonight at 8:00. Picks and the $5 are due then. Josh has won two straight and has paid for a shot at three, but he still hasn't filed.",
+      "columnN": 18,
       "face": {
         "photo": "/pool/faces/w12.jpg",
         "who": "Ariel, Mrs. Sombloski & Jensen",
@@ -19526,7 +19650,7 @@
       }
     }
   },
-  "updated": "2026-11-25T18:10:26.871163+00:00",
+  "updated": "2026-11-25T22:01:00.692556+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
@@ -19576,7 +19700,9 @@
     "o9j8k5x": "Josh",
     "vXZlMvD": "Ryan Holovics",
     "yXB7VB8": "Ryan Holovics",
-    "jejrrWa": "Walczyk"
+    "jejrrWa": "Walczyk",
+    "e5VO1lo": "Andy R",
+    "Yj1BEoB": "Arod"
   },
   "people": {
     "603444b89dab4f0e": "Thom",
