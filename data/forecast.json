@@ -1,24 +1,16 @@
 {
- "generated_utc": "2026-11-24T20:35Z",
+ "generated_utc": "2026-11-25T01:30Z",
  "towns": {
   "North Tonawanda": {
-   "issued": "2026-11-24T19:55:40+00:00",
+   "issued": "2026-11-24T23:57:32+00:00",
    "periods": [
     {
-     "name": "This Afternoon",
-     "temp": 39,
-     "wind": "NW 5 mph",
-     "pop": 0,
-     "short": "Mostly Sunny",
-     "detail": "Mostly sunny, with a high near 39. Northwest wind around 5 mph."
-    },
-    {
      "name": "Tonight",
-     "temp": 24,
-     "wind": "NE 2 mph",
+     "temp": 23,
+     "wind": "E 0 to 3 mph",
      "pop": 0,
-     "short": "Partly Cloudy",
-     "detail": "Partly cloudy, with a low around 24. Northeast wind around 2 mph."
+     "short": "Mostly Cloudy",
+     "detail": "Mostly cloudy, with a low around 23. East wind 0 to 3 mph."
     },
     {
      "name": "Wednesday",
@@ -58,7 +50,7 @@
      "wind": "SW 13 mph",
      "pop": 99,
      "short": "Light Rain",
-     "detail": "Rain before 1pm, then rain showers. Cloudy, with a high near 44. Southwest wind around 13 mph, with gusts as high as 24 mph. Chance of precipitation is 100%."
+     "detail": "Rain before 1pm, then rain showers. Cloudy, with a high near 44. Southwest wind around 13 mph, with gusts as high as 24 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
     },
     {
      "name": "Friday Night",
@@ -74,7 +66,7 @@
      "wind": "SW 10 to 16 mph",
      "pop": 36,
      "short": "Chance Rain Showers",
-     "detail": "A chance of rain showers. Mostly cloudy, with a high near 47. Chance of precipitation is 40%."
+     "detail": "A chance of rain showers. Mostly cloudy, with a high near 47. Southwest wind 10 to 16 mph, with gusts as high as 28 mph. Chance of precipitation is 40%."
     },
     {
      "name": "Saturday Night",
@@ -83,138 +75,116 @@
      "pop": 28,
      "short": "Chance Rain Showers",
      "detail": "A chance of rain showers. Mostly cloudy, with a low around 38. Chance of precipitation is 30%."
+    },
+    {
+     "name": "Sunday",
+     "temp": 51,
+     "wind": "SW 10 to 14 mph",
+     "pop": 36,
+     "short": "Chance Rain Showers",
+     "detail": "A chance of rain showers. Mostly cloudy, with a high near 51. Chance of precipitation is 40%."
     }
    ],
    "observation": {
     "station": "KIAG",
-    "time": "2026-11-24T20:10:00+00:00",
+    "time": "2026-11-25T00:45:00+00:00",
     "text": "Clear",
-    "temp_f": 36
+    "temp_f": 28
    },
    "hourly": [
     {
-     "start": "2026-11-24T15:00:00-05:00",
-     "temp": 39,
-     "short": "Mostly Sunny",
-     "pop": 0
-    },
-    {
-     "start": "2026-11-24T16:00:00-05:00",
-     "temp": 39,
-     "short": "Sunny",
-     "pop": 0
-    },
-    {
-     "start": "2026-11-24T17:00:00-05:00",
-     "temp": 38,
-     "short": "Sunny",
-     "pop": 0
-    },
-    {
-     "start": "2026-11-24T18:00:00-05:00",
-     "temp": 35,
-     "short": "Mostly Clear",
-     "pop": 0
-    },
-    {
-     "start": "2026-11-24T19:00:00-05:00",
-     "temp": 31,
-     "short": "Partly Cloudy",
-     "pop": 0
-    },
-    {
      "start": "2026-11-24T20:00:00-05:00",
-     "temp": 30,
+     "temp": 29,
      "short": "Partly Cloudy",
      "pop": 0
     },
     {
      "start": "2026-11-24T21:00:00-05:00",
-     "temp": 29,
-     "short": "Partly Cloudy",
-     "pop": 0
-    },
-    {
-     "start": "2026-11-24T22:00:00-05:00",
-     "temp": 29,
-     "short": "Partly Cloudy",
-     "pop": 0
-    },
-    {
-     "start": "2026-11-24T23:00:00-05:00",
-     "temp": 29,
-     "short": "Partly Cloudy",
-     "pop": 0
-    },
-    {
-     "start": "2026-11-25T00:00:00-05:00",
      "temp": 28,
      "short": "Partly Cloudy",
      "pop": 0
     },
     {
-     "start": "2026-11-25T01:00:00-05:00",
+     "start": "2026-11-24T22:00:00-05:00",
+     "temp": 28,
+     "short": "Partly Cloudy",
+     "pop": 0
+    },
+    {
+     "start": "2026-11-24T23:00:00-05:00",
      "temp": 27,
+     "short": "Partly Cloudy",
+     "pop": 0
+    },
+    {
+     "start": "2026-11-25T00:00:00-05:00",
+     "temp": 26,
+     "short": "Partly Cloudy",
+     "pop": 0
+    },
+    {
+     "start": "2026-11-25T01:00:00-05:00",
+     "temp": 25,
      "short": "Mostly Cloudy",
      "pop": 0
     },
     {
      "start": "2026-11-25T02:00:00-05:00",
-     "temp": 26,
+     "temp": 24,
      "short": "Mostly Cloudy",
      "pop": 0
     },
     {
      "start": "2026-11-25T03:00:00-05:00",
-     "temp": 26,
+     "temp": 24,
      "short": "Mostly Cloudy",
      "pop": 0
     },
     {
      "start": "2026-11-25T04:00:00-05:00",
-     "temp": 25,
+     "temp": 23,
      "short": "Mostly Cloudy",
      "pop": 0
     },
     {
      "start": "2026-11-25T05:00:00-05:00",
-     "temp": 25,
+     "temp": 23,
      "short": "Mostly Cloudy",
      "pop": 0
     },
     {
      "start": "2026-11-25T06:00:00-05:00",
-     "temp": 25,
+     "temp": 23,
      "short": "Mostly Sunny",
      "pop": 0
     },
     {
      "start": "2026-11-25T07:00:00-05:00",
-     "temp": 25,
+     "temp": 23,
      "short": "Partly Sunny",
      "pop": 0
     },
     {
      "start": "2026-11-25T08:00:00-05:00",
-     "temp": 27,
+     "temp": 25,
      "short": "Mostly Sunny",
      "pop": 0
     },
     {
      "start": "2026-11-25T09:00:00-05:00",
-     "temp": 32,
+     "temp": 31,
      "short": "Mostly Sunny",
      "pop": 0
     },
     {
      "start": "2026-11-25T10:00:00-05:00",
-     "temp": 36,
+     "temp": 35,
      "short": "Mostly Sunny",
      "pop": 0
     },
     {
      "start": "2026-11-25T11:00:00-05:00",
-     "temp": 39,
+     "temp": 38,
      "short": "Sunny",
      "pop": 0
     },
@@ -235,27 +205,49 @@
      "temp": 43,
      "short": "Sunny",
      "pop": 0
+    },
+    {
+     "start": "2026-11-25T15:00:00-05:00",
+     "temp": 43,
+     "short": "Sunny",
+     "pop": 0
+    },
+    {
+     "start": "2026-11-25T16:00:00-05:00",
+     "temp": 42,
+     "short": "Sunny",
+     "pop": 0
+    },
+    {
+     "start": "2026-11-25T17:00:00-05:00",
+     "temp": 41,
+     "short": "Mostly Sunny",
+     "pop": 0
+    },
+    {
+     "start": "2026-11-25T18:00:00-05:00",
+     "temp": 39,
+     "short": "Partly Cloudy",
+     "pop": 0
+    },
+    {
+     "start": "2026-11-25T19:00:00-05:00",
+     "temp": 35,
+     "short": "Partly Cloudy",
+     "pop": 0
     }
    ]
   },
   "Dunkirk": {
-   "issued": "2026-11-24T19:55:40+00:00",
+   "issued": "2026-11-24T23:57:32+00:00",
    "periods": [
-    {
-     "name": "This Afternoon",
-     "temp": 39,
-     "wind": "N 5 mph",
-     "pop": 0,
-     "short": "Mostly Sunny",
-     "detail": "Mostly sunny, with a high near 39. North wind around 5 mph."
-    },
     {
      "name": "Tonight",
      "temp": 27,
-     "wind": "NE 2 to 6 mph",
+     "wind": "E 2 to 7 mph",
      "pop": 0,
      "short": "Mostly Cloudy",
-     "detail": "Mostly cloudy, with a low around 27. Northeast wind 2 to 6 mph."
+     "detail": "Mostly cloudy, with a low around 27. East wind 2 to 7 mph."
     },
     {
      "name": "Wednesday",
@@ -295,7 +287,7 @@
      "wind": "SW 14 to 17 mph",
      "pop": 100,
      "short": "Light Rain",
-     "detail": "Rain before 1pm, then rain showers likely. Cloudy, with a high near 45. Southwest wind 14 to 17 mph. Chance of precipitation is 100%."
+     "detail": "Rain before 1pm, then rain showers likely. Cloudy, with a high near 45. Southwest wind 14 to 17 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
     },
     {
      "name": "Friday Night",
@@ -311,7 +303,7 @@
      "wind": "W 20 mph",
      "pop": 68,
      "short": "Rain Showers Likely",
-     "detail": "Rain showers likely. Mostly cloudy, with a high near 47. Chance of precipitation is 70%."
+     "detail": "Rain showers likely. Mostly cloudy, with a high near 47. West wind around 20 mph. Chance of precipitation is 70%."
     },
     {
      "name": "Saturday Night",
@@ -320,33 +312,33 @@
      "pop": 33,
      "short": "Chance Rain Showers",
      "detail": "A chance of rain showers. Mostly cloudy, with a low around 40. Chance of precipitation is 30%."
+    },
+    {
+     "name": "Sunday",
+     "temp": 50,
+     "wind": "SW 17 mph",
+     "pop": 44,
+     "short": "Chance Rain Showers",
+     "detail": "A chance of rain showers. Mostly cloudy, with a high near 50. Chance of precipitation is 40%."
     }
    ],
    "observation": {
     "station": "KDKK",
-    "time": "2026-11-24T20:10:00+00:00",
+    "time": "2026-11-25T00:45:00+00:00",
     "text": "Cloudy",
-    "temp_f": 36
+    "temp_f": 32
    }
   },
   "Scottsville": {
-   "issued": "2026-11-24T19:55:40+00:00",
+   "issued": "2026-11-24T23:57:32+00:00",
    "periods": [
-    {
-     "name": "This Afternoon",
-     "temp": 39,
-     "wind": "NW 7 mph",
-     "pop": 0,
-     "short": "Mostly Sunny",
-     "detail": "Mostly sunny, with a high near 39. Northwest wind around 7 mph."
-    },
     {
      "name": "Tonight",
      "temp": 22,
-     "wind": "W 0 to 3 mph",
+     "wind": "SW 2 mph",
      "pop": 0,
      "short": "Partly Cloudy",
-     "detail": "Partly cloudy, with a low around 22. West wind 0 to 3 mph."
+     "detail": "Partly cloudy, with a low around 22. Southwest wind around 2 mph."
     },
     {
      "name": "Wednesday",
@@ -386,7 +378,7 @@
      "wind": "S 13 mph",
      "pop": 97,
      "short": "Light Rain",
-     "detail": "Rain before 1pm, then a chance of rain showers. Cloudy, with a high near 46. South wind around 13 mph. Chance of precipitation is 100%."
+     "detail": "Rain before 1pm, then a chance of rain showers. Cloudy, with a high near 46. South wind around 13 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
     },
     {
      "name": "Friday Night",
@@ -402,7 +394,7 @@
      "wind": "W 12 to 15 mph",
      "pop": 26,
      "short": "Chance Rain Showers",
-     "detail": "A chance of rain showers. Mostly cloudy, with a high near 48. Chance of precipitation is 30%."
+     "detail": "A chance of rain showers. Mostly cloudy, with a high near 48. West wind 12 to 15 mph. Chance of precipitation is 30%."
     },
     {
      "name": "Saturday Night",
@@ -411,21 +403,29 @@
      "pop": 24,
      "short": "Slight Chance Rain Showers",
      "detail": "A slight chance of rain showers before 1am. Mostly cloudy, with a low around 36."
+    },
+    {
+     "name": "Sunday",
+     "temp": 52,
+     "wind": "SW 8 to 13 mph",
+     "pop": 24,
+     "short": "Slight Chance Rain Showers",
+     "detail": "A slight chance of rain showers after 7am. Mostly cloudy, with a high near 52."
     }
    ],
    "observation": {
     "station": "KROC",
-    "time": "2026-11-24T20:10:00+00:00",
-    "text": "Cloudy",
-    "temp_f": 36
+    "time": "2026-11-25T00:45:00+00:00",
+    "text": "Clear",
+    "temp_f": 30
    }
   }
  },
  "errors": [],
  "travel": {},
  "lakes": {
-  "fetched_utc": "2026-11-24T20:35Z",
-  "text": "Lake Temperatures window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-736JJ6NL0V'); gtag('config', 'G-Z9CZEQW57Z'); $(document).ready(function() { $('img.nocache').each(function () { var $this = $(this); $this.attr('src', noCache($this.attr('src'))); }); }); function noCache(url) { return url + (url.indexOf('?') >= 0 ? '&nocache=' : '?') + $.now(); } var domains = { weather: \"https://www.weather.gov\", forecast: \"https://forecast.weather.gov\", airquality: \"https://airquality.weather.gov\", aviation: \"https://aviationweather.gov\", water: \"https://water.weather.gov\", graphical: \"https://graphical.weather.gov\", api: \"https://api.weather.gov\", radar: \"https://radar.weather.gov\", esriGeocode: \"https://geocode.arcgis.com\" } function goBack() { if (document.referrer.toLowerCase().indexOf(\"weather.gov\") != -1) { history.back(); } else { document.location.href = \"https://www.weather.gov\"; } } HOME FORECAST Local Graphical Aviation Marine Rivers and Lakes Hurricanes Severe Weather Fire Weather Sunrise/Sunset Long Range Forecasts Climate Prediction Space Weather PAST WEATHER Past Weather Astronomical Data Certified Weather Data SAFETY INFORMATION Wireless Emergency Alerts Weather-Ready Nation Brochures Cooperative Observers Daily Briefing Damage/Fatality/Injury Statistics Forecast Models GIS Data Portal NOAA Weather Radio Publications SKYWARN Storm Spotters StormReady TsunamiReady Service Change Notices EDUCATION NEWS SEARCH Search For NWS All NOAA ABOUT About NWS Organization For NWS Employees National Centers Careers Contact Us Glossary Social Media NWS Transformation Local forecast by \"City, St\" or ZIP code Sorry, the location you searched for was not found. Please try another search. Multiple locations were found. Please select one of the following: Location Help #topnews.important { background-color: #d2d2d2; height: 100%; margin-bottom: 5px; position: relative; } #topnews .icon { display: none; } #topnews.important .icon { background-color: #135997; display: table-cell; height: 100%; text-align: center; vertical-align: middle; width: 80px; } #topnews.important .body { color: #141414; display: table-cell; padding: 10px; } Active Pattern in the West; Monitoring a Coastal Storm for the East Coast Over Thanksgiving A series of Pacific storm systems will bring widespread rain, mountain snow, gusty winds, high surf to the West Coast this week. Moderate to major coastal flooding is forecast for the California coast. A coastal storm off the Southeast coast Wednesday will intensify and track up the East Coast over the Thanksgiving holiday, bringing coastal flooding, powerful winds and heavy rainfall. Read More > Customize Your Weather.gov Enter Your City, ST or ZIP Code Remember Me Privacy Policy LOADING... --> Buffalo, NY Weather Forecast Office Lake Temperatures Weather.gov > Buffalo, NY > Lake Temperatures Current Hazards Briefing Page River Flooding Space Winter Local Outlook Drought Thunderstorms Hurricanes Enhanced Hazardous Weather Outlook (EHWO) Current Conditions Satellite Observations (List) Rainfall Observations (Map) Air Quality Marine Obs (Map) Lake Temperatures Latest Reports (Public Information Statement) Radar Local KBUF Standard Radar (low bandwidth) Local KBUF Enhanced Radar Regional Standard Radar (low bandwidth) National Standard Radar (low bandwidth) Local KTYX Standard Radar (low bandwidth) Local KTYX Enhanced Radar Forecasts Forecasters' Discussion Aviation Tropical Map View Hourly View Marine UltraViolet Fire Weather Surf Zone/Beach Winter Rivers and Lakes Current & Past Streamflow Ensemble River Guidance River Forecast Centers River Observations (Map) River Forecasts (Map) Climate and Past Weather Past Observed Weather Snowfall Records Past Rainfall CoCoRaHS Drought Outlook Climate Prediction Winter Season Summaries Cooperative Observer Data Lake Effect Page Drought Information Statement Local Programs Tours SKYWARN StormReady Upper Air NOAA Weather Radio Student Opportunities Submit a Storm Report Emergency Management Support River Ice Spotter Form // WFO Name and Social Media variables wfoName= \"Buffalo NY\"; fbID= \"NWSBuffalo\"; twID= \"NWSBuffalo\"; ytID= \"NWSBuffalo\"; // Enter lat/lon coordinates for default forecast widget value= '42.940156,-78.722453'; // This is for the dropdown product selector. Add pils to the filters list to remove products, extras list to add something extra filters= [\"HML\",\"VFT\",\"RRS\",\"SAF\",\"RR1\",\"RR3\",\"FWO\",\"FWM\",\"FWN\"]; extras= [\"CLIROC\",\"CLIART\",\"CF6ROC\",\"CF6ART\"]; // Radar Id and Satellite Sector (i.e. ne, se, cgl) radarId= \"BUF\"; // must be uppercase satSector= \"ne\"; // must be lowercase Lake Erie The reported Lake Erie water temperature is taken at the Buffalo Water Treatment Plant located on Lake Erie at the entrance to the Niagara River. The reading is taken at a depth of 30 feet. This data is unofficial. Lake America The reported Lake America water temperature is taken at the Monroe County Water Treatment Plant near Greece, N.Y. The temperatures is measured at the intake pipes about 1500 feet offshore at a approximate depth of 35 feet. The Lake America temperature occasionally may not be representative of the surface temperature due to upwelling. This process, more common during the summer months, brings colder water from the deeper parts of the lake toward the surface near the temperature sensor. The surface water may be significantly warmer. This data is unofficial. Latest Lake Temperatures 950 AM EST Tue Nov 24 2026 The water temperature off Buffalo is 52 degrees. 950 AM EST Tue Nov 24 2026 The water temperature off Rochester is 53 degrees, and the water Monthly Lake Erie Temperatures January February March April May June July August September October November December Historical Lake Erie Temperatures (Unofficial Normals and Extremes) The daily lake temperatures for Lake Erie off Buffalo and for Lake America off Rochester are included in the Nearshore Marine Forecast. Click the link for previous versions of the Nearshore Marine Forecast . NearShore Marine Forecast 282 FZUS51 KBUF 241450 NSHBUF Nearshore Marine Forecast National Weather Service Buffalo NY 950 AM EST Tue Nov 24 2026 For waters within five nautical miles of shore Waves are the significant wave height - the average of the highest 1/3 of the wave spectrum. Occasional wave height is the average of the highest 1/10 of the wave spectrum. LEZ040-041-242200- Buffalo to Ripley along Lake Erie- 950 AM EST Tue Nov 24 2026 .THIS AFTERNOON...North winds 5 to 15 knots becoming northwest less than 10 knots. Sunny. Waves 1 to 3 feet subsiding to 1 foot or less. .TONIGHT...Light and variable winds becoming east 5 to 10 knots. Mainly clear in the evening, then becoming mostly cloudy. Waves 1 foot or less. .WEDNESDAY...East winds 5 to 10 knots. Partly to mostly sunny. Waves 1 foot or less. .WEDNESDAY NIGHT...East winds 5 to 15 knots. Partly cloudy in the evening, then becoming mostly cloudy. Waves 1 foot or less. .THURSDAY...East winds 10 to 15 knots becoming northeast and increasing to 15 to 25 knots. Rain. Waves 2 feet or less building to 5 to 8 feet. Waves occasionally around 10 feet. .FRIDAY...Southwest winds 15 to 25 knots becoming west. Rain showers. Waves 5 to 8 feet. Waves occasionally around 10 feet. .SATURDAY...West winds 15 to 25 knots becoming southwest. A chance of rain showers. Waves 5 to 8 feet subsiding to 3 to 6 feet. Waves occasionally around 10 feet. $$ LEZ020-242200- Upper Niagara River and Buffalo Harbor- 950 AM EST Tue Nov 24 2026 .THIS AFTERNOON...Northwest winds less than 10 knots. Sunny. .TONIGHT...Light and variable winds. Mainly clear in the evening, then becoming mostly cloudy. .WEDNESDAY...East winds 10 knots or less. Partly to mostly sunny. .WEDNESDAY NIGHT...East winds 5 to 10 knots. Partly cloudy in the evening, then becoming mostly cloudy. .THURSDAY...East winds 5 to 10 knots becoming northeast and increasing to 15 to 25 knots. Rain. .FRIDAY...Southeast winds 10 to 15 knots becoming west. Rain showers. .SATURDAY...West winds 10 to 15 knots becoming southwest. A chance of rain showers. The water temperature off Buffalo is 52 degrees. $$ LOZ030-242200- Lower Niagara River- 950 AM EST Tue Nov 24 2026 .THIS AFTERNOON...North winds 5 to 10 knots becoming light and variable. Sunny. .TONIGHT...Light and variable winds. Mainly clear in the evening, then becoming mostly cloudy. .WEDNESDAY...Southeast winds 10 knots or less becoming east. Partly to mostly sunny. .WEDNESDAY NIGHT...East winds 5 to 10 knots. Partly cloudy in the evening, then becoming mostly cloudy. .THURSDAY...East winds 10 to 15 knots becoming northeast 15 to 20 knots. Rain. .FRIDAY...North winds 10 to 15 knots becoming west. Rain showers. .SATURDAY...West winds 10 to 15 knots becoming southwest. A chance of rain showers. $$ LOZ042-242200- Niagara River to Hamlin Beach along Lake America- 950 AM EST Tue Nov 24 2026 .THIS AFTERNOON...Northwest winds 5 to 15 knots. Sunny. ",
+  "fetched_utc": "2026-11-25T01:30Z",
+  "text": "Lake Temperatures window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-736JJ6NL0V'); gtag('config', 'G-Z9CZEQW57Z'); $(document).ready(function() { $('img.nocache').each(function () { var $this = $(this); $this.attr('src', noCache($this.attr('src'))); }); }); function noCache(url) { return url + (url.indexOf('?') >= 0 ? '&nocache=' : '?') + $.now(); } var domains = { weather: \"https://www.weather.gov\", forecast: \"https://forecast.weather.gov\", airquality: \"https://airquality.weather.gov\", aviation: \"https://aviationweather.gov\", water: \"https://water.weather.gov\", graphical: \"https://graphical.weather.gov\", api: \"https://api.weather.gov\", radar: \"https://radar.weather.gov\", esriGeocode: \"https://geocode.arcgis.com\" } function goBack() { if (document.referrer.toLowerCase().indexOf(\"weather.gov\") != -1) { history.back(); } else { document.location.href = \"https://www.weather.gov\"; } } HOME FORECAST Local Graphical Aviation Marine Rivers and Lakes Hurricanes Severe Weather Fire Weather Sunrise/Sunset Long Range Forecasts Climate Prediction Space Weather PAST WEATHER Past Weather Astronomical Data Certified Weather Data SAFETY INFORMATION Wireless Emergency Alerts Weather-Ready Nation Brochures Cooperative Observers Daily Briefing Damage/Fatality/Injury Statistics Forecast Models GIS Data Portal NOAA Weather Radio Publications SKYWARN Storm Spotters StormReady TsunamiReady Service Change Notices EDUCATION NEWS SEARCH Search For NWS All NOAA ABOUT About NWS Organization For NWS Employees National Centers Careers Contact Us Glossary Social Media NWS Transformation Local forecast by \"City, St\" or ZIP code Sorry, the location you searched for was not found. Please try another search. Multiple locations were found. Please select one of the following: Location Help #topnews.important { background-color: #d2d2d2; height: 100%; margin-bottom: 5px; position: relative; } #topnews .icon { display: none; } #topnews.important .icon { background-color: #135997; display: table-cell; height: 100%; text-align: center; vertical-align: middle; width: 80px; } #topnews.important .body { color: #141414; display: table-cell; padding: 10px; } Monitoring the East Coast Storm Over Thanksgiving; Moderate to Major Coastal Flooding Along the California Coast A strong coastal storm will bring heavy rain, powerful winds, and instances of coastal flooding beginning Wednesday across the coastal Carolinas and into the Mid-Atlantic late Wednesday night through Thanksgiving. Extremely high, record tides and a large swell will continue to bring a threat of moderate to major coastal flooding and high surf to the California coast. Read More > Customize Your Weather.gov Enter Your City, ST or ZIP Code Remember Me Privacy Policy LOADING... --> Buffalo, NY Weather Forecast Office Lake Temperatures Weather.gov > Buffalo, NY > Lake Temperatures Current Hazards Briefing Page River Flooding Space Winter Local Outlook Drought Thunderstorms Hurricanes Enhanced Hazardous Weather Outlook (EHWO) Current Conditions Air Quality Satellite Observations (List) Rainfall Observations (Map) Marine Obs (Map) Lake Temperatures Latest Reports (Public Information Statement) Radar Local KBUF Standard Radar (low bandwidth) Local KBUF Enhanced Radar Regional Standard Radar (low bandwidth) National Standard Radar (low bandwidth) Local KTYX Standard Radar (low bandwidth) Local KTYX Enhanced Radar Forecasts Forecasters' Discussion Aviation Tropical Map View Hourly View Marine UltraViolet Fire Weather Surf Zone/Beach Winter Rivers and Lakes Current & Past Streamflow Ensemble River Guidance River Forecast Centers River Observations (Map) River Forecasts (Map) Climate and Past Weather Past Observed Weather Snowfall Records Past Rainfall CoCoRaHS Drought Outlook Climate Prediction Winter Season Summaries Cooperative Observer Data Lake Effect Page Drought Information Statement Local Programs Tours SKYWARN StormReady Upper Air NOAA Weather Radio Student Opportunities Submit a Storm Report Emergency Management Support River Ice Spotter Form // WFO Name and Social Media variables wfoName= \"Buffalo NY\"; fbID= \"NWSBuffalo\"; twID= \"NWSBuffalo\"; ytID= \"NWSBuffalo\"; // Enter lat/lon coordinates for default forecast widget value= '42.940156,-78.722453'; // This is for the dropdown product selector. Add pils to the filters list to remove products, extras list to add something extra filters= [\"HML\",\"VFT\",\"RRS\",\"SAF\",\"RR1\",\"RR3\",\"FWO\",\"FWM\",\"FWN\"]; extras= [\"CLIROC\",\"CLIART\",\"CF6ROC\",\"CF6ART\"]; // Radar Id and Satellite Sector (i.e. ne, se, cgl) radarId= \"BUF\"; // must be uppercase satSector= \"ne\"; // must be lowercase Lake Erie The reported Lake Erie water temperature is taken at the Buffalo Water Treatment Plant located on Lake Erie at the entrance to the Niagara River. The reading is taken at a depth of 30 feet. This data is unofficial. Lake America The reported Lake America water temperature is taken at the Monroe County Water Treatment Plant near Greece, N.Y. The temperatures is measured at the intake pipes about 1500 feet offshore at a approximate depth of 35 feet. The Lake America temperature occasionally may not be representative of the surface temperature due to upwelling. This process, more common during the summer months, brings colder water from the deeper parts of the lake toward the surface near the temperature sensor. The surface water may be significantly warmer. This data is unofficial. Latest Lake Temperatures 950 AM EST Tue Nov 24 2026 The water temperature off Buffalo is 52 degrees. 950 AM EST Tue Nov 24 2026 The water temperature off Rochester is 53 degrees, and the water Monthly Lake Erie Temperatures January February March April May June July August September October November December Historical Lake Erie Temperatures (Unofficial Normals and Extremes) The daily lake temperatures for Lake Erie off Buffalo and for Lake America off Rochester are included in the Nearshore Marine Forecast. Click the link for previous versions of the Nearshore Marine Forecast . NearShore Marine Forecast 848 FZUS51 KBUF 242104 NSHBUF Nearshore Marine Forecast National Weather Service Buffalo NY 404 PM EST Tue Nov 24 2026 For waters within five nautical miles of shore Waves are the significant wave height - the average of the highest 1/3 of the wave spectrum. Occasional wave height is the average of the highest 1/10 of the wave spectrum. LEZ040-041-250400- Buffalo to Ripley along Lake Erie- 404 PM EST Tue Nov 24 2026 .TONIGHT...Light and variable winds becoming east 5 to 10 knots. Partly to mostly cloudy. Waves 1 foot or less. .WEDNESDAY...East winds 5 to 15 knots. Mostly sunny. Waves 1 foot or less. .WEDNESDAY NIGHT...East winds 5 to 15 knots. Partly to mostly cloudy. Waves 1 foot or less. .THURSDAY...East winds 10 to 15 knots becoming northeast and increasing to 30 knots in the afternoon. A chance of rain in the morning, then rain in the afternoon. Waves 1 to 3 feet building to 5 to 8 feet. Waves occasionally around 10 feet. .THURSDAY NIGHT...Northeast winds to 30 knots diminishing to 15 to 25 knots. Rain. Waves 5 to 9 feet subsiding to 3 to 6 feet. Waves occasionally around 11 feet. .FRIDAY...Southwest winds 15 to 25 knots becoming west. Rain during the day, then rain showers Friday night. Waves 4 to 7 feet. Waves occasionally around 9 feet. .SATURDAY...West winds 15 to 25 knots becoming southwest. Showers likely during the day, then a chance of showers Saturday night. Waves 5 to 8 feet. Waves occasionally around 10 feet. .SUNDAY...Southwest winds 15 to 20 knots. A chance of showers during the day, then showers likely Sunday night. Waves 3 to 6 feet. Waves occasionally around 7 feet. $$ LEZ020-250400- Upper Niagara River and Buffalo Harbor- 404 PM EST Tue Nov 24 2026 .TONIGHT...Light and variable winds. Partly cloudy this evening, then becoming mostly cloudy. .WEDNESDAY...East winds 10 knots or less. Mostly sunny. .WEDNESDAY NIGHT...East winds 5 to 10 knots. Partly to mostly cloudy. .THURSDAY...East winds 5 to 15 knots becoming northeast 15 to 20 knots. Rain in the afternoon. .THURSDAY NIGHT...Northeast winds 15 to 25 knots diminishing to 10 to 15 knots. Rain. .FRIDAY...Southeast winds 10 to 15 knots becoming west. Rain during the day, then rain showers Friday night. .SATURDAY...West winds 10 to 15 knots becoming southwest. A chance of rain showers. .SUNDAY...Southwest winds 5 to 15 knots. A chance of rain showers during the day, then rain showers likely Sunday night. The water temperature off Buffalo is 52 degrees. $$ LOZ030-250400- Lower Niagara River- 404 PM EST Tue Nov 24 2026 .TONIGHT...Light and variable winds. Partly to mostly cloudy. .WEDNESDAY...East winds 10 knots or less. Mostly sunny. .WEDNESDAY NIGHT...East winds 5 to 10 knots. Partly to mostly cloudy. .THURSDAY...East winds 10 to 15 knots becoming northeast 15 to 20 knots. Rain in the afternoon. .THURSDAY NIGHT...Northeast winds 15 to 20 knots. Rain. .FRIDAY...Southeast winds 5",
   "readings": {
    "Lake Erie (Buffalo)": 52,
    "Lake Ontario (Rochester)": 53
