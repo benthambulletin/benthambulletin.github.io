@@ -48,6 +48,7 @@ news = '''<div class="part"><span>The News</span></div>
 <h2 class="sec">Family Today</h2>
 <p>Tommy and Leah: the paper hasn&rsquo;t heard from you in a while. Send a photo, a date or a gripe through the form at <a href="https://tally.so/r/rjxDpl">tally.so/r/rjxDpl</a>.</p>
 <h2 class="sec">The Home Wire</h2>
+<div class="wire"><div><span class="num">3</span><h3>Monroe County &middot; Project Home</h3><p>Monroe County wants to shift $2.8 million in public assistance money into Project Home, which gives bigger housing allowances, up to 60 percent of fair market rent, to people on public assistance who are most at risk of becoming homeless, WXXI reports. It would help up to 600 households, but it needs state approval.</p></div></div>
 <div class="wire"><div><span class="num">4</span><h3>Niagara Falls &middot; Dispatcher Disciplined Over 911 Call</h3><p>A Niagara Falls police dispatcher was disciplined in August over the handling of an emergency call reportedly placed about a half hour before a woman was fatally shot on Highland Avenue over the Fourth of July weekend, the <i>Niagara Gazette</i> reports. In a letter to the resident who complained, the department&rsquo;s office of professional standards said the allegations, about &ldquo;courtesy and communication responsibilities,&rdquo; were sustained.</p></div></div>
 <div class="wire"><div><span class="num">5</span><h3>Fredonia &middot; Back to Dunkirk for Water?</h3><p>Two Fredonia village trustees, Tim Mulholland and LeeAnn Lazarony, want to halt the plan to get water from the North County Water District through Pomfret and instead revisit connecting directly to the city of Dunkirk, the Dunkirk <i>Observer</i> reports. The board approved a direct Dunkirk link in December 2023, but residents sued and stopped it; the Pomfret plan has since stalled over funding.</p></div></div>
 <div class="wire"><div><span class="num">6</span><h3>Chautauqua County &middot; Ten Measles Cases</h3><p>Chautauqua County has had 10 reported measles cases, the county&rsquo;s Board of Health heard, and the state&rsquo;s count hadn&rsquo;t risen as of Tuesday morning, the <i>Observer</i> reports. The county&rsquo;s public health director, Lacey Wilson, asks anyone who suspects measles to call a doctor first rather than go straight to the emergency room, to avoid exposing others.</p></div></div>
@@ -59,7 +60,7 @@ news = '''<div class="part"><span>The News</span></div>
 ''' + askm + guide + '''
 <h2 class="sec">The Gridiron</h2>
 <div class="wire"><div><h3>Bills: A Short Week, a Walk-Through</h3><p>The Bills haven&rsquo;t had a full practice this week: no practice Monday and a walk-through Tuesday, so the injury reports are estimates, Buffalo Rumblings reports. Spencer Brown, Damar Hamlin and Greg Rousseau look headed toward playing, and Christian Benford and Dorian Williams look questionable. Chiefs at Bills, Thanksgiving night at 8:20, in the team&rsquo;s Thanksgiving uniforms, WGRZ reports.</p></div></div>
-<div class="wire"><div><h3>Jets: Geno&rsquo;s Day</h3><p>Geno Smith completed 17 of 21 passes for 176 yards and three touchdowns in Sunday&rsquo;s win over the Chargers, with scores on the Jets&rsquo; first five possessions, Gang Green Nation reports. Next: at Miami on Sunday.</p></div></div>
+<div class="wire"><div><h3>Jets: On to Miami</h3><p>The Jets play at Miami on Sunday at 1:00, against a Dolphins team that is 1&ndash;9.</p></div></div>
 <div class="wire"><div><h3>The Sunday Tax &middot; Week 12</h3><p>Picks at <a href="https://tally.so/r/RGOakJ">tally.so/r/RGOakJ</a>, standings at <a href="https://benthambulletin.github.io/pool/">benthambulletin.github.io/pool</a>. $5 a week, straight-up winners, the pot to the best record, and anyone with the link can play. Sheets lock at each kickoff; the first is tonight at 8, Packers at Rams, then three more on Thanksgiving.</p></div></div>
 '''
 hourly = f['towns']['North Tonawanda']['hourly']
@@ -68,7 +69,7 @@ P = f['towns']['North Tonawanda']['periods']
 alm = '''<div class="part"><span>The Almanac</span></div>
 <h2 class="sec">The Weather Glass</h2>
 ''' + BYLINE + '''
-<p class="wlede">Last good day of the week. Sunny, 42, no wind to speak of. Rake, string the lights, fill the gas tank. Tomorrow afternoon the sky opens up and stays open through Friday.</p>
+<p class="wlede">Last good day of the week. Mostly sunny, 42, barely a breeze. Rake, string the lights, fill the gas tank. Tomorrow afternoon the sky opens up and stays open through Friday.</p>
 <div class="touch-head" style="margin-top:1.1rem">Today</div>
 <div class="wxrow">
   <div class="wxc"><div class="k">Tonight</div><div class="v">28&deg;</div><div class="s">mostly cloudy</div></div>
@@ -95,8 +96,8 @@ alm = '''<div class="part"><span>The Almanac</span></div>
   <div class="town"><div class="n">Scottsville</div><div class="t">23<sup>&deg;</sup></div><div class="d">Mostly cloudy<br>high 42&deg;</div></div>
 </div>
 <div class="towns lakes">
-  <div class="town"><div class="n">Lake Erie</div><div class="t">52<sup>&deg;</sup></div><div class="d">off Buffalo</div></div>
-  <div class="town"><div class="n">Lake Ontario</div><div class="t">53<sup>&deg;</sup></div><div class="d">off Rochester</div></div>
+  <div class="town"><div class="n">Lake Erie</div><div class="t">52<sup>&deg;</sup></div><div class="d">off Buffalo, Tuesday</div></div>
+  <div class="town"><div class="n">Lake Ontario</div><div class="t">53<sup>&deg;</sup></div><div class="d">off Rochester, Tuesday</div></div>
 </div>
 <div class="line" style="margin-top:.4rem"><span class="lbl t">Snow so far</span> since July 1, through Tuesday. Still zero everywhere, and this week&rsquo;s storm is all rain.</div>
 <div class="towns snow"><div class="town"><div class="n">North Tonawanda</div><div class="t">0.0<sup>"</sup></div><div class="d">normal 4.8"</div></div><div class="town"><div class="n">Orchard Park</div><div class="t">0.0<sup>"</sup></div><div class="d">normal 6.5"</div></div><div class="town"><div class="n">Dunkirk</div><div class="t">0.0<sup>"</sup></div><div class="d">normal 6.5"</div></div><div class="town"><div class="n">Scottsville</div><div class="t">0.0<sup>"</sup></div><div class="d">normal 6.0"</div></div></div>
@@ -127,7 +128,7 @@ alm = '''<div class="part"><span>The Almanac</span></div>
 <div class="qotd">Thousands will run on me Thursday morning, and I won&rsquo;t move an inch. What am I? <i>Answer below the fold.</i></div>
 <div class="dbl"><div class="a"></div><div class="b"></div></div>
 <div class="colo"><div class="s" style="margin-bottom:8px"><b>Question of the Day:</b> The street.</div>
-<div class="s">Forecast, lake temperatures and radar per NWS Buffalo &middot; Niagara Falls, Dunkirk and Rochester stations &middot; normals from NOAA &middot; sky computed for 14120 &middot; headlines via the BBC, CBS, the <i>Niagara Gazette</i>, the Dunkirk <i>Observer</i>, WKBW, Billboard, Variety, Buffalo Rumblings, Gang Green Nation, WGRZ &middot; Turkey Trot details per the YMCA Buffalo Niagara and its 2026 route map &middot; On This Day per NWS Jackson, Ky. &middot; snow and records via ACIS &middot; cover via Wikimedia Commons</div>
+<div class="s">Forecast, lake temperatures and radar per NWS Buffalo &middot; Niagara Falls, Dunkirk and Rochester stations &middot; normals from NOAA &middot; sky computed for 14120 &middot; headlines via the BBC, CBS, the <i>Niagara Gazette</i>, the Dunkirk <i>Observer</i>, WKBW, Billboard, Variety, WXXI, Buffalo Rumblings, Gang Green Nation, WGRZ &middot; Turkey Trot details per the YMCA Buffalo Niagara and its 2026 route map &middot; On This Day per NWS Jackson, Ky. &middot; snow and records via ACIS &middot; cover via Wikimedia Commons</div>
 <div class="ask"><a href="https://tally.so/r/rjxDpl">Send something to the paper</a> &middot; <a href="https://tally.so/r/obWNYP">Log a migraine</a> &middot; <a href="https://tally.so/r/EqxJpo">Ask Margo</a></div>
 <div class="sig">&mdash; Margo</div><div class="orn">&#127809; &#127810; &#127809;</div></div>'''
 body = pre + news + alm
