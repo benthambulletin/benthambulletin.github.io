@@ -41,9 +41,9 @@ box = f'''<div class="trotbox" style="border:2px solid var(--rust,#9c3216);borde
 <li><b>Wind:</b> {wind.lower()}, gusts as high as {gust}. Feels colder than it reads.</li>
 <li><b>Rain:</b> {rain_hr}, {pop}% chance, {amt_s} by dark.</li>
 <li><b>Tonight:</b> rain, {namt.replace(' and ', ' to ')}, gusts to {ngust}, low {nlow}. Easy on the drive home from Derek&rsquo;s.</li>
-<li><b>Wear:</b> layers, gloves, hats; the wind guard on Luka&rsquo;s stroller; dry clothes in the car.</li>
+<li><b>Wear:</b> layers, gloves, hats; something wind-proof; dry clothes in the car.</li>
 </ul>
 <div style="font-style:italic;font-size:.92rem">SINCE_YESTERDAY &mdash; Margo</div>
-<div style="font-weight:700;margin-top:.45rem">Good luck, Ariel, Tommy, Claire, Garret, Kaylani and Luka.</div>
+<div style="font-weight:700;margin-top:.45rem">Good luck, Ariel, Tommy, Claire and Garret.</div>
 </div>'''
 print(box)
