@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-25T18:24:00-05:00",
+  "updated": "2026-11-26T07:24:00-05:00",
   "call": "Hold. Best Arizer from a store you trust is $153.99 at Planet of the Vapes. PAX\u2019s Black Friday sale is live but not at killer prices yet.",
   "tone": "hold",
   "notes": [
-    "Evening check: store pages couldn't be re-read; prices are from this morning and not re-confirmed."
+    "Thanksgiving morning: store pages couldn't be re-read; prices carried from Nov 25 morning, not re-confirmed."
   ],
   "devices": [
     {
@@ -148,6 +148,12 @@
     },
     {
       "date": "2026-11-25",
+      "arizer_direct": 219.99,
+      "arizer_potv": 153.99,
+      "pax_direct": null
+    },
+    {
+      "date": "2026-11-26",
       "arizer_direct": 219.99,
       "arizer_potv": 153.99,
       "pax_direct": null
