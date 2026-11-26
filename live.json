@@ -1,13 +1,15 @@
 {
- "updated": "2026-11-26T04:30:22Z",
+ "updated": "2026-11-26T04:32:23Z",
  "week": 12,
  "games": {
   "0": {
-   "state": "in",
+   "state": "post",
    "away": 13,
    "home": 26,
-   "detail": "0:20 - 4th",
-   "line": "Rams 26–13 · 0:20 - 4th"
+   "detail": "Final",
+   "winner": "Rams",
+   "score": "26–13",
+   "line": "Final · Rams 26–13"
   }
  }
 }
