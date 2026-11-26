@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-26T12:24:00-05:00",
+  "updated": "2026-11-26T18:24:00-05:00",
   "call": "Hold. Best Arizer from a store you trust is $153.99 at Planet of the Vapes. PAX\u2019s Black Friday sale is live but not at killer prices yet.",
   "tone": "hold",
   "notes": [
-    "Thanksgiving midday: store pages couldn't be re-read; search still shows the PAX Four at $200 at Planet of the Vapes. Other prices carried from Nov 25 morning."
+    "Planet of the Vapes re-read Thanksgiving evening: Arizer $153.99, PAX Four $200, both in stock. Arizer and PAX direct not re-confirmed since Nov 25 morning."
   ],
   "devices": [
     {
@@ -25,7 +25,7 @@
           "baseline": 153.99,
           "status": "product page",
           "url": "https://www.planetofthevapes.com/collections/black-friday-cyber-monday-sale",
-          "note": "Regular $199.99. In stock. Sale runs to Dec 13; includes a $15 gift card for later. Not re-confirmed since Nov 25 morning."
+          "note": "Regular $199.99. In stock. Sale runs to Dec 13; includes a $15 gift card for later."
         },
         {
           "store": "TVape",
@@ -87,7 +87,7 @@
           "baseline": 225.0,
           "status": "product page",
           "url": "https://www.planetofthevapes.com/products/pax-four-vaporizer",
-          "note": "Regular $225. In stock. Not re-confirmed since Nov 25 morning."
+          "note": "Regular $225. In stock."
         }
       ]
     },
