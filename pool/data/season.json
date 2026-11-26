@@ -19039,7 +19039,9 @@
               "Nate V",
               "Claude"
             ]
-          }
+          },
+          "live": "Cowboys 7–0 · 1st qtr",
+          "liveAt": "2026-11-26T22:07:10Z"
         },
         {
           "away": "Chiefs",
@@ -19318,7 +19320,7 @@
           "free": false,
           "paypal": true,
           "rank": 5,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19342,7 +19344,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19366,7 +19368,7 @@
           "free": false,
           "paypal": true,
           "rank": 5,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19390,7 +19392,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19414,7 +19416,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": -4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19443,7 +19445,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": -4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19467,7 +19469,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": -4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19491,7 +19493,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19515,7 +19517,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19539,7 +19541,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": -4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19563,7 +19565,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -19587,7 +19589,7 @@
           "free": true,
           "paypal": false,
           "rank": 5,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -19611,7 +19613,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19635,7 +19637,7 @@
           "free": false,
           "paypal": false,
           "rank": 5,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19659,7 +19661,7 @@
           "free": false,
           "paypal": false,
           "rank": 19,
-          "delta": -10,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19683,7 +19685,7 @@
           "free": false,
           "paypal": false,
           "rank": 19,
-          "delta": -10,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -19707,7 +19709,7 @@
           "free": false,
           "paypal": false,
           "rank": 19,
-          "delta": -10,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": []
@@ -20044,7 +20046,7 @@
       }
     }
   },
-  "updated": "2026-11-26T21:35:07.682878+00:00",
+  "updated": "2026-11-26T22:10:08.235122+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
