@@ -11,3 +11,8 @@ Format: `- YYYY-MM-DD · Name · what they said (short) · where it ran`
 - 2026-11-22 · Kaylani · bringing dinner rolls · Garret
 - 2026-11-23 · Margo · introduced herself in No. 152 (Gregg's aunt; the 1985 broadcast) · Meet the Editor
 - 2026-11-25 · Kaylani · asked whether Luka can go to the Trot: "Are we gonna freeze to death?" (Margo: stroller crew's early start is a "jailbreak") · Ask Margo, No. 154
+- 2026-11-26 · Kaylani · bringing dinner rolls to Derek's; skipped the Trot with Luka over the weather · No. 155
+- 2026-11-26 · Derek · hosting Thanksgiving: turkey, mashed potatoes, green beans, stuffed shells; asked Joanne for "lots" of mushrooms · No. 155
+- 2026-11-26 · Joanne · "several appetizers," a couple big pans of stuffed mushrooms · No. 155
+- 2026-11-26 · Leah · salad · No. 155
+- 2026-11-26 · Ariel, Tommy, Claire, Garret · ran the 131st Turkey Trot · No. 155
