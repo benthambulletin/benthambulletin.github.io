@@ -1,6 +1,6 @@
 {
  "_about": "Garret only. One row per Family Migraine Log entry (Tally obWNYP): what he took, how soon, and how it went. Kept by the 'Runway rescue log' scheduled task for the /runway/ dashboard. Not for the paper. class: gepant (Ubrelvy), triptan (sumatriptan, any form), nsaid (diclofenac/Cambia, ibuprofen, naproxen, aspirin), other. day2 marks an entry that continues an earlier attack.",
- "updated": "2026-11-20",
+ "updated": "2026-11-26",
  "entries": [
   {"id": "4aDGA1k", "date": "2026-10-06", "start": "10:00", "took": ["Ubrelvy"], "class": ["gepant"], "delay": "", "result": "Too soon to tell"},
   {"id": "je4xP54", "date": "2026-10-23", "start": "12:25", "took": ["Ubrelvy"], "class": ["gepant"], "delay": "Under 30 minutes", "result": "Took the edge off"},
@@ -8,6 +8,8 @@
   {"id": "M1jYYyl", "date": "2026-10-29", "start": "03:00", "took": [], "class": [], "delay": "", "result": "Too soon to tell"},
   {"id": "7Xr2x9a", "date": "2026-11-02", "start": "04:00", "took": [], "class": [], "delay": "", "result": "No relief"},
   {"id": "Eq7QWRL", "date": "2026-11-03", "start": "04:01", "took": ["Ubrelvy"], "class": ["gepant"], "delay": "Over 2 hours", "result": "No relief", "day2": true, "note": "infusion at DENT"},
-  {"id": "2jWE1RA", "date": "2026-11-14", "start": "11:00", "took": ["Ubrelvy"], "class": ["gepant"], "delay": "Under 30 minutes", "result": "Cleared it"}
+  {"id": "2jWE1RA", "date": "2026-11-14", "start": "11:00", "took": ["Ubrelvy"], "class": ["gepant"], "delay": "Under 30 minutes", "result": "Cleared it"},
+  {"id": "rDez845", "date": "2026-11-25", "start": "10:30", "took": ["Ubrelvy"], "class": ["gepant"], "delay": "Under 30 minutes", "result": "Took the edge off"},
+  {"id": "Eq2y7KB", "date": "2026-11-25", "start": "12:30", "took": ["Ubrelvy", "Sumatriptan shot"], "class": ["gepant", "triptan"], "delay": "Under 30 minutes", "result": "", "day2": true}
  ]
 }
