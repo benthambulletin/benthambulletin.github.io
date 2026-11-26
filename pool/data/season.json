@@ -18944,12 +18944,38 @@
           "kickoff": "2026-11-26T18:00:00Z",
           "when": "Thu 1:00 PM",
           "tv": "CBS",
-          "status": "sealed",
+          "status": "live",
           "fav": "Bears",
-          "line": "Bears −2.5",
+          "line": "Bears −1.5",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Bears": [
+              "Devin",
+              "Mrs. Sombloski",
+              "B-rad",
+              "Ryan Holovics",
+              "Wendy",
+              "Thom",
+              "Tom",
+              "Ariel",
+              "Arod",
+              "Andy R",
+              "Dan",
+              "Derek",
+              "Mike Sombloski",
+              "Claude"
+            ],
+            "Lions": [
+              "Garret",
+              "Kaylani & Luka",
+              "Leah",
+              "Melissa",
+              "Walczyk",
+              "Nate V",
+              "Josh"
+            ]
+          }
         },
         {
           "away": "Eagles",
@@ -19136,7 +19162,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Rams"
+            "0": "Rams",
+            "1": "Bears"
           },
           "filedAt": "2026-11-24T09:01:59+00:00",
           "firstAt": "2026-11-24T09:01:59+00:00",
@@ -19158,7 +19185,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Rams"
+            "0": "Rams",
+            "1": "Bears"
           },
           "filedAt": "2026-11-25T19:02:02+00:00",
           "firstAt": "2026-11-25T19:02:02+00:00",
@@ -19180,7 +19208,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Rams"
+            "0": "Rams",
+            "1": "Bears"
           },
           "filedAt": "2026-11-25T20:48:42+00:00",
           "firstAt": "2026-11-25T20:48:42+00:00",
@@ -19202,7 +19231,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Rams"
+            "0": "Rams",
+            "1": "Bears"
           },
           "filedAt": "2026-11-24T13:21:39+00:00",
           "firstAt": "2026-11-24T13:21:39+00:00",
@@ -19224,7 +19254,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Rams"
+            "0": "Rams",
+            "1": "Lions"
           },
           "filedAt": "2026-11-26T00:20:55+00:00",
           "firstAt": "2026-11-26T00:20:55+00:00",
@@ -19251,7 +19282,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Rams"
+            "0": "Rams",
+            "1": "Lions"
           },
           "filedAt": "2026-11-24T17:05:26+00:00",
           "firstAt": "2026-11-24T17:05:26+00:00",
@@ -19273,7 +19305,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Rams"
+            "0": "Rams",
+            "1": "Lions"
           },
           "filedAt": "2026-11-25T15:09:01+00:00",
           "firstAt": "2026-11-25T15:09:01+00:00",
@@ -19295,7 +19328,8 @@
           "max": 16,
           "tb": null,
           "sheet": {
-            "0": "Rams"
+            "0": "Rams",
+            "1": "Lions"
           },
           "filedAt": "2026-11-25T20:50:31+00:00",
           "firstAt": "2026-11-25T20:50:31+00:00",
@@ -19317,7 +19351,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Bears"
           },
           "filedAt": "2026-11-25T18:28:51+00:00",
           "firstAt": "2026-11-25T18:28:51+00:00",
@@ -19339,7 +19374,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Bears"
           },
           "filedAt": "2026-11-25T13:58:46+00:00",
           "firstAt": "2026-11-25T13:58:46+00:00",
@@ -19361,7 +19397,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Bears"
           },
           "filedAt": "2026-11-25T18:27:55+00:00",
           "firstAt": "2026-11-25T18:27:55+00:00",
@@ -19383,7 +19420,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Bears"
           },
           "filedAt": "2026-11-24T15:51:29+00:00",
           "firstAt": "2026-11-24T15:51:29+00:00",
@@ -19405,7 +19443,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Lions"
           },
           "filedAt": "2026-11-24T13:26:33+00:00",
           "firstAt": "2026-11-24T13:26:33+00:00",
@@ -19427,7 +19466,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Lions"
           },
           "filedAt": "2026-11-24T15:59:05+00:00",
           "firstAt": "2026-11-24T15:56:07+00:00",
@@ -19449,7 +19489,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Bears"
           },
           "filedAt": "2026-11-25T22:57:43+00:00",
           "firstAt": "2026-11-25T22:57:43+00:00",
@@ -19471,7 +19512,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Bears"
           },
           "filedAt": "2026-11-24T15:04:46+00:00",
           "firstAt": "2026-11-24T15:04:46+00:00",
@@ -19493,7 +19535,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Bears"
           },
           "filedAt": "2026-11-24T17:52:14+00:00",
           "firstAt": "2026-11-24T17:52:14+00:00",
@@ -19515,7 +19558,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Bears"
           },
           "filedAt": "2026-11-24T20:26:26+00:00",
           "firstAt": "2026-11-24T20:26:26+00:00",
@@ -19537,7 +19581,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Bears"
           },
           "filedAt": "2026-11-25T13:46:57+00:00",
           "firstAt": "2026-11-25T13:46:57+00:00",
@@ -19559,7 +19604,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Lions"
           },
           "filedAt": "2026-11-25T15:45:15+00:00",
           "firstAt": "2026-11-25T15:45:15+00:00",
@@ -19581,7 +19627,8 @@
           "max": 15,
           "tb": null,
           "sheet": {
-            "0": "Packers"
+            "0": "Packers",
+            "1": "Bears"
           },
           "filedAt": "2026-11-24T18:08:41+00:00",
           "firstAt": "2026-11-24T18:08:41+00:00",
@@ -19805,6 +19852,20 @@
             "upset": false,
             "roomUpset": true,
             "rightN": 7
+          },
+          "1": {
+            "away": 13,
+            "home": 7,
+            "minority": "Lions",
+            "minorityWho": [
+              "Garret",
+              "Kaylani & Luka",
+              "Leah",
+              "Melissa",
+              "Walczyk",
+              "Nate V",
+              "Josh"
+            ]
           }
         },
         "upsets": 0,
@@ -19838,7 +19899,35 @@
         "bills": null,
         "jets": null
       },
-      "decides": [],
+      "decides": [
+        {
+          "game": 1,
+          "away": [
+            "Devin",
+            "Mrs. Sombloski",
+            "B-rad",
+            "Ryan Holovics",
+            "Wendy",
+            "Thom",
+            "Tom",
+            "Ariel",
+            "Arod",
+            "Andy R",
+            "Dan",
+            "Derek",
+            "Mike Sombloski"
+          ],
+          "home": [
+            "Garret",
+            "Kaylani & Luka",
+            "Leah",
+            "Melissa",
+            "Walczyk",
+            "Nate V",
+            "Josh"
+          ]
+        }
+      ],
       "weekWinners": [],
       "weekPayout": 0,
       "tbUsed": false,
@@ -19863,7 +19952,7 @@
       }
     }
   },
-  "updated": "2026-11-26T17:10:40.943576+00:00",
+  "updated": "2026-11-26T18:05:51.800700+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
