@@ -297,6 +297,32 @@ def climate_day():
         out["erie_ice"] = ice
     except Exception as e:
         out["erie_ice"] = {"error": str(e)[:200]}; print("ice failed", e)
+    # Lake Erie seiche (Garret, Nov 25: "Bake in an image of Lake Erie showing lake temp, ice cover % and seiche deets").
+    # NOAA CO-OPS water levels at Buffalo (9063020) and Toledo (9063085), IGLD datum, last 24 hours hourly,
+    # plus the Buffalo gauge's latest wind. Buffalo minus Toledo is the lake's tilt: plus = water piled at our end.
+    co = "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?application=bentham_bulletin&format=json&time_zone=gmt&units=english"
+    lv = {"source": "NOAA CO-OPS water levels, IGLD 1985", "stations": {}}
+    for key, sid in (("buffalo", "9063020"), ("toledo", "9063085")):
+        try:
+            d = json.loads(get(f"{co}&product=water_level&datum=IGLD&interval=h&range=24&station={sid}", timeout=30))
+            pts = [(r["t"], float(r["v"])) for r in d.get("data", []) if r.get("v") not in (None, "")]
+            lv["stations"][key] = {"id": sid, "series": pts, "latest": pts[-1] if pts else None}
+        except Exception as e:
+            lv["stations"][key] = {"id": sid, "error": str(e)[:200]}; print("level failed", key, e)
+    try:
+        d = json.loads(get(f"{co}&product=wind&date=latest&station=9063020", timeout=30))
+        w = d.get("data", [{}])[-1]
+        lv["buffalo_wind"] = {"t": w.get("t"), "speed_kn": float(w["s"]), "gust_kn": float(w["g"]) if w.get("g") else None, "dir_deg": float(w["d"]), "dir": w.get("dr")}
+    except Exception as e:
+        lv["buffalo_wind"] = {"error": str(e)[:200]}; print("wind failed", e)
+    try:
+        b, t = dict(lv["stations"]["buffalo"]["series"]), dict(lv["stations"]["toledo"]["series"])
+        common = sorted(set(b) & set(t))
+        lv["tilt_ft"] = [(k, round(b[k] - t[k], 2)) for k in common]
+    except Exception as e:
+        print("tilt failed", e)
+    out["erie_levels"] = lv
+    print("erie levels", {k: v.get("latest") for k, v in lv["stations"].items()}, lv.get("tilt_ft", [])[-1:] , lv.get("buffalo_wind"))
     (ROOT / "data" / "climate.json").write_text(json.dumps(out, indent=1))
 
 
