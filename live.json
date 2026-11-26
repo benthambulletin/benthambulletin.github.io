@@ -1,13 +1,15 @@
 {
- "updated": "2026-11-26T21:32:42Z",
+ "updated": "2026-11-26T21:34:44Z",
  "week": 12,
  "games": {
   "1": {
-   "state": "in",
+   "state": "post",
    "away": 39,
    "home": 35,
-   "detail": "0:03 - 4th",
-   "line": "Bears 39–35 · 0:03 - 4th"
+   "detail": "Final",
+   "winner": "Bears",
+   "score": "39–35",
+   "line": "Final · Bears 39–35"
   },
   "2": {
    "state": "pre",
