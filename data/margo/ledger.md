@@ -16,3 +16,5 @@ Format: `- YYYY-MM-DD · Name · what they said (short) · where it ran`
 - 2026-11-26 · Joanne · "several appetizers," a couple big pans of stuffed mushrooms · No. 155
 - 2026-11-26 · Leah · salad · No. 155
 - 2026-11-26 · Ariel, Tommy, Claire, Garret · ran the 131st Turkey Trot · No. 155
+- 2026-11-27 · Garret · sent the Thanksgiving pie photo for the cover · No. 156
+- 2026-11-27 · Gregg · Sunday Question answer (form, Thu): "It has to be a Sabres gravy boat ‼️" · runs Sun Nov 29
