@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T04:26:54Z",
+ "updated": "2026-11-27T04:28:55Z",
  "week": 12,
  "games": {
   "1": {
@@ -21,11 +21,13 @@
    "line": "Final · Eagles 39–38"
   },
   "3": {
-   "state": "in",
+   "state": "post",
    "away": 10,
-   "home": 10,
-   "detail": "0:04 - 4th",
-   "line": "Tied 10–10 · 0:04 - 4th"
+   "home": 13,
+   "detail": "Final",
+   "winner": "Bills",
+   "score": "13–10",
+   "line": "Final · Bills 13–10"
   }
  }
 }
