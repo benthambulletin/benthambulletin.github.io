@@ -19104,8 +19104,8 @@
               "Claude"
             ]
           },
-          "live": "Bills 7–0 · 2nd qtr",
-          "liveAt": "2026-11-27T02:08:47Z"
+          "live": "Bills 7–3 · 3rd qtr",
+          "liveAt": "2026-11-27T03:09:42Z"
         },
         {
           "away": "Broncos",
@@ -19276,7 +19276,7 @@
           "free": false,
           "paypal": false,
           "rank": 1,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19426,7 +19426,7 @@
           "free": false,
           "paypal": false,
           "rank": 1,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19460,7 +19460,7 @@
           "free": false,
           "paypal": false,
           "rank": 1,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19490,7 +19490,7 @@
           "free": false,
           "paypal": false,
           "rank": 1,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19520,7 +19520,7 @@
           "free": false,
           "paypal": false,
           "rank": 1,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19550,7 +19550,7 @@
           "free": true,
           "paypal": false,
           "rank": 1,
-          "delta": 4,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -19575,7 +19575,7 @@
           "free": false,
           "paypal": true,
           "rank": 11,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19605,7 +19605,7 @@
           "free": false,
           "paypal": false,
           "rank": 11,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19635,7 +19635,7 @@
           "free": false,
           "paypal": true,
           "rank": 11,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19665,7 +19665,7 @@
           "free": false,
           "paypal": false,
           "rank": 11,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19695,7 +19695,7 @@
           "free": false,
           "paypal": false,
           "rank": 11,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19725,7 +19725,7 @@
           "free": false,
           "paypal": false,
           "rank": 11,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": [
@@ -19755,7 +19755,7 @@
           "free": false,
           "paypal": false,
           "rank": 11,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19785,7 +19785,7 @@
           "free": false,
           "paypal": false,
           "rank": 11,
-          "delta": -6,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -20246,7 +20246,7 @@
       }
     }
   },
-  "updated": "2026-11-27T02:11:07.771089+00:00",
+  "updated": "2026-11-27T03:10:43.398668+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
