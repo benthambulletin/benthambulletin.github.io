@@ -19049,12 +19049,38 @@
           "kickoff": "2026-11-27T01:20:00Z",
           "when": "Thu 8:20 PM",
           "tv": "NBC",
-          "status": "sealed",
+          "status": "live",
           "fav": "Bills",
           "line": "Bills −3",
           "hits": [],
           "misses": [],
-          "sides": null
+          "sides": {
+            "Chiefs": [
+              "B-rad",
+              "Ryan Holovics",
+              "Thom",
+              "Tom",
+              "Andy R"
+            ],
+            "Bills": [
+              "Devin",
+              "Garret",
+              "Mrs. Sombloski",
+              "Kaylani & Luka",
+              "Leah",
+              "Wendy",
+              "Ariel",
+              "Melissa",
+              "Walczyk",
+              "Arod",
+              "Dan",
+              "Derek",
+              "Nate V",
+              "Mike Sombloski",
+              "Josh",
+              "Claude"
+            ]
+          }
         },
         {
           "away": "Broncos",
@@ -19217,7 +19243,8 @@
           "sheet": {
             "0": "Rams",
             "1": "Bears",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-24T09:01:59+00:00",
           "firstAt": "2026-11-24T09:01:59+00:00",
@@ -19241,7 +19268,8 @@
           "sheet": {
             "0": "Rams",
             "1": "Bears",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-25T19:02:02+00:00",
           "firstAt": "2026-11-25T19:02:02+00:00",
@@ -19265,7 +19293,8 @@
           "sheet": {
             "0": "Rams",
             "1": "Bears",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-25T20:48:42+00:00",
           "firstAt": "2026-11-25T20:48:42+00:00",
@@ -19289,7 +19318,8 @@
           "sheet": {
             "0": "Rams",
             "1": "Bears",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-24T13:21:39+00:00",
           "firstAt": "2026-11-24T13:21:39+00:00",
@@ -19313,7 +19343,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Bears",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Chiefs"
           },
           "filedAt": "2026-11-25T18:28:51+00:00",
           "firstAt": "2026-11-25T18:28:51+00:00",
@@ -19337,7 +19368,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Bears",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-25T13:58:46+00:00",
           "firstAt": "2026-11-25T13:58:46+00:00",
@@ -19361,7 +19393,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Bears",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-25T18:27:55+00:00",
           "firstAt": "2026-11-25T18:27:55+00:00",
@@ -19385,7 +19418,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Bears",
-            "2": "Eagles"
+            "2": "Eagles",
+            "3": "Chiefs"
           },
           "filedAt": "2026-11-24T15:51:29+00:00",
           "firstAt": "2026-11-24T15:51:29+00:00",
@@ -19409,7 +19443,8 @@
           "sheet": {
             "0": "Rams",
             "1": "Lions",
-            "2": "Eagles"
+            "2": "Eagles",
+            "3": "Bills"
           },
           "filedAt": "2026-11-26T00:20:55+00:00",
           "firstAt": "2026-11-26T00:20:55+00:00",
@@ -19438,7 +19473,8 @@
           "sheet": {
             "0": "Rams",
             "1": "Lions",
-            "2": "Eagles"
+            "2": "Eagles",
+            "3": "Bills"
           },
           "filedAt": "2026-11-24T17:05:26+00:00",
           "firstAt": "2026-11-24T17:05:26+00:00",
@@ -19462,7 +19498,8 @@
           "sheet": {
             "0": "Rams",
             "1": "Lions",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-25T15:09:01+00:00",
           "firstAt": "2026-11-25T15:09:01+00:00",
@@ -19486,7 +19523,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Bears",
-            "2": "Eagles"
+            "2": "Eagles",
+            "3": "Bills"
           },
           "filedAt": "2026-11-25T22:57:43+00:00",
           "firstAt": "2026-11-25T22:57:43+00:00",
@@ -19510,7 +19548,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Bears",
-            "2": "Eagles"
+            "2": "Eagles",
+            "3": "Bills"
           },
           "filedAt": "2026-11-24T15:04:46+00:00",
           "firstAt": "2026-11-24T15:04:46+00:00",
@@ -19534,7 +19573,8 @@
           "sheet": {
             "0": "Rams",
             "1": "Lions",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-25T20:50:31+00:00",
           "firstAt": "2026-11-25T20:50:31+00:00",
@@ -19558,7 +19598,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Bears",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Chiefs"
           },
           "filedAt": "2026-11-24T17:52:14+00:00",
           "firstAt": "2026-11-24T17:52:14+00:00",
@@ -19582,7 +19623,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Bears",
-            "2": "Eagles"
+            "2": "Eagles",
+            "3": "Chiefs"
           },
           "filedAt": "2026-11-24T20:26:26+00:00",
           "firstAt": "2026-11-24T20:26:26+00:00",
@@ -19606,7 +19648,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Bears",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Chiefs"
           },
           "filedAt": "2026-11-25T13:46:57+00:00",
           "firstAt": "2026-11-25T13:46:57+00:00",
@@ -19630,7 +19673,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Bears",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-24T18:08:41+00:00",
           "firstAt": "2026-11-24T18:08:41+00:00",
@@ -19654,7 +19698,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Lions",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-24T13:26:33+00:00",
           "firstAt": "2026-11-24T13:26:33+00:00",
@@ -19678,7 +19723,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Lions",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-24T15:59:05+00:00",
           "firstAt": "2026-11-24T15:56:07+00:00",
@@ -19702,7 +19748,8 @@
           "sheet": {
             "0": "Packers",
             "1": "Lions",
-            "2": "Cowboys"
+            "2": "Cowboys",
+            "3": "Bills"
           },
           "filedAt": "2026-11-25T15:45:15+00:00",
           "firstAt": "2026-11-25T15:45:15+00:00",
@@ -19956,6 +20003,18 @@
               "Mike Sombloski",
               "Josh"
             ]
+          },
+          "3": {
+            "away": 5,
+            "home": 15,
+            "minority": "Chiefs",
+            "minorityWho": [
+              "B-rad",
+              "Ryan Holovics",
+              "Thom",
+              "Tom",
+              "Andy R"
+            ]
           }
         },
         "upsets": 0,
@@ -20016,6 +20075,33 @@
             "Derek",
             "Nate V"
           ]
+        },
+        {
+          "game": 3,
+          "away": [
+            "B-rad",
+            "Ryan Holovics",
+            "Thom",
+            "Tom",
+            "Andy R"
+          ],
+          "home": [
+            "Devin",
+            "Garret",
+            "Mrs. Sombloski",
+            "Kaylani & Luka",
+            "Leah",
+            "Wendy",
+            "Ariel",
+            "Melissa",
+            "Walczyk",
+            "Arod",
+            "Dan",
+            "Derek",
+            "Nate V",
+            "Mike Sombloski",
+            "Josh"
+          ]
         }
       ],
       "weekWinners": [],
@@ -20034,8 +20120,8 @@
       "decidedAtLastRun": 2,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Rams 26–13, and thirteen of you got mugged",
-      "column": "The Rams handled Green Bay 26–13, so the favorite held and thirteen sheets start Thanksgiving a game down. Seven people sit at 1–0: Devin, Leah, Melissa, Dan, Derek, Nate V and Josh, plus the house, which is insufferable about it. The commissioner took the dog and is in the hole before the bird hits the oven.\n\nAriel and Tom both whiffed, which is the closest she has come to him all year; she is 0–7 head to head. B-rad starts 0–1 after four straight weeks in the bottom three. Three more today, starting with Bears–Lions at 1.",
+      "columnHead": "Five Chiefs sheets walk into Orchard Park",
+      "column": "The Bears won a 39–35 shootout in Detroit, and Dan, Derek and Devin sit at 2–0 with the house. Garret, Kaylani & Luka and Walczyk are 0–2, so the commissioner's Thanksgiving greeting is aging like the gravy.\n\nTonight's Chiefs at Bills: B-rad, Ryan Holovics, Thom, Tom and Andy R took Kansas City; the other fifteen and the house rode Buffalo as three-point favorites. Ryan says he's taking it back, and he's starting the comeback 1–1 by betting against Buffalo in Buffalo. Andy R and Arod split again; she leads that one 3–2. Cowboys–Eagles is going to the wire, so the holiday isn't done shaking the board.",
       "columnN": 21,
       "face": {
         "photo": "/pool/faces/w12.jpg",
@@ -20046,7 +20132,7 @@
       }
     }
   },
-  "updated": "2026-11-27T01:09:58.349079+00:00",
+  "updated": "2026-11-27T01:21:30.816977+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
