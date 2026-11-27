@@ -65,6 +65,15 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 - **Turkey Trot guide, Wed Nov 25 — APPROVED (Garret, Tue 11:07 a.m.: "It did"). Run it.** `spool/trot/guide.html` (old vs new course, schematic map, parking, the plan for the six, Luka). Placement: end of The News, before The Gridiron. Sources in the colophon: YMCA runner page, YMCA 2024 FAQ, 2026 route map. If he hasn't said yes by the 5:35 build, don't run it. Also Wednesday: Kaylani's Ask Margo question (EqxJpo, Nov 24 8:35 a.m.: is it OK to bring 3.5-year-old Luka given the weather; "are we gonna freeze to death?"): answer with the morning's forecast numbers, in Margo's voice, a straight verdict. Garret, Tue 11:06 a.m.: "Make sure Margo is a dick :)" — full roast of Kaylani (profane, merciless, funny), verdict still real and backed by the forecast numbers; the jokes land on Kaylani, never on Luka. Facts for the verdict (Garret, 11:12 a.m.): Luka rides in the stroller with a wind guard; nobody's carrying him. Garret approved the answer word for word at 11:15 ("Perfect"): run `spool/trot/askmargo-kaylani.md` as written, changing only forecast numbers that Wednesday's NWS forecast has changed.
 
+- **Fri Nov 27, No. 156 (prep Thu 8:30 p.m.).** No NWS alerts (alerts.json 01:30Z Fri). Built tonight in `spool/friday/`:
+  - **Margo's Weekend Outlook:** `spool/friday/weekend.html`, in the Weather Glass after the Today group. Numbers are from the 01:30Z feed (Sat: showers end by 1 in NT and Dunkirk, highs 47/48/48, west gusts 26; Sun: 51/51/53, dry till afternoon, Sunday night rain 90–100%); recheck each against the morning periods before running and fix any that moved.
+  - **On This Day:** `spool/friday/otd.html` (first Macy's parade, Nov 27, 1924; source history.com "This Day in History, Nov. 27"). Ties to the postponed 100th parade, which steps off Saturday at 8:30 a.m. (Macy's, via CBS/BBC, Wed).
+  - **Riddle:** "I show up the day after, nobody planned me, and I&rsquo;m better cold. What am I?" Answer: "Leftovers."
+  - **Gridiron:** Chiefs at Bills recap (Sportradar scores + game_stats); Jets at Miami Sunday 1:00 (one line unless real news); no Sunday Tax box (Tue–Thu only), but the pool's Week 12 standings link may run in the recap if useful. Rodgers ran in No. 155; no repeat unless a real new fact (a signing).
+  - **Cover:** a family Trot photo if one arrives (check spool/next and the form); else a credited Bills game photo is not allowed (people); use the stadium or the lead's subject via cover.yml.
+  - **Lake Erie graphic** daily (CLAUDE.md). The Market only on a 2%+ day.
+  - After: `git rm -r spool/friday`.
+
 - **Lake Erie graphic, daily from Thu Nov 26 (Garret, Wed 10:24 p.m.).** Run `tools/erie_graphic.py` per CLAUDE.md (Seasonal items) after the lakes row. Wed night it showed Buffalo 22 inches below Toledo after a day of east-northeast wind.
 
 
