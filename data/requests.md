@@ -70,7 +70,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
   - **On This Day:** `spool/friday/otd.html` (first Macy's parade, Nov 27, 1924; source history.com "This Day in History, Nov. 27"). Ties to the postponed 100th parade, which steps off Saturday at 8:30 a.m. (Macy's, via CBS/BBC, Wed).
   - **Riddle:** "I show up the day after, nobody planned me, and I&rsquo;m better cold. What am I?" Answer: "Leftovers."
   - **Gridiron:** Chiefs at Bills recap (Sportradar scores + game_stats); Jets at Miami Sunday 1:00 (one line unless real news); no Sunday Tax box (Tue–Thu only), but the pool's Week 12 standings link may run in the recap if useful. Rodgers ran in No. 155; no repeat unless a real new fact (a signing).
-  - **Cover:** a family Trot photo if one arrives (check spool/next and the form); else a credited Bills game photo is not allowed (people); use the stadium or the lead's subject via cover.yml.
+  - **Cover:** Garret sent a family photo Thu 8:35 p.m. (pie at the table); it waits in `spool/next/` with its caption. Plate I &middot; The Family Album; no names (none given). Delete `spool/next/` in the build commit.
   - **Lake Erie graphic** daily (CLAUDE.md). The Market only on a 2%+ day.
   - After: `git rm -r spool/friday`.
 
