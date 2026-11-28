@@ -60,7 +60,7 @@ erie = erie_block(json.load(open(S+'data/climate.json')), 51, 'Friday')
 alm = '''<div class="part"><span>The Almanac</span></div>
 <h2 class="sec">The Weather Glass</h2>
 ''' + BYLINE + '''
-<p class="wlede">Showers till about noon, then a west wind with an attitude, gusting past 30. Gray, 46, and the lake is still sloshing. Tommy: best thing on Derek&rsquo;s table Thursday. One answer, no hedging, and the mushrooms are a cop-out. <a href="https://tally.so/r/rjxDpl">Answer here.</a></p>
+<p class="wlede">Showers till about noon, then a west wind with an attitude, gusting past 30. Gray, 46, and the lake is still sloshing. Tommy: the Jets. Who&rsquo;s their quarterback next September? One name, no hedging. <a href="https://tally.so/r/rjxDpl">Answer here.</a></p>
 <div class="touch-head" style="margin-top:1.1rem">Today</div>
 <div class="wxrow">
   <div class="wxc"><div class="k">Tonight</div><div class="v">39&deg;</div><div class="s">a few showers</div></div>

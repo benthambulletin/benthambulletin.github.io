@@ -22,5 +22,5 @@ Format: `- YYYY-MM-DD · Name · what they said (short) · where it ran`
 - 2026-11-27 · Ariel · group chat: slept till 10:30 after getting up at 5 to see Sue and Thom off · No. 157
 - 2026-11-27 · Kaylani · group chat: "Tree is up!" the day after Thanksgiving · No. 157
 - 2026-11-27 · Garret · group chat: "Ugh" · No. 157
-- 2026-11-28 · Tommy · Margo call-out (No. 157): "best thing on Derek's table Thursday. One answer, no hedging, and the mushrooms are a cop-out."
+- 2026-11-28 · Tommy · Margo call-out (No. 157): "the Jets. Who's their quarterback next September? One name, no hedging." (Tommy did not eat with the family Thursday, per Garret Nov 28)
 - 2026-11-28 · Today's Poll No. 1 (No. 157): Best leftover? A turkey sandwich, B stuffing, C pie for breakfast, D cold mashed potatoes
