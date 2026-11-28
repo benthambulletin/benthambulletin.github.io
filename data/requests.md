@@ -70,6 +70,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
   - **Tomorrow, Sun Nov 29:** the Spotlight is the month in migraine (material already in this file under Sun Nov 29), plus Gregg's Sunday Question answer. The 8:30 p.m. Saturday prep builds it.
   - After: `git rm -r spool/saturday`.
 
+- **Sat Nov 28 — first Today's Poll and first Margo call-out (Garret, Fri 8:45 p.m.: "1/2/5").** Poll: "Best leftover?" A: turkey sandwich · B: stuffing · C: pie for breakfast · D: cold mashed potatoes, linked per CLAUDE.md (Reader participation) with poll=2026-11-28. Call-out: "Tommy, you ran Thursday. Did you beat Garret or not?" with the form link. Log the call-out in the ledger.
+
 - **Sat Nov 28 — Lake Erie follow-up (Garret, Fri 8:38 p.m.: "Point to that lake erie finding in tomorrow's paper").** No. 156 already printed Thursday's 8-foot tilt, so lead with what's new from the morning's `erie_levels`: the lake rocked back and tipped the other way (Fri evening ~20:54Z Buffalo's end ~1.8 ft above Toledo's per the Fri-night feed; recheck at build). One or two sentences in the Weather Glass lede or right under the graphic, numbers from the data only, and a plain explanation of the slosh (a seiche) for the family.
 
 - **Sun Nov 29 — Sunday Question (Garret, Fri: "Fine with the question"):** a seasonal one, e.g. "What's the one Christmas tradition this family can't skip?" Answers run next Sunday.
