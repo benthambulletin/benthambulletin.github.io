@@ -1,9 +1,11 @@
 {
-  "updated": "2026-11-28T07:23:00-05:00",
-  "call": "Hold for Cyber Monday. Best Arizer from a store you trust is still $153.99 at Planet of the Vapes, and that sale runs to Dec 13, so waiting costs nothing. If it's still $153.99 Monday, buy it there.",
-  "tone": "hold",
+  "updated": "2026-11-28T08:24:00-05:00",
+  "call": "Buy the Arizer direct at $153.99 (was $219.99), same as Planet of the Vapes. Killer PAX deal too: PAX Four $157.50 at PAX direct.",
+  "tone": "buy",
   "notes": [
-    "Saturday morning: store pages couldn't be re-read. PAX Four $200 at Planet of the Vapes as of Nov 27 midday; Arizer $153.99 there as of Nov 26 evening. Arizer and PAX direct not re-confirmed since Nov 25 morning."
+    "Arizer direct dropped to $153.99 from $219.99.",
+    "PAX Black Friday 30% off: PAX Four $157.50, new PAX Mini $105.",
+    "Planet of the Vapes unchanged: Arizer $153.99, PAX Four $200, both in stock."
   ],
   "devices": [
     {
@@ -13,11 +15,11 @@
       "stores": [
         {
           "store": "Arizer direct",
-          "price": 219.99,
+          "price": 153.99,
           "baseline": 219.99,
           "status": "product page",
           "url": "https://arizer.com",
-          "note": "No sale or code shown. Free US shipping over $150. Not re-confirmed since Nov 25 morning."
+          "note": "Was $219.99. No sale name or code shown. Free US shipping over $150."
         },
         {
           "store": "Planet of the Vapes",
@@ -25,7 +27,7 @@
           "baseline": 153.99,
           "status": "product page",
           "url": "https://www.planetofthevapes.com/collections/black-friday-cyber-monday-sale",
-          "note": "Regular $199.99. In stock. Sale runs to Dec 13; includes a $15 gift card for later. Last confirmed Nov 26 evening."
+          "note": "Regular $199.99. In stock. Sale runs to Dec 13; includes a $15 gift card for later."
         },
         {
           "store": "TVape",
@@ -75,11 +77,11 @@
       "stores": [
         {
           "store": "PAX direct",
-          "price": 180.0,
+          "price": 157.5,
           "baseline": 250.0,
           "status": "product page",
           "url": "https://www.pax.com",
-          "note": "Black Friday 20% off ($225 crossed out). Free mouthpiece. Not re-confirmed since Nov 25 morning."
+          "note": "Black Friday 30% off, regular $225. Free mouthpiece. Stock not shown on page."
         },
         {
           "store": "Planet of the Vapes",
@@ -98,11 +100,11 @@
       "stores": [
         {
           "store": "PAX direct",
-          "price": 120.0,
+          "price": 105.0,
           "baseline": 150.0,
           "status": "product page",
           "url": "https://www.pax.com",
-          "note": "Black Friday 20% off ($150 crossed out). Free mouthpiece. Not re-confirmed since Nov 25 morning."
+          "note": "Black Friday 30% off, regular $150. Stock not shown on page."
         }
       ]
     }
@@ -166,7 +168,7 @@
     },
     {
       "date": "2026-11-28",
-      "arizer_direct": 219.99,
+      "arizer_direct": 153.99,
       "arizer_potv": 153.99,
       "pax_direct": null
     }
