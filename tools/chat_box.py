@@ -1,20 +1,27 @@
-"""From the Group Chat, drawn as a text thread (Garret, Nov 27: "make it look more of a text message style").
+"""From the Group Chat (Garret, Nov 27: the text-bubble look was "too hard to follow"; back to the
+original quote-then-Margo format, "spruce it up a little").
     from chat_box import chat_box
-    html = chat_box([("Gregg", "Thanks Margo 😃"), ("Margo", "You're welcome...")])
-Family lines are gray bubbles on the left with the sender's name above; Margo's are blue on the right.
-Consecutive lines from the same sender group under one name. Text is HTML-ready (use &rsquo; etc.)."""
+    html = chat_box([
+        ([("Gregg", "Thanks Margo 😃")], "You're welcome..."),
+        ([("Kaylani", "Tree is up!"), ("Tom", "Yessss")], "Tree up before..."),
+    ])
+Each exchange: the family's lines (name in small caps, the words in quotes), then Margo's answer set off
+with a rust rule. Text is HTML-ready (&rsquo; etc.)."""
 
-def chat_box(lines, title="From the Group Chat"):
+LBL = "font-family:Archivo,Arial,sans-serif;font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase"
+
+def chat_box(exchanges, title="From the Group Chat"):
     out = [f'<h2 class="sec">{title}</h2>',
-           '<div style="background:#f4f1ea;border:1px solid var(--rule,#d3b88f);border-radius:14px;padding:.8rem .7rem .6rem;margin:.4rem 0 1.1rem;font-family:-apple-system,BlinkMacSystemFont,\'Helvetica Neue\',Arial,sans-serif">']
-    prev = None
-    for who, text in lines:
-        me = who == "Margo"
-        if who != prev:
-            out.append(f'<div style="font-size:.68rem;color:#8e8e93;margin:{".55rem" if prev else "0"} {".35rem" if me else "0"} .15rem {"0" if me else ".55rem"};text-align:{"right" if me else "left"}">{who}</div>')
-        bubble = ('background:#0b84ff;color:#fff;border-bottom-right-radius:5px' if me
-                  else 'background:#e5e5ea;color:#111;border-bottom-left-radius:5px')
-        out.append(f'<div style="display:flex;justify-content:{"flex-end" if me else "flex-start"}"><div style="{bubble};max-width:78%;padding:.45rem .75rem;border-radius:18px;font-size:.95rem;line-height:1.3;margin:.12rem 0">{text}</div></div>')
-        prev = who
+           '<div style="border:1px solid var(--rule,#d3b88f);border-radius:8px;padding:.3rem .95rem;margin:.4rem 0 1.1rem;background:rgba(255,255,255,.35)">']
+    for i, (quotes, reply) in enumerate(exchanges):
+        top = '' if i == 0 else 'border-top:1px dashed var(--rule,#d3b88f);'
+        out.append(f'<div style="{top}padding:.65rem 0">')
+        for who, text in quotes:
+            out.append(f'<div style="margin:.1rem 0 .25rem"><span style="{LBL};color:var(--teal,#2f5e3e)">{who}</span> '
+                       f'<span style="font-size:1rem">&ldquo;{text}&rdquo;</span></div>')
+        out.append(f'<div style="border-left:3px solid var(--rust,#9c3216);padding:.1rem 0 .1rem .65rem;margin-top:.4rem">'
+                   f'<span style="{LBL};color:var(--rust,#9c3216)">Margo</span> '
+                   f'<span style="font-style:italic">{reply}</span></div>')
+        out.append('</div>')
     out.append('</div>')
     return '\n'.join(out)
