@@ -70,6 +70,12 @@ When Garret asks for something in chat, add it here and push in the same turn.
   - **Tomorrow, Sun Nov 29:** the Spotlight is the month in migraine (material already in this file under Sun Nov 29), plus Gregg's Sunday Question answer. The 8:30 p.m. Saturday prep builds it.
   - After: `git rm -r spool/saturday`.
 
+- **Sat Nov 28 — Lake Erie follow-up (Garret, Fri 8:38 p.m.: "Point to that lake erie finding in tomorrow's paper").** No. 156 already printed Thursday's 8-foot tilt, so lead with what's new from the morning's `erie_levels`: the lake rocked back and tipped the other way (Fri evening ~20:54Z Buffalo's end ~1.8 ft above Toledo's per the Fri-night feed; recheck at build). One or two sentences in the Weather Glass lede or right under the graphic, numbers from the data only, and a plain explanation of the slosh (a seiche) for the family.
+
+- **Sun Nov 29 — Sunday Question (Garret, Fri: "Fine with the question"):** a seasonal one, e.g. "What's the one Christmas tradition this family can't skip?" Answers run next Sunday.
+
+- **Bills playoff picture, weekly from Mon Dec 7 (Garret, Fri 8:38 p.m.: "yes to the playoff picture. We should start making plans for playoff games").** An explainer graphic in The Gridiron every Monday after the Patriots game: AFC seeds 1–7 with records, the Bills' spot, and what clinches the division, a bye and the No. 1 seed, from standings checked that morning (Sportradar standings) and a named source for scenarios. Build it in the night-before prep (Sunday night). Also: the 8:30 prep should research and verify the 2026–27 NFL playoff dates (Wild Card, Divisional, Championship, Super Bowl) and, once confirmed, add the Wild Card weekend to Coming Up and the Week Ahead, so the family can plan watch parties or tickets. Never print a playoff date without a dated source.
+
 - **Sun Nov 29 Spotlight — editor's call, Garret OK'd Fri 8:36 p.m. ("Proceed"):** run it shorter. Lead with the family's month (counts and days only), then just two research items: (1) the PACAP drug on schedule, (2) the Danish migraine-plus-smoking stroke study. Drop items 3 (rebound headaches) and 4 (TEMPLE background).
 
 - **Sun Nov 29, 2026 — Sunday Spotlight: the month in migraine.** (Researched Fri Nov 27; every item below dated Oct 28–Nov 27. Say in the section that an AI wrote it.) A quiet month for new treatments; nothing changed for the two pills Garret takes. Items:
