@@ -62,18 +62,8 @@ When Garret asks for something in chat, add it here and push in the same turn.
 
 ## Dated
 
-- **Sat Nov 28, No. 157 (prep Fri 8:30 p.m.).** No NWS alerts (alerts.json 01:30Z Sat). Saturday: showers likely before 11, high near 45, west wind gusts to 32 (01:30Z feed; recheck). Built tonight in `spool/saturday/`:
-  - **Cover:** Garret sent a photo Fri 8:34 p.m. (coloring at the kids' table); it waits in `spool/next/` with caption "Black Friday, indoor division." Plate I &middot; The Family Album, no names. His note, for Family Today: "Stuck inside all day" (meaning Friday). Delete `spool/next/` in the build commit.
-  - **From the Group Chat:** `spool/saturday/groupchat.html` as written (from Friday's family thread; Margo is in the chat, never say anyone forwarded it). Goes right after Family Today.
-  - **On This Day:** `spool/saturday/otd.html` (first WSM Barn Dance, Nov 28, 1925; sources: opry.com/history for Uncle Jimmy Thompson, 77, George D. Hay, WSM on air Oct 5, the 1927 name and the 4,000th broadcast in 2002; history.com for the date and the Barn Dance name). Check the "grand opera" wording against opry.com before running: the page says Hay's line came after NBC's Music Appreciation Hour (Walter Damrosch); if "grand opera" can't be confirmed, say "a network classical music program."
-  - **Riddle:** "I&rsquo;m full of air, I&rsquo;m held down by ropes, and I only fly when the wind says so. What am I?" Answer: "A parade balloon." (Macy&rsquo;s 100th, rescheduled, steps off today at 8:30 a.m.; don&rsquo;t rerun the postponement as news — it ran as No. 155&rsquo;s lead — but a dated line in Coming Up is fine; if it was canceled or delayed again overnight, that is real news.)
-  - **Gridiron:** Jets at Dolphins Sunday 1:00 preview (team news only if real); Bills off until Sun Dec 6 at New England, 4:25. Sunday Tax standings link only (no box on Saturday).
-  - **Tomorrow, Sun Nov 29:** the Spotlight is the month in migraine (material already in this file under Sun Nov 29), plus Gregg's Sunday Question answer. The 8:30 p.m. Saturday prep builds it.
-  - After: `git rm -r spool/saturday`.
 
-- **Sat Nov 28 — first Today's Poll and first Margo call-out (Garret, Fri 8:45 p.m.: "1/2/5").** Poll: "Best leftover?" A: turkey sandwich · B: stuffing · C: pie for breakfast · D: cold mashed potatoes, linked per CLAUDE.md (Reader participation) with poll=2026-11-28. Call-out: "Tommy, you ran Thursday. Did you beat Garret or not?" with the form link. Log the call-out in the ledger.
 
-- **Sat Nov 28 — Lake Erie follow-up (Garret, Fri 8:38 p.m.: "Point to that lake erie finding in tomorrow's paper").** No. 156 already printed Thursday's 8-foot tilt, so lead with what's new from the morning's `erie_levels`: the lake rocked back and tipped the other way (Fri evening ~20:54Z Buffalo's end ~1.8 ft above Toledo's per the Fri-night feed; recheck at build). One or two sentences in the Weather Glass lede or right under the graphic, numbers from the data only, and a plain explanation of the slosh (a seiche) for the family.
 
 - **Sun Nov 29 — Sunday Question (Garret, Fri: "Fine with the question"):** a seasonal one, e.g. "What's the one Christmas tradition this family can't skip?" Answers run next Sunday.
 
@@ -128,6 +118,7 @@ When Garret asks for something in chat, add it here and push in the same turn.
 - **Oct 23 / Oct 25 — birthday stretch:** Claire's edition on the 23rd; one joint Garret + Ariel edition on the 25th.
 
 ## Done
+- (done in No. 157) Sat Nov 28: coloring cover, From the Group Chat, Opry On This Day, balloon riddle, first Today's Poll, Tommy call-out, Lake Erie follow-up.
 - (done in No. 156) Fri Nov 27 prep: weekend outlook (numbers refreshed), Macy's 1924 On This Day, leftovers riddle, Garret's pie cover.
 - (done in No. 155) **Thu Nov 26, No. 155 (prep Wed 8:30 p.m.).** Garret, Wed 10 p.m.: Kaylani and Luka probably aren't going because of the weather; the box's good-luck line names Ariel, Tommy, Claire and Garret only, and nothing in the paper mentions Luka or the stroller. No NWS alerts for the four towns (alerts.json
 - (done in No. 155) **Turkey Trot box, Wed Nov 25 and Thu Nov 26 (Garret, Tue 10:59 a.m.: "needs to stick out and be clear like you just rolled up to me").** Replace the Weather Glass Turkey Trot Watch paragraph with the bordered box in `spool/trot/box-template.html`, placed first under the "The News" divider (above th
