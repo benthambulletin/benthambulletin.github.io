@@ -19351,7 +19351,7 @@
           "free": false,
           "paypal": false,
           "rank": 1,
-          "delta": 8,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19634,7 +19634,7 @@
           "free": true,
           "paypal": false,
           "rank": 1,
-          "delta": 8,
+          "delta": 0,
           "state": "alive",
           "paid": false,
           "badges": []
@@ -19660,7 +19660,7 @@
           "free": false,
           "paypal": false,
           "rank": 11,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19691,7 +19691,7 @@
           "free": false,
           "paypal": true,
           "rank": 11,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19722,7 +19722,7 @@
           "free": false,
           "paypal": false,
           "rank": 11,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19753,7 +19753,7 @@
           "free": false,
           "paypal": false,
           "rank": 11,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -19784,7 +19784,7 @@
           "free": false,
           "paypal": false,
           "rank": 11,
-          "delta": -2,
+          "delta": 0,
           "state": "alive",
           "paid": true,
           "badges": [
@@ -20333,9 +20333,9 @@
       "decidedAtLastRun": 5,
       "outAtLastRun": [],
       "threads": {},
-      "columnHead": "Ariel finally has Tom where she wants him",
-      "column": "Four games down, and the lead is a seven-way pileup at 3–1 with the house: Dan, Derek, Devin, Josh, Leah and both Sombloskis. Seven more sit one back at 2–2.\n\nThe better story is a rivalry that hasn't been one. Ariel is 0–7 against Tom this season, with one draw, and this week she's up a game on him, 2–2 to 1–3. Tom gets a Black Friday game and a full Sunday to put that record back to 0–8. Broncos at Steelers kicks off at 3.",
-      "columnN": 21,
+      "columnHead": "Five down, and nine people tied at the top",
+      "column": "The holiday games are done, and they made a mess of it. Rams over the Packers, Bears 39–35 in Detroit, Eagles by one in Dallas, and the Bills held the Chiefs to 10. Then the Steelers beat the Broncos 27–5 on Friday, a game only B-rad, Thom and one of Kaylani's two sheets saw coming.\n\nNine sheets sit at 3–2: B-rad, Dan, Derek, Devin, Josh, Leah, Thom and both Sombloskis. Thom is playing free, so call it eight with a shot at the $90. Five more are one back at 2–3, and the 1–4 crowd includes the commissioner.\n\nEleven games left: ten Sunday, then Panthers at Buccaneers Monday night. Ariel still leads Tom by a game.",
+      "columnN": 20,
       "face": {
         "photo": "/pool/faces/w12.jpg",
         "who": "Ariel, Mrs. Sombloski & Jensen",
@@ -20346,7 +20346,7 @@
       "thuDone": true
     }
   },
-  "updated": "2026-11-28T01:10:58.798323+00:00",
+  "updated": "2026-11-28T12:02:29.591774+00:00",
   "plannedBuyIn": 5,
   "house": {
     "name": "Claude",
