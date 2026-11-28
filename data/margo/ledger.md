@@ -18,3 +18,7 @@ Format: `- YYYY-MM-DD · Name · what they said (short) · where it ran`
 - 2026-11-26 · Ariel, Tommy, Claire, Garret · ran the 131st Turkey Trot · No. 155
 - 2026-11-27 · Garret · sent the Thanksgiving pie photo for the cover · No. 156
 - 2026-11-27 · Gregg · Sunday Question answer (form, Thu): "It has to be a Sabres gravy boat ‼️" · runs Sun Nov 29
+- 2026-11-27 · Gregg · group chat: "Thanks Margo 😃"; "41degs and snowing" · No. 157
+- 2026-11-27 · Ariel · group chat: slept till 10:30 after getting up at 5 to see Sue and Thom off · No. 157
+- 2026-11-27 · Kaylani · group chat: "Tree is up!" the day after Thanksgiving · No. 157
+- 2026-11-27 · Garret · group chat: "Ugh" · No. 157
