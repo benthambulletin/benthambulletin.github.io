@@ -14,3 +14,5 @@ Upcoming Sunday Spotlight topics, in order. Garret approves, strikes or reorders
 ## Done
 
 - Sep 13 — The week in AI. · Sep 20 — What a reassessment does to your tax bill. · Sep 27 — The seed deadline (No. 95).
+
+- **Dec 6 (booked, Garret Nov 27):** Small children and screen time: guidelines and evidence, kinds of screen time, real effects, house rules. Plan in data/requests.md.
