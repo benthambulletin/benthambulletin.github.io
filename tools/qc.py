@@ -88,6 +88,26 @@ if ed:
             except Exception: continue
             if _b and _b == _a:
                 fails.append(f'RIDDLE: answer "{_a}" already ran in {os.path.basename(_f)}'); break
+    # Moon times (Nov 27: the reviewer caught a wrong moonset twice in a week). The Tonight line's
+    # rise must match sky.py for today, and its set (the next morning's) must match sky.py for tomorrow.
+    try:
+        _sk = re.search(r'<p class="skynote">(.*?)</p>', s, re.S)
+        if _sk:
+            _t = re.sub(r'<[^>]+>', '', _sk.group(1))
+            _sky = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sky.py')
+            if not os.path.exists(_sky): _sky = os.path.join('site', 'tools', 'sky.py')
+            def _moon(d):
+                o = subprocess.run([sys.executable, _sky, d], capture_output=True, text=True, timeout=60).stdout
+                m = re.search(r'MOON.*?rise ([\d:]+ [ap]\.m\.).*?set ([\d:]+ [ap]\.m\.)', o)
+                return m.groups() if m else (None, None)
+            _r0, _ = _moon(str(dt)); _, _s1 = _moon(str(dt + datetime.timedelta(days=1)))
+            _mr = re.search(r'rises at (\d{1,2}:\d{2})', _t); _ms = re.search(r'sets at (\d{1,2}:\d{2})', _t)
+            if _mr and _r0 and _mr.group(1) != _r0.split()[0]:
+                fails.append(f'MOONRISE: Tonight line says {_mr.group(1)}, sky.py {dt} says {_r0}')
+            if _ms and _s1 and _ms.group(1) != _s1.split()[0]:
+                fails.append(f'MOONSET: Tonight line says {_ms.group(1)}, but the coming night\'s set (sky.py {dt + datetime.timedelta(days=1)}) is {_s1}')
+    except Exception as _e:
+        warns.append(f'moon check skipped: {_e}')
     if str(dt) >= '2026-11-14' and 'Next 24 hours' in s and not re.search(r'<svg[^>]*data-start="\d{1,2}"', s):
         fails.append('LIVE: the 24-hour curve svg needs data-start="<hour of its first point, 0-23>" for the NOW marker')
     if str(dt) >= '2026-11-15' and 'Next 24 hours' in s and 'BARS: CHANCE OF RAIN OR SNOW' not in s:
